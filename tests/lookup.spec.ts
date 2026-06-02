@@ -343,6 +343,37 @@ test("lookup surfaces Dometic CCC2 thermostat symptom support pages", async ({ p
   await expect(page.getByText(/Operation on High Fan\/Cooling mode/i)).toBeVisible();
 });
 
+test("lookup surfaces Dometic DF furnace operating-manual symptom pages", async ({ page }) => {
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("dometic df furnace blower turns on will not light thermostat heat lp air");
+  await expect(lookupResults.locator('a[href="/symptoms/dometic-df-furnace-blower-runs-will-not-light/"]')).toBeVisible();
+
+  await searchbox.fill("dometic df furnace shuts off before desired temperature vents blocked");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/dometic-df-furnace-shuts-off-before-temperature-vents/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("dometic df furnace soot exhaust vent carbon monoxide snow obstruction");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/dometic-df-furnace-soot-exhaust-vent-carbon-monoxide/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("dometic df furnace initial smoke first firing 5 10 minutes gas odor");
+  await expect(lookupResults.locator('a[href="/symptoms/dometic-df-furnace-initial-smoke-or-gas-odor/"]')).toBeVisible();
+
+  await searchbox.fill("dometic df furnace monthly annual maintenance qualified rv service technician");
+  const maintenance = lookupResults.locator('a[href="/symptoms/dometic-df-furnace-maintenance-service-boundary/"]');
+  await expect(maintenance).toBeVisible();
+
+  await maintenance.click();
+  await expect(page.getByRole("heading", { name: "Dometic DF furnace maintenance and service boundary" })).toBeVisible();
+  await expect(page.getByText(/annual maintenance of the device must be performed by a qualified RV service technician/i)).toBeVisible();
+});
+
 test("lookup surfaces Cummins Onan generator symptom support pages", async ({ page }) => {
   await page.goto("/");
 

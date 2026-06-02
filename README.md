@@ -68,7 +68,7 @@ Key location: `https://rv-appliance-code-atlas.fly.dev/2653afc6f17313e900711f1d3
 
 Writes ignored local report artifact: `reports/indexnow-submit-report.json`
 
-Submitted: `2026-06-02T21:52:32.384Z` with IndexNow HTTP `200`
+Submitted: `2026-06-02T22:11:57.632Z` with IndexNow HTTP `200`
 
 Traffic monitor:
 
@@ -78,9 +78,9 @@ npm run traffic:monitor
 
 Current corpus:
 - `819` verified entries
-- `143` symptom guides
-- `317` official sources
-- `963` generated indexable pages
+- `148` symptom guides
+- `318` official sources
+- `968` generated indexable pages
 
 Next automated batch goal:
 - Run weekly GSC report and review monetization readiness after page impressions appear.

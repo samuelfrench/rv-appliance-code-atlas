@@ -126,6 +126,26 @@ describe("verified corpus", () => {
     );
   });
 
+  it("finds Dometic DF furnace operating-manual symptom pages from owner searches", () => {
+    const index = buildSymptomSearchIndex(corpus);
+
+    expect(lookupSymptomGuides(index, "dometic df furnace blower turns on will not light thermostat heat lp air")[0]?.slug).toBe(
+      "dometic-df-furnace-blower-runs-will-not-light",
+    );
+    expect(lookupSymptomGuides(index, "dometic df furnace shuts off before desired temperature vents blocked")[0]?.slug).toBe(
+      "dometic-df-furnace-shuts-off-before-temperature-vents",
+    );
+    expect(lookupSymptomGuides(index, "dometic df furnace soot exhaust vent carbon monoxide snow obstruction")[0]?.slug).toBe(
+      "dometic-df-furnace-soot-exhaust-vent-carbon-monoxide",
+    );
+    expect(lookupSymptomGuides(index, "dometic df furnace initial smoke first firing 5 10 minutes gas odor")[0]?.slug).toBe(
+      "dometic-df-furnace-initial-smoke-or-gas-odor",
+    );
+    expect(lookupSymptomGuides(index, "dometic df furnace monthly annual maintenance qualified rv service technician")[0]?.slug).toBe(
+      "dometic-df-furnace-maintenance-service-boundary",
+    );
+  });
+
   it("finds Norcold and Thetford symptom support pages from owner searches", () => {
     const index = buildSymptomSearchIndex(corpus);
 
@@ -528,6 +548,46 @@ describe("verified corpus", () => {
     expect(symptomById.get("thermostat-delay-or-no-response")?.sourceIds).toContain(sourceId);
     expect(symptomById.get("air-conditioner-not-cooling")?.sourceIds).toContain(sourceId);
     expect(symptomById.get("airflow-or-venting")?.sourceIds).toContain(sourceId);
+  });
+
+  it("adds official Dometic DF furnace operating-manual symptom pages without inventing code entries or unsafe owner steps", () => {
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const sourceId = "dometic-df-furnace-operating-2025";
+    const expectedSymptomIds = [
+      "dometic-df-furnace-blower-runs-will-not-light",
+      "dometic-df-furnace-shuts-off-before-temperature-vents",
+      "dometic-df-furnace-soot-exhaust-vent-carbon-monoxide",
+      "dometic-df-furnace-initial-smoke-or-gas-odor",
+      "dometic-df-furnace-maintenance-service-boundary",
+    ];
+
+    expect(corpus.sources.find((source) => source.id === sourceId)).toMatchObject({
+      brand: "Dometic",
+      official: true,
+      type: "manufacturer-manual",
+    });
+    expect(corpus.entries).toHaveLength(819);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.includes(sourceId))).toHaveLength(0);
+
+    for (const symptomId of expectedSymptomIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds).toEqual([sourceId]);
+      expect(symptom?.safeChecklist.join(" "), symptomId).not.toMatch(
+        /\b(control board|circuit board|120\s*V|240\s*V|12\s*V|fuse|breaker|wiring|wire|orifice|burner|gas pressure|drop test|gas piping|leak test|battery charger|replace)\b/i,
+      );
+    }
+
+    expect(symptomById.get("dometic-df-furnace-blower-runs-will-not-light")?.summary).toMatch(/blower turns on|thermostat|LPG line/i);
+    expect(symptomById.get("dometic-df-furnace-shuts-off-before-temperature-vents")?.summary).toMatch(/vents|blocked|desired temperature/i);
+    expect(symptomById.get("dometic-df-furnace-soot-exhaust-vent-carbon-monoxide")?.summary).toMatch(/soot|carbon monoxide|exhaust/i);
+    expect(symptomById.get("dometic-df-furnace-initial-smoke-or-gas-odor")?.summary).toMatch(/5.*10 minutes|gas odor/i);
+    expect(symptomById.get("dometic-df-furnace-maintenance-service-boundary")?.summary).toMatch(/monthly|annual|qualified RV service technician/i);
+
+    expect(symptomById.get("furnace-lockout")?.sourceIds).toContain(sourceId);
+    expect(symptomById.get("airflow-or-venting")?.sourceIds).toContain(sourceId);
+    expect(symptomById.get("furnace-stops-before-setpoint")?.sourceIds).toContain(sourceId);
+    expect(symptomById.get("service-call-prep")?.sourceIds).toContain(sourceId);
   });
 
   it("includes official legacy Dometic RM3762/RM3962 refrigerator error-code table entries", () => {

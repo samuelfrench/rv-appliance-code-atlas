@@ -14,7 +14,7 @@
     "indexNow": {
       "key": "2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18",
       "keyLocation": "https://rv-appliance-code-atlas.fly.dev/2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18.txt",
-      "submittedAt": "2026-06-02T21:52:32.384Z"
+      "submittedAt": "2026-06-02T22:11:57.632Z"
     }
   },
   "sources": [
@@ -191,6 +191,14 @@
       "brand": "Dometic",
       "title": "Dometic DF Series Furnace Installation Manual",
       "url": "https://www.dometic.com/externalassets/dometic-medium-furnace_9600000926_81452.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "dometic-df-furnace-operating-2025",
+      "brand": "Dometic",
+      "title": "Dometic DFSA/DFSD/DFMD/DFLD/DFLA Furnaces Operating Manual",
+      "url": "https://media.dometic.com/externalassets/dometic-medium-furnace_9600000827_81453.pdf",
       "type": "manufacturer-manual",
       "official": true
     },
@@ -32088,6 +32096,7 @@
         "suburban-furnace-guide",
         "suburban-rv-faqs",
         "dometic-df-furnace",
+        "dometic-df-furnace-operating-2025",
         "furrion-furnace-troubleshooting",
         "dometic-hydro-flame-afm-66618"
       ]
@@ -32104,6 +32113,7 @@
       ],
       "sourceIds": [
         "dometic-df-furnace",
+        "dometic-df-furnace-operating-2025",
         "suburban-furnace-guide",
         "suburban-rv-faqs",
         "suburban-sf-vh-ducting-guide",
@@ -32517,6 +32527,7 @@
         "coleman-warranty-refrigeration-circuit",
         "coleman-46515-heat-pump-owner",
         "dometic-hydro-flame-afm-66618",
+        "dometic-df-furnace-operating-2025",
         "suburban-furnace-guide",
         "suburban-tank-water-heater",
         "suburban-rv-faqs",
@@ -32878,6 +32889,111 @@
       ]
     },
     {
+      "id": "dometic-df-furnace-blower-runs-will-not-light",
+      "slug": "dometic-df-furnace-blower-runs-will-not-light",
+      "title": "Dometic DF furnace blower runs but will not light",
+      "summary": "Dometic DF operating instructions say a furnace that will not light while the blower turns on can be caused by air in the LPG line or thermostat settings that are not on Heat or not high enough.",
+      "safeChecklist": [
+        "If there is any gas odor, stop and follow the manual gas-odor shutoff steps before further operation.",
+        "Confirm the thermostat is set to Heat and above room temperature.",
+        "Turn the thermostat off for 10 seconds and back on once; stop if lockout returns.",
+        "If the blower runs but heat still does not start, shut the furnace off and call qualified RV furnace service."
+      ],
+      "sourceIds": [
+        "dometic-df-furnace-operating-2025"
+      ],
+      "searchAliases": [
+        "dometic df furnace blower turns on will not light thermostat heat lp air",
+        "dometic df furnace blower runs no ignition",
+        "dometic dfsa dfsd dfmd blower on no heat",
+        "dometic df furnace thermostat heat not high enough"
+      ]
+    },
+    {
+      "id": "dometic-df-furnace-shuts-off-before-temperature-vents",
+      "slug": "dometic-df-furnace-shuts-off-before-temperature-vents",
+      "title": "Dometic DF furnace shuts off before desired temperature",
+      "summary": "Dometic DF operating instructions list blocked or obstructed vents as the suggested owner-facing cause when the furnace shuts off before the desired temperature is reached.",
+      "safeChecklist": [
+        "Confirm the thermostat remains on Heat and above room temperature.",
+        "Open or uncover normal supply vents and return-air grilles.",
+        "Remove only visible obstructions from accessible vent openings.",
+        "Shut the furnace off and call qualified RV furnace service if cycling continues."
+      ],
+      "sourceIds": [
+        "dometic-df-furnace-operating-2025"
+      ],
+      "searchAliases": [
+        "dometic df furnace shuts off before desired temperature vents blocked",
+        "dometic df furnace stops before set temperature obstructed vents",
+        "dometic dfmd furnace short cycles before warm",
+        "dometic df furnace vents blocked heat stops"
+      ]
+    },
+    {
+      "id": "dometic-df-furnace-soot-exhaust-vent-carbon-monoxide",
+      "slug": "dometic-df-furnace-soot-exhaust-vent-carbon-monoxide",
+      "title": "Dometic DF furnace soot, exhaust vent, or carbon monoxide warning",
+      "summary": "Dometic DF operating instructions warn that the furnace can produce life-threatening carbon monoxide, exterior exhaust must not be blocked by snow or objects, and soot at the vent means immediately shut the furnace off and contact a dealer or qualified service technician.",
+      "safeChecklist": [
+        "Shut the furnace off immediately if soot is visible or a carbon-monoxide alarm sounds.",
+        "Keep snow and objects away from the exterior exhaust opening.",
+        "Do not operate the furnace with a blocked exhaust or visible soot.",
+        "If there is any gas odor, open doors and windows, evacuate, close cylinders from outside, and call the gas supplier or fire department."
+      ],
+      "sourceIds": [
+        "dometic-df-furnace-operating-2025"
+      ],
+      "searchAliases": [
+        "dometic df furnace soot exhaust vent carbon monoxide snow obstruction",
+        "dometic df furnace carbon monoxide warning exhaust blocked",
+        "dometic df furnace soot at vent shut off",
+        "dometic df furnace snow blocking exhaust"
+      ]
+    },
+    {
+      "id": "dometic-df-furnace-initial-smoke-or-gas-odor",
+      "slug": "dometic-df-furnace-initial-smoke-or-gas-odor",
+      "title": "Dometic DF furnace initial smoke or gas odor",
+      "summary": "Dometic DF operating instructions say first firing can cause manufacturing paint and oil burn-off smoke for 5 to 10 minutes, but any gas odor requires stopping, ventilating, evacuation, closing gas cylinders from outside, and calling the gas supplier or fire department.",
+      "safeChecklist": [
+        "On first firing only, monitor brief manufacturing burn-off smoke for 5 to 10 minutes if there is no gas odor.",
+        "If gas odor exists, immediately stop furnace operation.",
+        "Open doors and windows, evacuate everyone, close cylinders from outside, and call the gas supplier or fire department.",
+        "Call qualified RV furnace service before using the furnace again after any gas-odor event."
+      ],
+      "sourceIds": [
+        "dometic-df-furnace-operating-2025"
+      ],
+      "searchAliases": [
+        "dometic df furnace initial smoke first firing 5 10 minutes gas odor",
+        "dometic df furnace smoke after first start",
+        "dometic dfsa dfmd first firing smoke",
+        "dometic df furnace smell gas startup"
+      ]
+    },
+    {
+      "id": "dometic-df-furnace-maintenance-service-boundary",
+      "slug": "dometic-df-furnace-maintenance-service-boundary",
+      "title": "Dometic DF furnace maintenance and service boundary",
+      "summary": "Dometic DF operating instructions say monthly checks cover exhaust vent, soot, obstructions, base condition, and visible deterioration, while annual maintenance of the device must be performed by a qualified RV service technician.",
+      "safeChecklist": [
+        "Inspect the exterior exhaust vent monthly for soot or obstruction before use.",
+        "Keep the furnace area and return air clean and unobstructed.",
+        "Turn the furnace off before owner-accessible cleaning.",
+        "Use a qualified RV service technician for annual maintenance or any visible deterioration."
+      ],
+      "sourceIds": [
+        "dometic-df-furnace-operating-2025"
+      ],
+      "searchAliases": [
+        "dometic df furnace monthly annual maintenance qualified rv service technician",
+        "dometic df furnace maintenance service boundary",
+        "dometic df furnace exhaust vent monthly soot obstruction",
+        "dometic df furnace annual maintenance qualified technician"
+      ]
+    },
+    {
       "id": "furnace-stops-before-setpoint",
       "slug": "rv-furnace-stops-before-set-temperature",
       "title": "RV furnace shuts off before set temperature",
@@ -32893,7 +33009,8 @@
         "suburban-furnace-guide",
         "suburban-rv-faqs",
         "suburban-sf-vh-ducting-guide",
-        "dometic-df-furnace"
+        "dometic-df-furnace",
+        "dometic-df-furnace-operating-2025"
       ]
     },
     {
