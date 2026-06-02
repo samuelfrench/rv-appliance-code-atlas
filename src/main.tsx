@@ -229,8 +229,14 @@ function isExactCodeSearch(query: string, entry?: CorpusEntry) {
   if (!entry) return false;
   const queryTerms = new Set(query.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean));
   const codeTerms = entry.code.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
+  const compactQuery = query.toLowerCase().replace(/[^a-z0-9]+/g, "");
+  const compactCode = entry.code.toLowerCase().replace(/[^a-z0-9]+/g, "");
 
-  return codeTerms.length > 0 && codeTerms.every((term) => queryTerms.has(term));
+  return (
+    codeTerms.length > 0 &&
+    (codeTerms.every((term) => queryTerms.has(term)) ||
+      (codeTerms.length > 1 && compactCode.length > 0 && compactQuery.includes(compactCode)))
+  );
 }
 
 function Header() {

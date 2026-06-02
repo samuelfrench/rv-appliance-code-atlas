@@ -37,9 +37,9 @@ npm run traffic:monitor
 
 Current corpus:
 - `819` verified entries
-- `105` symptom guides
-- `301` official sources
-- `925` generated indexable pages
+- `114` symptom guides
+- `302` official sources
+- `934` generated indexable pages
 
 Next automated batch goal:
-- Triage official Suburban/Airxcel furnace and water-heater symptom-only support or owner-manual pages for ignition, airflow, overheating, low-voltage, water-temperature, freeze, and service-only boundaries; add only non-duplicate owner-safe guides.
+- Triage official Suburban/Airxcel model-specific furnace ducting and ST42/ST60 cold-inlet or winter-use support pages for register/return-air sizing, thermostat placement, rapid cycling, minimum flow, temperature underperformance, and service-only boundaries; add only non-duplicate owner-safe guides.

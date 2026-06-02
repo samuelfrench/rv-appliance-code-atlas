@@ -1351,6 +1351,14 @@
       "official": true
     },
     {
+      "id": "suburban-rv-faqs",
+      "brand": "Suburban/Atwood",
+      "title": "Frequently Asked Questions about Suburban RV Products",
+      "url": "https://suburbanrv.com/service-support/faqs/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
       "id": "girard-gswh2-owner-manual",
       "brand": "Lippert",
       "title": "Lippert Girard GSWH-2 Tankless Water Heater Owner's Manual CCD-0006120",
@@ -16339,7 +16347,9 @@
       ],
       "symptomIds": [
         "furnace-lockout",
-        "airflow-or-venting"
+        "airflow-or-venting",
+        "suburban-furnace-blowing-cold-air-lockout",
+        "suburban-furnace-airflow-overheat-soot"
       ],
       "partCaptureHints": [
         "furnace model",
@@ -16373,7 +16383,8 @@
       ],
       "symptomIds": [
         "water-heater-no-heat",
-        "service-call-prep"
+        "service-call-prep",
+        "suburban-tank-water-heater-reset-light-lockout"
       ],
       "partCaptureHints": [
         "Suburban model plate",
@@ -31943,6 +31954,7 @@
       ],
       "sourceIds": [
         "suburban-furnace-guide",
+        "suburban-rv-faqs",
         "dometic-df-furnace",
         "furrion-furnace-troubleshooting",
         "dometic-hydro-flame-afm-66618"
@@ -31961,6 +31973,8 @@
       "sourceIds": [
         "dometic-df-furnace",
         "suburban-furnace-guide",
+        "suburban-rv-faqs",
+        "suburban-tank-water-heater",
         "furrion-water-heater",
         "furrion-f2gwh-water-heater",
         "furrion-furnace-troubleshooting",
@@ -32023,7 +32037,7 @@
       "id": "low-voltage",
       "slug": "rv-appliance-low-voltage",
       "title": "RV appliance low-voltage warning",
-      "summary": "Use this when a refrigerator, thermostat, generator, leveling controller, or slide system points to low DC or unstable electrical supply.",
+      "summary": "Use this when a refrigerator, thermostat, furnace, water heater, generator, leveling controller, or slide system points to low DC or unstable electrical supply.",
       "safeChecklist": [
         "Check installed battery monitor readings.",
         "Record shore power/generator/battery state.",
@@ -32035,6 +32049,9 @@
         "lippert-in-wall-slide",
         "coleman-9420-thermostat",
         "furrion-furnace-troubleshooting",
+        "suburban-rv-faqs",
+        "suburban-tank-water-heater",
+        "suburban-st42-st60-water-heater",
         "dometic-rm3762-rm3962-operating",
         "dometic-rmd10t-rmd10xt-operating",
         "dometic-rm8-rms8-rml8-operating",
@@ -32119,6 +32136,9 @@
         "furrion-rooftop-hvac-troubleshooting",
         "coleman-9430-thermostat",
         "dometic-hydro-flame-afm-66618",
+        "suburban-furnace-guide",
+        "suburban-tank-water-heater",
+        "suburban-rv-faqs",
         "dometic-water-heater-combo-function-support",
         "dometic-water-heater-overheat-reset-support",
         "dometic-xt-water-heater-manual",
@@ -32221,6 +32241,7 @@
       "sourceIds": [
         "furrion-furnace-troubleshooting",
         "suburban-furnace-guide",
+        "suburban-rv-faqs",
         "dometic-df-furnace"
       ]
     },
@@ -32882,6 +32903,205 @@
       ],
       "sourceIds": [
         "dometic-od5001-no-water-flow-support"
+      ]
+    },
+    {
+      "id": "suburban-furnace-blowing-cold-air-lockout",
+      "slug": "suburban-furnace-blowing-cold-air-lockout-limit-switch",
+      "title": "Suburban furnace blows cold air, locks out, or hits limit",
+      "summary": "Use this when a Suburban gas furnace fan runs but heat does not start, the furnace enters lockout, or the FAQ points to a limit-switch condition.",
+      "safeChecklist": [
+        "Turn the thermostat off and let the furnace complete its blower cooldown.",
+        "Do not keep cycling the thermostat after repeated no-heat or no-ignition attempts.",
+        "Check only visible exterior intake and exhaust openings for blockage before one normal restart.",
+        "Record the thermostat setting, number of start attempts, blower run time, and whether heat ever reached the vents for a dealer or Suburban service center."
+      ],
+      "sourceIds": [
+        "suburban-furnace-guide",
+        "suburban-rv-faqs"
+      ],
+      "searchAliases": [
+        "suburban furnace cold air",
+        "suburban furnace limit switch",
+        "suburban furnace lock out",
+        "suburban furnace fan runs no heat"
+      ]
+    },
+    {
+      "id": "suburban-furnace-airflow-overheat-soot",
+      "slug": "suburban-furnace-airflow-overheat-soot-register-return-air",
+      "title": "Suburban furnace airflow, overheating, soot, or closed register",
+      "summary": "Use this when Suburban furnace guidance points to restricted registers, return air, blocked venting, soot, erratic cycling, or delayed ignition.",
+      "safeChecklist": [
+        "Keep heat registers open and do not close a register to move heat elsewhere.",
+        "Remove only visible return-air restrictions and loose items near the furnace compartment.",
+        "Check only visible exterior vent openings for blockage; do not install bug screens over the furnace vent.",
+        "Shut the furnace down immediately if soot appears at the vent, ignition is delayed, or cycling is erratic, then contact qualified service."
+      ],
+      "sourceIds": [
+        "suburban-furnace-guide",
+        "suburban-rv-faqs"
+      ],
+      "searchAliases": [
+        "suburban furnace register closed overheating",
+        "suburban furnace return air blocked",
+        "suburban furnace soot at vent",
+        "suburban furnace bug screen vent"
+      ]
+    },
+    {
+      "id": "suburban-furnace-low-voltage-low-gas-service",
+      "slug": "suburban-furnace-low-voltage-low-gas-service-only",
+      "title": "Suburban furnace low voltage, low gas pressure, or service-only supply issue",
+      "summary": "Use this when Suburban FAQ guidance lists low voltage, low gas pressure, inadequate ducting, or restricted return air as furnace performance causes.",
+      "safeChecklist": [
+        "Record battery monitor readings, shore-power or generator state, LP tank state, outside temperature, and whether other appliances show supply problems.",
+        "Use only normal RV control panels and installed monitors; do not meter wiring or appliance supply circuits unless qualified.",
+        "Check for visible return-air blockage and covered registers from the living area.",
+        "Have low gas pressure, low voltage, duct sizing, and internal furnace checks handled by a certified service technician."
+      ],
+      "sourceIds": [
+        "suburban-rv-faqs",
+        "suburban-furnace-guide"
+      ],
+      "searchAliases": [
+        "suburban furnace low voltage",
+        "suburban furnace low gas pressure",
+        "suburban furnace service only voltage",
+        "suburban furnace inadequate ducting"
+      ]
+    },
+    {
+      "id": "suburban-tank-water-heater-reset-light-lockout",
+      "slug": "suburban-tank-water-heater-reset-light-lockout",
+      "title": "Suburban tank water heater RESET light or ignition lockout",
+      "summary": "Use this when a Suburban D, DE, or DEL tank water heater leaves the red RESET light on after ignition tries or does not heat on LP.",
+      "safeChecklist": [
+        "Turn the water heater off and confirm the tank is filled with water before any restart.",
+        "If the manual reset path applies, wait five seconds before one normal switch restart.",
+        "Stop repeated reset attempts if the red RESET light returns or the heater does not ignite.",
+        "Record LP state, switch position, water-heater model, and whether this is first startup after LP service for a Suburban authorized service center."
+      ],
+      "sourceIds": [
+        "suburban-tank-water-heater"
+      ],
+      "searchAliases": [
+        "suburban water heater reset light",
+        "suburban d water heater lockout",
+        "suburban de water heater ignition failed",
+        "suburban del water heater red reset"
+      ]
+    },
+    {
+      "id": "suburban-tank-water-heater-pt-relief-air-pocket",
+      "slug": "suburban-tank-water-heater-pt-relief-drip-air-pocket",
+      "title": "Suburban tank water heater P/T relief drip or lost air pocket",
+      "summary": "Use this when a Suburban tank water heater weeps or drips from the pressure-temperature relief outlet during heating.",
+      "safeChecklist": [
+        "Turn the water heater off and let stored water cool before following Suburban air-pocket guidance.",
+        "Record whether the P/T relief outlet drips only while heating or continues after cooldown.",
+        "Do not cap, plug, restrict, or ignore the relief outlet.",
+        "Have a dealer or qualified plumbing/RV service handle persistent discharge, valve replacement, or accumulator work."
+      ],
+      "sourceIds": [
+        "suburban-tank-water-heater",
+        "suburban-rv-faqs"
+      ],
+      "searchAliases": [
+        "suburban water heater p&t valve dripping",
+        "suburban water heater pressure relief valve drip",
+        "suburban water heater air pocket",
+        "suburban tank water heater relief weeping"
+      ]
+    },
+    {
+      "id": "suburban-tank-water-heater-odor-anode",
+      "slug": "suburban-tank-water-heater-odor-anode",
+      "title": "Suburban tank water heater rotten-egg odor or anode issue",
+      "summary": "Use this when hot water from a Suburban tank water heater smells like sulfur or the anode rod needs inspection, draining, or replacement planning.",
+      "safeChecklist": [
+        "First decide whether the odor is hot-water odor or possible LP gas odor; use the gas-smell guide if gas odor is possible.",
+        "Turn the water heater off and let it cool before draining or flushing.",
+        "Use only Suburban-approved anode parts and owner-accessible drain or flush steps you can perform safely.",
+        "Call qualified service if the anode rod, drain fitting, leaks, or persistent odor require work beyond normal owner maintenance."
+      ],
+      "sourceIds": [
+        "suburban-tank-water-heater",
+        "suburban-rv-faqs"
+      ],
+      "searchAliases": [
+        "suburban water heater rotten egg smell",
+        "suburban water heater sulfur odor",
+        "suburban water heater anode rod",
+        "suburban hot water bad odor"
+      ]
+    },
+    {
+      "id": "suburban-tank-water-heater-winterizing-drain-freeze",
+      "slug": "suburban-tank-water-heater-winterizing-drain-freeze",
+      "title": "Suburban tank water heater winterizing, drain, or freeze risk",
+      "summary": "Use this when a Suburban tank water heater must be drained for freezing storage, bypassed for antifreeze, or checked after possible freeze exposure.",
+      "safeChecklist": [
+        "Turn off electrical power, LP, and water pressure, then let stored water cool before draining.",
+        "Drain the water heater and follow the RV manufacturer's instructions for the whole water system before freezing storage.",
+        "Do not relight or energize the heater until the tank is refilled and air is removed from the tank and lines.",
+        "Call qualified service for damaged fittings, leaks, blocked drains, or suspected freeze damage."
+      ],
+      "sourceIds": [
+        "suburban-tank-water-heater",
+        "suburban-rv-faqs"
+      ],
+      "searchAliases": [
+        "suburban water heater winterize",
+        "suburban water heater drain anode",
+        "suburban water heater freeze warning",
+        "suburban tank water heater antifreeze bypass"
+      ]
+    },
+    {
+      "id": "suburban-water-heater-soot-gas-smell-service",
+      "slug": "suburban-water-heater-soot-gas-smell-service-only",
+      "title": "Suburban water heater soot, gas smell, flame, or combustion service boundary",
+      "summary": "Use this when a Suburban tank or on-demand water heater has soot, gas odor, blocked venting, flame concern, delayed ignition, or suspected combustion trouble.",
+      "safeChecklist": [
+        "Evacuate people from the RV and avoid ignition sources if gas odor is present.",
+        "Shut off LP at the source only if it is safe to do so.",
+        "Turn the water heater off if soot, blocked venting, delayed ignition, abnormal flame evidence, or water intrusion is present.",
+        "Do not operate the water heater again until a dealer, gas supplier, or qualified service person corrects the condition."
+      ],
+      "sourceIds": [
+        "suburban-tank-water-heater",
+        "suburban-st42-st60-water-heater",
+        "suburban-rv-faqs"
+      ],
+      "searchAliases": [
+        "suburban water heater soot",
+        "suburban water heater gas smell",
+        "suburban water heater delayed ignition",
+        "suburban tankless water heater blocked vent"
+      ]
+    },
+    {
+      "id": "suburban-tankless-freeze-voltage-protection",
+      "slug": "suburban-tankless-freeze-voltage-protection",
+      "title": "Suburban tankless freeze protection or voltage protection",
+      "summary": "Use this when a Suburban IW60, IW60RL, ST-42, or ST-60 on-demand water heater has freeze-protection behavior, winterizing concerns, or low/high 12V protection.",
+      "safeChecklist": [
+        "Do not rely on freeze protection as a substitute for winterizing the entire RV water system.",
+        "Drain or winterize the system before storage in freezing temperatures according to the Suburban and RV instructions.",
+        "Record whether gas and electrical power were available, whether the unit dripped water in cold weather, and whether coach voltage was below 10VDC or above 17VDC.",
+        "Call qualified service for repeated voltage protection, freeze-related leaks, pressure-relief discharge, or any work behind a service panel."
+      ],
+      "sourceIds": [
+        "suburban-tankless-water-heater",
+        "suburban-st42-st60-water-heater",
+        "suburban-rv-faqs"
+      ],
+      "searchAliases": [
+        "suburban iw60 freeze protection",
+        "suburban st42 low voltage high voltage",
+        "suburban tankless 10v 17v",
+        "suburban tankless winterizing freeze"
       ]
     },
     {

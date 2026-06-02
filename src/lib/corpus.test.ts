@@ -2425,6 +2425,89 @@ describe("verified corpus", () => {
     expect(symptomById.get("furrion-water-heater-freeze-state")?.sourceIds).toContain("furrion-fwh09afa-ab-flangeless-spec");
   });
 
+  it("adds official Suburban furnace and water-heater symptom support without inventing code entries", () => {
+    const sourceById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const newSymptomIds = [
+      "suburban-furnace-blowing-cold-air-lockout",
+      "suburban-furnace-airflow-overheat-soot",
+      "suburban-furnace-low-voltage-low-gas-service",
+      "suburban-tank-water-heater-reset-light-lockout",
+      "suburban-tank-water-heater-pt-relief-air-pocket",
+      "suburban-tank-water-heater-odor-anode",
+      "suburban-tank-water-heater-winterizing-drain-freeze",
+      "suburban-water-heater-soot-gas-smell-service",
+      "suburban-tankless-freeze-voltage-protection",
+    ];
+
+    expect(sourceById.get("suburban-rv-faqs")?.official).toBe(true);
+    expect(sourceById.get("suburban-rv-faqs")?.url).toBe("https://suburbanrv.com/service-support/faqs/");
+    expect(corpus.entries).toHaveLength(819);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.includes("suburban-rv-faqs"))).toHaveLength(0);
+
+    for (const symptomId of newSymptomIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.safeChecklist.join(" "), symptomId).not.toMatch(
+        /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\brefrigerant\b|\bprobe\b|\bopen (the )?(fuel|gas|electrical|rooftop)/i,
+      );
+    }
+
+    expect(symptomById.get("suburban-furnace-blowing-cold-air-lockout")?.sourceIds).toEqual(
+      expect.arrayContaining(["suburban-furnace-guide", "suburban-rv-faqs"]),
+    );
+    expect(symptomById.get("suburban-furnace-airflow-overheat-soot")?.sourceIds).toEqual(
+      expect.arrayContaining(["suburban-furnace-guide", "suburban-rv-faqs"]),
+    );
+    expect(symptomById.get("suburban-furnace-low-voltage-low-gas-service")?.safeChecklist.join(" ")).toMatch(
+      /certified service technician/i,
+    );
+    expect(symptomById.get("suburban-tank-water-heater-reset-light-lockout")?.sourceIds).toEqual([
+      "suburban-tank-water-heater",
+    ]);
+    expect(symptomById.get("suburban-tank-water-heater-pt-relief-air-pocket")?.sourceIds).toEqual(
+      expect.arrayContaining(["suburban-tank-water-heater", "suburban-rv-faqs"]),
+    );
+    expect(symptomById.get("suburban-tank-water-heater-pt-relief-air-pocket")?.safeChecklist.join(" ")).not.toMatch(
+      /install.*expansion|replace.*relief/i,
+    );
+    expect(symptomById.get("suburban-tank-water-heater-odor-anode")?.sourceIds).toEqual(
+      expect.arrayContaining(["suburban-tank-water-heater", "suburban-rv-faqs"]),
+    );
+    expect(symptomById.get("suburban-tank-water-heater-winterizing-drain-freeze")?.sourceIds).toEqual(
+      expect.arrayContaining(["suburban-tank-water-heater", "suburban-rv-faqs"]),
+    );
+    expect(symptomById.get("suburban-water-heater-soot-gas-smell-service")?.sourceIds).toEqual(
+      expect.arrayContaining(["suburban-tank-water-heater", "suburban-st42-st60-water-heater", "suburban-rv-faqs"]),
+    );
+    expect(symptomById.get("suburban-water-heater-soot-gas-smell-service")?.safeChecklist.join(" ")).toMatch(
+      /evacuate|qualified service/i,
+    );
+    expect(symptomById.get("suburban-tankless-freeze-voltage-protection")?.sourceIds).toEqual(
+      expect.arrayContaining(["suburban-tankless-water-heater", "suburban-st42-st60-water-heater", "suburban-rv-faqs"]),
+    );
+    expect(symptomById.get("suburban-tankless-freeze-voltage-protection")?.safeChecklist.join(" ")).toMatch(/10VDC|17VDC/i);
+
+    expect(symptomById.get("furnace-lockout")?.sourceIds).toContain("suburban-rv-faqs");
+    expect(symptomById.get("furnace-stops-before-setpoint")?.sourceIds).toContain("suburban-rv-faqs");
+    expect(symptomById.get("airflow-or-venting")?.sourceIds).toEqual(
+      expect.arrayContaining(["suburban-rv-faqs", "suburban-tank-water-heater"]),
+    );
+    expect(symptomById.get("low-voltage")?.sourceIds).toEqual(
+      expect.arrayContaining(["suburban-rv-faqs", "suburban-tank-water-heater", "suburban-st42-st60-water-heater"]),
+    );
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(
+      expect.arrayContaining(["suburban-rv-faqs", "suburban-furnace-guide", "suburban-tank-water-heater"]),
+    );
+
+    expect(corpus.entries.find((entry) => entry.id === "suburban-furnace-lockout")?.symptomIds).toEqual(
+      expect.arrayContaining(["suburban-furnace-blowing-cold-air-lockout", "suburban-furnace-airflow-overheat-soot"]),
+    );
+    expect(corpus.entries.find((entry) => entry.id === "suburban-water-heater-reset-light")?.symptomIds).toContain(
+      "suburban-tank-water-heater-reset-light-lockout",
+    );
+  });
+
   it("adds the official Suburban induction cooktop E0-E7 display-code table with owner-safe boundaries", () => {
     const source = corpus.sources.find((item) => item.id === "suburban-induction-cooktop-guide");
     expect(source?.official).toBe(true);

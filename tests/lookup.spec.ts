@@ -21,15 +21,25 @@ test("mobile lookup finds a sourced Norcold fault code and opens its detail page
 
 test("exact code searches rank the matching code card before symptom guides", async ({ page }) => {
   await page.goto("/");
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const firstResult = page.locator('section[aria-label="Lookup results"] a').first();
 
-  await page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" }).fill("norcold no co");
-  const firstResult = page.locator('section[aria-label="Lookup results"] a.entry-card').first();
+  await searchbox.fill("norcold no co");
   await expect(firstResult).toHaveAttribute("href", "/codes/norcold-1200-no-co/");
 
-  await page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" }).fill("furrion 10.6 e3 compressor");
+  await searchbox.fill("suburban furnace lock out");
+  await expect(firstResult).toHaveAttribute("href", "/codes/suburban-furnace-lock-out/");
+
+  await searchbox.fill("suburban furnace lockout");
+  await expect(firstResult).toHaveAttribute("href", "/codes/suburban-furnace-lock-out/");
+
+  await searchbox.fill("suburban water heater reset light");
+  await expect(firstResult).toHaveAttribute("href", "/codes/suburban-water-heater-reset-light/");
+
+  await searchbox.fill("furrion 10.6 e3 compressor");
   await expect(firstResult).toHaveAttribute("href", "/codes/furrion-10-6-refrigerator-e3/");
 
-  await page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" }).fill("furrion 15 fd");
+  await searchbox.fill("furrion 15 fd");
   await expect(firstResult).toHaveAttribute("href", "/codes/furrion-15-refrigerator-fd/");
 });
 
@@ -147,6 +157,52 @@ test("lookup surfaces Furrion refrigerator symptom support pages", async ({ page
   await searchbox.fill("furrion compressor board fan refrigerant service only");
   await expect(
     lookupResults.locator('a[href="/symptoms/furrion-refrigerator-service-only-compressor-sensor-wiring/"]'),
+  ).toBeVisible();
+});
+
+test("lookup surfaces Suburban furnace and water-heater symptom support pages", async ({ page }) => {
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("suburban furnace blowing cold air limit switch");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/suburban-furnace-blowing-cold-air-lockout-limit-switch/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("suburban furnace close register overheating soot vent");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/suburban-furnace-airflow-overheat-soot-register-return-air/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("suburban furnace low gas low voltage service technician");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/suburban-furnace-low-voltage-low-gas-service-only/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("suburban tank water heater reset light lockout");
+  await expect(lookupResults.locator('a[href="/symptoms/suburban-tank-water-heater-reset-light-lockout/"]')).toBeVisible();
+
+  await searchbox.fill("suburban water heater pt relief dripping air pocket");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/suburban-tank-water-heater-pt-relief-drip-air-pocket/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("suburban water heater rotten egg odor anode");
+  await expect(lookupResults.locator('a[href="/symptoms/suburban-tank-water-heater-odor-anode/"]')).toBeVisible();
+
+  await searchbox.fill("suburban tank water heater drain winterize freezing");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/suburban-tank-water-heater-winterizing-drain-freeze/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("suburban water heater soot gas smell service");
+  await expect(lookupResults.locator('a[href="/symptoms/suburban-water-heater-soot-gas-smell-service-only/"]')).toBeVisible();
+
+  await searchbox.fill("suburban tankless low voltage freeze protection 10v 17v");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/suburban-tankless-freeze-voltage-protection/"]'),
   ).toBeVisible();
 });
 
