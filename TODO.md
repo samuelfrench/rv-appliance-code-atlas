@@ -14,10 +14,10 @@
 - Live URL: `https://rv-appliance-code-atlas.fly.dev/`
 - GitHub repo: `https://github.com/samuelfrench/rv-appliance-code-atlas`
 - Fly app: `rv-appliance-code-atlas`, one `shared-cpu-1x` 256 MB machine in `dfw`, auto-stop enabled.
-- Latest deploy: GitHub Actions run `26799471622`, Fly image `deployment-01KT3B9NY0YP49NV4E8TB9SRKC`.
+- Latest deploy: GitHub Actions run `26799902704`, Fly image `deployment-01KT3C1SDDZH2Y8A71B5JTF4SZ`, code commit `7e0d92f`.
 - Corpus: `80` verified entries, `12` symptom guides, `17` official sources, `93` generated indexable pages.
 - Local verification passed: `npm run validate:corpus`, `npm run test:unit`, `npm run build`, `npm run test:browser`, `npm run traffic:report`, `npm run source:audit`.
-- Live verification passed: `/`, `/sitemap.xml`, `/feed.xml`, `/corpus-stats.json`, and `/codes/norcold-polar-no-fl/` HTTP `200`; Playwright live smoke at `390x844` and `1366x768` found `0` console errors.
+- Live verification passed: `/`, `/sitemap.xml`, `/feed.xml`, `/corpus-stats.json`, `/codes/dometic-ruc-w01-refrigerator/`, `/codes/norcold-polar-lo-dc-lx/` HTTP `200`; Playwright live smoke at `390x844` and `1366x768` found `0` console errors.
 - Next automated batch goal: add remaining Dometic RM1350/CCC2, Norcold 1200, and Norcold N15DCX/N20DCX tables from official manuals, then rerun source audit and static generation.
 
 ## Corpus Expansion Backlog
