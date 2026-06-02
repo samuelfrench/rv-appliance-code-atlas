@@ -15,10 +15,10 @@
 - Live URL: `https://rv-appliance-code-atlas.fly.dev/`
 - GitHub repo: `https://github.com/samuelfrench/rv-appliance-code-atlas`
 - Fly app: `rv-appliance-code-atlas`, one `shared-cpu-1x` 256 MB machine in `dfw`, auto-stop enabled.
-- Latest deploy: GitHub Actions run `26799902704`, Fly image `deployment-01KT3C1SDDZH2Y8A71B5JTF4SZ`, code commit `7e0d92f`.
+- Latest deploy: Fly release v4, image `deployment-01KT3CX5WH3TGRK6DKPWWANA72`, code commit `2937076`; GitHub run ID unavailable locally because `gh` API was rate-limited.
 - Corpus: `118` verified entries, `12` symptom guides, `21` official sources, `131` generated indexable pages.
 - Local verification passed: `npm run validate:corpus`, `npm run test:unit`, `npm run build`, `npm run test:browser`, `npm run traffic:report`, `npm run source:audit`.
-- Live verification passed: `/`, `/sitemap.xml`, `/feed.xml`, `/corpus-stats.json`, `/codes/dometic-ruc-w01-refrigerator/`, `/codes/norcold-polar-lo-dc-lx/` HTTP `200`; Playwright live smoke at `390x844` and `1366x768` found `0` console errors.
+- Live verification passed: `/`, `/sitemap.xml`, `/feed.xml`, `/corpus-stats.json`, `/codes/dometic-rm1350-e4/`, `/codes/dometic-ccc2-e7/`, `/codes/norcold-1200-no-fl/`, and `/codes/norcold-n15-n20-e9/` HTTP `200`; Playwright live smoke at `390x844` and `1366x768` found `0` console errors.
 - Next automated batch goal: add full Cummins Onan QG/QD, Lippert controller, Furrion appliance, and Coleman-Mach thermostat/AC tables from official manuals, then rerun source audit and static generation.
 
 ## Corpus Expansion Backlog
