@@ -47,6 +47,54 @@
       "official": true
     },
     {
+      "id": "coleman-9420-330-multizone-controller",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 9420-330 Multi-Zone Wall Thermostat Installation, Operation & Application Guide",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2024/06/Coleman-9420-330.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-bluetooth-9630-352-heat-pump",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 9630-352 Heat Pump Installation, Operation & Application Guide",
+      "url": "https://coleman-mach.com/files/bluetooth/liaf253.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-bluetooth-9630-351-353-heat-pump",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 9630-351 and 9630-353 Heat Pump Installation, Operation & Application Guide",
+      "url": "https://coleman-mach.com/files/bluetooth/liaf254.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-6535-335-heat-pump-thermostat",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 6535-335 2 Stage Heat Pump Wall Thermostat Installation and Operating Instructions",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976A331.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-6536-335-heat-pump-thermostat",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 6536-335 2 Stage Heat Pump Wall Thermostat Installation and Operating Instructions",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-340.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-heat-pump-thermostat-lockout-function",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Heat Pump Thermostat Function Guide",
+      "url": "https://coleman-mach.com/files/t_stat_electric_heat_function.pdf",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
       "id": "dometic-ccc2-operating",
       "brand": "Dometic",
       "title": "Dometic Comfort Control Center 2 Thermostat Operating Instructions",
@@ -885,6 +933,14 @@
       "url": "https://support.lci1.com/documents/ccd-0010080",
       "type": "manufacturer-spec-sheet",
       "official": true
+    },
+    {
+      "id": "suburban-induction-cooktop-guide",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban Induction Cooktops Single & Double Element Operation Guide",
+      "url": "https://library.suburbanrv.com/wp-content/uploads/2023/04/206250_Suburban_Induction_Cooktop_RevNew_03-01-2023.pdf",
+      "type": "manufacturer-manual",
+      "official": true
     }
   ],
   "entries": [
@@ -985,6 +1041,437 @@
         "thermostat model",
         "indoor temperature",
         "fuse panel status"
+      ]
+    },
+    {
+      "id": "coleman-9630-bluetooth-elec-flashing",
+      "brand": "Coleman-Mach",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "Coleman-Mach 9630-352",
+        "Coleman-Mach 9630-351",
+        "Coleman-Mach 9630-353"
+      ],
+      "code": "ELEC flashing",
+      "slug": "coleman-mach-9630-elec-flashing-heat-pump-lockout",
+      "plainMeaning": "The Coleman-Mach 9630 heat pump thermostat guides say ELEC flashes when the heat pump is in lockout because electric heat could not satisfy the thermostat call.",
+      "ownerSafeActions": [
+        "Record thermostat model, zone, displayed word, mode, room temperature, set point, outside temperature estimate, and elapsed lockout time.",
+        "Wait through the manual-described lockout period if the coach stays safe and warm enough.",
+        "After the lockout clears, keep the electric-heat set point within four degrees of room temperature before trying again.",
+        "Use normal backup heat controls during the lockout if available."
+      ],
+      "serviceOnlyActions": [
+        "Thermostat installation, wiring, base fuse, jumper configuration, 12 V electrical diagnosis, heat pump, compressor, furnace, and control-circuit work is trained technician work."
+      ],
+      "safetyBoundary": "Use normal thermostat controls only. Stop electric heat attempts and call Coleman-Mach/Airxcel or qualified RV HVAC service if lockout repeats, the coach cannot be kept warm, or there are electrical symptoms.",
+      "sourceIds": [
+        "coleman-bluetooth-9630-352-heat-pump",
+        "coleman-bluetooth-9630-351-353-heat-pump"
+      ],
+      "symptomIds": [
+        "coleman-heat-pump-lockout",
+        "thermostat-gas-assist",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "thermostat model",
+        "thermostat ID",
+        "zone name",
+        "displayed word",
+        "mode",
+        "set point",
+        "room temperature"
+      ]
+    },
+    {
+      "id": "coleman-6535-335-diff-flashing",
+      "brand": "Coleman-Mach",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "Coleman-Mach 6535-335"
+      ],
+      "code": "DIFF flashing",
+      "slug": "coleman-mach-6535-335-diff-flashing-2nd-stage-heat",
+      "plainMeaning": "The Coleman-Mach 6535-335 thermostat instructions say DIFF flashes on the LCD when 2nd stage heat is operating because the heat pump cannot satisfy the thermostat.",
+      "ownerSafeActions": [
+        "Record thermostat model, displayed word, mode, room temperature, set point, outside temperature estimate, and elapsed lockout time.",
+        "Wait through the manual-described lockout period if the coach stays safe and warm enough.",
+        "After the lockout clears, keep the electric-heat set point within four degrees of room temperature before trying again.",
+        "Use normal backup heat controls during the lockout if available."
+      ],
+      "serviceOnlyActions": [
+        "Thermostat installation, wiring, base fuse, jumper configuration, 12 V electrical diagnosis, heat pump, compressor, furnace, and control-circuit work is trained technician work."
+      ],
+      "safetyBoundary": "Use normal thermostat controls only. Stop electric heat attempts and call Coleman-Mach/Airxcel or qualified RV HVAC service if lockout repeats, the coach cannot be kept warm, or there are electrical symptoms.",
+      "sourceIds": [
+        "coleman-6535-335-heat-pump-thermostat"
+      ],
+      "symptomIds": [
+        "coleman-heat-pump-lockout",
+        "thermostat-gas-assist",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "thermostat model",
+        "displayed word",
+        "mode",
+        "set point",
+        "room temperature"
+      ]
+    },
+    {
+      "id": "coleman-6536-335-diff",
+      "brand": "Coleman-Mach",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "Coleman-Mach 6536-335"
+      ],
+      "code": "DIFF",
+      "slug": "coleman-mach-6536-335-diff-backup-heat-lockout",
+      "plainMeaning": "The Coleman-Mach 6536-335 thermostat instructions say DIFF displays when backup heat is operating and the heat pump is locked out.",
+      "ownerSafeActions": [
+        "Record thermostat model, displayed word, mode, room temperature, set point, outside temperature estimate, and elapsed lockout time.",
+        "Wait through the manual-described lockout period if the coach stays safe and warm enough.",
+        "After the lockout clears, keep the electric-heat set point within four degrees of room temperature before trying again.",
+        "Use normal backup heat controls during the lockout if available."
+      ],
+      "serviceOnlyActions": [
+        "Thermostat installation, wiring, base fuse, jumper configuration, 12 V electrical diagnosis, heat pump, compressor, furnace, and control-circuit work is trained technician work."
+      ],
+      "safetyBoundary": "Use normal thermostat controls only. Stop electric heat attempts and call Coleman-Mach/Airxcel or qualified RV HVAC service if lockout repeats, the coach cannot be kept warm, or there are electrical symptoms.",
+      "sourceIds": [
+        "coleman-6536-335-heat-pump-thermostat"
+      ],
+      "symptomIds": [
+        "coleman-heat-pump-lockout",
+        "thermostat-gas-assist",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "thermostat model",
+        "displayed word",
+        "mode",
+        "set point",
+        "room temperature"
+      ]
+    },
+    {
+      "id": "coleman-heat-pump-thermostat-diff",
+      "brand": "Coleman-Mach",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "RvComfort.HP",
+        "RvComfort.PHP",
+        "Coleman True-Air",
+        "RvComfort.ZC"
+      ],
+      "code": "DIFF",
+      "slug": "coleman-mach-heat-pump-thermostat-diff-two-hour-lockout",
+      "plainMeaning": "Coleman-Mach's heat pump thermostat guide says DIFF can show during the two hour lockout after three heat-pump strikes, with electric heat unavailable during that lockout.",
+      "ownerSafeActions": [
+        "Record thermostat model, displayed word, mode, room temperature, set point, outside temperature estimate, and elapsed lockout time.",
+        "Wait through the manual-described two hour lockout if the coach stays safe and warm enough.",
+        "After the lockout clears, keep the electric-heat set point within four degrees of room temperature before trying again.",
+        "Use normal backup heat controls during the lockout if available."
+      ],
+      "serviceOnlyActions": [
+        "Thermostat installation, wiring, base fuse, jumper configuration, 12 V electrical diagnosis, heat pump, compressor, furnace, and control-circuit work is trained technician work."
+      ],
+      "safetyBoundary": "Use normal thermostat controls only. Stop electric heat attempts and call Coleman-Mach/Airxcel or qualified RV HVAC service if lockout repeats, the coach cannot be kept warm, or there are electrical symptoms.",
+      "sourceIds": [
+        "coleman-heat-pump-thermostat-lockout-function"
+      ],
+      "symptomIds": [
+        "coleman-heat-pump-lockout",
+        "thermostat-gas-assist",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "thermostat family",
+        "displayed word",
+        "mode",
+        "set point",
+        "room temperature",
+        "outdoor temperature estimate"
+      ]
+    },
+    {
+      "id": "coleman-heat-pump-thermostat-flashing-gas-heat",
+      "brand": "Coleman-Mach",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "RvComfort.HP",
+        "RvComfort.PHP",
+        "Coleman True-Air",
+        "RvComfort.ZC"
+      ],
+      "code": "FLASHING GAS HEAT",
+      "slug": "coleman-mach-heat-pump-thermostat-flashing-gas-heat-lockout",
+      "plainMeaning": "Coleman-Mach's heat pump thermostat guide says FLASHING GAS HEAT can show during the two hour lockout after three heat-pump strikes, with electric heat unavailable during that lockout.",
+      "ownerSafeActions": [
+        "Record thermostat model, displayed word, mode, room temperature, set point, outside temperature estimate, and elapsed lockout time.",
+        "Wait through the manual-described two hour lockout if the coach stays safe and warm enough.",
+        "After the lockout clears, keep the electric-heat set point within four degrees of room temperature before trying again.",
+        "Use normal backup heat controls during the lockout if available."
+      ],
+      "serviceOnlyActions": [
+        "Thermostat installation, wiring, base fuse, jumper configuration, 12 V electrical diagnosis, heat pump, compressor, furnace, and control-circuit work is trained technician work."
+      ],
+      "safetyBoundary": "Use normal thermostat controls only. Stop electric heat attempts and call Coleman-Mach/Airxcel or qualified RV HVAC service if lockout repeats, the coach cannot be kept warm, or there are electrical symptoms.",
+      "sourceIds": [
+        "coleman-heat-pump-thermostat-lockout-function"
+      ],
+      "symptomIds": [
+        "coleman-heat-pump-lockout",
+        "thermostat-gas-assist",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "thermostat family",
+        "displayed words",
+        "mode",
+        "set point",
+        "room temperature",
+        "outdoor temperature estimate"
+      ]
+    },
+    {
+      "id": "coleman-9420-330-status-led-solid-green",
+      "brand": "Coleman-Mach",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "Coleman-Mach 9420-330 multi-zone wall thermostat"
+      ],
+      "code": "Solid Green",
+      "slug": "coleman-mach-9420-330-status-led-solid-green",
+      "plainMeaning": "The Coleman-Mach 9420-330 guide lists a solid green status LED as the device being connected to the network and communicating properly.",
+      "ownerSafeActions": [
+        "Record the LED activity only if it is visible without tools.",
+        "Record thermostat model, zone, and whether normal touchscreen controls still respond.",
+        "If the thermostat is not operating normally, stop the affected heating or cooling call from normal controls and contact qualified service."
+      ],
+      "serviceOnlyActions": [
+        "Thermostat removal, wiring, zone control box, network communication hardware, installation, and power diagnosis are trained technician work."
+      ],
+      "safetyBoundary": "Use normal thermostat controls only. Do not take the thermostat off the wall or disturb thermostat/network hardware unless qualified.",
+      "sourceIds": [
+        "coleman-9420-330-multizone-controller"
+      ],
+      "symptomIds": [
+        "coleman-9420-330-network-status-led",
+        "thermostat-delay-or-no-response",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "thermostat model",
+        "zone number",
+        "LED activity",
+        "touchscreen state"
+      ]
+    },
+    {
+      "id": "coleman-9420-330-status-led-off",
+      "brand": "Coleman-Mach",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "Coleman-Mach 9420-330 multi-zone wall thermostat"
+      ],
+      "code": "Off",
+      "slug": "coleman-mach-9420-330-status-led-off-no-power-or-failed",
+      "plainMeaning": "The Coleman-Mach 9420-330 guide lists an off status LED as the device having no power or having completely failed.",
+      "ownerSafeActions": [
+        "Record the LED activity only if it is visible without tools.",
+        "Record thermostat model, zone, and whether normal touchscreen controls still respond.",
+        "If the off LED state persists, stop the affected heating or cooling call from normal controls and contact qualified service."
+      ],
+      "serviceOnlyActions": [
+        "Thermostat removal, wiring, zone control box, network communication hardware, installation, and power diagnosis are trained technician work."
+      ],
+      "safetyBoundary": "Use normal thermostat controls only. Do not take the thermostat off the wall or disturb thermostat/network hardware unless qualified.",
+      "sourceIds": [
+        "coleman-9420-330-multizone-controller"
+      ],
+      "symptomIds": [
+        "coleman-9420-330-network-status-led",
+        "thermostat-delay-or-no-response",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "thermostat model",
+        "zone number",
+        "LED activity",
+        "touchscreen state"
+      ]
+    },
+    {
+      "id": "coleman-9420-330-status-led-solid-red",
+      "brand": "Coleman-Mach",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "Coleman-Mach 9420-330 multi-zone wall thermostat"
+      ],
+      "code": "Solid Red",
+      "slug": "coleman-mach-9420-330-status-led-solid-red-offline",
+      "plainMeaning": "The Coleman-Mach 9420-330 guide lists a solid red status LED as the device being offline and not connected to the network.",
+      "ownerSafeActions": [
+        "Record the LED activity only if it is visible without tools.",
+        "Record thermostat model, zone, and whether normal touchscreen controls still respond.",
+        "If the red LED state persists, stop the affected heating or cooling call from normal controls and contact qualified service."
+      ],
+      "serviceOnlyActions": [
+        "Thermostat removal, wiring, zone control box, network communication hardware, installation, and power diagnosis are trained technician work."
+      ],
+      "safetyBoundary": "Use normal thermostat controls only. Do not take the thermostat off the wall or disturb thermostat/network hardware unless qualified.",
+      "sourceIds": [
+        "coleman-9420-330-multizone-controller"
+      ],
+      "symptomIds": [
+        "coleman-9420-330-network-status-led",
+        "thermostat-delay-or-no-response",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "thermostat model",
+        "zone number",
+        "LED activity",
+        "touchscreen state"
+      ]
+    },
+    {
+      "id": "coleman-9420-330-status-led-fast-flashing-green",
+      "brand": "Coleman-Mach",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "Coleman-Mach 9420-330 multi-zone wall thermostat"
+      ],
+      "code": "Fast Flashing Green (4 Times/Sec)",
+      "slug": "coleman-mach-9420-330-status-led-fast-flashing-green",
+      "plainMeaning": "The Coleman-Mach 9420-330 guide lists a fast flashing green status LED at 4 times per second as the device attempting to make its initial network connection.",
+      "ownerSafeActions": [
+        "Record the LED activity only if it is visible without tools.",
+        "Record thermostat model, zone, and whether normal touchscreen controls still respond.",
+        "If the fast flashing LED state persists, stop the affected heating or cooling call from normal controls and contact qualified service."
+      ],
+      "serviceOnlyActions": [
+        "Thermostat removal, wiring, zone control box, network communication hardware, installation, and power diagnosis are trained technician work."
+      ],
+      "safetyBoundary": "Use normal thermostat controls only. Do not take the thermostat off the wall or disturb thermostat/network hardware unless qualified.",
+      "sourceIds": [
+        "coleman-9420-330-multizone-controller"
+      ],
+      "symptomIds": [
+        "coleman-9420-330-network-status-led",
+        "thermostat-delay-or-no-response",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "thermostat model",
+        "zone number",
+        "LED activity",
+        "touchscreen state"
+      ]
+    },
+    {
+      "id": "coleman-9420-330-status-led-slow-flashing-green",
+      "brand": "Coleman-Mach",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "Coleman-Mach 9420-330 multi-zone wall thermostat"
+      ],
+      "code": "Slow Flashing Green (1 Time/Sec)",
+      "slug": "coleman-mach-9420-330-status-led-slow-flashing-green",
+      "plainMeaning": "The Coleman-Mach 9420-330 guide lists a slow flashing green status LED at 1 time per second as the device having been online but having no valid network message for 5 seconds.",
+      "ownerSafeActions": [
+        "Record the LED activity only if it is visible without tools.",
+        "Record thermostat model, zone, and whether normal touchscreen controls still respond.",
+        "If the slow flashing LED state persists, stop the affected heating or cooling call from normal controls and contact qualified service."
+      ],
+      "serviceOnlyActions": [
+        "Thermostat removal, wiring, zone control box, network communication hardware, installation, and power diagnosis are trained technician work."
+      ],
+      "safetyBoundary": "Use normal thermostat controls only. Do not take the thermostat off the wall or disturb thermostat/network hardware unless qualified.",
+      "sourceIds": [
+        "coleman-9420-330-multizone-controller"
+      ],
+      "symptomIds": [
+        "coleman-9420-330-network-status-led",
+        "thermostat-delay-or-no-response",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "thermostat model",
+        "zone number",
+        "LED activity",
+        "touchscreen state"
+      ]
+    },
+    {
+      "id": "coleman-9420-330-status-led-alternating-red-orange",
+      "brand": "Coleman-Mach",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "Coleman-Mach 9420-330 multi-zone wall thermostat"
+      ],
+      "code": "Alternating Red & Orange",
+      "slug": "coleman-mach-9420-330-status-led-alternating-red-orange",
+      "plainMeaning": "The Coleman-Mach 9420-330 guide lists alternating red and orange as the device being offline and attempting to reconnect within 30 seconds.",
+      "ownerSafeActions": [
+        "Record the LED activity only if it is visible without tools.",
+        "Record thermostat model, zone, and whether normal touchscreen controls still respond.",
+        "If that LED state persists, stop the affected heating or cooling call from normal controls and contact qualified service."
+      ],
+      "serviceOnlyActions": [
+        "Thermostat removal, wiring, zone control box, network communication hardware, installation, and power diagnosis are trained technician work."
+      ],
+      "safetyBoundary": "Use normal thermostat controls only. Do not take the thermostat off the wall or disturb thermostat/network hardware unless qualified.",
+      "sourceIds": [
+        "coleman-9420-330-multizone-controller"
+      ],
+      "symptomIds": [
+        "coleman-9420-330-network-status-led",
+        "thermostat-delay-or-no-response",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "thermostat model",
+        "zone number",
+        "LED activity",
+        "touchscreen state"
+      ]
+    },
+    {
+      "id": "coleman-9420-330-status-led-alternating-green-orange",
+      "brand": "Coleman-Mach",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "Coleman-Mach 9420-330 multi-zone wall thermostat"
+      ],
+      "code": "Alternating Green & Orange",
+      "slug": "coleman-mach-9420-330-status-led-alternating-green-orange",
+      "plainMeaning": "The Coleman-Mach 9420-330 guide lists alternating green and orange as the device being currently online but having gone offline 2 or more times.",
+      "ownerSafeActions": [
+        "Record the LED activity only if it is visible without tools.",
+        "Record thermostat model, zone, and whether normal touchscreen controls still respond.",
+        "If that LED state persists, stop the affected heating or cooling call from normal controls and contact qualified service."
+      ],
+      "serviceOnlyActions": [
+        "Thermostat removal, wiring, zone control box, network communication hardware, installation, and power diagnosis are trained technician work."
+      ],
+      "safetyBoundary": "Use normal thermostat controls only. Do not take the thermostat off the wall or disturb thermostat/network hardware unless qualified.",
+      "sourceIds": [
+        "coleman-9420-330-multizone-controller"
+      ],
+      "symptomIds": [
+        "coleman-9420-330-network-status-led",
+        "thermostat-delay-or-no-response",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "thermostat model",
+        "zone number",
+        "LED activity",
+        "touchscreen state"
       ]
     },
     {
@@ -17608,6 +18095,271 @@
         "hot-water flow state",
         "LP and 12V status"
       ]
+    },
+    {
+      "brand": "Suburban/Atwood",
+      "equipmentType": "Induction cooktop",
+      "modelFamilies": [
+        "Suburban single element induction cooktop",
+        "Suburban double element induction cooktop"
+      ],
+      "serviceOnlyActions": [
+        "Opening or attempting to open, modifying, disassembling, repairing, sensor, control, outlet, cord, plug, internal electrical, and power-supply diagnosis is dealer, Suburban Customer Service, qualified RV technician, or electrician work."
+      ],
+      "safetyBoundary": "Do not open or attempt to open the cooktop. Stop use after repeated error codes, damaged cord or plug, abnormal heat, or any suspected electrical problem and contact Suburban Customer Service or qualified service.",
+      "sourceIds": [
+        "suburban-induction-cooktop-guide"
+      ],
+      "partCaptureHints": [
+        "model number",
+        "serial number",
+        "stock number",
+        "data plate on bottom housing"
+      ],
+      "id": "suburban-induction-cooktop-e0",
+      "code": "E0",
+      "slug": "suburban-induction-cooktop-e0-cookware-not-compatible",
+      "plainMeaning": "Cookware is not on the induction cooktop, the cookware diameter is too small, or the cookware is not compatible for induction use.",
+      "ownerSafeActions": [
+        "Turn the cooktop off.",
+        "Use ferromagnetic induction-compatible cookware with contents centered on the induction element.",
+        "Record the displayed E0 code and model, serial, and stock numbers if the code continues with compatible cookware."
+      ],
+      "symptomIds": [
+        "suburban-induction-cookware-or-no-pan"
+      ]
+    },
+    {
+      "brand": "Suburban/Atwood",
+      "equipmentType": "Induction cooktop",
+      "modelFamilies": [
+        "Suburban single element induction cooktop",
+        "Suburban double element induction cooktop"
+      ],
+      "serviceOnlyActions": [
+        "Opening or attempting to open, modifying, disassembling, repairing, sensor, control, outlet, cord, plug, internal electrical, and power-supply diagnosis is dealer, Suburban Customer Service, qualified RV technician, or electrician work."
+      ],
+      "safetyBoundary": "Do not open or attempt to open the cooktop. Stop use after repeated error codes, damaged cord or plug, abnormal heat, or any suspected electrical problem and contact Suburban Customer Service or qualified service.",
+      "sourceIds": [
+        "suburban-induction-cooktop-guide"
+      ],
+      "partCaptureHints": [
+        "model number",
+        "serial number",
+        "stock number",
+        "data plate on bottom housing"
+      ],
+      "id": "suburban-induction-cooktop-e1",
+      "code": "E1",
+      "slug": "suburban-induction-cooktop-e1-outlet-voltage-low",
+      "plainMeaning": "Outlet voltage is too low; Suburban says to check the power supply.",
+      "ownerSafeActions": [
+        "Turn the cooktop off and stop cooking until RV power is stable.",
+        "Record whether E1 appears on shore power, generator power, inverter power, or a specific campsite pedestal.",
+        "Check only normal RV power status indicators and whether other appliances show power problems from owner-accessible controls."
+      ],
+      "symptomIds": [
+        "suburban-induction-voltage-error",
+        "low-voltage"
+      ]
+    },
+    {
+      "brand": "Suburban/Atwood",
+      "equipmentType": "Induction cooktop",
+      "modelFamilies": [
+        "Suburban single element induction cooktop",
+        "Suburban double element induction cooktop"
+      ],
+      "serviceOnlyActions": [
+        "Opening or attempting to open, modifying, disassembling, repairing, sensor, control, outlet, cord, plug, internal electrical, and power-supply diagnosis is dealer, Suburban Customer Service, qualified RV technician, or electrician work."
+      ],
+      "safetyBoundary": "Do not open or attempt to open the cooktop. Stop use after repeated error codes, damaged cord or plug, abnormal heat, or any suspected electrical problem and contact Suburban Customer Service or qualified service.",
+      "sourceIds": [
+        "suburban-induction-cooktop-guide"
+      ],
+      "partCaptureHints": [
+        "model number",
+        "serial number",
+        "stock number",
+        "data plate on bottom housing"
+      ],
+      "id": "suburban-induction-cooktop-e2",
+      "code": "E2",
+      "slug": "suburban-induction-cooktop-e2-outlet-voltage-high",
+      "plainMeaning": "Outlet voltage is too high; Suburban says to check the power supply.",
+      "ownerSafeActions": [
+        "Turn the cooktop off and stop cooking until RV power is stable.",
+        "Record whether E2 appears on shore power, generator power, inverter power, or a specific campsite pedestal.",
+        "Check only normal RV power status indicators and whether other appliances show power problems from owner-accessible controls."
+      ],
+      "symptomIds": [
+        "suburban-induction-voltage-error"
+      ]
+    },
+    {
+      "brand": "Suburban/Atwood",
+      "equipmentType": "Induction cooktop",
+      "modelFamilies": [
+        "Suburban single element induction cooktop",
+        "Suburban double element induction cooktop"
+      ],
+      "serviceOnlyActions": [
+        "Opening or attempting to open, modifying, disassembling, repairing, sensor, control, outlet, cord, plug, internal electrical, and power-supply diagnosis is dealer, Suburban Customer Service, qualified RV technician, or electrician work."
+      ],
+      "safetyBoundary": "Do not open or attempt to open the cooktop. Stop use after repeated error codes, damaged cord or plug, abnormal heat, or any suspected electrical problem and contact Suburban Customer Service or qualified service.",
+      "sourceIds": [
+        "suburban-induction-cooktop-guide"
+      ],
+      "partCaptureHints": [
+        "model number",
+        "serial number",
+        "stock number",
+        "data plate on bottom housing"
+      ],
+      "id": "suburban-induction-cooktop-e3",
+      "code": "E3",
+      "slug": "suburban-induction-cooktop-e3-surface-too-hot",
+      "plainMeaning": "Cooktop surface is too hot; Suburban says to turn the unit off until it is cool enough to be used again.",
+      "ownerSafeActions": [
+        "Turn the cooktop off.",
+        "Wait until the cooktop surface is completely cool before cleaning or restarting.",
+        "After cooldown, make sure cookware is not empty and the air intake and exhaust vent area are clear."
+      ],
+      "symptomIds": [
+        "suburban-induction-overheat"
+      ]
+    },
+    {
+      "brand": "Suburban/Atwood",
+      "equipmentType": "Induction cooktop",
+      "modelFamilies": [
+        "Suburban single element induction cooktop",
+        "Suburban double element induction cooktop"
+      ],
+      "serviceOnlyActions": [
+        "Opening or attempting to open, modifying, disassembling, repairing, sensor, control, outlet, cord, plug, internal electrical, and power-supply diagnosis is dealer, Suburban Customer Service, qualified RV technician, or electrician work."
+      ],
+      "safetyBoundary": "Do not open or attempt to open the cooktop. Stop use after repeated error codes, damaged cord or plug, abnormal heat, or any suspected electrical problem and contact Suburban Customer Service or qualified service.",
+      "sourceIds": [
+        "suburban-induction-cooktop-guide"
+      ],
+      "partCaptureHints": [
+        "model number",
+        "serial number",
+        "stock number",
+        "data plate on bottom housing"
+      ],
+      "id": "suburban-induction-cooktop-e4",
+      "code": "E4",
+      "slug": "suburban-induction-cooktop-e4-surface-temperature-sensor-damaged",
+      "plainMeaning": "Cooktop surface temperature sensor is damaged; Suburban says to contact Suburban Customer Service.",
+      "ownerSafeActions": [
+        "Turn the cooktop off.",
+        "Record the displayed E4 code and the model, serial, and stock numbers from the ratings label.",
+        "Contact Suburban Customer Service, the dealer, or qualified RV service."
+      ],
+      "symptomIds": [
+        "suburban-induction-internal-error"
+      ]
+    },
+    {
+      "brand": "Suburban/Atwood",
+      "equipmentType": "Induction cooktop",
+      "modelFamilies": [
+        "Suburban single element induction cooktop",
+        "Suburban double element induction cooktop"
+      ],
+      "serviceOnlyActions": [
+        "Opening or attempting to open, modifying, disassembling, repairing, sensor, control, outlet, cord, plug, internal electrical, and power-supply diagnosis is dealer, Suburban Customer Service, qualified RV technician, or electrician work."
+      ],
+      "safetyBoundary": "Do not open or attempt to open the cooktop. Stop use after repeated error codes, damaged cord or plug, abnormal heat, or any suspected electrical problem and contact Suburban Customer Service or qualified service.",
+      "sourceIds": [
+        "suburban-induction-cooktop-guide"
+      ],
+      "partCaptureHints": [
+        "model number",
+        "serial number",
+        "stock number",
+        "data plate on bottom housing"
+      ],
+      "id": "suburban-induction-cooktop-e5",
+      "code": "E5",
+      "slug": "suburban-induction-cooktop-e5-internal-circuit-too-hot",
+      "plainMeaning": "Internal circuit is too hot; Suburban says to turn the unit off until it is cool enough to be used again.",
+      "ownerSafeActions": [
+        "Turn the cooktop off.",
+        "Wait until the cooktop is completely cool before restarting.",
+        "After cooldown, make sure the cooktop has clear space for fan ventilation and the air intake and exhaust vent area are clear."
+      ],
+      "symptomIds": [
+        "suburban-induction-overheat"
+      ]
+    },
+    {
+      "brand": "Suburban/Atwood",
+      "equipmentType": "Induction cooktop",
+      "modelFamilies": [
+        "Suburban single element induction cooktop",
+        "Suburban double element induction cooktop"
+      ],
+      "serviceOnlyActions": [
+        "Opening or attempting to open, modifying, disassembling, repairing, sensor, control, outlet, cord, plug, internal electrical, and power-supply diagnosis is dealer, Suburban Customer Service, qualified RV technician, or electrician work."
+      ],
+      "safetyBoundary": "Do not open or attempt to open the cooktop. Stop use after repeated error codes, damaged cord or plug, abnormal heat, or any suspected electrical problem and contact Suburban Customer Service or qualified service.",
+      "sourceIds": [
+        "suburban-induction-cooktop-guide"
+      ],
+      "partCaptureHints": [
+        "model number",
+        "serial number",
+        "stock number",
+        "data plate on bottom housing"
+      ],
+      "id": "suburban-induction-cooktop-e6",
+      "code": "E6",
+      "slug": "suburban-induction-cooktop-e6-surface-temperature-sensor-damaged",
+      "plainMeaning": "Cooktop surface temperature sensor is damaged; Suburban says to contact Suburban Customer Service.",
+      "ownerSafeActions": [
+        "Turn the cooktop off.",
+        "Record the displayed E6 code and the model, serial, and stock numbers from the ratings label.",
+        "Contact Suburban Customer Service, the dealer, or qualified RV service."
+      ],
+      "symptomIds": [
+        "suburban-induction-internal-error"
+      ]
+    },
+    {
+      "brand": "Suburban/Atwood",
+      "equipmentType": "Induction cooktop",
+      "modelFamilies": [
+        "Suburban single element induction cooktop",
+        "Suburban double element induction cooktop"
+      ],
+      "serviceOnlyActions": [
+        "Opening or attempting to open, modifying, disassembling, repairing, sensor, control, outlet, cord, plug, internal electrical, and power-supply diagnosis is dealer, Suburban Customer Service, qualified RV technician, or electrician work."
+      ],
+      "safetyBoundary": "Do not open or attempt to open the cooktop. Stop use after repeated error codes, damaged cord or plug, abnormal heat, or any suspected electrical problem and contact Suburban Customer Service or qualified service.",
+      "sourceIds": [
+        "suburban-induction-cooktop-guide"
+      ],
+      "partCaptureHints": [
+        "model number",
+        "serial number",
+        "stock number",
+        "data plate on bottom housing"
+      ],
+      "id": "suburban-induction-cooktop-e7",
+      "code": "E7",
+      "slug": "suburban-induction-cooktop-e7-internal-circuit-error",
+      "plainMeaning": "Internal circuit error; Suburban says to contact Suburban Customer Service.",
+      "ownerSafeActions": [
+        "Turn the cooktop off.",
+        "Record the displayed E7 code and the model, serial, and stock numbers from the ratings label.",
+        "Contact Suburban Customer Service, the dealer, or qualified RV service."
+      ],
+      "symptomIds": [
+        "suburban-induction-internal-error"
+      ]
     }
   ],
   "symptoms": [
@@ -17934,6 +18686,40 @@
       "sourceIds": [
         "coleman-9330-thermostat",
         "coleman-9420-thermostat"
+      ]
+    },
+    {
+      "id": "coleman-heat-pump-lockout",
+      "slug": "coleman-mach-heat-pump-lockout",
+      "title": "Coleman-Mach thermostat heat-pump lockout display",
+      "summary": "Use this when a Coleman-Mach heat-pump thermostat shows ELEC flashing, DIFF, DIFF flashing, or FLASHING GAS HEAT after repeated unmet electric-heat calls.",
+      "safeChecklist": [
+        "Record thermostat family, zone, display text, heat mode, room temperature, set point, outside temperature estimate, and how long the lockout has been active.",
+        "Wait through the manual-described lockout period if the RV remains safe and warm enough.",
+        "After lockout clears, keep the electric-heat set point within four degrees of room temperature before trying electric heat again.",
+        "Use normal backup heat controls during the lockout if available, and contact qualified service if lockout repeats in moderate outdoor conditions."
+      ],
+      "sourceIds": [
+        "coleman-bluetooth-9630-352-heat-pump",
+        "coleman-bluetooth-9630-351-353-heat-pump",
+        "coleman-6535-335-heat-pump-thermostat",
+        "coleman-6536-335-heat-pump-thermostat",
+        "coleman-heat-pump-thermostat-lockout-function"
+      ]
+    },
+    {
+      "id": "coleman-9420-330-network-status-led",
+      "slug": "coleman-mach-9420-330-network-status-led",
+      "title": "Coleman-Mach 9420-330 thermostat status LED pattern",
+      "summary": "Use this when a Coleman-Mach 9420-330 multi-zone thermostat status LED shows off, red, flashing green, or alternating red/orange or green/orange network states.",
+      "safeChecklist": [
+        "Record the LED activity only if it is visible without tools.",
+        "Record thermostat model, zone, touchscreen state, and whether heating or cooling responds from normal controls.",
+        "Stop the affected heating or cooling call from normal controls if the thermostat does not respond normally.",
+        "Contact qualified RV HVAC service for persistent abnormal status LED patterns."
+      ],
+      "sourceIds": [
+        "coleman-9420-330-multizone-controller"
       ]
     },
     {
@@ -18525,6 +19311,66 @@
       ],
       "sourceIds": [
         "dometic-od5001-no-water-flow-support"
+      ]
+    },
+    {
+      "id": "suburban-induction-cookware-or-no-pan",
+      "slug": "suburban-induction-cookware-or-no-pan",
+      "title": "Suburban induction cooktop shows no pan or incompatible cookware",
+      "summary": "Use this when a Suburban single or double element induction cooktop shows E0 or will not heat with the current pan.",
+      "safeChecklist": [
+        "Turn the cooktop off before changing cookware.",
+        "Use cookware marked for induction or cookware that a magnet sticks to, with contents inside and centered on the element.",
+        "Record the model, serial, and stock numbers if E0 continues with compatible cookware.",
+        "Contact Suburban Customer Service or qualified RV service if the display error continues."
+      ],
+      "sourceIds": [
+        "suburban-induction-cooktop-guide"
+      ]
+    },
+    {
+      "id": "suburban-induction-voltage-error",
+      "slug": "suburban-induction-voltage-error",
+      "title": "Suburban induction cooktop low or high voltage error",
+      "summary": "Use this when a Suburban induction cooktop displays E1 or E2 and RV power quality may be involved.",
+      "safeChecklist": [
+        "Turn the cooktop off and stop cooking until RV power is stable.",
+        "Record whether the code appears on shore power, generator power, inverter power, or a specific campsite pedestal.",
+        "Check only normal RV power status indicators and whether other appliances show power problems from owner-accessible controls.",
+        "Call qualified RV electrical service for repeated E1 or E2, damaged cords or plugs, or suspected outlet or supply problems."
+      ],
+      "sourceIds": [
+        "suburban-induction-cooktop-guide"
+      ]
+    },
+    {
+      "id": "suburban-induction-overheat",
+      "slug": "suburban-induction-overheat",
+      "title": "Suburban induction cooktop surface or internal circuit too hot",
+      "summary": "Use this when a Suburban induction cooktop displays E3 or E5 and needs cooldown before reuse.",
+      "safeChecklist": [
+        "Turn the cooktop off.",
+        "Wait for the surface to be completely cool before cleaning or restarting.",
+        "After cooldown, confirm cookware was not empty and the cooktop has clear space for fan ventilation.",
+        "Contact Suburban Customer Service or qualified RV service if the overheat code repeats."
+      ],
+      "sourceIds": [
+        "suburban-induction-cooktop-guide"
+      ]
+    },
+    {
+      "id": "suburban-induction-internal-error",
+      "slug": "suburban-induction-internal-error",
+      "title": "Suburban induction cooktop sensor or internal circuit error",
+      "summary": "Use this when a Suburban induction cooktop displays E4, E6, or E7 and Suburban service guidance is needed.",
+      "safeChecklist": [
+        "Turn the cooktop off.",
+        "Record the displayed code plus the model, serial, and stock numbers from the ratings label.",
+        "Contact Suburban Customer Service, the dealer, or qualified RV service.",
+        "Do not use the cooktop again after a repeated internal error until it has been evaluated by service."
+      ],
+      "sourceIds": [
+        "suburban-induction-cooktop-guide"
       ]
     }
   ],

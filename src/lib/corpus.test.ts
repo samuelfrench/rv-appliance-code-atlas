@@ -834,6 +834,171 @@ describe("verified corpus", () => {
     expect(symptomById.get("furrion-water-heater-freeze-state")?.sourceIds).toContain("furrion-fwh09afa-ab-flangeless-spec");
   });
 
+  it("adds the official Suburban induction cooktop E0-E7 display-code table with owner-safe boundaries", () => {
+    const source = corpus.sources.find((item) => item.id === "suburban-induction-cooktop-guide");
+    expect(source?.official).toBe(true);
+    expect(source?.url).toBe(
+      "https://library.suburbanrv.com/wp-content/uploads/2023/04/206250_Suburban_Induction_Cooktop_RevNew_03-01-2023.pdf",
+    );
+
+    const entries = corpus.entries.filter((entry) => entry.sourceIds.includes("suburban-induction-cooktop-guide"));
+    expect(new Set(entries.map((entry) => entry.code))).toEqual(new Set(["E0", "E1", "E2", "E3", "E4", "E5", "E6", "E7"]));
+    expect(entries).toHaveLength(8);
+
+    const byCode = new Map(entries.map((entry) => [entry.code, entry]));
+    expect(byCode.get("E0")?.plainMeaning).toMatch(/cookware/i);
+    expect(byCode.get("E1")?.plainMeaning).toMatch(/voltage.*low/i);
+    expect(byCode.get("E2")?.plainMeaning).toMatch(/voltage.*high/i);
+    expect(byCode.get("E3")?.plainMeaning).toMatch(/surface.*hot/i);
+    expect(byCode.get("E4")?.plainMeaning).toMatch(/surface temperature sensor/i);
+    expect(byCode.get("E5")?.plainMeaning).toMatch(/internal circuit.*hot/i);
+    expect(byCode.get("E6")?.plainMeaning).toMatch(/surface temperature sensor/i);
+    expect(byCode.get("E7")?.plainMeaning).toMatch(/internal circuit error/i);
+
+    for (const entry of entries) {
+      expect(entry.brand).toBe("Suburban/Atwood");
+      expect(entry.equipmentType).toBe("Induction cooktop");
+      expect(entry.modelFamilies).toEqual(
+        expect.arrayContaining(["Suburban single element induction cooktop", "Suburban double element induction cooktop"]),
+      );
+      expect(entry.ownerSafeActions.join(" ")).not.toMatch(/open|modify|disassemble|repair|voltage meter|breaker|wiring/i);
+      expect(entry.serviceOnlyActions.join(" ")).toMatch(/open|modify|disassemble|repair|electrical/i);
+      expect(entry.safetyBoundary).toMatch(/do not open/i);
+      expect(entry.partCaptureHints).toEqual(expect.arrayContaining(["model number", "serial number", "stock number"]));
+    }
+
+    expect(byCode.get("E0")?.symptomIds).toContain("suburban-induction-cookware-or-no-pan");
+    expect(byCode.get("E1")?.symptomIds).toContain("suburban-induction-voltage-error");
+    expect(byCode.get("E2")?.symptomIds).toContain("suburban-induction-voltage-error");
+    expect(byCode.get("E3")?.symptomIds).toContain("suburban-induction-overheat");
+    expect(byCode.get("E5")?.symptomIds).toContain("suburban-induction-overheat");
+    expect(byCode.get("E4")?.symptomIds).toContain("suburban-induction-internal-error");
+    expect(byCode.get("E6")?.symptomIds).toContain("suburban-induction-internal-error");
+    expect(byCode.get("E7")?.symptomIds).toContain("suburban-induction-internal-error");
+
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    for (const symptomId of [
+      "suburban-induction-cookware-or-no-pan",
+      "suburban-induction-voltage-error",
+      "suburban-induction-overheat",
+      "suburban-induction-internal-error",
+    ]) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom?.sourceIds).toEqual(["suburban-induction-cooktop-guide"]);
+      expect(symptom?.safeChecklist.join(" ")).not.toMatch(/open|modify|disassemble|repair|voltage meter|breaker|wiring/i);
+    }
+  });
+
+  it("adds official Coleman-Mach heat-pump lockout and 9420-330 status LED displays with owner-safe boundaries", () => {
+    const expectedSources = new Map([
+      [
+        "coleman-9420-330-multizone-controller",
+        "https://library.coleman-mach.com/wp-content/uploads/2024/06/Coleman-9420-330.pdf",
+      ],
+      ["coleman-bluetooth-9630-352-heat-pump", "https://coleman-mach.com/files/bluetooth/liaf253.pdf"],
+      ["coleman-bluetooth-9630-351-353-heat-pump", "https://coleman-mach.com/files/bluetooth/liaf254.pdf"],
+      [
+        "coleman-6535-335-heat-pump-thermostat",
+        "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976A331.pdf",
+      ],
+      [
+        "coleman-6536-335-heat-pump-thermostat",
+        "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-340.pdf",
+      ],
+      ["coleman-heat-pump-thermostat-lockout-function", "https://coleman-mach.com/files/t_stat_electric_heat_function.pdf"],
+    ]);
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = corpus.sources.find((item) => item.id === sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    const heatPumpEntryIds = [
+      "coleman-9630-bluetooth-elec-flashing",
+      "coleman-6535-335-diff-flashing",
+      "coleman-6536-335-diff",
+      "coleman-heat-pump-thermostat-diff",
+      "coleman-heat-pump-thermostat-flashing-gas-heat",
+    ];
+    const heatPumpEntries = heatPumpEntryIds.map((id) => corpus.entries.find((entry) => entry.id === id));
+    const heatPumpById = new Map(heatPumpEntries.map((entry) => [entry?.id, entry]));
+
+    expect(heatPumpById.get("coleman-9630-bluetooth-elec-flashing")?.code).toBe("ELEC flashing");
+    expect(heatPumpById.get("coleman-9630-bluetooth-elec-flashing")?.sourceIds).toEqual(
+      expect.arrayContaining(["coleman-bluetooth-9630-352-heat-pump", "coleman-bluetooth-9630-351-353-heat-pump"]),
+    );
+    expect(heatPumpById.get("coleman-9630-bluetooth-elec-flashing")?.plainMeaning).toMatch(/heat pump.*lockout/i);
+    expect(heatPumpById.get("coleman-6535-335-diff-flashing")?.code).toBe("DIFF flashing");
+    expect(heatPumpById.get("coleman-6535-335-diff-flashing")?.plainMeaning).toMatch(/2nd stage heat/i);
+    expect(heatPumpById.get("coleman-6536-335-diff")?.code).toBe("DIFF");
+    expect(heatPumpById.get("coleman-6536-335-diff")?.plainMeaning).toMatch(/backup heat.*locked out/i);
+    expect(heatPumpById.get("coleman-heat-pump-thermostat-diff")?.plainMeaning).toMatch(/two hour lockout/i);
+    expect(heatPumpById.get("coleman-heat-pump-thermostat-flashing-gas-heat")?.code).toBe("FLASHING GAS HEAT");
+
+    for (const entry of heatPumpEntries) {
+      expect(entry?.brand).toBe("Coleman-Mach");
+      expect(entry?.equipmentType).toBe("Thermostat");
+      expect(entry?.ownerSafeActions.join(" ")).not.toMatch(/wiring|fuse|breaker|jumper|control board|main service panel|probe|open/i);
+      expect(entry?.serviceOnlyActions.join(" ")).toMatch(/wiring|electrical|installation|fuse|jumper|control/i);
+      expect(entry?.symptomIds).toContain("coleman-heat-pump-lockout");
+    }
+
+    const ledEntries = corpus.entries.filter((entry) => entry.sourceIds.includes("coleman-9420-330-multizone-controller"));
+    expect(new Set(ledEntries.map((entry) => entry.code))).toEqual(
+      new Set([
+        "Solid Green",
+        "Off",
+        "Solid Red",
+        "Fast Flashing Green (4 Times/Sec)",
+        "Slow Flashing Green (1 Time/Sec)",
+        "Alternating Red & Orange",
+        "Alternating Green & Orange",
+      ]),
+    );
+    expect(ledEntries).toHaveLength(7);
+
+    const ledByCode = new Map(ledEntries.map((entry) => [entry.code, entry]));
+    expect(ledByCode.get("Solid Green")?.plainMeaning).toMatch(/connected.*network.*communicating/i);
+    expect(ledByCode.get("Off")?.plainMeaning).toMatch(/no power|failed/i);
+    expect(ledByCode.get("Solid Red")?.plainMeaning).toMatch(/offline.*not connected/i);
+    expect(ledByCode.get("Fast Flashing Green (4 Times/Sec)")?.plainMeaning).toMatch(/initial.*network connection/i);
+    expect(ledByCode.get("Slow Flashing Green (1 Time/Sec)")?.plainMeaning).toMatch(/no valid network message/i);
+    expect(ledByCode.get("Alternating Red & Orange")?.plainMeaning).toMatch(/offline.*reconnect/i);
+    expect(ledByCode.get("Alternating Green & Orange")?.plainMeaning).toMatch(/gone offline.*2 or more/i);
+
+    for (const entry of ledEntries) {
+      expect(entry.brand).toBe("Coleman-Mach");
+      expect(entry.modelFamilies).toContain("Coleman-Mach 9420-330 multi-zone wall thermostat");
+      expect(entry.ownerSafeActions.join(" ")).not.toMatch(
+        /wiring|connect.*wire|install|main service panel|fuse|breaker|control box|hardware configuration|alter/i,
+      );
+      expect(entry.serviceOnlyActions.join(" ")).toMatch(/wiring|network|control box|hardware|installation|power/i);
+      expect(entry.symptomIds).toContain("coleman-9420-330-network-status-led");
+    }
+
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const heatPumpSymptom = symptomById.get("coleman-heat-pump-lockout");
+    expect(heatPumpSymptom?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "coleman-bluetooth-9630-352-heat-pump",
+        "coleman-bluetooth-9630-351-353-heat-pump",
+        "coleman-6535-335-heat-pump-thermostat",
+        "coleman-6536-335-heat-pump-thermostat",
+        "coleman-heat-pump-thermostat-lockout-function",
+      ]),
+    );
+    expect(heatPumpSymptom?.safeChecklist.join(" ")).not.toMatch(
+      /wiring|fuse|breaker|jumper|control board|main service panel|probe|open/i,
+    );
+
+    const ledSymptom = symptomById.get("coleman-9420-330-network-status-led");
+    expect(ledSymptom?.sourceIds).toEqual(["coleman-9420-330-multizone-controller"]);
+    expect(ledSymptom?.safeChecklist.join(" ")).not.toMatch(
+      /wiring|connect.*wire|install|main service panel|fuse|breaker|control box|hardware configuration|alter/i,
+    );
+  });
+
   it("adds official Girard GSWH-2 owner-manual display codes and keeps Girard tankless symptoms separate", () => {
     const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
     const girardOwnerSourceId = "girard-gswh2-owner-manual";
