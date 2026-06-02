@@ -24,7 +24,7 @@ function buildReport() {
       ready: false,
     })),
     nextAutomatedBatchGoal:
-      "Continue official Dometic refrigerator support-page gap research for remaining RM8/RM10/RUA/RUC/RMD support aliases not already covered by manuals, with duplicate filtering and owner-safe boundaries.",
+      "Add official Dometic RUA exact display-fault support aliases from sitemap-verified support pages while preserving the existing aggregate RUA fault-message table.",
     monitorCommand: "npm run traffic:monitor",
   };
 }

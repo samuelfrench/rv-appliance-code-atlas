@@ -147,6 +147,15 @@ describe("verified corpus", () => {
     expect(lookupEntries(index, "dometic rm8 flame not ignited internal power mode reset")[0]?.slug).toBe(
       "dometic-rm8-flame-not-ignited-internal-power-mode-reset",
     );
+    expect(lookupEntries(index, "dometic ruc display shows fault w10 door closed reset")[0]?.slug).toBe(
+      "dometic-ruc-display-fault-w10-door-closed-reset",
+    );
+    expect(lookupEntries(index, "dometic ruc display shows fault w11 check battery voltage reset")[0]?.slug).toBe(
+      "dometic-ruc-display-fault-w11-battery-voltage-reset",
+    );
+    expect(lookupEntries(index, "dometic ruc display shows fault e35 ventilation obstructed over temperature")[0]?.slug).toBe(
+      "dometic-ruc-display-fault-e35-ventilation-over-temperature",
+    );
   });
 
   it("summarizes code, source, symptom, and monetization readiness counts", () => {
@@ -171,6 +180,44 @@ describe("verified corpus", () => {
       new Set(["01", "03", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "22", "24", "50", "51", "52", "53"]),
     );
     expect(codesForSource("dometic-rm1350-operating")).toEqual(new Set(["E0", "E1", "E2", "E3", "E4"]));
+  });
+
+  it("includes official Dometic RUC exact fault support aliases for owner searches", () => {
+    const entries = corpus.entries.filter((entry) => entry.brand === "Dometic" && entry.equipmentType === "Refrigerator");
+    const codesForSource = (sourceId: string) =>
+      new Set(entries.filter((entry) => entry.sourceIds.includes(sourceId)).map((entry) => entry.code));
+    const supportUrls = new Map(corpus.sources.map((source) => [source.id, source.url]));
+
+    const expected = [
+      ["dometic-ruc-display-fault-w01-support", "W01", "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-W01-9bfc"],
+      ["dometic-ruc-display-fault-w02-support", "W02", "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-W02-2b96"],
+      ["dometic-ruc-display-fault-e03-support", "E03", "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-E03-1b63"],
+      ["dometic-ruc-display-fault-w04-support", "W04", "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-W04-6478"],
+      ["dometic-ruc-display-fault-w10-support", "W10", "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-W10-8ad2"],
+      ["dometic-ruc-display-fault-w11-support", "W11", "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-W11-ce91"],
+      ["dometic-ruc-display-fault-w14-support", "W14", "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-W14-2fb1"],
+      ["dometic-ruc-display-fault-w17-support", "W17", "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-W17-f713"],
+      ["dometic-ruc-display-fault-e18-support", "E18", "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-E18-5d25"],
+      ["dometic-ruc-display-fault-w19-support", "W19", "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-W19-19db"],
+      ["dometic-ruc-display-fault-w26-support", "W26", "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-W26-5b38"],
+      ["dometic-ruc-display-fault-e32-support", "E32", "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-E32-d739"],
+      ["dometic-ruc-display-fault-e33-support", "E33", "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-E33-83b"],
+      ["dometic-ruc-display-fault-e34-support", "E34", "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-E34-f44"],
+      ["dometic-ruc-display-fault-e35-support", "E35", "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-E35-63a0"],
+    ] as const;
+
+    for (const [sourceId, code, url] of expected) {
+      expect(supportUrls.get(sourceId)).toBe(url);
+      expect(codesForSource(sourceId)).toEqual(new Set([`Display fault ${code}`]));
+    }
+
+    const batteryVoltage = entries.find((entry) => entry.id === "dometic-ruc-display-fault-w11-battery-voltage-reset");
+    expect(batteryVoltage?.ownerSafeActions.join(" ")).toMatch(/battery voltage/i);
+    expect(batteryVoltage?.ownerSafeActions.join(" ")).not.toMatch(/\bfuses?\b/i);
+
+    const ventilation = entries.find((entry) => entry.id === "dometic-ruc-display-fault-e35-ventilation-over-temperature");
+    expect(ventilation?.ownerSafeActions.join(" ")).toMatch(/ventilation/i);
+    expect(ventilation?.serviceOnlyActions.join(" ")).toContain("authorized service provider");
   });
 
   it("includes the full official Dometic CCC2 thermostat LCD error-code set", () => {

@@ -247,6 +247,126 @@
       "official": true
     },
     {
+      "id": "dometic-ruc-display-fault-w01-support",
+      "brand": "Dometic",
+      "title": "Display shows fault: W01 | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-W01-9bfc",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-display-fault-w02-support",
+      "brand": "Dometic",
+      "title": "Display shows fault: W02 | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-W02-2b96",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-display-fault-e03-support",
+      "brand": "Dometic",
+      "title": "Display shows fault: E03 | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-E03-1b63",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-display-fault-w04-support",
+      "brand": "Dometic",
+      "title": "Display shows fault: W04 | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-W04-6478",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-display-fault-w10-support",
+      "brand": "Dometic",
+      "title": "Display shows fault: W10 | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-W10-8ad2",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-display-fault-w11-support",
+      "brand": "Dometic",
+      "title": "Display shows fault: W11 | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-W11-ce91",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-display-fault-w14-support",
+      "brand": "Dometic",
+      "title": "Display shows fault: W14 | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-W14-2fb1",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-display-fault-w17-support",
+      "brand": "Dometic",
+      "title": "Display shows fault: W17 | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-W17-f713",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-display-fault-e18-support",
+      "brand": "Dometic",
+      "title": "Display shows fault: E18 | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-E18-5d25",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-display-fault-w19-support",
+      "brand": "Dometic",
+      "title": "Display shows fault: W19 | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-W19-19db",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-display-fault-w26-support",
+      "brand": "Dometic",
+      "title": "Display shows fault: W26 | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-W26-5b38",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-display-fault-e32-support",
+      "brand": "Dometic",
+      "title": "Display shows fault: E32 | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-E32-d739",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-display-fault-e33-support",
+      "brand": "Dometic",
+      "title": "Display shows fault: E33 | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-E33-83b",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-display-fault-e34-support",
+      "brand": "Dometic",
+      "title": "Display shows fault: E34 | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-E34-f44",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-display-fault-e35-support",
+      "brand": "Dometic",
+      "title": "Display shows fault: E35 | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/Display-shows-fault-E35-63a0",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
       "id": "dometic-water-heater-combo-function-support",
       "brand": "Dometic",
       "title": "Dometic Gas/Electric Combination Function Information | Water Heaters - Combo Gas & Electric | Support",
@@ -3323,6 +3443,510 @@
         "RUC model label",
         "serial number",
         "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-ruc-display-fault-w01-reset-service",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "Display fault W01",
+      "slug": "dometic-ruc-display-fault-w01-reset-service",
+      "plainMeaning": "The official Dometic RUC support page for display fault W01 says to reset the error with the encoder button and continue to authorized service if the problem remains.",
+      "ownerSafeActions": [
+        "Record display fault W01 and take a photo of the display.",
+        "Reset the error once by pressing the encoder button for 3 seconds until a beep is heard.",
+        "Do not keep holding the encoder button after the reset beep; the page warns that holding too long turns the refrigerator off without resetting the error."
+      ],
+      "serviceOnlyActions": [
+        "A continuing W01 fault must be handled by an authorized service provider.",
+        "Internal refrigerator diagnosis, compressor or cooling-system work, wiring, sensors, and control electronics are service-only."
+      ],
+      "safetyBoundary": "Do not service refrigerator wiring, sensors, compressor/cooling components, or control electronics; use only the front-panel reset and arrange qualified service if the fault remains or returns.",
+      "sourceIds": [
+        "dometic-ruc-display-fault-w01-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of display fault W01"
+      ]
+    },
+    {
+      "id": "dometic-ruc-display-fault-w02-reset-service",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "Display fault W02",
+      "slug": "dometic-ruc-display-fault-w02-reset-service",
+      "plainMeaning": "The official Dometic RUC support page for display fault W02 says to reset the error with the encoder button and continue to authorized service if the problem remains.",
+      "ownerSafeActions": [
+        "Record display fault W02 and take a photo of the display.",
+        "Reset the error once by pressing the encoder button for 3 seconds until a beep is heard.",
+        "Do not keep holding the encoder button after the reset beep; the page warns that holding too long turns the refrigerator off without resetting the error."
+      ],
+      "serviceOnlyActions": [
+        "A continuing W02 fault must be handled by an authorized service provider.",
+        "Internal refrigerator diagnosis, compressor or cooling-system work, wiring, sensors, and control electronics are service-only."
+      ],
+      "safetyBoundary": "Do not service refrigerator wiring, sensors, compressor/cooling components, or control electronics; use only the front-panel reset and arrange qualified service if the fault remains or returns.",
+      "sourceIds": [
+        "dometic-ruc-display-fault-w02-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of display fault W02"
+      ]
+    },
+    {
+      "id": "dometic-ruc-display-fault-e03-reset-service",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "Display fault E03",
+      "slug": "dometic-ruc-display-fault-e03-reset-service",
+      "plainMeaning": "The official Dometic RUC support page for display fault E03 says to reset the error with the encoder button and continue to authorized service if the problem remains.",
+      "ownerSafeActions": [
+        "Record display fault E03 and take a photo of the display.",
+        "Reset the error once by pressing the encoder button for 3 seconds until a beep is heard.",
+        "Do not keep holding the encoder button after the reset beep; the page warns that holding too long turns the refrigerator off without resetting the error."
+      ],
+      "serviceOnlyActions": [
+        "A continuing E03 fault must be handled by an authorized service provider.",
+        "Internal refrigerator diagnosis, compressor or cooling-system work, wiring, sensors, and control electronics are service-only."
+      ],
+      "safetyBoundary": "Do not service refrigerator wiring, sensors, compressor/cooling components, or control electronics; use only the front-panel reset and arrange qualified service if the fault remains or returns.",
+      "sourceIds": [
+        "dometic-ruc-display-fault-e03-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of display fault E03"
+      ]
+    },
+    {
+      "id": "dometic-ruc-display-fault-w04-reset-service",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "Display fault W04",
+      "slug": "dometic-ruc-display-fault-w04-reset-service",
+      "plainMeaning": "The official Dometic RUC support page for display fault W04 says to reset the error with the encoder button and continue to authorized service if the problem remains.",
+      "ownerSafeActions": [
+        "Record display fault W04 and take a photo of the display.",
+        "Reset the error once by pressing the encoder button for 3 seconds until a beep is heard.",
+        "Do not keep holding the encoder button after the reset beep; the page warns that holding too long turns the refrigerator off without resetting the error."
+      ],
+      "serviceOnlyActions": [
+        "A continuing W04 fault must be handled by an authorized service provider.",
+        "Internal refrigerator diagnosis, compressor or cooling-system work, wiring, sensors, and control electronics are service-only."
+      ],
+      "safetyBoundary": "Do not service refrigerator wiring, sensors, compressor/cooling components, or control electronics; use only the front-panel reset and arrange qualified service if the fault remains or returns.",
+      "sourceIds": [
+        "dometic-ruc-display-fault-w04-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of display fault W04"
+      ]
+    },
+    {
+      "id": "dometic-ruc-display-fault-w10-door-closed-reset",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "Display fault W10",
+      "slug": "dometic-ruc-display-fault-w10-door-closed-reset",
+      "plainMeaning": "The official Dometic RUC support page for display fault W10 says to make sure the door is properly closed, then reset the error with the encoder button if necessary.",
+      "ownerSafeActions": [
+        "Record display fault W10 and take a photo of the display.",
+        "Make sure the refrigerator door is properly closed.",
+        "If needed, reset the error once by pressing the encoder button for 3 seconds until a beep is heard."
+      ],
+      "serviceOnlyActions": [
+        "A continuing W10 fault must be handled by an authorized service provider.",
+        "Door-switch, wiring, sensor, control-electronics, and internal refrigerator diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not adjust door switches, wiring, sensors, or refrigerator controls; use only normal door closure and front-panel reset checks before arranging qualified service.",
+      "sourceIds": [
+        "dometic-ruc-display-fault-w10-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of display fault W10",
+        "door closure status"
+      ]
+    },
+    {
+      "id": "dometic-ruc-display-fault-w11-battery-voltage-reset",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "Display fault W11",
+      "slug": "dometic-ruc-display-fault-w11-battery-voltage-reset",
+      "plainMeaning": "The official Dometic RUC support page for display fault W11 says to check battery voltage and reset the error with the encoder button.",
+      "ownerSafeActions": [
+        "Record display fault W11 and take a photo of the display.",
+        "Check battery voltage only from owner-visible RV monitor panels or normal refrigerator controls.",
+        "Reset the error once by pressing the encoder button for 3 seconds until a beep is heard."
+      ],
+      "serviceOnlyActions": [
+        "A continuing W11 fault must be handled by an authorized service provider.",
+        "Battery-supply diagnosis, wiring, fuses, sensors, and control electronics are service-only."
+      ],
+      "safetyBoundary": "Do not service DC circuits, wiring, fuses, sensors, or refrigerator controls; use only owner-visible battery-voltage checks and front-panel reset before qualified service.",
+      "sourceIds": [
+        "dometic-ruc-display-fault-w11-support"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of display fault W11",
+        "battery voltage shown by owner-visible monitor"
+      ]
+    },
+    {
+      "id": "dometic-ruc-display-fault-w14-reset-service",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "Display fault W14",
+      "slug": "dometic-ruc-display-fault-w14-reset-service",
+      "plainMeaning": "The official Dometic RUC support page for display fault W14 says to reset the error with the encoder button and continue to authorized service if the problem remains.",
+      "ownerSafeActions": [
+        "Record display fault W14 and take a photo of the display.",
+        "Reset the error once by pressing the encoder button for 3 seconds until a beep is heard.",
+        "Do not keep holding the encoder button after the reset beep; the page warns that holding too long turns the refrigerator off without resetting the error."
+      ],
+      "serviceOnlyActions": [
+        "A continuing W14 fault must be handled by an authorized service provider.",
+        "Internal refrigerator diagnosis, compressor or cooling-system work, wiring, sensors, and control electronics are service-only."
+      ],
+      "safetyBoundary": "Do not service refrigerator wiring, sensors, compressor/cooling components, or control electronics; use only the front-panel reset and arrange qualified service if the fault remains or returns.",
+      "sourceIds": [
+        "dometic-ruc-display-fault-w14-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of display fault W14"
+      ]
+    },
+    {
+      "id": "dometic-ruc-display-fault-w17-reset-service",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "Display fault W17",
+      "slug": "dometic-ruc-display-fault-w17-reset-service",
+      "plainMeaning": "The official Dometic RUC support page for display fault W17 says to reset the error with the encoder button and continue to authorized service if the problem remains.",
+      "ownerSafeActions": [
+        "Record display fault W17 and take a photo of the display.",
+        "Reset the error once by pressing the encoder button for 3 seconds until a beep is heard.",
+        "Do not keep holding the encoder button after the reset beep; the page warns that holding too long turns the refrigerator off without resetting the error."
+      ],
+      "serviceOnlyActions": [
+        "A continuing W17 fault must be handled by an authorized service provider.",
+        "Internal refrigerator diagnosis, compressor or cooling-system work, wiring, sensors, and control electronics are service-only."
+      ],
+      "safetyBoundary": "Do not service refrigerator wiring, sensors, compressor/cooling components, or control electronics; use only the front-panel reset and arrange qualified service if the fault remains or returns.",
+      "sourceIds": [
+        "dometic-ruc-display-fault-w17-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of display fault W17"
+      ]
+    },
+    {
+      "id": "dometic-ruc-display-fault-e18-reset-service",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "Display fault E18",
+      "slug": "dometic-ruc-display-fault-e18-reset-service",
+      "plainMeaning": "The official Dometic RUC support page for display fault E18 says to reset the error with the encoder button and continue to authorized service if the problem remains.",
+      "ownerSafeActions": [
+        "Record display fault E18 and take a photo of the display.",
+        "Reset the error once by pressing the encoder button for 3 seconds until a beep is heard.",
+        "Do not keep holding the encoder button after the reset beep; the page warns that holding too long turns the refrigerator off without resetting the error."
+      ],
+      "serviceOnlyActions": [
+        "A continuing E18 fault must be handled by an authorized service provider.",
+        "Internal refrigerator diagnosis, compressor or cooling-system work, wiring, sensors, and control electronics are service-only."
+      ],
+      "safetyBoundary": "Do not service refrigerator wiring, sensors, compressor/cooling components, or control electronics; use only the front-panel reset and arrange qualified service if the fault remains or returns.",
+      "sourceIds": [
+        "dometic-ruc-display-fault-e18-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of display fault E18"
+      ]
+    },
+    {
+      "id": "dometic-ruc-display-fault-w19-low-voltage-reset",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "Display fault W19",
+      "slug": "dometic-ruc-display-fault-w19-low-voltage-reset",
+      "plainMeaning": "The official Dometic RUC support page for display fault W19 says it is a low-voltage error, to check battery voltage, and to reset the error with the encoder button.",
+      "ownerSafeActions": [
+        "Record display fault W19 and take a photo of the display.",
+        "Check battery voltage only from owner-visible RV monitor panels or normal refrigerator controls.",
+        "Reset the error once by pressing the encoder button for 3 seconds until a beep is heard."
+      ],
+      "serviceOnlyActions": [
+        "A continuing W19 low-voltage fault must be handled by an authorized service provider.",
+        "Battery-supply diagnosis, wiring, fuses, sensors, and control electronics are service-only."
+      ],
+      "safetyBoundary": "Do not service DC circuits, wiring, fuses, sensors, or refrigerator controls; use only owner-visible battery-voltage checks and front-panel reset before qualified service.",
+      "sourceIds": [
+        "dometic-ruc-display-fault-w19-support"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of display fault W19",
+        "battery voltage shown by owner-visible monitor"
+      ]
+    },
+    {
+      "id": "dometic-ruc-display-fault-w26-reset-service",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "Display fault W26",
+      "slug": "dometic-ruc-display-fault-w26-reset-service",
+      "plainMeaning": "The official Dometic RUC support page for display fault W26 says to reset the error with the encoder button and continue to authorized service if the problem remains.",
+      "ownerSafeActions": [
+        "Record display fault W26 and take a photo of the display.",
+        "Reset the error once by pressing the encoder button for 3 seconds until a beep is heard.",
+        "Do not keep holding the encoder button after the reset beep; the page warns that holding too long turns the refrigerator off without resetting the error."
+      ],
+      "serviceOnlyActions": [
+        "A continuing W26 fault must be handled by an authorized service provider.",
+        "Internal refrigerator diagnosis, compressor or cooling-system work, wiring, sensors, and control electronics are service-only."
+      ],
+      "safetyBoundary": "Do not service refrigerator wiring, sensors, compressor/cooling components, or control electronics; use only the front-panel reset and arrange qualified service if the fault remains or returns.",
+      "sourceIds": [
+        "dometic-ruc-display-fault-w26-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of display fault W26"
+      ]
+    },
+    {
+      "id": "dometic-ruc-display-fault-e32-reset-service",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "Display fault E32",
+      "slug": "dometic-ruc-display-fault-e32-reset-service",
+      "plainMeaning": "The official Dometic RUC support page for display fault E32 says to reset the error with the encoder button and continue to authorized service if the problem remains.",
+      "ownerSafeActions": [
+        "Record display fault E32 and take a photo of the display.",
+        "Reset the error once by pressing the encoder button for 3 seconds until a beep is heard.",
+        "Do not keep holding the encoder button after the reset beep; the page warns that holding too long turns the refrigerator off without resetting the error."
+      ],
+      "serviceOnlyActions": [
+        "A continuing E32 fault must be handled by an authorized service provider.",
+        "Internal refrigerator diagnosis, compressor or cooling-system work, wiring, sensors, and control electronics are service-only."
+      ],
+      "safetyBoundary": "Do not service refrigerator wiring, sensors, compressor/cooling components, or control electronics; use only the front-panel reset and arrange qualified service if the fault remains or returns.",
+      "sourceIds": [
+        "dometic-ruc-display-fault-e32-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of display fault E32"
+      ]
+    },
+    {
+      "id": "dometic-ruc-display-fault-e33-battery-voltage-reset",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "Display fault E33",
+      "slug": "dometic-ruc-display-fault-e33-battery-voltage-reset",
+      "plainMeaning": "The official Dometic RUC support page for display fault E33 says to check battery voltage and reset the error with the encoder button.",
+      "ownerSafeActions": [
+        "Record display fault E33 and take a photo of the display.",
+        "Check battery voltage only from owner-visible RV monitor panels or normal refrigerator controls.",
+        "Reset the error once by pressing the encoder button for 3 seconds until a beep is heard."
+      ],
+      "serviceOnlyActions": [
+        "A continuing E33 fault must be handled by an authorized service provider.",
+        "Battery-supply diagnosis, wiring, fuses, sensors, and control electronics are service-only."
+      ],
+      "safetyBoundary": "Do not service DC circuits, wiring, fuses, sensors, or refrigerator controls; use only owner-visible battery-voltage checks and front-panel reset before qualified service.",
+      "sourceIds": [
+        "dometic-ruc-display-fault-e33-support"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of display fault E33",
+        "battery voltage shown by owner-visible monitor"
+      ]
+    },
+    {
+      "id": "dometic-ruc-display-fault-e34-warm-goods-reset",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "Display fault E34",
+      "slug": "dometic-ruc-display-fault-e34-warm-goods-reset",
+      "plainMeaning": "The official Dometic RUC support page for display fault E34 says to make sure the refrigerator was not filled with warm goods, then reset the error with the encoder button.",
+      "ownerSafeActions": [
+        "Record display fault E34 and take a photo of the display.",
+        "Check whether the refrigerator was recently filled with warm goods.",
+        "Reset the error once by pressing the encoder button for 3 seconds until a beep is heard."
+      ],
+      "serviceOnlyActions": [
+        "A continuing E34 fault must be handled by an authorized service provider.",
+        "Cooling-system, compressor, sensor, wiring, and control-electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service refrigerator cooling components, compressor, wiring, sensors, or controls; use only owner-visible loading and front-panel reset checks before qualified service.",
+      "sourceIds": [
+        "dometic-ruc-display-fault-e34-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of display fault E34",
+        "recent warm-food loading notes"
+      ]
+    },
+    {
+      "id": "dometic-ruc-display-fault-e35-ventilation-over-temperature",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "Display fault E35",
+      "slug": "dometic-ruc-display-fault-e35-ventilation-over-temperature",
+      "plainMeaning": "The official Dometic RUC support page for display fault E35 says to make sure refrigerator ventilation is not obstructed, notes that extreme ambient temperatures can trigger the over-temperature code, and says remaining repair requires an authorized service provider.",
+      "ownerSafeActions": [
+        "Record display fault E35 and take a photo of the display.",
+        "Check only owner-visible refrigerator ventilation openings for obstruction.",
+        "Note ambient temperature and reset the error once by pressing the encoder button for 3 seconds until a beep is heard."
+      ],
+      "serviceOnlyActions": [
+        "A continuing E35 over-temperature fault must be handled by an authorized service provider.",
+        "Cooling-system, compressor, airflow-system, sensor, wiring, and control-electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not remove refrigerator panels, service airflow components, wiring, sensors, compressor/cooling components, or controls; use only owner-visible ventilation checks and front-panel reset before qualified service.",
+      "sourceIds": [
+        "dometic-ruc-display-fault-e35-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of display fault E35",
+        "ambient temperature and visible ventilation status"
       ]
     },
     {
