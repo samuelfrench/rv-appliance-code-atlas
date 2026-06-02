@@ -231,6 +231,38 @@ test("lookup surfaces Suburban model-specific ducting and ST42 cold-inlet suppor
   ).toBeVisible();
 });
 
+test("lookup surfaces Coleman-Mach rooftop AC and heat-pump symptom support pages", async ({ page }) => {
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("coleman mach ac not cooling 16 22 degree temperature split");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/coleman-mach-rooftop-ac-not-cooling-temperature-delta/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("coleman mach ac freeze up high fan dirty filter");
+  await expect(lookupResults.locator('a[href="/symptoms/coleman-mach-rooftop-ac-freeze-up-low-airflow/"]')).toBeVisible();
+
+  await searchbox.fill("coleman mach low voltage extension cord cheater plug");
+  await expect(lookupResults.locator('a[href="/symptoms/coleman-mach-rooftop-ac-low-voltage-extension-cord/"]')).toBeVisible();
+
+  await searchbox.fill("coleman mach fan runs no compressor freeze switch");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/coleman-mach-rooftop-ac-fan-runs-no-compressor-service/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("coleman mach water leak inside condensate drain hose");
+  await expect(lookupResults.locator('a[href="/symptoms/coleman-mach-rooftop-ac-condensate-water-inside/"]')).toBeVisible();
+
+  await searchbox.fill("coleman mach thermostat fan only no cooling");
+  await expect(lookupResults.locator('a[href="/symptoms/coleman-mach-thermostat-fan-only-no-cooling/"]')).toBeVisible();
+
+  await searchbox.fill("coleman mach heat pump below 45 blower running");
+  await expect(lookupResults.locator('a[href="/symptoms/coleman-mach-heat-pump-below-45-blower-running/"]')).toBeVisible();
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 

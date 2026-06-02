@@ -24,7 +24,7 @@ function buildReport() {
       ready: false,
     })),
     nextAutomatedBatchGoal:
-      "Triage official Coleman-Mach/Airxcel rooftop AC and heat-pump symptom-only support pages for cooling loss, freeze-up, condensate leaks, fan or compressor behavior, thermostat mode confusion, low voltage, and service-only refrigerant/electrical boundaries; add only non-duplicate owner-safe guides.",
+      "Triage official Cummins Onan generator symptom-only support pages for no-start, cranks/no output, breaker or load shedding, fuel/oil/maintenance, altitude, and service-only generator/electrical/exhaust boundaries; add only non-duplicate owner-safe guides.",
     monitorCommand: "npm run traffic:monitor",
   };
 }

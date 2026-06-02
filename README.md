@@ -37,9 +37,9 @@ npm run traffic:monitor
 
 Current corpus:
 - `819` verified entries
-- `118` symptom guides
-- `304` official sources
-- `938` generated indexable pages
+- `125` symptom guides
+- `313` official sources
+- `945` generated indexable pages
 
 Next automated batch goal:
-- Triage official Coleman-Mach/Airxcel rooftop AC and heat-pump symptom-only support pages for cooling loss, freeze-up, condensate leaks, fan or compressor behavior, thermostat mode confusion, low voltage, and service-only refrigerant/electrical boundaries; add only non-duplicate owner-safe guides.
+- Triage official Cummins Onan generator symptom-only support pages for no-start, cranks/no output, breaker or load shedding, fuel/oil/maintenance, altitude, and service-only generator/electrical/exhaust boundaries; add only non-duplicate owner-safe guides.

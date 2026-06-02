@@ -2741,6 +2741,142 @@ describe("verified corpus", () => {
     );
   });
 
+  it("adds official Coleman-Mach rooftop AC and heat-pump symptom sources without inventing code entries", () => {
+    const expectedSources = new Map([
+      ["coleman-mach-faqs", "https://coleman-mach.com/service-support/faqs/"],
+      ["coleman-cooling-performance-worksheet", "https://coleman-mach.com/files/CPW.pdf"],
+      ["coleman-rooftop-operation-maintenance-1971-982", "https://library.coleman-mach.com/wp-content/uploads/2023/04/1971-982.pdf"],
+      ["coleman-chillgrille-control-kit-1976-658", "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-658.pdf"],
+      ["coleman-mach8-heat-pump-service-1976-665", "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-665.pdf"],
+      ["coleman-45000-installation-1976-687", "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-687.pdf"],
+      ["coleman-mach8-condensate-pump-kit-1976-681", "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-681.pdf"],
+      ["coleman-warranty-refrigeration-circuit", "https://coleman-mach.com/service-support/warranty/"],
+      ["coleman-46515-heat-pump-owner", "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-566.pdf"],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const newSymptomIds = [
+      "coleman-rooftop-ac-not-cooling-temperature-delta",
+      "coleman-rooftop-ac-freeze-up-low-airflow",
+      "coleman-rooftop-ac-low-voltage-extension-cord",
+      "coleman-rooftop-ac-fan-runs-no-compressor-service",
+      "coleman-rooftop-ac-condensate-water-inside",
+      "coleman-mach-thermostat-fan-only-no-cooling",
+      "coleman-mach-heat-pump-below-45-blower-running",
+    ];
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = corpus.sources.find((item) => item.id === sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.entries).toHaveLength(819);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const symptomId of newSymptomIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.safeChecklist.join(" "), symptomId).not.toMatch(
+        /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\brefrigerant\b|\bprobe\b|\bopen (the )?(fuel|gas|electrical|rooftop)/i,
+      );
+    }
+
+    expect(symptomById.get("coleman-rooftop-ac-not-cooling-temperature-delta")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "coleman-mach-faqs",
+        "coleman-cooling-performance-worksheet",
+        "coleman-rooftop-operation-maintenance-1971-982",
+      ]),
+    );
+    expect(
+      [
+        symptomById.get("coleman-rooftop-ac-not-cooling-temperature-delta")?.summary,
+        symptomById.get("coleman-rooftop-ac-not-cooling-temperature-delta")?.safeChecklist.join(" "),
+      ].join(" "),
+    ).toMatch(/16-22|HIGH COOL|15-20|return air|supply register/i);
+
+    expect(symptomById.get("coleman-rooftop-ac-freeze-up-low-airflow")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "coleman-mach-faqs",
+        "coleman-rooftop-operation-maintenance-1971-982",
+        "coleman-chillgrille-control-kit-1976-658",
+        "coleman-46515-heat-pump-owner",
+      ]),
+    );
+    expect(
+      [
+        symptomById.get("coleman-rooftop-ac-freeze-up-low-airflow")?.summary,
+        symptomById.get("coleman-rooftop-ac-freeze-up-low-airflow")?.safeChecklist.join(" "),
+      ].join(" "),
+    ).toMatch(/28|55|HIGH FAN|filter|low fan/i);
+
+    expect(symptomById.get("coleman-rooftop-ac-low-voltage-extension-cord")?.sourceIds).toEqual(
+      expect.arrayContaining(["coleman-mach-faqs", "coleman-45000-installation-1976-687", "coleman-46515-heat-pump-owner"]),
+    );
+    expect(
+      [
+        symptomById.get("coleman-rooftop-ac-low-voltage-extension-cord")?.summary,
+        symptomById.get("coleman-rooftop-ac-low-voltage-extension-cord")?.safeChecklist.join(" "),
+      ].join(" "),
+    ).toMatch(/extension cord|15.?amp|cheater|30.?amp|voltage drop/i);
+
+    expect(symptomById.get("coleman-rooftop-ac-fan-runs-no-compressor-service")?.sourceIds).toEqual(
+      expect.arrayContaining(["coleman-mach8-heat-pump-service-1976-665", "coleman-chillgrille-control-kit-1976-658", "coleman-mach-faqs"]),
+    );
+    expect(symptomById.get("coleman-rooftop-ac-fan-runs-no-compressor-service")?.summary).toMatch(
+      /fan runs.*no compressor|freeze switch|sealed system|qualified/i,
+    );
+
+    expect(symptomById.get("coleman-rooftop-ac-condensate-water-inside")?.sourceIds).toEqual(
+      expect.arrayContaining(["coleman-45000-installation-1976-687", "coleman-mach8-condensate-pump-kit-1976-681"]),
+    );
+    expect(symptomById.get("coleman-rooftop-ac-condensate-water-inside")?.summary).toMatch(/condensate|gasket|drain hose|water/i);
+
+    expect(symptomById.get("coleman-mach-thermostat-fan-only-no-cooling")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "coleman-9330-thermostat",
+        "coleman-9420-thermostat",
+        "coleman-9430-thermostat",
+        "coleman-6535-335-heat-pump-thermostat",
+        "coleman-6536-335-heat-pump-thermostat",
+      ]),
+    );
+    expect(symptomById.get("coleman-mach-thermostat-fan-only-no-cooling")?.summary).toMatch(/fan.?only|compressor|mode/i);
+
+    expect(symptomById.get("coleman-mach-heat-pump-below-45-blower-running")?.sourceIds).toEqual(
+      expect.arrayContaining(["coleman-mach-faqs", "coleman-46515-heat-pump-owner"]),
+    );
+    expect(
+      [
+        symptomById.get("coleman-mach-heat-pump-below-45-blower-running")?.summary,
+        symptomById.get("coleman-mach-heat-pump-below-45-blower-running")?.safeChecklist.join(" "),
+      ].join(" "),
+    ).toMatch(/45.?F|blower|LP furnace|30.?second/i);
+
+    expect(symptomById.get("air-conditioner-not-cooling")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "coleman-mach-faqs",
+        "coleman-cooling-performance-worksheet",
+        "coleman-rooftop-operation-maintenance-1971-982",
+      ]),
+    );
+    expect(symptomById.get("air-conditioner-water-leak")?.sourceIds).toEqual(
+      expect.arrayContaining(["coleman-45000-installation-1976-687", "coleman-mach8-condensate-pump-kit-1976-681"]),
+    );
+    expect(symptomById.get("airflow-or-venting")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "coleman-mach-faqs",
+        "coleman-rooftop-operation-maintenance-1971-982",
+        "coleman-chillgrille-control-kit-1976-658",
+      ]),
+    );
+    expect(symptomById.get("low-voltage")?.sourceIds).toEqual(
+      expect.arrayContaining(["coleman-mach-faqs", "coleman-45000-installation-1976-687", "coleman-46515-heat-pump-owner"]),
+    );
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
   it("adds official Girard GSWH-2 owner-manual display codes and keeps Girard tankless symptoms separate", () => {
     const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
     const girardOwnerSourceId = "girard-gswh2-owner-manual";

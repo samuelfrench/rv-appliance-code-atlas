@@ -10,7 +10,7 @@ describe("traffic readiness report", () => {
     const report = JSON.parse(output);
 
     expect(report.nextAutomatedBatchGoal).toBe(
-      "Triage official Coleman-Mach/Airxcel rooftop AC and heat-pump symptom-only support pages for cooling loss, freeze-up, condensate leaks, fan or compressor behavior, thermostat mode confusion, low voltage, and service-only refrigerant/electrical boundaries; add only non-duplicate owner-safe guides.",
+      "Triage official Cummins Onan generator symptom-only support pages for no-start, cranks/no output, breaker or load shedding, fuel/oil/maintenance, altitude, and service-only generator/electrical/exhaust boundaries; add only non-duplicate owner-safe guides.",
     );
 
     expect(readFileSync("README.md", "utf8")).toContain(report.nextAutomatedBatchGoal);

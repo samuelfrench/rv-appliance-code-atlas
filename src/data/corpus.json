@@ -95,6 +95,78 @@
       "official": true
     },
     {
+      "id": "coleman-mach-faqs",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Frequently Asked Questions",
+      "url": "https://coleman-mach.com/service-support/faqs/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "coleman-cooling-performance-worksheet",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Cooling Performance Worksheet",
+      "url": "https://coleman-mach.com/files/CPW.pdf",
+      "type": "manufacturer-form",
+      "official": true
+    },
+    {
+      "id": "coleman-rooftop-operation-maintenance-1971-982",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Rooftop Air Conditioner Operation and Maintenance Instructions",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/04/1971-982.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-chillgrille-control-kit-1976-658",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Air Conditioner Ceiling Plenum and Control Kit Installation Instructions",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-658.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-mach8-heat-pump-service-1976-665",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Mach 8 Rooftop Heat Pump Service Manual",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-665.pdf",
+      "type": "manufacturer-service-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-45000-installation-1976-687",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 45000 Series Rooftop Air Conditioner Installation Instructions",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-687.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-mach8-condensate-pump-kit-1976-681",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Mach 8 Condensate Pump Kit Installation Instructions",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-681.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-warranty-refrigeration-circuit",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Rooftop AC/Heat Pump Warranty Information",
+      "url": "https://coleman-mach.com/service-support/warranty/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "coleman-46515-heat-pump-owner",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 46515 Series Packaged Heat Pump Owner Manual",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-566.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
       "id": "dometic-ccc2-operating",
       "brand": "Dometic",
       "title": "Dometic Comfort Control Center 2 Thermostat Operating Instructions",
@@ -31991,6 +32063,9 @@
         "suburban-furnace-guide",
         "suburban-rv-faqs",
         "suburban-sf-vh-ducting-guide",
+        "coleman-mach-faqs",
+        "coleman-rooftop-operation-maintenance-1971-982",
+        "coleman-chillgrille-control-kit-1976-658",
         "suburban-tank-water-heater",
         "furrion-water-heater",
         "furrion-f2gwh-water-heater",
@@ -32065,6 +32140,9 @@
         "lippert-ground-control",
         "lippert-in-wall-slide",
         "coleman-9420-thermostat",
+        "coleman-mach-faqs",
+        "coleman-45000-installation-1976-687",
+        "coleman-46515-heat-pump-owner",
         "furrion-furnace-troubleshooting",
         "suburban-rv-faqs",
         "suburban-tank-water-heater",
@@ -32152,6 +32230,15 @@
         "furrion-furnace-troubleshooting",
         "furrion-rooftop-hvac-troubleshooting",
         "coleman-9430-thermostat",
+        "coleman-mach-faqs",
+        "coleman-cooling-performance-worksheet",
+        "coleman-rooftop-operation-maintenance-1971-982",
+        "coleman-chillgrille-control-kit-1976-658",
+        "coleman-mach8-heat-pump-service-1976-665",
+        "coleman-45000-installation-1976-687",
+        "coleman-mach8-condensate-pump-kit-1976-681",
+        "coleman-warranty-refrigeration-circuit",
+        "coleman-46515-heat-pump-owner",
         "dometic-hydro-flame-afm-66618",
         "suburban-furnace-guide",
         "suburban-tank-water-heater",
@@ -32226,6 +32313,9 @@
       "sourceIds": [
         "furrion-rooftop-hvac-troubleshooting",
         "furrion-rooftop-ac-manual-control",
+        "coleman-mach-faqs",
+        "coleman-cooling-performance-worksheet",
+        "coleman-rooftop-operation-maintenance-1971-982",
         "coleman-comfortguard-service",
         "coleman-6633-service"
       ]
@@ -32243,7 +32333,165 @@
       ],
       "sourceIds": [
         "furrion-rooftop-hvac-troubleshooting",
-        "furrion-rooftop-ac-manual-control"
+        "furrion-rooftop-ac-manual-control",
+        "coleman-45000-installation-1976-687",
+        "coleman-mach8-condensate-pump-kit-1976-681"
+      ]
+    },
+    {
+      "id": "coleman-rooftop-ac-not-cooling-temperature-delta",
+      "slug": "coleman-mach-rooftop-ac-not-cooling-temperature-delta",
+      "title": "Coleman-Mach rooftop AC not cooling temperature split",
+      "summary": "Coleman-Mach FAQ and Cooling Performance Worksheet use a 16-22 degree return-air to supply-register temperature difference after HIGH COOL has run 15-20 minutes; weak cooling outside that range is service-call evidence, not a charge-yourself instruction.",
+      "safeChecklist": [
+        "Clean or replace owner-accessible filters if the manual allows it.",
+        "Set HIGH COOL from normal controls and let the unit run 15-20 minutes before measuring.",
+        "Use the same thermometer at the return-air filter and the first supply register, then record outdoor temperature and power source.",
+        "Call Coleman-Mach, the dealer, or qualified RV HVAC service if the split is outside 16-22 degrees or cooling stays weak."
+      ],
+      "sourceIds": [
+        "coleman-mach-faqs",
+        "coleman-cooling-performance-worksheet",
+        "coleman-rooftop-operation-maintenance-1971-982"
+      ],
+      "searchAliases": [
+        "coleman mach ac not cooling 16 22 degree temperature split",
+        "coleman air conditioner cooling performance worksheet",
+        "coleman mach high cool return air supply register"
+      ]
+    },
+    {
+      "id": "coleman-rooftop-ac-freeze-up-low-airflow",
+      "slug": "coleman-mach-rooftop-ac-freeze-up-low-airflow",
+      "title": "Coleman-Mach rooftop AC freezes from low airflow",
+      "summary": "Coleman-Mach FAQ and operation guidance tie freeze-up to dirty filters, low fan speed, blocked airflow, very low thermostat settings, and a low-temperature control that can stop the compressor around 28 F and resume around 55 F.",
+      "safeChecklist": [
+        "Turn cooling off if airflow falls or ice is visible at owner-accessible vents.",
+        "Run HIGH FAN from normal controls to help the coil thaw before another cooling call.",
+        "Clean owner-accessible filters and make sure supply louvers are open.",
+        "Raise the setpoint and use higher fan speed in cool, humid conditions; call qualified RV HVAC service if freeze-up repeats."
+      ],
+      "sourceIds": [
+        "coleman-mach-faqs",
+        "coleman-rooftop-operation-maintenance-1971-982",
+        "coleman-chillgrille-control-kit-1976-658",
+        "coleman-46515-heat-pump-owner"
+      ],
+      "searchAliases": [
+        "coleman mach ac freeze up high fan dirty filter",
+        "coleman mach evaporator ice low fan speed",
+        "coleman air conditioner freeze protection 28 55"
+      ]
+    },
+    {
+      "id": "coleman-rooftop-ac-low-voltage-extension-cord",
+      "slug": "coleman-mach-rooftop-ac-low-voltage-extension-cord",
+      "title": "Coleman-Mach rooftop AC low voltage or extension-cord startup",
+      "summary": "Coleman-Mach FAQ and installation guidance warn that long or light extension cords, 15-amp outlets, cheater adapters, too many 30-amp loads, and voltage drop can leave the rooftop AC or heat pump unable to start or stage normally.",
+      "safeChecklist": [
+        "Stop the cooling call from normal controls if lights dim, the compressor will not start, or voltage warnings appear.",
+        "Use the RV's normal shore-power or generator setup instead of long light-gauge extension cords or 15-amp cheater adapters.",
+        "Turn off other heavy loads on a 30-amp hookup before retrying cooling.",
+        "Call qualified RV electrical/HVAC service if the compressor still will not start or voltage drop is suspected."
+      ],
+      "sourceIds": [
+        "coleman-mach-faqs",
+        "coleman-45000-installation-1976-687",
+        "coleman-46515-heat-pump-owner"
+      ],
+      "searchAliases": [
+        "coleman mach low voltage extension cord cheater plug",
+        "coleman mach 15 amp outlet air conditioner not starting",
+        "coleman mach 30 amp loads voltage drop compressor"
+      ]
+    },
+    {
+      "id": "coleman-rooftop-ac-fan-runs-no-compressor-service",
+      "slug": "coleman-mach-rooftop-ac-fan-runs-no-compressor-service",
+      "title": "Coleman-Mach fan runs but compressor does not start",
+      "summary": "Coleman-Mach Mach 8 service guidance lists fan runs/no compressor as a qualified-service condition that can involve insufficient voltage, thermostat, capacitors, relay, overload, freeze switch, compressor, or sealed system faults.",
+      "safeChecklist": [
+        "Confirm thermostat mode, setpoint, fan setting, and any built-in short-cycle delay from normal controls.",
+        "Record whether the indoor fan runs, whether the compressor ever starts, and whether freeze shutdown happened first.",
+        "Stop repeated retries if the fan runs but cooling never starts.",
+        "Use qualified RV HVAC service for electrical parts, sealed cooling circuit, or repeated no-compressor operation."
+      ],
+      "sourceIds": [
+        "coleman-mach8-heat-pump-service-1976-665",
+        "coleman-chillgrille-control-kit-1976-658",
+        "coleman-mach-faqs"
+      ],
+      "searchAliases": [
+        "coleman mach fan runs no compressor freeze switch",
+        "coleman mach blower runs compressor does not start",
+        "coleman mach ac fan only no compressor service"
+      ]
+    },
+    {
+      "id": "coleman-rooftop-ac-condensate-water-inside",
+      "slug": "coleman-mach-rooftop-ac-condensate-water-inside",
+      "title": "Coleman-Mach rooftop AC water or condensate inside",
+      "summary": "Coleman-Mach installation and Mach 8 condensate-pump instructions point to roof gasket compression, condensate drain hose routing, pump kit drainage, and qualified installation work when water enters the living space.",
+      "safeChecklist": [
+        "Turn the air conditioner off if water is entering the RV.",
+        "Protect interior surfaces and let ice or condensate drain before another cooling call.",
+        "Record whether the issue follows freeze-up, heavy humidity, rain, or pump-equipped operation.",
+        "Use qualified RV service for roof gasket, condensate pump, drain hose, or rooftop installation corrections."
+      ],
+      "sourceIds": [
+        "coleman-45000-installation-1976-687",
+        "coleman-mach8-condensate-pump-kit-1976-681"
+      ],
+      "searchAliases": [
+        "coleman mach water leak inside condensate drain hose",
+        "coleman mach condensate pump water inside",
+        "coleman mach roof gasket water leak air conditioner"
+      ]
+    },
+    {
+      "id": "coleman-mach-thermostat-fan-only-no-cooling",
+      "slug": "coleman-mach-thermostat-fan-only-no-cooling",
+      "title": "Coleman-Mach thermostat fan only or no cooling call",
+      "summary": "Coleman-Mach thermostat manuals separate Fan Only or manual fan behavior from cooling calls; if FAN operates but COOL mode, zone, and setpoint do not request compressor operation, the issue may be mode/zone setup or service-only HVAC controls.",
+      "safeChecklist": [
+        "Confirm COOL mode, selected zone, fan Auto/On setting, and setpoint below room temperature from the thermostat display.",
+        "Wait through any built-in compressor delay before deciding the cooling call failed.",
+        "Record thermostat model, display text, zone, and whether Fan Only was selected.",
+        "Call qualified RV HVAC service if the thermostat requests cooling but the compressor never starts."
+      ],
+      "sourceIds": [
+        "coleman-9330-thermostat",
+        "coleman-9420-thermostat",
+        "coleman-9430-thermostat",
+        "coleman-6535-335-heat-pump-thermostat",
+        "coleman-6536-335-heat-pump-thermostat",
+        "coleman-mach-faqs"
+      ],
+      "searchAliases": [
+        "coleman mach thermostat fan only no cooling",
+        "coleman mach thermostat fan runs no cool mode",
+        "coleman mach zone thermostat no compressor cooling"
+      ]
+    },
+    {
+      "id": "coleman-mach-heat-pump-below-45-blower-running",
+      "slug": "coleman-mach-heat-pump-below-45-blower-running",
+      "title": "Coleman-Mach heat pump blower runs below 45 F",
+      "summary": "Coleman-Mach FAQ says heat pumps are most effective above 45 F and the compressor may shut down below about 45 F while the indoor blower keeps running; the 46515 owner manual also describes staged compressor operation with a 30-second delay.",
+      "safeChecklist": [
+        "Use normal LP furnace or backup heat controls when outdoor temperature is below about 45 F and the heat pump cannot keep up.",
+        "Record outdoor temperature, thermostat heat mode, zone, blower behavior, and whether the compressor resumes above 45 F.",
+        "Wait through the 30-second staging delay before treating startup as a failure.",
+        "Call qualified RV HVAC service if the blower runs without heat in moderate outdoor temperatures."
+      ],
+      "sourceIds": [
+        "coleman-mach-faqs",
+        "coleman-46515-heat-pump-owner"
+      ],
+      "searchAliases": [
+        "coleman mach heat pump below 45 blower running",
+        "coleman mach heat pump compressor shuts off below 45",
+        "coleman mach heat pump 30 second compressor delay"
       ]
     },
     {
