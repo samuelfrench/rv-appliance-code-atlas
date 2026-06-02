@@ -36,10 +36,10 @@ npm run traffic:monitor
 ```
 
 Current corpus:
-- `463` verified entries
-- `40` symptom guides
-- `81` official sources
-- `504` generated indexable pages
+- `475` verified entries
+- `45` symptom guides
+- `94` official sources
+- `521` generated indexable pages
 
 Next automated batch goal:
-- Research official owner-safe Girard/Lippert tankless and remaining manufacturer-hosted water-heater maintenance or winterization sources, keep model families separate, and add no code entries unless an official fault/display table is verified.
+- Research official legacy Girard GSWH-1/GSWH-1M owner manuals and remaining manufacturer-hosted water-heater support sources; keep GSWH-1, GSWH-2, Furrion, Suburban, and Dometic model families separate and add code entries only from official fault/display tables.
