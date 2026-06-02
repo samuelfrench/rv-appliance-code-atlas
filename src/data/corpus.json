@@ -1029,6 +1029,70 @@
       "url": "https://www.thetford.com/app/uploads/2024/10/OM_N400N510_623669E.pdf",
       "type": "manufacturer-manual",
       "official": true
+    },
+    {
+      "id": "dometic-rm3762-rm3962-operating",
+      "brand": "Dometic",
+      "title": "Dometic RM3762 RM3962 Refrigerator Operating Instructions",
+      "url": "https://media.dometic.com/externalassets/dometic-rm-3962sf_9108517181_64692.pdf",
+      "type": "manual-pdf",
+      "official": true
+    },
+    {
+      "id": "dometic-rmd10t-rmd10xt-operating",
+      "brand": "Dometic",
+      "title": "Dometic RMD10T, RMD10XT Absorption Refrigerator Operating Manual",
+      "url": "https://media.dometic.com/externalassets/dometic-rmd-10-5xt_74186.pdf",
+      "type": "manual-pdf",
+      "official": true
+    },
+    {
+      "id": "dometic-americana-operating",
+      "brand": "Dometic",
+      "title": "Dometic Americana RM/DM/NDM Refrigerator Operating Instructions",
+      "url": "https://media.dometic.com/externalassets/dometic-americana-rm-2551_64745.pdf",
+      "type": "manual-pdf",
+      "official": true
+    },
+    {
+      "id": "dometic-rm8-rms8-rml8-operating",
+      "brand": "Dometic",
+      "title": "Dometic RM8xxx, RMS8xxx, RML8xxx, RMSL8xxx Absorber Refrigerator Operating Manual",
+      "url": "https://www.dometic.com/externalassets/dometic-rm-8505_51822.pdf",
+      "type": "manual-pdf",
+      "official": true
+    },
+    {
+      "id": "dometic-rmd8-operating",
+      "brand": "Dometic",
+      "title": "Dometic RMD8xx1/RMD8xx5 Absorber Refrigerator Operating Manual",
+      "url": "https://media.dometic.com/externalassets/dometic-rmd-8555_72770.pdf",
+      "type": "manual-pdf",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-rms10-operating",
+      "brand": "Dometic",
+      "title": "Dometic RM10.5/RMS10.5 Absorption Refrigerator Operating Manual",
+      "url": "https://media.dometic.com/externalassets/dometic-rms-10-5t_9600027101_120434.pdf",
+      "type": "manual-pdf",
+      "official": true
+    },
+    {
+      "id": "dometic-rmd10-5-operating",
+      "brand": "Dometic",
+      "title": "Dometic RMD10.5 Absorption Refrigerator Operating Manual",
+      "url": "https://media.dometic.com/externalassets/dometic-rmd-10-5xt_83047.pdf",
+      "type": "manual-pdf",
+      "official": true
+    },
+    {
+      "id": "dometic-rml10-4-operating",
+      "brand": "Dometic",
+      "title": "Dometic RML10.4 Absorption Refrigerator Operating Manual",
+      "url": "https://media.dometic.com/externalassets/rml10-4t_9620004548_82727.pdf",
+      "type": "manual-pdf",
+      "official": true
     }
   ],
   "entries": [
@@ -22378,6 +22442,3821 @@
         "photo of display or light pattern",
         "power mode and audible alarm state"
       ]
+    },
+    {
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM3762",
+        "RM3762SL",
+        "RM3962",
+        "RM3962SL",
+        "RM3962SF"
+      ],
+      "sourceIds": [
+        "dometic-rm3762-rm3962-operating"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ],
+      "code": "E0",
+      "slug": "dometic-rm3762-rm3962-e0-display-power-module-communication",
+      "id": "dometic-rm3762-rm3962-e0",
+      "plainMeaning": "The RM3762/RM3962 operating instructions list E0 as no communication between the display and power module.",
+      "ownerSafeActions": [
+        "Record the flashing E0 display and model information before any reset.",
+        "Use the front ON/OFF control only after service has corrected the communication fault."
+      ],
+      "serviceOnlyActions": [
+        "Display-to-power-module communication diagnosis and module or harness repair belong with a Dometic dealer or qualified RV service."
+      ],
+      "safetyBoundary": "Do not open electrical compartments or diagnose refrigerator controls; document E0 and arrange qualified service.",
+      "symptomIds": [
+        "thermostat-communication",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ]
+    },
+    {
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM3762",
+        "RM3762SL",
+        "RM3962",
+        "RM3962SL",
+        "RM3962SF"
+      ],
+      "sourceIds": [
+        "dometic-rm3762-rm3962-operating"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ],
+      "code": "E1",
+      "slug": "dometic-rm3762-rm3962-e1-lp-operation-system-fault",
+      "id": "dometic-rm3762-rm3962-e1",
+      "plainMeaning": "The RM3762/RM3962 operating instructions list E1 as a disconnected LP valve or hardware fault in the LP operation system; the refrigerator may still operate on 120 V AC.",
+      "ownerSafeActions": [
+        "If there is any gas odor, shut LP off, ventilate, evacuate, and call service.",
+        "If AC operation is available from the front panel, use that mode only while arranging service."
+      ],
+      "serviceOnlyActions": [
+        "LP operation hardware, ignition, and refrigerator control diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service LP hardware or attempt LP operation repairs; use a safe alternate mode only if available and call qualified service.",
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ]
+    },
+    {
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM3762",
+        "RM3762SL",
+        "RM3962",
+        "RM3962SL",
+        "RM3962SF"
+      ],
+      "sourceIds": [
+        "dometic-rm3762-rm3962-operating"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ],
+      "code": "E2",
+      "slug": "dometic-rm3762-rm3962-e2-temperature-sensor-failure",
+      "id": "dometic-rm3762-rm3962-e2",
+      "plainMeaning": "The RM3762/RM3962 operating instructions list E2 as a failure of the temperature sensor device or associated electronic circuitry.",
+      "ownerSafeActions": [
+        "Record the E2 display and monitor food temperature.",
+        "Stop using the refrigerator if safe temperatures cannot be maintained."
+      ],
+      "serviceOnlyActions": [
+        "Temperature sensor and electronic-circuit diagnosis or replacement should be handled by a Dometic dealer or qualified service."
+      ],
+      "safetyBoundary": "Do not access sensor wiring or refrigerator electronics; preserve the code and schedule qualified service.",
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ]
+    },
+    {
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM3762",
+        "RM3762SL",
+        "RM3962",
+        "RM3962SL",
+        "RM3962SF"
+      ],
+      "sourceIds": [
+        "dometic-rm3762-rm3962-operating"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ],
+      "code": "E3",
+      "slug": "dometic-rm3762-rm3962-e3-cooling-unit-malfunction",
+      "id": "dometic-rm3762-rm3962-e3",
+      "plainMeaning": "The RM3762/RM3962 operating instructions list E3 as a cooling unit malfunction.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off and protect food if cooling has stopped.",
+        "If you smell ammonia or see leakage, ventilate and do not use the refrigerator."
+      ],
+      "serviceOnlyActions": [
+        "Cooling-unit inspection, replacement, or leak diagnosis is service-only."
+      ],
+      "safetyBoundary": "A cooling-unit malfunction is not owner repairable; stop use when cooling is unsafe and contact a Dometic service center.",
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ]
+    },
+    {
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM3762",
+        "RM3762SL",
+        "RM3962",
+        "RM3962SL",
+        "RM3962SF"
+      ],
+      "sourceIds": [
+        "dometic-rm3762-rm3962-operating"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ],
+      "code": "E4",
+      "slug": "dometic-rm3762-rm3962-e4-dc-voltage-out-of-range",
+      "id": "dometic-rm3762-rm3962-e4",
+      "plainMeaning": "The RM3762/RM3962 operating instructions list E4 as DC voltage out of range, above or below the manual limit values.",
+      "ownerSafeActions": [
+        "Check the owner-visible coach battery monitor and charger state.",
+        "Record whether the code appears while on shore power, generator power, or battery only."
+      ],
+      "serviceOnlyActions": [
+        "Battery charging, wiring, fuse, and refrigerator control voltage diagnosis should be handled by qualified RV electrical service."
+      ],
+      "safetyBoundary": "Do not open electrical compartments or test live circuits; document the DC state and arrange RV electrical service if the code persists.",
+      "symptomIds": [
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-w01-refrigerator-compartment-temperature-sensor",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10"
+      ],
+      "code": "W01",
+      "slug": "dometic-rmd10-w01-refrigerator-compartment-temperature-sensor",
+      "plainMeaning": "The Dometic RMD10T/RMD10XT operating manual lists W01 as: Defective temperature sensor in the refrigerator compartment.",
+      "ownerSafeActions": [
+        "Record the W01 warning and model details.",
+        "Keep the refrigerator under food-safety observation until service evaluates it."
+      ],
+      "serviceOnlyActions": [
+        "Temperature-sensor diagnosis and replacement are service-only."
+      ],
+      "safetyBoundary": "Use only the front-panel reset and basic owner-visible checks from the manual; keep LP, electrical, cooling, and module diagnosis with qualified service.",
+      "sourceIds": [
+        "dometic-rmd10t-rmd10xt-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-w05-ac-power-not-connected-or-low",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10"
+      ],
+      "code": "W05",
+      "slug": "dometic-rmd10-w05-ac-power-not-connected-or-low",
+      "plainMeaning": "The Dometic RMD10T/RMD10XT operating manual lists W05 as: AC power is not connected or AC voltage is below the manual threshold.",
+      "ownerSafeActions": [
+        "Confirm the coach is connected to an intended power source from owner-visible controls.",
+        "Select another front-panel energy mode if available and safe."
+      ],
+      "serviceOnlyActions": [
+        "AC supply, inverter, wiring, and refrigerator power-module diagnosis belong with qualified RV electrical service."
+      ],
+      "safetyBoundary": "Use only the front-panel reset and basic owner-visible checks from the manual; keep LP, electrical, cooling, and module diagnosis with qualified service.",
+      "sourceIds": [
+        "dometic-rmd10t-rmd10xt-operating"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-w06-dc-power-not-connected",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10"
+      ],
+      "code": "W06",
+      "slug": "dometic-rmd10-w06-dc-power-not-connected",
+      "plainMeaning": "The Dometic RMD10T/RMD10XT operating manual lists W06 as: DC power is not connected.",
+      "ownerSafeActions": [
+        "Select another front-panel energy mode if available and safe.",
+        "Record whether the warning appears on travel, shore power, or battery-only operation."
+      ],
+      "serviceOnlyActions": [
+        "DC supply, fuse, wiring, and power-module diagnosis belong with qualified RV electrical service."
+      ],
+      "safetyBoundary": "Use only the front-panel reset and basic owner-visible checks from the manual; keep LP, electrical, cooling, and module diagnosis with qualified service.",
+      "sourceIds": [
+        "dometic-rmd10t-rmd10xt-operating"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-w11-dc-overvoltage",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10"
+      ],
+      "code": "W11",
+      "slug": "dometic-rmd10-w11-dc-overvoltage",
+      "plainMeaning": "The Dometic RMD10T/RMD10XT operating manual lists W11 as: DC overvoltage above the manual threshold.",
+      "ownerSafeActions": [
+        "Stop using DC mode if the warning persists.",
+        "Record the coach battery or charger state from owner-visible monitors."
+      ],
+      "serviceOnlyActions": [
+        "Charging-system and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Use only the front-panel reset and basic owner-visible checks from the manual; keep LP, electrical, cooling, and module diagnosis with qualified service.",
+      "sourceIds": [
+        "dometic-rmd10t-rmd10xt-operating"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-w10-beep-door-open-more-than-two-minutes",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10"
+      ],
+      "code": "W10 + beep",
+      "slug": "dometic-rmd10-w10-beep-door-open-more-than-two-minutes",
+      "plainMeaning": "The Dometic RMD10T/RMD10XT operating manual lists W10 + beep as: The door has been open for more than two minutes.",
+      "ownerSafeActions": [
+        "Close the refrigerator door and confirm the warning clears.",
+        "Check for blocked shelves or seals that prevent the door from closing."
+      ],
+      "serviceOnlyActions": [
+        "Door switch, hinge, latch, or wiring diagnosis should be handled by service if the warning repeats with the door closed."
+      ],
+      "safetyBoundary": "Use only the front-panel reset and basic owner-visible checks from the manual; keep LP, electrical, cooling, and module diagnosis with qualified service.",
+      "sourceIds": [
+        "dometic-rmd10t-rmd10xt-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-e03-power-module-display-no-connection",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10"
+      ],
+      "code": "E03",
+      "slug": "dometic-rmd10-e03-power-module-display-no-connection",
+      "plainMeaning": "The Dometic RMD10T/RMD10XT operating manual lists E03 as: No connection between the power module and display.",
+      "ownerSafeActions": [
+        "Record the E03 error before resetting.",
+        "Use the manual front-panel reset only as directed."
+      ],
+      "serviceOnlyActions": [
+        "Power-module/display communication diagnosis is service-only."
+      ],
+      "safetyBoundary": "Use only the front-panel reset and basic owner-visible checks from the manual; keep LP, electrical, cooling, and module diagnosis with qualified service.",
+      "sourceIds": [
+        "dometic-rmd10t-rmd10xt-operating"
+      ],
+      "symptomIds": [
+        "thermostat-communication",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-e07-no-cooling-capacity-in-gas-mode",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10"
+      ],
+      "code": "E07",
+      "slug": "dometic-rmd10-e07-no-cooling-capacity-in-gas-mode",
+      "plainMeaning": "The Dometic RMD10T/RMD10XT operating manual lists E07 as: No cooling capacity in gas mode.",
+      "ownerSafeActions": [
+        "Confirm the RV is level, then reset the error once from the control knob as the manual describes.",
+        "Contact customer service if the error occurs again."
+      ],
+      "serviceOnlyActions": [
+        "LP cooling performance, flame, and absorption-system diagnosis are service-only."
+      ],
+      "safetyBoundary": "Use only the front-panel reset and basic owner-visible checks from the manual; keep LP, electrical, cooling, and module diagnosis with qualified service.",
+      "sourceIds": [
+        "dometic-rmd10t-rmd10xt-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-e08-no-cooling-power-in-ac-mode",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10"
+      ],
+      "code": "E08",
+      "slug": "dometic-rmd10-e08-no-cooling-power-in-ac-mode",
+      "plainMeaning": "The Dometic RMD10T/RMD10XT operating manual lists E08 as: No cooling power in AC mode.",
+      "ownerSafeActions": [
+        "Confirm the RV is level, then reset the error once from the control knob as the manual describes.",
+        "Contact customer service if the error occurs again."
+      ],
+      "serviceOnlyActions": [
+        "AC heat source, power module, and absorption-system diagnosis are service-only."
+      ],
+      "safetyBoundary": "Use only the front-panel reset and basic owner-visible checks from the manual; keep LP, electrical, cooling, and module diagnosis with qualified service.",
+      "sourceIds": [
+        "dometic-rmd10t-rmd10xt-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-e09-no-cooling-power-in-dc-mode",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10"
+      ],
+      "code": "E09",
+      "slug": "dometic-rmd10-e09-no-cooling-power-in-dc-mode",
+      "plainMeaning": "The Dometic RMD10T/RMD10XT operating manual lists E09 as: No cooling power in DC mode.",
+      "ownerSafeActions": [
+        "Confirm the RV is level, then reset the error once from the control knob as the manual describes.",
+        "Contact customer service if the error occurs again."
+      ],
+      "serviceOnlyActions": [
+        "DC heat source, power module, and absorption-system diagnosis are service-only."
+      ],
+      "safetyBoundary": "Use only the front-panel reset and basic owner-visible checks from the manual; keep LP, electrical, cooling, and module diagnosis with qualified service.",
+      "sourceIds": [
+        "dometic-rmd10t-rmd10xt-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-e12-gas-valve-check-error",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10"
+      ],
+      "code": "E12",
+      "slug": "dometic-rmd10-e12-gas-valve-check-error",
+      "plainMeaning": "The Dometic RMD10T/RMD10XT operating manual lists E12 as: Gas valve check error; gas operation is not possible.",
+      "ownerSafeActions": [
+        "Reset the error once from the control knob as the manual describes.",
+        "Use a non-LP energy mode only if available and safe."
+      ],
+      "serviceOnlyActions": [
+        "LP valve, LP operation, and power-module diagnosis are service-only."
+      ],
+      "safetyBoundary": "Use only the front-panel reset and basic owner-visible checks from the manual; keep LP, electrical, cooling, and module diagnosis with qualified service.",
+      "sourceIds": [
+        "dometic-rmd10t-rmd10xt-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-e13-internal-communication-error",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10"
+      ],
+      "code": "E13",
+      "slug": "dometic-rmd10-e13-internal-communication-error",
+      "plainMeaning": "The Dometic RMD10T/RMD10XT operating manual lists E13 as: Internal communication error; gas operation is not possible.",
+      "ownerSafeActions": [
+        "Record E13 and reset once from the control knob as the manual describes.",
+        "Use a non-LP energy mode only if available and safe."
+      ],
+      "serviceOnlyActions": [
+        "Internal communication and power-module diagnosis are service-only."
+      ],
+      "safetyBoundary": "Use only the front-panel reset and basic owner-visible checks from the manual; keep LP, electrical, cooling, and module diagnosis with qualified service.",
+      "sourceIds": [
+        "dometic-rmd10t-rmd10xt-operating"
+      ],
+      "symptomIds": [
+        "thermostat-communication",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-e14-stand-alone-gas-battery-pack-low",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10"
+      ],
+      "code": "E14",
+      "slug": "dometic-rmd10-e14-stand-alone-gas-battery-pack-low",
+      "plainMeaning": "The Dometic RMD10T/RMD10XT operating manual lists E14 as: In stand-alone gas mode, the battery-pack charge is too low.",
+      "ownerSafeActions": [
+        "Replace the stand-alone gas battery packs as the manual describes, then reset the error.",
+        "Record the battery type and recurrence for service if it returns."
+      ],
+      "serviceOnlyActions": [
+        "Battery compartment contacts, wiring, and gas-mode electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Use only the front-panel reset and basic owner-visible checks from the manual; keep LP, electrical, cooling, and module diagnosis with qualified service.",
+      "sourceIds": [
+        "dometic-rmd10t-rmd10xt-operating"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-e50-gas-lock-after-three-ignition-attempts",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10"
+      ],
+      "code": "E50",
+      "slug": "dometic-rmd10-e50-gas-lock-after-three-ignition-attempts",
+      "plainMeaning": "The Dometic RMD10T/RMD10XT operating manual lists E50 as: Gas lock after three ignition attempts; ignition is not possible and the manual points to an empty gas cylinder before reset.",
+      "ownerSafeActions": [
+        "Confirm the LP cylinder has fuel from owner-visible indicators and replace an empty cylinder if needed.",
+        "Reset the error once from the control knob after correcting the supply state."
+      ],
+      "serviceOnlyActions": [
+        "Repeated ignition lockout, LP hardware, and refrigerator ignition diagnosis are service-only."
+      ],
+      "safetyBoundary": "Use only the front-panel reset and basic owner-visible checks from the manual; keep LP, electrical, cooling, and module diagnosis with qualified service.",
+      "sourceIds": [
+        "dometic-rmd10t-rmd10xt-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-e51-gas-lock-power-module-internal-error",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10"
+      ],
+      "code": "E51",
+      "slug": "dometic-rmd10-e51-gas-lock-power-module-internal-error",
+      "plainMeaning": "The Dometic RMD10T/RMD10XT operating manual lists E51 as: Gas lock with an internal error in the power module.",
+      "ownerSafeActions": [
+        "Reset the error once from the control knob as the manual describes.",
+        "Stop LP operation and call service if the error occurs again."
+      ],
+      "serviceOnlyActions": [
+        "Power-module and LP lockout diagnosis are service-only."
+      ],
+      "safetyBoundary": "Use only the front-panel reset and basic owner-visible checks from the manual; keep LP, electrical, cooling, and module diagnosis with qualified service.",
+      "sourceIds": [
+        "dometic-rmd10t-rmd10xt-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-e52-ground-contact-gas-valve",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10"
+      ],
+      "code": "E52",
+      "slug": "dometic-rmd10-e52-ground-contact-gas-valve",
+      "plainMeaning": "The Dometic RMD10T/RMD10XT operating manual lists E52 as: Ground contact at the gas valve.",
+      "ownerSafeActions": [
+        "Reset the error once from the control knob as the manual describes.",
+        "Stop LP operation and call service if the error occurs again."
+      ],
+      "serviceOnlyActions": [
+        "Ground-contact, LP valve, wiring, and power-module diagnosis are service-only."
+      ],
+      "safetyBoundary": "Use only the front-panel reset and basic owner-visible checks from the manual; keep LP, electrical, cooling, and module diagnosis with qualified service.",
+      "sourceIds": [
+        "dometic-rmd10t-rmd10xt-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-e53-ground-contact-ignition-electrode",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10"
+      ],
+      "code": "E53",
+      "slug": "dometic-rmd10-e53-ground-contact-ignition-electrode",
+      "plainMeaning": "The Dometic RMD10T/RMD10XT operating manual lists E53 as: Ground contact at the ignition electrode.",
+      "ownerSafeActions": [
+        "Reset the error once from the control knob as the manual describes.",
+        "Stop LP operation and call service if the error occurs again."
+      ],
+      "serviceOnlyActions": [
+        "Ignition electrode, wiring, and power-module diagnosis are service-only."
+      ],
+      "safetyBoundary": "Use only the front-panel reset and basic owner-visible checks from the manual; keep LP, electrical, cooling, and module diagnosis with qualified service.",
+      "sourceIds": [
+        "dometic-rmd10t-rmd10xt-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-americana-check-lamp-lp-ignition-failure",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM2351",
+        "RM2354",
+        "RM2451",
+        "RM2454",
+        "RM2551",
+        "RM2554",
+        "DM2652",
+        "DM2662",
+        "DM2663",
+        "DM2852",
+        "DM2862",
+        "NDM1062"
+      ],
+      "code": "CHECK",
+      "slug": "dometic-americana-check-lamp-lp-ignition-failure",
+      "plainMeaning": "The Dometic Americana operating instructions say an illuminated CHECK lamp means the controls failed to ignite in GAS mode.",
+      "ownerSafeActions": [
+        "Record the CHECK lamp state and current mode.",
+        "Retry from the front ON/OFF control only as the manual describes.",
+        "If the CHECK lamp returns, use another safe mode if available and arrange service."
+      ],
+      "serviceOnlyActions": [
+        "LP ignition, LP hardware, flame-safety, refrigerator control, and repeated CHECK lamp diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-americana-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm3762-rm3962-lp-flashing-lp-ignition-failed",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM3762",
+        "RM3762SL",
+        "RM3962",
+        "RM3962SL",
+        "RM3962SF"
+      ],
+      "code": "LP",
+      "slug": "dometic-rm3762-rm3962-lp-flashing-lp-ignition-failed",
+      "plainMeaning": "The RM3762/RM3962 operating instructions say a flashing LP message alternating with the fresh-food temperature means LP gas ignition failed after a complete ignition sequence and the burner did not light.",
+      "ownerSafeActions": [
+        "Record the alternating LP and temperature display before resetting.",
+        "If the LP cylinder is empty, replace it before one documented front-panel restart.",
+        "After a long shutoff or cylinder change, follow only the manual front-panel restart sequence and stop if the display returns."
+      ],
+      "serviceOnlyActions": [
+        "Repeated LP ignition failure, burner obstruction, LP hardware, and refrigerator control diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service LP hardware or ignition parts; use only the documented front-panel restart and call a Dometic dealer if LP returns.",
+      "sourceIds": [
+        "dometic-rm3762-rm3962-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-beep-tank-stop-mode",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10"
+      ],
+      "code": "Beep",
+      "slug": "dometic-rmd10-beep-tank-stop-mode",
+      "plainMeaning": "The RMD10T/RMD10XT operating manual lists Beep for tank stop mode, where gas operation is blocked for 15 minutes.",
+      "ownerSafeActions": [
+        "Wait 15 minutes before expecting LP operation to resume.",
+        "Use another front-panel operating mode if available and safe.",
+        "Record when the beep occurs if it repeats outside the documented tank-stop window."
+      ],
+      "serviceOnlyActions": [
+        "Tank-stop timing, ignition interlock, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd10t-rmd10xt-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-americana-temperature-sensor-limp-mode",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM2351",
+        "RM2451",
+        "RM2551",
+        "DM2652",
+        "DM2852"
+      ],
+      "code": "temperature sensor limp mode",
+      "slug": "dometic-americana-temperature-sensor-limp-mode",
+      "plainMeaning": "For RM2351/RM2451/RM2551/DM2652/DM2852 models, the Americana manual says that if the control cannot read the temperature sensor and control the preset temperature, the cooling unit runs continuously on the available energy source.",
+      "ownerSafeActions": [
+        "Record the model and continuous-run symptom for service.",
+        "Monitor food temperature and stop using the refrigerator if safe temperatures cannot be maintained.",
+        "Do not treat indefinite cooling-unit operation as normal operation."
+      ],
+      "serviceOnlyActions": [
+        "Temperature sensor and associated electronics diagnosis or replacement are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-americana-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-americana-display-module-limp-mode",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM2354",
+        "RM2454",
+        "RM2554",
+        "DM2662",
+        "DM2663",
+        "DM2862",
+        "NDM1062"
+      ],
+      "code": "display module limp mode",
+      "slug": "dometic-americana-display-module-limp-mode",
+      "plainMeaning": "For RM2354/RM2454/RM2554/DM2662/DM2663/DM2862/NDM1062 models, the Americana manual says a nonfunctional display module can put the refrigerator in full automatic operation with the temperature setting held at mid position.",
+      "ownerSafeActions": [
+        "Record the nonfunctional display state and model information.",
+        "Avoid repeated mode changes if the display is not responding.",
+        "Arrange Dometic service if normal display operation does not return."
+      ],
+      "serviceOnlyActions": [
+        "Display module, power module, wiring, and control diagnostics are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-americana-operating"
+      ],
+      "symptomIds": [
+        "thermostat-communication",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-americana-temperature-sensing-circuit-limp-mode",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM2354",
+        "RM2454",
+        "RM2554",
+        "DM2662",
+        "DM2663",
+        "DM2862",
+        "NDM1062"
+      ],
+      "code": "temperature-sensing circuit limp mode",
+      "slug": "dometic-americana-temperature-sensing-circuit-limp-mode",
+      "plainMeaning": "For RM2354/RM2454/RM2554/DM2662/DM2663/DM2862/NDM1062 models, the Americana manual says a temperature-sensing device or associated electronic-circuit failure makes the cooling unit run continuously on the selected energy source.",
+      "ownerSafeActions": [
+        "Record the selected energy mode and whether the refrigerator runs continuously.",
+        "Monitor food temperature and stop using the refrigerator if safe temperatures cannot be maintained.",
+        "Arrange Dometic service if the limp condition persists."
+      ],
+      "serviceOnlyActions": [
+        "Temperature-sensing device, associated electronics, and refrigerator controls are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-americana-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm8-2-8-flashing-230v-unavailable-or-low",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM8xxx",
+        "RMS8xxx",
+        "RML8xxx",
+        "RMSL8xxx",
+        "RM8501",
+        "RM8505",
+        "RMS8501",
+        "RMS8505",
+        "RML8555",
+        "RMSL8505"
+      ],
+      "code": "2 + 8 flashing + 20 s beep",
+      "slug": "dometic-rm8-2-8-flashing-230v-unavailable-or-low",
+      "plainMeaning": "The RM8/RMS8/RML8/RMSL8 operating manual lists 2 + 8 flashing + 20 s beep as: 230 V mode is not available or the voltage is too low.",
+      "ownerSafeActions": [
+        "Check the owner-visible mains power connection and selected energy mode.",
+        "Record whether the display clears after restoring the intended power source."
+      ],
+      "serviceOnlyActions": [
+        "Mains supply, fuse, heating element, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm8-rms8-rml8-operating"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm8-4-8-flashing-12v-unavailable-or-low",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM8xxx",
+        "RMS8xxx",
+        "RML8xxx",
+        "RMSL8xxx",
+        "RM8501",
+        "RM8505",
+        "RMS8501",
+        "RMS8505",
+        "RML8555",
+        "RMSL8505"
+      ],
+      "code": "4 + 8 flashing + 20 s beep",
+      "slug": "dometic-rm8-4-8-flashing-12v-unavailable-or-low",
+      "plainMeaning": "The RM8/RMS8/RML8/RMSL8 operating manual lists 4 + 8 flashing + 20 s beep as: 12 V mode is not available or the voltage is too low; AES models also call out the D+ signal.",
+      "ownerSafeActions": [
+        "Check owner-visible coach battery state and the selected front-panel energy mode.",
+        "Record whether the fault appears while driving, parked, or connected to external power."
+      ],
+      "serviceOnlyActions": [
+        "DC supply, D+ signal, fuse, wiring, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm8-rms8-rml8-operating"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm8-3-8-flashing-gas-flame-not-ignited",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM8xxx",
+        "RMS8xxx",
+        "RML8xxx",
+        "RMSL8xxx",
+        "RM8501",
+        "RM8505",
+        "RMS8501",
+        "RMS8505",
+        "RML8555",
+        "RMSL8505"
+      ],
+      "code": "3 + 8 flashing + 20 s beep",
+      "slug": "dometic-rm8-3-8-flashing-gas-flame-not-ignited",
+      "plainMeaning": "The RM8/RMS8/RML8/RMSL8 operating manual lists 3 + 8 flashing + 20 s beep as: GAS or automatic mode did not ignite the flame.",
+      "ownerSafeActions": [
+        "Confirm the LP cylinder has fuel from owner-visible indicators.",
+        "Use the front GAS FAULT reset only after correcting an owner-visible supply issue.",
+        "Stop LP mode and arrange service if the display returns."
+      ],
+      "serviceOnlyActions": [
+        "Repeated LP ignition failure, burner service, LP hardware, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm8-rms8-rml8-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm8-15-second-beep-interior-lighting-on",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM8xxx",
+        "RMS8xxx",
+        "RML8xxx",
+        "RMSL8xxx",
+        "RM8501",
+        "RM8505",
+        "RMS8501",
+        "RMS8505",
+        "RML8555",
+        "RMSL8505"
+      ],
+      "code": "15 s beep every two minutes",
+      "slug": "dometic-rm8-15-second-beep-interior-lighting-on",
+      "plainMeaning": "The RM8/RMS8/RML8/RMSL8 operating manual lists 15 s beep every two minutes as: The interior lighting is switched on.",
+      "ownerSafeActions": [
+        "Close the refrigerator door.",
+        "Check for food packages or shelves preventing the door from closing fully."
+      ],
+      "serviceOnlyActions": [
+        "Door contact, latch, hinge, and light-circuit diagnosis are service-only if the alarm repeats with the door closed."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm8-rms8-rml8-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm8-2-7-flashing-230v-heating-element-defective",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM8xxx",
+        "RMS8xxx",
+        "RML8xxx",
+        "RMSL8xxx",
+        "RM8501",
+        "RM8505",
+        "RMS8501",
+        "RMS8505",
+        "RML8555",
+        "RMSL8505"
+      ],
+      "code": "2 + 7 flashing + 20 s beep",
+      "slug": "dometic-rm8-2-7-flashing-230v-heating-element-defective",
+      "plainMeaning": "The RM8/RMS8/RML8/RMSL8 operating manual lists 2 + 7 flashing + 20 s beep as: The 230 V heating element is defective.",
+      "ownerSafeActions": [
+        "Record the display state and selected energy mode.",
+        "Use another front-panel energy mode only if available and safe while arranging service."
+      ],
+      "serviceOnlyActions": [
+        "Heating element replacement and power-circuit diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm8-rms8-rml8-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm8-4-7-flashing-12v-heating-element-defective",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM8xxx",
+        "RMS8xxx",
+        "RML8xxx",
+        "RMSL8xxx",
+        "RM8501",
+        "RM8505",
+        "RMS8501",
+        "RMS8505",
+        "RML8555",
+        "RMSL8505"
+      ],
+      "code": "4 + 7 flashing + 20 s beep",
+      "slug": "dometic-rm8-4-7-flashing-12v-heating-element-defective",
+      "plainMeaning": "The RM8/RMS8/RML8/RMSL8 operating manual lists 4 + 7 flashing + 20 s beep as: The 12 V heating element is defective.",
+      "ownerSafeActions": [
+        "Record the display state and selected energy mode.",
+        "Use another front-panel energy mode only if available and safe while arranging service."
+      ],
+      "serviceOnlyActions": [
+        "DC heating element replacement and power-circuit diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm8-rms8-rml8-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm8-7-flashing-temperature-sensor-defective",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM8xxx",
+        "RMS8xxx",
+        "RML8xxx",
+        "RMSL8xxx",
+        "RM8501",
+        "RM8505",
+        "RMS8501",
+        "RMS8505",
+        "RML8555",
+        "RMSL8505"
+      ],
+      "code": "7 flashing",
+      "slug": "dometic-rm8-7-flashing-temperature-sensor-defective",
+      "plainMeaning": "The RM8/RMS8/RML8/RMSL8 operating manual lists 7 flashing as: The temperature sensor has no contact or is defective.",
+      "ownerSafeActions": [
+        "Record the flashing temperature-level display.",
+        "Monitor food temperature and arrange service if safe temperatures cannot be maintained."
+      ],
+      "serviceOnlyActions": [
+        "Temperature sensor and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm8-rms8-rml8-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm8-3-7-flashing-burner-or-cooling-unit-defective",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM8xxx",
+        "RMS8xxx",
+        "RML8xxx",
+        "RMSL8xxx",
+        "RM8501",
+        "RM8505",
+        "RMS8501",
+        "RMS8505",
+        "RML8555",
+        "RMSL8505"
+      ],
+      "code": "3 + 7 flashing + 20 s beep",
+      "slug": "dometic-rm8-3-7-flashing-burner-or-cooling-unit-defective",
+      "plainMeaning": "The RM8/RMS8/RML8/RMSL8 operating manual lists 3 + 7 flashing + 20 s beep as: The burner or cooling unit is defective.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off if cooling is unsafe or any odor or leakage is present.",
+        "Record the display and avoid repeated resets."
+      ],
+      "serviceOnlyActions": [
+        "Burner, burner nozzles, cooling unit, and refrigerator controls are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm8-rms8-rml8-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm8-3-8-flashing-brightly-flame-not-ignited",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM8xxx",
+        "RMS8xxx",
+        "RML8xxx",
+        "RMSL8xxx",
+        "RM8501",
+        "RM8505",
+        "RMS8501",
+        "RMS8505",
+        "RML8555",
+        "RMSL8505"
+      ],
+      "code": "3 + 8 flashing brightly",
+      "slug": "dometic-rm8-3-8-flashing-brightly-flame-not-ignited",
+      "plainMeaning": "The RM8/RMS8/RML8/RMSL8 operating manual lists 3 + 8 flashing brightly as: During internal-battery operation, the flame was not ignited.",
+      "ownerSafeActions": [
+        "Confirm the LP cylinder has fuel from owner-visible indicators.",
+        "Confirm the internal batteries are installed and not depleted if the model uses battery operation.",
+        "Stop LP mode and arrange service if the display returns."
+      ],
+      "serviceOnlyActions": [
+        "Repeated LP ignition failure and battery-mode refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm8-rms8-rml8-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm8-3-7-flashing-brightly-burner-or-cooling-unit-defective",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM8xxx",
+        "RMS8xxx",
+        "RML8xxx",
+        "RMSL8xxx",
+        "RM8501",
+        "RM8505",
+        "RMS8501",
+        "RMS8505",
+        "RML8555",
+        "RMSL8505"
+      ],
+      "code": "3 + 7 flashing brightly",
+      "slug": "dometic-rm8-3-7-flashing-brightly-burner-or-cooling-unit-defective",
+      "plainMeaning": "The RM8/RMS8/RML8/RMSL8 operating manual lists 3 + 7 flashing brightly as: During internal-battery operation, the burner or cooling unit is defective.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off if cooling is unsafe or any odor or leakage is present.",
+        "Record the bright flashing display and arrange service."
+      ],
+      "serviceOnlyActions": [
+        "Burner, cooling unit, and battery-mode refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm8-rms8-rml8-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm8-internal-battery-15-second-beep-low-voltage",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM8xxx",
+        "RMS8xxx",
+        "RML8xxx",
+        "RMSL8xxx",
+        "RM8501",
+        "RM8505",
+        "RMS8501",
+        "RMS8505",
+        "RML8555",
+        "RMSL8505"
+      ],
+      "code": "internal battery 15 s beep",
+      "slug": "dometic-rm8-internal-battery-15-second-beep-low-voltage",
+      "plainMeaning": "The RM8/RMS8/RML8/RMSL8 operating manual lists internal battery 15 s beep as: An acoustic signal at 15-second intervals indicates undervoltage detection in the internal batteries.",
+      "ownerSafeActions": [
+        "Replace the internal batteries as the manual describes.",
+        "Record whether the alarm returns with fresh batteries."
+      ],
+      "serviceOnlyActions": [
+        "Battery contacts, internal power supply, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm8-rms8-rml8-operating"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm8-external-internal-power-switching-failure",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM8xxx",
+        "RMS8xxx",
+        "RML8xxx",
+        "RMSL8xxx",
+        "RM8501",
+        "RM8505",
+        "RMS8501",
+        "RMS8505",
+        "RML8555",
+        "RMSL8505"
+      ],
+      "code": "external-to-internal power switching failure",
+      "slug": "dometic-rm8-external-internal-power-switching-failure",
+      "plainMeaning": "The RM8/RMS8/RML8/RMSL8 operating manual lists external-to-internal power switching failure as: Automatic switching from external to internal power supply does not function, so the refrigerator does not function and gas operation is not possible although batteries are inserted.",
+      "ownerSafeActions": [
+        "Switch the refrigerator off and on once as the manual describes.",
+        "Record whether vehicle power was interrupted while LP operation was starting."
+      ],
+      "serviceOnlyActions": [
+        "Power switchover, internal supply, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm8-rms8-rml8-operating"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd8-ac-plug-temperature-bars-heater-or-cooling-unit",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD8501",
+        "RMD8505",
+        "RMD8551",
+        "RMD8555",
+        "RMD8xx1",
+        "RMD8xx5"
+      ],
+      "code": "AC plug + temperature bars flashing + 20 s beep",
+      "slug": "dometic-rmd8-ac-plug-temperature-bars-heater-or-cooling-unit",
+      "plainMeaning": "The RMD8 operating manual lists AC plug + temperature bars flashing + 20 s beep as: the AC heater element or cooling unit is defective.",
+      "ownerSafeActions": [
+        "Record the icon combination and current energy mode.",
+        "Use another front-panel energy mode only if available and safe while arranging service."
+      ],
+      "serviceOnlyActions": [
+        "AC heater element, cooling unit, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd8-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd8-dc-battery-temperature-bars-heater-or-cooling-unit",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD8501",
+        "RMD8505",
+        "RMD8551",
+        "RMD8555",
+        "RMD8xx1",
+        "RMD8xx5"
+      ],
+      "code": "DC battery + temperature bars flashing + 20 s beep",
+      "slug": "dometic-rmd8-dc-battery-temperature-bars-heater-or-cooling-unit",
+      "plainMeaning": "The RMD8 operating manual lists DC battery + temperature bars flashing + 20 s beep as: the DC heater element or cooling unit is defective.",
+      "ownerSafeActions": [
+        "Record the icon combination and current energy mode.",
+        "Use another front-panel energy mode only if available and safe while arranging service."
+      ],
+      "serviceOnlyActions": [
+        "DC heater element, cooling unit, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd8-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd8-gas-flame-temperature-bars-burner-or-cooling-unit",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD8501",
+        "RMD8505",
+        "RMD8551",
+        "RMD8555",
+        "RMD8xx1",
+        "RMD8xx5"
+      ],
+      "code": "gas flame + temperature bars flashing + 20 s beep",
+      "slug": "dometic-rmd8-gas-flame-temperature-bars-burner-or-cooling-unit",
+      "plainMeaning": "The RMD8 operating manual lists gas flame + temperature bars flashing + 20 s beep as: the burner or cooling unit is defective.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off if cooling is unsafe or any odor or leakage is present.",
+        "Record the icon combination and arrange service."
+      ],
+      "serviceOnlyActions": [
+        "Burner, cooling unit, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd8-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd8-temperature-bars-temperature-sensor",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD8501",
+        "RMD8505",
+        "RMD8551",
+        "RMD8555",
+        "RMD8xx1",
+        "RMD8xx5"
+      ],
+      "code": "temperature bars flashing",
+      "slug": "dometic-rmd8-temperature-bars-temperature-sensor",
+      "plainMeaning": "The RMD8 operating manual lists temperature bars flashing as: the temperature sensor has no contact or is defective.",
+      "ownerSafeActions": [
+        "Record the flashing temperature bars.",
+        "Monitor food temperature and arrange service if safe temperatures cannot be maintained."
+      ],
+      "serviceOnlyActions": [
+        "Temperature sensor and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd8-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd8-ac-plug-warning-triangle-power-unavailable",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD8501",
+        "RMD8505",
+        "RMD8551",
+        "RMD8555",
+        "RMD8xx1",
+        "RMD8xx5"
+      ],
+      "code": "AC plug + warning triangle flashing + 20 s beep",
+      "slug": "dometic-rmd8-ac-plug-warning-triangle-power-unavailable",
+      "plainMeaning": "The RMD8 operating manual lists AC plug + warning triangle flashing + 20 s beep as: AC power supply is not available or insufficient.",
+      "ownerSafeActions": [
+        "Check the owner-visible AC power cable, power source, and selected energy mode.",
+        "Record whether the fault clears after restoring the intended power source."
+      ],
+      "serviceOnlyActions": [
+        "AC supply, fuse, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd8-operating"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd8-dc-battery-warning-triangle-power-unavailable",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD8501",
+        "RMD8505",
+        "RMD8551",
+        "RMD8555",
+        "RMD8xx1",
+        "RMD8xx5"
+      ],
+      "code": "DC battery + warning triangle flashing + 20 s beep",
+      "slug": "dometic-rmd8-dc-battery-warning-triangle-power-unavailable",
+      "plainMeaning": "The RMD8 operating manual lists DC battery + warning triangle flashing + 20 s beep as: DC power supply is not available or insufficient.",
+      "ownerSafeActions": [
+        "Check owner-visible coach battery state and the selected front-panel energy mode.",
+        "Record whether the fault appears while driving, parked, or connected to external power."
+      ],
+      "serviceOnlyActions": [
+        "DC supply, fuse, wiring, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd8-operating"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd8-gas-flame-warning-triangle-flame-not-ignited",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD8501",
+        "RMD8505",
+        "RMD8551",
+        "RMD8555",
+        "RMD8xx1",
+        "RMD8xx5"
+      ],
+      "code": "gas flame + warning triangle flashing + 20 s beep",
+      "slug": "dometic-rmd8-gas-flame-warning-triangle-flame-not-ignited",
+      "plainMeaning": "The RMD8 operating manual lists gas flame + warning triangle flashing + 20 s beep as: the burner flame is not ignited during gas or automatic operation.",
+      "ownerSafeActions": [
+        "Confirm the LP cylinder has fuel from owner-visible indicators.",
+        "Press the front reset once after correcting an owner-visible supply issue.",
+        "Stop LP mode and arrange service if the display returns."
+      ],
+      "serviceOnlyActions": [
+        "Repeated LP ignition failure, burner service, LP hardware, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd8-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd8-15-second-beep-interior-light-on",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD8501",
+        "RMD8505",
+        "RMD8551",
+        "RMD8555",
+        "RMD8xx1",
+        "RMD8xx5"
+      ],
+      "code": "15 s beep every two minutes",
+      "slug": "dometic-rmd8-15-second-beep-interior-light-on",
+      "plainMeaning": "The RMD8 operating manual lists 15 s beep every two minutes as: the interior light is switched on.",
+      "ownerSafeActions": [
+        "Close the refrigerator door.",
+        "Check for food packages or shelves preventing the door from closing fully."
+      ],
+      "serviceOnlyActions": [
+        "Door contact, latch, hinge, and light-circuit diagnosis are service-only if the alarm repeats with the door closed."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd8-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd8-battery-mode-low-voltage-beep",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD8501",
+        "RMD8505",
+        "RMD8551",
+        "RMD8555",
+        "RMD8xx1",
+        "RMD8xx5"
+      ],
+      "code": "battery mode low-voltage 15 s beep",
+      "slug": "dometic-rmd8-battery-mode-low-voltage-beep",
+      "plainMeaning": "The RMD8 operating manual lists battery mode low-voltage 15 s beep as: in battery operation, a signal every 15 seconds indicates low voltage detection in the internal battery.",
+      "ownerSafeActions": [
+        "Replace the internal batteries as the manual describes.",
+        "Record whether the alarm returns with fresh batteries."
+      ],
+      "serviceOnlyActions": [
+        "Battery contacts, internal power supply, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd8-operating"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd8-external-internal-power-switching-failure",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD8501",
+        "RMD8505",
+        "RMD8551",
+        "RMD8555",
+        "RMD8xx1",
+        "RMD8xx5"
+      ],
+      "code": "external-to-internal power switching failure",
+      "slug": "dometic-rmd8-external-internal-power-switching-failure",
+      "plainMeaning": "The RMD8 operating manual lists external-to-internal power switching failure as: automatic change-over from external to internal power supply does not function, so the refrigerator does not work and gas mode is not possible even though batteries are inserted.",
+      "ownerSafeActions": [
+        "Switch the refrigerator off and on once as the manual describes.",
+        "Record whether vehicle power was disconnected while gas mode was starting."
+      ],
+      "serviceOnlyActions": [
+        "Power switchover, internal supply, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd8-operating"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-rms10-w01-refrigerator-compartment-temperature-sensor",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP"
+      ],
+      "code": "W01",
+      "slug": "dometic-rm10-rms10-w01-refrigerator-compartment-temperature-sensor",
+      "plainMeaning": "The Dometic RM10.5/RMS10.5 operating manual lists W01 as: defective temperature sensor in the refrigerator compartment.",
+      "ownerSafeActions": [
+        "Record the W01 warning and model details.",
+        "Keep the refrigerator under food-safety observation until service evaluates it."
+      ],
+      "serviceOnlyActions": [
+        "Temperature-sensor diagnosis and replacement are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-rms10-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-rms10-w05-ac-power-not-connected-or-low",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP"
+      ],
+      "code": "W05",
+      "slug": "dometic-rm10-rms10-w05-ac-power-not-connected-or-low",
+      "plainMeaning": "The Dometic RM10.5/RMS10.5 operating manual lists W05 as: AC power is not connected or AC voltage is below the manual threshold.",
+      "ownerSafeActions": [
+        "Confirm the coach is connected to an intended power source from owner-visible controls.",
+        "Select another front-panel energy mode if available and safe."
+      ],
+      "serviceOnlyActions": [
+        "AC supply, inverter, wiring, and refrigerator power-module diagnosis belong with qualified RV electrical service."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-rms10-operating"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-rms10-w06-dc-power-not-connected",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP"
+      ],
+      "code": "W06",
+      "slug": "dometic-rm10-rms10-w06-dc-power-not-connected",
+      "plainMeaning": "The Dometic RM10.5/RMS10.5 operating manual lists W06 as: DC power is not connected.",
+      "ownerSafeActions": [
+        "Select another front-panel energy mode if available and safe.",
+        "Record whether the warning appears on travel, shore power, or battery-only operation."
+      ],
+      "serviceOnlyActions": [
+        "DC supply, fuse, wiring, and power-module diagnosis belong with qualified RV electrical service."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-rms10-operating"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-rms10-w11-dc-overvoltage",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP"
+      ],
+      "code": "W11",
+      "slug": "dometic-rm10-rms10-w11-dc-overvoltage",
+      "plainMeaning": "The Dometic RM10.5/RMS10.5 operating manual lists W11 as: DC overvoltage is present.",
+      "ownerSafeActions": [
+        "Stop using DC mode if the warning persists.",
+        "Record the coach battery or charger state from owner-visible monitors."
+      ],
+      "serviceOnlyActions": [
+        "Charging-system and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-rms10-operating"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-rms10-beep-tank-stop-mode",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP"
+      ],
+      "code": "Beep",
+      "slug": "dometic-rm10-rms10-beep-tank-stop-mode",
+      "plainMeaning": "The Dometic RM10.5/RMS10.5 operating manual lists Beep as: tank stop mode is active and gas operation is blocked for 15 minutes.",
+      "ownerSafeActions": [
+        "Wait 15 minutes before expecting LP operation to resume.",
+        "Use another front-panel operating mode if available and safe.",
+        "Record when the beep occurs if it repeats outside the documented tank-stop window."
+      ],
+      "serviceOnlyActions": [
+        "Tank-stop timing, ignition interlock, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-rms10-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-rms10-w10-beep-door-open-more-than-two-minutes",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP"
+      ],
+      "code": "W10 + beep",
+      "slug": "dometic-rm10-rms10-w10-beep-door-open-more-than-two-minutes",
+      "plainMeaning": "The Dometic RM10.5/RMS10.5 operating manual lists W10 + beep as: the door has been open for more than two minutes.",
+      "ownerSafeActions": [
+        "Close the refrigerator door and confirm the warning clears.",
+        "Check for blocked shelves or seals that prevent the door from closing."
+      ],
+      "serviceOnlyActions": [
+        "Door switch, hinge, latch, or wiring diagnosis should be handled by service if the warning repeats with the door closed."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-rms10-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-rms10-e03-power-module-display-no-connection",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP"
+      ],
+      "code": "E03",
+      "slug": "dometic-rm10-rms10-e03-power-module-display-no-connection",
+      "plainMeaning": "The Dometic RM10.5/RMS10.5 operating manual lists E03 as: there is no connection between power module and display.",
+      "ownerSafeActions": [
+        "Record the E03 error before resetting.",
+        "Use the manual front-panel reset only as directed."
+      ],
+      "serviceOnlyActions": [
+        "Power-module/display communication diagnosis is service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-rms10-operating"
+      ],
+      "symptomIds": [
+        "thermostat-communication",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-rms10-e07-no-cooling-capacity-in-gas-mode",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP"
+      ],
+      "code": "E07",
+      "slug": "dometic-rm10-rms10-e07-no-cooling-capacity-in-gas-mode",
+      "plainMeaning": "The Dometic RM10.5/RMS10.5 operating manual lists E07 as: there is no cooling capacity in gas mode.",
+      "ownerSafeActions": [
+        "Confirm the RV is level, then reset the error once from the control knob as the manual describes.",
+        "Contact customer service if the error occurs again."
+      ],
+      "serviceOnlyActions": [
+        "LP cooling performance, flame, and absorption-system diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-rms10-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-rms10-e08-no-cooling-power-in-ac-mode",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP"
+      ],
+      "code": "E08",
+      "slug": "dometic-rm10-rms10-e08-no-cooling-power-in-ac-mode",
+      "plainMeaning": "The Dometic RM10.5/RMS10.5 operating manual lists E08 as: there is no cooling power in AC mode.",
+      "ownerSafeActions": [
+        "Confirm the RV is level, then reset the error once from the control knob as the manual describes.",
+        "Contact customer service if the error occurs again."
+      ],
+      "serviceOnlyActions": [
+        "AC heat source, power module, and absorption-system diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-rms10-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-rms10-e09-no-cooling-power-in-dc-mode",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP"
+      ],
+      "code": "E09",
+      "slug": "dometic-rm10-rms10-e09-no-cooling-power-in-dc-mode",
+      "plainMeaning": "The Dometic RM10.5/RMS10.5 operating manual lists E09 as: there is no cooling power in DC mode.",
+      "ownerSafeActions": [
+        "Confirm the RV is level, then reset the error once from the control knob as the manual describes.",
+        "Contact customer service if the error occurs again."
+      ],
+      "serviceOnlyActions": [
+        "DC heat source, power module, and absorption-system diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-rms10-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-rms10-e12-gas-valve-test-error",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP"
+      ],
+      "code": "E12",
+      "slug": "dometic-rm10-rms10-e12-gas-valve-test-error",
+      "plainMeaning": "The Dometic RM10.5/RMS10.5 operating manual lists E12 as: gas valve test error; gas operation is not possible.",
+      "ownerSafeActions": [
+        "Reset the error once from the control knob as the manual describes.",
+        "Use a non-LP energy mode only if available and safe."
+      ],
+      "serviceOnlyActions": [
+        "LP valve, LP operation, and power-module diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-rms10-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-rms10-e13-internal-communication-error",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP"
+      ],
+      "code": "E13",
+      "slug": "dometic-rm10-rms10-e13-internal-communication-error",
+      "plainMeaning": "The Dometic RM10.5/RMS10.5 operating manual lists E13 as: internal communication error; gas operation is not possible.",
+      "ownerSafeActions": [
+        "Record E13 and reset once from the control knob as the manual describes.",
+        "Use a non-LP energy mode only if available and safe."
+      ],
+      "serviceOnlyActions": [
+        "Internal communication and power-module diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-rms10-operating"
+      ],
+      "symptomIds": [
+        "thermostat-communication",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-rms10-e14-stand-alone-gas-battery-pack-low",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP"
+      ],
+      "code": "E14",
+      "slug": "dometic-rm10-rms10-e14-stand-alone-gas-battery-pack-low",
+      "plainMeaning": "The Dometic RM10.5/RMS10.5 operating manual lists E14 as: in stand-alone gas mode, the battery pack charge is too low.",
+      "ownerSafeActions": [
+        "Replace the stand-alone gas battery packs as the manual describes, then reset the error.",
+        "Record the battery type and recurrence for service if it returns."
+      ],
+      "serviceOnlyActions": [
+        "Battery compartment contacts, wiring, and gas-mode electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-rms10-operating"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-rms10-e50-gas-lock-after-three-ignition-attempts",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP"
+      ],
+      "code": "E50",
+      "slug": "dometic-rm10-rms10-e50-gas-lock-after-three-ignition-attempts",
+      "plainMeaning": "The Dometic RM10.5/RMS10.5 operating manual lists E50 as: gas lock after three ignition attempts; ignition is not possible.",
+      "ownerSafeActions": [
+        "Confirm the LP cylinder has fuel from owner-visible indicators and replace an empty cylinder if needed.",
+        "Reset the error once from the control knob after correcting the supply state."
+      ],
+      "serviceOnlyActions": [
+        "Repeated ignition lockout, LP hardware, and refrigerator ignition diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-rms10-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-rms10-e51-gas-lock-power-module-internal-error",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP"
+      ],
+      "code": "E51",
+      "slug": "dometic-rm10-rms10-e51-gas-lock-power-module-internal-error",
+      "plainMeaning": "The Dometic RM10.5/RMS10.5 operating manual lists E51 as: gas lock caused by an internal power-module error.",
+      "ownerSafeActions": [
+        "Reset the error once from the control knob as the manual describes.",
+        "Stop LP operation and call service if the error occurs again."
+      ],
+      "serviceOnlyActions": [
+        "Power-module and LP lockout diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-rms10-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-rms10-e52-ground-contact-gas-valve",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP"
+      ],
+      "code": "E52",
+      "slug": "dometic-rm10-rms10-e52-ground-contact-gas-valve",
+      "plainMeaning": "The Dometic RM10.5/RMS10.5 operating manual lists E52 as: ground contact at the gas valve is detected.",
+      "ownerSafeActions": [
+        "Reset the error once from the control knob as the manual describes.",
+        "Stop LP operation and call service if the error occurs again."
+      ],
+      "serviceOnlyActions": [
+        "Ground-contact, LP valve, wiring, and power-module diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-rms10-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-rms10-e53-ground-contact-ignition-electrode",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP"
+      ],
+      "code": "E53",
+      "slug": "dometic-rm10-rms10-e53-ground-contact-ignition-electrode",
+      "plainMeaning": "The Dometic RM10.5/RMS10.5 operating manual lists E53 as: ground contact at the ignition electrode is detected.",
+      "ownerSafeActions": [
+        "Reset the error once from the control knob as the manual describes.",
+        "Stop LP operation and call service if the error occurs again."
+      ],
+      "serviceOnlyActions": [
+        "Ignition electrode, wiring, and power-module diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-rms10-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-5-w01-refrigerator-compartment-temperature-sensor",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT"
+      ],
+      "code": "W01",
+      "slug": "dometic-rmd10-5-w01-refrigerator-compartment-temperature-sensor",
+      "plainMeaning": "The Dometic RMD10.5 operating manual lists W01 as: defective temperature sensor in the refrigerator compartment.",
+      "ownerSafeActions": [
+        "Record the W01 warning and model details.",
+        "Keep the refrigerator under food-safety observation until service evaluates it."
+      ],
+      "serviceOnlyActions": [
+        "Temperature-sensor diagnosis and replacement are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd10-5-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-5-w05-ac-power-not-connected-or-low",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT"
+      ],
+      "code": "W05",
+      "slug": "dometic-rmd10-5-w05-ac-power-not-connected-or-low",
+      "plainMeaning": "The Dometic RMD10.5 operating manual lists W05 as: AC power is not connected or AC voltage is below the manual threshold.",
+      "ownerSafeActions": [
+        "Confirm the coach is connected to an intended power source from owner-visible controls.",
+        "Select another front-panel energy mode if available and safe."
+      ],
+      "serviceOnlyActions": [
+        "AC supply, inverter, wiring, and refrigerator power-module diagnosis belong with qualified RV electrical service."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd10-5-operating"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-5-w06-dc-power-not-connected",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT"
+      ],
+      "code": "W06",
+      "slug": "dometic-rmd10-5-w06-dc-power-not-connected",
+      "plainMeaning": "The Dometic RMD10.5 operating manual lists W06 as: DC power is not connected.",
+      "ownerSafeActions": [
+        "Select another front-panel energy mode if available and safe.",
+        "Record whether the warning appears on travel, shore power, or battery-only operation."
+      ],
+      "serviceOnlyActions": [
+        "DC supply, fuse, wiring, and power-module diagnosis belong with qualified RV electrical service."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd10-5-operating"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-5-w11-dc-overvoltage",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT"
+      ],
+      "code": "W11",
+      "slug": "dometic-rmd10-5-w11-dc-overvoltage",
+      "plainMeaning": "The Dometic RMD10.5 operating manual lists W11 as: DC overvoltage is present.",
+      "ownerSafeActions": [
+        "Stop using DC mode if the warning persists.",
+        "Record the coach battery or charger state from owner-visible monitors."
+      ],
+      "serviceOnlyActions": [
+        "Charging-system and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd10-5-operating"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-5-beep-tank-stop-mode",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT"
+      ],
+      "code": "Beep",
+      "slug": "dometic-rmd10-5-beep-tank-stop-mode",
+      "plainMeaning": "The Dometic RMD10.5 operating manual lists Beep as: tank stop mode is active and gas operation is blocked for 15 minutes.",
+      "ownerSafeActions": [
+        "Wait 15 minutes before expecting LP operation to resume.",
+        "Use another front-panel operating mode if available and safe.",
+        "Record when the beep occurs if it repeats outside the documented tank-stop window."
+      ],
+      "serviceOnlyActions": [
+        "Tank-stop timing, ignition interlock, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd10-5-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-5-w10-beep-door-open-more-than-two-minutes",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT"
+      ],
+      "code": "W10 + beep",
+      "slug": "dometic-rmd10-5-w10-beep-door-open-more-than-two-minutes",
+      "plainMeaning": "The Dometic RMD10.5 operating manual lists W10 + beep as: the door has been open for more than two minutes.",
+      "ownerSafeActions": [
+        "Close the refrigerator door and confirm the warning clears.",
+        "Check for blocked shelves or seals that prevent the door from closing."
+      ],
+      "serviceOnlyActions": [
+        "Door switch, hinge, latch, or wiring diagnosis should be handled by service if the warning repeats with the door closed."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd10-5-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-5-e03-power-module-display-no-connection",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT"
+      ],
+      "code": "E03",
+      "slug": "dometic-rmd10-5-e03-power-module-display-no-connection",
+      "plainMeaning": "The Dometic RMD10.5 operating manual lists E03 as: there is no connection between power module and display.",
+      "ownerSafeActions": [
+        "Record the E03 error before resetting.",
+        "Use the manual front-panel reset only as directed."
+      ],
+      "serviceOnlyActions": [
+        "Power-module/display communication diagnosis is service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd10-5-operating"
+      ],
+      "symptomIds": [
+        "thermostat-communication",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-5-e07-no-cooling-capacity-in-gas-mode",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT"
+      ],
+      "code": "E07",
+      "slug": "dometic-rmd10-5-e07-no-cooling-capacity-in-gas-mode",
+      "plainMeaning": "The Dometic RMD10.5 operating manual lists E07 as: there is no cooling capacity in gas mode.",
+      "ownerSafeActions": [
+        "Confirm the RV is level, then reset the error once from the control knob as the manual describes.",
+        "Contact customer service if the error occurs again."
+      ],
+      "serviceOnlyActions": [
+        "LP cooling performance, flame, and absorption-system diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd10-5-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-5-e08-no-cooling-power-in-ac-mode",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT"
+      ],
+      "code": "E08",
+      "slug": "dometic-rmd10-5-e08-no-cooling-power-in-ac-mode",
+      "plainMeaning": "The Dometic RMD10.5 operating manual lists E08 as: there is no cooling power in AC mode.",
+      "ownerSafeActions": [
+        "Confirm the RV is level, then reset the error once from the control knob as the manual describes.",
+        "Contact customer service if the error occurs again."
+      ],
+      "serviceOnlyActions": [
+        "AC heat source, power module, and absorption-system diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd10-5-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-5-e09-no-cooling-power-in-dc-mode",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT"
+      ],
+      "code": "E09",
+      "slug": "dometic-rmd10-5-e09-no-cooling-power-in-dc-mode",
+      "plainMeaning": "The Dometic RMD10.5 operating manual lists E09 as: there is no cooling power in DC mode.",
+      "ownerSafeActions": [
+        "Confirm the RV is level, then reset the error once from the control knob as the manual describes.",
+        "Contact customer service if the error occurs again."
+      ],
+      "serviceOnlyActions": [
+        "DC heat source, power module, and absorption-system diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd10-5-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-5-e12-gas-valve-test-error",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT"
+      ],
+      "code": "E12",
+      "slug": "dometic-rmd10-5-e12-gas-valve-test-error",
+      "plainMeaning": "The Dometic RMD10.5 operating manual lists E12 as: gas valve test error; gas operation is not possible.",
+      "ownerSafeActions": [
+        "Reset the error once from the control knob as the manual describes.",
+        "Use a non-LP energy mode only if available and safe."
+      ],
+      "serviceOnlyActions": [
+        "LP valve, LP operation, and power-module diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd10-5-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-5-e13-internal-communication-error",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT"
+      ],
+      "code": "E13",
+      "slug": "dometic-rmd10-5-e13-internal-communication-error",
+      "plainMeaning": "The Dometic RMD10.5 operating manual lists E13 as: internal communication error; gas operation is not possible.",
+      "ownerSafeActions": [
+        "Record E13 and reset once from the control knob as the manual describes.",
+        "Use a non-LP energy mode only if available and safe."
+      ],
+      "serviceOnlyActions": [
+        "Internal communication and power-module diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd10-5-operating"
+      ],
+      "symptomIds": [
+        "thermostat-communication",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-5-e14-stand-alone-gas-battery-pack-low",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT"
+      ],
+      "code": "E14",
+      "slug": "dometic-rmd10-5-e14-stand-alone-gas-battery-pack-low",
+      "plainMeaning": "The Dometic RMD10.5 operating manual lists E14 as: in stand-alone gas mode, the battery pack charge is too low.",
+      "ownerSafeActions": [
+        "Replace the stand-alone gas battery packs as the manual describes, then reset the error.",
+        "Record the battery type and recurrence for service if it returns."
+      ],
+      "serviceOnlyActions": [
+        "Battery compartment contacts, wiring, and gas-mode electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd10-5-operating"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-5-e50-gas-lock-after-three-ignition-attempts",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT"
+      ],
+      "code": "E50",
+      "slug": "dometic-rmd10-5-e50-gas-lock-after-three-ignition-attempts",
+      "plainMeaning": "The Dometic RMD10.5 operating manual lists E50 as: gas lock after three ignition attempts; ignition is not possible.",
+      "ownerSafeActions": [
+        "Confirm the LP cylinder has fuel from owner-visible indicators and replace an empty cylinder if needed.",
+        "Reset the error once from the control knob after correcting the supply state."
+      ],
+      "serviceOnlyActions": [
+        "Repeated ignition lockout, LP hardware, and refrigerator ignition diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd10-5-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-5-e51-gas-lock-power-module-internal-error",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT"
+      ],
+      "code": "E51",
+      "slug": "dometic-rmd10-5-e51-gas-lock-power-module-internal-error",
+      "plainMeaning": "The Dometic RMD10.5 operating manual lists E51 as: gas lock caused by an internal power-module error.",
+      "ownerSafeActions": [
+        "Reset the error once from the control knob as the manual describes.",
+        "Stop LP operation and call service if the error occurs again."
+      ],
+      "serviceOnlyActions": [
+        "Power-module and LP lockout diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd10-5-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-5-e52-ground-contact-gas-valve",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT"
+      ],
+      "code": "E52",
+      "slug": "dometic-rmd10-5-e52-ground-contact-gas-valve",
+      "plainMeaning": "The Dometic RMD10.5 operating manual lists E52 as: ground contact at the gas valve is detected.",
+      "ownerSafeActions": [
+        "Reset the error once from the control knob as the manual describes.",
+        "Stop LP operation and call service if the error occurs again."
+      ],
+      "serviceOnlyActions": [
+        "Ground-contact, LP valve, wiring, and power-module diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd10-5-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd10-5-e53-ground-contact-ignition-electrode",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT"
+      ],
+      "code": "E53",
+      "slug": "dometic-rmd10-5-e53-ground-contact-ignition-electrode",
+      "plainMeaning": "The Dometic RMD10.5 operating manual lists E53 as: ground contact at the ignition electrode is detected.",
+      "ownerSafeActions": [
+        "Reset the error once from the control knob as the manual describes.",
+        "Stop LP operation and call service if the error occurs again."
+      ],
+      "serviceOnlyActions": [
+        "Ignition electrode, wiring, and power-module diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd10-5-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rml10-4-w01-refrigerator-compartment-temperature-sensor",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "W01",
+      "slug": "dometic-rml10-4-w01-refrigerator-compartment-temperature-sensor",
+      "plainMeaning": "The Dometic RML10.4 operating manual lists W01 as: defective temperature sensor in the refrigerator compartment.",
+      "ownerSafeActions": [
+        "Record the W01 warning and model details.",
+        "Keep the refrigerator under food-safety observation until service evaluates it."
+      ],
+      "serviceOnlyActions": [
+        "Temperature-sensor diagnosis and replacement are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rml10-4-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rml10-4-w05-ac-power-not-connected-or-low",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "W05",
+      "slug": "dometic-rml10-4-w05-ac-power-not-connected-or-low",
+      "plainMeaning": "The Dometic RML10.4 operating manual lists W05 as: AC power is not connected or AC voltage is below the manual threshold.",
+      "ownerSafeActions": [
+        "Confirm the coach is connected to an intended power source from owner-visible controls.",
+        "Select another front-panel energy mode if available and safe."
+      ],
+      "serviceOnlyActions": [
+        "AC supply, inverter, wiring, and refrigerator power-module diagnosis belong with qualified RV electrical service."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rml10-4-operating"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rml10-4-w06-dc-power-not-connected",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "W06",
+      "slug": "dometic-rml10-4-w06-dc-power-not-connected",
+      "plainMeaning": "The Dometic RML10.4 operating manual lists W06 as: DC power is not connected.",
+      "ownerSafeActions": [
+        "Select another front-panel energy mode if available and safe.",
+        "Record whether the warning appears on travel, shore power, or battery-only operation."
+      ],
+      "serviceOnlyActions": [
+        "DC supply, fuse, wiring, and power-module diagnosis belong with qualified RV electrical service."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rml10-4-operating"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rml10-4-w11-dc-overvoltage",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "W11",
+      "slug": "dometic-rml10-4-w11-dc-overvoltage",
+      "plainMeaning": "The Dometic RML10.4 operating manual lists W11 as: DC overvoltage is present.",
+      "ownerSafeActions": [
+        "Stop using DC mode if the warning persists.",
+        "Record the coach battery or charger state from owner-visible monitors."
+      ],
+      "serviceOnlyActions": [
+        "Charging-system and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rml10-4-operating"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rml10-4-beep-tank-stop-mode",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "Beep",
+      "slug": "dometic-rml10-4-beep-tank-stop-mode",
+      "plainMeaning": "The Dometic RML10.4 operating manual lists Beep as: tank stop mode is active and gas operation is blocked for 15 minutes.",
+      "ownerSafeActions": [
+        "Wait 15 minutes before expecting LP operation to resume.",
+        "Use another front-panel operating mode if available and safe.",
+        "Record when the beep occurs if it repeats outside the documented tank-stop window."
+      ],
+      "serviceOnlyActions": [
+        "Tank-stop timing, ignition interlock, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rml10-4-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rml10-4-w10-beep-door-open-more-than-two-minutes",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "W10 + beep",
+      "slug": "dometic-rml10-4-w10-beep-door-open-more-than-two-minutes",
+      "plainMeaning": "The Dometic RML10.4 operating manual lists W10 + beep as: the door has been open for more than two minutes.",
+      "ownerSafeActions": [
+        "Close the refrigerator door and confirm the warning clears.",
+        "Check for blocked shelves or seals that prevent the door from closing."
+      ],
+      "serviceOnlyActions": [
+        "Door switch, hinge, latch, or wiring diagnosis should be handled by service if the warning repeats with the door closed."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rml10-4-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rml10-4-e03-power-module-display-no-connection",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "E03",
+      "slug": "dometic-rml10-4-e03-power-module-display-no-connection",
+      "plainMeaning": "The Dometic RML10.4 operating manual lists E03 as: there is no connection between power module and display.",
+      "ownerSafeActions": [
+        "Record the E03 error before resetting.",
+        "Use the manual front-panel reset only as directed."
+      ],
+      "serviceOnlyActions": [
+        "Power-module/display communication diagnosis is service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rml10-4-operating"
+      ],
+      "symptomIds": [
+        "thermostat-communication",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rml10-4-e07-no-cooling-capacity-in-gas-mode",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "E07",
+      "slug": "dometic-rml10-4-e07-no-cooling-capacity-in-gas-mode",
+      "plainMeaning": "The Dometic RML10.4 operating manual lists E07 as: there is no cooling capacity in gas mode.",
+      "ownerSafeActions": [
+        "Confirm the RV is level, then reset the error once from the control knob as the manual describes.",
+        "Contact customer service if the error occurs again."
+      ],
+      "serviceOnlyActions": [
+        "LP cooling performance, flame, and absorption-system diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rml10-4-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rml10-4-e08-no-cooling-power-in-ac-mode",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "E08",
+      "slug": "dometic-rml10-4-e08-no-cooling-power-in-ac-mode",
+      "plainMeaning": "The Dometic RML10.4 operating manual lists E08 as: there is no cooling power in AC mode.",
+      "ownerSafeActions": [
+        "Confirm the RV is level, then reset the error once from the control knob as the manual describes.",
+        "Contact customer service if the error occurs again."
+      ],
+      "serviceOnlyActions": [
+        "AC heat source, power module, and absorption-system diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rml10-4-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rml10-4-e09-no-cooling-power-in-dc-mode",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "E09",
+      "slug": "dometic-rml10-4-e09-no-cooling-power-in-dc-mode",
+      "plainMeaning": "The Dometic RML10.4 operating manual lists E09 as: there is no cooling power in DC mode.",
+      "ownerSafeActions": [
+        "Confirm the RV is level, then reset the error once from the control knob as the manual describes.",
+        "Contact customer service if the error occurs again."
+      ],
+      "serviceOnlyActions": [
+        "DC heat source, power module, and absorption-system diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rml10-4-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rml10-4-e12-gas-valve-test-error",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "E12",
+      "slug": "dometic-rml10-4-e12-gas-valve-test-error",
+      "plainMeaning": "The Dometic RML10.4 operating manual lists E12 as: gas valve test error; gas operation is not possible.",
+      "ownerSafeActions": [
+        "Reset the error once from the control knob as the manual describes.",
+        "Use a non-LP energy mode only if available and safe."
+      ],
+      "serviceOnlyActions": [
+        "LP valve, LP operation, and power-module diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rml10-4-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rml10-4-e13-internal-communication-error",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "E13",
+      "slug": "dometic-rml10-4-e13-internal-communication-error",
+      "plainMeaning": "The Dometic RML10.4 operating manual lists E13 as: internal communication error; gas operation is not possible.",
+      "ownerSafeActions": [
+        "Record E13 and reset once from the control knob as the manual describes.",
+        "Use a non-LP energy mode only if available and safe."
+      ],
+      "serviceOnlyActions": [
+        "Internal communication and power-module diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rml10-4-operating"
+      ],
+      "symptomIds": [
+        "thermostat-communication",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rml10-4-e14-stand-alone-gas-battery-pack-low",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "E14",
+      "slug": "dometic-rml10-4-e14-stand-alone-gas-battery-pack-low",
+      "plainMeaning": "The Dometic RML10.4 operating manual lists E14 as: in stand-alone gas mode, the battery pack charge is too low.",
+      "ownerSafeActions": [
+        "Replace the stand-alone gas battery packs as the manual describes, then reset the error.",
+        "Record the battery type and recurrence for service if it returns."
+      ],
+      "serviceOnlyActions": [
+        "Battery compartment contacts, wiring, and gas-mode electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rml10-4-operating"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rml10-4-e50-gas-lock-after-three-ignition-attempts",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "E50",
+      "slug": "dometic-rml10-4-e50-gas-lock-after-three-ignition-attempts",
+      "plainMeaning": "The Dometic RML10.4 operating manual lists E50 as: gas lock after three ignition attempts; ignition is not possible.",
+      "ownerSafeActions": [
+        "Confirm the LP cylinder has fuel from owner-visible indicators and replace an empty cylinder if needed.",
+        "Reset the error once from the control knob after correcting the supply state."
+      ],
+      "serviceOnlyActions": [
+        "Repeated ignition lockout, LP hardware, and refrigerator ignition diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rml10-4-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rml10-4-e51-gas-lock-power-module-internal-error",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "E51",
+      "slug": "dometic-rml10-4-e51-gas-lock-power-module-internal-error",
+      "plainMeaning": "The Dometic RML10.4 operating manual lists E51 as: gas lock caused by an internal power-module error.",
+      "ownerSafeActions": [
+        "Reset the error once from the control knob as the manual describes.",
+        "Stop LP operation and call service if the error occurs again."
+      ],
+      "serviceOnlyActions": [
+        "Power-module and LP lockout diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rml10-4-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rml10-4-e52-ground-contact-gas-valve",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "E52",
+      "slug": "dometic-rml10-4-e52-ground-contact-gas-valve",
+      "plainMeaning": "The Dometic RML10.4 operating manual lists E52 as: ground contact at the gas valve is detected.",
+      "ownerSafeActions": [
+        "Reset the error once from the control knob as the manual describes.",
+        "Stop LP operation and call service if the error occurs again."
+      ],
+      "serviceOnlyActions": [
+        "Ground-contact, LP valve, wiring, and power-module diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rml10-4-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rml10-4-e53-ground-contact-ignition-electrode",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "E53",
+      "slug": "dometic-rml10-4-e53-ground-contact-ignition-electrode",
+      "plainMeaning": "The Dometic RML10.4 operating manual lists E53 as: ground contact at the ignition electrode is detected.",
+      "ownerSafeActions": [
+        "Reset the error once from the control knob as the manual describes.",
+        "Stop LP operation and call service if the error occurs again."
+      ],
+      "serviceOnlyActions": [
+        "Ignition electrode, wiring, and power-module diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rml10-4-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
     }
   ],
   "symptoms": [
@@ -22394,7 +26273,15 @@
       "sourceIds": [
         "dometic-ruc-support",
         "norcold-1200-owner",
-        "norcold-polar-owner"
+        "norcold-polar-owner",
+        "dometic-rm3762-rm3962-operating",
+        "dometic-rmd10t-rmd10xt-operating",
+        "dometic-americana-operating",
+        "dometic-rm8-rms8-rml8-operating",
+        "dometic-rmd8-operating",
+        "dometic-rm10-rms10-operating",
+        "dometic-rmd10-5-operating",
+        "dometic-rml10-4-operating"
       ]
     },
     {
@@ -22412,7 +26299,15 @@
         "furrion-water-heater",
         "dometic-water-heater-gas-function-support",
         "dometic-od5001-no-ignition-support",
-        "furrion-f2gwh-water-heater"
+        "furrion-f2gwh-water-heater",
+        "dometic-americana-operating",
+        "dometic-rmd10t-rmd10xt-operating",
+        "dometic-rm3762-rm3962-operating",
+        "dometic-rm8-rms8-rml8-operating",
+        "dometic-rmd8-operating",
+        "dometic-rm10-rms10-operating",
+        "dometic-rmd10-5-operating",
+        "dometic-rml10-4-operating"
       ]
     },
     {
@@ -22496,7 +26391,12 @@
       ],
       "sourceIds": [
         "coleman-9330-thermostat",
-        "furrion-thermostat"
+        "furrion-thermostat",
+        "dometic-rm3762-rm3962-operating",
+        "dometic-rmd10t-rmd10xt-operating",
+        "dometic-rm10-rms10-operating",
+        "dometic-rmd10-5-operating",
+        "dometic-rml10-4-operating"
       ]
     },
     {
@@ -22528,7 +26428,14 @@
         "lippert-ground-control",
         "lippert-in-wall-slide",
         "coleman-9420-thermostat",
-        "furrion-furnace-troubleshooting"
+        "furrion-furnace-troubleshooting",
+        "dometic-rm3762-rm3962-operating",
+        "dometic-rmd10t-rmd10xt-operating",
+        "dometic-rm8-rms8-rml8-operating",
+        "dometic-rmd8-operating",
+        "dometic-rm10-rms10-operating",
+        "dometic-rmd10-5-operating",
+        "dometic-rml10-4-operating"
       ]
     },
     {
@@ -23442,6 +27349,28 @@
         "norcold-1200-owner",
         "norcold-n41-n51-owner",
         "norcold-n400-n510-owner"
+      ]
+    },
+    {
+      "id": "dometic-legacy-absorption-display-faults",
+      "slug": "dometic-legacy-refrigerator-display-faults",
+      "title": "Dometic legacy absorption refrigerator display faults",
+      "summary": "Older Dometic absorption refrigerators can show flashing E-codes, warning codes, or CHECK lamp failures. Record the exact display, keep food safety in mind, and keep LP, electrical, cooling-unit, and control-module diagnosis with qualified service.",
+      "safeChecklist": [
+        "Write down the exact code or lamp state, model number, product number, and serial number before resetting anything.",
+        "If the refrigerator has stopped cooling, protect food and turn the refrigerator off if the manual says cooling-unit malfunction or ammonia smell is possible.",
+        "Use only front-panel mode selection, one documented reset, door closing, leveling, and owner-visible supply checks.",
+        "For repeated codes, gas odor, electrical faults, cooling-unit faults, or internal communication faults, stop use and call Dometic or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-rm3762-rm3962-operating",
+        "dometic-rmd10t-rmd10xt-operating",
+        "dometic-americana-operating",
+        "dometic-rm8-rms8-rml8-operating",
+        "dometic-rmd8-operating",
+        "dometic-rm10-rms10-operating",
+        "dometic-rmd10-5-operating",
+        "dometic-rml10-4-operating"
       ]
     }
   ],

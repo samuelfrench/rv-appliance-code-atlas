@@ -36,10 +36,10 @@ npm run traffic:monitor
 ```
 
 Current corpus:
-- `615` verified entries
-- `61` symptom guides
-- `128` official sources
-- `677` generated indexable pages
+- `715` verified entries
+- `62` symptom guides
+- `136` official sources
+- `778` generated indexable pages
 
 Next automated batch goal:
-- Research official legacy Dometic refrigerator fault/display tables, prioritizing manufacturer-hosted Americana/RM/RM8/RM10/RML/RMD owner manuals and support pages with explicit owner-safe boundaries.
+- Continue official legacy Dometic refrigerator display-table research, prioritizing RM8/RMS8/RML8/RMSL8 and RMD8 icon/LED status tables plus remaining Americana/RM owner display conditions with explicit owner-safe boundaries.

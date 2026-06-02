@@ -26,6 +26,7 @@
 - [x] Add official Suburban induction cooktop E0-E7 display codes plus Coleman-Mach 9630/6535/6536 heat-pump lockout displays and 9420-330 status LED diagnostics from manufacturer-hosted sources.
 - [x] Add official Norcold N3000/N2000/N8DCX-N10DCX/N10LX/2118 refrigerator display/LED diagnostics from manufacturer-hosted Thetford/Norcold sources.
 - [x] Add official legacy Norcold N41/N51, N510, N61/N81, N62/N64/N82/N84, and N1095 refrigerator owner-manual fault/display tables from manufacturer-hosted Thetford/Norcold sources.
+- [x] Add official legacy Dometic RM3762/RM3962, RMD10T/RMD10XT, RM10/RMS10, RMD10.5, RML10.4, RM8/RMD8, and Americana refrigerator display/status diagnostics from manufacturer-hosted Dometic manuals.
 - [ ] Add GSC property and submit sitemap after live URL is stable.
 
 ## Current State — 2026-06-02
@@ -33,13 +34,14 @@
 - GitHub repo: `https://github.com/samuelfrench/rv-appliance-code-atlas`
 - Fly app: `rv-appliance-code-atlas`, one `shared-cpu-1x` 256 MB machine in `dfw`, auto-stop enabled.
 - Latest deploy: GitHub Actions run `26816484469` succeeded at `2026-06-02T11:24:24Z`; Fly release v17, image `deployment-01KT4161D5RGVWKCA4JNB3FM8R`, code commit `1c153e7`.
-- Corpus: `615` verified entries, `61` symptom guides, `128` official sources, `677` generated indexable pages.
+- Corpus: `715` verified entries, `62` symptom guides, `136` official sources, `778` generated indexable pages.
 - Local verification passed for the legacy Norcold batch: focused RED/GREEN corpus regressions for N41/N51, N510, N61/N81, N62/N64/N82/N84, and N1095 code sets plus search ranking; `npm run validate:corpus`, `npm run test:unit`, `npm run source:audit`, `npm run traffic:report`, `npm run verify:runtime`, `git diff --check`, built-app desktop/mobile route/search smoke, and HTTP `200` checks for all 5 new official Norcold/Thetford source URLs. Build splits corpus to `dist/assets/corpus-JDV9vun8.json` at `978.14 kB` / `67.63 kB` gzip and main JS to `210.16 kB` / `65.83 kB` gzip with no Vite chunk warning.
 - Reviews passed: N41/N51 and N61/N81 read-only source triage completed; N62/N64/N82/N84, N1095, and N400/N510 read-only source triage completed; spec/safety review approved after tightening TODO wording so the N400/N510 manual table is documented as N510-only; code-quality review approved with no blocking findings.
 - Live verification passed: `/corpus-stats.json` reports `615`/`61`/`128`/`677`; `/sitemap.xml` and 6 representative new Norcold code/symptom routes returned HTTP `200`; production desktop/mobile Playwright smoke checked 6 new routes plus 5 searches with `0` console/page/request failures.
 - Source triage note: accepted official Thetford/Norcold N3000 troubleshooting PDF, N3000 North America owner/install manual, N2000 owner manual, N8DCX/N10DCX service manual, N10LX/NA10LX owner manual, and 2118 owner manual. Rejected/deferred forums/mirrors, N2000 service-manual board-level procedures for owner guidance, and N3000/N2000 flowchart repair steps beyond service-only boundaries.
 - Source triage note: accepted official Thetford/Norcold owner manuals for N41/N51, N400/N510, N61/N81, N62/N64/N82/N84, and N1095; the N400/N510 manual fault table is scoped to N510 models only. Rejected/deferred forums/mirrors, recall/HTS pages as code-table sources, and any invented `no co`/`n` entries for families whose owner manuals do not list them.
-- Next automated batch goal: Research official legacy Dometic refrigerator fault/display tables, prioritizing manufacturer-hosted Americana/RM/RM8/RM10/RML/RMD owner manuals and support pages with explicit owner-safe boundaries.
+- Source triage note: accepted official Dometic RM3762/RM3962, RM8/RMS8/RML8/RMSL8, RMD8xx1/RMD8xx5, RM10/RMS10, RMD10.5, RML10.4, RMD10T/RMD10XT, and Americana RM/DM/NDM manuals. Rejected/deferred forums/mirrors, generic symptom-only Americana/classic RM manuals without display-code tables, and any board-level or LP/electrical repair steps for owner guidance.
+- Next automated batch goal: Continue official legacy Dometic refrigerator display-table research, prioritizing RM8/RMS8/RML8/RMSL8 and RMD8 icon/LED status tables plus remaining Americana/RM owner display conditions with explicit owner-safe boundaries.
 
 ## Corpus Expansion Backlog
 - [x] Add full Dometic RUC/RUA tables.
@@ -65,7 +67,8 @@
 - [x] Research and add official Suburban induction cooktop plus Coleman-Mach heat-pump thermostat/status LED tables with owner-safe boundaries.
 - [x] Research and add official Norcold N3000/N2000/N8DCX-N10DCX/N10LX/2118 refrigerator display/LED diagnostics with owner-safe boundaries.
 - [x] Research and add official legacy Norcold N-series refrigerator owner-manual fault/display tables for N41/N51, N510, N61/N81, N62/N64/N82/N84, N1095, and older `n` stopped-cooling lockout families.
-- [ ] Research official legacy Dometic refrigerator fault/display tables, prioritizing manufacturer-hosted Americana/RM/RM8/RM10/RML/RMD owner manuals and support pages with explicit owner-safe boundaries.
+- [x] Research and add official legacy Dometic refrigerator display/status tables for RM3762/RM3962, RMD10T/RMD10XT, RM10/RMS10, RMD10.5, RML10.4, RM8/RMD8, and Americana limited display states with owner-safe boundaries.
+- [ ] Continue official legacy Dometic refrigerator display-table research, prioritizing RM8/RMS8/RML8/RMSL8 and RMD8 icon/LED status tables plus remaining Americana/RM owner display conditions with explicit owner-safe boundaries.
 
 ## Launch Automation
 - [ ] Add weekly traffic report artifact once GSC is configured.

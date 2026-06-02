@@ -87,6 +87,23 @@ describe("verified corpus", () => {
     );
   });
 
+  it("ranks legacy Dometic refrigerator display-code searches to the matching owner-manual entries", () => {
+    const index = buildSearchIndex(corpus);
+
+    expect(lookupEntries(index, "dometic rmd10 e50 gas lock 3 ignition attempts")[0]?.slug).toBe(
+      "dometic-rmd10-e50-gas-lock-after-three-ignition-attempts",
+    );
+    expect(lookupEntries(index, "dometic rm3762 e3 cooling unit malfunction")[0]?.slug).toBe(
+      "dometic-rm3762-rm3962-e3-cooling-unit-malfunction",
+    );
+    expect(lookupEntries(index, "dometic americana check lamp failed ignite gas")[0]?.slug).toBe(
+      "dometic-americana-check-lamp-lp-ignition-failure",
+    );
+    expect(lookupEntries(index, "dometic rm8 3 8 flashing flame not ignited")[0]?.slug).toBe(
+      "dometic-rm8-3-8-flashing-gas-flame-not-ignited",
+    );
+  });
+
   it("summarizes code, source, symptom, and monetization readiness counts", () => {
     const summary = summarizeCorpus(corpus);
 
@@ -119,6 +136,120 @@ describe("verified corpus", () => {
     );
 
     expect(ccc2Codes).toEqual(new Set(["E1", "E2", "E3", "E4", "E5", "E7", "E8", "E9"]));
+  });
+
+  it("includes official legacy Dometic RM3762/RM3962 refrigerator error-code table entries", () => {
+    const codes = new Set(
+      corpus.entries
+        .filter((entry) => entry.brand === "Dometic" && entry.sourceIds.includes("dometic-rm3762-rm3962-operating"))
+        .filter((entry) => /^E\d+$/.test(entry.code))
+        .map((entry) => entry.code),
+    );
+
+    expect(codes).toEqual(new Set(["E0", "E1", "E2", "E3", "E4"]));
+  });
+
+  it("includes official legacy Dometic RM3762/RM3962 flashing LP troubleshooting display state", () => {
+    const lpDisplay = corpus.entries.find(
+      (entry) =>
+        entry.brand === "Dometic" &&
+        entry.sourceIds.includes("dometic-rm3762-rm3962-operating") &&
+        entry.code === "LP",
+    );
+
+    expect(lpDisplay?.slug).toBe("dometic-rm3762-rm3962-lp-flashing-lp-ignition-failed");
+    expect(lpDisplay?.plainMeaning).toContain("flashing LP message");
+  });
+
+  it("includes official Dometic RMD10T/RMD10XT warning and error fault messages", () => {
+    const codes = new Set(
+      corpus.entries
+        .filter((entry) => entry.brand === "Dometic" && entry.sourceIds.includes("dometic-rmd10t-rmd10xt-operating"))
+        .map((entry) => entry.code),
+    );
+
+    expect(codes).toEqual(
+      new Set(["W01", "W05", "W06", "W10 + beep", "W11", "Beep", "E03", "E07", "E08", "E09", "E12", "E13", "E14", "E50", "E51", "E52", "E53"]),
+    );
+  });
+
+  it("includes official Dometic 10-series refrigerator warning and error fault-message sets", () => {
+    const codesForSource = (sourceId: string) =>
+      new Set(
+        corpus.entries
+          .filter((entry) => entry.brand === "Dometic" && entry.sourceIds.includes(sourceId))
+          .map((entry) => entry.code),
+      );
+    const expected = new Set(["W01", "W05", "W06", "W10 + beep", "W11", "Beep", "E03", "E07", "E08", "E09", "E12", "E13", "E14", "E50", "E51", "E52", "E53"]);
+
+    expect(codesForSource("dometic-rm10-rms10-operating")).toEqual(expected);
+    expect(codesForSource("dometic-rmd10-5-operating")).toEqual(expected);
+    expect(codesForSource("dometic-rml10-4-operating")).toEqual(expected);
+  });
+
+  it("includes the official Dometic Americana display states without overclaiming a full alphanumeric code table", () => {
+    const codes = new Set(
+      corpus.entries
+        .filter((entry) => entry.brand === "Dometic" && entry.sourceIds.includes("dometic-americana-operating"))
+        .map((entry) => entry.code),
+    );
+
+    expect(codes).toEqual(
+      new Set([
+        "CHECK",
+        "temperature sensor limp mode",
+        "display module limp mode",
+        "temperature-sensing circuit limp mode",
+      ]),
+    );
+  });
+
+  it("includes official Dometic RM8/RMS8/RML8/RMSL8 status-indicator fault displays", () => {
+    const codes = new Set(
+      corpus.entries
+        .filter((entry) => entry.brand === "Dometic" && entry.sourceIds.includes("dometic-rm8-rms8-rml8-operating"))
+        .map((entry) => entry.code),
+    );
+
+    expect(codes).toEqual(
+      new Set([
+        "2 + 8 flashing + 20 s beep",
+        "4 + 8 flashing + 20 s beep",
+        "3 + 8 flashing + 20 s beep",
+        "15 s beep every two minutes",
+        "2 + 7 flashing + 20 s beep",
+        "4 + 7 flashing + 20 s beep",
+        "7 flashing",
+        "3 + 7 flashing + 20 s beep",
+        "3 + 8 flashing brightly",
+        "3 + 7 flashing brightly",
+        "internal battery 15 s beep",
+        "external-to-internal power switching failure",
+      ]),
+    );
+  });
+
+  it("includes official Dometic RMD8 status-indicator fault displays", () => {
+    const codes = new Set(
+      corpus.entries
+        .filter((entry) => entry.brand === "Dometic" && entry.sourceIds.includes("dometic-rmd8-operating"))
+        .map((entry) => entry.code),
+    );
+
+    expect(codes).toEqual(
+      new Set([
+        "AC plug + temperature bars flashing + 20 s beep",
+        "DC battery + temperature bars flashing + 20 s beep",
+        "gas flame + temperature bars flashing + 20 s beep",
+        "temperature bars flashing",
+        "AC plug + warning triangle flashing + 20 s beep",
+        "DC battery + warning triangle flashing + 20 s beep",
+        "gas flame + warning triangle flashing + 20 s beep",
+        "15 s beep every two minutes",
+        "battery mode low-voltage 15 s beep",
+        "external-to-internal power switching failure",
+      ]),
+    );
   });
 
   it("includes the full official Norcold Polar N7/N8 owner-manual fault displays", () => {
