@@ -174,13 +174,28 @@ export function summarizeCorpus(corpus: Corpus): CorpusSummary {
   };
 }
 
-export type SearchIndexEntry = CorpusEntry & { searchText: string };
+export type SearchIndexEntry = CorpusEntry & { searchText: string; searchTokens: Set<string> };
+
+function searchableParts(parts: string[]) {
+  const joined = parts.join(" ").toLowerCase();
+  const compact = parts
+    .flatMap((part) => part.toLowerCase().match(/[a-z0-9]+(?:[^a-z0-9]+[a-z0-9]+)+/g) ?? [])
+    .map((part) => part.replace(/[^a-z0-9]+/g, ""));
+  const searchText = [joined, ...compact].join(" ");
+
+  return {
+    searchText,
+    searchTokens: new Set(searchText.split(/[^a-z0-9]+/).filter(Boolean)),
+  };
+}
 
 export function buildSearchIndex(corpus: Corpus): SearchIndexEntry[] {
   const symptomsById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
   return corpus.entries.map((entry) => ({
     ...entry,
-    searchText: [
+    ...searchableParts([
+      entry.id,
+      entry.slug,
       entry.brand,
       entry.equipmentType,
       entry.modelFamilies.join(" "),
@@ -188,9 +203,7 @@ export function buildSearchIndex(corpus: Corpus): SearchIndexEntry[] {
       entry.plainMeaning,
       entry.ownerSafeActions.join(" "),
       entry.symptomIds.map((id) => symptomsById.get(id)?.title ?? "").join(" "),
-    ]
-      .join(" ")
-      .toLowerCase(),
+    ]),
   }));
 }
 
@@ -209,12 +222,15 @@ export function lookupEntries(index: SearchIndexEntry[], query: string): CorpusE
         .split(/[^a-z0-9]+/)
         .filter(Boolean);
       const codePhraseMatch = codeTerms.length > 1 && codeTerms.every((term) => terms.includes(term));
+      const matchedTerms = terms.filter((term) => codeTerms.includes(term) || entry.searchTokens.has(term));
+      const allTermsMatch = matchedTerms.length === terms.length;
       const score = terms.reduce((total, term) => {
         if (codeTerms.length === 1 && codeTerms[0] === term) return total + 8;
         if (codeTerms.includes(term)) return total + 4;
-        if (entry.searchText.includes(term)) return total + 1;
+        if (entry.searchTokens.has(term)) return total + 1;
+        if (entry.searchText.includes(term)) return total + 0.25;
         return total;
-      }, codePhraseMatch ? 24 + codeTerms.length * 4 : 0);
+      }, (codePhraseMatch ? 24 + codeTerms.length * 4 : 0) + (allTermsMatch ? 16 : 0));
       return { entry, score };
     })
     .filter((item) => item.score > 0)

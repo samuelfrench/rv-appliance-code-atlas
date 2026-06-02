@@ -56,6 +56,18 @@ describe("verified corpus", () => {
     );
   });
 
+  it("normalizes hyphenless model searches for Girard GSWH-2 lookups", () => {
+    const index = buildSearchIndex(corpus);
+
+    expect(lookupEntries(index, "gswh2 e0")[0]?.slug).toBe("girard-gswh2-e0-water-outlet-temperature-probe-failure");
+    expect(lookupEntries(index, "girard gswh2 low flow").slice(0, 4).map((entry) => entry.slug)).toEqual([
+      "girard-gswh2-e0-water-outlet-temperature-probe-failure",
+      "girard-gswh2-e3-eco-open-or-over-temperature-before-ignition",
+      "girard-gswh2-e4-water-inlet-temperature-probe-failure",
+      "girard-gswh2-e6-over-temperature",
+    ]);
+  });
+
   it("summarizes code, source, symptom, and monetization readiness counts", () => {
     const summary = summarizeCorpus(corpus);
 
@@ -736,5 +748,82 @@ describe("verified corpus", () => {
         "furrion-f2gwh-water-heater",
       ]),
     );
+  });
+
+  it("adds official Girard GSWH-2 owner-manual display codes and keeps Girard tankless symptoms separate", () => {
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const girardOwnerSourceId = "girard-gswh2-owner-manual";
+    const girardSupportSourceIds = [
+      "girard-tankless-quick-operating-tips",
+      "girard-qr181-freeze-damage",
+      "girard-tankless-intro-operation-video",
+      "girard-tankless-flow-temperature-video",
+      "girard-tankless-decalcify-video",
+      "girard-tankless-winterize-video",
+      "girard-tankless-filter-screen-video",
+      "girard-tankless-freeze-leaks-video",
+      "girard-tankless-maintenance-visual-video",
+      "girard-tankless-no-hot-water-video",
+      "girard-tankless-water-not-hot-enough-video",
+      "girard-tankless-water-too-hot-cold-video",
+    ];
+
+    const girardCodes = corpus.entries.filter(
+      (entry) => entry.brand === "Lippert" && entry.modelFamilies.includes("Girard GSWH-2"),
+    );
+
+    expect(corpus.sources.find((source) => source.id === girardOwnerSourceId)?.official).toBe(true);
+    expect(corpus.sources.find((source) => source.id === "girard-gswh2-service-manual")).toBeUndefined();
+    expect(new Set(girardCodes.map((entry) => entry.code))).toEqual(
+      new Set(["E0", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9", "En", "Fd"]),
+    );
+    expect(girardCodes.every((entry) => entry.sourceIds.includes(girardOwnerSourceId))).toBe(true);
+    expect(girardCodes.some((entry) => entry.sourceIds.includes("girard-gswh2-service-manual"))).toBe(false);
+
+    expect(symptomById.get("girard-tankless-low-flow-temperature")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        girardOwnerSourceId,
+        "girard-tankless-quick-operating-tips",
+        "girard-tankless-flow-temperature-video",
+        "girard-tankless-water-not-hot-enough-video",
+        "girard-tankless-water-too-hot-cold-video",
+      ]),
+    );
+    expect(symptomById.get("girard-tankless-maintenance-filter-decalcify")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        girardOwnerSourceId,
+        "girard-tankless-decalcify-video",
+        "girard-tankless-filter-screen-video",
+        "girard-tankless-maintenance-visual-video",
+      ]),
+    );
+    expect(symptomById.get("girard-tankless-winterization-freeze")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        girardOwnerSourceId,
+        "girard-qr181-freeze-damage",
+        "girard-tankless-winterize-video",
+        "girard-tankless-freeze-leaks-video",
+      ]),
+    );
+    expect(symptomById.get("girard-tankless-gas-smell")?.sourceIds).toContain(girardOwnerSourceId);
+    expect(symptomById.get("girard-tankless-no-hot-water-lockout")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        girardOwnerSourceId,
+        "girard-tankless-quick-operating-tips",
+        "girard-tankless-intro-operation-video",
+        "girard-tankless-no-hot-water-video",
+      ]),
+    );
+
+    for (const sourceId of girardSupportSourceIds) {
+      expect(corpus.sources.find((source) => source.id === sourceId)?.official, sourceId).toBe(true);
+      expect(
+        corpus.symptoms
+          .filter((symptom) => symptom.sourceIds.includes(sourceId))
+          .map((symptom) => symptom.id)
+          .every((id) => id.startsWith("girard-")),
+        sourceId,
+      ).toBe(true);
+    }
   });
 });

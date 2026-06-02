@@ -24,7 +24,7 @@ function buildReport() {
       ready: false,
     })),
     nextAutomatedBatchGoal:
-      "Research official owner-safe Girard/Lippert tankless and remaining manufacturer-hosted water-heater maintenance or winterization sources, keep model families separate, and add no code entries unless an official fault/display table is verified.",
+      "Research official legacy Girard GSWH-1/GSWH-1M owner manuals and remaining manufacturer-hosted water-heater support sources; keep GSWH-1, GSWH-2, Furrion, Suburban, and Dometic model families separate and add code entries only from official fault/display tables.",
     monitorCommand: "npm run traffic:monitor",
   };
 }

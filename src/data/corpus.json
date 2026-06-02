@@ -653,6 +653,110 @@
       "url": "https://library.suburbanrv.com/wp-content/uploads/2024/04/206212-1_ODWH-ST42-60-User-Manual-RNew-04-16-2024.pdf",
       "type": "manufacturer-manual",
       "official": true
+    },
+    {
+      "id": "girard-gswh2-owner-manual",
+      "brand": "Lippert",
+      "title": "Lippert Girard GSWH-2 Tankless Water Heater Owner's Manual CCD-0006120",
+      "url": "https://support.lci1.com/documents/ccd-0006120",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "girard-tankless-intro-operation-video",
+      "brand": "Lippert",
+      "title": "Lippert Girard Tankless Water Heater Introduction and Operation Video",
+      "url": "https://support.lci1.com/videos/girard-tankless-water-heater-introduction-and-operation",
+      "type": "manufacturer-video",
+      "official": true
+    },
+    {
+      "id": "girard-tankless-flow-temperature-video",
+      "brand": "Lippert",
+      "title": "Lippert How Flow Affects Temperature on Girard Tankless Water Heater Video",
+      "url": "https://support.lci1.com/videos/how-flow-affects-temperature-on-girard-tankless-water-heater",
+      "type": "manufacturer-video",
+      "official": true
+    },
+    {
+      "id": "girard-tankless-decalcify-video",
+      "brand": "Lippert",
+      "title": "Lippert How to Decalcify Your Girard Tankless Water Heater Video",
+      "url": "https://support.lci1.com/videos/how-to-decalcify-your-girard-tankless-water-heater",
+      "type": "manufacturer-video",
+      "official": true
+    },
+    {
+      "id": "girard-tankless-winterize-video",
+      "brand": "Lippert",
+      "title": "Lippert How to Perform a How to Winterize Your Girard Water Heater Video",
+      "url": "https://support.lci1.com/videos/how-to-perform-a-how-to-winterize-your-girard-water-heater",
+      "type": "manufacturer-video",
+      "official": true
+    },
+    {
+      "id": "girard-tankless-filter-screen-video",
+      "brand": "Lippert",
+      "title": "Lippert Inlet Water Line Connection Filter Screen Cleaning for Girard Tankless Water Heater Video",
+      "url": "https://support.lci1.com/videos/inlet-water-line-connection-filter-screen-cleaning-for-girard-tankless-water-heater",
+      "type": "manufacturer-video",
+      "official": true
+    },
+    {
+      "id": "girard-tankless-freeze-leaks-video",
+      "brand": "Lippert",
+      "title": "Lippert Inspecting for Freeze Leaks on a Girard Tankless Water Heater Video",
+      "url": "https://support.lci1.com/videos/inspecting-for-freeze-leaks-on-a-girard-tankless-water-heater",
+      "type": "manufacturer-video",
+      "official": true
+    },
+    {
+      "id": "girard-tankless-maintenance-visual-video",
+      "brand": "Lippert",
+      "title": "Lippert Maintenance with Visual Inspections on a Girard Tankless Water Heater Video",
+      "url": "https://support.lci1.com/videos/maintenance-with-visual-inspections-on-a-girard-tankless-water-heater",
+      "type": "manufacturer-video",
+      "official": true
+    },
+    {
+      "id": "girard-tankless-no-hot-water-video",
+      "brand": "Lippert",
+      "title": "Lippert No Hot Water on a Girard Tankless Water Heater Video",
+      "url": "https://support.lci1.com/videos/no-hot-water-on-a-girard-tankless-water-heater",
+      "type": "manufacturer-video",
+      "official": true
+    },
+    {
+      "id": "girard-tankless-water-not-hot-enough-video",
+      "brand": "Lippert",
+      "title": "Lippert Water Not Hot Enough on a Girard Tankless Water Heater Video",
+      "url": "https://support.lci1.com/videos/water-not-hot-enough-on-a-girard-tankless-water-heater",
+      "type": "manufacturer-video",
+      "official": true
+    },
+    {
+      "id": "girard-tankless-water-too-hot-cold-video",
+      "brand": "Lippert",
+      "title": "Lippert Water Too Hot or Too Cold on a Girard Tankless Water Heater Video",
+      "url": "https://support.lci1.com/videos/water-too-hot-or-too-cold-on-a-girard-tankless-water-heater",
+      "type": "manufacturer-video",
+      "official": true
+    },
+    {
+      "id": "girard-tankless-quick-operating-tips",
+      "brand": "Lippert",
+      "title": "Lippert Tankless Water Heater Quick Operating Tips for Girard GSWH",
+      "url": "https://support.lci1.com/documents/gp-llc-other-products/operating-tips-gswh-1700",
+      "type": "manufacturer-quick-reference",
+      "official": true
+    },
+    {
+      "id": "girard-qr181-freeze-damage",
+      "brand": "Lippert",
+      "title": "Lippert QR-181 Tankless Water Heater Freeze Damage Identification",
+      "url": "https://support.lci1.com/documents/ccd-0008320",
+      "type": "manufacturer-quick-reference",
+      "official": true
     }
   ],
   "entries": [
@@ -16548,6 +16652,421 @@
         "fault blink count",
         "oil level and oil type noted after shutdown"
       ]
+    },
+    {
+      "id": "girard-gswh2-e0",
+      "brand": "Lippert",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "Girard GSWH-2"
+      ],
+      "code": "E0",
+      "slug": "girard-gswh2-e0-water-outlet-temperature-probe-failure",
+      "plainMeaning": "The Lippert Girard GSWH-2 owner manual lists E0 as water outlet temperature probe failure.",
+      "ownerSafeActions": [
+        "Turn hot-water demand off and power-cycle once only from normal controls.",
+        "Record the code, set temperature, displayed temperature, and water-flow state.",
+        "Contact Lippert/Girard or a qualified technician if E0 returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal sensor, ignition, flame-sense, ECO, blower, pressure-switch, linear-valve, wiring, gas, and controller diagnosis is qualified service work."
+      ],
+      "safetyBoundary": "The Girard GSWH-2 is an LP gas tankless water heater. Shut the heater off for gas odor, overheating, leaks, blocked exhaust, or repeated faults and use Lippert/Girard or qualified RV service.",
+      "sourceIds": [
+        "girard-gswh2-owner-manual"
+      ],
+      "symptomIds": [
+        "girard-tankless-low-flow-temperature",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Girard GSWH-2 model label",
+        "user control panel code",
+        "set and displayed temperature",
+        "water-flow state",
+        "LP and 12V status"
+      ]
+    },
+    {
+      "id": "girard-gswh2-e1",
+      "brand": "Lippert",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "Girard GSWH-2"
+      ],
+      "code": "E1",
+      "slug": "girard-gswh2-e1-ignition-failure-or-flame-off-during-ignition",
+      "plainMeaning": "The Lippert Girard GSWH-2 owner manual lists E1 as ignition failure or accidental flame off during ignition.",
+      "ownerSafeActions": [
+        "Turn the hot-water faucet off and back on once only from normal controls if the manual reset applies.",
+        "Confirm the LP tank has fuel and normal RV controls are on before one restart.",
+        "Record the code, set temperature, water-flow state, and whether this was first startup after LP service.",
+        "Contact Lippert/Girard or a qualified technician if E1 returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal sensor, ignition, flame-sense, ECO, blower, pressure-switch, linear-valve, wiring, gas, and controller diagnosis is qualified service work."
+      ],
+      "safetyBoundary": "The Girard GSWH-2 is an LP gas tankless water heater. Shut the heater off for gas odor, overheating, leaks, blocked exhaust, or repeated faults and use Lippert/Girard or qualified RV service.",
+      "sourceIds": [
+        "girard-gswh2-owner-manual"
+      ],
+      "symptomIds": [
+        "girard-tankless-no-hot-water-lockout",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Girard GSWH-2 model label",
+        "user control panel code",
+        "set and displayed temperature",
+        "water-flow state",
+        "LP and 12V status"
+      ]
+    },
+    {
+      "id": "girard-gswh2-e2",
+      "brand": "Lippert",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "Girard GSWH-2"
+      ],
+      "code": "E2",
+      "slug": "girard-gswh2-e2-flame-sensing-interrupted-during-operation",
+      "plainMeaning": "The Lippert Girard GSWH-2 owner manual lists E2 as flame sensing interrupted during normal operation and the buzzer will sound.",
+      "ownerSafeActions": [
+        "Turn hot-water demand off and power-cycle once only from normal controls.",
+        "Record the code, set temperature, displayed temperature, and water-flow state.",
+        "Contact Lippert/Girard or a qualified technician if E2 returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal sensor, ignition, flame-sense, ECO, blower, pressure-switch, linear-valve, wiring, gas, and controller diagnosis is qualified service work."
+      ],
+      "safetyBoundary": "The Girard GSWH-2 is an LP gas tankless water heater. Shut the heater off for gas odor, overheating, leaks, blocked exhaust, or repeated faults and use Lippert/Girard or qualified RV service.",
+      "sourceIds": [
+        "girard-gswh2-owner-manual"
+      ],
+      "symptomIds": [
+        "girard-tankless-no-hot-water-lockout",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Girard GSWH-2 model label",
+        "user control panel code",
+        "set and displayed temperature",
+        "water-flow state",
+        "LP and 12V status"
+      ]
+    },
+    {
+      "id": "girard-gswh2-e3",
+      "brand": "Lippert",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "Girard GSWH-2"
+      ],
+      "code": "E3",
+      "slug": "girard-gswh2-e3-eco-open-or-over-temperature-before-ignition",
+      "plainMeaning": "The Lippert Girard GSWH-2 owner manual lists E3 as ECO open before ignition or during normal operation, commonly from outlet water temperature above 140 F.",
+      "ownerSafeActions": [
+        "Turn hot-water demand off and let the heater cool.",
+        "Do not restart if overheated water, relief discharge, or the same code returns.",
+        "Record the code, set temperature, water-flow state, and whether hot water was unusually hot.",
+        "Contact Lippert/Girard or a qualified technician before further operation if E3 repeats."
+      ],
+      "serviceOnlyActions": [
+        "Internal sensor, ignition, flame-sense, ECO, blower, pressure-switch, linear-valve, wiring, gas, and controller diagnosis is qualified service work."
+      ],
+      "safetyBoundary": "The Girard GSWH-2 is an LP gas tankless water heater. Shut the heater off for gas odor, overheating, leaks, blocked exhaust, or repeated faults and use Lippert/Girard or qualified RV service.",
+      "sourceIds": [
+        "girard-gswh2-owner-manual"
+      ],
+      "symptomIds": [
+        "girard-tankless-low-flow-temperature",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Girard GSWH-2 model label",
+        "user control panel code",
+        "set and displayed temperature",
+        "water-flow state",
+        "LP and 12V status"
+      ]
+    },
+    {
+      "id": "girard-gswh2-e4",
+      "brand": "Lippert",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "Girard GSWH-2"
+      ],
+      "code": "E4",
+      "slug": "girard-gswh2-e4-water-inlet-temperature-probe-failure",
+      "plainMeaning": "The Lippert Girard GSWH-2 owner manual lists E4 as water inlet temperature probe failure.",
+      "ownerSafeActions": [
+        "Turn hot-water demand off and power-cycle once only from normal controls.",
+        "Record the code, set temperature, displayed temperature, and water-flow state.",
+        "Contact Lippert/Girard or a qualified technician if E4 returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal sensor, ignition, flame-sense, ECO, blower, pressure-switch, linear-valve, wiring, gas, and controller diagnosis is qualified service work."
+      ],
+      "safetyBoundary": "The Girard GSWH-2 is an LP gas tankless water heater. Shut the heater off for gas odor, overheating, leaks, blocked exhaust, or repeated faults and use Lippert/Girard or qualified RV service.",
+      "sourceIds": [
+        "girard-gswh2-owner-manual"
+      ],
+      "symptomIds": [
+        "girard-tankless-low-flow-temperature",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Girard GSWH-2 model label",
+        "user control panel code",
+        "set and displayed temperature",
+        "water-flow state",
+        "LP and 12V status"
+      ]
+    },
+    {
+      "id": "girard-gswh2-e5",
+      "brand": "Lippert",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "Girard GSWH-2"
+      ],
+      "code": "E5",
+      "slug": "girard-gswh2-e5-blower-motor-failure",
+      "plainMeaning": "The Lippert Girard GSWH-2 owner manual lists E5 as blower motor failure because no motor signal was detected before ignition or during operation.",
+      "ownerSafeActions": [
+        "Turn hot-water demand off and power-cycle once only from normal controls.",
+        "Record the code, set temperature, displayed temperature, and water-flow state.",
+        "Contact Lippert/Girard or a qualified technician if E5 returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal sensor, ignition, flame-sense, ECO, blower, pressure-switch, linear-valve, wiring, gas, and controller diagnosis is qualified service work."
+      ],
+      "safetyBoundary": "The Girard GSWH-2 is an LP gas tankless water heater. Shut the heater off for gas odor, overheating, leaks, blocked exhaust, or repeated faults and use Lippert/Girard or qualified RV service.",
+      "sourceIds": [
+        "girard-gswh2-owner-manual"
+      ],
+      "symptomIds": [
+        "girard-tankless-no-hot-water-lockout",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Girard GSWH-2 model label",
+        "user control panel code",
+        "set and displayed temperature",
+        "water-flow state",
+        "LP and 12V status"
+      ]
+    },
+    {
+      "id": "girard-gswh2-e6",
+      "brand": "Lippert",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "Girard GSWH-2"
+      ],
+      "code": "E6",
+      "slug": "girard-gswh2-e6-over-temperature",
+      "plainMeaning": "The Lippert Girard GSWH-2 owner manual lists E6 as over temperature because outlet water temperature exceeded 140 F for 3 seconds.",
+      "ownerSafeActions": [
+        "Turn hot-water demand off and let the heater cool.",
+        "Do not restart if overheated water, relief discharge, or the same code returns.",
+        "Record the code, set temperature, water-flow state, and whether hot water was unusually hot.",
+        "Contact Lippert/Girard or a qualified technician before further operation if E6 repeats."
+      ],
+      "serviceOnlyActions": [
+        "Internal sensor, ignition, flame-sense, ECO, blower, pressure-switch, linear-valve, wiring, gas, and controller diagnosis is qualified service work."
+      ],
+      "safetyBoundary": "The Girard GSWH-2 is an LP gas tankless water heater. Shut the heater off for gas odor, overheating, leaks, blocked exhaust, or repeated faults and use Lippert/Girard or qualified RV service.",
+      "sourceIds": [
+        "girard-gswh2-owner-manual"
+      ],
+      "symptomIds": [
+        "girard-tankless-low-flow-temperature",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Girard GSWH-2 model label",
+        "user control panel code",
+        "set and displayed temperature",
+        "water-flow state",
+        "LP and 12V status"
+      ]
+    },
+    {
+      "id": "girard-gswh2-e7",
+      "brand": "Lippert",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "Girard GSWH-2"
+      ],
+      "code": "E7",
+      "slug": "girard-gswh2-e7-linear-valve-failure",
+      "plainMeaning": "The Lippert Girard GSWH-2 owner manual lists E7 as linear valve failure detected in the control circuit before ignition or during operation.",
+      "ownerSafeActions": [
+        "Turn hot-water demand off and power-cycle once only from normal controls.",
+        "Record the code, set temperature, displayed temperature, and water-flow state.",
+        "Contact Lippert/Girard or a qualified technician if E7 returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal sensor, ignition, flame-sense, ECO, blower, pressure-switch, linear-valve, wiring, gas, and controller diagnosis is qualified service work."
+      ],
+      "safetyBoundary": "The Girard GSWH-2 is an LP gas tankless water heater. Shut the heater off for gas odor, overheating, leaks, blocked exhaust, or repeated faults and use Lippert/Girard or qualified RV service.",
+      "sourceIds": [
+        "girard-gswh2-owner-manual"
+      ],
+      "symptomIds": [
+        "girard-tankless-no-hot-water-lockout",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Girard GSWH-2 model label",
+        "user control panel code",
+        "set and displayed temperature",
+        "water-flow state",
+        "LP and 12V status"
+      ]
+    },
+    {
+      "id": "girard-gswh2-e8",
+      "brand": "Lippert",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "Girard GSWH-2"
+      ],
+      "code": "E8",
+      "slug": "girard-gswh2-e8-air-pressure-switch-not-detected",
+      "plainMeaning": "The Lippert Girard GSWH-2 owner manual lists E8 as air pressure switch not detected before ignition or cut off during normal operation.",
+      "ownerSafeActions": [
+        "Turn hot-water demand off and do not keep cycling the heater.",
+        "Check the exterior intake and exhaust area for visible obstruction without opening appliance service areas.",
+        "Record the code, weather, visible vent condition, and whether the fan icon appeared.",
+        "Contact Lippert/Girard or a qualified technician if E8 returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal sensor, ignition, flame-sense, ECO, blower, pressure-switch, linear-valve, wiring, gas, and controller diagnosis is qualified service work."
+      ],
+      "safetyBoundary": "The Girard GSWH-2 is an LP gas tankless water heater. Shut the heater off for gas odor, overheating, leaks, blocked exhaust, or repeated faults and use Lippert/Girard or qualified RV service.",
+      "sourceIds": [
+        "girard-gswh2-owner-manual"
+      ],
+      "symptomIds": [
+        "airflow-or-venting",
+        "girard-tankless-no-hot-water-lockout",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Girard GSWH-2 model label",
+        "user control panel code",
+        "set and displayed temperature",
+        "water-flow state",
+        "LP and 12V status"
+      ]
+    },
+    {
+      "id": "girard-gswh2-e9",
+      "brand": "Lippert",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "Girard GSWH-2"
+      ],
+      "code": "E9",
+      "slug": "girard-gswh2-e9-flame-sensor-error-before-ignition",
+      "plainMeaning": "The Lippert Girard GSWH-2 owner manual lists E9 as flame sensor error because flame is sensed before ignition and the buzzer will sound.",
+      "ownerSafeActions": [
+        "Turn hot-water demand off and power-cycle once only from normal controls.",
+        "Record the code, set temperature, displayed temperature, and water-flow state.",
+        "Contact Lippert/Girard or a qualified technician if E9 returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal sensor, ignition, flame-sense, ECO, blower, pressure-switch, linear-valve, wiring, gas, and controller diagnosis is qualified service work."
+      ],
+      "safetyBoundary": "The Girard GSWH-2 is an LP gas tankless water heater. Shut the heater off for gas odor, overheating, leaks, blocked exhaust, or repeated faults and use Lippert/Girard or qualified RV service.",
+      "sourceIds": [
+        "girard-gswh2-owner-manual"
+      ],
+      "symptomIds": [
+        "girard-tankless-no-hot-water-lockout",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Girard GSWH-2 model label",
+        "user control panel code",
+        "set and displayed temperature",
+        "water-flow state",
+        "LP and 12V status"
+      ]
+    },
+    {
+      "id": "girard-gswh2-en",
+      "brand": "Lippert",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "Girard GSWH-2"
+      ],
+      "code": "En",
+      "slug": "girard-gswh2-en-system-timer",
+      "plainMeaning": "The Lippert Girard GSWH-2 owner manual lists En as system timer because the water heater ran longer than 20 minutes.",
+      "ownerSafeActions": [
+        "Turn the hot-water faucet off and back on once to clear the long-run timer if the manual reset applies.",
+        "Reduce continuous hot-water demand and record whether water was left running.",
+        "Record the code, set temperature, displayed temperature, and faucet state.",
+        "Contact Lippert/Girard or a qualified technician if En returns during normal use."
+      ],
+      "serviceOnlyActions": [
+        "Internal sensor, ignition, flame-sense, ECO, blower, pressure-switch, linear-valve, wiring, gas, and controller diagnosis is qualified service work."
+      ],
+      "safetyBoundary": "The Girard GSWH-2 is an LP gas tankless water heater. Shut the heater off for gas odor, overheating, leaks, blocked exhaust, or repeated faults and use Lippert/Girard or qualified RV service.",
+      "sourceIds": [
+        "girard-gswh2-owner-manual"
+      ],
+      "symptomIds": [
+        "girard-tankless-no-hot-water-lockout",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Girard GSWH-2 model label",
+        "user control panel code",
+        "set and displayed temperature",
+        "water-flow state",
+        "LP and 12V status"
+      ]
+    },
+    {
+      "id": "girard-gswh2-fd",
+      "brand": "Lippert",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "Girard GSWH-2"
+      ],
+      "code": "Fd",
+      "slug": "girard-gswh2-fd-winter-use-mode-freeze-protection",
+      "plainMeaning": "The Lippert Girard GSWH-2 owner manual lists Fd as winter-use mode or freeze protection; the unit may run briefly and shut off in freezing conditions when LP gas and 12V power are on, but this protects only the water-heater heat exchanger and not the RV plumbing system.",
+      "ownerSafeActions": [
+        "Do not rely on Fd or winter-use mode to winterize the whole RV plumbing system.",
+        "Verify winterization history and shut water off if leaks or freeze damage are suspected.",
+        "Record the code, temperature, LP and 12V status, and any visible leaks.",
+        "Contact Lippert/Girard or a qualified technician before operating a suspected freeze-damaged heater."
+      ],
+      "serviceOnlyActions": [
+        "Internal sensor, ignition, flame-sense, ECO, blower, pressure-switch, linear-valve, wiring, gas, and controller diagnosis is qualified service work."
+      ],
+      "safetyBoundary": "The Girard GSWH-2 is an LP gas tankless water heater. Shut the heater off for gas odor, overheating, leaks, blocked exhaust, or repeated faults and use Lippert/Girard or qualified RV service.",
+      "sourceIds": [
+        "girard-gswh2-owner-manual"
+      ],
+      "symptomIds": [
+        "girard-tankless-winterization-freeze",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Girard GSWH-2 model label",
+        "user control panel code",
+        "set and displayed temperature",
+        "water-flow state",
+        "LP and 12V status"
+      ]
     }
   ],
   "symptoms": [
@@ -17240,6 +17759,94 @@
         "furrion-tankless-water-filter-video",
         "furrion-tankless-descale-video",
         "furrion-f2gwh-water-heater"
+      ]
+    },
+    {
+      "id": "girard-tankless-low-flow-temperature",
+      "slug": "girard-gswh2-low-flow-or-temperature-swing",
+      "title": "Girard GSWH-2 low flow or temperature swing",
+      "summary": "Use this when a Girard GSWH-2 has weak hot-water flow, water not hot enough, water too hot or cold, low campground pressure, filter restriction, or temperature swing.",
+      "safeChecklist": [
+        "Confirm LP, water, and 12V power are on from normal RV controls and the set temperature is reasonable.",
+        "Try the onboard pump if campground pressure is low, and clean owner-accessible faucet strainers or inlet screens only when the manual allows it.",
+        "Keep shower and fixture handles fully closed between uses so cold water does not bleed through the hot side.",
+        "Call Lippert/Girard or a qualified RV technician for repeated codes, persistent low temperature, low voltage, LP supply, or internal service concerns."
+      ],
+      "sourceIds": [
+        "girard-gswh2-owner-manual",
+        "girard-tankless-flow-temperature-video",
+        "girard-tankless-water-not-hot-enough-video",
+        "girard-tankless-water-too-hot-cold-video",
+        "girard-tankless-quick-operating-tips"
+      ]
+    },
+    {
+      "id": "girard-tankless-maintenance-filter-decalcify",
+      "slug": "girard-gswh2-filter-screen-decalcify-maintenance",
+      "title": "Girard GSWH-2 filter screen or decalcify maintenance",
+      "summary": "Use this when Girard GSWH-2 guidance points to owner-accessible filter-screen cleaning, decalcifying, or visual maintenance before service.",
+      "safeChecklist": [
+        "Turn the water heater off before owner-accessible filter, screen, or decalcifying work.",
+        "Use only the Lippert/Girard maintenance procedure and materials allowed for the model.",
+        "Do not open appliance service compartments or disturb gas, electrical, blower, valve, or controller parts.",
+        "Call Lippert/Girard or a qualified technician if flow, temperature, or visible condition does not recover after allowed maintenance."
+      ],
+      "sourceIds": [
+        "girard-gswh2-owner-manual",
+        "girard-tankless-decalcify-video",
+        "girard-tankless-filter-screen-video",
+        "girard-tankless-maintenance-visual-video"
+      ]
+    },
+    {
+      "id": "girard-tankless-winterization-freeze",
+      "slug": "girard-gswh2-winterization-freeze-leak-risk",
+      "title": "Girard GSWH-2 winterization or freeze-leak risk",
+      "summary": "Use this when a Girard GSWH-2 is in winter-use mode, shows freeze-leak symptoms, or may have been improperly winterized.",
+      "safeChecklist": [
+        "Shut off water, LP, and 12V power if the heater is leaking or visibly damaged.",
+        "Do not rely on winter-use mode or an Fd display to winterize the whole RV plumbing system.",
+        "Photograph visible damage, the display state, model label, and winterization history for warranty or service.",
+        "Contact Lippert/Girard or a qualified RV technician before operating a suspected freeze-damaged heater."
+      ],
+      "sourceIds": [
+        "girard-gswh2-owner-manual",
+        "girard-tankless-winterize-video",
+        "girard-tankless-freeze-leaks-video",
+        "girard-qr181-freeze-damage"
+      ]
+    },
+    {
+      "id": "girard-tankless-gas-smell",
+      "slug": "girard-gswh2-gas-smell",
+      "title": "Girard GSWH-2 gas smell",
+      "summary": "Use this when gas odor is present near a Girard GSWH-2 water heater or inside the RV.",
+      "safeChecklist": [
+        "Leave the RV and keep people away from ignition sources.",
+        "Shut off LP at the source only if it is safe to do so.",
+        "Do not touch switches, radios, phones, engines, generators, or flames in the RV.",
+        "Contact the gas supplier, Lippert/Girard, a qualified RV technician, or the fire department before restoring LP."
+      ],
+      "sourceIds": [
+        "girard-gswh2-owner-manual"
+      ]
+    },
+    {
+      "id": "girard-tankless-no-hot-water-lockout",
+      "slug": "girard-gswh2-no-hot-water-or-lockout",
+      "title": "Girard GSWH-2 no hot water or lockout",
+      "summary": "Use this when a Girard GSWH-2 does not heat, shuts down, locks out, or displays a control-panel fault.",
+      "safeChecklist": [
+        "Confirm the user control panel, exterior on/off control, water supply, LP, and 12V power are on from normal RV controls.",
+        "Turn the hot-water faucet off and back on once only if the manual describes that reset for the displayed condition.",
+        "Stop repeated restart attempts if the heater locks out, overheats, smells like gas, leaks, or shows the same code again.",
+        "Record the code, set temperature, displayed temperature, water-flow state, and conditions for Lippert/Girard or qualified service."
+      ],
+      "sourceIds": [
+        "girard-gswh2-owner-manual",
+        "girard-tankless-intro-operation-video",
+        "girard-tankless-no-hot-water-video",
+        "girard-tankless-quick-operating-tips"
       ]
     }
   ],
