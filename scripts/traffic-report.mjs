@@ -13,6 +13,11 @@ const weeklyTrafficArtifact = {
   dryRunCommand: "npm run traffic:gsc:weekly:dry-run",
   cadence: "weekly",
 };
+const monetizationReadinessArtifact = {
+  path: "reports/monetization-readiness.json",
+  command: "npm run traffic:monetization",
+  source: weeklyTrafficArtifact.path,
+};
 const indexNow = indexNowConfig
   ? {
       keyLocation: indexNowConfig.keyLocation,
@@ -32,6 +37,7 @@ function buildReport() {
     gscConfigured: Boolean(searchConsole?.siteUrl && searchConsole?.sitemapSubmittedAt),
     searchConsole,
     weeklyTrafficArtifact,
+    monetizationReadinessArtifact,
     indexNow,
     verifiedEntries: corpus.entries.length,
     symptomGuides: corpus.symptoms.length,
@@ -43,7 +49,7 @@ function buildReport() {
       ready: false,
     })),
     nextAutomatedBatchGoal: indexNow
-      ? "Add impression-based monetization readiness report after GSC data exists."
+      ? "Run weekly GSC report and review monetization readiness after page impressions appear."
       : "Add IndexNow key after domain/live URL is chosen.",
     monitorCommand: "npm run traffic:monitor",
   };

@@ -48,9 +48,12 @@ Weekly Search Console traffic artifact:
 ```bash
 npm run traffic:gsc:weekly:dry-run
 GSC_QUOTA_PROJECT=coffee-explorer-480514 npm run traffic:gsc:weekly
+npm run traffic:monetization
 ```
 
 Writes ignored local report artifact: `reports/gsc-weekly-traffic.json`
+
+Monetization readiness writes ignored local report artifact: `reports/monetization-readiness.json`. It reads page impressions from the weekly GSC artifact and keeps checkout, ad slots, affiliate placeholders, repair leads, and sponsor slots disabled until manual review.
 
 Default range: last 7 Pacific-time days ending 3 days ago, to avoid preliminary GSC data. The script tries a readonly Search Console token first and falls back to the locally authorized `webmasters` ADC scope when needed.
 
@@ -80,4 +83,4 @@ Current corpus:
 - `951` generated indexable pages
 
 Next automated batch goal:
-- Add impression-based monetization readiness report after GSC data exists.
+- Run weekly GSC report and review monetization readiness after page impressions appear.
