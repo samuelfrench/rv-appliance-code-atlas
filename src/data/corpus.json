@@ -7,6 +7,14 @@
   },
   "sources": [
     {
+      "id": "coleman-6633-service",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 6633 Series Package Air Conditioner Service Manual",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-320.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
       "id": "coleman-9330-thermostat",
       "brand": "Coleman-Mach",
       "title": "Coleman-Mach 9330-33 Multiple Zone Thermostat Controller System",
@@ -19,6 +27,22 @@
       "brand": "Coleman-Mach",
       "title": "Coleman-Mach Digital Thermostats 9420-381 & 9420-382",
       "url": "https://library.coleman-mach.com/wp-content/uploads/2023/12/1980R189.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-9430-thermostat",
+      "brand": "Coleman-Mach",
+      "title": "Airxcel 9430 Series Wall Thermostat Installation and Operation Instructions",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2024/06/9430x338x.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-comfortguard-service",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach ComfortGuard Cab Air System Service Manual",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-463.pdf",
       "type": "manufacturer-manual",
       "official": true
     },
@@ -111,10 +135,34 @@
       "official": true
     },
     {
+      "id": "furrion-furnace-troubleshooting",
+      "brand": "Furrion",
+      "title": "Furrion RV Furnaces Troubleshooting and Service Manual",
+      "url": "https://lci-support-doc.s3.amazonaws.com/furrion%20documentation/heating/ccd-0007984.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
       "id": "furrion-rooftop-ac",
       "brand": "Furrion",
       "title": "Furrion Rooftop Air Conditioner Instruction Manual CCD-0005592",
       "url": "https://lci-support-doc.s3.amazonaws.com/Furrion/ccd-0005592.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-rooftop-ac-manual-control",
+      "brand": "Furrion",
+      "title": "Furrion Rooftop Air Conditioner with Manual Control User Manual",
+      "url": "https://lci-support-doc.s3.amazonaws.com/Furrion/ccd-0005773.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-rooftop-hvac-troubleshooting",
+      "brand": "Furrion",
+      "title": "Furrion Rooftop HVAC Units Troubleshooting and Service Manual",
+      "url": "https://lci-support-doc.s3.amazonaws.com/furrion_comfort/air_conditioners/troubleshooting/ccd-0007990.pdf",
       "type": "manufacturer-manual",
       "official": true
     },
@@ -251,6 +299,46 @@
       "brand": "Onan",
       "title": "Cummins Onan Quiet Diesel 6000/7500/8000 HDKAH/HDKAJ/HDKAK Operator Manual A046L053",
       "url": "https://www.cummins.com/sites/default/files/2024-10/a046l053-i6-hdkax-ops-manual.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "onan-qg-2800i-a062y985",
+      "brand": "Onan",
+      "title": "Cummins Onan QG 2800i/2500i LP HGLAA Spec A Operator Manual A062Y985",
+      "url": "https://www.cummins.com/sites/default/files/2022-01/a062y985_issue3.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "onan-qg-2800i-a075s349",
+      "brand": "Onan",
+      "title": "Cummins Onan QG 2800i/2500i LP HGLAA Spec B Operator Manual A075S349",
+      "url": "https://www.cummins.com/sites/default/files/2024-03/a075s349-i3-202401-operators-manual.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "onan-qg-4000-0981-0159",
+      "brand": "Onan",
+      "title": "Cummins Onan QG 4000/3600 LP KY Spec J-N Operator Manual 981-0159",
+      "url": "https://www.cummins.com/sites/default/files/rv-manuals/0981-0159.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "onan-qg-4000-a041d131",
+      "brand": "Onan",
+      "title": "Cummins Onan QG 4000/3600 LP KY Spec P-R Operator Manual A041D131",
+      "url": "https://www.cummins.com/sites/default/files/rv-manuals/A041D131.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "onan-qg-7000i-a079e225",
+      "brand": "Onan",
+      "title": "Cummins Onan QG 7000i DF HGLCA Spec A Operator Manual A079E225",
+      "url": "https://www.cummins.com/sites/default/files/2025-08/onan-rv-generator-operator-manual-hglca-spec-a.pdf",
       "type": "manufacturer-manual",
       "official": true
     },
@@ -12031,6 +12119,2525 @@
         "inside switch panel",
         "LP mode status"
       ]
+    },
+    {
+      "id": "onan-qg-4000-code-3",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KY Spec J-N",
+        "QG 4000/3600 LP KY Spec P-R"
+      ],
+      "code": "3",
+      "slug": "onan-qg-4000-code-3-service-check",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KY operator manuals list Code 3 as Service Check.",
+      "ownerSafeActions": [
+        "Use the operator manual fault-code process to identify the second-level code.",
+        "Record the two-digit code before calling service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-0981-0159",
+        "onan-qg-4000-a041d131"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-code-4",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KY Spec J-N",
+        "QG 4000/3600 LP KY Spec P-R"
+      ],
+      "code": "4",
+      "slug": "onan-qg-4000-code-4-over-crank",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KY operator manuals list Code 4 as Over Crank.",
+      "ownerSafeActions": [
+        "Stop repeated start attempts.",
+        "Check fuel level or LP level from normal owner access.",
+        "Record whether priming was attempted before the fault."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-0981-0159",
+        "onan-qg-4000-a041d131"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-code-12",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KY Spec J-N",
+        "QG 4000/3600 LP KY Spec P-R"
+      ],
+      "code": "12",
+      "slug": "onan-qg-4000-code-12-over-voltage",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KY operator manuals list Code 12 as Over Voltage.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-0981-0159",
+        "onan-qg-4000-a041d131"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-code-13",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KY Spec J-N",
+        "QG 4000/3600 LP KY Spec P-R"
+      ],
+      "code": "13",
+      "slug": "onan-qg-4000-code-13-under-voltage",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KY operator manuals list Code 13 as Under Voltage.",
+      "ownerSafeActions": [
+        "Reduce connected loads, especially air conditioners and battery chargers.",
+        "Record whether the fault clears with fewer loads."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-0981-0159",
+        "onan-qg-4000-a041d131"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-code-14",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KY Spec J-N",
+        "QG 4000/3600 LP KY Spec P-R"
+      ],
+      "code": "14",
+      "slug": "onan-qg-4000-code-14-over-frequency",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KY operator manuals list Code 14 as Over Frequency.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-0981-0159",
+        "onan-qg-4000-a041d131"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-code-15",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KY Spec J-N",
+        "QG 4000/3600 LP KY Spec P-R"
+      ],
+      "code": "15",
+      "slug": "onan-qg-4000-code-15-under-frequency",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KY operator manuals list Code 15 as Under Frequency.",
+      "ownerSafeActions": [
+        "Reduce connected loads, especially air conditioners and battery chargers.",
+        "Record whether the fault clears with fewer loads."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-0981-0159",
+        "onan-qg-4000-a041d131"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-code-27",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KY Spec J-N",
+        "QG 4000/3600 LP KY Spec P-R"
+      ],
+      "code": "27",
+      "slug": "onan-qg-4000-code-27-voltage-sense",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KY operator manuals list Code 27 as Voltage Sense.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-0981-0159",
+        "onan-qg-4000-a041d131"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-code-29",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KY Spec J-N",
+        "QG 4000/3600 LP KY Spec P-R"
+      ],
+      "code": "29",
+      "slug": "onan-qg-4000-code-29-high-battery-voltage",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KY operator manuals list Code 29 as High Battery Voltage.",
+      "ownerSafeActions": [
+        "Check RV battery state from installed monitors.",
+        "Use normal owner battery-maintenance access to recharge or correct RV battery state if needed."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-0981-0159",
+        "onan-qg-4000-a041d131"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-code-32",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KY Spec J-N",
+        "QG 4000/3600 LP KY Spec P-R"
+      ],
+      "code": "32",
+      "slug": "onan-qg-4000-code-32-low-cranking-speed",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KY operator manuals list Code 32 as Low Cranking Speed.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-0981-0159",
+        "onan-qg-4000-a041d131"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-code-35",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KY Spec J-N",
+        "QG 4000/3600 LP KY Spec P-R"
+      ],
+      "code": "35",
+      "slug": "onan-qg-4000-code-35-control-card-failure",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KY operator manuals list Code 35 as Control Card Failure.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-0981-0159",
+        "onan-qg-4000-a041d131"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-code-36",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KY Spec J-N",
+        "QG 4000/3600 LP KY Spec P-R"
+      ],
+      "code": "36",
+      "slug": "onan-qg-4000-code-36-engine-stopped",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KY operator manuals list Code 36 as Engine Stopped.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-0981-0159",
+        "onan-qg-4000-a041d131"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-code-37",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KY Spec J-N",
+        "QG 4000/3600 LP KY Spec P-R"
+      ],
+      "code": "37",
+      "slug": "onan-qg-4000-code-37-invalid-generator-set-configuration",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KY operator manuals list Code 37 as Invalid Generator Set Configuration.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-0981-0159",
+        "onan-qg-4000-a041d131"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-code-38",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KY Spec J-N",
+        "QG 4000/3600 LP KY Spec P-R"
+      ],
+      "code": "38",
+      "slug": "onan-qg-4000-code-38-over-current-field-overload",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KY operator manuals list Code 38 as Over Current (Field Overload).",
+      "ownerSafeActions": [
+        "Reduce connected loads, especially air conditioners and battery chargers.",
+        "Record whether the fault clears with fewer loads."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-0981-0159",
+        "onan-qg-4000-a041d131"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-code-41",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KY Spec J-N",
+        "QG 4000/3600 LP KY Spec P-R"
+      ],
+      "code": "41",
+      "slug": "onan-qg-4000-code-41-generator-rotor",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KY operator manuals list Code 41 as Generator Rotor.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-0981-0159",
+        "onan-qg-4000-a041d131"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-code-42",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KY Spec J-N",
+        "QG 4000/3600 LP KY Spec P-R"
+      ],
+      "code": "42",
+      "slug": "onan-qg-4000-code-42-processor",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KY operator manuals list Code 42 as Processor.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-0981-0159",
+        "onan-qg-4000-a041d131"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-code-43",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KY Spec J-N",
+        "QG 4000/3600 LP KY Spec P-R"
+      ],
+      "code": "43",
+      "slug": "onan-qg-4000-code-43-processor",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KY operator manuals list Code 43 as Processor.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-0981-0159",
+        "onan-qg-4000-a041d131"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-code-45",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KY Spec J-N",
+        "QG 4000/3600 LP KY Spec P-R"
+      ],
+      "code": "45",
+      "slug": "onan-qg-4000-code-45-speed-sense",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KY operator manuals list Code 45 as Speed Sense.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-0981-0159",
+        "onan-qg-4000-a041d131"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-code-47",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KY Spec J-N",
+        "QG 4000/3600 LP KY Spec P-R"
+      ],
+      "code": "47",
+      "slug": "onan-qg-4000-code-47-ignition",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KY operator manuals list Code 47 as Ignition.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-0981-0159",
+        "onan-qg-4000-a041d131"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-code-48",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KY Spec J-N",
+        "QG 4000/3600 LP KY Spec P-R"
+      ],
+      "code": "48",
+      "slug": "onan-qg-4000-code-48-generator-field-sense",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KY operator manuals list Code 48 as Generator Field Sense.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-0981-0159",
+        "onan-qg-4000-a041d131"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-1",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "1",
+      "slug": "onan-qg-2800i-code-1-high-engine-temperature",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 1 as High Engine Temperature.",
+      "ownerSafeActions": [
+        "Stop the generator and let it cool.",
+        "Check oil level only with the unit off and cool.",
+        "Check only exterior intake or discharge blockage from normal access points."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-4",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "4",
+      "slug": "onan-qg-2800i-code-4-over-crank",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 4 as Over Crank.",
+      "ownerSafeActions": [
+        "Stop repeated start attempts.",
+        "Check fuel level or LP level from normal owner access.",
+        "Record whether priming was attempted before the fault."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-6",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "6",
+      "slug": "onan-qg-2800i-code-6-low-oil-level",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 6 as Low Oil Level.",
+      "ownerSafeActions": [
+        "Stop the generator and let it cool.",
+        "Check oil level only with the unit off and cool."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-12",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "12",
+      "slug": "onan-qg-2800i-code-12-output-over-voltage",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 12 as Output Over Voltage.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-13",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "13",
+      "slug": "onan-qg-2800i-code-13-output-under-voltage",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 13 as Output Under Voltage.",
+      "ownerSafeActions": [
+        "Reduce connected loads, especially air conditioners and battery chargers.",
+        "Record whether the fault clears with fewer loads."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-14",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "14",
+      "slug": "onan-qg-2800i-code-14-output-over-frequency",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 14 as Output Over Frequency.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-15",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "15",
+      "slug": "onan-qg-2800i-code-15-output-under-frequency",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 15 as Output Under Frequency.",
+      "ownerSafeActions": [
+        "Reduce connected loads, especially air conditioners and battery chargers.",
+        "Record whether the fault clears with fewer loads."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-19",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "19",
+      "slug": "onan-qg-2800i-code-19-actuator-circuit-fault",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 19 as Actuator Circuit Fault.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-25",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "25",
+      "slug": "onan-qg-2800i-code-25-alternator-over-voltage",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 25 as Alternator Over Voltage.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-26",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "26",
+      "slug": "onan-qg-2800i-code-26-alternator-under-voltage",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 26 as Alternator Under Voltage.",
+      "ownerSafeActions": [
+        "Reduce connected loads, especially air conditioners and battery chargers.",
+        "Record whether the fault clears with fewer loads."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-27",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "27",
+      "slug": "onan-qg-2800i-code-27-pma-sense-lost",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 27 as PMA Sense Lost.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-29",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "29",
+      "slug": "onan-qg-2800i-code-29-battery-over-voltage",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 29 as Battery Over Voltage.",
+      "ownerSafeActions": [
+        "Check RV battery state from installed monitors.",
+        "Use normal owner battery-maintenance access to recharge or correct RV battery state if needed."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-31",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "31",
+      "slug": "onan-qg-2800i-code-31-engine-over-speed",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 31 as Engine Over Speed.",
+      "ownerSafeActions": [
+        "Reduce connected loads, especially air conditioners and battery chargers.",
+        "Record whether the fault clears with fewer loads."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-32",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "32",
+      "slug": "onan-qg-2800i-code-32-crank-under-speed",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 32 as Crank Under Speed.",
+      "ownerSafeActions": [
+        "Reduce connected loads, especially air conditioners and battery chargers.",
+        "Record whether the fault clears with fewer loads."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-34",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "34",
+      "slug": "onan-qg-2800i-code-34-high-inverter-temperature",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 34 as High Inverter Temperature.",
+      "ownerSafeActions": [
+        "Stop the generator and let it cool.",
+        "Check oil level only with the unit off and cool.",
+        "Check only exterior intake or discharge blockage from normal access points."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-35",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "35",
+      "slug": "onan-qg-2800i-code-35-ee-checksum-fault",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 35 as EE Checksum Fault.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-36",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "36",
+      "slug": "onan-qg-2800i-code-36-mechanical-fault",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 36 as Mechanical Fault.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-38",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "38",
+      "slug": "onan-qg-2800i-code-38-output-over-load",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 38 as Output Over Load.",
+      "ownerSafeActions": [
+        "Reduce connected loads, especially air conditioners and battery chargers.",
+        "Record whether the fault clears with fewer loads."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-43",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "43",
+      "slug": "onan-qg-2800i-code-43-ram-fault",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 43 as RAM Fault.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-45",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "45",
+      "slug": "onan-qg-2800i-code-45-crank-position-sense-lost",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 45 as Crank Position Sense Lost.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-49",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "49",
+      "slug": "onan-qg-2800i-code-49-actuator-over-load",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 49 as Actuator Over Load.",
+      "ownerSafeActions": [
+        "Reduce connected loads, especially air conditioners and battery chargers.",
+        "Record whether the fault clears with fewer loads."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-52",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "52",
+      "slug": "onan-qg-2800i-code-52-injector-lift-pump-circuit-fault",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 52 as Injector/Lift Pump Circuit Fault.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-53",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "53",
+      "slug": "onan-qg-2800i-code-53-oil-temperature-sensor-circuit-fault",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 53 as Oil Temperature Sensor Circuit Fault.",
+      "ownerSafeActions": [
+        "Stop the generator and let it cool.",
+        "Check oil level only with the unit off and cool.",
+        "Check only exterior intake or discharge blockage from normal access points."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-54",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "54",
+      "slug": "onan-qg-2800i-code-54-mat-sensor-circuit-fault",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 54 as MAT Sensor Circuit Fault.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-56",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "56",
+      "slug": "onan-qg-2800i-code-56-map-sensor-circuit-fault",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 56 as MAP Sensor Circuit Fault.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-67",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "67",
+      "slug": "onan-qg-2800i-code-67-igbt-over-current-fault",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 67 as IGBT Over Current Fault.",
+      "ownerSafeActions": [
+        "Reduce connected loads, especially air conditioners and battery chargers.",
+        "Record whether the fault clears with fewer loads."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-74",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "74",
+      "slug": "onan-qg-2800i-code-74-unprogrammed-board",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 74 as Unprogrammed Board.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-81",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "81",
+      "slug": "onan-qg-2800i-code-81-alternator-stator-circuit-fault",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 81 as Alternator Stator Circuit Fault.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800i-code-82",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800i/2500i LP HGLAA Spec A",
+        "QG 2800i/2500i LP HGLAA Spec B"
+      ],
+      "code": "82",
+      "slug": "onan-qg-2800i-code-82-vent-pressure-sensor-circuit-fault",
+      "plainMeaning": "The Cummins Onan QG 2800i/2500i LP HGLAA operator manuals list Code 82 as Vent Pressure Sensor Circuit Fault.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800i-a062y985",
+        "onan-qg-2800i-a075s349"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-7000i-code-1",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 7000i DF HGLCA Spec A"
+      ],
+      "code": "1",
+      "slug": "onan-qg-7000i-code-1-engine-temperature-exceeded-limit",
+      "plainMeaning": "The Cummins Onan QG 7000i DF HGLCA operator manual list Code 1 as Engine Temperature Exceeded Limit.",
+      "ownerSafeActions": [
+        "Stop the generator and let it cool.",
+        "Check oil level only with the unit off and cool.",
+        "Check only exterior intake or discharge blockage from normal access points."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-7000i-a079e225"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-7000i-code-4",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 7000i DF HGLCA Spec A"
+      ],
+      "code": "4",
+      "slug": "onan-qg-7000i-code-4-over-crank",
+      "plainMeaning": "The Cummins Onan QG 7000i DF HGLCA operator manual list Code 4 as Over Crank.",
+      "ownerSafeActions": [
+        "Stop repeated start attempts.",
+        "Check fuel level or LP level from normal owner access.",
+        "Record whether priming was attempted before the fault."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-7000i-a079e225"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-7000i-code-6",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 7000i DF HGLCA Spec A"
+      ],
+      "code": "6",
+      "slug": "onan-qg-7000i-code-6-low-oil-pressure",
+      "plainMeaning": "The Cummins Onan QG 7000i DF HGLCA operator manual list Code 6 as Low Oil Pressure.",
+      "ownerSafeActions": [
+        "Stop the generator and let it cool.",
+        "Check oil level only with the unit off and cool."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-7000i-a079e225"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-7000i-code-12",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 7000i DF HGLCA Spec A"
+      ],
+      "code": "12",
+      "slug": "onan-qg-7000i-code-12-over-voltage",
+      "plainMeaning": "The Cummins Onan QG 7000i DF HGLCA operator manual list Code 12 as Over Voltage.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-7000i-a079e225"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-7000i-code-13",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 7000i DF HGLCA Spec A"
+      ],
+      "code": "13",
+      "slug": "onan-qg-7000i-code-13-under-voltage",
+      "plainMeaning": "The Cummins Onan QG 7000i DF HGLCA operator manual list Code 13 as Under Voltage.",
+      "ownerSafeActions": [
+        "Reduce connected loads, especially air conditioners and battery chargers.",
+        "Record whether the fault clears with fewer loads."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-7000i-a079e225"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-7000i-code-14",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 7000i DF HGLCA Spec A"
+      ],
+      "code": "14",
+      "slug": "onan-qg-7000i-code-14-over-frequency",
+      "plainMeaning": "The Cummins Onan QG 7000i DF HGLCA operator manual list Code 14 as Over Frequency.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-7000i-a079e225"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-7000i-code-15",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 7000i DF HGLCA Spec A"
+      ],
+      "code": "15",
+      "slug": "onan-qg-7000i-code-15-under-frequency",
+      "plainMeaning": "The Cummins Onan QG 7000i DF HGLCA operator manual list Code 15 as Under Frequency.",
+      "ownerSafeActions": [
+        "Reduce connected loads, especially air conditioners and battery chargers.",
+        "Record whether the fault clears with fewer loads."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-7000i-a079e225"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-7000i-code-19",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 7000i DF HGLCA Spec A"
+      ],
+      "code": "19",
+      "slug": "onan-qg-7000i-code-19-actuator-circuit-fault",
+      "plainMeaning": "The Cummins Onan QG 7000i DF HGLCA operator manual list Code 19 as Actuator Circuit Fault.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-7000i-a079e225"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-7000i-code-25",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 7000i DF HGLCA Spec A"
+      ],
+      "code": "25",
+      "slug": "onan-qg-7000i-code-25-alternator-overvoltage",
+      "plainMeaning": "The Cummins Onan QG 7000i DF HGLCA operator manual list Code 25 as Alternator Overvoltage.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-7000i-a079e225"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-7000i-code-26",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 7000i DF HGLCA Spec A"
+      ],
+      "code": "26",
+      "slug": "onan-qg-7000i-code-26-alternator-undervoltage",
+      "plainMeaning": "The Cummins Onan QG 7000i DF HGLCA operator manual list Code 26 as Alternator Undervoltage.",
+      "ownerSafeActions": [
+        "Reduce connected loads, especially air conditioners and battery chargers.",
+        "Record whether the fault clears with fewer loads."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-7000i-a079e225"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-7000i-code-27",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 7000i DF HGLCA Spec A"
+      ],
+      "code": "27",
+      "slug": "onan-qg-7000i-code-27-pma-sense-lost",
+      "plainMeaning": "The Cummins Onan QG 7000i DF HGLCA operator manual list Code 27 as PMA Sense Lost.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-7000i-a079e225"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-7000i-code-29",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 7000i DF HGLCA Spec A"
+      ],
+      "code": "29",
+      "slug": "onan-qg-7000i-code-29-high-battery-voltage",
+      "plainMeaning": "The Cummins Onan QG 7000i DF HGLCA operator manual list Code 29 as High Battery Voltage.",
+      "ownerSafeActions": [
+        "Check RV battery state from installed monitors.",
+        "Use normal owner battery-maintenance access to recharge or correct RV battery state if needed."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-7000i-a079e225"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-7000i-code-31",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 7000i DF HGLCA Spec A"
+      ],
+      "code": "31",
+      "slug": "onan-qg-7000i-code-31-over-speed",
+      "plainMeaning": "The Cummins Onan QG 7000i DF HGLCA operator manual list Code 31 as Over Speed.",
+      "ownerSafeActions": [
+        "Reduce connected loads, especially air conditioners and battery chargers.",
+        "Record whether the fault clears with fewer loads."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-7000i-a079e225"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-7000i-code-34",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 7000i DF HGLCA Spec A"
+      ],
+      "code": "34",
+      "slug": "onan-qg-7000i-code-34-inverter-temperature-exceeded-limit",
+      "plainMeaning": "The Cummins Onan QG 7000i DF HGLCA operator manual list Code 34 as Inverter temperature Exceeded Limit.",
+      "ownerSafeActions": [
+        "Stop the generator and let it cool.",
+        "Check oil level only with the unit off and cool.",
+        "Check only exterior intake or discharge blockage from normal access points."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-7000i-a079e225"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-7000i-code-36",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 7000i DF HGLCA Spec A"
+      ],
+      "code": "36",
+      "slug": "onan-qg-7000i-code-36-other-faults",
+      "plainMeaning": "The Cummins Onan QG 7000i DF HGLCA operator manual list Code 36 as Other Faults.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-7000i-a079e225"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-7000i-code-38",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 7000i DF HGLCA Spec A"
+      ],
+      "code": "38",
+      "slug": "onan-qg-7000i-code-38-over-current-field-overload",
+      "plainMeaning": "The Cummins Onan QG 7000i DF HGLCA operator manual list Code 38 as Over Current (Field Overload).",
+      "ownerSafeActions": [
+        "Reduce connected loads, especially air conditioners and battery chargers.",
+        "Record whether the fault clears with fewer loads."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-7000i-a079e225"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-7000i-code-43",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 7000i DF HGLCA Spec A"
+      ],
+      "code": "43",
+      "slug": "onan-qg-7000i-code-43-ecu-fault",
+      "plainMeaning": "The Cummins Onan QG 7000i DF HGLCA operator manual list Code 43 as ECU Fault.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-7000i-a079e225"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-7000i-code-45",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 7000i DF HGLCA Spec A"
+      ],
+      "code": "45",
+      "slug": "onan-qg-7000i-code-45-speed-sense",
+      "plainMeaning": "The Cummins Onan QG 7000i DF HGLCA operator manual list Code 45 as Speed Sense.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-7000i-a079e225"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-7000i-code-52",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 7000i DF HGLCA Spec A"
+      ],
+      "code": "52",
+      "slug": "onan-qg-7000i-code-52-fuel-injector-or-ipm-pump-circuit-fault",
+      "plainMeaning": "The Cummins Onan QG 7000i DF HGLCA operator manual list Code 52 as Fuel Injector or IPM Pump Circuit Fault.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-7000i-a079e225"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-7000i-code-53",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 7000i DF HGLCA Spec A"
+      ],
+      "code": "53",
+      "slug": "onan-qg-7000i-code-53-oil-temperature-sensor-circuit-fault",
+      "plainMeaning": "The Cummins Onan QG 7000i DF HGLCA operator manual list Code 53 as Oil Temperature Sensor Circuit Fault.",
+      "ownerSafeActions": [
+        "Stop the generator and let it cool.",
+        "Check oil level only with the unit off and cool.",
+        "Check only exterior intake or discharge blockage from normal access points."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-7000i-a079e225"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-7000i-code-54",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 7000i DF HGLCA Spec A"
+      ],
+      "code": "54",
+      "slug": "onan-qg-7000i-code-54-mat-sensor",
+      "plainMeaning": "The Cummins Onan QG 7000i DF HGLCA operator manual list Code 54 as MAT Sensor.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-7000i-a079e225"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-7000i-code-57",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 7000i DF HGLCA Spec A"
+      ],
+      "code": "57",
+      "slug": "onan-qg-7000i-code-57-over-prime-or-lpg-pressure-sensor-fault-the-lpg-solenoid-valve-fault",
+      "plainMeaning": "The Cummins Onan QG 7000i DF HGLCA operator manual list Code 57 as Over Prime Or LPG Pressure Sensor Fault, The LPG Solenoid Valve Fault.",
+      "ownerSafeActions": [
+        "Check that the STOP/PRIME switch is not being held from normal controls.",
+        "Avoid repeated priming attempts."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-7000i-a079e225"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-7000i-code-73",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 7000i DF HGLCA Spec A"
+      ],
+      "code": "73",
+      "slug": "onan-qg-7000i-code-73-ac-output-circuit-fault",
+      "plainMeaning": "The Cummins Onan QG 7000i DF HGLCA operator manual list Code 73 as AC Output Circuit Fault.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Disconnect connected appliances before another attempt.",
+        "Have the appliance or circuit repaired before reuse."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-7000i-a079e225"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-7000i-code-81",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 7000i DF HGLCA Spec A"
+      ],
+      "code": "81",
+      "slug": "onan-qg-7000i-code-81-alternator-stator-circuit-fault",
+      "plainMeaning": "The Cummins Onan QG 7000i DF HGLCA operator manual list Code 81 as Alternator Stator Circuit Fault.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-7000i-a079e225"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-7000i-code-85",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 7000i DF HGLCA Spec A"
+      ],
+      "code": "85",
+      "slug": "onan-qg-7000i-code-85-oxygen-sensor-fault",
+      "plainMeaning": "The Cummins Onan QG 7000i DF HGLCA operator manual list Code 85 as Oxygen Sensor Fault.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Record the fault code, model/spec, hour meter, load, fuel state, and weather for Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical output, inverter, controller, sensors, fuel system, ignition, AC circuit, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, hot surfaces, fuel hazards, moving-part hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-7000i-a079e225"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
     }
   ],
   "symptoms": [
@@ -12093,7 +14700,8 @@
       ],
       "sourceIds": [
         "suburban-furnace-guide",
-        "dometic-df-furnace"
+        "dometic-df-furnace",
+        "furrion-furnace-troubleshooting"
       ]
     },
     {
@@ -12109,7 +14717,8 @@
       "sourceIds": [
         "dometic-df-furnace",
         "suburban-furnace-guide",
-        "furrion-water-heater"
+        "furrion-water-heater",
+        "furrion-furnace-troubleshooting"
       ]
     },
     {
@@ -12155,7 +14764,8 @@
         "norcold-polar-owner",
         "lippert-ground-control",
         "lippert-in-wall-slide",
-        "coleman-9420-thermostat"
+        "coleman-9420-thermostat",
+        "furrion-furnace-troubleshooting"
       ]
     },
     {
@@ -12216,7 +14826,96 @@
         "dometic-ruc-support",
         "norcold-polar-owner",
         "onan-rv-manual-index",
-        "lippert-ground-control"
+        "lippert-ground-control",
+        "furrion-furnace-troubleshooting",
+        "furrion-rooftop-hvac-troubleshooting",
+        "coleman-9430-thermostat"
+      ]
+    },
+    {
+      "id": "air-conditioner-not-cooling",
+      "slug": "rv-rooftop-air-conditioner-not-cooling",
+      "title": "RV rooftop air conditioner is not cooling enough",
+      "summary": "Use this when a Furrion or Coleman-Mach rooftop air conditioner runs but does not cool well, switches off on freeze protection, or has blocked airflow symptoms.",
+      "safeChecklist": [
+        "Clean or replace return-air filters if the owner manual allows it.",
+        "Confirm cooling mode, lower set temperature, and open supply nozzles or vents.",
+        "Remove visible leaves or dirt from exterior grilles only from normal safe access.",
+        "Record whether the compressor delay, freeze sensor, or fan state changed before calling service."
+      ],
+      "sourceIds": [
+        "furrion-rooftop-hvac-troubleshooting",
+        "furrion-rooftop-ac-manual-control",
+        "coleman-comfortguard-service",
+        "coleman-6633-service"
+      ]
+    },
+    {
+      "id": "air-conditioner-water-leak",
+      "slug": "rv-rooftop-air-conditioner-water-leak",
+      "title": "RV rooftop air conditioner leaks water inside",
+      "summary": "Use this when a rooftop air conditioner allows condensation or meltwater into the RV living space.",
+      "safeChecklist": [
+        "Turn the air conditioner off if water is entering the living space.",
+        "Protect flooring and furniture while the unit defrosts or drains.",
+        "Clean owner-accessible condensation drain openings only if reachable without disassembly.",
+        "Record whether freeze shutdown, closed air nozzles, or clogged filters happened first."
+      ],
+      "sourceIds": [
+        "furrion-rooftop-hvac-troubleshooting",
+        "furrion-rooftop-ac-manual-control"
+      ]
+    },
+    {
+      "id": "furnace-stops-before-setpoint",
+      "slug": "rv-furnace-stops-before-set-temperature",
+      "title": "RV furnace shuts off before set temperature",
+      "summary": "Use this when a Furrion or other RV furnace starts but stops before the coach reaches the thermostat setting.",
+      "safeChecklist": [
+        "Confirm the thermostat is set to heat and above room temperature.",
+        "Check that supply vents are open and not covered.",
+        "Check only visible air intake or exhaust openings for blockage.",
+        "Shut the furnace down if soot is visible at the vent."
+      ],
+      "sourceIds": [
+        "furrion-furnace-troubleshooting",
+        "suburban-furnace-guide",
+        "dometic-df-furnace"
+      ]
+    },
+    {
+      "id": "thermostat-delay-or-no-response",
+      "slug": "rv-thermostat-delay-or-no-response",
+      "title": "RV thermostat delay or no response",
+      "summary": "Use this when a Coleman-Mach/Airxcel thermostat appears asleep, blinks an HVAC state, waits before compressor operation, or a zone does not respond to settings.",
+      "safeChecklist": [
+        "Confirm the thermostat mode, zone, fan setting, and setpoint allow the requested operation.",
+        "Wake the display and wait through the built-in communication or short-cycle delay.",
+        "Record whether the display is dim, blinking, remote-sensor controlled, or zone-specific.",
+        "Do not change upper control-board settings or thermostat wiring."
+      ],
+      "sourceIds": [
+        "coleman-9330-thermostat",
+        "coleman-9420-thermostat",
+        "coleman-9430-thermostat",
+        "coleman-comfortguard-service",
+        "coleman-6633-service"
+      ]
+    },
+    {
+      "id": "thermostat-gas-assist",
+      "slug": "coleman-mach-thermostat-gas-assist-flashing",
+      "title": "Coleman-Mach thermostat shows GAS or flashing Elec assist",
+      "summary": "Use this when a Coleman-Mach thermostat indicates backup gas heat is assisting or electric heat is temporarily locked out after repeated unmet heat calls.",
+      "safeChecklist": [
+        "Treat GAS or flashing Elec as backup heat behavior described by the thermostat manual.",
+        "Record outdoor temperature, heat mode, zone, and how long the heat call has been running.",
+        "Wait through the manual-described lockout period if the coach remains safe and warm enough.",
+        "Do not change upper control-board settings or heat wiring."
+      ],
+      "sourceIds": [
+        "coleman-9330-thermostat",
+        "coleman-9420-thermostat"
       ]
     }
   ],

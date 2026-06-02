@@ -260,6 +260,82 @@ describe("verified corpus", () => {
     expect(codesForSource("onan-qd-10000-a043d713")).toEqual(qdLargeCodes);
   });
 
+  it("includes the official Cummins Onan QG 4000, QG inverter, and QG 7000i DF fault-code sets", () => {
+    const codesForSource = (sourceId: string) =>
+      new Set(
+        corpus.entries
+          .filter((entry) => entry.brand === "Onan" && entry.sourceIds.includes(sourceId))
+          .map((entry) => entry.code),
+      );
+    const qg4000Codes = new Set(["3", "4", "12", "13", "14", "15", "27", "29", "32", "35", "36", "37", "38", "41", "42", "43", "45", "47", "48"]);
+    const qgInverterCodes = new Set([
+      "1",
+      "4",
+      "6",
+      "12",
+      "13",
+      "14",
+      "15",
+      "19",
+      "25",
+      "26",
+      "27",
+      "29",
+      "31",
+      "32",
+      "34",
+      "35",
+      "36",
+      "38",
+      "43",
+      "45",
+      "49",
+      "52",
+      "53",
+      "54",
+      "56",
+      "67",
+      "74",
+      "81",
+      "82",
+    ]);
+    const qg7000iCodes = new Set([
+      "1",
+      "4",
+      "6",
+      "12",
+      "13",
+      "14",
+      "15",
+      "19",
+      "25",
+      "26",
+      "27",
+      "29",
+      "31",
+      "34",
+      "36",
+      "38",
+      "43",
+      "45",
+      "52",
+      "53",
+      "54",
+      "57",
+      "73",
+      "81",
+      "85",
+    ]);
+
+    expect(codesForSource("onan-qg-4000-0981-0159")).toEqual(qg4000Codes);
+    expect(codesForSource("onan-qg-4000-a041d131")).toEqual(qg4000Codes);
+    expect(codesForSource("onan-qg-2800i-a062y985")).toEqual(qgInverterCodes);
+    expect(codesForSource("onan-qg-2800i-a075s349")).toEqual(qgInverterCodes);
+    expect(codesForSource("onan-qg-7000i-a079e225")).toEqual(qg7000iCodes);
+    expect(codesForSource("onan-qg-7000i-a079e225")).not.toContain("32");
+    expect(codesForSource("onan-qg-7000i-a079e225")).not.toContain("82");
+  });
+
   it("includes the full official Lippert Ground Control LCD and In-Wall Slide-out LED error sets", () => {
     const lippertCodesForSource = (sourceId: string) =>
       new Set(
@@ -393,5 +469,28 @@ describe("verified corpus", () => {
     expect(new Set(c9330.map((entry) => entry.code))).toEqual(new Set(["Er"]));
     expect(c9330[0]?.plainMeaning).toMatch(/outside display range|remote temperature sensor/i);
     expect(new Set(c9420.map((entry) => entry.code))).toEqual(new Set(["LO", "HI"]));
+  });
+
+  it("adds official-source symptom pages for Furrion HVAC, Furrion furnace, and Coleman/Airxcel thermostat conditions", () => {
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+
+    expect(symptomById.get("air-conditioner-not-cooling")?.sourceIds).toEqual(
+      expect.arrayContaining(["furrion-rooftop-hvac-troubleshooting", "furrion-rooftop-ac-manual-control"]),
+    );
+    expect(symptomById.get("air-conditioner-water-leak")?.sourceIds).toContain("furrion-rooftop-hvac-troubleshooting");
+    expect(symptomById.get("furnace-stops-before-setpoint")?.sourceIds).toContain("furrion-furnace-troubleshooting");
+    expect(symptomById.get("furnace-lockout")?.sourceIds).toContain("furrion-furnace-troubleshooting");
+    expect(symptomById.get("thermostat-delay-or-no-response")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "coleman-9330-thermostat",
+        "coleman-9420-thermostat",
+        "coleman-9430-thermostat",
+        "coleman-comfortguard-service",
+        "coleman-6633-service",
+      ]),
+    );
+    expect(symptomById.get("thermostat-gas-assist")?.sourceIds).toEqual(
+      expect.arrayContaining(["coleman-9330-thermostat", "coleman-9420-thermostat"]),
+    );
   });
 });
