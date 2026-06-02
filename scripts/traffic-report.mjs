@@ -24,7 +24,7 @@ function buildReport() {
       ready: false,
     })),
     nextAutomatedBatchGoal:
-      "Continue official legacy Dometic refrigerator display-table research, prioritizing RM8/RMS8/RML8/RMSL8 and RMD8 icon/LED status tables plus remaining Americana/RM owner display conditions with explicit owner-safe boundaries.",
+      "Continue official Dometic refrigerator support-page alias research, prioritizing RM10/RMD10/RML10/RM8 support conditions not already covered by manuals, with duplicate filtering and owner-safe boundaries.",
     monitorCommand: "npm run traffic:monitor",
   };
 }

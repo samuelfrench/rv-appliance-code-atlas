@@ -99,8 +99,29 @@ describe("verified corpus", () => {
     expect(lookupEntries(index, "dometic americana check lamp failed ignite gas")[0]?.slug).toBe(
       "dometic-americana-check-lamp-lp-ignition-failure",
     );
+    expect(lookupEntries(index, "dometic dm2682 check indicator flashing buzzer")[0]?.slug).toBe(
+      "dometic-americana-ii-check-flashing-buzzer-lp-ignition-failure",
+    );
+    expect(lookupEntries(index, "dometic dma4087 display module limp mode middle position")[0]?.slug).toBe(
+      "dometic-americana-ii-display-module-limp-mode",
+    );
     expect(lookupEntries(index, "dometic rm8 3 8 flashing flame not ignited")[0]?.slug).toBe(
       "dometic-rm8-3-8-flashing-gas-flame-not-ignited",
+    );
+    expect(lookupEntries(index, "dometic rmd8555 3 8 flashing gas automatic flame not ignited")[0]?.slug).toBe(
+      "dometic-rmd8-3-8-flashing-gas-automatic-flame-not-ignited",
+    );
+    expect(lookupEntries(index, "dometic rmd8555 2 7 flashing 230v heating element defective")[0]?.slug).toBe(
+      "dometic-rmd8-2-7-flashing-230v-heating-element-defective",
+    );
+    expect(lookupEntries(index, "dometic rm8 ground contact gas valve internal batteries")[0]?.slug).toBe(
+      "dometic-rm8-ground-contact-gas-valve-internal-batteries",
+    );
+    expect(lookupEntries(index, "dometic rm8 tank stop mode gas operation blocked 15 minutes")[0]?.slug).toBe(
+      "dometic-rm8-tank-stop-mode-gas-operation-blocked-15-minutes",
+    );
+    expect(lookupEntries(index, "dometic rm10 petrol pump symbol tank stop mode")[0]?.slug).toBe(
+      "dometic-rm10-petrol-pump-symbol-tank-stop-mode",
     );
   });
 
@@ -204,6 +225,27 @@ describe("verified corpus", () => {
     );
   });
 
+  it("includes official Dometic Americana II DM/DMA display and limp-mode states", () => {
+    const source = corpus.sources.find((candidate) => candidate.id === "dometic-americana-ii-operating");
+    const codes = new Set(
+      corpus.entries
+        .filter((entry) => entry.brand === "Dometic" && entry.sourceIds.includes("dometic-americana-ii-operating"))
+        .map((entry) => entry.code),
+    );
+    const symptom = corpus.symptoms.find((candidate) => candidate.id === "dometic-legacy-absorption-display-faults");
+
+    expect(source?.url).toBe("https://media.dometic.com/externalassets/dometic-americana-ii-dm2682_9600007201_81829.pdf");
+    expect(codes).toEqual(
+      new Set([
+        "CHECK flashing + buzzer",
+        "temperature sensor limp mode",
+        "display module limp mode",
+        "temperature sensor failure limp mode",
+      ]),
+    );
+    expect(symptom?.sourceIds).toContain("dometic-americana-ii-operating");
+  });
+
   it("includes official Dometic RM8/RMS8/RML8/RMSL8 status-indicator fault displays", () => {
     const codes = new Set(
       corpus.entries
@@ -250,6 +292,72 @@ describe("verified corpus", () => {
         "external-to-internal power switching failure",
       ]),
     );
+  });
+
+  it("includes official Dometic RMD8 numbered-button status indicator fault displays", () => {
+    const source = corpus.sources.find((candidate) => candidate.id === "dometic-rmd8-numbered-operating");
+    const codes = new Set(
+      corpus.entries
+        .filter((entry) => entry.brand === "Dometic" && entry.sourceIds.includes("dometic-rmd8-numbered-operating"))
+        .map((entry) => entry.code),
+    );
+
+    expect(source?.url).toBe("https://www.dometic.com/externalassets/dometic-rmd-8555_9105705005_54246.pdf");
+    expect(codes).toEqual(
+      new Set([
+        "2 + 8 flashing + 20 s beep",
+        "4 + 8 flashing + 20 s beep",
+        "3 + 8 flashing + 20 s beep",
+        "15 s beep every two minutes",
+        "2 + 7 flashing + 20 s beep",
+        "4 + 7 flashing + 20 s beep",
+        "7 flashing",
+        "3 + 7 flashing + 20 s beep",
+        "3 + 8 flashing brightly",
+        "3 + 7 flashing brightly",
+        "battery mode low-voltage 15 s beep",
+        "external-to-internal power switching failure",
+      ]),
+    );
+  });
+
+  it("scopes RMD8 internal-battery operation to RMD8xx1 variants", () => {
+    const internalBatteryEntryIds = [
+      "dometic-rmd8-battery-mode-low-voltage-beep",
+      "dometic-rmd8-external-internal-power-switching-failure",
+      "dometic-rmd8-3-8-flashing-brightly-flame-not-ignited",
+      "dometic-rmd8-3-7-flashing-brightly-burner-or-cooling-unit-defective",
+      "dometic-rmd8-battery-mode-low-voltage-15-second-beep",
+      "dometic-rmd8-numbered-external-internal-power-switching-failure",
+    ];
+
+    for (const entryId of internalBatteryEntryIds) {
+      const entry = corpus.entries.find((candidate) => candidate.id === entryId);
+      expect(entry?.modelFamilies).toEqual(["RMD8501", "RMD8551", "RMD8xx1"]);
+    }
+  });
+
+  it("includes official Dometic RM8 and RM10 support display conditions not listed as manual table rows", () => {
+    const codesForSource = (sourceId: string) =>
+      new Set(
+        corpus.entries
+          .filter((entry) => entry.brand === "Dometic" && entry.sourceIds.includes(sourceId))
+          .map((entry) => entry.code),
+      );
+
+    expect(corpus.sources.find((source) => source.id === "dometic-rm8-ground-contact-support")?.url).toBe(
+      "https://support.dometic.com/en/rm8-refrigerators/Fault-Ground-contact-gas-valve-cd8f",
+    );
+    expect(corpus.sources.find((source) => source.id === "dometic-rm8-tank-stop-support")?.url).toBe(
+      "https://support.dometic.com/en/rm8-refrigerators/Tank-stop-mode-Gas-operation-is-blocked-for-15-minutes-ad8d",
+    );
+    expect(corpus.sources.find((source) => source.id === "dometic-rm10-petrol-pump-tank-stop-support")?.url).toBe(
+      "https://support.dometic.com/en/rm10-refrigerators/Display-showing-fault-Petrol-pump-symbol-for-tank-stop-mode-83dc",
+    );
+
+    expect(codesForSource("dometic-rm8-ground-contact-support")).toEqual(new Set(["Ground contact, gas valve"]));
+    expect(codesForSource("dometic-rm8-tank-stop-support")).toEqual(new Set(["Tank stop mode: gas operation blocked 15 minutes"]));
+    expect(codesForSource("dometic-rm10-petrol-pump-tank-stop-support")).toEqual(new Set(["Petrol pump symbol"]));
   });
 
   it("includes the full official Norcold Polar N7/N8 owner-manual fault displays", () => {

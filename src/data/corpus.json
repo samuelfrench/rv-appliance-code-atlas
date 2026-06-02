@@ -1055,6 +1055,14 @@
       "official": true
     },
     {
+      "id": "dometic-americana-ii-operating",
+      "brand": "Dometic",
+      "title": "Dometic DM and DMA Refrigerators Operating Manual",
+      "url": "https://media.dometic.com/externalassets/dometic-americana-ii-dm2682_9600007201_81829.pdf",
+      "type": "manual-pdf",
+      "official": true
+    },
+    {
       "id": "dometic-rm8-rms8-rml8-operating",
       "brand": "Dometic",
       "title": "Dometic RM8xxx, RMS8xxx, RML8xxx, RMSL8xxx Absorber Refrigerator Operating Manual",
@@ -1068,6 +1076,38 @@
       "title": "Dometic RMD8xx1/RMD8xx5 Absorber Refrigerator Operating Manual",
       "url": "https://media.dometic.com/externalassets/dometic-rmd-8555_72770.pdf",
       "type": "manual-pdf",
+      "official": true
+    },
+    {
+      "id": "dometic-rmd8-numbered-operating",
+      "brand": "Dometic",
+      "title": "Dometic RMD8555 Absorber Refrigerator Operating Manual",
+      "url": "https://www.dometic.com/externalassets/dometic-rmd-8555_9105705005_54246.pdf",
+      "type": "manual-pdf",
+      "official": true
+    },
+    {
+      "id": "dometic-rm8-ground-contact-support",
+      "brand": "Dometic",
+      "title": "Dometic RM8 Refrigerators Fault: Ground Contact, Gas Valve Support",
+      "url": "https://support.dometic.com/en/rm8-refrigerators/Fault-Ground-contact-gas-valve-cd8f",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm8-tank-stop-support",
+      "brand": "Dometic",
+      "title": "Dometic RM8 Refrigerators Tank Stop Mode Support",
+      "url": "https://support.dometic.com/en/rm8-refrigerators/Tank-stop-mode-Gas-operation-is-blocked-for-15-minutes-ad8d",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-petrol-pump-tank-stop-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Refrigerators Petrol Pump Symbol Tank Stop Mode Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/Display-showing-fault-Petrol-pump-symbol-for-tank-stop-mode-83dc",
+      "type": "manufacturer-support",
       "official": true
     },
     {
@@ -23436,6 +23476,170 @@
       ]
     },
     {
+      "id": "dometic-americana-ii-check-flashing-buzzer-lp-ignition-failure",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "DM2672",
+        "DM2682",
+        "DM2683",
+        "DM2872",
+        "DM2882",
+        "DMA4061",
+        "DMA4064",
+        "DMA4067",
+        "DMA4068",
+        "DMA4081",
+        "DMA4084",
+        "DMA4087",
+        "Americana II"
+      ],
+      "code": "CHECK flashing + buzzer",
+      "slug": "dometic-americana-ii-check-flashing-buzzer-lp-ignition-failure",
+      "plainMeaning": "The Dometic DM/DMA operating manual says that if the burner fails to ignite in gas mode, the CHECK indicator lamp flashes on and off and a buzzer beeps.",
+      "ownerSafeActions": [
+        "Record the flashing CHECK lamp, buzzer, selected mode, and model.",
+        "Restart the refrigerator once from the front ON/OFF control after waiting five seconds as the manual describes.",
+        "If the CHECK lamp and buzzer return, use another safe front-panel mode if available and arrange service."
+      ],
+      "serviceOnlyActions": [
+        "Repeated LP ignition failure, LP hardware, flame-safety, refrigerator control, and recurring CHECK lamp diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service LP hardware, ignition parts, electrical circuits, or refrigerator controls; use only documented front-panel actions and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-americana-ii-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-americana-ii-temperature-sensor-limp-mode",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "DM2672",
+        "DM2872",
+        "DMA4061",
+        "DMA4081",
+        "Americana II"
+      ],
+      "code": "temperature sensor limp mode",
+      "slug": "dometic-americana-ii-temperature-sensor-limp-mode",
+      "plainMeaning": "For DM2672, DMA4061, DM2872, and DMA4081 refrigerators, the Dometic DM/DMA operating manual says the control runs the cooling unit continuously if it cannot read the temperature sensor.",
+      "ownerSafeActions": [
+        "Record the model and continuous-run symptom for service.",
+        "Monitor food temperature and stop using the refrigerator if safe temperatures cannot be maintained.",
+        "Do not treat indefinite cooling-unit operation as normal operation."
+      ],
+      "serviceOnlyActions": [
+        "Temperature sensor and refrigerator control diagnosis or replacement are service-only."
+      ],
+      "safetyBoundary": "Do not service LP hardware, electrical circuits, cooling-system parts, sensors, or refrigerator controls; call qualified service for limp-mode operation.",
+      "sourceIds": [
+        "dometic-americana-ii-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-americana-ii-display-module-limp-mode",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "DM2682",
+        "DM2683",
+        "DM2882",
+        "DMA4064",
+        "DMA4067",
+        "DMA4068",
+        "DMA4084",
+        "DMA4087",
+        "Americana II"
+      ],
+      "code": "display module limp mode",
+      "slug": "dometic-americana-ii-display-module-limp-mode",
+      "plainMeaning": "For DM2682, DM2683, DMA4064, DMA4067, DMA4068, DM2882, DMA4084, and DMA4087 refrigerators, the Dometic DM/DMA operating manual says a nonfunctional display module makes the control system revert to full automatic operation with the temperature setting held at the middle position.",
+      "ownerSafeActions": [
+        "Record the nonfunctional display state and model information.",
+        "Avoid repeated mode changes if the display is not responding.",
+        "Arrange Dometic service if normal display operation does not return."
+      ],
+      "serviceOnlyActions": [
+        "Display module, power module, wiring, and control diagnostics are service-only."
+      ],
+      "safetyBoundary": "Do not service LP hardware, electrical circuits, display modules, wiring, or refrigerator controls; call qualified service for nonfunctional display operation.",
+      "sourceIds": [
+        "dometic-americana-ii-operating"
+      ],
+      "symptomIds": [
+        "thermostat-communication",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-americana-ii-temperature-sensor-failure-limp-mode",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "DM2682",
+        "DM2683",
+        "DM2882",
+        "DMA4064",
+        "DMA4067",
+        "DMA4068",
+        "DMA4084",
+        "DMA4087",
+        "Americana II"
+      ],
+      "code": "temperature sensor failure limp mode",
+      "slug": "dometic-americana-ii-temperature-sensor-failure-limp-mode",
+      "plainMeaning": "For DM2682, DM2683, DMA4064, DMA4067, DMA4068, DM2882, DMA4084, and DMA4087 refrigerators, the Dometic DM/DMA operating manual says a temperature sensor failure makes the control system run on the selected energy source while the cooling unit runs continuously.",
+      "ownerSafeActions": [
+        "Record the selected energy mode and whether the refrigerator runs continuously.",
+        "Monitor food temperature and stop using the refrigerator if safe temperatures cannot be maintained.",
+        "Arrange Dometic service if the limp condition persists."
+      ],
+      "serviceOnlyActions": [
+        "Temperature sensor, associated electronics, and refrigerator controls are service-only."
+      ],
+      "safetyBoundary": "Do not service LP hardware, electrical circuits, cooling-system parts, sensors, or refrigerator controls; call qualified service for limp-mode operation.",
+      "sourceIds": [
+        "dometic-americana-ii-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
       "id": "dometic-rm8-2-8-flashing-230v-unavailable-or-low",
       "brand": "Dometic",
       "equipmentType": "Refrigerator",
@@ -24239,11 +24443,8 @@
       "equipmentType": "Refrigerator",
       "modelFamilies": [
         "RMD8501",
-        "RMD8505",
         "RMD8551",
-        "RMD8555",
-        "RMD8xx1",
-        "RMD8xx5"
+        "RMD8xx1"
       ],
       "code": "battery mode low-voltage 15 s beep",
       "slug": "dometic-rmd8-battery-mode-low-voltage-beep",
@@ -24276,11 +24477,8 @@
       "equipmentType": "Refrigerator",
       "modelFamilies": [
         "RMD8501",
-        "RMD8505",
         "RMD8551",
-        "RMD8555",
-        "RMD8xx1",
-        "RMD8xx5"
+        "RMD8xx1"
       ],
       "code": "external-to-internal power switching failure",
       "slug": "dometic-rmd8-external-internal-power-switching-failure",
@@ -24298,6 +24496,572 @@
       ],
       "symptomIds": [
         "low-voltage",
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd8-2-8-flashing-230v-unavailable-or-low",
+      "code": "2 + 8 flashing + 20 s beep",
+      "slug": "dometic-rmd8-2-8-flashing-230v-unavailable-or-low",
+      "plainMeaning": "The RMD8 numbered-button operating manual lists 2 + 8 flashing + 20 s beep as: 230 V mode is not available or the voltage is too low.",
+      "ownerSafeActions": [
+        "Check the owner-visible mains power connection and selected energy mode.",
+        "Record whether the display clears after restoring the intended power source."
+      ],
+      "serviceOnlyActions": [
+        "Mains supply, fuse, heating element, and refrigerator electronics diagnosis are service-only."
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD8501",
+        "RMD8505",
+        "RMD8551",
+        "RMD8555",
+        "RMD8xx1",
+        "RMD8xx5"
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd8-numbered-operating"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd8-4-8-flashing-12v-unavailable-or-low",
+      "code": "4 + 8 flashing + 20 s beep",
+      "slug": "dometic-rmd8-4-8-flashing-12v-unavailable-or-low",
+      "plainMeaning": "The RMD8 numbered-button operating manual lists 4 + 8 flashing + 20 s beep as: 12 V mode is not available or the voltage is too low; AES models also call out the D+ signal.",
+      "ownerSafeActions": [
+        "Check owner-visible coach battery state and the selected front-panel energy mode.",
+        "Record whether the fault appears while driving, parked, or connected to external power."
+      ],
+      "serviceOnlyActions": [
+        "DC supply, D+ signal, fuse, wiring, and refrigerator electronics diagnosis are service-only."
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD8501",
+        "RMD8505",
+        "RMD8551",
+        "RMD8555",
+        "RMD8xx1",
+        "RMD8xx5"
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd8-numbered-operating"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd8-3-8-flashing-gas-automatic-flame-not-ignited",
+      "code": "3 + 8 flashing + 20 s beep",
+      "slug": "dometic-rmd8-3-8-flashing-gas-automatic-flame-not-ignited",
+      "plainMeaning": "The RMD8 numbered-button operating manual lists 3 + 8 flashing + 20 s beep as: GAS or automatic mode did not ignite the flame.",
+      "ownerSafeActions": [
+        "Confirm the LP cylinder has fuel from owner-visible indicators.",
+        "Use the front GAS FAULT reset only after correcting an owner-visible supply issue.",
+        "Stop LP mode and arrange service if the display returns."
+      ],
+      "serviceOnlyActions": [
+        "Repeated LP ignition failure, burner service, LP hardware, and refrigerator electronics diagnosis are service-only."
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD8501",
+        "RMD8505",
+        "RMD8551",
+        "RMD8555",
+        "RMD8xx1",
+        "RMD8xx5"
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd8-numbered-operating"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd8-15-second-beep-interior-lighting-on",
+      "code": "15 s beep every two minutes",
+      "slug": "dometic-rmd8-15-second-beep-interior-lighting-on",
+      "plainMeaning": "The RMD8 numbered-button operating manual lists 15 s beep every two minutes as: the interior lighting is switched on.",
+      "ownerSafeActions": [
+        "Close the refrigerator door.",
+        "Check for food packages or shelves preventing the door from closing fully."
+      ],
+      "serviceOnlyActions": [
+        "Door contact, latch, hinge, and light-circuit diagnosis are service-only if the alarm repeats with the door closed."
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD8501",
+        "RMD8505",
+        "RMD8551",
+        "RMD8555",
+        "RMD8xx1",
+        "RMD8xx5"
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd8-numbered-operating"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd8-2-7-flashing-230v-heating-element-defective",
+      "code": "2 + 7 flashing + 20 s beep",
+      "slug": "dometic-rmd8-2-7-flashing-230v-heating-element-defective",
+      "plainMeaning": "The RMD8 numbered-button operating manual lists 2 + 7 flashing + 20 s beep as: the 230 V heating element is defective.",
+      "ownerSafeActions": [
+        "Record the display state and selected energy mode.",
+        "Use another front-panel energy mode only if available and safe while arranging service."
+      ],
+      "serviceOnlyActions": [
+        "Heating element replacement and power-circuit diagnosis are service-only."
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD8501",
+        "RMD8505",
+        "RMD8551",
+        "RMD8555",
+        "RMD8xx1",
+        "RMD8xx5"
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd8-numbered-operating"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd8-4-7-flashing-12v-heating-element-defective",
+      "code": "4 + 7 flashing + 20 s beep",
+      "slug": "dometic-rmd8-4-7-flashing-12v-heating-element-defective",
+      "plainMeaning": "The RMD8 numbered-button operating manual lists 4 + 7 flashing + 20 s beep as: the 12 V heating element is defective.",
+      "ownerSafeActions": [
+        "Record the display state and selected energy mode.",
+        "Use another front-panel energy mode only if available and safe while arranging service."
+      ],
+      "serviceOnlyActions": [
+        "DC heating element replacement and power-circuit diagnosis are service-only."
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD8501",
+        "RMD8505",
+        "RMD8551",
+        "RMD8555",
+        "RMD8xx1",
+        "RMD8xx5"
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd8-numbered-operating"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd8-7-flashing-temperature-sensor-defective",
+      "code": "7 flashing",
+      "slug": "dometic-rmd8-7-flashing-temperature-sensor-defective",
+      "plainMeaning": "The RMD8 numbered-button operating manual lists 7 flashing as: the temperature sensor has no contact or is defective.",
+      "ownerSafeActions": [
+        "Record the flashing temperature-level display.",
+        "Monitor food temperature and arrange service if safe temperatures cannot be maintained."
+      ],
+      "serviceOnlyActions": [
+        "Temperature sensor and refrigerator electronics diagnosis are service-only."
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD8501",
+        "RMD8505",
+        "RMD8551",
+        "RMD8555",
+        "RMD8xx1",
+        "RMD8xx5"
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd8-numbered-operating"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd8-3-7-flashing-burner-or-cooling-unit-defective",
+      "code": "3 + 7 flashing + 20 s beep",
+      "slug": "dometic-rmd8-3-7-flashing-burner-or-cooling-unit-defective",
+      "plainMeaning": "The RMD8 numbered-button operating manual lists 3 + 7 flashing + 20 s beep as: the burner or cooling unit is defective.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off if cooling is unsafe or any odor or leakage is present.",
+        "Record the display and avoid repeated resets."
+      ],
+      "serviceOnlyActions": [
+        "Burner, burner nozzles, cooling unit, and refrigerator controls are service-only."
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD8501",
+        "RMD8505",
+        "RMD8551",
+        "RMD8555",
+        "RMD8xx1",
+        "RMD8xx5"
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd8-numbered-operating"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd8-3-8-flashing-brightly-flame-not-ignited",
+      "code": "3 + 8 flashing brightly",
+      "slug": "dometic-rmd8-3-8-flashing-brightly-flame-not-ignited",
+      "plainMeaning": "The RMD8 numbered-button operating manual lists 3 + 8 flashing brightly as: during internal-battery operation, the flame was not ignited.",
+      "ownerSafeActions": [
+        "Confirm the LP cylinder has fuel from owner-visible indicators.",
+        "Confirm the internal batteries are installed and not depleted if the model uses battery operation.",
+        "Stop LP mode and arrange service if the display returns."
+      ],
+      "serviceOnlyActions": [
+        "Repeated LP ignition failure and battery-mode refrigerator electronics diagnosis are service-only."
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD8501",
+        "RMD8551",
+        "RMD8xx1"
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd8-numbered-operating"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd8-3-7-flashing-brightly-burner-or-cooling-unit-defective",
+      "code": "3 + 7 flashing brightly",
+      "slug": "dometic-rmd8-3-7-flashing-brightly-burner-or-cooling-unit-defective",
+      "plainMeaning": "The RMD8 numbered-button operating manual lists 3 + 7 flashing brightly as: during internal-battery operation, the burner or cooling unit is defective.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off if cooling is unsafe or any odor or leakage is present.",
+        "Record the bright flashing display and arrange service."
+      ],
+      "serviceOnlyActions": [
+        "Burner, cooling unit, and battery-mode refrigerator electronics diagnosis are service-only."
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD8501",
+        "RMD8551",
+        "RMD8xx1"
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd8-numbered-operating"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd8-battery-mode-low-voltage-15-second-beep",
+      "code": "battery mode low-voltage 15 s beep",
+      "slug": "dometic-rmd8-battery-mode-low-voltage-15-second-beep",
+      "plainMeaning": "The RMD8 numbered-button operating manual lists battery mode low-voltage 15 s beep as: an acoustic signal at 15-second intervals indicates undervoltage detection in the internal batteries.",
+      "ownerSafeActions": [
+        "Replace the internal batteries as the manual describes.",
+        "Record whether the alarm returns with fresh batteries."
+      ],
+      "serviceOnlyActions": [
+        "Battery contacts, internal power supply, and refrigerator electronics diagnosis are service-only."
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD8501",
+        "RMD8551",
+        "RMD8xx1"
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd8-numbered-operating"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rmd8-numbered-external-internal-power-switching-failure",
+      "code": "external-to-internal power switching failure",
+      "slug": "dometic-rmd8-numbered-external-internal-power-switching-failure",
+      "plainMeaning": "The RMD8 numbered-button operating manual lists external-to-internal power switching failure as: automatic switching from external to internal power supply does not function, so the refrigerator does not work and gas operation is not possible although batteries are inserted.",
+      "ownerSafeActions": [
+        "Switch the refrigerator off and on once as the manual describes.",
+        "Record whether vehicle power was disconnected while gas mode was starting."
+      ],
+      "serviceOnlyActions": [
+        "Power switchover, internal supply, and refrigerator electronics diagnosis are service-only."
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RMD8501",
+        "RMD8551",
+        "RMD8xx1"
+      ],
+      "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
+      "sourceIds": [
+        "dometic-rmd8-numbered-operating"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm8-ground-contact-gas-valve-internal-batteries",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM8xxx",
+        "RMS8xxx",
+        "RML8xxx",
+        "RMSL8xxx",
+        "RM8501",
+        "RM8505",
+        "RMS8501",
+        "RMS8505",
+        "RML8555",
+        "RMSL8505"
+      ],
+      "code": "Ground contact, gas valve",
+      "slug": "dometic-rm8-ground-contact-gas-valve-internal-batteries",
+      "plainMeaning": "The Dometic RM8 support page lists ground contact at the gas valve and says to replace the internal batteries that power the electronics.",
+      "ownerSafeActions": [
+        "Replace the internal batteries as the support page describes.",
+        "Record whether the condition returns with fresh batteries installed.",
+        "Stop LP mode and arrange service if the condition returns."
+      ],
+      "serviceOnlyActions": [
+        "Recurring gas-valve ground-contact, LP hardware, wiring, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service LP hardware, electrical circuits, wiring, or refrigerator controls; use only documented battery replacement and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm8-ground-contact-support"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm8-tank-stop-mode-gas-operation-blocked-15-minutes",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM8xxx",
+        "RMS8xxx",
+        "RML8xxx",
+        "RMSL8xxx",
+        "RM8501",
+        "RM8505",
+        "RMS8501",
+        "RMS8505",
+        "RML8555",
+        "RMSL8505"
+      ],
+      "code": "Tank stop mode: gas operation blocked 15 minutes",
+      "slug": "dometic-rm8-tank-stop-mode-gas-operation-blocked-15-minutes",
+      "plainMeaning": "The Dometic RM8 support page says tank stop mode blocks gas operation for 15 minutes.",
+      "ownerSafeActions": [
+        "Wait 15 minutes before expecting LP operation to resume.",
+        "Use another front-panel operating mode if available and safe.",
+        "Record when the tank-stop condition appears if it repeats outside refueling or restart timing."
+      ],
+      "serviceOnlyActions": [
+        "Tank-stop timing, ignition interlock, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service LP hardware, electrical circuits, wiring, or refrigerator controls; use only normal front-panel operation and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm8-tank-stop-support"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-petrol-pump-symbol-tank-stop-mode",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10",
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P"
+      ],
+      "code": "Petrol pump symbol",
+      "slug": "dometic-rm10-petrol-pump-symbol-tank-stop-mode",
+      "plainMeaning": "The Dometic RM10 support page lists the petrol pump symbol as tank stop mode, where gas operation is blocked for 15 minutes.",
+      "ownerSafeActions": [
+        "Wait 15 minutes before expecting LP operation to resume.",
+        "Use another front-panel operating mode if available and safe.",
+        "Record whether the petrol pump symbol returns after the tank-stop period ends."
+      ],
+      "serviceOnlyActions": [
+        "Tank-stop timing, ignition interlock, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service LP hardware, electrical circuits, wiring, or refrigerator controls; use only normal front-panel operation and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-petrol-pump-tank-stop-support"
+      ],
+      "symptomIds": [
         "refrigerator-lp-ignition",
         "dometic-legacy-absorption-display-faults",
         "service-call-prep"
@@ -27366,11 +28130,16 @@
         "dometic-rm3762-rm3962-operating",
         "dometic-rmd10t-rmd10xt-operating",
         "dometic-americana-operating",
+        "dometic-americana-ii-operating",
         "dometic-rm8-rms8-rml8-operating",
         "dometic-rmd8-operating",
+        "dometic-rmd8-numbered-operating",
         "dometic-rm10-rms10-operating",
         "dometic-rmd10-5-operating",
-        "dometic-rml10-4-operating"
+        "dometic-rml10-4-operating",
+        "dometic-rm8-ground-contact-support",
+        "dometic-rm8-tank-stop-support",
+        "dometic-rm10-petrol-pump-tank-stop-support"
       ]
     }
   ],
