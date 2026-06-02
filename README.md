@@ -29,6 +29,15 @@ npm run traffic:report
 npm run verify:runtime
 ```
 
+Google Search Console launch:
+
+```bash
+npm run traffic:gsc:verify:dry-run
+GSC_QUOTA_PROJECT=coffee-explorer-480514 npm run traffic:gsc:verify
+npm run traffic:gsc:dry-run
+GSC_QUOTA_PROJECT=coffee-explorer-480514 npm run traffic:gsc:submit
+```
+
 Traffic monitor:
 
 ```bash
