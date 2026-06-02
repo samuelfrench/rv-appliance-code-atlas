@@ -37,9 +37,9 @@ npm run traffic:monitor
 
 Current corpus:
 - `463` verified entries
-- `33` symptom guides
-- `67` official sources
-- `497` generated indexable pages
+- `40` symptom guides
+- `81` official sources
+- `504` generated indexable pages
 
 Next automated batch goal:
-- Add remaining official OD-5001 low-flow and temperature-control symptom pages plus Furrion/Lippert tankless support-video source links, then continue manufacturer-hosted table discovery without adding code entries unless an official fault/display table is verified.
+- Research official owner-safe Girard/Lippert tankless and remaining manufacturer-hosted water-heater maintenance or winterization sources, keep model families separate, and add no code entries unless an official fault/display table is verified.
