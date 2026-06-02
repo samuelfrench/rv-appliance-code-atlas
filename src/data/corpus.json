@@ -1359,6 +1359,22 @@
       "official": true
     },
     {
+      "id": "suburban-sf-vh-ducting-guide",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban SF-VH Furnace Ducting Guide",
+      "url": "https://library.suburbanrv.com/wp-content/uploads/2023/05/Ducting-Guidance-Document-v1.pdf",
+      "type": "manufacturer-guide",
+      "official": true
+    },
+    {
+      "id": "suburban-st42-st60-product-overview",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban ST42/ST60 Tankless Water Heaters Product Overview",
+      "url": "https://suburbanrv.com/files/product_documents/Tankless%20Water%20Heater/ST%204260%20Tankless%20Water%20Heater%20Sell%20Sheet%20111522.pdf",
+      "type": "manufacturer-product-overview",
+      "official": true
+    },
+    {
       "id": "girard-gswh2-owner-manual",
       "brand": "Lippert",
       "title": "Lippert Girard GSWH-2 Tankless Water Heater Owner's Manual CCD-0006120",
@@ -31974,6 +31990,7 @@
         "dometic-df-furnace",
         "suburban-furnace-guide",
         "suburban-rv-faqs",
+        "suburban-sf-vh-ducting-guide",
         "suburban-tank-water-heater",
         "furrion-water-heater",
         "furrion-f2gwh-water-heater",
@@ -32139,11 +32156,13 @@
         "suburban-furnace-guide",
         "suburban-tank-water-heater",
         "suburban-rv-faqs",
+        "suburban-sf-vh-ducting-guide",
         "dometic-water-heater-combo-function-support",
         "dometic-water-heater-overheat-reset-support",
         "dometic-xt-water-heater-manual",
         "suburban-tankless-water-heater",
         "suburban-st42-st60-water-heater",
+        "suburban-st42-st60-product-overview",
         "furrion-water-heater-user-manual",
         "furrion-f2gwh-water-heater",
         "furrion-water-heater-freeze-damage",
@@ -32242,6 +32261,7 @@
         "furrion-furnace-troubleshooting",
         "suburban-furnace-guide",
         "suburban-rv-faqs",
+        "suburban-sf-vh-ducting-guide",
         "dometic-df-furnace"
       ]
     },
@@ -32608,7 +32628,8 @@
       ],
       "sourceIds": [
         "suburban-tankless-water-heater",
-        "suburban-st42-st60-water-heater"
+        "suburban-st42-st60-water-heater",
+        "suburban-st42-st60-product-overview"
       ]
     },
     {
@@ -32972,6 +32993,69 @@
       ]
     },
     {
+      "id": "suburban-sf-vh-duct-port-limit-cycling",
+      "slug": "suburban-sf-vh-furnace-duct-port-limit-cycling",
+      "title": "Suburban SF-VH furnace duct-port layout, limit cycling, or weak airflow",
+      "summary": "Use this when a Suburban SF-35VH(F)Q or SF-42VH(F)Q furnace short-cycles, runs hot, or has weak heat because the duct-port layout may not match Suburban's SF-VH ducting guidance; the guide notes port #5 has little effect on limit temperature, port #2 or port #3 may matter more, and the SF-42 Bottom Duct Kit 520753 can apply to some layouts.",
+      "safeChecklist": [
+        "Confirm the furnace is an SF-35VH(F)Q or SF-42VH(F)Q from the data label before using SF-VH duct guidance.",
+        "Keep all heat registers open and record which rooms get weak airflow or short cycling.",
+        "Photograph visible registers, return grilles, and accessible duct routing without removing panels.",
+        "Have duct-port changes, added ducts, bottom duct kit decisions, or limit-cycling diagnosis handled by qualified RV furnace service."
+      ],
+      "sourceIds": [
+        "suburban-sf-vh-ducting-guide"
+      ],
+      "searchAliases": [
+        "suburban sf-vh duct port 5 limit temperature",
+        "suburban sf-42 bottom duct kit 520753",
+        "suburban furnace duct port 2 port 3",
+        "suburban sf-vh furnace weak airflow short cycling"
+      ]
+    },
+    {
+      "id": "suburban-sf-vh-return-air-register-layout",
+      "slug": "suburban-sf-vh-return-air-register-layout",
+      "title": "Suburban SF-VH return-air, register, or flex-duct airflow layout",
+      "summary": "Use this when a Suburban SF-VH furnace has rapid cycling, weak heat, overheating, or airflow complaints tied to minimum open duct area through registers, return-air restriction, a heat outlet within 18 inches blowing toward the return, crushed or sharply bent flex duct, loose duct connections, or added air boosters.",
+      "safeChecklist": [
+        "Keep outlet registers open and aim adjustable outlets away from the return-air opening if they blow directly into it.",
+        "Remove only loose visible items blocking return-air grilles or furnace compartment airflow.",
+        "Look for obvious crushed or sharply bent flexible duct only where already owner-visible; do not remove panels.",
+        "Have return-air area calculations, duct sealing, booster removal, and cabinet or duct changes handled by qualified service."
+      ],
+      "sourceIds": [
+        "suburban-sf-vh-ducting-guide"
+      ],
+      "searchAliases": [
+        "suburban sf-vh return air 18 register",
+        "suburban furnace outlet register near return air",
+        "suburban furnace crushed flex duct sharp bend",
+        "suburban furnace air booster limit cycling"
+      ]
+    },
+    {
+      "id": "suburban-sf-vh-thermostat-premature-satisfaction",
+      "slug": "suburban-sf-vh-thermostat-too-high-premature-satisfaction",
+      "title": "Suburban SF-VH thermostat location or premature satisfaction",
+      "summary": "Use this when a Suburban SF-VH furnace shuts off before the coach feels warm and the thermostat may be mounted too high, on the wrong wall, too far from the return grate, or otherwise satisfied before the living space reaches set temperature.",
+      "safeChecklist": [
+        "Record thermostat height, wall location, nearby heat sources, and whether the furnace stops before the living area warms.",
+        "Compare the thermostat location to Suburban guidance: central, near the return grate, on an inside wall, and about 4-1/2 feet above the floor.",
+        "Do not relocate the thermostat or alter thermostat conductors as an owner troubleshooting step.",
+        "Have thermostat relocation, furnace sizing, duct balance, and recurring short-cycle diagnosis handled by qualified RV service."
+      ],
+      "sourceIds": [
+        "suburban-sf-vh-ducting-guide"
+      ],
+      "searchAliases": [
+        "suburban thermostat too high satisfied prematurely",
+        "suburban furnace thermostat 4-1/2 feet",
+        "suburban furnace thermostat near return grate",
+        "suburban furnace stops before set temperature thermostat"
+      ]
+    },
+    {
       "id": "suburban-tank-water-heater-reset-light-lockout",
       "slug": "suburban-tank-water-heater-reset-light-lockout",
       "title": "Suburban tank water heater RESET light or ignition lockout",
@@ -33102,6 +33186,30 @@
         "suburban st42 low voltage high voltage",
         "suburban tankless 10v 17v",
         "suburban tankless winterizing freeze"
+      ]
+    },
+    {
+      "id": "suburban-st42-cold-inlet-winter-underperformance",
+      "slug": "suburban-st42-cold-inlet-winter-underperformance",
+      "title": "Suburban ST42 cold-inlet, winter-use, or not-hot-enough complaint",
+      "summary": "Use this when a Suburban ST42 or ST60 tankless water heater is not hot enough in cold inlet-water or winter conditions; Suburban's product overview says ST42 provides continuous water up to 120F where intake water is not less than 70F at 1.5 GPM, recommends ST60 below 70F or for winter RV use, and lists a 0.7 GPM minimum water flow.",
+      "safeChecklist": [
+        "Confirm whether the water heater label is ST42 or ST60 and record the set temperature and approximate incoming-water temperature.",
+        "Open hot water enough to meet the ST manual minimum flow, then reduce flow or mix cold only after hot water stabilizes.",
+        "Treat ST42 cold-inlet or winter underperformance as a model-capacity and service-planning issue, not an internal repair.",
+        "Call Suburban, the RV manufacturer, or qualified service for repeated low temperature, LP supply, voltage protection, or installation concerns."
+      ],
+      "sourceIds": [
+        "suburban-st42-st60-product-overview",
+        "suburban-st42-st60-water-heater"
+      ],
+      "searchAliases": [
+        "suburban st42 cold water not hot enough",
+        "suburban st42 winter not hot enough",
+        "suburban st42 cold inlet below 70 winter not hot enough",
+        "suburban st42 vs st60 below 70 inlet",
+        "suburban st42 1.5 gpm",
+        "suburban st60 60,000 btu"
       ]
     },
     {

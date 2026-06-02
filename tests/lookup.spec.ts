@@ -206,6 +206,31 @@ test("lookup surfaces Suburban furnace and water-heater symptom support pages", 
   ).toBeVisible();
 });
 
+test("lookup surfaces Suburban model-specific ducting and ST42 cold-inlet support pages", async ({ page }) => {
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("suburban sf-vh duct port 5 limit temperature");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/suburban-sf-vh-furnace-duct-port-limit-cycling/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("suburban sf-vh return air 18 register");
+  await expect(lookupResults.locator('a[href="/symptoms/suburban-sf-vh-return-air-register-layout/"]')).toBeVisible();
+
+  await searchbox.fill("suburban thermostat too high satisfied prematurely");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/suburban-sf-vh-thermostat-too-high-premature-satisfaction/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("suburban st42 cold inlet below 70 winter not hot enough");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/suburban-st42-cold-inlet-winter-underperformance/"]'),
+  ).toBeVisible();
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 

@@ -2508,6 +2508,74 @@ describe("verified corpus", () => {
     );
   });
 
+  it("adds official Suburban model-specific ducting and cold-inlet symptom support without inventing code entries", () => {
+    const sourceById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const newSourceIds = ["suburban-sf-vh-ducting-guide", "suburban-st42-st60-product-overview"];
+    const newSymptomIds = [
+      "suburban-sf-vh-duct-port-limit-cycling",
+      "suburban-sf-vh-return-air-register-layout",
+      "suburban-sf-vh-thermostat-premature-satisfaction",
+      "suburban-st42-cold-inlet-winter-underperformance",
+    ];
+
+    expect(sourceById.get("suburban-sf-vh-ducting-guide")?.official).toBe(true);
+    expect(sourceById.get("suburban-sf-vh-ducting-guide")?.url).toBe(
+      "https://library.suburbanrv.com/wp-content/uploads/2023/05/Ducting-Guidance-Document-v1.pdf",
+    );
+    expect(sourceById.get("suburban-st42-st60-product-overview")?.official).toBe(true);
+    expect(sourceById.get("suburban-st42-st60-product-overview")?.url).toBe(
+      "https://suburbanrv.com/files/product_documents/Tankless%20Water%20Heater/ST%204260%20Tankless%20Water%20Heater%20Sell%20Sheet%20111522.pdf",
+    );
+    expect(corpus.entries).toHaveLength(819);
+
+    for (const sourceId of newSourceIds) {
+      expect(corpus.entries.filter((entry) => entry.sourceIds.includes(sourceId)), sourceId).toHaveLength(0);
+    }
+
+    for (const symptomId of newSymptomIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.safeChecklist.join(" "), symptomId).not.toMatch(
+        /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\brefrigerant\b|\bprobe\b|\bopen (the )?(fuel|gas|electrical|rooftop)/i,
+      );
+    }
+
+    expect(symptomById.get("suburban-sf-vh-duct-port-limit-cycling")?.sourceIds).toEqual([
+      "suburban-sf-vh-ducting-guide",
+    ]);
+    expect(symptomById.get("suburban-sf-vh-duct-port-limit-cycling")?.summary).toMatch(
+      /port #?2|port #?3|port #?5|520753/i,
+    );
+    expect(symptomById.get("suburban-sf-vh-return-air-register-layout")?.sourceIds).toEqual([
+      "suburban-sf-vh-ducting-guide",
+    ]);
+    expect(symptomById.get("suburban-sf-vh-return-air-register-layout")?.summary).toMatch(
+      /18.?in|return air|air boosters/i,
+    );
+    expect(symptomById.get("suburban-sf-vh-thermostat-premature-satisfaction")?.sourceIds).toEqual([
+      "suburban-sf-vh-ducting-guide",
+    ]);
+    expect(symptomById.get("suburban-sf-vh-thermostat-premature-satisfaction")?.safeChecklist.join(" ")).toMatch(
+      /4-1\/2|inside wall|return grate|thermostat/i,
+    );
+    expect(symptomById.get("suburban-st42-cold-inlet-winter-underperformance")?.sourceIds).toEqual(
+      expect.arrayContaining(["suburban-st42-st60-product-overview", "suburban-st42-st60-water-heater"]),
+    );
+    expect(symptomById.get("suburban-st42-cold-inlet-winter-underperformance")?.summary).toMatch(
+      /70.?F|ST60|0\.7 GPM|1\.5 GPM/i,
+    );
+
+    expect(symptomById.get("airflow-or-venting")?.sourceIds).toContain("suburban-sf-vh-ducting-guide");
+    expect(symptomById.get("furnace-stops-before-setpoint")?.sourceIds).toContain("suburban-sf-vh-ducting-guide");
+    expect(symptomById.get("suburban-tankless-low-flow-temperature")?.sourceIds).toContain(
+      "suburban-st42-st60-product-overview",
+    );
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(
+      expect.arrayContaining(["suburban-sf-vh-ducting-guide", "suburban-st42-st60-product-overview"]),
+    );
+  });
+
   it("adds the official Suburban induction cooktop E0-E7 display-code table with owner-safe boundaries", () => {
     const source = corpus.sources.find((item) => item.id === "suburban-induction-cooktop-guide");
     expect(source?.official).toBe(true);
