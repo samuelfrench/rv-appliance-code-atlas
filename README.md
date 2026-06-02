@@ -2,6 +2,8 @@
 
 Free, source-backed lookup for RV appliance fault codes and symptoms.
 
+Live URL: `https://rv-appliance-code-atlas.fly.dev/`
+
 Scope:
 - Dometic
 - Norcold
@@ -32,3 +34,12 @@ Traffic monitor:
 ```bash
 npm run traffic:monitor
 ```
+
+Current first-batch corpus:
+- `19` verified entries
+- `12` symptom guides
+- `16` official sources
+- `32` generated indexable pages
+
+Next automated batch goal:
+- Add full Dometic RUC/RUA and Norcold Polar tables from official manuals.
