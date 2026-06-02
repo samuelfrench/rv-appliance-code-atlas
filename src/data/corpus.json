@@ -1499,6 +1499,38 @@
       "official": true
     },
     {
+      "id": "suburban-range-cooktops-guide",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban Range and Cooktop Operation Guide",
+      "url": "https://library.suburbanrv.com/wp-content/uploads/2023/04/206248_Suburban_Dropin_Cooktop-Ranges_RevA_03-22-2023.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "suburban-dropin-cooktop-guide",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban Drop-In Cooktop Operation Guide",
+      "url": "https://library.suburbanrv.com/wp-content/uploads/2023/04/206249_Suburban_Dropin_Cooktop_RevA_03-22-2023.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "suburban-griddles-guide",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban Griddle Operation Guide",
+      "url": "https://library.suburbanrv.com/wp-content/uploads/2023/04/206246_Suburban_Griddles_RevA_03-22-2023.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "suburban-electric-wall-heater-guide",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban Electric Wall Heater Operation Guide",
+      "url": "https://library.suburbanrv.com/wp-content/uploads/2023/04/206247_Suburban_Wall_Heater_RevA_03-22-2023.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
       "id": "girard-gswh2-owner-manual",
       "brand": "Lippert",
       "title": "Lippert Girard GSWH-2 Tankless Water Heater Owner's Manual CCD-0006120",
@@ -34020,6 +34052,155 @@
         "suburban st42 vs st60 below 70 inlet",
         "suburban st42 1.5 gpm",
         "suburban st60 60,000 btu"
+      ]
+    },
+    {
+      "id": "suburban-range-cooktop-gas-odor",
+      "slug": "suburban-range-cooktop-gas-odor",
+      "title": "Suburban range or cooktop gas odor",
+      "summary": "Use this when a Suburban range or cooktop area has smell gas or propane odor; Suburban range and cooktop guides say to avoid ignition sources, evacuate, shut off propane at the container or source when safe, call the gas supplier or fire department, and have the condition corrected by qualified service.",
+      "safeChecklist": [
+        "Do not try to light any appliance.",
+        "Extinguish open flames, evacuate everyone, and avoid switches, phones, radios, the engine, and the generator.",
+        "Shut off LP at the container or source only if it is safe from outside the odor area.",
+        "Call the gas supplier or fire department and use qualified service before restoring gas."
+      ],
+      "sourceIds": [
+        "suburban-range-cooktops-guide",
+        "suburban-dropin-cooktop-guide"
+      ],
+      "searchAliases": [
+        "suburban range cooktop gas odor propane bottle",
+        "suburban cooktop smell gas shut off propane",
+        "suburban range lp odor evacuate",
+        "suburban drop in cooktop gas smell"
+      ]
+    },
+    {
+      "id": "suburban-range-cooktop-burner-lighting-blowout",
+      "slug": "suburban-range-cooktop-burner-lighting-blowout",
+      "title": "Suburban cooktop burner lighting, air in line, or blowout",
+      "summary": "Use this when a Suburban cooktop burner will not light normally, takes extra time after air in the gas line, or blowout happens; Suburban says delayed ignition can occur after air in the gas line, to light only one burner at a time, and to turn the knob OFF, wait five minutes, and relight only if no gas odor remains.",
+      "safeChecklist": [
+        "Identify the correct knob before lighting and keep the cover fully open.",
+        "Light only one burner at a time and stay with the appliance while it is on.",
+        "If the flame extinguishes or blows out, turn the knob OFF and wait five minutes before one normal relight attempt.",
+        "If odor remains or the burner repeatedly will not stay lit, stop use and contact qualified service."
+      ],
+      "sourceIds": [
+        "suburban-range-cooktops-guide",
+        "suburban-dropin-cooktop-guide"
+      ],
+      "searchAliases": [
+        "suburban cooktop burner extinguishes wait five minutes relight",
+        "suburban cooktop air in gas line delayed ignition",
+        "suburban range burner blows out",
+        "suburban cooktop one burner at a time"
+      ]
+    },
+    {
+      "id": "suburban-range-cooktop-abnormal-flame-service",
+      "slug": "suburban-range-cooktop-abnormal-flame-service",
+      "title": "Suburban cooktop yellow flame or burner will not stay lit",
+      "summary": "Use this when a Suburban cooktop has yellow flame tipping, burners not igniting properly, burners failing to remain alight, a flame extinguished by cupboard doors, or a gas valve difficult to turn; Suburban lists these as abnormal operation that needs qualified service.",
+      "safeChecklist": [
+        "Turn the affected knob OFF and stop using that burner.",
+        "Keep the cover fully open and the area clear of loose items while documenting the symptom.",
+        "Record flame color, whether cabinet doors or drafts affect it, and whether the knob is hard to turn.",
+        "Use qualified service if yellow flame, repeated no-light, failure to stay lit, or difficult knob movement continues."
+      ],
+      "sourceIds": [
+        "suburban-dropin-cooktop-guide"
+      ],
+      "searchAliases": [
+        "suburban cooktop yellow flame burners not igniting properly gas valve difficult to turn",
+        "suburban cooktop burner will not stay lit",
+        "suburban range flame goes out cabinet door",
+        "suburban cooktop gas valve difficult turn"
+      ]
+    },
+    {
+      "id": "suburban-range-oven-pilot-vent-carbon-monoxide",
+      "slug": "suburban-range-oven-pilot-vent-carbon-monoxide",
+      "title": "Suburban range oven pilot, vent, and carbon monoxide boundary",
+      "summary": "Use this when a Suburban range oven pilot will not stay lit, oven vent openings may be covered, foil is blocking oven airflow, or the range is being considered as a space heater; Suburban warns these conditions can create fire, poor combustion, and carbon monoxide hazards.",
+      "safeChecklist": [
+        "Before any pilot-light attempt, turn controls OFF, open the oven door, and stop if gas odor is present.",
+        "Keep oven vent openings and airflow paths uncovered, and do not line the oven bottom or rack with foil.",
+        "Never use the oven, range, or cooktop as a space heater.",
+        "Use qualified service if the pilot will not stay lit, odor is present, or covered-vent operation occurred."
+      ],
+      "sourceIds": [
+        "suburban-range-cooktops-guide"
+      ],
+      "searchAliases": [
+        "suburban range oven pilot cover oven vent carbon monoxide foil",
+        "suburban oven pilot will not stay lit",
+        "suburban range aluminum foil oven vent",
+        "suburban range space heater carbon monoxide"
+      ]
+    },
+    {
+      "id": "suburban-griddle-ignition-grease-storage",
+      "slug": "suburban-griddle-ignition-grease-storage",
+      "title": "Suburban griddle ignition, grease, or storage safety",
+      "summary": "Use this when a Suburban griddle does not ignite within 5 seconds, grease or oil catches fire, or storage is planned; Suburban says to turn controls off and wait 5 minutes after no ignition, not use water on a grease fire, and store the griddle only after it is off, cool, and at room temperature.",
+      "safeChecklist": [
+        "If ignition does not occur within 5 seconds, turn the control OFF and wait 5 minutes before another normal attempt.",
+        "Do not lean over the griddle while lighting.",
+        "For a grease fire, turn burners and gas source off only if safe, call the fire department, and do not use water.",
+        "Let the griddle cool before moving or storage; store it only when off, disconnected from the low-pressure gas source, and at room temperature."
+      ],
+      "sourceIds": [
+        "suburban-griddles-guide"
+      ],
+      "searchAliases": [
+        "suburban griddle ignition 5 seconds wait 5 minutes grease fire storage",
+        "suburban griddle no ignition five seconds",
+        "suburban griddle grease fire do not use water",
+        "suburban griddle cool before storage"
+      ]
+    },
+    {
+      "id": "suburban-griddle-flame-venturi-service",
+      "slug": "suburban-griddle-flame-venturi-service",
+      "title": "Suburban griddle flame check, venturi, or valve service boundary",
+      "summary": "Use this when a Suburban griddle flame check is abnormal, the flame does not change from high to low, venturi blockage or insects are suspected, the visible gas hose looks damaged, or the valve does not spring back or turn smoothly; Suburban ties these conditions to stop-use and RV service center boundaries.",
+      "safeChecklist": [
+        "Before use, observe only the owner-visible flame behavior described by the manual.",
+        "If flame behavior is abnormal, the knob is not smooth, the visible hose looks damaged, or insects or blockage are suspected, turn the griddle OFF and stop use.",
+        "Keep ventilation openings and the cooking area clear.",
+        "Use an RV service center or qualified service before operating again."
+      ],
+      "sourceIds": [
+        "suburban-griddles-guide"
+      ],
+      "searchAliases": [
+        "suburban griddle flame check venturi insects valve not smooth rv service",
+        "suburban griddle flame high low check",
+        "suburban griddle venturi insect nest",
+        "suburban griddle valve does not spring back"
+      ]
+    },
+    {
+      "id": "suburban-wall-heater-thermostat-high-limit-service",
+      "slug": "suburban-electric-wall-heater-thermostat-high-limit-shutdown",
+      "title": "Suburban electric wall heater thermostat and high-limit shutdown",
+      "summary": "Use this when a Suburban electric wall heater still has the switch light on, restarts later from thermostat demand, shuts down on high-limit overheat, or has blocked air inlet or outlet flow; Suburban says the heater cannot be completely turned off by use of the thermostat knob alone, high-limit switches shut it down if overheated, and the end user may not service or modify it.",
+      "safeChecklist": [
+        "To fully turn the heater off, use the ON/OFF switch; thermostat position alone is not a full shutdown.",
+        "For hard-wired units, turn controls off and turn power to the heater circuit off at the main disconnect before cleaning.",
+        "Keep air inlets, outlets, and nearby combustibles clear; if high limit trips, remove only visible blockages and let the heater cool at least 10 minutes.",
+        "Do not service or modify the heater as an end user; contact a technician or Customer Service if the problem remains."
+      ],
+      "sourceIds": [
+        "suburban-electric-wall-heater-guide"
+      ],
+      "searchAliases": [
+        "suburban electric wall heater thermostat switch light high limit blocked air inlet outlet",
+        "suburban wall heater cannot turn off thermostat knob",
+        "suburban electric wall heater high limit cool 10 minutes",
+        "suburban wall heater blocked air inlet outlet"
       ]
     },
     {

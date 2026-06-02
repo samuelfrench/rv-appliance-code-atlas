@@ -374,6 +374,51 @@ test("lookup surfaces Dometic DF furnace operating-manual symptom pages", async 
   await expect(page.getByText(/annual maintenance of the device must be performed by a qualified RV service technician/i)).toBeVisible();
 });
 
+test("lookup surfaces Suburban cooking and wall-heater symptom pages", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("suburban range cooktop gas odor propane bottle");
+  await expect(lookupResults.locator('a[href="/symptoms/suburban-range-cooktop-gas-odor/"]')).toBeVisible();
+
+  await searchbox.fill("suburban cooktop burner extinguishes wait five minutes relight");
+  await expect(lookupResults.locator('a[href="/symptoms/suburban-range-cooktop-burner-lighting-blowout/"]')).toBeVisible();
+
+  await searchbox.fill("suburban cooktop yellow flame burners not igniting properly gas valve difficult to turn");
+  await expect(lookupResults.locator('a[href="/symptoms/suburban-range-cooktop-abnormal-flame-service/"]')).toBeVisible();
+
+  await searchbox.fill("suburban range oven pilot cover oven vent carbon monoxide foil");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/suburban-range-oven-pilot-vent-carbon-monoxide/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("suburban griddle ignition 5 seconds wait 5 minutes grease fire storage");
+  await expect(lookupResults.locator('a[href="/symptoms/suburban-griddle-ignition-grease-storage/"]')).toBeVisible();
+
+  await searchbox.fill("suburban griddle flame check venturi insects valve not smooth rv service");
+  await expect(lookupResults.locator('a[href="/symptoms/suburban-griddle-flame-venturi-service/"]')).toBeVisible();
+
+  await searchbox.fill("suburban electric wall heater thermostat switch light high limit blocked air inlet outlet");
+  const wallHeater = lookupResults.locator('a[href="/symptoms/suburban-electric-wall-heater-thermostat-high-limit-shutdown/"]');
+  await expect(wallHeater).toBeVisible();
+
+  await wallHeater.click();
+  await expect(page.getByRole("heading", { name: "Suburban electric wall heater thermostat and high-limit shutdown" })).toBeVisible();
+  await expect(page.getByText(/cannot be completely turned off by use of the thermostat knob alone/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("lookup surfaces Cummins Onan generator symptom support pages", async ({ page }) => {
   await page.goto("/");
 

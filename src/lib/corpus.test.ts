@@ -146,6 +146,33 @@ describe("verified corpus", () => {
     );
   });
 
+  it("finds Suburban cooking and wall-heater symptom pages from owner searches", () => {
+    const index = buildSymptomSearchIndex(corpus);
+
+    expect(lookupSymptomGuides(index, "suburban range cooktop gas odor propane bottle")[0]?.slug).toBe(
+      "suburban-range-cooktop-gas-odor",
+    );
+    expect(lookupSymptomGuides(index, "suburban cooktop burner extinguishes wait five minutes relight")[0]?.slug).toBe(
+      "suburban-range-cooktop-burner-lighting-blowout",
+    );
+    expect(
+      lookupSymptomGuides(index, "suburban cooktop yellow flame burners not igniting properly gas valve difficult to turn")[0]?.slug,
+    ).toBe("suburban-range-cooktop-abnormal-flame-service");
+    expect(lookupSymptomGuides(index, "suburban range oven pilot cover oven vent carbon monoxide foil")[0]?.slug).toBe(
+      "suburban-range-oven-pilot-vent-carbon-monoxide",
+    );
+    expect(
+      lookupSymptomGuides(index, "suburban griddle ignition 5 seconds wait 5 minutes grease fire storage")[0]?.slug,
+    ).toBe("suburban-griddle-ignition-grease-storage");
+    expect(
+      lookupSymptomGuides(index, "suburban griddle flame check venturi insects valve not smooth rv service")[0]?.slug,
+    ).toBe("suburban-griddle-flame-venturi-service");
+    expect(
+      lookupSymptomGuides(index, "suburban electric wall heater thermostat switch light high limit blocked air inlet outlet")[0]
+        ?.slug,
+    ).toBe("suburban-electric-wall-heater-thermostat-high-limit-shutdown");
+  });
+
   it("finds Norcold and Thetford symptom support pages from owner searches", () => {
     const index = buildSymptomSearchIndex(corpus);
 
@@ -588,6 +615,66 @@ describe("verified corpus", () => {
     expect(symptomById.get("airflow-or-venting")?.sourceIds).toContain(sourceId);
     expect(symptomById.get("furnace-stops-before-setpoint")?.sourceIds).toContain(sourceId);
     expect(symptomById.get("service-call-prep")?.sourceIds).toContain(sourceId);
+  });
+
+  it("adds official Suburban cooking and wall-heater symptom support without inventing code entries or unsafe owner steps", () => {
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const sourceIds = [
+      "suburban-range-cooktops-guide",
+      "suburban-dropin-cooktop-guide",
+      "suburban-griddles-guide",
+      "suburban-electric-wall-heater-guide",
+    ];
+    const expectedSymptomIds = [
+      "suburban-range-cooktop-gas-odor",
+      "suburban-range-cooktop-burner-lighting-blowout",
+      "suburban-range-cooktop-abnormal-flame-service",
+      "suburban-range-oven-pilot-vent-carbon-monoxide",
+      "suburban-griddle-ignition-grease-storage",
+      "suburban-griddle-flame-venturi-service",
+      "suburban-wall-heater-thermostat-high-limit-service",
+    ];
+
+    expect(corpus.sources.filter((source) => sourceIds.includes(source.id)).map((source) => source.id).sort()).toEqual(
+      sourceIds.sort(),
+    );
+    for (const sourceId of sourceIds) {
+      expect(corpus.sources.find((source) => source.id === sourceId), sourceId).toMatchObject({
+        brand: "Suburban/Atwood",
+        official: true,
+        type: "manufacturer-manual",
+      });
+    }
+
+    expect(corpus.entries).toHaveLength(819);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => sourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const symptomId of expectedSymptomIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds.some((sourceId) => sourceIds.includes(sourceId)), symptomId).toBe(true);
+      expect([symptom?.summary, ...(symptom?.safeChecklist ?? [])].join(" "), symptomId).not.toMatch(
+        /\b(control board|circuit board|240\s*V|120\s*V|wiring|wire|orifice|gas pressure|pressure test|leak test|gas piping|replace hose|replace valve|regulator replacement|disassemble|bypass|jump|repair)\b/i,
+      );
+    }
+
+    expect(symptomById.get("suburban-range-cooktop-gas-odor")?.summary).toMatch(/smell gas|propane|evacuate|qualified/i);
+    expect(symptomById.get("suburban-range-cooktop-burner-lighting-blowout")?.summary).toMatch(
+      /air in the gas line|five|blow.?out|relight/i,
+    );
+    expect(symptomById.get("suburban-range-cooktop-abnormal-flame-service")?.summary).toMatch(
+      /yellow|not igniting|remain alight|difficult/i,
+    );
+    expect(symptomById.get("suburban-range-oven-pilot-vent-carbon-monoxide")?.summary).toMatch(
+      /pilot|oven vent|carbon monoxide|foil/i,
+    );
+    expect(symptomById.get("suburban-griddle-ignition-grease-storage")?.summary).toMatch(
+      /5 seconds|5 minutes|grease|storage/i,
+    );
+    expect(symptomById.get("suburban-griddle-flame-venturi-service")?.summary).toMatch(/flame check|venturi|insect|valve/i);
+    expect(symptomById.get("suburban-wall-heater-thermostat-high-limit-service")?.summary).toMatch(
+      /switch light|thermostat|high.?limit|air inlet/i,
+    );
   });
 
   it("includes official legacy Dometic RM3762/RM3962 refrigerator error-code table entries", () => {
