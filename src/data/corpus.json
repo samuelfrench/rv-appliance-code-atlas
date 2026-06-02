@@ -23,11 +23,27 @@
       "official": true
     },
     {
+      "id": "dometic-ccc2-operating",
+      "brand": "Dometic",
+      "title": "Dometic Comfort Control Center 2 Thermostat Operating Instructions",
+      "url": "https://media.dometic.com/externalassets/thermostat-control-box-ccc2_9108557197_64755.pdf",
+      "type": "manual",
+      "official": true
+    },
+    {
       "id": "dometic-df-furnace",
       "brand": "Dometic",
       "title": "Dometic DF Series Furnace Installation Manual",
       "url": "https://www.dometic.com/externalassets/dometic-medium-furnace_9600000926_81452.pdf",
       "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "dometic-rm1350-operating",
+      "brand": "Dometic",
+      "title": "Dometic RM1350 and RM1350SL Operating Instructions",
+      "url": "https://media.dometic.com/externalassets/dometic-elite-4-door-rm1350_9108516996_64743.pdf",
+      "type": "manual",
       "official": true
     },
     {
@@ -92,6 +108,22 @@
       "title": "Norcold 1200 Series Owner's Manual",
       "url": "https://www.thetford.com/app/uploads/2024/10/Owners_1200_621823J.pdf",
       "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "norcold-n15-n20-owner",
+      "brand": "Norcold",
+      "title": "Norcold Polar Elite N15DC/N20DC Owner's Manual",
+      "url": "https://www.thetford.com/app/uploads/2024/09/OM_N15DC_N20DC_641013E_10142025.pdf",
+      "type": "manual",
+      "official": true
+    },
+    {
+      "id": "norcold-n15-n20-service",
+      "brand": "Norcold",
+      "title": "Norcold N15DCX and N20DCX Service Manual",
+      "url": "https://www.thetford.com/app/uploads/2024/09/641052D_SM_N15DCXN20DCX_04022025.pdf",
+      "type": "service-manual",
       "official": true
     },
     {
@@ -210,6 +242,279 @@
       ]
     },
     {
+      "id": "dometic-ccc2-e1",
+      "brand": "Dometic",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "Comfort Control Center 2",
+        "CCC2",
+        "3314080"
+      ],
+      "code": "E1",
+      "slug": "dometic-ccc2-e1",
+      "plainMeaning": "The Dometic CCC2 operating instructions list E1 as: Loss of communication between the CCC2 thermostat and all or one system power module board; all-board loss shuts the system down and one-zone loss displays the affected zone.",
+      "ownerSafeActions": [
+        "Record the affected zone number and displayed code.",
+        "Turn the affected HVAC equipment off if it is not operating normally.",
+        "Use normal RV power indicators to note whether shore power, generator power, or battery power is present."
+      ],
+      "serviceOnlyActions": [
+        "CCC2 communication, module-board, and zone wiring diagnosis should be handled by qualified RV HVAC service."
+      ],
+      "safetyBoundary": "Do not bypass thermostat wiring, rooftop equipment controls, module boards, DIP switches, 120 VAC circuits, or freeze/sensor safeties. Shut off the affected HVAC equipment and arrange qualified RV HVAC service for unresolved faults.",
+      "sourceIds": [
+        "dometic-ccc2-operating"
+      ],
+      "symptomIds": [
+        "thermostat-communication",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "thermostat model",
+        "affected zone number",
+        "photo of LCD error code"
+      ]
+    },
+    {
+      "id": "dometic-ccc2-e2",
+      "brand": "Dometic",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "Comfort Control Center 2",
+        "CCC2",
+        "3314080"
+      ],
+      "code": "E2",
+      "slug": "dometic-ccc2-e2",
+      "plainMeaning": "The Dometic CCC2 operating instructions list E2 as: Open circuit or out-of-range indoor temperature sensor; heat and cool operation lock out while manual fan can continue.",
+      "ownerSafeActions": [
+        "Record the affected zone number and displayed code.",
+        "Turn the affected HVAC equipment off if it is not operating normally.",
+        "Use normal RV power indicators to note whether shore power, generator power, or battery power is present."
+      ],
+      "serviceOnlyActions": [
+        "Indoor temperature sensor and thermostat circuit diagnosis should be handled by qualified RV HVAC service."
+      ],
+      "safetyBoundary": "Do not bypass thermostat wiring, rooftop equipment controls, module boards, DIP switches, 120 VAC circuits, or freeze/sensor safeties. Shut off the affected HVAC equipment and arrange qualified RV HVAC service for unresolved faults.",
+      "sourceIds": [
+        "dometic-ccc2-operating"
+      ],
+      "symptomIds": [
+        "thermostat-display",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "thermostat model",
+        "affected zone number",
+        "photo of LCD error code"
+      ]
+    },
+    {
+      "id": "dometic-ccc2-e3",
+      "brand": "Dometic",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "Comfort Control Center 2",
+        "CCC2",
+        "3314080"
+      ],
+      "code": "E3",
+      "slug": "dometic-ccc2-e3",
+      "plainMeaning": "The Dometic CCC2 operating instructions list E3 as: Shorted indoor temperature sensor; heat and cool operation lock out while manual fan can continue.",
+      "ownerSafeActions": [
+        "Record the affected zone number and displayed code.",
+        "Turn the affected HVAC equipment off if it is not operating normally.",
+        "Use normal RV power indicators to note whether shore power, generator power, or battery power is present."
+      ],
+      "serviceOnlyActions": [
+        "Indoor temperature sensor and thermostat circuit diagnosis should be handled by qualified RV HVAC service."
+      ],
+      "safetyBoundary": "Do not bypass thermostat wiring, rooftop equipment controls, module boards, DIP switches, 120 VAC circuits, or freeze/sensor safeties. Shut off the affected HVAC equipment and arrange qualified RV HVAC service for unresolved faults.",
+      "sourceIds": [
+        "dometic-ccc2-operating"
+      ],
+      "symptomIds": [
+        "thermostat-display",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "thermostat model",
+        "affected zone number",
+        "photo of LCD error code"
+      ]
+    },
+    {
+      "id": "dometic-ccc2-e4",
+      "brand": "Dometic",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "Comfort Control Center 2",
+        "CCC2",
+        "3314080"
+      ],
+      "code": "E4",
+      "slug": "dometic-ccc2-e4",
+      "plainMeaning": "The Dometic CCC2 operating instructions list E4 as: Open circuit or out-of-range outdoor temperature sensor on select models; heat-pump operation locks out while other modes may continue.",
+      "ownerSafeActions": [
+        "Record the affected zone number and displayed code.",
+        "Turn the affected HVAC equipment off if it is not operating normally.",
+        "Use normal RV power indicators to note whether shore power, generator power, or battery power is present."
+      ],
+      "serviceOnlyActions": [
+        "Outdoor sensor and heat-pump control diagnosis should be handled by qualified RV HVAC service."
+      ],
+      "safetyBoundary": "Do not bypass thermostat wiring, rooftop equipment controls, module boards, DIP switches, 120 VAC circuits, or freeze/sensor safeties. Shut off the affected HVAC equipment and arrange qualified RV HVAC service for unresolved faults.",
+      "sourceIds": [
+        "dometic-ccc2-operating"
+      ],
+      "symptomIds": [
+        "thermostat-display",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "thermostat model",
+        "affected zone number",
+        "photo of LCD error code"
+      ]
+    },
+    {
+      "id": "dometic-ccc2-e5",
+      "brand": "Dometic",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "Comfort Control Center 2",
+        "CCC2",
+        "3314080"
+      ],
+      "code": "E5",
+      "slug": "dometic-ccc2-e5",
+      "plainMeaning": "The Dometic CCC2 operating instructions list E5 as: Open circuit or out-of-range freeze sensor; air-conditioner operation locks out while other modes may continue.",
+      "ownerSafeActions": [
+        "Record the affected zone number and displayed code.",
+        "Turn the affected HVAC equipment off if it is not operating normally.",
+        "Use normal RV power indicators to note whether shore power, generator power, or battery power is present."
+      ],
+      "serviceOnlyActions": [
+        "Freeze-sensor, coil-protection, and air-conditioner diagnosis should be handled by qualified RV HVAC service."
+      ],
+      "safetyBoundary": "Do not bypass thermostat wiring, rooftop equipment controls, module boards, DIP switches, 120 VAC circuits, or freeze/sensor safeties. Shut off the affected HVAC equipment and arrange qualified RV HVAC service for unresolved faults.",
+      "sourceIds": [
+        "dometic-ccc2-operating"
+      ],
+      "symptomIds": [
+        "airflow-or-venting",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "thermostat model",
+        "affected zone number",
+        "photo of LCD error code"
+      ]
+    },
+    {
+      "id": "dometic-ccc2-e7",
+      "brand": "Dometic",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "Comfort Control Center 2",
+        "CCC2",
+        "3314080"
+      ],
+      "code": "E7",
+      "slug": "dometic-ccc2-e7",
+      "plainMeaning": "The Dometic CCC2 operating instructions list E7 as: Loss of normal AC power to all system power module boards; the system shuts down.",
+      "ownerSafeActions": [
+        "Record the affected zone number and displayed code.",
+        "Turn the affected HVAC equipment off if it is not operating normally.",
+        "Use normal RV power indicators to note whether shore power, generator power, or battery power is present."
+      ],
+      "serviceOnlyActions": [
+        "AC power, power-module, and rooftop equipment diagnosis should be handled by qualified RV HVAC service."
+      ],
+      "safetyBoundary": "Do not bypass thermostat wiring, rooftop equipment controls, module boards, DIP switches, 120 VAC circuits, or freeze/sensor safeties. Shut off the affected HVAC equipment and arrange qualified RV HVAC service for unresolved faults.",
+      "sourceIds": [
+        "dometic-ccc2-operating"
+      ],
+      "symptomIds": [
+        "thermostat-communication",
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "thermostat model",
+        "affected zone number",
+        "photo of LCD error code"
+      ]
+    },
+    {
+      "id": "dometic-ccc2-e8",
+      "brand": "Dometic",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "Comfort Control Center 2",
+        "CCC2",
+        "3314080"
+      ],
+      "code": "E8",
+      "slug": "dometic-ccc2-e8",
+      "plainMeaning": "The Dometic CCC2 operating instructions list E8 as: Invalid zone configuration with heat pump and heat strip DIP switches both on in one zone; affected-zone operation locks out.",
+      "ownerSafeActions": [
+        "Record the affected zone number and displayed code.",
+        "Turn the affected HVAC equipment off if it is not operating normally.",
+        "Use normal RV power indicators to note whether shore power, generator power, or battery power is present."
+      ],
+      "serviceOnlyActions": [
+        "DIP-switch and control-board configuration work should be handled by qualified RV HVAC service."
+      ],
+      "safetyBoundary": "Do not bypass thermostat wiring, rooftop equipment controls, module boards, DIP switches, 120 VAC circuits, or freeze/sensor safeties. Shut off the affected HVAC equipment and arrange qualified RV HVAC service for unresolved faults.",
+      "sourceIds": [
+        "dometic-ccc2-operating"
+      ],
+      "symptomIds": [
+        "thermostat-communication",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "thermostat model",
+        "affected zone number",
+        "photo of LCD error code"
+      ]
+    },
+    {
+      "id": "dometic-ccc2-e9",
+      "brand": "Dometic",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "Comfort Control Center 2",
+        "CCC2",
+        "3314080"
+      ],
+      "code": "E9",
+      "slug": "dometic-ccc2-e9",
+      "plainMeaning": "The Dometic CCC2 operating instructions list E9 as: Invalid zone configuration with dehumidifier DIP switch and heat pump or heat strip DIP switch on in one zone; affected-zone operation locks out.",
+      "ownerSafeActions": [
+        "Record the affected zone number and displayed code.",
+        "Turn the affected HVAC equipment off if it is not operating normally.",
+        "Use normal RV power indicators to note whether shore power, generator power, or battery power is present."
+      ],
+      "serviceOnlyActions": [
+        "DIP-switch and control-board configuration work should be handled by qualified RV HVAC service."
+      ],
+      "safetyBoundary": "Do not bypass thermostat wiring, rooftop equipment controls, module boards, DIP switches, 120 VAC circuits, or freeze/sensor safeties. Shut off the affected HVAC equipment and arrange qualified RV HVAC service for unresolved faults.",
+      "sourceIds": [
+        "dometic-ccc2-operating"
+      ],
+      "symptomIds": [
+        "thermostat-communication",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "thermostat model",
+        "affected zone number",
+        "photo of LCD error code"
+      ]
+    },
+    {
       "id": "dometic-furnace-one-flash",
       "brand": "Dometic",
       "equipmentType": "Furnace",
@@ -239,6 +544,201 @@
         "furnace model",
         "thermostat setting",
         "LED flash count"
+      ]
+    },
+    {
+      "id": "dometic-rm1350-e0",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM1350",
+        "RM1350SL",
+        "RM1350M",
+        "RM1350SLM",
+        "RM1350IM",
+        "RM1350MIM",
+        "RM1350WIM",
+        "RM1350WID"
+      ],
+      "code": "E0",
+      "slug": "dometic-rm1350-e0",
+      "plainMeaning": "The Dometic RM1350 operating instructions list E0 as: No communication between the display and power module.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off if the error repeats.",
+        "Record the displayed code, model, product number, and serial number.",
+        "Keep food safety in mind if cooling is interrupted."
+      ],
+      "serviceOnlyActions": [
+        "Display-to-power-module communication diagnosis should be handled by a Dometic dealer or Service Center."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, safety devices, LP components, refrigerant/cooling-unit parts, or electrical circuits. Shut off the appliance and arrange qualified service for repeated, unsafe, or unresolved faults.",
+      "sourceIds": [
+        "dometic-rm1350-operating"
+      ],
+      "symptomIds": [
+        "thermostat-communication",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "inside fresh-food-compartment data label",
+        "photo of flashing display",
+        "power source in use"
+      ]
+    },
+    {
+      "id": "dometic-rm1350-e1",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM1350",
+        "RM1350SL",
+        "RM1350M",
+        "RM1350SLM",
+        "RM1350IM",
+        "RM1350MIM",
+        "RM1350WIM",
+        "RM1350WID"
+      ],
+      "code": "E1",
+      "slug": "dometic-rm1350-e1",
+      "plainMeaning": "The Dometic RM1350 operating instructions list E1 as: Disconnected LP gas valve or LP gas hardware fault; the refrigerator may still be operational on normal electric mode.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off if the error repeats.",
+        "Record the displayed code, model, product number, and serial number.",
+        "Keep food safety in mind if cooling is interrupted."
+      ],
+      "serviceOnlyActions": [
+        "LP valve, wiring, and gas-operation hardware diagnosis should be handled by a Dometic dealer or Service Center."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, safety devices, LP components, refrigerant/cooling-unit parts, or electrical circuits. Shut off the appliance and arrange qualified service for repeated, unsafe, or unresolved faults.",
+      "sourceIds": [
+        "dometic-rm1350-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "inside fresh-food-compartment data label",
+        "photo of flashing display",
+        "power source in use"
+      ]
+    },
+    {
+      "id": "dometic-rm1350-e2",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM1350",
+        "RM1350SL",
+        "RM1350M",
+        "RM1350SLM",
+        "RM1350IM",
+        "RM1350MIM",
+        "RM1350WIM",
+        "RM1350WID"
+      ],
+      "code": "E2",
+      "slug": "dometic-rm1350-e2",
+      "plainMeaning": "The Dometic RM1350 operating instructions list E2 as: Temperature sensor device or associated electronic circuitry failure.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off if the error repeats.",
+        "Record the displayed code, model, product number, and serial number.",
+        "Keep food safety in mind if cooling is interrupted."
+      ],
+      "serviceOnlyActions": [
+        "Temperature sensor, wiring, and electronic-control diagnosis should be handled by a Dometic dealer or Service Center."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, safety devices, LP components, refrigerant/cooling-unit parts, or electrical circuits. Shut off the appliance and arrange qualified service for repeated, unsafe, or unresolved faults.",
+      "sourceIds": [
+        "dometic-rm1350-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "inside fresh-food-compartment data label",
+        "photo of flashing display",
+        "power source in use"
+      ]
+    },
+    {
+      "id": "dometic-rm1350-e3",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM1350",
+        "RM1350SL",
+        "RM1350M",
+        "RM1350SLM",
+        "RM1350IM",
+        "RM1350MIM",
+        "RM1350WIM",
+        "RM1350WID"
+      ],
+      "code": "E3",
+      "slug": "dometic-rm1350-e3",
+      "plainMeaning": "The Dometic RM1350 operating instructions list E3 as: Cooling unit malfunction; the manual directs owners to contact a Service Center.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off if the error repeats.",
+        "Record the displayed code, model, product number, and serial number.",
+        "Keep food safety in mind if cooling is interrupted."
+      ],
+      "serviceOnlyActions": [
+        "Cooling-unit and refrigerant-system diagnosis is service-only work."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, safety devices, LP components, refrigerant/cooling-unit parts, or electrical circuits. Shut off the appliance and arrange qualified service for repeated, unsafe, or unresolved faults.",
+      "sourceIds": [
+        "dometic-rm1350-operating"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "inside fresh-food-compartment data label",
+        "photo of flashing display",
+        "power source in use"
+      ]
+    },
+    {
+      "id": "dometic-rm1350-e4",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM1350",
+        "RM1350SL",
+        "RM1350M",
+        "RM1350SLM",
+        "RM1350IM",
+        "RM1350MIM",
+        "RM1350WIM",
+        "RM1350WID"
+      ],
+      "code": "E4",
+      "slug": "dometic-rm1350-e4",
+      "plainMeaning": "The Dometic RM1350 operating instructions list E4 as: DC voltage is outside the manual range of approximately 8-18 VDC.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off if the error repeats.",
+        "Record the displayed code, model, product number, and serial number.",
+        "Keep food safety in mind if cooling is interrupted."
+      ],
+      "serviceOnlyActions": [
+        "DC power, wiring, converter, and voltage-drop diagnosis should be handled by qualified RV electrical service or a Dometic Service Center."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, safety devices, LP components, refrigerant/cooling-unit parts, or electrical circuits. Shut off the appliance and arrange qualified service for repeated, unsafe, or unresolved faults.",
+      "sourceIds": [
+        "dometic-rm1350-operating"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "inside fresh-food-compartment data label",
+        "photo of flashing display",
+        "power source in use"
       ]
     },
     {
@@ -1627,6 +2127,196 @@
       ]
     },
     {
+      "id": "norcold-1200-ac-he",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "1200 series"
+      ],
+      "code": "AC HE",
+      "slug": "norcold-1200-ac-he",
+      "plainMeaning": "The Norcold 1200 owner manual lists AC HE as: The owner manual lists this as a fault within the refrigerator controls.",
+      "ownerSafeActions": [
+        "Record the display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Keep food safety in mind and move perishables if needed."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator heater/control faults are not owner serviceable and should go to a dealer or authorized Norcold Service Center."
+      ],
+      "safetyBoundary": "Do not bypass high-temperature recall devices, refrigerator controls, LP components, or electrical circuits. Shut the refrigerator off and arrange qualified Norcold service for repeat or unsafe faults.",
+      "sourceIds": [
+        "norcold-1200-owner"
+      ],
+      "symptomIds": [
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "display board code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-1200-ac-lo",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "1200 series"
+      ],
+      "code": "AC LO",
+      "slug": "norcold-1200-ac-lo",
+      "plainMeaning": "The Norcold 1200 owner manual lists AC LO as: AC voltage to the refrigerator control panel is too low.",
+      "ownerSafeActions": [
+        "Record the display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Keep food safety in mind and move perishables if needed."
+      ],
+      "serviceOnlyActions": [
+        "Low AC voltage and generator/electrical diagnosis should be handled by qualified RV electrical service."
+      ],
+      "safetyBoundary": "Do not bypass high-temperature recall devices, refrigerator controls, LP components, or electrical circuits. Shut the refrigerator off and arrange qualified Norcold service for repeat or unsafe faults.",
+      "sourceIds": [
+        "norcold-1200-owner"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "display board code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-1200-ac-re",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "1200 series"
+      ],
+      "code": "AC rE",
+      "slug": "norcold-1200-ac-re",
+      "plainMeaning": "The Norcold 1200 owner manual lists AC rE as: The owner manual lists this as a fault within the refrigerator controls.",
+      "ownerSafeActions": [
+        "Record the display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Keep food safety in mind and move perishables if needed."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator control faults are not owner serviceable and should go to a dealer or authorized Norcold Service Center."
+      ],
+      "safetyBoundary": "Do not bypass high-temperature recall devices, refrigerator controls, LP components, or electrical circuits. Shut the refrigerator off and arrange qualified Norcold service for repeat or unsafe faults.",
+      "sourceIds": [
+        "norcold-1200-owner"
+      ],
+      "symptomIds": [
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "display board code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-1200-dc-lo",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "1200 series"
+      ],
+      "code": "dc LO",
+      "slug": "norcold-1200-dc-lo",
+      "plainMeaning": "The Norcold 1200 owner manual lists dc LO as: DC voltage to the refrigerator control panel is too low.",
+      "ownerSafeActions": [
+        "Record the display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Keep food safety in mind and move perishables if needed."
+      ],
+      "serviceOnlyActions": [
+        "Low DC voltage, converter, wiring, and voltage-drop diagnosis should be handled by qualified RV electrical service."
+      ],
+      "safetyBoundary": "Do not bypass high-temperature recall devices, refrigerator controls, LP components, or electrical circuits. Shut the refrigerator off and arrange qualified Norcold service for repeat or unsafe faults.",
+      "sourceIds": [
+        "norcold-1200-owner"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "display board code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-1200-dr",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "1200 series"
+      ],
+      "code": "dr",
+      "slug": "norcold-1200-dr",
+      "plainMeaning": "The Norcold 1200 owner manual lists dr as: The door was open for more than two minutes.",
+      "ownerSafeActions": [
+        "Close the refrigerator door.",
+        "Record whether an audible alarm was present.",
+        "Watch for repeat door-alarm behavior."
+      ],
+      "serviceOnlyActions": [
+        "Door switch, hinge, wiring, or control diagnosis beyond closing the door should be handled by qualified service."
+      ],
+      "safetyBoundary": "Do not bypass high-temperature recall devices, refrigerator controls, LP components, or electrical circuits. Shut the refrigerator off and arrange qualified Norcold service for repeat or unsafe faults.",
+      "sourceIds": [
+        "norcold-1200-owner"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "display board code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-1200-no-ac",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "1200 series"
+      ],
+      "code": "no AC",
+      "slug": "norcold-1200-no-ac",
+      "plainMeaning": "The Norcold 1200 owner manual lists no AC as: AC voltage is unavailable to the refrigerator control.",
+      "ownerSafeActions": [
+        "Record the display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Keep food safety in mind and move perishables if needed."
+      ],
+      "serviceOnlyActions": [
+        "Outlet, circuit, generator, and refrigerator AC power diagnosis should be handled by qualified RV electrical service if normal RV power controls do not resolve it."
+      ],
+      "safetyBoundary": "Do not bypass high-temperature recall devices, refrigerator controls, LP components, or electrical circuits. Shut the refrigerator off and arrange qualified Norcold service for repeat or unsafe faults.",
+      "sourceIds": [
+        "norcold-1200-owner"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "display board code",
+        "power mode shown on display"
+      ]
+    },
+    {
       "id": "norcold-1200-no-co",
       "brand": "Norcold",
       "equipmentType": "Refrigerator",
@@ -1656,6 +2346,651 @@
         "model and serial label",
         "recall kit status",
         "display board code"
+      ]
+    },
+    {
+      "id": "norcold-1200-no-display",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "1200 series"
+      ],
+      "code": "no display",
+      "slug": "norcold-1200-no-display",
+      "plainMeaning": "The Norcold 1200 owner manual lists no display as: DC voltage is unavailable to the refrigerator control panel or the refrigerator is off.",
+      "ownerSafeActions": [
+        "Record the display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Keep food safety in mind and move perishables if needed."
+      ],
+      "serviceOnlyActions": [
+        "If normal RV power controls do not restore the display, qualified Norcold or RV electrical service should diagnose the refrigerator power circuit."
+      ],
+      "safetyBoundary": "Do not bypass high-temperature recall devices, refrigerator controls, LP components, or electrical circuits. Shut the refrigerator off and arrange qualified Norcold service for repeat or unsafe faults.",
+      "sourceIds": [
+        "norcold-1200-owner"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "display board code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-1200-no-fl",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "1200 series"
+      ],
+      "code": "no FL",
+      "slug": "norcold-1200-no-fl",
+      "plainMeaning": "The Norcold 1200 owner manual lists no FL as: The burner did not ignite or re-ignite.",
+      "ownerSafeActions": [
+        "Record the display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Keep food safety in mind and move perishables if needed."
+      ],
+      "serviceOnlyActions": [
+        "LP pressure, shutoff valve, burner, ignition, and gas-system diagnosis should be handled by qualified Norcold service if basic supply status is not the issue."
+      ],
+      "safetyBoundary": "Do not bypass high-temperature recall devices, refrigerator controls, LP components, or electrical circuits. Shut the refrigerator off and arrange qualified Norcold service for repeat or unsafe faults.",
+      "sourceIds": [
+        "norcold-1200-owner"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "display board code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-1200-sr",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "1200 series"
+      ],
+      "code": "Sr",
+      "slug": "norcold-1200-sr",
+      "plainMeaning": "The Norcold 1200 owner manual lists Sr as: The owner manual lists this as a fault within the refrigerator controls.",
+      "ownerSafeActions": [
+        "Record the display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Keep food safety in mind and move perishables if needed."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator control faults are not owner serviceable and should go to a dealer or authorized Norcold Service Center."
+      ],
+      "safetyBoundary": "Do not bypass high-temperature recall devices, refrigerator controls, LP components, or electrical circuits. Shut the refrigerator off and arrange qualified Norcold service for repeat or unsafe faults.",
+      "sourceIds": [
+        "norcold-1200-owner"
+      ],
+      "symptomIds": [
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "display board code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-1200-temperature-number-flashes",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "1200 series"
+      ],
+      "code": "temperature number flashes",
+      "slug": "norcold-1200-temperature-number-flashes",
+      "plainMeaning": "The Norcold 1200 owner manual lists temperature number flashes as: The refrigerator is operating on the backup operating system.",
+      "ownerSafeActions": [
+        "Record the display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Keep food safety in mind and move perishables if needed."
+      ],
+      "serviceOnlyActions": [
+        "Backup operating system, thermistor, and control diagnosis is not owner serviceable."
+      ],
+      "safetyBoundary": "Do not bypass high-temperature recall devices, refrigerator controls, LP components, or electrical circuits. Shut the refrigerator off and arrange qualified Norcold service for repeat or unsafe faults.",
+      "sourceIds": [
+        "norcold-1200-owner"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "display board code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-n15-n20-e1",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N15DCX",
+        "N20DCX",
+        "Polar Elite N15/N20"
+      ],
+      "code": "E1",
+      "slug": "norcold-n15-n20-e1",
+      "plainMeaning": "The Norcold N15DCX/N20DCX service manual lists E1 as: Fresh-food compartment thermistor is not cycling properly.",
+      "ownerSafeActions": [
+        "Record the displayed code or diagnostic flash count.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Keep food safety in mind and move perishables if needed."
+      ],
+      "serviceOnlyActions": [
+        "Fresh-food thermistor, harness, and control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n15-n20-owner",
+        "norcold-n15-n20-service"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N15DCX or N20DCX model label",
+        "photo of mode indicator or diagnostic LED",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n15-n20-e2",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N15DCX",
+        "N20DCX",
+        "Polar Elite N15/N20"
+      ],
+      "code": "E2",
+      "slug": "norcold-n15-n20-e2",
+      "plainMeaning": "The Norcold N15DCX/N20DCX service manual lists E2 as: Freezer compartment thermistor is not cycling properly.",
+      "ownerSafeActions": [
+        "Record the displayed code or diagnostic flash count.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Keep food safety in mind and move perishables if needed."
+      ],
+      "serviceOnlyActions": [
+        "Freezer thermistor, harness, and control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n15-n20-owner",
+        "norcold-n15-n20-service"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N15DCX or N20DCX model label",
+        "photo of mode indicator or diagnostic LED",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n15-n20-e3",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N15DCX",
+        "N20DCX",
+        "Polar Elite N15/N20"
+      ],
+      "code": "E3",
+      "slug": "norcold-n15-n20-e3",
+      "plainMeaning": "The Norcold N15DCX/N20DCX service manual lists E3 as: Voltage is outside the compressor cut-out setting.",
+      "ownerSafeActions": [
+        "Record the displayed code or diagnostic flash count.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Keep food safety in mind and move perishables if needed."
+      ],
+      "serviceOnlyActions": [
+        "DC supply, compressor power module, wiring, and load-carrying diagnosis should be handled by qualified Norcold or RV electrical service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n15-n20-owner",
+        "norcold-n15-n20-service"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N15DCX or N20DCX model label",
+        "photo of mode indicator or diagnostic LED",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n15-n20-e4",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N15DCX",
+        "N20DCX",
+        "Polar Elite N15/N20"
+      ],
+      "code": "E4",
+      "slug": "norcold-n15-n20-e4",
+      "plainMeaning": "The Norcold N15DCX/N20DCX service manual lists E4 as: Fresh-food compartment door has been open for more than two minutes.",
+      "ownerSafeActions": [
+        "Close the refrigerator door.",
+        "Record whether the code clears after the door is closed.",
+        "Watch for repeat door-code behavior."
+      ],
+      "serviceOnlyActions": [
+        "Door switch, magnet alignment, wiring, and control diagnosis beyond closing the door should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n15-n20-owner",
+        "norcold-n15-n20-service"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N15DCX or N20DCX model label",
+        "photo of mode indicator or diagnostic LED",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n15-n20-e5",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N15DCX",
+        "N20DCX",
+        "Polar Elite N15/N20"
+      ],
+      "code": "E5",
+      "slug": "norcold-n15-n20-e5",
+      "plainMeaning": "The Norcold N15DCX/N20DCX service manual lists E5 as: Voltage is too low.",
+      "ownerSafeActions": [
+        "Record the displayed code or diagnostic flash count.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Keep food safety in mind and move perishables if needed."
+      ],
+      "serviceOnlyActions": [
+        "Low-voltage DC diagnosis should be handled by qualified Norcold or RV electrical service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n15-n20-owner",
+        "norcold-n15-n20-service"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N15DCX or N20DCX model label",
+        "photo of mode indicator or diagnostic LED",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n15-n20-e6",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N15DCX",
+        "N20DCX",
+        "Polar Elite N15/N20"
+      ],
+      "code": "E6",
+      "slug": "norcold-n15-n20-e6",
+      "plainMeaning": "The Norcold N15DCX/N20DCX service manual lists E6 as: Ambient thermistor is not cycling properly.",
+      "ownerSafeActions": [
+        "Record the displayed code or diagnostic flash count.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Keep food safety in mind and move perishables if needed."
+      ],
+      "serviceOnlyActions": [
+        "Ambient thermistor, harness, and control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n15-n20-owner",
+        "norcold-n15-n20-service"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N15DCX or N20DCX model label",
+        "photo of mode indicator or diagnostic LED",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n15-n20-e7",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N15DCX",
+        "N20DCX",
+        "Polar Elite N15/N20"
+      ],
+      "code": "E7",
+      "slug": "norcold-n15-n20-e7",
+      "plainMeaning": "The Norcold N15DCX/N20DCX service manual lists E7 as: Evaporator fan is not operating properly.",
+      "ownerSafeActions": [
+        "Record the displayed code or diagnostic flash count.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Keep food safety in mind and move perishables if needed."
+      ],
+      "serviceOnlyActions": [
+        "Evaporator fan, door-sensor, wiring, and control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n15-n20-owner",
+        "norcold-n15-n20-service"
+      ],
+      "symptomIds": [
+        "airflow-or-venting",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N15DCX or N20DCX model label",
+        "photo of mode indicator or diagnostic LED",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n15-n20-e8",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N15DCX",
+        "N20DCX",
+        "Polar Elite N15/N20"
+      ],
+      "code": "E8",
+      "slug": "norcold-n15-n20-e8",
+      "plainMeaning": "The Norcold N15DCX/N20DCX service manual lists E8 as: Freezer condenser fan is not operating properly.",
+      "ownerSafeActions": [
+        "Record the displayed code or diagnostic flash count.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Keep food safety in mind and move perishables if needed."
+      ],
+      "serviceOnlyActions": [
+        "Freezer condenser fan, wiring, and control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n15-n20-owner",
+        "norcold-n15-n20-service"
+      ],
+      "symptomIds": [
+        "airflow-or-venting",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N15DCX or N20DCX model label",
+        "photo of mode indicator or diagnostic LED",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n15-n20-e9",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N15DCX",
+        "N20DCX",
+        "Polar Elite N15/N20"
+      ],
+      "code": "E9",
+      "slug": "norcold-n15-n20-e9",
+      "plainMeaning": "The Norcold N15DCX/N20DCX service manual lists E9 as: Fresh-food condenser fan is not operating properly.",
+      "ownerSafeActions": [
+        "Record the displayed code or diagnostic flash count.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Keep food safety in mind and move perishables if needed."
+      ],
+      "serviceOnlyActions": [
+        "Fresh-food condenser fan, wiring, and control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n15-n20-owner",
+        "norcold-n15-n20-service"
+      ],
+      "symptomIds": [
+        "airflow-or-venting",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N15DCX or N20DCX model label",
+        "photo of mode indicator or diagnostic LED",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n15-n20-power-module-flash-1",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N15DCX",
+        "N20DCX",
+        "Polar Elite N15/N20"
+      ],
+      "code": "power module flash 1",
+      "slug": "norcold-n15-n20-power-module-flash-1",
+      "plainMeaning": "The Norcold N15DCX/N20DCX service manual lists power module flash 1 as: Compressor power module battery protection cut-out; voltage outside the manual cut-out setting of 9.8-17.0 VDC.",
+      "ownerSafeActions": [
+        "Record the displayed code or diagnostic flash count.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Keep food safety in mind and move perishables if needed."
+      ],
+      "serviceOnlyActions": [
+        "Compressor power-module voltage testing and DC wiring diagnosis should be handled by qualified Norcold or RV electrical service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n15-n20-service"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N15DCX or N20DCX model label",
+        "photo of mode indicator or diagnostic LED",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n15-n20-power-module-flash-2",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N15DCX",
+        "N20DCX",
+        "Polar Elite N15/N20"
+      ],
+      "code": "power module flash 2",
+      "slug": "norcold-n15-n20-power-module-flash-2",
+      "plainMeaning": "The Norcold N15DCX/N20DCX service manual lists power module flash 2 as: Fan over-current cut-out; load above 1.0 amp sensed on terminal F-.",
+      "ownerSafeActions": [
+        "Record the displayed code or diagnostic flash count.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Keep food safety in mind and move perishables if needed."
+      ],
+      "serviceOnlyActions": [
+        "Fan circuit and compressor power-module diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n15-n20-service"
+      ],
+      "symptomIds": [
+        "airflow-or-venting",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N15DCX or N20DCX model label",
+        "photo of mode indicator or diagnostic LED",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n15-n20-power-module-flash-3",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N15DCX",
+        "N20DCX",
+        "Polar Elite N15/N20"
+      ],
+      "code": "power module flash 3",
+      "slug": "norcold-n15-n20-power-module-flash-3",
+      "plainMeaning": "The Norcold N15DCX/N20DCX service manual lists power module flash 3 as: Compressor motor start error; rotor blocked or differential pressure too high.",
+      "ownerSafeActions": [
+        "Record the displayed code or diagnostic flash count.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Keep food safety in mind and move perishables if needed."
+      ],
+      "serviceOnlyActions": [
+        "Compressor and sealed-system diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n15-n20-service"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N15DCX or N20DCX model label",
+        "photo of mode indicator or diagnostic LED",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n15-n20-power-module-flash-4",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N15DCX",
+        "N20DCX",
+        "Polar Elite N15/N20"
+      ],
+      "code": "power module flash 4",
+      "slug": "norcold-n15-n20-power-module-flash-4",
+      "plainMeaning": "The Norcold N15DCX/N20DCX service manual lists power module flash 4 as: Minimum compressor motor speed error; motor cannot maintain minimum speed.",
+      "ownerSafeActions": [
+        "Record the displayed code or diagnostic flash count.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Keep food safety in mind and move perishables if needed."
+      ],
+      "serviceOnlyActions": [
+        "Compressor speed and power-module diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n15-n20-service"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N15DCX or N20DCX model label",
+        "photo of mode indicator or diagnostic LED",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n15-n20-power-module-flash-5",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N15DCX",
+        "N20DCX",
+        "Polar Elite N15/N20"
+      ],
+      "code": "power module flash 5",
+      "slug": "norcold-n15-n20-power-module-flash-5",
+      "plainMeaning": "The Norcold N15DCX/N20DCX service manual lists power module flash 5 as: Thermal cut-out of compressor power module; module is running too hot.",
+      "ownerSafeActions": [
+        "Record the displayed code or diagnostic flash count.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Keep food safety in mind and move perishables if needed."
+      ],
+      "serviceOnlyActions": [
+        "Thermal, ventilation, and compressor power-module diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n15-n20-service"
+      ],
+      "symptomIds": [
+        "airflow-or-venting",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N15DCX or N20DCX model label",
+        "photo of mode indicator or diagnostic LED",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n15-n20-power-module-flash-6",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N15DCX",
+        "N20DCX",
+        "Polar Elite N15/N20"
+      ],
+      "code": "power module flash 6",
+      "slug": "norcold-n15-n20-power-module-flash-6",
+      "plainMeaning": "The Norcold N15DCX/N20DCX service manual lists power module flash 6 as: Compressor power module hardware failure.",
+      "ownerSafeActions": [
+        "Record the displayed code or diagnostic flash count.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Keep food safety in mind and move perishables if needed."
+      ],
+      "serviceOnlyActions": [
+        "Compressor power-module hardware diagnosis and replacement should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n15-n20-service"
+      ],
+      "symptomIds": [
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N15DCX or N20DCX model label",
+        "photo of mode indicator or diagnostic LED",
+        "battery monitor reading if visible"
       ]
     },
     {
@@ -1885,38 +3220,6 @@
       ]
     },
     {
-      "id": "norcold-polar-lo-dc-lx",
-      "brand": "Norcold",
-      "equipmentType": "Refrigerator",
-      "modelFamilies": [
-        "Polar N7LX",
-        "Polar N8LX"
-      ],
-      "code": "Lo dc",
-      "slug": "norcold-polar-lo-dc-lx",
-      "plainMeaning": "The manual lists Lo dc as a low DC input-voltage fault.",
-      "ownerSafeActions": [
-        "Turn the refrigerator off.",
-        "Record battery, converter, solar, or generator state if visible."
-      ],
-      "serviceOnlyActions": [
-        "Low-voltage DC electrical diagnosis should be handled by qualified RV electrical service or Norcold service."
-      ],
-      "safetyBoundary": "Do not bypass refrigerator controls, flame-sense devices, high-temperature protection, LP components, or electrical circuits. Shut off LP and power if there is gas odor, flame abnormality, overheating, or repeated fault behavior.",
-      "sourceIds": [
-        "norcold-polar-owner"
-      ],
-      "symptomIds": [
-        "low-voltage",
-        "service-call-prep"
-      ],
-      "partCaptureHints": [
-        "Norcold Polar model label",
-        "photo of display or indicator light",
-        "power mode and battery voltage if visible"
-      ]
-    },
-    {
       "id": "norcold-polar-lo-dc",
       "brand": "Norcold",
       "equipmentType": "Refrigerator",
@@ -1948,6 +3251,38 @@
         "battery monitor reading",
         "fuse panel label",
         "refrigerator model"
+      ]
+    },
+    {
+      "id": "norcold-polar-lo-dc-lx",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "Polar N7LX",
+        "Polar N8LX"
+      ],
+      "code": "Lo dc",
+      "slug": "norcold-polar-lo-dc-lx",
+      "plainMeaning": "The manual lists Lo dc as a low DC input-voltage fault.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off.",
+        "Record battery, converter, solar, or generator state if visible."
+      ],
+      "serviceOnlyActions": [
+        "Low-voltage DC electrical diagnosis should be handled by qualified RV electrical service or Norcold service."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, flame-sense devices, high-temperature protection, LP components, or electrical circuits. Shut off LP and power if there is gas odor, flame abnormality, overheating, or repeated fault behavior.",
+      "sourceIds": [
+        "norcold-polar-owner"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Norcold Polar model label",
+        "photo of display or indicator light",
+        "power mode and battery voltage if visible"
       ]
     },
     {

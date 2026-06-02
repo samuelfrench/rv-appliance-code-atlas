@@ -8,9 +8,10 @@ test("mobile lookup finds a sourced Norcold fault code and opens its detail page
 
   await page.goto("/");
   await expect(page.getByRole("heading", { name: "RV Appliance Code Atlas" })).toBeVisible();
-  await page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" }).fill("norcold no fl");
-  await expect(page.getByRole("link", { name: /Norcold no FL/ })).toBeVisible();
-  await page.getByRole("link", { name: /Norcold no FL/ }).click();
+  await page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" }).fill("norcold n7 no fl");
+  const polarNoFl = page.locator('a[href="/codes/norcold-polar-no-fl/"]');
+  await expect(polarNoFl).toBeVisible();
+  await polarNoFl.click();
   await expect(page.getByRole("heading", { name: /Norcold no FL/ })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Official source" })).toBeVisible();
   await expect(page.getByText("Do not hand-light")).toBeVisible();

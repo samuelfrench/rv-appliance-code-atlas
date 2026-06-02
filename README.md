@@ -36,10 +36,10 @@ npm run traffic:monitor
 ```
 
 Current corpus:
-- `80` verified entries
+- `118` verified entries
 - `12` symptom guides
-- `17` official sources
-- `93` generated indexable pages
+- `21` official sources
+- `131` generated indexable pages
 
 Next automated batch goal:
-- Add remaining Dometic RM1350/CCC2, Norcold 1200, and Norcold N15DCX/N20DCX tables from official manuals.
+- Add full Cummins Onan QG/QD, Lippert controller, Furrion appliance, and Coleman-Mach thermostat/AC tables from official manuals.

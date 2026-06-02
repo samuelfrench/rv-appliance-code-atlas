@@ -24,7 +24,7 @@ function buildReport() {
       ready: false,
     })),
     nextAutomatedBatchGoal:
-      "Add remaining Dometic RM1350/CCC2, Norcold 1200, and Norcold N15DCX/N20DCX tables from official manuals, then rerun source audit and static page generation.",
+      "Add full Cummins Onan QG/QD, Lippert controller, Furrion appliance, and Coleman-Mach thermostat/AC tables from official manuals, then rerun source audit and static page generation.",
     monitorCommand: "npm run traffic:monitor",
   };
 }

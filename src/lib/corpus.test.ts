@@ -66,6 +66,17 @@ describe("verified corpus", () => {
     expect(codesForSource("dometic-rua-support")).toEqual(
       new Set(["01", "03", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "22", "24", "50", "51", "52", "53"]),
     );
+    expect(codesForSource("dometic-rm1350-operating")).toEqual(new Set(["E0", "E1", "E2", "E3", "E4"]));
+  });
+
+  it("includes the full official Dometic CCC2 thermostat LCD error-code set", () => {
+    const ccc2Codes = new Set(
+      corpus.entries
+        .filter((entry) => entry.brand === "Dometic" && entry.sourceIds.includes("dometic-ccc2-operating"))
+        .map((entry) => entry.code),
+    );
+
+    expect(ccc2Codes).toEqual(new Set(["E1", "E2", "E3", "E4", "E5", "E7", "E8", "E9"]));
   });
 
   it("includes the full official Norcold Polar N7/N8 owner-manual fault displays", () => {
@@ -104,5 +115,55 @@ describe("verified corpus", () => {
     ]) {
       expect(polarCodes, code).toContain(code);
     }
+  });
+
+  it("includes the full official Norcold 1200 owner-manual fault display set", () => {
+    const codes = new Set(
+      corpus.entries
+        .filter((entry) => entry.brand === "Norcold" && entry.sourceIds.includes("norcold-1200-owner"))
+        .map((entry) => entry.code),
+    );
+
+    expect(codes).toEqual(
+      new Set(["no display", "dr", "no FL", "no AC", "AC LO", "dc LO", "no co", "temperature number flashes", "AC rE", "AC HE", "Sr"]),
+    );
+  });
+
+  it("includes the full official Norcold N15DCX/N20DCX service-manual diagnostic code sets", () => {
+    const codes = new Set(
+      corpus.entries
+        .filter((entry) => entry.brand === "Norcold" && entry.sourceIds.includes("norcold-n15-n20-service"))
+        .map((entry) => entry.code),
+    );
+
+    expect(codes).toEqual(
+      new Set([
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E8",
+        "E9",
+        "power module flash 1",
+        "power module flash 2",
+        "power module flash 3",
+        "power module flash 4",
+        "power module flash 5",
+        "power module flash 6",
+      ]),
+    );
+  });
+
+  it("cites the official Norcold N15DCX/N20DCX owner-manual error-code list for user-facing display codes", () => {
+    const ownerCodes = new Set(
+      corpus.entries
+        .filter((entry) => entry.brand === "Norcold" && entry.sourceIds.includes("norcold-n15-n20-owner"))
+        .map((entry) => entry.code),
+    );
+
+    expect(ownerCodes).toEqual(new Set(["E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9"]));
   });
 });
