@@ -18,10 +18,10 @@
 - Live URL: `https://rv-appliance-code-atlas.fly.dev/`
 - GitHub repo: `https://github.com/samuelfrench/rv-appliance-code-atlas`
 - Fly app: `rv-appliance-code-atlas`, one `shared-cpu-1x` 256 MB machine in `dfw`, auto-stop enabled.
-- Latest deploy before current batch: Fly release v4, image `deployment-01KT3CX5WH3TGRK6DKPWWANA72`, code commit `2937076`; GitHub run ID unavailable locally because `gh` API was rate-limited.
-- Corpus after current local batch: `345` verified entries, `12` symptom guides, `34` official sources, `358` generated indexable pages.
-- Local verification passed: `npm run validate:corpus`, `npm run test:unit`, `npm run build`, `npm run test:browser`, `npm run traffic:report`, `npm run source:audit`.
-- Live verification passed: `/`, `/sitemap.xml`, `/feed.xml`, `/corpus-stats.json`, `/codes/dometic-rm1350-e4/`, `/codes/dometic-ccc2-e7/`, `/codes/norcold-1200-no-fl/`, and `/codes/norcold-n15-n20-e9/` HTTP `200`; Playwright live smoke at `390x844` and `1366x768` found `0` console errors.
+- Latest deploy: Fly release v6, image `deployment-01KT3EDHMYQMD72QBY9C0TC6PX`, code commit `0f9b140`; Deploy runs `26801246009` and `26801352721` succeeded.
+- Corpus: `345` verified entries, `12` symptom guides, `34` official sources, `358` generated indexable pages.
+- Local verification passed: `npm run validate:corpus`, `npm run test:unit`, `npm run build`, `npm run test:browser`, `npm run traffic:report`, `npm run source:audit`. Build passes with a visible Vite warning because the main corpus bundle is `602 kB` minified / `94 kB` gzip.
+- Live verification passed: `/`, `/sitemap.xml`, `/feed.xml`, `/corpus-stats.json`, `/codes/onan-qd-3200-low-battery/`, `/codes/lippert-ground-control-onecontrol-5th-low-voltage/`, `/codes/furrion-french-door-refrigerator-e1-ov-alm/`, `/codes/furrion-10-6-refrigerator-eh/`, and `/codes/furrion-chill-cube-thermostat-e3/` HTTP `200`; Playwright live smoke at `390x844` and `1366x768` found `0` console errors.
 - Next automated batch goal: add Cummins Onan QG 4000/QG inverter/7000i DF manuals plus Furrion furnace/rooftop HVAC and Coleman-Mach/Airxcel symptom pages from official manuals; then rerun source audit and static generation.
 
 ## Corpus Expansion Backlog
