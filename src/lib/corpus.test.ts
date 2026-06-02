@@ -336,6 +336,67 @@ describe("verified corpus", () => {
     expect(codesForSource("onan-qg-7000i-a079e225")).not.toContain("82");
   });
 
+  it("includes official Cummins Onan legacy QG KYD and KV blink-code sets", () => {
+    const codesForSource = (sourceId: string) =>
+      new Set(
+        corpus.entries
+          .filter((entry) => entry.brand === "Onan" && entry.sourceIds.includes(sourceId))
+          .map((entry) => entry.code),
+      );
+    const qgKydCodes = new Set(["3", "4", "12", "13", "14", "15", "27", "29", "32", "35", "36", "37", "38", "41", "42", "43", "45", "47", "48"]);
+
+    expect(codesForSource("onan-qg-4000-kyd-0981-0169")).toEqual(qgKydCodes);
+    expect(codesForSource("onan-qg-4000-kyd-0981-0169")).not.toContain("33");
+    expect(codesForSource("onan-qg-4000-kyd-0981-0169")).not.toContain("44");
+    expect(codesForSource("onan-qg-2800-kv-0981-0153")).toEqual(new Set(["1", "2", "3", "4"]));
+  });
+
+  it("includes the official Cummins Onan legacy HGJAA/HGJAB/HGJAC fault-code set", () => {
+    const codesForSource = (sourceId: string) =>
+      new Set(
+        corpus.entries
+          .filter((entry) => entry.brand === "Onan" && entry.sourceIds.includes(sourceId))
+          .map((entry) => entry.code),
+      );
+
+    expect(codesForSource("onan-hgjaa-hgjab-0983-0101")).toEqual(
+      new Set([
+        "2",
+        "3",
+        "4",
+        "12",
+        "13",
+        "14",
+        "15",
+        "19",
+        "22",
+        "23",
+        "27",
+        "29",
+        "31",
+        "32",
+        "35",
+        "36",
+        "37",
+        "38",
+        "41",
+        "42",
+        "43",
+        "45",
+        "47",
+        "48",
+        "51",
+        "52",
+        "54",
+        "56",
+        "57",
+        "58",
+        "81",
+        "82",
+      ]),
+    );
+  });
+
   it("includes the full official Lippert Ground Control LCD and In-Wall Slide-out LED error sets", () => {
     const lippertCodesForSource = (sourceId: string) =>
       new Set(
@@ -492,5 +553,17 @@ describe("verified corpus", () => {
     expect(symptomById.get("thermostat-gas-assist")?.sourceIds).toEqual(
       expect.arrayContaining(["coleman-9330-thermostat", "coleman-9420-thermostat"]),
     );
+  });
+
+  it("includes official Dometic DF and Hydro Flame furnace LED diagnostic tables", () => {
+    const furnaceCodesForSource = (sourceId: string) =>
+      new Set(
+        corpus.entries
+          .filter((entry) => entry.brand === "Dometic" && entry.equipmentType === "Furnace" && entry.sourceIds.includes(sourceId))
+          .map((entry) => entry.code),
+      );
+
+    expect(furnaceCodesForSource("dometic-df-furnace")).toEqual(new Set(["steady on", "1 flash", "2 flashes", "3 flashes", "4 flashes", "5 flashes"]));
+    expect(furnaceCodesForSource("dometic-hydro-flame-afm-66618")).toEqual(new Set(["steady on", "1 flash", "2 flashes", "3 flashes"]));
   });
 });

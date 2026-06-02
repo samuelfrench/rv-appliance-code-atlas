@@ -24,7 +24,7 @@ function buildReport() {
       ready: false,
     })),
     nextAutomatedBatchGoal:
-      "Add remaining Cummins Onan QG 2500/2800/KY/KYD legacy manuals plus official Atwood/Dometic legacy furnace or water-heater tables only where manufacturer-hosted sources can be verified.",
+      "Add official Dometic/Atwood water-heater and OD-5001 symptom pages, and continue manufacturer-hosted table discovery without adding water-heater code entries unless an official fault/display table is verified.",
     monitorCommand: "npm run traffic:monitor",
   };
 }

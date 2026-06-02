@@ -63,6 +63,14 @@
       "official": true
     },
     {
+      "id": "dometic-hydro-flame-afm-66618",
+      "brand": "Dometic",
+      "title": "Dometic Hydro Flame AFM Series Furnaces Technical Installation Manual 32471",
+      "url": "https://media.dometic.com/externalassets/afm_66618.pdf",
+      "type": "technical installation manual",
+      "official": true
+    },
+    {
       "id": "dometic-rm1350-operating",
       "brand": "Dometic",
       "title": "Dometic RM1350 and RM1350SL Operating Instructions",
@@ -255,6 +263,14 @@
       "official": true
     },
     {
+      "id": "onan-hgjaa-hgjab-0983-0101",
+      "brand": "Onan",
+      "title": "Cummins Onan RV Generator Set HGJAA/HGJAB/HGJAC Spec A-E Operator Manual 983-0101",
+      "url": "https://www.cummins.com/sites/default/files/rv-manuals/0983-0101.pdf",
+      "type": "operator manual",
+      "official": true
+    },
+    {
       "id": "onan-hgjbb-a031c171",
       "brand": "Onan",
       "title": "Cummins Onan Generator Set for RV Operator Manual A031C171",
@@ -303,6 +319,14 @@
       "official": true
     },
     {
+      "id": "onan-qg-2800-kv-0981-0153",
+      "brand": "Onan",
+      "title": "Cummins Onan QG 2800/2800 EVAP KV Spec E-M Operator Manual 981-0153",
+      "url": "https://www.cummins.com/sites/default/files/rv-manuals/0981-0153.pdf",
+      "type": "operator manual",
+      "official": true
+    },
+    {
       "id": "onan-qg-2800i-a062y985",
       "brand": "Onan",
       "title": "Cummins Onan QG 2800i/2500i LP HGLAA Spec A Operator Manual A062Y985",
@@ -332,6 +356,14 @@
       "title": "Cummins Onan QG 4000/3600 LP KY Spec P-R Operator Manual A041D131",
       "url": "https://www.cummins.com/sites/default/files/rv-manuals/A041D131.pdf",
       "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "onan-qg-4000-kyd-0981-0169",
+      "brand": "Onan",
+      "title": "Cummins Onan QG 4000/3600 LP KYD Spec A-C Operator Manual 981-0169",
+      "url": "https://www.cummins.com/sites/default/files/rv-manuals/0981-0169.pdf",
+      "type": "operator manual",
       "official": true
     },
     {
@@ -8187,7 +8219,10 @@
         "HGJBB Spec A-B",
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG RV generator"
+        "QG RV generator",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "12",
       "slug": "onan-code-12-over-voltage",
@@ -8203,7 +8238,8 @@
       "sourceIds": [
         "onan-rv-manual-index",
         "onan-hgjbb-a031c171",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -8238,7 +8274,10 @@
         "HGJBB Spec A-B",
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG RV generator"
+        "QG RV generator",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "13",
       "slug": "onan-code-13-under-voltage",
@@ -8246,7 +8285,8 @@
       "sourceIds": [
         "onan-rv-manual-index",
         "onan-hgjbb-a031c171",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -8275,7 +8315,10 @@
         "HGJBB Spec A-B",
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG RV generator"
+        "QG RV generator",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "14",
       "slug": "onan-code-14-over-frequency",
@@ -8283,7 +8326,8 @@
       "sourceIds": [
         "onan-rv-manual-index",
         "onan-hgjbb-a031c171",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -8312,7 +8356,10 @@
         "HGJBB Spec A-B",
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG RV generator"
+        "QG RV generator",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "15",
       "slug": "onan-code-15-under-frequency",
@@ -8320,7 +8367,8 @@
       "sourceIds": [
         "onan-rv-manual-index",
         "onan-hgjbb-a031c171",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -8348,14 +8396,18 @@
       "modelFamilies": [
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG 5500/7000 EFI"
+        "QG 5500/7000 EFI",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "19",
       "slug": "onan-code-19-governor-actuator",
       "plainMeaning": "The Cummins Onan operator manual lists Code 19 as Governor Actuator.",
       "sourceIds": [
         "onan-rv-manual-index",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -8370,7 +8422,10 @@
         "HGJBB Spec A-B",
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG RV generator"
+        "QG RV generator",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "2",
       "slug": "onan-code-2-low-oil-pressure",
@@ -8386,7 +8441,8 @@
       "sourceIds": [
         "onan-rv-manual-index",
         "onan-hgjbb-a031c171",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -8420,14 +8476,18 @@
       "modelFamilies": [
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG 5500/7000 EFI"
+        "QG 5500/7000 EFI",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "22",
       "slug": "onan-code-22-governor-actuator-overload",
       "plainMeaning": "The Cummins Onan operator manual lists Code 22 as Governor Actuator Overload.",
       "sourceIds": [
         "onan-rv-manual-index",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -8456,7 +8516,10 @@
         "HGJBB Spec A-B",
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG RV generator"
+        "QG RV generator",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "27",
       "slug": "onan-code-27-voltage-sense",
@@ -8464,7 +8527,8 @@
       "sourceIds": [
         "onan-rv-manual-index",
         "onan-hgjbb-a031c171",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -8493,7 +8557,10 @@
         "HGJBB Spec A-B",
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG RV generator"
+        "QG RV generator",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "29",
       "slug": "onan-code-29-high-battery-voltage",
@@ -8501,7 +8568,8 @@
       "sourceIds": [
         "onan-rv-manual-index",
         "onan-hgjbb-a031c171",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "low-voltage",
@@ -8530,7 +8598,10 @@
         "HGJBB Spec A-B",
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG RV generator"
+        "QG RV generator",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "3",
       "slug": "onan-code-3-service-check",
@@ -8538,7 +8609,8 @@
       "sourceIds": [
         "onan-rv-manual-index",
         "onan-hgjbb-a031c171",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -8567,7 +8639,10 @@
         "HGJBB Spec A-B",
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG RV generator"
+        "QG RV generator",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "31",
       "slug": "onan-code-31-over-speed",
@@ -8575,7 +8650,8 @@
       "sourceIds": [
         "onan-rv-manual-index",
         "onan-hgjbb-a031c171",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -8604,7 +8680,10 @@
         "HGJBB Spec A-B",
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG RV generator"
+        "QG RV generator",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "32",
       "slug": "onan-code-32-low-cranking-speed",
@@ -8612,7 +8691,8 @@
       "sourceIds": [
         "onan-rv-manual-index",
         "onan-hgjbb-a031c171",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "low-voltage",
@@ -8641,7 +8721,10 @@
         "HGJBB Spec A-B",
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG RV generator"
+        "QG RV generator",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "35",
       "slug": "onan-code-35-control-card-failure",
@@ -8649,7 +8732,8 @@
       "sourceIds": [
         "onan-rv-manual-index",
         "onan-hgjbb-a031c171",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -8664,7 +8748,10 @@
         "HGJBB Spec A-B",
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG RV generator"
+        "QG RV generator",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "36",
       "slug": "onan-code-36-engine-stopped",
@@ -8681,7 +8768,8 @@
       "sourceIds": [
         "onan-rv-manual-index",
         "onan-hgjbb-a031c171",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -8716,7 +8804,10 @@
         "HGJBB Spec A-B",
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG RV generator"
+        "QG RV generator",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "37",
       "slug": "onan-code-37-invalid-generator-set-configuration",
@@ -8724,7 +8815,8 @@
       "sourceIds": [
         "onan-rv-manual-index",
         "onan-hgjbb-a031c171",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -8753,7 +8845,10 @@
         "HGJBB Spec A-B",
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG RV generator"
+        "QG RV generator",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "38",
       "slug": "onan-code-38-over-current-field-overload",
@@ -8761,7 +8856,8 @@
       "sourceIds": [
         "onan-rv-manual-index",
         "onan-hgjbb-a031c171",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -8790,7 +8886,10 @@
         "HGJBB Spec A-B",
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG RV generator"
+        "QG RV generator",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "4",
       "slug": "onan-code-4-over-crank",
@@ -8798,7 +8897,8 @@
       "sourceIds": [
         "onan-rv-manual-index",
         "onan-hgjbb-a031c171",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -8827,7 +8927,10 @@
         "HGJBB Spec A-B",
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG RV generator"
+        "QG RV generator",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "41",
       "slug": "onan-code-41-generator-rotor",
@@ -8835,7 +8938,8 @@
       "sourceIds": [
         "onan-rv-manual-index",
         "onan-hgjbb-a031c171",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -8864,7 +8968,10 @@
         "HGJBB Spec A-B",
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG RV generator"
+        "QG RV generator",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "42",
       "slug": "onan-code-42-processor",
@@ -8872,7 +8979,8 @@
       "sourceIds": [
         "onan-rv-manual-index",
         "onan-hgjbb-a031c171",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -8901,7 +9009,10 @@
         "HGJBB Spec A-B",
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG RV generator"
+        "QG RV generator",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "43",
       "slug": "onan-code-43-processor",
@@ -8909,7 +9020,8 @@
       "sourceIds": [
         "onan-rv-manual-index",
         "onan-hgjbb-a031c171",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -8938,7 +9050,10 @@
         "HGJBB Spec A-B",
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG RV generator"
+        "QG RV generator",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "45",
       "slug": "onan-code-45-speed-sense",
@@ -8946,7 +9061,8 @@
       "sourceIds": [
         "onan-rv-manual-index",
         "onan-hgjbb-a031c171",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -8975,7 +9091,10 @@
         "HGJBB Spec A-B",
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG RV generator"
+        "QG RV generator",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "47",
       "slug": "onan-code-47-ignition",
@@ -8983,7 +9102,8 @@
       "sourceIds": [
         "onan-rv-manual-index",
         "onan-hgjbb-a031c171",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -9012,7 +9132,10 @@
         "HGJBB Spec A-B",
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG RV generator"
+        "QG RV generator",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "48",
       "slug": "onan-code-48-generator-field-sense",
@@ -9020,7 +9143,8 @@
       "sourceIds": [
         "onan-rv-manual-index",
         "onan-hgjbb-a031c171",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -9048,14 +9172,18 @@
       "modelFamilies": [
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG 5500/7000 EFI"
+        "QG 5500/7000 EFI",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "51",
       "slug": "onan-code-51-processor",
       "plainMeaning": "The Cummins Onan operator manual lists Code 51 as Processor.",
       "sourceIds": [
         "onan-rv-manual-index",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -9083,14 +9211,18 @@
       "modelFamilies": [
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG 5500/7000 EFI"
+        "QG 5500/7000 EFI",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "52",
       "slug": "onan-code-52-fuel-injector",
       "plainMeaning": "The Cummins Onan operator manual lists Code 52 as Fuel Injector.",
       "sourceIds": [
         "onan-rv-manual-index",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -9118,14 +9250,18 @@
       "modelFamilies": [
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG 5500/7000 EFI"
+        "QG 5500/7000 EFI",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "54",
       "slug": "onan-code-54-mat-sender",
       "plainMeaning": "The Cummins Onan operator manual lists Code 54 as MAT Sender.",
       "sourceIds": [
         "onan-rv-manual-index",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -9153,14 +9289,18 @@
       "modelFamilies": [
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG 5500/7000 EFI"
+        "QG 5500/7000 EFI",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "56",
       "slug": "onan-code-56-map-sender",
       "plainMeaning": "The Cummins Onan operator manual lists Code 56 as MAP Sender.",
       "sourceIds": [
         "onan-rv-manual-index",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -9174,7 +9314,10 @@
       "modelFamilies": [
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG 5500/7000 EFI"
+        "QG 5500/7000 EFI",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "57",
       "slug": "onan-code-57-over-prime",
@@ -9190,7 +9333,8 @@
       "safetyBoundary": "Generators can produce carbon monoxide, moving-part hazards, fuel hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
       "sourceIds": [
         "onan-rv-manual-index",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -9224,14 +9368,18 @@
       "modelFamilies": [
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG 5500/7000 EFI"
+        "QG 5500/7000 EFI",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "58",
       "slug": "onan-code-58-exhaust-gas-temperature-shutdown",
       "plainMeaning": "The Cummins Onan operator manual lists Code 58 as Exhaust Gas Temperature Shutdown.",
       "sourceIds": [
         "onan-rv-manual-index",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -9259,14 +9407,18 @@
       "modelFamilies": [
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG 5500/7000 EFI"
+        "QG 5500/7000 EFI",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "81",
       "slug": "onan-code-81-exhaust-gas-temperature-sensor-open",
       "plainMeaning": "The Cummins Onan operator manual lists Code 81 as Exhaust Gas Temperature Sensor Open.",
       "sourceIds": [
         "onan-rv-manual-index",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -9294,14 +9446,18 @@
       "modelFamilies": [
         "HGJAA Spec J-K",
         "HGJAB Spec J-L",
-        "QG 5500/7000 EFI"
+        "QG 5500/7000 EFI",
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
       ],
       "code": "82",
       "slug": "onan-code-82-exhaust-gas-temperature-sensor-shorted",
       "plainMeaning": "The Cummins Onan operator manual lists Code 82 as Exhaust Gas Temperature Sensor Shorted.",
       "sourceIds": [
         "onan-rv-manual-index",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-hgjaa-hgjab-0983-0101"
       ],
       "symptomIds": [
         "generator-stopped",
@@ -14638,6 +14794,1096 @@
         "fault blink count",
         "loads running when the shutdown occurred"
       ]
+    },
+    {
+      "id": "onan-qg-4000-kyd-code-3",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KYD Spec A-C"
+      ],
+      "code": "3",
+      "slug": "onan-qg-4000-kyd-code-3-service-check",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KYD operator manual lists Code 3 as Service Check.",
+      "ownerSafeActions": [
+        "Press Stop once to read the two-digit second-level blink code if the manual procedure is available.",
+        "Record the full blink sequence and stop using the generator if the fault repeats."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical, fuel, engine, sensor, controller, and output-voltage diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, moving-part hazards, fuel hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-kyd-0981-0169"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec letter",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-kyd-code-4",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KYD Spec A-C"
+      ],
+      "code": "4",
+      "slug": "onan-qg-4000-kyd-code-4-overcrank",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KYD operator manual lists Code 4 as Overcrank.",
+      "ownerSafeActions": [
+        "Stop cranking and let the starter rest.",
+        "Check normal vehicle fuel or LP level and make sure the usual owner fuel controls are available before one retry."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical, fuel, engine, sensor, controller, and output-voltage diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, moving-part hazards, fuel hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-kyd-0981-0169"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec letter",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-kyd-code-12",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KYD Spec A-C"
+      ],
+      "code": "12",
+      "slug": "onan-qg-4000-kyd-code-12-overvoltage",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KYD operator manual lists Code 12 as Overvoltage.",
+      "ownerSafeActions": [
+        "Turn off the generator and disconnect sensitive loads if safe.",
+        "Record which loads were running before shutdown."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical, fuel, engine, sensor, controller, and output-voltage diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, moving-part hazards, fuel hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-kyd-0981-0169"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec letter",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-kyd-code-13",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KYD Spec A-C"
+      ],
+      "code": "13",
+      "slug": "onan-qg-4000-kyd-code-13-undervoltage",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KYD operator manual lists Code 13 as Undervoltage.",
+      "ownerSafeActions": [
+        "Reduce connected loads, especially air conditioners and battery chargers.",
+        "Do not keep running appliances on unstable generator output."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical, fuel, engine, sensor, controller, and output-voltage diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, moving-part hazards, fuel hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-kyd-0981-0169"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec letter",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-kyd-code-14",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KYD Spec A-C"
+      ],
+      "code": "14",
+      "slug": "onan-qg-4000-kyd-code-14-overfrequency",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KYD operator manual lists Code 14 as Overfrequency.",
+      "ownerSafeActions": [
+        "Turn the generator off.",
+        "Record load and weather conditions before calling service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical, fuel, engine, sensor, controller, and output-voltage diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, moving-part hazards, fuel hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-kyd-0981-0169"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec letter",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-kyd-code-15",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KYD Spec A-C"
+      ],
+      "code": "15",
+      "slug": "onan-qg-4000-kyd-code-15-underfrequency",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KYD operator manual lists Code 15 as Underfrequency.",
+      "ownerSafeActions": [
+        "Reduce connected loads, especially air conditioners and battery chargers.",
+        "Let the generator cool before another start attempt."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical, fuel, engine, sensor, controller, and output-voltage diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, moving-part hazards, fuel hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-kyd-0981-0169"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec letter",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-kyd-code-27",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KYD Spec A-C"
+      ],
+      "code": "27",
+      "slug": "onan-qg-4000-kyd-code-27-voltage-sense",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KYD operator manual lists Code 27 as Voltage Sense.",
+      "ownerSafeActions": [
+        "Turn the generator off.",
+        "Do not reconnect sensitive loads until the fault has been evaluated."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical, fuel, engine, sensor, controller, and output-voltage diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, moving-part hazards, fuel hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-kyd-0981-0169"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec letter",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-kyd-code-29",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KYD Spec A-C"
+      ],
+      "code": "29",
+      "slug": "onan-qg-4000-kyd-code-29-high-battery-voltage",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KYD operator manual lists Code 29 as High Battery Voltage.",
+      "ownerSafeActions": [
+        "Turn off the generator.",
+        "Check whether a battery charger or boost mode is active at normal user controls."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical, fuel, engine, sensor, controller, and output-voltage diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, moving-part hazards, fuel hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-kyd-0981-0169"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec letter",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-kyd-code-32",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KYD Spec A-C"
+      ],
+      "code": "32",
+      "slug": "onan-qg-4000-kyd-code-32-low-cranking-speed",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KYD operator manual lists Code 32 as Low Cranking Speed.",
+      "ownerSafeActions": [
+        "Stop cranking and let the starter rest.",
+        "Check the RV battery state at the normal monitor and recharge if needed."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical, fuel, engine, sensor, controller, and output-voltage diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, moving-part hazards, fuel hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-kyd-0981-0169"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec letter",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-kyd-code-35",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KYD Spec A-C"
+      ],
+      "code": "35",
+      "slug": "onan-qg-4000-kyd-code-35-control-card-failure",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KYD operator manual lists Code 35 as Control Card Failure.",
+      "ownerSafeActions": [
+        "Turn the generator off.",
+        "Record the code and model/spec before calling Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical, fuel, engine, sensor, controller, and output-voltage diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, moving-part hazards, fuel hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-kyd-0981-0169"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec letter",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-kyd-code-36",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KYD Spec A-C"
+      ],
+      "code": "36",
+      "slug": "onan-qg-4000-kyd-code-36-engine-stopped",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KYD operator manual lists Code 36 as Engine Stopped.",
+      "ownerSafeActions": [
+        "Turn the generator off.",
+        "Check normal fuel or LP level and reduce heavy loads before one cautious retry."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical, fuel, engine, sensor, controller, and output-voltage diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, moving-part hazards, fuel hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-kyd-0981-0169"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec letter",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-kyd-code-37",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KYD Spec A-C"
+      ],
+      "code": "37",
+      "slug": "onan-qg-4000-kyd-code-37-invalid-genset-configuration",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KYD operator manual lists Code 37 as Invalid Genset Configuration.",
+      "ownerSafeActions": [
+        "Turn the generator off.",
+        "Record the model/spec and fault code before calling service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical, fuel, engine, sensor, controller, and output-voltage diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, moving-part hazards, fuel hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-kyd-0981-0169"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec letter",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-kyd-code-38",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KYD Spec A-C"
+      ],
+      "code": "38",
+      "slug": "onan-qg-4000-kyd-code-38-overcurrent",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KYD operator manual lists Code 38 as Overcurrent.",
+      "ownerSafeActions": [
+        "Reduce the number of appliances running at the same time.",
+        "Pay special attention to air conditioners and battery chargers that were running when the generator stopped."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical, fuel, engine, sensor, controller, and output-voltage diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, moving-part hazards, fuel hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-kyd-0981-0169"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec letter",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-kyd-code-41",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KYD Spec A-C"
+      ],
+      "code": "41",
+      "slug": "onan-qg-4000-kyd-code-41-generator-rotor",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KYD operator manual lists Code 41 as Generator Rotor.",
+      "ownerSafeActions": [
+        "Turn the generator off.",
+        "Do not run loads from the generator until service evaluates output."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical, fuel, engine, sensor, controller, and output-voltage diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, moving-part hazards, fuel hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-kyd-0981-0169"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec letter",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-kyd-code-42",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KYD Spec A-C"
+      ],
+      "code": "42",
+      "slug": "onan-qg-4000-kyd-code-42-processor",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KYD operator manual lists Code 42 as Processor.",
+      "ownerSafeActions": [
+        "Turn the generator off.",
+        "Record the blink code and call Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical, fuel, engine, sensor, controller, and output-voltage diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, moving-part hazards, fuel hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-kyd-0981-0169"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec letter",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-kyd-code-43",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KYD Spec A-C"
+      ],
+      "code": "43",
+      "slug": "onan-qg-4000-kyd-code-43-processor",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KYD operator manual lists Code 43 as Processor.",
+      "ownerSafeActions": [
+        "Turn the generator off.",
+        "Record the blink code and call Cummins service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical, fuel, engine, sensor, controller, and output-voltage diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, moving-part hazards, fuel hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-kyd-0981-0169"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec letter",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-kyd-code-45",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KYD Spec A-C"
+      ],
+      "code": "45",
+      "slug": "onan-qg-4000-kyd-code-45-speed-sense",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KYD operator manual lists Code 45 as Speed Sense.",
+      "ownerSafeActions": [
+        "Turn the generator off.",
+        "Record whether the shutdown happened during start, warmup, or load."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical, fuel, engine, sensor, controller, and output-voltage diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, moving-part hazards, fuel hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-kyd-0981-0169"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec letter",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-kyd-code-47",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KYD Spec A-C"
+      ],
+      "code": "47",
+      "slug": "onan-qg-4000-kyd-code-47-ignition",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KYD operator manual lists Code 47 as Ignition.",
+      "ownerSafeActions": [
+        "Turn the generator off.",
+        "Stop repeated start attempts if ignition fault repeats."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical, fuel, engine, sensor, controller, and output-voltage diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, moving-part hazards, fuel hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-kyd-0981-0169"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec letter",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-4000-kyd-code-48",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 4000/3600 LP KYD Spec A-C"
+      ],
+      "code": "48",
+      "slug": "onan-qg-4000-kyd-code-48-generator-field-sense",
+      "plainMeaning": "The Cummins Onan QG 4000/3600 LP KYD operator manual lists Code 48 as Generator Field Sense.",
+      "ownerSafeActions": [
+        "Turn the generator off.",
+        "Do not run loads from the generator until service evaluates output."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical, fuel, engine, sensor, controller, and output-voltage diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, moving-part hazards, fuel hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-4000-kyd-0981-0169"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec letter",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800-kv-code-1",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800/2800 EVAP KV Spec E-M",
+        "QG 2500 LP KV legacy models"
+      ],
+      "code": "1",
+      "slug": "onan-qg-2800-kv-code-1-high-engine-temperature",
+      "plainMeaning": "The Cummins Onan QG 2800 KV operator manual says one blink indicates shutdown due to high engine coolant temperature.",
+      "ownerSafeActions": [
+        "Shut the generator down and let it cool.",
+        "Check only visible cooling-air openings for blockage before calling service if the fault repeats."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical, fuel, engine, sensor, controller, and output-voltage diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, moving-part hazards, fuel hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800-kv-0981-0153"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec letter",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800-kv-code-2",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800/2800 EVAP KV Spec E-M",
+        "QG 2500 LP KV legacy models"
+      ],
+      "code": "2",
+      "slug": "onan-qg-2800-kv-code-2-loss-of-engine-oil-pressure",
+      "plainMeaning": "The Cummins Onan QG 2800 KV operator manual says two blinks indicate shutdown due to a loss of engine oil pressure.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Check engine oil level only after safe shutdown and according to the operator manual."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical, fuel, engine, sensor, controller, and output-voltage diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, moving-part hazards, fuel hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800-kv-0981-0153"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec letter",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800-kv-code-3",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800/2800 EVAP KV Spec E-M",
+        "QG 2500 LP KV legacy models"
+      ],
+      "code": "3",
+      "slug": "onan-qg-2800-kv-code-3-service-fault",
+      "plainMeaning": "The Cummins Onan QG 2800 KV operator manual says three blinks indicate a service fault and the manual directs owners to press Stop once for the two-digit second-level shutdown code.",
+      "ownerSafeActions": [
+        "Press Stop once to read the second-level blink code if the manual procedure is available.",
+        "Record both blink sequences before calling service."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical, fuel, engine, sensor, controller, and output-voltage diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, moving-part hazards, fuel hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800-kv-0981-0153"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec letter",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "onan-qg-2800-kv-code-4",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "QG 2800/2800 EVAP KV Spec E-M",
+        "QG 2500 LP KV legacy models"
+      ],
+      "code": "4",
+      "slug": "onan-qg-2800-kv-code-4-cranking-time-exceeded",
+      "plainMeaning": "The Cummins Onan QG 2800 KV operator manual says four blinks indicate that cranking time exceeded 35 seconds.",
+      "ownerSafeActions": [
+        "Stop cranking and let the starter rest.",
+        "Check normal vehicle fuel or LP level before one cautious retry."
+      ],
+      "serviceOnlyActions": [
+        "Internal generator electrical, fuel, engine, sensor, controller, and output-voltage diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, moving-part hazards, fuel hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-qg-2800-kv-0981-0153"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec letter",
+        "hour meter",
+        "fault blink count",
+        "loads running when the shutdown occurred"
+      ]
+    },
+    {
+      "id": "dometic-df-furnace-steady-on-no-flashing",
+      "brand": "Dometic",
+      "equipmentType": "Furnace",
+      "modelFamilies": [
+        "DFSA/DFSD/DFMD/DFLD/DFLA furnace series"
+      ],
+      "code": "steady on",
+      "slug": "dometic-df-furnace-steady-on-no-flashing",
+      "plainMeaning": "The Dometic DF furnace manual lists steady on with no flashing as internal circuit board failure.",
+      "ownerSafeActions": [
+        "Turn the furnace off.",
+        "Record that the LED is steady rather than flashing.",
+        "Do not continue operating the furnace if the fault remains."
+      ],
+      "serviceOnlyActions": [
+        "Circuit-board diagnosis or replacement is qualified RV furnace service work."
+      ],
+      "safetyBoundary": "RV furnaces burn LP gas and can create fire, explosion, electrical, burn, and carbon monoxide hazards. Shut the furnace off and do not service burner, board, wiring, gas, or combustion parts unless qualified.",
+      "sourceIds": [
+        "dometic-df-furnace"
+      ],
+      "symptomIds": [
+        "furnace-lockout",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "furnace model",
+        "thermostat setting",
+        "LED flash count",
+        "lockout state"
+      ]
+    },
+    {
+      "id": "dometic-df-furnace-2-flashes-flame-sense-fault",
+      "brand": "Dometic",
+      "equipmentType": "Furnace",
+      "modelFamilies": [
+        "DFSA/DFSD/DFMD/DFLD/DFLA furnace series"
+      ],
+      "code": "2 flashes",
+      "slug": "dometic-df-furnace-2-flashes-flame-sense-fault",
+      "plainMeaning": "The Dometic DF furnace manual lists 2 flashes with a 3-second pause as a flame sense fault.",
+      "ownerSafeActions": [
+        "Turn the furnace off.",
+        "Stop repeated ignition attempts and note the flash count."
+      ],
+      "serviceOnlyActions": [
+        "Flame-sense, burner, gas, board, and combustion diagnosis is qualified RV furnace service work."
+      ],
+      "safetyBoundary": "RV furnaces burn LP gas and can create fire, explosion, electrical, burn, and carbon monoxide hazards. Shut the furnace off and do not service burner, board, wiring, gas, or combustion parts unless qualified.",
+      "sourceIds": [
+        "dometic-df-furnace"
+      ],
+      "symptomIds": [
+        "furnace-lockout",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "furnace model",
+        "thermostat setting",
+        "LED flash count",
+        "lockout state"
+      ]
+    },
+    {
+      "id": "dometic-df-furnace-3-flashes-ignition-lockout-fault",
+      "brand": "Dometic",
+      "equipmentType": "Furnace",
+      "modelFamilies": [
+        "DFSA/DFSD/DFMD/DFLD/DFLA furnace series"
+      ],
+      "code": "3 flashes",
+      "slug": "dometic-df-furnace-3-flashes-ignition-lockout-fault",
+      "plainMeaning": "The Dometic DF furnace manual lists 3 flashes with a 3-second pause as an ignition lockout fault.",
+      "ownerSafeActions": [
+        "Turn the thermostat off.",
+        "Do not keep cycling the furnace if ignition lockout returns."
+      ],
+      "serviceOnlyActions": [
+        "Ignition, gas, burner, board, and combustion diagnosis is qualified RV furnace service work."
+      ],
+      "safetyBoundary": "RV furnaces burn LP gas and can create fire, explosion, electrical, burn, and carbon monoxide hazards. Shut the furnace off and do not service burner, board, wiring, gas, or combustion parts unless qualified.",
+      "sourceIds": [
+        "dometic-df-furnace"
+      ],
+      "symptomIds": [
+        "furnace-lockout",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "furnace model",
+        "thermostat setting",
+        "LED flash count",
+        "lockout state"
+      ]
+    },
+    {
+      "id": "dometic-df-furnace-4-flashes-high-voltage",
+      "brand": "Dometic",
+      "equipmentType": "Furnace",
+      "modelFamilies": [
+        "DFSA/DFSD/DFMD/DFLD/DFLA furnace series"
+      ],
+      "code": "4 flashes",
+      "slug": "dometic-df-furnace-4-flashes-high-voltage",
+      "plainMeaning": "The Dometic DF furnace manual lists 4 flashes with a 3-second pause as high voltage 16 V-17 V.",
+      "ownerSafeActions": [
+        "Turn the furnace off.",
+        "Check the RV battery or charger state only at normal user monitors."
+      ],
+      "serviceOnlyActions": [
+        "Furnace voltage, wiring, converter, and board diagnosis is qualified RV electrical service work."
+      ],
+      "safetyBoundary": "RV furnaces burn LP gas and can create fire, explosion, electrical, burn, and carbon monoxide hazards. Shut the furnace off and do not service burner, board, wiring, gas, or combustion parts unless qualified.",
+      "sourceIds": [
+        "dometic-df-furnace"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "furnace model",
+        "thermostat setting",
+        "LED flash count",
+        "lockout state"
+      ]
+    },
+    {
+      "id": "dometic-df-furnace-5-flashes-low-voltage",
+      "brand": "Dometic",
+      "equipmentType": "Furnace",
+      "modelFamilies": [
+        "DFSA/DFSD/DFMD/DFLD/DFLA furnace series"
+      ],
+      "code": "5 flashes",
+      "slug": "dometic-df-furnace-5-flashes-low-voltage",
+      "plainMeaning": "The Dometic DF furnace manual lists 5 flashes with a 3-second pause as low voltage 8 V-9 V.",
+      "ownerSafeActions": [
+        "Turn the furnace off.",
+        "Check the RV battery or charger state only at normal user monitors."
+      ],
+      "serviceOnlyActions": [
+        "Furnace low-voltage, wiring, converter, and board diagnosis is qualified RV electrical service work."
+      ],
+      "safetyBoundary": "RV furnaces burn LP gas and can create fire, explosion, electrical, burn, and carbon monoxide hazards. Shut the furnace off and do not service burner, board, wiring, gas, or combustion parts unless qualified.",
+      "sourceIds": [
+        "dometic-df-furnace"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "furnace model",
+        "thermostat setting",
+        "LED flash count",
+        "lockout state"
+      ]
+    },
+    {
+      "id": "dometic-hydro-flame-afm-steady-on-no-flashing",
+      "brand": "Dometic",
+      "equipmentType": "Furnace",
+      "modelFamilies": [
+        "Hydro Flame AFM Series Furnaces AFMD16/AFMD20/AFMD25/AFMD30/AFMD35"
+      ],
+      "code": "steady on",
+      "slug": "dometic-hydro-flame-afm-steady-on-no-flashing",
+      "plainMeaning": "The Dometic Hydro Flame AFM technical installation manual lists steady on with no flashing as internal circuit board failure.",
+      "ownerSafeActions": [
+        "Turn the furnace off.",
+        "Record that the LED is steady rather than flashing.",
+        "Do not continue operating the furnace if the fault remains."
+      ],
+      "serviceOnlyActions": [
+        "Circuit-board diagnosis or replacement is qualified RV furnace service work."
+      ],
+      "safetyBoundary": "RV furnaces burn LP gas and can create fire, explosion, electrical, burn, and carbon monoxide hazards. Shut the furnace off and do not service burner, board, wiring, gas, or combustion parts unless qualified.",
+      "sourceIds": [
+        "dometic-hydro-flame-afm-66618"
+      ],
+      "symptomIds": [
+        "furnace-lockout",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "furnace model",
+        "thermostat setting",
+        "LED flash count",
+        "lockout state"
+      ]
+    },
+    {
+      "id": "dometic-hydro-flame-afm-1-flash-limit-switch-airflow",
+      "brand": "Dometic",
+      "equipmentType": "Furnace",
+      "modelFamilies": [
+        "Hydro Flame AFM Series Furnaces AFMD16/AFMD20/AFMD25/AFMD30/AFMD35"
+      ],
+      "code": "1 flash",
+      "slug": "dometic-hydro-flame-afm-1-flash-limit-switch-airflow",
+      "plainMeaning": "The Dometic Hydro Flame AFM technical installation manual lists 1 flash with a 3-second pause as limit switch or airflow problems.",
+      "ownerSafeActions": [
+        "Turn the furnace off.",
+        "Check that interior registers and exterior intake/exhaust openings are unobstructed.",
+        "Do not restart if vents were covered, soot is present, or the furnace smells unusual."
+      ],
+      "serviceOnlyActions": [
+        "Limit-switch, airflow switch, burner, board, or combustion diagnosis is qualified RV furnace service work."
+      ],
+      "safetyBoundary": "RV furnaces burn LP gas and can create fire, explosion, electrical, burn, and carbon monoxide hazards. Shut the furnace off and do not service burner, board, wiring, gas, or combustion parts unless qualified.",
+      "sourceIds": [
+        "dometic-hydro-flame-afm-66618"
+      ],
+      "symptomIds": [
+        "furnace-lockout",
+        "airflow-or-venting"
+      ],
+      "partCaptureHints": [
+        "furnace model",
+        "thermostat setting",
+        "LED flash count",
+        "lockout state"
+      ]
+    },
+    {
+      "id": "dometic-hydro-flame-afm-2-flashes-flame-sense-fault",
+      "brand": "Dometic",
+      "equipmentType": "Furnace",
+      "modelFamilies": [
+        "Hydro Flame AFM Series Furnaces AFMD16/AFMD20/AFMD25/AFMD30/AFMD35"
+      ],
+      "code": "2 flashes",
+      "slug": "dometic-hydro-flame-afm-2-flashes-flame-sense-fault",
+      "plainMeaning": "The Dometic Hydro Flame AFM technical installation manual lists 2 flashes with a 3-second pause as a flame sense fault.",
+      "ownerSafeActions": [
+        "Turn the furnace off.",
+        "Stop repeated ignition attempts and note the flash count."
+      ],
+      "serviceOnlyActions": [
+        "Flame-sense, burner, gas, board, and combustion diagnosis is qualified RV furnace service work."
+      ],
+      "safetyBoundary": "RV furnaces burn LP gas and can create fire, explosion, electrical, burn, and carbon monoxide hazards. Shut the furnace off and do not service burner, board, wiring, gas, or combustion parts unless qualified.",
+      "sourceIds": [
+        "dometic-hydro-flame-afm-66618"
+      ],
+      "symptomIds": [
+        "furnace-lockout",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "furnace model",
+        "thermostat setting",
+        "LED flash count",
+        "lockout state"
+      ]
+    },
+    {
+      "id": "dometic-hydro-flame-afm-3-flashes-ignition-lockout-fault",
+      "brand": "Dometic",
+      "equipmentType": "Furnace",
+      "modelFamilies": [
+        "Hydro Flame AFM Series Furnaces AFMD16/AFMD20/AFMD25/AFMD30/AFMD35"
+      ],
+      "code": "3 flashes",
+      "slug": "dometic-hydro-flame-afm-3-flashes-ignition-lockout-fault",
+      "plainMeaning": "The Dometic Hydro Flame AFM technical installation manual lists 3 flashes with a 3-second pause as an ignition lockout fault.",
+      "ownerSafeActions": [
+        "Turn the thermostat off.",
+        "Do not keep cycling the furnace if ignition lockout returns."
+      ],
+      "serviceOnlyActions": [
+        "Ignition, gas, burner, board, and combustion diagnosis is qualified RV furnace service work."
+      ],
+      "safetyBoundary": "RV furnaces burn LP gas and can create fire, explosion, electrical, burn, and carbon monoxide hazards. Shut the furnace off and do not service burner, board, wiring, gas, or combustion parts unless qualified.",
+      "sourceIds": [
+        "dometic-hydro-flame-afm-66618"
+      ],
+      "symptomIds": [
+        "furnace-lockout",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "furnace model",
+        "thermostat setting",
+        "LED flash count",
+        "lockout state"
+      ]
+    },
+    {
+      "id": "onan-hgjaa-hgjab-code-23",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "HGJAA Spec A-E",
+        "HGJAB Spec A-E",
+        "HGJAC Spec A-D"
+      ],
+      "code": "23",
+      "slug": "onan-hgjaa-hgjab-code-23-low-oil-pressure-cutoff-switch",
+      "plainMeaning": "The Cummins Onan HGJAA/HGJAB/HGJAC operator manual lists Code 23 as Low Oil Pressure Cutoff Switch.",
+      "ownerSafeActions": [
+        "Stop the generator.",
+        "Check engine oil level only after safe shutdown and according to the operator manual.",
+        "Record whether the shutdown occurred during start, warmup, or under load."
+      ],
+      "serviceOnlyActions": [
+        "Oil-pressure switch, engine lubrication, wiring, controller, and internal generator diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide, moving-part hazards, fuel hazards, and lethal voltage. Shut the generator down and do not open energized compartments unless qualified.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-hgjaa-hgjab-0983-0101"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec letter",
+        "hour meter",
+        "fault blink count",
+        "oil level and oil type noted after shutdown"
+      ]
     }
   ],
   "symptoms": [
@@ -14701,7 +15947,8 @@
       "sourceIds": [
         "suburban-furnace-guide",
         "dometic-df-furnace",
-        "furrion-furnace-troubleshooting"
+        "furrion-furnace-troubleshooting",
+        "dometic-hydro-flame-afm-66618"
       ]
     },
     {
@@ -14718,7 +15965,8 @@
         "dometic-df-furnace",
         "suburban-furnace-guide",
         "furrion-water-heater",
-        "furrion-furnace-troubleshooting"
+        "furrion-furnace-troubleshooting",
+        "dometic-hydro-flame-afm-66618"
       ]
     },
     {
@@ -14829,7 +16077,8 @@
         "lippert-ground-control",
         "furrion-furnace-troubleshooting",
         "furrion-rooftop-hvac-troubleshooting",
-        "coleman-9430-thermostat"
+        "coleman-9430-thermostat",
+        "dometic-hydro-flame-afm-66618"
       ]
     },
     {
