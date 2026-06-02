@@ -1,0 +1,536 @@
+{
+  "site": {
+    "name": "RV Appliance Code Atlas",
+    "baseUrl": "https://rv-appliance-code-atlas.fly.dev",
+    "generatedAt": "2026-06-02T00:00:00-05:00",
+    "safetyBoundary": "Use this atlas to identify likely meaning and prepare for service. Shut off power, LP gas, fuel, or water when a listed appliance condition involves flame, gas smell, exhaust, generator shutdown, high temperature, moving jacks/slides, refrigerant, 120 VAC, control boards, repeated ignition failure, or a persistent lockout. Call the appliance maker, RV dealer, or a qualified RV technician for repair."
+  },
+  "sources": [
+    {
+      "id": "dometic-ruc-support",
+      "brand": "Dometic",
+      "title": "My refrigerator is giving me a fault message | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/My-refrigerator-is-giving-me-a-fault-message-844",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-water-heater-wh",
+      "brand": "Dometic",
+      "title": "Dometic WH-6GA/WH-6GEA/WH-9GEA L.P. Gas Water Heater Manual",
+      "url": "https://media.dometic.com/externalassets/dometic-water-heater-9-gallon-gas-electric_9600024380_81175.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "dometic-df-furnace",
+      "brand": "Dometic",
+      "title": "Dometic DF Series Furnace Installation Manual",
+      "url": "https://www.dometic.com/externalassets/dometic-medium-furnace_9600000926_81452.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "norcold-polar-owner",
+      "brand": "Norcold",
+      "title": "Norcold Polar N7/N8 Owner's Manual",
+      "url": "https://www.thetford.com/app/uploads/2024/09/OM_N7V_N7X_N7LX_N8V_N8X_N8LX_639301F_03272025.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "norcold-1200-owner",
+      "brand": "Norcold",
+      "title": "Norcold 1200 Series Owner's Manual",
+      "url": "https://www.thetford.com/app/uploads/2024/10/Owners_1200_621823J.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "suburban-tank-water-heater",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban Tank Water Heaters Operation & Maintenance Guide",
+      "url": "https://library.suburbanrv.com/wp-content/uploads/2023/04/206244_Suburban_Water_Heaters_RevA_03-22-2023.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "suburban-furnace-guide",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban Gas Furnace Operation Guide",
+      "url": "https://library.suburbanrv.com/wp-content/uploads/2023/05/Suburban-Furnace-9.2.22.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-9330-thermostat",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 9330-33 Multiple Zone Thermostat Controller System",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-659.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-9420-thermostat",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Digital Thermostats 9420-381 & 9420-382",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/12/1980R189.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-water-heater",
+      "brand": "Furrion",
+      "title": "Furrion 2.4GPM Tank-less Gas Water Heater Troubleshooting and Service Manual",
+      "url": "https://lci-support-doc.s3.amazonaws.com/furrion%20documentation/water%20heaters/ccd-0009617.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-thermostat",
+      "brand": "Furrion",
+      "title": "Furrion Heat Pump Single Zone Wall Thermostat Quick Start Guide",
+      "url": "https://lci-support-doc.s3.amazonaws.com/furrion_comfort/thermostats/ccd-0008552.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "lippert-ground-control",
+      "brand": "Lippert",
+      "title": "Lippert Ground Control LCD Troubleshooting and Service Manual",
+      "url": "https://lci-support-doc.s3.amazonaws.com/manuals/leveling-and-stabilization/ground%20control/ccd-0001745.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "lippert-in-wall-slide",
+      "brand": "Lippert",
+      "title": "Lippert In-Wall Slide-out Troubleshooting and Service Manual",
+      "url": "https://lci-support-doc.s3.amazonaws.com/manuals/slideouts/in-wall/ccd-0001769.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "onan-rv-manual-index",
+      "brand": "Onan",
+      "title": "Cummins Onan RV Generator Manuals",
+      "url": "https://www.cummins.com/en-na/generators/rv-generators/rv-generator-manuals",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "onan-hgjbb-a031c171",
+      "brand": "Onan",
+      "title": "Cummins Onan Generator Set for RV Operator Manual A031C171",
+      "url": "https://www.cummins.com/sites/default/files/rv-manuals/A031C171.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "onan-hgjaa-a035d009",
+      "brand": "Onan",
+      "title": "Cummins Onan Generator Set for RV Operator Manual A035D009",
+      "url": "https://www.cummins.com/sites/default/files/rv-manuals/A035D009.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    }
+  ],
+  "entries": [
+    {
+      "id": "dometic-ruc-e35",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": ["RUC refrigerator"],
+      "code": "E35",
+      "slug": "dometic-ruc-e35-refrigerator",
+      "plainMeaning": "The Dometic RUC refrigerator support table lists E35 as a cooling or control fault that needs model-specific diagnosis.",
+      "ownerSafeActions": ["Turn the refrigerator off if cooling is abnormal.", "Check that vents are not blocked.", "Record the model number, code, and recent power source before service."],
+      "serviceOnlyActions": ["Internal cooling, gas, electrical, or control diagnosis belongs to an authorized Dometic service provider."],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if you smell gas, see scorching, or the unit behaves abnormally.",
+      "sourceIds": ["dometic-ruc-support"],
+      "symptomIds": ["refrigerator-not-cooling", "service-call-prep"],
+      "partCaptureHints": ["model number label", "serial number", "control board part number if visible without disassembly"]
+    },
+    {
+      "id": "dometic-water-heater-lockout",
+      "brand": "Dometic",
+      "equipmentType": "Water heater",
+      "modelFamilies": ["WH-6GA", "WH-6GEA", "WH-9GEA"],
+      "code": "Lock-Out Lamp",
+      "slug": "dometic-water-heater-lock-out-lamp",
+      "plainMeaning": "The red lockout lamp indicates the water heater has a no-heat fault or failed operation condition.",
+      "ownerSafeActions": ["Turn the water heater off.", "Confirm the tank is full before any restart attempt.", "Write down whether the appliance was in gas or electric mode."],
+      "serviceOnlyActions": ["Persistent lockout, overheating, ECO, thermal cut-off, flame, gas, or wiring diagnosis requires Dometic service."],
+      "safetyBoundary": "Do not open gas components, bypass the ECO, or keep resetting an overheating water heater. Shut off LP and power and call service if the lockout persists.",
+      "sourceIds": ["dometic-water-heater-wh"],
+      "symptomIds": ["water-heater-no-heat", "service-call-prep"],
+      "partCaptureHints": ["water heater model", "control switch panel", "gas/electric mode"]
+    },
+    {
+      "id": "dometic-furnace-one-flash",
+      "brand": "Dometic",
+      "equipmentType": "Furnace",
+      "modelFamilies": ["DF series furnace"],
+      "code": "1 flash",
+      "slug": "dometic-df-furnace-1-flash",
+      "plainMeaning": "The DF furnace manual identifies one flash with a pause as a limit switch or airflow problem.",
+      "ownerSafeActions": ["Turn the furnace off.", "Check that interior registers and exterior intake/exhaust openings are unobstructed.", "Do not restart if vents were covered, soot is present, or the furnace smells unusual."],
+      "serviceOnlyActions": ["Limit-switch, airflow switch, burner, board, or combustion diagnosis is service technician work."],
+      "safetyBoundary": "Do not operate with blocked vents. Shut off the furnace and LP gas if flame, soot, heat, or exhaust conditions look wrong.",
+      "sourceIds": ["dometic-df-furnace"],
+      "symptomIds": ["furnace-lockout", "airflow-or-venting"],
+      "partCaptureHints": ["furnace model", "thermostat setting", "LED flash count"]
+    },
+    {
+      "id": "norcold-polar-no-fl",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": ["N7LX", "N8LX", "Polar N7/N8"],
+      "code": "no FL",
+      "slug": "norcold-polar-no-fl",
+      "plainMeaning": "The Norcold Polar manual uses no FL for an LP flame/ignition failure condition.",
+      "ownerSafeActions": ["Switch the refrigerator off.", "Make sure LP supply is not intentionally shut off before documenting the issue.", "Record whether the code happens only on LP mode."],
+      "serviceOnlyActions": ["LP ignition, flame-sense, burner, gas valve, and board diagnosis requires qualified service."],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust gas, or bypass ignition controls. Shut off LP if gas odor is present.",
+      "sourceIds": ["norcold-polar-owner"],
+      "symptomIds": ["refrigerator-lp-ignition", "service-call-prep"],
+      "partCaptureHints": ["Norcold model label", "power mode", "LP regulator/service history"]
+    },
+    {
+      "id": "norcold-1200-no-co",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": ["1200 series"],
+      "code": "no co",
+      "slug": "norcold-1200-no-co",
+      "plainMeaning": "The Norcold 1200 owner manual uses no co for a stopped-cooling condition.",
+      "ownerSafeActions": ["Turn the refrigerator off if it is not cooling.", "Keep food safety in mind and move perishables.", "Record outside temperature, power source, and whether this is a repeat event."],
+      "serviceOnlyActions": ["Repeated no co, cooling-unit, high-temperature, recall, or reset work is not a DIY action."],
+      "safetyBoundary": "Do not bypass high-temperature recall devices or force repeated resets. Shut the refrigerator off and arrange qualified service for repeat or unsafe cooling faults.",
+      "sourceIds": ["norcold-1200-owner"],
+      "symptomIds": ["refrigerator-not-cooling", "service-call-prep"],
+      "partCaptureHints": ["model and serial label", "recall kit status", "display board code"]
+    },
+    {
+      "id": "norcold-polar-lo-dc",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": ["N7LX", "N8LX", "Polar N7/N8"],
+      "code": "Lo dC",
+      "slug": "norcold-polar-lo-dc",
+      "plainMeaning": "The Norcold Polar LX manual lists low DC voltage display terms for insufficient 12-volt supply.",
+      "ownerSafeActions": ["Check the RV battery monitor.", "Confirm the converter or battery disconnect has not been turned off.", "Document battery voltage if available from an installed monitor."],
+      "serviceOnlyActions": ["Wiring, converter, board, fuse-holder heat, or voltage-drop diagnosis should be handled by qualified RV electrical service."],
+      "safetyBoundary": "Do not work inside energized 12 VDC or 120 VAC panels unless qualified.",
+      "sourceIds": ["norcold-polar-owner"],
+      "symptomIds": ["low-voltage", "service-call-prep"],
+      "partCaptureHints": ["battery monitor reading", "fuse panel label", "refrigerator model"]
+    },
+    {
+      "id": "suburban-water-heater-reset-light",
+      "brand": "Suburban/Atwood",
+      "equipmentType": "Water heater",
+      "modelFamilies": ["Suburban D", "Suburban DE", "Suburban DEL"],
+      "code": "RESET light",
+      "slug": "suburban-water-heater-reset-light",
+      "plainMeaning": "The Suburban tank water heater guide describes red RESET light lockout after ignition attempts fail.",
+      "ownerSafeActions": ["Turn the water heater off.", "Confirm the tank is full.", "Stop repeated attempts if ignition fails."],
+      "serviceOnlyActions": ["Ignition, flame, gas valve, electrode, soot, combustion, and board work is qualified service."],
+      "safetyBoundary": "Do not cycle the water heater repeatedly after failed ignition. Shut off LP/power and call service if lockout returns.",
+      "sourceIds": ["suburban-tank-water-heater"],
+      "symptomIds": ["water-heater-no-heat", "service-call-prep"],
+      "partCaptureHints": ["Suburban model plate", "inside switch panel", "LP mode status"]
+    },
+    {
+      "id": "suburban-furnace-lockout",
+      "brand": "Suburban/Atwood",
+      "equipmentType": "Furnace",
+      "modelFamilies": ["Suburban gas furnace"],
+      "code": "lock out",
+      "slug": "suburban-furnace-lock-out",
+      "plainMeaning": "The Suburban furnace guide describes lockout after the furnace fails to ignite after multiple attempts.",
+      "ownerSafeActions": ["Turn the thermostat off.", "Check that intake and exhaust vents are not covered.", "Do not continue cycling the furnace after repeated no-ignition attempts."],
+      "serviceOnlyActions": ["Ignition, combustion, flame-sense, gas, and board troubleshooting is qualified service."],
+      "safetyBoundary": "Stop after repeated ignition failure. Shut off LP if there is gas odor, soot, or abnormal flame/exhaust evidence.",
+      "sourceIds": ["suburban-furnace-guide"],
+      "symptomIds": ["furnace-lockout", "airflow-or-venting"],
+      "partCaptureHints": ["furnace model", "thermostat model", "number of failed starts"]
+    },
+    {
+      "id": "coleman-9330-er",
+      "brand": "Coleman-Mach",
+      "equipmentType": "Thermostat",
+      "modelFamilies": ["9330-33 multiple-zone thermostat"],
+      "code": "Er",
+      "slug": "coleman-mach-9330-er",
+      "plainMeaning": "The Coleman-Mach 9330-33 manual uses Er for a lost communication signal to a zone.",
+      "ownerSafeActions": ["Note which zone is affected.", "Turn the HVAC system off if the zone is not responding.", "Record whether the display has no green LED or other visible status."],
+      "serviceOnlyActions": ["Thermostat wiring, control box communication, and rooftop unit service should be performed by trained technicians."],
+      "safetyBoundary": "Disconnect power before HVAC service. Do not open rooftop electrical compartments unless qualified.",
+      "sourceIds": ["coleman-9330-thermostat"],
+      "symptomIds": ["thermostat-communication", "service-call-prep"],
+      "partCaptureHints": ["thermostat model", "zone number", "rooftop unit model"]
+    },
+    {
+      "id": "coleman-9420-lo",
+      "brand": "Coleman-Mach",
+      "equipmentType": "Thermostat",
+      "modelFamilies": ["9420-381", "9420-382"],
+      "code": "LO",
+      "slug": "coleman-mach-9420-lo",
+      "plainMeaning": "The Coleman-Mach digital thermostat manual lists LO as a temperature-display condition below the displayed operating range.",
+      "ownerSafeActions": ["Compare the thermostat display with room conditions.", "Record whether LO appears continuously or only at startup.", "Avoid changing wiring or internal thermostat settings."],
+      "serviceOnlyActions": ["PTC fuse faults, wiring shorts, control problems, and installation checks belong to trained technicians."],
+      "safetyBoundary": "Disconnect power before thermostat or HVAC service. Do not probe control wiring unless qualified.",
+      "sourceIds": ["coleman-9420-thermostat"],
+      "symptomIds": ["thermostat-display", "low-voltage"],
+      "partCaptureHints": ["thermostat model", "indoor temperature", "fuse panel status"]
+    },
+    {
+      "id": "furrion-water-heater-e1",
+      "brand": "Furrion",
+      "equipmentType": "Water heater",
+      "modelFamilies": ["FWH09A-AM", "FWH09AFA", "FWH09AFA-AM", "FWH09AFA-AB"],
+      "code": "E1",
+      "slug": "furrion-water-heater-e1",
+      "plainMeaning": "The Furrion tankless water heater manual lists E1 as a flame-sense during ignition fault.",
+      "ownerSafeActions": ["Turn the water heater off.", "Stop use if ignition faults repeat.", "Record water flow, code, and whether LP supply was recently changed."],
+      "serviceOnlyActions": ["Flame, ignition, solenoid, gas, exhaust, and combustion checks are qualified service work."],
+      "safetyBoundary": "Do not bypass flame sensing or open gas components. Shut off LP and call service for repeated E1 or gas odor.",
+      "sourceIds": ["furrion-water-heater"],
+      "symptomIds": ["water-heater-no-heat", "refrigerator-lp-ignition"],
+      "partCaptureHints": ["water heater model", "controller display", "LP supply status"]
+    },
+    {
+      "id": "furrion-water-heater-e5",
+      "brand": "Furrion",
+      "equipmentType": "Water heater",
+      "modelFamilies": ["FWH09A-AM", "FWH09AFA", "FWH09AFA-AM", "FWH09AFA-AB"],
+      "code": "E5",
+      "slug": "furrion-water-heater-e5",
+      "plainMeaning": "The Furrion tankless water heater troubleshooting manual lists E5 as an air-pressure fault.",
+      "ownerSafeActions": ["Turn the appliance off.", "Check only for obvious exterior vent blockage from outside the RV.", "Do not continue use if exhaust or flame behavior seems abnormal."],
+      "serviceOnlyActions": ["Air pressure switch, fan, exhaust, combustion, and board diagnosis is qualified service."],
+      "safetyBoundary": "Do not run a gas water heater with blocked venting. Shut off LP/power and call service if E5 persists.",
+      "sourceIds": ["furrion-water-heater"],
+      "symptomIds": ["airflow-or-venting", "water-heater-no-heat"],
+      "partCaptureHints": ["model", "exterior vent condition", "error history"]
+    },
+    {
+      "id": "furrion-thermostat-e3",
+      "brand": "Furrion",
+      "equipmentType": "Thermostat",
+      "modelFamilies": ["FACW12ESPA-BL"],
+      "code": "E3",
+      "slug": "furrion-thermostat-e3",
+      "plainMeaning": "The Furrion thermostat quick-start guide lists E3 as thermostat/control-box communication loss.",
+      "ownerSafeActions": ["Record the displayed code.", "Turn the HVAC mode off if the unit is not responding.", "Capture thermostat and control-box model numbers for service."],
+      "serviceOnlyActions": ["Communication wiring, control box, and rooftop HVAC diagnosis is qualified service."],
+      "safetyBoundary": "Disconnect power before HVAC service. Do not open electrical compartments unless qualified.",
+      "sourceIds": ["furrion-thermostat"],
+      "symptomIds": ["thermostat-communication", "service-call-prep"],
+      "partCaptureHints": ["FACW12ESPA-BL thermostat", "control-box label", "rooftop model"]
+    },
+    {
+      "id": "lippert-ground-control-low-voltage",
+      "brand": "Lippert",
+      "equipmentType": "Leveling system",
+      "modelFamilies": ["Ground Control LCD 4-point", "Ground Control LCD 6-point"],
+      "code": "Low Voltage",
+      "slug": "lippert-ground-control-low-voltage",
+      "plainMeaning": "The Lippert Ground Control troubleshooting manual includes Low Voltage as a leveling system error.",
+      "ownerSafeActions": ["Stop leveling movement.", "Check the RV battery monitor.", "Record jack positions and whether shore power is connected."],
+      "serviceOnlyActions": ["Jack motor, controller, sensor, high-current wiring, and calibration work should follow Lippert service procedures."],
+      "safetyBoundary": "Never use leveling jacks as service stands. Keep people clear of jacks and pinch points.",
+      "sourceIds": ["lippert-ground-control"],
+      "symptomIds": ["low-voltage", "leveling-jack-error"],
+      "partCaptureHints": ["controller part number", "battery voltage", "jack position"]
+    },
+    {
+      "id": "lippert-slide-red-3",
+      "brand": "Lippert",
+      "equipmentType": "Slide-out",
+      "modelFamilies": ["In-Wall Slide-out"],
+      "code": "Red LED 3",
+      "slug": "lippert-in-wall-slide-red-led-3",
+      "plainMeaning": "The Lippert In-Wall Slide-out manual maps red LED 3 to low battery.",
+      "ownerSafeActions": ["Stop operating the slide.", "Check RV battery voltage from an installed monitor.", "Keep people and objects clear of the slide room."],
+      "serviceOnlyActions": ["Controller, motor, wiring short, hall sensor, or manual override procedures should follow Lippert service documentation."],
+      "safetyBoundary": "Do not place hands or tools near moving slide mechanisms. Do not force the slide if current, short, or controller faults appear.",
+      "sourceIds": ["lippert-in-wall-slide"],
+      "symptomIds": ["low-voltage", "slide-room-stuck"],
+      "partCaptureHints": ["controller label", "green LED motor indicator", "red LED count"]
+    },
+    {
+      "id": "onan-code-36",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": ["HGJBB Spec A-B", "QG RV generator"],
+      "code": "36",
+      "slug": "onan-code-36-engine-stopped",
+      "plainMeaning": "The Cummins Onan operator manual lists Code 36 as Engine Stopped.",
+      "ownerSafeActions": ["Turn the generator off.", "Check only safe owner items listed in the model manual, such as fuel level and air intake obstruction from outside the unit.", "Record load, run time, weather, and whether the generator restarted."],
+      "serviceOnlyActions": ["Fuel, ignition, voltage, governor, rotor, field, processor, exhaust, and internal generator diagnosis belongs to Cummins service or a qualified generator technician."],
+      "safetyBoundary": "Generators can produce carbon monoxide and lethal voltage. Do not run in unsafe ventilation conditions or open energized compartments.",
+      "sourceIds": ["onan-rv-manual-index", "onan-hgjbb-a031c171"],
+      "symptomIds": ["generator-stopped", "service-call-prep"],
+      "partCaptureHints": ["generator model/spec", "hour meter", "fault blink count"]
+    },
+    {
+      "id": "onan-code-2",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": ["HGJBB Spec A-B", "QG RV generator"],
+      "code": "2",
+      "slug": "onan-code-2-low-oil-pressure",
+      "plainMeaning": "The Cummins Onan operator manual lists Code 2 as Low Oil Pressure.",
+      "ownerSafeActions": ["Turn the generator off.", "Let the generator cool before visual checks.", "Record oil level only if the model manual allows the owner check and the unit is off/cool."],
+      "serviceOnlyActions": ["Oil-pressure switch, engine, wiring, and internal generator diagnostics are service work."],
+      "safetyBoundary": "Do not run a generator with a low oil pressure fault. Avoid hot surfaces, moving parts, exhaust, fuel, and energized compartments.",
+      "sourceIds": ["onan-rv-manual-index", "onan-hgjbb-a031c171"],
+      "symptomIds": ["generator-stopped", "service-call-prep"],
+      "partCaptureHints": ["model/spec letter", "oil service date", "hour meter"]
+    },
+    {
+      "id": "onan-code-57",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": ["HGJAA Spec J-K", "HGJAB Spec J-L", "QG 5500/7000 EFI"],
+      "code": "57",
+      "slug": "onan-code-57-over-prime",
+      "plainMeaning": "The Cummins Onan HGJAA/HGJAB manual includes Code 57 as Over Prime.",
+      "ownerSafeActions": ["Turn the generator off.", "Avoid repeated priming attempts.", "Record fuel type and recent service history."],
+      "serviceOnlyActions": ["Fuel injector, priming, fuel pump, controller, and engine diagnosis belongs to Cummins service or a qualified generator technician."],
+      "safetyBoundary": "Do not open fuel components or run the generator with fuel odor. Shut down and ventilate safely.",
+      "sourceIds": ["onan-rv-manual-index", "onan-hgjaa-a035d009"],
+      "symptomIds": ["generator-stopped", "service-call-prep"],
+      "partCaptureHints": ["model/spec", "fuel type", "fault history"]
+    },
+    {
+      "id": "onan-code-12",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": ["HGJBB Spec A-B", "QG RV generator"],
+      "code": "12",
+      "slug": "onan-code-12-over-voltage",
+      "plainMeaning": "The Cummins Onan operator manual lists Code 12 as Over Voltage.",
+      "ownerSafeActions": ["Turn off the generator and disconnect sensitive loads if safe.", "Record which loads were running.", "Do not keep testing appliances on unstable generator output."],
+      "serviceOnlyActions": ["Voltage regulator, rotor, field, sense wiring, control card, and output testing are qualified generator service work."],
+      "safetyBoundary": "Generator output can be lethal. Do not open electrical compartments or probe output wiring unless qualified.",
+      "sourceIds": ["onan-rv-manual-index", "onan-hgjbb-a031c171"],
+      "symptomIds": ["generator-stopped", "low-voltage"],
+      "partCaptureHints": ["loads running", "surge protector readout", "model/spec"]
+    }
+  ],
+  "symptoms": [
+    {
+      "id": "refrigerator-not-cooling",
+      "slug": "rv-refrigerator-not-cooling",
+      "title": "RV refrigerator is not cooling",
+      "summary": "Use this when an absorption or compressor refrigerator shows a stopped-cooling, high-temperature, no co, or similar cooling fault.",
+      "safeChecklist": ["Move food if temperature is unsafe.", "Record brand, model, code, power source, outside temperature, and whether vents are blocked.", "Do not bypass recall, high-temperature, or cooling-unit safety devices."],
+      "sourceIds": ["dometic-ruc-support", "norcold-1200-owner", "norcold-polar-owner"]
+    },
+    {
+      "id": "refrigerator-lp-ignition",
+      "slug": "rv-refrigerator-lp-ignition-failure",
+      "title": "RV refrigerator or gas appliance will not ignite on LP",
+      "summary": "Use this for no FL, flame-sense, or ignition failures on LP appliances.",
+      "safeChecklist": ["Shut off LP if you smell gas.", "Do not hand-light appliances with electronic ignition.", "Record whether the problem happens only on LP mode."],
+      "sourceIds": ["norcold-polar-owner", "furrion-water-heater"]
+    },
+    {
+      "id": "water-heater-no-heat",
+      "slug": "rv-water-heater-no-heat-lockout",
+      "title": "RV water heater has no heat or lockout light",
+      "summary": "Use this for Suburban, Dometic/Atwood, or Furrion water heater lockout/no-heat conditions.",
+      "safeChecklist": ["Turn the appliance off.", "Confirm the tank is full for tank models.", "Do not repeatedly reset flame, ECO, thermal cut-off, or over-temperature faults."],
+      "sourceIds": ["suburban-tank-water-heater", "dometic-water-heater-wh", "furrion-water-heater"]
+    },
+    {
+      "id": "furnace-lockout",
+      "slug": "rv-furnace-lockout-no-ignition",
+      "title": "RV furnace locks out or will not ignite",
+      "summary": "Use this when a furnace fails ignition attempts, flashes lockout, or stops after blower operation.",
+      "safeChecklist": ["Turn the thermostat off.", "Check only for obvious blocked intake/exhaust openings.", "Stop repeated start attempts and call service if ignition fails again."],
+      "sourceIds": ["suburban-furnace-guide", "dometic-df-furnace"]
+    },
+    {
+      "id": "airflow-or-venting",
+      "slug": "rv-appliance-airflow-venting-fault",
+      "title": "Airflow, venting, or exhaust fault",
+      "summary": "Use this when a furnace, water heater, or refrigerator code points to airflow, pressure, venting, or exhaust.",
+      "safeChecklist": ["Shut the appliance off.", "Look only for obvious external blockage.", "Do not operate gas appliances with blocked exhaust or soot."],
+      "sourceIds": ["dometic-df-furnace", "suburban-furnace-guide", "furrion-water-heater"]
+    },
+    {
+      "id": "thermostat-communication",
+      "slug": "rv-thermostat-communication-error",
+      "title": "RV thermostat communication error",
+      "summary": "Use this when an HVAC thermostat shows Er, E3, or zone/control-box communication terms.",
+      "safeChecklist": ["Record thermostat model and affected zone.", "Turn HVAC off if the zone is not responding.", "Do not open rooftop electrical compartments."],
+      "sourceIds": ["coleman-9330-thermostat", "furrion-thermostat"]
+    },
+    {
+      "id": "thermostat-display",
+      "slug": "rv-thermostat-display-lo-hi",
+      "title": "RV thermostat display shows LO or HI",
+      "summary": "Use this when a thermostat display is outside its temperature range or not matching room conditions.",
+      "safeChecklist": ["Record room conditions.", "Capture thermostat model.", "Avoid changing wiring or internal settings."],
+      "sourceIds": ["coleman-9420-thermostat"]
+    },
+    {
+      "id": "low-voltage",
+      "slug": "rv-appliance-low-voltage",
+      "title": "RV appliance low-voltage warning",
+      "summary": "Use this when a refrigerator, thermostat, generator, leveling controller, or slide system points to low DC or unstable electrical supply.",
+      "safeChecklist": ["Check installed battery monitor readings.", "Record shore power/generator/battery state.", "Do not probe electrical panels unless qualified."],
+      "sourceIds": ["norcold-polar-owner", "lippert-ground-control", "lippert-in-wall-slide", "coleman-9420-thermostat"]
+    },
+    {
+      "id": "leveling-jack-error",
+      "slug": "rv-leveling-jack-error",
+      "title": "RV leveling jack error",
+      "summary": "Use this when Lippert Ground Control reports low voltage, excess angle, jack timeout, out-of-stroke, or sensor/controller terms.",
+      "safeChecklist": ["Keep people clear of jacks.", "Stop movement if the coach is unstable.", "Never use leveling jacks as service stands."],
+      "sourceIds": ["lippert-ground-control"]
+    },
+    {
+      "id": "slide-room-stuck",
+      "slug": "rv-slide-room-stuck-error",
+      "title": "RV slide room is stuck or controller flashes",
+      "summary": "Use this when a Lippert In-Wall Slide-out controller flashes red LED motor/battery/current/short faults.",
+      "safeChecklist": ["Stop slide movement.", "Keep hands and objects clear.", "Record red flash count and green motor indicator."],
+      "sourceIds": ["lippert-in-wall-slide"]
+    },
+    {
+      "id": "generator-stopped",
+      "slug": "onan-generator-stopped-fault-code",
+      "title": "Onan generator stopped and shows a fault code",
+      "summary": "Use this when an Onan/Cummins RV generator stops and flashes a numeric fault code.",
+      "safeChecklist": ["Turn the generator off.", "Do not run in unsafe ventilation conditions.", "Record model/spec, hour meter, code, load, weather, and fuel state."],
+      "sourceIds": ["onan-rv-manual-index", "onan-hgjbb-a031c171", "onan-hgjaa-a035d009"]
+    },
+    {
+      "id": "service-call-prep",
+      "slug": "rv-appliance-service-call-checklist",
+      "title": "Pre-service checklist for RV appliance calls",
+      "summary": "Use this to collect the facts a dealer, mobile tech, or manufacturer support line will ask for.",
+      "safeChecklist": ["Brand, model, serial number.", "Exact code and photo of display.", "Power source, LP state, battery voltage, weather, recent service, and part numbers visible without disassembly."],
+      "sourceIds": ["dometic-ruc-support", "norcold-polar-owner", "onan-rv-manual-index", "lippert-ground-control"]
+    }
+  ],
+  "monetization": {
+    "status": "disabled-until-traffic",
+    "disabledAdSlots": [
+      { "id": "home-inline-1", "minimumImpressions": 1000 },
+      { "id": "code-detail-bottom", "minimumImpressions": 500 },
+      { "id": "symptom-guide-bottom", "minimumImpressions": 500 }
+    ],
+    "affiliatePlaceholders": [
+      { "vendorCategory": "RV parts vendors", "status": "placeholder-only" },
+      { "vendorCategory": "mobile RV repair leads", "status": "backlog-only" },
+      { "vendorCategory": "sponsor slots", "status": "backlog-only" }
+    ]
+  }
+}
