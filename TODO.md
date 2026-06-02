@@ -22,19 +22,20 @@
 - [x] Add official OD-5001 low-flow/temperature-control/gas/winterizing pages plus Furrion/Lippert tankless support-video source links without adding new code entries.
 - [x] Add official Lippert/Girard GSWH-2 owner-manual display codes and Girard-specific tankless symptom guides.
 - [x] Add official legacy Lippert/Girard GSWH-1 and GSWH-1M owner-manual LED diagnostics plus WUD/gas/winterization symptom guides.
+- [x] Triage official symptom-only Dometic WH/OD-5001 and Furrion tankless support candidates; add owner-safe Dometic tank/OD-5001 symptom guidance plus Furrion E5/model-disambiguation sources without new code entries.
 - [ ] Add GSC property and submit sitemap after live URL is stable.
 
 ## Current State — 2026-06-02
 - Live URL: `https://rv-appliance-code-atlas.fly.dev/`
 - GitHub repo: `https://github.com/samuelfrench/rv-appliance-code-atlas`
 - Fly app: `rv-appliance-code-atlas`, one `shared-cpu-1x` 256 MB machine in `dfw`, auto-stop enabled.
-- Latest deploy: Fly release v13, image `deployment-01KT3RHHERCVRCMKGFXWW95YSW`, code commit `c764fc5`; Deploy run `26809167462` succeeded.
-- Corpus: `487` verified entries, `49` symptom guides, `97` official sources, `537` generated indexable pages.
-- Local verification passed: RED/GREEN corpus regression for exact GSWH-1 vs GSWH-1M owner-manual source separation, `npm run validate:corpus`, `npm run test:unit`, `npm run source:audit`, `npm run traffic:report`, `npm run verify:runtime`, `git diff --check`, staged `git diff --cached --check`, and fresh HTTP `200` checks for all 3 new official legacy Girard/Lippert source URLs. Build splits corpus to `dist/assets/corpus-DGzl0Lkw.json` at `763.10 kB` / `52.87 kB` gzip and main JS to `210.10 kB` / `65.81 kB` gzip with no Vite chunk warning.
-- Reviews passed: source/safety/spec approved; code-quality found one test-gap, fixed by exact per-family source assertions after a mutation RED/GREEN check.
-- Live verification passed: `/`, `/sitemap.xml`, `/corpus-stats.json`, three new legacy Girard code routes, and all four new legacy Girard symptom routes. Desktop and mobile Playwright found expected hydrated search order for `gswh1 3 flashes` and `gswh1m 5 flashes`, H1/source/safety content, and `0` console/page errors.
-- Source triage note: the official Lippert/Girard GSWH-1 and GSWH-1M owner manuals support LED entries `steady on`, `1 flash`, `2 flashes`, `3 flashes`, `4 flashes`, and `5 flashes`; the GSWH-1 WUD owner manual supports symptom-only winter-use/freezing guidance. Dometic WH/OD-5001 and Furrion tankless candidates from the same pass are deferred for owner-safe symptom-only triage. Rejected or deferred candidates include service-manual diagnostics, gas-pressure/voltage tests, repair videos, mirrors/forums, and docs without owner-facing table value.
-- Next automated batch goal: triage official symptom-only Dometic WH/OD-5001 and Furrion tankless support candidates from the latest source pass; add only owner-safe symptom guidance and model-disambiguation sources unless a new official fault/display table is verified.
+- Latest deploy: Fly release v14, image `deployment-01KT3TA9QCK8WRCSDASK482C4S`, code commit `66763b7`; Deploy run `26810708905` succeeded.
+- Corpus: `487` verified entries, `52` symptom guides, `110` official sources, `540` generated indexable pages.
+- Local verification passed: focused RED/GREEN corpus regression for Dometic WH/OD-5001 symptom-only sources plus Furrion E5/FWH09A separation, `npm run validate:corpus`, `npm run test:unit`, `npm run source:audit`, `npm run traffic:report`, `npm run verify:runtime`, `git diff --check`, staged `git diff --cached --check`, and fresh HTTP `200` checks for all 13 new official Dometic/Lippert/Furrion source URLs. Build splits corpus to `dist/assets/corpus-YTv0jI8J.json` at `772.05 kB` / `54.30 kB` gzip and main JS to `210.10 kB` / `65.81 kB` gzip with no Vite chunk warning.
+- Reviews passed: read-only source triage accepted the official Dometic WH/support and Lippert/Furrion sources, rejected duplicates/internal-service/old-spec candidates, spec/safety review passed with no findings, and code-quality review approved with no findings.
+- Live verification passed: `/`, `/sitemap.xml`, `/corpus-stats.json`, new Dometic winterizing, P/T air-gap, and OD-5001 no-flow symptom routes, plus enriched Furrion E5 and Dometic lockout code routes. Desktop and mobile Playwright verified H1/source/safety content, homepage search for `furrion tankless e5 blower`, and `0` console/page errors.
+- Source triage note: accepted official Dometic WH 2022 manual and Dometic support pages for winterize/flush, air gap, anode warning, odor, gas smell, and OD-5001 no-flow; accepted Lippert TI-514 only for current FWH09A-series E5 clarification and Furrion FWH09A/FWH09AFA-AB spec sheets only for model-disambiguation/low-flow/freeze symptoms. Rejected or deferred duplicate Dometic `Gas-smell-8c9`, OD-5001 Component Locations, Furrion `ccd-0006132`, Furrion `ccd-0005723`, and any internal repair guidance beyond owner-safe shutoff/record/call-service boundaries.
+- Next automated batch goal: research the next official manufacturer-hosted appliance support slice beyond the current water-heater batches, prioritizing verified fault/display tables or owner-safe symptom gaps from official sources.
 
 ## Corpus Expansion Backlog
 - [x] Add full Dometic RUC/RUA tables.
@@ -56,7 +57,8 @@
 - [x] Add remaining official OD-5001 low-flow and temperature-control symptom pages plus Furrion/Lippert tankless support-video source links; continue manufacturer-hosted table discovery without adding code entries unless an official fault/display table is verified.
 - [x] Research official owner-safe Girard/Lippert tankless and remaining manufacturer-hosted water-heater maintenance or winterization sources, keep model families separate, and add no code entries unless an official fault/display table is verified.
 - [x] Research official legacy Girard GSWH-1/GSWH-1M owner manuals and remaining manufacturer-hosted water-heater support sources; keep GSWH-1, GSWH-2, Furrion, Suburban, and Dometic model families separate and add code entries only from official fault/display tables.
-- [ ] Triage official symptom-only Dometic WH/OD-5001 and Furrion tankless support candidates from the latest source pass; add only owner-safe symptom guidance and model-disambiguation sources unless a new official fault/display table is verified.
+- [x] Triage official symptom-only Dometic WH/OD-5001 and Furrion tankless support candidates from the latest source pass; add only owner-safe symptom guidance and model-disambiguation sources unless a new official fault/display table is verified.
+- [ ] Research the next official manufacturer-hosted appliance support slice beyond the current water-heater batches, prioritizing verified fault/display tables or owner-safe symptom gaps from official sources.
 
 ## Launch Automation
 - [ ] Add weekly traffic report artifact once GSC is configured.

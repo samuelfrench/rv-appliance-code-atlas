@@ -37,9 +37,9 @@ npm run traffic:monitor
 
 Current corpus:
 - `487` verified entries
-- `49` symptom guides
-- `97` official sources
-- `537` generated indexable pages
+- `52` symptom guides
+- `110` official sources
+- `540` generated indexable pages
 
 Next automated batch goal:
-- Triage official symptom-only Dometic WH/OD-5001 and Furrion tankless support candidates from the latest source pass; add only owner-safe symptom guidance and model-disambiguation sources unless a new official fault/display table is verified.
+- Research the next official manufacturer-hosted appliance support slice beyond the current water-heater batches, prioritizing verified fault/display tables or owner-safe symptom gaps from official sources.
