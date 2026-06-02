@@ -6,6 +6,7 @@ const root = path.dirname(fileURLToPath(new URL("../package.json", import.meta.u
 const dist = path.join(root, "dist");
 const corpus = JSON.parse(fs.readFileSync(path.join(root, "src/data/corpus.json"), "utf8"));
 const appHtml = fs.readFileSync(path.join(dist, "index.html"), "utf8");
+const indexNow = corpus.site.indexNow ?? null;
 
 function xmlEscape(value) {
   return String(value)
@@ -59,7 +60,10 @@ fs.writeFileSync(
   `${JSON.stringify(
     {
       generatedAt: new Date().toISOString(),
-      status: "ready-no-key-configured",
+      status: indexNow?.keyLocation ? "ready-key-configured" : "ready-no-key-configured",
+      keyLocation: indexNow?.keyLocation ?? null,
+      submittedAt: indexNow?.submittedAt ?? null,
+      submitCommand: indexNow?.keyLocation ? "npm run traffic:indexnow:submit" : null,
       urlCount: urls.length,
       urls: urls.map((url) => url.loc),
     },

@@ -41,6 +41,7 @@
 - [x] Add official Cummins Onan generator symptom-only support pages for no-start, no-output/load management, altitude derating, fuel/oil maintenance, CO/exhaust shutdown, and low-battery cranking without inventing code entries.
 - [x] Add GSC property and submit sitemap after live URL is stable.
 - [x] Add weekly traffic report artifact once GSC is configured.
+- [x] Add IndexNow key after domain/live URL is chosen.
 
 ## Current State — 2026-06-02
 - Live URL: `https://rv-appliance-code-atlas.fly.dev/`
@@ -51,6 +52,7 @@
 - GSC URL-prefix property `https://rv-appliance-code-atlas.fly.dev/` verified with FILE token `googled22aa40f3a0e4dca.html`; Google Site Verification insert returned HTTP `200`.
 - GSC sitemap `https://rv-appliance-code-atlas.fly.dev/sitemap.xml` submitted; Search Console site add and sitemap submit both returned HTTP `204`, and API read-back found the property with `siteOwner` permission plus the submitted sitemap path.
 - Weekly GSC traffic artifact command added: `npm run traffic:gsc:weekly` writes ignored local artifact `reports/gsc-weekly-traffic.json`; dry-run is `npm run traffic:gsc:weekly:dry-run`. Default range uses the last 7 Pacific-time days ending 3 days ago to avoid preliminary GSC data, and token resolution tries readonly first before local ADC `webmasters` fallback. No scheduled GitHub Action is configured because local ADC exists now, while hosted scheduled runs need an explicit credential strategy.
+- IndexNow key configured for the Fly URL with root key file `public/2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18.txt`; local command `npm run traffic:indexnow:dry-run` writes ignored `reports/indexnow-submit-report.json`, and `npm run traffic:indexnow:submit` posts generated URLs to `https://api.indexnow.org/indexnow`.
 - Local and live verification passed for the weekly GSC traffic artifact: RED tests covered missing script, stale traffic goal, URL-prefix scheme/host pinning, sitemap scheme, Pacific-time non-preliminary date range, and readonly-token fallback; final `npm run validate:corpus`, `npm run test:unit` (`94` tests), `npm run source:audit`, `npm run traffic:report`, `npm run traffic:gsc:weekly:dry-run`, authenticated `GSC_QUOTA_PROJECT=coffee-explorer-480514 npm run traffic:gsc:weekly` (artifact `2026-05-24` to `2026-05-30`, `dataAvailable: false`), `git diff --check`, and `npm run verify:runtime` (`26` browser tests, `951` pages) passed; read-only spec and code-quality reviewers returned PASS; live Fly v35 smoke found corpus `819`/`131`/`317`, sitemap HTTP `200`, and mobile Onan lookup with `0` console/page errors.
 - Local verification passed for the GSC launch automation: RED focused unit tests failed on accepting `sc-domain:`/foreign/malformed site URLs; GREEN tests passed after URL-prefix host pinning, safer token-source errors, and fetch timeouts. Full `npm run validate:corpus`, `npm run test:unit` (`86` tests), `npm run source:audit`, `npm run traffic:report`, `npm run traffic:gsc:verify:dry-run`, `npm run traffic:gsc:dry-run`, `git diff --check`, and `npm run verify:runtime` (`26` browser tests, `951` generated pages) passed. Read-only reviewers found URL-prefix override/foreign-host issues, which were fixed with tests.
 - Local verification passed for the Cummins Onan generator symptom batch: RED focused unit/browser tests failed on missing official sources and missing routes; a hardened traffic-report test failed on the stale TODO next-goal line; GREEN tests passed after adding 4 official Cummins Onan sources, 6 owner-safe symptom guides, and exact TODO goal coverage. Full `npm run validate:corpus`, `npm run test:unit` (`79` tests), `npm run source:audit`, `npm run traffic:report`, `git diff --check`, and `npm run verify:runtime` (`26` browser tests, `951` generated pages) passed. Read-only source/safety reviewer returned PASS; data/search reviewer finding was fixed and covered by the hardened test.
@@ -75,7 +77,7 @@
 - Source triage note: accepted official Suburban SF-VH Furnace Ducting Guide and Suburban ST42/ST60 Tankless Water Heaters Product Overview for owner-safe model-specific ducting, return-air/register, thermostat-placement, and cold-inlet/winter-use symptom guidance. Rejected/deferred generic furnace product pages, optional support videos, forums, mirrors, and duct-port, cabinet, thermostat, LP, voltage, or internal service procedures beyond qualified-service boundaries.
 - Source triage note: accepted official Coleman-Mach FAQs, Cooling Performance Worksheet, rooftop operation/maintenance instructions, Chillgrille/control-kit instructions, Mach 8 heat-pump service manual, 45000 installation instructions, Mach 8 condensate-pump kit instructions, warranty refrigeration-circuit page, and 46515 packaged heat-pump owner manual for owner-safe rooftop AC/heat-pump symptom guidance. Rejected/deferred forums, mirrors, dev/staging host pages, package AC PDFs, installer-only delay kits, and refrigerant, line-voltage, control-box, capacitor, compressor, rooftop, drain-hose, gasket, or pump repair steps beyond qualified-service boundaries.
 - Source triage note: accepted official Cummins Onan RV Generator Quick Start Guide, RV Generator Parts and Maintenance Support, RV Generator Power Basics, and RV Generator Handbook for owner-safe no-start, no-output/load-management, altitude derating, fuel/oil maintenance, CO/exhaust shutdown, and battery cranking guides. Rejected/deferred optional QG/QD product specs, install/service manuals, forums, mirrors, and any fuel-line, exhaust-system, internal electrical, control-board, or generator repair steps beyond qualified-service boundaries.
-- Next automated batch goal: Add IndexNow key after domain/live URL is chosen.
+- Next automated batch goal: Add impression-based monetization readiness report after GSC data exists.
 
 ## Corpus Expansion Backlog
 - [x] Add full Dometic RUC/RUA tables.
@@ -120,5 +122,5 @@
 
 ## Launch Automation
 - [x] Add weekly traffic report artifact once GSC is configured.
-- [ ] Add IndexNow key after domain/live URL is chosen.
+- [x] Add IndexNow key after domain/live URL is chosen.
 - [ ] Add impression-based monetization readiness report after GSC data exists.

@@ -54,6 +54,17 @@ Writes ignored local report artifact: `reports/gsc-weekly-traffic.json`
 
 Default range: last 7 Pacific-time days ending 3 days ago, to avoid preliminary GSC data. The script tries a readonly Search Console token first and falls back to the locally authorized `webmasters` ADC scope when needed.
 
+IndexNow launch:
+
+```bash
+npm run traffic:indexnow:dry-run
+npm run traffic:indexnow:submit
+```
+
+Key location: `https://rv-appliance-code-atlas.fly.dev/2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18.txt`
+
+Writes ignored local report artifact: `reports/indexnow-submit-report.json`
+
 Traffic monitor:
 
 ```bash
@@ -67,4 +78,4 @@ Current corpus:
 - `951` generated indexable pages
 
 Next automated batch goal:
-- Add IndexNow key after domain/live URL is chosen.
+- Add impression-based monetization readiness report after GSC data exists.

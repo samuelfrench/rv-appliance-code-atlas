@@ -46,6 +46,11 @@ export type Corpus = {
       verifiedAt: string;
       sitemapSubmittedAt: string;
     };
+    indexNow?: {
+      key: string;
+      keyLocation: string;
+      submittedAt: string | null;
+    };
   };
   sources: Source[];
   entries: CorpusEntry[];

@@ -6,12 +6,21 @@ const root = path.dirname(fileURLToPath(new URL("../package.json", import.meta.u
 const corpus = JSON.parse(fs.readFileSync(path.join(root, "src/data/corpus.json"), "utf8"));
 const outputPath = path.join(root, "reports/traffic-readiness.json");
 const searchConsole = corpus.site.searchConsole ?? null;
+const indexNowConfig = corpus.site.indexNow ?? null;
 const weeklyTrafficArtifact = {
   path: "reports/gsc-weekly-traffic.json",
   command: "npm run traffic:gsc:weekly",
   dryRunCommand: "npm run traffic:gsc:weekly:dry-run",
   cadence: "weekly",
 };
+const indexNow = indexNowConfig
+  ? {
+      keyLocation: indexNowConfig.keyLocation,
+      dryRunCommand: "npm run traffic:indexnow:dry-run",
+      submitCommand: "npm run traffic:indexnow:submit",
+      submittedAt: indexNowConfig.submittedAt,
+    }
+  : null;
 
 function buildReport() {
   return {
@@ -23,6 +32,7 @@ function buildReport() {
     gscConfigured: Boolean(searchConsole?.siteUrl && searchConsole?.sitemapSubmittedAt),
     searchConsole,
     weeklyTrafficArtifact,
+    indexNow,
     verifiedEntries: corpus.entries.length,
     symptomGuides: corpus.symptoms.length,
     sourceCount: corpus.sources.length,
@@ -32,7 +42,9 @@ function buildReport() {
       currentImpressions: 0,
       ready: false,
     })),
-    nextAutomatedBatchGoal: "Add IndexNow key after domain/live URL is chosen.",
+    nextAutomatedBatchGoal: indexNow
+      ? "Add impression-based monetization readiness report after GSC data exists."
+      : "Add IndexNow key after domain/live URL is chosen.",
     monitorCommand: "npm run traffic:monitor",
   };
 }
