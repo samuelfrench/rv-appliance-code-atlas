@@ -2,8 +2,10 @@ import { describe, expect, it } from "vitest";
 import corpus from "../data/corpus.json";
 import {
   buildSearchIndex,
+  buildSymptomSearchIndex,
   getBrandCoverage,
   lookupEntries,
+  lookupSymptomGuides,
   summarizeCorpus,
   validateCorpus,
 } from "./corpus";
@@ -43,6 +45,15 @@ describe("verified corpus", () => {
     expect(lookupEntries(index, "onan 36 stopped").map((entry) => entry.code)).toContain("36");
     expect(lookupEntries(index, "furrion e3 thermostat").map((entry) => entry.code)).toContain("E3");
     expect(lookupEntries(index, "suburban reset light").map((entry) => entry.brand)).toContain("Suburban/Atwood");
+  });
+
+  it("finds symptom-only pages from owner symptom searches", () => {
+    const index = buildSymptomSearchIndex(corpus);
+
+    expect(lookupSymptomGuides(index, "rm10 gas smell")[0]?.slug).toBe("dometic-rm10-gas-smell");
+    expect(lookupSymptomGuides(index, "rm10 ammonia smell")[0]?.slug).toBe("dometic-rm10-ammonia-smell");
+    expect(lookupSymptomGuides(index, "rm10 defrost ice")[0]?.slug).toBe("dometic-rm10-defrost-evaporator-ice-buildup");
+    expect(lookupSymptomGuides(index, "rm10 internal batteries")[0]?.slug).toBe("dometic-rm10-internal-battery-packs");
   });
 
   it("ranks exact multi-word display codes ahead of generic partial matches", () => {
@@ -637,6 +648,136 @@ describe("verified corpus", () => {
 
     expect([...supportUrls.values()]).not.toContain(
       "https://support.dometic.com/en/rm10-refrigerators/My-refrigerator-shows-a-fault-or-a-failure-bfb3",
+    );
+  });
+
+  it("adds official Dometic RM10 symptom support pages without inventing code entries", () => {
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const supportUrls = new Map(corpus.sources.map((source) => [source.id, source.url]));
+    const symptomOnlySourceIds = [
+      "dometic-rm10-gas-operation-mains-supply-voltage-support",
+      "dometic-rm10-internal-batteries-change-support",
+      "dometic-rm10-defrost-refrigerator-support",
+      "dometic-rm10-door-ice-compartment-will-not-close-support",
+      "dometic-rm10-smell-ammonia-support",
+      "dometic-rm10-smell-gas-support",
+      "dometic-rm10-smell-melting-plastic-support",
+      "dometic-rm10-not-cooling-sufficiently-support",
+      "dometic-rm10-not-working-at-all-level-support",
+      "dometic-rm10-clean-refrigerator-drain-vents-support",
+      "dometic-rm10-low-outside-temperature-winter-cover-support",
+      "dometic-rm10-evaporator-fast-ice-buildup-support",
+      "dometic-rm10-evaporator-full-of-ice-support",
+      "dometic-rm10-door-ice-compartment-detached-support",
+      "dometic-rm10-first-gas-run-strange-smell-support",
+      "dometic-rm10-when-to-defrost-support",
+    ];
+
+    const expectedSymptomPages = new Map([
+      ["dometic-rm10-gas-operation-mains-supply-voltage-support", "https://support.dometic.com/en/rm10-refrigerators/Gas-operation-despite-connection-to-the-mains-supply-voltage-f9b4"],
+      ["dometic-rm10-internal-batteries-change-support", "https://support.dometic.com/en/rm10-refrigerators/How-to-change-the-internal-batteries-batteries-that-power-the-electronics-f8d9"],
+      ["dometic-rm10-defrost-refrigerator-support", "https://support.dometic.com/en/rm10-refrigerators/How-to-defrost-the-refrigerator-856"],
+      ["dometic-rm10-door-ice-compartment-will-not-close-support", "https://support.dometic.com/en/rm10-refrigerators/I-can-not-close-the-refrigerator-doorice-compartment-door-d6d5"],
+      ["dometic-rm10-smell-ammonia-support", "https://support.dometic.com/en/rm10-refrigerators/I-smell-ammonia-b0ef"],
+      ["dometic-rm10-smell-gas-support", "https://support.dometic.com/en/rm10-refrigerators/I-smell-gas-6795"],
+      ["dometic-rm10-smell-melting-plastic-support", "https://support.dometic.com/en/rm10-refrigerators/I-smell-melting-plastic-ce75"],
+      ["dometic-rm10-not-cooling-sufficiently-support", "https://support.dometic.com/en/rm10-refrigerators/My-refrigerator-is-not-cooling-sufficiently-254e"],
+      ["dometic-rm10-not-working-at-all-level-support", "https://support.dometic.com/en/rm10-refrigerators/My-refrigerator-is-not-working-at-all-feec"],
+      ["dometic-rm10-clean-refrigerator-drain-vents-support", "https://support.dometic.com/en/rm10-refrigerators/How-to-clean-the-refrigerator-3658"],
+      ["dometic-rm10-low-outside-temperature-winter-cover-support", "https://support.dometic.com/en/rm10-refrigerators/How-to-operate-the-refrigerator-during-low-outside-temperatures-1039"],
+      ["dometic-rm10-evaporator-fast-ice-buildup-support", "https://support.dometic.com/en/rm10-refrigerators/The-evaporator-fills-up-with-ice-much-faster-than-before-e5e4"],
+      ["dometic-rm10-evaporator-full-of-ice-support", "https://support.dometic.com/en/rm10-refrigerators/The-evaporator-is-full-of-ice-b795"],
+      ["dometic-rm10-door-ice-compartment-detached-support", "https://support.dometic.com/en/rm10-refrigerators/The-refrigerator-doorice-compartment-door-has-completely-detached-from-the-device-1656"],
+      ["dometic-rm10-first-gas-run-strange-smell-support", "https://support.dometic.com/en/rm10-refrigerators/There-is-a-strange-smell-the-first-time-I-run-the-refrigerator-on-gas-8d49"],
+      ["dometic-rm10-when-to-defrost-support", "https://support.dometic.com/en/rm10-refrigerators/When-should-I-defrost-the-refrigerator-e4bb"],
+    ]);
+
+    for (const [sourceId, url] of expectedSymptomPages) {
+      expect(supportUrls.get(sourceId), sourceId).toBe(url);
+    }
+
+    expect(corpus.sources.filter((source) => symptomOnlySourceIds.includes(source.id))).toHaveLength(
+      symptomOnlySourceIds.length,
+    );
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => symptomOnlySourceIds.includes(sourceId)))).toHaveLength(0);
+
+    expect(symptomById.get("dometic-rm10-gas-operation-mains-supply")?.sourceIds).toContain(
+      "dometic-rm10-gas-operation-mains-supply-voltage-support",
+    );
+    expect(symptomById.get("dometic-rm10-cooling-or-level")?.sourceIds).toEqual(
+      expect.arrayContaining(["dometic-rm10-not-cooling-sufficiently-support", "dometic-rm10-not-working-at-all-level-support"]),
+    );
+    expect(symptomById.get("dometic-rm10-gas-smell")?.sourceIds).toContain("dometic-rm10-smell-gas-support");
+    expect(symptomById.get("dometic-rm10-ammonia-smell")?.sourceIds).toContain("dometic-rm10-smell-ammonia-support");
+    expect(symptomById.get("dometic-rm10-new-gas-run-plastic-smell")?.sourceIds).toEqual(
+      expect.arrayContaining(["dometic-rm10-smell-melting-plastic-support", "dometic-rm10-first-gas-run-strange-smell-support"]),
+    );
+    expect(symptomById.get("dometic-rm10-cleaning-drain-vent-maintenance")?.sourceIds).toContain(
+      "dometic-rm10-clean-refrigerator-drain-vents-support",
+    );
+    expect(symptomById.get("dometic-rm10-low-outside-temperature-winter-covers")?.sourceIds).toContain(
+      "dometic-rm10-low-outside-temperature-winter-cover-support",
+    );
+    expect(symptomById.get("dometic-rm10-door-ice-compartment")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "dometic-rm10-door-ice-compartment-will-not-close-support",
+        "dometic-rm10-door-ice-compartment-detached-support",
+      ]),
+    );
+    expect(symptomById.get("dometic-rm10-defrost-evaporator-ice")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "dometic-rm10-defrost-refrigerator-support",
+        "dometic-rm10-when-to-defrost-support",
+        "dometic-rm10-evaporator-full-of-ice-support",
+        "dometic-rm10-evaporator-fast-ice-buildup-support",
+      ]),
+    );
+    expect(symptomById.get("dometic-rm10-internal-battery-packs")?.sourceIds).toContain(
+      "dometic-rm10-internal-batteries-change-support",
+    );
+
+    expect(symptomById.get("dometic-rm10-gas-smell")?.safeChecklist.join(" ")).toMatch(/do not operate electrical equipment/i);
+    expect(symptomById.get("dometic-rm10-ammonia-smell")?.safeChecklist.join(" ")).toMatch(/switch off/i);
+    expect(symptomById.get("dometic-rm10-defrost-evaporator-ice")?.safeChecklist.join(" ")).toMatch(/mechanical tools|hair dryer/i);
+
+    const newSymptomIds = [
+      "dometic-rm10-gas-operation-mains-supply",
+      "dometic-rm10-cooling-or-level",
+      "dometic-rm10-gas-smell",
+      "dometic-rm10-ammonia-smell",
+      "dometic-rm10-new-gas-run-plastic-smell",
+      "dometic-rm10-cleaning-drain-vent-maintenance",
+      "dometic-rm10-low-outside-temperature-winter-covers",
+      "dometic-rm10-door-ice-compartment",
+      "dometic-rm10-defrost-evaporator-ice",
+      "dometic-rm10-internal-battery-packs",
+    ];
+    for (const symptomId of newSymptomIds) {
+      expect(symptomById.get(symptomId)?.safeChecklist.join(" "), symptomId).not.toMatch(
+        /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\brefrigerant\b|\bprobe\b|\bopen (the )?(fuel|gas|electrical|rooftop)/i,
+      );
+    }
+
+    expect(symptomById.get("refrigerator-not-cooling")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "dometic-rm10-not-cooling-sufficiently-support",
+        "dometic-rm10-not-working-at-all-level-support",
+        "dometic-rm10-clean-refrigerator-drain-vents-support",
+        "dometic-rm10-low-outside-temperature-winter-cover-support",
+      ]),
+    );
+    expect(symptomById.get("low-voltage")?.sourceIds).toEqual(
+      expect.arrayContaining(["dometic-rm10-gas-operation-mains-supply-voltage-support", "dometic-rm10-internal-batteries-change-support"]),
+    );
+
+    expect([...supportUrls.values()]).not.toContain("https://support.dometic.com/en/rm10-refrigerators/Strange-smell-from-the-refrigerator-1b4c");
+    expect([...supportUrls.values()]).not.toContain("https://support.dometic.com/en/rm10-refrigerators/My-gas-cylinder-is-empty-c4e8");
+    expect([...supportUrls.values()]).not.toContain("https://support.dometic.com/en/rm10-refrigerators/What-should-I-do-if-I-smell-ammonia-86e2");
+    expect([...supportUrls.values()]).not.toContain("https://support.dometic.com/en/rm10-refrigerators/Where-can-I-find-the-nearest-service-provider-bb4c");
+
+    const manualRows = corpus.entries.filter((entry) => entry.sourceIds.includes("dometic-rm10-rms10-operating"));
+    expect(manualRows.map((entry) => entry.code)).toEqual(
+      expect.arrayContaining(["W05", "W06", "W10 + beep", "W11", "E03", "E07", "E08", "E09", "E12", "E13", "E14", "E50", "E51", "E52", "E53"]),
     );
   });
 

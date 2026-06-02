@@ -16,11 +16,13 @@ import {
 import corpusUrl from "./data/corpus.json?url";
 import {
   buildSearchIndex,
+  buildSymptomSearchIndex,
   getBrandCoverage,
   getEntryBySlug,
   getSourcesForIds,
   getSymptomBySlug,
   lookupEntries,
+  lookupSymptomGuides,
   slugPathForEntry,
   slugPathForSymptom,
   summarizeCorpus,
@@ -34,6 +36,7 @@ import "./styles.css";
 type PreparedCorpus = {
   corpus: Corpus;
   searchIndex: ReturnType<typeof buildSearchIndex>;
+  symptomSearchIndex: ReturnType<typeof buildSymptomSearchIndex>;
   summary: ReturnType<typeof summarizeCorpus>;
   brandCoverage: ReturnType<typeof getBrandCoverage>;
 };
@@ -56,6 +59,7 @@ function prepareCorpus(corpus: Corpus): PreparedCorpus {
   return {
     corpus,
     searchIndex: buildSearchIndex(corpus),
+    symptomSearchIndex: buildSymptomSearchIndex(corpus),
     summary: summarizeCorpus(corpus),
     brandCoverage: getBrandCoverage(corpus),
   };
@@ -119,9 +123,19 @@ function ReadyApp({ data }: { data: PreparedCorpus }) {
 }
 
 function Home({ data }: { data: PreparedCorpus }) {
-  const { corpus, searchIndex, summary, brandCoverage } = data;
+  const { corpus, searchIndex, symptomSearchIndex, summary, brandCoverage } = data;
   const [query, setQuery] = useState("");
-  const results = useMemo(() => lookupEntries(searchIndex, query).slice(0, query ? 12 : 8), [query]);
+  const results = useMemo(() => {
+    const entryResults = lookupEntries(searchIndex, query).map((entry) => ({ kind: "entry" as const, entry }));
+    if (!query.trim()) return entryResults.slice(0, 8);
+
+    const symptomResults = lookupSymptomGuides(symptomSearchIndex, query).map((symptom) => ({
+      kind: "symptom" as const,
+      symptom,
+    }));
+
+    return [...symptomResults.slice(0, 4), ...entryResults].slice(0, 12);
+  }, [query, searchIndex, symptomSearchIndex]);
 
   return (
     <>
@@ -174,8 +188,12 @@ function Home({ data }: { data: PreparedCorpus }) {
         <section className="results-band" aria-label="Lookup results">
           <SectionHeader icon={<FileSearch />} eyebrow="Lookup" title={query ? `Matches for "${query}"` : "Start with common searches"} />
           <div className="result-grid">
-            {results.map((entry) => (
-              <EntryCard key={entry.id} entry={entry} />
+            {results.map((result) => (
+              result.kind === "entry" ? (
+                <EntryCard key={`entry-${result.entry.id}`} entry={result.entry} />
+              ) : (
+                <SymptomResultCard key={`symptom-${result.symptom.id}`} symptom={result.symptom} />
+              )
             ))}
           </div>
         </section>
@@ -252,6 +270,20 @@ function EntryCard({ entry }: { entry: CorpusEntry }) {
       </h3>
       <p>{entry.plainMeaning}</p>
       <small>{entry.modelFamilies.join(", ")}</small>
+    </a>
+  );
+}
+
+function SymptomResultCard({ symptom }: { symptom: SymptomGuide }) {
+  return (
+    <a className="entry-card symptom-result-card" href={slugPathForSymptom(symptom)} aria-label={`Symptom guide ${symptom.title}`}>
+      <div className="entry-top">
+        <span>Symptom guide</span>
+        <strong>Guide</strong>
+      </div>
+      <h3>{symptom.title}</h3>
+      <p>{symptom.summary}</p>
+      <small>Owner-safe checklist and official source</small>
     </a>
   );
 }

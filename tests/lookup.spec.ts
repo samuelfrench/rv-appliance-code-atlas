@@ -28,6 +28,19 @@ test("symptom guide and checklist surfaces service-call prep without checkout", 
   await expect(page.getByText("Ad slots disabled until traffic data supports them.")).toBeVisible();
 });
 
+test("lookup surfaces RM10 symptom-only support pages", async ({ page }) => {
+  await page.goto("/");
+
+  await page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" }).fill("rm10 gas smell");
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const gasSmell = lookupResults.locator('a[href="/symptoms/dometic-rm10-gas-smell/"]');
+  await expect(gasSmell).toBeVisible();
+  await gasSmell.click();
+
+  await expect(page.getByRole("heading", { name: "Dometic RM10 gas smell" })).toBeVisible();
+  await expect(page.getByText("Do not operate electrical equipment")).toBeVisible();
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 

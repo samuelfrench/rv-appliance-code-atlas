@@ -1791,6 +1791,134 @@
       "official": true
     },
     {
+      "id": "dometic-rm10-gas-operation-mains-supply-voltage-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Gas Operation Despite Mains Supply Voltage Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/Gas-operation-despite-connection-to-the-mains-supply-voltage-f9b4",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-internal-batteries-change-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Change Internal Batteries Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/How-to-change-the-internal-batteries-batteries-that-power-the-electronics-f8d9",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-defrost-refrigerator-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 How To Defrost The Refrigerator Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/How-to-defrost-the-refrigerator-856",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-door-ice-compartment-will-not-close-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Door Or Ice Compartment Door Will Not Close Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/I-can-not-close-the-refrigerator-doorice-compartment-door-d6d5",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-smell-ammonia-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 I Smell Ammonia Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/I-smell-ammonia-b0ef",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-smell-gas-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 I Smell Gas Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/I-smell-gas-6795",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-smell-melting-plastic-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 I Smell Melting Plastic Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/I-smell-melting-plastic-ce75",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-not-cooling-sufficiently-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Refrigerator Not Cooling Sufficiently Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/My-refrigerator-is-not-cooling-sufficiently-254e",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-not-working-at-all-level-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Refrigerator Not Working At All Level Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/My-refrigerator-is-not-working-at-all-feec",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-clean-refrigerator-drain-vents-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Clean Refrigerator Drain And Vents Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/How-to-clean-the-refrigerator-3658",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-low-outside-temperature-winter-cover-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Low Outside Temperature Winter Cover Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/How-to-operate-the-refrigerator-during-low-outside-temperatures-1039",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-evaporator-fast-ice-buildup-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Evaporator Fills With Ice Faster Than Before Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/The-evaporator-fills-up-with-ice-much-faster-than-before-e5e4",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-evaporator-full-of-ice-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Evaporator Full Of Ice Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/The-evaporator-is-full-of-ice-b795",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-door-ice-compartment-detached-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Door Or Ice Compartment Door Detached Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/The-refrigerator-doorice-compartment-door-has-completely-detached-from-the-device-1656",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-first-gas-run-strange-smell-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Strange Smell First Gas Run Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/There-is-a-strange-smell-the-first-time-I-run-the-refrigerator-on-gas-8d49",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-when-to-defrost-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 When To Defrost Refrigerator Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/When-should-I-defrost-the-refrigerator-e4bb",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
       "id": "dometic-rm10-rms10-operating",
       "brand": "Dometic",
       "title": "Dometic RM10.5/RMS10.5 Absorption Refrigerator Operating Manual",
@@ -31248,7 +31376,13 @@
         "dometic-rmd8-operating",
         "dometic-rm10-rms10-operating",
         "dometic-rmd10-5-operating",
-        "dometic-rml10-4-operating"
+        "dometic-rml10-4-operating",
+        "dometic-rm10-not-cooling-sufficiently-support",
+        "dometic-rm10-not-working-at-all-level-support",
+        "dometic-rm10-clean-refrigerator-drain-vents-support",
+        "dometic-rm10-low-outside-temperature-winter-cover-support",
+        "dometic-rm10-evaporator-full-of-ice-support",
+        "dometic-rm10-evaporator-fast-ice-buildup-support"
       ]
     },
     {
@@ -31343,7 +31477,10 @@
         "suburban-st42-st60-water-heater",
         "dometic-water-heater-maintenance-support",
         "furrion-tankless-basic-troubleshooting-video",
-        "furrion-tankless-e5-ti514"
+        "furrion-tankless-e5-ti514",
+        "dometic-rm10-not-cooling-sufficiently-support",
+        "dometic-rm10-clean-refrigerator-drain-vents-support",
+        "dometic-rm10-low-outside-temperature-winter-cover-support"
       ]
     },
     {
@@ -31402,7 +31539,9 @@
         "dometic-rmd8-operating",
         "dometic-rm10-rms10-operating",
         "dometic-rmd10-5-operating",
-        "dometic-rml10-4-operating"
+        "dometic-rml10-4-operating",
+        "dometic-rm10-gas-operation-mains-supply-voltage-support",
+        "dometic-rm10-internal-batteries-change-support"
       ]
     },
     {
@@ -31491,7 +31630,23 @@
         "dometic-od5001-no-water-flow-support",
         "furrion-tankless-e5-ti514",
         "furrion-fwh09a-spec-sheet",
-        "furrion-fwh09afa-ab-flangeless-spec"
+        "furrion-fwh09afa-ab-flangeless-spec",
+        "dometic-rm10-gas-operation-mains-supply-voltage-support",
+        "dometic-rm10-internal-batteries-change-support",
+        "dometic-rm10-defrost-refrigerator-support",
+        "dometic-rm10-door-ice-compartment-will-not-close-support",
+        "dometic-rm10-smell-ammonia-support",
+        "dometic-rm10-smell-gas-support",
+        "dometic-rm10-smell-melting-plastic-support",
+        "dometic-rm10-not-cooling-sufficiently-support",
+        "dometic-rm10-not-working-at-all-level-support",
+        "dometic-rm10-clean-refrigerator-drain-vents-support",
+        "dometic-rm10-low-outside-temperature-winter-cover-support",
+        "dometic-rm10-evaporator-fast-ice-buildup-support",
+        "dometic-rm10-evaporator-full-of-ice-support",
+        "dometic-rm10-door-ice-compartment-detached-support",
+        "dometic-rm10-first-gas-run-strange-smell-support",
+        "dometic-rm10-when-to-defrost-support"
       ]
     },
     {
@@ -32316,6 +32471,161 @@
         "norcold-1200-owner",
         "norcold-n41-n51-owner",
         "norcold-n400-n510-owner"
+      ]
+    },
+    {
+      "id": "dometic-rm10-gas-operation-mains-supply",
+      "slug": "dometic-rm10-gas-operation-despite-mains-supply",
+      "title": "Dometic RM10 runs on gas while connected to mains power",
+      "summary": "Use this when an RM10 refrigerator switches to gas even though the RV is connected to mains or shore power. Dometic points to low grid voltage and automatic return to AC operation when voltage is sufficient.",
+      "safeChecklist": [
+        "Confirm from normal RV indicators whether shore power or generator AC power is available.",
+        "Wait for the refrigerator to return to AC operation automatically when mains voltage is sufficient.",
+        "Record selected mode, power source, campsite or generator state, and whether other appliances show power problems.",
+        "Use qualified RV electrical service for repeated low-voltage, supply, wiring, or refrigerator control concerns."
+      ],
+      "sourceIds": [
+        "dometic-rm10-gas-operation-mains-supply-voltage-support"
+      ]
+    },
+    {
+      "id": "dometic-rm10-cooling-or-level",
+      "slug": "dometic-rm10-not-cooling-or-not-working-level-ventilation",
+      "title": "Dometic RM10 not cooling enough or not working at all",
+      "summary": "Use this when an RM10 does not cool sufficiently or seems not to work. Dometic points owners to visible ventilation grilles and refrigerator/RV level before service diagnosis.",
+      "safeChecklist": [
+        "Move food if refrigerator temperature is unsafe.",
+        "Check that ventilation grilles, the roof vent, and exterior airflow openings are not covered or dirty from normal safe access.",
+        "Level the RV and refrigerator; Dometic says more than 5 degrees off-level can affect operation.",
+        "Call qualified RV refrigerator service if cooling stays poor after visible ventilation and level checks."
+      ],
+      "sourceIds": [
+        "dometic-rm10-not-cooling-sufficiently-support",
+        "dometic-rm10-not-working-at-all-level-support"
+      ]
+    },
+    {
+      "id": "dometic-rm10-gas-smell",
+      "slug": "dometic-rm10-gas-smell",
+      "title": "Dometic RM10 gas smell",
+      "summary": "Use this when gas odor is present near a Dometic RM10 refrigerator or inside the RV.",
+      "safeChecklist": [
+        "Open windows, leave the room or RV, and keep people away from flames and ignition sources.",
+        "Do not operate electrical equipment, switches, radios, phones, engines, generators, or flames in the RV.",
+        "Switch off all gas connections only if it is safe to do so from normal shutoff points.",
+        "Contact authorized specialist personnel, the gas supplier, or emergency services before restoring gas."
+      ],
+      "sourceIds": [
+        "dometic-rm10-smell-gas-support"
+      ]
+    },
+    {
+      "id": "dometic-rm10-ammonia-smell",
+      "slug": "dometic-rm10-ammonia-smell",
+      "title": "Dometic RM10 ammonia smell",
+      "summary": "Use this when an ammonia smell is present around an RM10 absorption refrigerator. Dometic tells owners to switch the appliance off, ventilate, and go to a dealer or Dometic service provider.",
+      "safeChecklist": [
+        "Switch off the appliance.",
+        "Open all windows and doors to ventilate the RV.",
+        "Do not restart the refrigerator after an ammonia smell.",
+        "Immediately contact a dealer, Dometic service provider, or qualified RV refrigerator technician."
+      ],
+      "sourceIds": [
+        "dometic-rm10-smell-ammonia-support"
+      ]
+    },
+    {
+      "id": "dometic-rm10-new-gas-run-plastic-smell",
+      "slug": "dometic-rm10-first-gas-run-plastic-smell",
+      "title": "Dometic RM10 plastic smell on first gas run",
+      "summary": "Use this only for a brand-new RM10 with a plastic or paint smell during the first gas-mode run and no gas, ammonia, smoke, or electrical odor.",
+      "safeChecklist": [
+        "Confirm this is a brand-new first-use situation, not gas odor, ammonia odor, smoke, or an electrical smell.",
+        "Open a window and monitor the refrigerator during the brief first gas-mode run Dometic describes.",
+        "Stop the appliance and call service if the odor persists, returns, or seems like gas, ammonia, smoke, or an electrical fault."
+      ],
+      "sourceIds": [
+        "dometic-rm10-smell-melting-plastic-support",
+        "dometic-rm10-first-gas-run-strange-smell-support"
+      ]
+    },
+    {
+      "id": "dometic-rm10-cleaning-drain-vent-maintenance",
+      "slug": "dometic-rm10-cleaning-condensate-drain-ventilation-grilles",
+      "title": "Dometic RM10 cleaning, condensate drain, and ventilation grilles",
+      "summary": "Use this when RM10 cooling, odor, drain, or vent questions point to owner cleaning and visible ventilation maintenance.",
+      "safeChecklist": [
+        "Disconnect the refrigerator from the energy supply using normal owner controls before cleaning.",
+        "Clean the interior with a soft cloth, lukewarm water, and mild detergent, then dry it thoroughly.",
+        "Keep water away from seals and electronics, and do not use hard, pointed, abrasive, or soda-based cleaning tools.",
+        "Clean the condensate drain and exterior ventilation grilles only where they are owner-accessible without disassembly."
+      ],
+      "sourceIds": [
+        "dometic-rm10-clean-refrigerator-drain-vents-support"
+      ]
+    },
+    {
+      "id": "dometic-rm10-low-outside-temperature-winter-covers",
+      "slug": "dometic-rm10-low-outside-temperature-winter-covers",
+      "title": "Dometic RM10 low outside temperature winter covers",
+      "summary": "Use this when an RM10 loses cooling capacity in low ambient temperatures and Dometic winter-cover guidance may apply.",
+      "safeChecklist": [
+        "Install Dometic winter covers only as specified for the selected energy mode.",
+        "In AC or DC mode, use both winter covers if low outside temperature affects cooling capacity.",
+        "In gas or automatic mode, use only the lower winter cover so heat and fumes can dissipate properly.",
+        "Call qualified service if low-temperature cooling loss repeats, odor appears, or LP/electrical symptoms appear."
+      ],
+      "sourceIds": [
+        "dometic-rm10-low-outside-temperature-winter-cover-support"
+      ]
+    },
+    {
+      "id": "dometic-rm10-door-ice-compartment",
+      "slug": "dometic-rm10-door-or-ice-compartment-door-problem",
+      "title": "Dometic RM10 refrigerator or ice compartment door problem",
+      "summary": "Use this when an RM10 refrigerator door or ice-compartment door will not close or has detached.",
+      "safeChecklist": [
+        "Check whether the owner-visible winter-position plastic part is blocking the door handle from closing.",
+        "Close or reseat the refrigerator or ice-compartment door only if the model-specific Dometic guidance is clear and the door moves freely.",
+        "Beware of injury if the door has detached.",
+        "Call service for damaged hinges, latch parts, locking pins, twisted hardware, or any door that does not reseat safely."
+      ],
+      "sourceIds": [
+        "dometic-rm10-door-ice-compartment-will-not-close-support",
+        "dometic-rm10-door-ice-compartment-detached-support"
+      ]
+    },
+    {
+      "id": "dometic-rm10-defrost-evaporator-ice",
+      "slug": "dometic-rm10-defrost-evaporator-ice-buildup",
+      "title": "Dometic RM10 evaporator ice buildup or defrosting",
+      "summary": "Use this when RM10 evaporator fins are frosted, full of ice, or building ice faster than before.",
+      "safeChecklist": [
+        "Defrost when frost on the fins is about 3 mm or 0.118 inches thick; uneven frost on one side can be normal.",
+        "Do not use mechanical tools or a hair dryer to remove ice or loosen frozen items.",
+        "Record rapid ice buildup, temperature setting, door behavior, and whether the refrigerator seems to run at maximum power.",
+        "Use an authorized repair centre for fast-repeat ice buildup, suspected temperature-sensor trouble, or cooling-unit positioning concerns."
+      ],
+      "sourceIds": [
+        "dometic-rm10-defrost-refrigerator-support",
+        "dometic-rm10-when-to-defrost-support",
+        "dometic-rm10-evaporator-full-of-ice-support",
+        "dometic-rm10-evaporator-fast-ice-buildup-support"
+      ]
+    },
+    {
+      "id": "dometic-rm10-internal-battery-packs",
+      "slug": "dometic-rm10-internal-battery-packs",
+      "title": "Dometic RM10 internal battery packs",
+      "summary": "Use this when an RM10 owner is changing the internal battery packs that power the electronics during unavailable 12 V DC supply.",
+      "safeChecklist": [
+        "Use the internal battery packs only as Dometic describes when the vehicle 12 V DC supply is unavailable or cut off.",
+        "Replace only the accessible battery packs under the operating element, using 12 AA batteries total.",
+        "Record controller type, battery age, and whether the refrigerator switches back to normal RV power.",
+        "Call qualified service for battery-pack contacts, wiring, electronics, or refrigerator control issues beyond normal battery handling."
+      ],
+      "sourceIds": [
+        "dometic-rm10-internal-batteries-change-support"
       ]
     },
     {

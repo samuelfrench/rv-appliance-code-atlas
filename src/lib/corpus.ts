@@ -175,6 +175,7 @@ export function summarizeCorpus(corpus: Corpus): CorpusSummary {
 }
 
 export type SearchIndexEntry = CorpusEntry & { searchText: string; searchTokens: Set<string> };
+export type SymptomSearchIndexEntry = SymptomGuide & { searchText: string; searchTokens: Set<string> };
 
 function searchableParts(parts: string[]) {
   const joined = parts.join(" ").toLowerCase();
@@ -204,6 +205,13 @@ export function buildSearchIndex(corpus: Corpus): SearchIndexEntry[] {
       entry.ownerSafeActions.join(" "),
       entry.symptomIds.map((id) => symptomsById.get(id)?.title ?? "").join(" "),
     ]),
+  }));
+}
+
+export function buildSymptomSearchIndex(corpus: Corpus): SymptomSearchIndexEntry[] {
+  return corpus.symptoms.map((symptom) => ({
+    ...symptom,
+    ...searchableParts([symptom.id, symptom.slug, symptom.title, symptom.summary, symptom.safeChecklist.join(" ")]),
   }));
 }
 
@@ -241,6 +249,40 @@ export function lookupEntries(index: SearchIndexEntry[], query: string): CorpusE
     .filter((item) => item.score > 0)
     .sort((a, b) => b.score - a.score || a.entry.brand.localeCompare(b.entry.brand))
     .map((item) => item.entry);
+}
+
+export function lookupSymptomGuides(index: SymptomSearchIndexEntry[], query: string): SymptomGuide[] {
+  const terms = Array.from(
+    new Set(
+      query
+        .toLowerCase()
+        .split(/[^a-z0-9]+/)
+        .filter(Boolean),
+    ),
+  );
+
+  if (!terms.length) return index.slice(0, 8);
+
+  const phrase = terms.join(" ");
+
+  return index
+    .map((symptom) => {
+      const matchedTerms = terms.filter((term) => symptom.searchTokens.has(term) || symptom.searchText.includes(term));
+      const allTermsMatch = matchedTerms.length === terms.length;
+      const missingTerms = terms.length - matchedTerms.length;
+      const titleText = symptom.title.toLowerCase();
+      const slugText = symptom.slug.replace(/[^a-z0-9]+/g, " ");
+      const score = terms.reduce((total, term) => {
+        if (symptom.searchTokens.has(term)) return total + 1;
+        if (symptom.searchText.includes(term)) return total + 0.25;
+        return total;
+      }, (allTermsMatch ? 35 : 0) + (titleText.includes(phrase) ? 30 : 0) + (slugText.includes(phrase) ? 20 : 0) + matchedTerms.length * 3 - missingTerms * 8);
+
+      return { symptom, score };
+    })
+    .filter((item) => item.score > 0)
+    .sort((a, b) => b.score - a.score || a.symptom.title.localeCompare(b.symptom.title))
+    .map((item) => item.symptom);
 }
 
 export function getEntryBySlug(corpus: Corpus, slug: string) {

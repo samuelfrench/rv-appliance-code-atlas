@@ -10,7 +10,7 @@ describe("traffic readiness report", () => {
     const report = JSON.parse(output);
 
     expect(report.nextAutomatedBatchGoal).toBe(
-      "Triage remaining official Dometic RM10 refrigerator symptom/support pages from sitemap-verified support URLs, starting with gas-operation despite mains supply, cooling, smell, door, defrost, and internal-battery pages; add only owner-safe symptom aliases.",
+      "Triage official Dometic RMD10/RML10/RMS10 refrigerator support-page symptom aliases from sitemap-verified pages, starting with door, defrost, cooling, smell, low-temperature, cleaning, and internal-battery overlap; add only non-duplicate owner-safe symptom sources.",
     );
 
     expect(readFileSync("README.md", "utf8")).toContain(report.nextAutomatedBatchGoal);
