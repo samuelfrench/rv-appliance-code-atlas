@@ -45,6 +45,17 @@ describe("verified corpus", () => {
     expect(lookupEntries(index, "suburban reset light").map((entry) => entry.brand)).toContain("Suburban/Atwood");
   });
 
+  it("ranks exact multi-word display codes ahead of generic partial matches", () => {
+    const index = buildSearchIndex(corpus);
+
+    expect(lookupEntries(index, "lippert onecontrol low voltage")[0]?.slug).toBe(
+      "lippert-ground-control-onecontrol-5th-low-voltage",
+    );
+    expect(lookupEntries(index, "furrion french door e1 ov alm")[0]?.slug).toBe(
+      "furrion-french-door-refrigerator-e1-ov-alm",
+    );
+  });
+
   it("summarizes code, source, symptom, and monetization readiness counts", () => {
     const summary = summarizeCorpus(corpus);
 

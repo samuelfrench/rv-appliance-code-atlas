@@ -204,11 +204,17 @@ export function lookupEntries(index: SearchIndexEntry[], query: string): CorpusE
 
   return index
     .map((entry) => {
+      const codeTerms = entry.code
+        .toLowerCase()
+        .split(/[^a-z0-9]+/)
+        .filter(Boolean);
+      const codePhraseMatch = codeTerms.length > 1 && codeTerms.every((term) => terms.includes(term));
       const score = terms.reduce((total, term) => {
-        if (entry.code.toLowerCase() === term) return total + 8;
+        if (codeTerms.length === 1 && codeTerms[0] === term) return total + 8;
+        if (codeTerms.includes(term)) return total + 4;
         if (entry.searchText.includes(term)) return total + 1;
         return total;
-      }, 0);
+      }, codePhraseMatch ? 24 + codeTerms.length * 4 : 0);
       return { entry, score };
     })
     .filter((item) => item.score > 0)
