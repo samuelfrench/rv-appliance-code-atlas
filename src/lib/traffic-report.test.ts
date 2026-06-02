@@ -9,13 +9,22 @@ describe("traffic readiness report", () => {
     });
     const report = JSON.parse(output);
 
-    expect(report.gscConfigured).toBe(true);
+    expect(report.gscConfigured).toBe(false);
+    expect(report.analyticsConfigured).toBe(true);
+    expect(report.analytics).toEqual({
+      provider: "GA4",
+      propertyId: "540096507",
+      dataStreamId: "14992447658",
+      measurementId: "G-9824RBXHHR",
+      defaultUri: "https://rvappliancefaultcodes.com",
+      configuredAt: "2026-06-02T23:04:00Z",
+    });
     expect(report.searchConsole).toEqual({
       propertyType: "URL_PREFIX",
-      siteUrl: "https://rv-appliance-code-atlas.fly.dev/",
-      sitemapUrl: "https://rv-appliance-code-atlas.fly.dev/sitemap.xml",
-      verifiedAt: "2026-06-02T19:38:59Z",
-      sitemapSubmittedAt: "2026-06-02T19:38:59Z",
+      siteUrl: "https://rvappliancefaultcodes.com/",
+      sitemapUrl: "https://rvappliancefaultcodes.com/sitemap.xml",
+      verifiedAt: "2026-06-02T23:11:41Z",
+      sitemapSubmittedAt: null,
     });
     expect(report.weeklyTrafficArtifact).toEqual({
       path: "reports/gsc-weekly-traffic.json",
@@ -29,10 +38,10 @@ describe("traffic readiness report", () => {
       source: "reports/gsc-weekly-traffic.json",
     });
     expect(report.indexNow).toEqual({
-      keyLocation: "https://rv-appliance-code-atlas.fly.dev/2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18.txt",
+      keyLocation: "https://rvappliancefaultcodes.com/2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18.txt",
       dryRunCommand: "npm run traffic:indexnow:dry-run",
       submitCommand: "npm run traffic:indexnow:submit",
-      submittedAt: "2026-06-02T22:11:57.632Z",
+      submittedAt: null,
     });
     expect(report.nextAutomatedBatchGoal).toBe(
       "Run weekly GSC report and review monetization readiness after page impressions appear.",

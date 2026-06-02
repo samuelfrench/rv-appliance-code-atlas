@@ -1,20 +1,28 @@
 {
   "site": {
     "name": "RV Appliance Code Atlas",
-    "baseUrl": "https://rv-appliance-code-atlas.fly.dev",
+    "baseUrl": "https://rvappliancefaultcodes.com",
     "generatedAt": "2026-06-02T00:00:00-05:00",
     "safetyBoundary": "Use this atlas to identify likely meaning and prepare for service. Shut off power, LP gas, fuel, or water when a listed appliance condition involves flame, gas smell, exhaust, generator shutdown, high temperature, moving jacks/slides, refrigerant, 120 VAC, control boards, repeated ignition failure, or a persistent lockout. Call the appliance maker, RV dealer, or a qualified RV technician for repair.",
     "searchConsole": {
       "propertyType": "URL_PREFIX",
-      "siteUrl": "https://rv-appliance-code-atlas.fly.dev/",
-      "sitemapUrl": "https://rv-appliance-code-atlas.fly.dev/sitemap.xml",
-      "verifiedAt": "2026-06-02T19:38:59Z",
-      "sitemapSubmittedAt": "2026-06-02T19:38:59Z"
+      "siteUrl": "https://rvappliancefaultcodes.com/",
+      "sitemapUrl": "https://rvappliancefaultcodes.com/sitemap.xml",
+      "verifiedAt": "2026-06-02T23:11:41Z",
+      "sitemapSubmittedAt": null
     },
     "indexNow": {
       "key": "2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18",
-      "keyLocation": "https://rv-appliance-code-atlas.fly.dev/2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18.txt",
-      "submittedAt": "2026-06-02T22:11:57.632Z"
+      "keyLocation": "https://rvappliancefaultcodes.com/2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18.txt",
+      "submittedAt": null
+    },
+    "analytics": {
+      "provider": "GA4",
+      "propertyId": "540096507",
+      "dataStreamId": "14992447658",
+      "measurementId": "G-9824RBXHHR",
+      "defaultUri": "https://rvappliancefaultcodes.com",
+      "configuredAt": "2026-06-02T23:04:00Z"
     }
   },
   "sources": [

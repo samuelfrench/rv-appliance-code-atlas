@@ -10,8 +10,8 @@ import {
 const weeklyTrafficArtifact = {
   generatedAt: "2026-06-02T21:00:00.000Z",
   source: "google-search-console-searchanalytics",
-  siteUrl: "https://rv-appliance-code-atlas.fly.dev/",
-  sitemapUrl: "https://rv-appliance-code-atlas.fly.dev/sitemap.xml",
+  siteUrl: "https://rvappliancefaultcodes.com/",
+  sitemapUrl: "https://rvappliancefaultcodes.com/sitemap.xml",
   dateRange: {
     startDate: "2026-05-26",
     endDate: "2026-06-01",
@@ -26,21 +26,21 @@ const weeklyTrafficArtifact = {
   topQueries: [],
   topPages: [
     {
-      page: "https://rv-appliance-code-atlas.fly.dev/",
+      page: "https://rvappliancefaultcodes.com/",
       clicks: 10,
       impressions: 1100,
       ctr: 10 / 1100,
       position: 3.4,
     },
     {
-      page: "https://rv-appliance-code-atlas.fly.dev/codes/norcold-polar-no-fl/",
+      page: "https://rvappliancefaultcodes.com/codes/norcold-polar-no-fl/",
       clicks: 4,
       impressions: 540,
       ctr: 4 / 540,
       position: 4.5,
     },
     {
-      page: "https://rv-appliance-code-atlas.fly.dev/symptoms/cummins-onan-generator-no-output-load-management/",
+      page: "https://rvappliancefaultcodes.com/symptoms/cummins-onan-generator-no-output-load-management/",
       clicks: 3,
       impressions: 510,
       ctr: 3 / 510,
@@ -58,20 +58,20 @@ const weeklyTrafficArtifact = {
 
 describe("monetization readiness report", () => {
   it("classifies only pinned site pages into disabled slot groups", () => {
-    expect(classifyPageForMonetization("https://rv-appliance-code-atlas.fly.dev/")).toBe("home-inline-1");
-    expect(classifyPageForMonetization("https://rv-appliance-code-atlas.fly.dev/codes/norcold-polar-no-fl/")).toBe(
+    expect(classifyPageForMonetization("https://rvappliancefaultcodes.com/")).toBe("home-inline-1");
+    expect(classifyPageForMonetization("https://rvappliancefaultcodes.com/codes/norcold-polar-no-fl/")).toBe(
       "code-detail-bottom",
     );
-    expect(classifyPageForMonetization("https://rv-appliance-code-atlas.fly.dev/codes")).toBe(null);
-    expect(classifyPageForMonetization("https://rv-appliance-code-atlas.fly.dev/codes/")).toBe(null);
+    expect(classifyPageForMonetization("https://rvappliancefaultcodes.com/codes")).toBe(null);
+    expect(classifyPageForMonetization("https://rvappliancefaultcodes.com/codes/")).toBe(null);
     expect(
       classifyPageForMonetization(
-        "https://rv-appliance-code-atlas.fly.dev/symptoms/cummins-onan-generator-no-output-load-management/",
+        "https://rvappliancefaultcodes.com/symptoms/cummins-onan-generator-no-output-load-management/",
       ),
     ).toBe("symptom-guide-bottom");
-    expect(classifyPageForMonetization("https://rv-appliance-code-atlas.fly.dev/symptoms")).toBe(null);
-    expect(classifyPageForMonetization("https://rv-appliance-code-atlas.fly.dev/symptoms/")).toBe(null);
-    expect(classifyPageForMonetization("https://rv-appliance-code-atlas.fly.dev/sitemap.xml")).toBe(null);
+    expect(classifyPageForMonetization("https://rvappliancefaultcodes.com/symptoms")).toBe(null);
+    expect(classifyPageForMonetization("https://rvappliancefaultcodes.com/symptoms/")).toBe(null);
+    expect(classifyPageForMonetization("https://rvappliancefaultcodes.com/sitemap.xml")).toBe(null);
     expect(classifyPageForMonetization("https://example.com/codes/norcold-polar-no-fl/")).toBe(null);
   });
 
@@ -115,7 +115,7 @@ describe("monetization readiness report", () => {
         ready: true,
         pages: [
           {
-            page: "https://rv-appliance-code-atlas.fly.dev/",
+            page: "https://rvappliancefaultcodes.com/",
             path: "/",
             clicks: 10,
             impressions: 1100,
@@ -134,7 +134,7 @@ describe("monetization readiness report", () => {
         ready: true,
         pages: [
           {
-            page: "https://rv-appliance-code-atlas.fly.dev/codes/norcold-polar-no-fl/",
+            page: "https://rvappliancefaultcodes.com/codes/norcold-polar-no-fl/",
             path: "/codes/norcold-polar-no-fl/",
             clicks: 4,
             impressions: 540,
@@ -153,7 +153,7 @@ describe("monetization readiness report", () => {
         ready: true,
         pages: [
           {
-            page: "https://rv-appliance-code-atlas.fly.dev/symptoms/cummins-onan-generator-no-output-load-management/",
+            page: "https://rvappliancefaultcodes.com/symptoms/cummins-onan-generator-no-output-load-management/",
             path: "/symptoms/cummins-onan-generator-no-output-load-management/",
             clicks: 3,
             impressions: 510,

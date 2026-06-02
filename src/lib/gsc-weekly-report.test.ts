@@ -24,9 +24,9 @@ describe("GSC weekly traffic report", () => {
 
   it("builds Search Analytics query and page requests for the configured URL-prefix property", () => {
     const plan = buildWeeklyReportPlan({
-      baseUrl: "https://rv-appliance-code-atlas.fly.dev",
-      siteUrl: "https://rv-appliance-code-atlas.fly.dev/",
-      sitemapUrl: "https://rv-appliance-code-atlas.fly.dev/sitemap.xml",
+      baseUrl: "https://rvappliancefaultcodes.com",
+      siteUrl: "https://rvappliancefaultcodes.com/",
+      sitemapUrl: "https://rvappliancefaultcodes.com/sitemap.xml",
       startDate: "2026-05-26",
       endDate: "2026-06-01",
       rowLimit: 20,
@@ -35,15 +35,15 @@ describe("GSC weekly traffic report", () => {
     });
 
     expect(plan).toEqual({
-      siteUrl: "https://rv-appliance-code-atlas.fly.dev/",
-      sitemapUrl: "https://rv-appliance-code-atlas.fly.dev/sitemap.xml",
+      siteUrl: "https://rvappliancefaultcodes.com/",
+      sitemapUrl: "https://rvappliancefaultcodes.com/sitemap.xml",
       startDate: "2026-05-26",
       endDate: "2026-06-01",
       days: 7,
       rowLimit: 20,
       outputPath: "reports/gsc-weekly-traffic.json",
       searchAnalyticsEndpoint:
-        "https://gsc.example/webmasters/v3/sites/https%3A%2F%2Frv-appliance-code-atlas.fly.dev%2F/searchAnalytics/query",
+        "https://gsc.example/webmasters/v3/sites/https%3A%2F%2Frvappliancefaultcodes.com%2F/searchAnalytics/query",
       requests: {
         queries: {
           startDate: "2026-05-26",
@@ -64,31 +64,31 @@ describe("GSC weekly traffic report", () => {
   it("rejects domain, malformed, and foreign URL-prefix properties", () => {
     expect(() =>
       buildWeeklyReportPlan({
-        baseUrl: "https://rv-appliance-code-atlas.fly.dev",
-        siteUrl: "sc-domain:rv-appliance-code-atlas.fly.dev",
+        baseUrl: "https://rvappliancefaultcodes.com",
+        siteUrl: "sc-domain:rvappliancefaultcodes.com",
       }),
     ).toThrow(/URL-prefix/);
 
     expect(() =>
       buildWeeklyReportPlan({
-        baseUrl: "https://rv-appliance-code-atlas.fly.dev",
-        siteUrl: "rv-appliance-code-atlas.fly.dev",
+        baseUrl: "https://rvappliancefaultcodes.com",
+        siteUrl: "rvappliancefaultcodes.com",
       }),
     ).toThrow(/http\(s\) scheme/);
 
     expect(() =>
       buildWeeklyReportPlan({
-        baseUrl: "https://rv-appliance-code-atlas.fly.dev",
+        baseUrl: "https://rvappliancefaultcodes.com",
         siteUrl: "https://example.com/",
       }),
-    ).toThrow(/site URL is not on rv-appliance-code-atlas\.fly\.dev/);
+    ).toThrow(/site URL is not on rvappliancefaultcodes\.com/);
   });
 
   it("rejects scheme mismatches and attempts to repin the report away from the corpus site", () => {
     expect(() =>
       buildWeeklyReportPlan({
-        baseUrl: "https://rv-appliance-code-atlas.fly.dev",
-        siteUrl: "http://rv-appliance-code-atlas.fly.dev/",
+        baseUrl: "https://rvappliancefaultcodes.com",
+        siteUrl: "http://rvappliancefaultcodes.com/",
       }),
     ).toThrow(/must use https:/);
 
@@ -97,13 +97,13 @@ describe("GSC weekly traffic report", () => {
         baseUrl: "https://example.com",
         siteUrl: "https://example.com/",
       }),
-    ).toThrow(/base URL is pinned to https:\/\/rv-appliance-code-atlas\.fly\.dev/);
+    ).toThrow(/base URL is pinned to https:\/\/rvappliancefaultcodes\.com/);
 
     expect(() =>
       buildWeeklyReportPlan({
-        baseUrl: "https://rv-appliance-code-atlas.fly.dev",
-        siteUrl: "https://rv-appliance-code-atlas.fly.dev/",
-        sitemapUrl: "http://rv-appliance-code-atlas.fly.dev/sitemap.xml",
+        baseUrl: "https://rvappliancefaultcodes.com",
+        siteUrl: "https://rvappliancefaultcodes.com/",
+        sitemapUrl: "http://rvappliancefaultcodes.com/sitemap.xml",
       }),
     ).toThrow(/sitemap URL must use https:/);
   });
@@ -134,9 +134,9 @@ describe("GSC weekly traffic report", () => {
 
   it("builds a deterministic weekly report and handles empty GSC data", () => {
     const plan = buildWeeklyReportPlan({
-      baseUrl: "https://rv-appliance-code-atlas.fly.dev",
-      siteUrl: "https://rv-appliance-code-atlas.fly.dev/",
-      sitemapUrl: "https://rv-appliance-code-atlas.fly.dev/sitemap.xml",
+      baseUrl: "https://rvappliancefaultcodes.com",
+      siteUrl: "https://rvappliancefaultcodes.com/",
+      sitemapUrl: "https://rvappliancefaultcodes.com/sitemap.xml",
       startDate: "2026-05-26",
       endDate: "2026-06-01",
       rowLimit: 10,
@@ -152,7 +152,7 @@ describe("GSC weekly traffic report", () => {
         {
           rows: [
             {
-              keys: ["https://rv-appliance-code-atlas.fly.dev/symptoms/cummins-onan-generator-no-output-load-management/"],
+              keys: ["https://rvappliancefaultcodes.com/symptoms/cummins-onan-generator-no-output-load-management/"],
               clicks: 1,
               impressions: 4,
               ctr: 0.25,
@@ -167,7 +167,7 @@ describe("GSC weekly traffic report", () => {
 
     expect(report).toMatchObject({
       generatedAt: "2026-06-02T20:00:00.000Z",
-      siteUrl: "https://rv-appliance-code-atlas.fly.dev/",
+      siteUrl: "https://rvappliancefaultcodes.com/",
       dataAvailable: true,
       dateRange: {
         startDate: "2026-05-26",

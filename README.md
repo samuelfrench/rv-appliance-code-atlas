@@ -2,7 +2,18 @@
 
 Free, source-backed lookup for RV appliance fault codes and symptoms.
 
-Live URL: `https://rv-appliance-code-atlas.fly.dev/`
+Live URL: `https://rvappliancefaultcodes.com/`
+
+Permanent domain:
+- Route53 domain: `rvappliancefaultcodes.com`
+- Fly certificates: issued for `rvappliancefaultcodes.com` and `www.rvappliancefaultcodes.com`
+- Billing: Route53 `.com` registration `$15/year`, auto-renew on at `$15/year`
+
+Google Analytics:
+- GA4 property: `properties/540096507`
+- Web stream: `properties/540096507/dataStreams/14992447658`
+- Measurement ID: `G-9824RBXHHR`
+- Default URI: `https://rvappliancefaultcodes.com`
 
 Scope:
 - Dometic
@@ -39,9 +50,10 @@ GSC_QUOTA_PROJECT=coffee-explorer-480514 npm run traffic:gsc:submit
 ```
 
 Search Console status:
-- URL-prefix property: `https://rv-appliance-code-atlas.fly.dev/`
-- Sitemap: `https://rv-appliance-code-atlas.fly.dev/sitemap.xml`
-- Verified and submitted: `2026-06-02T19:38:59Z`
+- URL-prefix property: `https://rvappliancefaultcodes.com/`
+- Sitemap: `https://rvappliancefaultcodes.com/sitemap.xml`
+- Verified: `2026-06-02T23:11:41Z`
+- Sitemap submitted: pending canonical-domain deployment
 
 Weekly Search Console traffic artifact:
 
@@ -64,11 +76,11 @@ npm run traffic:indexnow:dry-run
 npm run traffic:indexnow:submit
 ```
 
-Key location: `https://rv-appliance-code-atlas.fly.dev/2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18.txt`
+Key location: `https://rvappliancefaultcodes.com/2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18.txt`
 
 Writes ignored local report artifact: `reports/indexnow-submit-report.json`
 
-Submitted: `2026-06-02T22:11:57.632Z` with IndexNow HTTP `200`
+Submitted: pending canonical-domain deployment
 
 Traffic monitor:
 
@@ -78,9 +90,9 @@ npm run traffic:monitor
 
 Current corpus:
 - `819` verified entries
-- `148` symptom guides
-- `318` official sources
-- `968` generated indexable pages
+- `155` symptom guides
+- `322` official sources
+- `975` generated indexable pages
 
 Next automated batch goal:
 - Run weekly GSC report and review monetization readiness after page impressions appear.

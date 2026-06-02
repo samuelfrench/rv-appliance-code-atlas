@@ -43,13 +43,21 @@ export type Corpus = {
       propertyType: "URL_PREFIX";
       siteUrl: string;
       sitemapUrl: string;
-      verifiedAt: string;
-      sitemapSubmittedAt: string;
+      verifiedAt: string | null;
+      sitemapSubmittedAt: string | null;
     };
     indexNow?: {
       key: string;
       keyLocation: string;
       submittedAt: string | null;
+    };
+    analytics?: {
+      provider: "GA4";
+      propertyId: string;
+      dataStreamId: string;
+      measurementId: string;
+      defaultUri: string;
+      configuredAt: string;
     };
   };
   sources: Source[];

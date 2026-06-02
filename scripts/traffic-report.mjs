@@ -7,6 +7,7 @@ const corpus = JSON.parse(fs.readFileSync(path.join(root, "src/data/corpus.json"
 const outputPath = path.join(root, "reports/traffic-readiness.json");
 const searchConsole = corpus.site.searchConsole ?? null;
 const indexNowConfig = corpus.site.indexNow ?? null;
+const analytics = corpus.site.analytics ?? null;
 const weeklyTrafficArtifact = {
   path: "reports/gsc-weekly-traffic.json",
   command: "npm run traffic:gsc:weekly",
@@ -35,6 +36,8 @@ function buildReport() {
     checkoutEnabled: false,
     adSlotsEnabled: false,
     gscConfigured: Boolean(searchConsole?.siteUrl && searchConsole?.sitemapSubmittedAt),
+    analyticsConfigured: Boolean(analytics?.measurementId),
+    analytics,
     searchConsole,
     weeklyTrafficArtifact,
     monetizationReadinessArtifact,

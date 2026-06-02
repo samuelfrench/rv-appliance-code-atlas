@@ -9,9 +9,9 @@ import { buildVerificationPlan } from "../../scripts/gsc-verify-url-prefix.mjs";
 
 const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://rv-appliance-code-atlas.fly.dev/</loc></url>
-  <url><loc>https://rv-appliance-code-atlas.fly.dev/codes/example/</loc></url>
-  <url><loc>https://rv-appliance-code-atlas.fly.dev/codes/example/</loc></url>
+  <url><loc>https://rvappliancefaultcodes.com/</loc></url>
+  <url><loc>https://rvappliancefaultcodes.com/codes/example/</loc></url>
+  <url><loc>https://rvappliancefaultcodes.com/codes/example/</loc></url>
 </urlset>
 `;
 
@@ -20,30 +20,30 @@ describe("GSC sitemap submission", () => {
     const urls = parseSitemapUrls(sitemapXml);
     const plan = buildSubmissionPlan({
       sitemapUrls: urls,
-      baseUrl: "https://rv-appliance-code-atlas.fly.dev",
+      baseUrl: "https://rvappliancefaultcodes.com",
     });
 
     expect(urls).toEqual([
-      "https://rv-appliance-code-atlas.fly.dev/",
-      "https://rv-appliance-code-atlas.fly.dev/codes/example/",
+      "https://rvappliancefaultcodes.com/",
+      "https://rvappliancefaultcodes.com/codes/example/",
     ]);
-    expect(plan.siteUrl).toBe("https://rv-appliance-code-atlas.fly.dev/");
-    expect(plan.sitemapUrl).toBe("https://rv-appliance-code-atlas.fly.dev/sitemap.xml");
+    expect(plan.siteUrl).toBe("https://rvappliancefaultcodes.com/");
+    expect(plan.sitemapUrl).toBe("https://rvappliancefaultcodes.com/sitemap.xml");
     expect(plan.urlCount).toBe(2);
-    expect(plan.siteAddEndpoint).toContain("https%3A%2F%2Frv-appliance-code-atlas.fly.dev%2F");
-    expect(plan.sitemapSubmitEndpoint).toContain("https%3A%2F%2Frv-appliance-code-atlas.fly.dev%2Fsitemap.xml");
+    expect(plan.siteAddEndpoint).toContain("https%3A%2F%2Frvappliancefaultcodes.com%2F");
+    expect(plan.sitemapSubmitEndpoint).toContain("https%3A%2F%2Frvappliancefaultcodes.com%2Fsitemap.xml");
   });
 
   it("rejects sitemap URLs outside the configured host", () => {
     expect(() =>
       buildSubmissionPlan({
         sitemapUrls: [
-          "https://rv-appliance-code-atlas.fly.dev/",
+          "https://rvappliancefaultcodes.com/",
           "https://example.com/not-this-site/",
         ],
-        baseUrl: "https://rv-appliance-code-atlas.fly.dev",
+        baseUrl: "https://rvappliancefaultcodes.com",
       }),
-    ).toThrow(/not on rv-appliance-code-atlas\.fly\.dev/);
+    ).toThrow(/not on rvappliancefaultcodes\.com/);
   });
 
   it("rejects domain properties and foreign URL-prefix properties for sitemap submission", () => {
@@ -52,18 +52,18 @@ describe("GSC sitemap submission", () => {
     expect(() =>
       buildSubmissionPlan({
         sitemapUrls,
-        baseUrl: "https://rv-appliance-code-atlas.fly.dev",
-        siteUrl: "sc-domain:rv-appliance-code-atlas.fly.dev",
+        baseUrl: "https://rvappliancefaultcodes.com",
+        siteUrl: "sc-domain:rvappliancefaultcodes.com",
       }),
     ).toThrow(/URL-prefix/);
 
     expect(() =>
       buildSubmissionPlan({
         sitemapUrls,
-        baseUrl: "https://rv-appliance-code-atlas.fly.dev",
+        baseUrl: "https://rvappliancefaultcodes.com",
         siteUrl: "https://example.com/",
       }),
-    ).toThrow(/site URL is not on rv-appliance-code-atlas\.fly\.dev/);
+    ).toThrow(/site URL is not on rvappliancefaultcodes\.com/);
   });
 
   it("ships the URL-prefix verification file Google requested", () => {
@@ -74,13 +74,13 @@ describe("GSC sitemap submission", () => {
 
   it("builds a Site Verification FILE plan for the Fly URL-prefix property", () => {
     const plan = buildVerificationPlan({
-      siteUrl: "https://rv-appliance-code-atlas.fly.dev/",
+      siteUrl: "https://rvappliancefaultcodes.com/",
       verificationFile: "googled22aa40f3a0e4dca.html",
     });
 
-    expect(plan.siteUrl).toBe("https://rv-appliance-code-atlas.fly.dev/");
+    expect(plan.siteUrl).toBe("https://rvappliancefaultcodes.com/");
     expect(plan.method).toBe("FILE");
-    expect(plan.verificationFileUrl).toBe("https://rv-appliance-code-atlas.fly.dev/googled22aa40f3a0e4dca.html");
+    expect(plan.verificationFileUrl).toBe("https://rvappliancefaultcodes.com/googled22aa40f3a0e4dca.html");
     expect(plan.insertEndpoint).toBe(
       "https://www.googleapis.com/siteVerification/v1/webResource?verificationMethod=FILE",
     );
@@ -89,14 +89,14 @@ describe("GSC sitemap submission", () => {
   it("rejects malformed, domain, and foreign properties for URL-prefix verification", () => {
     expect(() =>
       buildVerificationPlan({
-        siteUrl: "sc-domain:rv-appliance-code-atlas.fly.dev",
+        siteUrl: "sc-domain:rvappliancefaultcodes.com",
         verificationFile: "googled22aa40f3a0e4dca.html",
       }),
     ).toThrow(/URL-prefix/);
 
     expect(() =>
       buildVerificationPlan({
-        siteUrl: "rv-appliance-code-atlas.fly.dev",
+        siteUrl: "rvappliancefaultcodes.com",
         verificationFile: "googled22aa40f3a0e4dca.html",
       }),
     ).toThrow(/http\(s\) scheme/);
@@ -106,7 +106,7 @@ describe("GSC sitemap submission", () => {
         siteUrl: "https://example.com/",
         verificationFile: "googled22aa40f3a0e4dca.html",
       }),
-    ).toThrow(/site URL is not on rv-appliance-code-atlas\.fly\.dev/);
+    ).toThrow(/site URL is not on rvappliancefaultcodes\.com/);
   });
 
   it("exposes repeatable npm commands for URL-prefix verification and sitemap submission", () => {
