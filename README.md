@@ -37,9 +37,9 @@ npm run traffic:monitor
 
 Current corpus:
 - `819` verified entries
-- `96` symptom guides
-- `286` official sources
-- `916` generated indexable pages
+- `105` symptom guides
+- `301` official sources
+- `925` generated indexable pages
 
 Next automated batch goal:
-- Triage official Furrion/Lippert refrigerator symptom-only support and owner-manual pages for compressor or 12 V cooling, power, door or seal, condensation or water, temperature or night-mode, and service-only boundaries; add only non-duplicate owner-safe guides.
+- Triage official Suburban/Airxcel furnace and water-heater symptom-only support or owner-manual pages for ignition, airflow, overheating, low-voltage, water-temperature, freeze, and service-only boundaries; add only non-duplicate owner-safe guides.

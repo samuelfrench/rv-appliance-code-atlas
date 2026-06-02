@@ -24,7 +24,7 @@ function buildReport() {
       ready: false,
     })),
     nextAutomatedBatchGoal:
-      "Triage official Furrion/Lippert refrigerator symptom-only support and owner-manual pages for compressor or 12 V cooling, power, door or seal, condensation or water, temperature or night-mode, and service-only boundaries; add only non-duplicate owner-safe guides.",
+      "Triage official Suburban/Airxcel furnace and water-heater symptom-only support or owner-manual pages for ignition, airflow, overheating, low-voltage, water-temperature, freeze, and service-only boundaries; add only non-duplicate owner-safe guides.",
     monitorCommand: "npm run traffic:monitor",
   };
 }
