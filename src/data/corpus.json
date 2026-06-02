@@ -887,6 +887,126 @@
       "official": true
     },
     {
+      "id": "furrion-refrigerators-support-index",
+      "brand": "Furrion",
+      "title": "Lippert Furrion Refrigerators Support",
+      "url": "https://support.lci1.com/furrion-refrigerators/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-refrigerators-under-6-support",
+      "brand": "Furrion",
+      "title": "Lippert Furrion Under 6 Cubic Foot Refrigerators Support",
+      "url": "https://support.lci1.com/6-cubic-foot-refrigerators",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-refrigerators-6-14-support",
+      "brand": "Furrion",
+      "title": "Lippert Furrion 6-14 Cubic Foot Refrigerators Support",
+      "url": "https://support.lci1.com/6-14-cubic-foot-refrigerators",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-refrigerators-15-plus-support",
+      "brand": "Furrion",
+      "title": "Lippert Furrion 15 Cubic Foot Refrigerator Support",
+      "url": "https://support.lci1.com/15-cubic-foot-refrigerator",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-refrigerator-not-cooling-faq",
+      "brand": "Furrion",
+      "title": "Lippert FAQ: Why Is My Refrigerator Not Cooling?",
+      "url": "https://support.lci1.com/faqs/why-is-my-refrigerator-not-cooling",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-refrigerator-not-cold-enough-faq",
+      "brand": "Furrion",
+      "title": "Lippert FAQ: Why Is My Refrigerator Not Getting Cold Enough?",
+      "url": "https://support.lci1.com/faqs/why-is-my-refrigerator-not-getting-cold-enough",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-refrigerator-compressor-cycling-faq",
+      "brand": "Furrion",
+      "title": "Lippert FAQ: Why Is My Refrigerator Compressor Turning On and Off Frequently?",
+      "url": "https://support.lci1.com/faqs/why-is-my-refrigerator-compressor-turning-on-and-off-frequently",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-refrigerator-door-not-close-faq",
+      "brand": "Furrion",
+      "title": "Lippert FAQ: Why Does My Refrigerator Door Not Close?",
+      "url": "https://support.lci1.com/faqs/why-does-my-refrigerator-door-not-close",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-refrigerator-moisture-ice-faq",
+      "brand": "Furrion",
+      "title": "Lippert FAQ: Why Is There Moisture or Ice Inside or Outside My Refrigerator?",
+      "url": "https://support.lci1.com/faqs/why-is-there-moisture-or-ice-inside-or-outside-my-refrigerator",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-refrigerator-hard-reset-faq",
+      "brand": "Furrion",
+      "title": "Lippert FAQ: How Do I Hard Reset My Refrigerator?",
+      "url": "https://support.lci1.com/faq/how-do-i-hard-reset-my-refrigerator",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-12v-refrigerator-ventilation-faq",
+      "brand": "Furrion",
+      "title": "Lippert FAQ: Does My 12V Refrigerator Require Ventilation?",
+      "url": "https://support.lci1.com/faqs/does-my-12v-refrigerator-require-ventilation",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-12v-refrigerator-service-line-faq",
+      "brand": "Furrion",
+      "title": "Lippert FAQ: What Are the Requirements for the Service Line?",
+      "url": "https://support.lci1.com/faq/what-are-the-requirements-for-the-service-line",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-refrigerant-leak-boundary-faq",
+      "brand": "Furrion",
+      "title": "Lippert FAQ: What Do I Do If I Find a Refrigerant Leak?",
+      "url": "https://support.lci1.com/faqs/what-do-i-do-if-i-find-a-refrigerant-leak",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-12v-hard-reset-qr",
+      "brand": "Furrion",
+      "title": "Lippert QR-182 12V Refrigerator Hard Reset Procedure",
+      "url": "https://lci-support-doc.s3.amazonaws.com/qr/ccd-0008369.pdf",
+      "type": "manufacturer-quick-reference",
+      "official": true
+    },
+    {
+      "id": "furrion-refrigerator-storage-qr",
+      "brand": "Furrion",
+      "title": "Lippert QR-179 Proper Storage of Furrion Refrigerators",
+      "url": "https://lci-support-doc.s3.amazonaws.com/qr/ccd-0008140.pdf",
+      "type": "manufacturer-quick-reference",
+      "official": true
+    },
+    {
       "id": "furrion-furnace-troubleshooting",
       "brand": "Furrion",
       "title": "Furrion RV Furnaces Troubleshooting and Service Manual",
@@ -31746,7 +31866,14 @@
         "dometic-ruc-compressor-voltage-applied-not-operating-support",
         "thetford-faq-destination-performance",
         "thetford-n3000-support",
-        "norcold-n8dcx-n10dcx-owner"
+        "norcold-n8dcx-n10dcx-owner",
+        "furrion-refrigerator-not-cooling-faq",
+        "furrion-refrigerator-not-cold-enough-faq",
+        "furrion-refrigerator-compressor-cycling-faq",
+        "furrion-refrigerators-support-index",
+        "furrion-10-6-refrigerator",
+        "furrion-15-refrigerator",
+        "furrion-french-door-refrigerator"
       ]
     },
     {
@@ -31851,7 +31978,11 @@
         "dometic-ruc-optimal-use-cooling-ventilation-support",
         "thetford-n3000-support",
         "norcold-n8dcx-n10dcx-owner",
-        "norcold-n15-n20-owner"
+        "norcold-n15-n20-owner",
+        "furrion-12v-refrigerator-ventilation-faq",
+        "furrion-refrigerator-not-cold-enough-faq",
+        "furrion-10-6-refrigerator",
+        "furrion-french-door-refrigerator"
       ]
     },
     {
@@ -31917,7 +32048,12 @@
         "dometic-ruc-compressor-voltage-applied-not-operating-support",
         "thetford-faq-hts-flashing-red",
         "norcold-n2000-owner",
-        "norcold-n8dcx-n10dcx-owner"
+        "norcold-n8dcx-n10dcx-owner",
+        "furrion-refrigerator-compressor-cycling-faq",
+        "furrion-12v-refrigerator-service-line-faq",
+        "furrion-12v-hard-reset-qr",
+        "furrion-10-6-refrigerator",
+        "furrion-french-door-refrigerator"
       ]
     },
     {
@@ -32029,7 +32165,12 @@
         "dometic-ruc-compressor-not-running-support",
         "thetford-faq-hts-removal",
         "thetford-faq-hts-solid-red",
-        "norcold-n8dcx-n10dcx-owner"
+        "norcold-n8dcx-n10dcx-owner",
+        "furrion-refrigerators-support-index",
+        "furrion-refrigerator-storage-qr",
+        "furrion-refrigerant-leak-boundary-faq",
+        "furrion-refrigerator-hard-reset-faq",
+        "furrion-12v-refrigerator-service-line-faq"
       ]
     },
     {
@@ -33118,6 +33259,248 @@
       ],
       "sourceIds": [
         "norcold-n2000-owner"
+      ]
+    },
+    {
+      "id": "furrion-12v-refrigerator-not-cooling-hard-reset",
+      "slug": "furrion-12v-refrigerator-not-cooling-hard-reset",
+      "title": "Furrion 12V refrigerator not cooling or hard reset",
+      "summary": "Use this when a Furrion 12V refrigerator has lights or display but is not cooling, was stored with power removed, or needs the documented hard-reset path before Lippert service.",
+      "searchAliases": [
+        "furrion refrigerator not cooling hard reset",
+        "furrion refrigerator not cooling",
+        "furrion lights on not cooling",
+        "furrion hard reset refrigerator",
+        "furrion 12v refrigerator stopped cooling after storage"
+      ],
+      "safeChecklist": [
+        "Move food if temperature is unsafe and record the model, display state, power source, ambient temperature, and how long cooling has been poor.",
+        "Confirm the refrigerator is on from normal controls and that doors close fully with interior airflow not blocked by food.",
+        "If the model support page or QR procedure applies, remove power only through normal RV shore-power, battery, and solar disconnect controls, wait the documented reset time, then restore power.",
+        "Call Lippert/Furrion support or qualified RV service if cooling does not recover after the documented reset and owner-visible checks."
+      ],
+      "sourceIds": [
+        "furrion-refrigerators-support-index",
+        "furrion-refrigerator-not-cooling-faq",
+        "furrion-refrigerator-hard-reset-faq",
+        "furrion-12v-hard-reset-qr",
+        "furrion-refrigerator-storage-qr",
+        "furrion-10-6-refrigerator",
+        "furrion-french-door-refrigerator"
+      ]
+    },
+    {
+      "id": "furrion-12v-refrigerator-not-cold-enough-seals-vents-temperature",
+      "slug": "furrion-12v-refrigerator-not-cold-enough-seals-vents-temperature",
+      "title": "Furrion refrigerator not cold enough, seals, vents, or temperature",
+      "summary": "Use this when a Furrion refrigerator is running but not cold enough and the likely owner checks are temperature setting, door seal, airflow, heat load, leveling, or ambient temperature.",
+      "searchAliases": [
+        "furrion freezer cold fridge warm vents blocked",
+        "furrion refrigerator not getting cold enough",
+        "furrion refrigerator vents blocked",
+        "furrion refrigerator temperature setting warm",
+        "furrion 12v refrigerator high ambient not cold enough"
+      ],
+      "safeChecklist": [
+        "Move food if temperature is unsafe and note the selected temperature setting, outside temperature, recent loading, and whether the door was left open.",
+        "Use only documented front-panel settings, then allow the cabinet time to stabilize before changing the setting again.",
+        "Clear food away from interior airflow paths, keep exterior ventilation openings visibly clear, and let hot food cool before loading.",
+        "Clean visible door seals and use qualified service for damaged seals, repeated warm operation, or any cooling issue that remains after normal settings and airflow checks."
+      ],
+      "sourceIds": [
+        "furrion-refrigerator-not-cold-enough-faq",
+        "furrion-12v-refrigerator-ventilation-faq",
+        "furrion-refrigerators-under-6-support",
+        "furrion-refrigerators-6-14-support",
+        "furrion-refrigerators-15-plus-support",
+        "furrion-10-6-refrigerator",
+        "furrion-15-refrigerator",
+        "furrion-french-door-refrigerator"
+      ]
+    },
+    {
+      "id": "furrion-12v-refrigerator-compressor-cycling-low-battery-heat",
+      "slug": "furrion-12v-refrigerator-compressor-cycling-low-battery-heat",
+      "title": "Furrion 12V refrigerator compressor cycling, low battery, or heat",
+      "summary": "Use this when a Furrion 12V refrigerator compressor starts and stops frequently, cuts out in heat, or appears tied to low battery voltage without using exact E-code rows.",
+      "searchAliases": [
+        "furrion compressor turns on and off low battery heat",
+        "furrion refrigerator compressor cycling",
+        "furrion 12v refrigerator low battery voltage",
+        "furrion refrigerator hot room compressor cuts out",
+        "furrion compressor starts then stops"
+      ],
+      "safeChecklist": [
+        "Record the model, ambient temperature, selected setting, door-seal state, and owner-visible battery monitor reading.",
+        "Recharge the RV battery through normal RV charging sources if owner-visible readings are low.",
+        "Reduce heat load by closing doors quickly, clearing visible ventilation blockage, and letting the RV interior cool when practical.",
+        "Use qualified service if compressor cycling repeats after battery, door, ventilation, and ambient-temperature checks."
+      ],
+      "sourceIds": [
+        "furrion-refrigerator-compressor-cycling-faq",
+        "furrion-refrigerators-6-14-support",
+        "furrion-10-6-refrigerator",
+        "furrion-french-door-refrigerator"
+      ]
+    },
+    {
+      "id": "furrion-refrigerator-door-seal-not-closing",
+      "slug": "furrion-refrigerator-door-seal-not-closing",
+      "title": "Furrion refrigerator door seal or door not closing",
+      "summary": "Use this when a Furrion refrigerator door will not close, the travel latch or shelves block closure, or moisture/frost suggests a door-seal issue.",
+      "searchAliases": [
+        "furrion refrigerator door won't close seal",
+        "furrion refrigerator door not close",
+        "furrion proper seal refrigerator door",
+        "furrion refrigerator travel latch door",
+        "furrion refrigerator door gasket dirty damaged"
+      ],
+      "safeChecklist": [
+        "Remove food, baskets, or shelves that visibly block the door from closing.",
+        "Clean visible gasket surfaces and confirm the door or travel latch is seated from normal owner access.",
+        "Confirm the RV is level enough for the refrigerator door to close as the manual requires.",
+        "Use qualified service for damaged gaskets, reversed doors, misalignment, or a door that still will not seal."
+      ],
+      "sourceIds": [
+        "furrion-refrigerator-door-not-close-faq",
+        "furrion-refrigerators-under-6-support",
+        "furrion-refrigerators-6-14-support",
+        "furrion-refrigerators-15-plus-support",
+        "furrion-10-6-refrigerator",
+        "furrion-15-refrigerator",
+        "furrion-french-door-refrigerator"
+      ]
+    },
+    {
+      "id": "furrion-refrigerator-moisture-ice-or-defrost",
+      "slug": "furrion-refrigerator-moisture-ice-or-defrost",
+      "title": "Furrion refrigerator moisture, ice, condensation, or defrost",
+      "summary": "Use this when a Furrion refrigerator has moisture or ice inside or outside the cabinet, ordinary condensation, frost buildup, or defrost questions.",
+      "searchAliases": [
+        "furrion moisture ice inside outside refrigerator",
+        "furrion refrigerator condensation",
+        "furrion refrigerator automatic defrost",
+        "furrion refrigerator ice outside",
+        "furrion refrigerator warm middle beam"
+      ],
+      "safeChecklist": [
+        "Dry visible moisture, cover liquids, close doors quickly, and let warm food cool before loading.",
+        "If defrost is needed, turn the refrigerator off from normal controls, move food, use towels, and let ice melt naturally.",
+        "Do not use sharp tools, mechanical defrost methods, or external heat to remove ice.",
+        "Arrange qualified service if moisture, ice, or water returns quickly after door, loading, and natural-defrost checks."
+      ],
+      "sourceIds": [
+        "furrion-refrigerator-moisture-ice-faq",
+        "furrion-refrigerator-not-cold-enough-faq",
+        "furrion-10-6-refrigerator",
+        "furrion-15-refrigerator",
+        "furrion-french-door-refrigerator"
+      ]
+    },
+    {
+      "id": "furrion-12v-refrigerator-power-service-line-or-reset",
+      "slug": "furrion-12v-refrigerator-power-service-line-or-reset",
+      "title": "Furrion 12V refrigerator no power, service line, or reset",
+      "summary": "Use this when a Furrion 12V refrigerator has no lights, no display, or a power-source question tied to shore power, battery, solar, or the documented service-line requirements.",
+      "searchAliases": [
+        "furrion no power service line battery solar shore power",
+        "furrion refrigerator no power",
+        "furrion refrigerator service line",
+        "furrion hard reset shore power battery solar",
+        "furrion 12v refrigerator display off"
+      ],
+      "safeChecklist": [
+        "Record whether lights or the display are on, which normal RV power source is available, and any owner-visible battery monitor reading.",
+        "Confirm only normal RV power controls, fuses visible in the RV distribution panel, and documented refrigerator front-panel state.",
+        "If the hard-reset procedure applies, use normal RV power disconnect controls and wait the documented reset time before restoring power.",
+        "Use Lippert/Furrion or qualified RV electrical service for service-line questions, repeated no-power symptoms, or any issue that requires access behind the appliance."
+      ],
+      "sourceIds": [
+        "furrion-12v-refrigerator-service-line-faq",
+        "furrion-refrigerator-hard-reset-faq",
+        "furrion-12v-hard-reset-qr",
+        "furrion-refrigerators-support-index",
+        "furrion-10-6-refrigerator",
+        "furrion-french-door-refrigerator"
+      ]
+    },
+    {
+      "id": "furrion-refrigerator-temperature-mode-or-lock-mode",
+      "slug": "furrion-refrigerator-temperature-mode-or-lock-mode",
+      "title": "Furrion refrigerator temperature mode, lock mode, or off-grid setting",
+      "summary": "Use this when a Furrion refrigerator owner needs documented temperature-setting, operation-mode, lock-mode, off-grid, smart, quick-cooling, super-freeze, or holiday-mode guidance.",
+      "searchAliases": [
+        "furrion lock mode temperature setting off grid",
+        "furrion off grid setting 2 overnight",
+        "furrion refrigerator operation mode",
+        "furrion refrigerator temperature setting",
+        "furrion refrigerator smart cooling holiday mode"
+      ],
+      "safeChecklist": [
+        "Identify the exact model before assuming the control scale or mode names.",
+        "Use only the documented front-panel controls for temperature, lock, off-grid, smart, quick-cooling, super-freeze, or holiday mode.",
+        "Change one documented setting at a time and allow the refrigerator to stabilize before changing it again.",
+        "Move food and call Lippert/Furrion or qualified service if safe food temperature cannot be maintained in any documented mode."
+      ],
+      "sourceIds": [
+        "furrion-refrigerators-under-6-support",
+        "furrion-refrigerators-6-14-support",
+        "furrion-refrigerators-15-plus-support",
+        "furrion-10-6-refrigerator",
+        "furrion-15-refrigerator",
+        "furrion-french-door-refrigerator"
+      ]
+    },
+    {
+      "id": "furrion-refrigerator-normal-noises-vibration",
+      "slug": "furrion-refrigerator-normal-noises-vibration",
+      "title": "Furrion refrigerator normal noises, vibration, or rattling",
+      "summary": "Use this when a Furrion refrigerator makes bubbling, gurgling, popping, cracking, vibrating, or rattling sounds and the owner needs to separate normal operation from service concerns.",
+      "searchAliases": [
+        "furrion bubbling gurgling popping cracking vibrating rattling",
+        "furrion refrigerator making bubbling gurgling sounds",
+        "furrion refrigerator popping cracking sounds",
+        "furrion refrigerator vibrating rattling",
+        "furrion refrigerator normal compressor sounds"
+      ],
+      "safeChecklist": [
+        "Record when the sound happens: startup, cooling, defrost, door movement, travel, or after loading.",
+        "Confirm the RV and refrigerator are stable and level enough for normal operation.",
+        "Remove loose items that visibly rattle against shelves, bins, or the cabinet.",
+        "Use qualified service if the sound is loud, new, paired with poor cooling, or continues after leveling and loose-item checks."
+      ],
+      "sourceIds": [
+        "furrion-refrigerator-not-cold-enough-faq",
+        "furrion-refrigerators-support-index",
+        "furrion-10-6-refrigerator",
+        "furrion-15-refrigerator",
+        "furrion-french-door-refrigerator"
+      ]
+    },
+    {
+      "id": "furrion-refrigerator-service-only-compressor-sensor-wiring",
+      "slug": "furrion-refrigerator-service-only-compressor-sensor-wiring",
+      "title": "Furrion refrigerator service-only compressor, sensor, wiring, or refrigerant boundary",
+      "summary": "Use this when a Furrion refrigerator symptom points to compressor modules, sensors, fans, internal electrical faults, or a suspected refrigerant leak. The owner-safe path is shutdown, documentation, and Lippert/Furrion or qualified service.",
+      "searchAliases": [
+        "furrion compressor board fan refrigerant service only",
+        "furrion refrigerator refrigerant leak",
+        "furrion refrigerator sensor service",
+        "furrion refrigerator compressor board",
+        "furrion refrigerator internal electrical service"
+      ],
+      "safeChecklist": [
+        "Shut the refrigerator down and ventilate if there is a chemical smell, visible oil, cooling-system damage, or suspected leak.",
+        "Record the model, serial number, exact display code or LED pattern, and whether cooling stopped before contacting support.",
+        "Do not open appliance compartments, handle internal electrical parts, test compressor modules, alter sensors, or continue using a refrigerator with suspected cooling-system damage.",
+        "Contact Lippert/Furrion support, the dealer, or qualified RV service for compressor, fan, sensor, internal electrical, or cooling-system diagnosis."
+      ],
+      "sourceIds": [
+        "furrion-refrigerant-leak-boundary-faq",
+        "furrion-12v-refrigerator-service-line-faq",
+        "furrion-refrigerators-support-index",
+        "furrion-arctic-refrigerator",
+        "furrion-french-door-refrigerator"
       ]
     },
     {

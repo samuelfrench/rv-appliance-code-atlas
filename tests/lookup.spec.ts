@@ -25,6 +25,12 @@ test("exact code searches rank the matching code card before symptom guides", as
   await page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" }).fill("norcold no co");
   const firstResult = page.locator('section[aria-label="Lookup results"] a.entry-card').first();
   await expect(firstResult).toHaveAttribute("href", "/codes/norcold-1200-no-co/");
+
+  await page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" }).fill("furrion 10.6 e3 compressor");
+  await expect(firstResult).toHaveAttribute("href", "/codes/furrion-10-6-refrigerator-e3/");
+
+  await page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" }).fill("furrion 15 fd");
+  await expect(firstResult).toHaveAttribute("href", "/codes/furrion-15-refrigerator-fd/");
 });
 
 test("symptom guide and checklist surfaces service-call prep without checkout", async ({ page }) => {
@@ -116,6 +122,32 @@ test("lookup surfaces Norcold and Thetford symptom support pages", async ({ page
 
   await searchbox.fill("norcold n2090 drip tray condensation water");
   await expect(lookupResults.locator('a[href="/symptoms/norcold-n2000-condensation-drip-tray/"]')).toBeVisible();
+});
+
+test("lookup surfaces Furrion refrigerator symptom support pages", async ({ page }) => {
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("furrion refrigerator not cooling hard reset");
+  await expect(lookupResults.locator('a[href="/symptoms/furrion-12v-refrigerator-not-cooling-hard-reset/"]')).toBeVisible();
+
+  await searchbox.fill("furrion compressor turns on and off low battery heat");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/furrion-12v-refrigerator-compressor-cycling-low-battery-heat/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("furrion refrigerator door won't close seal");
+  await expect(lookupResults.locator('a[href="/symptoms/furrion-refrigerator-door-seal-not-closing/"]')).toBeVisible();
+
+  await searchbox.fill("furrion moisture ice inside outside refrigerator");
+  await expect(lookupResults.locator('a[href="/symptoms/furrion-refrigerator-moisture-ice-or-defrost/"]')).toBeVisible();
+
+  await searchbox.fill("furrion compressor board fan refrigerant service only");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/furrion-refrigerator-service-only-compressor-sensor-wiring/"]'),
+  ).toBeVisible();
 });
 
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {

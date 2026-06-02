@@ -144,6 +144,38 @@ describe("verified corpus", () => {
     );
   });
 
+  it("finds Furrion refrigerator symptom support pages from owner searches", () => {
+    const index = buildSymptomSearchIndex(corpus);
+
+    expect(lookupSymptomGuides(index, "furrion refrigerator not cooling hard reset")[0]?.slug).toBe(
+      "furrion-12v-refrigerator-not-cooling-hard-reset",
+    );
+    expect(lookupSymptomGuides(index, "furrion freezer cold fridge warm vents blocked")[0]?.slug).toBe(
+      "furrion-12v-refrigerator-not-cold-enough-seals-vents-temperature",
+    );
+    expect(lookupSymptomGuides(index, "furrion compressor turns on and off low battery heat")[0]?.slug).toBe(
+      "furrion-12v-refrigerator-compressor-cycling-low-battery-heat",
+    );
+    expect(lookupSymptomGuides(index, "furrion refrigerator door won't close seal")[0]?.slug).toBe(
+      "furrion-refrigerator-door-seal-not-closing",
+    );
+    expect(lookupSymptomGuides(index, "furrion moisture ice inside outside refrigerator")[0]?.slug).toBe(
+      "furrion-refrigerator-moisture-ice-or-defrost",
+    );
+    expect(lookupSymptomGuides(index, "furrion no power service line battery solar shore power")[0]?.slug).toBe(
+      "furrion-12v-refrigerator-power-service-line-or-reset",
+    );
+    expect(lookupSymptomGuides(index, "furrion lock mode temperature setting off grid")[0]?.slug).toBe(
+      "furrion-refrigerator-temperature-mode-or-lock-mode",
+    );
+    expect(lookupSymptomGuides(index, "furrion bubbling gurgling popping cracking vibrating rattling")[0]?.slug).toBe(
+      "furrion-refrigerator-normal-noises-vibration",
+    );
+    expect(lookupSymptomGuides(index, "furrion compressor board fan refrigerant service only")[0]?.slug).toBe(
+      "furrion-refrigerator-service-only-compressor-sensor-wiring",
+    );
+  });
+
   it("ranks exact multi-word display codes ahead of generic partial matches", () => {
     const index = buildSearchIndex(corpus);
 
@@ -152,6 +184,12 @@ describe("verified corpus", () => {
     );
     expect(lookupEntries(index, "furrion french door e1 ov alm")[0]?.slug).toBe(
       "furrion-french-door-refrigerator-e1-ov-alm",
+    );
+    expect(lookupEntries(index, "furrion 10.6 e3 compressor")[0]?.slug).toBe("furrion-10-6-refrigerator-e3");
+    expect(lookupEntries(index, "furrion 15 fd")[0]?.slug).toBe("furrion-15-refrigerator-fd");
+    expect(lookupEntries(index, "furrion 15 refrigerator rs")[0]?.slug).toBe("furrion-15-refrigerator-rs");
+    expect(lookupEntries(index, "furrion arctic diagnostic led flash 5")[0]?.slug).toBe(
+      "furrion-arctic-refrigerator-diagnostic-led-flash-5",
     );
   });
 
@@ -1234,6 +1272,150 @@ describe("verified corpus", () => {
     expect(lookupEntries(index, "norcold n8dc power module flash 1")[0]?.slug).toBe(
       "norcold-n8dcx-n10dcx-power-module-flash-1",
     );
+  });
+
+  it("adds official Furrion refrigerator symptom support pages without inventing code entries", () => {
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const supportUrls = new Map(corpus.sources.map((source) => [source.id, source.url]));
+    const symptomOnlySourceIds = [
+      "furrion-refrigerators-support-index",
+      "furrion-refrigerators-under-6-support",
+      "furrion-refrigerators-6-14-support",
+      "furrion-refrigerators-15-plus-support",
+      "furrion-refrigerator-not-cooling-faq",
+      "furrion-refrigerator-not-cold-enough-faq",
+      "furrion-refrigerator-compressor-cycling-faq",
+      "furrion-refrigerator-door-not-close-faq",
+      "furrion-refrigerator-moisture-ice-faq",
+      "furrion-refrigerator-hard-reset-faq",
+      "furrion-12v-refrigerator-ventilation-faq",
+      "furrion-12v-refrigerator-service-line-faq",
+      "furrion-refrigerant-leak-boundary-faq",
+      "furrion-12v-hard-reset-qr",
+      "furrion-refrigerator-storage-qr",
+    ];
+    const newSymptomIds = [
+      "furrion-12v-refrigerator-not-cooling-hard-reset",
+      "furrion-12v-refrigerator-not-cold-enough-seals-vents-temperature",
+      "furrion-12v-refrigerator-compressor-cycling-low-battery-heat",
+      "furrion-refrigerator-door-seal-not-closing",
+      "furrion-refrigerator-moisture-ice-or-defrost",
+      "furrion-12v-refrigerator-power-service-line-or-reset",
+      "furrion-refrigerator-temperature-mode-or-lock-mode",
+      "furrion-refrigerator-normal-noises-vibration",
+      "furrion-refrigerator-service-only-compressor-sensor-wiring",
+    ];
+    const expectedSources = new Map([
+      ["furrion-refrigerators-support-index", "https://support.lci1.com/furrion-refrigerators/"],
+      ["furrion-refrigerators-under-6-support", "https://support.lci1.com/6-cubic-foot-refrigerators"],
+      ["furrion-refrigerators-6-14-support", "https://support.lci1.com/6-14-cubic-foot-refrigerators"],
+      ["furrion-refrigerators-15-plus-support", "https://support.lci1.com/15-cubic-foot-refrigerator"],
+      ["furrion-refrigerator-not-cooling-faq", "https://support.lci1.com/faqs/why-is-my-refrigerator-not-cooling"],
+      ["furrion-refrigerator-not-cold-enough-faq", "https://support.lci1.com/faqs/why-is-my-refrigerator-not-getting-cold-enough"],
+      [
+        "furrion-refrigerator-compressor-cycling-faq",
+        "https://support.lci1.com/faqs/why-is-my-refrigerator-compressor-turning-on-and-off-frequently",
+      ],
+      ["furrion-refrigerator-door-not-close-faq", "https://support.lci1.com/faqs/why-does-my-refrigerator-door-not-close"],
+      [
+        "furrion-refrigerator-moisture-ice-faq",
+        "https://support.lci1.com/faqs/why-is-there-moisture-or-ice-inside-or-outside-my-refrigerator",
+      ],
+      ["furrion-refrigerator-hard-reset-faq", "https://support.lci1.com/faq/how-do-i-hard-reset-my-refrigerator"],
+      ["furrion-12v-refrigerator-ventilation-faq", "https://support.lci1.com/faqs/does-my-12v-refrigerator-require-ventilation"],
+      ["furrion-12v-refrigerator-service-line-faq", "https://support.lci1.com/faq/what-are-the-requirements-for-the-service-line"],
+      ["furrion-refrigerant-leak-boundary-faq", "https://support.lci1.com/faqs/what-do-i-do-if-i-find-a-refrigerant-leak"],
+      ["furrion-12v-hard-reset-qr", "https://lci-support-doc.s3.amazonaws.com/qr/ccd-0008369.pdf"],
+      ["furrion-refrigerator-storage-qr", "https://lci-support-doc.s3.amazonaws.com/qr/ccd-0008140.pdf"],
+    ]);
+
+    for (const [sourceId, url] of expectedSources) {
+      expect(supportUrls.get(sourceId), sourceId).toBe(url);
+    }
+    expect(corpus.sources.filter((source) => symptomOnlySourceIds.includes(source.id))).toHaveLength(symptomOnlySourceIds.length);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => symptomOnlySourceIds.includes(sourceId)))).toHaveLength(0);
+
+    expect(symptomById.get("furrion-12v-refrigerator-not-cooling-hard-reset")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "furrion-refrigerators-support-index",
+        "furrion-refrigerator-not-cooling-faq",
+        "furrion-refrigerator-hard-reset-faq",
+        "furrion-12v-hard-reset-qr",
+        "furrion-refrigerator-storage-qr",
+        "furrion-10-6-refrigerator",
+        "furrion-french-door-refrigerator",
+      ]),
+    );
+    expect(symptomById.get("furrion-12v-refrigerator-not-cold-enough-seals-vents-temperature")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "furrion-refrigerator-not-cold-enough-faq",
+        "furrion-12v-refrigerator-ventilation-faq",
+        "furrion-10-6-refrigerator",
+        "furrion-15-refrigerator",
+        "furrion-french-door-refrigerator",
+      ]),
+    );
+    expect(symptomById.get("furrion-12v-refrigerator-compressor-cycling-low-battery-heat")?.sourceIds).toEqual(
+      expect.arrayContaining(["furrion-refrigerator-compressor-cycling-faq", "furrion-10-6-refrigerator", "furrion-french-door-refrigerator"]),
+    );
+    expect(symptomById.get("furrion-refrigerator-door-seal-not-closing")?.sourceIds).toEqual(
+      expect.arrayContaining(["furrion-refrigerator-door-not-close-faq", "furrion-10-6-refrigerator", "furrion-15-refrigerator"]),
+    );
+    expect(symptomById.get("furrion-refrigerator-moisture-ice-or-defrost")?.sourceIds).toEqual(
+      expect.arrayContaining(["furrion-refrigerator-moisture-ice-faq", "furrion-10-6-refrigerator", "furrion-15-refrigerator"]),
+    );
+    expect(symptomById.get("furrion-12v-refrigerator-power-service-line-or-reset")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "furrion-12v-refrigerator-service-line-faq",
+        "furrion-refrigerator-hard-reset-faq",
+        "furrion-12v-hard-reset-qr",
+        "furrion-10-6-refrigerator",
+        "furrion-french-door-refrigerator",
+      ]),
+    );
+    expect(symptomById.get("furrion-refrigerator-temperature-mode-or-lock-mode")?.sourceIds).toEqual(
+      expect.arrayContaining(["furrion-refrigerators-6-14-support", "furrion-refrigerators-15-plus-support", "furrion-10-6-refrigerator", "furrion-15-refrigerator"]),
+    );
+    expect(symptomById.get("furrion-refrigerator-normal-noises-vibration")?.sourceIds).toEqual(
+      expect.arrayContaining(["furrion-refrigerator-not-cold-enough-faq", "furrion-10-6-refrigerator", "furrion-15-refrigerator"]),
+    );
+    expect(symptomById.get("furrion-refrigerator-service-only-compressor-sensor-wiring")?.sourceIds).toEqual(
+      expect.arrayContaining(["furrion-refrigerant-leak-boundary-faq", "furrion-12v-refrigerator-service-line-faq", "furrion-arctic-refrigerator"]),
+    );
+
+    for (const symptomId of newSymptomIds) {
+      expect(symptomById.get(symptomId), symptomId).toBeDefined();
+      expect(symptomById.get(symptomId)?.safeChecklist.join(" "), symptomId).not.toMatch(
+        /repair as needed|bench test|connect directly to battery|replace compressor|replace board|refrigerant repair|remove refrigerator|remove rear panel|inspect wiring|inspect fuse/i,
+      );
+    }
+
+    const serviceBoundary = symptomById.get("furrion-refrigerator-service-only-compressor-sensor-wiring")?.safeChecklist.join(" ");
+    expect(serviceBoundary).toMatch(/qualified|Lippert|service/i);
+    expect(serviceBoundary).toMatch(/do not/i);
+
+    expect(symptomById.get("refrigerator-not-cooling")?.sourceIds).toEqual(
+      expect.arrayContaining(["furrion-refrigerator-not-cooling-faq", "furrion-refrigerator-not-cold-enough-faq", "furrion-10-6-refrigerator"]),
+    );
+    expect(symptomById.get("airflow-or-venting")?.sourceIds).toEqual(
+      expect.arrayContaining(["furrion-12v-refrigerator-ventilation-faq", "furrion-refrigerator-not-cold-enough-faq"]),
+    );
+    expect(symptomById.get("low-voltage")?.sourceIds).toEqual(
+      expect.arrayContaining(["furrion-refrigerator-compressor-cycling-faq", "furrion-10-6-refrigerator", "furrion-french-door-refrigerator"]),
+    );
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(
+      expect.arrayContaining(["furrion-refrigerators-support-index", "furrion-refrigerator-storage-qr", "furrion-refrigerant-leak-boundary-faq"]),
+    );
+
+    expect([...supportUrls.values()]).not.toEqual(expect.arrayContaining([
+      "https://support.lci1.com/videos/how-to-replace-the-fuse-on-a-furrion-8-cuft-refrigerator",
+      "https://support.lci1.com/videos/compressor-board-replacement-on-fcr20dcafa-furrion-refrigerator",
+      "https://support.lci1.com/videos/testing-compressor-on-fcr10dcgfa-furrion-refrigerator",
+      "https://support.lci1.com/documents/ccd-0009381",
+      "https://support.lci1.com/documents/ccd-0009268",
+      "https://support.lci1.com/documents/ccd-0008570",
+      "https://support.lci1.com/documents/ccd-0008248",
+    ]));
   });
 
   it("includes official Dometic RM8 support aliases for exact owner searches", () => {
