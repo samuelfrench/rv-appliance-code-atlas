@@ -3,7 +3,14 @@
     "name": "RV Appliance Code Atlas",
     "baseUrl": "https://rv-appliance-code-atlas.fly.dev",
     "generatedAt": "2026-06-02T00:00:00-05:00",
-    "safetyBoundary": "Use this atlas to identify likely meaning and prepare for service. Shut off power, LP gas, fuel, or water when a listed appliance condition involves flame, gas smell, exhaust, generator shutdown, high temperature, moving jacks/slides, refrigerant, 120 VAC, control boards, repeated ignition failure, or a persistent lockout. Call the appliance maker, RV dealer, or a qualified RV technician for repair."
+    "safetyBoundary": "Use this atlas to identify likely meaning and prepare for service. Shut off power, LP gas, fuel, or water when a listed appliance condition involves flame, gas smell, exhaust, generator shutdown, high temperature, moving jacks/slides, refrigerant, 120 VAC, control boards, repeated ignition failure, or a persistent lockout. Call the appliance maker, RV dealer, or a qualified RV technician for repair.",
+    "searchConsole": {
+      "propertyType": "URL_PREFIX",
+      "siteUrl": "https://rv-appliance-code-atlas.fly.dev/",
+      "sitemapUrl": "https://rv-appliance-code-atlas.fly.dev/sitemap.xml",
+      "verifiedAt": "2026-06-02T19:38:59Z",
+      "sitemapSubmittedAt": "2026-06-02T19:38:59Z"
+    }
   },
   "sources": [
     {

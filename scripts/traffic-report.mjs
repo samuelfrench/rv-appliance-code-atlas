@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 const root = path.dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const corpus = JSON.parse(fs.readFileSync(path.join(root, "src/data/corpus.json"), "utf8"));
 const outputPath = path.join(root, "reports/traffic-readiness.json");
+const searchConsole = corpus.site.searchConsole ?? null;
 
 function buildReport() {
   return {
@@ -13,7 +14,8 @@ function buildReport() {
     freeSite: true,
     checkoutEnabled: false,
     adSlotsEnabled: false,
-    gscConfigured: Boolean(process.env.GSC_SITE_URL && process.env.GOOGLE_APPLICATION_CREDENTIALS),
+    gscConfigured: Boolean(searchConsole?.siteUrl && searchConsole?.sitemapSubmittedAt),
+    searchConsole,
     verifiedEntries: corpus.entries.length,
     symptomGuides: corpus.symptoms.length,
     sourceCount: corpus.sources.length,
@@ -23,7 +25,7 @@ function buildReport() {
       currentImpressions: 0,
       ready: false,
     })),
-    nextAutomatedBatchGoal: "Add GSC property and submit sitemap after live URL is stable.",
+    nextAutomatedBatchGoal: "Add weekly traffic report artifact once GSC is configured.",
     monitorCommand: "npm run traffic:monitor",
   };
 }

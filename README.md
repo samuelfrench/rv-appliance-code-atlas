@@ -38,6 +38,11 @@ npm run traffic:gsc:dry-run
 GSC_QUOTA_PROJECT=coffee-explorer-480514 npm run traffic:gsc:submit
 ```
 
+Search Console status:
+- URL-prefix property: `https://rv-appliance-code-atlas.fly.dev/`
+- Sitemap: `https://rv-appliance-code-atlas.fly.dev/sitemap.xml`
+- Verified and submitted: `2026-06-02T19:38:59Z`
+
 Traffic monitor:
 
 ```bash
@@ -51,4 +56,4 @@ Current corpus:
 - `951` generated indexable pages
 
 Next automated batch goal:
-- Add GSC property and submit sitemap after live URL is stable.
+- Add weekly traffic report artifact once GSC is configured.

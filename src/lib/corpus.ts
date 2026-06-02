@@ -39,6 +39,13 @@ export type Corpus = {
     baseUrl: string;
     generatedAt: string;
     safetyBoundary: string;
+    searchConsole?: {
+      propertyType: "URL_PREFIX";
+      siteUrl: string;
+      sitemapUrl: string;
+      verifiedAt: string;
+      sitemapSubmittedAt: string;
+    };
   };
   sources: Source[];
   entries: CorpusEntry[];

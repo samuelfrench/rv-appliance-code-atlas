@@ -9,7 +9,15 @@ describe("traffic readiness report", () => {
     });
     const report = JSON.parse(output);
 
-    expect(report.nextAutomatedBatchGoal).toBe("Add GSC property and submit sitemap after live URL is stable.");
+    expect(report.gscConfigured).toBe(true);
+    expect(report.searchConsole).toEqual({
+      propertyType: "URL_PREFIX",
+      siteUrl: "https://rv-appliance-code-atlas.fly.dev/",
+      sitemapUrl: "https://rv-appliance-code-atlas.fly.dev/sitemap.xml",
+      verifiedAt: "2026-06-02T19:38:59Z",
+      sitemapSubmittedAt: "2026-06-02T19:38:59Z",
+    });
+    expect(report.nextAutomatedBatchGoal).toBe("Add weekly traffic report artifact once GSC is configured.");
 
     expect(readFileSync("README.md", "utf8")).toContain(report.nextAutomatedBatchGoal);
     expect(readFileSync("TODO.md", "utf8")).toContain(
