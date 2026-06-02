@@ -757,6 +757,30 @@
       "url": "https://support.lci1.com/documents/ccd-0008320",
       "type": "manufacturer-quick-reference",
       "official": true
+    },
+    {
+      "id": "girard-gswh1-owner-manual",
+      "brand": "Lippert",
+      "title": "Lippert Tankless Water Heater Model GSWH-1 Owner's Manual - EN/FR",
+      "url": "https://support.lci1.com/documents/gp-llc-other-products/gswh-1-wh-owners-man-rev-5-eng-frnch-aug-11646",
+      "type": "owner manual",
+      "official": true
+    },
+    {
+      "id": "girard-gswh1m-owner-manual",
+      "brand": "Lippert",
+      "title": "Lippert Tankless Water Heater Model GSWH-1M Owner's Manual - EN/FR",
+      "url": "https://support.lci1.com/documents/gp-llc-other-products/gswh-1m-om-engfr-rev-40",
+      "type": "owner manual",
+      "official": true
+    },
+    {
+      "id": "girard-gswh1-wud-owner-manual",
+      "brand": "Lippert",
+      "title": "Lippert Winter Use Device for GSWH-1 Tankless Water Heaters Owner's Manual - EN/FR",
+      "url": "https://support.lci1.com/documents/gp-llc-other-products/gswh-1-wud-owners-manual-rev312",
+      "type": "owner manual",
+      "official": true
     }
   ],
   "entries": [
@@ -17067,6 +17091,414 @@
         "water-flow state",
         "LP and 12V status"
       ]
+    },
+    {
+      "id": "girard-gswh1-steady-on",
+      "brand": "Lippert",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "Girard GSWH-1"
+      ],
+      "code": "steady on",
+      "slug": "girard-gswh1-led-steady-on-internal-control-fault",
+      "plainMeaning": "The Lippert Girard GSWH-1 owner manual lists a steady-on diagnostic LED as internal control fault.",
+      "ownerSafeActions": [
+        "Turn hot-water demand off and power-cycle once only from normal controls if safe.",
+        "Record the exact LED state, water-flow state, LP status, 12V status, and whether the same pattern repeats.",
+        "Contact Lippert/Girard or a qualified technician if the LED pattern returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal ignition, airflow, flame-sense, gas, blower, wiring, 12V diagnostics, ECO, winter-use-device, and controller work is qualified service work."
+      ],
+      "safetyBoundary": "The legacy Girard GSWH-1/GSWH-1M is an LP gas tankless water heater. Shut the heater off for gas odor, overheating, leaks, blocked exhaust, repeated lockout, or repeated LED faults and use Lippert/Girard or qualified RV service.",
+      "sourceIds": [
+        "girard-gswh1-owner-manual"
+      ],
+      "symptomIds": [
+        "girard-gswh1-gswh1m-led-diagnostics-lockout",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Girard GSWH-1 model label",
+        "diagnostic LED blink pattern",
+        "power switch state",
+        "hot-water flow state",
+        "LP and 12V status"
+      ]
+    },
+    {
+      "id": "girard-gswh1-1-flash",
+      "brand": "Lippert",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "Girard GSWH-1"
+      ],
+      "code": "1 flash",
+      "slug": "girard-gswh1-led-1-flash-air-fault",
+      "plainMeaning": "The Lippert Girard GSWH-1 owner manual lists 1 flash on the diagnostic LED as air fault.",
+      "ownerSafeActions": [
+        "Turn hot-water demand off and power-cycle once only from normal controls if safe.",
+        "Record the exact LED state, water-flow state, LP status, 12V status, and whether the same pattern repeats.",
+        "Contact Lippert/Girard or a qualified technician if the LED pattern returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal ignition, airflow, flame-sense, gas, blower, wiring, 12V diagnostics, ECO, winter-use-device, and controller work is qualified service work."
+      ],
+      "safetyBoundary": "The legacy Girard GSWH-1/GSWH-1M is an LP gas tankless water heater. Shut the heater off for gas odor, overheating, leaks, blocked exhaust, repeated lockout, or repeated LED faults and use Lippert/Girard or qualified RV service.",
+      "sourceIds": [
+        "girard-gswh1-owner-manual"
+      ],
+      "symptomIds": [
+        "girard-gswh1-gswh1m-led-diagnostics-lockout",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Girard GSWH-1 model label",
+        "diagnostic LED blink pattern",
+        "power switch state",
+        "hot-water flow state",
+        "LP and 12V status"
+      ]
+    },
+    {
+      "id": "girard-gswh1-2-flashes",
+      "brand": "Lippert",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "Girard GSWH-1"
+      ],
+      "code": "2 flashes",
+      "slug": "girard-gswh1-led-2-flashes-flame-detection-error",
+      "plainMeaning": "The Lippert Girard GSWH-1 owner manual lists 2 flashes on the diagnostic LED as flame detection error.",
+      "ownerSafeActions": [
+        "Turn hot-water demand off and power-cycle once only from normal controls if safe.",
+        "Record the exact LED state, water-flow state, LP status, 12V status, and whether the same pattern repeats.",
+        "Contact Lippert/Girard or a qualified technician if the LED pattern returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal ignition, airflow, flame-sense, gas, blower, wiring, 12V diagnostics, ECO, winter-use-device, and controller work is qualified service work."
+      ],
+      "safetyBoundary": "The legacy Girard GSWH-1/GSWH-1M is an LP gas tankless water heater. Shut the heater off for gas odor, overheating, leaks, blocked exhaust, repeated lockout, or repeated LED faults and use Lippert/Girard or qualified RV service.",
+      "sourceIds": [
+        "girard-gswh1-owner-manual"
+      ],
+      "symptomIds": [
+        "girard-gswh1-gswh1m-led-diagnostics-lockout",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Girard GSWH-1 model label",
+        "diagnostic LED blink pattern",
+        "power switch state",
+        "hot-water flow state",
+        "LP and 12V status"
+      ]
+    },
+    {
+      "id": "girard-gswh1-3-flashes",
+      "brand": "Lippert",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "Girard GSWH-1"
+      ],
+      "code": "3 flashes",
+      "slug": "girard-gswh1-led-3-flashes-lockout",
+      "plainMeaning": "The Lippert Girard GSWH-1 owner manual lists 3 flashes on the diagnostic LED as lockout.",
+      "ownerSafeActions": [
+        "Turn hot-water demand off and power-cycle once only from normal controls if safe.",
+        "Record the exact LED state, water-flow state, LP status, 12V status, and whether the same pattern repeats.",
+        "Contact Lippert/Girard or a qualified technician if the LED pattern returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal ignition, airflow, flame-sense, gas, blower, wiring, 12V diagnostics, ECO, winter-use-device, and controller work is qualified service work."
+      ],
+      "safetyBoundary": "The legacy Girard GSWH-1/GSWH-1M is an LP gas tankless water heater. Shut the heater off for gas odor, overheating, leaks, blocked exhaust, repeated lockout, or repeated LED faults and use Lippert/Girard or qualified RV service.",
+      "sourceIds": [
+        "girard-gswh1-owner-manual"
+      ],
+      "symptomIds": [
+        "girard-gswh1-gswh1m-led-diagnostics-lockout",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Girard GSWH-1 model label",
+        "diagnostic LED blink pattern",
+        "power switch state",
+        "hot-water flow state",
+        "LP and 12V status"
+      ]
+    },
+    {
+      "id": "girard-gswh1-4-flashes",
+      "brand": "Lippert",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "Girard GSWH-1"
+      ],
+      "code": "4 flashes",
+      "slug": "girard-gswh1-led-4-flashes-reserved-for-future-diagnostics",
+      "plainMeaning": "The Lippert Girard GSWH-1 owner manual lists 4 flashes on the diagnostic LED as intentionally NA and reserved for future diagnostics.",
+      "ownerSafeActions": [
+        "Record the exact LED pattern and whether it repeats after one normal-control restart.",
+        "Treat 4 flashes as a no-owner-repair condition because the owner manual marks it reserved for future diagnostics.",
+        "Contact Lippert/Girard or a qualified technician before further operation if the pattern appears."
+      ],
+      "serviceOnlyActions": [
+        "Internal ignition, airflow, flame-sense, gas, blower, wiring, 12V diagnostics, ECO, winter-use-device, and controller work is qualified service work."
+      ],
+      "safetyBoundary": "The legacy Girard GSWH-1/GSWH-1M is an LP gas tankless water heater. Shut the heater off for gas odor, overheating, leaks, blocked exhaust, repeated lockout, or repeated LED faults and use Lippert/Girard or qualified RV service.",
+      "sourceIds": [
+        "girard-gswh1-owner-manual"
+      ],
+      "symptomIds": [
+        "girard-gswh1-gswh1m-led-diagnostics-lockout",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Girard GSWH-1 model label",
+        "diagnostic LED blink pattern",
+        "power switch state",
+        "hot-water flow state",
+        "LP and 12V status"
+      ]
+    },
+    {
+      "id": "girard-gswh1-5-flashes",
+      "brand": "Lippert",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "Girard GSWH-1"
+      ],
+      "code": "5 flashes",
+      "slug": "girard-gswh1-led-5-flashes-low-voltage",
+      "plainMeaning": "The Lippert Girard GSWH-1 owner manual lists 5 flashes on the diagnostic LED as low voltage.",
+      "ownerSafeActions": [
+        "Turn hot-water demand off and power-cycle once only from normal controls if safe.",
+        "Check only visible RV battery and 12V power status from normal controls, then record the exact LED pattern.",
+        "Contact Lippert/Girard or a qualified technician if the low-voltage LED pattern returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal ignition, airflow, flame-sense, gas, blower, wiring, 12V diagnostics, ECO, winter-use-device, and controller work is qualified service work."
+      ],
+      "safetyBoundary": "The legacy Girard GSWH-1/GSWH-1M is an LP gas tankless water heater. Shut the heater off for gas odor, overheating, leaks, blocked exhaust, repeated lockout, or repeated LED faults and use Lippert/Girard or qualified RV service.",
+      "sourceIds": [
+        "girard-gswh1-owner-manual"
+      ],
+      "symptomIds": [
+        "girard-gswh1-gswh1m-led-diagnostics-lockout",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Girard GSWH-1 model label",
+        "diagnostic LED blink pattern",
+        "power switch state",
+        "hot-water flow state",
+        "LP and 12V status"
+      ]
+    },
+    {
+      "id": "girard-gswh1m-steady-on",
+      "brand": "Lippert",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "Girard GSWH-1M"
+      ],
+      "code": "steady on",
+      "slug": "girard-gswh1m-led-steady-on-internal-control-fault",
+      "plainMeaning": "The Lippert Girard GSWH-1M owner manual lists a steady-on diagnostic LED as internal control fault.",
+      "ownerSafeActions": [
+        "Turn hot-water demand off and power-cycle once only from normal controls if safe.",
+        "Record the exact LED state, water-flow state, LP status, 12V status, and whether the same pattern repeats.",
+        "Contact Lippert/Girard or a qualified technician if the LED pattern returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal ignition, airflow, flame-sense, gas, blower, wiring, 12V diagnostics, ECO, winter-use-device, and controller work is qualified service work."
+      ],
+      "safetyBoundary": "The legacy Girard GSWH-1/GSWH-1M is an LP gas tankless water heater. Shut the heater off for gas odor, overheating, leaks, blocked exhaust, repeated lockout, or repeated LED faults and use Lippert/Girard or qualified RV service.",
+      "sourceIds": [
+        "girard-gswh1m-owner-manual"
+      ],
+      "symptomIds": [
+        "girard-gswh1-gswh1m-led-diagnostics-lockout",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Girard GSWH-1M model label",
+        "diagnostic LED blink pattern",
+        "power switch state",
+        "hot-water flow state",
+        "LP and 12V status"
+      ]
+    },
+    {
+      "id": "girard-gswh1m-1-flash",
+      "brand": "Lippert",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "Girard GSWH-1M"
+      ],
+      "code": "1 flash",
+      "slug": "girard-gswh1m-led-1-flash-air-fault",
+      "plainMeaning": "The Lippert Girard GSWH-1M owner manual lists 1 flash on the diagnostic LED as air fault.",
+      "ownerSafeActions": [
+        "Turn hot-water demand off and power-cycle once only from normal controls if safe.",
+        "Record the exact LED state, water-flow state, LP status, 12V status, and whether the same pattern repeats.",
+        "Contact Lippert/Girard or a qualified technician if the LED pattern returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal ignition, airflow, flame-sense, gas, blower, wiring, 12V diagnostics, ECO, winter-use-device, and controller work is qualified service work."
+      ],
+      "safetyBoundary": "The legacy Girard GSWH-1/GSWH-1M is an LP gas tankless water heater. Shut the heater off for gas odor, overheating, leaks, blocked exhaust, repeated lockout, or repeated LED faults and use Lippert/Girard or qualified RV service.",
+      "sourceIds": [
+        "girard-gswh1m-owner-manual"
+      ],
+      "symptomIds": [
+        "girard-gswh1-gswh1m-led-diagnostics-lockout",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Girard GSWH-1M model label",
+        "diagnostic LED blink pattern",
+        "power switch state",
+        "hot-water flow state",
+        "LP and 12V status"
+      ]
+    },
+    {
+      "id": "girard-gswh1m-2-flashes",
+      "brand": "Lippert",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "Girard GSWH-1M"
+      ],
+      "code": "2 flashes",
+      "slug": "girard-gswh1m-led-2-flashes-flame-detection-error",
+      "plainMeaning": "The Lippert Girard GSWH-1M owner manual lists 2 flashes on the diagnostic LED as flame detection error.",
+      "ownerSafeActions": [
+        "Turn hot-water demand off and power-cycle once only from normal controls if safe.",
+        "Record the exact LED state, water-flow state, LP status, 12V status, and whether the same pattern repeats.",
+        "Contact Lippert/Girard or a qualified technician if the LED pattern returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal ignition, airflow, flame-sense, gas, blower, wiring, 12V diagnostics, ECO, winter-use-device, and controller work is qualified service work."
+      ],
+      "safetyBoundary": "The legacy Girard GSWH-1/GSWH-1M is an LP gas tankless water heater. Shut the heater off for gas odor, overheating, leaks, blocked exhaust, repeated lockout, or repeated LED faults and use Lippert/Girard or qualified RV service.",
+      "sourceIds": [
+        "girard-gswh1m-owner-manual"
+      ],
+      "symptomIds": [
+        "girard-gswh1-gswh1m-led-diagnostics-lockout",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Girard GSWH-1M model label",
+        "diagnostic LED blink pattern",
+        "power switch state",
+        "hot-water flow state",
+        "LP and 12V status"
+      ]
+    },
+    {
+      "id": "girard-gswh1m-3-flashes",
+      "brand": "Lippert",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "Girard GSWH-1M"
+      ],
+      "code": "3 flashes",
+      "slug": "girard-gswh1m-led-3-flashes-lockout",
+      "plainMeaning": "The Lippert Girard GSWH-1M owner manual lists 3 flashes on the diagnostic LED as lockout.",
+      "ownerSafeActions": [
+        "Turn hot-water demand off and power-cycle once only from normal controls if safe.",
+        "Record the exact LED state, water-flow state, LP status, 12V status, and whether the same pattern repeats.",
+        "Contact Lippert/Girard or a qualified technician if the LED pattern returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal ignition, airflow, flame-sense, gas, blower, wiring, 12V diagnostics, ECO, winter-use-device, and controller work is qualified service work."
+      ],
+      "safetyBoundary": "The legacy Girard GSWH-1/GSWH-1M is an LP gas tankless water heater. Shut the heater off for gas odor, overheating, leaks, blocked exhaust, repeated lockout, or repeated LED faults and use Lippert/Girard or qualified RV service.",
+      "sourceIds": [
+        "girard-gswh1m-owner-manual"
+      ],
+      "symptomIds": [
+        "girard-gswh1-gswh1m-led-diagnostics-lockout",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Girard GSWH-1M model label",
+        "diagnostic LED blink pattern",
+        "power switch state",
+        "hot-water flow state",
+        "LP and 12V status"
+      ]
+    },
+    {
+      "id": "girard-gswh1m-4-flashes",
+      "brand": "Lippert",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "Girard GSWH-1M"
+      ],
+      "code": "4 flashes",
+      "slug": "girard-gswh1m-led-4-flashes-reserved-for-future-diagnostics",
+      "plainMeaning": "The Lippert Girard GSWH-1M owner manual lists 4 flashes on the diagnostic LED as intentionally NA and reserved for future diagnostics.",
+      "ownerSafeActions": [
+        "Record the exact LED pattern and whether it repeats after one normal-control restart.",
+        "Treat 4 flashes as a no-owner-repair condition because the owner manual marks it reserved for future diagnostics.",
+        "Contact Lippert/Girard or a qualified technician before further operation if the pattern appears."
+      ],
+      "serviceOnlyActions": [
+        "Internal ignition, airflow, flame-sense, gas, blower, wiring, 12V diagnostics, ECO, winter-use-device, and controller work is qualified service work."
+      ],
+      "safetyBoundary": "The legacy Girard GSWH-1/GSWH-1M is an LP gas tankless water heater. Shut the heater off for gas odor, overheating, leaks, blocked exhaust, repeated lockout, or repeated LED faults and use Lippert/Girard or qualified RV service.",
+      "sourceIds": [
+        "girard-gswh1m-owner-manual"
+      ],
+      "symptomIds": [
+        "girard-gswh1-gswh1m-led-diagnostics-lockout",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Girard GSWH-1M model label",
+        "diagnostic LED blink pattern",
+        "power switch state",
+        "hot-water flow state",
+        "LP and 12V status"
+      ]
+    },
+    {
+      "id": "girard-gswh1m-5-flashes",
+      "brand": "Lippert",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "Girard GSWH-1M"
+      ],
+      "code": "5 flashes",
+      "slug": "girard-gswh1m-led-5-flashes-low-voltage",
+      "plainMeaning": "The Lippert Girard GSWH-1M owner manual lists 5 flashes on the diagnostic LED as low voltage.",
+      "ownerSafeActions": [
+        "Turn hot-water demand off and power-cycle once only from normal controls if safe.",
+        "Check only visible RV battery and 12V power status from normal controls, then record the exact LED pattern.",
+        "Contact Lippert/Girard or a qualified technician if the low-voltage LED pattern returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal ignition, airflow, flame-sense, gas, blower, wiring, 12V diagnostics, ECO, winter-use-device, and controller work is qualified service work."
+      ],
+      "safetyBoundary": "The legacy Girard GSWH-1/GSWH-1M is an LP gas tankless water heater. Shut the heater off for gas odor, overheating, leaks, blocked exhaust, repeated lockout, or repeated LED faults and use Lippert/Girard or qualified RV service.",
+      "sourceIds": [
+        "girard-gswh1m-owner-manual"
+      ],
+      "symptomIds": [
+        "girard-gswh1-gswh1m-led-diagnostics-lockout",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Girard GSWH-1M model label",
+        "diagnostic LED blink pattern",
+        "power switch state",
+        "hot-water flow state",
+        "LP and 12V status"
+      ]
     }
   ],
   "symptoms": [
@@ -17847,6 +18279,71 @@
         "girard-tankless-intro-operation-video",
         "girard-tankless-no-hot-water-video",
         "girard-tankless-quick-operating-tips"
+      ]
+    },
+    {
+      "id": "girard-gswh1-gswh1m-led-diagnostics-lockout",
+      "slug": "girard-gswh1-gswh1m-led-diagnostics-or-lockout",
+      "title": "Girard GSWH-1/GSWH-1M LED diagnostics or lockout",
+      "summary": "Use this when a legacy Girard GSWH-1 or GSWH-1M diagnostic LED is steady on, blinking one through five flashes, or the heater enters lockout.",
+      "safeChecklist": [
+        "Count the diagnostic LED pattern exactly: steady on, one through five flashes, then the three-second repeat.",
+        "Use one normal-control reset only if there is no gas odor, overheating, leak, or blocked vent condition.",
+        "Stop repeated restart attempts and record LP, 12V, water-flow, and model-label details.",
+        "Use Lippert/Girard or qualified RV service for internal control, airflow, flame, low-voltage, or repeated lockout faults."
+      ],
+      "sourceIds": [
+        "girard-gswh1-owner-manual",
+        "girard-gswh1m-owner-manual"
+      ]
+    },
+    {
+      "id": "girard-gswh1-gswh1m-low-flow-temperature",
+      "slug": "girard-gswh1-gswh1m-low-flow-temperature-limiting",
+      "title": "Girard GSWH-1/GSWH-1M low flow, temperature swing, or limiting",
+      "summary": "Use this when a legacy Girard tankless water heater has low flow, temperature swings, limiting/cycling, or water that is too hot or not hot enough.",
+      "safeChecklist": [
+        "Purge air from hot and cold water lines before judging temperature behavior.",
+        "Follow the exact manual for the model: GSWH-1 uses hot-water flow and mode settings, while GSWH-1M uses gas-modulation and flow adjustments.",
+        "Check owner-accessible faucet or shower restrictions only when the model manual allows it, and keep exterior louvers visibly clear.",
+        "Call Lippert/Girard or qualified RV service for limiting or cycling that repeats, persistent flow problems, or any LED fault pattern."
+      ],
+      "sourceIds": [
+        "girard-gswh1-owner-manual",
+        "girard-gswh1m-owner-manual"
+      ]
+    },
+    {
+      "id": "girard-gswh1-gswh1m-winterization-freeze",
+      "slug": "girard-gswh1-gswh1m-winterization-wud-freeze-risk",
+      "title": "Girard GSWH-1/GSWH-1M winterization or freeze-risk",
+      "summary": "Use this when a legacy Girard GSWH-1 winter-use device, GSWH-1M built-in winter mode, storage winterization, or suspected freeze damage is involved.",
+      "safeChecklist": [
+        "Winterize the whole RV plumbing before storage or freezing weather; the winter-use device protects only the water heater internal piping.",
+        "For intended winter operation, verify only normal owner-visible conditions: fresh water, 12V power, water pump, LP supply, and the heater switched on.",
+        "Shut off water, LP, and 12V power for leaks, suspected freeze damage, gas odor, or visible damage.",
+        "Treat winter-use-device installation, thermostat, solenoid, wiring, and leak repair as qualified service work."
+      ],
+      "sourceIds": [
+        "girard-gswh1m-owner-manual",
+        "girard-gswh1-wud-owner-manual"
+      ]
+    },
+    {
+      "id": "girard-gswh1-gswh1m-gas-smell",
+      "slug": "girard-gswh1-gswh1m-gas-smell",
+      "title": "Girard GSWH-1/GSWH-1M gas smell",
+      "summary": "Use this when gas odor is present near a legacy Girard GSWH-1 or GSWH-1M water heater or inside the RV.",
+      "safeChecklist": [
+        "Leave the RV and keep people away from ignition sources.",
+        "Shut off LP at the source only if it is safe to do so.",
+        "Do not touch switches, radios, phones, engines, generators, or flames in the RV.",
+        "Contact the gas supplier, Lippert/Girard, a qualified RV technician, or the fire department before restoring LP."
+      ],
+      "sourceIds": [
+        "girard-gswh1-owner-manual",
+        "girard-gswh1m-owner-manual",
+        "girard-gswh1-wud-owner-manual"
       ]
     }
   ],

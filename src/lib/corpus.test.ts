@@ -826,4 +826,40 @@ describe("verified corpus", () => {
       ).toBe(true);
     }
   });
+
+  it("adds official legacy Girard GSWH-1 and GSWH-1M owner-manual LED diagnostics separately", () => {
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const expectedLedCodes = new Set(["steady on", "1 flash", "2 flashes", "3 flashes", "4 flashes", "5 flashes"]);
+    const legacySources = [
+      "girard-gswh1-owner-manual",
+      "girard-gswh1m-owner-manual",
+      "girard-gswh1-wud-owner-manual",
+    ];
+    const codesForFamily = (modelFamily: string) =>
+      corpus.entries.filter((entry) => entry.brand === "Lippert" && entry.modelFamilies.includes(modelFamily));
+
+    for (const sourceId of legacySources) {
+      expect(corpus.sources.find((source) => source.id === sourceId)?.official, sourceId).toBe(true);
+    }
+
+    expect(new Set(codesForFamily("Girard GSWH-1").map((entry) => entry.code))).toEqual(expectedLedCodes);
+    expect(new Set(codesForFamily("Girard GSWH-1M").map((entry) => entry.code))).toEqual(expectedLedCodes);
+
+    expect(codesForFamily("Girard GSWH-1").map((entry) => entry.sourceIds)).toEqual(
+      Array.from({ length: expectedLedCodes.size }, () => ["girard-gswh1-owner-manual"]),
+    );
+    expect(codesForFamily("Girard GSWH-1M").map((entry) => entry.sourceIds)).toEqual(
+      Array.from({ length: expectedLedCodes.size }, () => ["girard-gswh1m-owner-manual"]),
+    );
+
+    expect(symptomById.get("girard-gswh1-gswh1m-led-diagnostics-lockout")?.sourceIds).toEqual(
+      expect.arrayContaining(["girard-gswh1-owner-manual", "girard-gswh1m-owner-manual"]),
+    );
+    expect(symptomById.get("girard-gswh1-gswh1m-low-flow-temperature")?.sourceIds).toEqual(
+      expect.arrayContaining(["girard-gswh1-owner-manual", "girard-gswh1m-owner-manual"]),
+    );
+    expect(symptomById.get("girard-gswh1-gswh1m-winterization-freeze")?.sourceIds).toEqual(
+      expect.arrayContaining(["girard-gswh1m-owner-manual", "girard-gswh1-wud-owner-manual"]),
+    );
+  });
 });
