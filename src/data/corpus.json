@@ -71,6 +71,46 @@
       "official": true
     },
     {
+      "id": "dometic-od5001-no-ignition-support",
+      "brand": "Dometic",
+      "title": "Dometic There Is No Ignition When Water Is On (Power Vent Fan Is Running) | OD-5001 | Support",
+      "url": "https://support.dometic.com/en/waterheaters-od5001/There-Is-No-Ignition-When-Water-Is-On-Power-vent-fan-is-running-b63e",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-od5001-no-power-vent-support",
+      "brand": "Dometic",
+      "title": "Dometic Heater Does Not Come On When the Water is Turned On (Power Vent Fan Not Running) | OD-5001 | Support",
+      "url": "https://support.dometic.com/en/waterheaters-od5001/Heater-Does-Not-Come-On-When-The-Water-is-turned-on-Power-vent-fan-not-running-e6d3",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-od5001-operating-support",
+      "brand": "Dometic",
+      "title": "Dometic How to Operate Your Water Heater | On Demand Water Heater (OD-5001) | Support",
+      "url": "https://support.dometic.com/en/waterheaters-od5001/How-to-operate-your-water-heater-679c",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-od5001-rapid-cycle-support",
+      "brand": "Dometic",
+      "title": "Dometic Heater Comes On But Rapidly Cycles On And Off | OD-5001 | Support",
+      "url": "https://support.dometic.com/en/waterheaters-od5001/Heater-Comes-On-But-Rapidly-Cycles-On-And-Off-6d10",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-od5001-temperature-fluctuation-support",
+      "brand": "Dometic",
+      "title": "Dometic Burner Turns On But Temperature Fluctuates Erratically | OD-5001 | Support",
+      "url": "https://support.dometic.com/en/waterheaters-od5001/Burner-Turns-On-But-Temperature-Fluctuates-Erratically-19c8",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
       "id": "dometic-rm1350-operating",
       "brand": "Dometic",
       "title": "Dometic RM1350 and RM1350SL Operating Instructions",
@@ -91,6 +131,30 @@
       "brand": "Dometic",
       "title": "My refrigerator is giving me a fault message | RUC Refrigerator | Support",
       "url": "https://support.dometic.com/en/ruc-refrigerators/My-refrigerator-is-giving-me-a-fault-message-844",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-water-heater-combo-function-support",
+      "brand": "Dometic",
+      "title": "Dometic Gas/Electric Combination Function Information | Water Heaters - Combo Gas & Electric | Support",
+      "url": "https://support.dometic.com/en/waterheaters-combo/GasElectric-combination-function-information-eaf5",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-water-heater-gas-function-support",
+      "brand": "Dometic",
+      "title": "Dometic Gas Function | Water Heaters - Gas | Support",
+      "url": "https://support.dometic.com/en/waterheaters-gas/Gas-Function-8df9",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-water-heater-overheat-reset-support",
+      "brand": "Dometic",
+      "title": "Dometic How to Clear a Water Heater Over-Heating Failure | Support",
+      "url": "https://support.dometic.com/en/waterheaters-combo/How-to-clear-a-water-heater-over-heating-failure-2deb",
       "type": "manufacturer-support",
       "official": true
     },
@@ -15915,7 +15979,9 @@
       ],
       "sourceIds": [
         "norcold-polar-owner",
-        "furrion-water-heater"
+        "furrion-water-heater",
+        "dometic-water-heater-gas-function-support",
+        "dometic-od5001-no-ignition-support"
       ]
     },
     {
@@ -15931,7 +15997,12 @@
       "sourceIds": [
         "suburban-tank-water-heater",
         "dometic-water-heater-wh",
-        "furrion-water-heater"
+        "furrion-water-heater",
+        "dometic-water-heater-combo-function-support",
+        "dometic-water-heater-gas-function-support",
+        "dometic-water-heater-overheat-reset-support",
+        "dometic-od5001-operating-support",
+        "dometic-od5001-no-ignition-support"
       ]
     },
     {
@@ -16078,7 +16149,11 @@
         "furrion-furnace-troubleshooting",
         "furrion-rooftop-hvac-troubleshooting",
         "coleman-9430-thermostat",
-        "dometic-hydro-flame-afm-66618"
+        "dometic-hydro-flame-afm-66618",
+        "dometic-water-heater-combo-function-support",
+        "dometic-water-heater-overheat-reset-support",
+        "dometic-od5001-operating-support",
+        "dometic-od5001-no-power-vent-support"
       ]
     },
     {
@@ -16165,6 +16240,100 @@
       "sourceIds": [
         "coleman-9330-thermostat",
         "coleman-9420-thermostat"
+      ]
+    },
+    {
+      "id": "water-heater-lockout-light",
+      "slug": "dometic-atwood-water-heater-lockout-light",
+      "title": "Dometic/Atwood water heater lockout light",
+      "summary": "Use this when a Dometic/Atwood tank water heater fails to ignite, lights the red lockout lamp, or has slow recovery in gas/electric operation.",
+      "safeChecklist": [
+        "Turn the water heater mode switch off, then wait before another start attempt.",
+        "Confirm normal LP supply and water-heater mode selection from the RV controls only.",
+        "Stop repeated reset attempts if lockout returns or slow recovery continues.",
+        "Call a qualified RV appliance technician for ignition, thermostat, ECO, or wiring diagnosis."
+      ],
+      "sourceIds": [
+        "dometic-water-heater-combo-function-support",
+        "dometic-water-heater-gas-function-support",
+        "dometic-water-heater-wh"
+      ]
+    },
+    {
+      "id": "water-heater-overheat-lockout",
+      "slug": "dometic-water-heater-overheat-lockout-reset",
+      "title": "Dometic water heater overheat lockout reset",
+      "summary": "Use this when a Dometic water heater is in an over-heating lockout and support/manual guidance points to cooling and reset at the switch.",
+      "safeChecklist": [
+        "Turn the water heater off and let the water cool before any reset attempt.",
+        "Use only the wall switch or normal control switch reset described by Dometic support.",
+        "Do not keep resetting an overheat lockout that returns.",
+        "Call service for repeated overheat lockout, thermostat, ECO, or hot-water temperature problems."
+      ],
+      "sourceIds": [
+        "dometic-water-heater-overheat-reset-support",
+        "dometic-water-heater-wh"
+      ]
+    },
+    {
+      "id": "od5001-startup-and-lockout",
+      "slug": "dometic-od5001-startup-lockout",
+      "title": "Dometic OD-5001 startup or lockout behavior",
+      "summary": "Use this when an OD-5001 on-demand water heater will not start normally, needs first-use air purge, fails ignition, or lights the optional lockout lamp.",
+      "safeChecklist": [
+        "Pressurize the water system and purge air from hot-water lines from normal faucets.",
+        "Confirm 12V power and LP supply using normal RV controls only.",
+        "Reset ignition only with the water-heater power switch after one failed start attempt.",
+        "Turn the appliance off and call service if overheating occurs, gas does not shut off, or lockout returns."
+      ],
+      "sourceIds": [
+        "dometic-od5001-operating-support",
+        "dometic-od5001-no-ignition-support"
+      ]
+    },
+    {
+      "id": "od5001-power-vent-not-running",
+      "slug": "dometic-od5001-power-vent-not-running",
+      "title": "Dometic OD-5001 power vent fan not running",
+      "summary": "Use this when water flow is on but the OD-5001 heater does not come on and the power vent fan is not running.",
+      "safeChecklist": [
+        "Turn the water heater off if it does not start normally.",
+        "Record whether water flow was present and whether the fan was silent.",
+        "Check only normal RV power controls and breaker state from the user panel.",
+        "Do not open the appliance or control enclosure; call service for internal fuse or board checks."
+      ],
+      "sourceIds": [
+        "dometic-od5001-no-power-vent-support"
+      ]
+    },
+    {
+      "id": "od5001-rapid-cycling",
+      "slug": "dometic-od5001-rapid-cycling",
+      "title": "Dometic OD-5001 rapidly cycles on and off",
+      "summary": "Use this when an OD-5001 burner starts but cycles rapidly during hot-water use.",
+      "safeChecklist": [
+        "Open the hot-water outlet enough to keep steady flow through the heater.",
+        "Clean faucet aerators or shower screens only where they are owner-accessible.",
+        "Avoid operating the heater below the minimum flow described by Dometic support.",
+        "Call service if rapid cycling continues after restoring normal water flow."
+      ],
+      "sourceIds": [
+        "dometic-od5001-rapid-cycle-support"
+      ]
+    },
+    {
+      "id": "od5001-temperature-fluctuation",
+      "slug": "dometic-od5001-temperature-fluctuation",
+      "title": "Dometic OD-5001 temperature fluctuates during use",
+      "summary": "Use this when an OD-5001 burner runs but hot-water temperature fluctuates erratically.",
+      "safeChecklist": [
+        "Reduce outlet restrictions by cleaning owner-accessible showerhead screens, faucet aerators, or strainers.",
+        "Keep hot-water flow steady and avoid partially restricted fixtures during testing.",
+        "Stop use if water temperature becomes unsafe or unpredictable.",
+        "Call service if temperature swings continue after normal outlet restrictions are cleared."
+      ],
+      "sourceIds": [
+        "dometic-od5001-temperature-fluctuation-support"
       ]
     }
   ],

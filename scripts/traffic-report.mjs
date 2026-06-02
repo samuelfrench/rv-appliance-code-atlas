@@ -24,7 +24,7 @@ function buildReport() {
       ready: false,
     })),
     nextAutomatedBatchGoal:
-      "Add official Dometic/Atwood water-heater and OD-5001 symptom pages, and continue manufacturer-hosted table discovery without adding water-heater code entries unless an official fault/display table is verified.",
+      "Add remaining official water-heater symptom guides from Dometic XT, Suburban, and Furrion sources, and continue manufacturer-hosted table discovery without adding code entries unless an official fault/display table is verified.",
     monitorCommand: "npm run traffic:monitor",
   };
 }

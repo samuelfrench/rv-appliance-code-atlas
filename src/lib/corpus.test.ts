@@ -566,4 +566,43 @@ describe("verified corpus", () => {
     expect(furnaceCodesForSource("dometic-df-furnace")).toEqual(new Set(["steady on", "1 flash", "2 flashes", "3 flashes", "4 flashes", "5 flashes"]));
     expect(furnaceCodesForSource("dometic-hydro-flame-afm-66618")).toEqual(new Set(["steady on", "1 flash", "2 flashes", "3 flashes"]));
   });
+
+  it("adds official Dometic/Atwood water-heater and OD-5001 symptom pages without inventing code entries", () => {
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const symptomOnlySourceIds = [
+      "dometic-water-heater-combo-function-support",
+      "dometic-water-heater-gas-function-support",
+      "dometic-water-heater-overheat-reset-support",
+      "dometic-od5001-operating-support",
+      "dometic-od5001-no-power-vent-support",
+      "dometic-od5001-no-ignition-support",
+      "dometic-od5001-rapid-cycle-support",
+      "dometic-od5001-temperature-fluctuation-support",
+    ];
+
+    expect(symptomById.get("water-heater-lockout-light")?.sourceIds).toEqual(
+      expect.arrayContaining(["dometic-water-heater-combo-function-support", "dometic-water-heater-gas-function-support", "dometic-water-heater-wh"]),
+    );
+    expect(symptomById.get("water-heater-overheat-lockout")?.sourceIds).toEqual(
+      expect.arrayContaining(["dometic-water-heater-overheat-reset-support", "dometic-water-heater-wh"]),
+    );
+    expect(symptomById.get("od5001-startup-and-lockout")?.sourceIds).toEqual(
+      expect.arrayContaining(["dometic-od5001-operating-support", "dometic-od5001-no-ignition-support"]),
+    );
+    expect(symptomById.get("od5001-power-vent-not-running")?.sourceIds).toContain("dometic-od5001-no-power-vent-support");
+    expect(symptomById.get("od5001-rapid-cycling")?.sourceIds).toContain("dometic-od5001-rapid-cycle-support");
+    expect(symptomById.get("od5001-temperature-fluctuation")?.sourceIds).toContain("dometic-od5001-temperature-fluctuation-support");
+    expect(corpus.sources.filter((source) => symptomOnlySourceIds.includes(source.id))).toHaveLength(symptomOnlySourceIds.length);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => symptomOnlySourceIds.includes(sourceId)))).toHaveLength(0);
+
+    const existingDometicAtwoodWaterHeaterEntryIds = new Set([
+      "dometic-water-heater-lockout",
+      "suburban-water-heater-reset-light",
+    ]);
+    const dometicAtwoodWaterHeaterEntries = corpus.entries.filter(
+      (entry) => ["Dometic", "Suburban/Atwood"].includes(entry.brand) && /water heater/i.test(entry.equipmentType),
+    );
+
+    expect(new Set(dometicAtwoodWaterHeaterEntries.map((entry) => entry.id))).toEqual(existingDometicAtwoodWaterHeaterEntryIds);
+  });
 });
