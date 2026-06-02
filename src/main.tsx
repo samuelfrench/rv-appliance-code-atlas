@@ -134,6 +134,10 @@ function Home({ data }: { data: PreparedCorpus }) {
       symptom,
     }));
 
+    if (isExactCodeSearch(query, entryResults[0]?.entry)) {
+      return [entryResults[0], ...symptomResults.slice(0, 4), ...entryResults.slice(1)].slice(0, 12);
+    }
+
     return [...symptomResults.slice(0, 4), ...entryResults].slice(0, 12);
   }, [query, searchIndex, symptomSearchIndex]);
 
@@ -219,6 +223,14 @@ function Home({ data }: { data: PreparedCorpus }) {
       <Footer />
     </>
   );
+}
+
+function isExactCodeSearch(query: string, entry?: CorpusEntry) {
+  if (!entry) return false;
+  const queryTerms = new Set(query.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean));
+  const codeTerms = entry.code.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
+
+  return codeTerms.length > 0 && codeTerms.every((term) => queryTerms.has(term));
 }
 
 function Header() {

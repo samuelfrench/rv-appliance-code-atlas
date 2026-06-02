@@ -19,6 +19,14 @@ test("mobile lookup finds a sourced Norcold fault code and opens its detail page
   expect(consoleErrors).toEqual([]);
 });
 
+test("exact code searches rank the matching code card before symptom guides", async ({ page }) => {
+  await page.goto("/");
+
+  await page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" }).fill("norcold no co");
+  const firstResult = page.locator('section[aria-label="Lookup results"] a.entry-card').first();
+  await expect(firstResult).toHaveAttribute("href", "/codes/norcold-1200-no-co/");
+});
+
 test("symptom guide and checklist surfaces service-call prep without checkout", async ({ page }) => {
   await page.goto("/symptoms/rv-appliance-service-call-checklist/");
 
@@ -83,6 +91,31 @@ test("lookup surfaces Dometic RUA/RUC symptom support pages", async ({ page }) =
 
   await searchbox.fill("ruc too cold warmest setting");
   await expect(lookupResults.locator('a[href="/symptoms/dometic-ruc-too-cold-temperature-setting/"]')).toBeVisible();
+});
+
+test("lookup surfaces Norcold and Thetford symptom support pages", async ({ page }) => {
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("norcold not cooling vents level");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/norcold-absorption-refrigerator-not-cooling-level-ventilation/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("norcold hts solid red do not bypass");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/norcold-high-temperature-sensor-stopped-operating-service-only/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("norcold dc compressor not cooling low battery voltage");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/norcold-dc-compressor-refrigerator-cooling-voltage/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("norcold n2090 drip tray condensation water");
+  await expect(lookupResults.locator('a[href="/symptoms/norcold-n2000-condensation-drip-tray/"]')).toBeVisible();
 });
 
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {

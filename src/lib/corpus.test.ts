@@ -106,6 +106,44 @@ describe("verified corpus", () => {
     );
   });
 
+  it("finds Norcold and Thetford symptom support pages from owner searches", () => {
+    const index = buildSymptomSearchIndex(corpus);
+
+    expect(lookupSymptomGuides(index, "norcold not cooling vents level")[0]?.slug).toBe(
+      "norcold-absorption-refrigerator-not-cooling-level-ventilation",
+    );
+    expect(lookupSymptomGuides(index, "norcold 120v not cooling")[0]?.slug).toBe(
+      "norcold-absorption-120v-ac-not-cooling",
+    );
+    expect(lookupSymptomGuides(index, "thetford n3000 automatic mode will not work")[0]?.slug).toBe(
+      "norcold-absorption-power-source-or-startup",
+    );
+    expect(lookupSymptomGuides(index, "norcold door alarm seal sagging")[0]?.slug).toBe(
+      "norcold-absorption-door-alarm-or-door-seal-frost",
+    );
+    expect(lookupSymptomGuides(index, "norcold freezer frost condensation hair dryer")[0]?.slug).toBe(
+      "norcold-absorption-defrost-frost-condensation",
+    );
+    expect(lookupSymptomGuides(index, "norcold refrigerator smell clean vanilla baking soda")[0]?.slug).toBe(
+      "norcold-absorption-refrigerator-odor-cleaning",
+    );
+    expect(lookupSymptomGuides(index, "norcold which setting is coldest setting 5")[0]?.slug).toBe(
+      "norcold-absorption-temperature-setting-too-cold-or-too-warm",
+    );
+    expect(lookupSymptomGuides(index, "norcold hts solid red do not bypass")[0]?.slug).toBe(
+      "norcold-high-temperature-sensor-stopped-operating-service-only",
+    );
+    expect(lookupSymptomGuides(index, "norcold dc compressor not cooling low battery voltage")[0]?.slug).toBe(
+      "norcold-dc-compressor-refrigerator-cooling-voltage",
+    );
+    expect(lookupSymptomGuides(index, "norcold n2000 overcooling night mode noise")[0]?.slug).toBe(
+      "norcold-dc-compressor-refrigerator-too-cold-or-night-mode-noise",
+    );
+    expect(lookupSymptomGuides(index, "norcold n2090 drip tray condensation water")[0]?.slug).toBe(
+      "norcold-n2000-condensation-drip-tray",
+    );
+  });
+
   it("ranks exact multi-word display codes ahead of generic partial matches", () => {
     const index = buildSearchIndex(corpus);
 
@@ -1055,6 +1093,147 @@ describe("verified corpus", () => {
       "https://support.dometic.com/en/ruc-refrigerators/Where-can-I-find-the-nearest-service-provider-bb4c",
       "https://support.dometic.com/en/ruc-refrigerators/Where-can-I-get-spare-parts-a85a",
     ]));
+  });
+
+  it("adds official Norcold/Thetford symptom support pages without inventing code entries", () => {
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const supportUrls = new Map(corpus.sources.map((source) => [source.id, source.url]));
+    const index = buildSearchIndex(corpus);
+    const symptomOnlySourceIds = [
+      "thetford-faq-120v-performance",
+      "thetford-faq-refrigerator-on-off-button",
+      "thetford-faq-defrost-safety",
+      "thetford-faq-refrigerator-odor-cleaning",
+      "thetford-faq-hts-removal",
+      "thetford-faq-hts-solid-red",
+      "thetford-faq-hts-flashing-red",
+      "thetford-faq-hts-self-install",
+      "thetford-faq-12v-engine-behavior",
+      "thetford-faq-destination-performance",
+      "thetford-faq-door-alarm",
+      "thetford-faq-thermostat-coldest",
+      "thetford-faq-frost-condensation-service",
+      "thetford-n3000-support",
+    ];
+    const newOwnerManualSourceIds = ["norcold-n8dcx-n10dcx-owner"];
+    const newSourceIds = [...symptomOnlySourceIds, ...newOwnerManualSourceIds];
+    const expectedSources = new Map([
+      ["thetford-faq-120v-performance", "https://www.thetford.com/us/faq/why-doesnt-my-refrigerator-perform-well-on-120v-ac/"],
+      ["thetford-faq-refrigerator-on-off-button", "https://www.thetford.com/us/faq/why-doesnt-my-refrigerator-work-when-i-push-the-on-off-button/"],
+      ["thetford-faq-defrost-safety", "https://www.thetford.com/us/faq/is-it-okay-to-defrost-my-refrigerator-freezer-using-a-hair-dryer-heat-gun-or-boiling-water/"],
+      ["thetford-faq-refrigerator-odor-cleaning", "https://www.thetford.com/us/faq/my-refrigerator-smells-how-can-i-clean-it/"],
+      ["thetford-faq-hts-removal", "https://www.thetford.com/us/faq/my-refrigerator-stopped-operating-will-a-removal-of-the-high-temperature-sensor-make-the-refrigerator-work/"],
+      ["thetford-faq-hts-solid-red", "https://www.thetford.com/us/faq/what-does-it-mean-if-i-have-a-solid-red-light-on-the-high-temperature-sensor/"],
+      ["thetford-faq-hts-flashing-red", "https://www.thetford.com/us/faq/what-does-it-mean-if-i-have-a-flashing-red-light-on-the-high-temperature-sensor/"],
+      ["thetford-faq-hts-self-install", "https://www.thetford.com/us/faq/can-a-consumer-have-a-high-temperature-sensor-sent-directly-to-them-for-self-install/"],
+      ["thetford-faq-12v-engine-behavior", "https://www.thetford.com/us/faq/why-doesnt-my-refrigerator-work-on-12v-when-the-car-engine-is-not-running/"],
+      ["thetford-faq-destination-performance", "https://www.thetford.com/us/faq/at-my-travel-destination-my-refrigerator-does-not-operate-very-well-what-could-be-the-problem/"],
+      ["thetford-faq-door-alarm", "https://www.thetford.com/us/faq/what-is-causing-the-door-alarm-to-continue-to-sound-off/"],
+      ["thetford-faq-thermostat-coldest", "https://www.thetford.com/us/faq/which-thermostat-setting-is-the-coldest/"],
+      ["thetford-faq-frost-condensation-service", "https://www.thetford.com/us/faq/what-if-my-freezer-is-producing-frost-condensation/"],
+      ["thetford-n3000-support", "https://www.thetford.com/int/thetford-service-and-support/n3000-series/"],
+      ["norcold-n8dcx-n10dcx-owner", "https://www.thetford.com/app/uploads/2024/09/OM_N8DCX_N10DCX_640137H_10152025.pdf"],
+    ]);
+
+    for (const [sourceId, url] of expectedSources) {
+      expect(supportUrls.get(sourceId), sourceId).toBe(url);
+    }
+    expect(corpus.sources.filter((source) => newSourceIds.includes(source.id))).toHaveLength(newSourceIds.length);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => symptomOnlySourceIds.includes(sourceId)))).toHaveLength(0);
+
+    expect(symptomById.get("norcold-absorption-cooling-performance")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "thetford-faq-destination-performance",
+        "thetford-n3000-support",
+        "norcold-1200-owner",
+        "norcold-polar-owner",
+        "norcold-n3000-na-owner",
+      ]),
+    );
+    expect(symptomById.get("norcold-absorption-power-source-startup")?.sourceIds).toEqual(
+      expect.arrayContaining(["thetford-faq-refrigerator-on-off-button", "thetford-faq-12v-engine-behavior", "thetford-n3000-support"]),
+    );
+    expect(symptomById.get("norcold-absorption-120v-performance")?.sourceIds).toEqual(["thetford-faq-120v-performance"]);
+    expect(symptomById.get("norcold-absorption-door-alarm-seal")?.sourceIds).toEqual(
+      expect.arrayContaining(["thetford-faq-door-alarm", "norcold-1200-owner", "norcold-polar-owner", "norcold-2118-owner"]),
+    );
+    expect(symptomById.get("norcold-absorption-defrost-frost-condensation")?.sourceIds).toEqual(
+      expect.arrayContaining(["thetford-faq-defrost-safety", "thetford-faq-frost-condensation-service", "thetford-n3000-support"]),
+    );
+    expect(symptomById.get("norcold-absorption-odor-cleaning")?.sourceIds).toEqual(
+      expect.arrayContaining(["thetford-faq-refrigerator-odor-cleaning", "thetford-n3000-support"]),
+    );
+    expect(symptomById.get("norcold-absorption-temperature-setting")?.sourceIds).toEqual(
+      expect.arrayContaining(["thetford-faq-thermostat-coldest", "thetford-n3000-support", "norcold-1200-owner", "norcold-polar-owner"]),
+    );
+    expect(symptomById.get("norcold-hts-stopped-operating-service-only")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "thetford-faq-hts-removal",
+        "thetford-faq-hts-solid-red",
+        "thetford-faq-hts-flashing-red",
+        "thetford-faq-hts-self-install",
+      ]),
+    );
+    expect(symptomById.get("norcold-dc-compressor-cooling-voltage")?.sourceIds).toEqual(
+      expect.arrayContaining(["norcold-n2000-owner", "norcold-n8dcx-n10dcx-owner", "norcold-n15-n20-owner"]),
+    );
+    expect(symptomById.get("norcold-dc-compressor-too-cold-noise")?.sourceIds).toEqual(
+      expect.arrayContaining(["norcold-n2000-owner", "norcold-n8dcx-n10dcx-owner", "norcold-n15-n20-owner"]),
+    );
+    expect(symptomById.get("norcold-n2000-condensation-drip-tray")?.sourceIds).toEqual(["norcold-n2000-owner"]);
+
+    for (const symptomId of [
+      "norcold-absorption-cooling-performance",
+      "norcold-absorption-power-source-startup",
+      "norcold-absorption-120v-performance",
+      "norcold-absorption-door-alarm-seal",
+      "norcold-absorption-defrost-frost-condensation",
+      "norcold-absorption-odor-cleaning",
+      "norcold-absorption-temperature-setting",
+      "norcold-dc-compressor-cooling-voltage",
+      "norcold-dc-compressor-too-cold-noise",
+      "norcold-n2000-condensation-drip-tray",
+    ]) {
+      expect(symptomById.get(symptomId)?.safeChecklist.join(" "), symptomId).not.toMatch(
+        /bridge|compressor pin|C and T|DMM|measure resistance|repair wire|connector|replace fan|replace thermistor|power module|remove refrigerator|self-install|\bbypass\b|\bprobe\b|\bfuse\b|\bwiring\b|\bburner\b|\bgas valve\b|\bcontrol board\b|\brefrigerant\b/i,
+      );
+    }
+
+    const htsChecklist = symptomById.get("norcold-hts-stopped-operating-service-only")?.safeChecklist.join(" ");
+    expect(htsChecklist).toMatch(/do not bypass|do not remove|authorized/i);
+    expect(htsChecklist).not.toMatch(/self-install|probe|repair|reset/i);
+
+    expect(symptomById.get("refrigerator-not-cooling")?.sourceIds).toEqual(
+      expect.arrayContaining(["thetford-faq-destination-performance", "thetford-n3000-support", "norcold-n8dcx-n10dcx-owner"]),
+    );
+    expect(symptomById.get("airflow-or-venting")?.sourceIds).toEqual(
+      expect.arrayContaining(["thetford-n3000-support", "norcold-n8dcx-n10dcx-owner", "norcold-n15-n20-owner"]),
+    );
+    expect(symptomById.get("low-voltage")?.sourceIds).toEqual(
+      expect.arrayContaining(["thetford-faq-hts-flashing-red", "norcold-n2000-owner", "norcold-n8dcx-n10dcx-owner"]),
+    );
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(
+      expect.arrayContaining(["thetford-faq-hts-removal", "thetford-faq-hts-solid-red", "norcold-n8dcx-n10dcx-owner"]),
+    );
+
+    expect([...supportUrls.values()]).not.toEqual(expect.arrayContaining([
+      "https://www.thetford.com/us/norcold-gas-absorption-no-cooling-performance-checklist/",
+      "https://www.thetford.com/us/n8dc-n10dc-n15dc-n20dc-no-cooling-performance-checklist/",
+      "https://www.thetford.com/us/recall-information/",
+      "https://www.thetford.com/us/faq/what-if-my-refrigerator-is-not-cooling-property/",
+      "https://www.thetford.com/us/faq/how-level-must-my-ac-lp-refrigerator-be/",
+      "https://www.thetford.com/us/faq/my-refrigerator-shows-a-fault-code-what-should-i-do/",
+      "https://www.thetford.com/app/uploads/2024/09/640998B_SM_N2090-N2152-N2175_04022025.pdf",
+    ]));
+
+    expect(lookupEntries(index, "norcold no co")[0]?.slug).toBe("norcold-1200-no-co");
+    expect(lookupEntries(index, "norcold n2000 red led blinking input voltage")[0]?.slug).toBe(
+      "norcold-n2000-red-led-blinking-input-voltage",
+    );
+    expect(lookupEntries(index, "norcold n8dc e3")[0]?.slug).toBe("norcold-n8dcx-n10dcx-e3");
+    expect(lookupEntries(index, "norcold n8dc power module flash 1")[0]?.slug).toBe(
+      "norcold-n8dcx-n10dcx-power-module-flash-1",
+    );
   });
 
   it("includes official Dometic RM8 support aliases for exact owner searches", () => {

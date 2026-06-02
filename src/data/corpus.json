@@ -1495,6 +1495,126 @@
       "official": true
     },
     {
+      "id": "norcold-n8dcx-n10dcx-owner",
+      "brand": "Norcold",
+      "title": "Norcold N8DCX and N10DCX Owner's Manual",
+      "url": "https://www.thetford.com/app/uploads/2024/09/OM_N8DCX_N10DCX_640137H_10152025.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "thetford-faq-120v-performance",
+      "brand": "Norcold",
+      "title": "Thetford FAQ: Norcold Refrigerator 120V AC Performance",
+      "url": "https://www.thetford.com/us/faq/why-doesnt-my-refrigerator-perform-well-on-120v-ac/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-faq-refrigerator-on-off-button",
+      "brand": "Norcold",
+      "title": "Thetford FAQ: Norcold Refrigerator On/Off Button",
+      "url": "https://www.thetford.com/us/faq/why-doesnt-my-refrigerator-work-when-i-push-the-on-off-button/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-faq-defrost-safety",
+      "brand": "Norcold",
+      "title": "Thetford FAQ: Norcold Refrigerator Defrost Safety",
+      "url": "https://www.thetford.com/us/faq/is-it-okay-to-defrost-my-refrigerator-freezer-using-a-hair-dryer-heat-gun-or-boiling-water/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-faq-refrigerator-odor-cleaning",
+      "brand": "Norcold",
+      "title": "Thetford FAQ: Norcold Refrigerator Odor Cleaning",
+      "url": "https://www.thetford.com/us/faq/my-refrigerator-smells-how-can-i-clean-it/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-faq-hts-removal",
+      "brand": "Norcold",
+      "title": "Thetford FAQ: Norcold High Temperature Sensor Removal",
+      "url": "https://www.thetford.com/us/faq/my-refrigerator-stopped-operating-will-a-removal-of-the-high-temperature-sensor-make-the-refrigerator-work/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-faq-hts-solid-red",
+      "brand": "Norcold",
+      "title": "Thetford FAQ: Norcold High Temperature Sensor Solid Red Light",
+      "url": "https://www.thetford.com/us/faq/what-does-it-mean-if-i-have-a-solid-red-light-on-the-high-temperature-sensor/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-faq-hts-flashing-red",
+      "brand": "Norcold",
+      "title": "Thetford FAQ: Norcold High Temperature Sensor Flashing Red Light",
+      "url": "https://www.thetford.com/us/faq/what-does-it-mean-if-i-have-a-flashing-red-light-on-the-high-temperature-sensor/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-faq-hts-self-install",
+      "brand": "Norcold",
+      "title": "Thetford FAQ: Norcold High Temperature Sensor Self-Install",
+      "url": "https://www.thetford.com/us/faq/can-a-consumer-have-a-high-temperature-sensor-sent-directly-to-them-for-self-install/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-faq-12v-engine-behavior",
+      "brand": "Norcold",
+      "title": "Thetford FAQ: Norcold Refrigerator 12V Engine Behavior",
+      "url": "https://www.thetford.com/us/faq/why-doesnt-my-refrigerator-work-on-12v-when-the-car-engine-is-not-running/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-faq-destination-performance",
+      "brand": "Norcold",
+      "title": "Thetford FAQ: Norcold Refrigerator Destination Cooling Performance",
+      "url": "https://www.thetford.com/us/faq/at-my-travel-destination-my-refrigerator-does-not-operate-very-well-what-could-be-the-problem/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-faq-door-alarm",
+      "brand": "Norcold",
+      "title": "Thetford FAQ: Norcold Refrigerator Door Alarm",
+      "url": "https://www.thetford.com/us/faq/what-is-causing-the-door-alarm-to-continue-to-sound-off/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-faq-thermostat-coldest",
+      "brand": "Norcold",
+      "title": "Thetford FAQ: Norcold Refrigerator Coldest Thermostat Setting",
+      "url": "https://www.thetford.com/us/faq/which-thermostat-setting-is-the-coldest/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-faq-frost-condensation-service",
+      "brand": "Norcold",
+      "title": "Thetford FAQ: Norcold Freezer Frost or Condensation",
+      "url": "https://www.thetford.com/us/faq/what-if-my-freezer-is-producing-frost-condensation/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-n3000-support",
+      "brand": "Norcold",
+      "title": "Thetford Support: N3000 Series Refrigerator",
+      "url": "https://www.thetford.com/int/thetford-service-and-support/n3000-series/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
       "id": "norcold-n10lx-owner",
       "brand": "Norcold",
       "title": "Norcold N10LX and NA10LX Owner's Manual",
@@ -31623,7 +31743,10 @@
         "dometic-ruc-recommended-temperatures-support",
         "dometic-ruc-not-cooling-error-indicator-support",
         "dometic-ruc-not-cooling-display-lit-service-support",
-        "dometic-ruc-compressor-voltage-applied-not-operating-support"
+        "dometic-ruc-compressor-voltage-applied-not-operating-support",
+        "thetford-faq-destination-performance",
+        "thetford-n3000-support",
+        "norcold-n8dcx-n10dcx-owner"
       ]
     },
     {
@@ -31725,7 +31848,10 @@
         "dometic-rua-first-use-support",
         "dometic-rua-optimal-use-cooling-ventilation-support",
         "dometic-ruc-first-use-support",
-        "dometic-ruc-optimal-use-cooling-ventilation-support"
+        "dometic-ruc-optimal-use-cooling-ventilation-support",
+        "thetford-n3000-support",
+        "norcold-n8dcx-n10dcx-owner",
+        "norcold-n15-n20-owner"
       ]
     },
     {
@@ -31788,7 +31914,10 @@
         "dometic-rm10-gas-operation-mains-supply-voltage-support",
         "dometic-rm10-internal-batteries-change-support",
         "dometic-ruc-compressor-starts-cuts-out-support",
-        "dometic-ruc-compressor-voltage-applied-not-operating-support"
+        "dometic-ruc-compressor-voltage-applied-not-operating-support",
+        "thetford-faq-hts-flashing-red",
+        "norcold-n2000-owner",
+        "norcold-n8dcx-n10dcx-owner"
       ]
     },
     {
@@ -31897,7 +32026,10 @@
         "dometic-rua-does-not-work-support",
         "dometic-ruc-not-cooling-display-lit-service-support",
         "dometic-ruc-display-does-not-glow-support",
-        "dometic-ruc-compressor-not-running-support"
+        "dometic-ruc-compressor-not-running-support",
+        "thetford-faq-hts-removal",
+        "thetford-faq-hts-solid-red",
+        "norcold-n8dcx-n10dcx-owner"
       ]
     },
     {
@@ -32722,6 +32854,270 @@
         "norcold-1200-owner",
         "norcold-n41-n51-owner",
         "norcold-n400-n510-owner"
+      ]
+    },
+    {
+      "id": "norcold-absorption-cooling-performance",
+      "slug": "norcold-absorption-refrigerator-not-cooling-level-ventilation",
+      "title": "Norcold absorption refrigerator not cooling, level, or ventilation check",
+      "summary": "Use this when a Norcold/Thetford absorption refrigerator is warm or not cooling and the main clue is level, ventilation, power-source availability, ambient temperature, or food/door loading rather than an exact display code.",
+      "searchAliases": [
+        "norcold not cooling vents level",
+        "norcold refrigerator not cooling ventilation level",
+        "norcold absorption refrigerator not cold enough",
+        "thetford n3000 not cooling stands level available energy source",
+        "norcold travel destination refrigerator does not operate very well"
+      ],
+      "safeChecklist": [
+        "Move perishables to a cooler and record model, mode, outside temperature, and any display wording.",
+        "Confirm the refrigerator is on, a normal energy source is available, the RV is level per that model manual, and visible vents are clear.",
+        "Close doors fully, keep food from blocking interior airflow, let hot food cool before loading, and defrost ordinary frost or ice.",
+        "If a no co, n, warning light, gas smell, ammonia smell, or repeated warm condition appears, shut the refrigerator off and arrange qualified Norcold/Thetford service."
+      ],
+      "sourceIds": [
+        "thetford-faq-destination-performance",
+        "thetford-n3000-support",
+        "norcold-1200-owner",
+        "norcold-polar-owner",
+        "norcold-n3000-na-owner"
+      ]
+    },
+    {
+      "id": "norcold-absorption-power-source-startup",
+      "slug": "norcold-absorption-power-source-or-startup",
+      "title": "Norcold absorption refrigerator power-source or startup behavior",
+      "summary": "Use this when a Norcold/Thetford absorption refrigerator will not respond to the on/off button, will not use automatic energy selection as expected, or behaves differently on 12 V when the tow vehicle engine is off.",
+      "searchAliases": [
+        "thetford n3000 automatic mode will not work",
+        "norcold refrigerator on off button does not work",
+        "norcold hold power button 3 seconds",
+        "norcold 12v refrigerator does not work when car engine is not running",
+        "n3000 automatic energy source not available"
+      ],
+      "safeChecklist": [
+        "Hold the documented on/off button for the model before assuming the display is unresponsive.",
+        "Record whether the refrigerator is in manual or automatic mode and which normal RV energy source is available.",
+        "For models that use 12 V only while driving, confirm the engine-running requirement from the model documentation.",
+        "Use qualified service if the refrigerator still will not start, respond, or select an available source."
+      ],
+      "sourceIds": [
+        "thetford-faq-refrigerator-on-off-button",
+        "thetford-faq-12v-engine-behavior",
+        "thetford-n3000-support"
+      ]
+    },
+    {
+      "id": "norcold-absorption-120v-performance",
+      "slug": "norcold-absorption-120v-ac-not-cooling",
+      "title": "Norcold absorption refrigerator not cooling well on 120 V AC",
+      "summary": "Use this when a Norcold absorption refrigerator performs poorly on 120 V AC and the owner needs safe setting and escalation guidance without live electrical testing.",
+      "searchAliases": [
+        "norcold 120v not cooling",
+        "norcold refrigerator not cooling on 120v ac",
+        "norcold does not perform well on 120v ac",
+        "norcold shore power refrigerator warm"
+      ],
+      "safeChecklist": [
+        "Move food if temperature is unsafe and note outside temperature, setting, and AC power source.",
+        "If the cooling setting is low, raise it one step and allow the refrigerator time to stabilize.",
+        "Confirm only from normal RV indicators that shore power or generator power is available.",
+        "Use a dealer or qualified RV electrical service if AC performance remains poor or other appliances show power problems."
+      ],
+      "sourceIds": [
+        "thetford-faq-120v-performance"
+      ]
+    },
+    {
+      "id": "norcold-absorption-door-alarm-seal",
+      "slug": "norcold-absorption-door-alarm-or-door-seal-frost",
+      "title": "Norcold refrigerator door alarm, sagging door, or seal frost",
+      "summary": "Use this when a Norcold refrigerator door alarm continues, the door may be sagging or warped, or frost suggests a door-seal issue.",
+      "searchAliases": [
+        "norcold door alarm seal sagging",
+        "norcold door alarm keeps sounding",
+        "norcold refrigerator door open longer than 2 minutes",
+        "norcold warped door bad switch",
+        "norcold freezer frost door seal"
+      ],
+      "safeChecklist": [
+        "Close and latch the door fully, remove food or shelving that blocks closure, and wait for the door alarm to clear.",
+        "Check visible gasket seating and use only owner-manual seal checks that require no disassembly.",
+        "Record whether the door appears sagged, warped, or misaligned and whether the alarm starts after about two minutes.",
+        "Use qualified Norcold service for a suspected switch, sagging door, warped door, or seal correction."
+      ],
+      "sourceIds": [
+        "thetford-faq-door-alarm",
+        "norcold-1200-owner",
+        "norcold-polar-owner",
+        "norcold-2118-owner"
+      ]
+    },
+    {
+      "id": "norcold-absorption-defrost-frost-condensation",
+      "slug": "norcold-absorption-defrost-frost-condensation",
+      "title": "Norcold refrigerator frost, condensation, or defrost safety",
+      "summary": "Use this when a Norcold/Thetford refrigerator has evaporator frost, freezer frost, condensation, or needs owner-safe defrost steps.",
+      "searchAliases": [
+        "norcold freezer frost condensation hair dryer",
+        "norcold refrigerator defrost no hair dryer",
+        "thetford n3000 ice on fins",
+        "norcold evaporator ice buildup",
+        "norcold condensation frost service"
+      ],
+      "safeChecklist": [
+        "Move food to a cooler, turn the refrigerator off, open the doors, and place towels for melt water.",
+        "Let frost melt naturally; do not use a hair dryer, heat gun, boiling water, or sharp tool.",
+        "Dry the interior before restarting and reduce repeat frost by closing doors quickly and covering liquids.",
+        "Arrange qualified service if frost or condensation returns quickly after normal defrost and door checks."
+      ],
+      "sourceIds": [
+        "thetford-faq-defrost-safety",
+        "thetford-faq-frost-condensation-service",
+        "thetford-n3000-support"
+      ]
+    },
+    {
+      "id": "norcold-absorption-odor-cleaning",
+      "slug": "norcold-absorption-refrigerator-odor-cleaning",
+      "title": "Norcold refrigerator odor or cleaning",
+      "summary": "Use this when a Norcold/Thetford refrigerator has ordinary storage odor or needs owner-safe cleaning guidance, while separating gas, ammonia, or chemical smells into service boundaries.",
+      "searchAliases": [
+        "norcold refrigerator smell clean vanilla baking soda",
+        "norcold refrigerator odor cleaning",
+        "thetford n3000 refrigerator smell",
+        "norcold clean refrigerator charcoal newspaper",
+        "norcold ammonia gas smell service"
+      ],
+      "safeChecklist": [
+        "Turn the refrigerator off and clean accessible interior surfaces with a mild household cleaner.",
+        "For ordinary storage odor, use documented odor absorbers such as vanilla water, charcoal, wet newspaper, or baking soda.",
+        "Dry the interior and leave doors open when storing the refrigerator.",
+        "If the smell suggests gas, ammonia, burning plastic, or chemicals, shut the refrigerator off, ventilate, and arrange qualified service."
+      ],
+      "sourceIds": [
+        "thetford-faq-refrigerator-odor-cleaning",
+        "thetford-n3000-support"
+      ]
+    },
+    {
+      "id": "norcold-absorption-temperature-setting",
+      "slug": "norcold-absorption-temperature-setting-too-cold-or-too-warm",
+      "title": "Norcold refrigerator temperature setting is too warm or too cold",
+      "summary": "Use this when a Norcold/Thetford owner is trying to identify the coldest setting or adjust a refrigerator that is too warm or too cold, while keeping model-specific scales separate.",
+      "searchAliases": [
+        "norcold which setting is coldest setting 5",
+        "norcold thermostat setting coldest",
+        "norcold refrigerator too cold setting 1 5",
+        "thetford n3000 cooling level 3",
+        "norcold temperature setting too warm too cold"
+      ],
+      "safeChecklist": [
+        "Identify the exact model before assuming the setting scale because older and newer Norcold controls differ.",
+        "For models documented with 1 to 5 settings, use 5 as coldest and 1 as warmest; for other controls, follow that model manual.",
+        "Adjust one step at a time and allow the cabinet temperature to stabilize before changing it again.",
+        "Move food and arrange service if safe food temperature cannot be maintained or the refrigerator overcools on the warmest setting."
+      ],
+      "sourceIds": [
+        "thetford-faq-thermostat-coldest",
+        "thetford-n3000-support",
+        "norcold-1200-owner",
+        "norcold-polar-owner"
+      ]
+    },
+    {
+      "id": "norcold-hts-stopped-operating-service-only",
+      "slug": "norcold-high-temperature-sensor-stopped-operating-service-only",
+      "title": "Norcold high-temperature sensor light or stopped-operation recall boundary",
+      "summary": "Use this when a Norcold refrigerator stopped operating with high-temperature sensor wording, solid red HTS light, or flashing HTS light. The owner-safe result is shutdown, documentation, and authorized Norcold service.",
+      "searchAliases": [
+        "norcold hts solid red do not bypass",
+        "norcold high temperature sensor flashing red light",
+        "norcold refrigerator stopped operating high temperature sensor",
+        "norcold hts removal make refrigerator work",
+        "norcold high temperature sensor sent direct consumer"
+      ],
+      "safeChecklist": [
+        "Turn the refrigerator off and use normal RV power disconnects if a solid red HTS light or stopped-operation recall symptom appears.",
+        "Do not bypass, remove, or alter HTS parts.",
+        "Record whether the HTS light is solid or flashing and the refrigerator model and serial number.",
+        "Contact a Norcold Authorized Service Center for the HTS condition."
+      ],
+      "sourceIds": [
+        "thetford-faq-hts-removal",
+        "thetford-faq-hts-solid-red",
+        "thetford-faq-hts-flashing-red",
+        "thetford-faq-hts-self-install"
+      ]
+    },
+    {
+      "id": "norcold-dc-compressor-cooling-voltage",
+      "slug": "norcold-dc-compressor-refrigerator-cooling-voltage",
+      "title": "Norcold DC compressor refrigerator cooling or voltage symptom",
+      "summary": "Use this when a Norcold N2000, N8DC/N10DC, or N15/N20 DC compressor refrigerator is not cooling, delays startup, cuts out in high ambient heat, or points to low battery voltage without using exact LED/code rows.",
+      "searchAliases": [
+        "norcold dc compressor not cooling low battery voltage",
+        "norcold n8dc battery voltage low",
+        "norcold n10dc compressor starts switches off",
+        "norcold n2000 compressor starts switches off",
+        "norcold n2000 not cold enough",
+        "norcold n15dc n20dc not cooling low voltage"
+      ],
+      "safeChecklist": [
+        "Move food if temperature is unsafe and record model, display state, LED color, ambient temperature, and battery monitor reading.",
+        "Recharge the RV battery if normal owner-visible readings are low and wait at least one minute for documented compressor start delay.",
+        "For high ambient heat, ventilate the vehicle, clear only visible ventilation blockage, and use day mode when available.",
+        "Close doors, keep interior airflow clear, defrost excess ice, and arrange qualified service if cooling remains poor or the compressor runs continuously."
+      ],
+      "sourceIds": [
+        "norcold-n2000-owner",
+        "norcold-n8dcx-n10dcx-owner",
+        "norcold-n15-n20-owner"
+      ]
+    },
+    {
+      "id": "norcold-dc-compressor-too-cold-noise",
+      "slug": "norcold-dc-compressor-refrigerator-too-cold-or-night-mode-noise",
+      "title": "Norcold DC compressor refrigerator too cold, night mode, or noise",
+      "summary": "Use this when a Norcold DC compressor refrigerator is too cold on a warmer setting, has night-mode cooling or noise questions, or needs safe owner checks before service.",
+      "searchAliases": [
+        "norcold n2000 overcooling night mode noise",
+        "norcold dc compressor too cold warmest setting",
+        "norcold n8dc night mode cooling",
+        "norcold n10dc unusual noise compressor fan",
+        "norcold n15dc n20dc refrigerator too cold"
+      ],
+      "safeChecklist": [
+        "Record the model, selected mode, setting, ambient temperature, and whether the symptom changes in night or day mode.",
+        "If the cabinet is too cold, choose a warmer documented setting and allow the refrigerator time to stabilize.",
+        "For high ambient heat or repeated start delay, ventilate the vehicle and use day mode when available.",
+        "Arrange qualified service if noise is abnormal, cooling is unstable, or the compressor behavior remains constant after owner checks."
+      ],
+      "sourceIds": [
+        "norcold-n2000-owner",
+        "norcold-n8dcx-n10dcx-owner",
+        "norcold-n15-n20-owner"
+      ]
+    },
+    {
+      "id": "norcold-n2000-condensation-drip-tray",
+      "slug": "norcold-n2000-condensation-drip-tray",
+      "title": "Norcold N2000 condensation, water, or drip tray",
+      "summary": "Use this when a Norcold N2000/N2090 owner sees condensation, water on the back wall, or drip-tray water and needs owner-accessible water and defrost steps.",
+      "searchAliases": [
+        "norcold n2090 drip tray condensation water",
+        "norcold n2000 water on back wall",
+        "norcold n2000 drip tray empty before driving",
+        "norcold n2090 condensation refrigerator",
+        "norcold n2152 evaporator ice drip tray"
+      ],
+      "safeChecklist": [
+        "Dry visible water and empty the owner-accessible drip tray before driving when the model provides one.",
+        "Cover liquids, close doors quickly, and let warm products cool before loading to reduce condensation.",
+        "Defrost when ice thickness exceeds the manual threshold, using towels and natural melt time.",
+        "Arrange qualified service if water appears outside normal condensation or returns after defrost and door checks."
+      ],
+      "sourceIds": [
+        "norcold-n2000-owner"
       ]
     },
     {
