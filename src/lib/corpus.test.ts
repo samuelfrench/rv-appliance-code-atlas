@@ -750,6 +750,90 @@ describe("verified corpus", () => {
     );
   });
 
+  it("adds official Dometic tank/OD-5001 support and Furrion tankless source triage without unsafe DIY steps", () => {
+    const sourceById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const newDometicSymptomOnlySourceIds = [
+      "dometic-water-heater-combo-winterize-flush-support",
+      "dometic-water-heater-gas-winterize-flush-support",
+      "dometic-water-heater-combo-air-gap-support",
+      "dometic-water-heater-gas-air-gap-support",
+      "dometic-water-heater-combo-anode-rod-warning-support",
+      "dometic-water-heater-gas-anode-rod-warning-support",
+      "dometic-water-heater-gas-odor-support",
+      "dometic-water-heater-gas-i-smell-gas-support",
+      "dometic-od5001-no-water-flow-support",
+    ];
+    const newFurrionModelOnlySourceIds = ["furrion-fwh09a-spec-sheet", "furrion-fwh09afa-ab-flangeless-spec"];
+    const newSourceIds = [
+      "dometic-water-heater-wh-2022-manual",
+      ...newDometicSymptomOnlySourceIds,
+      "furrion-tankless-e5-ti514",
+      ...newFurrionModelOnlySourceIds,
+    ];
+
+    for (const sourceId of newSourceIds) {
+      expect(sourceById.get(sourceId)?.official, sourceId).toBe(true);
+    }
+
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newDometicSymptomOnlySourceIds.includes(sourceId)))).toHaveLength(0);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newFurrionModelOnlySourceIds.includes(sourceId)))).toHaveLength(0);
+
+    expect(symptomById.get("dometic-water-heater-winterizing-flush")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "dometic-water-heater-wh-2022-manual",
+        "dometic-water-heater-combo-winterize-flush-support",
+        "dometic-water-heater-gas-winterize-flush-support",
+      ]),
+    );
+    expect(symptomById.get("dometic-water-heater-winterizing-flush")?.safeChecklist.join(" ")).toMatch(/cool/i);
+
+    expect(symptomById.get("dometic-water-heater-pt-relief-drip-air-gap")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "dometic-water-heater-wh-2022-manual",
+        "dometic-water-heater-combo-air-gap-support",
+        "dometic-water-heater-gas-air-gap-support",
+      ]),
+    );
+    expect(symptomById.get("dometic-water-heater-pt-relief-drip-air-gap")?.safeChecklist.join(" ")).not.toMatch(
+      /expansion tank|replace.*P\/T|install.*pressure/i,
+    );
+
+    expect(symptomById.get("od5001-no-water-flow-at-tap")?.sourceIds).toEqual(["dometic-od5001-no-water-flow-support"]);
+    expect(symptomById.get("od5001-no-water-flow-at-tap")?.safeChecklist.join(" ")).toMatch(/qualified service/i);
+
+    expect(symptomById.get("dometic-water-heater-rotten-egg-odor")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "dometic-water-heater-combo-anode-rod-warning-support",
+        "dometic-water-heater-gas-anode-rod-warning-support",
+        "dometic-water-heater-gas-odor-support",
+      ]),
+    );
+    expect(symptomById.get("dometic-water-heater-gas-smell")?.sourceIds).toContain(
+      "dometic-water-heater-gas-i-smell-gas-support",
+    );
+
+    const dometicTankLockout = corpus.entries.find((entry) => entry.id === "dometic-water-heater-lockout");
+    expect(dometicTankLockout?.sourceIds).toContain("dometic-water-heater-wh-2022-manual");
+    expect(dometicTankLockout?.modelFamilies).toEqual(expect.arrayContaining(["WH-10GEA", "WH-16GEA"]));
+
+    const furrionE5 = corpus.entries.find((entry) => entry.id === "furrion-water-heater-e5");
+    expect(furrionE5?.sourceIds).toEqual(expect.arrayContaining(["furrion-water-heater", "furrion-tankless-e5-ti514"]));
+    expect(furrionE5?.plainMeaning).toMatch(/blower motor|air pressure switch/i);
+    expect(furrionE5?.ownerSafeActions.join(" ")).toMatch(/exterior.*vent|model.*serial.*date code/i);
+    expect(furrionE5?.ownerSafeActions.join(" ")).not.toMatch(/connector|pressure switch|flex tube|compressed air|venturi/i);
+    expect(furrionE5?.serviceOnlyActions.join(" ")).toMatch(/connector|pressure switch|flex tube|Venturi/i);
+
+    expect(corpus.entries.find((entry) => entry.id === "furrion-f2gwh-e5")?.sourceIds).not.toContain(
+      "furrion-tankless-e5-ti514",
+    );
+    expect(symptomById.get("airflow-or-venting")?.sourceIds).toContain("furrion-tankless-e5-ti514");
+    expect(symptomById.get("furrion-tankless-low-flow-temperature")?.sourceIds).toEqual(
+      expect.arrayContaining(["furrion-fwh09a-spec-sheet", "furrion-fwh09afa-ab-flangeless-spec"]),
+    );
+    expect(symptomById.get("furrion-water-heater-freeze-state")?.sourceIds).toContain("furrion-fwh09afa-ab-flangeless-spec");
+  });
+
   it("adds official Girard GSWH-2 owner-manual display codes and keeps Girard tankless symptoms separate", () => {
     const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
     const girardOwnerSourceId = "girard-gswh2-owner-manual";

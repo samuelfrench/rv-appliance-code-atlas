@@ -781,6 +781,110 @@
       "url": "https://support.lci1.com/documents/gp-llc-other-products/gswh-1-wud-owners-manual-rev312",
       "type": "owner manual",
       "official": true
+    },
+    {
+      "id": "dometic-water-heater-wh-2022-manual",
+      "brand": "Dometic",
+      "title": "Dometic WH-6GA/WH-6GEA/WH-9GEA/WH-10GEA/WH-16GEA L.P. Gas Water Heater Manual",
+      "url": "https://media.dometic.com/externalassets/dometic-water-heater-6-gallon-gas_93842.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "dometic-water-heater-combo-winterize-flush-support",
+      "brand": "Dometic",
+      "title": "Dometic How to Winterize (Flush) the Unit | Water Heaters - Combo Gas & Electric | Support",
+      "url": "https://support.dometic.com/en/waterheaters-combo/How-to-winterize-Flush-the-Unit-5eb",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-water-heater-gas-winterize-flush-support",
+      "brand": "Dometic",
+      "title": "Dometic How to Winterize (Flush) the Unit | Water Heaters - Gas | Support",
+      "url": "https://support.dometic.com/en/waterheaters-gas/How-to-winterize-Flush-the-Unit-d463",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-water-heater-combo-air-gap-support",
+      "brand": "Dometic",
+      "title": "Dometic How to Replace the Air Gap | Water Heaters - Combo Gas & Electric | Support",
+      "url": "https://support.dometic.com/en/waterheaters-combo/How-to-replace-the-air-gap-ed89",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-water-heater-gas-air-gap-support",
+      "brand": "Dometic",
+      "title": "Dometic How to Replace the Air Gap | Water Heaters - Gas | Support",
+      "url": "https://support.dometic.com/en/waterheaters-gas/How-to-replace-the-air-gap-ab3e",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-water-heater-combo-anode-rod-warning-support",
+      "brand": "Dometic",
+      "title": "Dometic Using After Market Anode Rods | Water Heaters - Combo Gas & Electric | Support",
+      "url": "https://support.dometic.com/en/waterheaters-combo/Using-After-Market-Anode-Rods-95c6",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-water-heater-gas-anode-rod-warning-support",
+      "brand": "Dometic",
+      "title": "Dometic Using After Market Anode Rods | Water Heaters - Gas | Support",
+      "url": "https://support.dometic.com/en/waterheaters-gas/Using-After-Market-Anode-Rods-f270",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-water-heater-gas-odor-support",
+      "brand": "Dometic",
+      "title": "Dometic Unpleasant Odor | Water Heaters - Gas | Support",
+      "url": "https://support.dometic.com/en/waterheaters-gas/Unpleasant-odor-5030",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-water-heater-gas-i-smell-gas-support",
+      "brand": "Dometic",
+      "title": "Dometic I Smell Gas | Water Heaters - Gas | Support",
+      "url": "https://support.dometic.com/en/waterheaters-gas/I-smell-gas-515b",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-od5001-no-water-flow-support",
+      "brand": "Dometic",
+      "title": "Dometic No Water Flows From Tap When Tap is Turned On | OD-5001 | Support",
+      "url": "https://support.dometic.com/en/waterheaters-od5001/No-Water-Flows-From-Tap-When-Tap-is-Turned-on-43c5",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-tankless-e5-ti514",
+      "brand": "Furrion",
+      "title": "Lippert TI-514 Furrion Tankless Water Heater E5 Error Code - Blower Motor or Air Pressure Switch Circuit",
+      "url": "https://support.lci1.com/documents/ccd-0008794",
+      "type": "manufacturer-technical-information",
+      "official": true
+    },
+    {
+      "id": "furrion-fwh09a-spec-sheet",
+      "brand": "Furrion",
+      "title": "Furrion 144GPH / 2.4GPM Tankless Gas Water Heater (FWH09A) Spec Sheet",
+      "url": "https://support.lci1.com/documents/ccd-0006139",
+      "type": "manufacturer-spec-sheet",
+      "official": true
+    },
+    {
+      "id": "furrion-fwh09afa-ab-flangeless-spec",
+      "brand": "Furrion",
+      "title": "Furrion 144GPH/2.4GPM Flangeless Tankless Gas Water Heater Spec Sheet",
+      "url": "https://support.lci1.com/documents/ccd-0010080",
+      "type": "manufacturer-spec-sheet",
+      "official": true
     }
   ],
   "entries": [
@@ -2574,11 +2678,13 @@
       "modelFamilies": [
         "WH-6GA",
         "WH-6GEA",
-        "WH-9GEA"
+        "WH-9GEA",
+        "WH-10GEA",
+        "WH-16GEA"
       ],
       "code": "Lock-Out Lamp",
       "slug": "dometic-water-heater-lock-out-lamp",
-      "plainMeaning": "The red lockout lamp indicates the water heater has a no-heat fault or failed operation condition.",
+      "plainMeaning": "The red lockout lamp indicates the water heater has a no-heat fault or failed operation condition on Dometic WH-series LP gas water heaters.",
       "ownerSafeActions": [
         "Turn the water heater off.",
         "Confirm the tank is full before any restart attempt.",
@@ -2589,7 +2695,8 @@
       ],
       "safetyBoundary": "Do not open gas components, bypass the ECO, or keep resetting an overheating water heater. Shut off LP and power and call service if the lockout persists.",
       "sourceIds": [
-        "dometic-water-heater-wh"
+        "dometic-water-heater-wh",
+        "dometic-water-heater-wh-2022-manual"
       ],
       "symptomIds": [
         "water-heater-no-heat",
@@ -4445,18 +4552,20 @@
       ],
       "code": "E5",
       "slug": "furrion-water-heater-e5",
-      "plainMeaning": "The Furrion tankless water heater troubleshooting manual lists E5 as Air pressure.",
+      "plainMeaning": "The Furrion tankless water heater troubleshooting manual lists E5 as air pressure; Lippert TI-514 clarifies E5 as a blower motor or air pressure switch circuit condition.",
       "ownerSafeActions": [
         "Turn the appliance off.",
-        "Check only for obvious exterior vent obstruction from outside the RV.",
-        "Do not continue use if exhaust or flame behavior seems abnormal."
+        "Check only for obvious exterior vent or exhaust obstruction from outside the RV.",
+        "Record the water heater model, serial number date code, displayed E5, and whether the blower starts or stops during a call for hot water.",
+        "Contact Furrion or a qualified technician if E5 returns."
       ],
       "serviceOnlyActions": [
-        "Flame sensing, combustion, air pressure, fan, solenoid, sensor, board, LP, exhaust, and internal water-heater diagnosis is qualified service work."
+        "Connector, pressure switch, flex tube, Venturi, blower, control-board, wiring, LP, exhaust, and internal water-heater diagnosis is qualified service work."
       ],
       "safetyBoundary": "Do not run a gas water heater with abnormal flame, blocked venting, gas odor, or repeated lockout. Shut off LP/power and call service if the code persists.",
       "sourceIds": [
-        "furrion-water-heater"
+        "furrion-water-heater",
+        "furrion-tankless-e5-ti514"
       ],
       "symptomIds": [
         "airflow-or-venting",
@@ -17561,7 +17670,8 @@
         "furrion-water-heater-user-manual",
         "furrion-f2gwh-water-heater",
         "furrion-tankless-operate-care-video",
-        "furrion-tankless-basic-troubleshooting-video"
+        "furrion-tankless-basic-troubleshooting-video",
+        "dometic-water-heater-wh-2022-manual"
       ]
     },
     {
@@ -17600,7 +17710,8 @@
         "dometic-hydro-flame-afm-66618",
         "suburban-st42-st60-water-heater",
         "dometic-water-heater-maintenance-support",
-        "furrion-tankless-basic-troubleshooting-video"
+        "furrion-tankless-basic-troubleshooting-video",
+        "furrion-tankless-e5-ti514"
       ]
     },
     {
@@ -17727,7 +17838,16 @@
         "dometic-od5001-gas-smell-support",
         "furrion-tankless-operate-care-video",
         "furrion-tankless-basic-troubleshooting-video",
-        "furrion-tankless-winterization-video"
+        "furrion-tankless-winterization-video",
+        "dometic-water-heater-wh-2022-manual",
+        "dometic-water-heater-combo-winterize-flush-support",
+        "dometic-water-heater-gas-winterize-flush-support",
+        "dometic-water-heater-combo-air-gap-support",
+        "dometic-water-heater-gas-air-gap-support",
+        "dometic-od5001-no-water-flow-support",
+        "furrion-tankless-e5-ti514",
+        "furrion-fwh09a-spec-sheet",
+        "furrion-fwh09afa-ab-flangeless-spec"
       ]
     },
     {
@@ -17830,7 +17950,8 @@
       "sourceIds": [
         "dometic-water-heater-combo-function-support",
         "dometic-water-heater-gas-function-support",
-        "dometic-water-heater-wh"
+        "dometic-water-heater-wh",
+        "dometic-water-heater-wh-2022-manual"
       ]
     },
     {
@@ -17846,7 +17967,8 @@
       ],
       "sourceIds": [
         "dometic-water-heater-overheat-reset-support",
-        "dometic-water-heater-wh"
+        "dometic-water-heater-wh",
+        "dometic-water-heater-wh-2022-manual"
       ]
     },
     {
@@ -18037,7 +18159,9 @@
       ],
       "sourceIds": [
         "dometic-water-heater-gas-smell-support",
-        "dometic-xt-water-heater-manual"
+        "dometic-xt-water-heater-manual",
+        "dometic-water-heater-wh-2022-manual",
+        "dometic-water-heater-gas-i-smell-gas-support"
       ]
     },
     {
@@ -18048,12 +18172,17 @@
       "safeChecklist": [
         "Confirm the odor is from hot water, not an LP leak; use the gas-smell guide if gas odor is possible.",
         "Turn off the water heater before draining or flushing.",
+        "Do not add aftermarket anode rods or non-approved devices to Dometic/Atwood aluminum tank water heaters.",
         "Use only owner-accessible tank draining or flushing steps if you are comfortable with them.",
         "Call service if odor persists, fittings are not owner-accessible, or water-heater service is needed."
       ],
       "sourceIds": [
         "dometic-water-heater-odor-support",
-        "dometic-xt-water-heater-manual"
+        "dometic-xt-water-heater-manual",
+        "dometic-water-heater-wh-2022-manual",
+        "dometic-water-heater-combo-anode-rod-warning-support",
+        "dometic-water-heater-gas-anode-rod-warning-support",
+        "dometic-water-heater-gas-odor-support"
       ]
     },
     {
@@ -18138,7 +18267,9 @@
         "furrion-tankless-basic-troubleshooting-video",
         "furrion-tankless-water-filter-video",
         "furrion-tankless-descale-video",
-        "lippert-qr216-low-flow-water-pressure"
+        "lippert-qr216-low-flow-water-pressure",
+        "furrion-fwh09a-spec-sheet",
+        "furrion-fwh09afa-ab-flangeless-spec"
       ]
     },
     {
@@ -18172,7 +18303,8 @@
         "furrion-f2gwh-water-heater",
         "furrion-water-heater-freeze-damage",
         "furrion-water-heater-user-manual",
-        "furrion-tankless-winterization-video"
+        "furrion-tankless-winterization-video",
+        "furrion-fwh09afa-ab-flangeless-spec"
       ]
     },
     {
@@ -18344,6 +18476,55 @@
         "girard-gswh1-owner-manual",
         "girard-gswh1m-owner-manual",
         "girard-gswh1-wud-owner-manual"
+      ]
+    },
+    {
+      "id": "dometic-water-heater-winterizing-flush",
+      "slug": "dometic-water-heater-winterizing-flush",
+      "title": "Dometic water heater winterizing or tank flushing",
+      "summary": "Use this when preparing a Dometic/Atwood tank water heater for freezing storage, flushing sediment, or recording a winterizing issue before service.",
+      "safeChecklist": [
+        "Turn the water heater off and let stored water cool before any drain or flush step.",
+        "Shut off the main water supply or pump from normal RV controls before draining.",
+        "Use only owner-accessible drain or flush steps from Dometic support and the RV manual; stop if the drain is obstructed or fittings are not safely accessible.",
+        "Call service for blocked drains, damaged fittings, leaks, or winterizing questions beyond normal tank draining."
+      ],
+      "sourceIds": [
+        "dometic-water-heater-wh-2022-manual",
+        "dometic-water-heater-combo-winterize-flush-support",
+        "dometic-water-heater-gas-winterize-flush-support"
+      ]
+    },
+    {
+      "id": "dometic-water-heater-pt-relief-drip-air-gap",
+      "slug": "dometic-water-heater-pt-relief-drip-air-gap",
+      "title": "Dometic water heater P/T relief dripping or lost air gap",
+      "summary": "Use this when a Dometic/Atwood tank water heater drips from the pressure-temperature relief outlet and Dometic air-gap guidance may apply.",
+      "safeChecklist": [
+        "Turn the water heater off and let stored water cool before following Dometic air-gap instructions.",
+        "Record whether the P/T relief outlet drips only while heating or continues after cooldown.",
+        "Do not cap, plug, restrict, or ignore the P/T relief outlet.",
+        "Call qualified service if discharge repeats, the relief valve is corroded, or any valve or plumbing part needs replacement."
+      ],
+      "sourceIds": [
+        "dometic-water-heater-wh-2022-manual",
+        "dometic-water-heater-combo-air-gap-support",
+        "dometic-water-heater-gas-air-gap-support"
+      ]
+    },
+    {
+      "id": "od5001-no-water-flow-at-tap",
+      "slug": "dometic-od5001-no-water-flow-at-tap",
+      "title": "Dometic OD-5001 no water flow from tap",
+      "summary": "Use this when an OD-5001 installation has no water flow from the tap after the tap is turned on.",
+      "safeChecklist": [
+        "Turn the OD-5001 off if no water reaches the hot tap.",
+        "Record whether other faucets have water and whether the hot and cold lines may have been reversed after installation or service.",
+        "Check only normal pump, supply, and shutoff-valve state from owner-accessible controls.",
+        "Have an installer or qualified service correct reversed or misrouted plumbing; do not modify water lines as a troubleshooting step."
+      ],
+      "sourceIds": [
+        "dometic-od5001-no-water-flow-support"
       ]
     }
   ],
