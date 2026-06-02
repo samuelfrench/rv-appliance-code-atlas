@@ -36,10 +36,10 @@ npm run traffic:monitor
 ```
 
 Current corpus:
-- `751` verified entries
+- `765` verified entries
 - `62` symptom guides
-- `158` official sources
-- `814` generated indexable pages
+- `172` official sources
+- `828` generated indexable pages
 
 Next automated batch goal:
-- Continue official Dometic RM8 refrigerator support-page alias research for recurring beep, internal-battery undervoltage, gas-operation power switching, flame-not-ignited, and AC/DC supply conditions, with duplicate filtering and owner-safe boundaries.
+- Continue official Dometic refrigerator support-page gap research for remaining RM8/RM10/RUA/RUC/RMD support aliases not already covered by manuals, with duplicate filtering and owner-safe boundaries.

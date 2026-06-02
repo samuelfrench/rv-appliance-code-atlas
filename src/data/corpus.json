@@ -1103,6 +1103,118 @@
       "official": true
     },
     {
+      "id": "dometic-rm8-recurring-beep-support",
+      "brand": "Dometic",
+      "title": "Dometic RM8 Refrigerators Recurring Beep Support",
+      "url": "https://support.dometic.com/en/rm8-refrigerators/Fault-Recurring-beep-4f70",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm8-undervoltage-internal-batteries-support",
+      "brand": "Dometic",
+      "title": "Dometic RM8 Refrigerators Undervoltage Detection Internal Batteries Support",
+      "url": "https://support.dometic.com/en/rm8-refrigerators/Fault-Undervoltage-detection-internal-batteries-9797",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm8-gas-operation-mains-supply-support",
+      "brand": "Dometic",
+      "title": "Dometic RM8 Refrigerators Gas Operation Despite Mains Supply Voltage Support",
+      "url": "https://support.dometic.com/en/rm8-refrigerators/Gas-operation-despite-connection-to-the-mains-supply-voltage-aca4",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm8-flame-not-ignited-gas-automatic-support",
+      "brand": "Dometic",
+      "title": "Dometic RM8 Refrigerators Flame Not Ignited in GAS Automatic Mode Support",
+      "url": "https://support.dometic.com/en/rm8-refrigerators/Fault-Flame-not-ignited-in-GASAutomatic-mode-d89f",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm8-ac-power-not-connected-support",
+      "brand": "Dometic",
+      "title": "Dometic RM8 Refrigerators AC Power Not Connected or Low Voltage Support",
+      "url": "https://support.dometic.com/en/rm8-refrigerators/Fault-AC-power-not-connected-or-AC-voltage-less-190-V-72ec",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm8-230v-not-available-support",
+      "brand": "Dometic",
+      "title": "Dometic RM8 Refrigerators 230V Not Available or Low Voltage Support",
+      "url": "https://support.dometic.com/en/rm8-refrigerators/Fault-230V-not-available-or-voltage-too-low-4b27",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm8-12v-not-available-support",
+      "brand": "Dometic",
+      "title": "Dometic RM8 Refrigerators 12V Not Available or Low Voltage Support",
+      "url": "https://support.dometic.com/en/rm8-refrigerators/Fault-12V-not-available-or-voltage-too-low-9fa6",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm8-gas-operation-batteries-inserted-support",
+      "brand": "Dometic",
+      "title": "Dometic RM8 Refrigerators Gas Operation Not Possible Batteries Inserted Support",
+      "url": "https://support.dometic.com/en/rm8-refrigerators/Fault-Refrigerator-does-not-function-gas-operation-not-possible-although-the-batteries-are-inserted-88aa",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm8-dc-power-not-connected-support",
+      "brand": "Dometic",
+      "title": "Dometic RM8 Refrigerators DC Power Not Connected Support",
+      "url": "https://support.dometic.com/en/rm8-refrigerators/Fault-DC-power-not-connected-531e",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm8-flame-not-ignited-internal-power-support",
+      "brand": "Dometic",
+      "title": "Dometic RM8 Refrigerators Flame Not Ignited in Internal Power Mode Support",
+      "url": "https://support.dometic.com/en/rm8-refrigerators/Fault-Flame-not-ignited-in-internal-power-mode-2ee0",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm8-230v-heating-element-support",
+      "brand": "Dometic",
+      "title": "Dometic RM8 Refrigerators 230V Heating Element Defective Support",
+      "url": "https://support.dometic.com/en/rm8-refrigerators/Fault-230V-heating-element-defective-96d",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm8-12v-heating-element-support",
+      "brand": "Dometic",
+      "title": "Dometic RM8 Refrigerators 12V Heating Element Defective Support",
+      "url": "https://support.dometic.com/en/rm8-refrigerators/Fault-12V-heating-element-defective-abdb",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm8-flashing-acoustic-signal-support",
+      "brand": "Dometic",
+      "title": "Dometic RM8 Refrigerators Flashing and Acoustic Signal 20 Seconds Support",
+      "url": "https://support.dometic.com/en/rm8-refrigerators/Flashing-acoustic-signal-20-s-1bd1",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm8-interior-lighting-support",
+      "brand": "Dometic",
+      "title": "Dometic RM8 Refrigerators Interior Lighting Switched On Support",
+      "url": "https://support.dometic.com/en/rm8-refrigerators/Fault-Interior-lighting-is-switched-on-e658",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
       "id": "dometic-rm10-petrol-pump-tank-stop-support",
       "brand": "Dometic",
       "title": "Dometic RM10 Refrigerators Petrol Pump Symbol Tank Stop Mode Support",
@@ -25167,6 +25279,594 @@
       ]
     },
     {
+      "id": "dometic-rm8-recurring-beep-door-parking-mode-check",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM8xxx",
+        "RMS8xxx",
+        "RML8xxx",
+        "RMSL8xxx",
+        "RM8501",
+        "RM8505",
+        "RMS8501",
+        "RMS8505",
+        "RML8555",
+        "RMSL8505"
+      ],
+      "code": "Recurring beep",
+      "slug": "dometic-rm8-recurring-beep-door-parking-mode-check",
+      "plainMeaning": "The Dometic RM8 support page says a recurring beep can be caused by the refrigerator door not being completely closed or being left in parking mode.",
+      "ownerSafeActions": [
+        "Make sure the refrigerator door is completely closed.",
+        "Confirm the door is not set to parking mode.",
+        "Record whether the recurring beep continues with the door fully closed."
+      ],
+      "serviceOnlyActions": [
+        "Door switch, latch, lighting circuit, wiring, and refrigerator electronics diagnosis are service-only if the beep repeats with the door closed."
+      ],
+      "safetyBoundary": "Do not service electrical circuits, wiring, or refrigerator controls; use only normal door and front-panel checks and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm8-recurring-beep-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Door position and parking-mode photo if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm8-undervoltage-detection-internal-batteries",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM8xxx",
+        "RMS8xxx",
+        "RML8xxx",
+        "RMSL8xxx",
+        "RM8501",
+        "RM8505",
+        "RMS8501",
+        "RMS8505",
+        "RML8555",
+        "RMSL8505"
+      ],
+      "code": "Undervoltage detection (internal batteries)",
+      "slug": "dometic-rm8-undervoltage-detection-internal-batteries",
+      "plainMeaning": "The Dometic RM8 support page says undervoltage detection in the internal batteries means the batteries that power the electronics should be replaced.",
+      "ownerSafeActions": [
+        "Replace the internal batteries as the support page describes.",
+        "Record whether the alarm or fault returns with fresh batteries."
+      ],
+      "serviceOnlyActions": [
+        "Battery contacts, internal power supply, wiring, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service electrical circuits, wiring, or refrigerator controls; use only documented battery replacement and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm8-undervoltage-internal-batteries-support"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Battery type and replacement date",
+        "Front display code or alarm pattern photo"
+      ]
+    },
+    {
+      "id": "dometic-rm8-gas-operation-despite-mains-supply-voltage",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM8xxx",
+        "RMS8xxx",
+        "RML8xxx",
+        "RMSL8xxx",
+        "RM8501",
+        "RM8505",
+        "RMS8501",
+        "RMS8505",
+        "RML8555",
+        "RMSL8505"
+      ],
+      "code": "Gas operation despite mains supply voltage",
+      "slug": "dometic-rm8-gas-operation-despite-mains-supply-voltage",
+      "plainMeaning": "The Dometic RM8 support page says the refrigerator switches to gas operation when mains supply voltage is too low and will automatically switch back to 230V operation when voltage is sufficient again.",
+      "ownerSafeActions": [
+        "Check the owner-visible mains power supply and selected energy mode.",
+        "Record whether the refrigerator returns to 230V operation after stable mains voltage is available."
+      ],
+      "serviceOnlyActions": [
+        "Mains voltage diagnosis, wiring, fuses, heating elements, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service LP hardware, electrical circuits, wiring, fuses, heating elements, or refrigerator controls; use only owner-visible power checks and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm8-gas-operation-mains-supply-support"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Selected energy mode and campsite power status",
+        "Front display code or lamp state photo"
+      ]
+    },
+    {
+      "id": "dometic-rm8-flame-not-ignited-gas-automatic-reset",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM8xxx",
+        "RMS8xxx",
+        "RML8xxx",
+        "RMSL8xxx",
+        "RM8501",
+        "RM8505",
+        "RMS8501",
+        "RMS8505",
+        "RML8555",
+        "RMSL8505"
+      ],
+      "code": "Flame not ignited in GAS/Automatic mode",
+      "slug": "dometic-rm8-flame-not-ignited-gas-automatic-reset",
+      "plainMeaning": "The Dometic RM8 support page says flame not ignited in GAS or automatic mode can be reset from the front controls and tried again.",
+      "ownerSafeActions": [
+        "Reset the fault once using the documented front-panel button timing.",
+        "Confirm only owner-visible LP supply status before retrying.",
+        "Stop LP mode and arrange service if the fault returns."
+      ],
+      "serviceOnlyActions": [
+        "Repeated LP ignition failure, burner service, gas valve, LP hardware, wiring, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service LP hardware, burners, electrical circuits, wiring, or refrigerator controls; use only documented front-panel reset and call qualified service for repeated ignition faults.",
+      "sourceIds": [
+        "dometic-rm8-flame-not-ignited-gas-automatic-support"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "LP supply status from normal owner controls",
+        "Front display code or lamp state photo"
+      ]
+    },
+    {
+      "id": "dometic-rm8-ac-power-not-connected-voltage-less-190",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM8xxx",
+        "RMS8xxx",
+        "RML8xxx",
+        "RMSL8xxx",
+        "RM8501",
+        "RM8505",
+        "RMS8501",
+        "RMS8505",
+        "RML8555",
+        "RMSL8505"
+      ],
+      "code": "AC power not connected or AC voltage < 190 V",
+      "slug": "dometic-rm8-ac-power-not-connected-voltage-less-190",
+      "plainMeaning": "The Dometic RM8 support page says AC power may not be connected or AC voltage is below the operating threshold; below about 195V the refrigerator stops working on 230V.",
+      "ownerSafeActions": [
+        "Make sure there is a normal owner-visible connection to mains power.",
+        "Record whether the fault clears after stable shore or mains power is available."
+      ],
+      "serviceOnlyActions": [
+        "AC voltage diagnosis, shore-power wiring, fuses, heating elements, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service AC circuits, wiring, fuses, heating elements, or refrigerator controls; use only owner-visible power checks and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm8-ac-power-not-connected-support"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Mains or shore-power status",
+        "Front display code or lamp state photo"
+      ]
+    },
+    {
+      "id": "dometic-rm8-230v-not-available-voltage-too-low-support-alias",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM8xxx",
+        "RMS8xxx",
+        "RML8xxx",
+        "RMSL8xxx",
+        "RM8501",
+        "RM8505",
+        "RMS8501",
+        "RMS8505",
+        "RML8555",
+        "RMSL8505"
+      ],
+      "code": "230V not available or voltage too low",
+      "slug": "dometic-rm8-230v-not-available-voltage-too-low-support-alias",
+      "plainMeaning": "The Dometic RM8 support page says 230V is not available or voltage is too low; below about 195V the refrigerator stops working on 230V.",
+      "ownerSafeActions": [
+        "Make sure there is a normal owner-visible connection to mains power.",
+        "Record whether the display clears after the intended power source is restored."
+      ],
+      "serviceOnlyActions": [
+        "230V supply, wiring, fuses, heating elements, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service AC circuits, wiring, fuses, heating elements, or refrigerator controls; use only owner-visible power checks and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm8-230v-not-available-support"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Mains or shore-power status",
+        "Front display code or lamp state photo"
+      ]
+    },
+    {
+      "id": "dometic-rm8-12v-not-available-voltage-too-low-support-alias",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM8xxx",
+        "RMS8xxx",
+        "RML8xxx",
+        "RMSL8xxx",
+        "RM8501",
+        "RM8505",
+        "RMS8501",
+        "RMS8505",
+        "RML8555",
+        "RMSL8505"
+      ],
+      "code": "12V not available or voltage too low",
+      "slug": "dometic-rm8-12v-not-available-voltage-too-low-support-alias",
+      "plainMeaning": "The Dometic RM8 support page says 12V is not available or voltage is too low and points owners to the 12V connection, on-board battery, and fuse.",
+      "ownerSafeActions": [
+        "Check owner-visible 12V power status and the selected energy mode.",
+        "Record coach-battery state from normal owner controls or monitor panels.",
+        "Record whether the fault appears while driving, parked, or connected to external power."
+      ],
+      "serviceOnlyActions": [
+        "12V supply diagnosis, D+ signal, wiring, fuses, heating elements, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service DC circuits, wiring, fuses, heating elements, or refrigerator controls; use only owner-visible power checks and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm8-12v-not-available-support"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Coach battery and driving/parked state",
+        "Front display code or lamp state photo"
+      ]
+    },
+    {
+      "id": "dometic-rm8-gas-operation-not-possible-batteries-inserted",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM8xxx",
+        "RMS8xxx",
+        "RML8xxx",
+        "RMSL8xxx",
+        "RM8501",
+        "RM8505",
+        "RMS8501",
+        "RMS8505",
+        "RML8555",
+        "RMSL8505"
+      ],
+      "code": "Refrigerator does not function; gas operation not possible although batteries are inserted",
+      "slug": "dometic-rm8-gas-operation-not-possible-batteries-inserted",
+      "plainMeaning": "The Dometic RM8 support page says the on-board power supply was interrupted while gas operation was starting; no automatic switching is performed during ignition.",
+      "ownerSafeActions": [
+        "Switch the refrigerator off and start again once.",
+        "Record whether on-board power was interrupted while gas mode was starting.",
+        "Arrange service if gas operation remains unavailable."
+      ],
+      "serviceOnlyActions": [
+        "Power switchover, internal supply, LP ignition interlock, wiring, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service LP hardware, electrical circuits, wiring, or refrigerator controls; use only normal front-panel restart and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm8-gas-operation-batteries-inserted-support"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Battery and power-interruption timing notes",
+        "Front display code or lamp state photo"
+      ]
+    },
+    {
+      "id": "dometic-rm8-dc-power-not-connected-owner-check",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM8xxx",
+        "RMS8xxx",
+        "RML8xxx",
+        "RMSL8xxx",
+        "RM8501",
+        "RM8505",
+        "RMS8501",
+        "RMS8505",
+        "RML8555",
+        "RMSL8505"
+      ],
+      "code": "DC power not connected",
+      "slug": "dometic-rm8-dc-power-not-connected-owner-check",
+      "plainMeaning": "The Dometic RM8 support page says DC power is not connected and points owners to the 12V connection, on-board battery, and fuse.",
+      "ownerSafeActions": [
+        "Check owner-visible 12V power status and the selected energy mode.",
+        "Record coach-battery state from normal owner controls or monitor panels.",
+        "Record whether the condition appears while driving, parked, or connected to external power."
+      ],
+      "serviceOnlyActions": [
+        "DC supply diagnosis, D+ signal, wiring, fuses, heating elements, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service DC circuits, wiring, fuses, heating elements, or refrigerator controls; use only owner-visible power checks and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm8-dc-power-not-connected-support"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Coach battery and driving/parked state",
+        "Front display code or lamp state photo"
+      ]
+    },
+    {
+      "id": "dometic-rm8-flame-not-ignited-internal-power-mode-reset",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM8xxx",
+        "RMS8xxx",
+        "RML8xxx",
+        "RMSL8xxx",
+        "RM8501",
+        "RM8505",
+        "RMS8501",
+        "RMS8505",
+        "RML8555",
+        "RMSL8505"
+      ],
+      "code": "Flame not ignited in internal power mode",
+      "slug": "dometic-rm8-flame-not-ignited-internal-power-mode-reset",
+      "plainMeaning": "The Dometic RM8 support page says flame not ignited in internal power mode can be reset from the front controls and tried again.",
+      "ownerSafeActions": [
+        "Reset the fault once using the documented front-panel button timing.",
+        "Confirm internal batteries and owner-visible LP supply status before retrying.",
+        "Stop LP mode and arrange service if the fault returns."
+      ],
+      "serviceOnlyActions": [
+        "Repeated LP ignition failure, burner service, gas valve, internal power supply, wiring, and refrigerator electronics diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service LP hardware, burners, electrical circuits, wiring, or refrigerator controls; use only documented front-panel reset and call qualified service for repeated ignition faults.",
+      "sourceIds": [
+        "dometic-rm8-flame-not-ignited-internal-power-support"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Internal battery and LP supply status from normal owner controls",
+        "Front display code or lamp state photo"
+      ]
+    },
+    {
+      "id": "dometic-rm8-230v-heating-element-service-only",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM8xxx",
+        "RMS8xxx",
+        "RML8xxx",
+        "RMSL8xxx",
+        "RM8501",
+        "RM8505",
+        "RMS8501",
+        "RMS8505",
+        "RML8555",
+        "RMSL8505"
+      ],
+      "code": "230V heating element defective",
+      "slug": "dometic-rm8-230v-heating-element-service-only",
+      "plainMeaning": "The Dometic RM8 support page says a 230V heating element defective fault can only be repaired by an authorized service provider.",
+      "ownerSafeActions": [
+        "Record the exact fault wording or display pattern.",
+        "Arrange service with an authorized Dometic service provider."
+      ],
+      "serviceOnlyActions": [
+        "A 230V heating element defective fault must be handled by an authorized service provider.",
+        "Heating element replacement, AC power-circuit diagnosis, wiring, and refrigerator electronics work are service-only."
+      ],
+      "safetyBoundary": "Do not service AC circuits, wiring, heating elements, or refrigerator controls; call an authorized service provider for this fault.",
+      "sourceIds": [
+        "dometic-rm8-230v-heating-element-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Selected energy mode"
+      ]
+    },
+    {
+      "id": "dometic-rm8-12v-heating-element-service-only",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM8xxx",
+        "RMS8xxx",
+        "RML8xxx",
+        "RMSL8xxx",
+        "RM8501",
+        "RM8505",
+        "RMS8501",
+        "RMS8505",
+        "RML8555",
+        "RMSL8505"
+      ],
+      "code": "12V heating element defective",
+      "slug": "dometic-rm8-12v-heating-element-service-only",
+      "plainMeaning": "The Dometic RM8 support page says a 12V heating element defective fault can only be repaired by an authorized service provider.",
+      "ownerSafeActions": [
+        "Record the exact fault wording or display pattern.",
+        "Arrange service with an authorized Dometic service provider."
+      ],
+      "serviceOnlyActions": [
+        "A 12V heating element defective fault must be handled by an authorized service provider.",
+        "Heating element replacement, DC power-circuit diagnosis, wiring, and refrigerator electronics work are service-only."
+      ],
+      "safetyBoundary": "Do not service DC circuits, wiring, heating elements, or refrigerator controls; call an authorized service provider for this fault.",
+      "sourceIds": [
+        "dometic-rm8-12v-heating-element-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "low-voltage",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Selected energy mode"
+      ]
+    },
+    {
+      "id": "dometic-rm8-flashing-acoustic-signal-20s-service-only",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM8xxx",
+        "RMS8xxx",
+        "RML8xxx",
+        "RMSL8xxx",
+        "RM8501",
+        "RM8505",
+        "RMS8501",
+        "RMS8505",
+        "RML8555",
+        "RMSL8505"
+      ],
+      "code": "Flashing + acoustic signal 20 s",
+      "slug": "dometic-rm8-flashing-acoustic-signal-20s-service-only",
+      "plainMeaning": "The Dometic RM8 support page says a flashing display with a 20-second acoustic signal can only be repaired by an authorized service provider.",
+      "ownerSafeActions": [
+        "Record the exact flashing display and acoustic-signal timing.",
+        "Avoid repeated resets and arrange service."
+      ],
+      "serviceOnlyActions": [
+        "A flashing display with 20-second acoustic signal must be handled by an authorized service provider.",
+        "Internal refrigerator controls, wiring, LP hardware, heating elements, and cooling-system diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service LP, electrical, control, heating-element, or cooling-system components; call an authorized service provider for this fault.",
+      "sourceIds": [
+        "dometic-rm8-flashing-acoustic-signal-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Acoustic-signal timing"
+      ]
+    },
+    {
+      "id": "dometic-rm8-interior-lighting-switched-on-door-check",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM8xxx",
+        "RMS8xxx",
+        "RML8xxx",
+        "RMSL8xxx",
+        "RM8501",
+        "RM8505",
+        "RMS8501",
+        "RMS8505",
+        "RML8555",
+        "RMSL8505"
+      ],
+      "code": "Interior lighting is switched on",
+      "slug": "dometic-rm8-interior-lighting-switched-on-door-check",
+      "plainMeaning": "The Dometic RM8 support page says the interior-lighting fault can be caused by the refrigerator door not being completely closed or being left in parking mode.",
+      "ownerSafeActions": [
+        "Make sure the refrigerator door is completely closed.",
+        "Confirm the door is not set to parking mode.",
+        "Record whether the fault continues with the door fully closed."
+      ],
+      "serviceOnlyActions": [
+        "Door switch, latch, lighting circuit, wiring, and refrigerator electronics diagnosis are service-only if the fault repeats with the door closed."
+      ],
+      "safetyBoundary": "Do not service electrical circuits, wiring, or refrigerator controls; use only normal door and front-panel checks and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm8-interior-lighting-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Door position and parking-mode photo if service requests it"
+      ]
+    },
+    {
       "id": "dometic-rm10-petrol-pump-symbol-tank-stop-mode",
       "brand": "Dometic",
       "equipmentType": "Refrigerator",
@@ -29222,6 +29922,20 @@
         "dometic-rml10-4-operating",
         "dometic-rm8-ground-contact-support",
         "dometic-rm8-tank-stop-support",
+        "dometic-rm8-recurring-beep-support",
+        "dometic-rm8-undervoltage-internal-batteries-support",
+        "dometic-rm8-gas-operation-mains-supply-support",
+        "dometic-rm8-flame-not-ignited-gas-automatic-support",
+        "dometic-rm8-ac-power-not-connected-support",
+        "dometic-rm8-230v-not-available-support",
+        "dometic-rm8-12v-not-available-support",
+        "dometic-rm8-gas-operation-batteries-inserted-support",
+        "dometic-rm8-dc-power-not-connected-support",
+        "dometic-rm8-flame-not-ignited-internal-power-support",
+        "dometic-rm8-230v-heating-element-support",
+        "dometic-rm8-12v-heating-element-support",
+        "dometic-rm8-flashing-acoustic-signal-support",
+        "dometic-rm8-interior-lighting-support",
         "dometic-rm10-petrol-pump-tank-stop-support",
         "dometic-rm10-display-fault-01-support",
         "dometic-rm10-display-fault-02-support",

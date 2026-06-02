@@ -10,7 +10,7 @@ describe("traffic readiness report", () => {
     const report = JSON.parse(output);
 
     expect(report.nextAutomatedBatchGoal).toBe(
-      "Continue official Dometic RM8 refrigerator support-page alias research for recurring beep, internal-battery undervoltage, gas-operation power switching, flame-not-ignited, and AC/DC supply conditions, with duplicate filtering and owner-safe boundaries.",
+      "Continue official Dometic refrigerator support-page gap research for remaining RM8/RM10/RUA/RUC/RMD support aliases not already covered by manuals, with duplicate filtering and owner-safe boundaries.",
     );
 
     expect(readFileSync("README.md", "utf8")).toContain(report.nextAutomatedBatchGoal);

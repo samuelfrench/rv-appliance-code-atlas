@@ -132,6 +132,21 @@ describe("verified corpus", () => {
     expect(lookupEntries(index, "dometic rml10 fault 50 replace gas cylinder reset")[0]?.slug).toBe(
       "dometic-rm10-display-fault-50-gas-cylinder-reset",
     );
+    expect(lookupEntries(index, "dometic rm8 recurring beep door parking mode")[0]?.slug).toBe(
+      "dometic-rm8-recurring-beep-door-parking-mode-check",
+    );
+    expect(lookupEntries(index, "dometic rm8 undervoltage detection internal batteries replace")[0]?.slug).toBe(
+      "dometic-rm8-undervoltage-detection-internal-batteries",
+    );
+    expect(lookupEntries(index, "dometic rm8 gas operation despite mains supply voltage")[0]?.slug).toBe(
+      "dometic-rm8-gas-operation-despite-mains-supply-voltage",
+    );
+    expect(lookupEntries(index, "dometic rm8 ac power not connected voltage less 190")[0]?.slug).toBe(
+      "dometic-rm8-ac-power-not-connected-voltage-less-190",
+    );
+    expect(lookupEntries(index, "dometic rm8 flame not ignited internal power mode reset")[0]?.slug).toBe(
+      "dometic-rm8-flame-not-ignited-internal-power-mode-reset",
+    );
   });
 
   it("summarizes code, source, symptom, and monetization readiness counts", () => {
@@ -428,6 +443,81 @@ describe("verified corpus", () => {
         "dometic-rm10-display-fault-14-support",
       ]),
     );
+  });
+
+  it("includes official Dometic RM8 support aliases for exact owner searches", () => {
+    const entryById = (id: string) => {
+      const entry = corpus.entries.find((candidate) => candidate.id === id);
+      expect(entry, id).toBeDefined();
+      return entry!;
+    };
+    const codesForSource = (sourceId: string) =>
+      new Set(
+        corpus.entries
+          .filter((entry) => entry.brand === "Dometic" && entry.sourceIds.includes(sourceId))
+          .map((entry) => entry.code),
+      );
+
+    const supportUrls = new Map(corpus.sources.map((source) => [source.id, source.url]));
+
+    expect(supportUrls.get("dometic-rm8-recurring-beep-support")).toBe(
+      "https://support.dometic.com/en/rm8-refrigerators/Fault-Recurring-beep-4f70",
+    );
+    expect(supportUrls.get("dometic-rm8-undervoltage-internal-batteries-support")).toBe(
+      "https://support.dometic.com/en/rm8-refrigerators/Fault-Undervoltage-detection-internal-batteries-9797",
+    );
+    expect(supportUrls.get("dometic-rm8-flame-not-ignited-internal-power-support")).toBe(
+      "https://support.dometic.com/en/rm8-refrigerators/Fault-Flame-not-ignited-in-internal-power-mode-2ee0",
+    );
+
+    expect(codesForSource("dometic-rm8-recurring-beep-support")).toEqual(new Set(["Recurring beep"]));
+    expect(codesForSource("dometic-rm8-undervoltage-internal-batteries-support")).toEqual(
+      new Set(["Undervoltage detection (internal batteries)"]),
+    );
+    expect(codesForSource("dometic-rm8-gas-operation-mains-supply-support")).toEqual(
+      new Set(["Gas operation despite mains supply voltage"]),
+    );
+    expect(codesForSource("dometic-rm8-flame-not-ignited-gas-automatic-support")).toEqual(
+      new Set(["Flame not ignited in GAS/Automatic mode"]),
+    );
+    expect(codesForSource("dometic-rm8-ac-power-not-connected-support")).toEqual(
+      new Set(["AC power not connected or AC voltage < 190 V"]),
+    );
+    expect(codesForSource("dometic-rm8-230v-not-available-support")).toEqual(new Set(["230V not available or voltage too low"]));
+    expect(codesForSource("dometic-rm8-12v-not-available-support")).toEqual(new Set(["12V not available or voltage too low"]));
+    expect(codesForSource("dometic-rm8-gas-operation-batteries-inserted-support")).toEqual(
+      new Set(["Refrigerator does not function; gas operation not possible although batteries are inserted"]),
+    );
+    expect(codesForSource("dometic-rm8-dc-power-not-connected-support")).toEqual(new Set(["DC power not connected"]));
+    expect(codesForSource("dometic-rm8-flame-not-ignited-internal-power-support")).toEqual(
+      new Set(["Flame not ignited in internal power mode"]),
+    );
+    expect(codesForSource("dometic-rm8-230v-heating-element-support")).toEqual(new Set(["230V heating element defective"]));
+    expect(codesForSource("dometic-rm8-12v-heating-element-support")).toEqual(new Set(["12V heating element defective"]));
+    expect(codesForSource("dometic-rm8-flashing-acoustic-signal-support")).toEqual(new Set(["Flashing + acoustic signal 20 s"]));
+    expect(codesForSource("dometic-rm8-interior-lighting-support")).toEqual(new Set(["Interior lighting is switched on"]));
+
+    const serviceOnly = corpus.entries.find((entry) => entry.id === "dometic-rm8-230v-heating-element-service-only");
+    expect(serviceOnly?.sourceIds).toEqual(["dometic-rm8-230v-heating-element-support"]);
+    expect(serviceOnly?.serviceOnlyActions.join(" ")).toContain("authorized service provider");
+
+    for (const id of [
+      "dometic-rm8-12v-not-available-voltage-too-low-support-alias",
+      "dometic-rm8-dc-power-not-connected-owner-check",
+    ]) {
+      const entry = entryById(id);
+      expect(entry.ownerSafeActions.join(" ")).not.toMatch(/\bfuses?\b/i);
+      expect(entry.serviceOnlyActions.join(" ")).toMatch(/\bfuses?\b/i);
+    }
+
+    for (const id of [
+      "dometic-rm8-230v-heating-element-service-only",
+      "dometic-rm8-12v-heating-element-service-only",
+    ]) {
+      const entry = entryById(id);
+      expect(entry.ownerSafeActions.join(" ")).not.toMatch(/energy mode|mode switch|mode-switch/i);
+      expect(entry.serviceOnlyActions.join(" ")).toContain("authorized service provider");
+    }
   });
 
   it("includes the full official Norcold Polar N7/N8 owner-manual fault displays", () => {
