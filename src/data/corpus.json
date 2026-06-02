@@ -195,6 +195,14 @@
       "official": true
     },
     {
+      "id": "dometic-single-zone-lcd-thermostat-operating",
+      "brand": "Dometic",
+      "title": "Dometic Single Zone LCD Thermostat Operating Instructions",
+      "url": "https://media.dometic.com/externalassets/ct-single-zone-thermostat_9108853315_55910.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
       "id": "dometic-df-furnace",
       "brand": "Dometic",
       "title": "Dometic DF Series Furnace Installation Manual",
@@ -5787,6 +5795,184 @@
         "serial number",
         "photo of display fault E35",
         "ambient temperature and visible ventilation status"
+      ]
+    },
+    {
+      "id": "dometic-single-zone-lcd-e1",
+      "brand": "Dometic",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "Single Zone LCD thermostat",
+        "3313192",
+        "3313193",
+        "3313194"
+      ],
+      "code": "E1",
+      "slug": "dometic-single-zone-lcd-e1",
+      "plainMeaning": "The Dometic Single Zone LCD thermostat manual lists E1 as loss of communication between the Single Zone LCD thermostat and the module board; the LCD cycles between E1 and the previous mode setting, and the system shuts down.",
+      "ownerSafeActions": [
+        "Record the displayed code, previous mode, setpoint, and selected fan setting.",
+        "Turn the thermostat off from the normal On/Off Mode button if the HVAC equipment is not responding.",
+        "Note whether normal RV shore power, generator power, or battery power is present from installed indicators."
+      ],
+      "serviceOnlyActions": [
+        "Single Zone thermostat communication and module-board diagnosis should be handled by qualified RV HVAC service."
+      ],
+      "safetyBoundary": "Do not open thermostat, rooftop HVAC, or electrical compartments, and do not bypass communication or sensor circuits. Shut the affected HVAC system off and arrange qualified RV HVAC service for unresolved Single Zone LCD faults.",
+      "sourceIds": [
+        "dometic-single-zone-lcd-thermostat-operating"
+      ],
+      "symptomIds": [
+        "thermostat-communication",
+        "thermostat-delay-or-no-response",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Single Zone LCD thermostat model",
+        "air conditioner or heat pump model number",
+        "photo of LCD error code and mode LED"
+      ]
+    },
+    {
+      "id": "dometic-single-zone-lcd-e2",
+      "brand": "Dometic",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "Single Zone LCD thermostat",
+        "3313192",
+        "3313193",
+        "3313194"
+      ],
+      "code": "E2",
+      "slug": "dometic-single-zone-lcd-e2",
+      "plainMeaning": "The Dometic Single Zone LCD thermostat manual lists E2 as an open circuit or out-of-range indoor temperature sensor; heating and cooling operation lock out while fan operation can continue.",
+      "ownerSafeActions": [
+        "Record the E2 code, room temperature, mode, fan setting, and setpoint.",
+        "Use only normal thermostat controls to turn off heat or cooling if the coach is uncomfortable.",
+        "Note whether fan-only operation continues before calling service."
+      ],
+      "serviceOnlyActions": [
+        "Indoor temperature sensor and thermostat circuit diagnosis should be handled by qualified RV HVAC service."
+      ],
+      "safetyBoundary": "Do not open thermostat, rooftop HVAC, or electrical compartments, and do not bypass communication or sensor circuits. Shut the affected HVAC system off and arrange qualified RV HVAC service for unresolved Single Zone LCD faults.",
+      "sourceIds": [
+        "dometic-single-zone-lcd-thermostat-operating"
+      ],
+      "symptomIds": [
+        "thermostat-display",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Single Zone LCD thermostat model",
+        "air conditioner or heat pump model number",
+        "photo of LCD error code and mode LED"
+      ]
+    },
+    {
+      "id": "dometic-single-zone-lcd-e3",
+      "brand": "Dometic",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "Single Zone LCD thermostat",
+        "3313192",
+        "3313193",
+        "3313194"
+      ],
+      "code": "E3",
+      "slug": "dometic-single-zone-lcd-e3",
+      "plainMeaning": "The Dometic Single Zone LCD thermostat manual lists E3 as a shorted indoor temperature sensor; heating and cooling operation lock out while fan operation can continue.",
+      "ownerSafeActions": [
+        "Record the E3 code, room temperature, mode, fan setting, and setpoint.",
+        "Use only normal thermostat controls to turn off heat or cooling if the coach is uncomfortable.",
+        "Note whether fan-only operation continues before calling service."
+      ],
+      "serviceOnlyActions": [
+        "Indoor temperature sensor and thermostat circuit diagnosis should be handled by qualified RV HVAC service."
+      ],
+      "safetyBoundary": "Do not open thermostat, rooftop HVAC, or electrical compartments, and do not bypass communication or sensor circuits. Shut the affected HVAC system off and arrange qualified RV HVAC service for unresolved Single Zone LCD faults.",
+      "sourceIds": [
+        "dometic-single-zone-lcd-thermostat-operating"
+      ],
+      "symptomIds": [
+        "thermostat-display",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Single Zone LCD thermostat model",
+        "air conditioner or heat pump model number",
+        "photo of LCD error code and mode LED"
+      ]
+    },
+    {
+      "id": "dometic-single-zone-lcd-e4",
+      "brand": "Dometic",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "Single Zone LCD thermostat",
+        "3313192",
+        "3313193",
+        "3313194"
+      ],
+      "code": "E4",
+      "slug": "dometic-single-zone-lcd-e4",
+      "plainMeaning": "The Dometic Single Zone LCD thermostat manual lists E4 as an open circuit or out-of-range outdoor temperature sensor on select models; heat pump operation locks out while air conditioner, fan, and furnace operation can continue.",
+      "ownerSafeActions": [
+        "Record the E4 code, selected mode, fan setting, setpoint, and outdoor temperature estimate.",
+        "Use normal furnace or other installed backup heat controls if the heat pump locks out and the RV needs heat.",
+        "Avoid repeated heat-pump retries if the E4 code returns."
+      ],
+      "serviceOnlyActions": [
+        "Outdoor temperature sensor and heat-pump control diagnosis should be handled by qualified RV HVAC service."
+      ],
+      "safetyBoundary": "Do not open thermostat, rooftop HVAC, or electrical compartments, and do not bypass communication or sensor circuits. Shut the affected HVAC system off and arrange qualified RV HVAC service for unresolved Single Zone LCD faults.",
+      "sourceIds": [
+        "dometic-single-zone-lcd-thermostat-operating"
+      ],
+      "symptomIds": [
+        "thermostat-display",
+        "dometic-single-zone-low-ambient-heat-pump-lockout",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Single Zone LCD thermostat model",
+        "air conditioner or heat pump model number",
+        "photo of LCD error code and mode LED"
+      ]
+    },
+    {
+      "id": "dometic-single-zone-lcd-e5",
+      "brand": "Dometic",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "Single Zone LCD thermostat",
+        "3313192",
+        "3313193",
+        "3313194"
+      ],
+      "code": "E5",
+      "slug": "dometic-single-zone-lcd-e5",
+      "plainMeaning": "The Dometic Single Zone LCD thermostat manual lists E5 as an open circuit or out-of-range freeze sensor; air conditioner mode locks out while furnace, heat strip, heat pump, and fan operation can continue, with the display showing the last temperature setpoint.",
+      "ownerSafeActions": [
+        "Record the E5 code, selected mode, last setpoint, and whether cooling had been running.",
+        "Turn cooling off from normal thermostat controls if the air conditioner is locked out.",
+        "Check only owner-accessible return-air filter condition before calling service."
+      ],
+      "serviceOnlyActions": [
+        "Freeze-sensor, evaporator-protection, and air-conditioner diagnosis should be handled by qualified RV HVAC service."
+      ],
+      "safetyBoundary": "Do not open thermostat, rooftop HVAC, or electrical compartments, and do not bypass communication or sensor circuits. Shut the affected HVAC system off and arrange qualified RV HVAC service for unresolved Single Zone LCD faults.",
+      "sourceIds": [
+        "dometic-single-zone-lcd-thermostat-operating"
+      ],
+      "symptomIds": [
+        "air-conditioner-not-cooling",
+        "airflow-or-venting",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Single Zone LCD thermostat model",
+        "air conditioner or heat pump model number",
+        "photo of LCD error code and mode LED"
       ]
     },
     {
@@ -32145,7 +32331,7 @@
       "id": "airflow-or-venting",
       "slug": "rv-appliance-airflow-venting-fault",
       "title": "Airflow, venting, or exhaust fault",
-      "summary": "Use this when a furnace, water heater, or refrigerator code points to airflow, pressure, venting, or exhaust.",
+      "summary": "Use this when a furnace, water heater, refrigerator, or rooftop HVAC code points to airflow, pressure, venting, exhaust, or freeze protection.",
       "safeChecklist": [
         "Shut the appliance off.",
         "Look only for obvious external blockage.",
@@ -32185,14 +32371,15 @@
         "furrion-french-door-refrigerator",
         "onan-generator-quick-start",
         "onan-rv-generator-handbook",
-        "dometic-ccc2-operating"
+        "dometic-ccc2-operating",
+        "dometic-single-zone-lcd-thermostat-operating"
       ]
     },
     {
       "id": "thermostat-communication",
       "slug": "rv-thermostat-communication-error",
       "title": "RV thermostat communication error",
-      "summary": "Use this when an HVAC thermostat shows Er, E3, or zone/control-box communication terms.",
+      "summary": "Use this when an HVAC thermostat shows Er, E1, E3, or zone/control-box communication terms.",
       "safeChecklist": [
         "Record thermostat model and affected zone.",
         "Turn HVAC off if the zone is not responding.",
@@ -32203,6 +32390,7 @@
         "furrion-thermostat",
         "dometic-rm3762-rm3962-operating",
         "dometic-rmd10t-rmd10xt-operating",
+        "dometic-single-zone-lcd-thermostat-operating",
         "dometic-rm10-rms10-operating",
         "dometic-rmd10-5-operating",
         "dometic-rml10-4-operating"
@@ -32211,15 +32399,16 @@
     {
       "id": "thermostat-display",
       "slug": "rv-thermostat-display-lo-hi",
-      "title": "RV thermostat display shows LO or HI",
-      "summary": "Use this when a thermostat display is outside its temperature range or not matching room conditions.",
+      "title": "RV thermostat display shows LO, HI, or sensor code",
+      "summary": "Use this when a thermostat display is outside its temperature range, not matching room conditions, or showing an indoor, outdoor, or freeze-sensor code.",
       "safeChecklist": [
         "Record room conditions.",
         "Capture thermostat model.",
         "Avoid changing wiring or internal settings."
       ],
       "sourceIds": [
-        "coleman-9420-thermostat"
+        "coleman-9420-thermostat",
+        "dometic-single-zone-lcd-thermostat-operating"
       ]
     },
     {
@@ -32631,7 +32820,7 @@
       "id": "air-conditioner-not-cooling",
       "slug": "rv-rooftop-air-conditioner-not-cooling",
       "title": "RV rooftop air conditioner is not cooling enough",
-      "summary": "Use this when a Furrion or Coleman-Mach rooftop air conditioner runs but does not cool well, switches off on freeze protection, or has blocked airflow symptoms.",
+      "summary": "Use this when a Furrion, Dometic, or Coleman-Mach rooftop air conditioner runs but does not cool well, switches off on freeze protection, or has blocked airflow symptoms.",
       "safeChecklist": [
         "Clean or replace return-air filters if the owner manual allows it.",
         "Confirm cooling mode, lower set temperature, and open supply nozzles or vents.",
@@ -32646,7 +32835,8 @@
         "coleman-rooftop-operation-maintenance-1971-982",
         "coleman-comfortguard-service",
         "coleman-6633-service",
-        "dometic-ccc2-operating"
+        "dometic-ccc2-operating",
+        "dometic-single-zone-lcd-thermostat-operating"
       ]
     },
     {
@@ -32929,6 +33119,111 @@
       ]
     },
     {
+      "id": "dometic-single-zone-auto-fan-speed-cycling",
+      "slug": "dometic-single-zone-auto-fan-speed-cycling",
+      "title": "Dometic Single Zone LCD auto fan speed cycling",
+      "summary": "Dometic Single Zone LCD thermostat instructions say Auto fan varies by the difference between setpoint and room temperature: the fan runs HIGH when the difference is greater than 5 F, LOW when it is less than 4 F, and cycles with the thermostat.",
+      "safeChecklist": [
+        "Record selected mode, setpoint, room temperature, and whether Fan shows Lo, Hi, or Au.",
+        "Treat normal Auto fan speed changes as expected when room temperature approaches the setpoint.",
+        "Select Lo or Hi from normal fan controls only if continuous fan operation is desired.",
+        "Call qualified RV HVAC service if the display mode changes but fan behavior never matches the thermostat selection."
+      ],
+      "sourceIds": [
+        "dometic-single-zone-lcd-thermostat-operating"
+      ],
+      "searchAliases": [
+        "dometic single zone auto fan speed high low 5 degrees",
+        "single zone lcd auto fan cycles with thermostat",
+        "dometic 3313192 fan au lo hi",
+        "dometic single zone fan turns on and off automatically"
+      ]
+    },
+    {
+      "id": "dometic-single-zone-compressor-time-delay",
+      "slug": "dometic-single-zone-compressor-time-delay",
+      "title": "Dometic Single Zone LCD compressor time delay",
+      "summary": "Dometic Single Zone LCD thermostat instructions say a time delay of approximately two minutes occurs any time the compressor is required to begin a cooling or heat-pump cycle.",
+      "safeChecklist": [
+        "Record selected mode, setpoint, room temperature, and whether cooling or heat pump was just requested.",
+        "Wait at least 2 minutes after a normal cooling or heat-pump call before treating startup as failed.",
+        "Do not repeatedly cycle the thermostat to force an immediate compressor start.",
+        "Call qualified RV HVAC service if the compressor never starts after the normal delay."
+      ],
+      "sourceIds": [
+        "dometic-single-zone-lcd-thermostat-operating"
+      ],
+      "searchAliases": [
+        "single zone lcd compressor time delay 2 minutes",
+        "dometic single zone cooling delay compressor start",
+        "dometic 3313193 heat pump two minute delay",
+        "dometic single zone thermostat waits before compressor starts"
+      ]
+    },
+    {
+      "id": "dometic-single-zone-heat-pump-defrost-cold-air",
+      "slug": "dometic-single-zone-heat-pump-defrost-cold-air",
+      "title": "Dometic Single Zone LCD heat-pump defrost cold air",
+      "summary": "Dometic Single Zone LCD thermostat instructions say heat-pump defrost can temporarily put the unit back into air-conditioning mode, causing cold air at the registers; it typically repeats every 25 minutes of compressor run time while outside temperature is below 42 F and above 30 F.",
+      "safeChecklist": [
+        "Record outside temperature estimate, selected heat-pump mode, fan setting, and how often cold air appears.",
+        "Let the automatic defrost cycle finish if the RV remains safe and warm enough.",
+        "Use normal furnace or heat-strip controls when the heat pump cannot keep the coach warm.",
+        "Call qualified RV HVAC service if heat-pump heating fails in moderate weather or defrost behavior does not match the manual."
+      ],
+      "sourceIds": [
+        "dometic-single-zone-lcd-thermostat-operating"
+      ],
+      "searchAliases": [
+        "dometic single zone heat pump defrost cold air registers 25 minutes",
+        "single zone lcd heat pump blows cold air defrost",
+        "dometic 3313193 heat pump defrost below 42 above 30",
+        "dometic single zone heat pump air conditioning mode in heat"
+      ]
+    },
+    {
+      "id": "dometic-single-zone-low-ambient-heat-pump-lockout",
+      "slug": "dometic-single-zone-low-ambient-heat-pump-lockout",
+      "title": "Dometic Single Zone LCD low-ambient heat-pump lockout",
+      "summary": "Dometic Single Zone LCD thermostat instructions say the Dometic heat pump locks out heat-pump operation below 30 F; Auto fan turns off, while Low or High fan can remain on without compressor heat.",
+      "safeChecklist": [
+        "Record outside temperature estimate, selected mode, fan setting, and whether the compressor is off below 30 F.",
+        "Use normal furnace or heat-strip controls if equipped when the heat pump is below its operating range.",
+        "Do not keep forcing heat-pump starts below the documented low-ambient lockout temperature.",
+        "Call qualified RV HVAC service if heat-pump heating fails above the documented low-ambient range."
+      ],
+      "sourceIds": [
+        "dometic-single-zone-lcd-thermostat-operating"
+      ],
+      "searchAliases": [
+        "single zone heat pump lockout below 30 fan on no heat",
+        "dometic single zone low ambient heat pump lock out",
+        "dometic 3313193 heat pump no heat below 30",
+        "dometic single zone fan remains on compressor not running"
+      ]
+    },
+    {
+      "id": "dometic-single-zone-hot-weather-filter-maintenance",
+      "slug": "dometic-single-zone-hot-weather-filter-maintenance",
+      "title": "Dometic Single Zone LCD hot-weather filter maintenance",
+      "summary": "Dometic Single Zone LCD thermostat instructions say High Fan/Cooling gives optimum efficiency in high humidity or high outside temperatures, heat gain should be reduced with shade and closed doors/windows, and the return-air filter should be washed at a minimum of every 2 weeks of operation.",
+      "safeChecklist": [
+        "Use normal HIGH FAN and COOL controls during high humidity or high outside temperature.",
+        "Park in shade when possible, use window coverings, keep doors and windows closed, and avoid heat-producing appliances.",
+        "Wash the owner-accessible return-air filter with soap and warm water at least every 2 weeks of operation, let it dry, and reinstall it before running the air conditioner.",
+        "Call qualified RV HVAC service if owner-visible heat-gain and filter checks do not improve cooling."
+      ],
+      "sourceIds": [
+        "dometic-single-zone-lcd-thermostat-operating"
+      ],
+      "searchAliases": [
+        "dometic single zone filter every 2 weeks hot weather cooling",
+        "single zone lcd high fan cooling high humidity",
+        "dometic 3313192 wash return air filter warm water",
+        "dometic single zone air conditioner hot day shade windows"
+      ]
+    },
+    {
       "id": "dometic-df-furnace-blower-runs-will-not-light",
       "slug": "dometic-df-furnace-blower-runs-will-not-light",
       "title": "Dometic DF furnace blower runs but will not light",
@@ -33118,7 +33413,7 @@
       "id": "thermostat-delay-or-no-response",
       "slug": "rv-thermostat-delay-or-no-response",
       "title": "RV thermostat delay or no response",
-      "summary": "Use this when a Coleman-Mach/Airxcel thermostat appears asleep, blinks an HVAC state, waits before compressor operation, or a zone does not respond to settings.",
+      "summary": "Use this when a Dometic or Coleman-Mach/Airxcel thermostat appears asleep, blinks an HVAC state, waits before compressor operation, or a zone does not respond to settings.",
       "safeChecklist": [
         "Confirm the thermostat mode, zone, fan setting, and setpoint allow the requested operation.",
         "Wake the display and wait through the built-in communication or short-cycle delay.",
@@ -33131,7 +33426,8 @@
         "coleman-9430-thermostat",
         "coleman-comfortguard-service",
         "coleman-6633-service",
-        "dometic-ccc2-operating"
+        "dometic-ccc2-operating",
+        "dometic-single-zone-lcd-thermostat-operating"
       ]
     },
     {

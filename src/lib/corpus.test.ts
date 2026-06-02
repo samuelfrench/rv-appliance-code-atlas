@@ -53,6 +53,10 @@ describe("verified corpus", () => {
 
     expect(lookupEntries(index, "norcold no fl").map((entry) => entry.code)).toContain("no FL");
     expect(lookupEntries(index, "onan 36 stopped").map((entry) => entry.code)).toContain("36");
+    expect(lookupEntries(index, "dometic single zone e1 communication module board")[0]?.slug).toBe(
+      "dometic-single-zone-lcd-e1",
+    );
+    expect(lookupEntries(index, "dometic 3313193 e5 freeze sensor")[0]?.slug).toBe("dometic-single-zone-lcd-e5");
     expect(lookupEntries(index, "furrion e3 thermostat").map((entry) => entry.code)).toContain("E3");
     expect(lookupEntries(index, "suburban reset light").map((entry) => entry.brand)).toContain("Suburban/Atwood");
   });
@@ -123,6 +127,26 @@ describe("verified corpus", () => {
     );
     expect(lookupSymptomGuides(index, "dometic ccc2 hot weather high fan cooling shade windows")[0]?.slug).toBe(
       "dometic-ccc2-hot-weather-cooling-performance",
+    );
+  });
+
+  it("finds Dometic Single Zone LCD thermostat code and symptom support pages from owner searches", () => {
+    const symptomIndex = buildSymptomSearchIndex(corpus);
+
+    expect(lookupSymptomGuides(symptomIndex, "dometic single zone auto fan speed high low 5 degrees")[0]?.slug).toBe(
+      "dometic-single-zone-auto-fan-speed-cycling",
+    );
+    expect(lookupSymptomGuides(symptomIndex, "single zone lcd compressor time delay 2 minutes")[0]?.slug).toBe(
+      "dometic-single-zone-compressor-time-delay",
+    );
+    expect(lookupSymptomGuides(symptomIndex, "dometic single zone heat pump defrost cold air registers 25 minutes")[0]?.slug).toBe(
+      "dometic-single-zone-heat-pump-defrost-cold-air",
+    );
+    expect(lookupSymptomGuides(symptomIndex, "single zone heat pump lockout below 30 fan on no heat")[0]?.slug).toBe(
+      "dometic-single-zone-low-ambient-heat-pump-lockout",
+    );
+    expect(lookupSymptomGuides(symptomIndex, "dometic single zone filter every 2 weeks hot weather cooling")[0]?.slug).toBe(
+      "dometic-single-zone-hot-weather-filter-maintenance",
     );
   });
 
@@ -537,6 +561,36 @@ describe("verified corpus", () => {
     expect(ccc2Codes).toEqual(new Set(["E1", "E2", "E3", "E4", "E5", "E7", "E8", "E9"]));
   });
 
+  it("includes the official Dometic Single Zone LCD thermostat E1-E5 table with owner-safe boundaries", () => {
+    const sourceId = "dometic-single-zone-lcd-thermostat-operating";
+    const source = corpus.sources.find((item) => item.id === sourceId);
+    const entries = corpus.entries.filter((entry) => entry.sourceIds.includes(sourceId));
+
+    expect(source).toMatchObject({
+      brand: "Dometic",
+      official: true,
+      type: "manufacturer-manual",
+      url: "https://media.dometic.com/externalassets/ct-single-zone-thermostat_9108853315_55910.pdf",
+    });
+    expect(corpus.entries).toHaveLength(824);
+    expect(entries.map((entry) => entry.code).sort()).toEqual(["E1", "E2", "E3", "E4", "E5"]);
+
+    for (const entry of entries) {
+      expect(entry.modelFamilies).toEqual(["Single Zone LCD thermostat", "3313192", "3313193", "3313194"]);
+      expect(entry.ownerSafeActions.join(" ")).not.toMatch(
+        /\b(control board|module board|120\s*V|12\s*V|fuse|breaker|wiring|wire|probe|bypass|jump|open)\b/i,
+      );
+      expect(entry.serviceOnlyActions.join(" ")).toMatch(/qualified RV HVAC service/i);
+      expect(entry.safetyBoundary).toMatch(/qualified RV HVAC service/i);
+    }
+
+    expect(entries.find((entry) => entry.code === "E1")?.plainMeaning).toMatch(/cycles between E1 and the previous mode/i);
+    expect(entries.find((entry) => entry.code === "E2")?.plainMeaning).toMatch(/Open circuit|Indoor Temperature Sensor/i);
+    expect(entries.find((entry) => entry.code === "E3")?.plainMeaning).toMatch(/Shorted Indoor Temperature Sensor/i);
+    expect(entries.find((entry) => entry.code === "E4")?.plainMeaning).toMatch(/Outdoor Temperature Sensor|Heat Pump/i);
+    expect(entries.find((entry) => entry.code === "E5")?.plainMeaning).toMatch(/Freeze Sensor|Air conditioner mode/i);
+  });
+
   it("adds official Dometic CCC2 thermostat symptom pages without inventing code entries or unsafe owner steps", () => {
     const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
     const sourceId = "dometic-ccc2-operating";
@@ -549,7 +603,7 @@ describe("verified corpus", () => {
     ];
 
     expect(corpus.sources.find((source) => source.id === sourceId)?.official).toBe(true);
-    expect(corpus.entries).toHaveLength(819);
+    expect(corpus.entries).toHaveLength(824);
     expect(
       corpus.entries
         .filter((entry) => entry.sourceIds.includes(sourceId))
@@ -577,6 +631,41 @@ describe("verified corpus", () => {
     expect(symptomById.get("airflow-or-venting")?.sourceIds).toContain(sourceId);
   });
 
+  it("adds official Dometic Single Zone LCD thermostat symptom pages without unsafe owner steps", () => {
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const sourceId = "dometic-single-zone-lcd-thermostat-operating";
+    const expectedSymptomIds = [
+      "dometic-single-zone-auto-fan-speed-cycling",
+      "dometic-single-zone-compressor-time-delay",
+      "dometic-single-zone-heat-pump-defrost-cold-air",
+      "dometic-single-zone-low-ambient-heat-pump-lockout",
+      "dometic-single-zone-hot-weather-filter-maintenance",
+    ];
+
+    expect(corpus.symptoms).toHaveLength(160);
+
+    for (const symptomId of expectedSymptomIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds).toEqual([sourceId]);
+      expect(symptom?.safeChecklist.join(" "), symptomId).not.toMatch(
+        /\b(control board|module board|120\s*V|12\s*V|fuse|breaker|wiring|wire|probe|bypass|jump|refrigerant|open)\b/i,
+      );
+    }
+
+    expect(symptomById.get("dometic-single-zone-auto-fan-speed-cycling")?.summary).toMatch(/HIGH|LOW|5|4/i);
+    expect(symptomById.get("dometic-single-zone-compressor-time-delay")?.summary).toMatch(/two minutes|cooling|heat pump/i);
+    expect(symptomById.get("dometic-single-zone-heat-pump-defrost-cold-air")?.summary).toMatch(/25 minutes|42|30|cold air/i);
+    expect(symptomById.get("dometic-single-zone-low-ambient-heat-pump-lockout")?.summary).toMatch(/below 30|lock out/i);
+    expect(symptomById.get("dometic-single-zone-hot-weather-filter-maintenance")?.summary).toMatch(/2 weeks|High Fan|shade/i);
+
+    expect(symptomById.get("thermostat-communication")?.sourceIds).toContain(sourceId);
+    expect(symptomById.get("thermostat-display")?.sourceIds).toContain(sourceId);
+    expect(symptomById.get("thermostat-delay-or-no-response")?.sourceIds).toContain(sourceId);
+    expect(symptomById.get("air-conditioner-not-cooling")?.sourceIds).toContain(sourceId);
+    expect(symptomById.get("airflow-or-venting")?.sourceIds).toContain(sourceId);
+  });
+
   it("adds official Dometic DF furnace operating-manual symptom pages without inventing code entries or unsafe owner steps", () => {
     const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
     const sourceId = "dometic-df-furnace-operating-2025";
@@ -593,7 +682,7 @@ describe("verified corpus", () => {
       official: true,
       type: "manufacturer-manual",
     });
-    expect(corpus.entries).toHaveLength(819);
+    expect(corpus.entries).toHaveLength(824);
     expect(corpus.entries.filter((entry) => entry.sourceIds.includes(sourceId))).toHaveLength(0);
 
     for (const symptomId of expectedSymptomIds) {
@@ -646,7 +735,7 @@ describe("verified corpus", () => {
       });
     }
 
-    expect(corpus.entries).toHaveLength(819);
+    expect(corpus.entries).toHaveLength(824);
     expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => sourceIds.includes(sourceId)))).toHaveLength(0);
 
     for (const symptomId of expectedSymptomIds) {
@@ -2262,7 +2351,7 @@ describe("verified corpus", () => {
       expect(source?.url, sourceId).toBe(url);
     }
 
-    expect(corpus.entries).toHaveLength(819);
+    expect(corpus.entries).toHaveLength(824);
     expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
 
     for (const symptomId of newSymptomIds) {
@@ -2834,7 +2923,7 @@ describe("verified corpus", () => {
 
     expect(sourceById.get("suburban-rv-faqs")?.official).toBe(true);
     expect(sourceById.get("suburban-rv-faqs")?.url).toBe("https://suburbanrv.com/service-support/faqs/");
-    expect(corpus.entries).toHaveLength(819);
+    expect(corpus.entries).toHaveLength(824);
     expect(corpus.entries.filter((entry) => entry.sourceIds.includes("suburban-rv-faqs"))).toHaveLength(0);
 
     for (const symptomId of newSymptomIds) {
@@ -2919,7 +3008,7 @@ describe("verified corpus", () => {
     expect(sourceById.get("suburban-st42-st60-product-overview")?.url).toBe(
       "https://suburbanrv.com/files/product_documents/Tankless%20Water%20Heater/ST%204260%20Tankless%20Water%20Heater%20Sell%20Sheet%20111522.pdf",
     );
-    expect(corpus.entries).toHaveLength(819);
+    expect(corpus.entries).toHaveLength(824);
 
     for (const sourceId of newSourceIds) {
       expect(corpus.entries.filter((entry) => entry.sourceIds.includes(sourceId)), sourceId).toHaveLength(0);
@@ -3163,7 +3252,7 @@ describe("verified corpus", () => {
       expect(source?.url, sourceId).toBe(url);
     }
 
-    expect(corpus.entries).toHaveLength(819);
+    expect(corpus.entries).toHaveLength(824);
     expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
 
     for (const symptomId of newSymptomIds) {

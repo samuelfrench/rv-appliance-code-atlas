@@ -343,6 +343,35 @@ test("lookup surfaces Dometic CCC2 thermostat symptom support pages", async ({ p
   await expect(page.getByText(/Operation on High Fan\/Cooling mode/i)).toBeVisible();
 });
 
+test("lookup surfaces Dometic Single Zone LCD thermostat codes and symptom pages", async ({ page }) => {
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("dometic single zone e1 communication module board");
+  await expect(lookupResults.locator('a[href="/codes/dometic-single-zone-lcd-e1/"]')).toBeVisible();
+
+  await searchbox.fill("dometic 3313193 e5 freeze sensor");
+  await expect(lookupResults.locator('a[href="/codes/dometic-single-zone-lcd-e5/"]')).toBeVisible();
+
+  await searchbox.fill("single zone lcd compressor time delay 2 minutes");
+  await expect(lookupResults.locator('a[href="/symptoms/dometic-single-zone-compressor-time-delay/"]')).toBeVisible();
+
+  await searchbox.fill("dometic single zone heat pump defrost cold air registers 25 minutes");
+  await expect(lookupResults.locator('a[href="/symptoms/dometic-single-zone-heat-pump-defrost-cold-air/"]')).toBeVisible();
+
+  await searchbox.fill("dometic single zone filter every 2 weeks hot weather cooling");
+  const filterMaintenance = lookupResults.locator(
+    'a[href="/symptoms/dometic-single-zone-hot-weather-filter-maintenance/"]',
+  );
+  await expect(filterMaintenance).toBeVisible();
+
+  await filterMaintenance.click();
+  await expect(page.getByRole("heading", { name: "Dometic Single Zone LCD hot-weather filter maintenance" })).toBeVisible();
+  await expect(page.getByText(/minimum of every 2 weeks/i)).toBeVisible();
+});
+
 test("lookup surfaces Dometic DF furnace operating-manual symptom pages", async ({ page }) => {
   await page.goto("/");
 
