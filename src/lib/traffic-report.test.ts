@@ -9,11 +9,11 @@ describe("traffic readiness report", () => {
     });
     const report = JSON.parse(output);
 
-    expect(report.nextAutomatedBatchGoal).toBe(
-      "Triage official Cummins Onan generator symptom-only support pages for no-start, cranks/no output, breaker or load shedding, fuel/oil/maintenance, altitude, and service-only generator/electrical/exhaust boundaries; add only non-duplicate owner-safe guides.",
-    );
+    expect(report.nextAutomatedBatchGoal).toBe("Add GSC property and submit sitemap after live URL is stable.");
 
     expect(readFileSync("README.md", "utf8")).toContain(report.nextAutomatedBatchGoal);
-    expect(readFileSync("TODO.md", "utf8")).toContain(report.nextAutomatedBatchGoal);
+    expect(readFileSync("TODO.md", "utf8")).toContain(
+      `- Next automated batch goal: ${report.nextAutomatedBatchGoal}`,
+    );
   });
 });

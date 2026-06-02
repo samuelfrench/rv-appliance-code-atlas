@@ -37,9 +37,9 @@ npm run traffic:monitor
 
 Current corpus:
 - `819` verified entries
-- `125` symptom guides
-- `313` official sources
-- `945` generated indexable pages
+- `131` symptom guides
+- `317` official sources
+- `951` generated indexable pages
 
 Next automated batch goal:
-- Triage official Cummins Onan generator symptom-only support pages for no-start, cranks/no output, breaker or load shedding, fuel/oil/maintenance, altitude, and service-only generator/electrical/exhaust boundaries; add only non-duplicate owner-safe guides.
+- Add GSC property and submit sitemap after live URL is stable.

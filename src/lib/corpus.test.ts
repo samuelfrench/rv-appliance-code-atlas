@@ -2000,6 +2000,125 @@ describe("verified corpus", () => {
     );
   });
 
+  it("adds official Cummins Onan generator symptom sources without inventing code entries", () => {
+    const expectedSources = new Map([
+      ["onan-generator-quick-start", "https://www.cummins.com/sites/default/files/2025-08/onan-generator-quick-start-guide.pdf"],
+      ["onan-rv-generator-service-faq", "https://www.cummins.com/en-na/generators/rv-generators/parts-and-maintenance"],
+      ["onan-rv-generator-power-basics", "https://www.cummins.com/en-na/generators/rv-generators/power-basics"],
+      ["onan-rv-generator-handbook", "https://mart.cummins.com/imagelibrary/Asset/5410860_0125.pdf.ashx"],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const newSymptomIds = [
+      "onan-generator-no-start-cranking-delay",
+      "onan-generator-no-output-breaker-load-management",
+      "onan-generator-altitude-derating-fewer-appliances",
+      "onan-generator-fuel-oil-maintenance-before-start",
+      "onan-generator-exhaust-co-shutdown-service",
+      "onan-generator-battery-low-cranking",
+    ];
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = corpus.sources.find((item) => item.id === sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.entries).toHaveLength(819);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const symptomId of newSymptomIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.safeChecklist.join(" "), symptomId).not.toMatch(
+        /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\brefrigerant\b|\bprobe\b|\bopen (the )?(fuel|gas|electrical)|fuel line|wiring|voltage testing/i,
+      );
+    }
+
+    expect(symptomById.get("onan-generator-no-start-cranking-delay")?.sourceIds).toEqual(
+      expect.arrayContaining(["onan-generator-quick-start", "onan-rv-generator-service-faq", "onan-rv-generator-handbook"]),
+    );
+    expect(
+      [
+        symptomById.get("onan-generator-no-start-cranking-delay")?.summary,
+        symptomById.get("onan-generator-no-start-cranking-delay")?.safeChecklist.join(" "),
+      ].join(" "),
+    ).toMatch(/preheat|30 seconds|20 seconds|2 minutes|over.?crank/i);
+
+    expect(symptomById.get("onan-generator-no-output-breaker-load-management")?.sourceIds).toEqual(
+      expect.arrayContaining(["onan-generator-quick-start", "onan-rv-generator-service-faq", "onan-rv-generator-power-basics", "onan-rv-generator-handbook"]),
+    );
+    expect(
+      [
+        symptomById.get("onan-generator-no-output-breaker-load-management")?.summary,
+        symptomById.get("onan-generator-no-output-breaker-load-management")?.safeChecklist.join(" "),
+      ].join(" "),
+    ).toMatch(/breaker|too many appliances|combined wattage|qualified technician/i);
+
+    expect(symptomById.get("onan-generator-altitude-derating-fewer-appliances")?.sourceIds).toEqual(
+      expect.arrayContaining(["onan-generator-quick-start", "onan-rv-generator-handbook"]),
+    );
+    expect(
+      [
+        symptomById.get("onan-generator-altitude-derating-fewer-appliances")?.summary,
+        symptomById.get("onan-generator-altitude-derating-fewer-appliances")?.safeChecklist.join(" "),
+      ].join(" "),
+    ).toMatch(/3\.5|1000 feet|altitude|fewer appliances/i);
+
+    expect(symptomById.get("onan-generator-fuel-oil-maintenance-before-start")?.sourceIds).toEqual(
+      expect.arrayContaining(["onan-generator-quick-start", "onan-rv-generator-service-faq", "onan-rv-generator-handbook"]),
+    );
+    expect(
+      [
+        symptomById.get("onan-generator-fuel-oil-maintenance-before-start")?.summary,
+        symptomById.get("onan-generator-fuel-oil-maintenance-before-start")?.safeChecklist.join(" "),
+      ].join(" "),
+    ).toMatch(/fuel|engine oil|150 hours|air cleaner|dusty/i);
+
+    expect(symptomById.get("onan-generator-exhaust-co-shutdown-service")?.sourceIds).toEqual(
+      expect.arrayContaining(["onan-generator-quick-start", "onan-rv-generator-handbook"]),
+    );
+    expect(
+      [
+        symptomById.get("onan-generator-exhaust-co-shutdown-service")?.summary,
+        symptomById.get("onan-generator-exhaust-co-shutdown-service")?.safeChecklist.join(" "),
+      ].join(" "),
+    ).toMatch(/CO detector|carbon monoxide|exhaust leak|shut down|qualified/i);
+
+    expect(symptomById.get("onan-generator-battery-low-cranking")?.sourceIds).toEqual(
+      expect.arrayContaining(["onan-generator-quick-start", "onan-rv-generator-handbook"]),
+    );
+    expect(
+      [
+        symptomById.get("onan-generator-battery-low-cranking")?.summary,
+        symptomById.get("onan-generator-battery-low-cranking")?.safeChecklist.join(" "),
+      ].join(" "),
+    ).toMatch(/battery|600 Cold Cranking Amps|terminals|starting/i);
+
+    const symptomIndex = buildSymptomSearchIndex(corpus);
+    expect(lookupSymptomGuides(symptomIndex, "onan no start wait 2 minutes overcrank")[0]?.slug).toBe(
+      "onan-generator-no-start-cranking-delay-overcrank",
+    );
+    expect(lookupSymptomGuides(symptomIndex, "onan no output breaker too many appliances")[0]?.slug).toBe(
+      "onan-generator-no-output-breaker-load-management",
+    );
+    expect(lookupSymptomGuides(symptomIndex, "onan high altitude 3.5 percent fewer appliances")[0]?.slug).toBe(
+      "onan-generator-altitude-derating-fewer-appliances",
+    );
+    expect(lookupSymptomGuides(symptomIndex, "onan carbon monoxide exhaust leak co detector")[0]?.slug).toBe(
+      "onan-generator-exhaust-co-shutdown-service",
+    );
+
+    expect(symptomById.get("generator-stopped")?.sourceIds).toEqual(
+      expect.arrayContaining(["onan-generator-quick-start", "onan-rv-generator-service-faq"]),
+    );
+    expect(symptomById.get("low-voltage")?.sourceIds).toEqual(expect.arrayContaining(["onan-generator-quick-start", "onan-rv-generator-handbook"]));
+    expect(symptomById.get("airflow-or-venting")?.sourceIds).toEqual(
+      expect.arrayContaining(["onan-generator-quick-start", "onan-rv-generator-handbook"]),
+    );
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
   it("includes the full official Lippert Ground Control LCD and In-Wall Slide-out LED error sets", () => {
     const lippertCodesForSource = (sourceId: string) =>
       new Set(

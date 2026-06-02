@@ -1391,6 +1391,38 @@
       "official": true
     },
     {
+      "id": "onan-generator-quick-start",
+      "brand": "Onan",
+      "title": "Cummins Onan RV Generator Quick Start Guide",
+      "url": "https://www.cummins.com/sites/default/files/2025-08/onan-generator-quick-start-guide.pdf",
+      "type": "manufacturer-guide",
+      "official": true
+    },
+    {
+      "id": "onan-rv-generator-service-faq",
+      "brand": "Onan",
+      "title": "Cummins Onan RV Generator Parts and Maintenance Support",
+      "url": "https://www.cummins.com/en-na/generators/rv-generators/parts-and-maintenance",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "onan-rv-generator-power-basics",
+      "brand": "Onan",
+      "title": "Cummins Onan RV Generator Power Basics",
+      "url": "https://www.cummins.com/en-na/generators/rv-generators/power-basics",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "onan-rv-generator-handbook",
+      "brand": "Onan",
+      "title": "Cummins Onan RV Generator Handbook",
+      "url": "https://mart.cummins.com/imagelibrary/Asset/5410860_0125.pdf.ashx",
+      "type": "manufacturer-handbook",
+      "official": true
+    },
+    {
       "id": "suburban-furnace-guide",
       "brand": "Suburban/Atwood",
       "title": "Suburban Gas Furnace Operation Guide",
@@ -32088,7 +32120,9 @@
         "furrion-12v-refrigerator-ventilation-faq",
         "furrion-refrigerator-not-cold-enough-faq",
         "furrion-10-6-refrigerator",
-        "furrion-french-door-refrigerator"
+        "furrion-french-door-refrigerator",
+        "onan-generator-quick-start",
+        "onan-rv-generator-handbook"
       ]
     },
     {
@@ -32165,7 +32199,9 @@
         "furrion-12v-refrigerator-service-line-faq",
         "furrion-12v-hard-reset-qr",
         "furrion-10-6-refrigerator",
-        "furrion-french-door-refrigerator"
+        "furrion-french-door-refrigerator",
+        "onan-generator-quick-start",
+        "onan-rv-generator-handbook"
       ]
     },
     {
@@ -32209,7 +32245,139 @@
       "sourceIds": [
         "onan-rv-manual-index",
         "onan-hgjbb-a031c171",
-        "onan-hgjaa-a035d009"
+        "onan-hgjaa-a035d009",
+        "onan-generator-quick-start",
+        "onan-rv-generator-service-faq"
+      ]
+    },
+    {
+      "id": "onan-generator-no-start-cranking-delay",
+      "slug": "onan-generator-no-start-cranking-delay-overcrank",
+      "title": "Onan generator no-start cranking delay or overcrank",
+      "summary": "Cummins Onan quick-start and service support distinguish normal diesel glow-plug preheat, short crank attempts, and cool-down time from repeated no-start or overcrank conditions that need generator service.",
+      "safeChecklist": [
+        "Use the normal start switch and allow diesel models up to 30 seconds for preheat before expecting cranking.",
+        "Keep each start attempt under 20 seconds and wait at least 2 minutes between attempts.",
+        "If the RV ran out of fuel, use the generator's normal prime procedure before one retry.",
+        "Record fuel level, oil level, battery state, model/spec, and fault flashes, then call Cummins Onan or qualified generator service if it still will not start."
+      ],
+      "sourceIds": [
+        "onan-generator-quick-start",
+        "onan-rv-generator-service-faq",
+        "onan-rv-generator-handbook"
+      ],
+      "searchAliases": [
+        "onan no start wait 2 minutes overcrank",
+        "cummins onan diesel preheat 30 seconds no start",
+        "onan generator cranks but will not start prime fuel"
+      ]
+    },
+    {
+      "id": "onan-generator-no-output-breaker-load-management",
+      "slug": "onan-generator-no-output-breaker-load-management",
+      "title": "Onan generator running but no output or breaker/load problem",
+      "summary": "Cummins Onan quick-start, service FAQ, and power-basics guidance point owners to reduce combined wattage, avoid too many appliances at once, and use normal breaker reset steps before calling for service when generator output is missing.",
+      "safeChecklist": [
+        "Turn off heavy appliances before retrying the generator output.",
+        "Compare appliance running watts against the generator rating and start large loads one at a time.",
+        "Use only the normal accessible breaker or coach controls described for the RV.",
+        "Call a qualified technician if the breaker trips again, output does not return, or electrical burning odor is present."
+      ],
+      "sourceIds": [
+        "onan-generator-quick-start",
+        "onan-rv-generator-service-faq",
+        "onan-rv-generator-power-basics",
+        "onan-rv-generator-handbook"
+      ],
+      "searchAliases": [
+        "onan no output breaker too many appliances",
+        "cummins onan generator running no ac power breaker",
+        "onan rv generator load management combined wattage"
+      ]
+    },
+    {
+      "id": "onan-generator-altitude-derating-fewer-appliances",
+      "slug": "onan-generator-altitude-derating-fewer-appliances",
+      "title": "Onan generator high-altitude derating and fewer appliances",
+      "summary": "Cummins Onan quick-start and handbook guidance warn that available generator power drops about 3.5 percent per 1000 feet of altitude, so high-elevation trips may require fewer simultaneous appliances.",
+      "safeChecklist": [
+        "Estimate campsite elevation before blaming a generator fault.",
+        "Reduce load by turning off air conditioning, electric heat, or other heavy appliances one at a time.",
+        "Let the generator stabilize after each load change.",
+        "Call Cummins Onan or qualified generator service if the generator still surges, stalls, or faults under a light load."
+      ],
+      "sourceIds": [
+        "onan-generator-quick-start",
+        "onan-rv-generator-handbook"
+      ],
+      "searchAliases": [
+        "onan high altitude 3.5 percent fewer appliances",
+        "cummins onan altitude derating generator power",
+        "onan generator stalls at altitude air conditioner load"
+      ]
+    },
+    {
+      "id": "onan-generator-fuel-oil-maintenance-before-start",
+      "slug": "onan-generator-fuel-oil-maintenance-before-start",
+      "title": "Onan generator fuel, oil, and maintenance checks before starting",
+      "summary": "Cummins Onan quick-start, service FAQ, and handbook maintenance guidance emphasize correct fuel, engine oil level, 150 hours or yearly oil service, air cleaner attention in dusty conditions, and regular exercise before no-start troubleshooting.",
+      "safeChecklist": [
+        "Confirm fuel is available for the generator and record whether the RV recently ran low.",
+        "Check engine oil level only by the normal dipstick procedure for the installed model.",
+        "Compare the hour meter and last service date against the 150 hours or yearly oil-service interval.",
+        "Record dusty travel, air cleaner condition, and exercise history before calling Cummins Onan or qualified generator service."
+      ],
+      "sourceIds": [
+        "onan-generator-quick-start",
+        "onan-rv-generator-service-faq",
+        "onan-rv-generator-handbook"
+      ],
+      "searchAliases": [
+        "onan oil fuel air cleaner dusty 150 hours",
+        "cummins onan generator maintenance before long trip",
+        "onan generator no start oil level fuel prime"
+      ]
+    },
+    {
+      "id": "onan-generator-exhaust-co-shutdown-service",
+      "slug": "onan-generator-exhaust-co-shutdown-service",
+      "title": "Onan generator exhaust smell, CO detector, or ventilation shutdown",
+      "summary": "Cummins Onan quick-start and handbook safety guidance treat carbon monoxide, exhaust leaks, blocked airflow, and unsafe ventilation as shut-down conditions that belong with qualified generator service.",
+      "safeChecklist": [
+        "Shut the generator down immediately if a CO detector alarms, exhaust odor enters the RV, or exhaust damage is visible.",
+        "Move people to fresh air and do not sleep with the generator running in unsafe ventilation conditions.",
+        "Look only for obvious external blockage around the generator intake or exhaust outlet from safe ground access.",
+        "Call qualified generator service before running again if any exhaust leak, CO detector event, soot, or ventilation concern remains."
+      ],
+      "sourceIds": [
+        "onan-generator-quick-start",
+        "onan-rv-generator-handbook"
+      ],
+      "searchAliases": [
+        "onan carbon monoxide exhaust leak co detector",
+        "cummins onan generator exhaust smell shut down",
+        "onan generator ventilation blocked carbon monoxide"
+      ]
+    },
+    {
+      "id": "onan-generator-battery-low-cranking",
+      "slug": "onan-generator-battery-low-cranking",
+      "title": "Onan generator low battery or slow cranking",
+      "summary": "Cummins Onan quick-start and handbook guidance call for a charged starting battery around 600 Cold Cranking Amps, clean visible battery terminals, and service help when low cranking or repeated low-battery symptoms remain.",
+      "safeChecklist": [
+        "Record battery monitor state before the start attempt.",
+        "Confirm the installed starting battery is charged and appropriately rated for the generator.",
+        "Look for loose or corroded visible battery terminals from normal safe access.",
+        "Call qualified RV electrical or generator service if slow cranking, low-battery display messages, or repeated no-start symptoms remain."
+      ],
+      "sourceIds": [
+        "onan-generator-quick-start",
+        "onan-rv-generator-handbook"
+      ],
+      "searchAliases": [
+        "onan low battery slow cranking 600 cold cranking amps",
+        "cummins onan generator low battery terminals",
+        "onan qd low battery display cranks slow"
       ]
     },
     {
@@ -32226,6 +32394,10 @@
         "dometic-ruc-support",
         "norcold-polar-owner",
         "onan-rv-manual-index",
+        "onan-generator-quick-start",
+        "onan-rv-generator-service-faq",
+        "onan-rv-generator-power-basics",
+        "onan-rv-generator-handbook",
         "lippert-ground-control",
         "furrion-furnace-troubleshooting",
         "furrion-rooftop-hvac-troubleshooting",

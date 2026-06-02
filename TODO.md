@@ -38,6 +38,7 @@
 - [x] Add official Dometic RUA/RUC refrigerator support/symptom pages for mode selection, cooling, first-use/ventilation, defrost, door locks, user modes, RUC display/power, compressor voltage/high-ambient, water leaks, unusual noise, and too-cold conditions without inventing code entries.
 - [x] Add official Norcold/Thetford refrigerator symptom-only support and owner-manual pages for cooling, startup, 120V AC, door alarms, defrost, odor, temperature settings, high-temperature sensor service boundaries, DC compressor cooling, night mode/noise, and N2000 drip-tray water without inventing code entries.
 - [x] Add official Furrion/Lippert refrigerator symptom-only support and QR/manual-backed owner-safe guides for cooling, hard reset, power, compressor cycling, door seal, moisture/ice, temperature modes, noise, and service-only boundaries without inventing code entries.
+- [x] Add official Cummins Onan generator symptom-only support pages for no-start, no-output/load management, altitude derating, fuel/oil maintenance, CO/exhaust shutdown, and low-battery cranking without inventing code entries.
 - [ ] Add GSC property and submit sitemap after live URL is stable.
 
 ## Current State — 2026-06-02
@@ -65,7 +66,8 @@
 - Source triage note: accepted official Suburban FAQ, Suburban furnace guide, Suburban tank water-heater manual, Suburban tankless water-heater manual, and Suburban ST42/ST60 manual for owner-safe furnace and water-heater symptom guides. Rejected/deferred support-video pages and product pages to later model-specific passes; rejected forums, mirrors, and service-only gas, burner, wiring, fuse, control-board, aftermarket-element, and electrical repair procedures as owner guidance.
 - Source triage note: accepted official Suburban SF-VH Furnace Ducting Guide and Suburban ST42/ST60 Tankless Water Heaters Product Overview for owner-safe model-specific ducting, return-air/register, thermostat-placement, and cold-inlet/winter-use symptom guidance. Rejected/deferred generic furnace product pages, optional support videos, forums, mirrors, and duct-port, cabinet, thermostat, LP, voltage, or internal service procedures beyond qualified-service boundaries.
 - Source triage note: accepted official Coleman-Mach FAQs, Cooling Performance Worksheet, rooftop operation/maintenance instructions, Chillgrille/control-kit instructions, Mach 8 heat-pump service manual, 45000 installation instructions, Mach 8 condensate-pump kit instructions, warranty refrigeration-circuit page, and 46515 packaged heat-pump owner manual for owner-safe rooftop AC/heat-pump symptom guidance. Rejected/deferred forums, mirrors, dev/staging host pages, package AC PDFs, installer-only delay kits, and refrigerant, line-voltage, control-box, capacitor, compressor, rooftop, drain-hose, gasket, or pump repair steps beyond qualified-service boundaries.
-- Next automated batch goal: Triage official Cummins Onan generator symptom-only support pages for no-start, cranks/no output, breaker or load shedding, fuel/oil/maintenance, altitude, and service-only generator/electrical/exhaust boundaries; add only non-duplicate owner-safe guides.
+- Source triage note: accepted official Cummins Onan RV Generator Quick Start Guide, RV Generator Parts and Maintenance Support, RV Generator Power Basics, and RV Generator Handbook for owner-safe no-start, no-output/load-management, altitude derating, fuel/oil maintenance, CO/exhaust shutdown, and battery cranking guides. Rejected/deferred optional QG/QD product specs, install/service manuals, forums, mirrors, and any fuel-line, exhaust-system, internal electrical, control-board, or generator repair steps beyond qualified-service boundaries.
+- Next automated batch goal: Add GSC property and submit sitemap after live URL is stable.
 
 ## Corpus Expansion Backlog
 - [x] Add full Dometic RUC/RUA tables.
@@ -106,7 +108,7 @@
 - [x] Triage official Suburban/Airxcel furnace and water-heater symptom-only support or owner-manual pages for ignition, airflow, overheating, low-voltage, water-temperature, freeze, and service-only boundaries; add only non-duplicate owner-safe guides.
 - [x] Triage official Suburban/Airxcel model-specific furnace ducting and ST42/ST60 cold-inlet or winter-use support pages for register/return-air sizing, thermostat placement, rapid cycling, minimum flow, temperature underperformance, and service-only boundaries; add only non-duplicate owner-safe guides.
 - [x] Triage official Coleman-Mach/Airxcel rooftop AC and heat-pump symptom-only support pages for cooling loss, freeze-up, condensate leaks, fan or compressor behavior, thermostat mode confusion, low voltage, and service-only refrigerant/electrical boundaries; add only non-duplicate owner-safe guides.
-- [ ] Triage official Cummins Onan generator symptom-only support pages for no-start, cranks/no output, breaker or load shedding, fuel/oil/maintenance, altitude, and service-only generator/electrical/exhaust boundaries; add only non-duplicate owner-safe guides.
+- [x] Triage official Cummins Onan generator symptom-only support pages for no-start, cranks/no output, breaker or load shedding, fuel/oil/maintenance, altitude, and service-only generator/electrical/exhaust boundaries; add only non-duplicate owner-safe guides.
 
 ## Launch Automation
 - [ ] Add weekly traffic report artifact once GSC is configured.

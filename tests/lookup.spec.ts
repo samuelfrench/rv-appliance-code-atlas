@@ -263,6 +263,28 @@ test("lookup surfaces Coleman-Mach rooftop AC and heat-pump symptom support page
   await expect(lookupResults.locator('a[href="/symptoms/coleman-mach-heat-pump-below-45-blower-running/"]')).toBeVisible();
 });
 
+test("lookup surfaces Cummins Onan generator symptom support pages", async ({ page }) => {
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("onan no start wait 2 minutes overcrank");
+  await expect(lookupResults.locator('a[href="/symptoms/onan-generator-no-start-cranking-delay-overcrank/"]')).toBeVisible();
+
+  await searchbox.fill("onan no output breaker too many appliances");
+  await expect(lookupResults.locator('a[href="/symptoms/onan-generator-no-output-breaker-load-management/"]')).toBeVisible();
+
+  await searchbox.fill("onan high altitude 3.5 percent fewer appliances");
+  await expect(lookupResults.locator('a[href="/symptoms/onan-generator-altitude-derating-fewer-appliances/"]')).toBeVisible();
+
+  await searchbox.fill("onan oil fuel air cleaner dusty 150 hours");
+  await expect(lookupResults.locator('a[href="/symptoms/onan-generator-fuel-oil-maintenance-before-start/"]')).toBeVisible();
+
+  await searchbox.fill("onan carbon monoxide exhaust leak co detector");
+  await expect(lookupResults.locator('a[href="/symptoms/onan-generator-exhaust-co-shutdown-service/"]')).toBeVisible();
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 

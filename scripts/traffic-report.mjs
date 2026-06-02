@@ -23,8 +23,7 @@ function buildReport() {
       currentImpressions: 0,
       ready: false,
     })),
-    nextAutomatedBatchGoal:
-      "Triage official Cummins Onan generator symptom-only support pages for no-start, cranks/no output, breaker or load shedding, fuel/oil/maintenance, altitude, and service-only generator/electrical/exhaust boundaries; add only non-duplicate owner-safe guides.",
+    nextAutomatedBatchGoal: "Add GSC property and submit sitemap after live URL is stable.",
     monitorCommand: "npm run traffic:monitor",
   };
 }
