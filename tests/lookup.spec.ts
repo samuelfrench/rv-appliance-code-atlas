@@ -316,6 +316,33 @@ test("lookup surfaces Coleman-Mach rooftop AC and heat-pump symptom support page
   await expect(lookupResults.locator('a[href="/symptoms/coleman-mach-heat-pump-below-45-blower-running/"]')).toBeVisible();
 });
 
+test("lookup surfaces Dometic CCC2 thermostat symptom support pages", async ({ page }) => {
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("dometic ccc2 fan only no cooling cool mode zone setpoint");
+  await expect(lookupResults.locator('a[href="/symptoms/dometic-ccc2-fan-only-no-cooling-mode-zone/"]')).toBeVisible();
+
+  await searchbox.fill("ccc2 hourglass compressor delay 2 minutes no start");
+  await expect(lookupResults.locator('a[href="/symptoms/dometic-ccc2-hourglass-compressor-delay/"]')).toBeVisible();
+
+  await searchbox.fill("ccc2 hp defrost auxiliary heat below 30 degrees");
+  await expect(lookupResults.locator('a[href="/symptoms/dometic-ccc2-heat-pump-defrost-auxiliary-heat/"]')).toBeVisible();
+
+  await searchbox.fill("ccc2 filter icon inside temp f c reset fan runtime");
+  await expect(lookupResults.locator('a[href="/symptoms/dometic-ccc2-filter-icon-clean-reset/"]')).toBeVisible();
+
+  await searchbox.fill("dometic ccc2 hot weather high fan cooling shade windows");
+  const hotWeather = lookupResults.locator('a[href="/symptoms/dometic-ccc2-hot-weather-cooling-performance/"]');
+  await expect(hotWeather).toBeVisible();
+
+  await hotWeather.click();
+  await expect(page.getByRole("heading", { name: "Dometic CCC2 hot-weather cooling performance" })).toBeVisible();
+  await expect(page.getByText(/Operation on High Fan\/Cooling mode/i)).toBeVisible();
+});
+
 test("lookup surfaces Cummins Onan generator symptom support pages", async ({ page }) => {
   await page.goto("/");
 

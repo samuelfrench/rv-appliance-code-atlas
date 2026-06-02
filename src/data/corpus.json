@@ -14,7 +14,7 @@
     "indexNow": {
       "key": "2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18",
       "keyLocation": "https://rv-appliance-code-atlas.fly.dev/2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18.txt",
-      "submittedAt": "2026-06-02T21:38:52.939Z"
+      "submittedAt": "2026-06-02T21:52:32.384Z"
     }
   },
   "sources": [
@@ -32134,7 +32134,8 @@
         "furrion-10-6-refrigerator",
         "furrion-french-door-refrigerator",
         "onan-generator-quick-start",
-        "onan-rv-generator-handbook"
+        "onan-rv-generator-handbook",
+        "dometic-ccc2-operating"
       ]
     },
     {
@@ -32593,7 +32594,8 @@
         "coleman-cooling-performance-worksheet",
         "coleman-rooftop-operation-maintenance-1971-982",
         "coleman-comfortguard-service",
-        "coleman-6633-service"
+        "coleman-6633-service",
+        "dometic-ccc2-operating"
       ]
     },
     {
@@ -32771,6 +32773,111 @@
       ]
     },
     {
+      "id": "dometic-ccc2-fan-only-no-cooling-mode-zone",
+      "slug": "dometic-ccc2-fan-only-no-cooling-mode-zone",
+      "title": "Dometic CCC2 fan only or no cooling by mode and zone",
+      "summary": "Dometic CCC2 operating instructions separate FAN mode from COOL mode: FAN Low/Med/High runs the fan continuously, FAN Auto is off, and cooling only calls when room temperature is above the cooling setpoint in the selected zone.",
+      "safeChecklist": [
+        "Wake the CCC2 display from normal buttons and confirm the selected zone.",
+        "Select COOL mode instead of FAN mode before judging a no-cooling call.",
+        "Confirm the room temperature is above the cooling setpoint and the fan setting is Auto, Low, Med, or High as intended.",
+        "Wait through the normal cooling delay, then call qualified RV HVAC service if the selected zone requests cooling but does not cool."
+      ],
+      "sourceIds": [
+        "dometic-ccc2-operating"
+      ],
+      "searchAliases": [
+        "dometic ccc2 fan only no cooling cool mode zone setpoint",
+        "dometic comfort control center 2 fan mode no cool",
+        "ccc2 fan runs but cool mode not selected",
+        "dometic ccc2 zone setpoint fan auto low med high"
+      ]
+    },
+    {
+      "id": "dometic-ccc2-hourglass-compressor-delay",
+      "slug": "dometic-ccc2-hourglass-compressor-delay",
+      "title": "Dometic CCC2 hourglass or compressor delay",
+      "summary": "Dometic CCC2 operating instructions show an hourglass during the approximately 2 minute delay before a cooling or heat-pump cycle starts, and describe that delay any time the compressor begins a cooling or heat-pump cycle.",
+      "safeChecklist": [
+        "Record the selected zone, mode, setpoint, room temperature, and whether the hourglass icon is showing.",
+        "Wait at least 2 minutes after a normal cooling or heat-pump call before treating startup as failed.",
+        "Do not repeatedly cycle the thermostat to force an immediate start.",
+        "Turn the affected zone off and call qualified RV HVAC service if the unit never starts after the normal delay."
+      ],
+      "sourceIds": [
+        "dometic-ccc2-operating"
+      ],
+      "searchAliases": [
+        "ccc2 hourglass compressor delay 2 minutes no start",
+        "dometic ccc2 hour glass cooling delay",
+        "comfort control center 2 compressor delay heat pump",
+        "dometic ccc2 waits before compressor starts"
+      ]
+    },
+    {
+      "id": "dometic-ccc2-heat-pump-defrost-auxiliary-heat",
+      "slug": "dometic-ccc2-heat-pump-defrost-auxiliary-heat",
+      "title": "Dometic CCC2 heat pump defrost or auxiliary heat",
+      "summary": "Dometic CCC2 operating instructions describe automatic heat-pump defrost between about 42 F and 30 F, HP/Defrost display toggling, fan pause and restart, and auxiliary heat below about 30 F with heat-pump operation resuming above about 35 F.",
+      "safeChecklist": [
+        "Record outdoor temperature, selected zone, heat mode, display text, and whether HP and Defrost are alternating.",
+        "Let the automatic defrost cycle finish if the RV remains safe and warm enough.",
+        "Use normal furnace or auxiliary heat controls when outdoor temperature is below about 30 F and the heat pump cannot keep up.",
+        "Call qualified RV HVAC service if heat-pump heating fails in moderate weather or the display behavior does not match the manual."
+      ],
+      "sourceIds": [
+        "dometic-ccc2-operating"
+      ],
+      "searchAliases": [
+        "ccc2 hp defrost auxiliary heat below 30 degrees",
+        "dometic ccc2 hp defrost fan shuts off",
+        "comfort control center 2 heat pump auxiliary furnace below 30",
+        "dometic ccc2 heat pump resumes above 35"
+      ]
+    },
+    {
+      "id": "dometic-ccc2-filter-icon-clean-reset",
+      "slug": "dometic-ccc2-filter-icon-clean-reset",
+      "title": "Dometic CCC2 filter icon clean and reset",
+      "summary": "Dometic CCC2 operating instructions say the filter icon appears after 1000 fan hours, the air conditioner or heat-pump filters should be cleaned or replaced, and the selected zone runtime is cleared by holding INSIDE TEMP and F/C for 3 seconds.",
+      "safeChecklist": [
+        "Turn the affected zone off from normal thermostat controls before handling owner-accessible filters.",
+        "Clean or replace only owner-accessible air conditioner or heat-pump filters as the RV installation allows.",
+        "Wash reusable filters with soap and warm water, let them dry, and reinstall them before operating the system.",
+        "For the selected zone, hold INSIDE TEMP and F/C for 3 seconds to clear the filter icon after filter service."
+      ],
+      "sourceIds": [
+        "dometic-ccc2-operating"
+      ],
+      "searchAliases": [
+        "ccc2 filter icon inside temp f c reset fan runtime",
+        "dometic ccc2 clean replace filter icon 1000 hours",
+        "comfort control center 2 filter reset inside temp",
+        "dometic ccc2 never run without air filter"
+      ]
+    },
+    {
+      "id": "dometic-ccc2-hot-weather-cooling-performance",
+      "slug": "dometic-ccc2-hot-weather-cooling-performance",
+      "title": "Dometic CCC2 hot-weather cooling performance",
+      "summary": "Dometic CCC2 operating instructions say Operation on High Fan/Cooling mode helps in high humidity or high outside temperatures, and cooling performance improves when owners reduce heat gain with shade, closed doors and windows, and an early morning head start.",
+      "safeChecklist": [
+        "Use normal HIGH FAN and COOL controls during high humidity or high outside temperature.",
+        "Park in shade when possible, use window coverings, keep doors and windows closed, and avoid heat-producing appliances.",
+        "Start the air conditioner early in the morning before the expected high outdoor temperature.",
+        "Call qualified RV HVAC service if owner-visible heat-gain and filter checks do not improve cooling."
+      ],
+      "sourceIds": [
+        "dometic-ccc2-operating"
+      ],
+      "searchAliases": [
+        "dometic ccc2 hot weather high fan cooling shade windows",
+        "ccc2 high fan cooling high humidity",
+        "dometic comfort control center 2 not cooling hot day",
+        "dometic ccc2 start air conditioner early morning"
+      ]
+    },
+    {
       "id": "furnace-stops-before-setpoint",
       "slug": "rv-furnace-stops-before-set-temperature",
       "title": "RV furnace shuts off before set temperature",
@@ -32866,7 +32973,8 @@
         "coleman-9420-thermostat",
         "coleman-9430-thermostat",
         "coleman-comfortguard-service",
-        "coleman-6633-service"
+        "coleman-6633-service",
+        "dometic-ccc2-operating"
       ]
     },
     {

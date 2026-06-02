@@ -106,6 +106,26 @@ describe("verified corpus", () => {
     );
   });
 
+  it("finds Dometic CCC2 thermostat symptom support pages from owner searches", () => {
+    const index = buildSymptomSearchIndex(corpus);
+
+    expect(lookupSymptomGuides(index, "dometic ccc2 fan only no cooling cool mode zone setpoint")[0]?.slug).toBe(
+      "dometic-ccc2-fan-only-no-cooling-mode-zone",
+    );
+    expect(lookupSymptomGuides(index, "ccc2 hourglass compressor delay 2 minutes no start")[0]?.slug).toBe(
+      "dometic-ccc2-hourglass-compressor-delay",
+    );
+    expect(lookupSymptomGuides(index, "ccc2 hp defrost auxiliary heat below 30 degrees")[0]?.slug).toBe(
+      "dometic-ccc2-heat-pump-defrost-auxiliary-heat",
+    );
+    expect(lookupSymptomGuides(index, "ccc2 filter icon inside temp f c reset fan runtime")[0]?.slug).toBe(
+      "dometic-ccc2-filter-icon-clean-reset",
+    );
+    expect(lookupSymptomGuides(index, "dometic ccc2 hot weather high fan cooling shade windows")[0]?.slug).toBe(
+      "dometic-ccc2-hot-weather-cooling-performance",
+    );
+  });
+
   it("finds Norcold and Thetford symptom support pages from owner searches", () => {
     const index = buildSymptomSearchIndex(corpus);
 
@@ -468,6 +488,46 @@ describe("verified corpus", () => {
     );
 
     expect(ccc2Codes).toEqual(new Set(["E1", "E2", "E3", "E4", "E5", "E7", "E8", "E9"]));
+  });
+
+  it("adds official Dometic CCC2 thermostat symptom pages without inventing code entries or unsafe owner steps", () => {
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const sourceId = "dometic-ccc2-operating";
+    const expectedSymptomIds = [
+      "dometic-ccc2-fan-only-no-cooling-mode-zone",
+      "dometic-ccc2-hourglass-compressor-delay",
+      "dometic-ccc2-heat-pump-defrost-auxiliary-heat",
+      "dometic-ccc2-filter-icon-clean-reset",
+      "dometic-ccc2-hot-weather-cooling-performance",
+    ];
+
+    expect(corpus.sources.find((source) => source.id === sourceId)?.official).toBe(true);
+    expect(corpus.entries).toHaveLength(819);
+    expect(
+      corpus.entries
+        .filter((entry) => entry.sourceIds.includes(sourceId))
+        .map((entry) => entry.code)
+        .sort(),
+    ).toEqual(["E1", "E2", "E3", "E4", "E5", "E7", "E8", "E9"]);
+
+    for (const symptomId of expectedSymptomIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds).toEqual([sourceId]);
+      expect(symptom?.safeChecklist.join(" "), symptomId).not.toMatch(
+        /\bDIP\b|dip switch|control board|module board|120\s*Vac|120\s*VAC|12\s*Vdc|fuse|breaker|wiring|wire|rooftop|compressor relay|refrigerant|probe|bypass|generator start|load shed/i,
+      );
+    }
+
+    expect(symptomById.get("dometic-ccc2-fan-only-no-cooling-mode-zone")?.summary).toMatch(/FAN mode|COOL mode|zone|setpoint/i);
+    expect(symptomById.get("dometic-ccc2-hourglass-compressor-delay")?.summary).toMatch(/2 minutes|hour.?glass/i);
+    expect(symptomById.get("dometic-ccc2-heat-pump-defrost-auxiliary-heat")?.summary).toMatch(/Defrost|30|35|42|auxiliary heat/i);
+    expect(symptomById.get("dometic-ccc2-filter-icon-clean-reset")?.summary).toMatch(/1000|filter icon|INSIDE TEMP/i);
+    expect(symptomById.get("dometic-ccc2-hot-weather-cooling-performance")?.summary).toMatch(/shade|windows|HIGH FAN|morning/i);
+
+    expect(symptomById.get("thermostat-delay-or-no-response")?.sourceIds).toContain(sourceId);
+    expect(symptomById.get("air-conditioner-not-cooling")?.sourceIds).toContain(sourceId);
+    expect(symptomById.get("airflow-or-venting")?.sourceIds).toContain(sourceId);
   });
 
   it("includes official legacy Dometic RM3762/RM3962 refrigerator error-code table entries", () => {
