@@ -80,7 +80,7 @@ Key location: `https://rvappliancefaultcodes.com/2653afc6f17313e900711f1d3eb1dca
 
 Writes ignored local report artifact: `reports/indexnow-submit-report.json`
 
-Submitted: `2026-06-02T23:19:44.311Z` with IndexNow HTTP `200`
+Submitted: `2026-06-02T23:47:31.619Z` with IndexNow HTTP `200`
 
 Traffic monitor:
 
