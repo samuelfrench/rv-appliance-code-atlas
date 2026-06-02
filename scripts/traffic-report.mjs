@@ -24,7 +24,7 @@ function buildReport() {
       ready: false,
     })),
     nextAutomatedBatchGoal:
-      "Add remaining official water-heater symptom guides from Dometic XT, Suburban, and Furrion sources, and continue manufacturer-hosted table discovery without adding code entries unless an official fault/display table is verified.",
+      "Add remaining official OD-5001 low-flow and temperature-control symptom pages plus Furrion/Lippert tankless support-video source links, then continue manufacturer-hosted table discovery without adding code entries unless an official fault/display table is verified.",
     monitorCommand: "npm run traffic:monitor",
   };
 }

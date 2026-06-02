@@ -167,6 +167,46 @@
       "official": true
     },
     {
+      "id": "dometic-xt-water-heater-manual",
+      "brand": "Dometic",
+      "title": "Dometic XT Water Heaters Installation, Operation, and Maintenance Manual",
+      "url": "https://media.dometic.com/externalassets/dometic-water-heater-9-gallon-gas-electric-dsi-ext_9108873383_64488.pdf?ref=1566983353",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "dometic-water-heater-gas-overheat-support",
+      "brand": "Dometic",
+      "title": "Dometic How to Clear a Water Heater Over-Heating Failure | Water Heaters - Gas | Support",
+      "url": "https://support.dometic.com/en/waterheaters-gas/How-to-clear-a-water-heater-over-heating-failure-bda3",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-water-heater-odor-support",
+      "brand": "Dometic",
+      "title": "Dometic Unpleasant Odor | Water Heaters - Combo Gas & Electric | Support",
+      "url": "https://support.dometic.com/en/waterheaters-combo/Unpleasant-odor-a4e6",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-water-heater-gas-smell-support",
+      "brand": "Dometic",
+      "title": "Dometic I Smell Gas | Water Heaters - Combo Gas & Electric | Support",
+      "url": "https://support.dometic.com/en/waterheaters-combo/I-smell-gas-e6b9",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-water-heater-maintenance-support",
+      "brand": "Dometic",
+      "title": "Dometic Preventative Maintenance Instructions | Water Heaters - Combo Gas & Electric | Support",
+      "url": "https://support.dometic.com/en/waterheaters-combo/Preventative-maintenance-instructions-4ae",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
       "id": "furrion-10-6-refrigerator",
       "brand": "Furrion",
       "title": "Furrion ARCTIC 10.6 Cu. Ft. 12V Refrigerator Instruction Manual",
@@ -252,6 +292,30 @@
       "title": "Furrion 2.4GPM Tank-less Gas Water Heater Troubleshooting and Service Manual",
       "url": "https://lci-support-doc.s3.amazonaws.com/furrion%20documentation/water%20heaters/ccd-0009617.pdf",
       "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-water-heater-user-manual",
+      "brand": "Furrion",
+      "title": "Furrion 2.4GPM Tankless Gas Water Heater User Manual CCD-0005507",
+      "url": "https://lci-support-doc.s3.amazonaws.com/furrion%20documentation/water%20heaters/ccd-0005507.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-f2gwh-water-heater",
+      "brand": "Furrion",
+      "title": "Furrion F2GWH Tankless Water Heater User Manual CCD-0005833",
+      "url": "https://lci-support-doc.s3.amazonaws.com/furrion_comfort/water_heater/ccd-0005833.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-water-heater-freeze-damage",
+      "brand": "Furrion",
+      "title": "Lippert QR-181 Tankless Water Heater Freeze Damage Identification",
+      "url": "https://lci-support-doc.s3.amazonaws.com/quickreferences/qr-furrion/ccd-0008320.pdf",
+      "type": "manufacturer-quick-reference",
       "official": true
     },
     {
@@ -459,6 +523,22 @@
       "brand": "Suburban/Atwood",
       "title": "Suburban Tank Water Heaters Operation & Maintenance Guide",
       "url": "https://library.suburbanrv.com/wp-content/uploads/2023/04/206244_Suburban_Water_Heaters_RevA_03-22-2023.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "suburban-tankless-water-heater",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban Tankless Water Heaters Operation & Maintenance Guide Models IW60 and IW60RL",
+      "url": "https://library.suburbanrv.com/wp-content/uploads/2024/04/206245_Suburban_Tankless_Water_Heaters_RevNew_03-01-2023.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "suburban-st42-st60-water-heater",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban ST-42 and ST-60 On Demand Water Heater User Manual",
+      "url": "https://library.suburbanrv.com/wp-content/uploads/2024/04/206212-1_ODWH-ST42-60-User-Manual-RNew-04-16-2024.pdf",
       "type": "manufacturer-manual",
       "official": true
     }
@@ -4219,6 +4299,414 @@
       "symptomIds": [
         "water-heater-no-heat",
         "service-call-prep"
+      ]
+    },
+    {
+      "id": "furrion-f2gwh-e0",
+      "brand": "Furrion",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "F2GWH",
+        "Lippert PN 2022107551"
+      ],
+      "code": "E0",
+      "slug": "furrion-f2gwh-e0",
+      "plainMeaning": "The Furrion F2GWH manual lists E0 as water outlet temperature probe failure.",
+      "ownerSafeActions": [
+        "Turn hot-water demand off and power-cycle once only from the normal controls.",
+        "Record the code, displayed temperature, and whether water was flowing.",
+        "Contact Furrion or a qualified technician if E0 returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal sensor, ignition, flame-sense, ECO, blower, pressure-switch, linear-valve, wiring, and controller diagnosis is qualified service work."
+      ],
+      "safetyBoundary": "Do not keep operating a tankless gas water heater with repeated display faults, abnormal heat, blocked exhaust, gas odor, or unstable hot-water temperature.",
+      "sourceIds": [
+        "furrion-f2gwh-water-heater"
+      ],
+      "symptomIds": [
+        "furrion-tankless-low-flow-temperature",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "F2GWH model label",
+        "user control panel code",
+        "displayed temperature",
+        "water-flow state"
+      ]
+    },
+    {
+      "id": "furrion-f2gwh-e1",
+      "brand": "Furrion",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "F2GWH",
+        "Lippert PN 2022107551"
+      ],
+      "code": "E1",
+      "slug": "furrion-f2gwh-e1",
+      "plainMeaning": "The Furrion F2GWH manual lists E1 as ignition failure or accidental flame off during ignition.",
+      "ownerSafeActions": [
+        "Turn water flow and appliance power off from the normal controls.",
+        "Do not keep retrying ignition after the fault returns.",
+        "Record LP supply state and whether propane tanks were recently changed."
+      ],
+      "serviceOnlyActions": [
+        "Internal sensor, ignition, flame-sense, ECO, blower, pressure-switch, linear-valve, wiring, and controller diagnosis is qualified service work."
+      ],
+      "safetyBoundary": "Do not keep operating a tankless gas water heater with repeated display faults, abnormal heat, blocked exhaust, gas odor, or unstable hot-water temperature.",
+      "sourceIds": [
+        "furrion-f2gwh-water-heater"
+      ],
+      "symptomIds": [
+        "water-heater-no-heat",
+        "refrigerator-lp-ignition",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "F2GWH model label",
+        "user control panel code",
+        "LP supply state",
+        "recent propane tank change"
+      ]
+    },
+    {
+      "id": "furrion-f2gwh-e2",
+      "brand": "Furrion",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "F2GWH",
+        "Lippert PN 2022107551"
+      ],
+      "code": "E2",
+      "slug": "furrion-f2gwh-e2",
+      "plainMeaning": "The Furrion F2GWH manual lists E2 as flame sensing interrupted during normal operation.",
+      "ownerSafeActions": [
+        "Turn the appliance off.",
+        "Do not continue use if flame behavior seems abnormal.",
+        "Contact Furrion or a qualified technician if E2 returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal sensor, ignition, flame-sense, ECO, blower, pressure-switch, linear-valve, wiring, and controller diagnosis is qualified service work."
+      ],
+      "safetyBoundary": "Do not keep operating a tankless gas water heater with repeated display faults, abnormal heat, blocked exhaust, gas odor, or unstable hot-water temperature.",
+      "sourceIds": [
+        "furrion-f2gwh-water-heater"
+      ],
+      "symptomIds": [
+        "water-heater-no-heat",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "F2GWH model label",
+        "user control panel code",
+        "water-flow state",
+        "LP supply state"
+      ]
+    },
+    {
+      "id": "furrion-f2gwh-e3",
+      "brand": "Furrion",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "F2GWH",
+        "Lippert PN 2022107551"
+      ],
+      "code": "E3",
+      "slug": "furrion-f2gwh-e3",
+      "plainMeaning": "The Furrion F2GWH manual lists E3 as ECO open before ignition or during normal operation, normally from outlet water over 140 F.",
+      "ownerSafeActions": [
+        "Turn the appliance off and allow water to cool.",
+        "Do not restart if hot-water temperature seems unsafe.",
+        "Contact Furrion or a qualified technician if E3 returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal sensor, ignition, flame-sense, ECO, blower, pressure-switch, linear-valve, wiring, and controller diagnosis is qualified service work."
+      ],
+      "safetyBoundary": "Do not keep operating a tankless gas water heater with repeated display faults, abnormal heat, blocked exhaust, gas odor, or unstable hot-water temperature.",
+      "sourceIds": [
+        "furrion-f2gwh-water-heater"
+      ],
+      "symptomIds": [
+        "furrion-tankless-low-flow-temperature",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "F2GWH model label",
+        "user control panel code",
+        "displayed temperature",
+        "water-flow state"
+      ]
+    },
+    {
+      "id": "furrion-f2gwh-e4",
+      "brand": "Furrion",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "F2GWH",
+        "Lippert PN 2022107551"
+      ],
+      "code": "E4",
+      "slug": "furrion-f2gwh-e4",
+      "plainMeaning": "The Furrion F2GWH manual lists E4 as water inlet temperature probe failure.",
+      "ownerSafeActions": [
+        "Turn hot-water demand off and power-cycle once only from the normal controls.",
+        "Record the code, displayed temperature, and whether water was flowing.",
+        "Contact Furrion or a qualified technician if E4 returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal sensor, ignition, flame-sense, ECO, blower, pressure-switch, linear-valve, wiring, and controller diagnosis is qualified service work."
+      ],
+      "safetyBoundary": "Do not keep operating a tankless gas water heater with repeated display faults, abnormal heat, blocked exhaust, gas odor, or unstable hot-water temperature.",
+      "sourceIds": [
+        "furrion-f2gwh-water-heater"
+      ],
+      "symptomIds": [
+        "furrion-tankless-low-flow-temperature",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "F2GWH model label",
+        "user control panel code",
+        "displayed temperature",
+        "water-flow state"
+      ]
+    },
+    {
+      "id": "furrion-f2gwh-e5",
+      "brand": "Furrion",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "F2GWH",
+        "Lippert PN 2022107551"
+      ],
+      "code": "E5",
+      "slug": "furrion-f2gwh-e5",
+      "plainMeaning": "The Furrion F2GWH manual lists E5 as blower motor failure.",
+      "ownerSafeActions": [
+        "Turn the appliance off.",
+        "Check only for obvious exterior air-intake or exhaust blockage.",
+        "Contact Furrion or a qualified technician if E5 returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal sensor, ignition, flame-sense, ECO, blower, pressure-switch, linear-valve, wiring, and controller diagnosis is qualified service work."
+      ],
+      "safetyBoundary": "Do not keep operating a tankless gas water heater with repeated display faults, abnormal heat, blocked exhaust, gas odor, or unstable hot-water temperature.",
+      "sourceIds": [
+        "furrion-f2gwh-water-heater"
+      ],
+      "symptomIds": [
+        "airflow-or-venting",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "F2GWH model label",
+        "user control panel code",
+        "exterior vent condition",
+        "water-flow state"
+      ]
+    },
+    {
+      "id": "furrion-f2gwh-e6",
+      "brand": "Furrion",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "F2GWH",
+        "Lippert PN 2022107551"
+      ],
+      "code": "E6",
+      "slug": "furrion-f2gwh-e6",
+      "plainMeaning": "The Furrion F2GWH manual lists E6 as over temperature when outlet water exceeds 140 F for 3 seconds.",
+      "ownerSafeActions": [
+        "Turn the appliance off and allow water to cool.",
+        "Do not restart if hot-water temperature seems unsafe.",
+        "Contact Furrion or a qualified technician if E6 returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal sensor, ignition, flame-sense, ECO, blower, pressure-switch, linear-valve, wiring, and controller diagnosis is qualified service work."
+      ],
+      "safetyBoundary": "Do not keep operating a tankless gas water heater with repeated display faults, abnormal heat, blocked exhaust, gas odor, or unstable hot-water temperature.",
+      "sourceIds": [
+        "furrion-f2gwh-water-heater"
+      ],
+      "symptomIds": [
+        "furrion-tankless-low-flow-temperature",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "F2GWH model label",
+        "user control panel code",
+        "displayed temperature",
+        "water-flow state"
+      ]
+    },
+    {
+      "id": "furrion-f2gwh-e7",
+      "brand": "Furrion",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "F2GWH",
+        "Lippert PN 2022107551"
+      ],
+      "code": "E7",
+      "slug": "furrion-f2gwh-e7",
+      "plainMeaning": "The Furrion F2GWH manual lists E7 as linear valve failure.",
+      "ownerSafeActions": [
+        "Turn the appliance off.",
+        "Stop repeated resets after the valve fault returns.",
+        "Contact Furrion or a qualified technician."
+      ],
+      "serviceOnlyActions": [
+        "Internal sensor, ignition, flame-sense, ECO, blower, pressure-switch, linear-valve, wiring, and controller diagnosis is qualified service work."
+      ],
+      "safetyBoundary": "Do not keep operating a tankless gas water heater with repeated display faults, abnormal heat, blocked exhaust, gas odor, or unstable hot-water temperature.",
+      "sourceIds": [
+        "furrion-f2gwh-water-heater"
+      ],
+      "symptomIds": [
+        "water-heater-no-heat",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "F2GWH model label",
+        "user control panel code",
+        "water-flow state",
+        "LP supply state"
+      ]
+    },
+    {
+      "id": "furrion-f2gwh-e8",
+      "brand": "Furrion",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "F2GWH",
+        "Lippert PN 2022107551"
+      ],
+      "code": "E8",
+      "slug": "furrion-f2gwh-e8",
+      "plainMeaning": "The Furrion F2GWH manual lists E8 as air pressure switch not detected before ignition or cut off during normal operation.",
+      "ownerSafeActions": [
+        "Turn the appliance off.",
+        "Check only for obvious exterior air-intake or exhaust blockage.",
+        "Do not operate if the airflow path is blocked."
+      ],
+      "serviceOnlyActions": [
+        "Internal sensor, ignition, flame-sense, ECO, blower, pressure-switch, linear-valve, wiring, and controller diagnosis is qualified service work."
+      ],
+      "safetyBoundary": "Do not keep operating a tankless gas water heater with repeated display faults, abnormal heat, blocked exhaust, gas odor, or unstable hot-water temperature.",
+      "sourceIds": [
+        "furrion-f2gwh-water-heater"
+      ],
+      "symptomIds": [
+        "airflow-or-venting",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "F2GWH model label",
+        "user control panel code",
+        "exterior vent condition",
+        "water-flow state"
+      ]
+    },
+    {
+      "id": "furrion-f2gwh-e9",
+      "brand": "Furrion",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "F2GWH",
+        "Lippert PN 2022107551"
+      ],
+      "code": "E9",
+      "slug": "furrion-f2gwh-e9",
+      "plainMeaning": "The Furrion F2GWH manual lists E9 as flame sensed before ignition.",
+      "ownerSafeActions": [
+        "Turn the appliance off.",
+        "Do not operate if the display suggests flame before startup.",
+        "Contact Furrion or a qualified technician."
+      ],
+      "serviceOnlyActions": [
+        "Internal sensor, ignition, flame-sense, ECO, blower, pressure-switch, linear-valve, wiring, and controller diagnosis is qualified service work."
+      ],
+      "safetyBoundary": "Do not keep operating a tankless gas water heater with repeated display faults, abnormal heat, blocked exhaust, gas odor, or unstable hot-water temperature.",
+      "sourceIds": [
+        "furrion-f2gwh-water-heater"
+      ],
+      "symptomIds": [
+        "water-heater-no-heat",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "F2GWH model label",
+        "user control panel code",
+        "water-flow state",
+        "LP supply state"
+      ]
+    },
+    {
+      "id": "furrion-f2gwh-en",
+      "brand": "Furrion",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "F2GWH",
+        "Lippert PN 2022107551"
+      ],
+      "code": "En",
+      "slug": "furrion-f2gwh-en-system-timer",
+      "plainMeaning": "The Furrion F2GWH manual lists En as system timer after the water heater ran longer than 20 minutes.",
+      "ownerSafeActions": [
+        "Turn the hot-water faucet off to end demand.",
+        "Restart from normal controls only if water is still needed.",
+        "Check for an open fixture or leak causing unattended operation."
+      ],
+      "serviceOnlyActions": [
+        "Internal sensor, ignition, flame-sense, ECO, blower, pressure-switch, linear-valve, wiring, and controller diagnosis is qualified service work."
+      ],
+      "safetyBoundary": "Do not leave a tankless gas water heater running unattended. Stop the water demand and investigate open fixtures or leaks before restarting.",
+      "sourceIds": [
+        "furrion-f2gwh-water-heater"
+      ],
+      "symptomIds": [
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "F2GWH model label",
+        "user control panel code",
+        "fixture left open",
+        "runtime before En appeared"
+      ]
+    },
+    {
+      "id": "furrion-f2gwh-fd",
+      "brand": "Furrion",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "F2GWH",
+        "Lippert PN 2022107551"
+      ],
+      "code": "Fd",
+      "slug": "furrion-f2gwh-fd-freeze-protection",
+      "plainMeaning": "The Furrion F2GWH manual lists Fd as winter-use mode or freeze protection; the unit runs briefly and shuts off in freezing conditions when LP and 12V power are on.",
+      "ownerSafeActions": [
+        "Recognize this as winter-use or freeze-protection behavior, not a normal heating call.",
+        "Do not rely on this mode to protect the RV plumbing system.",
+        "Winterize the RV water system when freezing storage is possible."
+      ],
+      "serviceOnlyActions": [
+        "Internal sensor, ignition, flame-sense, ECO, blower, pressure-switch, linear-valve, wiring, and controller diagnosis is qualified service work."
+      ],
+      "safetyBoundary": "Furrion freeze-protection behavior only protects the water-heater heat exchanger under the manual's conditions and does not winterize the RV plumbing system.",
+      "sourceIds": [
+        "furrion-f2gwh-water-heater"
+      ],
+      "symptomIds": [
+        "furrion-water-heater-freeze-state",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "F2GWH model label",
+        "user control panel code",
+        "outside temperature",
+        "winterization state"
       ]
     },
     {
@@ -15981,7 +16469,8 @@
         "norcold-polar-owner",
         "furrion-water-heater",
         "dometic-water-heater-gas-function-support",
-        "dometic-od5001-no-ignition-support"
+        "dometic-od5001-no-ignition-support",
+        "furrion-f2gwh-water-heater"
       ]
     },
     {
@@ -16001,8 +16490,13 @@
         "dometic-water-heater-combo-function-support",
         "dometic-water-heater-gas-function-support",
         "dometic-water-heater-overheat-reset-support",
+        "dometic-water-heater-gas-overheat-support",
         "dometic-od5001-operating-support",
-        "dometic-od5001-no-ignition-support"
+        "dometic-od5001-no-ignition-support",
+        "suburban-tankless-water-heater",
+        "suburban-st42-st60-water-heater",
+        "furrion-water-heater-user-manual",
+        "furrion-f2gwh-water-heater"
       ]
     },
     {
@@ -16036,8 +16530,11 @@
         "dometic-df-furnace",
         "suburban-furnace-guide",
         "furrion-water-heater",
+        "furrion-f2gwh-water-heater",
         "furrion-furnace-troubleshooting",
-        "dometic-hydro-flame-afm-66618"
+        "dometic-hydro-flame-afm-66618",
+        "suburban-st42-st60-water-heater",
+        "dometic-water-heater-maintenance-support"
       ]
     },
     {
@@ -16152,6 +16649,12 @@
         "dometic-hydro-flame-afm-66618",
         "dometic-water-heater-combo-function-support",
         "dometic-water-heater-overheat-reset-support",
+        "dometic-xt-water-heater-manual",
+        "suburban-tankless-water-heater",
+        "suburban-st42-st60-water-heater",
+        "furrion-water-heater-user-manual",
+        "furrion-f2gwh-water-heater",
+        "furrion-water-heater-freeze-damage",
         "dometic-od5001-operating-support",
         "dometic-od5001-no-power-vent-support"
       ]
@@ -16334,6 +16837,167 @@
       ],
       "sourceIds": [
         "dometic-od5001-temperature-fluctuation-support"
+      ]
+    },
+    {
+      "id": "dometic-xt-low-flow-cold-flow",
+      "slug": "dometic-xt-water-heater-low-flow-cold-flow",
+      "title": "Dometic XT water heater has low flow or cold flow",
+      "summary": "Use this when a Dometic XT tank water heater has low hot-water flow, cold flow, or not-hot-enough water from the XT mixing-valve condition described in the official manual.",
+      "safeChecklist": [
+        "Stop use if hot-water temperature is unsafe or unpredictable.",
+        "Record the XT model number, symptom, tank maintenance history, and whether the issue is low flow or cold water.",
+        "Do not remove or service the XT mixing valve.",
+        "Call a certified RV appliance technician for mixing-valve service or persistent XT cold-flow symptoms."
+      ],
+      "sourceIds": [
+        "dometic-xt-water-heater-manual",
+        "dometic-water-heater-wh"
+      ]
+    },
+    {
+      "id": "dometic-water-heater-gas-smell",
+      "slug": "dometic-water-heater-gas-smell",
+      "title": "Dometic water heater gas smell",
+      "summary": "Use this when gas odor is present near a Dometic water heater or in the RV.",
+      "safeChecklist": [
+        "Evacuate people from the RV.",
+        "Shut off LP at the container or source only if it is safe to do so.",
+        "Do not touch switches, radios, phones, generators, engines, or ignition sources in the RV.",
+        "Call the gas supplier, a qualified RV technician, or the fire department before restoring LP."
+      ],
+      "sourceIds": [
+        "dometic-water-heater-gas-smell-support",
+        "dometic-xt-water-heater-manual"
+      ]
+    },
+    {
+      "id": "dometic-water-heater-rotten-egg-odor",
+      "slug": "dometic-water-heater-rotten-egg-odor",
+      "title": "Dometic water heater rotten-egg odor",
+      "summary": "Use this for unpleasant rotten-egg or hydrogen-sulfide odor from a Dometic tank water heater's hot water.",
+      "safeChecklist": [
+        "Confirm the odor is from hot water, not an LP leak; use the gas-smell guide if gas odor is possible.",
+        "Turn off the water heater before draining or flushing.",
+        "Use only owner-accessible tank draining or flushing steps if you are comfortable with them.",
+        "Call service if odor persists, fittings are not owner-accessible, or water-heater service is needed."
+      ],
+      "sourceIds": [
+        "dometic-water-heater-odor-support",
+        "dometic-xt-water-heater-manual"
+      ]
+    },
+    {
+      "id": "dometic-water-heater-soot-delayed-ignition",
+      "slug": "dometic-water-heater-soot-delayed-ignition",
+      "title": "Dometic water heater soot, delayed ignition, or lazy flame",
+      "summary": "Use this when Dometic maintenance guidance points to soot, delayed ignition, ignition outside the combustion area, or a flame appearance change.",
+      "safeChecklist": [
+        "Turn the water heater off.",
+        "Keep the exterior vent area clear from normal safe access.",
+        "Do not clean or adjust combustion parts as an owner troubleshooting step.",
+        "Call a qualified RV appliance technician before operating again."
+      ],
+      "sourceIds": [
+        "dometic-water-heater-maintenance-support",
+        "dometic-xt-water-heater-manual"
+      ]
+    },
+    {
+      "id": "suburban-tankless-lockout",
+      "slug": "suburban-tankless-water-heater-lockout",
+      "title": "Suburban tankless water heater lockout",
+      "summary": "Use this when a Suburban IW60, IW60RL, ST-42, or ST-60 on-demand water heater fails ignition trials, enters lockout, or times out after extended operation.",
+      "safeChecklist": [
+        "Turn the faucet or control switch off, then back on once using the normal reset path described by Suburban.",
+        "Open the hot-water faucet fully during startup so the unit has enough flow.",
+        "Stop repeated reset attempts if lockout returns.",
+        "Call Suburban, a dealer, or a qualified RV technician for repeated ignition or lockout problems."
+      ],
+      "sourceIds": [
+        "suburban-tankless-water-heater",
+        "suburban-st42-st60-water-heater"
+      ]
+    },
+    {
+      "id": "suburban-tankless-low-flow-temperature",
+      "slug": "suburban-tankless-low-flow-temperature",
+      "title": "Suburban tankless water heater low flow or temperature swing",
+      "summary": "Use this when a Suburban tankless water heater is slow to deliver hot water, needs minimum flow, or drops temperature because flow is restricted.",
+      "safeChecklist": [
+        "Open the hot-water faucet enough to meet the manual's minimum flow requirement.",
+        "Do not use a showerhead pause button during troubleshooting because the manual says reduced flow can shut the heater down.",
+        "Remove owner-accessible faucet or shower flow restrictions only if safe and allowed by the coach setup.",
+        "Call service if low-flow or temperature swings continue."
+      ],
+      "sourceIds": [
+        "suburban-tankless-water-heater",
+        "suburban-st42-st60-water-heater"
+      ]
+    },
+    {
+      "id": "suburban-tankless-recirculation-delay",
+      "slug": "suburban-iw60rl-recirculation-delay-or-pump-noise",
+      "title": "Suburban IW60RL recirculation delay or pump noise",
+      "summary": "Use this when an IW60RL recirculation system cycles, delays hot water, or has a loud recirculation pump after air enters the lines.",
+      "safeChecklist": [
+        "Confirm whether recirculation is enabled on the On-Demand Control Center.",
+        "Run hot water at multiple faucets for the manual-described air purge if the pump is loud.",
+        "Record whether recirculation is enabled or disabled and whether hot lines cool between uses.",
+        "Call service if pump noise or delayed hot water persists."
+      ],
+      "sourceIds": [
+        "suburban-tankless-water-heater"
+      ]
+    },
+    {
+      "id": "furrion-tankless-low-flow-temperature",
+      "slug": "furrion-tankless-water-heater-low-flow-temperature",
+      "title": "Furrion tankless water heater low flow or low temperature",
+      "summary": "Use this when a Furrion tankless water heater has low hot-water flow, weak heat, cold-water mixing, hard-water scale, or slow temperature rise.",
+      "safeChecklist": [
+        "Confirm LP, water, and 12V power are on from normal RV controls.",
+        "Check that shower and bypass valves are closed so cold water is not bleeding into the hot side.",
+        "Clean owner-accessible faucet screens or inlet filters only if the manual allows it and you can do it without disturbing gas or electrical parts.",
+        "Call Furrion or a qualified technician for persistent low temperature, gas-volume, altitude, or internal service concerns."
+      ],
+      "sourceIds": [
+        "furrion-water-heater",
+        "furrion-water-heater-user-manual",
+        "furrion-f2gwh-water-heater"
+      ]
+    },
+    {
+      "id": "furrion-water-heater-pressure-relief-discharge",
+      "slug": "furrion-water-heater-pressure-relief-discharge",
+      "title": "Furrion water heater pressure relief discharge or drain tray water",
+      "summary": "Use this when a Furrion tankless water heater has water at the pressure relief outlet, drain hose, drainage tray, or inlet filter.",
+      "safeChecklist": [
+        "Turn the water heater off if water is leaking or discharging unexpectedly.",
+        "Confirm the RV water pressure is within the manual's allowed range using installed or external pressure regulation.",
+        "Do not plug, cap, or bypass any relief outlet.",
+        "Call Furrion or service if discharge repeats, the tray has water, or the pressure-relief part needs replacement."
+      ],
+      "sourceIds": [
+        "furrion-water-heater",
+        "furrion-water-heater-user-manual"
+      ]
+    },
+    {
+      "id": "furrion-water-heater-freeze-state",
+      "slug": "furrion-water-heater-freeze-state-or-freeze-damage",
+      "title": "Furrion tankless water heater freeze mode or freeze damage",
+      "summary": "Use this when a Furrion tankless water heater shows freeze-protection behavior, Fd winter-use mode, or visible freeze-damage/leak symptoms after improper winterization.",
+      "safeChecklist": [
+        "Shut off water, LP, and power if the heater is leaking or visibly damaged.",
+        "Do not rely on freeze-protection mode to winterize the entire RV plumbing system.",
+        "Photograph visible damage, the display state, model label, and winterization history for warranty or service.",
+        "Contact Lippert/Furrion or a qualified RV technician before operating a suspected freeze-damaged heater."
+      ],
+      "sourceIds": [
+        "furrion-f2gwh-water-heater",
+        "furrion-water-heater-freeze-damage",
+        "furrion-water-heater-user-manual"
       ]
     }
   ],

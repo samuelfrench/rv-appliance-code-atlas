@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { createRoot } from "react-dom/client";
 import {
   AlertTriangle,
@@ -13,7 +13,7 @@ import {
   Shield,
   Wrench,
 } from "lucide-react";
-import corpusData from "./data/corpus.json";
+import corpusUrl from "./data/corpus.json?url";
 import {
   buildSearchIndex,
   getBrandCoverage,
@@ -28,12 +28,20 @@ import {
   type CorpusEntry,
   type SymptomGuide,
 } from "./lib/corpus";
+import { loadCorpus } from "./lib/corpusLoader";
 import "./styles.css";
 
-const corpus = corpusData as Corpus;
-const searchIndex = buildSearchIndex(corpus);
-const summary = summarizeCorpus(corpus);
-const brandCoverage = getBrandCoverage(corpus);
+type PreparedCorpus = {
+  corpus: Corpus;
+  searchIndex: ReturnType<typeof buildSearchIndex>;
+  summary: ReturnType<typeof summarizeCorpus>;
+  brandCoverage: ReturnType<typeof getBrandCoverage>;
+};
+
+type AppState =
+  | { status: "loading" }
+  | { status: "ready"; data: PreparedCorpus }
+  | { status: "error"; message: string };
 
 type Capture = {
   brand: string;
@@ -43,6 +51,15 @@ type Capture = {
 };
 
 const emptyCapture: Capture = { brand: "", model: "", part: "", notes: "" };
+
+function prepareCorpus(corpus: Corpus): PreparedCorpus {
+  return {
+    corpus,
+    searchIndex: buildSearchIndex(corpus),
+    summary: summarizeCorpus(corpus),
+    brandCoverage: getBrandCoverage(corpus),
+  };
+}
 
 function loadCapture(): Capture {
   try {
@@ -54,24 +71,55 @@ function loadCapture(): Capture {
 }
 
 function App() {
+  const [state, setState] = useState<AppState>({ status: "loading" });
+
+  useEffect(() => {
+    let active = true;
+    loadCorpus(corpusUrl)
+      .then((loadedCorpus) => {
+        if (active) setState({ status: "ready", data: prepareCorpus(loadedCorpus) });
+      })
+      .catch((error: unknown) => {
+        if (active) {
+          setState({
+            status: "error",
+            message: error instanceof Error ? error.message : "Unable to load corpus asset.",
+          });
+        }
+      });
+
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  if (state.status === "loading") return <LoadingShell />;
+  if (state.status === "error") return <LoadError message={state.message} />;
+
+  return <ReadyApp data={state.data} />;
+}
+
+function ReadyApp({ data }: { data: PreparedCorpus }) {
+  const { corpus } = data;
   const path = window.location.pathname;
   const detailMatch = path.match(/^\/codes\/([^/]+)\/?$/);
   const symptomMatch = path.match(/^\/symptoms\/([^/]+)\/?$/);
 
   if (detailMatch) {
     const entry = getEntryBySlug(corpus, detailMatch[1]);
-    return entry ? <CodeDetail entry={entry} /> : <NotFound />;
+    return entry ? <CodeDetail entry={entry} corpus={corpus} /> : <NotFound />;
   }
 
   if (symptomMatch) {
     const symptom = getSymptomBySlug(corpus, symptomMatch[1]);
-    return symptom ? <SymptomDetail symptom={symptom} /> : <NotFound />;
+    return symptom ? <SymptomDetail symptom={symptom} corpus={corpus} /> : <NotFound />;
   }
 
-  return <Home />;
+  return <Home data={data} />;
 }
 
-function Home() {
+function Home({ data }: { data: PreparedCorpus }) {
+  const { corpus, searchIndex, summary, brandCoverage } = data;
   const [query, setQuery] = useState("");
   const results = useMemo(() => lookupEntries(searchIndex, query).slice(0, query ? 12 : 8), [query]);
 
@@ -146,9 +194,9 @@ function Home() {
         </section>
 
         <ToolsBand />
-        <SymptomBand />
-        <SourceBand />
-        <MonetizationBand />
+        <SymptomBand corpus={corpus} />
+        <SourceBand corpus={corpus} />
+        <MonetizationBand corpus={corpus} />
       </main>
       <Footer />
     </>
@@ -257,7 +305,7 @@ function ToolsBand() {
   );
 }
 
-function SymptomBand() {
+function SymptomBand({ corpus }: { corpus: Corpus }) {
   return (
     <section id="symptoms" className="symptom-band" aria-label="Symptom guides">
       <SectionHeader icon={<Wrench />} eyebrow="Guides" title="Symptom-first paths" />
@@ -273,7 +321,7 @@ function SymptomBand() {
   );
 }
 
-function SourceBand() {
+function SourceBand({ corpus }: { corpus: Corpus }) {
   return (
     <section id="sources" className="source-band" aria-label="Official source list">
       <SectionHeader icon={<BookOpen />} eyebrow="Evidence" title="Official sources used in this batch" />
@@ -290,7 +338,7 @@ function SourceBand() {
   );
 }
 
-function MonetizationBand() {
+function MonetizationBand({ corpus }: { corpus: Corpus }) {
   return (
     <section className="monetization-band" aria-label="Monetization readiness">
       <SectionHeader icon={<Shield />} eyebrow="Free site" title="Monetization stays disabled until traffic proves demand" />
@@ -307,7 +355,7 @@ function MonetizationBand() {
   );
 }
 
-function CodeDetail({ entry }: { entry: CorpusEntry }) {
+function CodeDetail({ entry, corpus }: { entry: CorpusEntry; corpus: Corpus }) {
   const sources = getSourcesForIds(corpus, entry.sourceIds);
   const relatedSymptoms = corpus.symptoms.filter((symptom) => entry.symptomIds.includes(symptom.id));
 
@@ -361,14 +409,14 @@ function CodeDetail({ entry }: { entry: CorpusEntry }) {
             </div>
           </section>
         </article>
-        <MonetizationBand />
+        <MonetizationBand corpus={corpus} />
       </main>
       <Footer />
     </>
   );
 }
 
-function SymptomDetail({ symptom }: { symptom: SymptomGuide }) {
+function SymptomDetail({ symptom, corpus }: { symptom: SymptomGuide; corpus: Corpus }) {
   const sources = getSourcesForIds(corpus, symptom.sourceIds);
   const matchingEntries = corpus.entries.filter((entry) => entry.symptomIds.includes(symptom.id));
 
@@ -412,7 +460,7 @@ function SymptomDetail({ symptom }: { symptom: SymptomGuide }) {
             </div>
           </section>
         </article>
-        <MonetizationBand />
+        <MonetizationBand corpus={corpus} />
       </main>
       <Footer />
     </>
@@ -428,6 +476,35 @@ function NotFound() {
           <h1>Code not verified yet</h1>
           <p className="detail-meaning">This atlas rejects unsourced codes. Try the lookup or check the official manual for your exact model.</p>
           <a className="print-button" href="/">Search verified codes</a>
+        </article>
+      </main>
+    </>
+  );
+}
+
+function LoadingShell() {
+  return (
+    <>
+      <Header />
+      <main className="detail-main">
+        <article className="detail-article">
+          <h1>Loading RV Appliance Code Atlas</h1>
+          <p className="detail-meaning">Loading the verified source-backed corpus.</p>
+        </article>
+      </main>
+    </>
+  );
+}
+
+function LoadError({ message }: { message: string }) {
+  return (
+    <>
+      <Header />
+      <main className="detail-main">
+        <article className="detail-article">
+          <h1>Corpus unavailable</h1>
+          <p className="detail-meaning">{message}</p>
+          <p>Try reloading the page. If this keeps happening, use the official appliance manual for your exact model.</p>
         </article>
       </main>
     </>

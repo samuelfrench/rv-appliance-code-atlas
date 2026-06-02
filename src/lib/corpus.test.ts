@@ -605,4 +605,63 @@ describe("verified corpus", () => {
 
     expect(new Set(dometicAtwoodWaterHeaterEntries.map((entry) => entry.id))).toEqual(existingDometicAtwoodWaterHeaterEntryIds);
   });
+
+  it("adds the next official water-heater symptom sources and only verified Furrion F2GWH display entries", () => {
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const symptomOnlySourceIds = [
+      "dometic-xt-water-heater-manual",
+      "dometic-water-heater-gas-overheat-support",
+      "dometic-water-heater-odor-support",
+      "dometic-water-heater-gas-smell-support",
+      "dometic-water-heater-maintenance-support",
+      "suburban-tankless-water-heater",
+      "suburban-st42-st60-water-heater",
+      "furrion-water-heater-user-manual",
+      "furrion-water-heater-freeze-damage",
+    ];
+
+    expect(corpus.sources.filter((source) => symptomOnlySourceIds.includes(source.id))).toHaveLength(symptomOnlySourceIds.length);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => symptomOnlySourceIds.includes(sourceId)))).toHaveLength(0);
+
+    expect(symptomById.get("dometic-xt-low-flow-cold-flow")?.sourceIds).toEqual(
+      expect.arrayContaining(["dometic-xt-water-heater-manual", "dometic-water-heater-wh"]),
+    );
+    expect(symptomById.get("dometic-water-heater-gas-smell")?.sourceIds).toContain("dometic-water-heater-gas-smell-support");
+    expect(symptomById.get("dometic-water-heater-rotten-egg-odor")?.sourceIds).toEqual(
+      expect.arrayContaining(["dometic-water-heater-odor-support", "dometic-xt-water-heater-manual"]),
+    );
+    expect(symptomById.get("dometic-water-heater-soot-delayed-ignition")?.sourceIds).toContain(
+      "dometic-water-heater-maintenance-support",
+    );
+    expect(symptomById.get("suburban-tankless-lockout")?.sourceIds).toEqual(
+      expect.arrayContaining(["suburban-tankless-water-heater", "suburban-st42-st60-water-heater"]),
+    );
+    expect(symptomById.get("suburban-tankless-low-flow-temperature")?.sourceIds).toEqual(
+      expect.arrayContaining(["suburban-tankless-water-heater", "suburban-st42-st60-water-heater"]),
+    );
+    expect(symptomById.get("suburban-tankless-recirculation-delay")?.sourceIds).toContain("suburban-tankless-water-heater");
+    expect(symptomById.get("furrion-tankless-low-flow-temperature")?.sourceIds).toEqual(
+      expect.arrayContaining(["furrion-water-heater", "furrion-water-heater-user-manual"]),
+    );
+    expect(symptomById.get("furrion-water-heater-pressure-relief-discharge")?.sourceIds).toEqual(
+      expect.arrayContaining(["furrion-water-heater", "furrion-water-heater-user-manual"]),
+    );
+    expect(symptomById.get("furrion-water-heater-freeze-state")?.sourceIds).toEqual(
+      expect.arrayContaining(["furrion-f2gwh-water-heater", "furrion-water-heater-freeze-damage"]),
+    );
+
+    const furrionF2gwhCodes = new Set(
+      corpus.entries
+        .filter((entry) => entry.brand === "Furrion" && entry.sourceIds.includes("furrion-f2gwh-water-heater"))
+        .map((entry) => entry.code),
+    );
+
+    expect(furrionF2gwhCodes).toEqual(new Set(["E0", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9", "En", "Fd"]));
+
+    const furrionEn = corpus.entries.find((entry) => entry.id === "furrion-f2gwh-en");
+    const furrionFd = corpus.entries.find((entry) => entry.id === "furrion-f2gwh-fd");
+
+    expect(furrionEn?.symptomIds).not.toContain("furrion-water-heater-freeze-state");
+    expect(furrionFd?.symptomIds).toContain("furrion-water-heater-freeze-state");
+  });
 });
