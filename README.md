@@ -65,6 +65,8 @@ Key location: `https://rv-appliance-code-atlas.fly.dev/2653afc6f17313e900711f1d3
 
 Writes ignored local report artifact: `reports/indexnow-submit-report.json`
 
+Submitted: `2026-06-02T20:30:12.144Z` with IndexNow HTTP `200`
+
 Traffic monitor:
 
 ```bash

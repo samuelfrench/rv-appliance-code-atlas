@@ -27,7 +27,7 @@ describe("traffic readiness report", () => {
       keyLocation: "https://rv-appliance-code-atlas.fly.dev/2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18.txt",
       dryRunCommand: "npm run traffic:indexnow:dry-run",
       submitCommand: "npm run traffic:indexnow:submit",
-      submittedAt: null,
+      submittedAt: "2026-06-02T20:30:12.144Z",
     });
     expect(report.nextAutomatedBatchGoal).toBe("Add impression-based monetization readiness report after GSC data exists.");
 
