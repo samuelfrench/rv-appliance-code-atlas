@@ -111,6 +111,70 @@
       "official": true
     },
     {
+      "id": "dometic-od5001-low-heat-rise-excessive-flow-support",
+      "brand": "Dometic",
+      "title": "Dometic Low Heat Rise and Excessive Water Flow Is Required To Trigger Water Heater | OD-5001 | Support",
+      "url": "https://support.dometic.com/en/waterheaters-od5001/Low-Heat-Rise-and-Excessive-Water-Flow-Is-Required-To-Trigger-Water-Heater-d4aa",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-od5001-burner-ignites-temperature-too-low-support",
+      "brand": "Dometic",
+      "title": "Dometic Burner Ignites But Water Temperature Is Too Low | OD-5001 | Support",
+      "url": "https://support.dometic.com/en/waterheaters-od5001/Burner-Ignites-But-Water-Temperature-Is-Too-Low-c836",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-od5001-no-temperature-control-support",
+      "brand": "Dometic",
+      "title": "Dometic No Temperature Control | OD-5001 | Support",
+      "url": "https://support.dometic.com/en/waterheaters-od5001/No-Temperature-Control-3a15",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-od5001-water-temperature-too-hot-support",
+      "brand": "Dometic",
+      "title": "Dometic Water Temperature Is Too Hot | OD-5001 | Support",
+      "url": "https://support.dometic.com/en/waterheaters-od5001/Water-Temperature-Is-Too-Hot-acde",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-od5001-water-temperature-too-low-low-flow-support",
+      "brand": "Dometic",
+      "title": "Dometic Water Temperature Too Low at Lower Water Flow Rates | OD-5001 | Support",
+      "url": "https://support.dometic.com/en/waterheaters-od5001/Water-Temperature-Too-Low-at-Lower-Water-Flow-Rates-bfa2",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-od5001-navy-showers-support",
+      "brand": "Dometic",
+      "title": "Dometic A Note About Navy Showers When Dry Camping | OD-5001 | Support",
+      "url": "https://support.dometic.com/en/waterheaters-od5001/A-Note-About-Navy-Showers-When-Dry-Camping-c373",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-od5001-winterize-support",
+      "brand": "Dometic",
+      "title": "Dometic How to Winterize the Unit | OD-5001 | Support",
+      "url": "https://support.dometic.com/en/waterheaters-od5001/How-to-winterize-the-Unit-c2cc",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-od5001-gas-smell-support",
+      "brand": "Dometic",
+      "title": "Dometic I Smell Gas | OD-5001 | Support",
+      "url": "https://support.dometic.com/en/waterheaters-od5001/I-smell-gas-c5c7",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
       "id": "dometic-rm1350-operating",
       "brand": "Dometic",
       "title": "Dometic RM1350 and RM1350SL Operating Instructions",
@@ -319,11 +383,59 @@
       "official": true
     },
     {
+      "id": "furrion-tankless-operate-care-video",
+      "brand": "Furrion",
+      "title": "Lippert How to Operate and Care for Your Furrion Tankless Water Heater Video",
+      "url": "https://support.lci1.com/videos/how-to-operate-and-care-for-your-furrion-tankless-water-heater",
+      "type": "manufacturer-video",
+      "official": true
+    },
+    {
+      "id": "furrion-tankless-basic-troubleshooting-video",
+      "brand": "Furrion",
+      "title": "Lippert How to Perform Basic Troubleshooting on Your Furrion Tankless Water Heater Video",
+      "url": "https://support.lci1.com/videos/how-to-perform-basic-troubleshooting-on-your-furrion-tankless-water-heater",
+      "type": "manufacturer-video",
+      "official": true
+    },
+    {
+      "id": "furrion-tankless-water-filter-video",
+      "brand": "Furrion",
+      "title": "Lippert How to Clean and Replace the Water Filter on a Furrion Tankless Water Heater Video",
+      "url": "https://support.lci1.com/videos/how-to-clean-and-replace-the-water-filter-on-a-furrion-tankless-water-heater",
+      "type": "manufacturer-video",
+      "official": true
+    },
+    {
+      "id": "furrion-tankless-descale-video",
+      "brand": "Furrion",
+      "title": "Lippert How to Descale a Furrion Tankless Water Heater Video",
+      "url": "https://support.lci1.com/videos/how-to-descale-a-furrion-tankless-water-heater",
+      "type": "manufacturer-video",
+      "official": true
+    },
+    {
+      "id": "furrion-tankless-winterization-video",
+      "brand": "Furrion",
+      "title": "Lippert Winter Use and Winterization of the Tankless Water Heater Video",
+      "url": "https://support.lci1.com/videos/winter-use-and-winterization-of-the-tankless-water-heater",
+      "type": "manufacturer-video",
+      "official": true
+    },
+    {
       "id": "lippert-ground-control",
       "brand": "Lippert",
       "title": "Lippert Ground Control LCD Troubleshooting and Service Manual",
       "url": "https://lci-support-doc.s3.amazonaws.com/manuals/leveling-and-stabilization/ground%20control/ccd-0001745.pdf",
       "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "lippert-qr216-low-flow-water-pressure",
+      "brand": "Lippert",
+      "title": "Lippert QR-216 Low Flow Water Pressure Check List",
+      "url": "https://support.lci1.com/documents/ccd-0010547",
+      "type": "manufacturer-quick-reference",
       "official": true
     },
     {
@@ -16496,7 +16608,9 @@
         "suburban-tankless-water-heater",
         "suburban-st42-st60-water-heater",
         "furrion-water-heater-user-manual",
-        "furrion-f2gwh-water-heater"
+        "furrion-f2gwh-water-heater",
+        "furrion-tankless-operate-care-video",
+        "furrion-tankless-basic-troubleshooting-video"
       ]
     },
     {
@@ -16534,7 +16648,8 @@
         "furrion-furnace-troubleshooting",
         "dometic-hydro-flame-afm-66618",
         "suburban-st42-st60-water-heater",
-        "dometic-water-heater-maintenance-support"
+        "dometic-water-heater-maintenance-support",
+        "furrion-tankless-basic-troubleshooting-video"
       ]
     },
     {
@@ -16656,7 +16771,12 @@
         "furrion-f2gwh-water-heater",
         "furrion-water-heater-freeze-damage",
         "dometic-od5001-operating-support",
-        "dometic-od5001-no-power-vent-support"
+        "dometic-od5001-no-power-vent-support",
+        "dometic-od5001-winterize-support",
+        "dometic-od5001-gas-smell-support",
+        "furrion-tankless-operate-care-video",
+        "furrion-tankless-basic-troubleshooting-video",
+        "furrion-tankless-winterization-video"
       ]
     },
     {
@@ -16836,7 +16956,105 @@
         "Call service if temperature swings continue after normal outlet restrictions are cleared."
       ],
       "sourceIds": [
-        "dometic-od5001-temperature-fluctuation-support"
+        "dometic-od5001-temperature-fluctuation-support",
+        "dometic-od5001-no-temperature-control-support",
+        "dometic-od5001-water-temperature-too-hot-support",
+        "dometic-od5001-water-temperature-too-low-low-flow-support"
+      ]
+    },
+    {
+      "id": "od5001-cold-water-bleed-excessive-trigger-flow",
+      "slug": "dometic-od5001-cold-water-bleed-excessive-trigger-flow",
+      "title": "Dometic OD-5001 low heat rise or excessive flow needed to trigger",
+      "summary": "Use this when an OD-5001 needs excessive flow to trigger, has low heat rise, or behaves like cold water is bleeding into the hot line.",
+      "safeChecklist": [
+        "Close unused hot and cold faucets or valves during troubleshooting.",
+        "Do not rely only on a showerhead pause button to stop water flow.",
+        "Close the actual shower valves after use so cold water cannot refill the hot line.",
+        "Call a qualified technician if low heat rise or excessive trigger flow continues."
+      ],
+      "sourceIds": [
+        "dometic-od5001-low-heat-rise-excessive-flow-support",
+        "dometic-od5001-navy-showers-support"
+      ]
+    },
+    {
+      "id": "od5001-summer-winter-temperature-control",
+      "slug": "dometic-od5001-summer-winter-temperature-control",
+      "title": "Dometic OD-5001 no temperature control, too-hot water, or too-low water at low flow",
+      "summary": "Use this when an OD-5001 has no normal temperature control, water is too hot, or water is too cool at lower flow rates.",
+      "safeChecklist": [
+        "Stop use if water temperature is unsafe or unpredictable.",
+        "Confirm the summer/winter setting matches incoming-water temperature using only owner-accessible controls.",
+        "Keep flow steady during testing so the heater is not chasing changing demand.",
+        "Call service if temperature control stays wrong after normal control checks."
+      ],
+      "sourceIds": [
+        "dometic-od5001-no-temperature-control-support",
+        "dometic-od5001-water-temperature-too-hot-support",
+        "dometic-od5001-water-temperature-too-low-low-flow-support"
+      ]
+    },
+    {
+      "id": "od5001-burner-ignites-temperature-too-low",
+      "slug": "dometic-od5001-burner-ignites-water-temperature-too-low",
+      "title": "Dometic OD-5001 burner ignites but water temperature is too low",
+      "summary": "Use this when the OD-5001 burner lights but hot water is still too cool during use.",
+      "safeChecklist": [
+        "Slow hot-water flow if supply water is very cold and the heater is at capacity.",
+        "Keep one fixture flowing steadily while checking temperature.",
+        "Stop use if temperature becomes unsafe or unstable.",
+        "Call service if the burner lights but the water remains too cool."
+      ],
+      "sourceIds": [
+        "dometic-od5001-burner-ignites-temperature-too-low-support",
+        "dometic-od5001-low-heat-rise-excessive-flow-support"
+      ]
+    },
+    {
+      "id": "od5001-showerhead-pause-cold-water-purge",
+      "slug": "dometic-od5001-showerhead-pause-cold-water-purge",
+      "title": "Dometic OD-5001 showerhead pause causes cold-water purge",
+      "summary": "Use this when using a showerhead pause button or navy-shower pattern causes cold water to purge through the line before hot water returns.",
+      "safeChecklist": [
+        "Run the shower continuously during troubleshooting so flow through the heater stays steady.",
+        "Avoid cycling only the showerhead pause button when checking the heater.",
+        "Close the actual hot and cold shower valves when finished.",
+        "Call service if cold-water purges continue during steady normal flow."
+      ],
+      "sourceIds": [
+        "dometic-od5001-navy-showers-support",
+        "dometic-od5001-low-heat-rise-excessive-flow-support"
+      ]
+    },
+    {
+      "id": "od5001-winterizing-freeze-risk",
+      "slug": "dometic-od5001-winterizing-freeze-risk",
+      "title": "Dometic OD-5001 winter operation and winterizing",
+      "summary": "Use this when preparing an OD-5001 for freezing storage or deciding what to record before freeze-risk service.",
+      "safeChecklist": [
+        "Turn the water heater off and shut off LP from normal RV controls before winterizing.",
+        "Follow Dometic and coach winterizing steps exactly for draining, air, or RV antifreeze.",
+        "Do not operate a frozen or suspected freeze-damaged water heater.",
+        "Call service before use if the unit froze or leaks after winter storage."
+      ],
+      "sourceIds": [
+        "dometic-od5001-winterize-support"
+      ]
+    },
+    {
+      "id": "od5001-gas-smell",
+      "slug": "dometic-od5001-gas-smell",
+      "title": "Dometic OD-5001 gas smell",
+      "summary": "Use this when gas odor is present near a Dometic OD-5001 water heater or inside the RV.",
+      "safeChecklist": [
+        "Leave the RV and keep people away from ignition sources.",
+        "Shut off LP at the source only if it is safe to do so.",
+        "Do not touch switches, radios, phones, engines, generators, or flames in the RV.",
+        "Contact the gas supplier, a qualified RV technician, or the fire department before restoring LP."
+      ],
+      "sourceIds": [
+        "dometic-od5001-gas-smell-support"
       ]
     },
     {
@@ -16964,7 +17182,12 @@
       "sourceIds": [
         "furrion-water-heater",
         "furrion-water-heater-user-manual",
-        "furrion-f2gwh-water-heater"
+        "furrion-f2gwh-water-heater",
+        "furrion-tankless-operate-care-video",
+        "furrion-tankless-basic-troubleshooting-video",
+        "furrion-tankless-water-filter-video",
+        "furrion-tankless-descale-video",
+        "lippert-qr216-low-flow-water-pressure"
       ]
     },
     {
@@ -16997,7 +17220,26 @@
       "sourceIds": [
         "furrion-f2gwh-water-heater",
         "furrion-water-heater-freeze-damage",
-        "furrion-water-heater-user-manual"
+        "furrion-water-heater-user-manual",
+        "furrion-tankless-winterization-video"
+      ]
+    },
+    {
+      "id": "furrion-tankless-filter-descale-maintenance",
+      "slug": "furrion-tankless-water-heater-filter-descale-maintenance",
+      "title": "Furrion tankless water heater filter cleaning or descaling maintenance",
+      "summary": "Use this when Furrion tankless guidance points to owner maintenance for the water filter, hard-water scale, or descaling before service.",
+      "safeChecklist": [
+        "Turn the water heater off before owner-accessible filter or descaling maintenance.",
+        "Use only the Furrion/Lippert maintenance procedure and chemicals allowed for the model.",
+        "Do not open gas, electrical, blower, valve, or controller areas.",
+        "Call Lippert/Furrion or a qualified technician if flow or temperature does not recover after allowed maintenance."
+      ],
+      "sourceIds": [
+        "furrion-tankless-operate-care-video",
+        "furrion-tankless-water-filter-video",
+        "furrion-tankless-descale-video",
+        "furrion-f2gwh-water-heater"
       ]
     }
   ],

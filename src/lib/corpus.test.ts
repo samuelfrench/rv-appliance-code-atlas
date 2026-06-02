@@ -664,4 +664,77 @@ describe("verified corpus", () => {
     expect(furrionEn?.symptomIds).not.toContain("furrion-water-heater-freeze-state");
     expect(furrionFd?.symptomIds).toContain("furrion-water-heater-freeze-state");
   });
+
+  it("adds OD-5001 low-flow temperature pages and Furrion tankless video sources without new code entries", () => {
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const newSymptomOnlySourceIds = [
+      "dometic-od5001-low-heat-rise-excessive-flow-support",
+      "dometic-od5001-burner-ignites-temperature-too-low-support",
+      "dometic-od5001-no-temperature-control-support",
+      "dometic-od5001-water-temperature-too-hot-support",
+      "dometic-od5001-water-temperature-too-low-low-flow-support",
+      "dometic-od5001-navy-showers-support",
+      "dometic-od5001-winterize-support",
+      "dometic-od5001-gas-smell-support",
+      "furrion-tankless-operate-care-video",
+      "furrion-tankless-basic-troubleshooting-video",
+      "furrion-tankless-water-filter-video",
+      "furrion-tankless-descale-video",
+      "furrion-tankless-winterization-video",
+      "lippert-qr216-low-flow-water-pressure",
+    ];
+
+    expect(corpus.sources.filter((source) => newSymptomOnlySourceIds.includes(source.id))).toHaveLength(
+      newSymptomOnlySourceIds.length,
+    );
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSymptomOnlySourceIds.includes(sourceId)))).toHaveLength(0);
+
+    expect(symptomById.get("od5001-cold-water-bleed-excessive-trigger-flow")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "dometic-od5001-low-heat-rise-excessive-flow-support",
+        "dometic-od5001-navy-showers-support",
+      ]),
+    );
+    expect(symptomById.get("od5001-summer-winter-temperature-control")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "dometic-od5001-no-temperature-control-support",
+        "dometic-od5001-water-temperature-too-hot-support",
+        "dometic-od5001-water-temperature-too-low-low-flow-support",
+      ]),
+    );
+    expect(symptomById.get("od5001-burner-ignites-temperature-too-low")?.sourceIds).toContain(
+      "dometic-od5001-burner-ignites-temperature-too-low-support",
+    );
+    expect(symptomById.get("od5001-showerhead-pause-cold-water-purge")?.sourceIds).toContain(
+      "dometic-od5001-navy-showers-support",
+    );
+    expect(symptomById.get("od5001-winterizing-freeze-risk")?.sourceIds).toContain("dometic-od5001-winterize-support");
+    expect(symptomById.get("od5001-gas-smell")?.sourceIds).toContain("dometic-od5001-gas-smell-support");
+
+    expect(symptomById.get("furrion-tankless-low-flow-temperature")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "furrion-tankless-operate-care-video",
+        "furrion-tankless-basic-troubleshooting-video",
+        "furrion-tankless-water-filter-video",
+        "furrion-tankless-descale-video",
+        "lippert-qr216-low-flow-water-pressure",
+      ]),
+    );
+    expect(
+      corpus.symptoms
+        .filter((symptom) => symptom.sourceIds.includes("lippert-qr216-low-flow-water-pressure"))
+        .map((symptom) => symptom.id),
+    ).toEqual(["furrion-tankless-low-flow-temperature"]);
+    expect(symptomById.get("furrion-water-heater-freeze-state")?.sourceIds).toContain(
+      "furrion-tankless-winterization-video",
+    );
+    expect(symptomById.get("furrion-tankless-filter-descale-maintenance")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "furrion-tankless-operate-care-video",
+        "furrion-tankless-water-filter-video",
+        "furrion-tankless-descale-video",
+        "furrion-f2gwh-water-heater",
+      ]),
+    );
+  });
 });
