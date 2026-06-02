@@ -15,17 +15,20 @@
 - [x] Add Cummins Onan QG 4000/QG inverter/QG 7000i DF official fault-code tables.
 - [x] Add Furrion furnace and rooftop HVAC symptom pages from official manuals.
 - [x] Add Coleman-Mach/Airxcel thermostat/AC symptom pages from official manuals.
+- [x] Add Cummins Onan legacy QG/KYD/KV/HGJAA fault-code and blink-code tables where official Cummins manuals expose tables.
+- [x] Add Dometic DF and Hydro Flame AFM furnace LED diagnostic tables from official Dometic manuals.
 - [ ] Add GSC property and submit sitemap after live URL is stable.
 
 ## Current State — 2026-06-02
 - Live URL: `https://rv-appliance-code-atlas.fly.dev/`
 - GitHub repo: `https://github.com/samuelfrench/rv-appliance-code-atlas`
 - Fly app: `rv-appliance-code-atlas`, one `shared-cpu-1x` 256 MB machine in `dfw`, auto-stop enabled.
-- Latest deploy: Fly release v7, image `deployment-01KT3FT621XKYX8EC35DTSMD2R`, code commit `bee5666`; Deploy run `26802283150` succeeded.
-- Corpus: `418` verified entries, `17` symptom guides, `45` official sources, `436` generated indexable pages.
-- Local verification passed: `npm run validate:corpus`, `npm run test:unit`, `npm run source:audit`, `npm run traffic:report`, and `npm run verify:runtime`. Build passes with a visible Vite warning because the main corpus bundle is `690.24 kB` minified / `99.44 kB` gzip.
-- Live verification passed: `/`, `/sitemap.xml`, `/corpus-stats.json`, `/codes/onan-qg-4000-code-32-low-cranking-speed/`, `/symptoms/rv-rooftop-air-conditioner-not-cooling/`, and `/symptoms/rv-thermostat-delay-or-no-response/` HTTP/browser checks; Playwright live smoke at mobile and desktop sizes found `0` console/page errors.
-- Next automated batch goal: add remaining Cummins Onan QG 2500/2800/KY/KYD legacy manuals plus official Atwood/Dometic legacy furnace or water-heater tables only where manufacturer-hosted sources can be verified.
+- Latest deploy: Fly release v8, image `deployment-01KT3GQ35PRB7PT2149VPBWASV`, code commit `d73998f`; Deploy run `26802912017` succeeded.
+- Corpus: `451` verified entries, `17` symptom guides, `49` official sources, `469` generated indexable pages.
+- Local verification passed: `npm run validate:corpus`, `npm run test:unit`, `npm run source:audit`, `npm run traffic:report`, and `npm run verify:runtime`. Build passes with a visible Vite warning because the main corpus bundle is `727.92 kB` minified / `102.44 kB` gzip.
+- Live verification passed: `/`, `/sitemap.xml`, `/corpus-stats.json`, `/codes/onan-qg-4000-kyd-code-32-low-cranking-speed/`, `/codes/onan-hgjaa-hgjab-code-23-low-oil-pressure-cutoff-switch/`, `/codes/dometic-df-furnace-5-flashes-low-voltage/`, and `/codes/dometic-hydro-flame-afm-2-flashes-flame-sense-fault/`; Playwright live smoke at mobile and desktop sizes found `0` console/page errors.
+- Source triage note: official Cummins `981-0129`, `981-0136`, `981-0158`, `981-0164`, `981-0132`, `981-0139`, and `981-0154` were checked and did not expose publishable fault-code tables; official Dometic water-heater/OD-5001 sources checked so far support symptoms/lockout guidance only, not code entries.
+- Next automated batch goal: add official Dometic/Atwood water-heater and OD-5001 symptom pages, and continue manufacturer-hosted table discovery without adding water-heater code entries unless an official fault/display table is verified.
 
 ## Corpus Expansion Backlog
 - [x] Add full Dometic RUC/RUA tables.
@@ -35,13 +38,14 @@
 - [x] Add full Cummins Onan QG A031/A035 fault-code tables by model family.
 - [x] Add Cummins Onan QD diesel generator display-message and fault-code tables by model family.
 - [x] Add Cummins Onan QG 4000/QG inverter/QG 7000i DF fault-code tables by model family.
-- [ ] Add remaining Cummins Onan QG 2500/2800/KY/KYD legacy manuals if official current manuals can be verified.
+- [x] Add remaining Cummins Onan QG 2500/2800/KY/KYD legacy manuals if official current manuals can be verified.
 - [x] Add full Lippert Ground Control LCD, Ground Control OneControl 5th-wheel/TT, and In-Wall Slide-out controller tables.
 - [x] Add full Furrion water heater, thermostat, rooftop AC, and Arctic refrigerator official diagnostic tables.
 - [x] Add Furrion Chill Cube thermostat and additional Furrion 10.7/10.6/15 cu ft refrigerator official display-code tables.
 - [x] Add Furrion furnace and rooftop HVAC symptom pages from official manuals.
 - [x] Add additional official Coleman-Mach/Airxcel thermostat/AC service terms and symptom pages.
-- [ ] Add official Atwood/Dometic legacy furnace fault tables only if manufacturer-hosted manuals are found.
+- [x] Add official Atwood/Dometic legacy furnace fault tables only if manufacturer-hosted manuals are found.
+- [ ] Add official Dometic/Atwood water-heater and OD-5001 symptom pages; do not add water-heater code entries unless a manufacturer-hosted fault/display table is found.
 
 ## Launch Automation
 - [ ] Add weekly traffic report artifact once GSC is configured.
