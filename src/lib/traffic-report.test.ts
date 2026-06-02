@@ -1,4 +1,5 @@
 import { execFileSync } from "node:child_process";
+import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 
 describe("traffic readiness report", () => {
@@ -9,7 +10,10 @@ describe("traffic readiness report", () => {
     const report = JSON.parse(output);
 
     expect(report.nextAutomatedBatchGoal).toBe(
-      "Research the next official Norcold refrigerator support slice, prioritizing manufacturer-hosted owner/service fault display tables for N3000, N2000, N8DCX/N10DCX, N10LX, 2118, and legacy N-series families.",
+      "Research the next official legacy Norcold N-series refrigerator slice, prioritizing manufacturer-hosted owner-manual fault tables for N41/N51, N61/N81, N62/N64/N82/N84, N1095, and older no-co/n lockout families.",
     );
+
+    expect(readFileSync("README.md", "utf8")).toContain(report.nextAutomatedBatchGoal);
+    expect(readFileSync("TODO.md", "utf8")).toContain(report.nextAutomatedBatchGoal);
   });
 });

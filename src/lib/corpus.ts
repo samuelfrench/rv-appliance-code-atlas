@@ -208,10 +208,14 @@ export function buildSearchIndex(corpus: Corpus): SearchIndexEntry[] {
 }
 
 export function lookupEntries(index: SearchIndexEntry[], query: string): CorpusEntry[] {
-  const terms = query
-    .toLowerCase()
-    .split(/[^a-z0-9]+/)
-    .filter(Boolean);
+  const terms = Array.from(
+    new Set(
+      query
+        .toLowerCase()
+        .split(/[^a-z0-9]+/)
+        .filter(Boolean),
+    ),
+  );
 
   if (!terms.length) return index.slice(0, 8);
 
@@ -224,13 +228,14 @@ export function lookupEntries(index: SearchIndexEntry[], query: string): CorpusE
       const codePhraseMatch = codeTerms.length > 1 && codeTerms.every((term) => terms.includes(term));
       const matchedTerms = terms.filter((term) => codeTerms.includes(term) || entry.searchTokens.has(term));
       const allTermsMatch = matchedTerms.length === terms.length;
+      const missingTerms = terms.length - matchedTerms.length;
       const score = terms.reduce((total, term) => {
         if (codeTerms.length === 1 && codeTerms[0] === term) return total + 8;
         if (codeTerms.includes(term)) return total + 4;
         if (entry.searchTokens.has(term)) return total + 1;
         if (entry.searchText.includes(term)) return total + 0.25;
         return total;
-      }, (codePhraseMatch ? 24 + codeTerms.length * 4 : 0) + (allTermsMatch ? 16 : 0));
+      }, (codePhraseMatch ? 24 + codeTerms.length * 4 : 0) + (allTermsMatch ? 40 : 0) + matchedTerms.length * 3 - missingTerms * 8);
       return { entry, score };
     })
     .filter((item) => item.score > 0)

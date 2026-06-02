@@ -24,6 +24,7 @@
 - [x] Add official legacy Lippert/Girard GSWH-1 and GSWH-1M owner-manual LED diagnostics plus WUD/gas/winterization symptom guides.
 - [x] Triage official symptom-only Dometic WH/OD-5001 and Furrion tankless support candidates; add owner-safe Dometic tank/OD-5001 symptom guidance plus Furrion E5/model-disambiguation sources without new code entries.
 - [x] Add official Suburban induction cooktop E0-E7 display codes plus Coleman-Mach 9630/6535/6536 heat-pump lockout displays and 9420-330 status LED diagnostics from manufacturer-hosted sources.
+- [x] Add official Norcold N3000/N2000/N8DCX-N10DCX/N10LX/2118 refrigerator display/LED diagnostics from manufacturer-hosted Thetford/Norcold sources.
 - [ ] Add GSC property and submit sitemap after live URL is stable.
 
 ## Current State — 2026-06-02
@@ -31,12 +32,12 @@
 - GitHub repo: `https://github.com/samuelfrench/rv-appliance-code-atlas`
 - Fly app: `rv-appliance-code-atlas`, one `shared-cpu-1x` 256 MB machine in `dfw`, auto-stop enabled.
 - Latest deploy: Fly release v15, image `deployment-01KT3WPY46JKD0KCJ6CQJAZS6G`, code commit `5164fcf`; Deploy run `26812798820` succeeded.
-- Corpus: `507` verified entries, `58` symptom guides, `117` official sources, `566` generated indexable pages.
-- Local verification passed: focused RED/GREEN corpus regressions for Suburban induction E0-E7, Coleman-Mach heat-pump lockout/status LED displays, and traffic-report next goal; `npm run validate:corpus`, `npm run test:unit`, `npm run source:audit`, `npm run traffic:report`, `npm run verify:runtime`, `git diff --check`, staged `git diff --cached --check`, route/search smoke, and fresh HTTP `200` checks for all 7 new official Suburban/Coleman source URLs. Build splits corpus to `dist/assets/corpus-BAy-zs5V.json` at `812.98 kB` / `58.38 kB` gzip and main JS to `210.10 kB` / `65.81 kB` gzip with no Vite chunk warning.
-- Reviews passed: Suburban, Coleman, and Norcold read-only source triage completed; spec/safety review approved official-source mappings and owner-safe boundaries; code-quality review approved after the traffic-report regression test was staged.
-- Live verification passed: `/`, `/sitemap.xml`, `/corpus-stats.json`, Suburban induction E0/E7 code routes, Suburban induction cookware symptom route, Coleman-Mach ELEC flashing, DIFF, and 9420-330 status LED code routes, plus Coleman heat-pump lockout and 9420-330 LED symptom routes. Desktop and mobile Playwright verified H1/source/safety content, homepage searches for `coleman elec flashing` and `suburban induction e7`, and `0` console/page errors.
-- Source triage note: accepted official Suburban induction operation guide for E0-E7; accepted official Coleman-Mach 9420-330 status LED table and 9630/6535/6536/heat-pump lockout manuals. Rejected/deferred Suburban gas cooktop/range/griddle docs without display-code tables, Coleman service-only/internal docs, duplicate existing Coleman thermostat docs, and Norcold candidates not yet implemented.
-- Next automated batch goal: research the next official Norcold refrigerator support slice, prioritizing manufacturer-hosted owner/service fault display tables for N3000, N2000, N8DCX/N10DCX, N10LX, 2118, and legacy N-series families.
+- Corpus: `562` verified entries, `60` symptom guides, `123` official sources, `623` generated indexable pages.
+- Local verification passed for the current Norcold batch: focused RED/GREEN corpus regressions for N3000/N2000/N8DCX-N10DCX/N10LX/2118, N2000 search-ranking regression, traffic-report docs alignment regression, `npm run validate:corpus`, `npm run test:unit`, `npm run source:audit`, `npm run traffic:report`, `npm run verify:runtime`, `git diff --check`, built-app route/search smoke, and fresh HTTP `200` checks for all 6 new official Norcold/Thetford source URLs. Build splits corpus to `dist/assets/corpus-BYekCf79.json` at `896.89 kB` / `63.60 kB` gzip and main JS to `210.10 kB` / `65.81 kB` gzip with no Vite chunk warning.
+- Reviews passed: N3000/N2000 and N8DCX-N10DCX/N10LX/2118 read-only source triage completed; spec/safety review approved after tightening N8DCX/N10DCX model scope, N10LX `oP LI` wording, and N3000 code 6 wording; code-quality review found/fixed N2000 LED search ranking and README/TODO next-goal alignment.
+- Live verification status: current public Fly deployment is still the prior Suburban/Coleman batch until the Norcold code commit is pushed and GitHub Actions deploys it. After deploy, verify `/corpus-stats.json`, `/sitemap.xml`, representative new Norcold code/symptom routes, homepage searches, and browser console state.
+- Source triage note: accepted official Thetford/Norcold N3000 troubleshooting PDF, N3000 North America owner/install manual, N2000 owner manual, N8DCX/N10DCX service manual, N10LX/NA10LX owner manual, and 2118 owner manual. Rejected/deferred forums/mirrors, N2000 service-manual board-level procedures for owner guidance, and N3000/N2000 flowchart repair steps beyond service-only boundaries.
+- Next automated batch goal: Research the next official legacy Norcold N-series refrigerator slice, prioritizing manufacturer-hosted owner-manual fault tables for N41/N51, N61/N81, N62/N64/N82/N84, N1095, and older no-co/n lockout families.
 
 ## Corpus Expansion Backlog
 - [x] Add full Dometic RUC/RUA tables.
@@ -60,7 +61,8 @@
 - [x] Research official legacy Girard GSWH-1/GSWH-1M owner manuals and remaining manufacturer-hosted water-heater support sources; keep GSWH-1, GSWH-2, Furrion, Suburban, and Dometic model families separate and add code entries only from official fault/display tables.
 - [x] Triage official symptom-only Dometic WH/OD-5001 and Furrion tankless support candidates from the latest source pass; add only owner-safe symptom guidance and model-disambiguation sources unless a new official fault/display table is verified.
 - [x] Research and add official Suburban induction cooktop plus Coleman-Mach heat-pump thermostat/status LED tables with owner-safe boundaries.
-- [ ] Research the next official Norcold refrigerator support slice, prioritizing manufacturer-hosted owner/service fault display tables for N3000, N2000, N8DCX/N10DCX, N10LX, 2118, and legacy N-series families.
+- [x] Research and add official Norcold N3000/N2000/N8DCX-N10DCX/N10LX/2118 refrigerator display/LED diagnostics with owner-safe boundaries.
+- [ ] Research the next official legacy Norcold N-series refrigerator slice, prioritizing manufacturer-hosted owner-manual fault tables for N41/N51, N61/N81, N62/N64/N82/N84, N1095, and older no-co/n lockout families.
 
 ## Launch Automation
 - [ ] Add weekly traffic report artifact once GSC is configured.

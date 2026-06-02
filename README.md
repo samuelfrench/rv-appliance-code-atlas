@@ -36,10 +36,10 @@ npm run traffic:monitor
 ```
 
 Current corpus:
-- `507` verified entries
-- `58` symptom guides
-- `117` official sources
-- `566` generated indexable pages
+- `562` verified entries
+- `60` symptom guides
+- `123` official sources
+- `623` generated indexable pages
 
 Next automated batch goal:
-- Research the next official Norcold refrigerator support slice, prioritizing manufacturer-hosted owner/service fault display tables for N3000, N2000, N8DCX/N10DCX, N10LX, 2118, and legacy N-series families.
+- Research the next official legacy Norcold N-series refrigerator slice, prioritizing manufacturer-hosted owner-manual fault tables for N41/N51, N61/N81, N62/N64/N82/N84, N1095, and older no-co/n lockout families.

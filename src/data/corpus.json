@@ -941,6 +941,54 @@
       "url": "https://library.suburbanrv.com/wp-content/uploads/2023/04/206250_Suburban_Induction_Cooktop_RevNew_03-01-2023.pdf",
       "type": "manufacturer-manual",
       "official": true
+    },
+    {
+      "id": "norcold-n3000-troubleshooting",
+      "brand": "Norcold",
+      "title": "Thetford N3000 Series Troubleshooting Error Codes",
+      "url": "https://www.thetford.com/app/uploads/2024/09/TS_absorption-refrigerator_N3000_EN.pdf",
+      "type": "manufacturer-troubleshooting",
+      "official": true
+    },
+    {
+      "id": "norcold-n2000-owner",
+      "brand": "Norcold",
+      "title": "Norcold N2000 Series Refrigerator User Manual",
+      "url": "https://www.thetford.com/app/uploads/2024/09/N2000_US_UM_04022025.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "norcold-n8dcx-n10dcx-service",
+      "brand": "Norcold",
+      "title": "Norcold N8DCX and N10DCX Service Manual",
+      "url": "https://www.thetford.com/app/uploads/2024/09/640083D_SM_N8DCXN10DCX-ENG.pdf",
+      "type": "service-manual",
+      "official": true
+    },
+    {
+      "id": "norcold-n10lx-owner",
+      "brand": "Norcold",
+      "title": "Norcold N10LX and NA10LX Owner's Manual",
+      "url": "https://www.thetford.com/app/uploads/2024/10/OM_N10LX_NA10LX_639307D_20210628.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "norcold-n3000-na-owner",
+      "brand": "Norcold",
+      "title": "Norcold N3000 North America Installation and Owner Manual",
+      "url": "https://www.thetford.com/app/uploads/2024/10/IM_OM_BVAN_635607N_20220224.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "norcold-2118-owner",
+      "brand": "Norcold",
+      "title": "Norcold 2118 PolarMax Owner's Manual",
+      "url": "https://www.thetford.com/app/uploads/2024/10/OM_2118_636900B_20210902.pdf",
+      "type": "manufacturer-manual",
+      "official": true
     }
   ],
   "entries": [
@@ -18360,6 +18408,2018 @@
       "symptomIds": [
         "suburban-induction-internal-error"
       ]
+    },
+    {
+      "id": "norcold-n3000-error-1",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N3000 series",
+        "N3080",
+        "N3090",
+        "N3100",
+        "N3104",
+        "N3108",
+        "N3112",
+        "N3115",
+        "N3145",
+        "N3150",
+        "N3175"
+      ],
+      "code": "1",
+      "slug": "norcold-n3000-error-1-flame-sensed-when-off",
+      "plainMeaning": "The official Thetford N3000 troubleshooting sheet lists error code 1 as: Senses flame when gas should be off.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Flame-sense, LP gas train, and refrigerator control diagnosis should be handled by a qualified Thetford/Norcold service professional."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n3000-troubleshooting"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "refrigerator-lp-ignition",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N3000 series model label",
+        "photo of service-mode LED/LCD code",
+        "power source selected"
+      ]
+    },
+    {
+      "id": "norcold-n3000-error-2",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N3000 series",
+        "N3080",
+        "N3090",
+        "N3100",
+        "N3104",
+        "N3108",
+        "N3112",
+        "N3115",
+        "N3145",
+        "N3150",
+        "N3175"
+      ],
+      "code": "2",
+      "slug": "norcold-n3000-error-2-burner-control-module-feedback",
+      "plainMeaning": "The official Thetford N3000 troubleshooting sheet lists error code 2 as: Burner control module returns incorrect feedback.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Burner control module and power board diagnosis should be handled by a qualified Thetford/Norcold service professional."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n3000-troubleshooting"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N3000 series model label",
+        "photo of service-mode LED/LCD code",
+        "power source selected"
+      ]
+    },
+    {
+      "id": "norcold-n3000-error-3",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N3000 series",
+        "N3080",
+        "N3090",
+        "N3100",
+        "N3104",
+        "N3108",
+        "N3112",
+        "N3115",
+        "N3145",
+        "N3150",
+        "N3175"
+      ],
+      "code": "3",
+      "slug": "norcold-n3000-error-3-gas-lockout-flame-fails",
+      "plainMeaning": "The official Thetford N3000 troubleshooting sheet lists error code 3 as: Gas lockout because flame fails to ignite within 30 seconds.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "LP supply, electrode, burner, pressure, and control diagnosis should be handled by a qualified Thetford/Norcold service professional."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n3000-troubleshooting"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "refrigerator-lp-ignition",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N3000 series model label",
+        "photo of service-mode LED/LCD code",
+        "power source selected"
+      ]
+    },
+    {
+      "id": "norcold-n3000-error-4",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N3000 series",
+        "N3080",
+        "N3090",
+        "N3100",
+        "N3104",
+        "N3108",
+        "N3112",
+        "N3115",
+        "N3145",
+        "N3150",
+        "N3175"
+      ],
+      "code": "4",
+      "slug": "norcold-n3000-error-4-dc-heater-off",
+      "plainMeaning": "The official Thetford N3000 troubleshooting sheet lists error code 4 as: DC heater is off when it should be on.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "DC heater, power board, and refrigerator electrical diagnosis should be handled by qualified service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n3000-troubleshooting"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N3000 series model label",
+        "photo of service-mode LED/LCD code",
+        "power source selected"
+      ]
+    },
+    {
+      "id": "norcold-n3000-error-5",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N3000 series",
+        "N3080",
+        "N3090",
+        "N3100",
+        "N3104",
+        "N3108",
+        "N3112",
+        "N3115",
+        "N3145",
+        "N3150",
+        "N3175"
+      ],
+      "code": "5",
+      "slug": "norcold-n3000-error-5-dc-heater-on",
+      "plainMeaning": "The official Thetford N3000 troubleshooting sheet lists error code 5 as: DC heater is on when it should be off.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "DC heater, power board, and refrigerator electrical diagnosis should be handled by qualified service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n3000-troubleshooting"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N3000 series model label",
+        "photo of service-mode LED/LCD code",
+        "power source selected"
+      ]
+    },
+    {
+      "id": "norcold-n3000-error-6",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N3000 series",
+        "N3080",
+        "N3090",
+        "N3100",
+        "N3104",
+        "N3108",
+        "N3112",
+        "N3115",
+        "N3145",
+        "N3150",
+        "N3175"
+      ],
+      "code": "6",
+      "slug": "norcold-n3000-error-6-dc-voltage-out-of-range",
+      "plainMeaning": "The official Thetford N3000 troubleshooting sheet lists error code 6 as: DC high voltage is out of range.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "DC supply, alternator/solar charging, power board, and load-carrying diagnosis should be handled by qualified RV electrical or Thetford/Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n3000-troubleshooting"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N3000 series model label",
+        "photo of service-mode LED/LCD code",
+        "power source selected"
+      ]
+    },
+    {
+      "id": "norcold-n3000-error-7",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N3000 series",
+        "N3080",
+        "N3090",
+        "N3100",
+        "N3104",
+        "N3108",
+        "N3112",
+        "N3115",
+        "N3145",
+        "N3150",
+        "N3175"
+      ],
+      "code": "7",
+      "slug": "norcold-n3000-error-7-d-plus-engine-run-signal-missing",
+      "plainMeaning": "The official Thetford N3000 troubleshooting sheet lists error code 7 as: No engine-run signal is present while control is in Manual DC mode.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "D-plus input, vehicle charging, and refrigerator control diagnosis should be handled by qualified RV electrical or Thetford/Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n3000-troubleshooting"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N3000 series model label",
+        "photo of service-mode LED/LCD code",
+        "power source selected"
+      ]
+    },
+    {
+      "id": "norcold-n3000-error-8",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N3000 series",
+        "N3080",
+        "N3090",
+        "N3100",
+        "N3104",
+        "N3108",
+        "N3112",
+        "N3115",
+        "N3145",
+        "N3150",
+        "N3175"
+      ],
+      "code": "8",
+      "slug": "norcold-n3000-error-8-ac-heater-low-current",
+      "plainMeaning": "The official Thetford N3000 troubleshooting sheet lists error code 8 as: AC heater current is measured at 75 percent below nominal current.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "AC heater, fuse, power board, and refrigerator electrical diagnosis should be handled by qualified service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n3000-troubleshooting"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N3000 series model label",
+        "photo of service-mode LED/LCD code",
+        "power source selected"
+      ]
+    },
+    {
+      "id": "norcold-n3000-error-9",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N3000 series",
+        "N3080",
+        "N3090",
+        "N3100",
+        "N3104",
+        "N3108",
+        "N3112",
+        "N3115",
+        "N3145",
+        "N3150",
+        "N3175"
+      ],
+      "code": "9",
+      "slug": "norcold-n3000-error-9-ac-heater-on",
+      "plainMeaning": "The official Thetford N3000 troubleshooting sheet lists error code 9 as: AC heater is on when it should be off.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "AC heater and power board diagnosis should be handled by qualified service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n3000-troubleshooting"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N3000 series model label",
+        "photo of service-mode LED/LCD code",
+        "power source selected"
+      ]
+    },
+    {
+      "id": "norcold-n3000-error-10",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N3000 series",
+        "N3080",
+        "N3090",
+        "N3100",
+        "N3104",
+        "N3108",
+        "N3112",
+        "N3115",
+        "N3145",
+        "N3150",
+        "N3175"
+      ],
+      "code": "10",
+      "slug": "norcold-n3000-error-10-ac-mains-out-of-range",
+      "plainMeaning": "The official Thetford N3000 troubleshooting sheet lists error code 10 as: AC mains supply is out of range.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "AC supply, power board, and refrigerator electrical diagnosis should be handled by qualified RV electrical or Thetford/Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n3000-troubleshooting"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N3000 series model label",
+        "photo of service-mode LED/LCD code",
+        "power source selected"
+      ]
+    },
+    {
+      "id": "norcold-n3000-error-11",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N3000 series",
+        "N3080",
+        "N3090",
+        "N3100",
+        "N3104",
+        "N3108",
+        "N3112",
+        "N3115",
+        "N3145",
+        "N3150",
+        "N3175"
+      ],
+      "code": "11",
+      "slug": "norcold-n3000-error-11-no-energy-source",
+      "plainMeaning": "The official Thetford N3000 troubleshooting sheet lists error code 11 as: No energy source is available while control is in AUTO mode.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Energy-source selection, AC/DC/LP supply, and refrigerator control diagnosis should be handled by qualified service if normal source selection does not clear it."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n3000-troubleshooting"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N3000 series model label",
+        "photo of service-mode LED/LCD code",
+        "power source selected"
+      ]
+    },
+    {
+      "id": "norcold-n3000-error-12",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N3000 series",
+        "N3080",
+        "N3090",
+        "N3100",
+        "N3104",
+        "N3108",
+        "N3112",
+        "N3115",
+        "N3145",
+        "N3150",
+        "N3175"
+      ],
+      "code": "12",
+      "slug": "norcold-n3000-error-12-display-power-board-communication",
+      "plainMeaning": "The official Thetford N3000 troubleshooting sheet lists error code 12 as: Display board and power board lose communication with each other.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Display board, power board, harness, and communication diagnosis should be handled by qualified Thetford/Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n3000-troubleshooting"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N3000 series model label",
+        "photo of service-mode LED/LCD code",
+        "power source selected"
+      ]
+    },
+    {
+      "id": "norcold-n3000-error-13",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N3000 series",
+        "N3080",
+        "N3090",
+        "N3100",
+        "N3104",
+        "N3108",
+        "N3112",
+        "N3115",
+        "N3145",
+        "N3150",
+        "N3175"
+      ],
+      "code": "13",
+      "slug": "norcold-n3000-error-13-thermistor-backup-operation",
+      "plainMeaning": "The official Thetford N3000 troubleshooting sheet lists error code 13 as: Thermistor fails and the control automatically switches to Backup Operation System.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Thermistor, harness, and power board diagnosis should be handled by qualified Thetford/Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n3000-troubleshooting"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N3000 series model label",
+        "photo of service-mode LED/LCD code",
+        "power source selected"
+      ]
+    },
+    {
+      "id": "norcold-n2000-red-led-on-cabinet-fan",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N2000 series",
+        "N2090",
+        "N2152",
+        "N2160",
+        "N2175"
+      ],
+      "code": "Red LED on",
+      "slug": "norcold-n2000-red-led-on-cabinet-fan",
+      "plainMeaning": "The official N2000 user manual lists Red LED on as: Cabinet Fan Error.",
+      "ownerSafeActions": [
+        "Record the exact display or LED state.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Cabinet fan, wiring, and refrigerator control diagnosis should be handled by qualified service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n2000-owner"
+      ],
+      "symptomIds": [
+        "norcold-dc-compressor-led-diagnostics",
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or LED state",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n2000-orange-led-on-condenser-fan",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N2000 series",
+        "N2090",
+        "N2152",
+        "N2160",
+        "N2175"
+      ],
+      "code": "Orange LED on",
+      "slug": "norcold-n2000-orange-led-on-condenser-fan",
+      "plainMeaning": "The official N2000 user manual lists Orange LED on as: Condenser Fan Error.",
+      "ownerSafeActions": [
+        "Record the exact display or LED state.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Condenser fan, wiring, and refrigerator control diagnosis should be handled by qualified service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n2000-owner"
+      ],
+      "symptomIds": [
+        "norcold-dc-compressor-led-diagnostics",
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or LED state",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n2000-red-led-blinking-2-way-valve",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N2000 series",
+        "N2090",
+        "N2152",
+        "N2160",
+        "N2175"
+      ],
+      "code": "Red LED blinking - 2-way valve error",
+      "slug": "norcold-n2000-red-led-blinking-2-way-valve",
+      "plainMeaning": "The official N2000 user manual lists Red LED blinking - 2-way valve error as: 2-way valve Error.",
+      "ownerSafeActions": [
+        "Record the exact display or LED state.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Two-way valve, compressor system, wiring, and refrigerator control diagnosis should be handled by qualified service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n2000-owner"
+      ],
+      "symptomIds": [
+        "norcold-dc-compressor-led-diagnostics",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or LED state",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n2000-red-led-blinking-cabinet-thermistor",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N2000 series",
+        "N2090",
+        "N2152",
+        "N2160",
+        "N2175"
+      ],
+      "code": "Red LED blinking - cabinet thermistor error",
+      "slug": "norcold-n2000-red-led-blinking-cabinet-thermistor",
+      "plainMeaning": "The official N2000 user manual lists Red LED blinking - cabinet thermistor error as: Cabinet Thermistor Error.",
+      "ownerSafeActions": [
+        "Record the exact display or LED state.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Cabinet thermistor, harness, and refrigerator control diagnosis should be handled by qualified service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n2000-owner"
+      ],
+      "symptomIds": [
+        "norcold-dc-compressor-led-diagnostics",
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or LED state",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n2000-red-led-blinking-freezer-thermistor",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N2000 series",
+        "N2090",
+        "N2152",
+        "N2160",
+        "N2175"
+      ],
+      "code": "Red LED blinking - freezer thermistor error",
+      "slug": "norcold-n2000-red-led-blinking-freezer-thermistor",
+      "plainMeaning": "The official N2000 user manual lists Red LED blinking - freezer thermistor error as: Freezer Thermistor Error.",
+      "ownerSafeActions": [
+        "Record the exact display or LED state.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Freezer thermistor, harness, and refrigerator control diagnosis should be handled by qualified service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n2000-owner"
+      ],
+      "symptomIds": [
+        "norcold-dc-compressor-led-diagnostics",
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or LED state",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n2000-red-led-blinking-ambient-thermistor",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N2000 series",
+        "N2090",
+        "N2152",
+        "N2160",
+        "N2175"
+      ],
+      "code": "Red LED blinking - ambient thermistor error",
+      "slug": "norcold-n2000-red-led-blinking-ambient-thermistor",
+      "plainMeaning": "The official N2000 user manual lists Red LED blinking - ambient thermistor error as: Ambient Thermistor Error.",
+      "ownerSafeActions": [
+        "Record the exact display or LED state.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Ambient thermistor, harness, and refrigerator control diagnosis should be handled by qualified service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n2000-owner"
+      ],
+      "symptomIds": [
+        "norcold-dc-compressor-led-diagnostics",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or LED state",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n2000-red-led-blinking-input-voltage",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N2000 series",
+        "N2090",
+        "N2152",
+        "N2160",
+        "N2175"
+      ],
+      "code": "Red LED blinking - input voltage out of range",
+      "slug": "norcold-n2000-red-led-blinking-input-voltage",
+      "plainMeaning": "The official N2000 user manual lists Red LED blinking - input voltage out of range as: Input Voltage out of range.",
+      "ownerSafeActions": [
+        "Record the exact display or LED state.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "DC input voltage, battery charging, wiring, and refrigerator control diagnosis should be handled by qualified RV electrical or refrigerator service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n2000-owner"
+      ],
+      "symptomIds": [
+        "norcold-dc-compressor-led-diagnostics",
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or LED state",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n2000-red-led-blinking-thermal-cutout-compressor",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N2000 series",
+        "N2090",
+        "N2152",
+        "N2160",
+        "N2175"
+      ],
+      "code": "Red LED blinking - thermal cut-out compressor",
+      "slug": "norcold-n2000-red-led-blinking-thermal-cutout-compressor",
+      "plainMeaning": "The official N2000 user manual lists Red LED blinking - thermal cut-out compressor as: Thermal cut-out compressor.",
+      "ownerSafeActions": [
+        "Record the exact display or LED state.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Compressor thermal cut-out, ventilation, and refrigerator control diagnosis should be handled by qualified service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n2000-owner"
+      ],
+      "symptomIds": [
+        "norcold-dc-compressor-led-diagnostics",
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or LED state",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n8dcx-n10dcx-e1",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N8DCX",
+        "N10DCX"
+      ],
+      "code": "E1",
+      "slug": "norcold-n8dcx-n10dcx-e1",
+      "plainMeaning": "The Norcold N8DCX/N10DCX service manual lists E1 as: The thermistor in the fresh food compartment is not cycling properly.",
+      "ownerSafeActions": [
+        "Record the exact display or LED state.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Fresh-food thermistor, harness, and user-interface control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n8dcx-n10dcx-service"
+      ],
+      "symptomIds": [
+        "norcold-dc-compressor-led-diagnostics",
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or LED state",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n8dcx-n10dcx-e2",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N8DCX",
+        "N10DCX"
+      ],
+      "code": "E2",
+      "slug": "norcold-n8dcx-n10dcx-e2",
+      "plainMeaning": "The Norcold N8DCX/N10DCX service manual lists E2 as: The thermistor in the freezer compartment is not cycling properly.",
+      "ownerSafeActions": [
+        "Record the exact display or LED state.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Freezer thermistor, harness, and user-interface control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n8dcx-n10dcx-service"
+      ],
+      "symptomIds": [
+        "norcold-dc-compressor-led-diagnostics",
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or LED state",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n8dcx-n10dcx-e3",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N8DCX",
+        "N10DCX"
+      ],
+      "code": "E3",
+      "slug": "norcold-n8dcx-n10dcx-e3",
+      "plainMeaning": "The Norcold N8DCX/N10DCX service manual lists E3 as: The voltage is outside the cut-out setting.",
+      "ownerSafeActions": [
+        "Record the exact display or LED state.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "DC input voltage, cable sizing, wiring, and user-interface control diagnosis should be handled by qualified Norcold or RV electrical service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n8dcx-n10dcx-service"
+      ],
+      "symptomIds": [
+        "norcold-dc-compressor-led-diagnostics",
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or LED state",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n8dcx-n10dcx-e4",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N8DCX",
+        "N10DCX"
+      ],
+      "code": "E4",
+      "slug": "norcold-n8dcx-n10dcx-e4",
+      "plainMeaning": "The Norcold N8DCX/N10DCX service manual lists E4 as: The fresh food compartment door has been open for more than two minutes.",
+      "ownerSafeActions": [
+        "Record the exact display or LED state.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Door switch, harness, and user-interface control diagnosis beyond closing the door should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n8dcx-n10dcx-service"
+      ],
+      "symptomIds": [
+        "norcold-dc-compressor-led-diagnostics",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or LED state",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n8dcx-n10dcx-power-module-flash-1",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N8DCX",
+        "N10DCX"
+      ],
+      "code": "power module flash 1",
+      "slug": "norcold-n8dcx-n10dcx-power-module-flash-1",
+      "plainMeaning": "The Norcold N8DCX/N10DCX service manual lists power module flash 1 as: Compressor Power Module Battery Protection Cut-Out; voltage is outside the compressor cut-out setting of 9.8-17.0 VDC.",
+      "ownerSafeActions": [
+        "Record the exact display or LED state.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Compressor power module voltage testing and DC wiring diagnosis should be handled by qualified Norcold or RV electrical service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n8dcx-n10dcx-service"
+      ],
+      "symptomIds": [
+        "norcold-dc-compressor-led-diagnostics",
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or LED state",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n8dcx-n10dcx-power-module-flash-2",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N8DCX",
+        "N10DCX"
+      ],
+      "code": "power module flash 2",
+      "slug": "norcold-n8dcx-n10dcx-power-module-flash-2",
+      "plainMeaning": "The Norcold N8DCX/N10DCX service manual lists power module flash 2 as: Fan Over Current Cut-Out; the load is more than 1.0 amp sensed on terminal F-.",
+      "ownerSafeActions": [
+        "Record the exact display or LED state.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Fan circuit and compressor power-module diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n8dcx-n10dcx-service"
+      ],
+      "symptomIds": [
+        "norcold-dc-compressor-led-diagnostics",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or LED state",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n8dcx-n10dcx-power-module-flash-3",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N8DCX",
+        "N10DCX"
+      ],
+      "code": "power module flash 3",
+      "slug": "norcold-n8dcx-n10dcx-power-module-flash-3",
+      "plainMeaning": "The Norcold N8DCX/N10DCX service manual lists power module flash 3 as: Compressor Motor Start Error; the rotor is blocked or differential pressure in the refrigeration system is too high.",
+      "ownerSafeActions": [
+        "Record the exact display or LED state.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Compressor and sealed-system diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n8dcx-n10dcx-service"
+      ],
+      "symptomIds": [
+        "norcold-dc-compressor-led-diagnostics",
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or LED state",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n8dcx-n10dcx-power-module-flash-4",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N8DCX",
+        "N10DCX"
+      ],
+      "code": "power module flash 4",
+      "slug": "norcold-n8dcx-n10dcx-power-module-flash-4",
+      "plainMeaning": "The Norcold N8DCX/N10DCX service manual lists power module flash 4 as: Minimum Compressor Motor Speed Error; the motor cannot maintain minimum speed.",
+      "ownerSafeActions": [
+        "Record the exact display or LED state.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Compressor speed and power-module diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n8dcx-n10dcx-service"
+      ],
+      "symptomIds": [
+        "norcold-dc-compressor-led-diagnostics",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or LED state",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n8dcx-n10dcx-power-module-flash-5",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N8DCX",
+        "N10DCX"
+      ],
+      "code": "power module flash 5",
+      "slug": "norcold-n8dcx-n10dcx-power-module-flash-5",
+      "plainMeaning": "The Norcold N8DCX/N10DCX service manual lists power module flash 5 as: Thermal Cut-Out of Compressor Power Module; the compressor power module is running too hot.",
+      "ownerSafeActions": [
+        "Record the exact display or LED state.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Thermal, ventilation, and compressor power-module diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n8dcx-n10dcx-service"
+      ],
+      "symptomIds": [
+        "norcold-dc-compressor-led-diagnostics",
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or LED state",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n8dcx-n10dcx-power-module-flash-6",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N8DCX",
+        "N10DCX"
+      ],
+      "code": "power module flash 6",
+      "slug": "norcold-n8dcx-n10dcx-power-module-flash-6",
+      "plainMeaning": "The Norcold N8DCX/N10DCX service manual lists power module flash 6 as: Compressor Power Module Hardware Failure.",
+      "ownerSafeActions": [
+        "Record the exact display or LED state.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Compressor power-module hardware diagnosis and replacement should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not bypass compressor controls, fan circuits, thermistors, fuse protection, or DC wiring. Shut off the refrigerator and arrange qualified Norcold service for unresolved diagnostic faults.",
+      "sourceIds": [
+        "norcold-n8dcx-n10dcx-service"
+      ],
+      "symptomIds": [
+        "norcold-dc-compressor-led-diagnostics",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or LED state",
+        "battery monitor reading if visible"
+      ]
+    },
+    {
+      "id": "norcold-n10lx-no-fl-lp-ignition-failure",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N10LX",
+        "NA10LX",
+        "N10LXIM",
+        "NA10LXIM"
+      ],
+      "code": "no FL",
+      "slug": "norcold-n10lx-no-fl-lp-ignition-failure",
+      "plainMeaning": "The Norcold N10LX/NA10LX owner manual lists no FL as: The burner did not ignite or re-ignite.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "LP pressure, refrigerator LP shutoff, burner, ignition, and gas-system diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n10lx-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "refrigerator-lp-ignition",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-n10lx-no-ac-ac-unavailable",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N10LX",
+        "NA10LX",
+        "N10LXIM",
+        "NA10LXIM"
+      ],
+      "code": "no AC",
+      "slug": "norcold-n10lx-no-ac-ac-unavailable",
+      "plainMeaning": "The Norcold N10LX/NA10LX owner manual lists no AC as: AC voltage is not available to the refrigerator.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "AC receptacle, circuit protection, generator, and refrigerator electrical diagnosis should be handled by qualified RV electrical or Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n10lx-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-n10lx-ac-he-ac-heater",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N10LX",
+        "NA10LX",
+        "N10LXIM",
+        "NA10LXIM"
+      ],
+      "code": "AC HE",
+      "slug": "norcold-n10lx-ac-he-ac-heater",
+      "plainMeaning": "The Norcold N10LX/NA10LX owner manual lists AC HE as: This fault indicates a problem relating to the AC heater.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "AC heater and refrigerator control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n10lx-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-n10lx-ac-re-control-fault",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N10LX",
+        "NA10LX",
+        "N10LXIM",
+        "NA10LXIM"
+      ],
+      "code": "AC rE",
+      "slug": "norcold-n10lx-ac-re-control-fault",
+      "plainMeaning": "The Norcold N10LX/NA10LX owner manual lists AC rE as: This fault is within the refrigerator controls.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator-control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n10lx-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-n10lx-lo-dc-low-dc-voltage",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N10LX",
+        "NA10LX",
+        "N10LXIM",
+        "NA10LXIM"
+      ],
+      "code": "Lo dc",
+      "slug": "norcold-n10lx-lo-dc-low-dc-voltage",
+      "plainMeaning": "The Norcold N10LX/NA10LX owner manual lists Lo dc as: DC input voltage to the refrigerator is too low.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Battery charging, converter, DC supply, and refrigerator electrical diagnosis should be handled by qualified RV electrical or Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n10lx-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-n10lx-lo-dc-audible-low-dc-voltage",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N10LX",
+        "NA10LX",
+        "N10LXIM",
+        "NA10LXIM"
+      ],
+      "code": "Lo dC",
+      "slug": "norcold-n10lx-lo-dc-audible-low-dc-voltage",
+      "plainMeaning": "The Norcold N10LX/NA10LX owner manual lists Lo dC as: DC input voltage to the refrigerator is too low with an audible alarm.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Battery charging, converter, DC supply, and refrigerator electrical diagnosis should be handled by qualified RV electrical or Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n10lx-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-n10lx-hi-dc-high-dc-voltage",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N10LX",
+        "NA10LX",
+        "N10LXIM",
+        "NA10LXIM"
+      ],
+      "code": "HI dc",
+      "slug": "norcold-n10lx-hi-dc-high-dc-voltage",
+      "plainMeaning": "The Norcold N10LX/NA10LX owner manual lists HI dc as: DC input voltage to the refrigerator is too high.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Battery charging, converter, DC supply, and refrigerator electrical diagnosis should be handled by qualified RV electrical or Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n10lx-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-n10lx-no-dt-control-communication",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N10LX",
+        "NA10LX",
+        "N10LXIM",
+        "NA10LXIM"
+      ],
+      "code": "no dt",
+      "slug": "norcold-n10lx-no-dt-control-communication",
+      "plainMeaning": "The Norcold N10LX/NA10LX owner manual lists no dt as: This fault indicates a loss of communication between the refrigerator controls.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Control communication and refrigerator electronics diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n10lx-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-n10lx-sr-electronic-controls",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N10LX",
+        "NA10LX",
+        "N10LXIM",
+        "NA10LXIM"
+      ],
+      "code": "Sr",
+      "slug": "norcold-n10lx-sr-electronic-controls",
+      "plainMeaning": "The Norcold N10LX/NA10LX owner manual lists Sr as: This fault is within the refrigerator electronic controls.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator electronic-control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n10lx-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-n10lx-op-li-electronic-controls",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N10LX",
+        "NA10LX",
+        "N10LXIM",
+        "NA10LXIM"
+      ],
+      "code": "oP LI",
+      "slug": "norcold-n10lx-op-li-electronic-controls",
+      "plainMeaning": "The Norcold N10LX/NA10LX owner manual lists oP LI as: This fault is within the refrigerator electronic controls.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator electronic-control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n10lx-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-n10lx-fl-flame-present",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N10LX",
+        "NA10LX",
+        "N10LXIM",
+        "NA10LXIM"
+      ],
+      "code": "FL --",
+      "slug": "norcold-n10lx-fl-flame-present",
+      "plainMeaning": "The Norcold N10LX/NA10LX owner manual lists FL -- as: A flame is sensed at the burner when there should be none present.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Flame-sense, LP, burner, and electronic-control diagnosis belongs to qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n10lx-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "refrigerator-lp-ignition",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-n10lx-temperature-setting-flashes",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N10LX",
+        "NA10LX",
+        "N10LXIM",
+        "NA10LXIM"
+      ],
+      "code": "temperature setting flashes",
+      "slug": "norcold-n10lx-temperature-setting-flashes",
+      "plainMeaning": "The Norcold N10LX/NA10LX owner manual lists temperature setting flashes as: The thermistor has been sensed as inoperable, so temperature is controlled via backup operating system.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Thermistor and control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n10lx-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-n10lx-blank-display",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N10LX",
+        "NA10LX",
+        "N10LXIM",
+        "NA10LXIM"
+      ],
+      "code": "blank display",
+      "slug": "norcold-n10lx-blank-display",
+      "plainMeaning": "The Norcold N10LX/NA10LX owner manual lists blank display as: The refrigerator is off or will not turn on.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Persistent no-display power, converter, wiring, or control faults should be handled by qualified RV electrical or Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n10lx-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-2118-dr-door-open",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "2118 PolarMax",
+        "2118"
+      ],
+      "code": "dr",
+      "slug": "norcold-2118-dr-door-open",
+      "plainMeaning": "The Norcold 2118 owner manual lists dr as: The door was open for more than two minutes.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Door switch, latch, harness, and control diagnosis beyond closing the door should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-2118-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-2118-no-fl-lp-ignition-failure",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "2118 PolarMax",
+        "2118"
+      ],
+      "code": "no FL",
+      "slug": "norcold-2118-no-fl-lp-ignition-failure",
+      "plainMeaning": "The Norcold 2118 owner manual lists no FL as: The burner did not ignite or re-ignite.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "LP pressure, refrigerator LP shutoff, burner, ignition, and gas-system diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-2118-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "refrigerator-lp-ignition",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-2118-no-ac-ac-unavailable",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "2118 PolarMax",
+        "2118"
+      ],
+      "code": "no AC",
+      "slug": "norcold-2118-no-ac-ac-unavailable",
+      "plainMeaning": "The Norcold 2118 owner manual lists no AC as: AC voltage is not available to the refrigerator.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "AC receptacle, circuit protection, generator, and refrigerator electrical diagnosis should be handled by qualified RV electrical or Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-2118-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-2118-lo-dc-low-dc-voltage",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "2118 PolarMax",
+        "2118"
+      ],
+      "code": "Lo dc",
+      "slug": "norcold-2118-lo-dc-low-dc-voltage",
+      "plainMeaning": "The Norcold 2118 owner manual lists Lo dc as: DC voltage to the refrigerator is low.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Battery charging, converter, DC supply, and refrigerator electrical diagnosis should be handled by qualified RV electrical or Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-2118-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-2118-sr-control-fault",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "2118 PolarMax",
+        "2118"
+      ],
+      "code": "Sr",
+      "slug": "norcold-2118-sr-control-fault",
+      "plainMeaning": "The Norcold 2118 owner manual lists Sr as: This is a fault within the refrigerator controls.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator-control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-2118-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-2118-temperature-setting-flashes",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "2118 PolarMax",
+        "2118"
+      ],
+      "code": "temperature setting flashes",
+      "slug": "norcold-2118-temperature-setting-flashes",
+      "plainMeaning": "The Norcold 2118 owner manual lists temperature setting flashes as: The refrigerator is operating on the Backup Operating System.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Thermistor and control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-2118-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-2118-ac-re-control-fault",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "2118 PolarMax",
+        "2118"
+      ],
+      "code": "AC rE",
+      "slug": "norcold-2118-ac-re-control-fault",
+      "plainMeaning": "The Norcold 2118 owner manual lists AC rE as: This is a fault within the refrigerator controls.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator-control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-2118-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-2118-ac-he-ac-heater",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "2118 PolarMax",
+        "2118"
+      ],
+      "code": "AC HE",
+      "slug": "norcold-2118-ac-he-ac-heater",
+      "plainMeaning": "The Norcold 2118 owner manual lists AC HE as: This is a problem related to the AC heater.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "AC heater and refrigerator control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-2118-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-2118-op-li-temperature-limit-switch",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "2118 PolarMax",
+        "2118"
+      ],
+      "code": "oP LI",
+      "slug": "norcold-2118-op-li-temperature-limit-switch",
+      "plainMeaning": "The Norcold 2118 owner manual lists oP LI as: A temperature limit switch is open.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Temperature-limit switch and refrigerator-control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-2118-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-2118-fl-flame-present",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "2118 PolarMax",
+        "2118"
+      ],
+      "code": "FL --",
+      "slug": "norcold-2118-fl-flame-present",
+      "plainMeaning": "The Norcold 2118 owner manual lists FL -- as: A flame is present at the burner when there should be none.",
+      "ownerSafeActions": [
+        "Record the exact display wording and whether an audible alarm is present.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Flame-sense, LP, burner, and electronic-control diagnosis belongs to qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-2118-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "refrigerator-lp-ignition",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display code",
+        "power mode shown on display"
+      ]
+    },
+    {
+      "id": "norcold-n3000-na-error-18",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N3000 North America",
+        "N3104",
+        "N3141",
+        "N3150"
+      ],
+      "code": "18",
+      "slug": "norcold-n3000-na-error-18-startup-all-symbols-lit",
+      "plainMeaning": "The Norcold N3000 North America owner manual lists code 18 for the start-up display state where all symbols light up briefly before normal operation.",
+      "ownerSafeActions": [
+        "Wait a few seconds for the display to finish start-up.",
+        "Record the code if the display does not return to normal operation.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Persistent start-up display faults should be diagnosed by a qualified Norcold Service Center."
+      ],
+      "safetyBoundary": "Do not open refrigerator electrical compartments, bypass refrigerator controls, or inspect wiring. Shut the refrigerator off and arrange qualified Norcold service for persistent display faults.",
+      "sourceIds": [
+        "norcold-n3000-na-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N3000 North America model label",
+        "photo of display code",
+        "how long all symbols stay lit"
+      ]
     }
   ],
   "symptoms": [
@@ -19371,6 +21431,38 @@
       ],
       "sourceIds": [
         "suburban-induction-cooktop-guide"
+      ]
+    },
+    {
+      "id": "norcold-absorption-display-faults",
+      "slug": "norcold-absorption-refrigerator-display-faults",
+      "title": "Norcold absorption refrigerator display fault codes",
+      "summary": "Use this when a Norcold or Thetford absorption refrigerator shows N3000 service-mode codes, N10LX/2118 alternating display codes, LP ignition faults, AC/DC supply faults, or backup-operation thermistor warnings.",
+      "safeChecklist": [
+        "Photograph the exact display wording or service-mode code before resetting anything.",
+        "Record model, serial number, power mode, LP state, battery state, and whether an audible alarm is present.",
+        "Do not open refrigerator electrical compartments, adjust LP parts, or bypass safety devices."
+      ],
+      "sourceIds": [
+        "norcold-n3000-troubleshooting",
+        "norcold-n3000-na-owner",
+        "norcold-n10lx-owner",
+        "norcold-2118-owner"
+      ]
+    },
+    {
+      "id": "norcold-dc-compressor-led-diagnostics",
+      "slug": "norcold-dc-compressor-refrigerator-led-diagnostics",
+      "title": "Norcold DC compressor refrigerator LED diagnostics",
+      "summary": "Use this when a Norcold N2000, N8DCX, or N10DCX refrigerator shows a red/orange LED state, user-interface fault code, or compressor power-module flash count.",
+      "safeChecklist": [
+        "Record the LED color, flash count, displayed code, and whether cooling stopped.",
+        "Check normal owner-visible battery monitor readings before calling service.",
+        "Do not inspect wiring, fuses, compressor modules, fans, or thermistor circuits unless qualified."
+      ],
+      "sourceIds": [
+        "norcold-n2000-owner",
+        "norcold-n8dcx-n10dcx-service"
       ]
     }
   ],

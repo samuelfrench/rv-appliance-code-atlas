@@ -68,6 +68,14 @@ describe("verified corpus", () => {
     ]);
   });
 
+  it("ranks exact Norcold N2000 LED diagnostic searches ahead of unrelated blinking-red entries", () => {
+    const index = buildSearchIndex(corpus);
+
+    expect(lookupEntries(index, "norcold n2000 red led blinking input voltage")[0]?.slug).toBe(
+      "norcold-n2000-red-led-blinking-input-voltage",
+    );
+  });
+
   it("summarizes code, source, symptom, and monetization readiness counts", () => {
     const summary = summarizeCorpus(corpus);
 
@@ -188,6 +196,108 @@ describe("verified corpus", () => {
     );
 
     expect(ownerCodes).toEqual(new Set(["E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9"]));
+  });
+
+  it("includes official Norcold N3000 service-mode error codes from the manufacturer troubleshooting sheet", () => {
+    const codes = new Set(
+      corpus.entries
+        .filter((entry) => entry.brand === "Norcold" && entry.sourceIds.includes("norcold-n3000-troubleshooting"))
+        .map((entry) => entry.code),
+    );
+
+    expect(codes).toEqual(new Set(["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"]));
+  });
+
+  it("includes the official Norcold N3000 North America owner-manual startup display code", () => {
+    const codes = new Set(
+      corpus.entries
+        .filter((entry) => entry.brand === "Norcold" && entry.sourceIds.includes("norcold-n3000-na-owner"))
+        .map((entry) => entry.code),
+    );
+
+    expect(codes).toEqual(new Set(["18"]));
+  });
+
+  it("includes official Norcold N2000 owner-manual LED/display diagnostics", () => {
+    const codes = new Set(
+      corpus.entries
+        .filter((entry) => entry.brand === "Norcold" && entry.sourceIds.includes("norcold-n2000-owner"))
+        .map((entry) => entry.code),
+    );
+
+    expect(codes).toEqual(
+      new Set([
+        "Red LED on",
+        "Orange LED on",
+        "Red LED blinking - 2-way valve error",
+        "Red LED blinking - cabinet thermistor error",
+        "Red LED blinking - freezer thermistor error",
+        "Red LED blinking - ambient thermistor error",
+        "Red LED blinking - input voltage out of range",
+        "Red LED blinking - thermal cut-out compressor",
+      ]),
+    );
+  });
+
+  it("includes official Norcold N8DCX/N10DCX service-manual diagnostic code sets", () => {
+    const codes = new Set(
+      corpus.entries
+        .filter((entry) => entry.brand === "Norcold" && entry.sourceIds.includes("norcold-n8dcx-n10dcx-service"))
+        .map((entry) => entry.code),
+    );
+
+    expect(codes).toEqual(
+      new Set([
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "power module flash 1",
+        "power module flash 2",
+        "power module flash 3",
+        "power module flash 4",
+        "power module flash 5",
+        "power module flash 6",
+      ]),
+    );
+  });
+
+  it("includes the official Norcold N10LX/NA10LX owner-manual fault display set", () => {
+    const codes = new Set(
+      corpus.entries
+        .filter((entry) => entry.brand === "Norcold" && entry.sourceIds.includes("norcold-n10lx-owner"))
+        .map((entry) => entry.code),
+    );
+
+    expect(codes).toEqual(
+      new Set([
+        "no FL",
+        "no AC",
+        "AC HE",
+        "AC rE",
+        "Lo dc",
+        "Lo dC",
+        "HI dc",
+        "no dt",
+        "Sr",
+        "oP LI",
+        "FL --",
+        "temperature setting flashes",
+        "blank display",
+      ]),
+    );
+  });
+
+  it("includes the official Norcold 2118 owner-manual fault display set", () => {
+    const codes = new Set(
+      corpus.entries
+        .filter((entry) => entry.brand === "Norcold" && entry.sourceIds.includes("norcold-2118-owner"))
+        .map((entry) => entry.code),
+    );
+
+    expect(codes).toEqual(
+      new Set(["dr", "no FL", "no AC", "Lo dc", "Sr", "temperature setting flashes", "AC rE", "AC HE", "oP LI", "FL --"]),
+    );
   });
 
   it("includes the full official Cummins Onan QG operator-manual fault-code sets", () => {
