@@ -7,62 +7,6 @@
   },
   "sources": [
     {
-      "id": "dometic-ruc-support",
-      "brand": "Dometic",
-      "title": "My refrigerator is giving me a fault message | RUC Refrigerator | Support",
-      "url": "https://support.dometic.com/en/ruc-refrigerators/My-refrigerator-is-giving-me-a-fault-message-844",
-      "type": "manufacturer-support",
-      "official": true
-    },
-    {
-      "id": "dometic-water-heater-wh",
-      "brand": "Dometic",
-      "title": "Dometic WH-6GA/WH-6GEA/WH-9GEA L.P. Gas Water Heater Manual",
-      "url": "https://media.dometic.com/externalassets/dometic-water-heater-9-gallon-gas-electric_9600024380_81175.pdf",
-      "type": "manufacturer-manual",
-      "official": true
-    },
-    {
-      "id": "dometic-df-furnace",
-      "brand": "Dometic",
-      "title": "Dometic DF Series Furnace Installation Manual",
-      "url": "https://www.dometic.com/externalassets/dometic-medium-furnace_9600000926_81452.pdf",
-      "type": "manufacturer-manual",
-      "official": true
-    },
-    {
-      "id": "norcold-polar-owner",
-      "brand": "Norcold",
-      "title": "Norcold Polar N7/N8 Owner's Manual",
-      "url": "https://www.thetford.com/app/uploads/2024/09/OM_N7V_N7X_N7LX_N8V_N8X_N8LX_639301F_03272025.pdf",
-      "type": "manufacturer-manual",
-      "official": true
-    },
-    {
-      "id": "norcold-1200-owner",
-      "brand": "Norcold",
-      "title": "Norcold 1200 Series Owner's Manual",
-      "url": "https://www.thetford.com/app/uploads/2024/10/Owners_1200_621823J.pdf",
-      "type": "manufacturer-manual",
-      "official": true
-    },
-    {
-      "id": "suburban-tank-water-heater",
-      "brand": "Suburban/Atwood",
-      "title": "Suburban Tank Water Heaters Operation & Maintenance Guide",
-      "url": "https://library.suburbanrv.com/wp-content/uploads/2023/04/206244_Suburban_Water_Heaters_RevA_03-22-2023.pdf",
-      "type": "manufacturer-manual",
-      "official": true
-    },
-    {
-      "id": "suburban-furnace-guide",
-      "brand": "Suburban/Atwood",
-      "title": "Suburban Gas Furnace Operation Guide",
-      "url": "https://library.suburbanrv.com/wp-content/uploads/2023/05/Suburban-Furnace-9.2.22.pdf",
-      "type": "manufacturer-manual",
-      "official": true
-    },
-    {
       "id": "coleman-9330-thermostat",
       "brand": "Coleman-Mach",
       "title": "Coleman-Mach 9330-33 Multiple Zone Thermostat Controller System",
@@ -79,10 +23,34 @@
       "official": true
     },
     {
-      "id": "furrion-water-heater",
-      "brand": "Furrion",
-      "title": "Furrion 2.4GPM Tank-less Gas Water Heater Troubleshooting and Service Manual",
-      "url": "https://lci-support-doc.s3.amazonaws.com/furrion%20documentation/water%20heaters/ccd-0009617.pdf",
+      "id": "dometic-df-furnace",
+      "brand": "Dometic",
+      "title": "Dometic DF Series Furnace Installation Manual",
+      "url": "https://www.dometic.com/externalassets/dometic-medium-furnace_9600000926_81452.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "dometic-rua-support",
+      "brand": "Dometic",
+      "title": "My refrigerator is giving me a fault message | RUA Refrigerators | Support",
+      "url": "https://support.dometic.com/en/rua-refrigerator/My-refrigerator-is-giving-me-a-fault-message-9e5d",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-support",
+      "brand": "Dometic",
+      "title": "My refrigerator is giving me a fault message | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/My-refrigerator-is-giving-me-a-fault-message-844",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-water-heater-wh",
+      "brand": "Dometic",
+      "title": "Dometic WH-6GA/WH-6GEA/WH-9GEA L.P. Gas Water Heater Manual",
+      "url": "https://media.dometic.com/externalassets/dometic-water-heater-9-gallon-gas-electric_9600024380_81175.pdf",
       "type": "manufacturer-manual",
       "official": true
     },
@@ -91,6 +59,14 @@
       "brand": "Furrion",
       "title": "Furrion Heat Pump Single Zone Wall Thermostat Quick Start Guide",
       "url": "https://lci-support-doc.s3.amazonaws.com/furrion_comfort/thermostats/ccd-0008552.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-water-heater",
+      "brand": "Furrion",
+      "title": "Furrion 2.4GPM Tank-less Gas Water Heater Troubleshooting and Service Manual",
+      "url": "https://lci-support-doc.s3.amazonaws.com/furrion%20documentation/water%20heaters/ccd-0009617.pdf",
       "type": "manufacturer-manual",
       "official": true
     },
@@ -111,11 +87,27 @@
       "official": true
     },
     {
-      "id": "onan-rv-manual-index",
+      "id": "norcold-1200-owner",
+      "brand": "Norcold",
+      "title": "Norcold 1200 Series Owner's Manual",
+      "url": "https://www.thetford.com/app/uploads/2024/10/Owners_1200_621823J.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "norcold-polar-owner",
+      "brand": "Norcold",
+      "title": "Norcold Polar N7/N8 Owner's Manual",
+      "url": "https://www.thetford.com/app/uploads/2024/09/OM_N7V_N7X_N7LX_N8V_N8X_N8LX_639301F_03272025.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "onan-hgjaa-a035d009",
       "brand": "Onan",
-      "title": "Cummins Onan RV Generator Manuals",
-      "url": "https://www.cummins.com/en-na/generators/rv-generators/rv-generator-manuals",
-      "type": "manufacturer-support",
+      "title": "Cummins Onan Generator Set for RV Operator Manual A035D009",
+      "url": "https://www.cummins.com/sites/default/files/rv-manuals/A035D009.pdf",
+      "type": "manufacturer-manual",
       "official": true
     },
     {
@@ -127,299 +119,2630 @@
       "official": true
     },
     {
-      "id": "onan-hgjaa-a035d009",
+      "id": "onan-rv-manual-index",
       "brand": "Onan",
-      "title": "Cummins Onan Generator Set for RV Operator Manual A035D009",
-      "url": "https://www.cummins.com/sites/default/files/rv-manuals/A035D009.pdf",
+      "title": "Cummins Onan RV Generator Manuals",
+      "url": "https://www.cummins.com/en-na/generators/rv-generators/rv-generator-manuals",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "suburban-furnace-guide",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban Gas Furnace Operation Guide",
+      "url": "https://library.suburbanrv.com/wp-content/uploads/2023/05/Suburban-Furnace-9.2.22.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "suburban-tank-water-heater",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban Tank Water Heaters Operation & Maintenance Guide",
+      "url": "https://library.suburbanrv.com/wp-content/uploads/2023/04/206244_Suburban_Water_Heaters_RevA_03-22-2023.pdf",
       "type": "manufacturer-manual",
       "official": true
     }
   ],
   "entries": [
     {
-      "id": "dometic-ruc-e35",
-      "brand": "Dometic",
-      "equipmentType": "Refrigerator",
-      "modelFamilies": ["RUC refrigerator"],
-      "code": "E35",
-      "slug": "dometic-ruc-e35-refrigerator",
-      "plainMeaning": "The Dometic RUC refrigerator support table lists E35 as a cooling or control fault that needs model-specific diagnosis.",
-      "ownerSafeActions": ["Turn the refrigerator off if cooling is abnormal.", "Check that vents are not blocked.", "Record the model number, code, and recent power source before service."],
-      "serviceOnlyActions": ["Internal cooling, gas, electrical, or control diagnosis belongs to an authorized Dometic service provider."],
-      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if you smell gas, see scorching, or the unit behaves abnormally.",
-      "sourceIds": ["dometic-ruc-support"],
-      "symptomIds": ["refrigerator-not-cooling", "service-call-prep"],
-      "partCaptureHints": ["model number label", "serial number", "control board part number if visible without disassembly"]
-    },
-    {
-      "id": "dometic-water-heater-lockout",
-      "brand": "Dometic",
-      "equipmentType": "Water heater",
-      "modelFamilies": ["WH-6GA", "WH-6GEA", "WH-9GEA"],
-      "code": "Lock-Out Lamp",
-      "slug": "dometic-water-heater-lock-out-lamp",
-      "plainMeaning": "The red lockout lamp indicates the water heater has a no-heat fault or failed operation condition.",
-      "ownerSafeActions": ["Turn the water heater off.", "Confirm the tank is full before any restart attempt.", "Write down whether the appliance was in gas or electric mode."],
-      "serviceOnlyActions": ["Persistent lockout, overheating, ECO, thermal cut-off, flame, gas, or wiring diagnosis requires Dometic service."],
-      "safetyBoundary": "Do not open gas components, bypass the ECO, or keep resetting an overheating water heater. Shut off LP and power and call service if the lockout persists.",
-      "sourceIds": ["dometic-water-heater-wh"],
-      "symptomIds": ["water-heater-no-heat", "service-call-prep"],
-      "partCaptureHints": ["water heater model", "control switch panel", "gas/electric mode"]
-    },
-    {
-      "id": "dometic-furnace-one-flash",
-      "brand": "Dometic",
-      "equipmentType": "Furnace",
-      "modelFamilies": ["DF series furnace"],
-      "code": "1 flash",
-      "slug": "dometic-df-furnace-1-flash",
-      "plainMeaning": "The DF furnace manual identifies one flash with a pause as a limit switch or airflow problem.",
-      "ownerSafeActions": ["Turn the furnace off.", "Check that interior registers and exterior intake/exhaust openings are unobstructed.", "Do not restart if vents were covered, soot is present, or the furnace smells unusual."],
-      "serviceOnlyActions": ["Limit-switch, airflow switch, burner, board, or combustion diagnosis is service technician work."],
-      "safetyBoundary": "Do not operate with blocked vents. Shut off the furnace and LP gas if flame, soot, heat, or exhaust conditions look wrong.",
-      "sourceIds": ["dometic-df-furnace"],
-      "symptomIds": ["furnace-lockout", "airflow-or-venting"],
-      "partCaptureHints": ["furnace model", "thermostat setting", "LED flash count"]
-    },
-    {
-      "id": "norcold-polar-no-fl",
-      "brand": "Norcold",
-      "equipmentType": "Refrigerator",
-      "modelFamilies": ["N7LX", "N8LX", "Polar N7/N8"],
-      "code": "no FL",
-      "slug": "norcold-polar-no-fl",
-      "plainMeaning": "The Norcold Polar manual uses no FL for an LP flame/ignition failure condition.",
-      "ownerSafeActions": ["Switch the refrigerator off.", "Make sure LP supply is not intentionally shut off before documenting the issue.", "Record whether the code happens only on LP mode."],
-      "serviceOnlyActions": ["LP ignition, flame-sense, burner, gas valve, and board diagnosis requires qualified service."],
-      "safetyBoundary": "Do not hand-light, clean burner parts, adjust gas, or bypass ignition controls. Shut off LP if gas odor is present.",
-      "sourceIds": ["norcold-polar-owner"],
-      "symptomIds": ["refrigerator-lp-ignition", "service-call-prep"],
-      "partCaptureHints": ["Norcold model label", "power mode", "LP regulator/service history"]
-    },
-    {
-      "id": "norcold-1200-no-co",
-      "brand": "Norcold",
-      "equipmentType": "Refrigerator",
-      "modelFamilies": ["1200 series"],
-      "code": "no co",
-      "slug": "norcold-1200-no-co",
-      "plainMeaning": "The Norcold 1200 owner manual uses no co for a stopped-cooling condition.",
-      "ownerSafeActions": ["Turn the refrigerator off if it is not cooling.", "Keep food safety in mind and move perishables.", "Record outside temperature, power source, and whether this is a repeat event."],
-      "serviceOnlyActions": ["Repeated no co, cooling-unit, high-temperature, recall, or reset work is not a DIY action."],
-      "safetyBoundary": "Do not bypass high-temperature recall devices or force repeated resets. Shut the refrigerator off and arrange qualified service for repeat or unsafe cooling faults.",
-      "sourceIds": ["norcold-1200-owner"],
-      "symptomIds": ["refrigerator-not-cooling", "service-call-prep"],
-      "partCaptureHints": ["model and serial label", "recall kit status", "display board code"]
-    },
-    {
-      "id": "norcold-polar-lo-dc",
-      "brand": "Norcold",
-      "equipmentType": "Refrigerator",
-      "modelFamilies": ["N7LX", "N8LX", "Polar N7/N8"],
-      "code": "Lo dC",
-      "slug": "norcold-polar-lo-dc",
-      "plainMeaning": "The Norcold Polar LX manual lists low DC voltage display terms for insufficient 12-volt supply.",
-      "ownerSafeActions": ["Check the RV battery monitor.", "Confirm the converter or battery disconnect has not been turned off.", "Document battery voltage if available from an installed monitor."],
-      "serviceOnlyActions": ["Wiring, converter, board, fuse-holder heat, or voltage-drop diagnosis should be handled by qualified RV electrical service."],
-      "safetyBoundary": "Do not work inside energized 12 VDC or 120 VAC panels unless qualified.",
-      "sourceIds": ["norcold-polar-owner"],
-      "symptomIds": ["low-voltage", "service-call-prep"],
-      "partCaptureHints": ["battery monitor reading", "fuse panel label", "refrigerator model"]
-    },
-    {
-      "id": "suburban-water-heater-reset-light",
-      "brand": "Suburban/Atwood",
-      "equipmentType": "Water heater",
-      "modelFamilies": ["Suburban D", "Suburban DE", "Suburban DEL"],
-      "code": "RESET light",
-      "slug": "suburban-water-heater-reset-light",
-      "plainMeaning": "The Suburban tank water heater guide describes red RESET light lockout after ignition attempts fail.",
-      "ownerSafeActions": ["Turn the water heater off.", "Confirm the tank is full.", "Stop repeated attempts if ignition fails."],
-      "serviceOnlyActions": ["Ignition, flame, gas valve, electrode, soot, combustion, and board work is qualified service."],
-      "safetyBoundary": "Do not cycle the water heater repeatedly after failed ignition. Shut off LP/power and call service if lockout returns.",
-      "sourceIds": ["suburban-tank-water-heater"],
-      "symptomIds": ["water-heater-no-heat", "service-call-prep"],
-      "partCaptureHints": ["Suburban model plate", "inside switch panel", "LP mode status"]
-    },
-    {
-      "id": "suburban-furnace-lockout",
-      "brand": "Suburban/Atwood",
-      "equipmentType": "Furnace",
-      "modelFamilies": ["Suburban gas furnace"],
-      "code": "lock out",
-      "slug": "suburban-furnace-lock-out",
-      "plainMeaning": "The Suburban furnace guide describes lockout after the furnace fails to ignite after multiple attempts.",
-      "ownerSafeActions": ["Turn the thermostat off.", "Check that intake and exhaust vents are not covered.", "Do not continue cycling the furnace after repeated no-ignition attempts."],
-      "serviceOnlyActions": ["Ignition, combustion, flame-sense, gas, and board troubleshooting is qualified service."],
-      "safetyBoundary": "Stop after repeated ignition failure. Shut off LP if there is gas odor, soot, or abnormal flame/exhaust evidence.",
-      "sourceIds": ["suburban-furnace-guide"],
-      "symptomIds": ["furnace-lockout", "airflow-or-venting"],
-      "partCaptureHints": ["furnace model", "thermostat model", "number of failed starts"]
-    },
-    {
       "id": "coleman-9330-er",
       "brand": "Coleman-Mach",
       "equipmentType": "Thermostat",
-      "modelFamilies": ["9330-33 multiple-zone thermostat"],
+      "modelFamilies": [
+        "9330-33 multiple-zone thermostat"
+      ],
       "code": "Er",
       "slug": "coleman-mach-9330-er",
       "plainMeaning": "The Coleman-Mach 9330-33 manual uses Er for a lost communication signal to a zone.",
-      "ownerSafeActions": ["Note which zone is affected.", "Turn the HVAC system off if the zone is not responding.", "Record whether the display has no green LED or other visible status."],
-      "serviceOnlyActions": ["Thermostat wiring, control box communication, and rooftop unit service should be performed by trained technicians."],
+      "ownerSafeActions": [
+        "Note which zone is affected.",
+        "Turn the HVAC system off if the zone is not responding.",
+        "Record whether the display has no green LED or other visible status."
+      ],
+      "serviceOnlyActions": [
+        "Thermostat wiring, control box communication, and rooftop unit service should be performed by trained technicians."
+      ],
       "safetyBoundary": "Disconnect power before HVAC service. Do not open rooftop electrical compartments unless qualified.",
-      "sourceIds": ["coleman-9330-thermostat"],
-      "symptomIds": ["thermostat-communication", "service-call-prep"],
-      "partCaptureHints": ["thermostat model", "zone number", "rooftop unit model"]
+      "sourceIds": [
+        "coleman-9330-thermostat"
+      ],
+      "symptomIds": [
+        "thermostat-communication",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "thermostat model",
+        "zone number",
+        "rooftop unit model"
+      ]
     },
     {
       "id": "coleman-9420-lo",
       "brand": "Coleman-Mach",
       "equipmentType": "Thermostat",
-      "modelFamilies": ["9420-381", "9420-382"],
+      "modelFamilies": [
+        "9420-381",
+        "9420-382"
+      ],
       "code": "LO",
       "slug": "coleman-mach-9420-lo",
       "plainMeaning": "The Coleman-Mach digital thermostat manual lists LO as a temperature-display condition below the displayed operating range.",
-      "ownerSafeActions": ["Compare the thermostat display with room conditions.", "Record whether LO appears continuously or only at startup.", "Avoid changing wiring or internal thermostat settings."],
-      "serviceOnlyActions": ["PTC fuse faults, wiring shorts, control problems, and installation checks belong to trained technicians."],
+      "ownerSafeActions": [
+        "Compare the thermostat display with room conditions.",
+        "Record whether LO appears continuously or only at startup.",
+        "Avoid changing wiring or internal thermostat settings."
+      ],
+      "serviceOnlyActions": [
+        "PTC fuse faults, wiring shorts, control problems, and installation checks belong to trained technicians."
+      ],
       "safetyBoundary": "Disconnect power before thermostat or HVAC service. Do not probe control wiring unless qualified.",
-      "sourceIds": ["coleman-9420-thermostat"],
-      "symptomIds": ["thermostat-display", "low-voltage"],
-      "partCaptureHints": ["thermostat model", "indoor temperature", "fuse panel status"]
+      "sourceIds": [
+        "coleman-9420-thermostat"
+      ],
+      "symptomIds": [
+        "thermostat-display",
+        "low-voltage"
+      ],
+      "partCaptureHints": [
+        "thermostat model",
+        "indoor temperature",
+        "fuse panel status"
+      ]
     },
     {
-      "id": "furrion-water-heater-e1",
-      "brand": "Furrion",
-      "equipmentType": "Water heater",
-      "modelFamilies": ["FWH09A-AM", "FWH09AFA", "FWH09AFA-AM", "FWH09AFA-AB"],
-      "code": "E1",
-      "slug": "furrion-water-heater-e1",
-      "plainMeaning": "The Furrion tankless water heater manual lists E1 as a flame-sense during ignition fault.",
-      "ownerSafeActions": ["Turn the water heater off.", "Stop use if ignition faults repeat.", "Record water flow, code, and whether LP supply was recently changed."],
-      "serviceOnlyActions": ["Flame, ignition, solenoid, gas, exhaust, and combustion checks are qualified service work."],
-      "safetyBoundary": "Do not bypass flame sensing or open gas components. Shut off LP and call service for repeated E1 or gas odor.",
-      "sourceIds": ["furrion-water-heater"],
-      "symptomIds": ["water-heater-no-heat", "refrigerator-lp-ignition"],
-      "partCaptureHints": ["water heater model", "controller display", "LP supply status"]
+      "id": "dometic-furnace-one-flash",
+      "brand": "Dometic",
+      "equipmentType": "Furnace",
+      "modelFamilies": [
+        "DF series furnace"
+      ],
+      "code": "1 flash",
+      "slug": "dometic-df-furnace-1-flash",
+      "plainMeaning": "The DF furnace manual identifies one flash with a pause as a limit switch or airflow problem.",
+      "ownerSafeActions": [
+        "Turn the furnace off.",
+        "Check that interior registers and exterior intake/exhaust openings are unobstructed.",
+        "Do not restart if vents were covered, soot is present, or the furnace smells unusual."
+      ],
+      "serviceOnlyActions": [
+        "Limit-switch, airflow switch, burner, board, or combustion diagnosis is service technician work."
+      ],
+      "safetyBoundary": "Do not operate with blocked vents. Shut off the furnace and LP gas if flame, soot, heat, or exhaust conditions look wrong.",
+      "sourceIds": [
+        "dometic-df-furnace"
+      ],
+      "symptomIds": [
+        "furnace-lockout",
+        "airflow-or-venting"
+      ],
+      "partCaptureHints": [
+        "furnace model",
+        "thermostat setting",
+        "LED flash count"
+      ]
     },
     {
-      "id": "furrion-water-heater-e5",
-      "brand": "Furrion",
+      "id": "dometic-rua-01",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUA refrigerator"
+      ],
+      "code": "01",
+      "slug": "dometic-rua-01-refrigerator",
+      "plainMeaning": "The official Dometic RUA support page lists 01 as a refrigerator fault message. The page states that multiple faults can be present and that the last fault is shown until acknowledged.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only owner-safe basics such as RV power state and exterior vent obstruction.",
+        "Turn the refrigerator off if cooling is abnormal, the alarm repeats, or the same code returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal cooling, LP, electrical, sensor, communication, and control diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-rua-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUA model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-rua-03",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUA refrigerator"
+      ],
+      "code": "03",
+      "slug": "dometic-rua-03-refrigerator",
+      "plainMeaning": "The official Dometic RUA support page lists 03 as a refrigerator fault message. The page states that multiple faults can be present and that the last fault is shown until acknowledged.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only owner-safe basics such as RV power state and exterior vent obstruction.",
+        "Turn the refrigerator off if cooling is abnormal, the alarm repeats, or the same code returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal cooling, LP, electrical, sensor, communication, and control diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-rua-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUA model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-rua-05",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUA refrigerator"
+      ],
+      "code": "05",
+      "slug": "dometic-rua-05-refrigerator",
+      "plainMeaning": "The official Dometic RUA support page lists 05 as a refrigerator fault message. The page states that multiple faults can be present and that the last fault is shown until acknowledged.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only owner-safe basics such as RV power state and exterior vent obstruction.",
+        "Turn the refrigerator off if cooling is abnormal, the alarm repeats, or the same code returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal cooling, LP, electrical, sensor, communication, and control diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-rua-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUA model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-rua-06",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUA refrigerator"
+      ],
+      "code": "06",
+      "slug": "dometic-rua-06-refrigerator",
+      "plainMeaning": "The official Dometic RUA support page lists 06 as a refrigerator fault message. The page states that multiple faults can be present and that the last fault is shown until acknowledged.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only owner-safe basics such as RV power state and exterior vent obstruction.",
+        "Turn the refrigerator off if cooling is abnormal, the alarm repeats, or the same code returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal cooling, LP, electrical, sensor, communication, and control diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-rua-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUA model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-rua-07",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUA refrigerator"
+      ],
+      "code": "07",
+      "slug": "dometic-rua-07-refrigerator",
+      "plainMeaning": "The official Dometic RUA support page lists 07 as a refrigerator fault message. The page states that multiple faults can be present and that the last fault is shown until acknowledged.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only owner-safe basics such as RV power state and exterior vent obstruction.",
+        "Turn the refrigerator off if cooling is abnormal, the alarm repeats, or the same code returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal cooling, LP, electrical, sensor, communication, and control diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-rua-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUA model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-rua-08",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUA refrigerator"
+      ],
+      "code": "08",
+      "slug": "dometic-rua-08-refrigerator",
+      "plainMeaning": "The official Dometic RUA support page lists 08 as a refrigerator fault message. The page states that multiple faults can be present and that the last fault is shown until acknowledged.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only owner-safe basics such as RV power state and exterior vent obstruction.",
+        "Turn the refrigerator off if cooling is abnormal, the alarm repeats, or the same code returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal cooling, LP, electrical, sensor, communication, and control diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-rua-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUA model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-rua-09",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUA refrigerator"
+      ],
+      "code": "09",
+      "slug": "dometic-rua-09-refrigerator",
+      "plainMeaning": "The official Dometic RUA support page lists 09 as a refrigerator fault message. The page states that multiple faults can be present and that the last fault is shown until acknowledged.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only owner-safe basics such as RV power state and exterior vent obstruction.",
+        "Turn the refrigerator off if cooling is abnormal, the alarm repeats, or the same code returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal cooling, LP, electrical, sensor, communication, and control diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-rua-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUA model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-rua-10",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUA refrigerator"
+      ],
+      "code": "10",
+      "slug": "dometic-rua-10-refrigerator",
+      "plainMeaning": "The official Dometic RUA support page lists 10 as a refrigerator fault message. The page states that multiple faults can be present and that the last fault is shown until acknowledged.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only owner-safe basics such as RV power state and exterior vent obstruction.",
+        "Turn the refrigerator off if cooling is abnormal, the alarm repeats, or the same code returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal cooling, LP, electrical, sensor, communication, and control diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-rua-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUA model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-rua-11",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUA refrigerator"
+      ],
+      "code": "11",
+      "slug": "dometic-rua-11-refrigerator",
+      "plainMeaning": "The official Dometic RUA support page lists 11 as a refrigerator fault message. The page states that multiple faults can be present and that the last fault is shown until acknowledged.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only owner-safe basics such as RV power state and exterior vent obstruction.",
+        "Turn the refrigerator off if cooling is abnormal, the alarm repeats, or the same code returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal cooling, LP, electrical, sensor, communication, and control diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-rua-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUA model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-rua-12",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUA refrigerator"
+      ],
+      "code": "12",
+      "slug": "dometic-rua-12-refrigerator",
+      "plainMeaning": "The official Dometic RUA support page lists 12 as a refrigerator fault message. The page states that multiple faults can be present and that the last fault is shown until acknowledged.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only owner-safe basics such as RV power state and exterior vent obstruction.",
+        "Turn the refrigerator off if cooling is abnormal, the alarm repeats, or the same code returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal cooling, LP, electrical, sensor, communication, and control diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-rua-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUA model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-rua-13",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUA refrigerator"
+      ],
+      "code": "13",
+      "slug": "dometic-rua-13-refrigerator",
+      "plainMeaning": "The official Dometic RUA support page lists 13 as a refrigerator fault message. The page states that multiple faults can be present and that the last fault is shown until acknowledged.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only owner-safe basics such as RV power state and exterior vent obstruction.",
+        "Turn the refrigerator off if cooling is abnormal, the alarm repeats, or the same code returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal cooling, LP, electrical, sensor, communication, and control diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-rua-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUA model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-rua-14",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUA refrigerator"
+      ],
+      "code": "14",
+      "slug": "dometic-rua-14-refrigerator",
+      "plainMeaning": "The official Dometic RUA support page lists 14 as a refrigerator fault message. The page states that multiple faults can be present and that the last fault is shown until acknowledged.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only owner-safe basics such as RV power state and exterior vent obstruction.",
+        "Turn the refrigerator off if cooling is abnormal, the alarm repeats, or the same code returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal cooling, LP, electrical, sensor, communication, and control diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-rua-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUA model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-rua-15",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUA refrigerator"
+      ],
+      "code": "15",
+      "slug": "dometic-rua-15-refrigerator",
+      "plainMeaning": "The official Dometic RUA support page lists 15 as a refrigerator fault message. The page states that multiple faults can be present and that the last fault is shown until acknowledged.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only owner-safe basics such as RV power state and exterior vent obstruction.",
+        "Turn the refrigerator off if cooling is abnormal, the alarm repeats, or the same code returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal cooling, LP, electrical, sensor, communication, and control diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-rua-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUA model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-rua-16",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUA refrigerator"
+      ],
+      "code": "16",
+      "slug": "dometic-rua-16-refrigerator",
+      "plainMeaning": "The official Dometic RUA support page lists 16 as a refrigerator fault message. The page states that multiple faults can be present and that the last fault is shown until acknowledged.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only owner-safe basics such as RV power state and exterior vent obstruction.",
+        "Turn the refrigerator off if cooling is abnormal, the alarm repeats, or the same code returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal cooling, LP, electrical, sensor, communication, and control diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-rua-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUA model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-rua-17",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUA refrigerator"
+      ],
+      "code": "17",
+      "slug": "dometic-rua-17-refrigerator",
+      "plainMeaning": "The official Dometic RUA support page lists 17 as a refrigerator fault message. The page states that multiple faults can be present and that the last fault is shown until acknowledged.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only owner-safe basics such as RV power state and exterior vent obstruction.",
+        "Turn the refrigerator off if cooling is abnormal, the alarm repeats, or the same code returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal cooling, LP, electrical, sensor, communication, and control diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-rua-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUA model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-rua-18",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUA refrigerator"
+      ],
+      "code": "18",
+      "slug": "dometic-rua-18-refrigerator",
+      "plainMeaning": "The official Dometic RUA support page lists 18 as a refrigerator fault message. The page states that multiple faults can be present and that the last fault is shown until acknowledged.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only owner-safe basics such as RV power state and exterior vent obstruction.",
+        "Turn the refrigerator off if cooling is abnormal, the alarm repeats, or the same code returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal cooling, LP, electrical, sensor, communication, and control diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-rua-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUA model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-rua-22",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUA refrigerator"
+      ],
+      "code": "22",
+      "slug": "dometic-rua-22-refrigerator",
+      "plainMeaning": "The official Dometic RUA support page lists 22 as a refrigerator fault message. The page states that multiple faults can be present and that the last fault is shown until acknowledged.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only owner-safe basics such as RV power state and exterior vent obstruction.",
+        "Turn the refrigerator off if cooling is abnormal, the alarm repeats, or the same code returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal cooling, LP, electrical, sensor, communication, and control diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-rua-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUA model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-rua-24",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUA refrigerator"
+      ],
+      "code": "24",
+      "slug": "dometic-rua-24-refrigerator",
+      "plainMeaning": "The official Dometic RUA support page lists 24 as a refrigerator fault message. The page states that multiple faults can be present and that the last fault is shown until acknowledged.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only owner-safe basics such as RV power state and exterior vent obstruction.",
+        "Turn the refrigerator off if cooling is abnormal, the alarm repeats, or the same code returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal cooling, LP, electrical, sensor, communication, and control diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-rua-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUA model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-rua-50",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUA refrigerator"
+      ],
+      "code": "50",
+      "slug": "dometic-rua-50-refrigerator",
+      "plainMeaning": "The official Dometic RUA support page lists 50 as a refrigerator fault message. The page states that multiple faults can be present and that the last fault is shown until acknowledged.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only owner-safe basics such as RV power state and exterior vent obstruction.",
+        "Turn the refrigerator off if cooling is abnormal, the alarm repeats, or the same code returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal cooling, LP, electrical, sensor, communication, and control diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-rua-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUA model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-rua-51",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUA refrigerator"
+      ],
+      "code": "51",
+      "slug": "dometic-rua-51-refrigerator",
+      "plainMeaning": "The official Dometic RUA support page lists 51 as a refrigerator fault message. The page states that multiple faults can be present and that the last fault is shown until acknowledged.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only owner-safe basics such as RV power state and exterior vent obstruction.",
+        "Turn the refrigerator off if cooling is abnormal, the alarm repeats, or the same code returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal cooling, LP, electrical, sensor, communication, and control diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-rua-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUA model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-rua-52",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUA refrigerator"
+      ],
+      "code": "52",
+      "slug": "dometic-rua-52-refrigerator",
+      "plainMeaning": "The official Dometic RUA support page lists 52 as a refrigerator fault message. The page states that multiple faults can be present and that the last fault is shown until acknowledged.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only owner-safe basics such as RV power state and exterior vent obstruction.",
+        "Turn the refrigerator off if cooling is abnormal, the alarm repeats, or the same code returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal cooling, LP, electrical, sensor, communication, and control diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-rua-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUA model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-rua-53",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUA refrigerator"
+      ],
+      "code": "53",
+      "slug": "dometic-rua-53-refrigerator",
+      "plainMeaning": "The official Dometic RUA support page lists 53 as a refrigerator fault message. The page states that multiple faults can be present and that the last fault is shown until acknowledged.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only owner-safe basics such as RV power state and exterior vent obstruction.",
+        "Turn the refrigerator off if cooling is abnormal, the alarm repeats, or the same code returns."
+      ],
+      "serviceOnlyActions": [
+        "Internal cooling, LP, electrical, sensor, communication, and control diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-rua-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUA model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-ruc-e03",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "E03",
+      "slug": "dometic-ruc-e03-refrigerator",
+      "plainMeaning": "The official Dometic RUC support page lists E03 as a refrigerator fault message. The page explains that warning-type faults reset after the condition clears and error-type faults require manual reset after the cause is corrected.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only obvious owner-safe conditions such as blocked exterior vents or interrupted RV power.",
+        "Turn the refrigerator off if cooling is abnormal and arrange model-specific service."
+      ],
+      "serviceOnlyActions": [
+        "Cooling-system, LP, electrical, sensor, control, and repeated-fault diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-ruc-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-ruc-e18",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "E18",
+      "slug": "dometic-ruc-e18-refrigerator",
+      "plainMeaning": "The official Dometic RUC support page lists E18 as a refrigerator fault message. The page explains that warning-type faults reset after the condition clears and error-type faults require manual reset after the cause is corrected.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only obvious owner-safe conditions such as blocked exterior vents or interrupted RV power.",
+        "Turn the refrigerator off if cooling is abnormal and arrange model-specific service."
+      ],
+      "serviceOnlyActions": [
+        "Cooling-system, LP, electrical, sensor, control, and repeated-fault diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-ruc-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-ruc-e32",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "E32",
+      "slug": "dometic-ruc-e32-refrigerator",
+      "plainMeaning": "The official Dometic RUC support page lists E32 as a refrigerator fault message. The page explains that warning-type faults reset after the condition clears and error-type faults require manual reset after the cause is corrected.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only obvious owner-safe conditions such as blocked exterior vents or interrupted RV power.",
+        "Turn the refrigerator off if cooling is abnormal and arrange model-specific service."
+      ],
+      "serviceOnlyActions": [
+        "Cooling-system, LP, electrical, sensor, control, and repeated-fault diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-ruc-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-ruc-e33",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "E33",
+      "slug": "dometic-ruc-e33-refrigerator",
+      "plainMeaning": "The official Dometic RUC support page lists E33 as a refrigerator fault message. The page explains that warning-type faults reset after the condition clears and error-type faults require manual reset after the cause is corrected.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only obvious owner-safe conditions such as blocked exterior vents or interrupted RV power.",
+        "Turn the refrigerator off if cooling is abnormal and arrange model-specific service."
+      ],
+      "serviceOnlyActions": [
+        "Cooling-system, LP, electrical, sensor, control, and repeated-fault diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-ruc-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-ruc-e34",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "E34",
+      "slug": "dometic-ruc-e34-refrigerator",
+      "plainMeaning": "The official Dometic RUC support page lists E34 as a refrigerator fault message. The page explains that warning-type faults reset after the condition clears and error-type faults require manual reset after the cause is corrected.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only obvious owner-safe conditions such as blocked exterior vents or interrupted RV power.",
+        "Turn the refrigerator off if cooling is abnormal and arrange model-specific service."
+      ],
+      "serviceOnlyActions": [
+        "Cooling-system, LP, electrical, sensor, control, and repeated-fault diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-ruc-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-ruc-e35",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "E35",
+      "slug": "dometic-ruc-e35-refrigerator",
+      "plainMeaning": "The Dometic RUC refrigerator support table lists E35 as a cooling or control fault that needs model-specific diagnosis.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off if cooling is abnormal.",
+        "Check that vents are not blocked.",
+        "Record the model number, code, and recent power source before service."
+      ],
+      "serviceOnlyActions": [
+        "Internal cooling, gas, electrical, or control diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if you smell gas, see scorching, or the unit behaves abnormally.",
+      "sourceIds": [
+        "dometic-ruc-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model number label",
+        "serial number",
+        "control board part number if visible without disassembly"
+      ]
+    },
+    {
+      "id": "dometic-ruc-w01",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "W01",
+      "slug": "dometic-ruc-w01-refrigerator",
+      "plainMeaning": "The official Dometic RUC support page lists W01 as a refrigerator fault message. The page explains that warning-type faults reset after the condition clears and error-type faults require manual reset after the cause is corrected.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only obvious owner-safe conditions such as blocked exterior vents or interrupted RV power.",
+        "Let the condition clear only if cooling and power appear normal."
+      ],
+      "serviceOnlyActions": [
+        "Cooling-system, LP, electrical, sensor, control, and repeated-fault diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-ruc-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-ruc-w02",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "W02",
+      "slug": "dometic-ruc-w02-refrigerator",
+      "plainMeaning": "The official Dometic RUC support page lists W02 as a refrigerator fault message. The page explains that warning-type faults reset after the condition clears and error-type faults require manual reset after the cause is corrected.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only obvious owner-safe conditions such as blocked exterior vents or interrupted RV power.",
+        "Let the condition clear only if cooling and power appear normal."
+      ],
+      "serviceOnlyActions": [
+        "Cooling-system, LP, electrical, sensor, control, and repeated-fault diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-ruc-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-ruc-w04",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "W04",
+      "slug": "dometic-ruc-w04-refrigerator",
+      "plainMeaning": "The official Dometic RUC support page lists W04 as a refrigerator fault message. The page explains that warning-type faults reset after the condition clears and error-type faults require manual reset after the cause is corrected.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only obvious owner-safe conditions such as blocked exterior vents or interrupted RV power.",
+        "Let the condition clear only if cooling and power appear normal."
+      ],
+      "serviceOnlyActions": [
+        "Cooling-system, LP, electrical, sensor, control, and repeated-fault diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-ruc-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-ruc-w10",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "W10",
+      "slug": "dometic-ruc-w10-refrigerator",
+      "plainMeaning": "The official Dometic RUC support page lists W10 as a refrigerator fault message. The page explains that warning-type faults reset after the condition clears and error-type faults require manual reset after the cause is corrected.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only obvious owner-safe conditions such as blocked exterior vents or interrupted RV power.",
+        "Let the condition clear only if cooling and power appear normal."
+      ],
+      "serviceOnlyActions": [
+        "Cooling-system, LP, electrical, sensor, control, and repeated-fault diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-ruc-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-ruc-w11",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "W11",
+      "slug": "dometic-ruc-w11-refrigerator",
+      "plainMeaning": "The official Dometic RUC support page lists W11 as a refrigerator fault message. The page explains that warning-type faults reset after the condition clears and error-type faults require manual reset after the cause is corrected.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only obvious owner-safe conditions such as blocked exterior vents or interrupted RV power.",
+        "Let the condition clear only if cooling and power appear normal."
+      ],
+      "serviceOnlyActions": [
+        "Cooling-system, LP, electrical, sensor, control, and repeated-fault diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-ruc-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-ruc-w14",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "W14",
+      "slug": "dometic-ruc-w14-refrigerator",
+      "plainMeaning": "The official Dometic RUC support page lists W14 as a refrigerator fault message. The page explains that warning-type faults reset after the condition clears and error-type faults require manual reset after the cause is corrected.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only obvious owner-safe conditions such as blocked exterior vents or interrupted RV power.",
+        "Let the condition clear only if cooling and power appear normal."
+      ],
+      "serviceOnlyActions": [
+        "Cooling-system, LP, electrical, sensor, control, and repeated-fault diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-ruc-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-ruc-w17",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "W17",
+      "slug": "dometic-ruc-w17-refrigerator",
+      "plainMeaning": "The official Dometic RUC support page lists W17 as a refrigerator fault message. The page explains that warning-type faults reset after the condition clears and error-type faults require manual reset after the cause is corrected.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only obvious owner-safe conditions such as blocked exterior vents or interrupted RV power.",
+        "Let the condition clear only if cooling and power appear normal."
+      ],
+      "serviceOnlyActions": [
+        "Cooling-system, LP, electrical, sensor, control, and repeated-fault diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-ruc-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-ruc-w19",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "W19",
+      "slug": "dometic-ruc-w19-refrigerator",
+      "plainMeaning": "The official Dometic RUC support page lists W19 as a refrigerator fault message. The page explains that warning-type faults reset after the condition clears and error-type faults require manual reset after the cause is corrected.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only obvious owner-safe conditions such as blocked exterior vents or interrupted RV power.",
+        "Let the condition clear only if cooling and power appear normal."
+      ],
+      "serviceOnlyActions": [
+        "Cooling-system, LP, electrical, sensor, control, and repeated-fault diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-ruc-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-ruc-w26",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RUC refrigerator"
+      ],
+      "code": "W26",
+      "slug": "dometic-ruc-w26-refrigerator",
+      "plainMeaning": "The official Dometic RUC support page lists W26 as a refrigerator fault message. The page explains that warning-type faults reset after the condition clears and error-type faults require manual reset after the cause is corrected.",
+      "ownerSafeActions": [
+        "Record the exact fault code and take a photo of the display.",
+        "Check only obvious owner-safe conditions such as blocked exterior vents or interrupted RV power.",
+        "Let the condition clear only if cooling and power appear normal."
+      ],
+      "serviceOnlyActions": [
+        "Cooling-system, LP, electrical, sensor, control, and repeated-fault diagnosis belongs to an authorized Dometic service provider."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator safety controls or work on LP/electrical components. Shut off LP and power if there is gas odor, scorching, abnormal heat, or repeated fault behavior.",
+      "sourceIds": [
+        "dometic-ruc-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "RUC model label",
+        "serial number",
+        "photo of the display code"
+      ]
+    },
+    {
+      "id": "dometic-water-heater-lockout",
+      "brand": "Dometic",
       "equipmentType": "Water heater",
-      "modelFamilies": ["FWH09A-AM", "FWH09AFA", "FWH09AFA-AM", "FWH09AFA-AB"],
-      "code": "E5",
-      "slug": "furrion-water-heater-e5",
-      "plainMeaning": "The Furrion tankless water heater troubleshooting manual lists E5 as an air-pressure fault.",
-      "ownerSafeActions": ["Turn the appliance off.", "Check only for obvious exterior vent blockage from outside the RV.", "Do not continue use if exhaust or flame behavior seems abnormal."],
-      "serviceOnlyActions": ["Air pressure switch, fan, exhaust, combustion, and board diagnosis is qualified service."],
-      "safetyBoundary": "Do not run a gas water heater with blocked venting. Shut off LP/power and call service if E5 persists.",
-      "sourceIds": ["furrion-water-heater"],
-      "symptomIds": ["airflow-or-venting", "water-heater-no-heat"],
-      "partCaptureHints": ["model", "exterior vent condition", "error history"]
+      "modelFamilies": [
+        "WH-6GA",
+        "WH-6GEA",
+        "WH-9GEA"
+      ],
+      "code": "Lock-Out Lamp",
+      "slug": "dometic-water-heater-lock-out-lamp",
+      "plainMeaning": "The red lockout lamp indicates the water heater has a no-heat fault or failed operation condition.",
+      "ownerSafeActions": [
+        "Turn the water heater off.",
+        "Confirm the tank is full before any restart attempt.",
+        "Write down whether the appliance was in gas or electric mode."
+      ],
+      "serviceOnlyActions": [
+        "Persistent lockout, overheating, ECO, thermal cut-off, flame, gas, or wiring diagnosis requires Dometic service."
+      ],
+      "safetyBoundary": "Do not open gas components, bypass the ECO, or keep resetting an overheating water heater. Shut off LP and power and call service if the lockout persists.",
+      "sourceIds": [
+        "dometic-water-heater-wh"
+      ],
+      "symptomIds": [
+        "water-heater-no-heat",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "water heater model",
+        "control switch panel",
+        "gas/electric mode"
+      ]
     },
     {
       "id": "furrion-thermostat-e3",
       "brand": "Furrion",
       "equipmentType": "Thermostat",
-      "modelFamilies": ["FACW12ESPA-BL"],
+      "modelFamilies": [
+        "FACW12ESPA-BL"
+      ],
       "code": "E3",
       "slug": "furrion-thermostat-e3",
       "plainMeaning": "The Furrion thermostat quick-start guide lists E3 as thermostat/control-box communication loss.",
-      "ownerSafeActions": ["Record the displayed code.", "Turn the HVAC mode off if the unit is not responding.", "Capture thermostat and control-box model numbers for service."],
-      "serviceOnlyActions": ["Communication wiring, control box, and rooftop HVAC diagnosis is qualified service."],
+      "ownerSafeActions": [
+        "Record the displayed code.",
+        "Turn the HVAC mode off if the unit is not responding.",
+        "Capture thermostat and control-box model numbers for service."
+      ],
+      "serviceOnlyActions": [
+        "Communication wiring, control box, and rooftop HVAC diagnosis is qualified service."
+      ],
       "safetyBoundary": "Disconnect power before HVAC service. Do not open electrical compartments unless qualified.",
-      "sourceIds": ["furrion-thermostat"],
-      "symptomIds": ["thermostat-communication", "service-call-prep"],
-      "partCaptureHints": ["FACW12ESPA-BL thermostat", "control-box label", "rooftop model"]
+      "sourceIds": [
+        "furrion-thermostat"
+      ],
+      "symptomIds": [
+        "thermostat-communication",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "FACW12ESPA-BL thermostat",
+        "control-box label",
+        "rooftop model"
+      ]
+    },
+    {
+      "id": "furrion-water-heater-e1",
+      "brand": "Furrion",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "FWH09A-AM",
+        "FWH09AFA",
+        "FWH09AFA-AM",
+        "FWH09AFA-AB"
+      ],
+      "code": "E1",
+      "slug": "furrion-water-heater-e1",
+      "plainMeaning": "The Furrion tankless water heater manual lists E1 as a flame-sense during ignition fault.",
+      "ownerSafeActions": [
+        "Turn the water heater off.",
+        "Stop use if ignition faults repeat.",
+        "Record water flow, code, and whether LP supply was recently changed."
+      ],
+      "serviceOnlyActions": [
+        "Flame, ignition, solenoid, gas, exhaust, and combustion checks are qualified service work."
+      ],
+      "safetyBoundary": "Do not bypass flame sensing or open gas components. Shut off LP and call service for repeated E1 or gas odor.",
+      "sourceIds": [
+        "furrion-water-heater"
+      ],
+      "symptomIds": [
+        "water-heater-no-heat",
+        "refrigerator-lp-ignition"
+      ],
+      "partCaptureHints": [
+        "water heater model",
+        "controller display",
+        "LP supply status"
+      ]
+    },
+    {
+      "id": "furrion-water-heater-e5",
+      "brand": "Furrion",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "FWH09A-AM",
+        "FWH09AFA",
+        "FWH09AFA-AM",
+        "FWH09AFA-AB"
+      ],
+      "code": "E5",
+      "slug": "furrion-water-heater-e5",
+      "plainMeaning": "The Furrion tankless water heater troubleshooting manual lists E5 as an air-pressure fault.",
+      "ownerSafeActions": [
+        "Turn the appliance off.",
+        "Check only for obvious exterior vent blockage from outside the RV.",
+        "Do not continue use if exhaust or flame behavior seems abnormal."
+      ],
+      "serviceOnlyActions": [
+        "Air pressure switch, fan, exhaust, combustion, and board diagnosis is qualified service."
+      ],
+      "safetyBoundary": "Do not run a gas water heater with blocked venting. Shut off LP/power and call service if E5 persists.",
+      "sourceIds": [
+        "furrion-water-heater"
+      ],
+      "symptomIds": [
+        "airflow-or-venting",
+        "water-heater-no-heat"
+      ],
+      "partCaptureHints": [
+        "model",
+        "exterior vent condition",
+        "error history"
+      ]
     },
     {
       "id": "lippert-ground-control-low-voltage",
       "brand": "Lippert",
       "equipmentType": "Leveling system",
-      "modelFamilies": ["Ground Control LCD 4-point", "Ground Control LCD 6-point"],
+      "modelFamilies": [
+        "Ground Control LCD 4-point",
+        "Ground Control LCD 6-point"
+      ],
       "code": "Low Voltage",
       "slug": "lippert-ground-control-low-voltage",
       "plainMeaning": "The Lippert Ground Control troubleshooting manual includes Low Voltage as a leveling system error.",
-      "ownerSafeActions": ["Stop leveling movement.", "Check the RV battery monitor.", "Record jack positions and whether shore power is connected."],
-      "serviceOnlyActions": ["Jack motor, controller, sensor, high-current wiring, and calibration work should follow Lippert service procedures."],
+      "ownerSafeActions": [
+        "Stop leveling movement.",
+        "Check the RV battery monitor.",
+        "Record jack positions and whether shore power is connected."
+      ],
+      "serviceOnlyActions": [
+        "Jack motor, controller, sensor, high-current wiring, and calibration work should follow Lippert service procedures."
+      ],
       "safetyBoundary": "Never use leveling jacks as service stands. Keep people clear of jacks and pinch points.",
-      "sourceIds": ["lippert-ground-control"],
-      "symptomIds": ["low-voltage", "leveling-jack-error"],
-      "partCaptureHints": ["controller part number", "battery voltage", "jack position"]
+      "sourceIds": [
+        "lippert-ground-control"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "leveling-jack-error"
+      ],
+      "partCaptureHints": [
+        "controller part number",
+        "battery voltage",
+        "jack position"
+      ]
     },
     {
       "id": "lippert-slide-red-3",
       "brand": "Lippert",
       "equipmentType": "Slide-out",
-      "modelFamilies": ["In-Wall Slide-out"],
+      "modelFamilies": [
+        "In-Wall Slide-out"
+      ],
       "code": "Red LED 3",
       "slug": "lippert-in-wall-slide-red-led-3",
       "plainMeaning": "The Lippert In-Wall Slide-out manual maps red LED 3 to low battery.",
-      "ownerSafeActions": ["Stop operating the slide.", "Check RV battery voltage from an installed monitor.", "Keep people and objects clear of the slide room."],
-      "serviceOnlyActions": ["Controller, motor, wiring short, hall sensor, or manual override procedures should follow Lippert service documentation."],
+      "ownerSafeActions": [
+        "Stop operating the slide.",
+        "Check RV battery voltage from an installed monitor.",
+        "Keep people and objects clear of the slide room."
+      ],
+      "serviceOnlyActions": [
+        "Controller, motor, wiring short, hall sensor, or manual override procedures should follow Lippert service documentation."
+      ],
       "safetyBoundary": "Do not place hands or tools near moving slide mechanisms. Do not force the slide if current, short, or controller faults appear.",
-      "sourceIds": ["lippert-in-wall-slide"],
-      "symptomIds": ["low-voltage", "slide-room-stuck"],
-      "partCaptureHints": ["controller label", "green LED motor indicator", "red LED count"]
+      "sourceIds": [
+        "lippert-in-wall-slide"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "slide-room-stuck"
+      ],
+      "partCaptureHints": [
+        "controller label",
+        "green LED motor indicator",
+        "red LED count"
+      ]
     },
     {
-      "id": "onan-code-36",
-      "brand": "Onan",
-      "equipmentType": "Generator",
-      "modelFamilies": ["HGJBB Spec A-B", "QG RV generator"],
-      "code": "36",
-      "slug": "onan-code-36-engine-stopped",
-      "plainMeaning": "The Cummins Onan operator manual lists Code 36 as Engine Stopped.",
-      "ownerSafeActions": ["Turn the generator off.", "Check only safe owner items listed in the model manual, such as fuel level and air intake obstruction from outside the unit.", "Record load, run time, weather, and whether the generator restarted."],
-      "serviceOnlyActions": ["Fuel, ignition, voltage, governor, rotor, field, processor, exhaust, and internal generator diagnosis belongs to Cummins service or a qualified generator technician."],
-      "safetyBoundary": "Generators can produce carbon monoxide and lethal voltage. Do not run in unsafe ventilation conditions or open energized compartments.",
-      "sourceIds": ["onan-rv-manual-index", "onan-hgjbb-a031c171"],
-      "symptomIds": ["generator-stopped", "service-call-prep"],
-      "partCaptureHints": ["generator model/spec", "hour meter", "fault blink count"]
+      "id": "norcold-1200-no-co",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "1200 series"
+      ],
+      "code": "no co",
+      "slug": "norcold-1200-no-co",
+      "plainMeaning": "The Norcold 1200 owner manual uses no co for a stopped-cooling condition.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off if it is not cooling.",
+        "Keep food safety in mind and move perishables.",
+        "Record outside temperature, power source, and whether this is a repeat event."
+      ],
+      "serviceOnlyActions": [
+        "Repeated no co, cooling-unit, high-temperature, recall, or reset work is not a DIY action."
+      ],
+      "safetyBoundary": "Do not bypass high-temperature recall devices or force repeated resets. Shut the refrigerator off and arrange qualified service for repeat or unsafe cooling faults.",
+      "sourceIds": [
+        "norcold-1200-owner"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "recall kit status",
+        "display board code"
+      ]
     },
     {
-      "id": "onan-code-2",
-      "brand": "Onan",
-      "equipmentType": "Generator",
-      "modelFamilies": ["HGJBB Spec A-B", "QG RV generator"],
-      "code": "2",
-      "slug": "onan-code-2-low-oil-pressure",
-      "plainMeaning": "The Cummins Onan operator manual lists Code 2 as Low Oil Pressure.",
-      "ownerSafeActions": ["Turn the generator off.", "Let the generator cool before visual checks.", "Record oil level only if the model manual allows the owner check and the unit is off/cool."],
-      "serviceOnlyActions": ["Oil-pressure switch, engine, wiring, and internal generator diagnostics are service work."],
-      "safetyBoundary": "Do not run a generator with a low oil pressure fault. Avoid hot surfaces, moving parts, exhaust, fuel, and energized compartments.",
-      "sourceIds": ["onan-rv-manual-index", "onan-hgjbb-a031c171"],
-      "symptomIds": ["generator-stopped", "service-call-prep"],
-      "partCaptureHints": ["model/spec letter", "oil service date", "hour meter"]
+      "id": "norcold-polar-ac-he",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "Polar N7LX",
+        "Polar N8LX"
+      ],
+      "code": "AC HE",
+      "slug": "norcold-polar-ac-he",
+      "plainMeaning": "The manual maps AC HE to a problem relating to the AC heater.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off.",
+        "Record the displayed term and operating mode."
+      ],
+      "serviceOnlyActions": [
+        "AC heater diagnosis is not owner serviceable and should go to an authorized Norcold Service Center."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, flame-sense devices, high-temperature protection, LP components, or electrical circuits. Shut off LP and power if there is gas odor, flame abnormality, overheating, or repeated fault behavior.",
+      "sourceIds": [
+        "norcold-polar-owner"
+      ],
+      "symptomIds": [
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Norcold Polar model label",
+        "photo of display or indicator light",
+        "power mode and battery voltage if visible"
+      ]
     },
     {
-      "id": "onan-code-57",
-      "brand": "Onan",
-      "equipmentType": "Generator",
-      "modelFamilies": ["HGJAA Spec J-K", "HGJAB Spec J-L", "QG 5500/7000 EFI"],
-      "code": "57",
-      "slug": "onan-code-57-over-prime",
-      "plainMeaning": "The Cummins Onan HGJAA/HGJAB manual includes Code 57 as Over Prime.",
-      "ownerSafeActions": ["Turn the generator off.", "Avoid repeated priming attempts.", "Record fuel type and recent service history."],
-      "serviceOnlyActions": ["Fuel injector, priming, fuel pump, controller, and engine diagnosis belongs to Cummins service or a qualified generator technician."],
-      "safetyBoundary": "Do not open fuel components or run the generator with fuel odor. Shut down and ventilate safely.",
-      "sourceIds": ["onan-rv-manual-index", "onan-hgjaa-a035d009"],
-      "symptomIds": ["generator-stopped", "service-call-prep"],
-      "partCaptureHints": ["model/spec", "fuel type", "fault history"]
+      "id": "norcold-polar-ac-re",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "Polar N7LX",
+        "Polar N8LX"
+      ],
+      "code": "AC rE",
+      "slug": "norcold-polar-ac-re",
+      "plainMeaning": "The manual maps AC rE to a fault within the refrigerator controls.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off.",
+        "Record the displayed term and model."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator-control diagnosis is not owner serviceable and should go to an authorized Norcold Service Center."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, flame-sense devices, high-temperature protection, LP components, or electrical circuits. Shut off LP and power if there is gas odor, flame abnormality, overheating, or repeated fault behavior.",
+      "sourceIds": [
+        "norcold-polar-owner"
+      ],
+      "symptomIds": [
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Norcold Polar model label",
+        "photo of display or indicator light",
+        "power mode and battery voltage if visible"
+      ]
+    },
+    {
+      "id": "norcold-polar-amber-flashes-off",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "Polar N7V",
+        "Polar N8V"
+      ],
+      "code": "amber flashes off",
+      "slug": "norcold-polar-amber-flashes-off",
+      "plainMeaning": "The manual says the refrigerator is operating on AC power with the thermistor sensed as inoperable and backup temperature control active.",
+      "ownerSafeActions": [
+        "Record the indicator behavior.",
+        "Keep food safety in mind and monitor cooling."
+      ],
+      "serviceOnlyActions": [
+        "Thermistor diagnosis is not owner serviceable and should go to an authorized Norcold Service Center."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, flame-sense devices, high-temperature protection, LP components, or electrical circuits. Shut off LP and power if there is gas odor, flame abnormality, overheating, or repeated fault behavior.",
+      "sourceIds": [
+        "norcold-polar-owner"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Norcold Polar model label",
+        "photo of display or indicator light",
+        "power mode and battery voltage if visible"
+      ]
+    },
+    {
+      "id": "norcold-polar-blank-display",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "Polar N7V",
+        "Polar N8V",
+        "Polar N7X",
+        "Polar N8X",
+        "Polar N7LX",
+        "Polar N8LX"
+      ],
+      "code": "blank display",
+      "slug": "norcold-polar-blank-display",
+      "plainMeaning": "The manual lists blank display as the refrigerator being off or not turning on.",
+      "ownerSafeActions": [
+        "Try the normal power-on control only.",
+        "Record battery monitor and converter state if visible."
+      ],
+      "serviceOnlyActions": [
+        "Persistent no-display power, converter, wiring, or control faults should be handled by qualified RV electrical service or Norcold service."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, flame-sense devices, high-temperature protection, LP components, or electrical circuits. Shut off LP and power if there is gas odor, flame abnormality, overheating, or repeated fault behavior.",
+      "sourceIds": [
+        "norcold-polar-owner"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Norcold Polar model label",
+        "photo of display or indicator light",
+        "power mode and battery voltage if visible"
+      ]
+    },
+    {
+      "id": "norcold-polar-fl",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "Polar N7LX",
+        "Polar N8LX"
+      ],
+      "code": "FL --",
+      "slug": "norcold-polar-fl",
+      "plainMeaning": "The manual maps FL -- to flame sensed at the burner when none should be present.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off.",
+        "Do not continue operation if the fault returns or there is LP odor."
+      ],
+      "serviceOnlyActions": [
+        "Flame-sense, LP, burner, and control diagnosis is not owner serviceable."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, flame-sense devices, high-temperature protection, LP components, or electrical circuits. Shut off LP and power if there is gas odor, flame abnormality, overheating, or repeated fault behavior.",
+      "sourceIds": [
+        "norcold-polar-owner"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Norcold Polar model label",
+        "photo of display or indicator light",
+        "power mode and battery voltage if visible"
+      ]
+    },
+    {
+      "id": "norcold-polar-green-flashes-off",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "Polar N7V",
+        "Polar N8V"
+      ],
+      "code": "green flashes off",
+      "slug": "norcold-polar-green-flashes-off",
+      "plainMeaning": "The manual says the refrigerator is operating on AC power with the thermistor sensed as inoperable and backup temperature control active.",
+      "ownerSafeActions": [
+        "Record the indicator behavior.",
+        "Keep food safety in mind and monitor cooling."
+      ],
+      "serviceOnlyActions": [
+        "Thermistor diagnosis is not owner serviceable and should go to an authorized Norcold Service Center."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, flame-sense devices, high-temperature protection, LP components, or electrical circuits. Shut off LP and power if there is gas odor, flame abnormality, overheating, or repeated fault behavior.",
+      "sourceIds": [
+        "norcold-polar-owner"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Norcold Polar model label",
+        "photo of display or indicator light",
+        "power mode and battery voltage if visible"
+      ]
+    },
+    {
+      "id": "norcold-polar-hi-dc",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "Polar N7LX",
+        "Polar N8LX"
+      ],
+      "code": "HI dc",
+      "slug": "norcold-polar-hi-dc",
+      "plainMeaning": "The manual lists HI dc as a high DC input-voltage fault.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off.",
+        "Record charger, converter, solar, or generator state if visible."
+      ],
+      "serviceOnlyActions": [
+        "High-voltage DC electrical diagnosis should be handled by qualified RV electrical service or Norcold service."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, flame-sense devices, high-temperature protection, LP components, or electrical circuits. Shut off LP and power if there is gas odor, flame abnormality, overheating, or repeated fault behavior.",
+      "sourceIds": [
+        "norcold-polar-owner"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Norcold Polar model label",
+        "photo of display or indicator light",
+        "power mode and battery voltage if visible"
+      ]
+    },
+    {
+      "id": "norcold-polar-lo-dc-lx",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "Polar N7LX",
+        "Polar N8LX"
+      ],
+      "code": "Lo dc",
+      "slug": "norcold-polar-lo-dc-lx",
+      "plainMeaning": "The manual lists Lo dc as a low DC input-voltage fault.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off.",
+        "Record battery, converter, solar, or generator state if visible."
+      ],
+      "serviceOnlyActions": [
+        "Low-voltage DC electrical diagnosis should be handled by qualified RV electrical service or Norcold service."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, flame-sense devices, high-temperature protection, LP components, or electrical circuits. Shut off LP and power if there is gas odor, flame abnormality, overheating, or repeated fault behavior.",
+      "sourceIds": [
+        "norcold-polar-owner"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Norcold Polar model label",
+        "photo of display or indicator light",
+        "power mode and battery voltage if visible"
+      ]
+    },
+    {
+      "id": "norcold-polar-lo-dc",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N7LX",
+        "N8LX",
+        "Polar N7/N8"
+      ],
+      "code": "Lo dC",
+      "slug": "norcold-polar-lo-dc",
+      "plainMeaning": "The Norcold Polar LX manual lists low DC voltage display terms for insufficient 12-volt supply.",
+      "ownerSafeActions": [
+        "Check the RV battery monitor.",
+        "Confirm the converter or battery disconnect has not been turned off.",
+        "Document battery voltage if available from an installed monitor."
+      ],
+      "serviceOnlyActions": [
+        "Wiring, converter, board, fuse-holder heat, or voltage-drop diagnosis should be handled by qualified RV electrical service."
+      ],
+      "safetyBoundary": "Do not work inside energized 12 VDC or 120 VAC panels unless qualified.",
+      "sourceIds": [
+        "norcold-polar-owner"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "battery monitor reading",
+        "fuse panel label",
+        "refrigerator model"
+      ]
+    },
+    {
+      "id": "norcold-polar-no-ac",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "Polar N7LX",
+        "Polar N8LX"
+      ],
+      "code": "no AC",
+      "slug": "norcold-polar-no-ac",
+      "plainMeaning": "The manual says no AC means AC voltage is not available to the refrigerator.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off and back on once.",
+        "Check only obvious owner-safe items such as whether the RV is connected to power and whether a breaker is visibly tripped.",
+        "Record shore power or generator state."
+      ],
+      "serviceOnlyActions": [
+        "120 VAC, generator, wiring, and control diagnosis should be handled by qualified service."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, flame-sense devices, high-temperature protection, LP components, or electrical circuits. Shut off LP and power if there is gas odor, flame abnormality, overheating, or repeated fault behavior.",
+      "sourceIds": [
+        "norcold-polar-owner"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Norcold Polar model label",
+        "photo of display or indicator light",
+        "power mode and battery voltage if visible"
+      ]
+    },
+    {
+      "id": "norcold-polar-no-dt",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "Polar N7LX",
+        "Polar N8LX"
+      ],
+      "code": "no dt",
+      "slug": "norcold-polar-no-dt",
+      "plainMeaning": "The manual maps no dt to loss of communication between refrigerator controls.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off and back on once.",
+        "Record the displayed term and model."
+      ],
+      "serviceOnlyActions": [
+        "Communication and control diagnosis is not owner serviceable and should go to an authorized Norcold Service Center."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, flame-sense devices, high-temperature protection, LP components, or electrical circuits. Shut off LP and power if there is gas odor, flame abnormality, overheating, or repeated fault behavior.",
+      "sourceIds": [
+        "norcold-polar-owner"
+      ],
+      "symptomIds": [
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Norcold Polar model label",
+        "photo of display or indicator light",
+        "power mode and battery voltage if visible"
+      ]
+    },
+    {
+      "id": "norcold-polar-no-fl",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N7LX",
+        "N8LX",
+        "Polar N7/N8"
+      ],
+      "code": "no FL",
+      "slug": "norcold-polar-no-fl",
+      "plainMeaning": "The Norcold Polar manual uses no FL for an LP flame/ignition failure condition.",
+      "ownerSafeActions": [
+        "Switch the refrigerator off.",
+        "Make sure LP supply is not intentionally shut off before documenting the issue.",
+        "Record whether the code happens only on LP mode."
+      ],
+      "serviceOnlyActions": [
+        "LP ignition, flame-sense, burner, gas valve, and board diagnosis requires qualified service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean burner parts, adjust gas, or bypass ignition controls. Shut off LP if gas odor is present.",
+      "sourceIds": [
+        "norcold-polar-owner"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Norcold model label",
+        "power mode",
+        "LP regulator/service history"
+      ]
+    },
+    {
+      "id": "norcold-polar-op-li",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "Polar N7LX",
+        "Polar N8LX"
+      ],
+      "code": "oP LI",
+      "slug": "norcold-polar-op-li",
+      "plainMeaning": "The manual maps oP LI to a fault within the refrigerator electronic controls.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off and back on once.",
+        "Record the displayed term and model."
+      ],
+      "serviceOnlyActions": [
+        "Electronic-control diagnosis is not owner serviceable and should go to an authorized Norcold Service Center."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, flame-sense devices, high-temperature protection, LP components, or electrical circuits. Shut off LP and power if there is gas odor, flame abnormality, overheating, or repeated fault behavior.",
+      "sourceIds": [
+        "norcold-polar-owner"
+      ],
+      "symptomIds": [
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Norcold Polar model label",
+        "photo of display or indicator light",
+        "power mode and battery voltage if visible"
+      ]
+    },
+    {
+      "id": "norcold-polar-red-flash-1",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "Polar N7V",
+        "Polar N8V",
+        "Polar N7X",
+        "Polar N8X"
+      ],
+      "code": "red flash 1",
+      "slug": "norcold-polar-red-flash-1",
+      "plainMeaning": "The manual maps Flash Code 1 to a problem relating to the AC heater.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off.",
+        "Record the red flash count and operating mode."
+      ],
+      "serviceOnlyActions": [
+        "AC heater diagnosis is not owner serviceable and should go to an authorized Norcold Service Center."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, flame-sense devices, high-temperature protection, LP components, or electrical circuits. Shut off LP and power if there is gas odor, flame abnormality, overheating, or repeated fault behavior.",
+      "sourceIds": [
+        "norcold-polar-owner"
+      ],
+      "symptomIds": [
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Norcold Polar model label",
+        "photo of display or indicator light",
+        "power mode and battery voltage if visible"
+      ]
+    },
+    {
+      "id": "norcold-polar-red-flash-10",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "Polar N7V",
+        "Polar N8V",
+        "Polar N7X",
+        "Polar N8X"
+      ],
+      "code": "red flash 10",
+      "slug": "norcold-polar-red-flash-10",
+      "plainMeaning": "The manual maps Flash Code 10 to loss of communication between refrigerator controls.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off and back on once.",
+        "Record the flash count and model."
+      ],
+      "serviceOnlyActions": [
+        "Communication and control diagnosis is not owner serviceable and should go to an authorized Norcold Service Center."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, flame-sense devices, high-temperature protection, LP components, or electrical circuits. Shut off LP and power if there is gas odor, flame abnormality, overheating, or repeated fault behavior.",
+      "sourceIds": [
+        "norcold-polar-owner"
+      ],
+      "symptomIds": [
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Norcold Polar model label",
+        "photo of display or indicator light",
+        "power mode and battery voltage if visible"
+      ]
+    },
+    {
+      "id": "norcold-polar-red-flash-2",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "Polar N7V",
+        "Polar N8V",
+        "Polar N7X",
+        "Polar N8X"
+      ],
+      "code": "red flash 2",
+      "slug": "norcold-polar-red-flash-2",
+      "plainMeaning": "The manual maps Flash Code 2 to a fault within the refrigerator electronic controls.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off and back on once.",
+        "Record the red flash count."
+      ],
+      "serviceOnlyActions": [
+        "Persistent electronic-control faults belong to an authorized Norcold Service Center."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, flame-sense devices, high-temperature protection, LP components, or electrical circuits. Shut off LP and power if there is gas odor, flame abnormality, overheating, or repeated fault behavior.",
+      "sourceIds": [
+        "norcold-polar-owner"
+      ],
+      "symptomIds": [
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Norcold Polar model label",
+        "photo of display or indicator light",
+        "power mode and battery voltage if visible"
+      ]
+    },
+    {
+      "id": "norcold-polar-red-flash-3",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "Polar N7V",
+        "Polar N8V",
+        "Polar N7X",
+        "Polar N8X"
+      ],
+      "code": "red flash 3",
+      "slug": "norcold-polar-red-flash-3",
+      "plainMeaning": "The manual gives model-specific meanings: N7V/N8V indicate flame present when it should not be, while N7X/N8X indicate electronic controls.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off.",
+        "Record the model group and flash count.",
+        "Do not continue operation if flame, LP odor, or repeated faults are present."
+      ],
+      "serviceOnlyActions": [
+        "Flame-sense, LP, burner, and electronic-control diagnosis belongs to an authorized Norcold Service Center."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, flame-sense devices, high-temperature protection, LP components, or electrical circuits. Shut off LP and power if there is gas odor, flame abnormality, overheating, or repeated fault behavior.",
+      "sourceIds": [
+        "norcold-polar-owner"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Norcold Polar model label",
+        "photo of display or indicator light",
+        "power mode and battery voltage if visible"
+      ]
+    },
+    {
+      "id": "norcold-polar-red-flash-4",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "Polar N7V",
+        "Polar N8V",
+        "Polar N7X",
+        "Polar N8X"
+      ],
+      "code": "red flash 4",
+      "slug": "norcold-polar-red-flash-4",
+      "plainMeaning": "The manual maps Flash Code 4 to a refrigerator-controls fault.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off.",
+        "Record the red flash count and model group."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator-control faults are not owner serviceable and should go to an authorized Norcold Service Center."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, flame-sense devices, high-temperature protection, LP components, or electrical circuits. Shut off LP and power if there is gas odor, flame abnormality, overheating, or repeated fault behavior.",
+      "sourceIds": [
+        "norcold-polar-owner"
+      ],
+      "symptomIds": [
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Norcold Polar model label",
+        "photo of display or indicator light",
+        "power mode and battery voltage if visible"
+      ]
+    },
+    {
+      "id": "norcold-polar-red-flash-5",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "Polar N7V",
+        "Polar N8V",
+        "Polar N7X",
+        "Polar N8X"
+      ],
+      "code": "red flash 5",
+      "slug": "norcold-polar-red-flash-5",
+      "plainMeaning": "The manual maps Flash Code 5 to flame sensed at the burner when none should be present.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off.",
+        "Do not keep cycling the refrigerator if the flash code returns."
+      ],
+      "serviceOnlyActions": [
+        "Flame-sense, LP, burner, and control diagnosis is not owner serviceable."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, flame-sense devices, high-temperature protection, LP components, or electrical circuits. Shut off LP and power if there is gas odor, flame abnormality, overheating, or repeated fault behavior.",
+      "sourceIds": [
+        "norcold-polar-owner"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Norcold Polar model label",
+        "photo of display or indicator light",
+        "power mode and battery voltage if visible"
+      ]
+    },
+    {
+      "id": "norcold-polar-red-flash-6",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "Polar N7X",
+        "Polar N8X"
+      ],
+      "code": "red flash 6",
+      "slug": "norcold-polar-red-flash-6",
+      "plainMeaning": "The manual maps Flash Code 6 to a problem relating to the DC heater on 3-way models.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off.",
+        "Record whether the unit is a 3-way model and what power mode was selected."
+      ],
+      "serviceOnlyActions": [
+        "DC heater and control diagnosis is not owner serviceable and should go to an authorized Norcold Service Center."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, flame-sense devices, high-temperature protection, LP components, or electrical circuits. Shut off LP and power if there is gas odor, flame abnormality, overheating, or repeated fault behavior.",
+      "sourceIds": [
+        "norcold-polar-owner"
+      ],
+      "symptomIds": [
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Norcold Polar model label",
+        "photo of display or indicator light",
+        "power mode and battery voltage if visible"
+      ]
+    },
+    {
+      "id": "norcold-polar-red-flash-7",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "Polar N7X",
+        "Polar N8X"
+      ],
+      "code": "red flash 7",
+      "slug": "norcold-polar-red-flash-7",
+      "plainMeaning": "The manual maps Flash Code 7 to a fault within the refrigerator electronic controls.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off.",
+        "Record the flash count and model."
+      ],
+      "serviceOnlyActions": [
+        "Electronic-control diagnosis is not owner serviceable and should go to an authorized Norcold Service Center."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, flame-sense devices, high-temperature protection, LP components, or electrical circuits. Shut off LP and power if there is gas odor, flame abnormality, overheating, or repeated fault behavior.",
+      "sourceIds": [
+        "norcold-polar-owner"
+      ],
+      "symptomIds": [
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Norcold Polar model label",
+        "photo of display or indicator light",
+        "power mode and battery voltage if visible"
+      ]
+    },
+    {
+      "id": "norcold-polar-red-flash-8",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "Polar N7V",
+        "Polar N8V",
+        "Polar N7X",
+        "Polar N8X"
+      ],
+      "code": "red flash 8",
+      "slug": "norcold-polar-red-flash-8",
+      "plainMeaning": "The manual maps Flash Code 8 to DC input voltage that is too low.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off and back on once.",
+        "Check only installed battery monitor or converter status if visible.",
+        "Record battery voltage if available from an installed monitor."
+      ],
+      "serviceOnlyActions": [
+        "Voltage-drop, converter, wiring, and control diagnosis should be handled by qualified RV electrical service or Norcold service."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, flame-sense devices, high-temperature protection, LP components, or electrical circuits. Shut off LP and power if there is gas odor, flame abnormality, overheating, or repeated fault behavior.",
+      "sourceIds": [
+        "norcold-polar-owner"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Norcold Polar model label",
+        "photo of display or indicator light",
+        "power mode and battery voltage if visible"
+      ]
+    },
+    {
+      "id": "norcold-polar-red-flash-9",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "Polar N7V",
+        "Polar N8V",
+        "Polar N7X",
+        "Polar N8X"
+      ],
+      "code": "red flash 9",
+      "slug": "norcold-polar-red-flash-9",
+      "plainMeaning": "The manual maps Flash Code 9 to DC input voltage that is too high.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off and back on once.",
+        "Record converter, charger, solar, or generator state if visible."
+      ],
+      "serviceOnlyActions": [
+        "High-voltage DC electrical diagnosis should be handled by qualified RV electrical service or Norcold service."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, flame-sense devices, high-temperature protection, LP components, or electrical circuits. Shut off LP and power if there is gas odor, flame abnormality, overheating, or repeated fault behavior.",
+      "sourceIds": [
+        "norcold-polar-owner"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Norcold Polar model label",
+        "photo of display or indicator light",
+        "power mode and battery voltage if visible"
+      ]
+    },
+    {
+      "id": "norcold-polar-snowflake-flashes",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "Polar N7X",
+        "Polar N8X"
+      ],
+      "code": "snowflake flashes",
+      "slug": "norcold-polar-snowflake-flashes",
+      "plainMeaning": "The manual says temperature setting snowflakes flashing means the thermistor has been sensed inoperable and backup temperature control is active.",
+      "ownerSafeActions": [
+        "Record the snowflake flashing behavior.",
+        "Keep food safety in mind and monitor cooling."
+      ],
+      "serviceOnlyActions": [
+        "Thermistor diagnosis is not owner serviceable and should go to an authorized Norcold Service Center."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, flame-sense devices, high-temperature protection, LP components, or electrical circuits. Shut off LP and power if there is gas odor, flame abnormality, overheating, or repeated fault behavior.",
+      "sourceIds": [
+        "norcold-polar-owner"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Norcold Polar model label",
+        "photo of display or indicator light",
+        "power mode and battery voltage if visible"
+      ]
+    },
+    {
+      "id": "norcold-polar-solid-red",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "Polar N7V",
+        "Polar N8V",
+        "Polar N7X",
+        "Polar N8X"
+      ],
+      "code": "solid red",
+      "slug": "norcold-polar-solid-red",
+      "plainMeaning": "The refrigerator tried to operate on the selected energy source with no success.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off and back on once.",
+        "Record whether AC, LP, or auto mode was selected.",
+        "Stop if the refrigerator still does not cool or the indicator returns solid red."
+      ],
+      "serviceOnlyActions": [
+        "LP supply, pressure, refrigerator gas shutoff, cooling, and control diagnosis belongs to a dealer or authorized Norcold Service Center."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, flame-sense devices, high-temperature protection, LP components, or electrical circuits. Shut off LP and power if there is gas odor, flame abnormality, overheating, or repeated fault behavior.",
+      "sourceIds": [
+        "norcold-polar-owner"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Norcold Polar model label",
+        "photo of display or indicator light",
+        "power mode and battery voltage if visible"
+      ]
+    },
+    {
+      "id": "norcold-polar-sr",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "Polar N7LX",
+        "Polar N8LX"
+      ],
+      "code": "Sr",
+      "slug": "norcold-polar-sr",
+      "plainMeaning": "The manual says Sr is a fault within the refrigerator electronic controls.",
+      "ownerSafeActions": [
+        "Turn the refrigerator off and back on once.",
+        "Record the displayed term and model."
+      ],
+      "serviceOnlyActions": [
+        "Electronic-control diagnosis is not owner serviceable and should go to an authorized Norcold Service Center."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, flame-sense devices, high-temperature protection, LP components, or electrical circuits. Shut off LP and power if there is gas odor, flame abnormality, overheating, or repeated fault behavior.",
+      "sourceIds": [
+        "norcold-polar-owner"
+      ],
+      "symptomIds": [
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Norcold Polar model label",
+        "photo of display or indicator light",
+        "power mode and battery voltage if visible"
+      ]
+    },
+    {
+      "id": "norcold-polar-temperature-setting-flashes",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "Polar N7LX",
+        "Polar N8LX"
+      ],
+      "code": "temperature setting flashes",
+      "slug": "norcold-polar-temperature-setting-flashes",
+      "plainMeaning": "The manual says temperature setting flashing means the thermistor has been sensed as inoperable and backup temperature control is active.",
+      "ownerSafeActions": [
+        "Record the flashing behavior.",
+        "Keep food safety in mind and monitor cooling."
+      ],
+      "serviceOnlyActions": [
+        "Thermistor diagnosis is not owner serviceable and should go to an authorized Norcold Service Center."
+      ],
+      "safetyBoundary": "Do not bypass refrigerator controls, flame-sense devices, high-temperature protection, LP components, or electrical circuits. Shut off LP and power if there is gas odor, flame abnormality, overheating, or repeated fault behavior.",
+      "sourceIds": [
+        "norcold-polar-owner"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Norcold Polar model label",
+        "photo of display or indicator light",
+        "power mode and battery voltage if visible"
+      ]
     },
     {
       "id": "onan-code-12",
       "brand": "Onan",
       "equipmentType": "Generator",
-      "modelFamilies": ["HGJBB Spec A-B", "QG RV generator"],
+      "modelFamilies": [
+        "HGJBB Spec A-B",
+        "QG RV generator"
+      ],
       "code": "12",
       "slug": "onan-code-12-over-voltage",
       "plainMeaning": "The Cummins Onan operator manual lists Code 12 as Over Voltage.",
-      "ownerSafeActions": ["Turn off the generator and disconnect sensitive loads if safe.", "Record which loads were running.", "Do not keep testing appliances on unstable generator output."],
-      "serviceOnlyActions": ["Voltage regulator, rotor, field, sense wiring, control card, and output testing are qualified generator service work."],
+      "ownerSafeActions": [
+        "Turn off the generator and disconnect sensitive loads if safe.",
+        "Record which loads were running.",
+        "Do not keep testing appliances on unstable generator output."
+      ],
+      "serviceOnlyActions": [
+        "Voltage regulator, rotor, field, sense wiring, control card, and output testing are qualified generator service work."
+      ],
       "safetyBoundary": "Generator output can be lethal. Do not open electrical compartments or probe output wiring unless qualified.",
-      "sourceIds": ["onan-rv-manual-index", "onan-hgjbb-a031c171"],
-      "symptomIds": ["generator-stopped", "low-voltage"],
-      "partCaptureHints": ["loads running", "surge protector readout", "model/spec"]
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-hgjbb-a031c171"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "low-voltage"
+      ],
+      "partCaptureHints": [
+        "loads running",
+        "surge protector readout",
+        "model/spec"
+      ]
+    },
+    {
+      "id": "onan-code-2",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "HGJBB Spec A-B",
+        "QG RV generator"
+      ],
+      "code": "2",
+      "slug": "onan-code-2-low-oil-pressure",
+      "plainMeaning": "The Cummins Onan operator manual lists Code 2 as Low Oil Pressure.",
+      "ownerSafeActions": [
+        "Turn the generator off.",
+        "Let the generator cool before visual checks.",
+        "Record oil level only if the model manual allows the owner check and the unit is off/cool."
+      ],
+      "serviceOnlyActions": [
+        "Oil-pressure switch, engine, wiring, and internal generator diagnostics are service work."
+      ],
+      "safetyBoundary": "Do not run a generator with a low oil pressure fault. Avoid hot surfaces, moving parts, exhaust, fuel, and energized compartments.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-hgjbb-a031c171"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model/spec letter",
+        "oil service date",
+        "hour meter"
+      ]
+    },
+    {
+      "id": "onan-code-36",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "HGJBB Spec A-B",
+        "QG RV generator"
+      ],
+      "code": "36",
+      "slug": "onan-code-36-engine-stopped",
+      "plainMeaning": "The Cummins Onan operator manual lists Code 36 as Engine Stopped.",
+      "ownerSafeActions": [
+        "Turn the generator off.",
+        "Check only safe owner items listed in the model manual, such as fuel level and air intake obstruction from outside the unit.",
+        "Record load, run time, weather, and whether the generator restarted."
+      ],
+      "serviceOnlyActions": [
+        "Fuel, ignition, voltage, governor, rotor, field, processor, exhaust, and internal generator diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Generators can produce carbon monoxide and lethal voltage. Do not run in unsafe ventilation conditions or open energized compartments.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-hgjbb-a031c171"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "generator model/spec",
+        "hour meter",
+        "fault blink count"
+      ]
+    },
+    {
+      "id": "onan-code-57",
+      "brand": "Onan",
+      "equipmentType": "Generator",
+      "modelFamilies": [
+        "HGJAA Spec J-K",
+        "HGJAB Spec J-L",
+        "QG 5500/7000 EFI"
+      ],
+      "code": "57",
+      "slug": "onan-code-57-over-prime",
+      "plainMeaning": "The Cummins Onan HGJAA/HGJAB manual includes Code 57 as Over Prime.",
+      "ownerSafeActions": [
+        "Turn the generator off.",
+        "Avoid repeated priming attempts.",
+        "Record fuel type and recent service history."
+      ],
+      "serviceOnlyActions": [
+        "Fuel injector, priming, fuel pump, controller, and engine diagnosis belongs to Cummins service or a qualified generator technician."
+      ],
+      "safetyBoundary": "Do not open fuel components or run the generator with fuel odor. Shut down and ventilate safely.",
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-hgjaa-a035d009"
+      ],
+      "symptomIds": [
+        "generator-stopped",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model/spec",
+        "fuel type",
+        "fault history"
+      ]
+    },
+    {
+      "id": "suburban-furnace-lockout",
+      "brand": "Suburban/Atwood",
+      "equipmentType": "Furnace",
+      "modelFamilies": [
+        "Suburban gas furnace"
+      ],
+      "code": "lock out",
+      "slug": "suburban-furnace-lock-out",
+      "plainMeaning": "The Suburban furnace guide describes lockout after the furnace fails to ignite after multiple attempts.",
+      "ownerSafeActions": [
+        "Turn the thermostat off.",
+        "Check that intake and exhaust vents are not covered.",
+        "Do not continue cycling the furnace after repeated no-ignition attempts."
+      ],
+      "serviceOnlyActions": [
+        "Ignition, combustion, flame-sense, gas, and board troubleshooting is qualified service."
+      ],
+      "safetyBoundary": "Stop after repeated ignition failure. Shut off LP if there is gas odor, soot, or abnormal flame/exhaust evidence.",
+      "sourceIds": [
+        "suburban-furnace-guide"
+      ],
+      "symptomIds": [
+        "furnace-lockout",
+        "airflow-or-venting"
+      ],
+      "partCaptureHints": [
+        "furnace model",
+        "thermostat model",
+        "number of failed starts"
+      ]
+    },
+    {
+      "id": "suburban-water-heater-reset-light",
+      "brand": "Suburban/Atwood",
+      "equipmentType": "Water heater",
+      "modelFamilies": [
+        "Suburban D",
+        "Suburban DE",
+        "Suburban DEL"
+      ],
+      "code": "RESET light",
+      "slug": "suburban-water-heater-reset-light",
+      "plainMeaning": "The Suburban tank water heater guide describes red RESET light lockout after ignition attempts fail.",
+      "ownerSafeActions": [
+        "Turn the water heater off.",
+        "Confirm the tank is full.",
+        "Stop repeated attempts if ignition fails."
+      ],
+      "serviceOnlyActions": [
+        "Ignition, flame, gas valve, electrode, soot, combustion, and board work is qualified service."
+      ],
+      "safetyBoundary": "Do not cycle the water heater repeatedly after failed ignition. Shut off LP/power and call service if lockout returns.",
+      "sourceIds": [
+        "suburban-tank-water-heater"
+      ],
+      "symptomIds": [
+        "water-heater-no-heat",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Suburban model plate",
+        "inside switch panel",
+        "LP mode status"
+      ]
     }
   ],
   "symptoms": [
@@ -428,109 +2751,216 @@
       "slug": "rv-refrigerator-not-cooling",
       "title": "RV refrigerator is not cooling",
       "summary": "Use this when an absorption or compressor refrigerator shows a stopped-cooling, high-temperature, no co, or similar cooling fault.",
-      "safeChecklist": ["Move food if temperature is unsafe.", "Record brand, model, code, power source, outside temperature, and whether vents are blocked.", "Do not bypass recall, high-temperature, or cooling-unit safety devices."],
-      "sourceIds": ["dometic-ruc-support", "norcold-1200-owner", "norcold-polar-owner"]
+      "safeChecklist": [
+        "Move food if temperature is unsafe.",
+        "Record brand, model, code, power source, outside temperature, and whether vents are blocked.",
+        "Do not bypass recall, high-temperature, or cooling-unit safety devices."
+      ],
+      "sourceIds": [
+        "dometic-ruc-support",
+        "norcold-1200-owner",
+        "norcold-polar-owner"
+      ]
     },
     {
       "id": "refrigerator-lp-ignition",
       "slug": "rv-refrigerator-lp-ignition-failure",
       "title": "RV refrigerator or gas appliance will not ignite on LP",
       "summary": "Use this for no FL, flame-sense, or ignition failures on LP appliances.",
-      "safeChecklist": ["Shut off LP if you smell gas.", "Do not hand-light appliances with electronic ignition.", "Record whether the problem happens only on LP mode."],
-      "sourceIds": ["norcold-polar-owner", "furrion-water-heater"]
+      "safeChecklist": [
+        "Shut off LP if you smell gas.",
+        "Do not hand-light appliances with electronic ignition.",
+        "Record whether the problem happens only on LP mode."
+      ],
+      "sourceIds": [
+        "norcold-polar-owner",
+        "furrion-water-heater"
+      ]
     },
     {
       "id": "water-heater-no-heat",
       "slug": "rv-water-heater-no-heat-lockout",
       "title": "RV water heater has no heat or lockout light",
       "summary": "Use this for Suburban, Dometic/Atwood, or Furrion water heater lockout/no-heat conditions.",
-      "safeChecklist": ["Turn the appliance off.", "Confirm the tank is full for tank models.", "Do not repeatedly reset flame, ECO, thermal cut-off, or over-temperature faults."],
-      "sourceIds": ["suburban-tank-water-heater", "dometic-water-heater-wh", "furrion-water-heater"]
+      "safeChecklist": [
+        "Turn the appliance off.",
+        "Confirm the tank is full for tank models.",
+        "Do not repeatedly reset flame, ECO, thermal cut-off, or over-temperature faults."
+      ],
+      "sourceIds": [
+        "suburban-tank-water-heater",
+        "dometic-water-heater-wh",
+        "furrion-water-heater"
+      ]
     },
     {
       "id": "furnace-lockout",
       "slug": "rv-furnace-lockout-no-ignition",
       "title": "RV furnace locks out or will not ignite",
       "summary": "Use this when a furnace fails ignition attempts, flashes lockout, or stops after blower operation.",
-      "safeChecklist": ["Turn the thermostat off.", "Check only for obvious blocked intake/exhaust openings.", "Stop repeated start attempts and call service if ignition fails again."],
-      "sourceIds": ["suburban-furnace-guide", "dometic-df-furnace"]
+      "safeChecklist": [
+        "Turn the thermostat off.",
+        "Check only for obvious blocked intake/exhaust openings.",
+        "Stop repeated start attempts and call service if ignition fails again."
+      ],
+      "sourceIds": [
+        "suburban-furnace-guide",
+        "dometic-df-furnace"
+      ]
     },
     {
       "id": "airflow-or-venting",
       "slug": "rv-appliance-airflow-venting-fault",
       "title": "Airflow, venting, or exhaust fault",
       "summary": "Use this when a furnace, water heater, or refrigerator code points to airflow, pressure, venting, or exhaust.",
-      "safeChecklist": ["Shut the appliance off.", "Look only for obvious external blockage.", "Do not operate gas appliances with blocked exhaust or soot."],
-      "sourceIds": ["dometic-df-furnace", "suburban-furnace-guide", "furrion-water-heater"]
+      "safeChecklist": [
+        "Shut the appliance off.",
+        "Look only for obvious external blockage.",
+        "Do not operate gas appliances with blocked exhaust or soot."
+      ],
+      "sourceIds": [
+        "dometic-df-furnace",
+        "suburban-furnace-guide",
+        "furrion-water-heater"
+      ]
     },
     {
       "id": "thermostat-communication",
       "slug": "rv-thermostat-communication-error",
       "title": "RV thermostat communication error",
       "summary": "Use this when an HVAC thermostat shows Er, E3, or zone/control-box communication terms.",
-      "safeChecklist": ["Record thermostat model and affected zone.", "Turn HVAC off if the zone is not responding.", "Do not open rooftop electrical compartments."],
-      "sourceIds": ["coleman-9330-thermostat", "furrion-thermostat"]
+      "safeChecklist": [
+        "Record thermostat model and affected zone.",
+        "Turn HVAC off if the zone is not responding.",
+        "Do not open rooftop electrical compartments."
+      ],
+      "sourceIds": [
+        "coleman-9330-thermostat",
+        "furrion-thermostat"
+      ]
     },
     {
       "id": "thermostat-display",
       "slug": "rv-thermostat-display-lo-hi",
       "title": "RV thermostat display shows LO or HI",
       "summary": "Use this when a thermostat display is outside its temperature range or not matching room conditions.",
-      "safeChecklist": ["Record room conditions.", "Capture thermostat model.", "Avoid changing wiring or internal settings."],
-      "sourceIds": ["coleman-9420-thermostat"]
+      "safeChecklist": [
+        "Record room conditions.",
+        "Capture thermostat model.",
+        "Avoid changing wiring or internal settings."
+      ],
+      "sourceIds": [
+        "coleman-9420-thermostat"
+      ]
     },
     {
       "id": "low-voltage",
       "slug": "rv-appliance-low-voltage",
       "title": "RV appliance low-voltage warning",
       "summary": "Use this when a refrigerator, thermostat, generator, leveling controller, or slide system points to low DC or unstable electrical supply.",
-      "safeChecklist": ["Check installed battery monitor readings.", "Record shore power/generator/battery state.", "Do not probe electrical panels unless qualified."],
-      "sourceIds": ["norcold-polar-owner", "lippert-ground-control", "lippert-in-wall-slide", "coleman-9420-thermostat"]
+      "safeChecklist": [
+        "Check installed battery monitor readings.",
+        "Record shore power/generator/battery state.",
+        "Do not probe electrical panels unless qualified."
+      ],
+      "sourceIds": [
+        "norcold-polar-owner",
+        "lippert-ground-control",
+        "lippert-in-wall-slide",
+        "coleman-9420-thermostat"
+      ]
     },
     {
       "id": "leveling-jack-error",
       "slug": "rv-leveling-jack-error",
       "title": "RV leveling jack error",
       "summary": "Use this when Lippert Ground Control reports low voltage, excess angle, jack timeout, out-of-stroke, or sensor/controller terms.",
-      "safeChecklist": ["Keep people clear of jacks.", "Stop movement if the coach is unstable.", "Never use leveling jacks as service stands."],
-      "sourceIds": ["lippert-ground-control"]
+      "safeChecklist": [
+        "Keep people clear of jacks.",
+        "Stop movement if the coach is unstable.",
+        "Never use leveling jacks as service stands."
+      ],
+      "sourceIds": [
+        "lippert-ground-control"
+      ]
     },
     {
       "id": "slide-room-stuck",
       "slug": "rv-slide-room-stuck-error",
       "title": "RV slide room is stuck or controller flashes",
       "summary": "Use this when a Lippert In-Wall Slide-out controller flashes red LED motor/battery/current/short faults.",
-      "safeChecklist": ["Stop slide movement.", "Keep hands and objects clear.", "Record red flash count and green motor indicator."],
-      "sourceIds": ["lippert-in-wall-slide"]
+      "safeChecklist": [
+        "Stop slide movement.",
+        "Keep hands and objects clear.",
+        "Record red flash count and green motor indicator."
+      ],
+      "sourceIds": [
+        "lippert-in-wall-slide"
+      ]
     },
     {
       "id": "generator-stopped",
       "slug": "onan-generator-stopped-fault-code",
       "title": "Onan generator stopped and shows a fault code",
       "summary": "Use this when an Onan/Cummins RV generator stops and flashes a numeric fault code.",
-      "safeChecklist": ["Turn the generator off.", "Do not run in unsafe ventilation conditions.", "Record model/spec, hour meter, code, load, weather, and fuel state."],
-      "sourceIds": ["onan-rv-manual-index", "onan-hgjbb-a031c171", "onan-hgjaa-a035d009"]
+      "safeChecklist": [
+        "Turn the generator off.",
+        "Do not run in unsafe ventilation conditions.",
+        "Record model/spec, hour meter, code, load, weather, and fuel state."
+      ],
+      "sourceIds": [
+        "onan-rv-manual-index",
+        "onan-hgjbb-a031c171",
+        "onan-hgjaa-a035d009"
+      ]
     },
     {
       "id": "service-call-prep",
       "slug": "rv-appliance-service-call-checklist",
       "title": "Pre-service checklist for RV appliance calls",
       "summary": "Use this to collect the facts a dealer, mobile tech, or manufacturer support line will ask for.",
-      "safeChecklist": ["Brand, model, serial number.", "Exact code and photo of display.", "Power source, LP state, battery voltage, weather, recent service, and part numbers visible without disassembly."],
-      "sourceIds": ["dometic-ruc-support", "norcold-polar-owner", "onan-rv-manual-index", "lippert-ground-control"]
+      "safeChecklist": [
+        "Brand, model, serial number.",
+        "Exact code and photo of display.",
+        "Power source, LP state, battery voltage, weather, recent service, and part numbers visible without disassembly."
+      ],
+      "sourceIds": [
+        "dometic-ruc-support",
+        "norcold-polar-owner",
+        "onan-rv-manual-index",
+        "lippert-ground-control"
+      ]
     }
   ],
   "monetization": {
     "status": "disabled-until-traffic",
     "disabledAdSlots": [
-      { "id": "home-inline-1", "minimumImpressions": 1000 },
-      { "id": "code-detail-bottom", "minimumImpressions": 500 },
-      { "id": "symptom-guide-bottom", "minimumImpressions": 500 }
+      {
+        "id": "home-inline-1",
+        "minimumImpressions": 1000
+      },
+      {
+        "id": "code-detail-bottom",
+        "minimumImpressions": 500
+      },
+      {
+        "id": "symptom-guide-bottom",
+        "minimumImpressions": 500
+      }
     ],
     "affiliatePlaceholders": [
-      { "vendorCategory": "RV parts vendors", "status": "placeholder-only" },
-      { "vendorCategory": "mobile RV repair leads", "status": "backlog-only" },
-      { "vendorCategory": "sponsor slots", "status": "backlog-only" }
+      {
+        "vendorCategory": "RV parts vendors",
+        "status": "placeholder-only"
+      },
+      {
+        "vendorCategory": "mobile RV repair leads",
+        "status": "backlog-only"
+      },
+      {
+        "vendorCategory": "sponsor slots",
+        "status": "backlog-only"
+      }
     ]
   }
 }

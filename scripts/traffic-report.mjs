@@ -23,7 +23,8 @@ function buildReport() {
       currentImpressions: 0,
       ready: false,
     })),
-    nextAutomatedBatchGoal: "Add full Dometic RUC/RUA and Norcold Polar tables from official manuals, then rerun source audit and static page generation.",
+    nextAutomatedBatchGoal:
+      "Add remaining Dometic RM1350/CCC2, Norcold 1200, and Norcold N15DCX/N20DCX tables from official manuals, then rerun source audit and static page generation.",
     monitorCommand: "npm run traffic:monitor",
   };
 }

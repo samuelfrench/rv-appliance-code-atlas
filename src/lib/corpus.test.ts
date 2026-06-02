@@ -54,4 +54,55 @@ describe("verified corpus", () => {
     expect(summary.disabledAdSlots).toBeGreaterThan(0);
     expect(summary.affiliatePlaceholders).toBeGreaterThan(0);
   });
+
+  it("includes the full official Dometic RUC and RUA refrigerator fault-message sets", () => {
+    const entries = corpus.entries.filter((entry) => entry.brand === "Dometic" && entry.equipmentType === "Refrigerator");
+    const codesForSource = (sourceId: string) =>
+      new Set(entries.filter((entry) => entry.sourceIds.includes(sourceId)).map((entry) => entry.code));
+
+    expect(codesForSource("dometic-ruc-support")).toEqual(
+      new Set(["W01", "W02", "E03", "W04", "W10", "W11", "W14", "W17", "E18", "W19", "W26", "E32", "E33", "E34", "E35"]),
+    );
+    expect(codesForSource("dometic-rua-support")).toEqual(
+      new Set(["01", "03", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "22", "24", "50", "51", "52", "53"]),
+    );
+  });
+
+  it("includes the full official Norcold Polar N7/N8 owner-manual fault displays", () => {
+    const polarCodes = new Set(
+      corpus.entries
+        .filter((entry) => entry.brand === "Norcold" && entry.sourceIds.includes("norcold-polar-owner"))
+        .map((entry) => entry.code),
+    );
+
+    for (const code of [
+      "solid red",
+      "red flash 1",
+      "red flash 2",
+      "red flash 3",
+      "red flash 4",
+      "red flash 5",
+      "red flash 6",
+      "red flash 7",
+      "red flash 8",
+      "red flash 9",
+      "red flash 10",
+      "snowflake flashes",
+      "temperature setting flashes",
+      "blank display",
+      "no FL",
+      "no AC",
+      "AC HE",
+      "AC rE",
+      "Lo dc",
+      "Lo dC",
+      "HI dc",
+      "no dt",
+      "Sr",
+      "oP LI",
+      "FL --",
+    ]) {
+      expect(polarCodes, code).toContain(code);
+    }
+  });
 });

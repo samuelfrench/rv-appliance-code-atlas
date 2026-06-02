@@ -35,11 +35,11 @@ Traffic monitor:
 npm run traffic:monitor
 ```
 
-Current first-batch corpus:
-- `19` verified entries
+Current corpus:
+- `80` verified entries
 - `12` symptom guides
-- `16` official sources
-- `32` generated indexable pages
+- `17` official sources
+- `93` generated indexable pages
 
 Next automated batch goal:
-- Add full Dometic RUC/RUA and Norcold Polar tables from official manuals.
+- Add remaining Dometic RM1350/CCC2, Norcold 1200, and Norcold N15DCX/N20DCX tables from official manuals.
