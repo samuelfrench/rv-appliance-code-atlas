@@ -36,10 +36,10 @@ npm run traffic:monitor
 ```
 
 Current corpus:
-- `802` verified entries
+- `819` verified entries
 - `62` symptom guides
-- `209` official sources
-- `865` generated indexable pages
+- `226` official sources
+- `882` generated indexable pages
 
 Next automated batch goal:
-- Add remaining official Dometic RM10 refrigerator support-page fault aliases from sitemap-verified Fault pages while preserving manual-backed RM10/RMD/RML rows.
+- Triage remaining official Dometic RM10 refrigerator symptom/support pages from sitemap-verified support URLs, starting with gas-operation despite mains supply, cooling, smell, door, defrost, and internal-battery pages; add only owner-safe symptom aliases.

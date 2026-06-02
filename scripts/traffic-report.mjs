@@ -24,7 +24,7 @@ function buildReport() {
       ready: false,
     })),
     nextAutomatedBatchGoal:
-      "Add remaining official Dometic RM10 refrigerator support-page fault aliases from sitemap-verified Fault pages while preserving manual-backed RM10/RMD/RML rows.",
+      "Triage remaining official Dometic RM10 refrigerator symptom/support pages from sitemap-verified support URLs, starting with gas-operation despite mains supply, cooling, smell, door, defrost, and internal-battery pages; add only owner-safe symptom aliases.",
     monitorCommand: "npm run traffic:monitor",
   };
 }

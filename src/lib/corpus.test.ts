@@ -132,6 +132,15 @@ describe("verified corpus", () => {
     expect(lookupEntries(index, "dometic rml10 fault 50 replace gas cylinder reset")[0]?.slug).toBe(
       "dometic-rm10-display-fault-50-gas-cylinder-reset",
     );
+    expect(lookupEntries(index, "dometic rm10 fault ac power not connected voltage less 190")[0]?.slug).toBe(
+      "dometic-rm10-fault-ac-power-not-connected-voltage-less-190",
+    );
+    expect(lookupEntries(index, "dometic rm10 fault beep door opened more than 2 minutes")[0]?.slug).toBe(
+      "dometic-rm10-fault-beep-door-open-more-than-two-minutes",
+    );
+    expect(lookupEntries(index, "dometic rm10 fault ground contact ignition electrode")[0]?.slug).toBe(
+      "dometic-rm10-fault-ground-contact-ignition-electrode",
+    );
     expect(lookupEntries(index, "dometic rm8 recurring beep door parking mode")[0]?.slug).toBe(
       "dometic-rm8-recurring-beep-door-parking-mode-check",
     );
@@ -552,6 +561,82 @@ describe("verified corpus", () => {
       expect.arrayContaining([
         "dometic-rm10-display-fault-14-support",
       ]),
+    );
+  });
+
+  it("includes remaining official Dometic RM10 fault support-page aliases without changing manual rows", () => {
+    const codesForSource = (sourceId: string) =>
+      new Set(
+        corpus.entries
+          .filter((entry) => entry.brand === "Dometic" && entry.sourceIds.includes(sourceId))
+          .map((entry) => entry.code),
+      );
+    const entryById = (id: string) => {
+      const entry = corpus.entries.find((candidate) => candidate.id === id);
+      expect(entry, id).toBeDefined();
+      return entry!;
+    };
+
+    const supportUrls = new Map(corpus.sources.map((source) => [source.id, source.url]));
+    const expectedFaultPages = new Map([
+      ["dometic-rm10-fault-ac-power-not-connected-low-voltage-support", "https://support.dometic.com/en/rm10-refrigerators/Fault-AC-power-not-connected-or-AC-voltage-less-190-V-8212"],
+      ["dometic-rm10-fault-beep-door-open-more-than-two-minutes-support", "https://support.dometic.com/en/rm10-refrigerators/Fault-Beep-The-door-is-opened-for-more-than-2-minutes-d6c"],
+      ["dometic-rm10-fault-dc-overvoltage-support", "https://support.dometic.com/en/rm10-refrigerators/Fault-DC-overvoltage-greater-16-V-bddf"],
+      ["dometic-rm10-fault-dc-power-not-connected-support", "https://support.dometic.com/en/rm10-refrigerators/Fault-DC-power-not-connected-7646"],
+      ["dometic-rm10-fault-defective-temperature-sensor-support", "https://support.dometic.com/en/rm10-refrigerators/Fault-Defective-temperature-sensor-in-the-refrigerator-compartment-dee0"],
+      ["dometic-rm10-fault-gas-lockout-three-ignition-attempts-support", "https://support.dometic.com/en/rm10-refrigerators/Fault-Gas-lock-out-after-3-ignition-attempts-f198"],
+      ["dometic-rm10-fault-gas-lockout-power-module-internal-error-support", "https://support.dometic.com/en/rm10-refrigerators/Fault-Gas-lock-out-internal-error-in-the-power-module-19a3"],
+      ["dometic-rm10-fault-gas-valve-check-error-support", "https://support.dometic.com/en/rm10-refrigerators/Fault-Gas-valve-check-error-33bd"],
+      ["dometic-rm10-fault-ground-contact-gas-valve-support", "https://support.dometic.com/en/rm10-refrigerators/Fault-Ground-contact-gas-valve-ed8"],
+      ["dometic-rm10-fault-ground-contact-ignition-electrode-support", "https://support.dometic.com/en/rm10-refrigerators/Fault-Ground-contact-ignition-electrode-5f6f"],
+      ["dometic-rm10-fault-standalone-gas-battery-packs-low-support", "https://support.dometic.com/en/rm10-refrigerators/Fault-In-stand-alone-gas-mode-The-battery-charge-of-the-battery-packs-is-too-low-1cb8"],
+      ["dometic-rm10-fault-internal-communication-error-support", "https://support.dometic.com/en/rm10-refrigerators/Fault-Internal-communication-error-a666"],
+      ["dometic-rm10-fault-power-module-display-no-connection-support", "https://support.dometic.com/en/rm10-refrigerators/Fault-No-connection-between-power-module-and-display-4e70"],
+      ["dometic-rm10-fault-no-cooling-capacity-gas-mode-support", "https://support.dometic.com/en/rm10-refrigerators/Fault-No-cooling-capacity-in-gas-mode-3ec3"],
+      ["dometic-rm10-fault-no-cooling-power-ac-mode-support", "https://support.dometic.com/en/rm10-refrigerators/Fault-No-cooling-power-in-AC-mode-91f8"],
+      ["dometic-rm10-fault-no-cooling-power-dc-mode-support", "https://support.dometic.com/en/rm10-refrigerators/Fault-No-cooling-power-in-DC-mode-b53b"],
+      ["dometic-rm10-fault-tank-stop-mode-gas-blocked-support", "https://support.dometic.com/en/rm10-refrigerators/Fault-Tank-stop-mode-Gas-operation-is-blocked-for-15minutes-b0cc"],
+    ]);
+
+    for (const [sourceId, url] of expectedFaultPages) {
+      expect(supportUrls.get(sourceId), sourceId).toBe(url);
+      expect(codesForSource(sourceId).size, sourceId).toBe(1);
+    }
+
+    expect(codesForSource("dometic-rm10-fault-ac-power-not-connected-low-voltage-support")).toEqual(
+      new Set(["AC power not connected or AC voltage < 190 V"]),
+    );
+    expect(codesForSource("dometic-rm10-fault-beep-door-open-more-than-two-minutes-support")).toEqual(
+      new Set(["Beep: door opened more than 2 minutes"]),
+    );
+    expect(codesForSource("dometic-rm10-fault-ground-contact-ignition-electrode-support")).toEqual(
+      new Set(["Ground contact, ignition electrode"]),
+    );
+
+    const manualRows = corpus.entries.filter((entry) => entry.sourceIds.includes("dometic-rm10-rms10-operating"));
+    expect(manualRows.map((entry) => entry.code)).toEqual(
+      expect.arrayContaining(["W05", "W06", "W10 + beep", "W11", "E03", "E07", "E08", "E09", "E12", "E13", "E14", "E50", "E51", "E52", "E53"]),
+    );
+
+    const dcPower = entryById("dometic-rm10-fault-dc-power-not-connected");
+    expect(dcPower.ownerSafeActions.join(" ")).toMatch(/different energy type/i);
+    expect(dcPower.ownerSafeActions.join(" ")).not.toMatch(/\bfuse|wiring|breaker\b/i);
+    expect(dcPower.serviceOnlyActions.join(" ")).toMatch(/\bfuse|wiring\b/i);
+
+    const door = entryById("dometic-rm10-fault-beep-door-open-more-than-two-minutes");
+    expect(door.ownerSafeActions.join(" ")).toMatch(/door.*closed/i);
+    expect(door.ownerSafeActions.join(" ")).toMatch(/winter/i);
+
+    const sensor = entryById("dometic-rm10-fault-defective-temperature-sensor-service-only");
+    expect(sensor.ownerSafeActions.join(" ")).toMatch(/authorized repair/i);
+    expect(sensor.ownerSafeActions.join(" ")).not.toMatch(/sensor.*replace|wiring/i);
+
+    const gasValve = entryById("dometic-rm10-fault-ground-contact-gas-valve");
+    expect(gasValve.ownerSafeActions.join(" ")).not.toMatch(/gas valve|burner|regulator|flue|wiring/i);
+    expect(gasValve.serviceOnlyActions.join(" ")).toMatch(/gas valve|LP hardware|wiring/i);
+
+    expect([...supportUrls.values()]).not.toContain(
+      "https://support.dometic.com/en/rm10-refrigerators/My-refrigerator-shows-a-fault-or-a-failure-bfb3",
     );
   });
 
