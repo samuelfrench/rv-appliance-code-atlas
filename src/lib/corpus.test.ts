@@ -190,6 +190,23 @@ describe("verified corpus", () => {
     );
   });
 
+  it("finds Lippert leveling and slide symptom support pages from owner searches", () => {
+    const index = buildSymptomSearchIndex(corpus);
+
+    expect(lookupSymptomGuides(index, "lippert ground control low voltage battery under load")[0]?.slug).toBe(
+      "lippert-ground-control-low-voltage-battery-leveling",
+    );
+    expect(lookupSymptomGuides(index, "lippert ground control auto level fail out of stroke relocate trailer")[0]?.slug).toBe(
+      "lippert-ground-control-auto-level-excess-angle-out-of-stroke",
+    );
+    expect(lookupSymptomGuides(index, "lippert in wall slide obstruction synchronize motors hold switch")[0]?.slug).toBe(
+      "lippert-in-wall-slide-obstruction-or-motor-sync",
+    );
+    expect(lookupSymptomGuides(index, "lippert in wall slide red led green led low battery motor 1")[0]?.slug).toBe(
+      "lippert-in-wall-slide-red-green-led-low-voltage-service",
+    );
+  });
+
   it("ranks exact multi-word display codes ahead of generic partial matches", () => {
     const index = buildSearchIndex(corpus);
 
@@ -2224,6 +2241,32 @@ describe("verified corpus", () => {
         "Tongue Jack Fault",
       ]),
     );
+  });
+
+  it("adds official-source Lippert leveling and slide symptom guides without new code entries", () => {
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+
+    expect(symptomById.get("lippert-ground-control-low-voltage-battery-leveling")?.sourceIds).toEqual(
+      expect.arrayContaining(["lippert-ground-control", "lippert-ground-control-onecontrol-5th", "lippert-ground-control-tt-onecontrol"]),
+    );
+    expect(symptomById.get("lippert-ground-control-auto-level-excess-angle-out-of-stroke")?.sourceIds).toEqual(
+      expect.arrayContaining(["lippert-ground-control", "lippert-ground-control-onecontrol-5th", "lippert-ground-control-tt-onecontrol"]),
+    );
+    expect(symptomById.get("lippert-in-wall-slide-obstruction-or-motor-sync")?.sourceIds).toEqual(["lippert-in-wall-slide"]);
+    expect(symptomById.get("lippert-in-wall-slide-red-green-led-low-voltage-service")?.sourceIds).toEqual([
+      "lippert-in-wall-slide",
+    ]);
+
+    expect(
+      corpus.entries.filter((entry) =>
+        [
+          "lippert-ground-control-low-voltage-battery-leveling",
+          "lippert-ground-control-auto-level-excess-angle-out-of-stroke",
+          "lippert-in-wall-slide-obstruction-or-motor-sync",
+          "lippert-in-wall-slide-red-green-led-low-voltage-service",
+        ].includes(entry.slug),
+      ),
+    ).toEqual([]);
   });
 
   it("includes the full official Furrion thermostat, rooftop AC, water-heater, and refrigerator diagnostic sets", () => {

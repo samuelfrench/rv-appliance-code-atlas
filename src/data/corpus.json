@@ -32245,6 +32245,98 @@
       ]
     },
     {
+      "id": "lippert-ground-control-low-voltage-battery-leveling",
+      "slug": "lippert-ground-control-low-voltage-battery-leveling",
+      "title": "Lippert Ground Control low voltage or low battery",
+      "summary": "Use this when Lippert Ground Control LCD or OneControl shows Low Voltage, a solid red low-battery touchpad, or jack behavior that points to discharged battery power.",
+      "searchAliases": [
+        "lippert ground control low voltage battery under load",
+        "lippert onecontrol low voltage",
+        "lippert onecontrol blinking red low battery",
+        "ground control solid red low battery",
+        "lippert leveling low battery jacks moving"
+      ],
+      "safeChecklist": [
+        "Stop leveling and keep people clear of jacks, pinch points, and trailer movement.",
+        "Record the LCD or OneControl message, touchpad LED state, and battery state from the installed RV monitor.",
+        "Use only normal RV charging support, shore power, or generator power before one cautious retry if the trailer is stable.",
+        "Do not probe controller, jack, fuse, harness, or battery wiring under load; use qualified RV service if the warning returns."
+      ],
+      "sourceIds": [
+        "lippert-ground-control",
+        "lippert-ground-control-onecontrol-5th",
+        "lippert-ground-control-tt-onecontrol"
+      ]
+    },
+    {
+      "id": "lippert-ground-control-auto-level-excess-angle-out-of-stroke",
+      "slug": "lippert-ground-control-auto-level-excess-angle-out-of-stroke",
+      "title": "Lippert Ground Control auto level fail, excess angle, or out of stroke",
+      "summary": "Use this when Lippert Ground Control reports Auto Level Fail, Excess Angle, Excessive Angle, Out Of Stroke, Jack Time Out, or a location/slope message during leveling.",
+      "searchAliases": [
+        "lippert ground control auto level fail out of stroke relocate trailer",
+        "lippert ground control excess angle",
+        "lippert onecontrol out of stroke uneven site",
+        "ground control can't complete level flatter terrain",
+        "lippert jack timeout auto level fail"
+      ],
+      "safeChecklist": [
+        "Stop automatic leveling and do not keep cycling the jacks on a steep, soft, or uneven site.",
+        "Relocate to flatter solid ground only if the trailer can be moved safely.",
+        "Record the exact message, jack positions, site slope, and whether zero point was recently changed.",
+        "Keep zero-point calibration, controller or sensor placement, homing, and jack service with a qualified RV technician."
+      ],
+      "sourceIds": [
+        "lippert-ground-control",
+        "lippert-ground-control-onecontrol-5th",
+        "lippert-ground-control-tt-onecontrol"
+      ]
+    },
+    {
+      "id": "lippert-in-wall-slide-obstruction-or-motor-sync",
+      "slug": "lippert-in-wall-slide-obstruction-or-motor-sync",
+      "title": "Lippert In-Wall slide obstruction or motor sync",
+      "summary": "Use this when a Lippert In-Wall slide is stuck, stalls, moves unevenly, or may need obstruction checks and normal switch-held synchronization before service.",
+      "searchAliases": [
+        "lippert in wall slide obstruction synchronize motors hold switch",
+        "lippert schwintek slide obstruction",
+        "lippert in-wall slide motor sync",
+        "slide room stalls one side obstruction",
+        "lippert slide keep switch engaged motors shut down"
+      ],
+      "safeChecklist": [
+        "Stop slide movement and keep people, hands, pets, and objects clear of the room and gear racks.",
+        "Remove only visible interior or exterior obstructions from normal safe access.",
+        "If the room can move normally, hold the switch until the motors stop at full extension and full retraction as the manual describes for synchronization.",
+        "Use qualified service for motor disengagement, controller override, rack debris cleaning, wiring, or any slide that moves unevenly after owner-visible checks."
+      ],
+      "sourceIds": [
+        "lippert-in-wall-slide"
+      ]
+    },
+    {
+      "id": "lippert-in-wall-slide-red-green-led-low-voltage-service",
+      "slug": "lippert-in-wall-slide-red-green-led-low-voltage-service",
+      "title": "Lippert In-Wall slide red or green LED fault",
+      "summary": "Use this when a Lippert In-Wall slide controller uses green LED motor identification and red LED blink counts for low voltage, battery dropout, high voltage, excessive current, motor short, wire short, encoder, or hall-power faults.",
+      "searchAliases": [
+        "lippert in wall slide red led green led low battery motor 1",
+        "lippert in-wall slide red led 3 low battery",
+        "lippert slide green led motor 2 red led fault",
+        "lippert schwintek red green led code",
+        "lippert in wall slide controller low voltage service"
+      ],
+      "safeChecklist": [
+        "Stop slide movement and record the red LED flash count plus whether the green LED indicates motor 1 or motor 2.",
+        "Reset only from the normal slide switch as the manual describes, then stop if the same LED fault returns.",
+        "Use normal RV charging or shore power for low-battery symptoms; do not jump the controller or attach power to controller terminals.",
+        "Use qualified service for circuit breakers, wiring, motor harnesses, controller override, motor disengagement, or repeated LED faults."
+      ],
+      "sourceIds": [
+        "lippert-in-wall-slide"
+      ]
+    },
+    {
       "id": "generator-stopped",
       "slug": "onan-generator-stopped-fault-code",
       "title": "Onan generator stopped and shows a fault code",

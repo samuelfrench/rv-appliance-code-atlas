@@ -185,6 +185,34 @@ test("lookup surfaces Furrion furnace symptom support pages", async ({ page }) =
   await expect(page.getByText(/shut the furnace down/i)).toBeVisible();
 });
 
+test("lookup surfaces Lippert leveling and slide symptom support pages", async ({ page }) => {
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("lippert ground control low voltage battery under load");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/lippert-ground-control-low-voltage-battery-leveling/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("lippert ground control auto level fail out of stroke relocate trailer");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/lippert-ground-control-auto-level-excess-angle-out-of-stroke/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("lippert in wall slide obstruction synchronize motors hold switch");
+  await expect(lookupResults.locator('a[href="/symptoms/lippert-in-wall-slide-obstruction-or-motor-sync/"]')).toBeVisible();
+
+  await searchbox.fill("lippert in wall slide red led green led low battery motor 1");
+  const slideLed = lookupResults.locator('a[href="/symptoms/lippert-in-wall-slide-red-green-led-low-voltage-service/"]');
+  await expect(slideLed).toBeVisible();
+  await slideLed.click();
+
+  await expect(page.getByRole("heading", { name: "Lippert In-Wall slide red or green LED fault" })).toBeVisible();
+  await expect(page.getByText(/Do not jump the controller/i)).toBeVisible();
+});
+
 test("lookup surfaces Suburban furnace and water-heater symptom support pages", async ({ page }) => {
   await page.goto("/");
 
