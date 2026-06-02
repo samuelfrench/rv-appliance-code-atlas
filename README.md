@@ -43,6 +43,17 @@ Search Console status:
 - Sitemap: `https://rv-appliance-code-atlas.fly.dev/sitemap.xml`
 - Verified and submitted: `2026-06-02T19:38:59Z`
 
+Weekly Search Console traffic artifact:
+
+```bash
+npm run traffic:gsc:weekly:dry-run
+GSC_QUOTA_PROJECT=coffee-explorer-480514 npm run traffic:gsc:weekly
+```
+
+Writes ignored local report artifact: `reports/gsc-weekly-traffic.json`
+
+Default range: last 7 Pacific-time days ending 3 days ago, to avoid preliminary GSC data. The script tries a readonly Search Console token first and falls back to the locally authorized `webmasters` ADC scope when needed.
+
 Traffic monitor:
 
 ```bash
@@ -56,4 +67,4 @@ Current corpus:
 - `951` generated indexable pages
 
 Next automated batch goal:
-- Add weekly traffic report artifact once GSC is configured.
+- Add IndexNow key after domain/live URL is chosen.

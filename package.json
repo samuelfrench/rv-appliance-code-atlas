@@ -18,6 +18,8 @@
     "traffic:gsc:verify": "node scripts/gsc-verify-url-prefix.mjs --verify",
     "traffic:gsc:dry-run": "npm run build && node scripts/gsc-submit-sitemap.mjs --dry-run",
     "traffic:gsc:submit": "npm run build && node scripts/gsc-submit-sitemap.mjs --submit",
+    "traffic:gsc:weekly:dry-run": "node scripts/gsc-weekly-report.mjs --dry-run",
+    "traffic:gsc:weekly": "node scripts/gsc-weekly-report.mjs --fetch",
     "serve:dist": "node scripts/serve-static.mjs",
     "verify:runtime": "npm run build && npm run test:browser"
   },

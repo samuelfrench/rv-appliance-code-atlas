@@ -6,6 +6,12 @@ const root = path.dirname(fileURLToPath(new URL("../package.json", import.meta.u
 const corpus = JSON.parse(fs.readFileSync(path.join(root, "src/data/corpus.json"), "utf8"));
 const outputPath = path.join(root, "reports/traffic-readiness.json");
 const searchConsole = corpus.site.searchConsole ?? null;
+const weeklyTrafficArtifact = {
+  path: "reports/gsc-weekly-traffic.json",
+  command: "npm run traffic:gsc:weekly",
+  dryRunCommand: "npm run traffic:gsc:weekly:dry-run",
+  cadence: "weekly",
+};
 
 function buildReport() {
   return {
@@ -16,6 +22,7 @@ function buildReport() {
     adSlotsEnabled: false,
     gscConfigured: Boolean(searchConsole?.siteUrl && searchConsole?.sitemapSubmittedAt),
     searchConsole,
+    weeklyTrafficArtifact,
     verifiedEntries: corpus.entries.length,
     symptomGuides: corpus.symptoms.length,
     sourceCount: corpus.sources.length,
@@ -25,7 +32,7 @@ function buildReport() {
       currentImpressions: 0,
       ready: false,
     })),
-    nextAutomatedBatchGoal: "Add weekly traffic report artifact once GSC is configured.",
+    nextAutomatedBatchGoal: "Add IndexNow key after domain/live URL is chosen.",
     monitorCommand: "npm run traffic:monitor",
   };
 }
