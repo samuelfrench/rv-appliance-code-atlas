@@ -30,6 +30,7 @@ export type SymptomGuide = {
   summary: string;
   safeChecklist: string[];
   sourceIds: string[];
+  searchAliases?: string[];
 };
 
 export type Corpus = {
@@ -127,6 +128,17 @@ export function validateCorpus(corpus: Corpus): ValidationReport {
   for (const symptom of corpus.symptoms) {
     if (symptomIds.has(symptom.id)) failures.push(`Duplicate symptom id ${symptom.id}.`);
     symptomIds.add(symptom.id);
+    if (symptom.searchAliases !== undefined) {
+      if (!Array.isArray(symptom.searchAliases)) {
+        failures.push(`Symptom ${symptom.id} searchAliases must be an array of non-empty strings.`);
+      } else {
+        symptom.searchAliases.forEach((alias, index) => {
+          if (typeof alias !== "string" || !alias.trim()) {
+            failures.push(`Symptom ${symptom.id} searchAliases[${index}] must be a non-empty string.`);
+          }
+        });
+      }
+    }
     if (!symptom.sourceIds.length) failures.push(`Symptom ${symptom.id} has no source citation.`);
     for (const sourceId of symptom.sourceIds) {
       const source = sourcesById.get(sourceId);
@@ -211,7 +223,14 @@ export function buildSearchIndex(corpus: Corpus): SearchIndexEntry[] {
 export function buildSymptomSearchIndex(corpus: Corpus): SymptomSearchIndexEntry[] {
   return corpus.symptoms.map((symptom) => ({
     ...symptom,
-    ...searchableParts([symptom.id, symptom.slug, symptom.title, symptom.summary, symptom.safeChecklist.join(" ")]),
+    ...searchableParts([
+      symptom.id,
+      symptom.slug,
+      symptom.title,
+      symptom.summary,
+      symptom.safeChecklist.join(" "),
+      symptom.searchAliases?.join(" ") ?? "",
+    ]),
   }));
 }
 

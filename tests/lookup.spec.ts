@@ -41,6 +41,22 @@ test("lookup surfaces RM10 symptom-only support pages", async ({ page }) => {
   await expect(page.getByText("Do not operate electrical equipment")).toBeVisible();
 });
 
+test("lookup surfaces Dometic 10-series symptom aliases", async ({ page }) => {
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("rmd10 gas smell");
+  await expect(lookupResults.locator('a[href="/symptoms/dometic-rm10-gas-smell/"]')).toBeVisible();
+
+  await searchbox.fill("rml10 defrost ice");
+  await expect(lookupResults.locator('a[href="/symptoms/dometic-rm10-defrost-evaporator-ice-buildup/"]')).toBeVisible();
+
+  await searchbox.fill("rms10 internal batteries");
+  await expect(lookupResults.locator('a[href="/symptoms/dometic-rm10-internal-battery-packs/"]')).toBeVisible();
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 

@@ -32478,6 +32478,15 @@
       "slug": "dometic-rm10-gas-operation-despite-mains-supply",
       "title": "Dometic RM10 runs on gas while connected to mains power",
       "summary": "Use this when an RM10 refrigerator switches to gas even though the RV is connected to mains or shore power. Dometic points to low grid voltage and automatic return to AC operation when voltage is sufficient.",
+      "searchAliases": [
+        "Dometic 10-series gas operation despite mains supply",
+        "RMD10 gas operation despite mains supply",
+        "RML10 gas operation despite mains supply",
+        "RMS10 gas operation despite mains supply",
+        "RMD10 runs on gas while connected to mains power",
+        "RML10 runs on gas while connected to mains power",
+        "RMS10 runs on gas while connected to mains power"
+      ],
       "safeChecklist": [
         "Confirm from normal RV indicators whether shore power or generator AC power is available.",
         "Wait for the refrigerator to return to AC operation automatically when mains voltage is sufficient.",
@@ -32493,6 +32502,15 @@
       "slug": "dometic-rm10-not-cooling-or-not-working-level-ventilation",
       "title": "Dometic RM10 not cooling enough or not working at all",
       "summary": "Use this when an RM10 does not cool sufficiently or seems not to work. Dometic points owners to visible ventilation grilles and refrigerator/RV level before service diagnosis.",
+      "searchAliases": [
+        "Dometic 10-series not cooling level ventilation",
+        "RMD10 not cooling level ventilation",
+        "RML10 not cooling level ventilation",
+        "RMS10 not cooling level ventilation",
+        "RMD10 not working at all",
+        "RML10 not working at all",
+        "RMS10 not working at all"
+      ],
       "safeChecklist": [
         "Move food if refrigerator temperature is unsafe.",
         "Check that ventilation grilles, the roof vent, and exterior airflow openings are not covered or dirty from normal safe access.",
@@ -32509,6 +32527,12 @@
       "slug": "dometic-rm10-gas-smell",
       "title": "Dometic RM10 gas smell",
       "summary": "Use this when gas odor is present near a Dometic RM10 refrigerator or inside the RV.",
+      "searchAliases": [
+        "Dometic 10-series gas smell",
+        "RMD10 gas smell",
+        "RML10 gas smell",
+        "RMS10 gas smell"
+      ],
       "safeChecklist": [
         "Open windows, leave the room or RV, and keep people away from flames and ignition sources.",
         "Do not operate electrical equipment, switches, radios, phones, engines, generators, or flames in the RV.",
@@ -32524,6 +32548,12 @@
       "slug": "dometic-rm10-ammonia-smell",
       "title": "Dometic RM10 ammonia smell",
       "summary": "Use this when an ammonia smell is present around an RM10 absorption refrigerator. Dometic tells owners to switch the appliance off, ventilate, and go to a dealer or Dometic service provider.",
+      "searchAliases": [
+        "Dometic 10-series ammonia smell",
+        "RMD10 ammonia smell",
+        "RML10 ammonia smell",
+        "RMS10 ammonia smell"
+      ],
       "safeChecklist": [
         "Switch off the appliance.",
         "Open all windows and doors to ventilate the RV.",
@@ -32539,6 +32569,12 @@
       "slug": "dometic-rm10-first-gas-run-plastic-smell",
       "title": "Dometic RM10 plastic smell on first gas run",
       "summary": "Use this only for a brand-new RM10 with a plastic or paint smell during the first gas-mode run and no gas, ammonia, smoke, or electrical odor.",
+      "searchAliases": [
+        "Dometic 10-series plastic smell first gas run",
+        "RMD10 plastic smell first gas run",
+        "RML10 plastic smell first gas run",
+        "RMS10 plastic smell first gas run"
+      ],
       "safeChecklist": [
         "Confirm this is a brand-new first-use situation, not gas odor, ammonia odor, smoke, or an electrical smell.",
         "Open a window and monitor the refrigerator during the brief first gas-mode run Dometic describes.",
@@ -32554,6 +32590,12 @@
       "slug": "dometic-rm10-cleaning-condensate-drain-ventilation-grilles",
       "title": "Dometic RM10 cleaning, condensate drain, and ventilation grilles",
       "summary": "Use this when RM10 cooling, odor, drain, or vent questions point to owner cleaning and visible ventilation maintenance.",
+      "searchAliases": [
+        "Dometic 10-series cleaning condensate drain ventilation grilles",
+        "RMD10 cleaning condensate drain ventilation grilles",
+        "RML10 cleaning condensate drain ventilation grilles",
+        "RMS10 cleaning condensate drain ventilation grilles"
+      ],
       "safeChecklist": [
         "Disconnect the refrigerator from the energy supply using normal owner controls before cleaning.",
         "Clean the interior with a soft cloth, lukewarm water, and mild detergent, then dry it thoroughly.",
@@ -32569,6 +32611,12 @@
       "slug": "dometic-rm10-low-outside-temperature-winter-covers",
       "title": "Dometic RM10 low outside temperature winter covers",
       "summary": "Use this when an RM10 loses cooling capacity in low ambient temperatures and Dometic winter-cover guidance may apply.",
+      "searchAliases": [
+        "Dometic 10-series low outside temperature winter covers",
+        "RMD10 low outside temperature winter covers",
+        "RML10 low outside temperature winter covers",
+        "RMS10 low outside temperature winter covers"
+      ],
       "safeChecklist": [
         "Install Dometic winter covers only as specified for the selected energy mode.",
         "In AC or DC mode, use both winter covers if low outside temperature affects cooling capacity.",
@@ -32584,6 +32632,15 @@
       "slug": "dometic-rm10-door-or-ice-compartment-door-problem",
       "title": "Dometic RM10 refrigerator or ice compartment door problem",
       "summary": "Use this when an RM10 refrigerator door or ice-compartment door will not close or has detached.",
+      "searchAliases": [
+        "Dometic 10-series door ice compartment door problem",
+        "RMD10 door ice compartment",
+        "RML10 door ice compartment",
+        "RMS10 door ice compartment",
+        "RMD10 refrigerator door will not close",
+        "RML10 refrigerator door will not close",
+        "RMS10 refrigerator door will not close"
+      ],
       "safeChecklist": [
         "Check whether the owner-visible winter-position plastic part is blocking the door handle from closing.",
         "Close or reseat the refrigerator or ice-compartment door only if the model-specific Dometic guidance is clear and the door moves freely.",
@@ -32600,6 +32657,15 @@
       "slug": "dometic-rm10-defrost-evaporator-ice-buildup",
       "title": "Dometic RM10 evaporator ice buildup or defrosting",
       "summary": "Use this when RM10 evaporator fins are frosted, full of ice, or building ice faster than before.",
+      "searchAliases": [
+        "Dometic 10-series defrost evaporator ice buildup",
+        "RMD10 defrost ice",
+        "RML10 defrost ice",
+        "RMS10 defrost ice",
+        "RMD10 evaporator full of ice",
+        "RML10 evaporator full of ice",
+        "RMS10 evaporator full of ice"
+      ],
       "safeChecklist": [
         "Defrost when frost on the fins is about 3 mm or 0.118 inches thick; uneven frost on one side can be normal.",
         "Do not use mechanical tools or a hair dryer to remove ice or loosen frozen items.",
@@ -32618,6 +32684,15 @@
       "slug": "dometic-rm10-internal-battery-packs",
       "title": "Dometic RM10 internal battery packs",
       "summary": "Use this when an RM10 owner is changing the internal battery packs that power the electronics during unavailable 12 V DC supply.",
+      "searchAliases": [
+        "Dometic 10-series internal battery packs",
+        "RMD10 internal batteries",
+        "RML10 internal batteries",
+        "RMS10 internal batteries",
+        "RMD10 battery packs",
+        "RML10 battery packs",
+        "RMS10 battery packs"
+      ],
       "safeChecklist": [
         "Use the internal battery packs only as Dometic describes when the vehicle 12 V DC supply is unavailable or cut off.",
         "Replace only the accessible battery packs under the operating element, using 12 AA batteries total.",

@@ -34,6 +34,7 @@
 - [x] Add official Dometic RUA exact display-fault support aliases for 01/03/05/06/07/08/09/10/11/12/13/14/15/16/17/18/22/24/50/51/52/53 with owner-safe boundaries.
 - [x] Add remaining official Dometic RM10 refrigerator support-page fault aliases from sitemap-verified `Fault:` pages while preserving manual-backed RM10/RMD/RML rows.
 - [x] Add official Dometic RM10 refrigerator symptom/support pages for gas-operation despite mains supply, cooling, smell, door, defrost, cleaning, low-temperature operation, and internal battery packs without inventing code entries.
+- [x] Add Dometic 10-series RMD10/RML10/RMS10 owner-search aliases for existing RM10-series symptom support pages without duplicating source rows or adding code entries.
 - [ ] Add GSC property and submit sitemap after live URL is stable.
 
 ## Current State — 2026-06-02
@@ -49,7 +50,7 @@
 - Source triage note: accepted official Thetford/Norcold N3000 troubleshooting PDF, N3000 North America owner/install manual, N2000 owner manual, N8DCX/N10DCX service manual, N10LX/NA10LX owner manual, and 2118 owner manual. Rejected/deferred forums/mirrors, N2000 service-manual board-level procedures for owner guidance, and N3000/N2000 flowchart repair steps beyond service-only boundaries.
 - Source triage note: accepted official Thetford/Norcold owner manuals for N41/N51, N400/N510, N61/N81, N62/N64/N82/N84, and N1095; the N400/N510 manual fault table is scoped to N510 models only. Rejected/deferred forums/mirrors, recall/HTS pages as code-table sources, and any invented `no co`/`n` entries for families whose owner manuals do not list them.
 - Source triage note: accepted official Dometic RM3762/RM3962, RM8/RMS8/RML8/RMSL8, RMD8xx1/RMD8xx5, RM10/RMS10, RMD10.5, RML10.4, RMD10T/RMD10XT, Americana RM/DM/NDM, Americana II DM/DMA, RMD8 numbered-button, RM8 ground-contact/tank-stop, RM8 recurring-beep/internal-battery/gas-operation/flame-not-ignited/AC-230V-12V-DC supply/heating-element/flashing-acoustic/interior-lighting support pages, RUC exact display fault W01/W02/E03/W04/W10/W11/W14/W17/E18/W19/W26/E32/E33/E34/E35 support pages, RUA exact display fault 01/03/05/06/07/08/09/10/11/12/13/14/15/16/17/18/22/24/50/51/52/53 support pages, RM10 petrol-pump, RM10 display fault 01/02/03/05/06/07/08/09/10/11/12/13/14/50/51/52/53 sources, and 17 RM10 sitemap-verified `Fault:` support pages for AC/DC supply, door-open beep, temperature sensor, power-module/display connection, communication, gas lockout/valve/ground-contact, battery-pack low, cooling-power, and tank-stop conditions. Rejected/deferred forums/mirrors, guessed/stale Dometic support URL suffixes returning `404`, generic RM10 selector pages (`My refrigerator shows a fault or a failure`, `My refrigerator shows a warning or error`), generic symptom-only Americana/classic RM manuals without display-code tables, duplicate Americana DM2652/DM2852/RUC/RUA/RM10 manual rows without support-search value, Dometic recall pages without fault tables, and any board-level, fuse, compressor, heating-element, LP, electrical, or control repair steps for owner guidance.
-- Next automated batch goal: Triage official Dometic RMD10/RML10/RMS10 refrigerator support-page symptom aliases from sitemap-verified pages, starting with door, defrost, cooling, smell, low-temperature, cleaning, and internal-battery overlap; add only non-duplicate owner-safe symptom sources.
+- Next automated batch goal: Triage official Dometic RUA/RUC refrigerator symptom-only support pages from sitemap-verified pages, starting with door, cooling, power, smell, cleaning, low-temperature, and battery/ventilation overlap; add only non-duplicate owner-safe symptom aliases.
 
 ## Corpus Expansion Backlog
 - [x] Add full Dometic RUC/RUA tables.
@@ -83,7 +84,8 @@
 - [x] Add official Dometic RUA exact display-fault support aliases from sitemap-verified support pages while preserving the existing aggregate RUA fault-message table.
 - [x] Add remaining official Dometic RM10 refrigerator support-page fault aliases from sitemap-verified Fault pages while preserving manual-backed RM10/RMD/RML rows.
 - [x] Triage remaining official Dometic RM10 refrigerator symptom/support pages from sitemap-verified support URLs, starting with gas-operation despite mains supply, cooling, smell, door, defrost, and internal-battery pages; add only owner-safe symptom aliases.
-- [ ] Triage official Dometic RMD10/RML10/RMS10 refrigerator support-page symptom aliases from sitemap-verified pages, starting with door, defrost, cooling, smell, low-temperature, cleaning, and internal-battery overlap; add only non-duplicate owner-safe symptom sources.
+- [x] Triage official Dometic RMD10/RML10/RMS10 refrigerator support-page symptom aliases from sitemap-verified pages, starting with door, defrost, cooling, smell, low-temperature, cleaning, and internal-battery overlap; add only non-duplicate owner-safe symptom sources.
+- [ ] Triage official Dometic RUA/RUC refrigerator symptom-only support pages from sitemap-verified pages, starting with door, cooling, power, smell, cleaning, low-temperature, and battery/ventilation overlap; add only non-duplicate owner-safe symptom aliases.
 
 ## Launch Automation
 - [ ] Add weekly traffic report artifact once GSC is configured.

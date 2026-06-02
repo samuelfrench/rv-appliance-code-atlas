@@ -10,7 +10,7 @@ describe("traffic readiness report", () => {
     const report = JSON.parse(output);
 
     expect(report.nextAutomatedBatchGoal).toBe(
-      "Triage official Dometic RMD10/RML10/RMS10 refrigerator support-page symptom aliases from sitemap-verified pages, starting with door, defrost, cooling, smell, low-temperature, cleaning, and internal-battery overlap; add only non-duplicate owner-safe symptom sources.",
+      "Triage official Dometic RUA/RUC refrigerator symptom-only support pages from sitemap-verified pages, starting with door, cooling, power, smell, cleaning, low-temperature, and battery/ventilation overlap; add only non-duplicate owner-safe symptom aliases.",
     );
 
     expect(readFileSync("README.md", "utf8")).toContain(report.nextAutomatedBatchGoal);

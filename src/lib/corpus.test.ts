@@ -30,6 +30,16 @@ describe("verified corpus", () => {
     expect(report.dangerousOwnerActions).toEqual([]);
   });
 
+  it("rejects malformed symptom search aliases", () => {
+    const invalidCorpus = structuredClone(corpus) as Parameters<typeof validateCorpus>[0];
+    const symptom = invalidCorpus.symptoms[0];
+    (symptom as unknown as { searchAliases: unknown }).searchAliases = ["RMD10 owner search", 10];
+
+    const report = validateCorpus(invalidCorpus);
+
+    expect(report.failures).toContain(`Symptom ${symptom.id} searchAliases[1] must be a non-empty string.`);
+  });
+
   it("covers every target brand with at least one verified code or symptom", () => {
     const coverage = getBrandCoverage(corpus);
 
@@ -54,6 +64,21 @@ describe("verified corpus", () => {
     expect(lookupSymptomGuides(index, "rm10 ammonia smell")[0]?.slug).toBe("dometic-rm10-ammonia-smell");
     expect(lookupSymptomGuides(index, "rm10 defrost ice")[0]?.slug).toBe("dometic-rm10-defrost-evaporator-ice-buildup");
     expect(lookupSymptomGuides(index, "rm10 internal batteries")[0]?.slug).toBe("dometic-rm10-internal-battery-packs");
+  });
+
+  it("finds Dometic 10-series symptom aliases from RMD/RML/RMS owner searches", () => {
+    const index = buildSymptomSearchIndex(corpus);
+
+    expect(lookupSymptomGuides(index, "rmd10 gas smell")[0]?.slug).toBe("dometic-rm10-gas-smell");
+    expect(lookupSymptomGuides(index, "rml10 ammonia smell")[0]?.slug).toBe("dometic-rm10-ammonia-smell");
+    expect(lookupSymptomGuides(index, "rms10 defrost ice")[0]?.slug).toBe("dometic-rm10-defrost-evaporator-ice-buildup");
+    expect(lookupSymptomGuides(index, "rmd10 internal batteries")[0]?.slug).toBe("dometic-rm10-internal-battery-packs");
+    expect(lookupSymptomGuides(index, "rml10 door ice compartment")[0]?.slug).toBe(
+      "dometic-rm10-door-or-ice-compartment-door-problem",
+    );
+    expect(lookupSymptomGuides(index, "rms10 not cooling level")[0]?.slug).toBe(
+      "dometic-rm10-not-cooling-or-not-working-level-ventilation",
+    );
   });
 
   it("ranks exact multi-word display codes ahead of generic partial matches", () => {
@@ -699,6 +724,10 @@ describe("verified corpus", () => {
     expect(corpus.sources.filter((source) => symptomOnlySourceIds.includes(source.id))).toHaveLength(
       symptomOnlySourceIds.length,
     );
+    const rm10SupportUrls = corpus.sources
+      .filter((source) => source.url.includes("support.dometic.com/en/rm10-refrigerators/"))
+      .map((source) => source.url);
+    expect(new Set(rm10SupportUrls).size).toBe(rm10SupportUrls.length);
     expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => symptomOnlySourceIds.includes(sourceId)))).toHaveLength(0);
 
     expect(symptomById.get("dometic-rm10-gas-operation-mains-supply")?.sourceIds).toContain(
@@ -774,6 +803,22 @@ describe("verified corpus", () => {
     expect([...supportUrls.values()]).not.toContain("https://support.dometic.com/en/rm10-refrigerators/My-gas-cylinder-is-empty-c4e8");
     expect([...supportUrls.values()]).not.toContain("https://support.dometic.com/en/rm10-refrigerators/What-should-I-do-if-I-smell-ammonia-86e2");
     expect([...supportUrls.values()]).not.toContain("https://support.dometic.com/en/rm10-refrigerators/Where-can-I-find-the-nearest-service-provider-bb4c");
+    expect([...supportUrls.values()]).not.toEqual(expect.arrayContaining([
+      "https://support.dometic.com/en/rmd10-refrigerators",
+      "https://support.dometic.com/en/rml10-refrigerators",
+      "https://support.dometic.com/en/rms10-refrigerators",
+      "https://support.dometic.com/en/rm10-refrigerators/How-to-best-store-food-in-the-refrigerator-e0c",
+      "https://support.dometic.com/en/rm10-refrigerators/Which-food-should-go-in-which-compartment-d2fe",
+      "https://support.dometic.com/en/rm10-refrigerators/How-to-save-energy-2581",
+      "https://support.dometic.com/en/rm10-refrigerators/What-cooling-unit-is-used-in-the-refrigerator-6799",
+      "https://support.dometic.com/en/rm10-refrigerators/Which-coolant-is-used-363c",
+      "https://support.dometic.com/en/rm10-refrigerators/What-is-frame-heating-b3f7",
+      "https://support.dometic.com/en/rm10-refrigerators/How-to-remove-the-freezer-compartment-cdb4",
+      "https://support.dometic.com/en/rm10-refrigerators/How-to-use-the-oven-d784",
+      "https://support.dometic.com/en/rm10-refrigerators/How-to-use-the-grill-a11",
+      "https://support.dometic.com/en/rm10-refrigerators/My-refrigerator-shows-a-fault-or-a-failure-bfb3",
+      "https://support.dometic.com/en/rm10-refrigerators/My-refrigerator-shows-a-warning-or-error-b028",
+    ]));
 
     const manualRows = corpus.entries.filter((entry) => entry.sourceIds.includes("dometic-rm10-rms10-operating"));
     expect(manualRows.map((entry) => entry.code)).toEqual(
