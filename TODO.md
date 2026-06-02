@@ -17,18 +17,19 @@
 - [x] Add Coleman-Mach/Airxcel thermostat/AC symptom pages from official manuals.
 - [x] Add Cummins Onan legacy QG/KYD/KV/HGJAA fault-code and blink-code tables where official Cummins manuals expose tables.
 - [x] Add Dometic DF and Hydro Flame AFM furnace LED diagnostic tables from official Dometic manuals.
+- [x] Add official Dometic/Atwood water-heater and OD-5001 symptom pages from verified Dometic support pages without adding water-heater code entries.
 - [ ] Add GSC property and submit sitemap after live URL is stable.
 
 ## Current State — 2026-06-02
 - Live URL: `https://rv-appliance-code-atlas.fly.dev/`
 - GitHub repo: `https://github.com/samuelfrench/rv-appliance-code-atlas`
 - Fly app: `rv-appliance-code-atlas`, one `shared-cpu-1x` 256 MB machine in `dfw`, auto-stop enabled.
-- Latest deploy: Fly release v8, image `deployment-01KT3GQ35PRB7PT2149VPBWASV`, code commit `d73998f`; Deploy run `26802912017` succeeded.
-- Corpus: `451` verified entries, `17` symptom guides, `49` official sources, `469` generated indexable pages.
-- Local verification passed: `npm run validate:corpus`, `npm run test:unit`, `npm run source:audit`, `npm run traffic:report`, and `npm run verify:runtime`. Build passes with a visible Vite warning because the main corpus bundle is `727.92 kB` minified / `102.44 kB` gzip.
-- Live verification passed: `/`, `/sitemap.xml`, `/corpus-stats.json`, `/codes/onan-qg-4000-kyd-code-32-low-cranking-speed/`, `/codes/onan-hgjaa-hgjab-code-23-low-oil-pressure-cutoff-switch/`, `/codes/dometic-df-furnace-5-flashes-low-voltage/`, and `/codes/dometic-hydro-flame-afm-2-flashes-flame-sense-fault/`; Playwright live smoke at mobile and desktop sizes found `0` console/page errors.
-- Source triage note: official Cummins `981-0129`, `981-0136`, `981-0158`, `981-0164`, `981-0132`, `981-0139`, and `981-0154` were checked and did not expose publishable fault-code tables; official Dometic water-heater/OD-5001 sources checked so far support symptoms/lockout guidance only, not code entries.
-- Next automated batch goal: add official Dometic/Atwood water-heater and OD-5001 symptom pages, and continue manufacturer-hosted table discovery without adding water-heater code entries unless an official fault/display table is verified.
+- Latest deploy: Fly release v9, image `deployment-01KT3HXEZ2X8KG3W7AA8FDXG65`, code commit `f62cc4d`; Deploy run `26803767342` succeeded.
+- Corpus: `451` verified entries, `23` symptom guides, `57` official sources, `475` generated indexable pages.
+- Local verification passed: `npm run validate:corpus`, `npm run test:unit`, `npm run source:audit`, `npm run traffic:report`, and `npm run verify:runtime`. Build passes with a visible Vite warning because the main corpus bundle is `734.90 kB` minified / `104.00 kB` gzip.
+- Live verification passed: `/`, `/sitemap.xml`, `/corpus-stats.json`, `/symptoms/dometic-atwood-water-heater-lockout-light/`, `/symptoms/dometic-water-heater-overheat-lockout-reset/`, `/symptoms/dometic-od5001-startup-lockout/`, `/symptoms/dometic-od5001-power-vent-not-running/`, `/symptoms/dometic-od5001-rapid-cycling/`, and `/symptoms/dometic-od5001-temperature-fluctuation/`; Playwright live smoke at mobile and desktop sizes found expected H1/source/safety content and `0` console/page errors.
+- Source triage note: official Dometic water-heater/OD-5001 support pages checked so far support operation, lockout, overheat reset, ignition, rapid-cycle, fan, and temperature-fluctuation symptom guidance only, not code entries. Correct verified support slugs include `GasElectric-combination-function-information-eaf5`, `Gas-Function-8df9`, `How-to-clear-a-water-heater-over-heating-failure-2deb`, `How-to-operate-your-water-heater-679c`, `Heater-Does-Not-Come-On-When-The-Water-is-turned-on-Power-vent-fan-not-running-e6d3`, `There-Is-No-Ignition-When-Water-Is-On-Power-vent-fan-is-running-b63e`, `Heater-Comes-On-But-Rapidly-Cycles-On-And-Off-6d10`, and `Burner-Turns-On-But-Temperature-Fluctuates-Erratically-19c8`; rejected 404 slugs include `Gas-Only-Operation-Information-c383` and `How-to-clear-the-overheating-failure-4f2e`.
+- Next automated batch goal: add remaining official water-heater symptom guides from Dometic XT, Suburban, and Furrion sources, continue manufacturer-hosted table discovery without adding code entries unless an official fault/display table is verified, and start corpus code-splitting if the main bundle stays above 700 kB.
 
 ## Corpus Expansion Backlog
 - [x] Add full Dometic RUC/RUA tables.
@@ -45,7 +46,8 @@
 - [x] Add Furrion furnace and rooftop HVAC symptom pages from official manuals.
 - [x] Add additional official Coleman-Mach/Airxcel thermostat/AC service terms and symptom pages.
 - [x] Add official Atwood/Dometic legacy furnace fault tables only if manufacturer-hosted manuals are found.
-- [ ] Add official Dometic/Atwood water-heater and OD-5001 symptom pages; do not add water-heater code entries unless a manufacturer-hosted fault/display table is found.
+- [x] Add official Dometic/Atwood water-heater and OD-5001 symptom pages; do not add water-heater code entries unless a manufacturer-hosted fault/display table is found.
+- [ ] Add remaining official water-heater symptom guides from Dometic XT, Suburban, and Furrion sources; investigate code-splitting if the main corpus bundle remains above 700 kB.
 
 ## Launch Automation
 - [ ] Add weekly traffic report artifact once GSC is configured.
