@@ -47,7 +47,7 @@
 - Live URL: `https://rv-appliance-code-atlas.fly.dev/`
 - GitHub repo: `https://github.com/samuelfrench/rv-appliance-code-atlas`
 - Fly app: `rv-appliance-code-atlas`, one `shared-cpu-1x` 256 MB machine in `dfw`, auto-stop enabled.
-- Latest deploy: GitHub Actions run `26844921181` succeeded at `2026-06-02T20:06:21Z`; Fly release v35, image `deployment-01KT4Z2AC2NAHVH0CQSCY0ZTM3`, code commit `b397ec3`.
+- Latest deploy: GitHub Actions run `26846353580` rerun job `79167182006` succeeded at `2026-06-02T20:36:00Z`; Fly release v37, image `deployment-01KT50RZBR3KJXPG91VEPQVAHX`, code commit `bb5bc85`.
 - Corpus: `819` verified entries, `131` symptom guides, `317` official sources, `951` generated indexable pages.
 - GSC URL-prefix property `https://rv-appliance-code-atlas.fly.dev/` verified with FILE token `googled22aa40f3a0e4dca.html`; Google Site Verification insert returned HTTP `200`.
 - GSC sitemap `https://rv-appliance-code-atlas.fly.dev/sitemap.xml` submitted; Search Console site add and sitemap submit both returned HTTP `204`, and API read-back found the property with `siteOwner` permission plus the submitted sitemap path.
