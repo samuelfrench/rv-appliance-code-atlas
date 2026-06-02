@@ -123,6 +123,15 @@ describe("verified corpus", () => {
     expect(lookupEntries(index, "dometic rm10 petrol pump symbol tank stop mode")[0]?.slug).toBe(
       "dometic-rm10-petrol-pump-symbol-tank-stop-mode",
     );
+    expect(lookupEntries(index, "dometic rm10 display fault 07 level refrigerator reset")[0]?.slug).toBe(
+      "dometic-rm10-display-fault-07-level-refrigerator-reset",
+    );
+    expect(lookupEntries(index, "dometic rmd10 fault 14 insert new batteries reset")[0]?.slug).toBe(
+      "dometic-rm10-display-fault-14-battery-pack-low-reset",
+    );
+    expect(lookupEntries(index, "dometic rml10 fault 50 replace gas cylinder reset")[0]?.slug).toBe(
+      "dometic-rm10-display-fault-50-gas-cylinder-reset",
+    );
   });
 
   it("summarizes code, source, symptom, and monetization readiness counts", () => {
@@ -358,6 +367,67 @@ describe("verified corpus", () => {
     expect(codesForSource("dometic-rm8-ground-contact-support")).toEqual(new Set(["Ground contact, gas valve"]));
     expect(codesForSource("dometic-rm8-tank-stop-support")).toEqual(new Set(["Tank stop mode: gas operation blocked 15 minutes"]));
     expect(codesForSource("dometic-rm10-petrol-pump-tank-stop-support")).toEqual(new Set(["Petrol pump symbol"]));
+  });
+
+  it("includes official Dometic RM10 display-fault support aliases for exact owner searches", () => {
+    const codesForSource = (sourceId: string) =>
+      new Set(
+        corpus.entries
+          .filter((entry) => entry.brand === "Dometic" && entry.sourceIds.includes(sourceId))
+          .map((entry) => entry.code),
+      );
+
+    const supportUrls = new Map(corpus.sources.map((source) => [source.id, source.url]));
+    expect(supportUrls.get("dometic-rm10-display-fault-01-support")).toBe(
+      "https://support.dometic.com/en/rm10-refrigerators/Display-showing-fault-01-849b",
+    );
+    expect(supportUrls.get("dometic-rm10-display-fault-14-support")).toBe(
+      "https://support.dometic.com/en/rm10-refrigerators/Display-showing-fault-14-b9b1",
+    );
+    expect(supportUrls.get("dometic-rm10-display-fault-53-support")).toBe(
+      "https://support.dometic.com/en/rm10-refrigerators/Display-showing-fault-53-af4e",
+    );
+
+    const expectedDisplayFaults = new Set([
+      "Display fault 01",
+      "Display fault 02",
+      "Display fault 03",
+      "Display fault 05",
+      "Display fault 06",
+      "Display fault 07",
+      "Display fault 08",
+      "Display fault 09",
+      "Display fault 10",
+      "Display fault 11",
+      "Display fault 12",
+      "Display fault 13",
+      "Display fault 14",
+      "Display fault 50",
+      "Display fault 51",
+      "Display fault 52",
+      "Display fault 53",
+    ]);
+
+    expect(
+      new Set(
+        corpus.entries
+          .filter((entry) => entry.brand === "Dometic" && entry.sourceIds.some((sourceId) => sourceId.startsWith("dometic-rm10-display-fault-")))
+          .map((entry) => entry.code),
+      ),
+    ).toEqual(expectedDisplayFaults);
+
+    expect(codesForSource("dometic-rm10-display-fault-50-support")).toEqual(new Set(["Display fault 50"]));
+    expect(codesForSource("dometic-rm10-display-fault-01-support")).toEqual(new Set(["Display fault 01"]));
+
+    const display14 = corpus.entries.find((entry) => entry.id === "dometic-rm10-display-fault-14-battery-pack-low-reset");
+    expect(display14?.modelFamilies).toEqual(
+      expect.arrayContaining(["RM10.5T", "RMD10.5", "RML10.4", "RMS10.5T"]),
+    );
+    expect(display14?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "dometic-rm10-display-fault-14-support",
+      ]),
+    );
   });
 
   it("includes the full official Norcold Polar N7/N8 owner-manual fault displays", () => {

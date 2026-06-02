@@ -24,7 +24,7 @@ function buildReport() {
       ready: false,
     })),
     nextAutomatedBatchGoal:
-      "Continue official Dometic refrigerator support-page alias research, prioritizing RM10/RMD10/RML10/RM8 support conditions not already covered by manuals, with duplicate filtering and owner-safe boundaries.",
+      "Continue official Dometic RM8 refrigerator support-page alias research for recurring beep, internal-battery undervoltage, gas-operation power switching, flame-not-ignited, and AC/DC supply conditions, with duplicate filtering and owner-safe boundaries.",
     monitorCommand: "npm run traffic:monitor",
   };
 }

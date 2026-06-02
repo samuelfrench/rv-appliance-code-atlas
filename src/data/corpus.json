@@ -1111,6 +1111,142 @@
       "official": true
     },
     {
+      "id": "dometic-rm10-display-fault-01-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Refrigerators Display Showing Fault 01 Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/Display-showing-fault-01-849b",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-display-fault-02-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Refrigerators Display Showing Fault 02 Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/Display-showing-fault-02-968c",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-display-fault-03-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Refrigerators Display Showing Fault 03 Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/Display-showing-fault-03-7fc0",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-display-fault-05-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Refrigerators Display Showing Fault 05 Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/Display-showing-fault-05-956",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-display-fault-06-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Refrigerators Display Showing Fault 06 Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/Display-showing-fault-06-d123",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-display-fault-07-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Refrigerators Display Showing Fault 07 Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/Display-showing-fault-07-31ab",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-display-fault-08-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Refrigerators Display Showing Fault 08 Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/Display-showing-fault-08-918",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-display-fault-09-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Refrigerators Display Showing Fault 09 Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/Display-showing-fault-09-95cb",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-display-fault-10-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Refrigerators Display Showing Fault 10 Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/Display-showing-fault-10-babf",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-display-fault-11-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Refrigerators Display Showing Fault 11 Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/Display-showing-fault-11-977c",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-display-fault-12-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Refrigerators Display Showing Fault 12 Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/Display-showing-fault-12-3dda",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-display-fault-13-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Refrigerators Display Showing Fault 13 Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/Display-showing-fault-13-e0c8",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-display-fault-14-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Refrigerators Display Showing Fault 14 Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/Display-showing-fault-14-b9b1",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-display-fault-50-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Refrigerators Display Showing Fault 50 Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/Display-showing-fault-50-3023",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-display-fault-51-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Refrigerators Display Showing Fault 51 Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/Display-showing-fault-51-2ba2",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-display-fault-52-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Refrigerators Display Showing Fault 52 Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/Display-showing-fault-52-199",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-display-fault-53-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 Refrigerators Display Showing Fault 53 Support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/Display-showing-fault-53-af4e",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
       "id": "dometic-rm10-rms10-operating",
       "brand": "Dometic",
       "title": "Dometic RM10.5/RMS10.5 Absorption Refrigerator Operating Manual",
@@ -25073,6 +25209,953 @@
       ]
     },
     {
+      "id": "dometic-rm10-display-fault-01-temperature-sensor-service-only",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP",
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10",
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "Display fault 01",
+      "slug": "dometic-rm10-display-fault-01-temperature-sensor-service-only",
+      "plainMeaning": "The Dometic RM10 support page lists display fault 01 as a temperature sensor that is without contact or defective; Dometic says this can only be repaired by an authorised repair centre.",
+      "ownerSafeActions": [
+        "Record the display fault, model number, product number, and serial number before contacting support.",
+        "Do not keep relying on the refrigerator if it is running at maximum power or cannot hold safe food temperature.",
+        "Contact Dometic, an authorized repair centre, or a qualified RV refrigerator technician."
+      ],
+      "serviceOnlyActions": [
+        "Temperature-sensor, harness, refrigerator electronics, and sealed-system diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service LP hardware, electrical circuits, wiring, or refrigerator controls; use only normal front-panel and owner-visible checks and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-display-fault-01-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-display-fault-02-authorized-service-only",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP",
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10",
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "Display fault 02",
+      "slug": "dometic-rm10-display-fault-02-authorized-service-only",
+      "plainMeaning": "The Dometic RM10 support page lists display fault 02 and directs repair to an authorized service provider without giving an owner repair step.",
+      "ownerSafeActions": [
+        "Record the display fault, model number, product number, and serial number before contacting support.",
+        "Keep the refrigerator off if cooling performance is uncertain or food temperature is unsafe.",
+        "Contact Dometic, an authorized service provider, or a qualified RV refrigerator technician."
+      ],
+      "serviceOnlyActions": [
+        "Fault 02 diagnosis and refrigerator control repair are service-only because Dometic does not publish an owner repair step on this support page."
+      ],
+      "safetyBoundary": "Do not service LP hardware, electrical circuits, wiring, or refrigerator controls; use only normal front-panel and owner-visible checks and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-display-fault-02-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-display-fault-03-authorized-service-only",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP",
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10",
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "Display fault 03",
+      "slug": "dometic-rm10-display-fault-03-authorized-service-only",
+      "plainMeaning": "The Dometic RM10 support page lists display fault 03 and directs repair to an authorized service provider without giving an owner repair step.",
+      "ownerSafeActions": [
+        "Record the display fault, model number, product number, and serial number before contacting support.",
+        "Keep the refrigerator off if cooling performance is uncertain or food temperature is unsafe.",
+        "Contact Dometic, an authorized service provider, or a qualified RV refrigerator technician."
+      ],
+      "serviceOnlyActions": [
+        "Fault 03 diagnosis and refrigerator control repair are service-only because Dometic does not publish an owner repair step on this support page."
+      ],
+      "safetyBoundary": "Do not service LP hardware, electrical circuits, wiring, or refrigerator controls; use only normal front-panel and owner-visible checks and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-display-fault-03-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-display-fault-05-energy-mode-check",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP",
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10",
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "Display fault 05",
+      "slug": "dometic-rm10-display-fault-05-energy-mode-check",
+      "plainMeaning": "The Dometic RM10 support page asks which operation mode is selected for display fault 05: gas, 12 V DC from a battery, or 230 V AC.",
+      "ownerSafeActions": [
+        "Record the selected operating mode and whether the RV is on gas, 12 V DC, or 230 V AC.",
+        "Use only normal front-panel controls to select a different energy mode if one is available and safe.",
+        "Call qualified service if the fault remains after normal power-source selection."
+      ],
+      "serviceOnlyActions": [
+        "AC supply, DC supply, heater, wiring, and refrigerator control diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service LP hardware, electrical circuits, wiring, or refrigerator controls; use only normal front-panel and owner-visible checks and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-display-fault-05-support"
+      ],
+      "symptomIds": [
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-display-fault-06-dc-supply-or-energy-mode",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP",
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10",
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "Display fault 06",
+      "slug": "dometic-rm10-display-fault-06-dc-supply-or-energy-mode",
+      "plainMeaning": "The Dometic RM10 support page lists display fault 06 and advises connecting the refrigerator to DC or selecting a different energy type such as gas or AC.",
+      "ownerSafeActions": [
+        "Confirm the refrigerator is connected to normal RV 12 V DC supply from owner-visible controls or indicators.",
+        "Use only front-panel controls to select another energy type such as gas or AC if available and safe.",
+        "Call qualified service if the fault repeats with normal DC supply available."
+      ],
+      "serviceOnlyActions": [
+        "Battery, converter, fuse, wiring, and refrigerator control diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service LP hardware, electrical circuits, wiring, or refrigerator controls; use only normal front-panel and owner-visible checks and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-display-fault-06-support"
+      ],
+      "symptomIds": [
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-display-fault-07-level-refrigerator-reset",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP",
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10",
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "Display fault 07",
+      "slug": "dometic-rm10-display-fault-07-level-refrigerator-reset",
+      "plainMeaning": "The Dometic RM10 support page lists display fault 07 and says to level the refrigerator, then press the control knob for 2 seconds to reset the error.",
+      "ownerSafeActions": [
+        "Make sure the RV and refrigerator are level using normal owner-visible leveling checks.",
+        "Press the control knob for 2 seconds once to reset the error after leveling.",
+        "Call qualified service if display fault 07 returns after the refrigerator is level."
+      ],
+      "serviceOnlyActions": [
+        "Cooling-capacity, gas-mode, cooling-unit, and refrigerator control diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service LP hardware, electrical circuits, wiring, or refrigerator controls; use only normal front-panel and owner-visible checks and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-display-fault-07-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-display-fault-08-level-refrigerator-reset",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP",
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10",
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "Display fault 08",
+      "slug": "dometic-rm10-display-fault-08-level-refrigerator-reset",
+      "plainMeaning": "The Dometic RM10 support page lists display fault 08 and says to level the refrigerator, then press the control knob for 2 seconds to reset the error.",
+      "ownerSafeActions": [
+        "Make sure the RV and refrigerator are level using normal owner-visible leveling checks.",
+        "Press the control knob for 2 seconds once to reset the error after leveling.",
+        "Call qualified service if display fault 08 returns after the refrigerator is level."
+      ],
+      "serviceOnlyActions": [
+        "AC cooling-power, heater, cooling-unit, and refrigerator control diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service LP hardware, electrical circuits, wiring, or refrigerator controls; use only normal front-panel and owner-visible checks and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-display-fault-08-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-display-fault-09-level-refrigerator-reset",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP",
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10",
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "Display fault 09",
+      "slug": "dometic-rm10-display-fault-09-level-refrigerator-reset",
+      "plainMeaning": "The Dometic RM10 support page lists display fault 09 and says to level the refrigerator, then press the control knob for 2 seconds to reset the error.",
+      "ownerSafeActions": [
+        "Make sure the RV and refrigerator are level using normal owner-visible leveling checks.",
+        "Press the control knob for 2 seconds once to reset the error after leveling.",
+        "Call qualified service if display fault 09 returns after the refrigerator is level."
+      ],
+      "serviceOnlyActions": [
+        "DC cooling-power, heater, cooling-unit, and refrigerator control diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service LP hardware, electrical circuits, wiring, or refrigerator controls; use only normal front-panel and owner-visible checks and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-display-fault-09-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-display-fault-10-door-closed-winter-position-check",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP",
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10",
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "Display fault 10",
+      "slug": "dometic-rm10-display-fault-10-door-closed-winter-position-check",
+      "plainMeaning": "The Dometic RM10 support page lists display fault 10 and says to make sure the refrigerator door is completely closed, including checking the owner-visible winter door position.",
+      "ownerSafeActions": [
+        "Press the refrigerator door shut until it clicks closed at the top and bottom.",
+        "Check only the owner-visible winter door position or latch state if the door does not close well.",
+        "Call qualified service if display fault 10 repeats with the door fully closed."
+      ],
+      "serviceOnlyActions": [
+        "Door switch, latch, hinge, wiring, and refrigerator control diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service LP hardware, electrical circuits, wiring, or refrigerator controls; use only normal front-panel and owner-visible checks and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-display-fault-10-support"
+      ],
+      "symptomIds": [
+        "refrigerator-not-cooling",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-display-fault-11-dc-overvoltage-service-check",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP",
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10",
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "Display fault 11",
+      "slug": "dometic-rm10-display-fault-11-dc-overvoltage-service-check",
+      "plainMeaning": "The Dometic RM10 support page lists display fault 11 and says to reduce the DC supply voltage.",
+      "ownerSafeActions": [
+        "Stop using DC operation if overvoltage is suspected from normal RV battery or charger indicators.",
+        "Use another normal front-panel energy mode if available and safe.",
+        "Have the RV electrical or charging system checked by qualified service before continuing DC operation."
+      ],
+      "serviceOnlyActions": [
+        "DC overvoltage, battery, converter, regulator, wiring, and refrigerator control diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service LP hardware, electrical circuits, wiring, or refrigerator controls; use only normal front-panel and owner-visible checks and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-display-fault-11-support"
+      ],
+      "symptomIds": [
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-display-fault-12-gas-valve-test-reset",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP",
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10",
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "Display fault 12",
+      "slug": "dometic-rm10-display-fault-12-gas-valve-test-reset",
+      "plainMeaning": "The Dometic RM10 support page lists display fault 12 and says to press the control knob for 2 seconds to reset the error.",
+      "ownerSafeActions": [
+        "Press the control knob for 2 seconds once to reset the error.",
+        "Stop LP operation and record whether the fault returns.",
+        "Call qualified service if display fault 12 repeats."
+      ],
+      "serviceOnlyActions": [
+        "Gas-valve test, LP hardware, wiring, and refrigerator control diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service LP hardware, electrical circuits, wiring, or refrigerator controls; use only normal front-panel and owner-visible checks and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-display-fault-12-support"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-display-fault-13-internal-communication-reset",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP",
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10",
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "Display fault 13",
+      "slug": "dometic-rm10-display-fault-13-internal-communication-reset",
+      "plainMeaning": "The Dometic RM10 support page lists display fault 13 and says to press the control knob for 2 seconds to reset the error.",
+      "ownerSafeActions": [
+        "Press the control knob for 2 seconds once to reset the error.",
+        "Record whether the display fault returns after the reset.",
+        "Call qualified service if display fault 13 repeats."
+      ],
+      "serviceOnlyActions": [
+        "Internal communication, display, power-module, wiring, and refrigerator control diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service LP hardware, electrical circuits, wiring, or refrigerator controls; use only normal front-panel and owner-visible checks and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-display-fault-13-support"
+      ],
+      "symptomIds": [
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-display-fault-14-battery-pack-low-reset",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP",
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10",
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "Display fault 14",
+      "slug": "dometic-rm10-display-fault-14-battery-pack-low-reset",
+      "plainMeaning": "The Dometic RM10 support page lists display fault 14 and says to insert new batteries, then press the control knob for 2 seconds to reset the error.",
+      "ownerSafeActions": [
+        "Insert new owner-replaceable batteries as the Dometic step-by-step guide describes.",
+        "Press the control knob for 2 seconds once to reset the error after replacing batteries.",
+        "Call qualified service if display fault 14 repeats with fresh batteries."
+      ],
+      "serviceOnlyActions": [
+        "Battery-pack contact, wiring, and refrigerator control diagnosis beyond normal battery replacement are service-only."
+      ],
+      "safetyBoundary": "Do not service LP hardware, electrical circuits, wiring, or refrigerator controls; use only normal front-panel and owner-visible checks and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-display-fault-14-support"
+      ],
+      "symptomIds": [
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-display-fault-50-gas-cylinder-reset",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP",
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10",
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "Display fault 50",
+      "slug": "dometic-rm10-display-fault-50-gas-cylinder-reset",
+      "plainMeaning": "The Dometic RM10 support page lists display fault 50 and says to replace an empty gas cylinder, press the control knob for 2 seconds to reset, and note that altitude above 1800 can contribute.",
+      "ownerSafeActions": [
+        "Confirm from owner-visible indicators whether the LP cylinder is empty, and replace an empty cylinder using normal RV procedures.",
+        "Press the control knob for 2 seconds once to reset the error after correcting the supply state.",
+        "Record whether the fault occurs at high altitude or returns after the reset."
+      ],
+      "serviceOnlyActions": [
+        "Repeated ignition lockout, LP hardware, regulator, flue, and refrigerator ignition diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service LP hardware, electrical circuits, wiring, or refrigerator controls; use only normal front-panel and owner-visible checks and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-display-fault-50-support"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-display-fault-51-power-module-internal-reset",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP",
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10",
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "Display fault 51",
+      "slug": "dometic-rm10-display-fault-51-power-module-internal-reset",
+      "plainMeaning": "The Dometic RM10 support page lists display fault 51 and says to press the control knob for 2 seconds to reset the error.",
+      "ownerSafeActions": [
+        "Press the control knob for 2 seconds once to reset the error.",
+        "Record whether the display fault returns after the reset.",
+        "Call qualified service if display fault 51 repeats."
+      ],
+      "serviceOnlyActions": [
+        "Power-module internal fault, wiring, and refrigerator control diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service LP hardware, electrical circuits, wiring, or refrigerator controls; use only normal front-panel and owner-visible checks and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-display-fault-51-support"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-display-fault-52-ground-contact-gas-valve-reset",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP",
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10",
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "Display fault 52",
+      "slug": "dometic-rm10-display-fault-52-ground-contact-gas-valve-reset",
+      "plainMeaning": "The Dometic RM10 support page lists display fault 52 and says to press the control knob for 2 seconds to reset the error.",
+      "ownerSafeActions": [
+        "Press the control knob for 2 seconds once to reset the error.",
+        "Stop LP operation and record whether the fault returns.",
+        "Call qualified service if display fault 52 repeats."
+      ],
+      "serviceOnlyActions": [
+        "Ground-contact, LP valve, wiring, and refrigerator control diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service LP hardware, electrical circuits, wiring, or refrigerator controls; use only normal front-panel and owner-visible checks and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-display-fault-52-support"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
+      "id": "dometic-rm10-display-fault-53-ground-contact-ignition-electrode-reset",
+      "brand": "Dometic",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "RM10.5T",
+        "RM10.5S",
+        "RM10.5G",
+        "RM10.5P",
+        "RMS10.5T",
+        "RMS10.5XT",
+        "RMS10.5S",
+        "RMS10.5G",
+        "RMS10.5P",
+        "RMS10.5XS",
+        "RMS10.5XG",
+        "RMS10.5XP",
+        "RMD10T",
+        "RMD10XT",
+        "RMD10.5",
+        "RMD10.5X",
+        "RMD10.5S",
+        "RMD10.5XS",
+        "RMD10.5T",
+        "RMD10.5XT",
+        "10 Series RMD10",
+        "RML10.4",
+        "RML10.4S",
+        "RML10.4T"
+      ],
+      "code": "Display fault 53",
+      "slug": "dometic-rm10-display-fault-53-ground-contact-ignition-electrode-reset",
+      "plainMeaning": "The Dometic RM10 support page lists display fault 53 and says to press the control knob for 2 seconds to reset the error.",
+      "ownerSafeActions": [
+        "Press the control knob for 2 seconds once to reset the error.",
+        "Stop LP operation and record whether the fault returns.",
+        "Call qualified service if display fault 53 repeats."
+      ],
+      "serviceOnlyActions": [
+        "Ground-contact, ignition electrode, LP ignition, wiring, and refrigerator control diagnosis are service-only."
+      ],
+      "safetyBoundary": "Do not service LP hardware, electrical circuits, wiring, or refrigerator controls; use only normal front-panel and owner-visible checks and call qualified service for repeated faults.",
+      "sourceIds": [
+        "dometic-rm10-display-fault-53-support"
+      ],
+      "symptomIds": [
+        "refrigerator-lp-ignition",
+        "dometic-legacy-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Interior data label model, product number, serial number",
+        "Front display code or lamp state photo",
+        "Power module/display board part number if service requests it"
+      ]
+    },
+    {
       "id": "dometic-rm10-rms10-w01-refrigerator-compartment-temperature-sensor",
       "brand": "Dometic",
       "equipmentType": "Refrigerator",
@@ -28139,7 +29222,24 @@
         "dometic-rml10-4-operating",
         "dometic-rm8-ground-contact-support",
         "dometic-rm8-tank-stop-support",
-        "dometic-rm10-petrol-pump-tank-stop-support"
+        "dometic-rm10-petrol-pump-tank-stop-support",
+        "dometic-rm10-display-fault-01-support",
+        "dometic-rm10-display-fault-02-support",
+        "dometic-rm10-display-fault-03-support",
+        "dometic-rm10-display-fault-05-support",
+        "dometic-rm10-display-fault-06-support",
+        "dometic-rm10-display-fault-07-support",
+        "dometic-rm10-display-fault-08-support",
+        "dometic-rm10-display-fault-09-support",
+        "dometic-rm10-display-fault-10-support",
+        "dometic-rm10-display-fault-11-support",
+        "dometic-rm10-display-fault-12-support",
+        "dometic-rm10-display-fault-13-support",
+        "dometic-rm10-display-fault-14-support",
+        "dometic-rm10-display-fault-50-support",
+        "dometic-rm10-display-fault-51-support",
+        "dometic-rm10-display-fault-52-support",
+        "dometic-rm10-display-fault-53-support"
       ]
     }
   ],

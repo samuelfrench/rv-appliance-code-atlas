@@ -28,6 +28,7 @@
 - [x] Add official legacy Norcold N41/N51, N510, N61/N81, N62/N64/N82/N84, and N1095 refrigerator owner-manual fault/display tables from manufacturer-hosted Thetford/Norcold sources.
 - [x] Add official legacy Dometic RM3762/RM3962, RMD10T/RMD10XT, RM10/RMS10, RMD10.5, RML10.4, RM8/RMD8, and Americana refrigerator display/status diagnostics from manufacturer-hosted Dometic manuals.
 - [x] Add official Dometic Americana II DM/DMA, RMD8 numbered-button, RM8 ground-contact/tank-stop, and RM10 petrol-pump support diagnostics; narrow RMD8 internal-battery entries to RMD8xx1 variants.
+- [x] Add official Dometic RM10 display-fault support aliases for faults 01/02/03/05/06/07/08/09/10/11/12/13/14/50/51/52/53 with owner-safe boundaries.
 - [ ] Add GSC property and submit sitemap after live URL is stable.
 
 ## Current State — 2026-06-02
@@ -35,14 +36,14 @@
 - GitHub repo: `https://github.com/samuelfrench/rv-appliance-code-atlas`
 - Fly app: `rv-appliance-code-atlas`, one `shared-cpu-1x` 256 MB machine in `dfw`, auto-stop enabled.
 - Latest deploy: GitHub Actions run `26819819287` succeeded at `2026-06-02T12:31:58Z`; Fly release v19, image `deployment-01KT4522JW0A9WBCPCKGNQTD24`, code commit `ce9e905`.
-- Corpus: `734` verified entries, `62` symptom guides, `141` official sources, `797` generated indexable pages.
-- Local verification passed for the Dometic support-alias batch: RED/GREEN focused corpus regressions for Americana II DM/DMA, RMD8 numbered-button rows, RM8/RM10 support-page aliases, and RMD8 internal-battery RMD8xx1-only scope; `npm run validate:corpus`, `npm run test:unit`, `npm run source:audit`, `npm run traffic:report`, `npm run verify:runtime`, `git diff --check`, built-app desktop/mobile route/search smoke, and HTTP `200` checks for all 5 new Dometic source URLs. Build splits corpus to `dist/assets/corpus-B6qpfWXE.json` at `1167.24 kB` / `79.74 kB` gzip and main JS to `210.16 kB` / `65.83 kB` gzip with no Vite chunk warning.
-- Reviews passed: source/safety review found and fixed RMD8 internal-battery rows to RMD8xx1-only model scope; code/data-quality review approved with no blocking findings after validating sources, IDs/slugs, schema, counts, and runtime in a temp copy.
+- Corpus: `751` verified entries, `62` symptom guides, `158` official sources, `814` generated indexable pages.
+- Local verification passed for the Dometic RM10 display-fault support-alias batch: RED/GREEN focused corpus regressions for RM10/RMD10/RML10 exact owner-search wording and the 17 official support URLs; `npm run validate:corpus`, focused `npm run test:unit -- src/lib/corpus.test.ts`, full `npm run test:unit`, `npm run source:audit`, `npm run traffic:report`, `npm run verify:runtime`, `git diff --check`, bounded JSON diff-shape audit, and built-app desktop/mobile route/search smoke. Build splits corpus to `dist/assets/corpus-D1-i6tdp.json` at `1208.59 kB` / `82.49 kB` gzip and main JS to `210.16 kB` / `65.83 kB` gzip with no Vite chunk warning.
+- Reviews passed: source/safety review approved all 17 RM10 support aliases with owner-safe boundaries and official `support.dometic.com` sources only; data-quality review approved IDs/slugs/refs/counts/routes/searches and confirmed no existing entries or sources changed.
 - Live verification passed: `/corpus-stats.json` reports `734`/`62`/`141`/`797`; `/sitemap.xml` and 8 representative new Dometic code/symptom routes returned HTTP `200`; all 5 new official Dometic source URLs returned HTTP `200`; production desktop/mobile Playwright smoke checked 8 routes plus 5 searches with `0` console/page/request failures.
 - Source triage note: accepted official Thetford/Norcold N3000 troubleshooting PDF, N3000 North America owner/install manual, N2000 owner manual, N8DCX/N10DCX service manual, N10LX/NA10LX owner manual, and 2118 owner manual. Rejected/deferred forums/mirrors, N2000 service-manual board-level procedures for owner guidance, and N3000/N2000 flowchart repair steps beyond service-only boundaries.
 - Source triage note: accepted official Thetford/Norcold owner manuals for N41/N51, N400/N510, N61/N81, N62/N64/N82/N84, and N1095; the N400/N510 manual fault table is scoped to N510 models only. Rejected/deferred forums/mirrors, recall/HTS pages as code-table sources, and any invented `no co`/`n` entries for families whose owner manuals do not list them.
-- Source triage note: accepted official Dometic RM3762/RM3962, RM8/RMS8/RML8/RMSL8, RMD8xx1/RMD8xx5, RM10/RMS10, RMD10.5, RML10.4, RMD10T/RMD10XT, Americana RM/DM/NDM, Americana II DM/DMA, RMD8 numbered-button, RM8 ground-contact/tank-stop, and RM10 petrol-pump sources. Rejected/deferred forums/mirrors, generic symptom-only Americana/classic RM manuals without display-code tables, duplicate Americana DM2652/DM2852/RUC/RUA/RM8 support aliases, Dometic recall pages without fault tables, and any board-level or LP/electrical repair steps for owner guidance.
-- Next automated batch goal: Continue official Dometic refrigerator support-page alias research, prioritizing RM10/RMD10/RML10/RM8 support conditions not already covered by manuals, with duplicate filtering and owner-safe boundaries.
+- Source triage note: accepted official Dometic RM3762/RM3962, RM8/RMS8/RML8/RMSL8, RMD8xx1/RMD8xx5, RM10/RMS10, RMD10.5, RML10.4, RMD10T/RMD10XT, Americana RM/DM/NDM, Americana II DM/DMA, RMD8 numbered-button, RM8 ground-contact/tank-stop, RM10 petrol-pump, and RM10 display fault 01/02/03/05/06/07/08/09/10/11/12/13/14/50/51/52/53 sources. Rejected/deferred forums/mirrors, generic symptom-only Americana/classic RM manuals without display-code tables, duplicate Americana DM2652/DM2852/RUC/RUA/RM10 manual rows without support-search value, Dometic recall pages without fault tables, and any board-level or LP/electrical repair steps for owner guidance.
+- Next automated batch goal: Continue official Dometic RM8 refrigerator support-page alias research for recurring beep, internal-battery undervoltage, gas-operation power switching, flame-not-ignited, and AC/DC supply conditions, with duplicate filtering and owner-safe boundaries.
 
 ## Corpus Expansion Backlog
 - [x] Add full Dometic RUC/RUA tables.
@@ -70,7 +71,8 @@
 - [x] Research and add official legacy Norcold N-series refrigerator owner-manual fault/display tables for N41/N51, N510, N61/N81, N62/N64/N82/N84, N1095, and older `n` stopped-cooling lockout families.
 - [x] Research and add official legacy Dometic refrigerator display/status tables for RM3762/RM3962, RMD10T/RMD10XT, RM10/RMS10, RMD10.5, RML10.4, RM8/RMD8, and Americana limited display states with owner-safe boundaries.
 - [x] Research and add official Dometic Americana II DM/DMA, RMD8 numbered-button, RM8 ground-contact/tank-stop, and RM10 petrol-pump support diagnostics with owner-safe boundaries.
-- [ ] Continue official Dometic refrigerator support-page alias research, prioritizing RM10/RMD10/RML10/RM8 support conditions not already covered by manuals, with duplicate filtering and owner-safe boundaries.
+- [x] Research and add official Dometic RM10 display-fault support aliases for exact owner searches while preserving manual-backed W/E table rows.
+- [ ] Continue official Dometic RM8 refrigerator support-page alias research for recurring beep, internal-battery undervoltage, gas-operation power switching, flame-not-ignited, and AC/DC supply conditions, with duplicate filtering and owner-safe boundaries.
 
 ## Launch Automation
 - [ ] Add weekly traffic report artifact once GSC is configured.
