@@ -57,6 +57,34 @@ test("lookup surfaces Dometic 10-series symptom aliases", async ({ page }) => {
   await expect(lookupResults.locator('a[href="/symptoms/dometic-rm10-internal-battery-packs/"]')).toBeVisible();
 });
 
+test("lookup surfaces Dometic RUA/RUC symptom support pages", async ({ page }) => {
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("rua not cooling lower temperature");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/dometic-rua-ruc-not-cooling-temperature-and-ventilation/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("rua 12v battery management");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/dometic-rua-ruc-first-use-ventilation-battery-management/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("ruc no display");
+  await expect(lookupResults.locator('a[href="/symptoms/dometic-ruc-display-or-power-not-on/"]')).toBeVisible();
+
+  await searchbox.fill("ruc compressor high ambient");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/dometic-ruc-compressor-voltage-or-high-ambient/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("ruc too cold warmest setting");
+  await expect(lookupResults.locator('a[href="/symptoms/dometic-ruc-too-cold-temperature-setting/"]')).toBeVisible();
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 

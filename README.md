@@ -37,9 +37,9 @@ npm run traffic:monitor
 
 Current corpus:
 - `819` verified entries
-- `72` symptom guides
-- `242` official sources
-- `892` generated indexable pages
+- `85` symptom guides
+- `271` official sources
+- `905` generated indexable pages
 
 Next automated batch goal:
-- Triage official Dometic RUA/RUC refrigerator symptom-only support pages from sitemap-verified pages, starting with door, cooling, power, smell, cleaning, low-temperature, and battery/ventilation overlap; add only non-duplicate owner-safe symptom aliases.
+- Triage official Norcold/Thetford refrigerator symptom-only support and owner-manual pages for cooling, power, door, ventilation, water, low-temperature, and service-only boundaries; add only non-duplicate owner-safe guides.

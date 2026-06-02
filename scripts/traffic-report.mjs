@@ -24,7 +24,7 @@ function buildReport() {
       ready: false,
     })),
     nextAutomatedBatchGoal:
-      "Triage official Dometic RUA/RUC refrigerator symptom-only support pages from sitemap-verified pages, starting with door, cooling, power, smell, cleaning, low-temperature, and battery/ventilation overlap; add only non-duplicate owner-safe symptom aliases.",
+      "Triage official Norcold/Thetford refrigerator symptom-only support and owner-manual pages for cooling, power, door, ventilation, water, low-temperature, and service-only boundaries; add only non-duplicate owner-safe guides.",
     monitorCommand: "npm run traffic:monitor",
   };
 }

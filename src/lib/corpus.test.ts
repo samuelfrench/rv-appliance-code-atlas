@@ -81,6 +81,31 @@ describe("verified corpus", () => {
     );
   });
 
+  it("finds Dometic RUA/RUC symptom support pages from owner searches", () => {
+    const index = buildSymptomSearchIndex(corpus);
+
+    expect(lookupSymptomGuides(index, "rua does not work automatic mode")[0]?.slug).toBe(
+      "dometic-rua-does-not-work-by-mode",
+    );
+    expect(lookupSymptomGuides(index, "rua not cooling lower temperature")[0]?.slug).toBe(
+      "dometic-rua-ruc-not-cooling-temperature-and-ventilation",
+    );
+    expect(lookupSymptomGuides(index, "rua defrost ice")[0]?.slug).toBe("dometic-rua-ruc-defrost-ice");
+    expect(lookupSymptomGuides(index, "rua 12v battery management")[0]?.slug).toBe(
+      "dometic-rua-ruc-first-use-ventilation-battery-management",
+    );
+    expect(lookupSymptomGuides(index, "rua eco mode defrost")[0]?.slug).toBe("dometic-rua-ruc-user-modes");
+    expect(lookupSymptomGuides(index, "ruc no display")[0]?.slug).toBe("dometic-ruc-display-or-power-not-on");
+    expect(lookupSymptomGuides(index, "ruc compressor high ambient")[0]?.slug).toBe(
+      "dometic-ruc-compressor-voltage-or-high-ambient",
+    );
+    expect(lookupSymptomGuides(index, "ruc water leaking floor")[0]?.slug).toBe("dometic-ruc-water-leak-or-drain");
+    expect(lookupSymptomGuides(index, "ruc unusual noise fan")[0]?.slug).toBe("dometic-ruc-unusual-noise");
+    expect(lookupSymptomGuides(index, "ruc too cold warmest setting")[0]?.slug).toBe(
+      "dometic-ruc-too-cold-temperature-setting",
+    );
+  });
+
   it("ranks exact multi-word display codes ahead of generic partial matches", () => {
     const index = buildSearchIndex(corpus);
 
@@ -824,6 +849,212 @@ describe("verified corpus", () => {
     expect(manualRows.map((entry) => entry.code)).toEqual(
       expect.arrayContaining(["W05", "W06", "W10 + beep", "W11", "E03", "E07", "E08", "E09", "E12", "E13", "E14", "E50", "E51", "E52", "E53"]),
     );
+  });
+
+  it("adds official Dometic RUA and RUC symptom support pages without inventing code entries", () => {
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const supportUrls = new Map(corpus.sources.map((source) => [source.id, source.url]));
+    const symptomOnlySourceIds = [
+      "dometic-rua-does-not-work-support",
+      "dometic-rua-not-cooling-sufficiently-support",
+      "dometic-rua-first-use-support",
+      "dometic-rua-optimal-use-cooling-ventilation-support",
+      "dometic-rua-defrost-refrigerator-support",
+      "dometic-rua-door-lock-travel-support",
+      "dometic-rua-switch-on-off-support",
+      "dometic-rua-recommended-temperatures-support",
+      "dometic-rua-user-modes-support",
+      "dometic-ruc-not-cooling-sufficiently-support",
+      "dometic-ruc-not-cooling-error-indicator-support",
+      "dometic-ruc-not-cooling-display-lit-service-support",
+      "dometic-ruc-compressor-not-running-support",
+      "dometic-ruc-compressor-voltage-applied-not-operating-support",
+      "dometic-ruc-compressor-starts-cuts-out-support",
+      "dometic-ruc-compressor-does-not-start-high-ambient-support",
+      "dometic-ruc-no-display-support",
+      "dometic-ruc-display-does-not-glow-support",
+      "dometic-ruc-water-in-or-under-refrigerator-support",
+      "dometic-ruc-water-leaking-inside-support",
+      "dometic-ruc-water-leaking-floor-support",
+      "dometic-ruc-unusual-noises-support",
+      "dometic-ruc-interior-temperature-too-low-support",
+      "dometic-ruc-recommended-temperatures-support",
+      "dometic-ruc-defrost-refrigerator-support",
+      "dometic-ruc-door-lock-freezer-compartment-support",
+      "dometic-ruc-first-use-support",
+      "dometic-ruc-optimal-use-cooling-ventilation-support",
+      "dometic-ruc-user-modes-support",
+    ];
+    const expectedSymptomPages = new Map([
+      ["dometic-rua-does-not-work-support", "https://support.dometic.com/en/rua-refrigerator/My-refrigerator-does-not-work-8f2c"],
+      ["dometic-rua-not-cooling-sufficiently-support", "https://support.dometic.com/en/rua-refrigerator/My-refrigerator-is-not-cooling-sufficiently-3bb2"],
+      ["dometic-rua-first-use-support", "https://support.dometic.com/en/rua-refrigerator/How-to-use-the-refrigerator-for-the-first-time-ee1c"],
+      ["dometic-rua-optimal-use-cooling-ventilation-support", "https://support.dometic.com/en/rua-refrigerator/How-to-use-the-refrigerator-optimally-ccd9"],
+      ["dometic-rua-defrost-refrigerator-support", "https://support.dometic.com/en/rua-refrigerator/How-to-defrost-the-refrigerator-1c11"],
+      ["dometic-rua-door-lock-travel-support", "https://support.dometic.com/en/rua-refrigerator/How-to-lock-the-refrigerator-doorfreezer-compartment-door-d280"],
+      ["dometic-rua-switch-on-off-support", "https://support.dometic.com/en/rua-refrigerator/How-to-switch-the-refrigerator-onoff-e4a"],
+      ["dometic-rua-recommended-temperatures-support", "https://support.dometic.com/en/rua-refrigerator/What-are-the-recommended-temperatures-for-refrigerating-and-freezing-c0c4"],
+      ["dometic-rua-user-modes-support", "https://support.dometic.com/en/rua-refrigerator/What-user-modes-are-available-on-my-refrigerator-8269"],
+      ["dometic-ruc-not-cooling-sufficiently-support", "https://support.dometic.com/en/ruc-refrigerators/My-refrigerator-is-not-cooling-sufficiently-8371"],
+      ["dometic-ruc-not-cooling-error-indicator-support", "https://support.dometic.com/en/ruc-refrigerators/The-device-does-not-cool-power-is-present-error-indicator-appears-e26c"],
+      ["dometic-ruc-not-cooling-display-lit-service-support", "https://support.dometic.com/en/ruc-refrigerators/The-device-does-not-cool-power-is-present-display-is-lit-c723"],
+      ["dometic-ruc-compressor-not-running-support", "https://support.dometic.com/en/ruc-refrigerators/The-compressor-is-not-running-1235"],
+      ["dometic-ruc-compressor-voltage-applied-not-operating-support", "https://support.dometic.com/en/ruc-refrigerators/Voltage-is-being-applied-but-the-compressor-does-not-operate-1f71"],
+      ["dometic-ruc-compressor-starts-cuts-out-support", "https://support.dometic.com/en/ruc-refrigerators/Compressor-starts-for-a-short-time-and-then-cuts-out-aa45"],
+      ["dometic-ruc-compressor-does-not-start-high-ambient-support", "https://support.dometic.com/en/ruc-refrigerators/compressor-does-not-start-93cb"],
+      ["dometic-ruc-no-display-support", "https://support.dometic.com/en/ruc-refrigerators/No-display-87ac"],
+      ["dometic-ruc-display-does-not-glow-support", "https://support.dometic.com/en/ruc-refrigerators/Device-does-not-function-display-does-not-glow-dba8"],
+      ["dometic-ruc-water-in-or-under-refrigerator-support", "https://support.dometic.com/en/ruc-refrigerators/There-is-water-in-or-under-my-refrigerator-e451"],
+      ["dometic-ruc-water-leaking-inside-support", "https://support.dometic.com/en/ruc-refrigerators/Water-is-leaking-into-the-inside-of-the-refrigerator-b1bf"],
+      ["dometic-ruc-water-leaking-floor-support", "https://support.dometic.com/en/ruc-refrigerators/Water-is-leaking-onto-the-floor-1be"],
+      ["dometic-ruc-unusual-noises-support", "https://support.dometic.com/en/ruc-refrigerators/I-am-hearing-unusual-noises-from-my-refrigerator-e3d"],
+      ["dometic-ruc-interior-temperature-too-low-support", "https://support.dometic.com/en/ruc-refrigerators/The-interior-temperature-is-too-low-on-warmest-control-setting-2156"],
+      ["dometic-ruc-recommended-temperatures-support", "https://support.dometic.com/en/ruc-refrigerators/What-are-the-recommended-temperatures-for-refrigerating-and-freezing-c0c4"],
+      ["dometic-ruc-defrost-refrigerator-support", "https://support.dometic.com/en/ruc-refrigerators/How-to-defrost-the-refrigerator-1c11"],
+      ["dometic-ruc-door-lock-freezer-compartment-support", "https://support.dometic.com/en/ruc-refrigerators/How-to-lock-the-refrigerator-doorfreezer-compartment-door-d280"],
+      ["dometic-ruc-first-use-support", "https://support.dometic.com/en/ruc-refrigerators/How-to-use-the-refrigerator-for-the-first-time-ee1c"],
+      ["dometic-ruc-optimal-use-cooling-ventilation-support", "https://support.dometic.com/en/ruc-refrigerators/How-to-use-the-refrigerator-optimally-ccd9"],
+      ["dometic-ruc-user-modes-support", "https://support.dometic.com/en/ruc-refrigerators/What-user-modes-are-available-on-my-refrigerator-8269"],
+    ]);
+
+    for (const [sourceId, url] of expectedSymptomPages) {
+      expect(supportUrls.get(sourceId), sourceId).toBe(url);
+    }
+
+    expect(corpus.sources.filter((source) => symptomOnlySourceIds.includes(source.id))).toHaveLength(
+      symptomOnlySourceIds.length,
+    );
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => symptomOnlySourceIds.includes(sourceId)))).toHaveLength(0);
+
+    expect(symptomById.get("dometic-rua-does-not-work-mode")?.sourceIds).toContain("dometic-rua-does-not-work-support");
+    expect(symptomById.get("dometic-rua-ruc-not-cooling-temperature")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "dometic-rua-not-cooling-sufficiently-support",
+        "dometic-rua-optimal-use-cooling-ventilation-support",
+        "dometic-rua-recommended-temperatures-support",
+        "dometic-ruc-not-cooling-sufficiently-support",
+        "dometic-ruc-optimal-use-cooling-ventilation-support",
+        "dometic-ruc-recommended-temperatures-support",
+      ]),
+    );
+    expect(symptomById.get("dometic-rua-ruc-first-use-ventilation-battery")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "dometic-rua-first-use-support",
+        "dometic-rua-optimal-use-cooling-ventilation-support",
+        "dometic-ruc-first-use-support",
+        "dometic-ruc-optimal-use-cooling-ventilation-support",
+      ]),
+    );
+    expect(symptomById.get("dometic-rua-ruc-defrost")?.sourceIds).toEqual(
+      expect.arrayContaining(["dometic-rua-defrost-refrigerator-support", "dometic-ruc-defrost-refrigerator-support"]),
+    );
+    expect(symptomById.get("dometic-rua-ruc-door-lock")?.sourceIds).toEqual(
+      expect.arrayContaining(["dometic-rua-door-lock-travel-support", "dometic-ruc-door-lock-freezer-compartment-support"]),
+    );
+    expect(symptomById.get("dometic-rua-ruc-user-modes")?.sourceIds).toEqual(
+      expect.arrayContaining(["dometic-rua-user-modes-support", "dometic-ruc-user-modes-support"]),
+    );
+    expect(symptomById.get("dometic-rua-power-source-selection")?.sourceIds).toContain("dometic-rua-switch-on-off-support");
+    expect(symptomById.get("dometic-ruc-display-power")?.sourceIds).toEqual(
+      expect.arrayContaining(["dometic-ruc-display-does-not-glow-support", "dometic-ruc-no-display-support"]),
+    );
+    expect(symptomById.get("dometic-ruc-compressor-voltage")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "dometic-ruc-compressor-not-running-support",
+        "dometic-ruc-compressor-starts-cuts-out-support",
+        "dometic-ruc-compressor-voltage-applied-not-operating-support",
+        "dometic-ruc-compressor-does-not-start-high-ambient-support",
+      ]),
+    );
+    expect(symptomById.get("dometic-ruc-no-cooling-service")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "dometic-ruc-not-cooling-error-indicator-support",
+        "dometic-ruc-not-cooling-display-lit-service-support",
+      ]),
+    );
+    expect(symptomById.get("dometic-ruc-water-leak-drain")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "dometic-ruc-water-in-or-under-refrigerator-support",
+        "dometic-ruc-water-leaking-inside-support",
+        "dometic-ruc-water-leaking-floor-support",
+      ]),
+    );
+    expect(symptomById.get("dometic-ruc-unusual-noise")?.sourceIds).toContain("dometic-ruc-unusual-noises-support");
+    expect(symptomById.get("dometic-ruc-too-cold-temperature-setting")?.sourceIds).toEqual(
+      expect.arrayContaining(["dometic-ruc-interior-temperature-too-low-support", "dometic-ruc-recommended-temperatures-support"]),
+    );
+
+    const newSymptomIds = [
+      "dometic-rua-does-not-work-mode",
+      "dometic-rua-ruc-not-cooling-temperature",
+      "dometic-rua-ruc-first-use-ventilation-battery",
+      "dometic-rua-ruc-defrost",
+      "dometic-rua-ruc-door-lock",
+      "dometic-rua-ruc-user-modes",
+      "dometic-rua-power-source-selection",
+      "dometic-ruc-display-power",
+      "dometic-ruc-compressor-voltage",
+      "dometic-ruc-no-cooling-service",
+      "dometic-ruc-water-leak-drain",
+      "dometic-ruc-unusual-noise",
+      "dometic-ruc-too-cold-temperature-setting",
+    ];
+    for (const symptomId of newSymptomIds) {
+      expect(symptomById.get(symptomId)?.safeChecklist.join(" "), symptomId).not.toMatch(
+        /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\brefrigerant\b|\bprobe\b|\bopen (the )?(fuel|gas|electrical|rooftop)/i,
+      );
+    }
+    expect(symptomById.get("dometic-ruc-unusual-noise")?.safeChecklist.join(" ")).toMatch(/do not bend/i);
+    expect(symptomById.get("dometic-ruc-compressor-voltage")?.safeChecklist.join(" ")).not.toMatch(
+      /replace.*cable|wiring|compressor pins|probe/i,
+    );
+    expect(symptomById.get("dometic-ruc-no-cooling-service")?.safeChecklist.join(" ")).toMatch(/authorized service/i);
+
+    expect(symptomById.get("refrigerator-not-cooling")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "dometic-rua-not-cooling-sufficiently-support",
+        "dometic-rua-optimal-use-cooling-ventilation-support",
+        "dometic-ruc-not-cooling-sufficiently-support",
+        "dometic-ruc-optimal-use-cooling-ventilation-support",
+        "dometic-ruc-not-cooling-display-lit-service-support",
+        "dometic-ruc-compressor-voltage-applied-not-operating-support",
+      ]),
+    );
+    expect(symptomById.get("airflow-or-venting")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "dometic-rua-first-use-support",
+        "dometic-rua-optimal-use-cooling-ventilation-support",
+        "dometic-ruc-first-use-support",
+        "dometic-ruc-optimal-use-cooling-ventilation-support",
+      ]),
+    );
+    expect(symptomById.get("low-voltage")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "dometic-ruc-compressor-starts-cuts-out-support",
+        "dometic-ruc-compressor-voltage-applied-not-operating-support",
+      ]),
+    );
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "dometic-ruc-not-cooling-display-lit-service-support",
+        "dometic-ruc-display-does-not-glow-support",
+      ]),
+    );
+
+    expect([...supportUrls.values()]).not.toEqual(expect.arrayContaining([
+      "https://support.dometic.com/en/rua-refrigerator/How-to-connect-the-refrigerator-to-12-24-V-ddb2",
+      "https://support.dometic.com/en/rua-refrigerator/How-to-connect-the-refrigerator-to-AC-mains-27ca",
+      "https://support.dometic.com/en/rua-refrigerator/How-to-clean-and-maintain-the-refrigerator-47a9",
+      "https://support.dometic.com/en/rua-refrigerator/How-to-replace-the-door-panel-of-my-refrigerator-4f2f",
+      "https://support.dometic.com/en/ruc-refrigerators/The-device-does-not-cool-power-is-present-display-is-lit-1f43",
+      "https://support.dometic.com/en/ruc-refrigerators/Electric-circuit-between-the-pins-in-the-compressor-interrupted-df5e",
+      "https://support.dometic.com/en/ruc-refrigerators/How-to-connect-the-refrigerator-to-12-24-V-ddb2",
+      "https://support.dometic.com/en/ruc-refrigerators/How-to-connect-the-refrigerator-to-AC-mains-27ca",
+      "https://support.dometic.com/en/ruc-refrigerators/How-to-clean-and-maintain-the-refrigerator-47a9",
+      "https://support.dometic.com/en/ruc-refrigerators/How-to-replace-the-door-panel-of-my-refrigerator-4f2f",
+      "https://support.dometic.com/en/ruc-refrigerators/Where-can-I-find-the-nearest-service-provider-bb4c",
+      "https://support.dometic.com/en/ruc-refrigerators/Where-can-I-get-spare-parts-a85a",
+    ]));
   });
 
   it("includes official Dometic RM8 support aliases for exact owner searches", () => {

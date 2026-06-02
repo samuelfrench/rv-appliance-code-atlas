@@ -10,7 +10,7 @@ describe("traffic readiness report", () => {
     const report = JSON.parse(output);
 
     expect(report.nextAutomatedBatchGoal).toBe(
-      "Triage official Dometic RUA/RUC refrigerator symptom-only support pages from sitemap-verified pages, starting with door, cooling, power, smell, cleaning, low-temperature, and battery/ventilation overlap; add only non-duplicate owner-safe symptom aliases.",
+      "Triage official Norcold/Thetford refrigerator symptom-only support and owner-manual pages for cooling, power, door, ventilation, water, low-temperature, and service-only boundaries; add only non-duplicate owner-safe guides.",
     );
 
     expect(readFileSync("README.md", "utf8")).toContain(report.nextAutomatedBatchGoal);

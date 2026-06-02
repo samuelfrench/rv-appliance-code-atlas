@@ -543,6 +543,238 @@
       "official": true
     },
     {
+      "id": "dometic-ruc-user-modes-support",
+      "brand": "Dometic",
+      "title": "What user modes are available on my refrigerator? | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/What-user-modes-are-available-on-my-refrigerator-8269",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-optimal-use-cooling-ventilation-support",
+      "brand": "Dometic",
+      "title": "How to use the refrigerator optimally? | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/How-to-use-the-refrigerator-optimally-ccd9",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-first-use-support",
+      "brand": "Dometic",
+      "title": "How to use the refrigerator for the first time? | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/How-to-use-the-refrigerator-for-the-first-time-ee1c",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-door-lock-freezer-compartment-support",
+      "brand": "Dometic",
+      "title": "How to lock the refrigerator door/freezer compartment door? | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/How-to-lock-the-refrigerator-doorfreezer-compartment-door-d280",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-defrost-refrigerator-support",
+      "brand": "Dometic",
+      "title": "How to defrost the refrigerator? | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/How-to-defrost-the-refrigerator-1c11",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-recommended-temperatures-support",
+      "brand": "Dometic",
+      "title": "What are the recommended temperatures for refrigerating and freezing? | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/What-are-the-recommended-temperatures-for-refrigerating-and-freezing-c0c4",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-interior-temperature-too-low-support",
+      "brand": "Dometic",
+      "title": "The interior temperature is too low on warmest control setting | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/The-interior-temperature-is-too-low-on-warmest-control-setting-2156",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-unusual-noises-support",
+      "brand": "Dometic",
+      "title": "I am hearing unusual noises from my refrigerator | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/I-am-hearing-unusual-noises-from-my-refrigerator-e3d",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-water-leaking-floor-support",
+      "brand": "Dometic",
+      "title": "Water is leaking onto the floor | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/Water-is-leaking-onto-the-floor-1be",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-water-leaking-inside-support",
+      "brand": "Dometic",
+      "title": "Water is leaking into the inside of the refrigerator | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/Water-is-leaking-into-the-inside-of-the-refrigerator-b1bf",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-water-in-or-under-refrigerator-support",
+      "brand": "Dometic",
+      "title": "There is water in or under my refrigerator | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/There-is-water-in-or-under-my-refrigerator-e451",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-display-does-not-glow-support",
+      "brand": "Dometic",
+      "title": "Device does not function, display does not glow | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/Device-does-not-function-display-does-not-glow-dba8",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-no-display-support",
+      "brand": "Dometic",
+      "title": "No display | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/No-display-87ac",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-compressor-does-not-start-high-ambient-support",
+      "brand": "Dometic",
+      "title": "Compressor does not start | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/compressor-does-not-start-93cb",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-compressor-starts-cuts-out-support",
+      "brand": "Dometic",
+      "title": "Compressor starts for a short time and then cuts out | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/Compressor-starts-for-a-short-time-and-then-cuts-out-aa45",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-compressor-voltage-applied-not-operating-support",
+      "brand": "Dometic",
+      "title": "Voltage is being applied but the compressor does not operate | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/Voltage-is-being-applied-but-the-compressor-does-not-operate-1f71",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-compressor-not-running-support",
+      "brand": "Dometic",
+      "title": "The compressor is not running | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/The-compressor-is-not-running-1235",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-not-cooling-display-lit-service-support",
+      "brand": "Dometic",
+      "title": "The device does not cool, power is present, display is lit | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/The-device-does-not-cool-power-is-present-display-is-lit-c723",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-not-cooling-error-indicator-support",
+      "brand": "Dometic",
+      "title": "The device does not cool, power is present, error indicator appears | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/The-device-does-not-cool-power-is-present-error-indicator-appears-e26c",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ruc-not-cooling-sufficiently-support",
+      "brand": "Dometic",
+      "title": "My refrigerator is not cooling sufficiently | RUC Refrigerator | Support",
+      "url": "https://support.dometic.com/en/ruc-refrigerators/My-refrigerator-is-not-cooling-sufficiently-8371",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rua-user-modes-support",
+      "brand": "Dometic",
+      "title": "What user modes are available on my refrigerator? | RUA Refridgerators | Support",
+      "url": "https://support.dometic.com/en/rua-refrigerator/What-user-modes-are-available-on-my-refrigerator-8269",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rua-recommended-temperatures-support",
+      "brand": "Dometic",
+      "title": "What are the recommended temperatures for refrigerating and freezing? | RUA Refridgerators | Support",
+      "url": "https://support.dometic.com/en/rua-refrigerator/What-are-the-recommended-temperatures-for-refrigerating-and-freezing-c0c4",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rua-switch-on-off-support",
+      "brand": "Dometic",
+      "title": "How to switch the refrigerator on/off? | RUA Refridgerators | Support",
+      "url": "https://support.dometic.com/en/rua-refrigerator/How-to-switch-the-refrigerator-onoff-e4a",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rua-door-lock-travel-support",
+      "brand": "Dometic",
+      "title": "How to lock the refrigerator door/freezer compartment door? | RUA Refridgerators | Support",
+      "url": "https://support.dometic.com/en/rua-refrigerator/How-to-lock-the-refrigerator-doorfreezer-compartment-door-d280",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rua-defrost-refrigerator-support",
+      "brand": "Dometic",
+      "title": "How to defrost the refrigerator? | RUA Refridgerators | Support",
+      "url": "https://support.dometic.com/en/rua-refrigerator/How-to-defrost-the-refrigerator-1c11",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rua-optimal-use-cooling-ventilation-support",
+      "brand": "Dometic",
+      "title": "How to use the refrigerator optimally? | RUA Refridgerators | Support",
+      "url": "https://support.dometic.com/en/rua-refrigerator/How-to-use-the-refrigerator-optimally-ccd9",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rua-first-use-support",
+      "brand": "Dometic",
+      "title": "How to use the refrigerator for the first time? | RUA Refridgerators | Support",
+      "url": "https://support.dometic.com/en/rua-refrigerator/How-to-use-the-refrigerator-for-the-first-time-ee1c",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rua-not-cooling-sufficiently-support",
+      "brand": "Dometic",
+      "title": "My refrigerator is not cooling sufficiently | RUA Refridgerators | Support",
+      "url": "https://support.dometic.com/en/rua-refrigerator/My-refrigerator-is-not-cooling-sufficiently-3bb2",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rua-does-not-work-support",
+      "brand": "Dometic",
+      "title": "My refrigerator does not work | RUA Refridgerators | Support",
+      "url": "https://support.dometic.com/en/rua-refrigerator/My-refrigerator-does-not-work-8f2c",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
       "id": "dometic-water-heater-combo-function-support",
       "brand": "Dometic",
       "title": "Dometic Gas/Electric Combination Function Information | Water Heaters - Combo Gas & Electric | Support",
@@ -31382,7 +31614,16 @@
         "dometic-rm10-clean-refrigerator-drain-vents-support",
         "dometic-rm10-low-outside-temperature-winter-cover-support",
         "dometic-rm10-evaporator-full-of-ice-support",
-        "dometic-rm10-evaporator-fast-ice-buildup-support"
+        "dometic-rm10-evaporator-fast-ice-buildup-support",
+        "dometic-rua-not-cooling-sufficiently-support",
+        "dometic-rua-optimal-use-cooling-ventilation-support",
+        "dometic-rua-recommended-temperatures-support",
+        "dometic-ruc-not-cooling-sufficiently-support",
+        "dometic-ruc-optimal-use-cooling-ventilation-support",
+        "dometic-ruc-recommended-temperatures-support",
+        "dometic-ruc-not-cooling-error-indicator-support",
+        "dometic-ruc-not-cooling-display-lit-service-support",
+        "dometic-ruc-compressor-voltage-applied-not-operating-support"
       ]
     },
     {
@@ -31480,7 +31721,11 @@
         "furrion-tankless-e5-ti514",
         "dometic-rm10-not-cooling-sufficiently-support",
         "dometic-rm10-clean-refrigerator-drain-vents-support",
-        "dometic-rm10-low-outside-temperature-winter-cover-support"
+        "dometic-rm10-low-outside-temperature-winter-cover-support",
+        "dometic-rua-first-use-support",
+        "dometic-rua-optimal-use-cooling-ventilation-support",
+        "dometic-ruc-first-use-support",
+        "dometic-ruc-optimal-use-cooling-ventilation-support"
       ]
     },
     {
@@ -31541,7 +31786,9 @@
         "dometic-rmd10-5-operating",
         "dometic-rml10-4-operating",
         "dometic-rm10-gas-operation-mains-supply-voltage-support",
-        "dometic-rm10-internal-batteries-change-support"
+        "dometic-rm10-internal-batteries-change-support",
+        "dometic-ruc-compressor-starts-cuts-out-support",
+        "dometic-ruc-compressor-voltage-applied-not-operating-support"
       ]
     },
     {
@@ -31646,7 +31893,11 @@
         "dometic-rm10-evaporator-full-of-ice-support",
         "dometic-rm10-door-ice-compartment-detached-support",
         "dometic-rm10-first-gas-run-strange-smell-support",
-        "dometic-rm10-when-to-defrost-support"
+        "dometic-rm10-when-to-defrost-support",
+        "dometic-rua-does-not-work-support",
+        "dometic-ruc-not-cooling-display-lit-service-support",
+        "dometic-ruc-display-does-not-glow-support",
+        "dometic-ruc-compressor-not-running-support"
       ]
     },
     {
@@ -32701,6 +32952,306 @@
       ],
       "sourceIds": [
         "dometic-rm10-internal-batteries-change-support"
+      ]
+    },
+    {
+      "id": "dometic-rua-does-not-work-mode",
+      "slug": "dometic-rua-does-not-work-by-mode",
+      "title": "Dometic RUA refrigerator does not work by mode",
+      "summary": "Use this when a Dometic RUA refrigerator does not work and the owner is trying to identify whether the symptom is in automatic, AC mains, DC battery, or gas mode. Dometic routes the owner by operation mode before deeper service diagnosis.",
+      "searchAliases": [
+        "RUA does not work automatic mode",
+        "RUA refrigerator does not work",
+        "RUA 230V AC not working",
+        "RUA 12V DC not working",
+        "RUA gas mode not working"
+      ],
+      "safeChecklist": [
+        "Record the selected operation mode, display state, and whether the refrigerator last worked on another normal mode.",
+        "Use only normal front-panel mode selection and normal owner power-source checks.",
+        "If a gas odor, electrical odor, fault code, or repeated failure is present, stop use and call Dometic or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-rua-does-not-work-support"
+      ]
+    },
+    {
+      "id": "dometic-rua-ruc-not-cooling-temperature",
+      "slug": "dometic-rua-ruc-not-cooling-temperature-and-ventilation",
+      "title": "Dometic RUA/RUC not cooling enough",
+      "summary": "Use this when a Dometic RUA or RUC refrigerator is not cooling sufficiently, runs too long, or needs temperature, ventilation, or first-use loading checks. Dometic points to lower temperature settings, food over 4 C/39 F risk, ventilation openings, and service-only stopped-cooling states.",
+      "searchAliases": [
+        "RUA not cooling lower temperature",
+        "RUA not cold enough",
+        "RUA optimal cooling voltage fluctuation",
+        "RUC refrigerator not cooling",
+        "RUC not cooling lower temperature",
+        "RUC compressor runs continuously not cooling"
+      ],
+      "safeChecklist": [
+        "Move food if refrigerator temperature is unsafe.",
+        "Set a lower temperature and verify that food or containers are not blocking cooling ventilation openings.",
+        "Record selected mode, ambient heat, temperature setting, front-panel state, and whether the refrigerator is in first-use startup.",
+        "Call authorized service if power is present and the refrigerator still does not cool."
+      ],
+      "sourceIds": [
+        "dometic-rua-not-cooling-sufficiently-support",
+        "dometic-rua-optimal-use-cooling-ventilation-support",
+        "dometic-rua-recommended-temperatures-support",
+        "dometic-ruc-not-cooling-sufficiently-support",
+        "dometic-ruc-not-cooling-error-indicator-support",
+        "dometic-ruc-not-cooling-display-lit-service-support",
+        "dometic-ruc-optimal-use-cooling-ventilation-support",
+        "dometic-ruc-recommended-temperatures-support"
+      ]
+    },
+    {
+      "id": "dometic-rua-ruc-first-use-ventilation-battery",
+      "slug": "dometic-rua-ruc-first-use-ventilation-battery-management",
+      "title": "Dometic RUA/RUC first use, ventilation, and battery management",
+      "summary": "Use this when a Dometic RUA or RUC refrigerator is being used for the first time, has mild first-use odor, needs ventilation clearance, or shows battery-management mode concerns.",
+      "searchAliases": [
+        "RUA first use mild odor",
+        "RUA startup not cold yet",
+        "RUA 12v battery management",
+        "RUC first use battery management",
+        "RUC mild odour first use",
+        "RUC ventilation openings"
+      ],
+      "safeChecklist": [
+        "Clean owner-accessible interior surfaces with a damp cloth before first use if the manual calls for it.",
+        "Leave cooling ventilation openings clear and allow the refrigerator time to pull down temperature before loading sensitive food.",
+        "Record battery-management warnings, selected mode, first-use timing, and whether ventilation or direct sun may be affecting cooling.",
+        "Use Dometic or qualified service for persistent odor, electrical symptoms, or repeated power-mode trouble."
+      ],
+      "sourceIds": [
+        "dometic-rua-first-use-support",
+        "dometic-rua-optimal-use-cooling-ventilation-support",
+        "dometic-ruc-first-use-support",
+        "dometic-ruc-optimal-use-cooling-ventilation-support",
+        "dometic-ruc-user-modes-support"
+      ]
+    },
+    {
+      "id": "dometic-rua-ruc-defrost",
+      "slug": "dometic-rua-ruc-defrost-ice",
+      "title": "Dometic RUA/RUC defrosting and ice buildup",
+      "summary": "Use this when a Dometic RUA or RUC refrigerator has frost or ice buildup and the owner needs the Dometic defrost boundary.",
+      "searchAliases": [
+        "RUA defrost ice",
+        "RUA freezer frost 3 mm",
+        "RUA evaporator frost",
+        "RUC defrost ice",
+        "RUC frost buildup",
+        "RUC freezer compartment frost"
+      ],
+      "safeChecklist": [
+        "Turn the refrigerator off with normal controls and remove food before defrosting.",
+        "Leave the doors open and wipe compartments dry after the ice melts.",
+        "Do not use mechanical tools, heat guns, or sharp objects to remove ice or loosen stuck items.",
+        "Call authorized service if heavy frost returns quickly or cooling remains poor after defrosting."
+      ],
+      "sourceIds": [
+        "dometic-rua-defrost-refrigerator-support",
+        "dometic-ruc-defrost-refrigerator-support"
+      ]
+    },
+    {
+      "id": "dometic-rua-ruc-door-lock",
+      "slug": "dometic-rua-ruc-door-lock-travel",
+      "title": "Dometic RUA/RUC door or freezer compartment lock",
+      "summary": "Use this when a Dometic RUA or RUC refrigerator door or freezer compartment door will not lock, is in airing position, or needs to be secured for travel.",
+      "searchAliases": [
+        "RUA door lock travel",
+        "RUA freezer door lock",
+        "RUA airing function",
+        "RUC door will not lock",
+        "RUC freezer compartment door lock",
+        "RUC airing position"
+      ],
+      "safeChecklist": [
+        "Confirm the locking catch is in normal-use position rather than airing position.",
+        "Press the door shut only until it clicks and verify it is secured before travel.",
+        "Do not force damaged latch, hinge, or catch parts; call service for broken hardware."
+      ],
+      "sourceIds": [
+        "dometic-rua-door-lock-travel-support",
+        "dometic-ruc-door-lock-freezer-compartment-support"
+      ]
+    },
+    {
+      "id": "dometic-rua-ruc-user-modes",
+      "slug": "dometic-rua-ruc-user-modes",
+      "title": "Dometic RUA/RUC user modes and temperature behavior",
+      "summary": "Use this when a Dometic RUA or RUC owner is choosing Eco, Performance, Turbo, Quiet, or defrost-related modes and wants to understand expected cooling behavior.",
+      "searchAliases": [
+        "RUA eco mode defrost",
+        "RUA turbo mode coldest",
+        "RUA user modes",
+        "RUC eco mode defrost off",
+        "RUC turbo coldest",
+        "RUC user modes"
+      ],
+      "safeChecklist": [
+        "Use only normal front-panel user-mode selection.",
+        "Record selected mode, temperature setting, ambient heat, and whether cooling changed after the mode selection.",
+        "Call Dometic or qualified service if a mode change causes repeated faults or the refrigerator will not cool."
+      ],
+      "sourceIds": [
+        "dometic-rua-user-modes-support",
+        "dometic-ruc-user-modes-support"
+      ]
+    },
+    {
+      "id": "dometic-rua-power-source-selection",
+      "slug": "dometic-rua-power-on-off-energy-source",
+      "title": "Dometic RUA power on/off and energy source selection",
+      "summary": "Use this when a Dometic RUA owner is switching the refrigerator on or off or confirming the selected energy source before troubleshooting.",
+      "searchAliases": [
+        "RUA switch on off",
+        "RUA choose energy source",
+        "RUA power up refrigerator",
+        "RUA shore power selected",
+        "RUA refrigerator starts last energy source"
+      ],
+      "safeChecklist": [
+        "Use the normal front-panel on/off and energy-source controls only.",
+        "Record the selected energy source and whether the refrigerator starts with the last selected source.",
+        "Use qualified RV service for repeated power-source trouble, electrical odor, or mode failures that return."
+      ],
+      "sourceIds": [
+        "dometic-rua-switch-on-off-support"
+      ]
+    },
+    {
+      "id": "dometic-ruc-display-power",
+      "slug": "dometic-ruc-display-or-power-not-on",
+      "title": "Dometic RUC display blank or refrigerator not powering on",
+      "summary": "Use this when a Dometic RUC refrigerator has no display, the display does not glow, or the owner did not hold the encoder long enough to power the display.",
+      "searchAliases": [
+        "RUC no display",
+        "RUC display does not glow",
+        "RUC will not power on",
+        "RUC encoder button display"
+      ],
+      "safeChecklist": [
+        "Push and hold the encoder button as Dometic describes to power up the display.",
+        "Record battery state, main switch state, and whether the display remains dark after the documented button hold.",
+        "Use authorized service for main-switch, supply-line, or internal electrical diagnosis."
+      ],
+      "sourceIds": [
+        "dometic-ruc-no-display-support",
+        "dometic-ruc-display-does-not-glow-support"
+      ]
+    },
+    {
+      "id": "dometic-ruc-compressor-voltage",
+      "slug": "dometic-ruc-compressor-voltage-or-high-ambient",
+      "title": "Dometic RUC compressor starts then stops or will not start",
+      "summary": "Use this when a Dometic RUC compressor starts briefly and cuts out, does not start, or voltage is present but cooling does not begin. Dometic points owners to battery voltage, recharging, shade, ambient heat, and service-only compressor diagnosis.",
+      "searchAliases": [
+        "RUC compressor high ambient",
+        "RUC compressor cuts out",
+        "RUC compressor not running",
+        "RUC compressor does not start",
+        "RUC battery voltage compressor",
+        "RUC voltage above 10.4 under load"
+      ],
+      "safeChecklist": [
+        "Check only installed battery monitor or RV power-system readings; recharge the battery if voltage is low.",
+        "Move the RV or van into shade if high ambient heat is the likely cause.",
+        "Record voltage under load, ambient temperature, error indicator state, and whether the compressor starts then stops.",
+        "Use qualified electrical or refrigeration service for conductor sizing, compressor circuit, or repeated start failure concerns."
+      ],
+      "sourceIds": [
+        "dometic-ruc-compressor-not-running-support",
+        "dometic-ruc-compressor-voltage-applied-not-operating-support",
+        "dometic-ruc-compressor-starts-cuts-out-support",
+        "dometic-ruc-compressor-does-not-start-high-ambient-support"
+      ]
+    },
+    {
+      "id": "dometic-ruc-no-cooling-service",
+      "slug": "dometic-ruc-no-cooling-service-only",
+      "title": "Dometic RUC does not cool with power present",
+      "summary": "Use this when a Dometic RUC has power present but does not cool, or an error indicator appears. Dometic allows the encoder reset where listed and directs power-present/no-cooling repair to authorized service.",
+      "searchAliases": [
+        "RUC power present not cooling",
+        "RUC display lit not cooling",
+        "RUC error indicator not cooling",
+        "RUC reset error encoder 3 seconds"
+      ],
+      "safeChecklist": [
+        "Move food if refrigerator temperature is unsafe.",
+        "If the error-indicator page applies, hold the encoder button for the documented reset and record whether the indicator returns.",
+        "If the display is lit and the refrigerator still does not cool, stop at documentation and use authorized service."
+      ],
+      "sourceIds": [
+        "dometic-ruc-not-cooling-error-indicator-support",
+        "dometic-ruc-not-cooling-display-lit-service-support"
+      ]
+    },
+    {
+      "id": "dometic-ruc-water-leak-drain",
+      "slug": "dometic-ruc-water-leak-or-drain",
+      "title": "Dometic RUC water inside refrigerator or on floor",
+      "summary": "Use this when a Dometic RUC refrigerator has water inside the cabinet, water under the refrigerator, or a drain-hose concern.",
+      "searchAliases": [
+        "RUC water leak",
+        "RUC water inside refrigerator",
+        "RUC water leaking floor",
+        "RUC drain hose clogged"
+      ],
+      "safeChecklist": [
+        "Clean only the owner-accessible drain path if it can be reached without disassembly.",
+        "Inspect the visible rear drain hose routing only from normal safe access.",
+        "Stop and call service for split hoses, hidden routing, cabinet removal, floor work, or water that returns."
+      ],
+      "sourceIds": [
+        "dometic-ruc-water-in-or-under-refrigerator-support",
+        "dometic-ruc-water-leaking-inside-support",
+        "dometic-ruc-water-leaking-floor-support"
+      ]
+    },
+    {
+      "id": "dometic-ruc-unusual-noise",
+      "slug": "dometic-ruc-unusual-noise",
+      "title": "Dometic RUC unusual refrigerator noise",
+      "summary": "Use this when a Dometic RUC refrigerator makes unusual noise. Keep owner action to loose interior items and route cooling-system contact or persistent noise to service.",
+      "searchAliases": [
+        "RUC unusual noise fan",
+        "RUC fan noise",
+        "RUC jars bottles touching fan",
+        "RUC refrigerator noisy"
+      ],
+      "safeChecklist": [
+        "Move jars, bottles, and loose containers away from each other and away from the fan housing.",
+        "Record whether the noise changes after loose interior items are moved.",
+        "Do not bend sealed cooling-system parts or tubing; call authorized service if the noise is not from loose interior items."
+      ],
+      "sourceIds": [
+        "dometic-ruc-unusual-noises-support"
+      ]
+    },
+    {
+      "id": "dometic-ruc-too-cold-temperature-setting",
+      "slug": "dometic-ruc-too-cold-temperature-setting",
+      "title": "Dometic RUC interior temperature too low",
+      "summary": "Use this when a Dometic RUC is too cold on the warmest control setting or the owner needs recommended refrigerator and freezer temperatures.",
+      "searchAliases": [
+        "RUC too cold warmest setting",
+        "RUC recommended refrigerator temperature",
+        "RUC refrigerator 39F",
+        "RUC freezer 5F"
+      ],
+      "safeChecklist": [
+        "Confirm the selected temperature setting and user mode from the display.",
+        "Compare temperatures against Dometic recommended values before changing storage plans.",
+        "Use authorized service for persistent overcooling on the warmest setting."
+      ],
+      "sourceIds": [
+        "dometic-ruc-interior-temperature-too-low-support",
+        "dometic-ruc-recommended-temperatures-support"
       ]
     },
     {
