@@ -36,10 +36,10 @@ npm run traffic:monitor
 ```
 
 Current corpus:
-- `562` verified entries
-- `60` symptom guides
-- `123` official sources
-- `623` generated indexable pages
+- `615` verified entries
+- `61` symptom guides
+- `128` official sources
+- `677` generated indexable pages
 
 Next automated batch goal:
-- Research the next official legacy Norcold N-series refrigerator slice, prioritizing manufacturer-hosted owner-manual fault tables for N41/N51, N61/N81, N62/N64/N82/N84, N1095, and older no-co/n lockout families.
+- Research official legacy Dometic refrigerator fault/display tables, prioritizing manufacturer-hosted Americana/RM/RM8/RM10/RML/RMD owner manuals and support pages with explicit owner-safe boundaries.

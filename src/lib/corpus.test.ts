@@ -76,6 +76,17 @@ describe("verified corpus", () => {
     );
   });
 
+  it("ranks legacy Norcold N-series stopped-cooling lockout searches to the matching owner-manual entry", () => {
+    const index = buildSearchIndex(corpus);
+
+    expect(lookupEntries(index, "norcold n41 n cooling unit stopped cooling")[0]?.slug).toBe(
+      "norcold-n41-n51-n-cooling-unit-stopped-cooling",
+    );
+    expect(lookupEntries(index, "norcold n61 on gas lights flash no energy source")[0]?.slug).toBe(
+      "norcold-n61-n81-on-gas-lights-flash-no-energy-source",
+    );
+  });
+
   it("summarizes code, source, symptom, and monetization readiness counts", () => {
     const summary = summarizeCorpus(corpus);
 
@@ -297,6 +308,104 @@ describe("verified corpus", () => {
 
     expect(codes).toEqual(
       new Set(["dr", "no FL", "no AC", "Lo dc", "Sr", "temperature setting flashes", "AC rE", "AC HE", "oP LI", "FL --"]),
+    );
+  });
+
+  it("includes official legacy Norcold N41/N51 owner-manual fault display codes", () => {
+    const codes = new Set(
+      corpus.entries
+        .filter((entry) => entry.brand === "Norcold" && entry.sourceIds.includes("norcold-n41-n51-owner"))
+        .map((entry) => entry.code),
+    );
+
+    expect(codes).toEqual(
+      new Set(["no display", "F", "A", "C", "n", "temperature setting flashes", "H", "r", "S"]),
+    );
+  });
+
+  it("includes official legacy Norcold N510 owner-manual fault display codes from the N400/N510 manual", () => {
+    const codes = new Set(
+      corpus.entries
+        .filter((entry) => entry.brand === "Norcold" && entry.sourceIds.includes("norcold-n400-n510-owner"))
+        .map((entry) => entry.code),
+    );
+
+    expect(codes).toEqual(
+      new Set(["no display", "F", "A", "C", "n", "temperature setting flashes", "H", "r", "S"]),
+    );
+  });
+
+  it("includes official legacy Norcold N61/N81 owner-manual light-status fault codes", () => {
+    const codes = new Set(
+      corpus.entries
+        .filter((entry) => entry.brand === "Norcold" && entry.sourceIds.includes("norcold-n61-n81-owner"))
+        .map((entry) => entry.code),
+    );
+
+    expect(codes).toEqual(
+      new Set([
+        "ON light off",
+        "ON and GAS lights flash",
+        "ON on GAS flashes",
+        "ON flashes off 1 time",
+        "ON flashes off 3 times with GAS on",
+        "ON flashes off 4 times",
+      ]),
+    );
+  });
+
+  it("includes official legacy Norcold N62/N64/N82/N84 owner-manual fault display codes by control family", () => {
+    const codes = new Set(
+      corpus.entries
+        .filter((entry) => entry.brand === "Norcold" && entry.sourceIds.includes("norcold-n62-n64-n82-n84-owner"))
+        .map((entry) => entry.code),
+    );
+
+    expect(codes).toEqual(
+      new Set([
+        "no display",
+        "d",
+        "F",
+        "A",
+        "C",
+        "temperature number flashes",
+        "H",
+        "r",
+        "S",
+        "dr",
+        "no FL",
+        "no AC",
+        "dc LO",
+        "AC rE",
+        "dc rE",
+        "AC HE",
+        "dc HE",
+        "Sr",
+      ]),
+    );
+  });
+
+  it("includes official legacy Norcold N1095 owner-manual fault display codes", () => {
+    const codes = new Set(
+      corpus.entries
+        .filter((entry) => entry.brand === "Norcold" && entry.sourceIds.includes("norcold-n1095-owner"))
+        .map((entry) => entry.code),
+    );
+
+    expect(codes).toEqual(
+      new Set([
+        "no display",
+        "dr",
+        "no FL",
+        "no AC",
+        "dc LO",
+        "temperature number flashes",
+        "AC rE",
+        "dc rE",
+        "AC HE",
+        "dc HE",
+        "Sr",
+      ]),
     );
   });
 

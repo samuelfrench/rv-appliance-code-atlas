@@ -989,6 +989,46 @@
       "url": "https://www.thetford.com/app/uploads/2024/10/OM_2118_636900B_20210902.pdf",
       "type": "manufacturer-manual",
       "official": true
+    },
+    {
+      "id": "norcold-n41-n51-owner",
+      "brand": "Norcold",
+      "title": "Norcold N41X and N51X Owner's Manual",
+      "url": "https://www.thetford.com/app/uploads/2024/10/OM_N41N51_635480E_20210902.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "norcold-n61-n81-owner",
+      "brand": "Norcold",
+      "title": "Norcold N61X and N81X Owner's Manual",
+      "url": "https://www.thetford.com/app/uploads/2024/10/OM_N61N81_635485D_20210902.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "norcold-n62-n64-n82-n84-owner",
+      "brand": "Norcold",
+      "title": "Norcold N62/N64/N82/N84 Owner's Manual",
+      "url": "https://www.thetford.com/app/uploads/2024/10/OM_N62N64N82N84_635488C_20141104.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "norcold-n1095-owner",
+      "brand": "Norcold",
+      "title": "Norcold N109X and N109XIM Owner's Manual",
+      "url": "https://www.thetford.com/app/uploads/2024/10/OM_N1095_635491C_20141021.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "norcold-n400-n510-owner",
+      "brand": "Norcold",
+      "title": "Norcold N400X and N510X Owner's Manual",
+      "url": "https://www.thetford.com/app/uploads/2024/10/OM_N400N510_623669E.pdf",
+      "type": "manufacturer-manual",
+      "official": true
     }
   ],
   "entries": [
@@ -8111,7 +8151,8 @@
       ],
       "symptomIds": [
         "refrigerator-not-cooling",
-        "service-call-prep"
+        "service-call-prep",
+        "norcold-legacy-cooling-lockout"
       ],
       "partCaptureHints": [
         "model and serial label",
@@ -20420,6 +20461,1923 @@
         "photo of display code",
         "how long all symbols stay lit"
       ]
+    },
+    {
+      "id": "norcold-n41-n51-no-display",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N41X",
+        "N41X.3",
+        "N51X",
+        "N51X.3"
+      ],
+      "code": "no display",
+      "slug": "norcold-n41-n51-no-display-dc-unavailable",
+      "plainMeaning": "The official N41/N51 owner manual lists no display as: DC voltage is unavailable to the control panel or the refrigerator is off.",
+      "ownerSafeActions": [
+        "Confirm the refrigerator is switched on and record the display or light state.",
+        "Check owner-visible battery and shore-power/generator status before calling service.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "DC wiring, converter, fuse, and refrigerator-control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n41-n51-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n41-n51-f-lp-ignition-failure",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N41X",
+        "N41X.3",
+        "N51X",
+        "N51X.3"
+      ],
+      "code": "F",
+      "slug": "norcold-n41-n51-f-lp-ignition-failure",
+      "plainMeaning": "The official N41/N51 owner manual lists F as: the flame did not light or relight during LP operation.",
+      "ownerSafeActions": [
+        "Record the exact code and whether the fault happened in LP/manual gas or automatic mode.",
+        "Confirm LP is available using normal RV owner controls and shut LP off if any gas odor is present.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "LP pressure, refrigerator LP shutoff, flame-sense, and ignition diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n41-n51-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "refrigerator-lp-ignition",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n41-n51-a-ac-unavailable",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N41X",
+        "N41X.3",
+        "N51X",
+        "N51X.3"
+      ],
+      "code": "A",
+      "slug": "norcold-n41-n51-a-ac-unavailable",
+      "plainMeaning": "The official N41/N51 owner manual lists A as: AC voltage is unavailable to the refrigerator control.",
+      "ownerSafeActions": [
+        "Record the exact code and current power mode.",
+        "Confirm the RV has shore power or generator power available using normal owner-visible controls.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "AC outlet, fuse, circuit, generator, and refrigerator-control diagnosis should be handled by qualified service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n41-n51-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n41-n51-c-dc-low",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N41X",
+        "N41X.3",
+        "N51X",
+        "N51X.3"
+      ],
+      "code": "C",
+      "slug": "norcold-n41-n51-c-dc-low",
+      "plainMeaning": "The official N41/N51 owner manual lists C as: DC voltage to the refrigerator control panel is too low.",
+      "ownerSafeActions": [
+        "Record the exact code and current power mode.",
+        "Check the owner-visible battery monitor and charging state before calling service.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "DC supply, converter, fuse, and refrigerator-control diagnosis should be handled by qualified service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n41-n51-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n41-n51-n-cooling-unit-stopped",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N41X",
+        "N41X.3",
+        "N51X",
+        "N51X.3"
+      ],
+      "code": "n",
+      "slug": "norcold-n41-n51-n-cooling-unit-stopped-cooling",
+      "plainMeaning": "The official N41/N51 owner manual lists n as: the cooling unit has stopped cooling; the owner manual allows one reset, then repeat faults are not owner serviceable.",
+      "ownerSafeActions": [
+        "For the first stopped-cooling event, photograph the code before resetting.",
+        "Check that exterior vents are not blocked, refrigerator doors are closed, and the RV is level.",
+        "If the same stopped-cooling code returns after one reset, stop resetting it and arrange Norcold service."
+      ],
+      "serviceOnlyActions": [
+        "Cooling-unit, heat-source lockout, sensor, and control diagnosis should be handled by qualified Norcold service after a repeat n fault."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n41-n51-owner"
+      ],
+      "symptomIds": [
+        "norcold-legacy-cooling-lockout",
+        "norcold-absorption-display-faults",
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n41-n51-temperature-setting-flashes",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N41X",
+        "N41X.3",
+        "N51X",
+        "N51X.3"
+      ],
+      "code": "temperature setting flashes",
+      "slug": "norcold-n41-n51-temperature-setting-flashes",
+      "plainMeaning": "The official N41/N51 owner manual lists temperature setting flashes as: the refrigerator is operating on the backup operating system.",
+      "ownerSafeActions": [
+        "Record the exact display wording or light pattern before resetting anything.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Temperature-sensor and backup-operating-system diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n41-n51-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n41-n51-h-control-fault",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N41X",
+        "N41X.3",
+        "N51X",
+        "N51X.3"
+      ],
+      "code": "H",
+      "slug": "norcold-n41-n51-h-control-fault",
+      "plainMeaning": "The official N41/N51 owner manual lists H as: a fault exists within the refrigerator controls.",
+      "ownerSafeActions": [
+        "Record the exact display wording or light pattern before resetting anything.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator-control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n41-n51-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n41-n51-r-control-fault",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N41X",
+        "N41X.3",
+        "N51X",
+        "N51X.3"
+      ],
+      "code": "r",
+      "slug": "norcold-n41-n51-r-control-fault",
+      "plainMeaning": "The official N41/N51 owner manual lists r as: a fault exists within the refrigerator controls.",
+      "ownerSafeActions": [
+        "Record the exact display wording or light pattern before resetting anything.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator-control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n41-n51-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n41-n51-s-control-fault",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N41X",
+        "N41X.3",
+        "N51X",
+        "N51X.3"
+      ],
+      "code": "S",
+      "slug": "norcold-n41-n51-s-control-fault",
+      "plainMeaning": "The official N41/N51 owner manual lists S as: a fault exists within the refrigerator controls.",
+      "ownerSafeActions": [
+        "Record the exact display wording or light pattern before resetting anything.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator-control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n41-n51-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n61-n81-on-light-off",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N61X",
+        "N81X"
+      ],
+      "code": "ON light off",
+      "slug": "norcold-n61-n81-on-light-off-dc-unavailable",
+      "plainMeaning": "The official N61/N81 owner manual lists ON light off as: DC voltage is unavailable to the control panel or the refrigerator is off.",
+      "ownerSafeActions": [
+        "Confirm the refrigerator is switched on and record the display or light state.",
+        "Check owner-visible battery and shore-power/generator status before calling service.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "DC wiring, converter, fuse, and refrigerator-control diagnosis should be handled by qualified service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n61-n81-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n61-n81-on-gas-lights-flash-no-energy",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N61X",
+        "N81X"
+      ],
+      "code": "ON and GAS lights flash",
+      "slug": "norcold-n61-n81-on-gas-lights-flash-no-energy-source",
+      "plainMeaning": "The official N61/N81 owner manual lists ON and GAS lights flash as: no energy source is available; AC is unavailable or gas/manual mode did not light or relight.",
+      "ownerSafeActions": [
+        "Record whether the lights flash about once per second and which mode was selected.",
+        "Confirm the RV has shore power or generator power available using normal owner-visible controls.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "AC supply, LP pressure, ignition, and refrigerator-control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n61-n81-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "refrigerator-lp-ignition",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n61-n81-on-gas-flashes-lp-lockout",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N61X",
+        "N81X"
+      ],
+      "code": "ON on GAS flashes",
+      "slug": "norcold-n61-n81-on-gas-flashes-lp-lockout",
+      "plainMeaning": "The official N61/N81 owner manual lists ON on GAS flashes as: LP ignition or re-ignition failed, but AC voltage returned and the refrigerator is operating on AC.",
+      "ownerSafeActions": [
+        "Record the exact code and whether the fault happened in LP/manual gas or automatic mode.",
+        "Confirm LP is available using normal RV owner controls and shut LP off if any gas odor is present.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "LP pressure, ignition, flame-sense, and refrigerator-control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n61-n81-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "refrigerator-lp-ignition",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n61-n81-on-flashes-off-1-temp-sensor",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N61X",
+        "N81X"
+      ],
+      "code": "ON flashes off 1 time",
+      "slug": "norcold-n61-n81-on-flashes-off-1-temperature-sensor",
+      "plainMeaning": "The official N61/N81 owner manual lists ON flashes off 1 time as: the temperature sensor failed and the refrigerator is operating on the backup operating system.",
+      "ownerSafeActions": [
+        "Record the exact display wording or light pattern before resetting anything.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Temperature-sensor and backup-operation diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n61-n81-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n61-n81-on-flashes-off-3-ac-heater",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N61X",
+        "N81X"
+      ],
+      "code": "ON flashes off 3 times with GAS on",
+      "slug": "norcold-n61-n81-on-flashes-off-3-ac-heater",
+      "plainMeaning": "The official N61/N81 owner manual lists ON flashes off 3 times with GAS on as: the AC heater failed and the refrigerator will operate on propane gas only.",
+      "ownerSafeActions": [
+        "Record the exact display wording or light pattern before resetting anything.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "AC heater and refrigerator-control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n61-n81-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n61-n81-on-flashes-off-4-controls",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N61X",
+        "N81X"
+      ],
+      "code": "ON flashes off 4 times",
+      "slug": "norcold-n61-n81-on-flashes-off-4-control-fault",
+      "plainMeaning": "The official N61/N81 owner manual lists ON flashes off 4 times as: a fault exists within the refrigerator operating controls.",
+      "ownerSafeActions": [
+        "Record the exact display wording or light pattern before resetting anything.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator operating-control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n61-n81-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n62-n64-n82-n84-no-display",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N62X",
+        "N62XXX",
+        "N82X",
+        "N82XXX",
+        "N64X",
+        "N64XXX",
+        "N64XIM",
+        "N64XIMXX",
+        "N84X",
+        "N84XXX",
+        "N84XIM",
+        "N84XIMXX"
+      ],
+      "code": "no display",
+      "slug": "norcold-n62-n64-n82-n84-no-display-dc-unavailable",
+      "plainMeaning": "The official N62/N64/N82/N84 owner manual lists no display as: DC voltage is unavailable to the control panel or the refrigerator is off.",
+      "ownerSafeActions": [
+        "Confirm the refrigerator is switched on and record the display or light state.",
+        "Check owner-visible battery and shore-power/generator status before calling service.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "DC wiring, converter, fuse, and refrigerator-control diagnosis should be handled by qualified service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n62-n64-n82-n84-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n62-n82-d-door-open",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N62X",
+        "N62XXX",
+        "N82X",
+        "N82XXX"
+      ],
+      "code": "d",
+      "slug": "norcold-n62-n82-d-door-open",
+      "plainMeaning": "The official N62/N82 owner manual lists d as: the door has been open for more than two minutes.",
+      "ownerSafeActions": [
+        "Close the refrigerator door and let the alarm clear.",
+        "Record the code if the door was already closed or the alarm repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Door switch, hinge, latch, and interior-light diagnosis should be handled by qualified service if the code repeats with the door closed."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n62-n64-n82-n84-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n62-n82-f-lp-ignition-failure",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N62X",
+        "N62XXX",
+        "N82X",
+        "N82XXX"
+      ],
+      "code": "F",
+      "slug": "norcold-n62-n82-f-lp-ignition-failure",
+      "plainMeaning": "The official N62/N82 owner manual lists F as: LP ignition or re-ignition failed.",
+      "ownerSafeActions": [
+        "Record the exact code and whether the fault happened in LP/manual gas or automatic mode.",
+        "Confirm LP is available using normal RV owner controls and shut LP off if any gas odor is present.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "LP pressure, refrigerator LP shutoff, flame-sense, and ignition diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n62-n64-n82-n84-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "refrigerator-lp-ignition",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n62-n82-a-ac-unavailable",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N62X",
+        "N62XXX",
+        "N82X",
+        "N82XXX"
+      ],
+      "code": "A",
+      "slug": "norcold-n62-n82-a-ac-unavailable",
+      "plainMeaning": "The official N62/N82 owner manual lists A as: AC voltage is unavailable to the refrigerator control panel.",
+      "ownerSafeActions": [
+        "Record the exact code and current power mode.",
+        "Confirm the RV has shore power or generator power available using normal owner-visible controls.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "AC supply, outlet, fuse, generator, and refrigerator-control diagnosis should be handled by qualified service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n62-n64-n82-n84-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n62-n82-c-dc-low",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N62X",
+        "N62XXX",
+        "N82X",
+        "N82XXX"
+      ],
+      "code": "C",
+      "slug": "norcold-n62-n82-c-dc-low",
+      "plainMeaning": "The official N62/N82 owner manual lists C as: DC voltage to the refrigerator control panel is too low.",
+      "ownerSafeActions": [
+        "Record the exact code and current power mode.",
+        "Check the owner-visible battery monitor and charging state before calling service.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "DC supply, converter, fuse, and refrigerator-control diagnosis should be handled by qualified service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n62-n64-n82-n84-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n62-n64-n82-n84-temperature-number-flashes",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N62X",
+        "N62XXX",
+        "N82X",
+        "N82XXX",
+        "N64X",
+        "N64XXX",
+        "N64XIM",
+        "N64XIMXX",
+        "N84X",
+        "N84XXX",
+        "N84XIM",
+        "N84XIMXX"
+      ],
+      "code": "temperature number flashes",
+      "slug": "norcold-n62-n64-n82-n84-temperature-number-flashes",
+      "plainMeaning": "The official N62/N64/N82/N84 owner manual lists temperature number flashes as: the refrigerator is operating on the backup operating system.",
+      "ownerSafeActions": [
+        "Record the exact display wording or light pattern before resetting anything.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Temperature-sensor and backup-operating-system diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n62-n64-n82-n84-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n62-n82-h-control-fault",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N62X",
+        "N62XXX",
+        "N82X",
+        "N82XXX"
+      ],
+      "code": "H",
+      "slug": "norcold-n62-n82-h-control-fault",
+      "plainMeaning": "The official N62/N82 owner manual lists H as: a fault exists within the refrigerator controls.",
+      "ownerSafeActions": [
+        "Record the exact display wording or light pattern before resetting anything.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator-control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n62-n64-n82-n84-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n62-n82-r-control-fault",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N62X",
+        "N62XXX",
+        "N82X",
+        "N82XXX"
+      ],
+      "code": "r",
+      "slug": "norcold-n62-n82-r-control-fault",
+      "plainMeaning": "The official N62/N82 owner manual lists r as: a fault exists within the refrigerator controls.",
+      "ownerSafeActions": [
+        "Record the exact display wording or light pattern before resetting anything.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator-control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n62-n64-n82-n84-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n62-n82-s-control-fault",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N62X",
+        "N62XXX",
+        "N82X",
+        "N82XXX"
+      ],
+      "code": "S",
+      "slug": "norcold-n62-n82-s-control-fault",
+      "plainMeaning": "The official N62/N82 owner manual lists S as: a fault exists within the refrigerator controls.",
+      "ownerSafeActions": [
+        "Record the exact display wording or light pattern before resetting anything.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator-control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n62-n64-n82-n84-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n64-n84-dr-door-open",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N64X",
+        "N64XXX",
+        "N64XIM",
+        "N64XIMXX",
+        "N84X",
+        "N84XXX",
+        "N84XIM",
+        "N84XIMXX"
+      ],
+      "code": "dr",
+      "slug": "norcold-n64-n84-dr-door-open",
+      "plainMeaning": "The official N64/N84 owner manual lists dr as: the door has been open for more than two minutes and an audible alarm is also present.",
+      "ownerSafeActions": [
+        "Close the refrigerator door and let the alarm clear.",
+        "Record the code if the door was already closed or the alarm repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Door switch, hinge, latch, and interior-light diagnosis should be handled by qualified service if the alarm repeats with the door closed."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n62-n64-n82-n84-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n64-n84-no-fl-lp-ignition-failure",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N64X",
+        "N64XXX",
+        "N64XIM",
+        "N64XIMXX",
+        "N84X",
+        "N84XXX",
+        "N84XIM",
+        "N84XIMXX"
+      ],
+      "code": "no FL",
+      "slug": "norcold-n64-n84-no-fl-lp-ignition-failure",
+      "plainMeaning": "The official N64/N84 owner manual lists no FL as: LP ignition or re-ignition failed and an audible alarm is also present.",
+      "ownerSafeActions": [
+        "Record the exact code and whether the fault happened in LP/manual gas or automatic mode.",
+        "Confirm LP is available using normal RV owner controls and shut LP off if any gas odor is present.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "LP pressure, refrigerator LP shutoff, flame-sense, and ignition diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n62-n64-n82-n84-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "refrigerator-lp-ignition",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n64-n84-no-ac-ac-unavailable",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N64X",
+        "N64XXX",
+        "N64XIM",
+        "N64XIMXX",
+        "N84X",
+        "N84XXX",
+        "N84XIM",
+        "N84XIMXX"
+      ],
+      "code": "no AC",
+      "slug": "norcold-n64-n84-no-ac-ac-unavailable",
+      "plainMeaning": "The official N64/N84 owner manual lists no AC as: AC voltage is unavailable to the refrigerator control panel and an audible alarm is also present.",
+      "ownerSafeActions": [
+        "Record the exact code and current power mode.",
+        "Confirm the RV has shore power or generator power available using normal owner-visible controls.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "AC supply, outlet, fuse, generator, and refrigerator-control diagnosis should be handled by qualified service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n62-n64-n82-n84-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n64-n84-dc-lo-low-dc-voltage",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N64X",
+        "N64XXX",
+        "N64XIM",
+        "N64XIMXX",
+        "N84X",
+        "N84XXX",
+        "N84XIM",
+        "N84XIMXX"
+      ],
+      "code": "dc LO",
+      "slug": "norcold-n64-n84-dc-lo-low-dc-voltage",
+      "plainMeaning": "The official N64/N84 owner manual lists dc LO as: DC voltage to the refrigerator control panel is too low and an audible alarm is also present.",
+      "ownerSafeActions": [
+        "Record the exact code and current power mode.",
+        "Check the owner-visible battery monitor and charging state before calling service.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "DC supply, converter, fuse, and refrigerator-control diagnosis should be handled by qualified service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n62-n64-n82-n84-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n64-n84-ac-re-control-fault",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N64X",
+        "N64XXX",
+        "N64XIM",
+        "N64XIMXX",
+        "N84X",
+        "N84XXX",
+        "N84XIM",
+        "N84XIMXX"
+      ],
+      "code": "AC rE",
+      "slug": "norcold-n64-n84-ac-re-control-fault",
+      "plainMeaning": "The official N64/N84 owner manual lists AC rE as: a fault exists within the refrigerator controls and an audible alarm is also present.",
+      "ownerSafeActions": [
+        "Record the exact display wording or light pattern before resetting anything.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator-control, heat-source, and related electrical diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n62-n64-n82-n84-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n64-n84-dc-re-control-fault",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N64X",
+        "N64XXX",
+        "N64XIM",
+        "N64XIMXX",
+        "N84X",
+        "N84XXX",
+        "N84XIM",
+        "N84XIMXX"
+      ],
+      "code": "dc rE",
+      "slug": "norcold-n64-n84-dc-re-control-fault",
+      "plainMeaning": "The official N64/N84 owner manual lists dc rE as: a fault exists within the refrigerator controls and an audible alarm is also present.",
+      "ownerSafeActions": [
+        "Record the exact display wording or light pattern before resetting anything.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator-control, heat-source, and related electrical diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n62-n64-n82-n84-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n64-n84-ac-he-control-fault",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N64X",
+        "N64XXX",
+        "N64XIM",
+        "N64XIMXX",
+        "N84X",
+        "N84XXX",
+        "N84XIM",
+        "N84XIMXX"
+      ],
+      "code": "AC HE",
+      "slug": "norcold-n64-n84-ac-he-control-fault",
+      "plainMeaning": "The official N64/N84 owner manual lists AC HE as: a fault exists within the refrigerator controls and an audible alarm is also present.",
+      "ownerSafeActions": [
+        "Record the exact display wording or light pattern before resetting anything.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator-control, heat-source, and related electrical diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n62-n64-n82-n84-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n64-n84-dc-he-control-fault",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N64X",
+        "N64XXX",
+        "N64XIM",
+        "N64XIMXX",
+        "N84X",
+        "N84XXX",
+        "N84XIM",
+        "N84XIMXX"
+      ],
+      "code": "dc HE",
+      "slug": "norcold-n64-n84-dc-he-control-fault",
+      "plainMeaning": "The official N64/N84 owner manual lists dc HE as: a fault exists within the refrigerator controls and an audible alarm is also present.",
+      "ownerSafeActions": [
+        "Record the exact display wording or light pattern before resetting anything.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator-control, heat-source, and related electrical diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n62-n64-n82-n84-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n64-n84-sr-control-fault",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N64X",
+        "N64XXX",
+        "N64XIM",
+        "N64XIMXX",
+        "N84X",
+        "N84XXX",
+        "N84XIM",
+        "N84XIMXX"
+      ],
+      "code": "Sr",
+      "slug": "norcold-n64-n84-sr-control-fault",
+      "plainMeaning": "The official N64/N84 owner manual lists Sr as: a fault exists within the refrigerator controls and an audible alarm is also present.",
+      "ownerSafeActions": [
+        "Record the exact display wording or light pattern before resetting anything.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator-control, heat-source, and related electrical diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n62-n64-n82-n84-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n1095-no-display",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N109X",
+        "N109XXX",
+        "N109XIM",
+        "N109XIMXX",
+        "N1095 series"
+      ],
+      "code": "no display",
+      "slug": "norcold-n1095-no-display-dc-unavailable",
+      "plainMeaning": "The official N109X/N109XIM owner manual lists no display as: DC voltage is unavailable to the control panel or the refrigerator is off.",
+      "ownerSafeActions": [
+        "Confirm the refrigerator is switched on and record the display or light state.",
+        "Check owner-visible battery and shore-power/generator status before calling service.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "DC wiring, converter, fuse, and refrigerator-control diagnosis should be handled by qualified service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n1095-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n1095-dr-door-open",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N109X",
+        "N109XXX",
+        "N109XIM",
+        "N109XIMXX",
+        "N1095 series"
+      ],
+      "code": "dr",
+      "slug": "norcold-n1095-dr-door-open",
+      "plainMeaning": "The official N109X/N109XIM owner manual lists dr as: the door has been open for more than two minutes and an audible alarm is also present.",
+      "ownerSafeActions": [
+        "Close the refrigerator door and let the alarm clear.",
+        "Record the code if the door was already closed or the alarm repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Door switch, hinge, latch, and interior-light diagnosis should be handled by qualified service if the alarm repeats with the door closed."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n1095-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n1095-no-fl-lp-ignition-failure",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N109X",
+        "N109XXX",
+        "N109XIM",
+        "N109XIMXX",
+        "N1095 series"
+      ],
+      "code": "no FL",
+      "slug": "norcold-n1095-no-fl-lp-ignition-failure",
+      "plainMeaning": "The official N109X/N109XIM owner manual lists no FL as: LP ignition or re-ignition failed and an audible alarm is also present.",
+      "ownerSafeActions": [
+        "Record the exact code and whether the fault happened in LP/manual gas or automatic mode.",
+        "Confirm LP is available using normal RV owner controls and shut LP off if any gas odor is present.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "LP pressure, refrigerator LP shutoff, flame-sense, and ignition diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n1095-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "refrigerator-lp-ignition",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n1095-no-ac-ac-unavailable",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N109X",
+        "N109XXX",
+        "N109XIM",
+        "N109XIMXX",
+        "N1095 series"
+      ],
+      "code": "no AC",
+      "slug": "norcold-n1095-no-ac-ac-unavailable",
+      "plainMeaning": "The official N109X/N109XIM owner manual lists no AC as: AC voltage is unavailable to the refrigerator control panel and an audible alarm is also present.",
+      "ownerSafeActions": [
+        "Record the exact code and current power mode.",
+        "Confirm the RV has shore power or generator power available using normal owner-visible controls.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "AC supply, outlet, fuse, generator, and refrigerator-control diagnosis should be handled by qualified service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n1095-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n1095-dc-lo-low-dc-voltage",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N109X",
+        "N109XXX",
+        "N109XIM",
+        "N109XIMXX",
+        "N1095 series"
+      ],
+      "code": "dc LO",
+      "slug": "norcold-n1095-dc-lo-low-dc-voltage",
+      "plainMeaning": "The official N109X/N109XIM owner manual lists dc LO as: DC voltage to the refrigerator control panel is too low and an audible alarm is also present.",
+      "ownerSafeActions": [
+        "Record the exact code and current power mode.",
+        "Check the owner-visible battery monitor and charging state before calling service.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "DC supply, converter, fuse, and refrigerator-control diagnosis should be handled by qualified service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n1095-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n1095-temperature-number-flashes",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N109X",
+        "N109XXX",
+        "N109XIM",
+        "N109XIMXX",
+        "N1095 series"
+      ],
+      "code": "temperature number flashes",
+      "slug": "norcold-n1095-temperature-number-flashes",
+      "plainMeaning": "The official N109X/N109XIM owner manual lists temperature number flashes as: the refrigerator is operating on the backup operating system.",
+      "ownerSafeActions": [
+        "Record the exact display wording or light pattern before resetting anything.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Temperature-sensor and backup-operating-system diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n1095-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n1095-ac-re-control-fault",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N109X",
+        "N109XXX",
+        "N109XIM",
+        "N109XIMXX",
+        "N1095 series"
+      ],
+      "code": "AC rE",
+      "slug": "norcold-n1095-ac-re-control-fault",
+      "plainMeaning": "The official N109X/N109XIM owner manual lists AC rE as: a fault exists within the refrigerator controls and an audible alarm is also present.",
+      "ownerSafeActions": [
+        "Record the exact display wording or light pattern before resetting anything.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator-control, heat-source, and related electrical diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n1095-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n1095-dc-re-control-fault",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N109X",
+        "N109XXX",
+        "N109XIM",
+        "N109XIMXX",
+        "N1095 series"
+      ],
+      "code": "dc rE",
+      "slug": "norcold-n1095-dc-re-control-fault",
+      "plainMeaning": "The official N109X/N109XIM owner manual lists dc rE as: a fault exists within the refrigerator controls and an audible alarm is also present.",
+      "ownerSafeActions": [
+        "Record the exact display wording or light pattern before resetting anything.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator-control, heat-source, and related electrical diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n1095-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n1095-ac-he-control-fault",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N109X",
+        "N109XXX",
+        "N109XIM",
+        "N109XIMXX",
+        "N1095 series"
+      ],
+      "code": "AC HE",
+      "slug": "norcold-n1095-ac-he-control-fault",
+      "plainMeaning": "The official N109X/N109XIM owner manual lists AC HE as: a fault exists within the refrigerator controls and an audible alarm is also present.",
+      "ownerSafeActions": [
+        "Record the exact display wording or light pattern before resetting anything.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator-control, heat-source, and related electrical diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n1095-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n1095-dc-he-control-fault",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N109X",
+        "N109XXX",
+        "N109XIM",
+        "N109XIMXX",
+        "N1095 series"
+      ],
+      "code": "dc HE",
+      "slug": "norcold-n1095-dc-he-control-fault",
+      "plainMeaning": "The official N109X/N109XIM owner manual lists dc HE as: a fault exists within the refrigerator controls and an audible alarm is also present.",
+      "ownerSafeActions": [
+        "Record the exact display wording or light pattern before resetting anything.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator-control, heat-source, and related electrical diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n1095-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n1095-sr-control-fault",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N109X",
+        "N109XXX",
+        "N109XIM",
+        "N109XIMXX",
+        "N1095 series"
+      ],
+      "code": "Sr",
+      "slug": "norcold-n1095-sr-control-fault",
+      "plainMeaning": "The official N109X/N109XIM owner manual lists Sr as: a fault exists within the refrigerator controls and an audible alarm is also present.",
+      "ownerSafeActions": [
+        "Record the exact display wording or light pattern before resetting anything.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator-control, heat-source, and related electrical diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n1095-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n510-no-display",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N510X",
+        "N510X.3",
+        "N510",
+        "N512"
+      ],
+      "code": "no display",
+      "slug": "norcold-n510-no-display-dc-unavailable",
+      "plainMeaning": "The official N510 owner manual lists no display as: DC voltage is unavailable to the refrigerator control panel or the refrigerator is off.",
+      "ownerSafeActions": [
+        "Confirm the refrigerator is switched on and record the display or light state.",
+        "Check owner-visible battery and shore-power/generator status before calling service.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "DC wiring, converter, fuse, and refrigerator-control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n400-n510-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n510-f-lp-ignition-failure",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N510X",
+        "N510X.3",
+        "N510",
+        "N512"
+      ],
+      "code": "F",
+      "slug": "norcold-n510-f-lp-ignition-failure",
+      "plainMeaning": "The official N510 owner manual lists F as: the burner did not ignite or re-ignite.",
+      "ownerSafeActions": [
+        "Record the exact code and whether the fault happened in LP/manual gas or automatic mode.",
+        "Confirm LP is available using normal RV owner controls and shut LP off if any gas odor is present.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "LP pressure, refrigerator LP shutoff, flame-sense, and ignition diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n400-n510-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "refrigerator-lp-ignition",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n510-a-ac-unavailable",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N510X",
+        "N510X.3",
+        "N510",
+        "N512"
+      ],
+      "code": "A",
+      "slug": "norcold-n510-a-ac-unavailable",
+      "plainMeaning": "The official N510 owner manual lists A as: AC voltage is unavailable to the refrigerator control.",
+      "ownerSafeActions": [
+        "Record the exact code and current power mode.",
+        "Confirm the RV has shore power or generator power available using normal owner-visible controls.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "AC outlet, fuse, circuit, generator, and refrigerator-control diagnosis should be handled by qualified service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n400-n510-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n510-c-dc-low",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N510X",
+        "N510X.3",
+        "N510",
+        "N512"
+      ],
+      "code": "C",
+      "slug": "norcold-n510-c-dc-low",
+      "plainMeaning": "The official N510 owner manual lists C as: DC voltage to the refrigerator control panel is too low.",
+      "ownerSafeActions": [
+        "Record the exact code and current power mode.",
+        "Check the owner-visible battery monitor and charging state before calling service.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "DC supply, converter, fuse, and refrigerator-control diagnosis should be handled by qualified service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n400-n510-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n510-n-cooling-unit-stopped",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N510X",
+        "N510X.3",
+        "N510",
+        "N512"
+      ],
+      "code": "n",
+      "slug": "norcold-n510-n-cooling-unit-stopped-cooling",
+      "plainMeaning": "The official N510 owner manual lists n as: the cooling unit has stopped cooling; the owner manual allows one reset, then repeat faults are not owner serviceable.",
+      "ownerSafeActions": [
+        "For the first stopped-cooling event, photograph the code before resetting.",
+        "Check that exterior vents are not blocked, refrigerator doors are closed, and the RV is level.",
+        "If the same stopped-cooling code returns after one reset, stop resetting it and arrange Norcold service."
+      ],
+      "serviceOnlyActions": [
+        "Cooling-unit, heat-source lockout, sensor, and control diagnosis should be handled by qualified Norcold service after a repeat n fault."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n400-n510-owner"
+      ],
+      "symptomIds": [
+        "norcold-legacy-cooling-lockout",
+        "norcold-absorption-display-faults",
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n510-temperature-setting-flashes",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N510X",
+        "N510X.3",
+        "N510",
+        "N512"
+      ],
+      "code": "temperature setting flashes",
+      "slug": "norcold-n510-temperature-setting-flashes",
+      "plainMeaning": "The official N510 owner manual lists temperature setting flashes as: the refrigerator is operating on the backup operating system.",
+      "ownerSafeActions": [
+        "Record the exact display wording or light pattern before resetting anything.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Temperature-sensor and backup-operating-system diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n400-n510-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n510-h-control-fault",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N510X",
+        "N510X.3",
+        "N510",
+        "N512"
+      ],
+      "code": "H",
+      "slug": "norcold-n510-h-control-fault",
+      "plainMeaning": "The official N510 owner manual lists H as: a fault exists within the refrigerator controls.",
+      "ownerSafeActions": [
+        "Record the exact display wording or light pattern before resetting anything.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator-control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n400-n510-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n510-r-control-fault",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N510X",
+        "N510X.3",
+        "N510",
+        "N512"
+      ],
+      "code": "r",
+      "slug": "norcold-n510-r-control-fault",
+      "plainMeaning": "The official N510 owner manual lists r as: a fault exists within the refrigerator controls.",
+      "ownerSafeActions": [
+        "Record the exact display wording or light pattern before resetting anything.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator-control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n400-n510-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
+    },
+    {
+      "id": "norcold-n510-s-control-fault",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N510X",
+        "N510X.3",
+        "N510",
+        "N512"
+      ],
+      "code": "S",
+      "slug": "norcold-n510-s-control-fault",
+      "plainMeaning": "The official N510 owner manual lists S as: a fault exists within the refrigerator controls.",
+      "ownerSafeActions": [
+        "Record the exact display wording or light pattern before resetting anything.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if refrigerator temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Refrigerator-control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n400-n510-owner"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "model and serial label",
+        "photo of display or light pattern",
+        "power mode and audible alarm state"
+      ]
     }
   ],
   "symptoms": [
@@ -21437,7 +23395,7 @@
       "id": "norcold-absorption-display-faults",
       "slug": "norcold-absorption-refrigerator-display-faults",
       "title": "Norcold absorption refrigerator display fault codes",
-      "summary": "Use this when a Norcold or Thetford absorption refrigerator shows N3000 service-mode codes, N10LX/2118 alternating display codes, LP ignition faults, AC/DC supply faults, or backup-operation thermistor warnings.",
+      "summary": "Use this when a Norcold or Thetford absorption refrigerator shows N3000 service-mode codes, N10LX/2118 alternating display codes, legacy N-series light/display faults, LP ignition faults, AC/DC supply faults, or backup-operation thermistor warnings.",
       "safeChecklist": [
         "Photograph the exact display wording or service-mode code before resetting anything.",
         "Record model, serial number, power mode, LP state, battery state, and whether an audible alarm is present.",
@@ -21447,7 +23405,12 @@
         "norcold-n3000-troubleshooting",
         "norcold-n3000-na-owner",
         "norcold-n10lx-owner",
-        "norcold-2118-owner"
+        "norcold-2118-owner",
+        "norcold-n41-n51-owner",
+        "norcold-n61-n81-owner",
+        "norcold-n62-n64-n82-n84-owner",
+        "norcold-n1095-owner",
+        "norcold-n400-n510-owner"
       ]
     },
     {
@@ -21463,6 +23426,22 @@
       "sourceIds": [
         "norcold-n2000-owner",
         "norcold-n8dcx-n10dcx-service"
+      ]
+    },
+    {
+      "id": "norcold-legacy-cooling-lockout",
+      "slug": "norcold-legacy-refrigerator-cooling-lockout",
+      "title": "Norcold legacy refrigerator stopped-cooling lockout",
+      "summary": "Use this when an older Norcold absorption refrigerator shows no co or n/stopped-cooling style lockout wording. Record the first event, check owner-visible airflow, level, and door state, and treat repeat lockouts as qualified-service issues.",
+      "safeChecklist": [
+        "Photograph the exact code or light pattern before resetting anything.",
+        "Check that vents are not blocked, doors are closed, the RV is level, and food temperature is safe.",
+        "Do not keep resetting a stopped-cooling lockout; a repeat event is a service call."
+      ],
+      "sourceIds": [
+        "norcold-1200-owner",
+        "norcold-n41-n51-owner",
+        "norcold-n400-n510-owner"
       ]
     }
   ],
