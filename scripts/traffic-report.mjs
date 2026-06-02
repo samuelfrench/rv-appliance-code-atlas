@@ -24,7 +24,7 @@ function buildReport() {
       ready: false,
     })),
     nextAutomatedBatchGoal:
-      "Triage official Norcold/Thetford refrigerator symptom-only support and owner-manual pages for cooling, power, door, ventilation, water, low-temperature, and service-only boundaries; add only non-duplicate owner-safe guides.",
+      "Triage official Furrion/Lippert refrigerator symptom-only support and owner-manual pages for compressor or 12 V cooling, power, door or seal, condensation or water, temperature or night-mode, and service-only boundaries; add only non-duplicate owner-safe guides.",
     monitorCommand: "npm run traffic:monitor",
   };
 }

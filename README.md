@@ -37,9 +37,9 @@ npm run traffic:monitor
 
 Current corpus:
 - `819` verified entries
-- `85` symptom guides
-- `271` official sources
-- `905` generated indexable pages
+- `96` symptom guides
+- `286` official sources
+- `916` generated indexable pages
 
 Next automated batch goal:
-- Triage official Norcold/Thetford refrigerator symptom-only support and owner-manual pages for cooling, power, door, ventilation, water, low-temperature, and service-only boundaries; add only non-duplicate owner-safe guides.
+- Triage official Furrion/Lippert refrigerator symptom-only support and owner-manual pages for compressor or 12 V cooling, power, door or seal, condensation or water, temperature or night-mode, and service-only boundaries; add only non-duplicate owner-safe guides.
