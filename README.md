@@ -36,10 +36,10 @@ npm run traffic:monitor
 ```
 
 Current corpus:
-- `345` verified entries
-- `12` symptom guides
-- `34` official sources
-- `358` generated indexable pages
+- `418` verified entries
+- `17` symptom guides
+- `45` official sources
+- `436` generated indexable pages
 
 Next automated batch goal:
-- Add Cummins Onan QG 4000/QG inverter/7000i DF manuals plus Furrion furnace/rooftop HVAC and Coleman-Mach/Airxcel symptom pages from official manuals.
+- Add remaining Cummins Onan QG 2500/2800/KY/KYD legacy manuals plus official Atwood/Dometic legacy furnace or water-heater tables only where manufacturer-hosted sources can be verified.
