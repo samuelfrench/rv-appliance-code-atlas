@@ -166,4 +166,221 @@ describe("verified corpus", () => {
 
     expect(ownerCodes).toEqual(new Set(["E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9"]));
   });
+
+  it("includes the full official Cummins Onan QG operator-manual fault-code sets", () => {
+    const codesForSource = (sourceId: string) =>
+      new Set(
+        corpus.entries
+          .filter((entry) => entry.brand === "Onan" && entry.sourceIds.includes(sourceId))
+          .map((entry) => entry.code),
+      );
+
+    expect(codesForSource("onan-hgjbb-a031c171")).toEqual(
+      new Set(["2", "3", "4", "12", "13", "14", "15", "27", "29", "31", "32", "35", "36", "37", "38", "41", "42", "43", "45", "47", "48"]),
+    );
+    expect(codesForSource("onan-hgjaa-a035d009")).toEqual(
+      new Set([
+        "2",
+        "3",
+        "4",
+        "12",
+        "13",
+        "14",
+        "15",
+        "19",
+        "22",
+        "27",
+        "29",
+        "31",
+        "32",
+        "35",
+        "36",
+        "37",
+        "38",
+        "41",
+        "42",
+        "43",
+        "45",
+        "47",
+        "48",
+        "51",
+        "52",
+        "54",
+        "56",
+        "57",
+        "58",
+        "81",
+        "82",
+      ]),
+    );
+    expect(codesForSource("onan-hgjbb-a031c171")).not.toContain("33");
+    expect(codesForSource("onan-hgjaa-a035d009")).not.toContain("34");
+  });
+
+  it("includes official Cummins Onan Quiet Diesel display-message and fault-code sets", () => {
+    const codesForSource = (sourceId: string) =>
+      new Set(
+        corpus.entries
+          .filter((entry) => entry.brand === "Onan" && entry.sourceIds.includes(sourceId))
+          .map((entry) => entry.code),
+      );
+    const qd3200Messages = new Set([
+      "GEN OFF",
+      "GEN ON",
+      "GEN START",
+      "GEN CAL",
+      "RESTART GEN?",
+      "GEN WAIT",
+      "LOW BATTERY",
+      "OIL CHANGE/CHECK OIL LEVEL",
+      "SHORT CIRCUIT",
+      "OIL TEMP-PRESS",
+      "GENERATOR ALERT",
+      "OVER TEMPERATURE (INVERTER)",
+      "OVERLOAD",
+      "LOW ENGINE POWER",
+    ]);
+    const qdLargeCodes = new Set(["1", "2", "3", "4", "12", "13", "14", "15", "19", "22", "27", "29", "32", "35", "36", "38", "41", "42", "43", "45", "48", "57"]);
+
+    expect(codesForSource("onan-qd-3200-0983-0103")).toEqual(qd3200Messages);
+    expect(codesForSource("onan-qd-3200-a066t111")).toEqual(qd3200Messages);
+    expect(codesForSource("onan-qd-5000-0981-0166")).toEqual(new Set(["1", "2", "3", "4", "12", "13", "14", "15", "19", "22", "24", "27", "29", "32", "35", "36", "38", "41", "42", "43", "45", "57"]));
+    expect(codesForSource("onan-qd-6000-a046l053")).toEqual(qdLargeCodes);
+    expect(codesForSource("onan-qd-10000-a043d713")).toEqual(qdLargeCodes);
+  });
+
+  it("includes the full official Lippert Ground Control LCD and In-Wall Slide-out LED error sets", () => {
+    const lippertCodesForSource = (sourceId: string) =>
+      new Set(
+        corpus.entries
+          .filter((entry) => entry.brand === "Lippert" && entry.sourceIds.includes(sourceId))
+          .map((entry) => entry.code),
+      );
+
+    expect(lippertCodesForSource("lippert-ground-control")).toEqual(
+      new Set([
+        "Excess Angle",
+        "Excessive Angle",
+        "Feature Disabled",
+        "Low Voltage",
+        "Out Of Stroke",
+        "External Sensor",
+        "Jack Time Out",
+        "Auto Level Fail",
+        "Comm Error",
+        "Bad Calibration",
+        "Internal Sensor",
+        "Function Aborted",
+        "Hall Effect Short",
+        "LF Jack",
+        "RF Jack",
+        "LM Jack",
+        "RM Jack",
+        "LR Jack",
+        "RR Jack",
+      ]),
+    );
+    expect(lippertCodesForSource("lippert-in-wall-slide")).toEqual(new Set(["Red LED 2", "Red LED 3", "Red LED 4", "Red LED 5", "Red LED 6", "Red LED 8", "Red LED 9"]));
+  });
+
+  it("includes the official Lippert Ground Control OneControl owner-manual error sets", () => {
+    const lippertCodesForSource = (sourceId: string) =>
+      new Set(
+        corpus.entries
+          .filter((entry) => entry.brand === "Lippert" && entry.sourceIds.includes(sourceId))
+          .map((entry) => entry.code),
+      );
+
+    expect(lippertCodesForSource("lippert-ground-control-onecontrol-5th")).toEqual(
+      new Set([
+        "Solid Red",
+        "Blinking Red",
+        "Slowly Blinking Faded Red",
+        "EXCESS ANGLE",
+        "EXCESSIVE ANGLE",
+        "BAD CALIBRATION",
+        "FEATURE DISABLED",
+        "LOW VOLTAGE",
+        "OUT OF STROKE",
+        "EXTERNAL SENSOR",
+        "JACK TIME OUT",
+        "AUTO LEVEL FAIL",
+        "FUNCTION ABORTED",
+        "HALL POWER SHORT",
+        "***ERROR***",
+        "Left-Front Jack Fault",
+        "Right-Front Jack Fault",
+        "Left-Mid Jack Fault",
+        "Right-Mid Jack Fault",
+        "Left-Rear Jack Fault",
+        "Right-Rear Jack Fault",
+      ]),
+    );
+    expect(lippertCodesForSource("lippert-ground-control-tt-onecontrol")).toEqual(
+      new Set([
+        "Solid Red",
+        "Blinking Red",
+        "EXCESS ANGLE",
+        "EXCESSIVE ANGLE",
+        "BAD CALIBRATION",
+        "FEATURE DISABLED",
+        "LOW VOLTAGE",
+        "OUT OF STROKE",
+        "EXTERNAL SENSOR",
+        "JACK TIME OUT",
+        "AUTO LEVEL FAILURE",
+        "FUNCTION ABORTED",
+        "HALL POWER SHORT",
+        "CAN'T COMPLETE LEVEL IN THIS LOCATION. PLEASE RELOCATE RV TO FLATTER TERRAIN",
+        "***ERROR***",
+        "Left-Front Jack Fault",
+        "Right-Front Jack Fault",
+        "Left-Rear Jack Fault",
+        "Right-Rear Jack Fault",
+        "Tongue Jack Fault",
+      ]),
+    );
+  });
+
+  it("includes the full official Furrion thermostat, rooftop AC, water-heater, and refrigerator diagnostic sets", () => {
+    const furrionCodesForSource = (sourceId: string) =>
+      new Set(
+        corpus.entries
+          .filter((entry) => entry.brand === "Furrion" && entry.sourceIds.includes(sourceId))
+          .map((entry) => entry.code),
+      );
+
+    expect(furrionCodesForSource("furrion-thermostat")).toEqual(new Set(["E1", "E2", "E3", "E4", "E5", "E6", "lo"]));
+    expect(furrionCodesForSource("furrion-rooftop-ac")).toEqual(new Set(["E1", "E2", "E3", "E4", "E5", "lo"]));
+    expect(furrionCodesForSource("furrion-water-heater")).toEqual(new Set(["E0", "E1", "E2", "E3", "E4", "E5", "E6", "E7"]));
+    expect(furrionCodesForSource("furrion-arctic-refrigerator")).toEqual(
+      new Set(["diagnostic LED flash 1", "diagnostic LED flash 2", "diagnostic LED flash 3", "diagnostic LED flash 4", "diagnostic LED flash 5", "diagnostic LED flash 6"]),
+    );
+  });
+
+  it("includes additional official Furrion refrigerator and Chill Cube thermostat display-code sets", () => {
+    const furrionCodesForSource = (sourceId: string) =>
+      new Set(
+        corpus.entries
+          .filter((entry) => entry.brand === "Furrion" && entry.sourceIds.includes(sourceId))
+          .map((entry) => entry.code),
+      );
+
+    expect(furrionCodesForSource("furrion-chill-cube-thermostat")).toEqual(new Set(["E3", "E6", "lo"]));
+    expect(furrionCodesForSource("furrion-french-door-refrigerator")).toEqual(new Set(["E0", "E1 OV ALM", "E1 UV ALM", "E2", "E3", "E4", "E5", "E6", "EC", "EF"]));
+    expect(furrionCodesForSource("furrion-10-6-refrigerator")).toEqual(new Set(["E1", "E2", "E3", "E4", "E5", "E12", "E13", "E14", "EL", "EH"]));
+    expect(furrionCodesForSource("furrion-15-refrigerator")).toEqual(new Set(["UC", "RS", "CS", "FS", "Fd", "FF", "ES"]));
+  });
+
+  it("keeps Coleman-Mach display conditions tied to the exact official manual wording", () => {
+    const colemanCodesForSource = (sourceId: string) =>
+      corpus.entries.filter((entry) => entry.brand === "Coleman-Mach" && entry.sourceIds.includes(sourceId));
+
+    const c9330 = colemanCodesForSource("coleman-9330-thermostat");
+    const c9420 = colemanCodesForSource("coleman-9420-thermostat");
+
+    expect(new Set(c9330.map((entry) => entry.code))).toEqual(new Set(["Er"]));
+    expect(c9330[0]?.plainMeaning).toMatch(/outside display range|remote temperature sensor/i);
+    expect(new Set(c9420.map((entry) => entry.code))).toEqual(new Set(["LO", "HI"]));
+  });
 });

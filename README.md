@@ -36,10 +36,10 @@ npm run traffic:monitor
 ```
 
 Current corpus:
-- `118` verified entries
+- `345` verified entries
 - `12` symptom guides
-- `21` official sources
-- `131` generated indexable pages
+- `34` official sources
+- `358` generated indexable pages
 
 Next automated batch goal:
-- Add full Cummins Onan QG/QD, Lippert controller, Furrion appliance, and Coleman-Mach thermostat/AC tables from official manuals.
+- Add Cummins Onan QG 4000/QG inverter/7000i DF manuals plus Furrion furnace/rooftop HVAC and Coleman-Mach/Airxcel symptom pages from official manuals.

@@ -24,7 +24,7 @@ function buildReport() {
       ready: false,
     })),
     nextAutomatedBatchGoal:
-      "Add full Cummins Onan QG/QD, Lippert controller, Furrion appliance, and Coleman-Mach thermostat/AC tables from official manuals, then rerun source audit and static page generation.",
+      "Add Cummins Onan QG 4000/QG inverter/7000i DF manuals plus Furrion furnace/rooftop HVAC and Coleman-Mach/Airxcel symptom pages from official manuals; then rerun source audit and static page generation.",
     monitorCommand: "npm run traffic:monitor",
   };
 }
