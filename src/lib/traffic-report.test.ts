@@ -9,7 +9,7 @@ describe("traffic readiness report", () => {
     });
     const report = JSON.parse(output);
 
-    expect(report.gscConfigured).toBe(false);
+    expect(report.gscConfigured).toBe(true);
     expect(report.analyticsConfigured).toBe(true);
     expect(report.analytics).toEqual({
       provider: "GA4",
@@ -24,7 +24,7 @@ describe("traffic readiness report", () => {
       siteUrl: "https://rvappliancefaultcodes.com/",
       sitemapUrl: "https://rvappliancefaultcodes.com/sitemap.xml",
       verifiedAt: "2026-06-02T23:11:41Z",
-      sitemapSubmittedAt: null,
+      sitemapSubmittedAt: "2026-06-02T23:19:52Z",
     });
     expect(report.weeklyTrafficArtifact).toEqual({
       path: "reports/gsc-weekly-traffic.json",
@@ -41,7 +41,7 @@ describe("traffic readiness report", () => {
       keyLocation: "https://rvappliancefaultcodes.com/2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18.txt",
       dryRunCommand: "npm run traffic:indexnow:dry-run",
       submitCommand: "npm run traffic:indexnow:submit",
-      submittedAt: null,
+      submittedAt: "2026-06-02T23:19:44.311Z",
     });
     expect(report.nextAutomatedBatchGoal).toBe(
       "Run weekly GSC report and review monetization readiness after page impressions appear.",

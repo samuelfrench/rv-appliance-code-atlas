@@ -53,7 +53,7 @@ Search Console status:
 - URL-prefix property: `https://rvappliancefaultcodes.com/`
 - Sitemap: `https://rvappliancefaultcodes.com/sitemap.xml`
 - Verified: `2026-06-02T23:11:41Z`
-- Sitemap submitted: pending canonical-domain deployment
+- Sitemap submitted: `2026-06-02T23:19:52Z`
 
 Weekly Search Console traffic artifact:
 
@@ -80,7 +80,7 @@ Key location: `https://rvappliancefaultcodes.com/2653afc6f17313e900711f1d3eb1dca
 
 Writes ignored local report artifact: `reports/indexnow-submit-report.json`
 
-Submitted: pending canonical-domain deployment
+Submitted: `2026-06-02T23:19:44.311Z` with IndexNow HTTP `200`
 
 Traffic monitor:
 
