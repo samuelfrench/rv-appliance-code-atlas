@@ -36,10 +36,10 @@ npm run traffic:monitor
 ```
 
 Current corpus:
-- `451` verified entries
-- `23` symptom guides
-- `57` official sources
-- `475` generated indexable pages
+- `463` verified entries
+- `33` symptom guides
+- `67` official sources
+- `497` generated indexable pages
 
 Next automated batch goal:
-- Add remaining official water-heater symptom guides from Dometic XT, Suburban, and Furrion sources, and continue manufacturer-hosted table discovery without adding code entries unless an official fault/display table is verified.
+- Add remaining official OD-5001 low-flow and temperature-control symptom pages plus Furrion/Lippert tankless support-video source links, then continue manufacturer-hosted table discovery without adding code entries unless an official fault/display table is verified.

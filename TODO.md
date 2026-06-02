@@ -18,18 +18,20 @@
 - [x] Add Cummins Onan legacy QG/KYD/KV/HGJAA fault-code and blink-code tables where official Cummins manuals expose tables.
 - [x] Add Dometic DF and Hydro Flame AFM furnace LED diagnostic tables from official Dometic manuals.
 - [x] Add official Dometic/Atwood water-heater and OD-5001 symptom pages from verified Dometic support pages without adding water-heater code entries.
+- [x] Add official Dometic XT, Suburban tankless/ST42-ST60, Furrion user manual/freezing, and Furrion F2GWH water-heater batch; split corpus into an async JSON asset.
 - [ ] Add GSC property and submit sitemap after live URL is stable.
 
 ## Current State — 2026-06-02
 - Live URL: `https://rv-appliance-code-atlas.fly.dev/`
 - GitHub repo: `https://github.com/samuelfrench/rv-appliance-code-atlas`
 - Fly app: `rv-appliance-code-atlas`, one `shared-cpu-1x` 256 MB machine in `dfw`, auto-stop enabled.
-- Latest deploy: Fly release v9, image `deployment-01KT3HXEZ2X8KG3W7AA8FDXG65`, code commit `f62cc4d`; Deploy run `26803767342` succeeded.
-- Corpus: `451` verified entries, `23` symptom guides, `57` official sources, `475` generated indexable pages.
-- Local verification passed: `npm run validate:corpus`, `npm run test:unit`, `npm run source:audit`, `npm run traffic:report`, and `npm run verify:runtime`. Build passes with a visible Vite warning because the main corpus bundle is `734.90 kB` minified / `104.00 kB` gzip.
-- Live verification passed: `/`, `/sitemap.xml`, `/corpus-stats.json`, `/symptoms/dometic-atwood-water-heater-lockout-light/`, `/symptoms/dometic-water-heater-overheat-lockout-reset/`, `/symptoms/dometic-od5001-startup-lockout/`, `/symptoms/dometic-od5001-power-vent-not-running/`, `/symptoms/dometic-od5001-rapid-cycling/`, and `/symptoms/dometic-od5001-temperature-fluctuation/`; Playwright live smoke at mobile and desktop sizes found expected H1/source/safety content and `0` console/page errors.
-- Source triage note: official Dometic water-heater/OD-5001 support pages checked so far support operation, lockout, overheat reset, ignition, rapid-cycle, fan, and temperature-fluctuation symptom guidance only, not code entries. Correct verified support slugs include `GasElectric-combination-function-information-eaf5`, `Gas-Function-8df9`, `How-to-clear-a-water-heater-over-heating-failure-2deb`, `How-to-operate-your-water-heater-679c`, `Heater-Does-Not-Come-On-When-The-Water-is-turned-on-Power-vent-fan-not-running-e6d3`, `There-Is-No-Ignition-When-Water-Is-On-Power-vent-fan-is-running-b63e`, `Heater-Comes-On-But-Rapidly-Cycles-On-And-Off-6d10`, and `Burner-Turns-On-But-Temperature-Fluctuates-Erratically-19c8`; rejected 404 slugs include `Gas-Only-Operation-Information-c383` and `How-to-clear-the-overheating-failure-4f2e`.
-- Next automated batch goal: add remaining official water-heater symptom guides from Dometic XT, Suburban, and Furrion sources, continue manufacturer-hosted table discovery without adding code entries unless an official fault/display table is verified, and start corpus code-splitting if the main bundle stays above 700 kB.
+- Latest deploy: Fly release v10, image `deployment-01KT3KWZH1P6A25QZMM8KZ5P8Z`, code commit `8bcdcfc`; Deploy run `26805271540` succeeded.
+- Corpus: `463` verified entries, `33` symptom guides, `67` official sources, `497` generated indexable pages.
+- Local verification passed: RED/GREEN corpus regression for Furrion `En`/`Fd`, `npm run validate:corpus`, `npm run test:unit`, `npm run source:audit`, `npm run traffic:report`, `npm run verify:runtime`, `git diff --check`, staged `git diff --cached --check`, and fresh HTTP `200` checks for all 10 new official source URLs. Build now splits corpus to `dist/assets/corpus-Bk0JpWTA.json` at `699.29 kB` / `46.52 kB` gzip and main JS to `209.75 kB` / `65.70 kB` gzip with no Vite chunk warning.
+- Reviews passed: source/safety/spec reviewer approved after fixing `furrion-f2gwh-en` so `En` links only `service-call-prep` while `Fd` keeps `furrion-water-heater-freeze-state`; code-quality reviewer approved the corpus loader, split, and regression.
+- Live verification passed: `/`, `/sitemap.xml`, `/corpus-stats.json`, `/codes/furrion-f2gwh-e8/`, `/codes/furrion-f2gwh-fd-freeze-protection/`, `/codes/furrion-f2gwh-en-system-timer/`, `/symptoms/dometic-xt-water-heater-low-flow-cold-flow/`, `/symptoms/dometic-water-heater-gas-smell/`, `/symptoms/suburban-tankless-water-heater-lockout/`, and `/symptoms/furrion-water-heater-freeze-state-or-freeze-damage/`; desktop and mobile Playwright smoke found expected hydrated H1/source/safety content, verified `En` does not show the freeze guide and `Fd` does, and found `0` console/page errors.
+- Source triage note: Dometic XT and Suburban tankless/ST42-ST60 official sources support symptom guidance only; no Dometic/Suburban water-heater code entries were added. Furrion `ccd-0005833.pdf` has an official F2GWH display table for `E0`-`E9`, `En`, and `Fd`; `En` is the 20-minute system timer, while `Fd` is winter/freeze protection. Rejected owner-unsafe or service-heavy candidates include the Dometic brown-wire operation-failure page and Furrion TI-514 service diagnostic material.
+- Next automated batch goal: add remaining official OD-5001 low-flow and temperature-control symptom pages plus Furrion/Lippert tankless support-video source links, then continue manufacturer-hosted table discovery without adding code entries unless an official fault/display table is verified.
 
 ## Corpus Expansion Backlog
 - [x] Add full Dometic RUC/RUA tables.
@@ -47,7 +49,8 @@
 - [x] Add additional official Coleman-Mach/Airxcel thermostat/AC service terms and symptom pages.
 - [x] Add official Atwood/Dometic legacy furnace fault tables only if manufacturer-hosted manuals are found.
 - [x] Add official Dometic/Atwood water-heater and OD-5001 symptom pages; do not add water-heater code entries unless a manufacturer-hosted fault/display table is found.
-- [ ] Add remaining official water-heater symptom guides from Dometic XT, Suburban, and Furrion sources; investigate code-splitting if the main corpus bundle remains above 700 kB.
+- [x] Add official water-heater symptom guides from Dometic XT, Suburban, and Furrion sources; split the corpus asset so the main bundle stays below the Vite warning threshold.
+- [ ] Add remaining official OD-5001 low-flow and temperature-control symptom pages plus Furrion/Lippert tankless support-video source links; continue manufacturer-hosted table discovery without adding code entries unless an official fault/display table is verified.
 
 ## Launch Automation
 - [ ] Add weekly traffic report artifact once GSC is configured.
