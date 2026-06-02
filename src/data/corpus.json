@@ -32698,6 +32698,67 @@
       ]
     },
     {
+      "id": "furrion-furnace-will-not-light-blower-no-start",
+      "slug": "furrion-furnace-will-not-light-blower-no-start",
+      "title": "Furrion furnace will not light with blower not turning on",
+      "summary": "The official Furrion RV Furnaces Troubleshooting and Service Manual lists owner checks for power reset, LP supply, fuse-panel status, low 12 V DC, thermostat OFF for 10 seconds then ON, and blocked intake or vents before trained RV service handles breaker or persistent no-light conditions.",
+      "safeChecklist": [
+        "Turn the thermostat off, wait 10 seconds, and turn Heat back on once; stop repeated reset attempts if lockout returns.",
+        "If there is no gas odor, confirm LP supply valves, tank status, thermostat Heat setting, coach 12 V status, fuse panel status, and blocked intake or vents.",
+        "If gas smell, soot, a tripped furnace breaker, persistent low voltage, or repeated no-light condition remains, shut the furnace down and call trained RV service."
+      ],
+      "sourceIds": [
+        "furrion-furnace-troubleshooting"
+      ],
+      "searchAliases": [
+        "furrion furnace will not light",
+        "furrion furnace blower does not turn on",
+        "furrion furnace lockout thermostat off 10 seconds",
+        "furrion furnace low 12v fuse lp supply"
+      ]
+    },
+    {
+      "id": "furrion-furnace-short-cycles-before-set-temperature",
+      "slug": "furrion-furnace-short-cycles-before-set-temperature",
+      "title": "Furrion furnace shuts off before set temperature",
+      "summary": "The official Furrion troubleshooting table says a furnace that shuts off before reaching the desired temperature should be checked for open, uncovered vents and an air intake that is not blocked or obstructed.",
+      "safeChecklist": [
+        "Open covered supply vents and remove objects blocking visible return or intake airflow.",
+        "Record thermostat setting, room temperature, which vents are closed, and whether the furnace restarts after cooling.",
+        "Stop using the furnace and call trained RV service if short cycling continues, overheating is suspected, or airflow cannot be restored."
+      ],
+      "sourceIds": [
+        "furrion-furnace-troubleshooting"
+      ],
+      "searchAliases": [
+        "furrion furnace shuts off before desired temperature",
+        "furrion furnace short cycling covered vents",
+        "furrion furnace air intake blocked",
+        "furrion furnace reaches set temperature shuts off"
+      ]
+    },
+    {
+      "id": "furrion-furnace-soot-yellow-flame-exhaust-service",
+      "slug": "furrion-furnace-soot-yellow-flame-exhaust-service",
+      "title": "Furrion furnace soot, yellow flame, or blocked exhaust",
+      "summary": "The official Furrion furnace manual warns that soot on the vent, blocked exhaust, or a yellow or lazy flame means the furnace should be shut down and inspected by a dealer or qualified service provider before further use.",
+      "safeChecklist": [
+        "Shut the furnace down if you see soot on the vent, yellow or lazy flame, exhaust blockage, or smell gas.",
+        "Keep people out of the RV if gas smell or a carbon monoxide alarm is present; do not operate switches, phones, the engine, or the generator inside the vehicle.",
+        "Have a dealer or qualified RV service provider inspect exhaust tubes, combustion components, LP system, and venting before using the furnace again."
+      ],
+      "sourceIds": [
+        "furrion-furnace-troubleshooting"
+      ],
+      "searchAliases": [
+        "furrion furnace soot vent",
+        "furrion furnace yellow flame",
+        "furrion furnace lazy flame",
+        "furrion furnace blocked exhaust",
+        "furrion furnace carbon monoxide"
+      ]
+    },
+    {
       "id": "thermostat-delay-or-no-response",
       "slug": "rv-thermostat-delay-or-no-response",
       "title": "RV thermostat delay or no response",

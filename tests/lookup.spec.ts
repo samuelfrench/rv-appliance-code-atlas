@@ -160,6 +160,31 @@ test("lookup surfaces Furrion refrigerator symptom support pages", async ({ page
   ).toBeVisible();
 });
 
+test("lookup surfaces Furrion furnace symptom support pages", async ({ page }) => {
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("furrion furnace will not light blower does not turn on low 12v");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/furrion-furnace-will-not-light-blower-no-start/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("furrion furnace shuts off before desired temperature vents covered");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/furrion-furnace-short-cycles-before-set-temperature/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("furrion furnace soot yellow flame exhaust service");
+  const sootService = lookupResults.locator('a[href="/symptoms/furrion-furnace-soot-yellow-flame-exhaust-service/"]');
+  await expect(sootService).toBeVisible();
+  await sootService.click();
+
+  await expect(page.getByRole("heading", { name: "Furrion furnace soot, yellow flame, or blocked exhaust" })).toBeVisible();
+  await expect(page.getByText(/shut the furnace down/i)).toBeVisible();
+});
+
 test("lookup surfaces Suburban furnace and water-heater symptom support pages", async ({ page }) => {
   await page.goto("/");
 

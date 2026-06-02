@@ -176,6 +176,20 @@ describe("verified corpus", () => {
     );
   });
 
+  it("finds Furrion furnace symptom support pages from owner searches", () => {
+    const index = buildSymptomSearchIndex(corpus);
+
+    expect(lookupSymptomGuides(index, "furrion furnace will not light blower does not turn on low 12v")[0]?.slug).toBe(
+      "furrion-furnace-will-not-light-blower-no-start",
+    );
+    expect(lookupSymptomGuides(index, "furrion furnace shuts off before desired temperature vents covered")[0]?.slug).toBe(
+      "furrion-furnace-short-cycles-before-set-temperature",
+    );
+    expect(lookupSymptomGuides(index, "furrion furnace soot yellow flame exhaust service")[0]?.slug).toBe(
+      "furrion-furnace-soot-yellow-flame-exhaust-service",
+    );
+  });
+
   it("ranks exact multi-word display codes ahead of generic partial matches", () => {
     const index = buildSearchIndex(corpus);
 
@@ -2263,6 +2277,15 @@ describe("verified corpus", () => {
     expect(symptomById.get("air-conditioner-water-leak")?.sourceIds).toContain("furrion-rooftop-hvac-troubleshooting");
     expect(symptomById.get("furnace-stops-before-setpoint")?.sourceIds).toContain("furrion-furnace-troubleshooting");
     expect(symptomById.get("furnace-lockout")?.sourceIds).toContain("furrion-furnace-troubleshooting");
+    expect(symptomById.get("furrion-furnace-will-not-light-blower-no-start")?.sourceIds).toEqual([
+      "furrion-furnace-troubleshooting",
+    ]);
+    expect(symptomById.get("furrion-furnace-short-cycles-before-set-temperature")?.sourceIds).toEqual([
+      "furrion-furnace-troubleshooting",
+    ]);
+    expect(symptomById.get("furrion-furnace-soot-yellow-flame-exhaust-service")?.sourceIds).toEqual([
+      "furrion-furnace-troubleshooting",
+    ]);
     expect(symptomById.get("thermostat-delay-or-no-response")?.sourceIds).toEqual(
       expect.arrayContaining([
         "coleman-9330-thermostat",

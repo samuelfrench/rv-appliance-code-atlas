@@ -39,6 +39,7 @@
 - [x] Add official Norcold/Thetford refrigerator symptom-only support and owner-manual pages for cooling, startup, 120V AC, door alarms, defrost, odor, temperature settings, high-temperature sensor service boundaries, DC compressor cooling, night mode/noise, and N2000 drip-tray water without inventing code entries.
 - [x] Add official Furrion/Lippert refrigerator symptom-only support and QR/manual-backed owner-safe guides for cooling, hard reset, power, compressor cycling, door seal, moisture/ice, temperature modes, noise, and service-only boundaries without inventing code entries.
 - [x] Add official Cummins Onan generator symptom-only support pages for no-start, no-output/load management, altitude derating, fuel/oil maintenance, CO/exhaust shutdown, and low-battery cranking without inventing code entries.
+- [x] Add official Furrion furnace symptom-only support pages for no-light with blower not turning on, short cycling before set temperature, and soot/yellow-flame service boundaries without inventing code entries.
 - [x] Add GSC property and submit sitemap after live URL is stable.
 - [x] Add weekly traffic report artifact once GSC is configured.
 - [x] Add IndexNow key after domain/live URL is chosen.
@@ -49,7 +50,7 @@
 - GitHub repo: `https://github.com/samuelfrench/rv-appliance-code-atlas`
 - Fly app: `rv-appliance-code-atlas`, one `shared-cpu-1x` 256 MB machine in `dfw`, auto-stop enabled.
 - Latest deploy: GitHub Actions run `26847583308` succeeded at `2026-06-02T20:58:01Z`; Fly release v38, image `deployment-01KT5218ZQ1C8QFBNB5Y5S7C86`, code commit `9ec4503`.
-- Corpus: `819` verified entries, `131` symptom guides, `317` official sources, `951` generated indexable pages.
+- Corpus: `819` verified entries, `134` symptom guides, `317` official sources, `954` generated indexable pages.
 - GSC URL-prefix property `https://rv-appliance-code-atlas.fly.dev/` verified with FILE token `googled22aa40f3a0e4dca.html`; Google Site Verification insert returned HTTP `200`.
 - GSC sitemap `https://rv-appliance-code-atlas.fly.dev/sitemap.xml` submitted; Search Console site add and sitemap submit both returned HTTP `204`, and API read-back found the property with `siteOwner` permission plus the submitted sitemap path.
 - Weekly GSC traffic artifact command added: `npm run traffic:gsc:weekly` writes ignored local artifact `reports/gsc-weekly-traffic.json`; dry-run is `npm run traffic:gsc:weekly:dry-run`. Default range uses the last 7 Pacific-time days ending 3 days ago to avoid preliminary GSC data, and token resolution tries readonly first before local ADC `webmasters` fallback. No scheduled GitHub Action is configured because local ADC exists now, while hosted scheduled runs need an explicit credential strategy.
