@@ -23,19 +23,20 @@
 - [x] Add official Lippert/Girard GSWH-2 owner-manual display codes and Girard-specific tankless symptom guides.
 - [x] Add official legacy Lippert/Girard GSWH-1 and GSWH-1M owner-manual LED diagnostics plus WUD/gas/winterization symptom guides.
 - [x] Triage official symptom-only Dometic WH/OD-5001 and Furrion tankless support candidates; add owner-safe Dometic tank/OD-5001 symptom guidance plus Furrion E5/model-disambiguation sources without new code entries.
+- [x] Add official Suburban induction cooktop E0-E7 display codes plus Coleman-Mach 9630/6535/6536 heat-pump lockout displays and 9420-330 status LED diagnostics from manufacturer-hosted sources.
 - [ ] Add GSC property and submit sitemap after live URL is stable.
 
 ## Current State — 2026-06-02
 - Live URL: `https://rv-appliance-code-atlas.fly.dev/`
 - GitHub repo: `https://github.com/samuelfrench/rv-appliance-code-atlas`
 - Fly app: `rv-appliance-code-atlas`, one `shared-cpu-1x` 256 MB machine in `dfw`, auto-stop enabled.
-- Latest deploy: Fly release v14, image `deployment-01KT3TA9QCK8WRCSDASK482C4S`, code commit `66763b7`; Deploy run `26810708905` succeeded.
-- Corpus: `487` verified entries, `52` symptom guides, `110` official sources, `540` generated indexable pages.
-- Local verification passed: focused RED/GREEN corpus regression for Dometic WH/OD-5001 symptom-only sources plus Furrion E5/FWH09A separation, `npm run validate:corpus`, `npm run test:unit`, `npm run source:audit`, `npm run traffic:report`, `npm run verify:runtime`, `git diff --check`, staged `git diff --cached --check`, and fresh HTTP `200` checks for all 13 new official Dometic/Lippert/Furrion source URLs. Build splits corpus to `dist/assets/corpus-YTv0jI8J.json` at `772.05 kB` / `54.30 kB` gzip and main JS to `210.10 kB` / `65.81 kB` gzip with no Vite chunk warning.
-- Reviews passed: read-only source triage accepted the official Dometic WH/support and Lippert/Furrion sources, rejected duplicates/internal-service/old-spec candidates, spec/safety review passed with no findings, and code-quality review approved with no findings.
-- Live verification passed: `/`, `/sitemap.xml`, `/corpus-stats.json`, new Dometic winterizing, P/T air-gap, and OD-5001 no-flow symptom routes, plus enriched Furrion E5 and Dometic lockout code routes. Desktop and mobile Playwright verified H1/source/safety content, homepage search for `furrion tankless e5 blower`, and `0` console/page errors.
-- Source triage note: accepted official Dometic WH 2022 manual and Dometic support pages for winterize/flush, air gap, anode warning, odor, gas smell, and OD-5001 no-flow; accepted Lippert TI-514 only for current FWH09A-series E5 clarification and Furrion FWH09A/FWH09AFA-AB spec sheets only for model-disambiguation/low-flow/freeze symptoms. Rejected or deferred duplicate Dometic `Gas-smell-8c9`, OD-5001 Component Locations, Furrion `ccd-0006132`, Furrion `ccd-0005723`, and any internal repair guidance beyond owner-safe shutoff/record/call-service boundaries.
-- Next automated batch goal: research the next official manufacturer-hosted appliance support slice beyond the current water-heater batches, prioritizing verified fault/display tables or owner-safe symptom gaps from official sources.
+- Latest deploy: Fly release v15, image `deployment-01KT3WPY46JKD0KCJ6CQJAZS6G`, code commit `5164fcf`; Deploy run `26812798820` succeeded.
+- Corpus: `507` verified entries, `58` symptom guides, `117` official sources, `566` generated indexable pages.
+- Local verification passed: focused RED/GREEN corpus regressions for Suburban induction E0-E7, Coleman-Mach heat-pump lockout/status LED displays, and traffic-report next goal; `npm run validate:corpus`, `npm run test:unit`, `npm run source:audit`, `npm run traffic:report`, `npm run verify:runtime`, `git diff --check`, staged `git diff --cached --check`, route/search smoke, and fresh HTTP `200` checks for all 7 new official Suburban/Coleman source URLs. Build splits corpus to `dist/assets/corpus-BAy-zs5V.json` at `812.98 kB` / `58.38 kB` gzip and main JS to `210.10 kB` / `65.81 kB` gzip with no Vite chunk warning.
+- Reviews passed: Suburban, Coleman, and Norcold read-only source triage completed; spec/safety review approved official-source mappings and owner-safe boundaries; code-quality review approved after the traffic-report regression test was staged.
+- Live verification passed: `/`, `/sitemap.xml`, `/corpus-stats.json`, Suburban induction E0/E7 code routes, Suburban induction cookware symptom route, Coleman-Mach ELEC flashing, DIFF, and 9420-330 status LED code routes, plus Coleman heat-pump lockout and 9420-330 LED symptom routes. Desktop and mobile Playwright verified H1/source/safety content, homepage searches for `coleman elec flashing` and `suburban induction e7`, and `0` console/page errors.
+- Source triage note: accepted official Suburban induction operation guide for E0-E7; accepted official Coleman-Mach 9420-330 status LED table and 9630/6535/6536/heat-pump lockout manuals. Rejected/deferred Suburban gas cooktop/range/griddle docs without display-code tables, Coleman service-only/internal docs, duplicate existing Coleman thermostat docs, and Norcold candidates not yet implemented.
+- Next automated batch goal: research the next official Norcold refrigerator support slice, prioritizing manufacturer-hosted owner/service fault display tables for N3000, N2000, N8DCX/N10DCX, N10LX, 2118, and legacy N-series families.
 
 ## Corpus Expansion Backlog
 - [x] Add full Dometic RUC/RUA tables.
@@ -58,7 +59,8 @@
 - [x] Research official owner-safe Girard/Lippert tankless and remaining manufacturer-hosted water-heater maintenance or winterization sources, keep model families separate, and add no code entries unless an official fault/display table is verified.
 - [x] Research official legacy Girard GSWH-1/GSWH-1M owner manuals and remaining manufacturer-hosted water-heater support sources; keep GSWH-1, GSWH-2, Furrion, Suburban, and Dometic model families separate and add code entries only from official fault/display tables.
 - [x] Triage official symptom-only Dometic WH/OD-5001 and Furrion tankless support candidates from the latest source pass; add only owner-safe symptom guidance and model-disambiguation sources unless a new official fault/display table is verified.
-- [ ] Research the next official manufacturer-hosted appliance support slice beyond the current water-heater batches, prioritizing verified fault/display tables or owner-safe symptom gaps from official sources.
+- [x] Research and add official Suburban induction cooktop plus Coleman-Mach heat-pump thermostat/status LED tables with owner-safe boundaries.
+- [ ] Research the next official Norcold refrigerator support slice, prioritizing manufacturer-hosted owner/service fault display tables for N3000, N2000, N8DCX/N10DCX, N10LX, 2118, and legacy N-series families.
 
 ## Launch Automation
 - [ ] Add weekly traffic report artifact once GSC is configured.
