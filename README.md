@@ -36,10 +36,10 @@ npm run traffic:monitor
 ```
 
 Current corpus:
-- `780` verified entries
+- `802` verified entries
 - `62` symptom guides
-- `187` official sources
-- `843` generated indexable pages
+- `209` official sources
+- `865` generated indexable pages
 
 Next automated batch goal:
-- Add official Dometic RUA exact display-fault support aliases from sitemap-verified support pages while preserving the existing aggregate RUA fault-message table.
+- Add remaining official Dometic RM10 refrigerator support-page fault aliases from sitemap-verified Fault pages while preserving manual-backed RM10/RMD/RML rows.

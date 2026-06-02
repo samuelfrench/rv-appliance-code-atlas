@@ -156,6 +156,15 @@ describe("verified corpus", () => {
     expect(lookupEntries(index, "dometic ruc display shows fault e35 ventilation obstructed over temperature")[0]?.slug).toBe(
       "dometic-ruc-display-fault-e35-ventilation-over-temperature",
     );
+    expect(lookupEntries(index, "dometic rua display shows fault 09 check battery voltage reset")[0]?.slug).toBe(
+      "dometic-rua-display-fault-09-battery-voltage-reset",
+    );
+    expect(lookupEntries(index, "dometic rua display shows fault 10 door properly closed reset")[0]?.slug).toBe(
+      "dometic-rua-display-fault-10-door-closed-reset",
+    );
+    expect(lookupEntries(index, "dometic rua display shows fault 50 gas bottle valves reset")[0]?.slug).toBe(
+      "dometic-rua-display-fault-50-gas-bottle-valves-reset",
+    );
   });
 
   it("summarizes code, source, symptom, and monetization readiness counts", () => {
@@ -218,6 +227,60 @@ describe("verified corpus", () => {
     const ventilation = entries.find((entry) => entry.id === "dometic-ruc-display-fault-e35-ventilation-over-temperature");
     expect(ventilation?.ownerSafeActions.join(" ")).toMatch(/ventilation/i);
     expect(ventilation?.serviceOnlyActions.join(" ")).toContain("authorized service provider");
+  });
+
+  it("includes official Dometic RUA exact fault support aliases for owner searches", () => {
+    const entries = corpus.entries.filter((entry) => entry.brand === "Dometic" && entry.equipmentType === "Refrigerator");
+    const codesForSource = (sourceId: string) =>
+      new Set(entries.filter((entry) => entry.sourceIds.includes(sourceId)).map((entry) => entry.code));
+    const supportUrls = new Map(corpus.sources.map((source) => [source.id, source.url]));
+
+    const expected = [
+      ["dometic-rua-display-fault-01-support", "01", "https://support.dometic.com/en/rua-refrigerator/Display-shows-fault-01-772a"],
+      ["dometic-rua-display-fault-03-support", "03", "https://support.dometic.com/en/rua-refrigerator/Display-shows-fault-03-aee4"],
+      ["dometic-rua-display-fault-05-support", "05", "https://support.dometic.com/en/rua-refrigerator/Display-shows-fault-05-1a7d"],
+      ["dometic-rua-display-fault-06-support", "06", "https://support.dometic.com/en/rua-refrigerator/Display-shows-fault-06-5690"],
+      ["dometic-rua-display-fault-07-support", "07", "https://support.dometic.com/en/rua-refrigerator/Display-shows-fault-07-7e50"],
+      ["dometic-rua-display-fault-08-support", "08", "https://support.dometic.com/en/rua-refrigerator/Display-shows-fault-08-dfdf"],
+      ["dometic-rua-display-fault-09-support", "09", "https://support.dometic.com/en/rua-refrigerator/Display-shows-fault-09-56e8"],
+      ["dometic-rua-display-fault-10-support", "10", "https://support.dometic.com/en/rua-refrigerator/Display-shows-fault-10-95ac"],
+      ["dometic-rua-display-fault-11-support", "11", "https://support.dometic.com/en/rua-refrigerator/Display-shows-fault-11-6ff6"],
+      ["dometic-rua-display-fault-12-support", "12", "https://support.dometic.com/en/rua-refrigerator/Display-shows-fault-12-36a8"],
+      ["dometic-rua-display-fault-13-support", "13", "https://support.dometic.com/en/rua-refrigerator/Display-shows-fault-13-c2c6"],
+      ["dometic-rua-display-fault-14-support", "14", "https://support.dometic.com/en/rua-refrigerator/Display-shows-fault-14-dbbf"],
+      ["dometic-rua-display-fault-15-support", "15", "https://support.dometic.com/en/rua-refrigerator/Display-shows-fault-15-dd71"],
+      ["dometic-rua-display-fault-16-support", "16", "https://support.dometic.com/en/rua-refrigerator/Display-shows-fault-16-8b5d"],
+      ["dometic-rua-display-fault-17-support", "17", "https://support.dometic.com/en/rua-refrigerator/Display-shows-fault-17-47c4"],
+      ["dometic-rua-display-fault-18-support", "18", "https://support.dometic.com/en/rua-refrigerator/Display-shows-fault-18-a0fa"],
+      ["dometic-rua-display-fault-22-support", "22", "https://support.dometic.com/en/rua-refrigerator/Display-shows-fault-22-af2a"],
+      ["dometic-rua-display-fault-24-support", "24", "https://support.dometic.com/en/rua-refrigerator/Display-shows-fault-24-6a43"],
+      ["dometic-rua-display-fault-50-support", "50", "https://support.dometic.com/en/rua-refrigerator/Display-shows-fault-50-75f7"],
+      ["dometic-rua-display-fault-51-support", "51", "https://support.dometic.com/en/rua-refrigerator/Display-shows-fault-51-db53"],
+      ["dometic-rua-display-fault-52-support", "52", "https://support.dometic.com/en/rua-refrigerator/Display-shows-fault-52-3c34"],
+      ["dometic-rua-display-fault-53-support", "53", "https://support.dometic.com/en/rua-refrigerator/Display-shows-fault-53-c7a3"],
+    ] as const;
+
+    for (const [sourceId, code, url] of expected) {
+      expect(supportUrls.get(sourceId)).toBe(url);
+      expect(codesForSource(sourceId)).toEqual(new Set([`Display fault ${code}`]));
+    }
+
+    const batteryVoltage = entries.find((entry) => entry.id === "dometic-rua-display-fault-09-battery-voltage-reset");
+    expect(batteryVoltage?.ownerSafeActions.join(" ")).toMatch(/battery voltage/i);
+    expect(batteryVoltage?.ownerSafeActions.join(" ")).not.toMatch(/\b(fuses?|wiring)\b/i);
+
+    const acSupply = entries.find((entry) => entry.id === "dometic-rua-display-fault-05-ac-supply-reset");
+    expect(acSupply?.ownerSafeActions.join(" ")).toMatch(/AC supply/i);
+    expect(acSupply?.ownerSafeActions.join(" ")).not.toMatch(/\b(breakers?|wiring|voltage testing)\b/i);
+
+    const doorClosed = entries.find((entry) => entry.id === "dometic-rua-display-fault-10-door-closed-reset");
+    expect(doorClosed?.ownerSafeActions.join(" ")).toMatch(/door/i);
+
+    const gasSupply = entries.find((entry) => entry.id === "dometic-rua-display-fault-50-gas-bottle-valves-reset");
+    expect(gasSupply?.ownerSafeActions.join(" ")).toMatch(/gas bottle/i);
+    expect(gasSupply?.ownerSafeActions.join(" ")).toMatch(/gas valve/i);
+    expect(gasSupply?.ownerSafeActions.join(" ")).not.toMatch(/\b(burner|regulator|flue|orifice|wiring)\b/i);
+    expect(gasSupply?.serviceOnlyActions.join(" ")).toMatch(/LP hardware/i);
   });
 
   it("includes the full official Dometic CCC2 thermostat LCD error-code set", () => {
