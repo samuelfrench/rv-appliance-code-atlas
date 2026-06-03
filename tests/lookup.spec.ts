@@ -594,6 +594,40 @@ test("lookup surfaces Cummins Onan generator symptom support pages", async ({ pa
   await expect(lookupResults.locator('a[href="/symptoms/onan-generator-exhaust-co-shutdown-service/"]')).toBeVisible();
 });
 
+test("lookup surfaces Cummins Energy Command AGS status and app support pages", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("ec30 safety off and on auto gen disabled after moving rv");
+  await expect(lookupResults.locator('a[href="/symptoms/onan-energy-command-safety-off-on-auto-disabled/"]')).toBeVisible();
+
+  await searchbox.fill("energy command auto run low bat auto stop full bat");
+  await expect(lookupResults.locator('a[href="/symptoms/onan-energy-command-auto-run-low-battery/"]')).toBeVisible();
+
+  await searchbox.fill("ec ags plus generator does not start in auto mode accelerometer fault");
+  await expect(lookupResults.locator('a[href="/symptoms/onan-ec-ags-plus-auto-mode-does-not-start/"]')).toBeVisible();
+
+  await searchbox.fill("ec-ags+ generator does not run ac temperature sensor bluetooth quiet time");
+  const acGuide = lookupResults.locator('a[href="/symptoms/onan-ec-ags-plus-generator-does-not-run-ac/"]');
+  await expect(acGuide).toBeVisible();
+
+  await acGuide.click();
+  await expect(page.getByRole("heading", { name: "Onan EC-AGS+ generator does not run A/C" })).toBeVisible();
+  await expect(page.getByText(/Do not enable AGS indoors or in a confined space/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 

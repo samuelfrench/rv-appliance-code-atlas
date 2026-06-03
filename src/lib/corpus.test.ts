@@ -20,6 +20,10 @@ const requiredBrands = [
   "Onan",
 ];
 
+const expectedEntryCount = 850;
+const expectedSourceCount = 342;
+const expectedSymptomCount = 191;
+
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
     const report = validateCorpus(corpus);
@@ -390,6 +394,29 @@ describe("verified corpus", () => {
     );
   });
 
+  it("finds Cummins Energy Command AGS status and app symptom pages from owner searches", () => {
+    const index = buildSymptomSearchIndex(corpus);
+
+    expect(lookupSymptomGuides(index, "ec30 safety off and on auto gen disabled after moving rv")[0]?.slug).toBe(
+      "onan-energy-command-safety-off-on-auto-disabled",
+    );
+    expect(lookupSymptomGuides(index, "energy command auto run low bat auto stop full bat")[0]?.slug).toBe(
+      "onan-energy-command-auto-run-low-battery",
+    );
+    expect(lookupSymptomGuides(index, "ec-30 service due service in enter reset")[0]?.slug).toBe(
+      "onan-energy-command-service-due-reminder",
+    );
+    expect(lookupSymptomGuides(index, "ec ags plus generator does not start in auto mode accelerometer fault")[0]?.slug).toBe(
+      "onan-ec-ags-plus-auto-mode-does-not-start",
+    );
+    expect(lookupSymptomGuides(index, "ec-ags+ generator does not run ac temperature sensor bluetooth quiet time")[0]?.slug).toBe(
+      "onan-ec-ags-plus-generator-does-not-run-ac",
+    );
+    expect(lookupSymptomGuides(index, "ecags generator starts unexpectedly quiet time house battery start voltage")[0]?.slug).toBe(
+      "onan-ec-ags-plus-unexpected-start-stop",
+    );
+  });
+
   it("finds Lippert leveling and slide symptom support pages from owner searches", () => {
     const index = buildSymptomSearchIndex(corpus);
 
@@ -681,7 +708,7 @@ describe("verified corpus", () => {
       type: "manufacturer-manual",
       url: "https://media.dometic.com/externalassets/ct-single-zone-thermostat_9108853315_55910.pdf",
     });
-    expect(corpus.entries).toHaveLength(850);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
     expect(entries.map((entry) => entry.code).sort()).toEqual(["E1", "E2", "E3", "E4", "E5"]);
 
     for (const entry of entries) {
@@ -712,8 +739,8 @@ describe("verified corpus", () => {
       type: "manufacturer-manual",
       url: "https://media.dometic.com/externalassets/dometic-freshjet-fjx7-3000_9620001685_123479.pdf",
     });
-    expect(corpus.sources).toHaveLength(339);
-    expect(corpus.entries).toHaveLength(850);
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
     expect(new Set(entries.map((entry) => entry.code))).toEqual(
       new Set(["P0", "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P9", "E0", "E1", "E2", "E3", "E7", "E8", "E9", "EA", "EE", "EL"]),
     );
@@ -751,7 +778,7 @@ describe("verified corpus", () => {
     ];
 
     expect(corpus.sources.find((source) => source.id === sourceId)?.official).toBe(true);
-    expect(corpus.entries).toHaveLength(850);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
     expect(
       corpus.entries
         .filter((entry) => entry.sourceIds.includes(sourceId))
@@ -790,7 +817,7 @@ describe("verified corpus", () => {
       "dometic-single-zone-hot-weather-filter-maintenance",
     ];
 
-    expect(corpus.symptoms).toHaveLength(185);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
 
     for (const symptomId of expectedSymptomIds) {
       const symptom = symptomById.get(symptomId);
@@ -825,7 +852,7 @@ describe("verified corpus", () => {
       type: "manufacturer-manual",
       url: "https://media.dometic.com/externalassets/bluetooth-thermostat_9108887112_64643.pdf",
     });
-    expect(corpus.entries).toHaveLength(850);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
     expect(entries.map((entry) => entry.code).sort()).toEqual(["E1", "E2", "E3", "E4", "E5"]);
 
     for (const entry of entries) {
@@ -865,7 +892,7 @@ describe("verified corpus", () => {
       "dometic-bluetooth-ct-hot-weather-filter-maintenance",
     ];
 
-    expect(corpus.symptoms).toHaveLength(185);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
     for (const sourceId of [pdfSourceId, ...supportSourceIds]) {
       expect(corpus.sources.find((source) => source.id === sourceId), sourceId).toMatchObject({
         brand: "Dometic",
@@ -923,7 +950,7 @@ describe("verified corpus", () => {
       "dometic-freshjet-fjx-voltage-protection-campsite-power",
     ];
 
-    expect(corpus.symptoms).toHaveLength(185);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
 
     for (const symptomId of expectedSymptomIds) {
       const symptom = symptomById.get(symptomId);
@@ -1077,7 +1104,7 @@ describe("verified corpus", () => {
       official: true,
       type: "manufacturer-manual",
     });
-    expect(corpus.entries).toHaveLength(850);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
     expect(corpus.entries.filter((entry) => entry.sourceIds.includes(sourceId))).toHaveLength(0);
 
     for (const symptomId of expectedSymptomIds) {
@@ -1130,7 +1157,7 @@ describe("verified corpus", () => {
       });
     }
 
-    expect(corpus.entries).toHaveLength(850);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
     expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => sourceIds.includes(sourceId)))).toHaveLength(0);
 
     for (const symptomId of expectedSymptomIds) {
@@ -2030,9 +2057,9 @@ describe("verified corpus", () => {
       expect(supportUrls.get(sourceId), sourceId).toBe(url);
     }
     expect(corpus.sources.filter((source) => toiletSourceIds.includes(source.id))).toHaveLength(toiletSourceIds.length);
-    expect(corpus.entries).toHaveLength(850);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
     expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => toiletSourceIds.includes(sourceId)))).toHaveLength(0);
-    expect(corpus.symptoms).toHaveLength(185);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
 
     expect(symptomById.get("thetford-rv-toilet-bowl-water-does-not-hold-seal")?.sourceIds).toEqual(
       expect.arrayContaining(["thetford-permanent-rv-toilet-owner", "thetford-faq-lip-seal-replacement"]),
@@ -2826,7 +2853,7 @@ describe("verified corpus", () => {
       expect(source?.url, sourceId).toBe(url);
     }
 
-    expect(corpus.entries).toHaveLength(850);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
     expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
 
     for (const symptomId of newSymptomIds) {
@@ -2917,6 +2944,86 @@ describe("verified corpus", () => {
     expect(symptomById.get("low-voltage")?.sourceIds).toEqual(expect.arrayContaining(["onan-generator-quick-start", "onan-rv-generator-handbook"]));
     expect(symptomById.get("airflow-or-venting")?.sourceIds).toEqual(
       expect.arrayContaining(["onan-generator-quick-start", "onan-rv-generator-handbook"]),
+    );
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds official Cummins Energy Command status guides without inventing generator fault-code entries", () => {
+    const expectedSources = new Map([
+      ["onan-energy-command-30-900-0541b", "https://www.cummins.com/sites/default/files/2018-08/900-0541B-energy-command-operation.pdf"],
+      ["onan-ec-ags-plus-owner-a065f574", "https://www.cummins.com/sites/default/files/2022-01/a065f574_i4_202111_issue5.pdf"],
+      ["onan-ec-ags-plus-quick-start-a066j123", "https://www.cummins.com/sites/default/files/2021-11/a066j123_quick_start_guide.pdf"],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const newSymptomIds = [
+      "onan-energy-command-safety-off-on-auto-disabled",
+      "onan-energy-command-auto-run-low-battery",
+      "onan-energy-command-service-due-reminder",
+      "onan-ec-ags-plus-auto-mode-does-not-start",
+      "onan-ec-ags-plus-generator-does-not-run-ac",
+      "onan-ec-ags-plus-unexpected-start-stop",
+    ];
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = corpus.sources.find((item) => item.id === sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const symptomId of newSymptomIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds.length, symptomId).toBeGreaterThan(0);
+      expect(symptom?.safeChecklist.join(" "), symptomId).not.toMatch(
+        /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\brefrigerant\b|\bprobe\b|\bopen (the )?(fuel|gas|electrical)|fuel line|wiring|wire|harness continuity|replace.*gateway|voltage testing|measure resistance/i,
+      );
+    }
+
+    expect(symptomById.get("onan-energy-command-safety-off-on-auto-disabled")?.sourceIds).toEqual(
+      expect.arrayContaining(["onan-energy-command-30-900-0541b", "onan-ec-ags-plus-owner-a065f574"]),
+    );
+    expect(
+      [
+        symptomById.get("onan-energy-command-safety-off-on-auto-disabled")?.summary,
+        symptomById.get("onan-energy-command-safety-off-on-auto-disabled")?.safeChecklist.join(" "),
+      ].join(" "),
+    ).toMatch(/SAFETY OFF & ON|AUTO ON|QUIET ON|safe location|confined space/i);
+
+    expect(symptomById.get("onan-energy-command-auto-run-low-battery")?.sourceIds).toEqual(
+      expect.arrayContaining(["onan-energy-command-30-900-0541b", "onan-ec-ags-plus-owner-a065f574"]),
+    );
+    const lowBatteryText = [
+      symptomById.get("onan-energy-command-auto-run-low-battery")?.summary,
+      symptomById.get("onan-energy-command-auto-run-low-battery")?.safeChecklist.join(" "),
+    ].join(" ");
+    expect(lowBatteryText).toMatch(/AUTO RUN LOW BAT|AUTO STOP FULL BAT|Start @ V|Stop @ V|qualified/i);
+    expect(lowBatteryText).toMatch(/confined space/i);
+    expect(lowBatteryText).toMatch(/disable AGS/i);
+
+    expect(symptomById.get("onan-energy-command-service-due-reminder")?.sourceIds).toEqual(
+      expect.arrayContaining(["onan-energy-command-30-900-0541b", "onan-ec-ags-plus-owner-a065f574"]),
+    );
+    const serviceDueText = [
+      symptomById.get("onan-energy-command-service-due-reminder")?.summary,
+      symptomById.get("onan-energy-command-service-due-reminder")?.safeChecklist.join(" "),
+    ].join(" ");
+    expect(serviceDueText).toMatch(/SERVICE IN|SERVICE DUE|ENTER to Reset|maintenance|exercise reminders|qualified/i);
+    expect(serviceDueText).toMatch(/disable AGS/i);
+
+    expect(symptomById.get("onan-ec-ags-plus-auto-mode-does-not-start")?.summary).toMatch(
+      /Auto Mode|accelerometer|quiet-time|mobile-device clock/i,
+    );
+    expect(symptomById.get("onan-ec-ags-plus-generator-does-not-run-ac")?.summary).toMatch(
+      /temperature-sensor battery|Bluetooth range|quiet-time|gateway battery/i,
+    );
+    expect(symptomById.get("onan-ec-ags-plus-unexpected-start-stop")?.summary).toMatch(
+      /unexpected starts|unexpected.*stops|house-battery start|accelerometer/i,
     );
     expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
   });
@@ -3398,7 +3505,7 @@ describe("verified corpus", () => {
 
     expect(sourceById.get("suburban-rv-faqs")?.official).toBe(true);
     expect(sourceById.get("suburban-rv-faqs")?.url).toBe("https://suburbanrv.com/service-support/faqs/");
-    expect(corpus.entries).toHaveLength(850);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
     expect(corpus.entries.filter((entry) => entry.sourceIds.includes("suburban-rv-faqs"))).toHaveLength(0);
 
     for (const symptomId of newSymptomIds) {
@@ -3483,7 +3590,7 @@ describe("verified corpus", () => {
     expect(sourceById.get("suburban-st42-st60-product-overview")?.url).toBe(
       "https://suburbanrv.com/files/product_documents/Tankless%20Water%20Heater/ST%204260%20Tankless%20Water%20Heater%20Sell%20Sheet%20111522.pdf",
     );
-    expect(corpus.entries).toHaveLength(850);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
 
     for (const sourceId of newSourceIds) {
       expect(corpus.entries.filter((entry) => entry.sourceIds.includes(sourceId)), sourceId).toHaveLength(0);
@@ -3727,7 +3834,7 @@ describe("verified corpus", () => {
       expect(source?.url, sourceId).toBe(url);
     }
 
-    expect(corpus.entries).toHaveLength(850);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
     expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
 
     for (const symptomId of newSymptomIds) {

@@ -1507,6 +1507,30 @@
       "official": true
     },
     {
+      "id": "onan-energy-command-30-900-0541b",
+      "brand": "Onan",
+      "title": "Cummins Onan Energy Command 30 Operation and Installation Manual 900-0541B",
+      "url": "https://www.cummins.com/sites/default/files/2018-08/900-0541B-energy-command-operation.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "onan-ec-ags-plus-owner-a065f574",
+      "brand": "Onan",
+      "title": "Cummins Onan Energy Command AGS+ Owner Manual A065F574",
+      "url": "https://www.cummins.com/sites/default/files/2022-01/a065f574_i4_202111_issue5.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "onan-ec-ags-plus-quick-start-a066j123",
+      "brand": "Onan",
+      "title": "Cummins Onan Energy Command AGS+ Quick Start Guide A066J123",
+      "url": "https://www.cummins.com/sites/default/files/2021-11/a066j123_quick_start_guide.pdf",
+      "type": "manufacturer-guide",
+      "official": true
+    },
+    {
       "id": "suburban-furnace-guide",
       "brand": "Suburban/Atwood",
       "title": "Suburban Gas Furnace Operation Guide",
@@ -33792,6 +33816,142 @@
       ]
     },
     {
+      "id": "onan-energy-command-safety-off-on-auto-disabled",
+      "slug": "onan-energy-command-safety-off-on-auto-disabled",
+      "title": "Onan Energy Command AGS disabled after movement or safety input",
+      "summary": "The Energy Command 30 manual says automatic operation is disabled after vehicle movement, a stale safety-input check, or an unsafe automatic-start condition; AUTO ON and QUIET ON are only for safe locations.",
+      "safeChecklist": [
+        "Do not enable AUTO ON, QUIET ON, or AGS if the RV is indoors, in a confined space, being fueled, parked for storage, or being serviced.",
+        "If the EC-30 shows SAFETY OFF & ON, record whether the configured safety type is ignition, park, or brake before using normal owner controls.",
+        "Move only to a safe, ventilated location before re-enabling automatic generator start from the normal AUTO GEN or app control.",
+        "Call Cummins Onan or qualified generator service if AGS will not enable after normal safety verification or if any safety input behavior is unclear."
+      ],
+      "sourceIds": [
+        "onan-energy-command-30-900-0541b",
+        "onan-ec-ags-plus-owner-a065f574"
+      ],
+      "searchAliases": [
+        "ec30 safety off and on auto gen disabled after moving rv",
+        "energy command safety off on auto on quiet on",
+        "onan ec-30 auto gen disabled safety input ignition park brake",
+        "ec-ags+ accelerometer disabled ags safe location"
+      ]
+    },
+    {
+      "id": "onan-energy-command-auto-run-low-battery",
+      "slug": "onan-energy-command-auto-run-low-battery",
+      "title": "Onan Energy Command AUTO RUN LOW BAT or battery-sense start",
+      "summary": "Energy Command 30 lists AUTO RUN LOW BAT when the generator starts because the battery is low, and EC-AGS+ uses House Battery Sense Start @ V and Stop @ V settings for automatic starts and stops.",
+      "safeChecklist": [
+        "Do not enable AGS indoors or in a confined space, and disable AGS before fueling, storage, servicing, or any CO/exhaust concern.",
+        "Record the displayed AUTO RUN LOW BAT, AUTO STOP FULL BAT, or battery-sense status and the house battery state shown by normal RV monitor panels.",
+        "Confirm whether shore power is connected and whether quiet time or battery-sense settings explain the automatic start.",
+        "Do not change advanced house-battery sense voltage settings unless qualified personnel have verified the charging system operating voltages.",
+        "Use qualified RV electrical or Cummins Onan service for repeated low-battery starts, charging-system diagnosis, or generator faults."
+      ],
+      "sourceIds": [
+        "onan-energy-command-30-900-0541b",
+        "onan-ec-ags-plus-owner-a065f574",
+        "onan-generator-quick-start",
+        "onan-rv-generator-handbook"
+      ],
+      "searchAliases": [
+        "energy command auto run low bat auto stop full bat",
+        "ec30 auto run low battery auto stop full battery",
+        "ec-ags+ house battery sense start at v stop at v",
+        "onan ags starts when battery low quiet time prefill"
+      ]
+    },
+    {
+      "id": "onan-energy-command-service-due-reminder",
+      "slug": "onan-energy-command-service-due-reminder",
+      "title": "Onan Energy Command SERVICE DUE or SERVICE IN reminder",
+      "summary": "The EC-30 SERVICE IN display counts down to required generator service and alternates SERVICE DUE with ENTER to Reset after the interval; the EC-AGS+ Alerts screen also displays maintenance and exercise reminders.",
+      "safeChecklist": [
+        "Record SERVICE IN hours, SERVICE DUE, generator model/spec, and hour-meter reading before calling support.",
+        "Disable AGS before any generator service, battery service, electrical-appliance service, fueling, storage, or confined-space condition.",
+        "Use the installed generator operator manual to identify the required maintenance interval and service items.",
+        "Reset the service reminder only after the generator has actually been serviced.",
+        "Use Cummins Onan or qualified generator service for generator maintenance beyond normal owner checks."
+      ],
+      "sourceIds": [
+        "onan-energy-command-30-900-0541b",
+        "onan-ec-ags-plus-owner-a065f574",
+        "onan-rv-generator-service-faq",
+        "onan-rv-generator-handbook"
+      ],
+      "searchAliases": [
+        "ec-30 service due service in enter reset",
+        "energy command service due enter to reset",
+        "onan ec30 service in display generator service interval",
+        "ec-ags+ maintenance reminders exercise reminders alerts"
+      ]
+    },
+    {
+      "id": "onan-ec-ags-plus-auto-mode-does-not-start",
+      "slug": "onan-ec-ags-plus-auto-mode-does-not-start",
+      "title": "Onan EC-AGS+ generator does not start in Auto Mode",
+      "summary": "The EC-AGS+ owner manual routes Auto Mode no-start checks through generator-set faults, accelerometer-fault alerts, temperature setting, quiet-time settings, and mobile-device clock settings before service-only diagnosis.",
+      "safeChecklist": [
+        "Do not enable AGS indoors or in a confined space, and disable AGS before fueling, storage, servicing, or any CO/exhaust concern.",
+        "Record whether Auto Mode is enabled, whether an Accelerometer Fault alert is active, the quiet-time window, and the mobile-device time zone.",
+        "Check only normal app settings for temperature, quiet time, and clock/time-zone accuracy.",
+        "If the app shows generator-set fault codes, treat them as generator faults and use Cummins Onan or qualified generator service."
+      ],
+      "sourceIds": [
+        "onan-ec-ags-plus-owner-a065f574"
+      ],
+      "searchAliases": [
+        "ec ags plus generator does not start in auto mode accelerometer fault",
+        "ec-ags+ auto mode will not engage quiet time clock setting",
+        "onan ags auto mode no start temperature setting quiet time",
+        "energy command ags+ generator fault codes displayed in app"
+      ]
+    },
+    {
+      "id": "onan-ec-ags-plus-generator-does-not-run-ac",
+      "slug": "onan-ec-ags-plus-generator-does-not-run-ac",
+      "title": "Onan EC-AGS+ generator does not run A/C",
+      "summary": "The EC-AGS+ owner manual says a generator that does not run A/C can be tied to temperature setting, temperature-sensor battery voltage, Bluetooth range, quiet-time settings, or gateway battery voltage.",
+      "safeChecklist": [
+        "Do not enable AGS indoors or in a confined space, and shut the generator down if exhaust, CO, or ventilation conditions are unsafe.",
+        "Confirm from the app dashboard that Auto Mode and Air Conditioning Sense are enabled and that the current and set temperatures are displayed.",
+        "Check only owner-accessible items: temperature setting, quiet-time window, sensor battery, sensor/gateway Bluetooth range, and gateway battery state.",
+        "Call Cummins Onan, the RV dealer, or qualified HVAC/generator service if A/C demand or generator start behavior remains unclear."
+      ],
+      "sourceIds": [
+        "onan-ec-ags-plus-owner-a065f574",
+        "onan-ec-ags-plus-quick-start-a066j123"
+      ],
+      "searchAliases": [
+        "ec-ags+ generator does not run ac temperature sensor bluetooth quiet time",
+        "onan ec ags plus air conditioning sense not starting generator",
+        "ecags generator won't run air conditioner sensor battery gateway voltage",
+        "energy command ags+ ac demand auto mode dashboard temperature sensor"
+      ]
+    },
+    {
+      "id": "onan-ec-ags-plus-unexpected-start-stop",
+      "slug": "onan-ec-ags-plus-unexpected-start-stop",
+      "title": "Onan EC-AGS+ unexpected generator start or stop",
+      "summary": "The EC-AGS+ troubleshooting tables tie unexpected starts or stops to temperature settings, quiet-time settings, mobile-device clock settings, house-battery start/stop voltages, start/stop times, and accelerometer-fault alerts.",
+      "safeChecklist": [
+        "If the generator starts unexpectedly in an unsafe location, use the local or remote physical stop control and disable AGS from the app.",
+        "Record temperature setting, quiet-time window, mobile-device clock/time zone, house-battery start and stop settings, and active alerts.",
+        "Do not use AGS as life support power; the manual warns the generator set/control can stop without warning.",
+        "Use qualified service for repeated unexpected starts or stops, accelerometer faults, generator faults, gateway diagnosis, or control diagnosis."
+      ],
+      "sourceIds": [
+        "onan-ec-ags-plus-owner-a065f574"
+      ],
+      "searchAliases": [
+        "ecags generator starts unexpectedly quiet time house battery start voltage",
+        "ec-ags+ generator stops unexpectedly accelerometer fault stop voltage",
+        "onan energy command ags does not stop physical control switch",
+        "ec ags plus unexpected start mobile device clock time zone"
+      ]
+    },
+    {
       "id": "service-call-prep",
       "slug": "rv-appliance-service-call-checklist",
       "title": "Pre-service checklist for RV appliance calls",
@@ -33809,6 +33969,9 @@
         "onan-rv-generator-service-faq",
         "onan-rv-generator-power-basics",
         "onan-rv-generator-handbook",
+        "onan-energy-command-30-900-0541b",
+        "onan-ec-ags-plus-owner-a065f574",
+        "onan-ec-ags-plus-quick-start-a066j123",
         "lippert-ground-control",
         "furrion-furnace-troubleshooting",
         "furrion-rooftop-hvac-troubleshooting",
