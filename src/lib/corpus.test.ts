@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 850;
-const expectedSourceCount = 435;
-const expectedSymptomCount = 272;
+const expectedSourceCount = 446;
+const expectedSymptomCount = 281;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -579,9 +579,23 @@ describe("verified corpus", () => {
       "dometic-300-310-320-toilet-cleaning-winterizing-prep",
       "thetford-norcold-warranty-registration-paperwork-prep",
       "thetford-norcold-support-product-finder-routing-prep",
+      "dometic-rm8-cleaning-airflow-prep",
+      "dometic-rm8-defrost-ice-buildup-prep",
+      "dometic-rm8-low-outside-temperature-winter-cover-prep",
+      "dometic-rm8-operating-controls-shutdown-prep",
+      "dometic-freshjet-remote-mode-control-prep",
+      "thetford-sanitation-warranty-paperwork-prep",
+      "norcold-refrigeration-warranty-paperwork-prep",
+      "coleman-mach-claims-paperwork-prep",
+      "aquahot-warranty-registration-paperwork-prep",
     ]);
 
     for (const query of [
+      "clean refrigerator",
+      "defrost refrigerator",
+      "turn off refrigerator",
+      "remote control",
+      "ac mode",
       "fan not working",
       "lid not opening",
       "leaking",
@@ -598,6 +612,9 @@ describe("verified corpus", () => {
       "support form",
       "maintenance service provider",
       "warranty claim",
+      "warranty registration",
+      "service paperwork",
+      "claims paperwork",
       "toilet winterizing",
       "dealer form",
       "product finder",
@@ -5535,6 +5552,147 @@ describe("verified corpus", () => {
     ).not.toMatch(/\bdisconnect\b|water supply line/i);
     expect(symptomById.get("thetford-norcold-warranty-registration-paperwork-prep")?.safeChecklist.join(" ")).toMatch(
       /Thetford|Norcold|serial|VIN/i,
+    );
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds the official owner-safe RM8, FreshJet, warranty, claims, and registration support batch without code entries", () => {
+    const expectedSources = new Map([
+      [
+        "dometic-rm8-clean-refrigerator-support",
+        "https://support.dometic.com/en/rm8-refrigerators/How-to-clean-the-refrigerator-1256",
+      ],
+      [
+        "dometic-rm8-defrost-refrigerator-support",
+        "https://support.dometic.com/en/rm8-refrigerators/How-to-defrost-the-refrigerator-9568",
+      ],
+      [
+        "dometic-rm8-low-outside-temperature-support",
+        "https://support.dometic.com/en/rm8-refrigerators/How-to-operate-the-refrigerator-during-low-outside-temperatures-b099",
+      ],
+      [
+        "dometic-rm8-operating-controls-support",
+        "https://support.dometic.com/en/rm8-refrigerators/What-do-the-operating-controls-mean-3981",
+      ],
+      [
+        "dometic-rm8-turn-off-support",
+        "https://support.dometic.com/en/rm8-refrigerators/How-to-turn-off-the-refrigerator-54f2",
+      ],
+      ["dometic-freshjet-remote-control-support", "https://support.dometic.com/en/freshjet-ac/How-to-Use-the-remote-control-e323"],
+      [
+        "dometic-freshjet-ac-modes-support",
+        "https://support.dometic.com/en/freshjet-ac/What-air-conditioner-modes-are-available-for-my-product-fff3",
+      ],
+      ["thetford-sanitation-warranty-statement", "https://www.thetford.com/us/warranty-information/sanitation-warranty/"],
+      ["norcold-refrigeration-warranty-statement", "https://www.thetford.com/us/warranty-information/refrigeration-warranty/"],
+      ["coleman-mach-claims-paperwork", "https://coleman-mach.com/service-support/claims/"],
+      ["aquahot-warranty-registration", "https://www.aquahot.com/service-help/warranty-registration.aspx"],
+    ]);
+    const expectedSymptomSourceIds = new Map<string, string[]>([
+      ["dometic-rm8-cleaning-airflow-prep", ["dometic-rm8-clean-refrigerator-support"]],
+      ["dometic-rm8-defrost-ice-buildup-prep", ["dometic-rm8-defrost-refrigerator-support"]],
+      ["dometic-rm8-low-outside-temperature-winter-cover-prep", ["dometic-rm8-low-outside-temperature-support"]],
+      [
+        "dometic-rm8-operating-controls-shutdown-prep",
+        ["dometic-rm8-operating-controls-support", "dometic-rm8-turn-off-support"],
+      ],
+      ["dometic-freshjet-remote-mode-control-prep", ["dometic-freshjet-remote-control-support", "dometic-freshjet-ac-modes-support"]],
+      ["thetford-sanitation-warranty-paperwork-prep", ["thetford-sanitation-warranty-statement"]],
+      ["norcold-refrigeration-warranty-paperwork-prep", ["norcold-refrigeration-warranty-statement"]],
+      ["coleman-mach-claims-paperwork-prep", ["coleman-mach-claims-paperwork"]],
+      ["aquahot-warranty-registration-paperwork-prep", ["aquahot-warranty-registration"]],
+    ]);
+    const expectedRequiredTerms = new Map<string, string[]>([
+      ["dometic-rm8-cleaning-airflow-prep", ["rm8"]],
+      ["dometic-rm8-defrost-ice-buildup-prep", ["rm8"]],
+      ["dometic-rm8-low-outside-temperature-winter-cover-prep", ["rm8"]],
+      ["dometic-rm8-operating-controls-shutdown-prep", ["rm8"]],
+      ["dometic-freshjet-remote-mode-control-prep", ["freshjet"]],
+      ["thetford-sanitation-warranty-paperwork-prep", ["thetford"]],
+      ["norcold-refrigeration-warranty-paperwork-prep", ["norcold"]],
+      ["coleman-mach-claims-paperwork-prep", ["coleman", "mach"]],
+      ["aquahot-warranty-registration-paperwork-prep", ["aqua", "aquahot"]],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const sourcesById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const index = buildSymptomSearchIndex(corpus);
+    const summary = summarizeCorpus(corpus);
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\bline-voltage\b|\brefrigerant\b|\bprobe\b|\bwiring\b|\binternal\b|\broof\b|\bsupply line\b|\bopen (the )?(fuel|gas|electrical|rooftop)|remove.*shroud|remove.*cover|measure resistance/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = sourcesById.get(sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(sourcesById.has("cummins-onan-service-bulletin-deferred")).toBe(false);
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(summary.indexablePages).toBe(expectedEntryCount + expectedSymptomCount + 1);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const [symptomId, sourceIds] of expectedSymptomSourceIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds, symptomId).toEqual(sourceIds);
+      expect(symptom?.searchRequiredTerms, symptomId).toEqual(expectedRequiredTerms.get(symptomId));
+      expect([symptom?.summary, ...(symptom?.safeChecklist ?? [])].join(" "), symptomId).not.toMatch(
+        unsafeOwnerActionPattern,
+      );
+    }
+
+    expect(lookupSymptomGuides(index, "dometic rm8 clean refrigerator drain ventilation grille")[0]?.slug).toBe(
+      "dometic-rm8-cleaning-airflow-prep",
+    );
+    expect(lookupSymptomGuides(index, "dometic rm-8 clean refrigerator drain ventilation grille")[0]?.slug).toBe(
+      "dometic-rm8-cleaning-airflow-prep",
+    );
+    expect(lookupSymptomGuides(index, "dometic rm8 defrost ice heat source")[0]?.slug).toBe(
+      "dometic-rm8-defrost-ice-buildup-prep",
+    );
+    expect(lookupSymptomGuides(index, "dometic rm 8 defrost ice heat source")[0]?.slug).toBe(
+      "dometic-rm8-defrost-ice-buildup-prep",
+    );
+    expect(lookupSymptomGuides(index, "rm8 low outside temperature winter cover snow leaves")[0]?.slug).toBe(
+      "dometic-rm8-low-outside-temperature-winter-cover-prep",
+    );
+    expect(lookupSymptomGuides(index, "rm8 operating controls turn off battery igniter mes aes led display")[0]?.slug).toBe(
+      "dometic-rm8-operating-controls-shutdown-prep",
+    );
+    expect(lookupSymptomGuides(index, "freshjet remote control modes cooling dehumidification battery")[0]?.slug).toBe(
+      "dometic-freshjet-remote-mode-control-prep",
+    );
+    expect(lookupSymptomGuides(index, "fresh jet remote control modes cooling dehumidification battery")[0]?.slug).toBe(
+      "dometic-freshjet-remote-mode-control-prep",
+    );
+    expect(lookupSymptomGuides(index, "fresh-jet remote control modes cooling dehumidification battery")[0]?.slug).toBe(
+      "dometic-freshjet-remote-mode-control-prep",
+    );
+    expect(lookupSymptomGuides(index, "thetford sanitation toilet warranty statement paperwork")[0]?.slug).toBe(
+      "thetford-sanitation-warranty-paperwork-prep",
+    );
+    expect(lookupSymptomGuides(index, "norcold refrigeration refrigerator warranty statement paperwork")[0]?.slug).toBe(
+      "norcold-refrigeration-warranty-paperwork-prep",
+    );
+    expect(lookupSymptomGuides(index, "coleman mach warranty claim model serial service completion paperwork")[0]?.slug).toBe(
+      "coleman-mach-claims-paperwork-prep",
+    );
+    expect(lookupSymptomGuides(index, "aqua hot warranty registration model serial purchase paperwork")[0]?.slug).toBe(
+      "aquahot-warranty-registration-paperwork-prep",
+    );
+    const colemanServiceCenterSlugs = lookupSymptomGuides(index, "coleman mach service center")
+      .slice(0, 5)
+      .map((symptom) => symptom.slug);
+    expect(colemanServiceCenterSlugs).toContain("coleman-mach-model-number-service-locator-prep");
+    expect(colemanServiceCenterSlugs).not.toContain("coleman-mach-claims-paperwork-prep");
+    expect(lookupSymptomGuides(index, "aqua hot no hot water")[0]?.slug).toBe(
+      "aquahot-250-p01-use-care-winterization-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "aqua hot no hot water").slice(0, 5).map((symptom) => symptom.slug)).not.toContain(
+      "aquahot-warranty-registration-paperwork-prep",
     );
     expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
   });

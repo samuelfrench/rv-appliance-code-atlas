@@ -326,11 +326,19 @@ export function lookupSymptomGuides(index: SymptomSearchIndexEntry[], query: str
 
   if (!terms.length) return index.slice(0, 8);
 
+  const requiredTermMatches = new Set(terms);
+  for (let index = 0; index < terms.length - 1; index += 1) {
+    requiredTermMatches.add(`${terms[index]}${terms[index + 1]}`);
+  }
+
   const phrase = terms.join(" ");
 
   return index
     .map((symptom) => {
-      if (symptom.searchRequiredTokens.size && !terms.some((term) => symptom.searchRequiredTokens.has(term))) {
+      if (
+        symptom.searchRequiredTokens.size &&
+        !Array.from(symptom.searchRequiredTokens).some((term) => requiredTermMatches.has(term))
+      ) {
         return { symptom, score: 0 };
       }
       const matchedTerms = terms.filter((term) => symptom.searchTokens.has(term) || symptom.searchText.includes(term));

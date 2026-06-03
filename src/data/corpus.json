@@ -3505,6 +3505,94 @@
       "url": "https://support.lci1.com/documents/w-007-furrion-comfort-production-label-information",
       "type": "manufacturer-support",
       "official": true
+    },
+    {
+      "id": "dometic-rm8-clean-refrigerator-support",
+      "brand": "Dometic",
+      "title": "Dometic RM8 How To Clean The Refrigerator Support",
+      "url": "https://support.dometic.com/en/rm8-refrigerators/How-to-clean-the-refrigerator-1256",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm8-defrost-refrigerator-support",
+      "brand": "Dometic",
+      "title": "Dometic RM8 How To Defrost The Refrigerator Support",
+      "url": "https://support.dometic.com/en/rm8-refrigerators/How-to-defrost-the-refrigerator-9568",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm8-low-outside-temperature-support",
+      "brand": "Dometic",
+      "title": "Dometic RM8 Low Outside Temperature Operation Support",
+      "url": "https://support.dometic.com/en/rm8-refrigerators/How-to-operate-the-refrigerator-during-low-outside-temperatures-b099",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm8-operating-controls-support",
+      "brand": "Dometic",
+      "title": "Dometic RM8 Operating Controls Support",
+      "url": "https://support.dometic.com/en/rm8-refrigerators/What-do-the-operating-controls-mean-3981",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm8-turn-off-support",
+      "brand": "Dometic",
+      "title": "Dometic RM8 Turn Off Refrigerator Support",
+      "url": "https://support.dometic.com/en/rm8-refrigerators/How-to-turn-off-the-refrigerator-54f2",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-freshjet-remote-control-support",
+      "brand": "Dometic",
+      "title": "Dometic FreshJet Remote Control Support",
+      "url": "https://support.dometic.com/en/freshjet-ac/How-to-Use-the-remote-control-e323",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-freshjet-ac-modes-support",
+      "brand": "Dometic",
+      "title": "Dometic FreshJet Air Conditioner Modes Support",
+      "url": "https://support.dometic.com/en/freshjet-ac/What-air-conditioner-modes-are-available-for-my-product-fff3",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-sanitation-warranty-statement",
+      "brand": "Thetford",
+      "title": "Thetford Sanitation Warranty Statement",
+      "url": "https://www.thetford.com/us/warranty-information/sanitation-warranty/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-refrigeration-warranty-statement",
+      "brand": "Norcold",
+      "title": "Norcold Refrigeration Warranty Statement",
+      "url": "https://www.thetford.com/us/warranty-information/refrigeration-warranty/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "coleman-mach-claims-paperwork",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Warranty Claims Paperwork",
+      "url": "https://coleman-mach.com/service-support/claims/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "aquahot-warranty-registration",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot Warranty Registration",
+      "url": "https://www.aquahot.com/service-help/warranty-registration.aspx",
+      "type": "manufacturer-support",
+      "official": true
     }
   ],
   "entries": [
@@ -35333,6 +35421,226 @@
       ]
     },
     {
+      "id": "dometic-rm8-cleaning-airflow-prep",
+      "slug": "dometic-rm8-cleaning-airflow-prep",
+      "title": "Dometic RM8 cleaning, drain, and airflow prep",
+      "summary": "Use Dometic's RM8 cleaning support page to prepare owner-safe refrigerator cleaning, drain-channel, and ventilation-grille notes before service.",
+      "safeChecklist": [
+        "Record the RM8 model family, exact refrigerator behavior, recent cleaning date, visible frost, odor, and whether airflow grilles are blocked.",
+        "Keep the condensation-water drain channel free of deposits and keep ventilation grilles clear from normal owner access.",
+        "Use only the cleaning approach allowed by the RM8 support page and owner manual; avoid abrasive products or forced scraping.",
+        "Call qualified service if cleaning and normal airflow checks do not restore operation or if any ammonia smell, gas smell, or repeated cooling symptom appears."
+      ],
+      "sourceIds": [
+        "dometic-rm8-clean-refrigerator-support"
+      ],
+      "searchAliases": [
+        "dometic rm8 clean refrigerator drain ventilation grille",
+        "rm8 refrigerator cleaning airflow prep",
+        "rm8 condensation drain channel cleaning",
+        "rm8 clean ventilation grilles"
+      ],
+      "searchRequiredTerms": [
+        "rm8"
+      ]
+    },
+    {
+      "id": "dometic-rm8-defrost-ice-buildup-prep",
+      "slug": "dometic-rm8-defrost-ice-buildup-prep",
+      "title": "Dometic RM8 defrost and ice-buildup prep",
+      "summary": "Use Dometic's RM8 defrost support page to document frost, ice buildup, and defrost timing before service.",
+      "safeChecklist": [
+        "Record whether frost is on the evaporator, freezer compartment, door seal area, or after a long humid cooling run.",
+        "Shut the refrigerator down for normal defrosting when the manual calls for it and protect nearby surfaces from meltwater.",
+        "Do not force ice loose or accelerate defrosting with a heat source.",
+        "Call qualified service if ice returns quickly, the door will not seal, ammonia odor appears, or cooling remains poor after normal defrosting."
+      ],
+      "sourceIds": [
+        "dometic-rm8-defrost-refrigerator-support"
+      ],
+      "searchAliases": [
+        "dometic rm8 defrost ice heat source",
+        "rm8 defrost ice buildup prep",
+        "rm8 evaporator ice defrost",
+        "rm8 refrigerator frost defrost"
+      ],
+      "searchRequiredTerms": [
+        "rm8"
+      ]
+    },
+    {
+      "id": "dometic-rm8-low-outside-temperature-winter-cover-prep",
+      "slug": "dometic-rm8-low-outside-temperature-winter-cover-prep",
+      "title": "Dometic RM8 low outside temperature and winter-cover prep",
+      "summary": "Use Dometic's RM8 low-outside-temperature support page to prepare cold-weather operation and winter-cover notes.",
+      "safeChecklist": [
+        "Record outside temperature, snow or leaf exposure around the vents, current energy source, and whether winter covers are fitted.",
+        "Follow the RM8 support page and owner manual for when winter covers are appropriate in low outside temperatures.",
+        "Keep exterior vents clear of snow, leaves, and debris from normal safe access.",
+        "Call qualified service if the refrigerator will not maintain temperature after normal cold-weather setup or if any gas, ammonia, or electrical symptom appears."
+      ],
+      "sourceIds": [
+        "dometic-rm8-low-outside-temperature-support"
+      ],
+      "searchAliases": [
+        "rm8 low outside temperature winter cover snow leaves",
+        "dometic rm8 winter cover low ambient",
+        "rm8 refrigerator cold weather operation",
+        "rm8 winter cover prep"
+      ],
+      "searchRequiredTerms": [
+        "rm8"
+      ]
+    },
+    {
+      "id": "dometic-rm8-operating-controls-shutdown-prep",
+      "slug": "dometic-rm8-operating-controls-shutdown-prep",
+      "title": "Dometic RM8 operating controls and shutdown prep",
+      "summary": "Use Dometic's RM8 controls and turn-off support pages to identify control type, selected mode, display state, and shutdown behavior.",
+      "safeChecklist": [
+        "Record which RM8 control type is installed, including MES, AES, battery igniter, selector knobs, LEDs, or display symbols visible from normal operation.",
+        "Record selected energy source, temperature setting, whether the refrigerator was turned off normally, and whether the display or indicator changed.",
+        "Use the official turn-off procedure before storage, cleaning, defrosting, or service paperwork prep.",
+        "Call qualified service for repeated lockouts, failed ignition, abnormal odor, or any condition that does not match normal owner control behavior."
+      ],
+      "sourceIds": [
+        "dometic-rm8-operating-controls-support",
+        "dometic-rm8-turn-off-support"
+      ],
+      "searchAliases": [
+        "rm8 operating controls turn off battery igniter mes aes led display",
+        "dometic rm8 controls meaning",
+        "rm8 turn off refrigerator",
+        "rm8 aes mes control behavior"
+      ],
+      "searchRequiredTerms": [
+        "rm8"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-remote-mode-control-prep",
+      "slug": "dometic-freshjet-remote-mode-control-prep",
+      "title": "Dometic FreshJet remote and mode-control prep",
+      "summary": "Use Dometic's FreshJet remote-control and mode support pages to prepare control-behavior notes before service.",
+      "safeChecklist": [
+        "Record remote display state, battery status, selected mode, fan speed, and set temperature.",
+        "Confirm whether the FreshJet is in cooling, heating, dehumidification, fan, or automatic mode before assuming a fault.",
+        "Keep the remote pointed at the unit from normal use position and record whether the unit responds to mode or temperature changes.",
+        "Call qualified service if normal remote and mode checks do not explain the behavior, or if water entry, repeated shutdown, or electrical symptoms appear."
+      ],
+      "sourceIds": [
+        "dometic-freshjet-remote-control-support",
+        "dometic-freshjet-ac-modes-support"
+      ],
+      "searchAliases": [
+        "freshjet remote control modes cooling dehumidification battery",
+        "dometic freshjet remote mode control prep",
+        "freshjet air conditioner modes",
+        "freshjet remote battery mode fan speed"
+      ],
+      "searchRequiredTerms": [
+        "freshjet"
+      ]
+    },
+    {
+      "id": "thetford-sanitation-warranty-paperwork-prep",
+      "slug": "thetford-sanitation-warranty-paperwork-prep",
+      "title": "Thetford sanitation warranty-paperwork prep",
+      "summary": "Use Thetford's official sanitation warranty page to prepare toilet or sanitation-system warranty paperwork without treating paperwork as repair approval.",
+      "safeChecklist": [
+        "Record the Thetford toilet or sanitation product name, model, serial details, RV make/model, purchase date, and symptom history.",
+        "Keep photos, receipts, registration notes, and service records together before contacting Thetford, the dealer, or authorized service.",
+        "Do not treat warranty paperwork as authorization to keep using a leaking, freeze-damaged, or unsafe sanitation product.",
+        "Use dealer or authorized service routing for leaks, cracked parts, repeated flush issues, or any work beyond normal owner cleaning and operation."
+      ],
+      "sourceIds": [
+        "thetford-sanitation-warranty-statement"
+      ],
+      "searchAliases": [
+        "thetford sanitation toilet warranty statement paperwork",
+        "thetford sanitation warranty paperwork",
+        "thetford toilet warranty statement",
+        "thetford sanitation warranty prep"
+      ],
+      "searchRequiredTerms": [
+        "thetford"
+      ]
+    },
+    {
+      "id": "norcold-refrigeration-warranty-paperwork-prep",
+      "slug": "norcold-refrigeration-warranty-paperwork-prep",
+      "title": "Norcold refrigeration warranty-paperwork prep",
+      "summary": "Use Norcold's official refrigeration warranty page to prepare refrigerator warranty paperwork, model details, and symptom history.",
+      "safeChecklist": [
+        "Record Norcold refrigerator model, serial, purchase date, RV make/model, operating mode, displayed code, and exact cooling symptom.",
+        "Keep photos, receipts, registration notes, and prior service records together before contacting Norcold, the dealer, or authorized service.",
+        "Shut the refrigerator down and call qualified service for ammonia odor, gas odor, high-temperature sensor warnings, or repeated lockouts.",
+        "Do not treat warranty paperwork as warranty approval or as permission to continue operating an unsafe refrigerator."
+      ],
+      "sourceIds": [
+        "norcold-refrigeration-warranty-statement"
+      ],
+      "searchAliases": [
+        "norcold refrigeration refrigerator warranty statement paperwork",
+        "norcold refrigeration warranty paperwork",
+        "norcold refrigerator warranty statement",
+        "norcold warranty prep model serial"
+      ],
+      "searchRequiredTerms": [
+        "norcold"
+      ]
+    },
+    {
+      "id": "coleman-mach-claims-paperwork-prep",
+      "slug": "coleman-mach-claims-paperwork-prep",
+      "title": "Coleman-Mach claims paperwork prep",
+      "summary": "Use Coleman-Mach's official claims page to prepare RV air-conditioner or thermostat warranty claim forms and completion records.",
+      "safeChecklist": [
+        "Record Coleman-Mach model number, serial number, RV make/model, symptom, date of service, and service-provider notes.",
+        "Keep photos, receipts, claim forms, and completion paperwork together before contacting Coleman-Mach.",
+        "Do not treat claim paperwork as warranty approval.",
+        "Keep AC diagnosis, sealed-system work, power-related issues, and repeated trips or lockouts with qualified Coleman-Mach service."
+      ],
+      "sourceIds": [
+        "coleman-mach-claims-paperwork"
+      ],
+      "searchAliases": [
+        "coleman mach warranty claim model serial completion paperwork",
+        "coleman mach claims paperwork",
+        "coleman-mach warranty claim prep",
+        "coleman mach claim form completion paperwork"
+      ],
+      "searchRequiredTerms": [
+        "coleman",
+        "mach"
+      ]
+    },
+    {
+      "id": "aquahot-warranty-registration-paperwork-prep",
+      "slug": "aquahot-warranty-registration-paperwork-prep",
+      "title": "Aqua-Hot warranty-registration paperwork prep",
+      "summary": "Use Aqua-Hot's official warranty-registration page to prepare hydronic-heater model, serial, purchase, and owner-registration paperwork.",
+      "safeChecklist": [
+        "Record Aqua-Hot model, serial number, purchase date, RV make/model, owner contact details, and registration context.",
+        "Keep receipts, registration confirmation, photos, and prior owner or service records together before contacting Aqua-Hot.",
+        "Do not post serial, VIN, or purchase paperwork publicly.",
+        "Keep heating-system, fluid, combustion, circulation, and power-related service decisions with qualified Aqua-Hot service."
+      ],
+      "sourceIds": [
+        "aquahot-warranty-registration"
+      ],
+      "searchAliases": [
+        "aqua hot warranty registration model serial purchase paperwork",
+        "aquahot warranty registration paperwork",
+        "aqua-hot warranty registration prep",
+        "aqua hot model serial warranty"
+      ],
+      "searchRequiredTerms": [
+        "aqua",
+        "aquahot"
+      ]
+    },
+    {
       "id": "service-call-prep",
       "slug": "rv-appliance-service-call-checklist",
       "title": "Pre-service checklist for RV appliance calls",
@@ -35524,7 +35832,18 @@
         "dometic-warranty-dealer-store-claim",
         "dometic-300-310-320-gravity-flush-toilet-manual",
         "thetford-warranty-product-registration",
-        "thetford-north-america-support-product-finder"
+        "thetford-north-america-support-product-finder",
+        "dometic-rm8-clean-refrigerator-support",
+        "dometic-rm8-defrost-refrigerator-support",
+        "dometic-rm8-low-outside-temperature-support",
+        "dometic-rm8-operating-controls-support",
+        "dometic-rm8-turn-off-support",
+        "dometic-freshjet-remote-control-support",
+        "dometic-freshjet-ac-modes-support",
+        "thetford-sanitation-warranty-statement",
+        "norcold-refrigeration-warranty-statement",
+        "coleman-mach-claims-paperwork",
+        "aquahot-warranty-registration"
       ]
     },
     {

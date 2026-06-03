@@ -1227,6 +1227,77 @@ test("lookup surfaces Cummins Energy Command AGS status and app support pages", 
   expect(pageErrors).toEqual([]);
 });
 
+test("lookup surfaces official owner-safe RM8, FreshJet, warranty, claims, and registration prep pages", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    ["dometic rm8 clean refrigerator drain ventilation grille", "/symptoms/dometic-rm8-cleaning-airflow-prep/"],
+    ["dometic rm-8 clean refrigerator drain ventilation grille", "/symptoms/dometic-rm8-cleaning-airflow-prep/"],
+    ["dometic rm8 defrost ice heat source", "/symptoms/dometic-rm8-defrost-ice-buildup-prep/"],
+    ["dometic rm 8 defrost ice heat source", "/symptoms/dometic-rm8-defrost-ice-buildup-prep/"],
+    ["rm8 low outside temperature winter cover snow leaves", "/symptoms/dometic-rm8-low-outside-temperature-winter-cover-prep/"],
+    [
+      "rm8 operating controls turn off battery igniter mes aes led display",
+      "/symptoms/dometic-rm8-operating-controls-shutdown-prep/",
+    ],
+    ["freshjet remote control modes cooling dehumidification battery", "/symptoms/dometic-freshjet-remote-mode-control-prep/"],
+    ["fresh jet remote control modes cooling dehumidification battery", "/symptoms/dometic-freshjet-remote-mode-control-prep/"],
+    ["thetford sanitation toilet warranty statement paperwork", "/symptoms/thetford-sanitation-warranty-paperwork-prep/"],
+    ["norcold refrigeration refrigerator warranty statement paperwork", "/symptoms/norcold-refrigeration-warranty-paperwork-prep/"],
+    ["coleman mach warranty claim model serial service completion paperwork", "/symptoms/coleman-mach-claims-paperwork-prep/"],
+    ["aqua hot warranty registration model serial purchase paperwork", "/symptoms/aquahot-warranty-registration-paperwork-prep/"],
+  ] as const;
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+  }
+
+  async function openGuide(query: string, href: string) {
+    await page.goto("/");
+    await page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" }).fill(query);
+    const link = page.locator('section[aria-label="Lookup results"]').locator(`a[href="${href}"]`);
+    await expect(link).toBeVisible();
+    await link.click();
+  }
+
+  await openGuide("dometic rm8 clean refrigerator drain ventilation grille", "/symptoms/dometic-rm8-cleaning-airflow-prep/");
+  await expect(page.getByRole("heading", { name: "Dometic RM8 cleaning, drain, and airflow prep" })).toBeVisible();
+  await expect(page.getByText(/Keep the condensation-water drain channel free of deposits/i)).toBeVisible();
+
+  await openGuide("dometic rm8 defrost ice heat source", "/symptoms/dometic-rm8-defrost-ice-buildup-prep/");
+  await expect(page.getByRole("heading", { name: "Dometic RM8 defrost and ice-buildup prep" })).toBeVisible();
+  await expect(page.getByText(/Do not force ice loose or accelerate defrosting with a heat source/i)).toBeVisible();
+
+  await openGuide("rm8 operating controls turn off battery igniter mes aes led display", "/symptoms/dometic-rm8-operating-controls-shutdown-prep/");
+  await expect(page.getByRole("heading", { name: "Dometic RM8 operating controls and shutdown prep" })).toBeVisible();
+  await expect(page.getByText(/Record which RM8 control type is installed/i)).toBeVisible();
+
+  await openGuide("freshjet remote control modes cooling dehumidification battery", "/symptoms/dometic-freshjet-remote-mode-control-prep/");
+  await expect(page.getByRole("heading", { name: "Dometic FreshJet remote and mode-control prep" })).toBeVisible();
+  await expect(page.getByText(/Record remote display state, battery status, selected mode, fan speed, and set temperature/i)).toBeVisible();
+
+  await openGuide("coleman mach warranty claim model serial service completion paperwork", "/symptoms/coleman-mach-claims-paperwork-prep/");
+  await expect(page.getByRole("heading", { name: "Coleman-Mach claims paperwork prep" })).toBeVisible();
+  await expect(page.getByText(/Do not treat claim paperwork as warranty approval/i)).toBeVisible();
+
+  await openGuide("aqua hot warranty registration model serial purchase paperwork", "/symptoms/aquahot-warranty-registration-paperwork-prep/");
+  await expect(page.getByRole("heading", { name: "Aqua-Hot warranty-registration paperwork prep" })).toBeVisible();
+  await expect(page.getByText(/Do not post serial, VIN, or purchase paperwork publicly/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 
