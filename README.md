@@ -102,9 +102,9 @@ npm run traffic:monitor
 
 Current corpus:
 - `850` verified entries
-- `235` symptom guides
-- `392` official sources
-- `1086` generated indexable pages
+- `238` symptom guides
+- `398` official sources
+- `1089` generated indexable pages
 
 Next automated batch goal:
-- Continue remaining post-Coleman official support-row triage by traffic potential, moving into Suburban/Airxcel and Cummins pages; add only owner-safe non-duplicate source wiring or guides and keep service-only rows rejected except model or service-call prep.
+- Triage accepted Suburban model/service-locator plus Airxcel MaxxAir/Aqua-Hot official candidates; add only owner-safe model-label, control-behavior, or service-prep guides and reject installer-only roof, propane, hydronic, wiring, or line-voltage steps.

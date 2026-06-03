@@ -1803,6 +1803,54 @@
       "official": true
     },
     {
+      "id": "onan-rv-commercial-mobile-accessory-catalog-0080258",
+      "brand": "Onan",
+      "title": "Cummins Onan RV & Commercial Mobile Generator Accessory Catalog 6646901",
+      "url": "https://mart.cummins.com/imagelibrary/data/assetfiles/0080258.pdf",
+      "type": "manufacturer-catalog",
+      "official": true
+    },
+    {
+      "id": "onan-generator-winterization-flyer-5410842",
+      "brand": "Onan",
+      "title": "Cummins Onan RV Generator Winterization Flyer 5410842",
+      "url": "https://mart.cummins.com/imagelibrary/data/assetfiles/0042882.pdf",
+      "type": "manufacturer-guide",
+      "official": true
+    },
+    {
+      "id": "onan-qg-4000-spec-sheet",
+      "brand": "Onan",
+      "title": "Cummins Onan RV QG 4000 Spec Sheet",
+      "url": "https://cssna-ec.cummins.com/pub/RVGenerator_QG%204000_SpecSheet.PDF",
+      "type": "manufacturer-spec-sheet",
+      "official": true
+    },
+    {
+      "id": "onan-qg-5500-spec-sheet",
+      "brand": "Onan",
+      "title": "Cummins Onan RV QG 5500 Spec Sheet",
+      "url": "https://cssna-ec.cummins.com/pub/RVGenerator_QG%205500_SpecSheet.PDF",
+      "type": "manufacturer-spec-sheet",
+      "official": true
+    },
+    {
+      "id": "onan-qg-7000-6500-spec-sheet",
+      "brand": "Onan",
+      "title": "Cummins Onan RV QG 7000/6500 Spec Sheet",
+      "url": "https://cssna-ec.cummins.com/pub/RVGenerator_QG%207000_6500_SpecSheet.PDF",
+      "type": "manufacturer-spec-sheet",
+      "official": true
+    },
+    {
+      "id": "onan-qg-7000idf-commercial-spec-sheet-2026",
+      "brand": "Onan",
+      "title": "Cummins Commercial Mobile Onan QG 7000i DF Spec Sheet",
+      "url": "https://www.cummins.com/sites/default/files/2026-01/qg-7000idf-commercial-spec-sheet.pdf",
+      "type": "manufacturer-spec-sheet",
+      "official": true
+    },
+    {
       "id": "onan-energy-command-30-900-0541b",
       "brand": "Onan",
       "title": "Cummins Onan Energy Command 30 Operation and Installation Manual 900-0541B",
@@ -34116,7 +34164,9 @@
         "onan-hgjbb-a031c171",
         "onan-hgjaa-a035d009",
         "onan-generator-quick-start",
-        "onan-rv-generator-service-faq"
+        "onan-rv-generator-service-faq",
+        "onan-generator-winterization-flyer-5410842",
+        "onan-rv-commercial-mobile-accessory-catalog-0080258"
       ]
     },
     {
@@ -34133,7 +34183,8 @@
       "sourceIds": [
         "onan-generator-quick-start",
         "onan-rv-generator-service-faq",
-        "onan-rv-generator-handbook"
+        "onan-rv-generator-handbook",
+        "onan-generator-winterization-flyer-5410842"
       ],
       "searchAliases": [
         "onan no start wait 2 minutes overcrank",
@@ -34156,7 +34207,11 @@
         "onan-generator-quick-start",
         "onan-rv-generator-service-faq",
         "onan-rv-generator-power-basics",
-        "onan-rv-generator-handbook"
+        "onan-rv-generator-handbook",
+        "onan-qg-4000-spec-sheet",
+        "onan-qg-5500-spec-sheet",
+        "onan-qg-7000-6500-spec-sheet",
+        "onan-qg-7000idf-commercial-spec-sheet-2026"
       ],
       "searchAliases": [
         "onan no output breaker too many appliances",
@@ -34177,7 +34232,11 @@
       ],
       "sourceIds": [
         "onan-generator-quick-start",
-        "onan-rv-generator-handbook"
+        "onan-rv-generator-handbook",
+        "onan-qg-4000-spec-sheet",
+        "onan-qg-5500-spec-sheet",
+        "onan-qg-7000-6500-spec-sheet",
+        "onan-qg-7000idf-commercial-spec-sheet-2026"
       ],
       "searchAliases": [
         "onan high altitude 3.5 percent fewer appliances",
@@ -34199,7 +34258,8 @@
       "sourceIds": [
         "onan-generator-quick-start",
         "onan-rv-generator-service-faq",
-        "onan-rv-generator-handbook"
+        "onan-rv-generator-handbook",
+        "onan-generator-winterization-flyer-5410842"
       ],
       "searchAliases": [
         "onan oil fuel air cleaner dusty 150 hours",
@@ -34247,6 +34307,77 @@
         "onan low battery slow cranking 600 cold cranking amps",
         "cummins onan generator low battery terminals",
         "onan qd low battery display cranks slow"
+      ]
+    },
+    {
+      "id": "onan-generator-storage-winterization-no-start-service-prep",
+      "slug": "onan-generator-storage-winterization-no-start-service-prep",
+      "title": "Onan generator storage, winterization, or no-start after sitting",
+      "summary": "Use this when an Onan generator will not start after storage, winterization, or sitting through cold weather; the official Cummins flyer and support pages point owners to record last run, fuel condition, hour meter, model/spec, and service history before service.",
+      "safeChecklist": [
+        "Turn the generator off and do not keep repeating start attempts after repeated no-start or fault flashes.",
+        "Record storage or winterization dates, last successful run, fuel age, hour meter, model/spec, and serial information.",
+        "Use only the normal owner manual and support guidance for exercise or maintenance that applies to the installed model.",
+        "Call qualified Cummins Onan service for stale-fuel symptoms, repeated no-start after storage, leaks, exhaust odor, or fault codes that return."
+      ],
+      "sourceIds": [
+        "onan-generator-winterization-flyer-5410842",
+        "onan-generator-quick-start",
+        "onan-rv-generator-service-faq"
+      ],
+      "searchAliases": [
+        "onan winterization flyer no start after storage stale fuel",
+        "cummins onan generator storage winterization no start",
+        "onan generator sat all winter will not start service prep",
+        "onan generator stale fuel last run model serial"
+      ]
+    },
+    {
+      "id": "onan-generator-remote-panel-accessory-part-service-prep",
+      "slug": "onan-generator-remote-panel-accessory-part-service-prep",
+      "title": "Onan generator remote panel, display, or accessory part service prep",
+      "summary": "Cummins Onan accessory catalog and manual index help owners identify remote panels, displays, accessories, and part numbers before a qualified service call.",
+      "safeChecklist": [
+        "Photograph the generator model/spec label, remote panel or display face, and any accessible accessory part number.",
+        "Record the symptom at the switch or display, whether the generator starts locally, and the RV make/model.",
+        "Share photos and part numbers with Cummins Onan or a qualified generator shop before ordering parts.",
+        "Use qualified service for accessory replacement, remote-control work, or repeated display/control symptoms."
+      ],
+      "sourceIds": [
+        "onan-rv-commercial-mobile-accessory-catalog-0080258",
+        "onan-rv-manual-index"
+      ],
+      "searchAliases": [
+        "onan remote panel display accessory catalog 6646901 part number",
+        "cummins onan accessory catalog remote switch display part number",
+        "onan generator remote start panel part service prep",
+        "onan generator accessory model spec part number"
+      ]
+    },
+    {
+      "id": "onan-qg-load-rating-model-spec-service-prep",
+      "slug": "onan-qg-load-rating-model-spec-service-prep",
+      "title": "Onan QG 4000/5500/7000 load rating and model-spec service prep",
+      "summary": "Use the QG 4000, QG 5500, QG 7000/6500, and QG 7000i DF spec sheets with Cummins power-basics guidance to compare rated watts, fuel variant, altitude or temperature derating, and expected appliance loads before service.",
+      "safeChecklist": [
+        "Record exact model/spec, fuel type, rated watts, ambient temperature, elevation, and connected appliances before the service call.",
+        "Turn off air conditioners, electric heat, and other large loads, then compare owner-visible load behavior against the generator rating.",
+        "If a generator trips, stalls, or faults under a light load, leave it off and call qualified generator service.",
+        "Use the spec sheets only for model and load expectations; do not treat them as a repair procedure."
+      ],
+      "sourceIds": [
+        "onan-qg-4000-spec-sheet",
+        "onan-qg-5500-spec-sheet",
+        "onan-qg-7000-6500-spec-sheet",
+        "onan-qg-7000idf-commercial-spec-sheet-2026",
+        "onan-rv-generator-power-basics",
+        "onan-rv-generator-handbook"
+      ],
+      "searchAliases": [
+        "onan qg 5500 will run one or two air conditioners load rating",
+        "onan qg 7000idf dual fuel low oil shutdown derating prep",
+        "cummins onan qg 4000 spec sheet rated watts altitude temperature",
+        "onan qg 7000 6500 gasoline lp model spec service prep"
       ]
     },
     {
@@ -34534,7 +34665,13 @@
         "furrion-cooking-production-label-w008",
         "furrion-gas-cooking-warranty-request-w014",
         "furrion-energy-production-label-w010",
-        "furrion-furnace-blower-no-ignition-video"
+        "furrion-furnace-blower-no-ignition-video",
+        "onan-rv-commercial-mobile-accessory-catalog-0080258",
+        "onan-generator-winterization-flyer-5410842",
+        "onan-qg-4000-spec-sheet",
+        "onan-qg-5500-spec-sheet",
+        "onan-qg-7000-6500-spec-sheet",
+        "onan-qg-7000idf-commercial-spec-sheet-2026"
       ]
     },
     {

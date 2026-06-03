@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 850;
-const expectedSourceCount = 392;
-const expectedSymptomCount = 235;
+const expectedSourceCount = 398;
+const expectedSymptomCount = 238;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -507,6 +507,23 @@ describe("verified corpus", () => {
     );
     expect(lookupSymptomGuides(index, "ecags generator starts unexpectedly quiet time house battery start voltage")[0]?.slug).toBe(
       "onan-ec-ags-plus-unexpected-start-stop",
+    );
+  });
+
+  it("finds Cummins Onan spec-sheet and winterization service-prep pages from owner searches", () => {
+    const index = buildSymptomSearchIndex(corpus);
+
+    expect(lookupSymptomGuides(index, "onan winterization flyer no start after storage stale fuel")[0]?.slug).toBe(
+      "onan-generator-storage-winterization-no-start-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "onan remote panel display accessory catalog 6646901 part number")[0]?.slug).toBe(
+      "onan-generator-remote-panel-accessory-part-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "onan qg 5500 will run one or two air conditioners load rating")[0]?.slug).toBe(
+      "onan-qg-load-rating-model-spec-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "onan qg 7000idf dual fuel low oil shutdown derating prep")[0]?.slug).toBe(
+      "onan-qg-load-rating-model-spec-service-prep",
     );
   });
 
@@ -3071,6 +3088,101 @@ describe("verified corpus", () => {
     expect(symptomById.get("low-voltage")?.sourceIds).toEqual(expect.arrayContaining(["onan-generator-quick-start", "onan-rv-generator-handbook"]));
     expect(symptomById.get("airflow-or-venting")?.sourceIds).toEqual(
       expect.arrayContaining(["onan-generator-quick-start", "onan-rv-generator-handbook"]),
+    );
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds official Cummins Onan spec-sheet, accessory, and winterization prep sources without inventing code entries", () => {
+    const expectedSources = new Map([
+      [
+        "onan-rv-commercial-mobile-accessory-catalog-0080258",
+        "https://mart.cummins.com/imagelibrary/data/assetfiles/0080258.pdf",
+      ],
+      ["onan-generator-winterization-flyer-5410842", "https://mart.cummins.com/imagelibrary/data/assetfiles/0042882.pdf"],
+      ["onan-qg-4000-spec-sheet", "https://cssna-ec.cummins.com/pub/RVGenerator_QG%204000_SpecSheet.PDF"],
+      ["onan-qg-5500-spec-sheet", "https://cssna-ec.cummins.com/pub/RVGenerator_QG%205500_SpecSheet.PDF"],
+      ["onan-qg-7000-6500-spec-sheet", "https://cssna-ec.cummins.com/pub/RVGenerator_QG%207000_6500_SpecSheet.PDF"],
+      [
+        "onan-qg-7000idf-commercial-spec-sheet-2026",
+        "https://www.cummins.com/sites/default/files/2026-01/qg-7000idf-commercial-spec-sheet.pdf",
+      ],
+    ]);
+    const expectedSymptomSourceIds = new Map<string, string[]>([
+      [
+        "onan-generator-storage-winterization-no-start-service-prep",
+        ["onan-generator-winterization-flyer-5410842", "onan-generator-quick-start", "onan-rv-generator-service-faq"],
+      ],
+      [
+        "onan-generator-remote-panel-accessory-part-service-prep",
+        ["onan-rv-commercial-mobile-accessory-catalog-0080258", "onan-rv-manual-index"],
+      ],
+      [
+        "onan-qg-load-rating-model-spec-service-prep",
+        [
+          "onan-qg-4000-spec-sheet",
+          "onan-qg-5500-spec-sheet",
+          "onan-qg-7000-6500-spec-sheet",
+          "onan-qg-7000idf-commercial-spec-sheet-2026",
+          "onan-rv-generator-power-basics",
+          "onan-rv-generator-handbook",
+        ],
+      ],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const sourcesById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\brefrigerant\b|\bprobe\b|\bopen (the )?(fuel|gas|electrical)|fuel line|wiring|voltage testing|install.*kit|remove.*cover|measure resistance|harness testing/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = sourcesById.get(sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const [symptomId, sourceIds] of expectedSymptomSourceIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds, symptomId).toEqual(sourceIds);
+      expect([symptom?.summary, ...(symptom?.safeChecklist ?? [])].join(" "), symptomId).not.toMatch(
+        unsafeOwnerActionPattern,
+      );
+    }
+
+    expect(symptomById.get("onan-generator-storage-winterization-no-start-service-prep")?.safeChecklist.join(" ")).toMatch(
+      /storage|winterization|last run|qualified|model|serial/i,
+    );
+    expect(symptomById.get("onan-generator-remote-panel-accessory-part-service-prep")?.safeChecklist.join(" ")).toMatch(
+      /remote panel|display|accessory|part number|qualified/i,
+    );
+    expect(symptomById.get("onan-qg-load-rating-model-spec-service-prep")?.safeChecklist.join(" ")).toMatch(
+      /rated watts|load|altitude|temperature|qualified/i,
+    );
+
+    expect(symptomById.get("onan-generator-no-start-cranking-delay")?.sourceIds).toContain(
+      "onan-generator-winterization-flyer-5410842",
+    );
+    expect(symptomById.get("onan-generator-fuel-oil-maintenance-before-start")?.sourceIds).toContain(
+      "onan-generator-winterization-flyer-5410842",
+    );
+    expect(symptomById.get("onan-generator-no-output-breaker-load-management")?.sourceIds).toEqual(
+      expect.arrayContaining(["onan-qg-4000-spec-sheet", "onan-qg-5500-spec-sheet", "onan-qg-7000-6500-spec-sheet"]),
+    );
+    expect(symptomById.get("onan-generator-altitude-derating-fewer-appliances")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "onan-qg-4000-spec-sheet",
+        "onan-qg-5500-spec-sheet",
+        "onan-qg-7000-6500-spec-sheet",
+        "onan-qg-7000idf-commercial-spec-sheet-2026",
+      ]),
+    );
+    expect(symptomById.get("generator-stopped")?.sourceIds).toEqual(
+      expect.arrayContaining(["onan-generator-winterization-flyer-5410842", "onan-rv-commercial-mobile-accessory-catalog-0080258"]),
     );
     expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
   });

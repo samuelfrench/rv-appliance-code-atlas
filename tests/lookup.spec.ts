@@ -911,6 +911,56 @@ test("lookup surfaces Cummins Onan generator symptom support pages", async ({ pa
   await expect(lookupResults.locator('a[href="/symptoms/onan-generator-exhaust-co-shutdown-service/"]')).toBeVisible();
 });
 
+test("lookup surfaces Cummins Onan spec-sheet and winterization service-prep pages", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("onan winterization flyer no start after storage stale fuel");
+  const winterPrep = lookupResults.locator(
+    'a[href="/symptoms/onan-generator-storage-winterization-no-start-service-prep/"]',
+  );
+  await expect(winterPrep).toBeVisible();
+
+  await searchbox.fill("onan remote panel display accessory catalog 6646901 part number");
+  const accessoryPrep = lookupResults.locator(
+    'a[href="/symptoms/onan-generator-remote-panel-accessory-part-service-prep/"]',
+  );
+  await expect(accessoryPrep).toBeVisible();
+
+  await searchbox.fill("onan qg 5500 will run one or two air conditioners load rating");
+  const loadPrep = lookupResults.locator('a[href="/symptoms/onan-qg-load-rating-model-spec-service-prep/"]');
+  await expect(loadPrep).toBeVisible();
+
+  await searchbox.fill("onan qg 7000idf dual fuel low oil shutdown derating prep");
+  await expect(loadPrep).toBeVisible();
+
+  await searchbox.fill("onan winterization flyer no start after storage stale fuel");
+  await expect(winterPrep).toBeVisible();
+  await winterPrep.click();
+  await expect(page.getByRole("heading", { name: "Onan generator storage, winterization, or no-start after sitting" })).toBeVisible();
+  await expect(page.getByText(/storage or winterization/i)).toBeVisible();
+  await expect(page.getByText(/qualified Cummins Onan service/i)).toBeVisible();
+
+  await page.goto("/");
+  await searchbox.fill("onan qg 5500 will run one or two air conditioners load rating");
+  await loadPrep.click();
+  await expect(page.getByRole("heading", { name: "Onan QG 4000/5500/7000 load rating and model-spec service prep" })).toBeVisible();
+  await expect(page.getByText(/Record exact model\/spec, fuel type, rated watts/i)).toBeVisible();
+  await expect(page.getByText(/qualified generator service/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("lookup surfaces Cummins Energy Command AGS status and app support pages", async ({ page }) => {
   const consoleErrors: string[] = [];
   const pageErrors: string[] = [];
