@@ -1076,6 +1076,123 @@ test("lookup surfaces Airxcel family service-prep pages", async ({ page }) => {
   expect(pageErrors).toEqual([]);
 });
 
+test("lookup surfaces Dometic and Thetford owner-support pages", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("dometic refrigerator recall model serial service prep");
+  const recallPrep = lookupResults.locator(
+    'a[href="/symptoms/dometic-refrigerator-recall-model-serial-service-prep/"]',
+  );
+  await expect(recallPrep).toBeVisible();
+
+  await searchbox.fill("dometic product support form rv van refrigerator air conditioner");
+  const supportPrep = lookupResults.locator('a[href="/symptoms/dometic-product-support-form-routing-prep/"]');
+  await expect(supportPrep).toBeVisible();
+
+  await searchbox.fill("dometic product registration pnc serial invoice");
+  const productRegistrationPrep = lookupResults.locator(
+    'a[href="/symptoms/dometic-product-registration-paperwork-prep/"]',
+  );
+  await expect(productRegistrationPrep).toBeVisible();
+
+  await searchbox.fill("dometic authorized maintenance service provider locator");
+  const serviceFinderPrep = lookupResults.locator(
+    'a[href="/symptoms/dometic-authorized-maintenance-service-finder-prep/"]',
+  );
+  await expect(serviceFinderPrep).toBeVisible();
+
+  await searchbox.fill("dometic warranty dealer form traveling service");
+  const warrantyPrep = lookupResults.locator('a[href="/symptoms/dometic-warranty-claim-dealer-paperwork-prep/"]');
+  await expect(warrantyPrep).toBeVisible();
+
+  await searchbox.fill("dometic 310 toilet winterizing cleaning flush behavior");
+  const toiletPrep = lookupResults.locator(
+    'a[href="/symptoms/dometic-300-310-320-toilet-cleaning-winterizing-prep/"]',
+  );
+  await expect(toiletPrep).toBeVisible();
+
+  await searchbox.fill("thetford warranty registration norcold refrigerator serial purchase vin");
+  const registrationPrep = lookupResults.locator(
+    'a[href="/symptoms/thetford-norcold-warranty-registration-paperwork-prep/"]',
+  );
+  await expect(registrationPrep).toBeVisible();
+
+  await searchbox.fill("thetford support product finder norcold cassette rv sanitation");
+  const productFinderPrep = lookupResults.locator(
+    'a[href="/symptoms/thetford-norcold-support-product-finder-routing-prep/"]',
+  );
+  await expect(productFinderPrep).toBeVisible();
+
+  await searchbox.fill("dometic refrigerator recall model serial service prep");
+  await recallPrep.click();
+  await expect(page.getByRole("heading", { name: "Dometic refrigerator recall model and serial service prep" })).toBeVisible();
+  await expect(page.getByText(/Record the refrigerator model, serial, and product number/i)).toBeVisible();
+
+  await page.goto("/");
+  await searchbox.fill("dometic product support form rv van refrigerator air conditioner");
+  await supportPrep.click();
+  await expect(page.getByRole("heading", { name: "Dometic product-support form routing prep" })).toBeVisible();
+  await expect(page.getByText(/Record the product family, model, serial, product number/i)).toBeVisible();
+
+  await page.goto("/");
+  await searchbox.fill("dometic product registration pnc serial invoice");
+  await productRegistrationPrep.click();
+  await expect(page.getByRole("heading", { name: "Dometic product-registration paperwork prep" })).toBeVisible();
+  await expect(page.getByText(/Record product family, model, SKU, PNC, serial number/i)).toBeVisible();
+
+  await page.goto("/");
+  await searchbox.fill("dometic authorized maintenance service provider locator");
+  await serviceFinderPrep.click();
+  await expect(
+    page.getByRole("heading", { name: "Dometic authorized maintenance and service-finder prep" }),
+  ).toBeVisible();
+  await expect(page.getByText(/Use the official Dometic maintenance and service finder/i)).toBeVisible();
+
+  await page.goto("/");
+  await searchbox.fill("dometic warranty dealer form traveling service");
+  await warrantyPrep.click();
+  await expect(page.getByRole("heading", { name: "Dometic warranty-claim dealer paperwork prep" })).toBeVisible();
+  await expect(page.getByText(/Record product family, model, serial, product number/i)).toBeVisible();
+
+  await page.goto("/");
+  await searchbox.fill("dometic 310 toilet winterizing cleaning flush behavior");
+  await toiletPrep.click();
+  await expect(
+    page.getByRole("heading", { name: "Dometic 300, 310, and 320 toilet cleaning and winterizing prep" }),
+  ).toBeVisible();
+  await expect(page.getByText(/Record whether the unit is a Dometic 300, 310, or 320/i)).toBeVisible();
+  await expect(page.getByText(/antifreeze-only winterizing prep/i)).toBeVisible();
+
+  await page.goto("/");
+  await searchbox.fill("thetford warranty registration norcold refrigerator serial purchase vin");
+  await registrationPrep.click();
+  await expect(
+    page.getByRole("heading", { name: "Thetford and Norcold warranty-registration paperwork prep" }),
+  ).toBeVisible();
+  await expect(page.getByText(/Record Thetford or Norcold model and serial details/i)).toBeVisible();
+
+  await page.goto("/");
+  await searchbox.fill("thetford support product finder norcold cassette rv sanitation");
+  await productFinderPrep.click();
+  await expect(
+    page.getByRole("heading", { name: "Thetford and Norcold support product-finder routing prep" }),
+  ).toBeVisible();
+  await expect(page.getByText(/Identify whether the question is Norcold refrigeration/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("lookup surfaces Cummins Energy Command AGS status and app support pages", async ({ page }) => {
   const consoleErrors: string[] = [];
   const pageErrors: string[] = [];

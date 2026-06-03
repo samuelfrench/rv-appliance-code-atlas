@@ -2307,6 +2307,70 @@
       "official": true
     },
     {
+      "id": "dometic-refrigerator-recall",
+      "brand": "Dometic",
+      "title": "Dometic Refrigerator Recall",
+      "url": "https://www.dometic.com/en-us/lp/refrigerator-recall",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-product-registration-form",
+      "brand": "Dometic",
+      "title": "Dometic Product Registration Form",
+      "url": "https://www.dometic.com/en-us/product-registration-form",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-product-support-form",
+      "brand": "Dometic",
+      "title": "Dometic Product Support Form",
+      "url": "https://www.dometic.com/en-us/support/product-support-form",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-maintenance-service-finder",
+      "brand": "Dometic",
+      "title": "Dometic Maintenance and Service Finder",
+      "url": "https://www.dometic.com/en-us/support/maintenance-upgrade-or-service/yes",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-warranty-dealer-store-claim",
+      "brand": "Dometic",
+      "title": "Dometic Warranty Claim Dealer or Store Support",
+      "url": "https://www.dometic.com/en-us/support/warranty/dealer-or-store",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-300-310-320-gravity-flush-toilet-manual",
+      "brand": "Dometic",
+      "title": "Dometic 300, 310, and 320 Gravity-Flush Toilet Manual",
+      "url": "https://media.dometic.com/externalassets/dometic-320-rv-toilet_9108781896_78798.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "thetford-warranty-product-registration",
+      "brand": "Thetford",
+      "title": "Thetford Warranty Product Registration Form",
+      "url": "https://www.thetford.com/us/warranty-information/warranty-product-registration-form/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-north-america-support-product-finder",
+      "brand": "Thetford",
+      "title": "Thetford North America Support Product Finder",
+      "url": "https://www.thetford.com/us/thetford-support/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
       "id": "thetford-norcold-dealer-locator",
       "brand": "Thetford",
       "title": "Thetford/Norcold Dealer and Service Center Locator",
@@ -35065,6 +35129,210 @@
       ]
     },
     {
+      "id": "dometic-refrigerator-recall-model-serial-service-prep",
+      "slug": "dometic-refrigerator-recall-model-serial-service-prep",
+      "title": "Dometic refrigerator recall model and serial service prep",
+      "summary": "Use the official Dometic refrigerator recall page to collect model, serial, product-number, and service-routing notes before operating a possibly affected refrigerator.",
+      "safeChecklist": [
+        "Record the refrigerator model, serial, and product number from owner-visible labels plus the RV make, model, and current refrigerator status.",
+        "Compare the label details with Dometic's official recall page and keep photos of the label and any support notes.",
+        "If the official recall page or Dometic support indicates the refrigerator may be affected, keep it off until Dometic, a dealer, or authorized service gives direction.",
+        "Do not alter recall or safety parts; contact Dometic or authorized service with the label photos and recall notes."
+      ],
+      "sourceIds": [
+        "dometic-refrigerator-recall"
+      ],
+      "searchAliases": [
+        "dometic refrigerator recall model serial service prep",
+        "dometic refrigerator recall",
+        "dometic RM2652 recall serial number",
+        "dometic NDR refrigerator recall product number",
+        "dometic 9211 product number recall"
+      ],
+      "searchRequiredTerms": [
+        "dometic",
+        "rm2652",
+        "ndr",
+        "9211"
+      ]
+    },
+    {
+      "id": "dometic-product-registration-paperwork-prep",
+      "slug": "dometic-product-registration-paperwork-prep",
+      "title": "Dometic product-registration paperwork prep",
+      "summary": "Use Dometic's official product-registration form to collect product, purchase, and owner paperwork details before warranty or support follow-up.",
+      "safeChecklist": [
+        "Record product family, model, SKU, PNC, serial number, purchase date, seller, invoice, and RV make/model from owner-visible records.",
+        "Use the official Dometic registration form only for private paperwork submission; do not post serial numbers, VIN details, or invoice photos publicly.",
+        "Attach photos or documents only through Dometic's official form or a private support channel.",
+        "Use Dometic support, the dealer, or authorized service for diagnosis if registration paperwork does not answer the appliance problem."
+      ],
+      "sourceIds": [
+        "dometic-product-registration-form"
+      ],
+      "searchAliases": [
+        "dometic product registration pnc serial invoice",
+        "dometic product registration",
+        "dometic PNC serial number registration",
+        "dometic warranty registration invoice"
+      ],
+      "searchRequiredTerms": [
+        "dometic"
+      ]
+    },
+    {
+      "id": "dometic-product-support-form-routing-prep",
+      "slug": "dometic-product-support-form-routing-prep",
+      "title": "Dometic product-support form routing prep",
+      "summary": "Use Dometic's official product-support form to route RV and Van appliance questions after collecting product details, symptoms, photos, and any visible codes.",
+      "safeChecklist": [
+        "Record the product family, model, serial, product number, RV make/model, exact symptom, visible code, and recent service or storage history.",
+        "Take clear photos of labels, displays, normal owner-control settings, and the surrounding installation area without disturbing the appliance.",
+        "Use Dometic's product-support form to route the question to the correct RV and Van support path.",
+        "Keep hazardous operation, repeated failures, leaks, or unclear safety concerns shut down until Dometic, the dealer, or authorized service gives direction."
+      ],
+      "sourceIds": [
+        "dometic-product-support-form"
+      ],
+      "searchAliases": [
+        "dometic product support form rv van refrigerator air conditioner",
+        "dometic product support form",
+        "dometic rv and van support form",
+        "dometic support photos model serial code"
+      ],
+      "searchRequiredTerms": [
+        "dometic"
+      ]
+    },
+    {
+      "id": "dometic-authorized-maintenance-service-finder-prep",
+      "slug": "dometic-authorized-maintenance-service-finder-prep",
+      "title": "Dometic authorized maintenance and service-finder prep",
+      "summary": "Use Dometic's official maintenance and service finder to locate service after collecting product, model, symptom, and location notes.",
+      "safeChecklist": [
+        "Record the Dometic product family, model, serial, product number, RV make/model, current location, exact symptom, and urgency.",
+        "Use the official Dometic maintenance and service finder to identify the authorized support path for the product category.",
+        "Share label photos, visible code photos, and symptom notes with the selected dealer or service provider before scheduling work.",
+        "Use authorized service for internal appliance work, repeated failures, leaks, or any safety concern beyond normal owner operation."
+      ],
+      "sourceIds": [
+        "dometic-maintenance-service-finder"
+      ],
+      "searchAliases": [
+        "dometic authorized maintenance service provider locator",
+        "dometic service locator",
+        "dometic maintenance service provider",
+        "authorized dometic service center"
+      ],
+      "searchRequiredTerms": [
+        "dometic"
+      ]
+    },
+    {
+      "id": "dometic-warranty-claim-dealer-paperwork-prep",
+      "slug": "dometic-warranty-claim-dealer-paperwork-prep",
+      "title": "Dometic warranty-claim dealer paperwork prep",
+      "summary": "Use Dometic's dealer-or-store warranty claim page to prepare purchase records, product labels, and service notes before dealer or service contact.",
+      "safeChecklist": [
+        "Record product family, model, serial, product number, seller, purchase date, invoice, RV make/model, and current symptom.",
+        "Use the official Dometic warranty page to confirm whether the dealer, store, Dometic form, or service finder is the correct next contact.",
+        "Keep copies of invoice, label photos, visible code photos, and service history for private dealer or Dometic review.",
+        "Do not treat warranty paperwork as a diagnosis; use the dealer, Dometic, or authorized service for appliance decisions."
+      ],
+      "sourceIds": [
+        "dometic-warranty-dealer-store-claim"
+      ],
+      "searchAliases": [
+        "dometic warranty dealer form traveling service",
+        "dometic warranty dealer form",
+        "dometic warranty claim dealer",
+        "dometic traveling warranty service"
+      ],
+      "searchRequiredTerms": [
+        "dometic"
+      ]
+    },
+    {
+      "id": "dometic-300-310-320-toilet-cleaning-winterizing-prep",
+      "slug": "dometic-300-310-320-toilet-cleaning-winterizing-prep",
+      "title": "Dometic 300, 310, and 320 toilet cleaning and winterizing prep",
+      "summary": "Use the Dometic 300, 310, and 320 gravity-flush toilet manual for owner cleaning, flush-behavior notes, model-label capture, storage, and winterizing prep.",
+      "safeChecklist": [
+        "Record whether the unit is a Dometic 300, 310, or 320, plus the model label details, flush behavior, bowl water behavior, leak location, and storage history.",
+        "Use only owner cleaning, deodorizing, storage, and antifreeze-only winterizing prep from the manual.",
+        "Stop if water is leaking into the RV, the toilet is loose, the flush hardware does not return normally, or winter damage is suspected.",
+        "Use Dometic support or qualified RV sanitation service for removal, floor-seal concerns, fresh-water connection concerns, or repeated flush problems."
+      ],
+      "sourceIds": [
+        "dometic-300-310-320-gravity-flush-toilet-manual"
+      ],
+      "searchAliases": [
+        "dometic 310 toilet winterizing cleaning flush behavior",
+        "dometic 310 toilet winterizing",
+        "dometic 300 toilet cleaning flush",
+        "dometic 320 gravity flush toilet model label",
+        "dometic toilet water in bowl"
+      ],
+      "searchRequiredTerms": [
+        "dometic",
+        "300",
+        "310",
+        "320"
+      ]
+    },
+    {
+      "id": "thetford-norcold-warranty-registration-paperwork-prep",
+      "slug": "thetford-norcold-warranty-registration-paperwork-prep",
+      "title": "Thetford and Norcold warranty-registration paperwork prep",
+      "summary": "Use Thetford's official warranty product-registration form to prepare Thetford toilet or Norcold refrigerator model, serial, purchase, and RV paperwork.",
+      "safeChecklist": [
+        "Record Thetford or Norcold model and serial details, purchase date, seller, invoice, RV make/model, VIN, and the current symptom from owner-visible records.",
+        "Use the official Thetford warranty registration form only for private submission; do not post VIN, serial, or invoice details publicly.",
+        "Keep photos of labels, purchase records, and visible symptoms ready for Thetford, Norcold, dealer, or service follow-up.",
+        "Use dealer or authorized service routing for diagnosis, repeated symptoms, or any refrigerator or sanitation service decision."
+      ],
+      "sourceIds": [
+        "thetford-warranty-product-registration"
+      ],
+      "searchAliases": [
+        "thetford warranty registration norcold refrigerator serial purchase vin",
+        "thetford warranty registration",
+        "norcold refrigerator serial warranty registration",
+        "thetford toilet serial warranty registration"
+      ],
+      "searchRequiredTerms": [
+        "purchase",
+        "vin"
+      ]
+    },
+    {
+      "id": "thetford-norcold-support-product-finder-routing-prep",
+      "slug": "thetford-norcold-support-product-finder-routing-prep",
+      "title": "Thetford and Norcold support product-finder routing prep",
+      "summary": "Use Thetford North America's official support product finder to route owners by Norcold refrigeration, RV sanitation, portable toilet, cassette toilet, or DC/LP refrigerator category.",
+      "safeChecklist": [
+        "Identify whether the question is Norcold refrigeration, RV sanitation, portable toilet, cassette toilet, or another Thetford product category.",
+        "Record product name, model, serial, RV make/model, exact symptom, visible code, and whether the issue is urgent.",
+        "Use the official support product finder to choose the correct Thetford or Norcold support path before contacting a dealer or service center.",
+        "Keep service work with the dealer or authorized service center for repeated symptoms, unclear product identity, or anything beyond normal owner operation."
+      ],
+      "sourceIds": [
+        "thetford-north-america-support-product-finder"
+      ],
+      "searchAliases": [
+        "thetford support product finder norcold cassette rv sanitation",
+        "thetford product finder",
+        "norcold support dc refrigerator",
+        "thetford cassette toilet support",
+        "thetford rv sanitation support"
+      ],
+      "searchRequiredTerms": [
+        "cassette",
+        "sanitation",
+        "dc"
+      ]
+    },
+    {
       "id": "service-call-prep",
       "slug": "rv-appliance-service-call-checklist",
       "title": "Pre-service checklist for RV appliance calls",
@@ -35248,7 +35516,15 @@
         "maxxair-claims-model-serial-sticker",
         "aquahot-125-dn2-use-care-guide",
         "aquahot-service-center-dealer-locator",
-        "suburban-warranty-service-paperwork"
+        "suburban-warranty-service-paperwork",
+        "dometic-refrigerator-recall",
+        "dometic-product-registration-form",
+        "dometic-product-support-form",
+        "dometic-maintenance-service-finder",
+        "dometic-warranty-dealer-store-claim",
+        "dometic-300-310-320-gravity-flush-toilet-manual",
+        "thetford-warranty-product-registration",
+        "thetford-north-america-support-product-finder"
       ]
     },
     {

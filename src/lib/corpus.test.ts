@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 850;
-const expectedSourceCount = 427;
-const expectedSymptomCount = 264;
+const expectedSourceCount = 435;
+const expectedSymptomCount = 272;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -571,6 +571,14 @@ describe("verified corpus", () => {
       "aquahot-125-dn2-use-care-winterization-service-prep",
       "aquahot-authorized-service-center-locator-prep",
       "suburban-warranty-receipt-service-paperwork-prep",
+      "dometic-refrigerator-recall-model-serial-service-prep",
+      "dometic-product-registration-paperwork-prep",
+      "dometic-product-support-form-routing-prep",
+      "dometic-authorized-maintenance-service-finder-prep",
+      "dometic-warranty-claim-dealer-paperwork-prep",
+      "dometic-300-310-320-toilet-cleaning-winterizing-prep",
+      "thetford-norcold-warranty-registration-paperwork-prep",
+      "thetford-norcold-support-product-finder-routing-prep",
     ]);
 
     for (const query of [
@@ -585,6 +593,14 @@ describe("verified corpus", () => {
       "warranty receipt",
       "service center",
       "no hot water cabin heat",
+      "refrigerator recall",
+      "product registration",
+      "support form",
+      "maintenance service provider",
+      "warranty claim",
+      "toilet winterizing",
+      "dealer form",
+      "product finder",
     ]) {
       expect(
         lookupSymptomGuides(index, query)
@@ -675,6 +691,41 @@ describe("verified corpus", () => {
     );
     expect(lookupSymptomGuides(index, "suburban warranty receipt bill of sale appliance purchase date")[0]?.slug).toBe(
       "suburban-warranty-receipt-service-paperwork-prep",
+    );
+  });
+
+  it("finds Dometic and Thetford owner-support routing pages from owner searches", () => {
+    const index = buildSymptomSearchIndex(corpus);
+
+    expect(lookupSymptomGuides(index, "dometic refrigerator recall model serial service prep")[0]?.slug).toBe(
+      "dometic-refrigerator-recall-model-serial-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "dometic product registration pnc serial invoice")[0]?.slug).toBe(
+      "dometic-product-registration-paperwork-prep",
+    );
+    expect(lookupSymptomGuides(index, "dometic product support form rv van refrigerator air conditioner")[0]?.slug).toBe(
+      "dometic-product-support-form-routing-prep",
+    );
+    expect(lookupSymptomGuides(index, "dometic authorized maintenance service provider locator")[0]?.slug).toBe(
+      "dometic-authorized-maintenance-service-finder-prep",
+    );
+    expect(lookupSymptomGuides(index, "dometic warranty dealer form traveling service")[0]?.slug).toBe(
+      "dometic-warranty-claim-dealer-paperwork-prep",
+    );
+    expect(lookupSymptomGuides(index, "dometic 310 toilet winterizing cleaning flush behavior")[0]?.slug).toBe(
+      "dometic-300-310-320-toilet-cleaning-winterizing-prep",
+    );
+    expect(lookupSymptomGuides(index, "thetford warranty registration norcold refrigerator serial purchase vin")[0]?.slug).toBe(
+      "thetford-norcold-warranty-registration-paperwork-prep",
+    );
+    expect(lookupSymptomGuides(index, "thetford support product finder norcold cassette rv sanitation")[0]?.slug).toBe(
+      "thetford-norcold-support-product-finder-routing-prep",
+    );
+    expect(lookupSymptomGuides(index, "thetford toilet serial")[0]?.slug).toBe(
+      "thetford-rv-toilet-serial-model-label-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "thetford toilet serial model")[0]?.slug).toBe(
+      "thetford-rv-toilet-serial-model-label-service-prep",
     );
   });
 
@@ -5405,6 +5456,85 @@ describe("verified corpus", () => {
     );
     expect(symptomById.get("suburban-warranty-receipt-service-paperwork-prep")?.safeChecklist.join(" ")).toMatch(
       /receipt|bill of sale|warranty|qualified/i,
+    );
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds official Dometic and Thetford owner-support sources without inventing code entries", () => {
+    const expectedSources = new Map([
+      ["dometic-refrigerator-recall", "https://www.dometic.com/en-us/lp/refrigerator-recall"],
+      ["dometic-product-registration-form", "https://www.dometic.com/en-us/product-registration-form"],
+      ["dometic-product-support-form", "https://www.dometic.com/en-us/support/product-support-form"],
+      [
+        "dometic-maintenance-service-finder",
+        "https://www.dometic.com/en-us/support/maintenance-upgrade-or-service/yes",
+      ],
+      ["dometic-warranty-dealer-store-claim", "https://www.dometic.com/en-us/support/warranty/dealer-or-store"],
+      [
+        "dometic-300-310-320-gravity-flush-toilet-manual",
+        "https://media.dometic.com/externalassets/dometic-320-rv-toilet_9108781896_78798.pdf",
+      ],
+      [
+        "thetford-warranty-product-registration",
+        "https://www.thetford.com/us/warranty-information/warranty-product-registration-form/",
+      ],
+      ["thetford-north-america-support-product-finder", "https://www.thetford.com/us/thetford-support/"],
+    ]);
+    const expectedSymptomSourceIds = new Map<string, string[]>([
+      ["dometic-refrigerator-recall-model-serial-service-prep", ["dometic-refrigerator-recall"]],
+      ["dometic-product-registration-paperwork-prep", ["dometic-product-registration-form"]],
+      ["dometic-product-support-form-routing-prep", ["dometic-product-support-form"]],
+      ["dometic-authorized-maintenance-service-finder-prep", ["dometic-maintenance-service-finder"]],
+      ["dometic-warranty-claim-dealer-paperwork-prep", ["dometic-warranty-dealer-store-claim"]],
+      ["dometic-300-310-320-toilet-cleaning-winterizing-prep", ["dometic-300-310-320-gravity-flush-toilet-manual"]],
+      ["thetford-norcold-warranty-registration-paperwork-prep", ["thetford-warranty-product-registration"]],
+      ["thetford-norcold-support-product-finder-routing-prep", ["thetford-north-america-support-product-finder"]],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const sourcesById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\bline-voltage\b|\brefrigerant\b|\bprobe\b|\bwiring\b|\broof\b|\bhydronic\b|\bcoolant\b|\bdiesel\b|\bfuel\b|\bpropane\b|\bopen (the )?(fuel|gas|electrical|rooftop)|install.*fan|remove.*shroud|measure resistance|high-limit reset|pump|valve/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = sourcesById.get(sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const [symptomId, sourceIds] of expectedSymptomSourceIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds, symptomId).toEqual(sourceIds);
+      expect([symptom?.summary, ...(symptom?.safeChecklist ?? [])].join(" "), symptomId).not.toMatch(
+        unsafeOwnerActionPattern,
+      );
+    }
+
+    expect(symptomById.get("dometic-refrigerator-recall-model-serial-service-prep")?.safeChecklist.join(" ")).toMatch(
+      /recall|model|serial|authorized service/i,
+    );
+    expect(symptomById.get("dometic-product-registration-paperwork-prep")?.safeChecklist.join(" ")).toMatch(
+      /PNC|serial|invoice|registration/i,
+    );
+    expect(symptomById.get("dometic-300-310-320-toilet-cleaning-winterizing-prep")?.safeChecklist.join(" ")).toMatch(
+      /300|310|320|cleaning|winterizing/i,
+    );
+    expect(symptomById.get("dometic-300-310-320-toilet-cleaning-winterizing-prep")?.safeChecklist.join(" ")).toMatch(
+      /antifreeze-only/i,
+    );
+    expect(
+      [symptomById.get("dometic-300-310-320-toilet-cleaning-winterizing-prep")?.summary, ...(symptomById.get("dometic-300-310-320-toilet-cleaning-winterizing-prep")?.safeChecklist ?? [])].join(
+        " ",
+      ),
+    ).not.toMatch(/\bdisconnect\b|water supply line/i);
+    expect(symptomById.get("thetford-norcold-warranty-registration-paperwork-prep")?.safeChecklist.join(" ")).toMatch(
+      /Thetford|Norcold|serial|VIN/i,
     );
     expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
   });
