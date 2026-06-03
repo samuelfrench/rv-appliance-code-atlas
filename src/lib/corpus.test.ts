@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 850;
-const expectedSourceCount = 360;
-const expectedSymptomCount = 207;
+const expectedSourceCount = 373;
+const expectedSymptomCount = 220;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -365,6 +365,44 @@ describe("verified corpus", () => {
     );
     expect(lookupSymptomGuides(index, "furrion furnace soot yellow flame exhaust service")[0]?.slug).toBe(
       "furrion-furnace-soot-yellow-flame-exhaust-service",
+    );
+  });
+
+  it("finds post-Coleman Dometic and Furrion support pages from owner searches", () => {
+    const index = buildSymptomSearchIndex(corpus);
+
+    expect(lookupSymptomGuides(index, "dometic americana refrigerator not cooling temperature test")[0]?.slug).toBe(
+      "dometic-americana-not-cooling-temperature-test",
+    );
+    expect(lookupSymptomGuides(index, "dometic americana refrigerator not working level")[0]?.slug).toBe(
+      "dometic-americana-not-working-leveling",
+    );
+    expect(lookupSymptomGuides(index, "dometic americana defrost ice sharp tool")[0]?.slug).toBe(
+      "dometic-americana-defrost-ice-buildup",
+    );
+    expect(lookupSymptomGuides(index, "dometic americana clean refrigerator vents")[0]?.slug).toBe(
+      "dometic-americana-cleaning-vents-airflow",
+    );
+    expect(lookupSymptomGuides(index, "brisk ac frost cooling coil filter fan only")[0]?.slug).toBe(
+      "dometic-brisk-ac-frost-on-cooling-coil",
+    );
+    expect(lookupSymptomGuides(index, "freshjet not cooling cooling mode")[0]?.slug).toBe(
+      "dometic-freshjet-ac-not-cooling-mode-selection",
+    );
+    expect(lookupSymptomGuides(index, "furrion chill cube filter led clean reset")[0]?.slug).toBe(
+      "furrion-chill-cube-filter-led-remote-mode-max-cool",
+    );
+    expect(lookupSymptomGuides(index, "furrion chill 2 low profile water enters vehicle drain")[0]?.slug).toBe(
+      "furrion-chill-2-filter-icing-water-leak",
+    );
+    expect(lookupSymptomGuides(index, "furrion enhanced multizone e3 mode function lost app pairing")[0]?.slug).toBe(
+      "furrion-enhanced-multizone-thermostat-e3-mode-loss-app-pairing",
+    );
+    expect(lookupSymptomGuides(index, "furrion furnace lockout reset blower stops 60 seconds")[0]?.slug).toBe(
+      "furrion-furnace-lockout-reset-after-air-in-propane-line",
+    );
+    expect(lookupSymptomGuides(index, "furrion comfort production label model serial ac thermostat furnace")[0]?.slug).toBe(
+      "furrion-ac-model-serial-label-service-call-prep",
     );
   });
 
@@ -4357,6 +4395,139 @@ describe("verified corpus", () => {
     expect(symptomById.get("low-voltage")?.sourceIds).toEqual(
       expect.arrayContaining(["coleman-473xx-international-owner-1976-671-rev1"]),
     );
+  });
+
+  it("adds post-Coleman Dometic and Furrion owner-safe support sources without inventing code entries", () => {
+    const expectedSources = new Map([
+      [
+        "dometic-americana-not-cooling-temperature-spec-support",
+        "https://support.dometic.com/en/americana-refrigerators/My-refrigerator-or-freezer-is-not-cooling-sufficiently-bc36",
+      ],
+      [
+        "dometic-americana-not-working-level-support",
+        "https://support.dometic.com/en/americana-refrigerators/My-refrigerator-is-not-working-at-all-c12f",
+      ],
+      [
+        "dometic-americana-defrost-refrigerator-support",
+        "https://support.dometic.com/en/americana-refrigerators/How-to-defrost-the-refrigerator-f342",
+      ],
+      [
+        "dometic-americana-clean-refrigerator-vents-support",
+        "https://support.dometic.com/en/americana-refrigerators/How-to-clean-the-refrigerator-695b",
+      ],
+      ["dometic-brisk-ac-not-cooling-fan-compressor-support", "https://support.dometic.com/en/brisk-ac/Not-Cooling-3e8e"],
+      [
+        "dometic-brisk-ac-frost-cooling-coil-support",
+        "https://support.dometic.com/en/brisk-ac/Why-do-I-see-a-Frost-Formation-On-Cooling-Coil-57d4",
+      ],
+      [
+        "dometic-brisk-ac-condensation-surfaces-support",
+        "https://support.dometic.com/en/brisk-ac/Condensation-forms-on-ceilings-windows-or-other-surfaces-eb33",
+      ],
+      [
+        "dometic-freshjet-ac-not-cooling-mode-selection-support",
+        "https://support.dometic.com/en/freshjet-ac/My-air-conditioner-is-not-cooling-well-8f31",
+      ],
+      ["furrion-chill-cube-ducted-ac-user-manual", "https://support.lci1.com/documents/ccd-0008919"],
+      ["furrion-chill-2-low-profile-electronic-control-manual", "https://support.lci1.com/documents/ccd-0008959"],
+      ["furrion-enhanced-multizone-thermostat-e3-qr187", "https://support.lci1.com/documents/ccd-0008565"],
+      ["furrion-furnace-lockout-reset-qr224", "https://support.lci1.com/documents/ccd-0011210"],
+      [
+        "furrion-comfort-production-label-w007",
+        "https://support.lci1.com/documents/w-007-furrion-comfort-production-label-information",
+      ],
+    ]);
+    const expectedSymptomSourceIds = new Map([
+      ["dometic-americana-not-cooling-temperature-test", "dometic-americana-not-cooling-temperature-spec-support"],
+      ["dometic-americana-not-working-leveling", "dometic-americana-not-working-level-support"],
+      ["dometic-americana-defrost-ice-buildup", "dometic-americana-defrost-refrigerator-support"],
+      ["dometic-americana-cleaning-vents-airflow", "dometic-americana-clean-refrigerator-vents-support"],
+      ["dometic-brisk-ac-not-cooling-fan-compressor-triage", "dometic-brisk-ac-not-cooling-fan-compressor-support"],
+      ["dometic-brisk-ac-frost-on-cooling-coil", "dometic-brisk-ac-frost-cooling-coil-support"],
+      ["dometic-brisk-ac-condensation-ceiling-windows", "dometic-brisk-ac-condensation-surfaces-support"],
+      ["dometic-freshjet-ac-not-cooling-mode-selection", "dometic-freshjet-ac-not-cooling-mode-selection-support"],
+      ["furrion-chill-cube-filter-led-remote-mode-max-cool", "furrion-chill-cube-ducted-ac-user-manual"],
+      ["furrion-chill-2-filter-icing-water-leak", "furrion-chill-2-low-profile-electronic-control-manual"],
+      ["furrion-enhanced-multizone-thermostat-e3-mode-loss-app-pairing", "furrion-enhanced-multizone-thermostat-e3-qr187"],
+      ["furrion-furnace-lockout-reset-after-air-in-propane-line", "furrion-furnace-lockout-reset-qr224"],
+      ["furrion-ac-model-serial-label-service-call-prep", "furrion-comfort-production-label-w007"],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\brefrigerant\b|\bprobe\b|\bopen (the )?(fuel|gas|electrical|rooftop)|wire|wiring|line-voltage|breaker panel|remove.*thermostat|replace.*control|remove.*shroud|replace.*compressor|install.*controller|access.*control box/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = corpus.sources.find((item) => item.id === sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const [symptomId, sourceId] of expectedSymptomSourceIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds, symptomId).toEqual([sourceId]);
+      expect(symptom?.safeChecklist.join(" "), symptomId).not.toMatch(unsafeOwnerActionPattern);
+    }
+
+    expect(symptomById.get("dometic-americana-not-cooling-temperature-test")?.summary).toMatch(
+      /Americana|temperature|8 hours|freezer/i,
+    );
+    expect(symptomById.get("dometic-americana-defrost-ice-buildup")?.safeChecklist.join(" ")).toMatch(
+      /Do not use sharp tools|hair dryer|heat gun/i,
+    );
+    expect(symptomById.get("dometic-brisk-ac-frost-on-cooling-coil")?.safeChecklist.join(" ")).toMatch(
+      /filter|open.*vents|fan-only|qualified/i,
+    );
+    expect(symptomById.get("dometic-freshjet-ac-not-cooling-mode-selection")?.summary).toMatch(/cooling mode/i);
+    expect(symptomById.get("furrion-chill-cube-filter-led-remote-mode-max-cool")?.safeChecklist.join(" ")).toMatch(
+      /filter LED|Max Cool|vents/i,
+    );
+    expect(symptomById.get("furrion-chill-2-filter-icing-water-leak")?.safeChecklist.join(" ")).toMatch(
+      /filter|icing|drainage|qualified/i,
+    );
+    expect(symptomById.get("furrion-enhanced-multizone-thermostat-e3-mode-loss-app-pairing")?.summary).toMatch(
+      /E3|mode|app pairing/i,
+    );
+    expect(symptomById.get("furrion-furnace-lockout-reset-after-air-in-propane-line")?.safeChecklist.join(" ")).toMatch(
+      /3 failed attempts|qualified RV service/i,
+    );
+    expect(symptomById.get("furrion-ac-model-serial-label-service-call-prep")?.safeChecklist.join(" ")).toMatch(
+      /model|serial|label|service/i,
+    );
+
+    expect(symptomById.get("refrigerator-not-cooling")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "dometic-americana-not-cooling-temperature-spec-support",
+        "dometic-americana-not-working-level-support",
+      ]),
+    );
+    expect(symptomById.get("air-conditioner-not-cooling")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "dometic-brisk-ac-not-cooling-fan-compressor-support",
+        "dometic-freshjet-ac-not-cooling-mode-selection-support",
+        "furrion-chill-cube-ducted-ac-user-manual",
+        "furrion-chill-2-low-profile-electronic-control-manual",
+      ]),
+    );
+    expect(symptomById.get("airflow-or-venting")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "dometic-americana-clean-refrigerator-vents-support",
+        "dometic-brisk-ac-frost-cooling-coil-support",
+        "furrion-chill-cube-ducted-ac-user-manual",
+        "furrion-chill-2-low-profile-electronic-control-manual",
+      ]),
+    );
+    expect(symptomById.get("thermostat-communication")?.sourceIds).toContain(
+      "furrion-enhanced-multizone-thermostat-e3-qr187",
+    );
+    expect(symptomById.get("furnace-lockout")?.sourceIds).toContain("furrion-furnace-lockout-reset-qr224");
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
   });
 
   it("adds official Girard GSWH-2 owner-manual display codes and keeps Girard tankless symptoms separate", () => {

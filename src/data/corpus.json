@@ -2905,6 +2905,110 @@
       "url": "https://lci-support-doc.s3.amazonaws.com/furrion%20documentation/ranges/ccd-0008217.pdf",
       "type": "manufacturer-service-manual",
       "official": true
+    },
+    {
+      "id": "dometic-americana-not-cooling-temperature-spec-support",
+      "brand": "Dometic",
+      "title": "Dometic Americana Refrigerator Or Freezer Not Cooling Sufficiently Support",
+      "url": "https://support.dometic.com/en/americana-refrigerators/My-refrigerator-or-freezer-is-not-cooling-sufficiently-bc36",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-americana-not-working-level-support",
+      "brand": "Dometic",
+      "title": "Dometic Americana Refrigerator Not Working At All Level Support",
+      "url": "https://support.dometic.com/en/americana-refrigerators/My-refrigerator-is-not-working-at-all-c12f",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-americana-defrost-refrigerator-support",
+      "brand": "Dometic",
+      "title": "Dometic Americana Defrost Refrigerator Support",
+      "url": "https://support.dometic.com/en/americana-refrigerators/How-to-defrost-the-refrigerator-f342",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-americana-clean-refrigerator-vents-support",
+      "brand": "Dometic",
+      "title": "Dometic Americana Clean Refrigerator Vents Support",
+      "url": "https://support.dometic.com/en/americana-refrigerators/How-to-clean-the-refrigerator-695b",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-brisk-ac-not-cooling-fan-compressor-support",
+      "brand": "Dometic",
+      "title": "Dometic Brisk Air Conditioner Not Cooling Fan And Compressor Support",
+      "url": "https://support.dometic.com/en/brisk-ac/Not-Cooling-3e8e",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-brisk-ac-frost-cooling-coil-support",
+      "brand": "Dometic",
+      "title": "Dometic Brisk Air Conditioner Frost Formation On Cooling Coil Support",
+      "url": "https://support.dometic.com/en/brisk-ac/Why-do-I-see-a-Frost-Formation-On-Cooling-Coil-57d4",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-brisk-ac-condensation-surfaces-support",
+      "brand": "Dometic",
+      "title": "Dometic Brisk Air Conditioner Condensation On Ceilings Windows Or Surfaces Support",
+      "url": "https://support.dometic.com/en/brisk-ac/Condensation-forms-on-ceilings-windows-or-other-surfaces-eb33",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-freshjet-ac-not-cooling-mode-selection-support",
+      "brand": "Dometic",
+      "title": "Dometic FreshJet Air Conditioner Not Cooling Mode Selection Support",
+      "url": "https://support.dometic.com/en/freshjet-ac/My-air-conditioner-is-not-cooling-well-8f31",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-chill-cube-ducted-ac-user-manual",
+      "brand": "Furrion",
+      "title": "Furrion Chill Cube Ducted A/C System User Manual",
+      "url": "https://support.lci1.com/documents/ccd-0008919",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-chill-2-low-profile-electronic-control-manual",
+      "brand": "Furrion",
+      "title": "Furrion Chill 2, 8K, and Low-Profile A/C with Electronic Control User Manual",
+      "url": "https://support.lci1.com/documents/ccd-0008959",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-enhanced-multizone-thermostat-e3-qr187",
+      "brand": "Furrion",
+      "title": "Lippert QR-187 Correcting E3 Error Code Of Furrion Enhanced Multi Zone Wall Thermostat",
+      "url": "https://support.lci1.com/documents/ccd-0008565",
+      "type": "manufacturer-quick-reference",
+      "official": true
+    },
+    {
+      "id": "furrion-furnace-lockout-reset-qr224",
+      "brand": "Furrion",
+      "title": "Lippert QR-224 Furnace Lockout Reset",
+      "url": "https://support.lci1.com/documents/ccd-0011210",
+      "type": "manufacturer-quick-reference",
+      "official": true
+    },
+    {
+      "id": "furrion-comfort-production-label-w007",
+      "brand": "Furrion",
+      "title": "Lippert W-007 Furrion Comfort Production Label Information",
+      "url": "https://support.lci1.com/documents/w-007-furrion-comfort-production-label-information",
+      "type": "manufacturer-support",
+      "official": true
     }
   ],
   "entries": [
@@ -33475,7 +33579,9 @@
         "furrion-refrigerators-support-index",
         "furrion-10-6-refrigerator",
         "furrion-15-refrigerator",
-        "furrion-french-door-refrigerator"
+        "furrion-french-door-refrigerator",
+        "dometic-americana-not-cooling-temperature-spec-support",
+        "dometic-americana-not-working-level-support"
       ]
     },
     {
@@ -33549,7 +33655,8 @@
         "dometic-df-furnace",
         "dometic-df-furnace-operating-2025",
         "furrion-furnace-troubleshooting",
-        "dometic-hydro-flame-afm-66618"
+        "dometic-hydro-flame-afm-66618",
+        "furrion-furnace-lockout-reset-qr224"
       ]
     },
     {
@@ -33613,7 +33720,11 @@
         "coleman-9000-ac-owner-1976-368",
         "coleman-8000-chillgrille-1976-328",
         "coleman-47000-remote-controller-owner-1976a662",
-        "coleman-473xx-international-owner-1976-671-rev1"
+        "coleman-473xx-international-owner-1976-671-rev1",
+        "dometic-americana-clean-refrigerator-vents-support",
+        "dometic-brisk-ac-frost-cooling-coil-support",
+        "furrion-chill-cube-ducted-ac-user-manual",
+        "furrion-chill-2-low-profile-electronic-control-manual"
       ]
     },
     {
@@ -33635,7 +33746,8 @@
         "dometic-rm10-rms10-operating",
         "dometic-rmd10-5-operating",
         "dometic-rml10-4-operating",
-        "dometic-bluetooth-ct-thermostat-operating"
+        "dometic-bluetooth-ct-thermostat-operating",
+        "furrion-enhanced-multizone-thermostat-e3-qr187"
       ]
     },
     {
@@ -34228,7 +34340,20 @@
         "coleman-9000-ac-owner-1976-368",
         "coleman-8000-chillgrille-1976-328",
         "coleman-47000-remote-controller-owner-1976a662",
-        "coleman-473xx-international-owner-1976-671-rev1"
+        "coleman-473xx-international-owner-1976-671-rev1",
+        "dometic-americana-not-cooling-temperature-spec-support",
+        "dometic-americana-not-working-level-support",
+        "dometic-americana-defrost-refrigerator-support",
+        "dometic-americana-clean-refrigerator-vents-support",
+        "dometic-brisk-ac-not-cooling-fan-compressor-support",
+        "dometic-brisk-ac-frost-cooling-coil-support",
+        "dometic-brisk-ac-condensation-surfaces-support",
+        "dometic-freshjet-ac-not-cooling-mode-selection-support",
+        "furrion-chill-cube-ducted-ac-user-manual",
+        "furrion-chill-2-low-profile-electronic-control-manual",
+        "furrion-enhanced-multizone-thermostat-e3-qr187",
+        "furrion-furnace-lockout-reset-qr224",
+        "furrion-comfort-production-label-w007"
       ]
     },
     {
@@ -34262,7 +34387,11 @@
         "coleman-49000-ac-owner-1976-542",
         "coleman-49000-heat-pump-owner-1976-545",
         "coleman-9000-ac-owner-1976-368",
-        "coleman-473xx-international-owner-1976-671-rev1"
+        "coleman-473xx-international-owner-1976-671-rev1",
+        "dometic-brisk-ac-not-cooling-fan-compressor-support",
+        "dometic-freshjet-ac-not-cooling-mode-selection-support",
+        "furrion-chill-cube-ducted-ac-user-manual",
+        "furrion-chill-2-low-profile-electronic-control-manual"
       ]
     },
     {
@@ -38058,6 +38187,266 @@
         "furrion oven pilot flame goes out wait five minutes ventilation foil",
         "furrion range oven pilot flame blowout carbon monoxide",
         "furrion oven foil blocks ventilation slots holes passages"
+      ]
+    },
+    {
+      "id": "dometic-americana-not-cooling-temperature-test",
+      "slug": "dometic-americana-not-cooling-temperature-test",
+      "title": "Dometic Americana not cooling temperature test",
+      "summary": "Use this when a Dometic Americana refrigerator or freezer is not cooling sufficiently and the owner needs an 8 hours temperature check against Dometic fresh-food and freezer specifications.",
+      "safeChecklist": [
+        "Let the Americana refrigerator run from normal controls for 8 hours before judging cabinet temperature.",
+        "Record liquid temperature in the refrigerator compartment and temperature in the freezer compartment.",
+        "Move food if temperature is unsafe and call qualified RV refrigerator service if temperatures remain above Dometic specifications."
+      ],
+      "sourceIds": [
+        "dometic-americana-not-cooling-temperature-spec-support"
+      ],
+      "searchAliases": [
+        "dometic americana refrigerator not cooling temperature test",
+        "americana freezer not cooling temperature specification",
+        "dometic americana liquid temperature freezer 8 hours"
+      ]
+    },
+    {
+      "id": "dometic-americana-not-working-leveling",
+      "slug": "dometic-americana-not-working-leveling",
+      "title": "Dometic Americana refrigerator not working and leveling",
+      "summary": "Use this when a Dometic Americana refrigerator is not working at all and the owner needs the absorption-refrigerator leveling check before service.",
+      "safeChecklist": [
+        "Level the RV only enough that the floor and walls feel comfortable for living.",
+        "Record whether the refrigerator was parked and operating for several hours while noticeably out of level.",
+        "If cooling does not return after normal leveling and controls, stop owner checks and call qualified RV refrigerator service."
+      ],
+      "sourceIds": [
+        "dometic-americana-not-working-level-support"
+      ],
+      "searchAliases": [
+        "dometic americana refrigerator not working level",
+        "americana refrigerator not working at all leveling",
+        "dometic absorption refrigerator level loss of cooling"
+      ]
+    },
+    {
+      "id": "dometic-americana-defrost-ice-buildup",
+      "slug": "dometic-americana-defrost-ice-buildup",
+      "title": "Dometic Americana defrost ice buildup",
+      "summary": "Use this when a Dometic Americana refrigerator or freezer has frost buildup and needs the documented natural defrost path.",
+      "safeChecklist": [
+        "Turn the refrigerator off from the main power button and move food to a safe cold location.",
+        "Leave the cabinet and freezer doors open with towels or the drip tray positioned for meltwater.",
+        "Do not use sharp tools, a hair dryer, heat gun, knife, ice pick, or hot air blower to remove frost.",
+        "Dry the interior with a clean cloth after the frost melts, then restart from normal controls."
+      ],
+      "sourceIds": [
+        "dometic-americana-defrost-refrigerator-support"
+      ],
+      "searchAliases": [
+        "dometic americana defrost ice sharp tool",
+        "americana refrigerator defrost freezer ice buildup",
+        "dometic americana no knife ice pick hair dryer defrost"
+      ]
+    },
+    {
+      "id": "dometic-americana-cleaning-vents-airflow",
+      "slug": "dometic-americana-cleaning-vents-airflow",
+      "title": "Dometic Americana cleaning vents and refrigerator airflow",
+      "summary": "Use this when a Dometic Americana refrigerator needs owner-safe cleaning, visible vent obstruction checks, or storage cleanup without appliance disassembly.",
+      "safeChecklist": [
+        "Clean the interior liner with a weak lukewarm soda solution and use warm water only on the gasket, shelves, ice tray, and finned evaporator.",
+        "Check the lower vent, upper vent, and visible area between them for nests, spider webs, or other obstructions.",
+        "Do not spray liquids near outlets, connections, or refrigerator components.",
+        "Use qualified service for inaccessible coils, repeated airflow restriction, or any concern beyond normal vent access."
+      ],
+      "sourceIds": [
+        "dometic-americana-clean-refrigerator-vents-support"
+      ],
+      "searchAliases": [
+        "dometic americana clean refrigerator vents",
+        "americana refrigerator lower upper vent obstruction",
+        "dometic americana cleaning weak soda solution airflow"
+      ]
+    },
+    {
+      "id": "dometic-brisk-ac-not-cooling-fan-compressor-triage",
+      "slug": "dometic-brisk-ac-not-cooling-fan-compressor-triage",
+      "title": "Dometic Brisk AC not cooling fan and compressor triage",
+      "summary": "Use this when a Dometic Brisk rooftop unit powers on but is not cooling and the owner can only identify whether the fan, compressor, both, or neither appear to be running.",
+      "safeChecklist": [
+        "Set the thermostat to cooling mode and lower the set temperature from normal controls.",
+        "Listen from the living area and record whether both fan and compressor are running, fan only, compressor only, or neither.",
+        "Clean owner-accessible return-air filters and confirm supply vents are open.",
+        "Call qualified RV HVAC service if cooling does not recover after normal controls and visible airflow checks."
+      ],
+      "sourceIds": [
+        "dometic-brisk-ac-not-cooling-fan-compressor-support"
+      ],
+      "searchAliases": [
+        "dometic brisk ac not cooling fan compressor",
+        "brisk ac fan only compressor only not cooling",
+        "dometic brisk rooftop unit powers on not cooling"
+      ]
+    },
+    {
+      "id": "dometic-brisk-ac-frost-on-cooling-coil",
+      "slug": "dometic-brisk-ac-frost-on-cooling-coil",
+      "title": "Dometic Brisk AC frost on cooling coil",
+      "summary": "Use this when a Dometic Brisk air conditioner shows frost or ice on the cooling coil with very cold output and low air speed.",
+      "safeChecklist": [
+        "Inspect the owner-accessible filter and clean it if dirty.",
+        "Make sure supply vents are open and not obstructed.",
+        "Set the thermostat warmer if outside temperature is relatively low.",
+        "Run any fan-only setting until the cooling coil is free of frost, then resume normal operation.",
+        "If frost continues, stop cooling and contact qualified RV HVAC service."
+      ],
+      "sourceIds": [
+        "dometic-brisk-ac-frost-cooling-coil-support"
+      ],
+      "searchAliases": [
+        "brisk ac frost cooling coil filter fan only",
+        "dometic brisk cooling coil frost filter open vents",
+        "brisk ac very cold output low air speed fan-only"
+      ]
+    },
+    {
+      "id": "dometic-brisk-ac-condensation-ceiling-windows",
+      "slug": "dometic-brisk-ac-condensation-ceiling-windows",
+      "title": "Dometic Brisk AC condensation on ceilings or windows",
+      "summary": "Use this when a Dometic Brisk air conditioner is operating and condensation forms on ceilings, windows, or other cold surfaces.",
+      "safeChecklist": [
+        "Keep doors and windows closed while the air conditioner is operating.",
+        "Reduce indoor moisture sources when practical and record weather, runtime, and where condensation forms.",
+        "Dry affected surfaces to prevent damage.",
+        "Use qualified RV service if water appears to come from the air conditioner instead of surface condensation."
+      ],
+      "sourceIds": [
+        "dometic-brisk-ac-condensation-surfaces-support"
+      ],
+      "searchAliases": [
+        "dometic brisk ac condensation ceilings windows",
+        "brisk air conditioner condensation surfaces dew point",
+        "dometic brisk keep doors windows closed condensation"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-ac-not-cooling-mode-selection",
+      "slug": "dometic-freshjet-ac-not-cooling-mode-selection",
+      "title": "Dometic FreshJet not cooling mode selection",
+      "summary": "Use this when a Dometic FreshJet air conditioner is not cooling well and the first owner check is that cooling mode is selected with the MODE button.",
+      "safeChecklist": [
+        "Press MODE from normal controls until the cooling display message appears.",
+        "Lower the set temperature and wait for normal compressor delay before judging cooling.",
+        "Confirm visible vents are open and the return-air filter is clean.",
+        "Use qualified RV HVAC service if FreshJet still does not cool after normal mode, setpoint, and airflow checks."
+      ],
+      "sourceIds": [
+        "dometic-freshjet-ac-not-cooling-mode-selection-support"
+      ],
+      "searchAliases": [
+        "freshjet not cooling cooling mode",
+        "dometic freshjet ac not cooling mode button",
+        "freshjet air conditioner cooling display message"
+      ]
+    },
+    {
+      "id": "furrion-chill-cube-filter-led-remote-mode-max-cool",
+      "slug": "furrion-chill-cube-filter-led-remote-mode-max-cool",
+      "title": "Furrion Chill Cube filter LED, remote mode, and Max Cool",
+      "summary": "Use this when a Furrion Chill Cube ducted A/C needs owner-safe mode selection, remote handling, filter LED reset, or Max Cool airflow guidance.",
+      "safeChecklist": [
+        "When the filter LED is illuminated, turn the unit off, clean the return-air filter, let it dry completely, reinstall it, and reset the filter timer from normal controls.",
+        "Select Cool or Auto mode from the control panel or remote and confirm the set temperature is below room temperature.",
+        "Use Max Cool only by opening the air shutter from normal access, and keep supply vents open.",
+        "Use qualified RV HVAC service if weak cooling returns after filter LED, Max Cool, mode, remote, and vents checks."
+      ],
+      "sourceIds": [
+        "furrion-chill-cube-ducted-ac-user-manual"
+      ],
+      "searchAliases": [
+        "furrion chill cube filter led clean reset",
+        "furrion chill cube max cool vents remote mode",
+        "furrion chill cube ducted ac filter led sleep button"
+      ]
+    },
+    {
+      "id": "furrion-chill-2-filter-icing-water-leak",
+      "slug": "furrion-chill-2-filter-icing-water-leak",
+      "title": "Furrion Chill 2 filter, icing, or water leak",
+      "summary": "Use this when a Furrion Chill 2, 8K, or low-profile A/C has weak cooling, icing, or water entering the vehicle.",
+      "safeChecklist": [
+        "Set the rooftop air conditioner to cooling from normal controls and confirm the selected temperature is lower than room temperature.",
+        "Clean the return-air filter and never operate the air conditioning system without the filter installed.",
+        "If icing is suspected, stop cooling and let the unit thaw through normal operation settings before restarting.",
+        "Clean condensation drainage openings only from normal access if water enters the vehicle.",
+        "Contact Furrion or qualified RV HVAC service if filter, icing, drainage, or water-entry symptoms continue."
+      ],
+      "sourceIds": [
+        "furrion-chill-2-low-profile-electronic-control-manual"
+      ],
+      "searchAliases": [
+        "furrion chill 2 low profile water enters vehicle drain",
+        "furrion chill 2 filter icing drainage qualified",
+        "furrion low profile ac not cooling water leak drain"
+      ]
+    },
+    {
+      "id": "furrion-enhanced-multizone-thermostat-e3-mode-loss-app-pairing",
+      "slug": "furrion-enhanced-multizone-thermostat-e3-mode-loss-app-pairing",
+      "title": "Furrion enhanced multizone thermostat E3, mode loss, or app pairing",
+      "summary": "Use this when a Furrion enhanced multizone thermostat shows E3, loses mode function after heating or cooling, or needs app pairing to satisfy the communication check.",
+      "safeChecklist": [
+        "Confirm whether the thermostat shows E3, appears off with no mode function, or loses Heat/Cool mode after normal operation.",
+        "Pair a phone through the Furrion Control app using the documented Sleep/App button process.",
+        "Do not remove the stored pairing unless pairing a replacement device.",
+        "Use Furrion support or qualified RV HVAC service if E3 or mode loss returns after documented app pairing and normal power reset."
+      ],
+      "sourceIds": [
+        "furrion-enhanced-multizone-thermostat-e3-qr187"
+      ],
+      "searchAliases": [
+        "furrion enhanced multizone e3 mode function lost app pairing",
+        "furrion enhanced multi zone thermostat e3 app pairing",
+        "furrion thermostat loses mode function communication check"
+      ]
+    },
+    {
+      "id": "furrion-furnace-lockout-reset-after-air-in-propane-line",
+      "slug": "furrion-furnace-lockout-reset-after-air-in-propane-line",
+      "title": "Furrion furnace lockout reset after air in propane line",
+      "summary": "Use this when a Furrion furnace lockout may follow long storage, low propane, or air in the propane line and the owner needs the QR-224 thermostat reset boundary.",
+      "safeChecklist": [
+        "Confirm LP supply is available from normal owner indicators and that no fuel odor or alarm is present.",
+        "Wait until the blower stops, turn the thermostat OFF, wait 60 seconds, then turn Heat back on.",
+        "If air in the propane line is suspected, repeat the thermostat reset process only up to 3 failed attempts with 5 minutes between attempts.",
+        "After 3 failed attempts, stop resetting and contact qualified RV service."
+      ],
+      "sourceIds": [
+        "furrion-furnace-lockout-reset-qr224"
+      ],
+      "searchAliases": [
+        "furrion furnace lockout reset blower stops 60 seconds",
+        "furrion furnace lockout air in propane line 3 failed attempts",
+        "furrion qr 224 furnace reset qualified rv service"
+      ]
+    },
+    {
+      "id": "furrion-ac-model-serial-label-service-call-prep",
+      "slug": "furrion-ac-model-serial-label-service-call-prep",
+      "title": "Furrion comfort model and serial label service-call prep",
+      "summary": "Use this when a Furrion air conditioner, thermostat, furnace, or ADB service call needs model, serial, and label location details before contacting support.",
+      "safeChecklist": [
+        "Capture the model and serial from any visible production label before service.",
+        "Photograph the label and the installed appliance location from normal owner access.",
+        "For a thermostat that is not serialized, photograph the thermostat part and note the connected appliance model if visible.",
+        "Share model, serial, label photos, symptom notes, and contact details with Furrion support or qualified RV service."
+      ],
+      "sourceIds": [
+        "furrion-comfort-production-label-w007"
+      ],
+      "searchAliases": [
+        "furrion comfort production label model serial ac thermostat furnace",
+        "furrion air conditioner serial label service call",
+        "furrion thermostat furnace model serial label information"
       ]
     }
   ],

@@ -3,7 +3,7 @@ import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 
 const nextAutomatedBatchGoal =
-  "Triage post-Coleman official support rows by traffic potential, starting with refrigerator and HVAC symptom-only Dometic, Norcold/Thetford, Furrion/Lippert, Suburban/Airxcel, and Cummins pages; add only owner-safe non-duplicate source wiring or guides and keep service-only rows rejected except model or service-call prep.";
+  "Continue post-Coleman official support-row triage by traffic potential, starting with Norcold/Thetford refrigerator manuals, remaining Furrion/Lippert service-prep gaps, then Suburban/Airxcel and Cummins pages; add only owner-safe non-duplicate source wiring or guides and keep service-only rows rejected except model or service-call prep.";
 
 describe("traffic readiness report", () => {
   it("keeps the next automated batch goal aligned with the current corpus backlog", () => {

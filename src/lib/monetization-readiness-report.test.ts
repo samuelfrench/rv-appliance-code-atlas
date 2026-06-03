@@ -204,7 +204,7 @@ describe("monetization readiness report", () => {
       source: "reports/gsc-weekly-traffic.json",
     });
     expect(report.nextAutomatedBatchGoal).toBe(
-      "Triage post-Coleman official support rows by traffic potential, starting with refrigerator and HVAC symptom-only Dometic, Norcold/Thetford, Furrion/Lippert, Suburban/Airxcel, and Cummins pages; add only owner-safe non-duplicate source wiring or guides and keep service-only rows rejected except model or service-call prep.",
+      "Continue post-Coleman official support-row triage by traffic potential, starting with Norcold/Thetford refrigerator manuals, remaining Furrion/Lippert service-prep gaps, then Suburban/Airxcel and Cummins pages; add only owner-safe non-duplicate source wiring or guides and keep service-only rows rejected except model or service-call prep.",
     );
     expect(readFileSync("README.md", "utf8")).toContain("npm run traffic:monetization");
     expect(readFileSync("TODO.md", "utf8")).toContain(

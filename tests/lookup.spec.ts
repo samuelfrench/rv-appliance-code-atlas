@@ -625,6 +625,68 @@ test("lookup surfaces Dometic FreshJet FJX codes and symptom pages", async ({ pa
   await expect(page.getByRole("listitem").filter({ hasText: /Ask campsite management/i })).toBeVisible();
 });
 
+test("lookup surfaces post-Coleman Dometic and Furrion support pages", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("dometic americana refrigerator not cooling temperature test");
+  await expect(lookupResults.locator('a[href="/symptoms/dometic-americana-not-cooling-temperature-test/"]')).toBeVisible();
+
+  await searchbox.fill("dometic americana defrost ice sharp tool");
+  await expect(lookupResults.locator('a[href="/symptoms/dometic-americana-defrost-ice-buildup/"]')).toBeVisible();
+
+  await searchbox.fill("brisk ac frost cooling coil filter fan only");
+  await expect(lookupResults.locator('a[href="/symptoms/dometic-brisk-ac-frost-on-cooling-coil/"]')).toBeVisible();
+
+  await searchbox.fill("freshjet not cooling cooling mode");
+  await expect(lookupResults.locator('a[href="/symptoms/dometic-freshjet-ac-not-cooling-mode-selection/"]')).toBeVisible();
+
+  await searchbox.fill("furrion chill cube filter led clean reset");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/furrion-chill-cube-filter-led-remote-mode-max-cool/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("furrion chill 2 low profile water enters vehicle drain");
+  await expect(lookupResults.locator('a[href="/symptoms/furrion-chill-2-filter-icing-water-leak/"]')).toBeVisible();
+
+  await searchbox.fill("furrion enhanced multizone e3 mode function lost app pairing");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/furrion-enhanced-multizone-thermostat-e3-mode-loss-app-pairing/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("furrion furnace lockout reset blower stops 60 seconds");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/furrion-furnace-lockout-reset-after-air-in-propane-line/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("dometic americana defrost ice sharp tool");
+  const americanaDefrost = lookupResults.locator('a[href="/symptoms/dometic-americana-defrost-ice-buildup/"]');
+  await expect(americanaDefrost).toBeVisible();
+  await americanaDefrost.click();
+  await expect(page.getByRole("heading", { name: "Dometic Americana defrost ice buildup" })).toBeVisible();
+  await expect(page.getByText(/Do not use sharp tools/i)).toBeVisible();
+
+  await page.goto("/");
+  await searchbox.fill("furrion furnace lockout reset blower stops 60 seconds");
+  const lockoutReset = lookupResults.locator('a[href="/symptoms/furrion-furnace-lockout-reset-after-air-in-propane-line/"]');
+  await expect(lockoutReset).toBeVisible();
+  await lockoutReset.click();
+  await expect(page.getByRole("heading", { name: "Furrion furnace lockout reset after air in propane line" })).toBeVisible();
+  await expect(page.getByRole("listitem").filter({ hasText: /After 3 failed attempts/i })).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("lookup surfaces Dometic DF furnace operating-manual symptom pages", async ({ page }) => {
   await page.goto("/");
 
