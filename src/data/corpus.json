@@ -2243,6 +2243,70 @@
       "official": true
     },
     {
+      "id": "airxcel-rv-owners-service-router",
+      "brand": "Airxcel",
+      "title": "Airxcel RV Owners Brand and Service Routing",
+      "url": "https://www.airxcel.com/rv-owners/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "coleman-mach-alternate-aftermarket-model-lookup",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Alternate Aftermarket Model Number Lookup",
+      "url": "https://coleman-mach.com/search-alternate-model-number/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "coleman-mach-discontinued-model-replacement-lookup",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Discontinued Model Number Replacement Lookup",
+      "url": "https://coleman-mach.com/search-model-number-replacement/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "maxxair-faq-control-cleaning-rain-sensor",
+      "brand": "MaxxAir",
+      "title": "MaxxAir Service Support FAQs",
+      "url": "https://www.maxxair.com/service-support/faqs/",
+      "type": "manufacturer-faq",
+      "official": true
+    },
+    {
+      "id": "maxxair-claims-model-serial-sticker",
+      "brand": "MaxxAir",
+      "title": "MaxxAir Claims Model and Serial Sticker Guidance",
+      "url": "https://www.maxxair.com/service-support/claims/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "aquahot-125-dn2-use-care-guide",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot 125-DN2 Use and Care Guide",
+      "url": "https://library.aquahot.com/wp-content/uploads/2025/03/125-DN2-Use-and-Care-Guide-5.6.24.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "aquahot-service-center-dealer-locator",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot Service Center and Dealer Locator",
+      "url": "https://www.aquahot.com/service-help/service-locations.aspx",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "suburban-warranty-service-paperwork",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban Warranty Service Paperwork",
+      "url": "https://suburbanrv.com/service-support/warranty/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
       "id": "thetford-norcold-dealer-locator",
       "brand": "Thetford",
       "title": "Thetford/Norcold Dealer and Service Center Locator",
@@ -34797,6 +34861,210 @@
       ]
     },
     {
+      "id": "airxcel-family-brand-service-routing-prep",
+      "slug": "airxcel-family-brand-service-routing-prep",
+      "title": "Airxcel family brand and service-locator routing prep",
+      "summary": "Use this when an owner needs to route a Coleman-Mach, MaxxAir, Suburban, or Aqua-Hot question through Airxcel's official brand and service-locator path.",
+      "safeChecklist": [
+        "Identify which Airxcel family brand is involved: Coleman-Mach, MaxxAir, Suburban, or Aqua-Hot.",
+        "Record the appliance family, model, serial, installed location, exact symptom, and any owner-visible display or label details.",
+        "Use the Airxcel RV Owners page to route to the correct brand site and service locator before scheduling help.",
+        "Use qualified service for any abnormal heat, moving-part, ventilation, or appliance behavior that does not match normal owner controls."
+      ],
+      "sourceIds": [
+        "airxcel-rv-owners-service-router"
+      ],
+      "searchAliases": [
+        "airxcel dealer service center locator coleman mach maxxair suburban aquahot",
+        "airxcel rv appliance service locator",
+        "who makes coleman mach maxxair suburban aquahot",
+        "airxcel rv owners brand service center prep"
+      ],
+      "searchRequiredTerms": [
+        "airxcel",
+        "coleman",
+        "maxxair",
+        "suburban",
+        "aquahot"
+      ]
+    },
+    {
+      "id": "coleman-mach-oem-alternate-model-lookup-prep",
+      "slug": "coleman-mach-oem-alternate-model-lookup-prep",
+      "title": "Coleman-Mach OEM alternate model lookup prep",
+      "summary": "Use this when a Coleman-Mach owner needs the official alternate model lookup before discussing compatible aftermarket equipment with support or qualified RV HVAC service.",
+      "safeChecklist": [
+        "Record the Coleman-Mach model number exactly as shown on owner-visible paperwork or labels.",
+        "Use the official alternate model lookup to document compatible product names without assuming final fitment.",
+        "Share model photos, RV make/model, thermostat family, and current symptom notes with Coleman-Mach support or qualified RV HVAC service.",
+        "Do not choose or order replacement equipment from this page alone if the model number, power requirement, or compatibility result is uncertain."
+      ],
+      "sourceIds": [
+        "coleman-mach-alternate-aftermarket-model-lookup"
+      ],
+      "searchAliases": [
+        "coleman mach alternate model number replacement compatible",
+        "coleman mach alternate model number",
+        "coleman mach replacement ac compatible",
+        "coleman mach oem ac aftermarket lookup"
+      ],
+      "searchRequiredTerms": [
+        "coleman",
+        "mach"
+      ]
+    },
+    {
+      "id": "coleman-mach-discontinued-ac-replacement-prep",
+      "slug": "coleman-mach-discontinued-ac-replacement-prep",
+      "title": "Coleman-Mach pre-2012 discontinued AC replacement prep",
+      "summary": "Use this when an older Coleman-Mach air conditioner needs the official discontinued-model lookup before replacement discussion with a dealer or qualified RV HVAC service.",
+      "safeChecklist": [
+        "Record the discontinued Coleman-Mach model number from owner-visible paperwork or labels before using the lookup.",
+        "Note whether the unit appears to be a pre-2012 Coleman-Mach model and capture the RV make, model, and current control family.",
+        "Save the official lookup result and share it with Coleman-Mach support, a dealer, or qualified RV HVAC service.",
+        "Treat replacement selection as a service decision if the lookup result, model age, or installed control setup is uncertain."
+      ],
+      "sourceIds": [
+        "coleman-mach-discontinued-model-replacement-lookup"
+      ],
+      "searchAliases": [
+        "coleman mach discontinued ac replacement pre 2012",
+        "coleman mach discontinued ac replacement",
+        "coleman mach pre 2012 model replacement",
+        "old coleman mach air conditioner replacement"
+      ],
+      "searchRequiredTerms": [
+        "coleman",
+        "mach"
+      ]
+    },
+    {
+      "id": "maxxair-rain-sensor-remote-airflow-cleaning-behavior",
+      "slug": "maxxair-rain-sensor-remote-airflow-cleaning-behavior",
+      "title": "MaxxAir rain sensor, remote, airflow, and cleaning behavior",
+      "summary": "Use this when MaxxAir FAQ topics such as rain-sensor response, remote range, airflow direction, screen cleaning, or cover behavior need owner-visible notes before support.",
+      "safeChecklist": [
+        "Record rain-sensor behavior, remote response distance, fan speed, airflow direction, lid position, cover type, and any beep or display behavior.",
+        "Use only normal controls, remote-battery checks, and owner-accessible screen cleaning described for ordinary use.",
+        "Stop using the fan if the lid, motor, remote, keypad, or rain sensor still behaves abnormally after normal owner checks.",
+        "Use MaxxAir or qualified RV ventilation service for repeated control symptoms, stuck lid behavior, abnormal motor behavior, or parts questions."
+      ],
+      "sourceIds": [
+        "maxxair-faq-control-cleaning-rain-sensor"
+      ],
+      "searchAliases": [
+        "maxxair rain sensor disable remote line of sight screen cleaning",
+        "maxxair rain sensor disable",
+        "maxxfan remote line of sight",
+        "maxxair fan lid not fully open cover",
+        "maxxfan clean screen"
+      ],
+      "searchRequiredTerms": [
+        "maxxair",
+        "maxxfan"
+      ]
+    },
+    {
+      "id": "maxxair-model-serial-sticker-claim-service-prep",
+      "slug": "maxxair-model-serial-sticker-claim-service-prep",
+      "title": "MaxxAir fan model and serial sticker service prep",
+      "summary": "Use this when MaxxAir support or a claim needs model, serial, date, and symptom notes from the fan sticker and owner-visible evidence.",
+      "safeChecklist": [
+        "Record fan model, serial, purchase or RV delivery date, symptom description, and photos requested by MaxxAir support.",
+        "If the sticker is visible after safe round bug screen access from inside the RV, photograph it without disturbing other parts.",
+        "Stop if label access is not ordinary owner access or if the fan behaves abnormally during normal control checks.",
+        "Use MaxxAir support or qualified RV ventilation service for claim routing, repeated fan symptoms, or any unclear model/serial result."
+      ],
+      "sourceIds": [
+        "maxxair-claims-model-serial-sticker"
+      ],
+      "searchAliases": [
+        "maxxfan model serial sticker round bug screen warranty claim",
+        "where is maxxair serial number",
+        "maxxfan model serial sticker",
+        "maxxair warranty claim model number"
+      ],
+      "searchRequiredTerms": [
+        "maxxair",
+        "maxxfan"
+      ]
+    },
+    {
+      "id": "aquahot-125-dn2-use-care-winterization-service-prep",
+      "slug": "aquahot-125-dn2-use-care-winterization-service-prep",
+      "title": "Aqua-Hot 125-DN2 hot water, cabin heat, winterization, and service prep",
+      "summary": "Use the Aqua-Hot 125-DN2 use and care guide only to collect owner-visible hot water, cabin heat, control, storage, winterization, and service-contact notes before qualified service.",
+      "safeChecklist": [
+        "Record 125-DN2 model and serial details, owner-panel status, interior switch state, thermostat setting, hot water symptom, and cabin heat symptom.",
+        "Record storage or winterization history and whether the issue followed storage; do not perform internal Aqua-Hot work from this page.",
+        "Stop using the system for leaks, exhaust odor, abnormal heat behavior, repeated no hot water, or uncertainty after storage or winterization.",
+        "Use qualified Aqua-Hot service for repeated hot water or cabin heat problems, leaks, annual service, winterization uncertainty, or any internal diagnosis."
+      ],
+      "sourceIds": [
+        "aquahot-125-dn2-use-care-guide"
+      ],
+      "searchAliases": [
+        "aqua hot 125-dn2 no hot water cabin heat winterizing",
+        "Aqua-Hot 125-DN2 no hot water",
+        "Aqua-Hot 125DN2 winterizing",
+        "Aqua-Hot LCD fault service prep",
+        "aquahot 125 dn2 cabin heat hot water service prep"
+      ],
+      "searchRequiredTerms": [
+        "125",
+        "dn2"
+      ]
+    },
+    {
+      "id": "aquahot-authorized-service-center-locator-prep",
+      "slug": "aquahot-authorized-service-center-locator-prep",
+      "title": "Aqua-Hot authorized service-center locator prep",
+      "summary": "Use this when an Aqua-Hot owner needs model, serial, symptom, and location notes before contacting an authorized service center or dealer.",
+      "safeChecklist": [
+        "Record Aqua-Hot model, serial, coach make/model, owner-panel status, hot water symptom, cabin heat symptom, and recent service history.",
+        "Use the Aqua-Hot service-center and dealer locator to identify the nearest authorized service path before scheduling help.",
+        "Keep the system off for leaks, abnormal heat behavior, exhaust odor, repeated no hot water, or unclear owner-panel status.",
+        "Use authorized Aqua-Hot service for internal diagnosis, annual service questions, repeated hot water symptoms, or cabin heat symptoms."
+      ],
+      "sourceIds": [
+        "aquahot-service-center-dealer-locator"
+      ],
+      "searchAliases": [
+        "aqua hot service center authorized dealer locator",
+        "Aqua-Hot service center near me",
+        "Aqua-Hot authorized service locator",
+        "Aqua-Hot dealer locator"
+      ],
+      "searchRequiredTerms": [
+        "aqua",
+        "aquahot"
+      ]
+    },
+    {
+      "id": "suburban-warranty-receipt-service-paperwork-prep",
+      "slug": "suburban-warranty-receipt-service-paperwork-prep",
+      "title": "Suburban warranty receipt and service-paperwork prep",
+      "summary": "Use this when Suburban warranty service needs purchase-date evidence, receipt or bill-of-sale notes, model details, and symptom documentation before qualified service.",
+      "safeChecklist": [
+        "Record Suburban appliance model, serial, RV make/model, purchase date, service date, and exact symptom from owner-visible records.",
+        "Gather the bill of sale, receipt, or appliance purchase-date paperwork before contacting Suburban support or a service center.",
+        "Photograph labels and visible evidence from normal access only, and keep abnormal appliance behavior shut down until service gives direction.",
+        "Use qualified service for appliance diagnosis, warranty repair decisions, unclear paperwork, or symptoms that return after normal owner operation."
+      ],
+      "sourceIds": [
+        "suburban-warranty-service-paperwork"
+      ],
+      "searchAliases": [
+        "suburban warranty receipt bill of sale appliance purchase date",
+        "Suburban RV appliance warranty registration required",
+        "Suburban water heater warranty receipt",
+        "Suburban furnace warranty service paperwork"
+      ],
+      "searchRequiredTerms": [
+        "suburban"
+      ]
+    },
+    {
       "id": "service-call-prep",
       "slug": "rv-appliance-service-call-checklist",
       "title": "Pre-service checklist for RV appliance calls",
@@ -34972,7 +35240,15 @@
         "coleman-mach-model-number-locator",
         "coleman-mach-service-center-dealer-locator",
         "maxxair-2025-amcat-catalog",
-        "maxxair-maxxfan-plus-04500-product"
+        "maxxair-maxxfan-plus-04500-product",
+        "airxcel-rv-owners-service-router",
+        "coleman-mach-alternate-aftermarket-model-lookup",
+        "coleman-mach-discontinued-model-replacement-lookup",
+        "maxxair-faq-control-cleaning-rain-sensor",
+        "maxxair-claims-model-serial-sticker",
+        "aquahot-125-dn2-use-care-guide",
+        "aquahot-service-center-dealer-locator",
+        "suburban-warranty-service-paperwork"
       ]
     },
     {

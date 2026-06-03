@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 850;
-const expectedSourceCount = 419;
-const expectedSymptomCount = 256;
+const expectedSourceCount = 427;
+const expectedSymptomCount = 264;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -563,9 +563,29 @@ describe("verified corpus", () => {
       "maxxair-4-5-6-key-wall-control-service-prep",
       "aquahot-250-p01-use-care-winterization-service-prep",
       "lippert-power-gear-through-frame-slideout-service-prep",
+      "airxcel-family-brand-service-routing-prep",
+      "coleman-mach-oem-alternate-model-lookup-prep",
+      "coleman-mach-discontinued-ac-replacement-prep",
+      "maxxair-rain-sensor-remote-airflow-cleaning-behavior",
+      "maxxair-model-serial-sticker-claim-service-prep",
+      "aquahot-125-dn2-use-care-winterization-service-prep",
+      "aquahot-authorized-service-center-locator-prep",
+      "suburban-warranty-receipt-service-paperwork-prep",
     ]);
 
-    for (const query of ["fan not working", "lid not opening", "leaking", "cabin heat not working", "power service prep", "gear service prep"]) {
+    for (const query of [
+      "fan not working",
+      "lid not opening",
+      "leaking",
+      "cabin heat not working",
+      "power service prep",
+      "gear service prep",
+      "rain sensor",
+      "model serial sticker",
+      "warranty receipt",
+      "service center",
+      "no hot water cabin heat",
+    ]) {
       expect(
         lookupSymptomGuides(index, query)
           .slice(0, 5)
@@ -626,6 +646,35 @@ describe("verified corpus", () => {
     );
     expect(lookupSymptomGuides(index, "maxxfan plus 04500 rain sensor remote service prep")[0]?.slug).toBe(
       "maxxair-maxxfan-plus-rain-sensor-remote-service-prep",
+    );
+  });
+
+  it("finds Airxcel family, Coleman-Mach replacement, MaxxAir, Aqua-Hot, and Suburban paperwork prep pages", () => {
+    const index = buildSymptomSearchIndex(corpus);
+
+    expect(lookupSymptomGuides(index, "airxcel dealer service center locator coleman mach maxxair suburban aquahot")[0]?.slug).toBe(
+      "airxcel-family-brand-service-routing-prep",
+    );
+    expect(lookupSymptomGuides(index, "coleman mach alternate model number replacement compatible")[0]?.slug).toBe(
+      "coleman-mach-oem-alternate-model-lookup-prep",
+    );
+    expect(lookupSymptomGuides(index, "coleman mach discontinued ac replacement pre 2012")[0]?.slug).toBe(
+      "coleman-mach-discontinued-ac-replacement-prep",
+    );
+    expect(lookupSymptomGuides(index, "maxxair rain sensor disable remote line of sight screen cleaning")[0]?.slug).toBe(
+      "maxxair-rain-sensor-remote-airflow-cleaning-behavior",
+    );
+    expect(lookupSymptomGuides(index, "maxxfan model serial sticker round bug screen warranty claim")[0]?.slug).toBe(
+      "maxxair-model-serial-sticker-claim-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "aqua hot 125-dn2 no hot water cabin heat winterizing")[0]?.slug).toBe(
+      "aquahot-125-dn2-use-care-winterization-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "aqua hot service center authorized dealer locator")[0]?.slug).toBe(
+      "aquahot-authorized-service-center-locator-prep",
+    );
+    expect(lookupSymptomGuides(index, "suburban warranty receipt bill of sale appliance purchase date")[0]?.slug).toBe(
+      "suburban-warranty-receipt-service-paperwork-prep",
     );
   });
 
@@ -5286,6 +5335,77 @@ describe("verified corpus", () => {
       );
     }
 
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds official Airxcel family service-prep sources without inventing code entries", () => {
+    const expectedSources = new Map([
+      ["airxcel-rv-owners-service-router", "https://www.airxcel.com/rv-owners/"],
+      ["coleman-mach-alternate-aftermarket-model-lookup", "https://coleman-mach.com/search-alternate-model-number/"],
+      ["coleman-mach-discontinued-model-replacement-lookup", "https://coleman-mach.com/search-model-number-replacement/"],
+      ["maxxair-faq-control-cleaning-rain-sensor", "https://www.maxxair.com/service-support/faqs/"],
+      ["maxxair-claims-model-serial-sticker", "https://www.maxxair.com/service-support/claims/"],
+      [
+        "aquahot-125-dn2-use-care-guide",
+        "https://library.aquahot.com/wp-content/uploads/2025/03/125-DN2-Use-and-Care-Guide-5.6.24.pdf",
+      ],
+      ["aquahot-service-center-dealer-locator", "https://www.aquahot.com/service-help/service-locations.aspx"],
+      ["suburban-warranty-service-paperwork", "https://suburbanrv.com/service-support/warranty/"],
+    ]);
+    const expectedSymptomSourceIds = new Map<string, string[]>([
+      ["airxcel-family-brand-service-routing-prep", ["airxcel-rv-owners-service-router"]],
+      ["coleman-mach-oem-alternate-model-lookup-prep", ["coleman-mach-alternate-aftermarket-model-lookup"]],
+      ["coleman-mach-discontinued-ac-replacement-prep", ["coleman-mach-discontinued-model-replacement-lookup"]],
+      ["maxxair-rain-sensor-remote-airflow-cleaning-behavior", ["maxxair-faq-control-cleaning-rain-sensor"]],
+      ["maxxair-model-serial-sticker-claim-service-prep", ["maxxair-claims-model-serial-sticker"]],
+      ["aquahot-125-dn2-use-care-winterization-service-prep", ["aquahot-125-dn2-use-care-guide"]],
+      ["aquahot-authorized-service-center-locator-prep", ["aquahot-service-center-dealer-locator"]],
+      ["suburban-warranty-receipt-service-paperwork-prep", ["suburban-warranty-service-paperwork"]],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const sourcesById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\bline-voltage\b|\brefrigerant\b|\bprobe\b|\bwiring\b|\broof\b|\bhydronic\b|\bcoolant\b|\bdiesel\b|\bfuel\b|\bpropane\b|\bopen (the )?(fuel|gas|electrical|rooftop)|install.*fan|remove.*shroud|measure resistance|high-limit reset|pump|valve/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = sourcesById.get(sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const [symptomId, sourceIds] of expectedSymptomSourceIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds, symptomId).toEqual(sourceIds);
+      expect([symptom?.summary, ...(symptom?.safeChecklist ?? [])].join(" "), symptomId).not.toMatch(
+        unsafeOwnerActionPattern,
+      );
+    }
+
+    expect(symptomById.get("airxcel-family-brand-service-routing-prep")?.safeChecklist.join(" ")).toMatch(
+      /Airxcel|Coleman-Mach|MaxxAir|Suburban|Aqua-Hot|service locator/i,
+    );
+    expect(symptomById.get("coleman-mach-oem-alternate-model-lookup-prep")?.safeChecklist.join(" ")).toMatch(
+      /model number|alternate|aftermarket|qualified/i,
+    );
+    expect(symptomById.get("maxxair-rain-sensor-remote-airflow-cleaning-behavior")?.safeChecklist.join(" ")).toMatch(
+      /rain sensor|remote|screen|normal controls/i,
+    );
+    expect(symptomById.get("maxxair-model-serial-sticker-claim-service-prep")?.safeChecklist.join(" ")).toMatch(
+      /round bug screen|model|serial|claim/i,
+    );
+    expect(symptomById.get("aquahot-125-dn2-use-care-winterization-service-prep")?.safeChecklist.join(" ")).toMatch(
+      /125-DN2|winterization|hot water|qualified Aqua-Hot service/i,
+    );
+    expect(symptomById.get("suburban-warranty-receipt-service-paperwork-prep")?.safeChecklist.join(" ")).toMatch(
+      /receipt|bill of sale|warranty|qualified/i,
+    );
     expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
   });
 });

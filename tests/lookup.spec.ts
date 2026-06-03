@@ -1018,6 +1018,64 @@ test("lookup surfaces Suburban, MaxxAir, and Aqua-Hot service-prep pages", async
   expect(pageErrors).toEqual([]);
 });
 
+test("lookup surfaces Airxcel family service-prep pages", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("airxcel dealer service center locator coleman mach maxxair suburban aquahot");
+  const airxcelPrep = lookupResults.locator('a[href="/symptoms/airxcel-family-brand-service-routing-prep/"]');
+  await expect(airxcelPrep).toBeVisible();
+
+  await searchbox.fill("coleman mach discontinued ac replacement pre 2012");
+  const discontinuedPrep = lookupResults.locator('a[href="/symptoms/coleman-mach-discontinued-ac-replacement-prep/"]');
+  await expect(discontinuedPrep).toBeVisible();
+
+  await searchbox.fill("maxxair rain sensor disable remote line of sight screen cleaning");
+  const maxxairFaqPrep = lookupResults.locator(
+    'a[href="/symptoms/maxxair-rain-sensor-remote-airflow-cleaning-behavior/"]',
+  );
+  await expect(maxxairFaqPrep).toBeVisible();
+
+  await searchbox.fill("aqua hot 125-dn2 no hot water cabin heat winterizing");
+  const aquahot125Prep = lookupResults.locator(
+    'a[href="/symptoms/aquahot-125-dn2-use-care-winterization-service-prep/"]',
+  );
+  await expect(aquahot125Prep).toBeVisible();
+
+  await searchbox.fill("airxcel dealer service center locator coleman mach maxxair suburban aquahot");
+  await airxcelPrep.click();
+  await expect(page.getByRole("heading", { name: "Airxcel family brand and service-locator routing prep" })).toBeVisible();
+  await expect(
+    page.getByText("Identify which Airxcel family brand is involved: Coleman-Mach, MaxxAir, Suburban, or Aqua-Hot."),
+  ).toBeVisible();
+
+  await page.goto("/");
+  await searchbox.fill("maxxair rain sensor disable remote line of sight screen cleaning");
+  await maxxairFaqPrep.click();
+  await expect(page.getByRole("heading", { name: "MaxxAir rain sensor, remote, airflow, and cleaning behavior" })).toBeVisible();
+  await expect(page.getByText(/Record rain-sensor behavior/i)).toBeVisible();
+
+  await page.goto("/");
+  await searchbox.fill("aqua hot 125-dn2 no hot water cabin heat winterizing");
+  await aquahot125Prep.click();
+  await expect(
+    page.getByRole("heading", { name: "Aqua-Hot 125-DN2 hot water, cabin heat, winterization, and service prep" }),
+  ).toBeVisible();
+  await expect(page.getByText(/qualified Aqua-Hot service/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("lookup surfaces Cummins Energy Command AGS status and app support pages", async ({ page }) => {
   const consoleErrors: string[] = [];
   const pageErrors: string[] = [];
