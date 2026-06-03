@@ -961,6 +961,63 @@ test("lookup surfaces Cummins Onan spec-sheet and winterization service-prep pag
   expect(pageErrors).toEqual([]);
 });
 
+test("lookup surfaces Suburban, MaxxAir, and Aqua-Hot service-prep pages", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("suburban model number locator service center dealer");
+  const suburbanPrep = lookupResults.locator('a[href="/symptoms/suburban-model-number-service-locator-prep/"]');
+  await expect(suburbanPrep).toBeVisible();
+
+  await searchbox.fill("maxxfan deluxe lid fan beeps remote wall control service prep");
+  const maxxfanPrep = lookupResults.locator(
+    'a[href="/symptoms/maxxair-maxxfan-deluxe-lid-fan-control-service-prep/"]',
+  );
+  await expect(maxxfanPrep).toBeVisible();
+
+  await searchbox.fill("maxxair 4 5 6 key wall control fan not responding");
+  const wallControlPrep = lookupResults.locator('a[href="/symptoms/maxxair-4-5-6-key-wall-control-service-prep/"]');
+  await expect(wallControlPrep).toBeVisible();
+
+  await searchbox.fill("aqua hot 250-p01 use care winterization service prep");
+  const aquaHotPrep = lookupResults.locator(
+    'a[href="/symptoms/aquahot-250-p01-use-care-winterization-service-prep/"]',
+  );
+  await expect(aquaHotPrep).toBeVisible();
+
+  await searchbox.fill("suburban model number locator service center dealer");
+  await suburbanPrep.click();
+  await expect(page.getByRole("heading", { name: "Suburban model number and service-locator prep" })).toBeVisible();
+  await expect(page.getByText(/Record the Suburban model number, serial number/i)).toBeVisible();
+  await expect(page.getByText(/Use the Suburban service locator to identify an authorized service center/i)).toBeVisible();
+
+  await page.goto("/");
+  await searchbox.fill("maxxfan deluxe lid fan beeps remote wall control service prep");
+  await maxxfanPrep.click();
+  await expect(page.getByRole("heading", { name: "MaxxAir MaxxFan Deluxe lid, fan, or control service prep" })).toBeVisible();
+  await expect(page.getByText(/Record keypad or remote behavior/i)).toBeVisible();
+  await expect(page.getByText(/qualified RV ventilation service/i)).toBeVisible();
+
+  await page.goto("/");
+  await searchbox.fill("aqua hot 250-p01 use care winterization service prep");
+  await aquaHotPrep.click();
+  await expect(page.getByRole("heading", { name: "Aqua-Hot 250-P01 use, care, or winterization service prep" })).toBeVisible();
+  await expect(page.getByText(/Record storage or winterization history/i)).toBeVisible();
+  await expect(page.getByText(/qualified Aqua-Hot service/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("lookup surfaces Cummins Energy Command AGS status and app support pages", async ({ page }) => {
   const consoleErrors: string[] = [];
   const pageErrors: string[] = [];

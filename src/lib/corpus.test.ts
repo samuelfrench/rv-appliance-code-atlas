@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 850;
-const expectedSourceCount = 398;
-const expectedSymptomCount = 238;
+const expectedSourceCount = 403;
+const expectedSymptomCount = 242;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -524,6 +524,35 @@ describe("verified corpus", () => {
     );
     expect(lookupSymptomGuides(index, "onan qg 7000idf dual fuel low oil shutdown derating prep")[0]?.slug).toBe(
       "onan-qg-load-rating-model-spec-service-prep",
+    );
+  });
+
+  it("finds Suburban, MaxxAir, and Aqua-Hot service-prep pages from owner searches", () => {
+    const index = buildSymptomSearchIndex(corpus);
+
+    expect(lookupSymptomGuides(index, "suburban model number locator service center dealer")[0]?.slug).toBe(
+      "suburban-model-number-service-locator-prep",
+    );
+    expect(lookupSymptomGuides(index, "maxxfan deluxe lid fan beeps remote wall control service prep")[0]?.slug).toBe(
+      "maxxair-maxxfan-deluxe-lid-fan-control-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "maxxfan remote not working")[0]?.slug).toBe(
+      "maxxair-maxxfan-deluxe-lid-fan-control-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "maxxfan lid not opening")[0]?.slug).toBe(
+      "maxxair-maxxfan-deluxe-lid-fan-control-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "maxxair 4 5 6 key wall control fan not responding")[0]?.slug).toBe(
+      "maxxair-4-5-6-key-wall-control-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "aqua hot 250-p01 use care winterization service prep")[0]?.slug).toBe(
+      "aquahot-250-p01-use-care-winterization-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "aqua hot leaking")[0]?.slug).toBe(
+      "aquahot-250-p01-use-care-winterization-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "aquahot no hot water cabin heat")[0]?.slug).toBe(
+      "aquahot-250-p01-use-care-winterization-service-prep",
     );
   });
 
@@ -3184,6 +3213,73 @@ describe("verified corpus", () => {
     expect(symptomById.get("generator-stopped")?.sourceIds).toEqual(
       expect.arrayContaining(["onan-generator-winterization-flyer-5410842", "onan-rv-commercial-mobile-accessory-catalog-0080258"]),
     );
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds official Suburban, MaxxAir, and Aqua-Hot service-prep sources without inventing code entries", () => {
+    const expectedSources = new Map([
+      ["suburban-model-number-locator", "https://suburbanrv.com/service-support/find-model-number/"],
+      ["suburban-service-center-dealer-locator", "https://suburbanrv.com/service-support/service-locator/"],
+      [
+        "maxxair-maxxfan-deluxe-iom-11e90001k",
+        "https://library.maxxair.com/wp-content/uploads/2023/03/11e90001k_maxxfan-deluxe-install-11-2017.pdf",
+      ],
+      [
+        "maxxair-wall-control-iom-4-5-6-key",
+        "https://library.maxxair.com/wp-content/uploads/2023/03/maxxair-4-5-6-key-wall-control-installation-and-operation-manual.pdf",
+      ],
+      ["aquahot-250-p01-use-care-guide", "https://library.aquahot.com/wp-content/uploads/2022/04/AHE-250-P01-Use-and-Care-Guide.pdf"],
+    ]);
+    const expectedSymptomSourceIds = new Map<string, string[]>([
+      ["suburban-model-number-service-prep", ["suburban-model-number-locator", "suburban-service-center-dealer-locator"]],
+      ["maxxair-maxxfan-deluxe-control-service-prep", ["maxxair-maxxfan-deluxe-iom-11e90001k"]],
+      ["maxxair-wall-control-456-service-prep", ["maxxair-wall-control-iom-4-5-6-key"]],
+      ["aquahot-250-p01-use-care-service-prep", ["aquahot-250-p01-use-care-guide"]],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const sourcesById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\bline-voltage\b|\brefrigerant\b|\bprobe\b|\bwiring\b|\broof\b|\bhydronic\b|\bcoolant\b|\bpropane\b|\bopen (the )?(fuel|gas|electrical|rooftop)|fuel line|install.*fan|remove.*shroud|remove.*cover|measure resistance|harness testing/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = sourcesById.get(sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const [symptomId, sourceIds] of expectedSymptomSourceIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds, symptomId).toEqual(sourceIds);
+      expect([symptom?.summary, ...(symptom?.safeChecklist ?? [])].join(" "), symptomId).not.toMatch(
+        unsafeOwnerActionPattern,
+      );
+    }
+
+    expect(symptomById.get("suburban-model-number-service-prep")?.safeChecklist.join(" ")).toMatch(
+      /model number|serial|service locator|Suburban|qualified/i,
+    );
+    expect(symptomById.get("maxxair-maxxfan-deluxe-control-service-prep")?.safeChecklist.join(" ")).toMatch(
+      /keypad|lid|fan speed|rain sensor|qualified/i,
+    );
+    expect(symptomById.get("maxxair-wall-control-456-service-prep")?.safeChecklist.join(" ")).toMatch(
+      /wall control|display|fan speed|IN\/OUT|qualified/i,
+    );
+    expect(symptomById.get("aquahot-250-p01-use-care-service-prep")?.safeChecklist.join(" ")).toMatch(
+      /winterization|storage|hot water|Aqua-Hot|qualified/i,
+    );
+    expect(
+      [
+        symptomById.get("aquahot-250-p01-use-care-service-prep")?.summary,
+        symptomById.get("aquahot-250-p01-use-care-service-prep")?.safeChecklist.join(" "),
+      ].join(" "),
+    ).toMatch(/owner-visible|record|qualified Aqua-Hot service|do not perform/i);
     expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
   });
 

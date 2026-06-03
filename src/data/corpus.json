@@ -2203,6 +2203,46 @@
       "official": true
     },
     {
+      "id": "suburban-model-number-locator",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban Model Number Locator for RV Products",
+      "url": "https://suburbanrv.com/service-support/find-model-number/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "suburban-service-center-dealer-locator",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban Service Center and Dealer Locator",
+      "url": "https://suburbanrv.com/service-support/service-locator/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "maxxair-maxxfan-deluxe-iom-11e90001k",
+      "brand": "MaxxAir",
+      "title": "MaxxAir MaxxFan Deluxe Installation Instructions, Information and Operating Guide P/N 11E90001K",
+      "url": "https://library.maxxair.com/wp-content/uploads/2023/03/11e90001k_maxxfan-deluxe-install-11-2017.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "maxxair-wall-control-iom-4-5-6-key",
+      "brand": "MaxxAir",
+      "title": "MaxxAir 4-, 5-, and 6-Key Wall Control Installation and Operation Instructions",
+      "url": "https://library.maxxair.com/wp-content/uploads/2023/03/maxxair-4-5-6-key-wall-control-installation-and-operation-manual.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "aquahot-250-p01-use-care-guide",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot AHE-250-P01 250 Propane Series Use and Care Guide",
+      "url": "https://library.aquahot.com/wp-content/uploads/2022/04/AHE-250-P01-Use-and-Care-Guide.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
       "id": "norcold-n3000-troubleshooting",
       "brand": "Norcold",
       "title": "Thetford N3000 Series Troubleshooting Error Codes",
@@ -34517,6 +34557,101 @@
       ]
     },
     {
+      "id": "suburban-model-number-service-prep",
+      "slug": "suburban-model-number-service-locator-prep",
+      "title": "Suburban model number and service-locator prep",
+      "summary": "Use the official Suburban model-number locator and service-center/dealer locator to prepare label photos and symptom notes before asking Suburban or an authorized service provider for help.",
+      "safeChecklist": [
+        "Record the Suburban model number, serial number, product type, installed location, and symptom from normal owner-visible labels or paperwork.",
+        "Use the Suburban service locator to identify an authorized service center or dealer and expand the search area if no nearby result appears.",
+        "Share clear label photos, purchase details if available, and symptom timing with Suburban support or the service center before ordering parts.",
+        "Stop at label capture if access would require removing panels, grilles, appliance tops, screws, or housings; use qualified service for that information."
+      ],
+      "sourceIds": [
+        "suburban-model-number-locator",
+        "suburban-service-center-dealer-locator"
+      ],
+      "searchAliases": [
+        "suburban model number locator service center dealer",
+        "suburban rv model number serial number locator",
+        "suburban service center dealer locator rv",
+        "suburban appliance label model serial service prep"
+      ]
+    },
+    {
+      "id": "maxxair-maxxfan-deluxe-control-service-prep",
+      "slug": "maxxair-maxxfan-deluxe-lid-fan-control-service-prep",
+      "title": "MaxxAir MaxxFan Deluxe lid, fan, or control service prep",
+      "summary": "Use the MaxxFan Deluxe operating guide to document keypad, remote, Auto mode, thermostat set point, rain-sensor behavior, fan speed, lid position, and ceiling-fan mode before service.",
+      "safeChecklist": [
+        "Record keypad or remote behavior, lid position, fan speed, direction mode, Auto mode, thermostat set point, and any rain-sensor beeps.",
+        "Try only normal owner controls: power, open or close, fan speed, Auto mode, thermostat setting, direction mode, and remote batteries if applicable.",
+        "Stop using the fan if the lid, fan, rain sensor, remote, or keypad behaves abnormally after normal control checks.",
+        "Use MaxxAir or qualified RV ventilation service for repeated control symptoms, stuck lid behavior, abnormal motor behavior, or parts questions."
+      ],
+      "sourceIds": [
+        "maxxair-maxxfan-deluxe-iom-11e90001k"
+      ],
+      "searchAliases": [
+        "maxxfan deluxe lid fan beeps remote wall control service prep",
+        "MaxxFan Deluxe 11E90001K operating guide",
+        "maxxfan remote not working",
+        "maxxfan lid not opening",
+        "maxxfan fan not working",
+        "maxxair maxxfan remote not responding",
+        "maxxair maxxfan lid will not open",
+        "maxxair maxxfan deluxe auto mode thermostat rain sensor beeps",
+        "maxxair maxxfan deluxe remote lid fan speed service prep"
+      ]
+    },
+    {
+      "id": "maxxair-wall-control-456-service-prep",
+      "slug": "maxxair-4-5-6-key-wall-control-service-prep",
+      "title": "MaxxAir 4/5/6 key wall-control service prep",
+      "summary": "Use the MaxxAir wall-control operation instructions to document display behavior, Auto thermostat behavior, fan speed, IN/OUT direction, open/close commands, and rain-sensor beeps before service.",
+      "safeChecklist": [
+        "Record wall control display state, button response, fan speed, IN/OUT direction, open or close behavior, Auto mode, setpoint, and rain-sensor beeps.",
+        "Use only normal wall-control buttons and normal fan controls to compare behavior with the operation guide.",
+        "Stop using the control if the fan fails to respond, responds unpredictably, or the display behavior does not match normal operation.",
+        "Use MaxxAir or qualified RV ventilation service for repeated wall control, display, fan response, or rain-sensor symptoms."
+      ],
+      "sourceIds": [
+        "maxxair-wall-control-iom-4-5-6-key"
+      ],
+      "searchAliases": [
+        "maxxair 4 5 6 key wall control fan not responding",
+        "MaxxAir 4 5 6 key wall control operation manual",
+        "maxxair wall control rain sensor AUTO mode",
+        "maxxair wall control in out fan speed display service prep"
+      ]
+    },
+    {
+      "id": "aquahot-250-p01-use-care-service-prep",
+      "slug": "aquahot-250-p01-use-care-winterization-service-prep",
+      "title": "Aqua-Hot 250-P01 use, care, or winterization service prep",
+      "summary": "Use the Aqua-Hot 250-P01 use and care guide only to collect owner-visible operation, cabin heat, hot water, storage, winterization, leak, and service-contact notes before qualified service.",
+      "safeChecklist": [
+        "Record the Aqua-Hot model, serial number, interior switch state, thermostat setting, hot water symptom, cabin heat symptom, and any owner-panel status from normal access.",
+        "Record storage or winterization history and whether the issue followed storage; do not perform winterization, system-fluid, pump, valve, or internal service steps from this page.",
+        "Stop using the system for leaks, exhaust odor, abnormal heat behavior, repeated no hot water, or uncertainty after storage or winterization.",
+        "Use qualified Aqua-Hot service for repeated hot water or cabin heat problems, leaks, annual service, winterization uncertainty, or any internal diagnosis."
+      ],
+      "sourceIds": [
+        "aquahot-250-p01-use-care-guide"
+      ],
+      "searchAliases": [
+        "aqua hot 250-p01 use care winterization service prep",
+        "site:aquahot.com Aqua-Hot 250P use and care guide",
+        "aqua hot leaking",
+        "aquahot leak service prep",
+        "aquahot no hot water cabin heat",
+        "aqua hot no hot water",
+        "aqua hot cabin heat not working",
+        "aquahot 250p hot water cabin heat winterization storage",
+        "aqua-hot 250 p01 factory authorized service center prep"
+      ]
+    },
+    {
       "id": "service-call-prep",
       "slug": "rv-appliance-service-call-checklist",
       "title": "Pre-service checklist for RV appliance calls",
@@ -34671,7 +34806,12 @@
         "onan-qg-4000-spec-sheet",
         "onan-qg-5500-spec-sheet",
         "onan-qg-7000-6500-spec-sheet",
-        "onan-qg-7000idf-commercial-spec-sheet-2026"
+        "onan-qg-7000idf-commercial-spec-sheet-2026",
+        "suburban-model-number-locator",
+        "suburban-service-center-dealer-locator",
+        "maxxair-maxxfan-deluxe-iom-11e90001k",
+        "maxxair-wall-control-iom-4-5-6-key",
+        "aquahot-250-p01-use-care-guide"
       ]
     },
     {
