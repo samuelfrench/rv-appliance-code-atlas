@@ -89,10 +89,10 @@ npm run traffic:monitor
 ```
 
 Current corpus:
-- `824` verified entries
-- `160` symptom guides
-- `323` official sources
-- `985` generated indexable pages
+- `843` verified entries
+- `166` symptom guides
+- `324` official sources
+- `1010` generated indexable pages
 
 Next automated batch goal:
 - Run weekly GSC report and review monetization readiness after page impressions appear.

@@ -372,6 +372,35 @@ test("lookup surfaces Dometic Single Zone LCD thermostat codes and symptom pages
   await expect(page.getByText(/minimum of every 2 weeks/i)).toBeVisible();
 });
 
+test("lookup surfaces Dometic FreshJet FJX codes and symptom pages", async ({ page }) => {
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("dometic freshjet fjx p1 under voltage campsite");
+  await expect(lookupResults.locator('a[href="/codes/dometic-freshjet-fjx-p1-under-voltage-protection/"]')).toBeVisible();
+
+  await searchbox.fill("freshjet fjx e9 compressor ipm module");
+  await expect(lookupResults.locator('a[href="/codes/dometic-freshjet-fjx-e9-compressor-drive-ipm-module-fault/"]')).toBeVisible();
+
+  await searchbox.fill("freshjet low air output leaves ventilation grilles");
+  await expect(lookupResults.locator('a[href="/symptoms/dometic-freshjet-fjx-low-air-output-filter-vents/"]')).toBeVisible();
+
+  await searchbox.fill("freshjet water enters vehicle drainage openings");
+  await expect(lookupResults.locator('a[href="/symptoms/dometic-freshjet-fjx-water-enters-vehicle-drainage/"]')).toBeVisible();
+
+  await searchbox.fill("freshjet under voltage campsite management sufficient power");
+  const voltageSymptom = lookupResults.locator(
+    'a[href="/symptoms/dometic-freshjet-fjx-voltage-protection-campsite-power/"]',
+  );
+  await expect(voltageSymptom).toBeVisible();
+
+  await voltageSymptom.click();
+  await expect(page.getByRole("heading", { name: "Dometic FreshJet FJX voltage protection and campsite power" })).toBeVisible();
+  await expect(page.getByRole("listitem").filter({ hasText: /Ask campsite management/i })).toBeVisible();
+});
+
 test("lookup surfaces Dometic DF furnace operating-manual symptom pages", async ({ page }) => {
   await page.goto("/");
 

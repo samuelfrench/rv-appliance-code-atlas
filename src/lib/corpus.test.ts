@@ -57,6 +57,12 @@ describe("verified corpus", () => {
       "dometic-single-zone-lcd-e1",
     );
     expect(lookupEntries(index, "dometic 3313193 e5 freeze sensor")[0]?.slug).toBe("dometic-single-zone-lcd-e5");
+    expect(lookupEntries(index, "dometic freshjet fjx p1 under voltage campsite")[0]?.slug).toBe(
+      "dometic-freshjet-fjx-p1-under-voltage-protection",
+    );
+    expect(lookupEntries(index, "freshjet fjx e9 compressor ipm module")[0]?.slug).toBe(
+      "dometic-freshjet-fjx-e9-compressor-drive-ipm-module-fault",
+    );
     expect(lookupEntries(index, "furrion e3 thermostat").map((entry) => entry.code)).toContain("E3");
     expect(lookupEntries(index, "suburban reset light").map((entry) => entry.brand)).toContain("Suburban/Atwood");
   });
@@ -147,6 +153,30 @@ describe("verified corpus", () => {
     );
     expect(lookupSymptomGuides(symptomIndex, "dometic single zone filter every 2 weeks hot weather cooling")[0]?.slug).toBe(
       "dometic-single-zone-hot-weather-filter-maintenance",
+    );
+  });
+
+  it("finds Dometic FreshJet FJX code and symptom support pages from owner searches", () => {
+    const symptomIndex = buildSymptomSearchIndex(corpus);
+
+    expect(lookupSymptomGuides(symptomIndex, "freshjet fjx not cooling above 52 below 16 cooling mode")[0]?.slug).toBe(
+      "dometic-freshjet-fjx-not-cooling-temperature-limits",
+    );
+    expect(lookupSymptomGuides(symptomIndex, "freshjet fjx not heating below -2 set higher temperature")[0]?.slug).toBe(
+      "dometic-freshjet-fjx-not-heating-temperature-limits",
+    );
+    expect(lookupSymptomGuides(symptomIndex, "freshjet low air output leaves ventilation grilles filter")[0]?.slug).toBe(
+      "dometic-freshjet-fjx-low-air-output-filter-vents",
+    );
+    expect(lookupSymptomGuides(symptomIndex, "freshjet water enters vehicle drainage openings")[0]?.slug).toBe(
+      "dometic-freshjet-fjx-water-enters-vehicle-drainage",
+    );
+    expect(
+      lookupSymptomGuides(symptomIndex, "freshjet constantly switches itself off icing sensor air nozzles closed")[0]
+        ?.slug,
+    ).toBe("dometic-freshjet-fjx-icing-sensor-switches-off");
+    expect(lookupSymptomGuides(symptomIndex, "freshjet under voltage campsite management sufficient power")[0]?.slug).toBe(
+      "dometic-freshjet-fjx-voltage-protection-campsite-power",
     );
   });
 
@@ -572,7 +602,7 @@ describe("verified corpus", () => {
       type: "manufacturer-manual",
       url: "https://media.dometic.com/externalassets/ct-single-zone-thermostat_9108853315_55910.pdf",
     });
-    expect(corpus.entries).toHaveLength(824);
+    expect(corpus.entries).toHaveLength(843);
     expect(entries.map((entry) => entry.code).sort()).toEqual(["E1", "E2", "E3", "E4", "E5"]);
 
     for (const entry of entries) {
@@ -591,6 +621,45 @@ describe("verified corpus", () => {
     expect(entries.find((entry) => entry.code === "E5")?.plainMeaning).toMatch(/Freeze Sensor|Air conditioner mode/i);
   });
 
+  it("includes the official Dometic FreshJet FJX P/E display-code table with owner-safe boundaries", () => {
+    const sourceId = "dometic-freshjet-fjx-operating";
+    const source = corpus.sources.find((item) => item.id === sourceId);
+    const entries = corpus.entries.filter((entry) => entry.sourceIds.includes(sourceId));
+    const entryByCode = new Map(entries.map((entry) => [entry.code, entry]));
+
+    expect(source).toMatchObject({
+      brand: "Dometic",
+      official: true,
+      type: "manufacturer-manual",
+      url: "https://media.dometic.com/externalassets/dometic-freshjet-fjx7-3000_9620001685_123479.pdf",
+    });
+    expect(corpus.sources).toHaveLength(324);
+    expect(corpus.entries).toHaveLength(843);
+    expect(new Set(entries.map((entry) => entry.code))).toEqual(
+      new Set(["P0", "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P9", "E0", "E1", "E2", "E3", "E7", "E8", "E9", "EA", "EE", "EL"]),
+    );
+
+    for (const entry of entries) {
+      expect(entry.modelFamilies).toEqual(["FreshJet Series 4", "FreshJet Series 7", "FJX4333EEH", "FJX7333IHP"]);
+      expect(entry.ownerSafeActions.join(" "), entry.id).not.toMatch(
+        /\b(120\s*V|refrigerant|probe|bypass|open|fuse|wiring|wire|control board|module board|remove cover|rooftop)\b/i,
+      );
+      expect(entry.serviceOnlyActions.join(" "), entry.id).toMatch(/authorized Dometic service|qualified RV HVAC/i);
+      expect(entry.safetyBoundary, entry.id).toMatch(/authorized Dometic service|qualified RV HVAC/i);
+    }
+
+    expect(entryByCode.get("P0")?.plainMeaning).toMatch(/over temperature|over current|IPM module/i);
+    expect(entryByCode.get("P1")?.plainMeaning).toMatch(/under voltage protection/i);
+    expect(entryByCode.get("P1")?.ownerSafeActions.join(" ")).toMatch(/campsite management|sufficient/i);
+    expect(entryByCode.get("P3")?.plainMeaning).toMatch(/overvoltage protection/i);
+    expect(entryByCode.get("P3")?.ownerSafeActions.join(" ")).toMatch(/campsite management|sufficient/i);
+    expect(entryByCode.get("P9")?.plainMeaning).toMatch(/compressor drive abnormal|compressor does not start/i);
+    expect(entryByCode.get("E0")?.plainMeaning).toMatch(/communication failure/i);
+    expect(entryByCode.get("E9")?.plainMeaning).toMatch(/compressor drive|IPM module/i);
+    expect(entryByCode.get("E9")?.ownerSafeActions.join(" ")).toMatch(/campsite management|sufficient/i);
+    expect(entryByCode.get("EL")?.plainMeaning).toMatch(/LIN-BUS|CI-BUS|communication/i);
+  });
+
   it("adds official Dometic CCC2 thermostat symptom pages without inventing code entries or unsafe owner steps", () => {
     const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
     const sourceId = "dometic-ccc2-operating";
@@ -603,7 +672,7 @@ describe("verified corpus", () => {
     ];
 
     expect(corpus.sources.find((source) => source.id === sourceId)?.official).toBe(true);
-    expect(corpus.entries).toHaveLength(824);
+    expect(corpus.entries).toHaveLength(843);
     expect(
       corpus.entries
         .filter((entry) => entry.sourceIds.includes(sourceId))
@@ -642,7 +711,7 @@ describe("verified corpus", () => {
       "dometic-single-zone-hot-weather-filter-maintenance",
     ];
 
-    expect(corpus.symptoms).toHaveLength(160);
+    expect(corpus.symptoms).toHaveLength(166);
 
     for (const symptomId of expectedSymptomIds) {
       const symptom = symptomById.get(symptomId);
@@ -666,6 +735,47 @@ describe("verified corpus", () => {
     expect(symptomById.get("airflow-or-venting")?.sourceIds).toContain(sourceId);
   });
 
+  it("adds official Dometic FreshJet FJX symptom pages without unsafe owner steps", () => {
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const sourceId = "dometic-freshjet-fjx-operating";
+    const expectedSymptomIds = [
+      "dometic-freshjet-fjx-not-cooling-temperature-limits",
+      "dometic-freshjet-fjx-not-heating-temperature-limits",
+      "dometic-freshjet-fjx-low-air-output-filter-vents",
+      "dometic-freshjet-fjx-water-enters-vehicle-drainage",
+      "dometic-freshjet-fjx-icing-sensor-switches-off",
+      "dometic-freshjet-fjx-voltage-protection-campsite-power",
+    ];
+
+    expect(corpus.symptoms).toHaveLength(166);
+
+    for (const symptomId of expectedSymptomIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds).toEqual([sourceId]);
+      expect(symptom?.safeChecklist.join(" "), symptomId).not.toMatch(
+        /\b(120\s*V|refrigerant|probe|bypass|open|fuse|wiring|wire|control board|module board|remove cover|rooftop|compressor)\b/i,
+      );
+    }
+
+    expect(symptomById.get("dometic-freshjet-fjx-not-cooling-temperature-limits")?.summary).toMatch(/52|16|cooling/i);
+    expect(symptomById.get("dometic-freshjet-fjx-not-heating-temperature-limits")?.summary).toMatch(/-2|heating/i);
+    expect(symptomById.get("dometic-freshjet-fjx-low-air-output-filter-vents")?.summary).toMatch(
+      /intake|ventilation grilles|filter/i,
+    );
+    expect(symptomById.get("dometic-freshjet-fjx-water-enters-vehicle-drainage")?.summary).toMatch(
+      /condensation|drainage/i,
+    );
+    expect(symptomById.get("dometic-freshjet-fjx-icing-sensor-switches-off")?.summary).toMatch(/icing sensor|nozzles/i);
+    expect(symptomById.get("dometic-freshjet-fjx-voltage-protection-campsite-power")?.summary).toMatch(
+      /under voltage|overvoltage|campsite/i,
+    );
+
+    expect(symptomById.get("air-conditioner-not-cooling")?.sourceIds).toContain(sourceId);
+    expect(symptomById.get("airflow-or-venting")?.sourceIds).toContain(sourceId);
+    expect(symptomById.get("low-voltage")?.sourceIds).toContain(sourceId);
+  });
+
   it("adds official Dometic DF furnace operating-manual symptom pages without inventing code entries or unsafe owner steps", () => {
     const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
     const sourceId = "dometic-df-furnace-operating-2025";
@@ -682,7 +792,7 @@ describe("verified corpus", () => {
       official: true,
       type: "manufacturer-manual",
     });
-    expect(corpus.entries).toHaveLength(824);
+    expect(corpus.entries).toHaveLength(843);
     expect(corpus.entries.filter((entry) => entry.sourceIds.includes(sourceId))).toHaveLength(0);
 
     for (const symptomId of expectedSymptomIds) {
@@ -735,7 +845,7 @@ describe("verified corpus", () => {
       });
     }
 
-    expect(corpus.entries).toHaveLength(824);
+    expect(corpus.entries).toHaveLength(843);
     expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => sourceIds.includes(sourceId)))).toHaveLength(0);
 
     for (const symptomId of expectedSymptomIds) {
@@ -2351,7 +2461,7 @@ describe("verified corpus", () => {
       expect(source?.url, sourceId).toBe(url);
     }
 
-    expect(corpus.entries).toHaveLength(824);
+    expect(corpus.entries).toHaveLength(843);
     expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
 
     for (const symptomId of newSymptomIds) {
@@ -2923,7 +3033,7 @@ describe("verified corpus", () => {
 
     expect(sourceById.get("suburban-rv-faqs")?.official).toBe(true);
     expect(sourceById.get("suburban-rv-faqs")?.url).toBe("https://suburbanrv.com/service-support/faqs/");
-    expect(corpus.entries).toHaveLength(824);
+    expect(corpus.entries).toHaveLength(843);
     expect(corpus.entries.filter((entry) => entry.sourceIds.includes("suburban-rv-faqs"))).toHaveLength(0);
 
     for (const symptomId of newSymptomIds) {
@@ -3008,7 +3118,7 @@ describe("verified corpus", () => {
     expect(sourceById.get("suburban-st42-st60-product-overview")?.url).toBe(
       "https://suburbanrv.com/files/product_documents/Tankless%20Water%20Heater/ST%204260%20Tankless%20Water%20Heater%20Sell%20Sheet%20111522.pdf",
     );
-    expect(corpus.entries).toHaveLength(824);
+    expect(corpus.entries).toHaveLength(843);
 
     for (const sourceId of newSourceIds) {
       expect(corpus.entries.filter((entry) => entry.sourceIds.includes(sourceId)), sourceId).toHaveLength(0);
@@ -3252,7 +3362,7 @@ describe("verified corpus", () => {
       expect(source?.url, sourceId).toBe(url);
     }
 
-    expect(corpus.entries).toHaveLength(824);
+    expect(corpus.entries).toHaveLength(843);
     expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
 
     for (const symptomId of newSymptomIds) {

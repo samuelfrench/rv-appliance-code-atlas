@@ -2609,6 +2609,14 @@
       "url": "https://media.dometic.com/externalassets/rml10-4t_9620004548_82727.pdf",
       "type": "manual-pdf",
       "official": true
+    },
+    {
+      "id": "dometic-freshjet-fjx-operating",
+      "brand": "Dometic",
+      "title": "Dometic FreshJet Series 4, FreshJet Series 7 Operating Manual",
+      "url": "https://media.dometic.com/externalassets/dometic-freshjet-fjx7-3000_9620001685_123479.pdf",
+      "type": "manufacturer-manual",
+      "official": true
     }
   ],
   "entries": [
@@ -32201,6 +32209,688 @@
         "Front display code or lamp state photo",
         "Power module/display board part number if service requests it"
       ]
+    },
+    {
+      "id": "dometic-freshjet-fjx-p0-ipm-over-temperature-over-current",
+      "brand": "Dometic",
+      "equipmentType": "Rooftop air conditioner",
+      "modelFamilies": [
+        "FreshJet Series 4",
+        "FreshJet Series 7",
+        "FJX4333EEH",
+        "FJX7333IHP"
+      ],
+      "code": "P0",
+      "slug": "dometic-freshjet-fjx-p0-ipm-over-temperature-over-current",
+      "plainMeaning": "The Dometic FreshJet FJX operating manual lists P0 as over temperature or over current on the IPM module.",
+      "ownerSafeActions": [
+        "Record P0, selected mode, setpoint, indoor and outdoor conditions, and whether cooling or heating was requested.",
+        "Stop FreshJet operation from normal controls if the code returns.",
+        "Keep visible air intake openings, air nozzles, and ventilation grilles clear before service."
+      ],
+      "serviceOnlyActions": [
+        "IPM module temperature, drive current, internal electrical protection, and rooftop compartment diagnosis should be handled by authorized Dometic service or qualified RV HVAC personnel."
+      ],
+      "safetyBoundary": "Disconnect power before any FreshJet service. Refrigerant-circuit, sealed-system, sensor, fan, drive, electrical protection, roof seal, and internal component work is for authorized Dometic service or qualified RV HVAC personnel.",
+      "sourceIds": [
+        "dometic-freshjet-fjx-operating"
+      ],
+      "symptomIds": [
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Full FreshJet model and serial number from the data label",
+        "Wall control or display code photo",
+        "Shore-power or campsite voltage context and active loads",
+        "Recent service history and prior recurring codes"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-fjx-p1-under-voltage-protection",
+      "brand": "Dometic",
+      "equipmentType": "Rooftop air conditioner",
+      "modelFamilies": [
+        "FreshJet Series 4",
+        "FreshJet Series 7",
+        "FJX4333EEH",
+        "FJX7333IHP"
+      ],
+      "code": "P1",
+      "slug": "dometic-freshjet-fjx-p1-under-voltage-protection",
+      "plainMeaning": "The Dometic FreshJet FJX operating manual lists P1 as under voltage protection.",
+      "ownerSafeActions": [
+        "Record P1, selected mode, setpoint, and whether other high-draw RV loads were active.",
+        "Ask campsite management whether campsite power is sufficient for air conditioner operation.",
+        "Reduce active electrical consumers and unwind a cable drum if one is used, then retry once from normal controls.",
+        "Stop FreshJet operation from normal controls if the code returns."
+      ],
+      "serviceOnlyActions": [
+        "FreshJet supply protection, current sensing, converter condition, internal electrical protection, and rooftop compartment diagnosis should be handled by authorized Dometic service or qualified RV HVAC personnel."
+      ],
+      "safetyBoundary": "Disconnect power before any FreshJet service. Refrigerant-circuit, sealed-system, sensor, fan, drive, electrical protection, roof seal, and internal component work is for authorized Dometic service or qualified RV HVAC personnel.",
+      "sourceIds": [
+        "dometic-freshjet-fjx-operating"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Full FreshJet model and serial number from the data label",
+        "Wall control or display code photo",
+        "Shore-power or campsite voltage context and active loads",
+        "Recent service history and prior recurring codes"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-fjx-p2-unit-ac-over-current-protection",
+      "brand": "Dometic",
+      "equipmentType": "Rooftop air conditioner",
+      "modelFamilies": [
+        "FreshJet Series 4",
+        "FreshJet Series 7",
+        "FJX4333EEH",
+        "FJX7333IHP"
+      ],
+      "code": "P2",
+      "slug": "dometic-freshjet-fjx-p2-unit-ac-over-current-protection",
+      "plainMeaning": "The Dometic FreshJet FJX operating manual lists P2 as unit AC over-current protection.",
+      "ownerSafeActions": [
+        "Record P2, selected mode, setpoint, and what else was running when the code appeared.",
+        "Stop FreshJet operation from normal controls if the code returns.",
+        "Keep visible air intake openings, air nozzles, and ventilation grilles clear before service."
+      ],
+      "serviceOnlyActions": [
+        "Unit over-current protection, current sensor, internal fuse, converter, internal wiring, and rooftop compartment diagnosis should be handled by authorized Dometic service or qualified RV HVAC personnel."
+      ],
+      "safetyBoundary": "Disconnect power before any FreshJet service. Refrigerant-circuit, sealed-system, sensor, fan, drive, electrical protection, roof seal, and internal component work is for authorized Dometic service or qualified RV HVAC personnel.",
+      "sourceIds": [
+        "dometic-freshjet-fjx-operating"
+      ],
+      "symptomIds": [
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Full FreshJet model and serial number from the data label",
+        "Wall control or display code photo",
+        "Shore-power or campsite voltage context and active loads",
+        "Recent service history and prior recurring codes"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-fjx-p3-overvoltage-protection",
+      "brand": "Dometic",
+      "equipmentType": "Rooftop air conditioner",
+      "modelFamilies": [
+        "FreshJet Series 4",
+        "FreshJet Series 7",
+        "FJX4333EEH",
+        "FJX7333IHP"
+      ],
+      "code": "P3",
+      "slug": "dometic-freshjet-fjx-p3-overvoltage-protection",
+      "plainMeaning": "The Dometic FreshJet FJX operating manual lists P3 as overvoltage protection.",
+      "ownerSafeActions": [
+        "Record P3, selected mode, setpoint, and whether the code appeared after a campsite power change.",
+        "Ask campsite management whether campsite power is sufficient and stable for air conditioner operation.",
+        "Stop FreshJet operation from normal controls if the code returns."
+      ],
+      "serviceOnlyActions": [
+        "Overvoltage protection, current sensor, converter, internal electrical protection, and rooftop compartment diagnosis should be handled by authorized Dometic service or qualified RV HVAC personnel."
+      ],
+      "safetyBoundary": "Disconnect power before any FreshJet service. Refrigerant-circuit, sealed-system, sensor, fan, drive, electrical protection, roof seal, and internal component work is for authorized Dometic service or qualified RV HVAC personnel.",
+      "sourceIds": [
+        "dometic-freshjet-fjx-operating"
+      ],
+      "symptomIds": [
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Full FreshJet model and serial number from the data label",
+        "Wall control or display code photo",
+        "Shore-power or campsite voltage context and active loads",
+        "Recent service history and prior recurring codes"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-fjx-p4-discharge-tube-overheat-protection",
+      "brand": "Dometic",
+      "equipmentType": "Rooftop air conditioner",
+      "modelFamilies": [
+        "FreshJet Series 4",
+        "FreshJet Series 7",
+        "FJX4333EEH",
+        "FJX7333IHP"
+      ],
+      "code": "P4",
+      "slug": "dometic-freshjet-fjx-p4-discharge-tube-overheat-protection",
+      "plainMeaning": "The Dometic FreshJet FJX operating manual lists P4 as discharge tube overheat protection.",
+      "ownerSafeActions": [
+        "Record P4, selected mode, setpoint, outdoor conditions, and how long the unit had been running.",
+        "Stop FreshJet operation from normal controls if the code returns.",
+        "Keep visible air intake openings, air nozzles, and ventilation grilles clear before service."
+      ],
+      "serviceOnlyActions": [
+        "Discharge tube temperature protection, sealed-system condition, refrigerant-circuit work, fans, sensors, and rooftop compartment diagnosis should be handled by authorized Dometic service or qualified RV HVAC personnel."
+      ],
+      "safetyBoundary": "Disconnect power before any FreshJet service. Refrigerant-circuit, sealed-system, sensor, fan, drive, electrical protection, roof seal, and internal component work is for authorized Dometic service or qualified RV HVAC personnel.",
+      "sourceIds": [
+        "dometic-freshjet-fjx-operating"
+      ],
+      "symptomIds": [
+        "air-conditioner-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Full FreshJet model and serial number from the data label",
+        "Wall control or display code photo",
+        "Shore-power or campsite voltage context and active loads",
+        "Recent service history and prior recurring codes"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-fjx-p5-evaporator-coil-protection-cooling",
+      "brand": "Dometic",
+      "equipmentType": "Rooftop air conditioner",
+      "modelFamilies": [
+        "FreshJet Series 4",
+        "FreshJet Series 7",
+        "FJX4333EEH",
+        "FJX7333IHP"
+      ],
+      "code": "P5",
+      "slug": "dometic-freshjet-fjx-p5-evaporator-coil-protection-cooling",
+      "plainMeaning": "The Dometic FreshJet FJX operating manual lists P5 as evaporator coil protection in cooling mode.",
+      "ownerSafeActions": [
+        "Record P5, cooling mode, setpoint, indoor and outdoor conditions, and whether airflow changed.",
+        "Set a higher cooling temperature or stop FreshJet operation from normal controls if the code returns.",
+        "Clean the ADB filter if owner-accessible and keep air intake openings, air nozzles, and ventilation grilles clear."
+      ],
+      "serviceOnlyActions": [
+        "Evaporator protection, temperature sensors, fan operation, sealed-system condition, and rooftop compartment diagnosis should be handled by authorized Dometic service or qualified RV HVAC personnel."
+      ],
+      "safetyBoundary": "Disconnect power before any FreshJet service. Refrigerant-circuit, sealed-system, sensor, fan, drive, electrical protection, roof seal, and internal component work is for authorized Dometic service or qualified RV HVAC personnel.",
+      "sourceIds": [
+        "dometic-freshjet-fjx-operating"
+      ],
+      "symptomIds": [
+        "air-conditioner-not-cooling",
+        "airflow-or-venting",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Full FreshJet model and serial number from the data label",
+        "Wall control or display code photo",
+        "Shore-power or campsite voltage context and active loads",
+        "Recent service history and prior recurring codes"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-fjx-p6-condenser-coil-protection-cooling",
+      "brand": "Dometic",
+      "equipmentType": "Rooftop air conditioner",
+      "modelFamilies": [
+        "FreshJet Series 4",
+        "FreshJet Series 7",
+        "FJX4333EEH",
+        "FJX7333IHP"
+      ],
+      "code": "P6",
+      "slug": "dometic-freshjet-fjx-p6-condenser-coil-protection-cooling",
+      "plainMeaning": "The Dometic FreshJet FJX operating manual lists P6 as condenser coil protection in cooling mode.",
+      "ownerSafeActions": [
+        "Record P6, cooling mode, setpoint, outdoor conditions, and whether visible airflow paths are blocked.",
+        "Stop FreshJet operation from normal controls if the code returns.",
+        "Keep visible air intake openings, air nozzles, and ventilation grilles clear before service."
+      ],
+      "serviceOnlyActions": [
+        "Condenser protection, temperature sensors, fan operation, sealed-system condition, and rooftop compartment diagnosis should be handled by authorized Dometic service or qualified RV HVAC personnel."
+      ],
+      "safetyBoundary": "Disconnect power before any FreshJet service. Refrigerant-circuit, sealed-system, sensor, fan, drive, electrical protection, roof seal, and internal component work is for authorized Dometic service or qualified RV HVAC personnel.",
+      "sourceIds": [
+        "dometic-freshjet-fjx-operating"
+      ],
+      "symptomIds": [
+        "air-conditioner-not-cooling",
+        "airflow-or-venting",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Full FreshJet model and serial number from the data label",
+        "Wall control or display code photo",
+        "Shore-power or campsite voltage context and active loads",
+        "Recent service history and prior recurring codes"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-fjx-p7-evaporator-coil-protection-heating",
+      "brand": "Dometic",
+      "equipmentType": "Rooftop air conditioner",
+      "modelFamilies": [
+        "FreshJet Series 4",
+        "FreshJet Series 7",
+        "FJX4333EEH",
+        "FJX7333IHP"
+      ],
+      "code": "P7",
+      "slug": "dometic-freshjet-fjx-p7-evaporator-coil-protection-heating",
+      "plainMeaning": "The Dometic FreshJet FJX operating manual lists P7 as evaporator coil protection in heating mode.",
+      "ownerSafeActions": [
+        "Record P7, heating mode, setpoint, indoor and outdoor conditions, and whether airflow changed.",
+        "Stop FreshJet operation from normal controls if the code returns.",
+        "Clean the ADB filter if owner-accessible and keep air intake openings, air nozzles, and ventilation grilles clear."
+      ],
+      "serviceOnlyActions": [
+        "Evaporator protection in heating mode, temperature sensors, fan operation, sealed-system condition, and rooftop compartment diagnosis should be handled by authorized Dometic service or qualified RV HVAC personnel."
+      ],
+      "safetyBoundary": "Disconnect power before any FreshJet service. Refrigerant-circuit, sealed-system, sensor, fan, drive, electrical protection, roof seal, and internal component work is for authorized Dometic service or qualified RV HVAC personnel.",
+      "sourceIds": [
+        "dometic-freshjet-fjx-operating"
+      ],
+      "symptomIds": [
+        "airflow-or-venting",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Full FreshJet model and serial number from the data label",
+        "Wall control or display code photo",
+        "Shore-power or campsite voltage context and active loads",
+        "Recent service history and prior recurring codes"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-fjx-p9-compressor-drive-abnormal-no-start",
+      "brand": "Dometic",
+      "equipmentType": "Rooftop air conditioner",
+      "modelFamilies": [
+        "FreshJet Series 4",
+        "FreshJet Series 7",
+        "FJX4333EEH",
+        "FJX7333IHP"
+      ],
+      "code": "P9",
+      "slug": "dometic-freshjet-fjx-p9-compressor-drive-abnormal-no-start",
+      "plainMeaning": "The Dometic FreshJet FJX operating manual lists P9 as compressor drive abnormal or compressor does not start.",
+      "ownerSafeActions": [
+        "Record P9, selected mode, setpoint, outdoor conditions, and whether the unit tried to start.",
+        "Stop FreshJet operation from normal controls if the code returns.",
+        "Ask campsite management whether campsite power is sufficient if the code follows a weak power event."
+      ],
+      "serviceOnlyActions": [
+        "Compressor drive, IPM module, current sensor, electrical protection, and rooftop compartment diagnosis should be handled by authorized Dometic service or qualified RV HVAC personnel."
+      ],
+      "safetyBoundary": "Disconnect power before any FreshJet service. Refrigerant-circuit, sealed-system, sensor, fan, drive, electrical protection, roof seal, and internal component work is for authorized Dometic service or qualified RV HVAC personnel.",
+      "sourceIds": [
+        "dometic-freshjet-fjx-operating"
+      ],
+      "symptomIds": [
+        "air-conditioner-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Full FreshJet model and serial number from the data label",
+        "Wall control or display code photo",
+        "Shore-power or campsite voltage context and active loads",
+        "Recent service history and prior recurring codes"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-fjx-e0-communication-failure",
+      "brand": "Dometic",
+      "equipmentType": "Rooftop air conditioner",
+      "modelFamilies": [
+        "FreshJet Series 4",
+        "FreshJet Series 7",
+        "FJX4333EEH",
+        "FJX7333IHP"
+      ],
+      "code": "E0",
+      "slug": "dometic-freshjet-fjx-e0-communication-failure",
+      "plainMeaning": "The Dometic FreshJet FJX operating manual lists E0 as communication failure.",
+      "ownerSafeActions": [
+        "Record E0, selected mode, setpoint, display behavior, and whether the code clears from normal controls.",
+        "Stop FreshJet operation from normal controls if the code returns.",
+        "Note recent service history before calling for service."
+      ],
+      "serviceOnlyActions": [
+        "FreshJet communication circuits, LIN/CI bus links, internal wiring, display interface, and rooftop compartment diagnosis should be handled by authorized Dometic service or qualified RV HVAC personnel."
+      ],
+      "safetyBoundary": "Disconnect power before any FreshJet service. Refrigerant-circuit, sealed-system, sensor, fan, drive, electrical protection, roof seal, and internal component work is for authorized Dometic service or qualified RV HVAC personnel.",
+      "sourceIds": [
+        "dometic-freshjet-fjx-operating"
+      ],
+      "symptomIds": [
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Full FreshJet model and serial number from the data label",
+        "Wall control or display code photo",
+        "Shore-power or campsite voltage context and active loads",
+        "Recent service history and prior recurring codes"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-fjx-e1-room-temperature-sensor-fault",
+      "brand": "Dometic",
+      "equipmentType": "Rooftop air conditioner",
+      "modelFamilies": [
+        "FreshJet Series 4",
+        "FreshJet Series 7",
+        "FJX4333EEH",
+        "FJX7333IHP"
+      ],
+      "code": "E1",
+      "slug": "dometic-freshjet-fjx-e1-room-temperature-sensor-fault",
+      "plainMeaning": "The Dometic FreshJet FJX operating manual lists E1 as room temperature sensor fault.",
+      "ownerSafeActions": [
+        "Record E1, room conditions, selected mode, setpoint, and display behavior.",
+        "Stop FreshJet operation from normal controls if the code returns.",
+        "Note whether the room temperature shown on the display seems unreasonable before service."
+      ],
+      "serviceOnlyActions": [
+        "Room temperature sensor, display interface, internal wiring, and rooftop compartment diagnosis should be handled by authorized Dometic service or qualified RV HVAC personnel."
+      ],
+      "safetyBoundary": "Disconnect power before any FreshJet service. Refrigerant-circuit, sealed-system, sensor, fan, drive, electrical protection, roof seal, and internal component work is for authorized Dometic service or qualified RV HVAC personnel.",
+      "sourceIds": [
+        "dometic-freshjet-fjx-operating"
+      ],
+      "symptomIds": [
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Full FreshJet model and serial number from the data label",
+        "Wall control or display code photo",
+        "Shore-power or campsite voltage context and active loads",
+        "Recent service history and prior recurring codes"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-fjx-e2-evaporator-coil-temperature-sensor-fault",
+      "brand": "Dometic",
+      "equipmentType": "Rooftop air conditioner",
+      "modelFamilies": [
+        "FreshJet Series 4",
+        "FreshJet Series 7",
+        "FJX4333EEH",
+        "FJX7333IHP"
+      ],
+      "code": "E2",
+      "slug": "dometic-freshjet-fjx-e2-evaporator-coil-temperature-sensor-fault",
+      "plainMeaning": "The Dometic FreshJet FJX operating manual lists E2 as evaporator coil temperature sensor fault.",
+      "ownerSafeActions": [
+        "Record E2, selected mode, setpoint, indoor and outdoor conditions, and whether airflow changed.",
+        "Stop FreshJet operation from normal controls if the code returns.",
+        "Clean the ADB filter if owner-accessible and keep air intake openings, air nozzles, and ventilation grilles clear."
+      ],
+      "serviceOnlyActions": [
+        "Evaporator temperature sensor, coil-protection controls, fan operation, sealed-system condition, and rooftop compartment diagnosis should be handled by authorized Dometic service or qualified RV HVAC personnel."
+      ],
+      "safetyBoundary": "Disconnect power before any FreshJet service. Refrigerant-circuit, sealed-system, sensor, fan, drive, electrical protection, roof seal, and internal component work is for authorized Dometic service or qualified RV HVAC personnel.",
+      "sourceIds": [
+        "dometic-freshjet-fjx-operating"
+      ],
+      "symptomIds": [
+        "air-conditioner-not-cooling",
+        "airflow-or-venting",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Full FreshJet model and serial number from the data label",
+        "Wall control or display code photo",
+        "Shore-power or campsite voltage context and active loads",
+        "Recent service history and prior recurring codes"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-fjx-e3-condenser-coil-temperature-sensor-fault",
+      "brand": "Dometic",
+      "equipmentType": "Rooftop air conditioner",
+      "modelFamilies": [
+        "FreshJet Series 4",
+        "FreshJet Series 7",
+        "FJX4333EEH",
+        "FJX7333IHP"
+      ],
+      "code": "E3",
+      "slug": "dometic-freshjet-fjx-e3-condenser-coil-temperature-sensor-fault",
+      "plainMeaning": "The Dometic FreshJet FJX operating manual lists E3 as condenser coil temperature sensor fault.",
+      "ownerSafeActions": [
+        "Record E3, selected mode, setpoint, outdoor conditions, and whether visible airflow paths are blocked.",
+        "Stop FreshJet operation from normal controls if the code returns.",
+        "Keep visible air intake openings, air nozzles, and ventilation grilles clear before service."
+      ],
+      "serviceOnlyActions": [
+        "Condenser temperature sensor, fan operation, sealed-system condition, and rooftop compartment diagnosis should be handled by authorized Dometic service or qualified RV HVAC personnel."
+      ],
+      "safetyBoundary": "Disconnect power before any FreshJet service. Refrigerant-circuit, sealed-system, sensor, fan, drive, electrical protection, roof seal, and internal component work is for authorized Dometic service or qualified RV HVAC personnel.",
+      "sourceIds": [
+        "dometic-freshjet-fjx-operating"
+      ],
+      "symptomIds": [
+        "air-conditioner-not-cooling",
+        "airflow-or-venting",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Full FreshJet model and serial number from the data label",
+        "Wall control or display code photo",
+        "Shore-power or campsite voltage context and active loads",
+        "Recent service history and prior recurring codes"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-fjx-e7-outdoor-temperature-sensor-failure",
+      "brand": "Dometic",
+      "equipmentType": "Rooftop air conditioner",
+      "modelFamilies": [
+        "FreshJet Series 4",
+        "FreshJet Series 7",
+        "FJX4333EEH",
+        "FJX7333IHP"
+      ],
+      "code": "E7",
+      "slug": "dometic-freshjet-fjx-e7-outdoor-temperature-sensor-failure",
+      "plainMeaning": "The Dometic FreshJet FJX operating manual lists E7 as outdoor temperature sensor failure.",
+      "ownerSafeActions": [
+        "Record E7, selected mode, setpoint, outdoor conditions, and display behavior.",
+        "Stop FreshJet operation from normal controls if the code returns.",
+        "Note whether the code appears only near the documented temperature limits."
+      ],
+      "serviceOnlyActions": [
+        "Outdoor temperature sensor, fan operation, internal wiring, and rooftop compartment diagnosis should be handled by authorized Dometic service or qualified RV HVAC personnel."
+      ],
+      "safetyBoundary": "Disconnect power before any FreshJet service. Refrigerant-circuit, sealed-system, sensor, fan, drive, electrical protection, roof seal, and internal component work is for authorized Dometic service or qualified RV HVAC personnel.",
+      "sourceIds": [
+        "dometic-freshjet-fjx-operating"
+      ],
+      "symptomIds": [
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Full FreshJet model and serial number from the data label",
+        "Wall control or display code photo",
+        "Shore-power or campsite voltage context and active loads",
+        "Recent service history and prior recurring codes"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-fjx-e8-discharge-tube-temperature-sensor-failure",
+      "brand": "Dometic",
+      "equipmentType": "Rooftop air conditioner",
+      "modelFamilies": [
+        "FreshJet Series 4",
+        "FreshJet Series 7",
+        "FJX4333EEH",
+        "FJX7333IHP"
+      ],
+      "code": "E8",
+      "slug": "dometic-freshjet-fjx-e8-discharge-tube-temperature-sensor-failure",
+      "plainMeaning": "The Dometic FreshJet FJX operating manual lists E8 as discharge tube temperature sensor failure.",
+      "ownerSafeActions": [
+        "Record E8, selected mode, setpoint, outdoor conditions, and how long the unit had been running.",
+        "Stop FreshJet operation from normal controls if the code returns.",
+        "Keep visible air intake openings, air nozzles, and ventilation grilles clear before service."
+      ],
+      "serviceOnlyActions": [
+        "Discharge tube temperature sensor, sealed-system condition, refrigerant-circuit work, and rooftop compartment diagnosis should be handled by authorized Dometic service or qualified RV HVAC personnel."
+      ],
+      "safetyBoundary": "Disconnect power before any FreshJet service. Refrigerant-circuit, sealed-system, sensor, fan, drive, electrical protection, roof seal, and internal component work is for authorized Dometic service or qualified RV HVAC personnel.",
+      "sourceIds": [
+        "dometic-freshjet-fjx-operating"
+      ],
+      "symptomIds": [
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Full FreshJet model and serial number from the data label",
+        "Wall control or display code photo",
+        "Shore-power or campsite voltage context and active loads",
+        "Recent service history and prior recurring codes"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-fjx-e9-compressor-drive-ipm-module-fault",
+      "brand": "Dometic",
+      "equipmentType": "Rooftop air conditioner",
+      "modelFamilies": [
+        "FreshJet Series 4",
+        "FreshJet Series 7",
+        "FJX4333EEH",
+        "FJX7333IHP"
+      ],
+      "code": "E9",
+      "slug": "dometic-freshjet-fjx-e9-compressor-drive-ipm-module-fault",
+      "plainMeaning": "The Dometic FreshJet FJX operating manual lists E9 as compressor drive or IPM module fault.",
+      "ownerSafeActions": [
+        "Record E9, selected mode, setpoint, outdoor conditions, and whether other high-draw RV loads were active.",
+        "Ask campsite management whether campsite power is sufficient and stable for air conditioner operation.",
+        "Reduce active electrical consumers and unwind a cable drum if one is used, then retry once from normal controls.",
+        "Stop FreshJet operation from normal controls if the code returns."
+      ],
+      "serviceOnlyActions": [
+        "Compressor drive, IPM module, current sensor, internal electrical protection, sealed-system condition, and rooftop compartment diagnosis should be handled by authorized Dometic service or qualified RV HVAC personnel."
+      ],
+      "safetyBoundary": "Disconnect power before any FreshJet service. Refrigerant-circuit, sealed-system, sensor, fan, drive, electrical protection, roof seal, and internal component work is for authorized Dometic service or qualified RV HVAC personnel.",
+      "sourceIds": [
+        "dometic-freshjet-fjx-operating"
+      ],
+      "symptomIds": [
+        "air-conditioner-not-cooling",
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Full FreshJet model and serial number from the data label",
+        "Wall control or display code photo",
+        "Shore-power or campsite voltage context and active loads",
+        "Recent service history and prior recurring codes"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-fjx-ea-current-sensor-fault",
+      "brand": "Dometic",
+      "equipmentType": "Rooftop air conditioner",
+      "modelFamilies": [
+        "FreshJet Series 4",
+        "FreshJet Series 7",
+        "FJX4333EEH",
+        "FJX7333IHP"
+      ],
+      "code": "EA",
+      "slug": "dometic-freshjet-fjx-ea-current-sensor-fault",
+      "plainMeaning": "The Dometic FreshJet FJX operating manual lists EA as current sensor fault.",
+      "ownerSafeActions": [
+        "Record EA, selected mode, setpoint, and whether the code appears during startup or steady running.",
+        "Stop FreshJet operation from normal controls if the code returns.",
+        "Note campsite power context and recent service history before calling for service."
+      ],
+      "serviceOnlyActions": [
+        "Current sensor, internal electrical protection, IPM module, and rooftop compartment diagnosis should be handled by authorized Dometic service or qualified RV HVAC personnel."
+      ],
+      "safetyBoundary": "Disconnect power before any FreshJet service. Refrigerant-circuit, sealed-system, sensor, fan, drive, electrical protection, roof seal, and internal component work is for authorized Dometic service or qualified RV HVAC personnel.",
+      "sourceIds": [
+        "dometic-freshjet-fjx-operating"
+      ],
+      "symptomIds": [
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Full FreshJet model and serial number from the data label",
+        "Wall control or display code photo",
+        "Shore-power or campsite voltage context and active loads",
+        "Recent service history and prior recurring codes"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-fjx-ee-outdoor-eeprom-fault",
+      "brand": "Dometic",
+      "equipmentType": "Rooftop air conditioner",
+      "modelFamilies": [
+        "FreshJet Series 4",
+        "FreshJet Series 7",
+        "FJX4333EEH",
+        "FJX7333IHP"
+      ],
+      "code": "EE",
+      "slug": "dometic-freshjet-fjx-ee-outdoor-eeprom-fault",
+      "plainMeaning": "The Dometic FreshJet FJX operating manual lists EE as outdoor EEPROM fault.",
+      "ownerSafeActions": [
+        "Record EE, selected mode, setpoint, display behavior, and any recent service history.",
+        "Stop FreshJet operation from normal controls if the code returns.",
+        "Provide the full FreshJet data-label details when arranging service."
+      ],
+      "serviceOnlyActions": [
+        "Outdoor EEPROM, control electronics, internal wiring, and rooftop compartment diagnosis should be handled by authorized Dometic service or qualified RV HVAC personnel."
+      ],
+      "safetyBoundary": "Disconnect power before any FreshJet service. Refrigerant-circuit, sealed-system, sensor, fan, drive, electrical protection, roof seal, and internal component work is for authorized Dometic service or qualified RV HVAC personnel.",
+      "sourceIds": [
+        "dometic-freshjet-fjx-operating"
+      ],
+      "symptomIds": [
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Full FreshJet model and serial number from the data label",
+        "Wall control or display code photo",
+        "Shore-power or campsite voltage context and active loads",
+        "Recent service history and prior recurring codes"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-fjx-el-lin-ci-bus-communication-failure",
+      "brand": "Dometic",
+      "equipmentType": "Rooftop air conditioner",
+      "modelFamilies": [
+        "FreshJet Series 4",
+        "FreshJet Series 7",
+        "FJX4333EEH",
+        "FJX7333IHP"
+      ],
+      "code": "EL",
+      "slug": "dometic-freshjet-fjx-el-lin-ci-bus-communication-failure",
+      "plainMeaning": "The Dometic FreshJet FJX operating manual lists EL as LIN-BUS/CI-BUS communication failure.",
+      "ownerSafeActions": [
+        "Record EL, selected mode, setpoint, display behavior, and whether the code clears from normal controls.",
+        "Stop FreshJet operation from normal controls if the code returns.",
+        "Note recent service history before calling for service."
+      ],
+      "serviceOnlyActions": [
+        "LIN-BUS/CI-BUS communication, display interface, internal wiring, and rooftop compartment diagnosis should be handled by authorized Dometic service or qualified RV HVAC personnel."
+      ],
+      "safetyBoundary": "Disconnect power before any FreshJet service. Refrigerant-circuit, sealed-system, sensor, fan, drive, electrical protection, roof seal, and internal component work is for authorized Dometic service or qualified RV HVAC personnel.",
+      "sourceIds": [
+        "dometic-freshjet-fjx-operating"
+      ],
+      "symptomIds": [
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Full FreshJet model and serial number from the data label",
+        "Wall control or display code photo",
+        "Shore-power or campsite voltage context and active loads",
+        "Recent service history and prior recurring codes"
+      ]
     }
   ],
   "symptoms": [
@@ -32372,7 +33062,8 @@
         "onan-generator-quick-start",
         "onan-rv-generator-handbook",
         "dometic-ccc2-operating",
-        "dometic-single-zone-lcd-thermostat-operating"
+        "dometic-single-zone-lcd-thermostat-operating",
+        "dometic-freshjet-fjx-operating"
       ]
     },
     {
@@ -32453,7 +33144,8 @@
         "furrion-10-6-refrigerator",
         "furrion-french-door-refrigerator",
         "onan-generator-quick-start",
-        "onan-rv-generator-handbook"
+        "onan-rv-generator-handbook",
+        "dometic-freshjet-fjx-operating"
       ]
     },
     {
@@ -32836,7 +33528,8 @@
         "coleman-comfortguard-service",
         "coleman-6633-service",
         "dometic-ccc2-operating",
-        "dometic-single-zone-lcd-thermostat-operating"
+        "dometic-single-zone-lcd-thermostat-operating",
+        "dometic-freshjet-fjx-operating"
       ]
     },
     {
@@ -35729,6 +36422,132 @@
         "dometic-rm10-fault-no-cooling-power-ac-mode-support",
         "dometic-rm10-fault-no-cooling-power-dc-mode-support",
         "dometic-rm10-fault-tank-stop-mode-gas-blocked-support"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-fjx-not-cooling-temperature-limits",
+      "slug": "dometic-freshjet-fjx-not-cooling-temperature-limits",
+      "title": "Dometic FreshJet FJX not cooling within temperature limits",
+      "summary": "Use this when a Dometic FreshJet FJX in cooling mode is not cooling even though the operating range is within the 52 C upper ambient limit and the 16 C lower cooling limit, and the setpoint may need to be lower.",
+      "safeChecklist": [
+        "Select cooling mode from normal controls and set a lower temperature.",
+        "Confirm ambient conditions are above 16 C and not above 52 C before judging cooling performance.",
+        "Keep air intake openings, air nozzles, and ventilation grilles clear, and clean the ADB filter if owner-accessible.",
+        "Call authorized Dometic service if normal controls and visible airflow checks do not restore cooling."
+      ],
+      "sourceIds": [
+        "dometic-freshjet-fjx-operating"
+      ],
+      "searchAliases": [
+        "freshjet fjx not cooling above 52 below 16 cooling mode",
+        "dometic freshjet fjx cooling mode lower setpoint",
+        "freshjet series 4 not cooling temperature limit",
+        "freshjet series 7 cooling above 16 c below 52 c"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-fjx-not-heating-temperature-limits",
+      "slug": "dometic-freshjet-fjx-not-heating-temperature-limits",
+      "title": "Dometic FreshJet FJX not heating within temperature limits",
+      "summary": "Use this when a Dometic FreshJet FJX in heating mode is not heating near the -2 C lower ambient limit and the setpoint may need to be set higher.",
+      "safeChecklist": [
+        "Select heating mode from normal controls and set a higher temperature.",
+        "Confirm ambient conditions are above -2 C before judging heat-pump performance.",
+        "Keep air intake openings, air nozzles, and ventilation grilles clear, and clean the ADB filter if owner-accessible.",
+        "Call authorized Dometic service if normal controls and visible airflow checks do not restore heating."
+      ],
+      "sourceIds": [
+        "dometic-freshjet-fjx-operating"
+      ],
+      "searchAliases": [
+        "freshjet fjx not heating below -2 set higher temperature",
+        "dometic freshjet fjx heating mode lower ambient limit",
+        "freshjet series 4 heat pump not heating minus 2 c",
+        "freshjet series 7 not heating setpoint higher"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-fjx-low-air-output-filter-vents",
+      "slug": "dometic-freshjet-fjx-low-air-output-filter-vents",
+      "title": "Dometic FreshJet FJX low air output",
+      "summary": "Use this when Dometic FreshJet FJX air output is low and the owner checks are air intake openings, ventilation grilles, air nozzles, and the ADB filter.",
+      "safeChecklist": [
+        "Stop FreshJet operation from normal controls if airflow is very poor.",
+        "Clear visible leaves or debris from air intake openings, air nozzles, and ventilation grilles from normal access.",
+        "Clean the ADB filter if owner-accessible and reinstall it before running the unit.",
+        "Call authorized Dometic service if low air output returns after visible airflow and filter checks."
+      ],
+      "sourceIds": [
+        "dometic-freshjet-fjx-operating"
+      ],
+      "searchAliases": [
+        "freshjet low air output leaves ventilation grilles filter",
+        "freshjet fjx low airflow air intake openings adb filter",
+        "dometic freshjet air nozzles closed ventilation grilles",
+        "freshjet series 4 series 7 weak air output filter"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-fjx-water-enters-vehicle-drainage",
+      "slug": "dometic-freshjet-fjx-water-enters-vehicle-drainage",
+      "title": "Dometic FreshJet FJX water enters the vehicle",
+      "summary": "Use this when Dometic FreshJet FJX condensate water enters the vehicle and owner checks are limited to condensation drainage openings from normal access.",
+      "safeChecklist": [
+        "Stop FreshJet operation from normal controls if water is entering the living area.",
+        "Clear condensation drainage openings only from normal access.",
+        "Record rain conditions, cooling runtime, and where water appears inside the vehicle.",
+        "Call authorized Dometic service for repeated water entry, seal concerns, or drainage problems beyond normal access."
+      ],
+      "sourceIds": [
+        "dometic-freshjet-fjx-operating"
+      ],
+      "searchAliases": [
+        "freshjet water enters vehicle drainage openings",
+        "freshjet fjx condensation drainage openings water inside",
+        "dometic freshjet water leak into vehicle drain",
+        "freshjet series 7 condensate water enters rv"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-fjx-icing-sensor-switches-off",
+      "slug": "dometic-freshjet-fjx-icing-sensor-switches-off",
+      "title": "Dometic FreshJet FJX constantly switches itself off",
+      "summary": "Use this when Dometic FreshJet FJX constantly switches itself off and the manual points to the icing sensor, outer temperature too low, or air nozzles closed.",
+      "safeChecklist": [
+        "Set a higher cooling temperature or stop cooling from normal controls until conditions improve.",
+        "Make sure air nozzles are not closed.",
+        "Keep air intake openings and ventilation grilles clear, and clean the ADB filter if owner-accessible.",
+        "Call authorized Dometic service if the unit keeps switching itself off after normal controls and visible airflow checks."
+      ],
+      "sourceIds": [
+        "dometic-freshjet-fjx-operating"
+      ],
+      "searchAliases": [
+        "freshjet constantly switches itself off icing sensor air nozzles closed",
+        "freshjet fjx icing sensor outer temperature too low",
+        "dometic freshjet switches off air nozzles closed",
+        "freshjet series 4 series 7 constantly turns off"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-fjx-voltage-protection-campsite-power",
+      "slug": "dometic-freshjet-fjx-voltage-protection-campsite-power",
+      "title": "Dometic FreshJet FJX voltage protection and campsite power",
+      "summary": "Use this when Dometic FreshJet FJX shows under voltage protection, overvoltage protection, or related startup protection and the owner check is to ask campsite management whether site power is sufficient.",
+      "safeChecklist": [
+        "Record the displayed P1, P3, or E9 code and what else was running when it appeared.",
+        "Ask campsite management whether site power is sufficient and stable for air conditioner operation.",
+        "Reduce active electrical consumers and unwind a cable drum if one is used, then retry once from normal controls.",
+        "Stop FreshJet operation from normal controls and call authorized Dometic service if voltage protection returns."
+      ],
+      "sourceIds": [
+        "dometic-freshjet-fjx-operating"
+      ],
+      "searchAliases": [
+        "freshjet under voltage campsite management sufficient power",
+        "freshjet fjx overvoltage campsite power management",
+        "dometic freshjet p1 p3 e9 campsite voltage sufficient",
+        "freshjet series 7 voltage protection active electrical consumers cable drum"
       ]
     }
   ],
