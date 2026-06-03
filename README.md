@@ -107,4 +107,4 @@ Current corpus:
 - `1086` generated indexable pages
 
 Next automated batch goal:
-- Continue remaining post-Coleman official support-row triage by traffic potential, moving from Furrion/Lippert service-prep gaps into Suburban/Airxcel and Cummins pages; add only owner-safe non-duplicate source wiring or guides and keep service-only rows rejected except model or service-call prep.
+- Continue remaining post-Coleman official support-row triage by traffic potential, moving into Suburban/Airxcel and Cummins pages; add only owner-safe non-duplicate source wiring or guides and keep service-only rows rejected except model or service-call prep.
