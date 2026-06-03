@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 850;
-const expectedSourceCount = 373;
-const expectedSymptomCount = 220;
+const expectedSourceCount = 381;
+const expectedSymptomCount = 228;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -403,6 +403,35 @@ describe("verified corpus", () => {
     );
     expect(lookupSymptomGuides(index, "furrion comfort production label model serial ac thermostat furnace")[0]?.slug).toBe(
       "furrion-ac-model-serial-label-service-call-prep",
+    );
+  });
+
+  it("finds post-Coleman Norcold and Furrion service-prep pages from owner searches", () => {
+    const index = buildSymptomSearchIndex(corpus);
+
+    expect(lookupSymptomGuides(index, "norcold dc740 not cooling low voltage defrost fuse")[0]?.slug).toBe(
+      "norcold-dc740-dc751-not-cooling-low-voltage-defrost",
+    );
+    expect(lookupSymptomGuides(index, "norcold nv1090 night mode defrost storage vents")[0]?.slug).toBe(
+      "norcold-nv1090-cooling-night-mode-defrost-storage",
+    );
+    expect(lookupSymptomGuides(index, "thetford t2095 door seal night mode storage defrost")[0]?.slug).toBe(
+      "thetford-t2095-cooling-door-seal-night-mode-storage",
+    );
+    expect(lookupSymptomGuides(index, "norcold 1210 door seal defrost storage recall service prep")[0]?.slug).toBe(
+      "norcold-1210-defrost-door-seal-storage-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "norcold 1200 recall hts solid red serial service prep")[0]?.slug).toBe(
+      "norcold-recall-hts-gas-valve-serial-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "norcold de0041 ev0061 ac dc refrigerator low voltage defrost")[0]?.slug).toBe(
+      "norcold-de-ev-acdc-refrigerator-not-cooling-defrost-battery",
+    );
+    expect(lookupSymptomGuides(index, "furrion thermostat controller compatibility hw v2 furnace missing")[0]?.slug).toBe(
+      "furrion-thermostat-controller-compatibility-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "furrion refrigerator production label serial behind lower drawer")[0]?.slug).toBe(
+      "furrion-refrigerator-model-serial-label-service-call-prep",
     );
   });
 
@@ -4527,6 +4556,114 @@ describe("verified corpus", () => {
       "furrion-enhanced-multizone-thermostat-e3-qr187",
     );
     expect(symptomById.get("furnace-lockout")?.sourceIds).toContain("furrion-furnace-lockout-reset-qr224");
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds post-Coleman Norcold/Thetford and Furrion service-prep support sources without inventing code entries", () => {
+    const expectedSources = new Map([
+      [
+        "norcold-dc740-dc751-owner-install-2024",
+        "https://www.thetford.com/app/uploads/2024/09/641479_DC740DC751_InstallationOwners-Manual_RevA.pdf",
+      ],
+      [
+        "norcold-nv1090-user-manual-2025",
+        "https://www.thetford.com/app/uploads/2025/11/641576_UM_NV1090_EN.pdf",
+      ],
+      [
+        "thetford-t2095-owner-install-2025",
+        "https://www.thetford.com/app/uploads/2025/08/641518A_T2095-US_OMIM_Final.pdf",
+      ],
+      ["norcold-1210-owner", "https://www.thetford.com/app/uploads/2024/10/OM_1210_635494E_20210902.pdf"],
+      ["norcold-product-compliance-recall-info", "https://www.thetford.com/us/recall-information/"],
+      [
+        "norcold-de0041-ev0041-de0061-ev0061-owner",
+        "https://www.thetford.com/app/uploads/2024/10/OM_DCDEEV00410061_635743D_20180326.pdf",
+      ],
+      ["furrion-thermostat-controller-compatibility-qr155", "https://support.lci1.com/documents/ccd-0007160"],
+      ["furrion-appliances-production-label-w009", "https://support.lci1.com/documents/ccd-0007440"],
+    ]);
+    const expectedSymptomSourceIds = new Map<string, string[]>([
+      ["norcold-dc740-dc751-cooling-low-voltage-defrost", ["norcold-dc740-dc751-owner-install-2024"]],
+      ["norcold-nv1090-cooling-night-mode-defrost-storage", ["norcold-nv1090-user-manual-2025"]],
+      ["thetford-t2095-cooling-door-seal-night-mode-storage", ["thetford-t2095-owner-install-2025"]],
+      ["norcold-1210-defrost-door-seal-storage-service-prep", ["norcold-1210-owner"]],
+      ["norcold-recall-hts-gas-valve-serial-service-prep", ["norcold-product-compliance-recall-info"]],
+      [
+        "norcold-de-ev-acdc-refrigerator-cooling-defrost-battery",
+        ["norcold-de0041-ev0041-de0061-ev0061-owner"],
+      ],
+      ["furrion-thermostat-controller-compatibility-service-prep", ["furrion-thermostat-controller-compatibility-qr155"]],
+      ["furrion-refrigerator-production-label-service-prep", ["furrion-appliances-production-label-w009"]],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\brefrigerant\b|\bprobe\b|\bopen (the )?(fuel|gas|electrical|rooftop)|wire|wiring|line-voltage|breaker panel|remove.*thermostat|replace.*control|remove.*shroud|replace.*compressor|install.*controller|access.*control box/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = corpus.sources.find((item) => item.id === sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const [symptomId, sourceIds] of expectedSymptomSourceIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds, symptomId).toEqual(sourceIds);
+      expect(symptom?.safeChecklist.join(" "), symptomId).not.toMatch(unsafeOwnerActionPattern);
+    }
+
+    expect(symptomById.get("norcold-dc740-dc751-cooling-low-voltage-defrost")?.safeChecklist.join(" ")).toMatch(
+      /thermostat|vents|110 degrees|defrost|authorized Norcold Service Center/i,
+    );
+    expect(symptomById.get("norcold-nv1090-cooling-night-mode-defrost-storage")?.safeChecklist.join(" ")).toMatch(
+      /night mode|86 degrees|defrost|storage|service center/i,
+    );
+    expect(symptomById.get("thetford-t2095-cooling-door-seal-night-mode-storage")?.safeChecklist.join(" ")).toMatch(
+      /paper|seal|night mode|seasonal|service center/i,
+    );
+    expect(symptomById.get("norcold-1210-defrost-door-seal-storage-service-prep")?.safeChecklist.join(" ")).toMatch(
+      /door seal|storage latch|authorized Norcold Service Center/i,
+    );
+    expect(symptomById.get("norcold-recall-hts-gas-valve-serial-service-prep")?.safeChecklist.join(" ")).toMatch(
+      /serial|solid red|flashing red|trained service technician/i,
+    );
+    expect(symptomById.get("norcold-de-ev-acdc-refrigerator-cooling-defrost-battery")?.safeChecklist.join(" ")).toMatch(
+      /AC or DC mode|defrost|battery|authorized Norcold Service Center/i,
+    );
+    expect(symptomById.get("furrion-thermostat-controller-compatibility-service-prep")?.safeChecklist.join(" ")).toMatch(
+      /HW:V1.0|HW:V2.0|ES|furnace function/i,
+    );
+    expect(symptomById.get("furrion-refrigerator-production-label-service-prep")?.safeChecklist.join(" ")).toMatch(
+      /lower drawer|inside.*door|back.*fridge|serial/i,
+    );
+
+    expect(symptomById.get("refrigerator-not-cooling")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "norcold-dc740-dc751-owner-install-2024",
+        "norcold-nv1090-user-manual-2025",
+        "thetford-t2095-owner-install-2025",
+        "norcold-de0041-ev0041-de0061-ev0061-owner",
+      ]),
+    );
+    expect(symptomById.get("norcold-absorption-door-alarm-seal")?.sourceIds).toEqual(
+      expect.arrayContaining(["norcold-1210-owner", "thetford-t2095-owner-install-2025"]),
+    );
+    expect(symptomById.get("airflow-or-venting")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "norcold-dc740-dc751-owner-install-2024",
+        "norcold-nv1090-user-manual-2025",
+        "thetford-t2095-owner-install-2025",
+      ]),
+    );
+    expect(symptomById.get("thermostat-communication")?.sourceIds).toContain(
+      "furrion-thermostat-controller-compatibility-qr155",
+    );
     expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
   });
 

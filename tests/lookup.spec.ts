@@ -687,6 +687,63 @@ test("lookup surfaces post-Coleman Dometic and Furrion support pages", async ({ 
   expect(pageErrors).toEqual([]);
 });
 
+test("lookup surfaces post-Coleman Norcold and Furrion service-prep support pages", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("norcold dc740 not cooling low voltage defrost fuse");
+  const dc740 = lookupResults.locator('a[href="/symptoms/norcold-dc740-dc751-not-cooling-low-voltage-defrost/"]');
+  await expect(dc740).toBeVisible();
+
+  await searchbox.fill("norcold nv1090 night mode defrost storage vents");
+  await expect(lookupResults.locator('a[href="/symptoms/norcold-nv1090-cooling-night-mode-defrost-storage/"]')).toBeVisible();
+
+  await searchbox.fill("thetford t2095 door seal night mode storage defrost");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/thetford-t2095-cooling-door-seal-night-mode-storage/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("norcold 1200 recall hts solid red serial service prep");
+  const recallPrep = lookupResults.locator('a[href="/symptoms/norcold-recall-hts-gas-valve-serial-service-prep/"]');
+  await expect(recallPrep).toBeVisible();
+
+  await searchbox.fill("furrion thermostat controller compatibility hw v2 furnace missing");
+  const compatibilityPrep = lookupResults.locator(
+    'a[href="/symptoms/furrion-thermostat-controller-compatibility-service-prep/"]',
+  );
+  await expect(compatibilityPrep).toBeVisible();
+
+  await searchbox.fill("norcold dc740 not cooling low voltage defrost fuse");
+  await expect(dc740).toBeVisible();
+  await dc740.click();
+  await expect(page.getByRole("heading", { name: "Norcold DC740/DC751 not cooling, low voltage, or defrost checks" })).toBeVisible();
+  await expect(page.getByText(/authorized Norcold Service Center/i)).toBeVisible();
+
+  await page.goto("/");
+  await searchbox.fill("norcold 1200 recall hts solid red serial service prep");
+  await recallPrep.click();
+  await expect(page.getByRole("heading", { name: "Norcold recall serial and HTS service-call prep" })).toBeVisible();
+  await expect(page.getByText(/trained service technician/i)).toBeVisible();
+
+  await page.goto("/");
+  await searchbox.fill("furrion thermostat controller compatibility hw v2 furnace missing");
+  await compatibilityPrep.click();
+  await expect(page.getByRole("heading", { name: "Furrion thermostat and controller compatibility service prep" })).toBeVisible();
+  await expect(page.getByText(/HW:V1.0/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("lookup surfaces Dometic DF furnace operating-manual symptom pages", async ({ page }) => {
   await page.goto("/");
 
