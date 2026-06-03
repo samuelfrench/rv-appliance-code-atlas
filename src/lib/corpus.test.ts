@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 850;
-const expectedSourceCount = 381;
-const expectedSymptomCount = 228;
+const expectedSourceCount = 392;
+const expectedSymptomCount = 235;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -432,6 +432,32 @@ describe("verified corpus", () => {
     );
     expect(lookupSymptomGuides(index, "furrion refrigerator production label serial behind lower drawer")[0]?.slug).toBe(
       "furrion-refrigerator-model-serial-label-service-call-prep",
+    );
+  });
+
+  it("finds Furrion/Lippert service-prep gaps from owner searches", () => {
+    const index = buildSymptomSearchIndex(corpus);
+
+    expect(lookupSymptomGuides(index, "furrion dishwasher leak drain cycle countertop manual")[0]?.slug).toBe(
+      "furrion-dishwasher-leak-drain-cycle-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "furrion convection microwave no heat sparks turntable qualified service")[0]?.slug).toBe(
+      "furrion-microwave-no-heat-sparks-turntable-service-boundary",
+    );
+    expect(lookupSymptomGuides(index, "furrion range hood fan light filter venting")[0]?.slug).toBe(
+      "furrion-range-hood-fan-light-filter-venting",
+    );
+    expect(lookupSymptomGuides(index, "furrion induction cooktop cookware overheats double burner")[0]?.slug).toBe(
+      "furrion-induction-cooktop-cookware-overheat-service-boundary",
+    );
+    expect(lookupSymptomGuides(index, "furrion cooking production label warranty model serial w014")[0]?.slug).toBe(
+      "furrion-cooking-model-serial-warranty-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "furrion water heater energy production label warranty service")[0]?.slug).toBe(
+      "furrion-water-heater-energy-label-warranty-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "furrion furnace blower runs no ignition")[0]?.slug).toBe(
+      "furrion-furnace-blower-runs-no-ignition-service-prep",
     );
   });
 
@@ -4664,6 +4690,129 @@ describe("verified corpus", () => {
     expect(symptomById.get("thermostat-communication")?.sourceIds).toContain(
       "furrion-thermostat-controller-compatibility-qr155",
     );
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds Furrion/Lippert service-prep gaps from official sources without inventing code entries", () => {
+    const expectedSources = new Map([
+      ["furrion-dishwasher-instruction-manual", "https://support.lci1.com/documents/ccd-0005580"],
+      ["furrion-countertop-dishwasher-fdw18sac2-manual", "https://support.lci1.com/documents/ccd-0009140"],
+      [
+        "furrion-convection-microwave-air-fryer-user-manual",
+        "https://support.lci1.com/documents/furrion-09-built-in-convection-microwave-oven-with-air-fryer-user-manual",
+      ],
+      [
+        "furrion-12v-horizontal-range-hood-user-manual",
+        "https://support.lci1.com/documents/furrion-12v-horizontal-rv-range-hood-user-manual-im-fha00016-v6.0",
+      ],
+      [
+        "furrion-single-burner-induction-cooktop-user-manual",
+        "https://support.lci1.com/documents/furrion-single-burner-induction-cooktop-user-manual",
+      ],
+      [
+        "furrion-fih2zea-bg-induction-cooktop-operating-installation",
+        "https://support.lci1.com/documents/furrion-fih2zea-bg-induction-cooktop-operating-and-installation-instruction",
+      ],
+      ["furrion-double-burner-induction-cooktop-user-manual", "https://support.lci1.com/documents/ccd-0005718"],
+      ["furrion-cooking-production-label-w008", "https://support.lci1.com/documents/ccd-0007439"],
+      ["furrion-gas-cooking-warranty-request-w014", "https://support.lci1.com/documents/ccd-0008245"],
+      [
+        "furrion-energy-production-label-w010",
+        "https://support.lci1.com/documents/w-010-furrion-energy-production-label-information",
+      ],
+      [
+        "furrion-furnace-blower-no-ignition-video",
+        "https://support.lci1.com/videos/furrion-furnace-blower-turns-on-with-no-ignition",
+      ],
+    ]);
+    const expectedSymptomSourceIds = new Map<string, string[]>([
+      [
+        "furrion-dishwasher-leak-drain-cycle-service-prep",
+        [
+          "furrion-dishwasher-instruction-manual",
+          "furrion-countertop-dishwasher-fdw18sac2-manual",
+          "furrion-appliances-production-label-w009",
+        ],
+      ],
+      [
+        "furrion-microwave-no-heat-sparks-turntable-service-boundary",
+        ["furrion-convection-microwave-air-fryer-user-manual", "furrion-appliances-production-label-w009"],
+      ],
+      [
+        "furrion-range-hood-fan-light-filter-venting",
+        ["furrion-12v-horizontal-range-hood-user-manual", "furrion-appliances-production-label-w009"],
+      ],
+      [
+        "furrion-induction-cooktop-cookware-overheat-service-boundary",
+        [
+          "furrion-single-burner-induction-cooktop-user-manual",
+          "furrion-fih2zea-bg-induction-cooktop-operating-installation",
+          "furrion-double-burner-induction-cooktop-user-manual",
+        ],
+      ],
+      [
+        "furrion-cooking-model-serial-warranty-service-prep",
+        ["furrion-cooking-production-label-w008", "furrion-gas-cooking-warranty-request-w014", "furrion-appliances-production-label-w009"],
+      ],
+      [
+        "furrion-water-heater-energy-label-warranty-service-prep",
+        ["furrion-energy-production-label-w010", "furrion-water-heater-user-manual", "furrion-water-heater"],
+      ],
+      [
+        "furrion-furnace-blower-runs-no-ignition-service-prep",
+        ["furrion-furnace-blower-no-ignition-video", "furrion-furnace-troubleshooting"],
+      ],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const sourcesById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bmagnetron\b|\bcapacitor\b|\bgas pressure\b|\blimit switch\b|\bsail switch\b|\bcontroller replacement\b|\bfuse replacement\b|\bremove cover\b|\bharness testing\b|\bcontrol board\b|\b120\s*vac\b|\brefrigerant\b|\bprobe\b|\bwiring\b|\bline-voltage\b|\bgas valve\b|\bburner\b|\borifice\b|\bopen (the )?(fuel|gas|electrical|rooftop)|breaker panel|remove.*thermostat|replace.*control|remove.*shroud|replace.*compressor|install.*controller|access.*control box/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = sourcesById.get(sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const [symptomId, sourceIds] of expectedSymptomSourceIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds, symptomId).toEqual(sourceIds);
+      expect([symptom?.summary, ...(symptom?.safeChecklist ?? [])].join(" "), symptomId).not.toMatch(
+        unsafeOwnerActionPattern,
+      );
+    }
+
+    expect(symptomById.get("furrion-dishwasher-leak-drain-cycle-service-prep")?.safeChecklist.join(" ")).toMatch(
+      /leak|drain|shut.*water|qualified|model|serial/i,
+    );
+    expect(symptomById.get("furrion-microwave-no-heat-sparks-turntable-service-boundary")?.safeChecklist.join(" ")).toMatch(
+      /do not use|unplug|turn.*off|qualified|spark|no heat/i,
+    );
+    expect(symptomById.get("furrion-range-hood-fan-light-filter-venting")?.safeChecklist.join(" ")).toMatch(
+      /filter|fan|light|vent|turn.*off|qualified/i,
+    );
+    expect(symptomById.get("furrion-induction-cooktop-cookware-overheat-service-boundary")?.safeChecklist.join(" ")).toMatch(
+      /cookware|induction|overheat|turn.*off|qualified/i,
+    );
+    expect(symptomById.get("furrion-cooking-model-serial-warranty-service-prep")?.safeChecklist.join(" ")).toMatch(
+      /model|serial|production label|warranty|qualified/i,
+    );
+    expect(symptomById.get("furrion-water-heater-energy-label-warranty-service-prep")?.safeChecklist.join(" ")).toMatch(
+      /energy label|model|serial|shut.*off|qualified/i,
+    );
+    expect(symptomById.get("furrion-furnace-blower-runs-no-ignition-service-prep")?.safeChecklist.join(" ")).toMatch(
+      /no ignition|shut.*furnace|LP|qualified/i,
+    );
+
+    expect(symptomById.get("furnace-lockout")?.sourceIds).toContain("furrion-furnace-blower-no-ignition-video");
+    expect(symptomById.get("water-heater-no-heat")?.sourceIds).toContain("furrion-energy-production-label-w010");
     expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
   });
 

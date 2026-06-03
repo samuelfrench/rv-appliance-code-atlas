@@ -744,6 +744,75 @@ test("lookup surfaces post-Coleman Norcold and Furrion service-prep support page
   expect(pageErrors).toEqual([]);
 });
 
+test("lookup surfaces Furrion/Lippert service-prep gaps", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("furrion dishwasher leak drain cycle countertop manual");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/furrion-dishwasher-leak-drain-cycle-service-prep/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("furrion convection microwave no heat sparks turntable qualified service");
+  const microwaveBoundary = lookupResults.locator(
+    'a[href="/symptoms/furrion-microwave-no-heat-sparks-turntable-service-boundary/"]',
+  );
+  await expect(microwaveBoundary).toBeVisible();
+
+  await searchbox.fill("furrion range hood fan light filter venting");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/furrion-range-hood-fan-light-filter-venting/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("furrion induction cooktop cookware overheats double burner");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/furrion-induction-cooktop-cookware-overheat-service-boundary/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("furrion cooking production label warranty model serial w014");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/furrion-cooking-model-serial-warranty-service-prep/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("furrion water heater energy production label warranty service");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/furrion-water-heater-energy-label-warranty-service-prep/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("furrion furnace blower runs no ignition");
+  const furnaceBoundary = lookupResults.locator(
+    'a[href="/symptoms/furrion-furnace-blower-runs-no-ignition-service-prep/"]',
+  );
+  await expect(furnaceBoundary).toBeVisible();
+
+  await searchbox.fill("furrion convection microwave no heat sparks turntable qualified service");
+  await microwaveBoundary.click();
+  await expect(
+    page.getByRole("heading", { name: "Furrion microwave no heat, sparks, or turntable service boundary" }),
+  ).toBeVisible();
+  await expect(page.getByText(/qualified service|qualified technician/i)).toBeVisible();
+  await expect(page.getByText(/Do not use the microwave if/i)).toBeVisible();
+
+  await page.goto("/");
+  await searchbox.fill("furrion furnace blower runs no ignition");
+  await furnaceBoundary.click();
+  await expect(page.getByRole("heading", { name: "Furrion furnace blower runs with no ignition service prep" })).toBeVisible();
+  await expect(page.getByText(/Use qualified RV service for repeated no ignition/i)).toBeVisible();
+  await expect(page.getByText(/Shut the furnace off from the thermostat/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("lookup surfaces Dometic DF furnace operating-manual symptom pages", async ({ page }) => {
   await page.goto("/");
 

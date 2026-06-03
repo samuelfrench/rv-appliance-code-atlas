@@ -1371,6 +1371,94 @@
       "official": true
     },
     {
+      "id": "furrion-dishwasher-instruction-manual",
+      "brand": "Furrion",
+      "title": "Furrion Dishwasher Instruction Manual",
+      "url": "https://support.lci1.com/documents/ccd-0005580",
+      "type": "owner-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-countertop-dishwasher-fdw18sac2-manual",
+      "brand": "Furrion",
+      "title": "Furrion 18 inch Countertop Dishwasher FDW18SAC2-SS Instruction Manual",
+      "url": "https://support.lci1.com/documents/ccd-0009140",
+      "type": "owner-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-convection-microwave-air-fryer-user-manual",
+      "brand": "Furrion",
+      "title": "Furrion 0.9 cu.ft Built-In Convection Microwave Oven with Air Fryer User Manual",
+      "url": "https://support.lci1.com/documents/furrion-09-built-in-convection-microwave-oven-with-air-fryer-user-manual",
+      "type": "owner-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-12v-horizontal-range-hood-user-manual",
+      "brand": "Furrion",
+      "title": "Furrion 12V Horizontal RV Range Hood User Manual",
+      "url": "https://support.lci1.com/documents/furrion-12v-horizontal-rv-range-hood-user-manual-im-fha00016-v6.0",
+      "type": "owner-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-single-burner-induction-cooktop-user-manual",
+      "brand": "Furrion",
+      "title": "Furrion Single Burner Induction Cooktop User Manual",
+      "url": "https://support.lci1.com/documents/furrion-single-burner-induction-cooktop-user-manual",
+      "type": "owner-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-fih2zea-bg-induction-cooktop-operating-installation",
+      "brand": "Furrion",
+      "title": "Furrion FIH2ZEA-BG Induction Cook-top Operating and Installation Instructions",
+      "url": "https://support.lci1.com/documents/furrion-fih2zea-bg-induction-cooktop-operating-and-installation-instruction",
+      "type": "owner-install-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-double-burner-induction-cooktop-user-manual",
+      "brand": "Furrion",
+      "title": "Furrion 21 inch Double Burner Induction Cooktop FIH21G2A-BG User Manual",
+      "url": "https://support.lci1.com/documents/ccd-0005718",
+      "type": "owner-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-cooking-production-label-w008",
+      "brand": "Furrion",
+      "title": "Lippert W-008 Furrion Cooking Production Label Information",
+      "url": "https://support.lci1.com/documents/ccd-0007439",
+      "type": "quick-reference",
+      "official": true
+    },
+    {
+      "id": "furrion-gas-cooking-warranty-request-w014",
+      "brand": "Furrion",
+      "title": "Lippert W-014 Furrion Gas Cooking Warranty Request Form",
+      "url": "https://support.lci1.com/documents/ccd-0008245",
+      "type": "warranty-form",
+      "official": true
+    },
+    {
+      "id": "furrion-energy-production-label-w010",
+      "brand": "Furrion",
+      "title": "Lippert W-010 Furrion Energy Production Label Information",
+      "url": "https://support.lci1.com/documents/w-010-furrion-energy-production-label-information",
+      "type": "quick-reference",
+      "official": true
+    },
+    {
+      "id": "furrion-furnace-blower-no-ignition-video",
+      "brand": "Furrion",
+      "title": "Lippert Furrion Furnace Blower Turns On with No Ignition",
+      "url": "https://support.lci1.com/videos/furrion-furnace-blower-turns-on-with-no-ignition",
+      "type": "manufacturer-support-video",
+      "official": true
+    },
+    {
       "id": "furrion-furnace-troubleshooting",
       "brand": "Furrion",
       "title": "Furrion RV Furnaces Troubleshooting and Service Manual",
@@ -33704,7 +33792,8 @@
         "furrion-f2gwh-water-heater",
         "furrion-tankless-operate-care-video",
         "furrion-tankless-basic-troubleshooting-video",
-        "dometic-water-heater-wh-2022-manual"
+        "dometic-water-heater-wh-2022-manual",
+        "furrion-energy-production-label-w010"
       ]
     },
     {
@@ -33724,7 +33813,8 @@
         "dometic-df-furnace-operating-2025",
         "furrion-furnace-troubleshooting",
         "dometic-hydro-flame-afm-66618",
-        "furrion-furnace-lockout-reset-qr224"
+        "furrion-furnace-lockout-reset-qr224",
+        "furrion-furnace-blower-no-ignition-video"
       ]
     },
     {
@@ -34433,7 +34523,18 @@
         "norcold-product-compliance-recall-info",
         "norcold-de0041-ev0041-de0061-ev0061-owner",
         "furrion-thermostat-controller-compatibility-qr155",
-        "furrion-appliances-production-label-w009"
+        "furrion-appliances-production-label-w009",
+        "furrion-dishwasher-instruction-manual",
+        "furrion-countertop-dishwasher-fdw18sac2-manual",
+        "furrion-convection-microwave-air-fryer-user-manual",
+        "furrion-12v-horizontal-range-hood-user-manual",
+        "furrion-single-burner-induction-cooktop-user-manual",
+        "furrion-fih2zea-bg-induction-cooktop-operating-installation",
+        "furrion-double-burner-induction-cooktop-user-manual",
+        "furrion-cooking-production-label-w008",
+        "furrion-gas-cooking-warranty-request-w014",
+        "furrion-energy-production-label-w010",
+        "furrion-furnace-blower-no-ignition-video"
       ]
     },
     {
@@ -38697,6 +38798,157 @@
         "furrion comfort production label model serial ac thermostat furnace",
         "furrion air conditioner serial label service call",
         "furrion thermostat furnace model serial label information"
+      ]
+    },
+    {
+      "id": "furrion-dishwasher-leak-drain-cycle-service-prep",
+      "slug": "furrion-dishwasher-leak-drain-cycle-service-prep",
+      "title": "Furrion dishwasher leak, drain, or cycle service prep",
+      "summary": "Use this when a Furrion dishwasher or countertop dishwasher leaks, will not drain, will not complete a cycle, or needs model and serial notes before Lippert/Furrion support.",
+      "safeChecklist": [
+        "Turn the dishwasher off and shut off water to the appliance if leaking continues.",
+        "Record whether the issue is a leak, drain problem, fill problem, door-latch issue, or cycle interruption.",
+        "Photograph the model, serial, production label, installed location, and any water on the floor from normal access.",
+        "Share symptom notes and label photos with Lippert/Furrion support or qualified service if the leak, drain, or cycle issue returns."
+      ],
+      "sourceIds": [
+        "furrion-dishwasher-instruction-manual",
+        "furrion-countertop-dishwasher-fdw18sac2-manual",
+        "furrion-appliances-production-label-w009"
+      ],
+      "searchAliases": [
+        "furrion dishwasher leak drain cycle countertop manual",
+        "furrion countertop dishwasher fdw18sac2 leak drain service prep",
+        "furrion dishwasher production label model serial water leak"
+      ]
+    },
+    {
+      "id": "furrion-microwave-no-heat-sparks-turntable-service-boundary",
+      "slug": "furrion-microwave-no-heat-sparks-turntable-service-boundary",
+      "title": "Furrion microwave no heat, sparks, or turntable service boundary",
+      "summary": "Use this when a Furrion convection microwave has no heat, sparks, abnormal odor, turntable trouble, or air-fryer/convection symptoms that need a shutoff and service boundary.",
+      "safeChecklist": [
+        "Do not use the microwave if it sparks, smells abnormal, smokes, or heats poorly.",
+        "Turn the microwave off and unplug it from normal access if a cord is accessible.",
+        "Record display behavior, selected mode, food load, turntable behavior, and whether the symptom happens in microwave, convection, or air-fryer mode.",
+        "Photograph model and serial labels from normal access, then contact qualified service for no heat, sparks, repeated odor, or turntable failure."
+      ],
+      "sourceIds": [
+        "furrion-convection-microwave-air-fryer-user-manual",
+        "furrion-appliances-production-label-w009"
+      ],
+      "searchAliases": [
+        "furrion convection microwave no heat sparks turntable qualified service",
+        "furrion microwave air fryer turntable not rotating service boundary",
+        "furrion built in convection microwave abnormal odor no heat"
+      ]
+    },
+    {
+      "id": "furrion-range-hood-fan-light-filter-venting",
+      "slug": "furrion-range-hood-fan-light-filter-venting",
+      "title": "Furrion range hood fan, light, filter, or venting issue",
+      "summary": "Use this when a Furrion 12V horizontal range hood has fan, light, filter, airflow, odor, or visible venting symptoms that can be documented before service.",
+      "safeChecklist": [
+        "Turn the range hood off before touching owner-accessible filter surfaces.",
+        "Clean only the owner-accessible filter and visible exterior surfaces described for normal care.",
+        "Record fan speed, light behavior, cooking odor, visible vent blockage, and whether airflow changes after normal filter cleaning.",
+        "Use qualified service if the fan, light, or venting symptom remains after normal controls and owner-accessible filter cleaning."
+      ],
+      "sourceIds": [
+        "furrion-12v-horizontal-range-hood-user-manual",
+        "furrion-appliances-production-label-w009"
+      ],
+      "searchAliases": [
+        "furrion range hood fan light filter venting",
+        "furrion 12v horizontal range hood filter airflow service",
+        "furrion range hood production label fan light odor"
+      ]
+    },
+    {
+      "id": "furrion-induction-cooktop-cookware-overheat-service-boundary",
+      "slug": "furrion-induction-cooktop-cookware-overheat-service-boundary",
+      "title": "Furrion induction cooktop cookware, no heat, or overheat boundary",
+      "summary": "Use this when a Furrion induction cooktop does not heat, rejects cookware, overheats, or needs model-family notes before qualified service.",
+      "safeChecklist": [
+        "Use only induction-compatible flat cookware and normal cooking controls.",
+        "Turn the cooktop off if it overheats, shuts down, or does not respond normally.",
+        "Let the glass surface cool, then record cookware type, selected heat level, display behavior, and whether the cooling fan ran.",
+        "Contact qualified service if correct cookware and normal cooldown do not restore operation."
+      ],
+      "sourceIds": [
+        "furrion-single-burner-induction-cooktop-user-manual",
+        "furrion-fih2zea-bg-induction-cooktop-operating-installation",
+        "furrion-double-burner-induction-cooktop-user-manual"
+      ],
+      "searchAliases": [
+        "furrion induction cooktop cookware overheats double burner",
+        "furrion single burner induction cooktop no heat cookware",
+        "furrion fih2zea bg induction cooktop overheat service boundary"
+      ]
+    },
+    {
+      "id": "furrion-cooking-model-serial-warranty-service-prep",
+      "slug": "furrion-cooking-model-serial-warranty-service-prep",
+      "title": "Furrion cooking model, serial, and warranty service prep",
+      "summary": "Use this when Lippert/Furrion support needs cooking-appliance production label, model, serial, warranty-request, and symptom documentation before service.",
+      "safeChecklist": [
+        "Photograph the production label, model, serial, purchase date if available, and installed appliance location from normal access.",
+        "Record the cooking appliance type, exact symptom, when it happens, and whether any gas odor or carbon monoxide alarm occurred.",
+        "If gas odor or an alarm occurs, leave the RV, shut LP off if safe from outside, and call emergency or qualified service before use.",
+        "Submit clear label photos, symptom notes, and warranty details to Lippert/Furrion support or qualified service."
+      ],
+      "sourceIds": [
+        "furrion-cooking-production-label-w008",
+        "furrion-gas-cooking-warranty-request-w014",
+        "furrion-appliances-production-label-w009"
+      ],
+      "searchAliases": [
+        "furrion cooking production label warranty model serial w014",
+        "furrion gas cooking warranty request model serial production label",
+        "lippert w008 w014 furrion cooking service prep"
+      ]
+    },
+    {
+      "id": "furrion-water-heater-energy-label-warranty-service-prep",
+      "slug": "furrion-water-heater-energy-label-warranty-service-prep",
+      "title": "Furrion water heater energy label and warranty service prep",
+      "summary": "Use this when a Furrion water heater or tankless water heater service call needs the energy production label, model, serial, and operating-symptom notes.",
+      "safeChecklist": [
+        "Turn the water heater off and shut off LP if there is gas odor, soot, overheating, freeze damage, or repeated failure to heat.",
+        "Photograph the energy label, model, serial, installed location, wall control, and any visible display state from normal access.",
+        "Record water flow, hot-water temperature behavior, weather, storage or freeze exposure, and whether the appliance was recently serviced.",
+        "Share label photos and notes with Lippert/Furrion support or qualified service; do not keep retrying a unit that fails to heat."
+      ],
+      "sourceIds": [
+        "furrion-energy-production-label-w010",
+        "furrion-water-heater-user-manual",
+        "furrion-water-heater"
+      ],
+      "searchAliases": [
+        "furrion water heater energy production label warranty service",
+        "furrion tankless water heater model serial energy label",
+        "lippert w010 furrion energy production label service prep"
+      ]
+    },
+    {
+      "id": "furrion-furnace-blower-runs-no-ignition-service-prep",
+      "slug": "furrion-furnace-blower-runs-no-ignition-service-prep",
+      "title": "Furrion furnace blower runs with no ignition service prep",
+      "summary": "Use this when a Furrion furnace blower starts but there is no ignition, heat does not begin, or lockout repeats after normal thermostat operation.",
+      "safeChecklist": [
+        "Shut the furnace off from the thermostat if the blower runs with no ignition or heat does not begin.",
+        "Shut LP off if there is fuel odor, soot, yellow flame evidence, alarm activity, or repeated no ignition behavior.",
+        "Record thermostat setting, blower timing, lockout timing, LP status, battery condition, and weather before calling service.",
+        "Use qualified RV service for repeated no ignition, lockout, odor, soot, airflow suspicion, or any furnace diagnosis beyond normal controls."
+      ],
+      "sourceIds": [
+        "furrion-furnace-blower-no-ignition-video",
+        "furrion-furnace-troubleshooting"
+      ],
+      "searchAliases": [
+        "furrion furnace blower runs no ignition",
+        "furrion furnace blower turns on with no heat service prep",
+        "furrion furnace no ignition lockout qualified rv service"
       ]
     }
   ],

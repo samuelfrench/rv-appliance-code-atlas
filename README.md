@@ -102,9 +102,9 @@ npm run traffic:monitor
 
 Current corpus:
 - `850` verified entries
-- `228` symptom guides
-- `381` official sources
-- `1079` generated indexable pages
+- `235` symptom guides
+- `392` official sources
+- `1086` generated indexable pages
 
 Next automated batch goal:
-- Continue remaining post-Coleman official support-row triage by traffic potential, starting with Furrion/Lippert service-prep gaps, then Suburban/Airxcel and Cummins pages; add only owner-safe non-duplicate source wiring or guides and keep service-only rows rejected except model or service-call prep.
+- Continue remaining post-Coleman official support-row triage by traffic potential, moving from Furrion/Lippert service-prep gaps into Suburban/Airxcel and Cummins pages; add only owner-safe non-duplicate source wiring or guides and keep service-only rows rejected except model or service-call prep.
