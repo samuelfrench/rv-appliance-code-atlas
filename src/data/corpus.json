@@ -4521,6 +4521,110 @@
       "url": "https://mart.cummins.com/imagelibrary/data/assetfiles/0075650.pdf",
       "type": "manufacturer-pdf",
       "official": true
+    },
+    {
+      "id": "norcold-n4000-touchscreen-owner-install",
+      "brand": "Norcold",
+      "title": "Norcold N4104, N4141, and N4150 Installation and Owner Manual",
+      "url": "https://www.thetford.com/app/uploads/2024/09/IM_OM_BVAN_639972C_20220225.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-climate-control-accessories",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Climate Control Accessories",
+      "url": "https://coleman-mach.com/products/climate-control-accessories/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "coleman-airspace-heat-element",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach AirSpace Heating Element",
+      "url": "https://coleman-mach.com/products/climate-control-accessories/air-space-heating-element/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "coleman-signature-series-product-family",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Signature Series Air Conditioners",
+      "url": "https://coleman-mach.com/products/air-conditioners/signature-series/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-products-router",
+      "brand": "MaxxAir",
+      "title": "MaxxAir Products Router",
+      "url": "https://www.maxxair.com/products/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-fans-product-family",
+      "brand": "MaxxAir",
+      "title": "MaxxAir Fans Product Family",
+      "url": "https://www.maxxair.com/products/fans/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-maxxshade-product",
+      "brand": "MaxxAir",
+      "title": "MaxxAir MaxxShade Product Page",
+      "url": "https://www.maxxair.com/products/maxxshades/maxxshade/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "suburban-direct-fit-tank-water-heaters",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban Direct Fit Replacement Water Heaters",
+      "url": "https://suburbanrv.com/water-heating/tank-water-heaters/direct-fit-replacement-water-heaters/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "aquahot-675d-product-page",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot 675D Product Page",
+      "url": "https://www.aquahot.com/Products/RV/675D.aspx",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "aquahot-600d-675d-use-care-guide",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot 600D and 675D Use and Care Guide",
+      "url": "https://www.aquahot.com/files/owners_manual/600D04-675D04_Owners.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "thetford-aqua-magic-style-plus-support",
+      "brand": "Thetford",
+      "title": "Thetford Aqua-Magic Style Plus Support",
+      "url": "https://www.thetford.com/us/thetford-support/aqua-magic-style-plus/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-aqua-magic-v-hand-flush-support",
+      "brand": "Thetford",
+      "title": "Thetford Aqua-Magic V Hand Flush Support",
+      "url": "https://www.thetford.com/us/thetford-support/aqua-magic-v-hand-flush/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-n410-n412-n510-n512-support",
+      "brand": "Norcold",
+      "title": "Norcold N410, N412, N510, and N512 Support",
+      "url": "https://www.thetford.com/us/thetford-support/n410-n412-n510-n512/",
+      "type": "manufacturer-support",
+      "official": true
     }
   ],
   "entries": [
@@ -35042,6 +35146,543 @@
         "slide-out position",
         "recent overheat or odor"
       ]
+    },
+    {
+      "id": "norcold-n4000-error-1-service-center",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N4000 touchscreen",
+        "N4104",
+        "N4141",
+        "N4150",
+        "N4104Axx",
+        "N4141Axx",
+        "N4150Axx"
+      ],
+      "code": "1",
+      "slug": "norcold-n4000-error-1-service-center",
+      "plainMeaning": "The official Norcold N4000 touchscreen owner manual says that if error code 1 is visible, directly contact your dealer or a Norcold Service Center.",
+      "ownerSafeActions": [
+        "Record the exact code, selected source, model, serial number, and whether the code repeats.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "A qualified Norcold Service Center should diagnose code 1 before further operation."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n4000-touchscreen-owner-install"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N4000 touchscreen model and serial label",
+        "photo of display code",
+        "selected source shown on display"
+      ]
+    },
+    {
+      "id": "norcold-n4000-error-2-service-center",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N4000 touchscreen",
+        "N4104",
+        "N4141",
+        "N4150",
+        "N4104Axx",
+        "N4141Axx",
+        "N4150Axx"
+      ],
+      "code": "2",
+      "slug": "norcold-n4000-error-2-service-center",
+      "plainMeaning": "The official Norcold N4000 touchscreen owner manual says that if error code 2 is visible, directly contact your dealer or a Norcold Service Center.",
+      "ownerSafeActions": [
+        "Record the exact code, selected source, model, serial number, and whether the code repeats.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "A qualified Norcold Service Center should diagnose code 2 before further operation."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n4000-touchscreen-owner-install"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N4000 touchscreen model and serial label",
+        "photo of display code",
+        "selected source shown on display"
+      ]
+    },
+    {
+      "id": "norcold-n4000-error-3-gas-source-unavailable",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N4000 touchscreen",
+        "N4104",
+        "N4141",
+        "N4150",
+        "N4104Axx",
+        "N4141Axx",
+        "N4150Axx"
+      ],
+      "code": "3",
+      "slug": "norcold-n4000-error-3-gas-source-unavailable",
+      "plainMeaning": "The official Norcold N4000 touchscreen owner manual lists code 3 as: The refrigerator does not work on gas; check the bottle and shutoff state, turn the refrigerator off and on again, and try another power source.",
+      "ownerSafeActions": [
+        "Record the exact code, selected source, model, serial number, and whether the code repeats.",
+        "Check only the owner-visible LP supply state and shut LP off if any gas odor is present.",
+        "Turn the refrigerator off and on once, then try another source if the code repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "LP system, ignition, flame-sense, and refrigerator-control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n4000-touchscreen-owner-install"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "refrigerator-lp-ignition",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N4000 touchscreen model and serial label",
+        "photo of display code",
+        "selected source shown on display"
+      ]
+    },
+    {
+      "id": "norcold-n4000-error-4-service-center",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N4000 touchscreen",
+        "N4104",
+        "N4141",
+        "N4150",
+        "N4104Axx",
+        "N4141Axx",
+        "N4150Axx"
+      ],
+      "code": "4",
+      "slug": "norcold-n4000-error-4-service-center",
+      "plainMeaning": "The official Norcold N4000 touchscreen owner manual says that if error code 4 is visible, directly contact your dealer or a Norcold Service Center.",
+      "ownerSafeActions": [
+        "Record the exact code, selected source, model, serial number, and whether the code repeats.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "A qualified Norcold Service Center should diagnose code 4 before further operation."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n4000-touchscreen-owner-install"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N4000 touchscreen model and serial label",
+        "photo of display code",
+        "selected source shown on display"
+      ]
+    },
+    {
+      "id": "norcold-n4000-error-5-service-center",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N4000 touchscreen",
+        "N4104",
+        "N4141",
+        "N4150",
+        "N4104Axx",
+        "N4141Axx",
+        "N4150Axx"
+      ],
+      "code": "5",
+      "slug": "norcold-n4000-error-5-service-center",
+      "plainMeaning": "The official Norcold N4000 touchscreen owner manual says that if error code 5 is visible, directly contact your dealer or a Norcold Service Center.",
+      "ownerSafeActions": [
+        "Record the exact code, selected source, model, serial number, and whether the code repeats.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "A qualified Norcold Service Center should diagnose code 5 before further operation."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n4000-touchscreen-owner-install"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N4000 touchscreen model and serial label",
+        "photo of display code",
+        "selected source shown on display"
+      ]
+    },
+    {
+      "id": "norcold-n4000-error-6-dc-source-unavailable",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N4000 touchscreen",
+        "N4104",
+        "N4141",
+        "N4150",
+        "N4104Axx",
+        "N4141Axx",
+        "N4150Axx"
+      ],
+      "code": "6",
+      "slug": "norcold-n4000-error-6-dc-source-unavailable",
+      "plainMeaning": "The official Norcold N4000 touchscreen owner manual lists code 6 as: The refrigerator does not work on 12V; make sure the engine is running and try another power source.",
+      "ownerSafeActions": [
+        "Record the exact code, selected source, model, serial number, and whether the code repeats.",
+        "Confirm the engine is running before DC mode, then try another source if cooling is interrupted.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "DC supply, vehicle charging, refrigerator heater, and control diagnosis should be handled by qualified service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n4000-touchscreen-owner-install"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N4000 touchscreen model and serial label",
+        "photo of display code",
+        "selected source shown on display"
+      ]
+    },
+    {
+      "id": "norcold-n4000-error-7-dc-source-unavailable",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N4000 touchscreen",
+        "N4104",
+        "N4141",
+        "N4150",
+        "N4104Axx",
+        "N4141Axx",
+        "N4150Axx"
+      ],
+      "code": "7",
+      "slug": "norcold-n4000-error-7-dc-source-unavailable",
+      "plainMeaning": "The official Norcold N4000 touchscreen owner manual lists code 7 as: The refrigerator does not work on 12V; make sure the engine is running and try another power source.",
+      "ownerSafeActions": [
+        "Record the exact code, selected source, model, serial number, and whether the code repeats.",
+        "Confirm the engine is running before DC mode, then try another source if cooling is interrupted.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "DC source selection, vehicle charging, refrigerator heater, and control diagnosis should be handled by qualified service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n4000-touchscreen-owner-install"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "low-voltage",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N4000 touchscreen model and serial label",
+        "photo of display code",
+        "selected source shown on display"
+      ]
+    },
+    {
+      "id": "norcold-n4000-error-8-service-center",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N4000 touchscreen",
+        "N4104",
+        "N4141",
+        "N4150",
+        "N4104Axx",
+        "N4141Axx",
+        "N4150Axx"
+      ],
+      "code": "8",
+      "slug": "norcold-n4000-error-8-service-center",
+      "plainMeaning": "The official Norcold N4000 touchscreen owner manual says that if error code 8 is visible, directly contact your dealer or a Norcold Service Center.",
+      "ownerSafeActions": [
+        "Record the exact code, selected source, model, serial number, and whether the code repeats.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "A qualified Norcold Service Center should diagnose code 8 before further operation."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n4000-touchscreen-owner-install"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N4000 touchscreen model and serial label",
+        "photo of display code",
+        "selected source shown on display"
+      ]
+    },
+    {
+      "id": "norcold-n4000-error-9-service-center",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N4000 touchscreen",
+        "N4104",
+        "N4141",
+        "N4150",
+        "N4104Axx",
+        "N4141Axx",
+        "N4150Axx"
+      ],
+      "code": "9",
+      "slug": "norcold-n4000-error-9-service-center",
+      "plainMeaning": "The official Norcold N4000 touchscreen owner manual says that if error code 9 is visible, directly contact your dealer or a Norcold Service Center.",
+      "ownerSafeActions": [
+        "Record the exact code, selected source, model, serial number, and whether the code repeats.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "A qualified Norcold Service Center should diagnose code 9 before further operation."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n4000-touchscreen-owner-install"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N4000 touchscreen model and serial label",
+        "photo of display code",
+        "selected source shown on display"
+      ]
+    },
+    {
+      "id": "norcold-n4000-error-10-ac-source-unavailable",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N4000 touchscreen",
+        "N4104",
+        "N4141",
+        "N4150",
+        "N4104Axx",
+        "N4141Axx",
+        "N4150Axx"
+      ],
+      "code": "10",
+      "slug": "norcold-n4000-error-10-ac-source-unavailable",
+      "plainMeaning": "The official Norcold N4000 touchscreen owner manual lists code 10 as: The refrigerator does not work on 120V; check if 120V AC is available and try another power source.",
+      "ownerSafeActions": [
+        "Record the exact code, selected source, model, serial number, and whether the code repeats.",
+        "Confirm normal RV shore or generator power is available using owner-visible indicators, then try another source.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "AC supply, refrigerator heater, and control diagnosis should be handled by qualified RV electrical or Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n4000-touchscreen-owner-install"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N4000 touchscreen model and serial label",
+        "photo of display code",
+        "selected source shown on display"
+      ]
+    },
+    {
+      "id": "norcold-n4000-error-11-auto-source-unavailable",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N4000 touchscreen",
+        "N4104",
+        "N4141",
+        "N4150",
+        "N4104Axx",
+        "N4141Axx",
+        "N4150Axx"
+      ],
+      "code": "11",
+      "slug": "norcold-n4000-error-11-auto-source-unavailable",
+      "plainMeaning": "The official Norcold N4000 touchscreen owner manual lists code 11 as: The refrigerator does not work in AUTO mode; check connected sources and try to run manually on a power source.",
+      "ownerSafeActions": [
+        "Record the exact code, selected source, model, serial number, and whether the code repeats.",
+        "Try manual source selection using the normal control panel.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Source-selection, power, LP, and refrigerator-control diagnosis should be handled by qualified Norcold service."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n4000-touchscreen-owner-install"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "refrigerator-not-cooling",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N4000 touchscreen model and serial label",
+        "photo of display code",
+        "selected source shown on display"
+      ]
+    },
+    {
+      "id": "norcold-n4000-error-12-service-center",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N4000 touchscreen",
+        "N4104",
+        "N4141",
+        "N4150",
+        "N4104Axx",
+        "N4141Axx",
+        "N4150Axx"
+      ],
+      "code": "12",
+      "slug": "norcold-n4000-error-12-service-center",
+      "plainMeaning": "The official Norcold N4000 touchscreen owner manual says that if error code 12 is visible, directly contact your dealer or a Norcold Service Center.",
+      "ownerSafeActions": [
+        "Record the exact code, selected source, model, serial number, and whether the code repeats.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "A qualified Norcold Service Center should diagnose code 12 before further operation."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n4000-touchscreen-owner-install"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N4000 touchscreen model and serial label",
+        "photo of display code",
+        "selected source shown on display"
+      ]
+    },
+    {
+      "id": "norcold-n4000-error-13-service-center",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N4000 touchscreen",
+        "N4104",
+        "N4141",
+        "N4150",
+        "N4104Axx",
+        "N4141Axx",
+        "N4150Axx"
+      ],
+      "code": "13",
+      "slug": "norcold-n4000-error-13-service-center",
+      "plainMeaning": "The official Norcold N4000 touchscreen owner manual says that if error code 13 is visible, directly contact your dealer or a Norcold Service Center.",
+      "ownerSafeActions": [
+        "Record the exact code, selected source, model, serial number, and whether the code repeats.",
+        "Turn the refrigerator off if cooling is interrupted or the fault repeats.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "A qualified Norcold Service Center should diagnose code 13 before further operation."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n4000-touchscreen-owner-install"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N4000 touchscreen model and serial label",
+        "photo of display code",
+        "selected source shown on display"
+      ]
+    },
+    {
+      "id": "norcold-n4000-error-18-startup-all-symbols-lit",
+      "brand": "Norcold",
+      "equipmentType": "Refrigerator",
+      "modelFamilies": [
+        "N4000 touchscreen",
+        "N4104",
+        "N4141",
+        "N4150",
+        "N4104Axx",
+        "N4141Axx",
+        "N4150Axx"
+      ],
+      "code": "18",
+      "slug": "norcold-n4000-error-18-startup-all-symbols-lit",
+      "plainMeaning": "The official Norcold N4000 touchscreen owner manual lists code 18 as: All symbols on the control panel light up; wait a few seconds until the refrigerator starts normal.",
+      "ownerSafeActions": [
+        "Wait a few seconds for normal startup to finish.",
+        "Record the code, model, serial number, selected source, and whether the code repeats if the control panel does not return to normal operation.",
+        "Move perishables if temperature is unsafe."
+      ],
+      "serviceOnlyActions": [
+        "Persistent startup display faults should be diagnosed by a qualified Norcold Service Center."
+      ],
+      "safetyBoundary": "Do not hand-light, clean flame parts, adjust LP gas, bypass refrigerator controls, or open electrical compartments. Shut off LP if gas odor is present and arrange qualified Norcold service for unresolved faults.",
+      "sourceIds": [
+        "norcold-n4000-touchscreen-owner-install"
+      ],
+      "symptomIds": [
+        "norcold-absorption-display-faults",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "N4000 touchscreen model and serial label",
+        "photo of display code",
+        "selected source shown on display"
+      ]
     }
   ],
   "symptoms": [
@@ -35097,7 +35738,8 @@
         "norcold-dc740-dc751-owner-install-2024",
         "norcold-nv1090-user-manual-2025",
         "thetford-t2095-owner-install-2025",
-        "norcold-de0041-ev0041-de0061-ev0061-owner"
+        "norcold-de0041-ev0041-de0061-ev0061-owner",
+        "norcold-n4000-touchscreen-owner-install"
       ]
     },
     {
@@ -35123,7 +35765,8 @@
         "dometic-rmd8-operating",
         "dometic-rm10-rms10-operating",
         "dometic-rmd10-5-operating",
-        "dometic-rml10-4-operating"
+        "dometic-rml10-4-operating",
+        "norcold-n4000-touchscreen-owner-install"
       ]
     },
     {
@@ -35338,7 +35981,8 @@
         "coleman-49000-ac-owner-1976-542",
         "coleman-49000-heat-pump-owner-1976-545",
         "coleman-9000-ac-owner-1976-368",
-        "coleman-473xx-international-owner-1976-671-rev1"
+        "coleman-473xx-international-owner-1976-671-rev1",
+        "norcold-n4000-touchscreen-owner-install"
       ]
     },
     {
@@ -37349,7 +37993,20 @@
         "thetford-aqua-magic-residence-support",
         "norcold-polar-n7x-support",
         "norcold-n6-n8-series-support",
-        "onan-green-label-parts-reference-0075650"
+        "onan-green-label-parts-reference-0075650",
+        "norcold-n4000-touchscreen-owner-install",
+        "coleman-climate-control-accessories",
+        "coleman-airspace-heat-element",
+        "coleman-signature-series-product-family",
+        "maxxair-products-router",
+        "maxxair-fans-product-family",
+        "maxxair-maxxshade-product",
+        "suburban-direct-fit-tank-water-heaters",
+        "aquahot-675d-product-page",
+        "aquahot-600d-675d-use-care-guide",
+        "thetford-aqua-magic-style-plus-support",
+        "thetford-aqua-magic-v-hand-flush-support",
+        "norcold-n410-n412-n510-n512-support"
       ]
     },
     {
@@ -39682,7 +40339,8 @@
         "norcold-n61-n81-owner",
         "norcold-n62-n64-n82-n84-owner",
         "norcold-n1095-owner",
-        "norcold-n400-n510-owner"
+        "norcold-n400-n510-owner",
+        "norcold-n4000-touchscreen-owner-install"
       ]
     },
     {
@@ -44385,6 +45043,276 @@
         "greenlabel",
         "onan",
         "cummins"
+      ]
+    },
+    {
+      "id": "coleman-climate-control-accessories-model-prep",
+      "slug": "coleman-climate-control-accessories-model-prep",
+      "title": "Coleman-Mach climate-control accessories model prep",
+      "summary": "Use the official Coleman-Mach accessory family page to capture accessory part numbers and AC compatibility before dealer or service contact.",
+      "safeChecklist": [
+        "Record the Coleman-Mach AC model, thermostat or ceiling assembly, and accessory part number.",
+        "Photograph the accessible labels and describe the symptom the accessory is meant to address.",
+        "Have a Coleman-Mach dealer or qualified RV HVAC service confirm compatibility and installation."
+      ],
+      "sourceIds": [
+        "coleman-climate-control-accessories"
+      ],
+      "searchAliases": [
+        "coleman mach climate accessories airspace filter soft start",
+        "coleman mach accessories model part prep",
+        "coleman mach climate-control accessory compatibility prep"
+      ],
+      "searchRequiredTerms": [
+        "colemanmach"
+      ]
+    },
+    {
+      "id": "coleman-airspace-heat-element-service-prep",
+      "slug": "coleman-airspace-heat-element-service-prep",
+      "title": "Coleman-Mach AirSpace heat-element service prep",
+      "summary": "Use the Coleman-Mach AirSpace product page to identify the heat-element accessory and prepare a qualified-service call.",
+      "safeChecklist": [
+        "Record AirSpace part numbers 37203 or 38203 if visible, plus the connected Coleman-Mach AC model.",
+        "Record thermostat mode, fan behavior, and whether heat output is absent or weak.",
+        "Use qualified RV HVAC service for confirmation and installation of the heat element."
+      ],
+      "sourceIds": [
+        "coleman-airspace-heat-element"
+      ],
+      "searchAliases": [
+        "coleman airspace heat element 37203 38203",
+        "coleman mach heat strip airspace",
+        "coleman airspace electric heat element service prep"
+      ],
+      "searchRequiredTerms": [
+        "airspace"
+      ]
+    },
+    {
+      "id": "coleman-signature-series-model-family-prep",
+      "slug": "coleman-signature-series-model-family-prep",
+      "title": "Coleman-Mach Signature Series model-family prep",
+      "summary": "Use the official Signature Series family page to identify the Coleman-Mach rooftop AC family before support or replacement conversations.",
+      "safeChecklist": [
+        "Record whether the unit is listed as Mach 3, Mach 8, Mach 10, Mach 15, or another Signature Series model.",
+        "Capture the accessible data label, ceiling assembly, thermostat, and symptom details.",
+        "Use Coleman-Mach support, a dealer, or qualified RV HVAC service for fitment and service decisions."
+      ],
+      "sourceIds": [
+        "coleman-signature-series-product-family"
+      ],
+      "searchAliases": [
+        "coleman mach signature series mach 3 mach 8 mach 10 mach 15",
+        "coleman mach signature model family",
+        "coleman mach signature series support prep"
+      ],
+      "searchRequiredTerms": [
+        "signature",
+        "colemanmach"
+      ]
+    },
+    {
+      "id": "maxxair-products-family-routing-prep",
+      "slug": "maxxair-products-family-routing-prep",
+      "title": "MaxxAir products family routing prep",
+      "summary": "Use the official MaxxAir products page to route fans, covers, and shades by product family before support.",
+      "safeChecklist": [
+        "Record the MaxxAir product family, model number, part number, and any wall-control or remote details.",
+        "Photograph accessible labels and describe whether the issue is fan, cover, shade, control, or fitment related.",
+        "Use MaxxAir documentation, dealer support, or qualified RV service for installation or electrical concerns."
+      ],
+      "sourceIds": [
+        "maxxair-products-router"
+      ],
+      "searchAliases": [
+        "maxxair products fans covers maxxshades",
+        "maxxair products family support",
+        "maxxair products documentation library prep"
+      ],
+      "searchRequiredTerms": [
+        "maxxairproducts"
+      ]
+    },
+    {
+      "id": "maxxair-fans-family-model-prep",
+      "slug": "maxxair-fans-family-model-prep",
+      "title": "MaxxAir fan-family model prep",
+      "summary": "Use the official MaxxAir fan-family page to identify MaxxFan, Plus, Deluxe, Low Profile, Pivot, Mini, and Dome models.",
+      "safeChecklist": [
+        "Record the fan family, model number, control style, power behavior, and lid or shade position.",
+        "Photograph accessible labels, remote or wall-control markings, and the exact symptom.",
+        "Use MaxxAir support or qualified RV service for fitment, installation, or electrical service."
+      ],
+      "sourceIds": [
+        "maxxair-fans-product-family"
+      ],
+      "searchAliases": [
+        "maxxair maxxfan plus deluxe low profile pivot mini dome",
+        "maxxfan family model prep",
+        "maxxair maxxfan product family support"
+      ],
+      "searchRequiredTerms": [
+        "maxxfan"
+      ]
+    },
+    {
+      "id": "maxxair-maxxshade-003900-003901-prep",
+      "slug": "maxxair-maxxshade-003900-003901-prep",
+      "title": "MaxxAir MaxxShade 00-03900 and 00-03901 prep",
+      "summary": "Use the official MaxxShade product page to identify shade and LED-shade variants before compatibility or service questions.",
+      "safeChecklist": [
+        "Record whether the shade is 00-03900, 00-03901, or another visible MaxxShade variant.",
+        "Record fan model, opening size, shade behavior, and whether the light option is present.",
+        "Use MaxxAir support, a dealer, or qualified RV service for compatibility and powered-shade service."
+      ],
+      "sourceIds": [
+        "maxxair-maxxshade-product"
+      ],
+      "searchAliases": [
+        "maxxair maxxshade 00-03900 00-03901",
+        "maxxshade plus led shade compatibility",
+        "maxxair maxxshade model service prep"
+      ],
+      "searchRequiredTerms": [
+        "maxxshade"
+      ]
+    },
+    {
+      "id": "suburban-direct-fit-replacement-water-heater-prep",
+      "slug": "suburban-direct-fit-replacement-water-heater-prep",
+      "title": "Suburban direct-fit replacement water-heater prep",
+      "summary": "Use the official Suburban direct-fit product page to prepare model and replacement-fit notes for a dealer or qualified technician.",
+      "safeChecklist": [
+        "Record the current Suburban water-heater model, capacity, door size, and visible data-label details.",
+        "Record why replacement is being discussed, including leaks, no-heat symptoms, or age.",
+        "Use a dealer or qualified RV service for replacement fitment, appliance removal, and utility connections."
+      ],
+      "sourceIds": [
+        "suburban-direct-fit-tank-water-heaters"
+      ],
+      "searchAliases": [
+        "suburban direct fit replacement tank water heater",
+        "suburban advantage direct fit upgrade prep",
+        "suburban direct fit water heater model prep"
+      ],
+      "searchRequiredTerms": [
+        "directfit"
+      ]
+    },
+    {
+      "id": "aquahot-675d-model-service-routing",
+      "slug": "aquahot-675d-model-service-routing",
+      "title": "Aqua-Hot 675D model service routing",
+      "summary": "Use the Aqua-Hot 675D product page to capture model and system details before authorized-service routing.",
+      "safeChecklist": [
+        "Record the Aqua-Hot 675D model, serial number, Reporter state, diesel/electric selection, and affected zones.",
+        "Record whether the issue is hot water, coach heat, warning lights, or startup behavior.",
+        "Use Aqua-Hot authorized service for closed heating-loop, fuel, and appliance electrical diagnosis."
+      ],
+      "sourceIds": [
+        "aquahot-675d-product-page"
+      ],
+      "searchAliases": [
+        "aqua hot 675d diesel model service routing",
+        "aquahot 675d tribridhot hot water heat",
+        "aqua-hot 675d reporter service prep"
+      ],
+      "searchRequiredTerms": [
+        "675d"
+      ]
+    },
+    {
+      "id": "aquahot-600d-675d-reporter-winterization-prep",
+      "slug": "aquahot-600d-675d-reporter-winterization-prep",
+      "title": "Aqua-Hot 600D and 675D Reporter winterization prep",
+      "summary": "Use the official 600D/675D use and care guide to capture Reporter, winterization, and service-call details.",
+      "safeChecklist": [
+        "Record whether the unit is a 600D or 675D, plus serial number, Reporter messages, and selected heat source.",
+        "Record winterization status, antifreeze observations, and whether hot water or coach heat is affected.",
+        "Use Aqua-Hot authorized service for closed heating-loop, diesel, electric-heat, pump, or valve diagnosis."
+      ],
+      "sourceIds": [
+        "aquahot-600d-675d-use-care-guide"
+      ],
+      "searchAliases": [
+        "aqua hot 600d 675d reporter diagnosis winterization",
+        "aquahot 600d series use care guide",
+        "aqua-hot 675d reporter winterization service prep"
+      ],
+      "searchRequiredTerms": [
+        "600d",
+        "675d"
+      ]
+    },
+    {
+      "id": "thetford-aqua-magic-style-plus-model-service-prep",
+      "slug": "thetford-aqua-magic-style-plus-model-service-prep",
+      "title": "Thetford Aqua-Magic Style Plus model service prep",
+      "summary": "Use the official Aqua-Magic Style Plus support page to capture toilet model, profile, and flush symptoms before support.",
+      "safeChecklist": [
+        "Record whether the toilet is Aqua-Magic Style Plus, the seat style, color, pedal behavior, and visible serial details.",
+        "Record whether the symptom is bowl water loss, weak flush, leak location, or storage/winterizing related.",
+        "Use Thetford support, a dealer, or qualified RV service for parts selection and toilet service."
+      ],
+      "sourceIds": [
+        "thetford-aqua-magic-style-plus-support"
+      ],
+      "searchAliases": [
+        "aqua magic style plus soft close pedal parts",
+        "thetford style plus toilet model prep",
+        "aqua magic style plus model service prep"
+      ],
+      "searchRequiredTerms": [
+        "styleplus"
+      ]
+    },
+    {
+      "id": "thetford-aqua-magic-v-hand-flush-model-prep",
+      "slug": "thetford-aqua-magic-v-hand-flush-model-prep",
+      "title": "Thetford Aqua-Magic V hand-flush model prep",
+      "summary": "Use the official Aqua-Magic V hand-flush support page to capture the correct model before support or parts routing.",
+      "safeChecklist": [
+        "Record whether the toilet is the hand-flush model, plus color, height profile, visible serial details, and handle behavior.",
+        "Record whether the issue is flush volume, bowl water, leak location, cleaning, or winterizing related.",
+        "Use Thetford support, a dealer, or qualified RV service for parts selection and toilet service."
+      ],
+      "sourceIds": [
+        "thetford-aqua-magic-v-hand-flush-support"
+      ],
+      "searchAliases": [
+        "aqua magic v hand flush one handle parts",
+        "thetford aqua magic v hand flush discontinued",
+        "aqua magic v handflush model service prep"
+      ],
+      "searchRequiredTerms": [
+        "handflush",
+        "aquamagicv"
+      ]
+    },
+    {
+      "id": "norcold-n410-n412-n510-n512-support-prep",
+      "slug": "norcold-n410-n412-n510-n512-support-prep",
+      "title": "Norcold N410, N412, N510, and N512 support prep",
+      "summary": "Use the official Norcold support page to capture compact absorption-refrigerator model details before manual, parts, or service routing.",
+      "safeChecklist": [
+        "Record whether the model is N410, N412, N510, or N512, plus serial number, display or light pattern, and selected source.",
+        "Record cooling symptoms, door condition, LP state, and whether the code or symptom repeats.",
+        "Use Norcold support, a dealer, or qualified service for LP, appliance electrical, HTS, or cooling-unit diagnosis."
+      ],
+      "sourceIds": [
+        "norcold-n410-n412-n510-n512-support"
+      ],
+      "searchAliases": [
+        "norcold n410 n412 n510 n512 support",
+        "n410 compact refrigerator diagnostics service prep",
+        "norcold n512 model tag service prep"
+      ],
+      "searchRequiredTerms": [
+        "n410",
+        "n412",
+        "n510",
+        "n512"
       ]
     }
   ],

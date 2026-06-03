@@ -20,9 +20,9 @@ const requiredBrands = [
   "Onan",
 ];
 
-const expectedEntryCount = 850;
-const expectedSourceCount = 562;
-const expectedSymptomCount = 396;
+const expectedEntryCount = 864;
+const expectedSourceCount = 575;
+const expectedSymptomCount = 408;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -6808,5 +6808,232 @@ describe("verified corpus", () => {
       ).toEqual([]);
     }
     expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds the official Norcold N4000 touchscreen owner-manual error-code table", () => {
+    const index = buildSearchIndex(corpus);
+    const supportUrls = new Map(corpus.sources.map((source) => [source.id, source.url]));
+    const entries = corpus.entries.filter((entry) => entry.sourceIds.includes("norcold-n4000-touchscreen-owner-install"));
+    const entryByCode = new Map(entries.map((entry) => [entry.code, entry]));
+    const serviceDirectCodes = ["1", "2", "4", "5", "8", "9", "12", "13"];
+    const ownerInstructionMeanings = new Map([
+      ["3", "The refrigerator does not work on gas"],
+      ["6", "The refrigerator does not work on 12V"],
+      ["7", "The refrigerator does not work on 12V"],
+      ["10", "The refrigerator does not work on 120V"],
+      ["11", "The refrigerator does not work in AUTO mode"],
+      ["18", "All symbols on the control panel light up"],
+    ]);
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\bline-voltage\b|\brefrigerant\b|\bprobe\b|\bwiring\b|\binternal\b|\broof\b|\bsupply line\b|\bopen (the )?(fuel|gas|electrical|rooftop)|remove.*shroud|remove.*cover|measure resistance|fuel nozzle|combustion|coolant pump|manual override|hydraulic work|hydraulic repair/i;
+
+    expect(supportUrls.get("norcold-n4000-touchscreen-owner-install")).toBe(
+      "https://www.thetford.com/app/uploads/2024/09/IM_OM_BVAN_639972C_20220225.pdf",
+    );
+    expect(new Set(entries.map((entry) => entry.code))).toEqual(
+      new Set(["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "18"]),
+    );
+
+    for (const entry of entries) {
+      expect(entry.modelFamilies, entry.id).toEqual(
+        expect.arrayContaining(["N4000 touchscreen", "N4104", "N4141", "N4150", "N4104Axx", "N4141Axx", "N4150Axx"]),
+      );
+      expect(entry.symptomIds, entry.id).toEqual(expect.arrayContaining(["norcold-absorption-display-faults", "service-call-prep"]));
+      expect(entry.ownerSafeActions.join(" "), entry.id).not.toMatch(unsafeOwnerActionPattern);
+      expect(entry.safetyBoundary, entry.id).toMatch(/qualified Norcold service|Norcold Service Center/i);
+    }
+
+    for (const code of serviceDirectCodes) {
+      expect(entryByCode.get(code)?.plainMeaning, code).toMatch(/directly contact your dealer or a Norcold Service Center/i);
+      expect(entryByCode.get(code)?.ownerSafeActions.join(" "), code).toMatch(/Record the exact code/i);
+      expect(entryByCode.get(code)?.serviceOnlyActions.join(" "), code).toMatch(/Norcold Service Center|qualified Norcold service/i);
+      expect(entryByCode.get(code)?.symptomIds, code).not.toContain("refrigerator-lp-ignition");
+    }
+
+    for (const [code, meaning] of ownerInstructionMeanings) {
+      expect(entryByCode.get(code)?.plainMeaning, code).toContain(meaning);
+    }
+
+    expect(entryByCode.get("3")?.ownerSafeActions.join(" ")).toMatch(/LP supply state|try another source/i);
+    expect(entryByCode.get("6")?.ownerSafeActions.join(" ")).toMatch(/engine is running|try another source/i);
+    expect(entryByCode.get("7")?.ownerSafeActions.join(" ")).toMatch(/engine is running|try another source/i);
+    expect(entryByCode.get("10")?.ownerSafeActions.join(" ")).toMatch(/shore or generator power|try another source/i);
+    expect(entryByCode.get("11")?.ownerSafeActions.join(" ")).toMatch(/manual source selection/i);
+    expect(entryByCode.get("18")?.ownerSafeActions.join(" ")).toMatch(/Wait a few seconds/i);
+    expect(entryByCode.get("18")?.ownerSafeActions.join(" ")).toMatch(/model.*selected source.*whether the code repeats/i);
+
+    expect(lookupEntries(index, "norcold n4104 error code 3 gas")[0]?.slug).toBe("norcold-n4000-error-3-gas-source-unavailable");
+    expect(lookupEntries(index, "norcold n4104 gas source")[0]?.slug).toBe("norcold-n4000-error-3-gas-source-unavailable");
+    expect(lookupEntries(index, "norcold n4141 error code 10 120v")[0]?.slug).toBe(
+      "norcold-n4000-error-10-ac-source-unavailable",
+    );
+    expect(lookupEntries(index, "norcold n4150 error code 18 all symbols")[0]?.slug).toBe(
+      "norcold-n4000-error-18-startup-all-symbols-lit",
+    );
+    expect(lookupEntries(index, "norcold n4000 touchscreen code 11 auto mode")[0]?.slug).toBe(
+      "norcold-n4000-error-11-auto-source-unavailable",
+    );
+  });
+
+  it("adds the official next support-router batch without code entries", () => {
+    const expectedSources = new Map<string, string>([
+      ["coleman-climate-control-accessories", "https://coleman-mach.com/products/climate-control-accessories/"],
+      [
+        "coleman-airspace-heat-element",
+        "https://coleman-mach.com/products/climate-control-accessories/air-space-heating-element/",
+      ],
+      ["coleman-signature-series-product-family", "https://coleman-mach.com/products/air-conditioners/signature-series/"],
+      ["maxxair-products-router", "https://www.maxxair.com/products/"],
+      ["maxxair-fans-product-family", "https://www.maxxair.com/products/fans/"],
+      ["maxxair-maxxshade-product", "https://www.maxxair.com/products/maxxshades/maxxshade/"],
+      [
+        "suburban-direct-fit-tank-water-heaters",
+        "https://suburbanrv.com/water-heating/tank-water-heaters/direct-fit-replacement-water-heaters/",
+      ],
+      ["aquahot-675d-product-page", "https://www.aquahot.com/Products/RV/675D.aspx"],
+      ["aquahot-600d-675d-use-care-guide", "https://www.aquahot.com/files/owners_manual/600D04-675D04_Owners.pdf"],
+      ["thetford-aqua-magic-style-plus-support", "https://www.thetford.com/us/thetford-support/aqua-magic-style-plus/"],
+      [
+        "thetford-aqua-magic-v-hand-flush-support",
+        "https://www.thetford.com/us/thetford-support/aqua-magic-v-hand-flush/",
+      ],
+      ["norcold-n410-n412-n510-n512-support", "https://www.thetford.com/us/thetford-support/n410-n412-n510-n512/"],
+    ]);
+    const expectedSymptomSourceIds = new Map<string, string[]>([
+      ["coleman-climate-control-accessories-model-prep", ["coleman-climate-control-accessories"]],
+      ["coleman-airspace-heat-element-service-prep", ["coleman-airspace-heat-element"]],
+      ["coleman-signature-series-model-family-prep", ["coleman-signature-series-product-family"]],
+      ["maxxair-products-family-routing-prep", ["maxxair-products-router"]],
+      ["maxxair-fans-family-model-prep", ["maxxair-fans-product-family"]],
+      ["maxxair-maxxshade-003900-003901-prep", ["maxxair-maxxshade-product"]],
+      ["suburban-direct-fit-replacement-water-heater-prep", ["suburban-direct-fit-tank-water-heaters"]],
+      ["aquahot-675d-model-service-routing", ["aquahot-675d-product-page"]],
+      ["aquahot-600d-675d-reporter-winterization-prep", ["aquahot-600d-675d-use-care-guide"]],
+      ["thetford-aqua-magic-style-plus-model-service-prep", ["thetford-aqua-magic-style-plus-support"]],
+      ["thetford-aqua-magic-v-hand-flush-model-prep", ["thetford-aqua-magic-v-hand-flush-support"]],
+      ["norcold-n410-n412-n510-n512-support-prep", ["norcold-n410-n412-n510-n512-support"]],
+    ]);
+    const expectedRequiredTerms = new Map<string, string[]>([
+      ["coleman-climate-control-accessories-model-prep", ["colemanmach"]],
+      ["coleman-airspace-heat-element-service-prep", ["airspace"]],
+      ["coleman-signature-series-model-family-prep", ["signature", "colemanmach"]],
+      ["maxxair-products-family-routing-prep", ["maxxairproducts"]],
+      ["maxxair-fans-family-model-prep", ["maxxfan"]],
+      ["maxxair-maxxshade-003900-003901-prep", ["maxxshade"]],
+      ["suburban-direct-fit-replacement-water-heater-prep", ["directfit"]],
+      ["aquahot-675d-model-service-routing", ["675d"]],
+      ["aquahot-600d-675d-reporter-winterization-prep", ["600d", "675d"]],
+      ["thetford-aqua-magic-style-plus-model-service-prep", ["styleplus"]],
+      ["thetford-aqua-magic-v-hand-flush-model-prep", ["handflush", "aquamagicv"]],
+      ["norcold-n410-n412-n510-n512-support-prep", ["n410", "n412", "n510", "n512"]],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const allNewSourceIds = ["norcold-n4000-touchscreen-owner-install", ...newSourceIds];
+    const sourcesById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const index = buildSymptomSearchIndex(corpus);
+    const summary = summarizeCorpus(corpus);
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\bline-voltage\b|\brefrigerant\b|\bprobe\b|\bwiring\b|\binternal\b|\broof\b|\bsupply line\b|\bopen (the )?(fuel|gas|electrical|rooftop)|remove.*shroud|remove.*cover|measure resistance|fuel nozzle|combustion|coolant pump|manual override|hydraulic work|hydraulic repair/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = sourcesById.get(sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(summary.indexablePages).toBe(expectedEntryCount + expectedSymptomCount + 1);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const [symptomId, sourceIds] of expectedSymptomSourceIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds, symptomId).toEqual(sourceIds);
+      expect(symptom?.searchRequiredTerms, symptomId).toEqual(expectedRequiredTerms.get(symptomId));
+      expect([symptom?.summary, ...(symptom?.safeChecklist ?? [])].join(" "), symptomId).not.toMatch(
+        unsafeOwnerActionPattern,
+      );
+    }
+
+    for (const symptomId of expectedSymptomSourceIds.keys()) {
+      const symptom = symptomById.get(symptomId);
+      for (const alias of symptom?.searchAliases ?? []) {
+        expect(
+          lookupSymptomGuides(index, alias)
+            .slice(0, 4)
+            .map((result) => result.slug),
+          `${symptomId}: ${alias}`,
+        ).toContain(symptom?.slug);
+      }
+    }
+
+    expect(lookupSymptomGuides(index, "coleman mach climate accessories airspace filter soft start")[0]?.slug).toBe(
+      "coleman-climate-control-accessories-model-prep",
+    );
+    expect(lookupSymptomGuides(index, "coleman airspace heat element 37203 38203")[0]?.slug).toBe(
+      "coleman-airspace-heat-element-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "coleman mach signature series mach 3 mach 8 mach 10 mach 15")[0]?.slug).toBe(
+      "coleman-signature-series-model-family-prep",
+    );
+    expect(lookupSymptomGuides(index, "maxxair products fans covers maxxshades")[0]?.slug).toBe(
+      "maxxair-products-family-routing-prep",
+    );
+    expect(lookupSymptomGuides(index, "maxxair maxxfan plus deluxe low profile pivot mini dome")[0]?.slug).toBe(
+      "maxxair-fans-family-model-prep",
+    );
+    expect(lookupSymptomGuides(index, "maxxair maxxshade 00-03900 00-03901")[0]?.slug).toBe(
+      "maxxair-maxxshade-003900-003901-prep",
+    );
+    expect(lookupSymptomGuides(index, "suburban direct fit replacement tank water heater")[0]?.slug).toBe(
+      "suburban-direct-fit-replacement-water-heater-prep",
+    );
+    expect(lookupSymptomGuides(index, "aqua hot 675d diesel model service routing")[0]?.slug).toBe(
+      "aquahot-675d-model-service-routing",
+    );
+    expect(lookupSymptomGuides(index, "aqua hot 600d 675d reporter diagnosis winterization")[0]?.slug).toBe(
+      "aquahot-600d-675d-reporter-winterization-prep",
+    );
+    expect(lookupSymptomGuides(index, "aqua magic style plus soft close pedal parts")[0]?.slug).toBe(
+      "thetford-aqua-magic-style-plus-model-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "aqua magic v hand flush one handle parts")[0]?.slug).toBe(
+      "thetford-aqua-magic-v-hand-flush-model-prep",
+    );
+    expect(lookupSymptomGuides(index, "norcold n410 n412 n510 n512 support")[0]?.slug).toBe(
+      "norcold-n410-n412-n510-n512-support-prep",
+    );
+    expect(lookupSymptomGuides(index, "norcold n412 support")[0]?.slug).toBe(
+      "norcold-n410-n412-n510-n512-support-prep",
+    );
+    expect(lookupSymptomGuides(index, "norcold n510 support")[0]?.slug).toBe(
+      "norcold-n410-n412-n510-n512-support-prep",
+    );
+
+    const anchoredSlugs = new Set(expectedSymptomSourceIds.keys());
+    for (const query of [
+      "accessories",
+      "products",
+      "fans",
+      "shade",
+      "water heater",
+      "aqua hot no hot water",
+      "toilet parts",
+      "norcold refrigerator not cooling",
+      "model serial",
+      "service support",
+    ]) {
+      expect(
+        lookupSymptomGuides(index, query)
+          .slice(0, 5)
+          .map((symptom) => symptom.slug)
+          .filter((slug) => anchoredSlugs.has(slug)),
+        query,
+      ).toEqual([]);
+    }
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(allNewSourceIds));
   });
 });

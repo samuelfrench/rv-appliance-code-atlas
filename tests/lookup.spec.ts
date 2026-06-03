@@ -1672,6 +1672,73 @@ test("lookup surfaces support-gap extension pages without generic hijacks", asyn
   expect(pageErrors).toEqual([]);
 });
 
+test("lookup surfaces N4000 touchscreen codes and next support-router pages", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    ["norcold n4104 error code 3 gas", "/codes/norcold-n4000-error-3-gas-source-unavailable/"],
+    ["norcold n4141 error code 10 120v", "/codes/norcold-n4000-error-10-ac-source-unavailable/"],
+    ["norcold n4150 error code 18 all symbols", "/codes/norcold-n4000-error-18-startup-all-symbols-lit/"],
+    ["coleman airspace heat element 37203 38203", "/symptoms/coleman-airspace-heat-element-service-prep/"],
+    ["coleman mach signature series mach 3 mach 8 mach 10 mach 15", "/symptoms/coleman-signature-series-model-family-prep/"],
+    ["maxxair products fans covers maxxshades", "/symptoms/maxxair-products-family-routing-prep/"],
+    ["maxxair maxxshade 00-03900 00-03901", "/symptoms/maxxair-maxxshade-003900-003901-prep/"],
+    ["suburban direct fit replacement tank water heater", "/symptoms/suburban-direct-fit-replacement-water-heater-prep/"],
+    ["aqua hot 600d 675d reporter diagnosis winterization", "/symptoms/aquahot-600d-675d-reporter-winterization-prep/"],
+    ["aqua magic style plus soft close pedal parts", "/symptoms/thetford-aqua-magic-style-plus-model-service-prep/"],
+    ["aqua magic v hand flush one handle parts", "/symptoms/thetford-aqua-magic-v-hand-flush-model-prep/"],
+    ["norcold n410 n412 n510 n512 support", "/symptoms/norcold-n410-n412-n510-n512-support-prep/"],
+    ["norcold n412 support", "/symptoms/norcold-n410-n412-n510-n512-support-prep/"],
+    ["norcold n510 support", "/symptoms/norcold-n410-n412-n510-n512-support-prep/"],
+  ] as const;
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+  }
+
+  for (const [query, href] of [
+    ["accessories", "/symptoms/coleman-climate-control-accessories-model-prep/"],
+    ["products", "/symptoms/maxxair-products-family-routing-prep/"],
+    ["aqua hot no hot water", "/symptoms/aquahot-600d-675d-reporter-winterization-prep/"],
+    ["toilet parts", "/symptoms/thetford-aqua-magic-style-plus-model-service-prep/"],
+    ["norcold refrigerator not cooling", "/symptoms/norcold-n410-n412-n510-n512-support-prep/"],
+  ] as const) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toHaveCount(0);
+  }
+
+  await searchbox.fill("norcold n4141 error code 10 120v");
+  const n4000Code10 = lookupResults.locator('a[href="/codes/norcold-n4000-error-10-ac-source-unavailable/"]');
+  await expect(n4000Code10).toBeVisible();
+  await n4000Code10.click();
+  await expect(page.getByRole("heading", { name: "Norcold 10" })).toBeVisible();
+  await expect(page.getByText(/The refrigerator does not work on 120V/i)).toBeVisible();
+  await expect(page.getByText(/Do not hand-light/i)).toBeVisible();
+
+  await page.goto("/");
+  await page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" }).fill("aqua magic v hand flush one handle parts");
+  const aquaMagicV = page
+    .locator('section[aria-label="Lookup results"]')
+    .locator('a[href="/symptoms/thetford-aqua-magic-v-hand-flush-model-prep/"]');
+  await expect(aquaMagicV).toBeVisible();
+  await aquaMagicV.click();
+  await expect(page.getByRole("heading", { name: "Thetford Aqua-Magic V hand-flush model prep" })).toBeVisible();
+  await expect(page.getByText(/Record whether the toilet is the hand-flush model/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 
