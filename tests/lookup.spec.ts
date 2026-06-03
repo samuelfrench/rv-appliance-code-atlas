@@ -2166,6 +2166,121 @@ test("lookup surfaces ACC3100 and brand-router prep batch without generic hijack
   expect(pageErrors).toEqual([]);
 });
 
+test("lookup surfaces control, model-label, storage, warranty, and parts-prep batch without generic hijacks", async ({
+  page,
+}) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    ["dometic ccc2 reset system zone initialization prep", "/symptoms/dometic-ccc2-system-reset-zone-init-prep/"],
+    ["dometic brisk controls data tag filter grille model", "/symptoms/dometic-brisk-ac-controls-data-tag-prep/"],
+    [
+      "dometic fantastic vent 7350 remote rain sensor prep",
+      "/symptoms/dometic-fantastic-vent-7350-remote-rain-sensor-prep/",
+    ],
+    ["dometic 500 series 510 rv toilet cleaning winterizing", "/symptoms/dometic-500-series-toilet-cleaning-winterizing-prep/"],
+    [
+      "dometic fantastic vent 3350 rain sensor control prep",
+      "/symptoms/dometic-fantastic-vent-3350-rain-sensor-control-prep/",
+    ],
+    [
+      "thetford aqua magic v pedal flush model storage prep",
+      "/symptoms/thetford-aqua-magic-v-pedal-flush-model-storage-prep/",
+    ],
+    [
+      "thetford aqua magic iv pedal flush discontinued support",
+      "/symptoms/thetford-aqua-magic-iv-pedal-flush-discontinued-support-prep/",
+    ],
+    ["thetford aria classic model control service prep", "/symptoms/thetford-aria-classic-model-control-service-prep/"],
+    ["thetford aria deluxe control service mode prep", "/symptoms/thetford-aria-deluxe-control-service-mode-prep/"],
+    ["norcold n4150 hts cooling service prep", "/symptoms/norcold-n4150-model-hts-cooling-service-prep/"],
+    [
+      "norcold n2175 dc fridge night mode door alarm prep",
+      "/symptoms/norcold-n2175-dc-fridge-night-mode-door-alarm-prep/",
+    ],
+    ["coleman digital thermostat model part number prep", "/symptoms/coleman-digital-thermostat-model-prep/"],
+    ["coleman mini mach 6727 cooling performance prep", "/symptoms/coleman-mini-mach-cooling-performance-prep/"],
+    ["maxxair maxxfan 1 switch wall control behavior", "/symptoms/maxxair-one-switch-wall-control-behavior/"],
+    [
+      "maxxair maxxfan 2 switch wall control 02000k behavior",
+      "/symptoms/maxxair-two-switch-wall-control-behavior/",
+    ],
+    ["suburban sf q furnace model prep", "/symptoms/suburban-sf-q-furnace-model-prep/"],
+    ["suburban elite induction cooktop pan compatibility", "/symptoms/suburban-induction-cooktop-pan-compatibility/"],
+    ["aqua hot edge tankless wall controller prep", "/symptoms/aquahot-edge-tankless-control-prep/"],
+    ["aqua hot 250d model diesel electric prep", "/symptoms/aquahot-250d-model-prep/"],
+    ["aqua hot 400d dual fuel model prep", "/symptoms/aquahot-400d-dual-fuel-prep/"],
+    ["furrion fcr06dcgba qr188 storage reset prep", "/symptoms/furrion-fcr06dcgba-storage-reset-prep/"],
+    ["furrion fcr20dcafa qr189 storage reset prep", "/symptoms/furrion-fcr20dcafa-storage-reset-prep/"],
+    ["furrion refrigerator warranty request w017 prep", "/symptoms/furrion-refrigerator-warranty-request-prep/"],
+    ["furrion fac c10sa single zone controller mode prep", "/symptoms/furrion-ac-single-zone-controller-mode-prep/"],
+    [
+      "furrion enhanced multizone ig fcm00037 app control prep",
+      "/symptoms/furrion-enhanced-multizone-app-control-prep/",
+    ],
+    ["onan generator serial number parts lookup prep", "/symptoms/onan-generator-serial-number-parts-lookup-prep/"],
+    ["onan hgjab lp maintenance kit a049e506 service prep", "/symptoms/onan-hgjab-lp-maintenance-kit-service-prep/"],
+  ] as const;
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+  }
+
+  for (const [query, href] of [
+    ["thermostat reset", "/symptoms/dometic-ccc2-system-reset-zone-init-prep/"],
+    ["air conditioner controls", "/symptoms/dometic-brisk-ac-controls-data-tag-prep/"],
+    ["remote rain sensor", "/symptoms/dometic-fantastic-vent-7350-remote-rain-sensor-prep/"],
+    ["toilet winterizing", "/symptoms/dometic-500-series-toilet-cleaning-winterizing-prep/"],
+    ["fan control", "/symptoms/dometic-fantastic-vent-3350-rain-sensor-control-prep/"],
+    ["pedal flush", "/symptoms/thetford-aqua-magic-v-pedal-flush-model-storage-prep/"],
+    ["service mode", "/symptoms/thetford-aria-deluxe-control-service-mode-prep/"],
+    ["night mode", "/symptoms/norcold-n2175-dc-fridge-night-mode-door-alarm-prep/"],
+    ["digital thermostat", "/symptoms/coleman-digital-thermostat-model-prep/"],
+    ["wall control", "/symptoms/maxxair-one-switch-wall-control-behavior/"],
+    ["single zone controller", "/symptoms/furrion-ac-single-zone-controller-mode-prep/"],
+    ["furnace model", "/symptoms/suburban-sf-q-furnace-model-prep/"],
+    ["induction cooktop", "/symptoms/suburban-induction-cooktop-pan-compatibility/"],
+    ["tankless controller", "/symptoms/aquahot-edge-tankless-control-prep/"],
+    ["model prep", "/symptoms/aquahot-250d-model-prep/"],
+    ["storage reset", "/symptoms/furrion-fcr06dcgba-storage-reset-prep/"],
+    ["warranty request", "/symptoms/furrion-refrigerator-warranty-request-prep/"],
+    ["parts lookup", "/symptoms/onan-generator-serial-number-parts-lookup-prep/"],
+    ["maintenance kit", "/symptoms/onan-hgjab-lp-maintenance-kit-service-prep/"],
+  ] as const) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toHaveCount(0);
+  }
+
+  await searchbox.fill("dometic ccc2 reset system zone initialization prep");
+  const ccc2Reset = lookupResults.locator('a[href="/symptoms/dometic-ccc2-system-reset-zone-init-prep/"]');
+  await expect(ccc2Reset).toBeVisible();
+  await ccc2Reset.click();
+  await expect(page.getByRole("heading", { name: "Dometic CCC2 system reset and zone initialization prep" })).toBeVisible();
+  await expect(page.getByText(/Record the CCC2 thermostat model/i)).toBeVisible();
+
+  await page.goto("/");
+  await searchbox.fill("onan hgjab lp maintenance kit a049e506 service prep");
+  const onanKit = lookupResults.locator('a[href="/symptoms/onan-hgjab-lp-maintenance-kit-service-prep/"]');
+  await expect(onanKit).toBeVisible();
+  await onanKit.click();
+  await expect(page.getByRole("heading", { name: "Onan HGJAB-LP maintenance kit service prep" })).toBeVisible();
+  await expect(page.getByText(/Record the HGJAB-LP generator model/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 

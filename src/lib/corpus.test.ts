@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 864;
-const expectedSourceCount = 653;
-const expectedSymptomCount = 486;
+const expectedSourceCount = 680;
+const expectedSymptomCount = 513;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -7884,6 +7884,235 @@ describe("verified corpus", () => {
       "low voltage",
       "not cooling",
       "model service prep",
+    ]) {
+      expect(
+        lookupSymptomGuides(index, query)
+          .slice(0, 5)
+          .map((symptom) => symptom.slug)
+          .filter((slug) => anchoredSlugs.has(slug)),
+        query,
+      ).toEqual([]);
+    }
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds official control, model-label, storage, warranty, and parts-prep guides without code entries", () => {
+    const expectedSources = new Map<string, string>([
+      [
+        "dometic-ccc2-system-reset-support",
+        "https://support.dometic.com/en/brisk-ac/How-to-reset-the-system-COMFORT-CONTROL-CENTER-2-THERMOSTAT-10e5",
+      ],
+      [
+        "dometic-brisk-controls-data-tag-support",
+        "https://support.dometic.com/en/brisk-ac/How-to-operate-the-controls-of-the-airconditioner-7a86",
+      ],
+      [
+        "dometic-fantastic-vent-7350-operating-manual",
+        "https://media.dometic.com/externalassets/dometic-fantastic-vent-7350_78799.pdf",
+      ],
+      [
+        "dometic-500-series-gravity-flush-toilet-manual",
+        "https://media.dometic.com/externalassets/dometic-510-rv-toilet_9108552866_64829.pdf",
+      ],
+      [
+        "dometic-fantastic-vent-3350-product",
+        "https://www.dometic.com/en-us/product/dometic-3350-fan-tastic-vent-roof-fan-9108870059?v=9108870059",
+      ],
+      ["thetford-aqua-magic-v-pedal-flush-support", "https://www.thetford.com/us/thetford-support/aqua-magic-v-pedal-flush/"],
+      ["thetford-aqua-magic-iv-pedal-flush-support", "https://www.thetford.com/us/thetford-support/aqua-magic-iv-pedal-flush/"],
+      ["thetford-aria-classic-support", "https://www.thetford.com/us/thetford-support/aria-classic/"],
+      ["thetford-aria-deluxe-support", "https://www.thetford.com/us/thetford-support/aria-deluxe/"],
+      ["norcold-n4150-support", "https://www.thetford.com/us/thetford-support/n4150/"],
+      ["norcold-n2175-support", "https://www.thetford.com/us/thetford-support/n2175/"],
+      ["coleman-digital-thermostats-product", "https://coleman-mach.com/products/thermostats/digital-thermostats/"],
+      ["coleman-mini-mach-operation-guide", "https://library.coleman-mach.com/wp-content/uploads/2023/04/1971-975.pdf"],
+      [
+        "maxxair-1-switch-wall-control-guide",
+        "https://library.maxxair.com/wp-content/uploads/2023/03/maxxfan-1-switch-control-installation-and-operation-guide.pdf",
+      ],
+      [
+        "maxxair-2-switch-wall-control-guide",
+        "https://library.maxxair.com/wp-content/uploads/2023/03/maxxfan-2-switch-control-installation-and-operation-guide.pdf",
+      ],
+      ["suburban-sf-q-furnaces-product", "https://suburbanrv.com/climate-control/furnaces/sf-q-series-furnaces/default.aspx"],
+      [
+        "suburban-induction-cooktops-product",
+        "https://suburbanrv.com/kitchen-galley/cooktops/induction-cooktops/default.aspx",
+      ],
+      ["aquahot-edge-tankless-product", "https://www.aquahot.com/Products/RV/edge-tankless-water-heater.aspx"],
+      ["aquahot-250d-product-page", "https://www.aquahot.com/Products/RV/250D.aspx"],
+      ["aquahot-400d-product-page", "https://www.aquahot.com/Products/RV/400D.aspx"],
+      ["furrion-fcr06-storage-qr188", "https://support.lci1.com/documents/ccd-0008581"],
+      ["furrion-fcr20-storage-qr189", "https://support.lci1.com/documents/ccd-0008582"],
+      ["furrion-refrigerator-warranty-request-w017", "https://support.lci1.com/documents/ccd-0008248"],
+      ["furrion-single-zone-controller-quick-start-ccd0006086", "https://support.lci1.com/documents/ccd-0006086"],
+      [
+        "furrion-enhanced-multizone-app-thermostat-ig-fcm00037",
+        "https://support.lci1.com/documents/furrion-enhanced-mulitzone-app-controlled-wall-thermostat-ig-fcm00037-v1.0",
+      ],
+      [
+        "cummins-shop-generator-info-faqs",
+        "https://shop.cummins.com/SC/knowledge-hub/d-us/generators-parts-and-accessories-information-and-faqs-MCACA54ZJLHJAFRP7RPXMKSUT6CM",
+      ],
+      [
+        "cummins-onan-hgjab-lp-maintenance-kit-a049e506",
+        "https://shop.cummins.com/SC/product/cummins-onan-hgjablp-rv-generator-maintenance-kit-a049e506/01t4N0000048nUxQAI",
+      ],
+    ]);
+    const expectedSymptomSourceIds = new Map<string, string[]>([
+      ["dometic-ccc2-system-reset-zone-init-prep", ["dometic-ccc2-system-reset-support"]],
+      ["dometic-brisk-ac-controls-data-tag-prep", ["dometic-brisk-controls-data-tag-support"]],
+      ["dometic-fantastic-vent-7350-remote-rain-sensor-prep", ["dometic-fantastic-vent-7350-operating-manual"]],
+      ["dometic-500-series-toilet-cleaning-winterizing-prep", ["dometic-500-series-gravity-flush-toilet-manual"]],
+      ["dometic-fantastic-vent-3350-rain-sensor-control-prep", ["dometic-fantastic-vent-3350-product"]],
+      ["thetford-aqua-magic-v-pedal-flush-model-storage-prep", ["thetford-aqua-magic-v-pedal-flush-support"]],
+      [
+        "thetford-aqua-magic-iv-pedal-flush-discontinued-support-prep",
+        ["thetford-aqua-magic-iv-pedal-flush-support"],
+      ],
+      ["thetford-aria-classic-model-control-service-prep", ["thetford-aria-classic-support"]],
+      ["thetford-aria-deluxe-control-service-mode-prep", ["thetford-aria-deluxe-support"]],
+      ["norcold-n4150-model-hts-cooling-service-prep", ["norcold-n4150-support"]],
+      ["norcold-n2175-dc-fridge-night-mode-door-alarm-prep", ["norcold-n2175-support"]],
+      ["coleman-digital-thermostat-model-prep", ["coleman-digital-thermostats-product"]],
+      ["coleman-mini-mach-cooling-performance-prep", ["coleman-mini-mach-operation-guide"]],
+      ["maxxair-one-switch-wall-control-behavior", ["maxxair-1-switch-wall-control-guide"]],
+      ["maxxair-two-switch-wall-control-behavior", ["maxxair-2-switch-wall-control-guide"]],
+      ["suburban-sf-q-furnace-model-prep", ["suburban-sf-q-furnaces-product"]],
+      ["suburban-induction-cooktop-pan-compatibility", ["suburban-induction-cooktops-product"]],
+      ["aquahot-edge-tankless-control-prep", ["aquahot-edge-tankless-product"]],
+      ["aquahot-250d-model-prep", ["aquahot-250d-product-page"]],
+      ["aquahot-400d-dual-fuel-prep", ["aquahot-400d-product-page"]],
+      ["furrion-fcr06dcgba-storage-reset-prep", ["furrion-fcr06-storage-qr188"]],
+      ["furrion-fcr20dcafa-storage-reset-prep", ["furrion-fcr20-storage-qr189"]],
+      ["furrion-refrigerator-warranty-request-prep", ["furrion-refrigerator-warranty-request-w017"]],
+      ["furrion-ac-single-zone-controller-mode-prep", ["furrion-single-zone-controller-quick-start-ccd0006086"]],
+      ["furrion-enhanced-multizone-app-control-prep", ["furrion-enhanced-multizone-app-thermostat-ig-fcm00037"]],
+      ["onan-generator-serial-number-parts-lookup-prep", ["cummins-shop-generator-info-faqs"]],
+      ["onan-hgjab-lp-maintenance-kit-service-prep", ["cummins-onan-hgjab-lp-maintenance-kit-a049e506"]],
+    ]);
+    const expectedRequiredTerms = new Map<string, string[]>([
+      ["dometic-ccc2-system-reset-zone-init-prep", ["dometic+ccc2+reset", "ccc2+system+reset"]],
+      ["dometic-brisk-ac-controls-data-tag-prep", ["dometic+brisk+controls", "brisk+data+tag"]],
+      ["dometic-fantastic-vent-7350-remote-rain-sensor-prep", ["fantastic+7350", "7350+remote"]],
+      ["dometic-500-series-toilet-cleaning-winterizing-prep", ["dometic+500+toilet", "510+rv+toilet"]],
+      ["dometic-fantastic-vent-3350-rain-sensor-control-prep", ["fantastic+3350", "dometic+3350"]],
+      ["thetford-aqua-magic-v-pedal-flush-model-storage-prep", ["aqua+magic+v+pedal", "aquamagic+v+pedal"]],
+      ["thetford-aqua-magic-iv-pedal-flush-discontinued-support-prep", ["aqua+magic+iv+pedal", "aquamagic+iv+pedal"]],
+      ["thetford-aria-classic-model-control-service-prep", ["aria+classic", "thetford+aria+classic"]],
+      ["thetford-aria-deluxe-control-service-mode-prep", ["aria+deluxe", "thetford+aria+deluxe"]],
+      ["norcold-n4150-model-hts-cooling-service-prep", ["n4150", "norcold+n4150"]],
+      ["norcold-n2175-dc-fridge-night-mode-door-alarm-prep", ["n2175", "norcold+n2175"]],
+      ["coleman-digital-thermostat-model-prep", ["coleman+digital+thermostat"]],
+      ["coleman-mini-mach-cooling-performance-prep", ["mini+mach", "6727"]],
+      ["maxxair-one-switch-wall-control-behavior", ["maxxfan+1+switch", "maxxair+1+switch"]],
+      ["maxxair-two-switch-wall-control-behavior", ["maxxfan+2+switch", "02000k"]],
+      ["suburban-sf-q-furnace-model-prep", ["suburban+sfq", "sfq+furnace"]],
+      ["suburban-induction-cooktop-pan-compatibility", ["suburban+induction", "elite+induction"]],
+      ["aquahot-edge-tankless-control-prep", ["aquahot+edge+tankless", "edge+tankless"]],
+      ["aquahot-250d-model-prep", ["aquahot+250d", "250d"]],
+      ["aquahot-400d-dual-fuel-prep", ["aquahot+400d", "400d"]],
+      ["furrion-fcr06dcgba-storage-reset-prep", ["fcr06dcgba", "qr188"]],
+      ["furrion-fcr20dcafa-storage-reset-prep", ["fcr20dcafa", "qr189"]],
+      ["furrion-refrigerator-warranty-request-prep", ["w017", "furrion+refrigerator+warranty"]],
+      ["furrion-ac-single-zone-controller-mode-prep", ["fac+c10sa", "fac+c10essa", "furrion+single+zone+controller"]],
+      ["furrion-enhanced-multizone-app-control-prep", ["igfcm00037", "enhanced+multizone"]],
+      ["onan-generator-serial-number-parts-lookup-prep", ["onan+serial+number", "generator+parts+lookup"]],
+      ["onan-hgjab-lp-maintenance-kit-service-prep", ["hgjab+lp", "a049e506"]],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const sourcesById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const index = buildSymptomSearchIndex(corpus);
+    const summary = summarizeCorpus(corpus);
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\borifice\b|\bcontrol board\b|\b120\s*vac\b|\b110\s*v\b|\bline-voltage\b|\brefrigerant\b|\bprobe\b|\bwiring\b|\binternal\b|\bsupply line\b|\bopen (the )?(fuel|gas|electrical|rooftop)|remove.*shroud|remove.*cover|measure resistance|fuel nozzle|combustion|coolant pump|manual override|hydraulic work|hydraulic repair/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = sourcesById.get(sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(summary.indexablePages).toBe(expectedEntryCount + expectedSymptomCount + 1);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const [symptomId, sourceIds] of expectedSymptomSourceIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds, symptomId).toEqual(sourceIds);
+      expect(symptom?.searchRequiredTerms, symptomId).toEqual(expectedRequiredTerms.get(symptomId));
+      expect([symptom?.summary, ...(symptom?.safeChecklist ?? [])].join(" "), symptomId).not.toMatch(
+        unsafeOwnerActionPattern,
+      );
+    }
+
+    const topSlugsFor = (query: string) => lookupSymptomGuides(index, query).slice(0, 5).map((symptom) => symptom.slug);
+
+    for (const [query, slug] of [
+      ["dometic ccc2 reset system zone initialization prep", "dometic-ccc2-system-reset-zone-init-prep"],
+      ["dometic brisk controls data tag filter grille model", "dometic-brisk-ac-controls-data-tag-prep"],
+      ["dometic fantastic vent 7350 remote rain sensor prep", "dometic-fantastic-vent-7350-remote-rain-sensor-prep"],
+      ["dometic 500 series 510 rv toilet cleaning winterizing", "dometic-500-series-toilet-cleaning-winterizing-prep"],
+      ["dometic fantastic vent 3350 rain sensor control prep", "dometic-fantastic-vent-3350-rain-sensor-control-prep"],
+      ["thetford aqua magic v pedal flush model storage prep", "thetford-aqua-magic-v-pedal-flush-model-storage-prep"],
+      ["thetford aqua magic iv pedal flush discontinued support", "thetford-aqua-magic-iv-pedal-flush-discontinued-support-prep"],
+      ["thetford aria classic model control service prep", "thetford-aria-classic-model-control-service-prep"],
+      ["thetford aria deluxe control service mode prep", "thetford-aria-deluxe-control-service-mode-prep"],
+      ["norcold n4150 hts cooling service prep", "norcold-n4150-model-hts-cooling-service-prep"],
+      ["norcold n2175 dc fridge night mode door alarm prep", "norcold-n2175-dc-fridge-night-mode-door-alarm-prep"],
+      ["coleman digital thermostat model part number prep", "coleman-digital-thermostat-model-prep"],
+      ["coleman mini mach 6727 cooling performance prep", "coleman-mini-mach-cooling-performance-prep"],
+      ["maxxair maxxfan 1 switch wall control behavior", "maxxair-one-switch-wall-control-behavior"],
+      ["maxxair maxxfan 2 switch wall control 02000k behavior", "maxxair-two-switch-wall-control-behavior"],
+      ["suburban sf q furnace model prep", "suburban-sf-q-furnace-model-prep"],
+      ["suburban elite induction cooktop pan compatibility", "suburban-induction-cooktop-pan-compatibility"],
+      ["aqua hot edge tankless wall controller prep", "aquahot-edge-tankless-control-prep"],
+      ["aqua hot 250d model diesel electric prep", "aquahot-250d-model-prep"],
+      ["aqua hot 400d dual fuel model prep", "aquahot-400d-dual-fuel-prep"],
+      ["furrion fcr06dcgba qr188 storage reset prep", "furrion-fcr06dcgba-storage-reset-prep"],
+      ["furrion fcr20dcafa qr189 storage reset prep", "furrion-fcr20dcafa-storage-reset-prep"],
+      ["furrion refrigerator warranty request w017 prep", "furrion-refrigerator-warranty-request-prep"],
+      ["furrion fac c10sa single zone controller mode prep", "furrion-ac-single-zone-controller-mode-prep"],
+      ["furrion enhanced multizone ig fcm00037 app control prep", "furrion-enhanced-multizone-app-control-prep"],
+      ["onan generator serial number parts lookup prep", "onan-generator-serial-number-parts-lookup-prep"],
+      ["onan hgjab lp maintenance kit a049e506 service prep", "onan-hgjab-lp-maintenance-kit-service-prep"],
+    ] as const) {
+      expect(topSlugsFor(query), query).toContain(slug);
+      expect(topSlugsFor(query)[0], query).toBe(slug);
+    }
+
+    for (const [symptomId] of expectedSymptomSourceIds) {
+      const symptom = symptomById.get(symptomId);
+      for (const alias of symptom?.searchAliases ?? []) {
+        expect(topSlugsFor(alias)[0], `${symptomId}: ${alias}`).toBe(symptom?.slug);
+      }
+    }
+
+    const anchoredSlugs = new Set(expectedSymptomSourceIds.keys());
+    for (const query of [
+      "thermostat reset",
+      "air conditioner controls",
+      "remote rain sensor",
+      "toilet winterizing",
+      "fan control",
+      "pedal flush",
+      "service mode",
+      "night mode",
+      "digital thermostat",
+      "wall control",
+      "single zone controller",
+      "furnace model",
+      "induction cooktop",
+      "tankless controller",
+      "model prep",
+      "storage reset",
+      "warranty request",
+      "parts lookup",
+      "maintenance kit",
     ]) {
       expect(
         lookupSymptomGuides(index, query)
