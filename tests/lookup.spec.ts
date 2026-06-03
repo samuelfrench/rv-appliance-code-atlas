@@ -1739,6 +1739,66 @@ test("lookup surfaces N4000 touchscreen codes and next support-router pages", as
   expect(pageErrors).toEqual([]);
 });
 
+test("lookup surfaces Dometic warranty, Suburban Advantage, and Norcold support-depth guides", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    ["dometic warranty direct purchase claim form", "/symptoms/dometic-direct-purchase-warranty-claim-prep/"],
+    ["dometic warranty ac heat pump limited two year paperwork", "/symptoms/dometic-ac-heat-pump-warranty-paperwork-prep/"],
+    ["dometic warranty furnace limited two year paperwork", "/symptoms/dometic-furnace-warranty-paperwork-prep/"],
+    ["dometic warranty refrigerator limited two year paperwork", "/symptoms/dometic-refrigerator-warranty-paperwork-prep/"],
+    ["dometic warranty water heater limited two year paperwork", "/symptoms/dometic-water-heater-warranty-paperwork-prep/"],
+    ["suburban advantage tank water heater porcelain anode warranty", "/symptoms/suburban-advantage-tank-water-heater-model-prep/"],
+    ["norcold n400 n402 support owner manual parts list", "/symptoms/norcold-n400-n402-support-manual-parts-prep/"],
+    ["norcold n2152r support owner manual parts list", "/symptoms/norcold-n2152r-support-manual-parts-prep/"],
+  ] as const;
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+  }
+
+  for (const [query, href] of [
+    ["warranty", "/symptoms/dometic-direct-purchase-warranty-claim-prep/"],
+    ["claim", "/symptoms/dometic-direct-purchase-warranty-claim-prep/"],
+    ["water heater", "/symptoms/suburban-advantage-tank-water-heater-model-prep/"],
+    ["norcold refrigerator not cooling", "/symptoms/norcold-n400-n402-support-manual-parts-prep/"],
+    ["heat pump not working", "/symptoms/dometic-ac-heat-pump-warranty-paperwork-prep/"],
+  ] as const) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toHaveCount(0);
+  }
+
+  await searchbox.fill("dometic warranty refrigerator limited two year paperwork");
+  const refrigeratorWarranty = lookupResults.locator(
+    'a[href="/symptoms/dometic-refrigerator-warranty-paperwork-prep/"]',
+  );
+  await expect(refrigeratorWarranty).toBeVisible();
+  await refrigeratorWarranty.click();
+  await expect(page.getByRole("heading", { name: "Dometic refrigerator warranty paperwork prep" })).toBeVisible();
+  await expect(page.getByText(/Record model, serial number, purchase date/i)).toBeVisible();
+
+  await page.goto("/");
+  await searchbox.fill("norcold n2152r support owner manual parts list");
+  const n2152 = lookupResults.locator('a[href="/symptoms/norcold-n2152r-support-manual-parts-prep/"]');
+  await expect(n2152).toBeVisible();
+  await n2152.click();
+  await expect(page.getByRole("heading", { name: "Norcold N2152R support prep" })).toBeVisible();
+  await expect(page.getByText(/Record N2152R model and serial details/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 

@@ -4625,6 +4625,70 @@
       "url": "https://www.thetford.com/us/thetford-support/n410-n412-n510-n512/",
       "type": "manufacturer-support",
       "official": true
+    },
+    {
+      "id": "dometic-warranty-form",
+      "brand": "Dometic",
+      "title": "Dometic Warranty Form",
+      "url": "https://www.dometic.com/en-us/support/warranty-form",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ac-heat-pump-limited-warranty-62298",
+      "brand": "Dometic",
+      "title": "Dometic Air Conditioners and Heat Pumps Limited Two-Year Warranty",
+      "url": "https://www.dometic.com/globalassets/1-outdoor/out-support/out-warranty-statements/air_conditioners_-_heat_pumps_limited_two-year_warranty-_-62298.pdf",
+      "type": "manufacturer-pdf",
+      "official": true
+    },
+    {
+      "id": "dometic-furnaces-limited-warranty-62293",
+      "brand": "Dometic",
+      "title": "Dometic Furnaces Limited Two-Year Warranty",
+      "url": "https://www.dometic.com/globalassets/1-outdoor/out-support/out-warranty-statements/furnaces_limited_two-year_warranty-_-62293.pdf",
+      "type": "manufacturer-pdf",
+      "official": true
+    },
+    {
+      "id": "dometic-refrigerators-limited-warranty-62300",
+      "brand": "Dometic",
+      "title": "Dometic Refrigerators Limited Two-Year Warranty",
+      "url": "https://www.dometic.com/globalassets/1-outdoor/out-support/out-warranty-statements/dometic_refrigerators_limited_two-year_warranty-_-62300.pdf",
+      "type": "manufacturer-pdf",
+      "official": true
+    },
+    {
+      "id": "dometic-water-heaters-limited-warranty-62323",
+      "brand": "Dometic",
+      "title": "Dometic Water Heaters Limited Two-Year Warranty",
+      "url": "https://www.dometic.com/globalassets/1-outdoor/out-support/out-warranty-statements/water_heaters_limited_two-year_warranty-_-62323.pdf",
+      "type": "manufacturer-pdf",
+      "official": true
+    },
+    {
+      "id": "suburban-advantage-tank-water-heaters",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban Advantage Tank Water Heaters",
+      "url": "https://suburbanrv.com/water-heating/tank-water-heaters/advantage-water-heaters/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "norcold-n400-n400-3-n402-3-support",
+      "brand": "Norcold",
+      "title": "Norcold N400, N400.3, and N402.3 Support",
+      "url": "https://www.thetford.com/us/thetford-support/n400-n400-3-n402-3/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-n2152r-support",
+      "brand": "Norcold",
+      "title": "Norcold N2152R Support",
+      "url": "https://www.thetford.com/us/thetford-support/n2152r/",
+      "type": "manufacturer-support",
+      "official": true
     }
   ],
   "entries": [
@@ -38006,7 +38070,15 @@
         "aquahot-600d-675d-use-care-guide",
         "thetford-aqua-magic-style-plus-support",
         "thetford-aqua-magic-v-hand-flush-support",
-        "norcold-n410-n412-n510-n512-support"
+        "norcold-n410-n412-n510-n512-support",
+        "dometic-warranty-form",
+        "dometic-ac-heat-pump-limited-warranty-62298",
+        "dometic-furnaces-limited-warranty-62293",
+        "dometic-refrigerators-limited-warranty-62300",
+        "dometic-water-heaters-limited-warranty-62323",
+        "suburban-advantage-tank-water-heaters",
+        "norcold-n400-n400-3-n402-3-support",
+        "norcold-n2152r-support"
       ]
     },
     {
@@ -45313,6 +45385,192 @@
         "n412",
         "n510",
         "n512"
+      ]
+    },
+    {
+      "id": "dometic-direct-purchase-warranty-claim-prep",
+      "slug": "dometic-direct-purchase-warranty-claim-prep",
+      "title": "Dometic direct-purchase warranty claim prep",
+      "summary": "Use the official Dometic warranty form when a product bought directly from Dometic needs claim paperwork.",
+      "safeChecklist": [
+        "Record Dometic order details, model, serial number, purchase date, owner contact information, and the exact product symptom.",
+        "Photograph the product label, receipt, displayed message, and owner-visible installation context before starting the claim.",
+        "Use a Dometic service agent, dealer, or qualified RV service for diagnosis, fitment, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "dometic-warranty-form"
+      ],
+      "searchAliases": [
+        "dometic warranty direct purchase claim form",
+        "dometic warranty form model serial receipt",
+        "dometic warranty claim bought from dometic",
+        "dometic warranty original purchaser paperwork"
+      ],
+      "searchRequiredTerms": [
+        "dometicwarranty"
+      ]
+    },
+    {
+      "id": "dometic-ac-heat-pump-warranty-paperwork-prep",
+      "slug": "dometic-ac-heat-pump-warranty-paperwork-prep",
+      "title": "Dometic AC and heat-pump warranty paperwork prep",
+      "summary": "Use the official Dometic air-conditioner and heat-pump limited warranty to collect paperwork before support.",
+      "safeChecklist": [
+        "Record model, serial number, purchase date, installation date, RV make and model, and the exact cooling or heat-pump symptom.",
+        "Keep the bill of sale, service history, product label photos, and thermostat or display photos with the claim notes.",
+        "Use Dometic, a dealer, or qualified RV HVAC service for diagnosis, fitment, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "dometic-ac-heat-pump-limited-warranty-62298"
+      ],
+      "searchAliases": [
+        "dometic warranty ac heat pump limited two year paperwork",
+        "dometic warranty air conditioner heat pump bill of sale",
+        "dometic warranty air conditioning original purchaser",
+        "dometic warranty heat pump model serial prep"
+      ],
+      "searchRequiredTerms": [
+        "dometicwarranty"
+      ]
+    },
+    {
+      "id": "dometic-furnace-warranty-paperwork-prep",
+      "slug": "dometic-furnace-warranty-paperwork-prep",
+      "title": "Dometic furnace warranty paperwork prep",
+      "summary": "Use the official Dometic furnace limited warranty to collect claim and service notes before support.",
+      "safeChecklist": [
+        "Record furnace model, serial number, purchase date, installation date, RV make and model, and the exact heat or shutdown symptom.",
+        "Keep the bill of sale, prior service notes, thermostat photos, product label photos, and any visible status-light description.",
+        "Shut the furnace down for odor, soot, repeated ignition failure, or unsafe operation, then use Dometic, a dealer, or qualified RV furnace service."
+      ],
+      "sourceIds": [
+        "dometic-furnaces-limited-warranty-62293"
+      ],
+      "searchAliases": [
+        "dometic warranty furnace limited two year paperwork",
+        "dometic warranty furnace bill of sale",
+        "dometic warranty furnace original purchaser prep",
+        "dometic warranty furnace model serial claim"
+      ],
+      "searchRequiredTerms": [
+        "dometicwarranty"
+      ]
+    },
+    {
+      "id": "dometic-refrigerator-warranty-paperwork-prep",
+      "slug": "dometic-refrigerator-warranty-paperwork-prep",
+      "title": "Dometic refrigerator warranty paperwork prep",
+      "summary": "Use the official Dometic refrigerator limited warranty to collect claim paperwork and service notes.",
+      "safeChecklist": [
+        "Record model, serial number, purchase date, installation date, RV make and model, and the exact cooling or display symptom.",
+        "Keep the bill of sale, product label photos, displayed message photos, temperature notes, and prior service history together.",
+        "Use Dometic, a dealer, or qualified RV refrigerator service for diagnosis, sealed-system questions, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "dometic-refrigerators-limited-warranty-62300"
+      ],
+      "searchAliases": [
+        "dometic warranty refrigerator limited two year paperwork",
+        "dometic warranty refrigerator purchase date bill of sale",
+        "dometic warranty refrigerator model serial claim",
+        "dometic warranty fridge original purchaser prep"
+      ],
+      "searchRequiredTerms": [
+        "dometicwarranty"
+      ]
+    },
+    {
+      "id": "dometic-water-heater-warranty-paperwork-prep",
+      "slug": "dometic-water-heater-warranty-paperwork-prep",
+      "title": "Dometic water-heater warranty paperwork prep",
+      "summary": "Use the official Dometic water-heater limited warranty to collect claim paperwork before support.",
+      "safeChecklist": [
+        "Record water-heater model, serial number, purchase date, installation date, RV make and model, and the exact hot-water symptom.",
+        "Keep the bill of sale, product label photos, displayed switch or control state, service notes, and winterization history with the claim.",
+        "Shut the water heater down for odor, leak, overheating, or repeated ignition failure, then use Dometic, a dealer, or qualified RV water-heater service."
+      ],
+      "sourceIds": [
+        "dometic-water-heaters-limited-warranty-62323"
+      ],
+      "searchAliases": [
+        "dometic warranty water heater limited two year paperwork",
+        "dometic warranty water heater bill of sale",
+        "dometic warranty water heater original purchaser prep",
+        "dometic warranty waterheater model serial claim"
+      ],
+      "searchRequiredTerms": [
+        "dometicwarranty"
+      ]
+    },
+    {
+      "id": "suburban-advantage-tank-water-heater-model-prep",
+      "slug": "suburban-advantage-tank-water-heater-model-prep",
+      "title": "Suburban Advantage tank water-heater model prep",
+      "summary": "Use the official Suburban Advantage tank water-heater page to identify porcelain-lined steel-tank model details before support.",
+      "safeChecklist": [
+        "Record whether the unit is a Suburban Advantage tank model, capacity, visible data-label details, door style, and exact hot-water symptom.",
+        "Record maintenance history, anode-rod history, leak observations, purchase date, and whether warranty or replacement fitment is being discussed.",
+        "Use Suburban, a dealer, or qualified RV water-heater service for fitment, parts, draining, utility connections, or repair decisions."
+      ],
+      "sourceIds": [
+        "suburban-advantage-tank-water-heaters"
+      ],
+      "searchAliases": [
+        "suburban advantage tank water heater porcelain anode warranty",
+        "suburban advantage porcelain lined steel tank water heater",
+        "suburban advantage direct spark ignition tank model",
+        "suburban advantage water heater model prep"
+      ],
+      "searchRequiredTerms": [
+        "suburbanadvantage"
+      ]
+    },
+    {
+      "id": "norcold-n400-n402-support-manual-parts-prep",
+      "slug": "norcold-n400-n402-support-manual-parts-prep",
+      "title": "Norcold N400 and N402 support prep",
+      "summary": "Use the official Norcold N400, N400.3, and N402.3 support page to capture manual, parts, and service-routing details.",
+      "safeChecklist": [
+        "Record whether the refrigerator is N400, N400.3, or N402.3, plus serial number, selected source, display or light pattern, and exact symptom.",
+        "Save owner-manual, installation-manual, and parts-list links before contacting support or ordering parts.",
+        "Use Norcold support, a dealer, or qualified RV refrigerator service for LP, AC/DC power diagnosis, HTS, cooling-unit, or parts decisions."
+      ],
+      "sourceIds": [
+        "norcold-n400-n400-3-n402-3-support"
+      ],
+      "searchAliases": [
+        "norcold n400 n402 support owner manual parts list",
+        "norcold n400.3 n402.3 manual parts service prep",
+        "n400 compact refrigerator owner manual parts",
+        "n402 norcold support manual parts"
+      ],
+      "searchRequiredTerms": [
+        "n400",
+        "n402"
+      ]
+    },
+    {
+      "id": "norcold-n2152r-support-manual-parts-prep",
+      "slug": "norcold-n2152r-support-manual-parts-prep",
+      "title": "Norcold N2152R support prep",
+      "summary": "Use the official Norcold N2152R support page to capture DC refrigerator manual and parts details before service.",
+      "safeChecklist": [
+        "Record N2152R model and serial details, RV make and model, selected DC power source, display state, temperature notes, and exact symptom.",
+        "Save the N2000-series owner manual and N2152R parts-list links before contacting support or ordering parts.",
+        "Use Norcold support, a dealer, or qualified RV refrigerator service for DC power diagnosis, cooling-unit, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "norcold-n2152r-support"
+      ],
+      "searchAliases": [
+        "norcold n2152r support owner manual parts list",
+        "norcold n2152 support manual parts service prep",
+        "n2152r dc refrigerator parts list",
+        "n2152 norcold support owner manual"
+      ],
+      "searchRequiredTerms": [
+        "n2152",
+        "n2152r"
       ]
     }
   ],

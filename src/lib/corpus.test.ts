@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 864;
-const expectedSourceCount = 575;
-const expectedSymptomCount = 408;
+const expectedSourceCount = 583;
+const expectedSymptomCount = 416;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -7035,5 +7035,125 @@ describe("verified corpus", () => {
       ).toEqual([]);
     }
     expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(allNewSourceIds));
+  });
+
+  it("adds official Dometic warranty, Suburban Advantage, and Norcold support-depth guides without code entries", () => {
+    const expectedSources = new Map<string, string>([
+      ["dometic-warranty-form", "https://www.dometic.com/en-us/support/warranty-form"],
+      [
+        "dometic-ac-heat-pump-limited-warranty-62298",
+        "https://www.dometic.com/globalassets/1-outdoor/out-support/out-warranty-statements/air_conditioners_-_heat_pumps_limited_two-year_warranty-_-62298.pdf",
+      ],
+      [
+        "dometic-furnaces-limited-warranty-62293",
+        "https://www.dometic.com/globalassets/1-outdoor/out-support/out-warranty-statements/furnaces_limited_two-year_warranty-_-62293.pdf",
+      ],
+      [
+        "dometic-refrigerators-limited-warranty-62300",
+        "https://www.dometic.com/globalassets/1-outdoor/out-support/out-warranty-statements/dometic_refrigerators_limited_two-year_warranty-_-62300.pdf",
+      ],
+      [
+        "dometic-water-heaters-limited-warranty-62323",
+        "https://www.dometic.com/globalassets/1-outdoor/out-support/out-warranty-statements/water_heaters_limited_two-year_warranty-_-62323.pdf",
+      ],
+      ["suburban-advantage-tank-water-heaters", "https://suburbanrv.com/water-heating/tank-water-heaters/advantage-water-heaters/"],
+      ["norcold-n400-n400-3-n402-3-support", "https://www.thetford.com/us/thetford-support/n400-n400-3-n402-3/"],
+      ["norcold-n2152r-support", "https://www.thetford.com/us/thetford-support/n2152r/"],
+    ]);
+    const expectedSymptomSourceIds = new Map<string, string[]>([
+      ["dometic-direct-purchase-warranty-claim-prep", ["dometic-warranty-form"]],
+      ["dometic-ac-heat-pump-warranty-paperwork-prep", ["dometic-ac-heat-pump-limited-warranty-62298"]],
+      ["dometic-furnace-warranty-paperwork-prep", ["dometic-furnaces-limited-warranty-62293"]],
+      ["dometic-refrigerator-warranty-paperwork-prep", ["dometic-refrigerators-limited-warranty-62300"]],
+      ["dometic-water-heater-warranty-paperwork-prep", ["dometic-water-heaters-limited-warranty-62323"]],
+      ["suburban-advantage-tank-water-heater-model-prep", ["suburban-advantage-tank-water-heaters"]],
+      ["norcold-n400-n402-support-manual-parts-prep", ["norcold-n400-n400-3-n402-3-support"]],
+      ["norcold-n2152r-support-manual-parts-prep", ["norcold-n2152r-support"]],
+    ]);
+    const expectedRequiredTerms = new Map<string, string[]>([
+      ["dometic-direct-purchase-warranty-claim-prep", ["dometicwarranty"]],
+      ["dometic-ac-heat-pump-warranty-paperwork-prep", ["dometicwarranty"]],
+      ["dometic-furnace-warranty-paperwork-prep", ["dometicwarranty"]],
+      ["dometic-refrigerator-warranty-paperwork-prep", ["dometicwarranty"]],
+      ["dometic-water-heater-warranty-paperwork-prep", ["dometicwarranty"]],
+      ["suburban-advantage-tank-water-heater-model-prep", ["suburbanadvantage"]],
+      ["norcold-n400-n402-support-manual-parts-prep", ["n400", "n402"]],
+      ["norcold-n2152r-support-manual-parts-prep", ["n2152", "n2152r"]],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const sourcesById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const index = buildSymptomSearchIndex(corpus);
+    const summary = summarizeCorpus(corpus);
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\b110\s*v\b|\bline-voltage\b|\brefrigerant\b|\bprobe\b|\bwiring\b|\binternal\b|\broof\b|\bsupply line\b|\bopen (the )?(fuel|gas|electrical|rooftop)|remove.*shroud|remove.*cover|measure resistance|fuel nozzle|combustion|coolant pump|manual override|hydraulic work|hydraulic repair/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = sourcesById.get(sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(summary.indexablePages).toBe(expectedEntryCount + expectedSymptomCount + 1);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const [symptomId, sourceIds] of expectedSymptomSourceIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds, symptomId).toEqual(sourceIds);
+      expect(symptom?.searchRequiredTerms, symptomId).toEqual(expectedRequiredTerms.get(symptomId));
+      expect([symptom?.summary, ...(symptom?.safeChecklist ?? [])].join(" "), symptomId).not.toMatch(
+        unsafeOwnerActionPattern,
+      );
+    }
+
+    expect(lookupSymptomGuides(index, "dometic warranty direct purchase claim form")[0]?.slug).toBe(
+      "dometic-direct-purchase-warranty-claim-prep",
+    );
+    expect(lookupSymptomGuides(index, "dometic warranty ac heat pump limited two year paperwork")[0]?.slug).toBe(
+      "dometic-ac-heat-pump-warranty-paperwork-prep",
+    );
+    expect(lookupSymptomGuides(index, "dometic warranty furnace limited two year paperwork")[0]?.slug).toBe(
+      "dometic-furnace-warranty-paperwork-prep",
+    );
+    expect(lookupSymptomGuides(index, "dometic warranty refrigerator limited two year paperwork")[0]?.slug).toBe(
+      "dometic-refrigerator-warranty-paperwork-prep",
+    );
+    expect(lookupSymptomGuides(index, "dometic warranty water heater limited two year paperwork")[0]?.slug).toBe(
+      "dometic-water-heater-warranty-paperwork-prep",
+    );
+    expect(lookupSymptomGuides(index, "suburban advantage tank water heater porcelain anode warranty")[0]?.slug).toBe(
+      "suburban-advantage-tank-water-heater-model-prep",
+    );
+    expect(lookupSymptomGuides(index, "norcold n400 n402 support owner manual parts list")[0]?.slug).toBe(
+      "norcold-n400-n402-support-manual-parts-prep",
+    );
+    expect(lookupSymptomGuides(index, "norcold n2152r support owner manual parts list")[0]?.slug).toBe(
+      "norcold-n2152r-support-manual-parts-prep",
+    );
+
+    const anchoredSlugs = new Set(expectedSymptomSourceIds.keys());
+    for (const query of [
+      "warranty",
+      "claim",
+      "warranty paperwork",
+      "service support",
+      "water heater",
+      "norcold refrigerator not cooling",
+      "refrigerator parts",
+      "heat pump not working",
+    ]) {
+      expect(
+        lookupSymptomGuides(index, query)
+          .slice(0, 5)
+          .map((symptom) => symptom.slug)
+          .filter((slug) => anchoredSlugs.has(slug)),
+        query,
+      ).toEqual([]);
+    }
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
   });
 });
