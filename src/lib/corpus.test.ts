@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 850;
-const expectedSourceCount = 514;
-const expectedSymptomCount = 348;
+const expectedSourceCount = 538;
+const expectedSymptomCount = 372;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -6306,6 +6306,263 @@ describe("verified corpus", () => {
     );
     expect(lookupSymptomGuides(index, "norcold refrigerator not cooling").slice(0, 5).map((symptom) => symptom.slug)).not.toContain(
       "norcold-polar-n10-manual-parts-service-prep",
+    );
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds the official manufacturer support-extension batch without code entries", () => {
+    const expectedSources = new Map<string, string>([
+      [
+        "dometic-freshjet-heat-strip-cold-weather-support",
+        "https://support.dometic.com/en/freshjet-ac/My-rooftop-unit-has-the-electric-heat-strip-option-non-heat-pump-electric-heat-option-but-when-it-gets-colder-outside-it-doesnt-seem-to-maintain-the-temperature-What-should-I-do-24ac",
+      ],
+      [
+        "dometic-freshjet-set-temperature-model-tag-support",
+        "https://support.dometic.com/en/freshjet-ac/How-to-Set-the-temperature-621b",
+      ],
+      [
+        "dometic-ccc2-program-1-2-support",
+        "https://support.dometic.com/en/brisk-ac/How-to-control-Program-1-and-2-COMFORT-CONTROL-CENTER-2-THERMOSTAT-eabf",
+      ],
+      [
+        "dometic-connect-pro-thermostat-short-operating",
+        "https://media.dometic.com/externalassets/inc1015rd_9620001471_118307.pdf",
+      ],
+      [
+        "dometic-ibis-low-air-output-filter-support",
+        "https://support.dometic.com/en/ibis-ac/My-air-conditioner-is-giving-me-low-air-output-dfd3",
+      ],
+      [
+        "dometic-fantastic-vent-7350-product",
+        "https://www.dometic.com/en-us/product/dometic-7350-fan-tastic-vent-roof-fan-9108870595",
+      ],
+      [
+        "furrion-refrigerator-temperature-testing-video",
+        "https://support.lci1.com/videos/temperature-testing-a-furrion-refrigerator",
+      ],
+      [
+        "furrion-refrigerator-freezer-cold-fridge-warm-video",
+        "https://support.lci1.com/videos/furrion-refrigerator-freezer-is-cold-but-refrigerator-is-not",
+      ],
+      [
+        "furrion-refrigerator-identification-label-video",
+        "https://support.lci1.com/videos/how-to-find-the-identification-label-on-a-furrion-refrigerator",
+      ],
+      ["furrion-ac-operation-video", "https://support.lci1.com/videos/furrion-air-conditioner-operation"],
+      ["furrion-under-bench-ac-user-manual", "https://support.lci1.com/documents/ccd-0005748"],
+      ["furrion-12-inch-cooktop-ffd-manual", "https://support.lci1.com/documents/ccd-0010262"],
+      ["coleman-mach-service-support-router", "https://coleman-mach.com/service-support/default.aspx"],
+      ["maxxair-rv-owners-product-service-routing", "https://www.maxxair.com/rv-owners/"],
+      ["maxxair-maxxfan-mini-product-family", "https://www.maxxair.com/products/fans/maxxfan-mini/"],
+      ["suburban-service-support-router", "https://suburbanrv.com/service-support/default.aspx"],
+      [
+        "aquahot-125-gn1-use-care-guide",
+        "https://library.aquahot.com/wp-content/uploads/2022/04/AHE-125-GN1-Use-and-Care-Guide.pdf",
+      ],
+      [
+        "aquahot-250-d02-use-care-guide",
+        "https://library.aquahot.com/wp-content/uploads/2022/04/AHE-250-D02-Use-and-Care-Guide.pdf",
+      ],
+      ["thetford-warranty-claim-faq", "https://www.thetford.com/us/faq/what-should-i-do-if-i-have-a-warranty-claim/"],
+      [
+        "norcold-recall-reimbursement-faq",
+        "https://www.thetford.com/us/faq/will-norcold-reimburse-me-for-a-recall-repair-paid-for-out-of-pocket/",
+      ],
+      [
+        "norcold-fault-code-routing-faq",
+        "https://www.thetford.com/us/faq/my-refrigerator-shows-a-fault-code-what-should-i-do/",
+      ],
+      ["norcold-n15dc-support", "https://www.thetford.com/us/thetford-support/n15dc/"],
+      ["thetford-porta-potti-565e-support", "https://www.thetford.com/us/thetford-support/porta-potti-565e/"],
+      ["onan-rv-lifestyle-coach-care-0043135", "https://mart.cummins.com/imagelibrary/data/assetfiles/0043135.pdf"],
+    ]);
+    const expectedSymptomSourceIds = new Map<string, string[]>([
+      ["dometic-freshjet-heat-strip-cold-weather-prep", ["dometic-freshjet-heat-strip-cold-weather-support"]],
+      ["dometic-freshjet-fj-fjx-temperature-model-label", ["dometic-freshjet-set-temperature-model-tag-support"]],
+      ["dometic-ccc2-program-schedule-control-prep", ["dometic-ccc2-program-1-2-support"]],
+      ["dometic-connect-pro-thermostat-control-prep", ["dometic-connect-pro-thermostat-short-operating"]],
+      ["dometic-ibis-ac-low-air-output-filter-prep", ["dometic-ibis-low-air-output-filter-support"]],
+      ["dometic-fantastic-vent-7350-rain-sensor-control-prep", ["dometic-fantastic-vent-7350-product"]],
+      ["furrion-refrigerator-temperature-testing-service-prep", ["furrion-refrigerator-temperature-testing-video"]],
+      [
+        "furrion-refrigerator-freezer-cold-fridge-warm-service-prep",
+        ["furrion-refrigerator-freezer-cold-fridge-warm-video"],
+      ],
+      ["furrion-refrigerator-identification-label-service-prep", ["furrion-refrigerator-identification-label-video"]],
+      ["furrion-ac-operation-mode-control-service-prep", ["furrion-ac-operation-video"]],
+      ["furrion-under-bench-ac-filter-drain-control-service-prep", ["furrion-under-bench-ac-user-manual"]],
+      ["furrion-12-inch-cooktop-ffd-ignition-service-prep", ["furrion-12-inch-cooktop-ffd-manual"]],
+      ["coleman-mach-support-resource-routing-prep", ["coleman-mach-service-support-router"]],
+      ["maxxair-rv-owner-product-service-routing-prep", ["maxxair-rv-owners-product-service-routing"]],
+      ["maxxair-maxxfan-mini-model-feature-prep", ["maxxair-maxxfan-mini-product-family"]],
+      ["suburban-service-support-certified-tech-routing-prep", ["suburban-service-support-router"]],
+      ["aquahot-125-gn1-lcd-fuel-service-prep", ["aquahot-125-gn1-use-care-guide"]],
+      ["aquahot-250-d02-diesel-use-care-service-prep", ["aquahot-250-d02-use-care-guide"]],
+      ["thetford-norcold-warranty-claim-asc-dealer-prep", ["thetford-warranty-claim-faq"]],
+      ["norcold-recall-repair-reimbursement-routing", ["norcold-recall-reimbursement-faq"]],
+      ["norcold-refrigerator-fault-code-record-model-prep", ["norcold-fault-code-routing-faq"]],
+      ["norcold-n15dc-support-manual-parts-prep", ["norcold-n15dc-support"]],
+      ["thetford-porta-potti-565e-battery-flush-storage-prep", ["thetford-porta-potti-565e-support"]],
+      ["onan-rv-generator-warranty-coach-care-service-prep", ["onan-rv-lifestyle-coach-care-0043135"]],
+    ]);
+    const expectedRequiredTerms = new Map<string, string[]>([
+      ["dometic-freshjet-heat-strip-cold-weather-prep", ["freshjet", "heat"]],
+      ["dometic-freshjet-fj-fjx-temperature-model-label", ["freshjet", "temperature"]],
+      ["dometic-ccc2-program-schedule-control-prep", ["ccc2", "program"]],
+      ["dometic-connect-pro-thermostat-control-prep", ["connect", "pro"]],
+      ["dometic-ibis-ac-low-air-output-filter-prep", ["ibis", "air"]],
+      ["dometic-fantastic-vent-7350-rain-sensor-control-prep", ["fantastic", "7350"]],
+      ["furrion-refrigerator-temperature-testing-service-prep", ["furrion", "temperature"]],
+      ["furrion-refrigerator-freezer-cold-fridge-warm-service-prep", ["furrion", "freezer"]],
+      ["furrion-refrigerator-identification-label-service-prep", ["furrion", "label"]],
+      ["furrion-ac-operation-mode-control-service-prep", ["furrion", "operation"]],
+      ["furrion-under-bench-ac-filter-drain-control-service-prep", ["under", "bench"]],
+      ["furrion-12-inch-cooktop-ffd-ignition-service-prep", ["furrion", "cooktop"]],
+      ["coleman-mach-support-resource-routing-prep", ["colemanmach"]],
+      ["maxxair-rv-owner-product-service-routing-prep", ["maxxair", "owners"]],
+      ["maxxair-maxxfan-mini-model-feature-prep", ["maxxfan", "mini"]],
+      ["suburban-service-support-certified-tech-routing-prep", ["suburban"]],
+      ["aquahot-125-gn1-lcd-fuel-service-prep", ["125", "gn1"]],
+      ["aquahot-250-d02-diesel-use-care-service-prep", ["250", "d02"]],
+      ["thetford-norcold-warranty-claim-asc-dealer-prep", ["thetford", "norcold"]],
+      ["norcold-recall-repair-reimbursement-routing", ["norcold"]],
+      ["norcold-refrigerator-fault-code-record-model-prep", ["norcold"]],
+      ["norcold-n15dc-support-manual-parts-prep", ["n15dc"]],
+      ["thetford-porta-potti-565e-battery-flush-storage-prep", ["565e"]],
+      ["onan-rv-generator-warranty-coach-care-service-prep", ["onan", "cummins"]],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const sourcesById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const index = buildSymptomSearchIndex(corpus);
+    const summary = summarizeCorpus(corpus);
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\bline-voltage\b|\brefrigerant\b|\bprobe\b|\bwiring\b|\binternal\b|\broof\b|\bsupply line\b|\bopen (the )?(fuel|gas|electrical|rooftop)|remove.*shroud|remove.*cover|measure resistance|fuel nozzle|combustion|coolant pump|manual override|hydraulic work/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = sourcesById.get(sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(summary.indexablePages).toBe(expectedEntryCount + expectedSymptomCount + 1);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const [symptomId, sourceIds] of expectedSymptomSourceIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds, symptomId).toEqual(sourceIds);
+      expect(symptom?.searchRequiredTerms, symptomId).toEqual(expectedRequiredTerms.get(symptomId));
+      expect([symptom?.summary, ...(symptom?.safeChecklist ?? [])].join(" "), symptomId).not.toMatch(
+        unsafeOwnerActionPattern,
+      );
+    }
+
+    expect(lookupSymptomGuides(index, "dometic freshjet heat strip does not keep rv warm")[0]?.slug).toBe(
+      "dometic-freshjet-heat-strip-cold-weather-prep",
+    );
+    expect(lookupSymptomGuides(index, "dometic freshjet fjx set temperature model number")[0]?.slug).toBe(
+      "dometic-freshjet-fj-fjx-temperature-model-label",
+    );
+    expect(lookupSymptomGuides(index, "dometic ccc2 program 1 program 2 schedule cancel")[0]?.slug).toBe(
+      "dometic-ccc2-program-schedule-control-prep",
+    );
+    expect(lookupSymptomGuides(index, "dometic connect pro thermostat operating manual")[0]?.slug).toBe(
+      "dometic-connect-pro-thermostat-control-prep",
+    );
+    expect(lookupSymptomGuides(index, "dometic ibis ac low air output clean filters")[0]?.slug).toBe(
+      "dometic-ibis-ac-low-air-output-filter-prep",
+    );
+    expect(lookupSymptomGuides(index, "dometic fantastic vent 7350 rain sensor remote")[0]?.slug).toBe(
+      "dometic-fantastic-vent-7350-rain-sensor-control-prep",
+    );
+    expect(lookupSymptomGuides(index, "furrion refrigerator temperature testing refrigerator not cold")[0]?.slug).toBe(
+      "furrion-refrigerator-temperature-testing-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "furrion freezer cold refrigerator not cold")[0]?.slug).toBe(
+      "furrion-refrigerator-freezer-cold-fridge-warm-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "where is furrion refrigerator model serial label")[0]?.slug).toBe(
+      "furrion-refrigerator-identification-label-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "furrion air conditioner operation mode fan controls")[0]?.slug).toBe(
+      "furrion-ac-operation-mode-control-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "furrion 9k under bench air conditioner filter drain controls")[0]?.slug).toBe(
+      "furrion-under-bench-ac-filter-drain-control-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "furrion 12 inch 2 burner cooktop ffd will not light")[0]?.slug).toBe(
+      "furrion-12-inch-cooktop-ffd-ignition-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "coleman mach support service documents model number warranty")[0]?.slug).toBe(
+      "coleman-mach-support-resource-routing-prep",
+    );
+    expect(lookupSymptomGuides(index, "maxxair rv owners service locator documentation library")[0]?.slug).toBe(
+      "maxxair-rv-owner-product-service-routing-prep",
+    );
+    expect(lookupSymptomGuides(index, "maxxfan mini model 3801 3851 remote led service prep")[0]?.slug).toBe(
+      "maxxair-maxxfan-mini-model-feature-prep",
+    );
+    expect(lookupSymptomGuides(index, "suburban rv appliance support certified gas technician service center")[0]?.slug).toBe(
+      "suburban-service-support-certified-tech-routing-prep",
+    );
+    expect(lookupSymptomGuides(index, "aqua hot 125 gn1 lcd low voltage service prep")[0]?.slug).toBe(
+      "aquahot-125-gn1-lcd-fuel-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "aqua hot 250 d02 diesel hot water cabin heat service prep")[0]?.slug).toBe(
+      "aquahot-250-d02-diesel-use-care-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "thetford norcold warranty claim authorized service center")[0]?.slug).toBe(
+      "thetford-norcold-warranty-claim-asc-dealer-prep",
+    );
+    expect(lookupSymptomGuides(index, "norcold recall repair reimbursement paid out of pocket")[0]?.slug).toBe(
+      "norcold-recall-repair-reimbursement-routing",
+    );
+    expect(lookupSymptomGuides(index, "norcold refrigerator shows fault code what should i do")[0]?.slug).toBe(
+      "norcold-refrigerator-fault-code-record-model-prep",
+    );
+    expect(lookupSymptomGuides(index, "norcold n15dc manual parts support night mode travel latch")[0]?.slug).toBe(
+      "norcold-n15dc-support-manual-parts-prep",
+    );
+    expect(lookupSymptomGuides(index, "porta potti 565e electric flush batteries storage level indicator")[0]?.slug).toBe(
+      "thetford-porta-potti-565e-battery-flush-storage-prep",
+    );
+    expect(lookupSymptomGuides(index, "onan rv generator warranty coach care service prep")[0]?.slug).toBe(
+      "onan-rv-generator-warranty-coach-care-service-prep",
+    );
+
+    expect(lookupSymptomGuides(index, "freshjet not cooling").slice(0, 5).map((symptom) => symptom.slug)).not.toContain(
+      "dometic-freshjet-fj-fjx-temperature-model-label",
+    );
+    expect(lookupSymptomGuides(index, "furrion refrigerator not cooling").slice(0, 5).map((symptom) => symptom.slug)).not.toContain(
+      "furrion-refrigerator-identification-label-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "maxxair fan not working").slice(0, 5).map((symptom) => symptom.slug)).not.toContain(
+      "maxxair-rv-owner-product-service-routing-prep",
+    );
+    expect(lookupSymptomGuides(index, "aqua hot no hot water").slice(0, 5).map((symptom) => symptom.slug)).not.toContain(
+      "aquahot-250-d02-diesel-use-care-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "claim").map((symptom) => symptom.slug)).not.toContain(
+      "thetford-norcold-warranty-claim-asc-dealer-prep",
+    );
+    expect(lookupSymptomGuides(index, "warranty").map((symptom) => symptom.slug)).not.toContain(
+      "thetford-norcold-warranty-claim-asc-dealer-prep",
+    );
+    expect(lookupSymptomGuides(index, "recall").map((symptom) => symptom.slug)).not.toContain(
+      "norcold-recall-repair-reimbursement-routing",
+    );
+    expect(lookupSymptomGuides(index, "service support").map((symptom) => symptom.slug)).not.toEqual(
+      expect.arrayContaining([
+        "coleman-mach-support-resource-routing-prep",
+        "suburban-service-support-certified-tech-routing-prep",
+      ]),
+    );
+    expect(lookupSymptomGuides(index, "coach care").map((symptom) => symptom.slug)).not.toContain(
+      "onan-rv-generator-warranty-coach-care-service-prep",
     );
     expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
   });

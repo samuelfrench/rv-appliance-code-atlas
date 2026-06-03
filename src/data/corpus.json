@@ -4137,6 +4137,198 @@
       "url": "https://mart.cummins.com/imagelibrary/data/assetfiles/0073620.pdf",
       "type": "manufacturer-support",
       "official": true
+    },
+    {
+      "id": "dometic-freshjet-heat-strip-cold-weather-support",
+      "brand": "Dometic",
+      "title": "Dometic FreshJet Heat Strip Cold Weather Support",
+      "url": "https://support.dometic.com/en/freshjet-ac/My-rooftop-unit-has-the-electric-heat-strip-option-non-heat-pump-electric-heat-option-but-when-it-gets-colder-outside-it-doesnt-seem-to-maintain-the-temperature-What-should-I-do-24ac",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-freshjet-set-temperature-model-tag-support",
+      "brand": "Dometic",
+      "title": "Dometic FreshJet Set Temperature And Model Tag Support",
+      "url": "https://support.dometic.com/en/freshjet-ac/How-to-Set-the-temperature-621b",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ccc2-program-1-2-support",
+      "brand": "Dometic",
+      "title": "Dometic CCC2 Program 1 And 2 Control Support",
+      "url": "https://support.dometic.com/en/brisk-ac/How-to-control-Program-1-and-2-COMFORT-CONTROL-CENTER-2-THERMOSTAT-eabf",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-connect-pro-thermostat-short-operating",
+      "brand": "Dometic",
+      "title": "Dometic Connect Pro Thermostat Short Operating Manual",
+      "url": "https://media.dometic.com/externalassets/inc1015rd_9620001471_118307.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "dometic-ibis-low-air-output-filter-support",
+      "brand": "Dometic",
+      "title": "Dometic Ibis AC Low Air Output Filter Support",
+      "url": "https://support.dometic.com/en/ibis-ac/My-air-conditioner-is-giving-me-low-air-output-dfd3",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-fantastic-vent-7350-product",
+      "brand": "Dometic",
+      "title": "Dometic 7350 Fan-Tastic Vent Roof Fan Product Page",
+      "url": "https://www.dometic.com/en-us/product/dometic-7350-fan-tastic-vent-roof-fan-9108870595",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "furrion-refrigerator-temperature-testing-video",
+      "brand": "Furrion",
+      "title": "Furrion Refrigerator Temperature Testing Support Video",
+      "url": "https://support.lci1.com/videos/temperature-testing-a-furrion-refrigerator",
+      "type": "manufacturer-support-video",
+      "official": true
+    },
+    {
+      "id": "furrion-refrigerator-freezer-cold-fridge-warm-video",
+      "brand": "Furrion",
+      "title": "Furrion Refrigerator Freezer Cold But Refrigerator Warm Support Video",
+      "url": "https://support.lci1.com/videos/furrion-refrigerator-freezer-is-cold-but-refrigerator-is-not",
+      "type": "manufacturer-support-video",
+      "official": true
+    },
+    {
+      "id": "furrion-refrigerator-identification-label-video",
+      "brand": "Furrion",
+      "title": "Furrion Refrigerator Identification Label Support Video",
+      "url": "https://support.lci1.com/videos/how-to-find-the-identification-label-on-a-furrion-refrigerator",
+      "type": "manufacturer-support-video",
+      "official": true
+    },
+    {
+      "id": "furrion-ac-operation-video",
+      "brand": "Furrion",
+      "title": "Furrion Air Conditioner Operation Support Video",
+      "url": "https://support.lci1.com/videos/furrion-air-conditioner-operation",
+      "type": "manufacturer-support-video",
+      "official": true
+    },
+    {
+      "id": "furrion-under-bench-ac-user-manual",
+      "brand": "Furrion",
+      "title": "Furrion 9K BTU Under Bench Air Conditioner User Manual",
+      "url": "https://support.lci1.com/documents/ccd-0005748",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-12-inch-cooktop-ffd-manual",
+      "brand": "Furrion",
+      "title": "Furrion 12-Inch RV 2-Burner Cooktop With FFD Instruction Manual",
+      "url": "https://support.lci1.com/documents/ccd-0010262",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-mach-service-support-router",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Service And Support Router",
+      "url": "https://coleman-mach.com/service-support/default.aspx",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "maxxair-rv-owners-product-service-routing",
+      "brand": "MaxxAir",
+      "title": "MaxxAir RV Owners Product And Service Routing",
+      "url": "https://www.maxxair.com/rv-owners/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "maxxair-maxxfan-mini-product-family",
+      "brand": "MaxxAir",
+      "title": "MaxxAir MaxxFan Mini Product Family",
+      "url": "https://www.maxxair.com/products/fans/maxxfan-mini/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "suburban-service-support-router",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban Service And Support Router",
+      "url": "https://suburbanrv.com/service-support/default.aspx",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "aquahot-125-gn1-use-care-guide",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot AHE-125-GN1 Use And Care Guide",
+      "url": "https://library.aquahot.com/wp-content/uploads/2022/04/AHE-125-GN1-Use-and-Care-Guide.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "aquahot-250-d02-use-care-guide",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot AHE-250-D02 Use And Care Guide",
+      "url": "https://library.aquahot.com/wp-content/uploads/2022/04/AHE-250-D02-Use-and-Care-Guide.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "thetford-warranty-claim-faq",
+      "brand": "Thetford/Norcold",
+      "title": "Thetford Warranty Claim FAQ",
+      "url": "https://www.thetford.com/us/faq/what-should-i-do-if-i-have-a-warranty-claim/",
+      "type": "manufacturer-faq",
+      "official": true
+    },
+    {
+      "id": "norcold-recall-reimbursement-faq",
+      "brand": "Norcold",
+      "title": "Norcold Recall Repair Reimbursement FAQ",
+      "url": "https://www.thetford.com/us/faq/will-norcold-reimburse-me-for-a-recall-repair-paid-for-out-of-pocket/",
+      "type": "manufacturer-faq",
+      "official": true
+    },
+    {
+      "id": "norcold-fault-code-routing-faq",
+      "brand": "Norcold",
+      "title": "Norcold Refrigerator Fault Code Routing FAQ",
+      "url": "https://www.thetford.com/us/faq/my-refrigerator-shows-a-fault-code-what-should-i-do/",
+      "type": "manufacturer-faq",
+      "official": true
+    },
+    {
+      "id": "norcold-n15dc-support",
+      "brand": "Norcold",
+      "title": "Thetford Norcold N15DC Support",
+      "url": "https://www.thetford.com/us/thetford-support/n15dc/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-porta-potti-565e-support",
+      "brand": "Thetford",
+      "title": "Thetford Porta Potti 565E Support",
+      "url": "https://www.thetford.com/us/thetford-support/porta-potti-565e/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "onan-rv-lifestyle-coach-care-0043135",
+      "brand": "Onan",
+      "title": "Cummins Onan RV Generators Brochure 0043135",
+      "url": "https://mart.cummins.com/imagelibrary/data/assetfiles/0043135.pdf",
+      "type": "manufacturer-brochure",
+      "official": true
     }
   ],
   "entries": [
@@ -36917,7 +37109,31 @@
         "norcold-polar-n10-support",
         "norcold-2118-polarmax-support",
         "onan-rv-generator-dealer-directory-5600464",
-        "cummins-care-support-5600280"
+        "cummins-care-support-5600280",
+        "dometic-freshjet-heat-strip-cold-weather-support",
+        "dometic-freshjet-set-temperature-model-tag-support",
+        "dometic-ccc2-program-1-2-support",
+        "dometic-connect-pro-thermostat-short-operating",
+        "dometic-ibis-low-air-output-filter-support",
+        "dometic-fantastic-vent-7350-product",
+        "furrion-refrigerator-temperature-testing-video",
+        "furrion-refrigerator-freezer-cold-fridge-warm-video",
+        "furrion-refrigerator-identification-label-video",
+        "furrion-ac-operation-video",
+        "furrion-under-bench-ac-user-manual",
+        "furrion-12-inch-cooktop-ffd-manual",
+        "coleman-mach-service-support-router",
+        "maxxair-rv-owners-product-service-routing",
+        "maxxair-maxxfan-mini-product-family",
+        "suburban-service-support-router",
+        "aquahot-125-gn1-use-care-guide",
+        "aquahot-250-d02-use-care-guide",
+        "thetford-warranty-claim-faq",
+        "norcold-recall-reimbursement-faq",
+        "norcold-fault-code-routing-faq",
+        "norcold-n15dc-support",
+        "thetford-porta-potti-565e-support",
+        "onan-rv-lifestyle-coach-care-0043135"
       ]
     },
     {
@@ -42821,6 +43037,576 @@
       "searchRequiredTerms": [
         "cummins",
         "care"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-heat-strip-cold-weather-prep",
+      "slug": "dometic-freshjet-heat-strip-cold-weather-prep",
+      "title": "Dometic FreshJet heat-strip cold-weather prep",
+      "summary": "Use this when a FreshJet electric heat-strip option does not maintain room temperature in colder weather and the owner needs service notes.",
+      "safeChecklist": [
+        "Record the outside temperature, thermostat setting, mode, fan setting, room temperature, and whether the unit is a heat-strip or heat-pump installation.",
+        "Use only normal thermostat or remote settings already available to the owner.",
+        "Treat the heat strip as comfort assist, not a substitute for a furnace in cold weather.",
+        "Use Dometic support or qualified RV HVAC service if heat output does not match the installed equipment."
+      ],
+      "sourceIds": [
+        "dometic-freshjet-heat-strip-cold-weather-support"
+      ],
+      "searchAliases": [
+        "Dometic FreshJet heat strip does not keep RV warm",
+        "freshjet electric heat strip cold weather temperature",
+        "dometic freshjet heat strip not furnace prep"
+      ],
+      "searchRequiredTerms": [
+        "freshjet",
+        "heat"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-fj-fjx-temperature-model-label",
+      "slug": "dometic-freshjet-fj-fjx-temperature-model-label",
+      "title": "Dometic FreshJet FJ/FJX temperature and model-label prep",
+      "summary": "Use this when a FreshJet owner needs set-temperature notes and the FJ versus FJX model tag before support.",
+      "safeChecklist": [
+        "Record FreshJet model family, type-plate details, set temperature, mode, fan state, remote state, and room temperature.",
+        "Use only normal temperature and mode controls from the installed thermostat, remote, or panel.",
+        "Photograph the visible appliance label and control state before contacting support.",
+        "Use Dometic support or qualified RV HVAC service if settings do not match the installed model family."
+      ],
+      "sourceIds": [
+        "dometic-freshjet-set-temperature-model-tag-support"
+      ],
+      "searchAliases": [
+        "Dometic FreshJet FJX set temperature model number",
+        "freshjet fj fjx type plate set temperature",
+        "dometic freshjet model tag temperature service prep"
+      ],
+      "searchRequiredTerms": [
+        "freshjet",
+        "temperature"
+      ]
+    },
+    {
+      "id": "dometic-ccc2-program-schedule-control-prep",
+      "slug": "dometic-ccc2-program-schedule-control-prep",
+      "title": "Dometic CCC2 program schedule control prep",
+      "summary": "Use this when a Comfort Control Center 2 owner needs Program 1 or Program 2 schedule notes before support.",
+      "safeChecklist": [
+        "Record zone, mode, setpoint, Program 1 or Program 2 state, clock setting, and whether schedule behavior repeats.",
+        "Use only normal CCC2 buttons and menus already available on the thermostat.",
+        "Photograph the thermostat display before changing schedule settings.",
+        "Use Dometic support or qualified RV HVAC service if schedule behavior does not match normal CCC2 settings."
+      ],
+      "sourceIds": [
+        "dometic-ccc2-program-1-2-support"
+      ],
+      "searchAliases": [
+        "Dometic CCC2 Program 1 Program 2 schedule cancel",
+        "comfort control center 2 prog 1 prog 2 thermostat",
+        "dometic ccc2 schedule control service prep"
+      ],
+      "searchRequiredTerms": [
+        "ccc2",
+        "program"
+      ]
+    },
+    {
+      "id": "dometic-connect-pro-thermostat-control-prep",
+      "slug": "dometic-connect-pro-thermostat-control-prep",
+      "title": "Dometic Connect Pro thermostat control prep",
+      "summary": "Use this when a Dometic Connect Pro thermostat owner needs control, display, or operating-manual notes before support.",
+      "safeChecklist": [
+        "Record thermostat model, displayed state, mode, setpoint, fan state, zone, and appliance response.",
+        "Use only normal buttons, menus, and owner-visible status information.",
+        "Photograph the thermostat and affected appliance label before support.",
+        "Use Dometic support or qualified RV HVAC service if the thermostat does not control the installed appliance normally."
+      ],
+      "sourceIds": [
+        "dometic-connect-pro-thermostat-short-operating"
+      ],
+      "searchAliases": [
+        "Dometic Connect Pro thermostat operating manual",
+        "connect pro thermostat mode fan setpoint",
+        "dometic connect pro display control service prep"
+      ],
+      "searchRequiredTerms": [
+        "connect",
+        "pro"
+      ]
+    },
+    {
+      "id": "dometic-ibis-ac-low-air-output-filter-prep",
+      "slug": "dometic-ibis-ac-low-air-output-filter-prep",
+      "title": "Dometic Ibis AC low-air-output filter prep",
+      "summary": "Use this when a Dometic Ibis air conditioner has low air output and the owner needs filter and airflow notes before support.",
+      "safeChecklist": [
+        "Record Ibis model, mode, fan setting, filter condition, vent position, room temperature, and when airflow dropped.",
+        "Clean only owner-accessible filters if the installed owner instructions allow it.",
+        "Use normal controls to compare fan settings after filters are clean and dry.",
+        "Use Dometic support or qualified RV HVAC service if airflow remains low or abnormal operation repeats."
+      ],
+      "sourceIds": [
+        "dometic-ibis-low-air-output-filter-support"
+      ],
+      "searchAliases": [
+        "Dometic Ibis AC low air output clean filters",
+        "ibis air conditioner low airflow filter",
+        "dometic ibis fan weak airflow service prep"
+      ],
+      "searchRequiredTerms": [
+        "ibis",
+        "air"
+      ]
+    },
+    {
+      "id": "dometic-fantastic-vent-7350-rain-sensor-control-prep",
+      "slug": "dometic-fantastic-vent-7350-rain-sensor-control-prep",
+      "title": "Dometic Fan-Tastic Vent 7350 rain-sensor control prep",
+      "summary": "Use this when a Fan-Tastic Vent 7350 owner needs rain-sensor, remote, thermostat, or model-feature notes before support.",
+      "safeChecklist": [
+        "Record 7350 model details, remote state, fan speed, thermostat setting, lid behavior, and rain-sensor response.",
+        "Use only normal wall, remote, or keypad controls available to the owner.",
+        "Replace remote batteries only if the owner instructions identify that normal step.",
+        "Use Dometic support or qualified RV ventilation service for stuck lid, motor, sensor, or repeated control symptoms."
+      ],
+      "sourceIds": [
+        "dometic-fantastic-vent-7350-product"
+      ],
+      "searchAliases": [
+        "Dometic Fan-Tastic Vent 7350 rain sensor remote",
+        "fantastic vent 7350 thermostat remote rain sensor",
+        "dometic 7350 fan tastic vent control prep"
+      ],
+      "searchRequiredTerms": [
+        "fantastic",
+        "7350"
+      ]
+    },
+    {
+      "id": "furrion-refrigerator-temperature-testing-service-prep",
+      "slug": "furrion-refrigerator-temperature-testing-service-prep",
+      "title": "Furrion refrigerator temperature-testing service prep",
+      "summary": "Use this when a Furrion refrigerator owner needs temperature records and operating-condition notes before support.",
+      "safeChecklist": [
+        "Record refrigerator model, serial number, cabinet temperature, freezer temperature, setpoint, room temperature, loading, and door-open history.",
+        "Use a normal food thermometer or owner temperature display only.",
+        "Move food if temperature is unsafe and avoid repeated resets that hide the symptom history.",
+        "Use Lippert/Furrion support or qualified RV refrigerator service if temperatures stay unsafe or the symptom repeats."
+      ],
+      "sourceIds": [
+        "furrion-refrigerator-temperature-testing-video"
+      ],
+      "searchAliases": [
+        "Furrion refrigerator temperature testing refrigerator not cold",
+        "furrion fridge temperature test service prep",
+        "furrion refrigerator not cold record temperatures"
+      ],
+      "searchRequiredTerms": [
+        "furrion",
+        "temperature"
+      ]
+    },
+    {
+      "id": "furrion-refrigerator-freezer-cold-fridge-warm-service-prep",
+      "slug": "furrion-refrigerator-freezer-cold-fridge-warm-service-prep",
+      "title": "Furrion freezer cold but refrigerator warm service prep",
+      "summary": "Use this when a Furrion freezer is cold but the refrigerator compartment is warm and the owner needs notes before support.",
+      "safeChecklist": [
+        "Record refrigerator model, freezer temperature, fresh-food temperature, setpoint, loading pattern, door seal condition, and recent travel or power history.",
+        "Confirm doors are fully closed and food packages are not blocking normal owner-visible air paths.",
+        "Move food if temperature is unsafe and document how long the condition has been present.",
+        "Use Lippert/Furrion support or qualified RV refrigerator service if the compartments remain uneven."
+      ],
+      "sourceIds": [
+        "furrion-refrigerator-freezer-cold-fridge-warm-video"
+      ],
+      "searchAliases": [
+        "Furrion freezer cold refrigerator not cold",
+        "furrion refrigerator warm freezer cold",
+        "furrion fridge compartment warm freezer cold service prep"
+      ],
+      "searchRequiredTerms": [
+        "furrion",
+        "freezer"
+      ]
+    },
+    {
+      "id": "furrion-refrigerator-identification-label-service-prep",
+      "slug": "furrion-refrigerator-identification-label-service-prep",
+      "title": "Furrion refrigerator identification-label service prep",
+      "summary": "Use this when a Furrion refrigerator owner needs model, serial, and identification-label notes before support.",
+      "safeChecklist": [
+        "Record refrigerator model, serial number, production label details, RV make/model, and exact symptom.",
+        "Photograph only owner-visible labels and the control display from normal access.",
+        "Use the official label video to prepare model and serial details before support or warranty paperwork.",
+        "Use Lippert/Furrion support or qualified RV refrigerator service for symptoms beyond normal owner documentation."
+      ],
+      "sourceIds": [
+        "furrion-refrigerator-identification-label-video"
+      ],
+      "searchAliases": [
+        "where is Furrion refrigerator model serial label",
+        "furrion refrigerator identification label service prep",
+        "furrion fridge model serial sticker support"
+      ],
+      "searchRequiredTerms": [
+        "furrion",
+        "label"
+      ]
+    },
+    {
+      "id": "furrion-ac-operation-mode-control-service-prep",
+      "slug": "furrion-ac-operation-mode-control-service-prep",
+      "title": "Furrion AC operation mode-control service prep",
+      "summary": "Use this when a Furrion air conditioner owner needs mode, fan, or normal-control notes before support.",
+      "safeChecklist": [
+        "Record AC model, thermostat or control type, mode, fan state, set temperature, room temperature, and whether cooling, heating, or fan-only behavior changed.",
+        "Use only normal installed controls and remote commands already available to the owner.",
+        "Photograph the control display and appliance label before contacting support.",
+        "Use Lippert/Furrion support or qualified RV HVAC service if operation does not match normal settings."
+      ],
+      "sourceIds": [
+        "furrion-ac-operation-video"
+      ],
+      "searchAliases": [
+        "Furrion air conditioner operation mode fan controls",
+        "furrion ac operation mode fan service prep",
+        "furrion air conditioning normal controls support"
+      ],
+      "searchRequiredTerms": [
+        "furrion",
+        "operation"
+      ]
+    },
+    {
+      "id": "furrion-under-bench-ac-filter-drain-control-service-prep",
+      "slug": "furrion-under-bench-ac-filter-drain-control-service-prep",
+      "title": "Furrion under-bench AC filter, drain, and control service prep",
+      "summary": "Use this when a Furrion 9K under-bench air conditioner owner needs filter, drain, or control notes before support.",
+      "safeChecklist": [
+        "Record under-bench AC model, control setting, filter condition, visible drain status, room temperature, and symptom timing.",
+        "Use only owner-accessible filters, visible drain observations, and normal controls described for the installed unit.",
+        "Stop operation for leak, abnormal odor, overheating, or repeated shutdown.",
+        "Use Lippert/Furrion support or qualified RV HVAC service for unresolved cooling, heating, water, or power symptoms."
+      ],
+      "sourceIds": [
+        "furrion-under-bench-ac-user-manual"
+      ],
+      "searchAliases": [
+        "Furrion 9K under bench air conditioner filter drain controls",
+        "furrion under bench ac filter drain service prep",
+        "furrion 9k under bench air conditioner manual"
+      ],
+      "searchRequiredTerms": [
+        "under",
+        "bench"
+      ]
+    },
+    {
+      "id": "furrion-12-inch-cooktop-ffd-ignition-service-prep",
+      "slug": "furrion-12-inch-cooktop-ffd-ignition-service-prep",
+      "title": "Furrion 12-inch cooktop FFD ignition service prep",
+      "summary": "Use this when a Furrion 12-inch cooktop has lighting, flame, or FFD questions and the owner needs notes before support.",
+      "safeChecklist": [
+        "Record cooktop model, serial number, affected position, lighting attempt count, knob position, odor, flame appearance, and RV LP status.",
+        "Stop use, ventilate, and shut LP off from normal owner controls for odor, delayed lighting, abnormal flame, or repeated failure.",
+        "Photograph owner-visible labels and the condition before contacting support.",
+        "Use Lippert/Furrion support or qualified RV LP-appliance service for any repeated lighting or flame symptom."
+      ],
+      "sourceIds": [
+        "furrion-12-inch-cooktop-ffd-manual"
+      ],
+      "searchAliases": [
+        "Furrion 12 inch 2 burner cooktop FFD will not light",
+        "furrion 12 inch cooktop ffd ignition service prep",
+        "furrion rv cooktop flame failure device support"
+      ],
+      "searchRequiredTerms": [
+        "furrion",
+        "cooktop"
+      ]
+    },
+    {
+      "id": "coleman-mach-support-resource-routing-prep",
+      "slug": "coleman-mach-support-resource-routing-prep",
+      "title": "Coleman-Mach support resource routing prep",
+      "summary": "Use this when a Coleman-Mach owner needs official service, support, documentation, model, or warranty routing before contacting help.",
+      "safeChecklist": [
+        "Record model number, serial number, thermostat type, symptom, RV make/model, purchase date, and which support resource is needed.",
+        "Use the official service and support router to choose manuals, locator, warranty, or contact paths.",
+        "Photograph owner-visible labels and control displays before contacting Coleman-Mach support.",
+        "Use Coleman-Mach, the dealer, or qualified RV HVAC service for diagnosis or repair decisions."
+      ],
+      "sourceIds": [
+        "coleman-mach-service-support-router"
+      ],
+      "searchAliases": [
+        "Coleman Mach support service documents model number warranty",
+        "coleman mach service support documents router",
+        "coleman mach model warranty support prep"
+      ],
+      "searchRequiredTerms": [
+        "colemanmach"
+      ]
+    },
+    {
+      "id": "maxxair-rv-owner-product-service-routing-prep",
+      "slug": "maxxair-rv-owner-product-service-routing-prep",
+      "title": "MaxxAir RV owner product and service routing prep",
+      "summary": "Use this when a MaxxAir owner needs product, document, service-locator, or support-route notes before contacting help.",
+      "safeChecklist": [
+        "Record fan or vent model, serial or label details, control type, symptom, RV location, and whether documents or service routing are needed.",
+        "Use the RV Owners page to choose official product, manual, support, or locator paths.",
+        "Use only normal owner controls and visible label photos before support.",
+        "Use MaxxAir or qualified RV ventilation service for stuck lid, motor, water, or repeated control symptoms."
+      ],
+      "sourceIds": [
+        "maxxair-rv-owners-product-service-routing"
+      ],
+      "searchAliases": [
+        "MaxxAir RV owners service locator documentation library",
+        "maxxair rv owners product service routing prep",
+        "maxxair documentation library service locator"
+      ],
+      "searchRequiredTerms": [
+        "maxxair",
+        "owners"
+      ]
+    },
+    {
+      "id": "maxxair-maxxfan-mini-model-feature-prep",
+      "slug": "maxxair-maxxfan-mini-model-feature-prep",
+      "title": "MaxxAir MaxxFan Mini model-feature prep",
+      "summary": "Use this when a MaxxFan Mini owner needs model, feature, LED, remote, or support notes before contacting MaxxAir.",
+      "safeChecklist": [
+        "Record MaxxFan Mini model, control type, fan speed, LED or light behavior, remote state if equipped, and exact symptom.",
+        "Use the product page to distinguish Mini feature sets before support or parts questions.",
+        "Use only normal owner controls and remote-battery checks before support.",
+        "Use MaxxAir or qualified RV ventilation service for stuck lid, abnormal motor behavior, repeated control symptoms, or parts questions."
+      ],
+      "sourceIds": [
+        "maxxair-maxxfan-mini-product-family"
+      ],
+      "searchAliases": [
+        "MaxxFan Mini model 3801 3851 remote LED service prep",
+        "maxxair maxxfan mini model feature prep",
+        "maxxfan mini 3801 3851 controls support"
+      ],
+      "searchRequiredTerms": [
+        "maxxfan",
+        "mini"
+      ]
+    },
+    {
+      "id": "suburban-service-support-certified-tech-routing-prep",
+      "slug": "suburban-service-support-certified-tech-routing-prep",
+      "title": "Suburban service-support certified-tech routing prep",
+      "summary": "Use this when a Suburban owner needs official support, document, warranty, or certified-service routing before repair decisions.",
+      "safeChecklist": [
+        "Record Suburban appliance type, model, serial number, exact symptom, displayed state, odor or leak status, and purchase or warranty details.",
+        "Use the official service and support page to find documents, warranty, dealer, or certified-service paths.",
+        "Stop using the appliance for odor, leak, abnormal flame, overheating, or repeated failure.",
+        "Use Suburban support, a dealer, or a certified LP-appliance technician for service decisions."
+      ],
+      "sourceIds": [
+        "suburban-service-support-router"
+      ],
+      "searchAliases": [
+        "Suburban RV appliance support certified gas technician service center",
+        "suburban service support certified technician",
+        "suburban rv appliance documents warranty service prep"
+      ],
+      "searchRequiredTerms": [
+        "suburban"
+      ]
+    },
+    {
+      "id": "aquahot-125-gn1-lcd-fuel-service-prep",
+      "slug": "aquahot-125-gn1-lcd-fuel-service-prep",
+      "title": "Aqua-Hot 125-GN1 LCD and fuel service prep",
+      "summary": "Use this when an Aqua-Hot 125-GN1 owner needs display, heat-source, model, or service notes before authorized support.",
+      "safeChecklist": [
+        "Record 125-GN1 model, serial number, display text, switch state, hot-water symptom, cabin-heat symptom, energy source, and battery status from normal coach monitors.",
+        "Use only normal owner controls and display observations from the installed unit.",
+        "Stop operation for leak, odor, overheating, alarm activity, or repeated no-heat/no-hot-water behavior.",
+        "Use Aqua-Hot authorized service for unresolved heat, hot-water, display, energy-source, or winter-storage questions."
+      ],
+      "sourceIds": [
+        "aquahot-125-gn1-use-care-guide"
+      ],
+      "searchAliases": [
+        "Aqua Hot 125 GN1 LCD low voltage service prep",
+        "aquahot 125 gn1 use care guide",
+        "aqua-hot 125 gn1 display service prep"
+      ],
+      "searchRequiredTerms": [
+        "125",
+        "gn1"
+      ]
+    },
+    {
+      "id": "aquahot-250-d02-diesel-use-care-service-prep",
+      "slug": "aquahot-250-d02-diesel-use-care-service-prep",
+      "title": "Aqua-Hot 250-D02 diesel use-care service prep",
+      "summary": "Use this when an Aqua-Hot 250-D02 owner needs model, hot-water, cabin-heat, display, or service notes before authorized support.",
+      "safeChecklist": [
+        "Record 250-D02 model, serial number, display text, switch state, hot-water symptom, cabin-heat symptom, energy source, and battery status from normal coach monitors.",
+        "Use only normal owner controls and display observations from the installed unit.",
+        "Stop operation for leak, odor, overheating, alarm activity, or repeated no-heat/no-hot-water behavior.",
+        "Use Aqua-Hot authorized service for unresolved heat, hot-water, display, energy-source, or winter-storage questions."
+      ],
+      "sourceIds": [
+        "aquahot-250-d02-use-care-guide"
+      ],
+      "searchAliases": [
+        "Aqua Hot 250 D02 diesel hot water cabin heat service prep",
+        "aquahot 250 d02 use care guide",
+        "aqua-hot 250-d02 model service prep"
+      ],
+      "searchRequiredTerms": [
+        "250",
+        "d02"
+      ]
+    },
+    {
+      "id": "thetford-norcold-warranty-claim-asc-dealer-prep",
+      "slug": "thetford-norcold-warranty-claim-asc-dealer-prep",
+      "title": "Thetford/Norcold warranty-claim ASC and dealer prep",
+      "summary": "Use this when a Thetford or Norcold owner needs warranty-claim paperwork, authorized service center, or RV dealer routing notes.",
+      "safeChecklist": [
+        "Record product brand, appliance type, model, serial number, purchase date, symptom, photos, and support history.",
+        "Use Thetford warranty-claim guidance to prepare paperwork and choose authorized service or dealer routing.",
+        "Keep receipts, prior support notes, and photos ready before submitting a claim.",
+        "Use authorized service for diagnosis, parts, or repair decisions tied to the warranty claim."
+      ],
+      "sourceIds": [
+        "thetford-warranty-claim-faq"
+      ],
+      "searchAliases": [
+        "Thetford Norcold warranty claim authorized service center",
+        "thetford warranty claim rv dealer asc prep",
+        "norcold warranty claim authorized service center"
+      ],
+      "searchRequiredTerms": [
+        "thetford",
+        "norcold"
+      ]
+    },
+    {
+      "id": "norcold-recall-repair-reimbursement-routing",
+      "slug": "norcold-recall-repair-reimbursement-routing",
+      "title": "Norcold recall repair reimbursement routing",
+      "summary": "Use this when a Norcold owner paid for recall-related work and needs reimbursement routing notes before contacting support.",
+      "safeChecklist": [
+        "Record refrigerator model, serial number, recall notice details, date of service, invoice details, and who performed the work.",
+        "Use Norcold recall reimbursement guidance before submitting receipts or contacting support.",
+        "Do not treat recall reimbursement guidance as permission to install recall parts yourself.",
+        "Use Norcold or an authorized service center for recall eligibility, recall repair, and reimbursement questions."
+      ],
+      "sourceIds": [
+        "norcold-recall-reimbursement-faq"
+      ],
+      "searchAliases": [
+        "Norcold recall repair reimbursement paid out of pocket",
+        "norcold recall repair reimbursement routing",
+        "norcold recall out of pocket service center"
+      ],
+      "searchRequiredTerms": [
+        "norcold"
+      ]
+    },
+    {
+      "id": "norcold-refrigerator-fault-code-record-model-prep",
+      "slug": "norcold-refrigerator-fault-code-record-model-prep",
+      "title": "Norcold refrigerator fault-code record and model prep",
+      "summary": "Use this when a Norcold refrigerator displays a fault code and the owner needs model-specific support routing without inventing code meanings.",
+      "safeChecklist": [
+        "Record the exact fault code, model, serial number, power source, control state, door state, level condition, and when the code appeared.",
+        "Use Norcold guidance to find the correct model-specific owner manual or support page for the displayed code.",
+        "Shut the refrigerator down for ammonia odor, fuel odor, overheating, alarm activity, or repeated stopped-operation symptoms.",
+        "Use authorized Norcold service for code diagnosis, cooling, power, parts, or warranty questions beyond normal owner documentation."
+      ],
+      "sourceIds": [
+        "norcold-fault-code-routing-faq"
+      ],
+      "searchAliases": [
+        "Norcold refrigerator shows fault code what should I do",
+        "norcold refrigerator fault code record model prep",
+        "norcold displayed code owner manual support"
+      ],
+      "searchRequiredTerms": [
+        "norcold"
+      ]
+    },
+    {
+      "id": "norcold-n15dc-support-manual-parts-prep",
+      "slug": "norcold-n15dc-support-manual-parts-prep",
+      "title": "Norcold N15DC support manual and parts prep",
+      "summary": "Use this when a Norcold N15DC owner needs official manual, parts-list, model, control, or support-routing notes.",
+      "safeChecklist": [
+        "Record N15DC model, serial number, control state, power source selected, night-mode state, travel-latch state, door condition, and exact cooling symptom.",
+        "Use the support page to find model-specific manual and parts-list routing before contacting support.",
+        "Shut the refrigerator down for ammonia odor, fuel odor, overheating, alarm activity, or repeated stopped-operation symptoms.",
+        "Use authorized Norcold service for cooling, power, parts, warranty, or service questions beyond normal owner documentation."
+      ],
+      "sourceIds": [
+        "norcold-n15dc-support"
+      ],
+      "searchAliases": [
+        "Norcold N15DC manual parts support night mode travel latch",
+        "norcold n15dc support manual parts prep",
+        "n15dc refrigerator model serial support"
+      ],
+      "searchRequiredTerms": [
+        "n15dc"
+      ]
+    },
+    {
+      "id": "thetford-porta-potti-565e-battery-flush-storage-prep",
+      "slug": "thetford-porta-potti-565e-battery-flush-storage-prep",
+      "title": "Thetford Porta Potti 565E battery, flush, and storage prep",
+      "summary": "Use this when a Porta Potti 565E owner needs electric-flush, battery, level-indicator, seal-care, or storage notes before support.",
+      "safeChecklist": [
+        "Record model, serial or label details, battery condition, flush behavior, level-indicator state, seal condition, odor, and storage timing.",
+        "Use only normal owner care steps, battery removal for storage, and seal lubricant if the official support page identifies them.",
+        "Stop use for leak, cracked tank, repeated flush failure, or abnormal odor that normal cleaning does not resolve.",
+        "Use Thetford support or dealer service for pump, switch, leak, parts, or repeated electric-flush symptoms."
+      ],
+      "sourceIds": [
+        "thetford-porta-potti-565e-support"
+      ],
+      "searchAliases": [
+        "Porta Potti 565E electric flush batteries storage level indicator",
+        "thetford porta potti 565e battery flush storage prep",
+        "565e level indicator seal lubricant support"
+      ],
+      "searchRequiredTerms": [
+        "565e"
+      ]
+    },
+    {
+      "id": "onan-rv-generator-warranty-coach-care-service-prep",
+      "slug": "onan-rv-generator-warranty-coach-care-service-prep",
+      "title": "Onan RV generator warranty and Coach Care service prep",
+      "summary": "Use this when an Onan RV generator owner needs warranty, Coach Care, model, serial, hour-meter, or service-routing notes.",
+      "safeChecklist": [
+        "Record generator model, spec, serial number, hour meter, RV make/model, purchase details, displayed message, fuel type, and exact symptom.",
+        "Use the Cummins Onan RV brochure to prepare warranty and Coach Care service-routing questions before scheduling.",
+        "Keep the generator off for exhaust concern, odor, smoke, overheating, abnormal sound, no output, or repeated shutdown.",
+        "Use Cummins Care, Coach Care, or authorized Onan service for diagnosis, parts, warranty, output issues, start failures, or repair decisions."
+      ],
+      "sourceIds": [
+        "onan-rv-lifestyle-coach-care-0043135"
+      ],
+      "searchAliases": [
+        "Onan RV generator warranty Coach Care service prep",
+        "cummins onan rv generator coach care warranty",
+        "onan generator model spec serial coach care service prep"
+      ],
+      "searchRequiredTerms": [
+        "onan",
+        "cummins"
       ]
     }
   ],

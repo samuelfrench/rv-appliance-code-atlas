@@ -65,6 +65,7 @@
 - [x] Add official Dometic RM8/FreshJet/Americana, Coleman-Mach 45000/46000, Lippert/Furrion/Suburban/Aqua-Hot/Thetford/MaxxAir support-router guides without new code entries.
 - [x] Add official fresh gap-scan Dometic, Coleman-Mach/MaxxAir/Suburban/Aqua-Hot, Lippert/Furrion, and Thetford/Norcold owner-safe setup, model-label, support-router, control, storage, and shutdown/service-prep guides without new code entries.
 - [x] Add official cross-brand support-depth Dometic, Lippert/Furrion, Coleman-Mach/MaxxAir/Suburban/Aqua-Hot, Thetford/Norcold, and Cummins/Onan owner-safe service-prep, model-label, control, warranty, recall, and support-routing guides without new code entries.
+- [x] Add official manufacturer support-extension Dometic, Furrion/Lippert, Coleman-Mach/MaxxAir/Suburban/Aqua-Hot, Thetford/Norcold, and Cummins/Onan owner-safe service-prep, model-label, control, warranty, recall, and support-routing guides without new code entries.
 - [x] Add initial GSC property and sitemap automation after the first live URL was stable.
 - [x] Add weekly traffic report artifact once GSC is configured.
 - [x] Add weekly GA4 traffic report artifact with local service-account auth.
@@ -80,7 +81,7 @@
 - GitHub repo: `https://github.com/samuelfrench/rv-appliance-code-atlas`
 - Fly app: `rv-appliance-code-atlas`, one `shared-cpu-1x` 256 MB machine in `dfw`, auto-stop enabled.
 - Latest deploy: cross-brand support-depth content commit `a447a1e` and IndexNow metadata commit `3a30aa0`; content run `26888459734` job `79307528049` deployed Fly image `deployment-01KT6VAYB1FS1AQJF4P8X3PBAJ` after one transient `setup-flyctl` rerun, and metadata run `26888742846` job `79308341159` deployed Fly image `deployment-01KT6VJ1SYBZ53GRH4385Q9J4M`. Live `/corpus-stats.json` shows `850`/`348`/`514`/`1199`, live `/indexnow-report.json` shows `1199` URLs and `submittedAt=2026-06-03T13:41:08.841Z`, live sitemap has `1199` URLs, sampled new routes returned HTTP `200` with canonical tags, production desktop/mobile lookup smokes passed, and Dometic/Onan source links are present on sampled cross-brand guides.
-- Corpus: `850` verified entries, `348` symptom guides, `514` official sources, `1199` generated indexable pages.
+- Corpus: `850` verified entries, `372` symptom guides, `538` official sources, `1223` generated indexable pages in the local manufacturer support-extension batch; live deploy details still reflect the prior cross-brand support-depth deploy until this batch is pushed and deployed.
 - GA4 property `properties/540096507`, stream `properties/540096507/dataStreams/14992447658`, and measurement ID `G-9824RBXHHR` were created automatically for `https://rvappliancefaultcodes.com` at `2026-06-02T23:04:00Z`.
 - Weekly GA4 traffic artifact command added: `npm run traffic:ga4:weekly` writes ignored local artifact `reports/ga4-weekly-traffic.json`; dry-run is `npm run traffic:ga4:weekly:dry-run`. Local service-account JSON path `~/.config/google/rv-appliance-code-atlas-ga4.json` works with `printablespark-ga4-reporter@coffee-explorer-480514.iam.gserviceaccount.com`, so no API Explorer click is needed for current GA4 reporting.
 - GSC URL-prefix property `https://rvappliancefaultcodes.com/` verified with FILE token `googled22aa40f3a0e4dca.html`; Google Site Verification insert returned HTTP `200` at `2026-06-02T23:11:41Z`.

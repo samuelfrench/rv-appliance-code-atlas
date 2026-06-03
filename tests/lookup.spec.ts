@@ -1512,6 +1512,105 @@ test("lookup surfaces the cross-brand support-depth service-prep pages", async (
   expect(pageErrors).toEqual([]);
 });
 
+test("lookup surfaces the manufacturer support-extension service-prep pages", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    ["dometic freshjet heat strip does not keep rv warm", "/symptoms/dometic-freshjet-heat-strip-cold-weather-prep/"],
+    [
+      "dometic ccc2 program 1 program 2 schedule cancel",
+      "/symptoms/dometic-ccc2-program-schedule-control-prep/",
+    ],
+    ["dometic ibis ac low air output clean filters", "/symptoms/dometic-ibis-ac-low-air-output-filter-prep/"],
+    [
+      "dometic fantastic vent 7350 rain sensor remote",
+      "/symptoms/dometic-fantastic-vent-7350-rain-sensor-control-prep/",
+    ],
+    [
+      "furrion refrigerator temperature testing refrigerator not cold",
+      "/symptoms/furrion-refrigerator-temperature-testing-service-prep/",
+    ],
+    [
+      "furrion freezer cold refrigerator not cold",
+      "/symptoms/furrion-refrigerator-freezer-cold-fridge-warm-service-prep/",
+    ],
+    ["furrion air conditioner operation mode fan controls", "/symptoms/furrion-ac-operation-mode-control-service-prep/"],
+    [
+      "furrion 9k under bench air conditioner filter drain controls",
+      "/symptoms/furrion-under-bench-ac-filter-drain-control-service-prep/",
+    ],
+    ["coleman mach support service documents model number warranty", "/symptoms/coleman-mach-support-resource-routing-prep/"],
+    ["maxxair rv owners service locator documentation library", "/symptoms/maxxair-rv-owner-product-service-routing-prep/"],
+    ["suburban rv appliance support certified gas technician service center", "/symptoms/suburban-service-support-certified-tech-routing-prep/"],
+    ["aqua hot 125 gn1 lcd low voltage service prep", "/symptoms/aquahot-125-gn1-lcd-fuel-service-prep/"],
+    ["thetford norcold warranty claim authorized service center", "/symptoms/thetford-norcold-warranty-claim-asc-dealer-prep/"],
+    ["norcold refrigerator shows fault code what should i do", "/symptoms/norcold-refrigerator-fault-code-record-model-prep/"],
+    ["porta potti 565e electric flush batteries storage level indicator", "/symptoms/thetford-porta-potti-565e-battery-flush-storage-prep/"],
+    ["onan rv generator warranty coach care service prep", "/symptoms/onan-rv-generator-warranty-coach-care-service-prep/"],
+  ] as const;
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+  }
+
+  await searchbox.fill("freshjet not cooling");
+  await expect(lookupResults.locator('a[href="/symptoms/dometic-freshjet-fj-fjx-temperature-model-label/"]')).toHaveCount(0);
+
+  await searchbox.fill("maxxair fan not working");
+  await expect(lookupResults.locator('a[href="/symptoms/maxxair-rv-owner-product-service-routing-prep/"]')).toHaveCount(0);
+
+  await searchbox.fill("claim");
+  await expect(lookupResults.locator('a[href="/symptoms/thetford-norcold-warranty-claim-asc-dealer-prep/"]')).toHaveCount(0);
+
+  await searchbox.fill("warranty");
+  await expect(lookupResults.locator('a[href="/symptoms/thetford-norcold-warranty-claim-asc-dealer-prep/"]')).toHaveCount(0);
+
+  await searchbox.fill("recall");
+  await expect(lookupResults.locator('a[href="/symptoms/norcold-recall-repair-reimbursement-routing/"]')).toHaveCount(0);
+
+  await searchbox.fill("service support");
+  await expect(lookupResults.locator('a[href="/symptoms/coleman-mach-support-resource-routing-prep/"]')).toHaveCount(0);
+  await expect(lookupResults.locator('a[href="/symptoms/suburban-service-support-certified-tech-routing-prep/"]')).toHaveCount(0);
+
+  await searchbox.fill("coach care");
+  await expect(lookupResults.locator('a[href="/symptoms/onan-rv-generator-warranty-coach-care-service-prep/"]')).toHaveCount(0);
+
+  async function openGuide(query: string, href: string) {
+    await page.goto("/");
+    await page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" }).fill(query);
+    const link = page.locator('section[aria-label="Lookup results"]').locator(`a[href="${href}"]`);
+    await expect(link).toBeVisible();
+    await link.click();
+  }
+
+  await openGuide(
+    "dometic freshjet heat strip does not keep rv warm",
+    "/symptoms/dometic-freshjet-heat-strip-cold-weather-prep/",
+  );
+  await expect(page.getByRole("heading", { name: "Dometic FreshJet heat-strip cold-weather prep" })).toBeVisible();
+  await expect(page.getByText(/Record the outside temperature, thermostat setting, mode, fan setting/i)).toBeVisible();
+
+  await openGuide(
+    "norcold refrigerator shows fault code what should i do",
+    "/symptoms/norcold-refrigerator-fault-code-record-model-prep/",
+  );
+  await expect(page.getByRole("heading", { name: "Norcold refrigerator fault-code record and model prep" })).toBeVisible();
+  await expect(page.getByText(/Record the exact fault code, model, serial number, power source/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 
