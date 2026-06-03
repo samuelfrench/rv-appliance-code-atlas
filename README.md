@@ -92,7 +92,7 @@ Key location: `https://rvappliancefaultcodes.com/2653afc6f17313e900711f1d3eb1dca
 
 Writes ignored local report artifact: `reports/indexnow-submit-report.json`
 
-Submitted: `2026-06-03T02:11:41.900Z` with `1036` URLs and IndexNow HTTP `200`
+Submitted: `2026-06-03T02:45:43.686Z` with `1042` URLs and IndexNow HTTP `200`
 
 Traffic monitor:
 
@@ -102,9 +102,9 @@ npm run traffic:monitor
 
 Current corpus:
 - `850` verified entries
-- `185` symptom guides
-- `339` official sources
-- `1036` generated indexable pages
+- `191` symptom guides
+- `342` official sources
+- `1042` generated indexable pages
 
 Next automated batch goal:
-- Run weekly GSC report and review monetization readiness after page impressions appear.
+- Triage official Coleman-Mach Wi-Fi/48000 thermostat and rooftop AC symptom-only sources, then add only owner-safe guides without inventing code entries.

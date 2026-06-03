@@ -26,6 +26,8 @@ const monetizationReadinessArtifact = {
   command: "npm run traffic:monetization",
   source: weeklyTrafficArtifact.path,
 };
+const nextSourceBackedBatchGoal =
+  "Triage official Coleman-Mach Wi-Fi/48000 thermostat and rooftop AC symptom-only sources, then add only owner-safe guides without inventing code entries.";
 const indexNow = indexNowConfig
   ? {
       keyLocation: indexNowConfig.keyLocation,
@@ -60,7 +62,7 @@ function buildReport() {
       ready: false,
     })),
     nextAutomatedBatchGoal: indexNow
-      ? "Run weekly GSC report and review monetization readiness after page impressions appear."
+      ? nextSourceBackedBatchGoal
       : "Add IndexNow key after domain/live URL is chosen.",
     monitorCommand: "npm run traffic:monitor",
   };

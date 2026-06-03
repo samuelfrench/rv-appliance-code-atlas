@@ -2,6 +2,9 @@ import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 
+const nextAutomatedBatchGoal =
+  "Triage official Coleman-Mach Wi-Fi/48000 thermostat and rooftop AC symptom-only sources, then add only owner-safe guides without inventing code entries.";
+
 describe("traffic readiness report", () => {
   it("keeps the next automated batch goal aligned with the current corpus backlog", () => {
     const output = execFileSync("node", ["scripts/traffic-report.mjs"], {
@@ -48,11 +51,9 @@ describe("traffic readiness report", () => {
       keyLocation: "https://rvappliancefaultcodes.com/2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18.txt",
       dryRunCommand: "npm run traffic:indexnow:dry-run",
       submitCommand: "npm run traffic:indexnow:submit",
-      submittedAt: "2026-06-03T02:11:41.900Z",
+      submittedAt: "2026-06-03T02:45:43.686Z",
     });
-    expect(report.nextAutomatedBatchGoal).toBe(
-      "Run weekly GSC report and review monetization readiness after page impressions appear.",
-    );
+    expect(report.nextAutomatedBatchGoal).toBe(nextAutomatedBatchGoal);
 
     expect(readFileSync("README.md", "utf8")).toContain(report.weeklyTrafficArtifact.command);
     expect(readFileSync("README.md", "utf8")).toContain(report.ga4TrafficArtifact.command);

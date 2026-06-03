@@ -204,7 +204,7 @@ describe("monetization readiness report", () => {
       source: "reports/gsc-weekly-traffic.json",
     });
     expect(report.nextAutomatedBatchGoal).toBe(
-      "Run weekly GSC report and review monetization readiness after page impressions appear.",
+      "Triage official Coleman-Mach Wi-Fi/48000 thermostat and rooftop AC symptom-only sources, then add only owner-safe guides without inventing code entries.",
     );
     expect(readFileSync("README.md", "utf8")).toContain("npm run traffic:monetization");
     expect(readFileSync("TODO.md", "utf8")).toContain(
