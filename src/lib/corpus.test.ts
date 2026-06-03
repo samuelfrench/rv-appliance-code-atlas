@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 850;
-const expectedSourceCount = 403;
-const expectedSymptomCount = 242;
+const expectedSourceCount = 419;
+const expectedSymptomCount = 256;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -562,9 +562,10 @@ describe("verified corpus", () => {
       "maxxair-maxxfan-deluxe-lid-fan-control-service-prep",
       "maxxair-4-5-6-key-wall-control-service-prep",
       "aquahot-250-p01-use-care-winterization-service-prep",
+      "lippert-power-gear-through-frame-slideout-service-prep",
     ]);
 
-    for (const query of ["fan not working", "lid not opening", "leaking", "cabin heat not working"]) {
+    for (const query of ["fan not working", "lid not opening", "leaking", "cabin heat not working", "power service prep", "gear service prep"]) {
       expect(
         lookupSymptomGuides(index, query)
           .slice(0, 5)
@@ -573,6 +574,59 @@ describe("verified corpus", () => {
         query,
       ).toEqual([]);
     }
+  });
+
+  it("finds the Thetford/Norcold, Lippert/Furrion, Coleman-Mach, and MaxxAir gap-scan prep pages", () => {
+    const index = buildSymptomSearchIndex(corpus);
+
+    expect(lookupSymptomGuides(index, "thetford norcold dealer locator authorized service center")[0]?.slug).toBe(
+      "thetford-norcold-authorized-service-locator-prep",
+    );
+    expect(lookupSymptomGuides(index, "norcold refrigerator model tag location food compartment")[0]?.slug).toBe(
+      "norcold-refrigerator-model-label-location",
+    );
+    expect(lookupSymptomGuides(index, "thetford toilet serial number location no data tag")[0]?.slug).toBe(
+      "thetford-rv-toilet-serial-model-label-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "thetford cassette toilet travel water in flush tank")[0]?.slug).toBe(
+      "thetford-cassette-toilet-flush-tank-travel-storage",
+    );
+    expect(lookupSymptomGuides(index, "thetford rv toilet household cleaner seal safe")[0]?.slug).toBe(
+      "thetford-rv-toilet-cleaning-seal-safe-maintenance",
+    );
+    expect(lookupSymptomGuides(index, "lippert slimrack slide stuck owner quick troubleshooting")[0]?.slug).toBe(
+      "lippert-slimrack-slide-stuck-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "lippert power gear through frame slideout stuck service prep")[0]?.slug).toBe(
+      "lippert-power-gear-through-frame-slideout-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "power gear through frame slideout stuck service prep")[0]?.slug).toBe(
+      "lippert-power-gear-through-frame-slideout-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "lippert qr059 electronic leveling identification touch pad")[0]?.slug).toBe(
+      "lippert-leveling-system-identification-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "furrion otr microwave fan light filter fmsm13 service prep")[0]?.slug).toBe(
+      "furrion-otr-microwave-fan-light-filter-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "fmsm13 microwave fan light filter")[0]?.slug).toBe(
+      "furrion-otr-microwave-fan-light-filter-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "lippert factory service locator model serial photos")[0]?.slug).toBe(
+      "lippert-qualified-service-locator-prep",
+    );
+    expect(lookupSymptomGuides(index, "furrion furnace error code model support heating page")[0]?.slug).toBe(
+      "furrion-furnace-error-code-model-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "coleman mach model number service locator prep")[0]?.slug).toBe(
+      "coleman-mach-model-number-service-locator-prep",
+    );
+    expect(lookupSymptomGuides(index, "maxxair 2025 amcat catalog model feature service prep")[0]?.slug).toBe(
+      "maxxair-2025-amcat-model-feature-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "maxxfan plus 04500 rain sensor remote service prep")[0]?.slug).toBe(
+      "maxxair-maxxfan-plus-rain-sensor-remote-service-prep",
+    );
   });
 
   it("finds Coleman-Mach Wi-Fi thermostat and 48000 heat-pump symptom pages from owner searches", () => {
@@ -5154,5 +5208,84 @@ describe("verified corpus", () => {
     expect(symptomById.get("girard-gswh1-gswh1m-winterization-freeze")?.sourceIds).toEqual(
       expect.arrayContaining(["girard-gswh1m-owner-manual", "girard-gswh1-wud-owner-manual"]),
     );
+  });
+
+  it("adds official gap-scan prep sources without inventing code entries", () => {
+    const expectedSources = new Map([
+      ["thetford-norcold-dealer-locator", "https://www.thetford.com/us/dealer-locator/"],
+      [
+        "norcold-refrigerator-model-tag-faq",
+        "https://www.thetford.com/us/faq/where-can-i-find-what-kind-of-model-my-refrigerator-is/",
+      ],
+      [
+        "thetford-rv-toilet-serial-number-locations-2024",
+        "https://www.thetford.com/app/uploads/2024/10/Thetford-RV-Toilets-Serial-Number-Locations.pdf",
+      ],
+      [
+        "thetford-toilet-no-data-tag-identification-faq",
+        "https://www.thetford.com/us/faq/how-do-i-identify-my-toilet-model-if-it-doesnt-have-a-data-tag/",
+      ],
+      ["thetford-flush-tank-travel-water-faq", "https://www.thetford.com/us/faq/should-i-travel-with-water-in-the-flush-tank/"],
+      ["thetford-rv-toilet-household-cleaner-seal-safety-faq", "https://www.thetford.com/us/faq/can-i-use-household-cleaners-in-my-rv/"],
+      ["lippert-slimrack-ti533-owner-quick-troubleshooting", "https://support.lci1.com/documents/ccd-0008890"],
+      ["lippert-power-gear-through-frame-slideout-support", "https://support.lci1.com/power-gear-through-frame-slideout-system"],
+      [
+        "lippert-qr059-electronic-leveling-identification",
+        "https://support.lci1.com/documents/qr-059-electronic-leveling-identification-guide",
+      ],
+      ["furrion-13-otr-microwave-fmsm13-user-manual", "https://support.lci1.com/documents/ccd-0010994"],
+      ["furrion-heating-support-index", "https://support.lci1.com/heating"],
+      ["lippert-factory-service-locator", "https://www.lippert.com/service-centers"],
+      ["coleman-mach-model-number-locator", "https://coleman-mach.com/service-support/find-model-number/"],
+      ["coleman-mach-service-center-dealer-locator", "https://coleman-mach.com/service-support/service-locator/"],
+      ["maxxair-2025-amcat-catalog", "https://www.maxxair.com/files/catalog/MXR-4042.02_2025%20AMCAT.pdf"],
+      ["maxxair-maxxfan-plus-04500-product", "https://www.maxxair.com/Products/fans/maxxfan-plus-00-04500/"],
+    ]);
+    const expectedSymptomSourceIds = new Map<string, string[]>([
+      ["thetford-norcold-authorized-service-locator-prep", ["thetford-norcold-dealer-locator"]],
+      ["norcold-refrigerator-model-label-location", ["norcold-refrigerator-model-tag-faq"]],
+      [
+        "thetford-rv-toilet-serial-model-label-service-prep",
+        ["thetford-rv-toilet-serial-number-locations-2024", "thetford-toilet-no-data-tag-identification-faq"],
+      ],
+      ["thetford-cassette-toilet-flush-tank-travel-storage", ["thetford-flush-tank-travel-water-faq"]],
+      ["thetford-rv-toilet-cleaning-seal-safe-maintenance", ["thetford-rv-toilet-household-cleaner-seal-safety-faq"]],
+      ["lippert-slimrack-slide-stuck-service-prep", ["lippert-slimrack-ti533-owner-quick-troubleshooting"]],
+      ["lippert-power-gear-through-frame-slideout-service-prep", ["lippert-power-gear-through-frame-slideout-support"]],
+      ["lippert-leveling-system-identification-service-prep", ["lippert-qr059-electronic-leveling-identification"]],
+      ["furrion-otr-microwave-fan-light-filter-service-prep", ["furrion-13-otr-microwave-fmsm13-user-manual"]],
+      ["lippert-qualified-service-locator-prep", ["lippert-factory-service-locator"]],
+      ["furrion-furnace-error-code-model-service-prep", ["furrion-heating-support-index"]],
+      ["coleman-mach-model-number-service-prep", ["coleman-mach-model-number-locator", "coleman-mach-service-center-dealer-locator"]],
+      ["maxxair-2025-amcat-model-feature-service-prep", ["maxxair-2025-amcat-catalog"]],
+      ["maxxair-maxxfan-plus-rain-sensor-remote-service-prep", ["maxxair-maxxfan-plus-04500-product"]],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const sourcesById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\bline-voltage\b|\brefrigerant\b|\bprobe\b|\bwiring\b|\bhydraulic\b|\brelay\b|\bshaft\b|\bmanual override\b|\bharness\b|\bopen (the )?(fuel|gas|electrical|rooftop)|fuel line|install.*kit|remove.*shroud|remove.*cover|measure resistance/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = sourcesById.get(sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const [symptomId, sourceIds] of expectedSymptomSourceIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds, symptomId).toEqual(sourceIds);
+      expect([symptom?.summary, ...(symptom?.safeChecklist ?? [])].join(" "), symptomId).not.toMatch(
+        unsafeOwnerActionPattern,
+      );
+    }
+
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
   });
 });

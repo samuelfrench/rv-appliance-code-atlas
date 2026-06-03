@@ -2243,6 +2243,134 @@
       "official": true
     },
     {
+      "id": "thetford-norcold-dealer-locator",
+      "brand": "Thetford",
+      "title": "Thetford/Norcold Dealer and Service Center Locator",
+      "url": "https://www.thetford.com/us/dealer-locator/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-refrigerator-model-tag-faq",
+      "brand": "Norcold",
+      "title": "Thetford FAQ: Norcold Refrigerator Model Tag Location",
+      "url": "https://www.thetford.com/us/faq/where-can-i-find-what-kind-of-model-my-refrigerator-is/",
+      "type": "manufacturer-faq",
+      "official": true
+    },
+    {
+      "id": "thetford-rv-toilet-serial-number-locations-2024",
+      "brand": "Thetford",
+      "title": "Thetford RV Toilets Serial Number Locations",
+      "url": "https://www.thetford.com/app/uploads/2024/10/Thetford-RV-Toilets-Serial-Number-Locations.pdf",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-toilet-no-data-tag-identification-faq",
+      "brand": "Thetford",
+      "title": "Thetford FAQ: Identify a Toilet Model Without a Data Tag",
+      "url": "https://www.thetford.com/us/faq/how-do-i-identify-my-toilet-model-if-it-doesnt-have-a-data-tag/",
+      "type": "manufacturer-faq",
+      "official": true
+    },
+    {
+      "id": "thetford-flush-tank-travel-water-faq",
+      "brand": "Thetford",
+      "title": "Thetford FAQ: Traveling With Water in the Flush Tank",
+      "url": "https://www.thetford.com/us/faq/should-i-travel-with-water-in-the-flush-tank/",
+      "type": "manufacturer-faq",
+      "official": true
+    },
+    {
+      "id": "thetford-rv-toilet-household-cleaner-seal-safety-faq",
+      "brand": "Thetford",
+      "title": "Thetford FAQ: Household Cleaners in an RV Toilet",
+      "url": "https://www.thetford.com/us/faq/can-i-use-household-cleaners-in-my-rv/",
+      "type": "manufacturer-faq",
+      "official": true
+    },
+    {
+      "id": "lippert-slimrack-ti533-owner-quick-troubleshooting",
+      "brand": "Lippert",
+      "title": "Lippert TI-533 SlimRack System Quick Troubleshooting and Remedies for Owners",
+      "url": "https://support.lci1.com/documents/ccd-0008890",
+      "type": "manufacturer-quick-reference",
+      "official": true
+    },
+    {
+      "id": "lippert-power-gear-through-frame-slideout-support",
+      "brand": "Lippert",
+      "title": "Lippert Power Gear Through Frame Slideout System Support",
+      "url": "https://support.lci1.com/power-gear-through-frame-slideout-system",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "lippert-qr059-electronic-leveling-identification",
+      "brand": "Lippert",
+      "title": "Lippert QR-059 Electronic Leveling Identification Guide",
+      "url": "https://support.lci1.com/documents/qr-059-electronic-leveling-identification-guide",
+      "type": "manufacturer-quick-reference",
+      "official": true
+    },
+    {
+      "id": "furrion-13-otr-microwave-fmsm13-user-manual",
+      "brand": "Furrion",
+      "title": "Furrion 1.3 cu ft Over-the-Range Convection Microwave FMSM13 User Manual",
+      "url": "https://support.lci1.com/documents/ccd-0010994",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-heating-support-index",
+      "brand": "Furrion",
+      "title": "Lippert Furrion Heating Support Index",
+      "url": "https://support.lci1.com/heating",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "lippert-factory-service-locator",
+      "brand": "Lippert",
+      "title": "Lippert Factory Service Center Locator",
+      "url": "https://www.lippert.com/service-centers",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "coleman-mach-model-number-locator",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Model Number Locator",
+      "url": "https://coleman-mach.com/service-support/find-model-number/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "coleman-mach-service-center-dealer-locator",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Service Center and Dealer Locator",
+      "url": "https://coleman-mach.com/service-support/service-locator/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "maxxair-2025-amcat-catalog",
+      "brand": "MaxxAir",
+      "title": "MaxxAir 2025 AMCAT Catalog",
+      "url": "https://www.maxxair.com/files/catalog/MXR-4042.02_2025%20AMCAT.pdf",
+      "type": "manufacturer-catalog",
+      "official": true
+    },
+    {
+      "id": "maxxair-maxxfan-plus-04500-product",
+      "brand": "MaxxAir",
+      "title": "MaxxAir MaxxFan Plus 00-04500 Product Page",
+      "url": "https://www.maxxair.com/Products/fans/maxxfan-plus-00-04500/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
       "id": "norcold-n3000-troubleshooting",
       "brand": "Norcold",
       "title": "Thetford N3000 Series Troubleshooting Error Codes",
@@ -34828,7 +34956,23 @@
         "suburban-service-center-dealer-locator",
         "maxxair-maxxfan-deluxe-iom-11e90001k",
         "maxxair-wall-control-iom-4-5-6-key",
-        "aquahot-250-p01-use-care-guide"
+        "aquahot-250-p01-use-care-guide",
+        "thetford-norcold-dealer-locator",
+        "norcold-refrigerator-model-tag-faq",
+        "thetford-rv-toilet-serial-number-locations-2024",
+        "thetford-toilet-no-data-tag-identification-faq",
+        "thetford-flush-tank-travel-water-faq",
+        "thetford-rv-toilet-household-cleaner-seal-safety-faq",
+        "lippert-slimrack-ti533-owner-quick-troubleshooting",
+        "lippert-power-gear-through-frame-slideout-support",
+        "lippert-qr059-electronic-leveling-identification",
+        "furrion-13-otr-microwave-fmsm13-user-manual",
+        "furrion-heating-support-index",
+        "lippert-factory-service-locator",
+        "coleman-mach-model-number-locator",
+        "coleman-mach-service-center-dealer-locator",
+        "maxxair-2025-amcat-catalog",
+        "maxxair-maxxfan-plus-04500-product"
       ]
     },
     {
@@ -39243,6 +39387,354 @@
         "furrion furnace blower runs no ignition",
         "furrion furnace blower turns on with no heat service prep",
         "furrion furnace no ignition lockout qualified rv service"
+      ]
+    },
+    {
+      "id": "thetford-norcold-authorized-service-locator-prep",
+      "slug": "thetford-norcold-authorized-service-locator-prep",
+      "title": "Thetford/Norcold authorized service locator prep",
+      "summary": "Use this when a Thetford or Norcold owner needs dealer-locator notes, model details, and symptom documentation before contacting an authorized service center.",
+      "safeChecklist": [
+        "Record brand, appliance type, model, serial number, exact symptom, and current display or control state.",
+        "Use the Thetford/Norcold dealer locator to find an authorized dealer or service center and note distance, contact details, and appointment instructions.",
+        "Photograph owner-visible labels and symptom evidence from normal access before calling support.",
+        "Keep the appliance off for gas odor, alarm activity, leaks, smoke, heat concern, moving-room or leveling concern, or repeated lockout until qualified service responds."
+      ],
+      "sourceIds": [
+        "thetford-norcold-dealer-locator"
+      ],
+      "searchAliases": [
+        "thetford norcold dealer locator authorized service center",
+        "norcold authorized service center dealer locator prep",
+        "thetford rv appliance dealer locator model serial symptom",
+        "thetford norcold authorized dealer service center"
+      ],
+      "searchRequiredTerms": [
+        "thetford",
+        "norcold"
+      ]
+    },
+    {
+      "id": "norcold-refrigerator-model-label-location",
+      "slug": "norcold-refrigerator-model-label-location",
+      "title": "Norcold refrigerator model label location",
+      "summary": "Use this when Norcold support needs the refrigerator model information from the food-compartment tag before diagnosis or service scheduling.",
+      "safeChecklist": [
+        "Open only normal owner-accessible refrigerator doors and look for the model tag in the food compartment area.",
+        "Photograph the model tag, serial details, refrigerator controls, and any visible display state.",
+        "Record whether the label is missing, damaged, blocked, or unreadable before contacting Norcold or Thetford support.",
+        "Use an authorized service center if model identification cannot be confirmed from normal owner access."
+      ],
+      "sourceIds": [
+        "norcold-refrigerator-model-tag-faq"
+      ],
+      "searchAliases": [
+        "norcold refrigerator model tag location food compartment",
+        "norcold fridge model label location support",
+        "where find model my norcold refrigerator",
+        "norcold model serial tag food compartment service prep"
+      ],
+      "searchRequiredTerms": [
+        "norcold"
+      ]
+    },
+    {
+      "id": "thetford-rv-toilet-serial-model-label-service-prep",
+      "slug": "thetford-rv-toilet-serial-model-label-service-prep",
+      "title": "Thetford RV toilet serial and model label service prep",
+      "summary": "Use this when a Thetford toilet model or serial label must be documented before support, warranty, parts, or service-center contact.",
+      "safeChecklist": [
+        "Photograph owner-accessible toilet labels and the installed toilet from normal standing access.",
+        "If no data tag is present, compare only visible bowl, seat, flush, and base features with Thetford's model-identification guidance.",
+        "Record symptom, purchase or RV year if known, model family guess, and serial details if visible.",
+        "Use Thetford support or an authorized service center if identification would require detaching the toilet or exposing hidden plumbing."
+      ],
+      "sourceIds": [
+        "thetford-rv-toilet-serial-number-locations-2024",
+        "thetford-toilet-no-data-tag-identification-faq"
+      ],
+      "searchAliases": [
+        "thetford toilet serial number location no data tag",
+        "thetford rv toilet model identification no data tag",
+        "thetford toilet serial model label service prep",
+        "thetford rv toilets serial number locations"
+      ],
+      "searchRequiredTerms": [
+        "thetford"
+      ]
+    },
+    {
+      "id": "thetford-cassette-toilet-flush-tank-travel-storage",
+      "slug": "thetford-cassette-toilet-flush-tank-travel-storage",
+      "title": "Thetford cassette toilet flush-tank travel or storage prep",
+      "summary": "Use this when a Thetford cassette toilet owner needs flush-tank travel or storage notes before moving the RV or storing the toilet.",
+      "safeChecklist": [
+        "Check Thetford's flush-tank travel FAQ for the current model recommendation before travel.",
+        "Record whether the toilet is portable, cassette, or permanent and whether the flush tank was filled before travel or storage.",
+        "For storage, document tank status, cleaning-product type, and any leak or odor evidence from normal access.",
+        "Use Thetford support if travel or storage instructions conflict with the toilet model or if leaks, odor, or pump symptoms continue."
+      ],
+      "sourceIds": [
+        "thetford-flush-tank-travel-water-faq"
+      ],
+      "searchAliases": [
+        "thetford cassette toilet travel water in flush tank",
+        "thetford flush tank travel storage water",
+        "thetford portable toilet flush tank water before travel",
+        "thetford cassette toilet storage leak odor prep"
+      ],
+      "searchRequiredTerms": [
+        "thetford",
+        "cassette"
+      ]
+    },
+    {
+      "id": "thetford-rv-toilet-cleaning-seal-safe-maintenance",
+      "slug": "thetford-rv-toilet-cleaning-seal-safe-maintenance",
+      "title": "Thetford RV toilet cleaner and seal-safe maintenance",
+      "summary": "Use this when a Thetford RV toilet owner needs cleaner notes that protect seals and avoid household products that may damage the toilet.",
+      "safeChecklist": [
+        "Follow Thetford's toilet-care FAQ and avoid household cleaners that Thetford warns may harm toilet materials or seals.",
+        "Record cleaner used, odor, staining, bowl-water loss, seal condition, and whether the symptom changed after cleaning.",
+        "Clean only normal owner-accessible bowl and surface areas according to the product instructions.",
+        "Use Thetford support or qualified service if bowl-water loss, seal damage, leak, or odor remains after approved cleaning."
+      ],
+      "sourceIds": [
+        "thetford-rv-toilet-household-cleaner-seal-safety-faq"
+      ],
+      "searchAliases": [
+        "thetford rv toilet household cleaner seal safe",
+        "thetford toilet cleaner seal maintenance faq",
+        "can i use household cleaners in my rv toilet thetford",
+        "thetford rv toilet cleaning seal safe maintenance"
+      ],
+      "searchRequiredTerms": [
+        "thetford"
+      ]
+    },
+    {
+      "id": "lippert-slimrack-slide-stuck-service-prep",
+      "slug": "lippert-slimrack-slide-stuck-service-prep",
+      "title": "Lippert SlimRack slide stuck service prep",
+      "summary": "Use this when a Lippert SlimRack slide room is stuck, uneven, noisy, or not responding and the owner needs documentation before qualified RV slide service.",
+      "safeChecklist": [
+        "Stop slide operation if movement is uneven, binding, noisy, or not responding normally.",
+        "Keep people, pets, and objects clear of the room path before taking photos.",
+        "Record room position, switch response, battery state, shore-power state, controller lights visible from normal access, and recent movement history.",
+        "Use Lippert support or qualified RV slide service if the room remains stuck or cannot be moved with normal controls."
+      ],
+      "sourceIds": [
+        "lippert-slimrack-ti533-owner-quick-troubleshooting"
+      ],
+      "searchAliases": [
+        "lippert slimrack slide stuck owner quick troubleshooting",
+        "lippert slimrack room stuck service prep",
+        "slimrack system quick troubleshooting remedies owners",
+        "lippert slimrack slide uneven noisy not responding"
+      ],
+      "searchRequiredTerms": [
+        "lippert",
+        "slimrack"
+      ]
+    },
+    {
+      "id": "lippert-power-gear-through-frame-slideout-service-prep",
+      "slug": "lippert-power-gear-through-frame-slideout-service-prep",
+      "title": "Lippert Power Gear through-frame slideout service prep",
+      "summary": "Use this when a Lippert Power Gear through-frame slideout is stuck, stopped mid-travel, or needs model-family documentation before service.",
+      "safeChecklist": [
+        "Stop slide operation and keep the room path clear if the slide stops, binds, or moves unevenly.",
+        "Record switch behavior, room position, controller or keypad display if visible, battery and shore-power status, and any recent obstruction.",
+        "Photograph owner-visible model labels, installed room location, and the symptom without reaching into moving areas.",
+        "Use Lippert support or qualified RV slide service for repeated stops, uneven movement, stuck-room behavior, or parts identification."
+      ],
+      "sourceIds": [
+        "lippert-power-gear-through-frame-slideout-support"
+      ],
+      "searchAliases": [
+        "lippert power gear through frame slideout stuck service prep",
+        "lippert power gear through frame slideout system support",
+        "power gear through frame slide room service prep",
+        "lippert slideout stopped mid travel model family"
+      ],
+      "searchRequiredTerms": [
+        "lippert",
+        "slideout"
+      ]
+    },
+    {
+      "id": "lippert-leveling-system-identification-service-prep",
+      "slug": "lippert-leveling-system-identification-service-prep",
+      "title": "Lippert electronic leveling identification service prep",
+      "summary": "Use this when Lippert support needs electronic leveling touchpad or system identification before choosing the correct owner manual or service path.",
+      "safeChecklist": [
+        "Do not operate leveling if movement is abnormal, the site is unstable, or people are near moving supports.",
+        "Photograph the touchpad, screen, controller label if visible from normal access, RV type, and any displayed message.",
+        "Record whether the system is auto-level, Ground Control, or another Lippert electronic leveling family according to the identification guide.",
+        "Use Lippert support or qualified RV leveling service if identification is uncertain or the system will not respond normally."
+      ],
+      "sourceIds": [
+        "lippert-qr059-electronic-leveling-identification"
+      ],
+      "searchAliases": [
+        "lippert qr059 electronic leveling identification touch pad",
+        "lippert electronic leveling identification guide service prep",
+        "lippert leveling touchpad model identification",
+        "qr-059 electronic leveling identification guide"
+      ],
+      "searchRequiredTerms": [
+        "lippert",
+        "qr059",
+        "leveling"
+      ]
+    },
+    {
+      "id": "furrion-otr-microwave-fan-light-filter-service-prep",
+      "slug": "furrion-otr-microwave-fan-light-filter-service-prep",
+      "title": "Furrion OTR microwave fan, light, filter, and service prep",
+      "summary": "Use this when a Furrion FMSM13 over-the-range microwave has fan, light, filter, turntable, odor, spark, or no-heat symptoms that need shutoff notes before qualified service.",
+      "safeChecklist": [
+        "Do not use the microwave if it smokes, sparks, smells abnormal, or heats poorly.",
+        "Turn it off and unplug it only if a normal plug is accessible without moving the appliance.",
+        "Record fan, light, filter, door, turntable, display, selected mode, and model-label details from normal access.",
+        "Use qualified service for no heat, sparks, smoke, repeated odor, fan failure, light failure, or filter questions beyond normal cleaning."
+      ],
+      "sourceIds": [
+        "furrion-13-otr-microwave-fmsm13-user-manual"
+      ],
+      "searchAliases": [
+        "furrion otr microwave fan light filter fmsm13 service prep",
+        "furrion 1.3 cu ft over the range microwave fan light filter",
+        "fmsm13 microwave no heat sparks turntable service",
+        "furrion over range microwave model label service prep"
+      ],
+      "searchRequiredTerms": [
+        "furrion",
+        "fmsm13"
+      ]
+    },
+    {
+      "id": "lippert-qualified-service-locator-prep",
+      "slug": "lippert-qualified-service-locator-prep",
+      "title": "Lippert qualified service locator prep",
+      "summary": "Use this when a Lippert owner needs label photos, symptom notes, and support details before booking factory service or a qualified RV service appointment.",
+      "safeChecklist": [
+        "Record brand, appliance or system family, model, serial, installed location, exact symptom, and recent events.",
+        "Photograph labels, display states, control settings, and visible symptom evidence from normal owner access.",
+        "Use the Lippert factory service locator to identify the correct service path and prepare contact details before calling.",
+        "Keep gas, heat, slide, leveling, and electrical symptoms shut down or unused when they are abnormal until qualified service gives direction."
+      ],
+      "sourceIds": [
+        "lippert-factory-service-locator"
+      ],
+      "searchAliases": [
+        "lippert factory service locator model serial photos",
+        "lippert qualified service locator prep",
+        "lippert factory service center appointment symptom notes",
+        "lippert service centers model serial photos"
+      ],
+      "searchRequiredTerms": [
+        "lippert"
+      ]
+    },
+    {
+      "id": "furrion-furnace-error-code-model-service-prep",
+      "slug": "furrion-furnace-error-code-model-service-prep",
+      "title": "Furrion furnace error-code and model service prep",
+      "summary": "Use this when a Furrion furnace support page, displayed E-code, no-heat symptom, or model-family question needs documentation before Lippert/Furrion or qualified RV HVAC service.",
+      "safeChecklist": [
+        "Shut the furnace off for no heat, repeated lockout, fuel odor, soot, alarm activity, or unexplained startup.",
+        "Record thermostat setting, displayed E-code if present, support-page title, blower timing, LP status, battery state, and weather.",
+        "Photograph model, serial, installed location, thermostat, and any visible display state from normal access.",
+        "Use Lippert/Furrion support or qualified RV HVAC service for repeated no heat, odor, soot, alarm activity, or unclear E-code behavior."
+      ],
+      "sourceIds": [
+        "furrion-heating-support-index"
+      ],
+      "searchAliases": [
+        "furrion furnace error code model support heating page",
+        "furrion heating support index furnace e code",
+        "furrion furnace model serial no heat service prep",
+        "lippert furrion furnace support page service prep"
+      ],
+      "searchRequiredTerms": [
+        "furrion"
+      ]
+    },
+    {
+      "id": "coleman-mach-model-number-service-prep",
+      "slug": "coleman-mach-model-number-service-locator-prep",
+      "title": "Coleman-Mach model number and service locator prep",
+      "summary": "Use this when a Coleman-Mach owner needs model-number, serial, equipment-family, and service-center notes before HVAC support.",
+      "safeChecklist": [
+        "Record model number, serial number, equipment family, thermostat or control model, installed location, and exact symptom from owner-visible labels or paperwork.",
+        "Use the Coleman-Mach model-number locator and service-center locator to identify the right information and service path.",
+        "Stop at owner-visible labels or paperwork; use qualified RV HVAC service if label access is not normal owner access.",
+        "Share clear label photos, symptom timing, weather, mode setting, and service-location notes before ordering parts or scheduling service."
+      ],
+      "sourceIds": [
+        "coleman-mach-model-number-locator",
+        "coleman-mach-service-center-dealer-locator"
+      ],
+      "searchAliases": [
+        "coleman mach model number service locator prep",
+        "coleman mach model number locator service center dealer",
+        "coleman-mach service center dealer locator model serial",
+        "coleman mach hvac model serial support prep"
+      ],
+      "searchRequiredTerms": [
+        "coleman",
+        "mach"
+      ]
+    },
+    {
+      "id": "maxxair-2025-amcat-model-feature-service-prep",
+      "slug": "maxxair-2025-amcat-model-feature-service-prep",
+      "title": "MaxxAir 2025 AMCAT model and feature service prep",
+      "summary": "Use this when a MaxxAir catalog family, MaxxFan model, control option, lid style, rain-sensor feature, or service-part question needs documentation before support.",
+      "safeChecklist": [
+        "Record MaxxAir or MaxxFan model family, fan size, lid style, remote or wall-control presence, rain-sensor behavior, and thermostat feature if present.",
+        "Use the catalog to document product family and feature names without assuming parts compatibility.",
+        "Photograph owner-visible labels, control state, lid position, and fan behavior from normal access.",
+        "Use MaxxAir or qualified RV ventilation service for stuck lid, abnormal motor behavior, repeated control symptoms, or parts questions."
+      ],
+      "sourceIds": [
+        "maxxair-2025-amcat-catalog"
+      ],
+      "searchAliases": [
+        "maxxair 2025 amcat catalog model feature service prep",
+        "maxxair maxxfan catalog model family features",
+        "maxxair 2025 amcat rain sensor remote wall control",
+        "maxxfan catalog lid style thermostat service prep"
+      ],
+      "searchRequiredTerms": [
+        "maxxair",
+        "maxxfan"
+      ]
+    },
+    {
+      "id": "maxxair-maxxfan-plus-rain-sensor-remote-service-prep",
+      "slug": "maxxair-maxxfan-plus-rain-sensor-remote-service-prep",
+      "title": "MaxxAir MaxxFan Plus rain-sensor and remote service prep",
+      "summary": "Use this when a MaxxFan Plus 00-04500 owner needs product-page feature notes, rain-sensor behavior, remote details, or service-prep documentation.",
+      "safeChecklist": [
+        "Record fan model, lid position, fan speed, Auto mode, remote behavior, rain-sensor behavior, and any beep or response pattern.",
+        "Try only normal controls and remote-battery checks described for ordinary operation.",
+        "Stop using the fan if the lid, motor, remote, keypad, or rain sensor behaves abnormally after normal control checks.",
+        "Use MaxxAir or qualified RV ventilation service for repeated control symptoms, stuck lid behavior, abnormal motor behavior, or parts questions."
+      ],
+      "sourceIds": [
+        "maxxair-maxxfan-plus-04500-product"
+      ],
+      "searchAliases": [
+        "maxxfan plus 04500 rain sensor remote service prep",
+        "maxxair maxxfan plus 00 04500 product rain sensor remote",
+        "maxxfan plus remote not responding rain sensor",
+        "maxxair maxxfan plus lid fan auto mode service prep"
+      ],
+      "searchRequiredTerms": [
+        "maxxair",
+        "maxxfan"
       ]
     }
   ],
