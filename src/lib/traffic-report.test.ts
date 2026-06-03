@@ -41,7 +41,7 @@ describe("traffic readiness report", () => {
       keyLocation: "https://rvappliancefaultcodes.com/2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18.txt",
       dryRunCommand: "npm run traffic:indexnow:dry-run",
       submitCommand: "npm run traffic:indexnow:submit",
-      submittedAt: "2026-06-02T23:47:31.619Z",
+      submittedAt: "2026-06-03T00:23:44.354Z",
     });
     expect(report.nextAutomatedBatchGoal).toBe(
       "Run weekly GSC report and review monetization readiness after page impressions appear.",
