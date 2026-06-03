@@ -1307,6 +1307,70 @@
       "official": true
     },
     {
+      "id": "norcold-dc740-dc751-owner-install-2024",
+      "brand": "Norcold",
+      "title": "Norcold DC740/DC751 Installation and Owners Manual",
+      "url": "https://www.thetford.com/app/uploads/2024/09/641479_DC740DC751_InstallationOwners-Manual_RevA.pdf",
+      "type": "owner-install-manual",
+      "official": true
+    },
+    {
+      "id": "norcold-nv1090-user-manual-2025",
+      "brand": "Norcold",
+      "title": "Norcold NV1090 User Manual",
+      "url": "https://www.thetford.com/app/uploads/2025/11/641576_UM_NV1090_EN.pdf",
+      "type": "owner-manual",
+      "official": true
+    },
+    {
+      "id": "thetford-t2095-owner-install-2025",
+      "brand": "Thetford",
+      "title": "Thetford T2095-US Installation and Owners Manual",
+      "url": "https://www.thetford.com/app/uploads/2025/08/641518A_T2095-US_OMIM_Final.pdf",
+      "type": "owner-install-manual",
+      "official": true
+    },
+    {
+      "id": "norcold-1210-owner",
+      "brand": "Norcold",
+      "title": "Norcold 1210 Series Owner's Manual",
+      "url": "https://www.thetford.com/app/uploads/2024/10/OM_1210_635494E_20210902.pdf",
+      "type": "owner-manual",
+      "official": true
+    },
+    {
+      "id": "norcold-product-compliance-recall-info",
+      "brand": "Norcold",
+      "title": "Norcold Product Compliance Recall Information",
+      "url": "https://www.thetford.com/us/recall-information/",
+      "type": "recall-support-page",
+      "official": true
+    },
+    {
+      "id": "norcold-de0041-ev0041-de0061-ev0061-owner",
+      "brand": "Norcold",
+      "title": "Norcold DE0041 EV0041 DE0061 EV0061 Owner's Manual",
+      "url": "https://www.thetford.com/app/uploads/2024/10/OM_DCDEEV00410061_635743D_20180326.pdf",
+      "type": "owner-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-thermostat-controller-compatibility-qr155",
+      "brand": "Furrion",
+      "title": "Lippert QR-155 Furrion Thermostat and Controller Compatibility Overview",
+      "url": "https://support.lci1.com/documents/ccd-0007160",
+      "type": "quick-reference",
+      "official": true
+    },
+    {
+      "id": "furrion-appliances-production-label-w009",
+      "brand": "Furrion",
+      "title": "Lippert W-009 Furrion Appliances Production Label Information",
+      "url": "https://support.lci1.com/documents/ccd-0007440",
+      "type": "quick-reference",
+      "official": true
+    },
+    {
       "id": "furrion-furnace-troubleshooting",
       "brand": "Furrion",
       "title": "Furrion RV Furnaces Troubleshooting and Service Manual",
@@ -33581,7 +33645,11 @@
         "furrion-15-refrigerator",
         "furrion-french-door-refrigerator",
         "dometic-americana-not-cooling-temperature-spec-support",
-        "dometic-americana-not-working-level-support"
+        "dometic-americana-not-working-level-support",
+        "norcold-dc740-dc751-owner-install-2024",
+        "norcold-nv1090-user-manual-2025",
+        "thetford-t2095-owner-install-2025",
+        "norcold-de0041-ev0041-de0061-ev0061-owner"
       ]
     },
     {
@@ -33724,7 +33792,10 @@
         "dometic-americana-clean-refrigerator-vents-support",
         "dometic-brisk-ac-frost-cooling-coil-support",
         "furrion-chill-cube-ducted-ac-user-manual",
-        "furrion-chill-2-low-profile-electronic-control-manual"
+        "furrion-chill-2-low-profile-electronic-control-manual",
+        "norcold-dc740-dc751-owner-install-2024",
+        "norcold-nv1090-user-manual-2025",
+        "thetford-t2095-owner-install-2025"
       ]
     },
     {
@@ -33747,7 +33818,8 @@
         "dometic-rmd10-5-operating",
         "dometic-rml10-4-operating",
         "dometic-bluetooth-ct-thermostat-operating",
-        "furrion-enhanced-multizone-thermostat-e3-qr187"
+        "furrion-enhanced-multizone-thermostat-e3-qr187",
+        "furrion-thermostat-controller-compatibility-qr155"
       ]
     },
     {
@@ -34353,7 +34425,15 @@
         "furrion-chill-2-low-profile-electronic-control-manual",
         "furrion-enhanced-multizone-thermostat-e3-qr187",
         "furrion-furnace-lockout-reset-qr224",
-        "furrion-comfort-production-label-w007"
+        "furrion-comfort-production-label-w007",
+        "norcold-dc740-dc751-owner-install-2024",
+        "norcold-nv1090-user-manual-2025",
+        "thetford-t2095-owner-install-2025",
+        "norcold-1210-owner",
+        "norcold-product-compliance-recall-info",
+        "norcold-de0041-ev0041-de0061-ev0061-owner",
+        "furrion-thermostat-controller-compatibility-qr155",
+        "furrion-appliances-production-label-w009"
       ]
     },
     {
@@ -36813,7 +36893,9 @@
         "thetford-faq-door-alarm",
         "norcold-1200-owner",
         "norcold-polar-owner",
-        "norcold-2118-owner"
+        "norcold-2118-owner",
+        "norcold-1210-owner",
+        "thetford-t2095-owner-install-2025"
       ]
     },
     {
@@ -38427,6 +38509,174 @@
         "furrion furnace lockout reset blower stops 60 seconds",
         "furrion furnace lockout air in propane line 3 failed attempts",
         "furrion qr 224 furnace reset qualified rv service"
+      ]
+    },
+    {
+      "id": "norcold-dc740-dc751-cooling-low-voltage-defrost",
+      "slug": "norcold-dc740-dc751-not-cooling-low-voltage-defrost",
+      "title": "Norcold DC740/DC751 not cooling, low voltage, or defrost checks",
+      "summary": "Use this when a Norcold DC740 or DC751 refrigerator is warm, delayed by low battery protection, loaded in hot weather, or needs the owner-manual defrost and airflow checks before dealer support.",
+      "safeChecklist": [
+        "Confirm the thermostat is not off, the desired setting is selected, and a normal power source is serviceable.",
+        "Check only owner-visible fuse or circuit status, built-in vents, door closure, door sealing, interior circulation, covered shelves, and hot food loading.",
+        "Compare ambient heat against the manual limit near 110 degrees F or 43 C and defrost the freezer if frost is reducing cooling.",
+        "Record low-voltage shutoff or restart behavior from normal indicators and contact a dealer or authorized Norcold Service Center if cooling does not recover."
+      ],
+      "sourceIds": [
+        "norcold-dc740-dc751-owner-install-2024"
+      ],
+      "searchAliases": [
+        "norcold dc740 not cooling low voltage defrost",
+        "norcold dc751 not cooling low battery shutoff",
+        "dc740 dc751 refrigerator vents blocked 110 degrees",
+        "norcold dc740 freezer defrost door seal thermostat"
+      ]
+    },
+    {
+      "id": "norcold-nv1090-cooling-night-mode-defrost-storage",
+      "slug": "norcold-nv1090-cooling-night-mode-defrost-storage",
+      "title": "Norcold NV1090 cooling, night mode, defrost, and storage checks",
+      "summary": "Use this when a Norcold NV1090 has low-battery startup delay, poor cooling, evaporator ice, night-mode confusion, or storage-prep questions.",
+      "safeChecklist": [
+        "Recharge the battery if low voltage is shown, wait up to 5 minutes for documented start delay, and check the vehicle fuse rating from normal owner access.",
+        "Clean visible ventilation openings, remove blockages, close the door fully, and check the seal from normal access.",
+        "Defrost evaporator ice, wait after warm products or long off time, and use night mode only when vehicle temperature is below 86 degrees F.",
+        "For storage, empty, defrost, clean, leave the door slightly open with the latch, then verify no vent or airway obstruction before use; contact a service center for persistent cooling, light, or compressor-run symptoms."
+      ],
+      "sourceIds": [
+        "norcold-nv1090-user-manual-2025"
+      ],
+      "searchAliases": [
+        "norcold nv1090 not cooling night mode defrost storage",
+        "norcold nv1090 low battery voltage start delay 5 minutes",
+        "nv1090 ventilation openings blocked door seal ice evaporator",
+        "norcold nv1090 night mode below 86 degrees"
+      ]
+    },
+    {
+      "id": "thetford-t2095-cooling-door-seal-night-mode-storage",
+      "slug": "thetford-t2095-cooling-door-seal-night-mode-storage",
+      "title": "Thetford T2095 cooling, door seal, night mode, and storage checks",
+      "summary": "Use this when a Thetford T2095-US refrigerator is warm, has door-seal concerns, needs defrost, or is being prepared for seasonal storage.",
+      "safeChecklist": [
+        "Use the paper drag check on the door seal and have a dealer or authorized Service Center correct a weak seal.",
+        "Defrost when ice is over 3mm, using natural melt time only, with no hot water, hair dryer, or sharp objects.",
+        "Use night mode only when vehicle temperature is below 86 degrees F and allow extra cooling time after warm loading.",
+        "For seasonal storage, empty, defrost, clean, leave doors slightly open, and photograph any owner-visible obstructions before requesting service center help."
+      ],
+      "sourceIds": [
+        "thetford-t2095-owner-install-2025"
+      ],
+      "searchAliases": [
+        "thetford t2095 not cooling door seal paper check",
+        "t2095 night mode below 86 degrees storage",
+        "thetford t2095 defrost ice over 3mm no hair dryer",
+        "t2095 door seal seasonal storage odor mold"
+      ]
+    },
+    {
+      "id": "norcold-1210-defrost-door-seal-storage-service-prep",
+      "slug": "norcold-1210-defrost-door-seal-storage-service-prep",
+      "title": "Norcold 1210 defrost, door seal, storage, and service prep",
+      "summary": "Use this when a Norcold 1210 has a door alarm, frost or seal concern, storage-latch question, or needs owner-safe notes before annual dealer maintenance.",
+      "safeChecklist": [
+        "For a door alarm after about two minutes, close the door fully and make sure the movable door seal lies flat before closing.",
+        "Use the door seal paper drag check and have a dealer or authorized Norcold Service Center correct weak or damaged sealing.",
+        "Use the storage latch to keep doors from fully closing during storage to reduce odor.",
+        "Before startup after storage, record visible obstructions around vents, ventilation pathways, and service areas for the qualified RV dealer or authorized Norcold Service Center."
+      ],
+      "sourceIds": [
+        "norcold-1210-owner"
+      ],
+      "searchAliases": [
+        "norcold 1210 door alarm seal paper drag",
+        "norcold 1210 storage latch doors odor",
+        "norcold 1210 defrost door seal authorized service center",
+        "1210 refrigerator annual safety maintenance dealer"
+      ]
+    },
+    {
+      "id": "norcold-recall-hts-gas-valve-serial-service-prep",
+      "slug": "norcold-recall-hts-gas-valve-serial-service-prep",
+      "title": "Norcold recall serial and HTS service-call prep",
+      "summary": "Use this when a Norcold owner needs recall-range documentation, HTS status notes, and shutdown/service-call prep without consumer repair steps.",
+      "safeChecklist": [
+        "Record model, serial, cooling unit serial if visible, recall family, and whether the HTS indicator is solid red or flashing red.",
+        "If the HTS has tripped or the unit is in a listed recall range with the remedy not performed, turn the refrigerator off and do not operate it until professionally repaired.",
+        "Contact Norcold, a dealer, or an authorized service center with photos and serial information; parts are shipped to and installed by a trained service technician.",
+        "Treat flashing red or solid red HTS status as not consumer-serviceable and keep the refrigerator off until the service path is confirmed."
+      ],
+      "sourceIds": [
+        "norcold-product-compliance-recall-info"
+      ],
+      "searchAliases": [
+        "norcold recall serial hts solid red flashing red",
+        "norcold 1200 series hts recall service prep",
+        "norcold product compliance recall information serial range",
+        "norcold hts trained service technician parts not sent consumers"
+      ]
+    },
+    {
+      "id": "norcold-de-ev-acdc-refrigerator-cooling-defrost-battery",
+      "slug": "norcold-de-ev-acdc-refrigerator-not-cooling-defrost-battery",
+      "title": "Norcold DE/EV AC/DC refrigerator not cooling, defrost, or battery checks",
+      "summary": "Use this when a Norcold DE0041, EV0041, DE0061, or EV0061 refrigerator is not cooling on AC/DC mode, has frost buildup, or is draining a battery-only setup.",
+      "safeChecklist": [
+        "In AC or DC mode, confirm the power switch and thermostat are not off and the desired setting is selected.",
+        "Confirm normal power sources are serviceable, owner-visible fuse or circuit status is intact, and built-in vents are not blocked.",
+        "Keep ambient temperature below 110 degrees F or 43 C when possible, close and seal the door, keep air circulation open, cool hot foods, and defrost the freezer.",
+        "Record low-voltage shutoff or restart behavior and battery-only runtime concerns, then contact an authorized Norcold Service Center if operation remains poor."
+      ],
+      "sourceIds": [
+        "norcold-de0041-ev0041-de0061-ev0061-owner"
+      ],
+      "searchAliases": [
+        "norcold de0041 ev0041 not cooling ac dc mode",
+        "norcold de0061 ev0061 low voltage battery defrost",
+        "norcold de ev refrigerator thermostat vents 110 degrees",
+        "norcold ac dc refrigerator battery discharge not cooling"
+      ]
+    },
+    {
+      "id": "furrion-thermostat-controller-compatibility-service-prep",
+      "slug": "furrion-thermostat-controller-compatibility-service-prep",
+      "title": "Furrion thermostat and controller compatibility service prep",
+      "summary": "Use this when a Furrion thermostat or ceiling controller replacement needs model-generation, ES identifier, and hardware-version documentation before Lippert/Furrion support.",
+      "safeChecklist": [
+        "Photograph thermostat, ceiling controller, model, serial, ES identifier, and visible HW:V1.0 or HW:V2.0 labels from normal access.",
+        "Record whether the thermostat and controller hardware versions match, because mismatched generations are not compatible.",
+        "If compatibility is not followed, document whether furnace function is deactivated or Heat cannot be selected.",
+        "Share photos and notes with Lippert/Furrion support or qualified RV HVAC service; some obsolete combinations may require a service-part path."
+      ],
+      "sourceIds": [
+        "furrion-thermostat-controller-compatibility-qr155"
+      ],
+      "searchAliases": [
+        "furrion thermostat controller compatibility hw v1.0 hw v2.0",
+        "furrion es identifier thermostat ceiling controller",
+        "furrion furnace function deactivated heat cannot be selected",
+        "lippert qr155 furrion thermostat controller compatibility"
+      ]
+    },
+    {
+      "id": "furrion-refrigerator-production-label-service-prep",
+      "slug": "furrion-refrigerator-model-serial-label-service-call-prep",
+      "title": "Furrion refrigerator production label service-call prep",
+      "summary": "Use this when Lippert/Furrion support needs refrigerator model and serial details from production labels that may be in different owner-accessible locations by model.",
+      "safeChecklist": [
+        "Photograph any accessible production label without removing panels or parts.",
+        "Check only normal owner-accessible locations: behind the lower drawer, front bottom inside the refrigerator door, back upper left corner of the fridge, or right back corner.",
+        "Note model, serial, refrigerator size, symptom, and label location for Lippert/Furrion support.",
+        "Share clear label photos with support or qualified RV service if the label is not accessible from normal use."
+      ],
+      "sourceIds": [
+        "furrion-appliances-production-label-w009"
+      ],
+      "searchAliases": [
+        "furrion refrigerator model serial label lower drawer",
+        "furrion refrigerator production label inside door",
+        "furrion fridge serial label back upper left corner",
+        "lippert w009 furrion appliances production label"
       ]
     },
     {
