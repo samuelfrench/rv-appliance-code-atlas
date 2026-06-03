@@ -92,7 +92,7 @@ Key location: `https://rvappliancefaultcodes.com/2653afc6f17313e900711f1d3eb1dca
 
 Writes ignored local report artifact: `reports/indexnow-submit-report.json`
 
-Submitted: `2026-06-03T12:58:10.476Z` with `1175` URLs and IndexNow HTTP `200`
+Submitted: `2026-06-03T13:41:08.841Z` with `1199` URLs and IndexNow HTTP `200`
 
 Traffic monitor:
 
@@ -100,7 +100,7 @@ Traffic monitor:
 npm run traffic:monitor
 ```
 
-Local corpus pending deploy:
+Current corpus:
 - `850` verified entries
 - `348` symptom guides
 - `514` official sources
