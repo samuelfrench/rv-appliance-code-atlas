@@ -27,7 +27,7 @@ const monetizationReadinessArtifact = {
   source: weeklyTrafficArtifact.path,
 };
 const nextSourceBackedBatchGoal =
-  "Continue post-Coleman official support-row triage by traffic potential, starting with Norcold/Thetford refrigerator manuals, remaining Furrion/Lippert service-prep gaps, then Suburban/Airxcel and Cummins pages; add only owner-safe non-duplicate source wiring or guides and keep service-only rows rejected except model or service-call prep.";
+  "Continue remaining post-Coleman official support-row triage by traffic potential, starting with Furrion/Lippert service-prep gaps, then Suburban/Airxcel and Cummins pages; add only owner-safe non-duplicate source wiring or guides and keep service-only rows rejected except model or service-call prep.";
 const indexNow = indexNowConfig
   ? {
       keyLocation: indexNowConfig.keyLocation,

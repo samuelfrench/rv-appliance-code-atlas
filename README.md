@@ -92,7 +92,7 @@ Key location: `https://rvappliancefaultcodes.com/2653afc6f17313e900711f1d3eb1dca
 
 Writes ignored local report artifact: `reports/indexnow-submit-report.json`
 
-Submitted: `2026-06-03T06:32:27.034Z` with `1071` URLs and IndexNow HTTP `200`
+Submitted: `2026-06-03T06:58:53.241Z` with `1079` URLs and IndexNow HTTP `200`
 
 Traffic monitor:
 
@@ -102,9 +102,9 @@ npm run traffic:monitor
 
 Current corpus:
 - `850` verified entries
-- `220` symptom guides
-- `373` official sources
-- `1071` generated indexable pages
+- `228` symptom guides
+- `381` official sources
+- `1079` generated indexable pages
 
 Next automated batch goal:
-- Continue post-Coleman official support-row triage by traffic potential, starting with Norcold/Thetford refrigerator manuals, remaining Furrion/Lippert service-prep gaps, then Suburban/Airxcel and Cummins pages; add only owner-safe non-duplicate source wiring or guides and keep service-only rows rejected except model or service-call prep.
+- Continue remaining post-Coleman official support-row triage by traffic potential, starting with Furrion/Lippert service-prep gaps, then Suburban/Airxcel and Cummins pages; add only owner-safe non-duplicate source wiring or guides and keep service-only rows rejected except model or service-call prep.

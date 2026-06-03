@@ -3,7 +3,7 @@ import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 
 const nextAutomatedBatchGoal =
-  "Continue post-Coleman official support-row triage by traffic potential, starting with Norcold/Thetford refrigerator manuals, remaining Furrion/Lippert service-prep gaps, then Suburban/Airxcel and Cummins pages; add only owner-safe non-duplicate source wiring or guides and keep service-only rows rejected except model or service-call prep.";
+  "Continue remaining post-Coleman official support-row triage by traffic potential, starting with Furrion/Lippert service-prep gaps, then Suburban/Airxcel and Cummins pages; add only owner-safe non-duplicate source wiring or guides and keep service-only rows rejected except model or service-call prep.";
 
 describe("traffic readiness report", () => {
   it("keeps the next automated batch goal aligned with the current corpus backlog", () => {
@@ -51,7 +51,7 @@ describe("traffic readiness report", () => {
       keyLocation: "https://rvappliancefaultcodes.com/2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18.txt",
       dryRunCommand: "npm run traffic:indexnow:dry-run",
       submitCommand: "npm run traffic:indexnow:submit",
-      submittedAt: "2026-06-03T06:32:27.034Z",
+      submittedAt: "2026-06-03T06:58:53.241Z",
     });
     expect(report.nextAutomatedBatchGoal).toBe(nextAutomatedBatchGoal);
 
