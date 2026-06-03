@@ -102,9 +102,9 @@ npm run traffic:monitor
 
 Current corpus:
 - `850` verified entries
-- `191` symptom guides
-- `342` official sources
-- `1042` generated indexable pages
+- `195` symptom guides
+- `346` official sources
+- `1046` generated indexable pages
 
 Next automated batch goal:
-- Triage official Coleman-Mach Wi-Fi/48000 thermostat and rooftop AC symptom-only sources, then add only owner-safe guides without inventing code entries.
+- Triage official Coleman-Mach 48000 AC owner manual and 2025 catalog sources, then enrich existing rooftop AC guides or add only non-duplicate owner-safe symptom pages.

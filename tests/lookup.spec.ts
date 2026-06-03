@@ -382,6 +382,33 @@ test("lookup surfaces Coleman-Mach rooftop AC and heat-pump symptom support page
   await expect(lookupResults.locator('a[href="/symptoms/coleman-mach-heat-pump-below-45-blower-running/"]')).toBeVisible();
 });
 
+test("lookup surfaces Coleman-Mach Wi-Fi thermostat and 48000 support pages", async ({ page }) => {
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("coleman mach wifi thermostat 2.4ghz smart life tuya app not connecting");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/coleman-mach-wifi-thermostat-2-4ghz-app-connection/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("coleman mach wifi thermostat compatibility 12vdc analog bluetooth upgrade");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/coleman-mach-wifi-thermostat-compatibility-upgrade-check/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("coleman mach wifi thermostat eco comfort scheduling modes fan speed");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/coleman-mach-wifi-thermostat-eco-comfort-schedule-mode/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("coleman mach 48000 heat pump high pressure switch lockout dirty filters");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/coleman-mach-48000-heat-pump-high-pressure-lockout/"]'),
+  ).toBeVisible();
+});
+
 test("lookup surfaces Dometic CCC2 thermostat symptom support pages", async ({ page }) => {
   await page.goto("/");
 

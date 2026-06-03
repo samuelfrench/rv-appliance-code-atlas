@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 850;
-const expectedSourceCount = 342;
-const expectedSymptomCount = 191;
+const expectedSourceCount = 346;
+const expectedSymptomCount = 195;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -414,6 +414,23 @@ describe("verified corpus", () => {
     );
     expect(lookupSymptomGuides(index, "ecags generator starts unexpectedly quiet time house battery start voltage")[0]?.slug).toBe(
       "onan-ec-ags-plus-unexpected-start-stop",
+    );
+  });
+
+  it("finds Coleman-Mach Wi-Fi thermostat and 48000 heat-pump symptom pages from owner searches", () => {
+    const index = buildSymptomSearchIndex(corpus);
+
+    expect(lookupSymptomGuides(index, "coleman mach wifi thermostat 2.4ghz smart life tuya app not connecting")[0]?.slug).toBe(
+      "coleman-mach-wifi-thermostat-2-4ghz-app-connection",
+    );
+    expect(lookupSymptomGuides(index, "coleman mach wifi thermostat compatibility 12vdc analog bluetooth upgrade")[0]?.slug).toBe(
+      "coleman-mach-wifi-thermostat-compatibility-upgrade-check",
+    );
+    expect(lookupSymptomGuides(index, "coleman mach wifi thermostat eco comfort scheduling modes fan speed")[0]?.slug).toBe(
+      "coleman-mach-wifi-thermostat-eco-comfort-schedule-mode",
+    );
+    expect(lookupSymptomGuides(index, "coleman mach 48000 heat pump high pressure switch lockout dirty filters")[0]?.slug).toBe(
+      "coleman-mach-48000-heat-pump-high-pressure-lockout",
     );
   });
 
@@ -3937,6 +3954,95 @@ describe("verified corpus", () => {
     expect(symptomById.get("low-voltage")?.sourceIds).toEqual(
       expect.arrayContaining(["coleman-mach-faqs", "coleman-45000-installation-1976-687", "coleman-46515-heat-pump-owner"]),
     );
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds official Coleman-Mach Wi-Fi thermostat and 48000 symptom sources without inventing code entries", () => {
+    const expectedSources = new Map([
+      ["coleman-wifi-thermostat-product-page", "https://coleman-mach.com/products/thermostats/wifi-thermostats/"],
+      [
+        "coleman-wifi-thermostat-iom-9420-391",
+        "https://library.coleman-mach.com/wp-content/uploads/2026/04/9420-391_WIFI-THERMOSTAT_IOM_Manual.pdf",
+      ],
+      [
+        "coleman-wifi-thermostat-compatibility-guide",
+        "https://coleman-mach.com/files/wifi/CM-160274.01_WiFi%20Thermostat%20Compatibility%20Guide.pdf",
+      ],
+      ["coleman-48000-heat-pump-owner-1980-023", "https://library.coleman-mach.com/wp-content/uploads/2023/12/1980-023.pdf"],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const newSymptomIds = [
+      "coleman-wifi-thermostat-2-4ghz-app-connection",
+      "coleman-wifi-thermostat-compatibility-upgrade-check",
+      "coleman-wifi-thermostat-eco-comfort-schedule-mode",
+      "coleman-48000-heat-pump-high-pressure-lockout",
+    ];
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\brefrigerant\b|\bprobe\b|\bopen (the )?(fuel|gas|electrical|rooftop)|wire|wiring|line-voltage|breaker panel|remove.*thermostat|replace.*control/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = corpus.sources.find((item) => item.id === sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const symptomId of newSymptomIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds.length, symptomId).toBeGreaterThan(0);
+      expect(symptom?.safeChecklist.join(" "), symptomId).not.toMatch(unsafeOwnerActionPattern);
+    }
+
+    expect(symptomById.get("coleman-wifi-thermostat-2-4ghz-app-connection")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "coleman-wifi-thermostat-product-page",
+        "coleman-wifi-thermostat-iom-9420-391",
+        "coleman-wifi-thermostat-compatibility-guide",
+      ]),
+    );
+    expect(
+      [
+        symptomById.get("coleman-wifi-thermostat-2-4ghz-app-connection")?.summary,
+        symptomById.get("coleman-wifi-thermostat-2-4ghz-app-connection")?.safeChecklist.join(" "),
+      ].join(" "),
+    ).toMatch(/2\.4GHz|Smart Life|Tuya|local controls|qualified/i);
+
+    expect(symptomById.get("coleman-wifi-thermostat-compatibility-upgrade-check")?.sourceIds).toEqual(
+      expect.arrayContaining(["coleman-wifi-thermostat-product-page", "coleman-wifi-thermostat-compatibility-guide"]),
+    );
+    expect(
+      [
+        symptomById.get("coleman-wifi-thermostat-compatibility-upgrade-check")?.summary,
+        symptomById.get("coleman-wifi-thermostat-compatibility-upgrade-check")?.safeChecklist.join(" "),
+      ].join(" "),
+    ).toMatch(/12VDC|24VAC|analog|Bluetooth|features may operate differently|qualified/i);
+
+    expect(symptomById.get("coleman-wifi-thermostat-eco-comfort-schedule-mode")?.sourceIds).toEqual(
+      expect.arrayContaining(["coleman-wifi-thermostat-product-page", "coleman-wifi-thermostat-compatibility-guide"]),
+    );
+    expect(
+      [
+        symptomById.get("coleman-wifi-thermostat-eco-comfort-schedule-mode")?.summary,
+        symptomById.get("coleman-wifi-thermostat-eco-comfort-schedule-mode")?.safeChecklist.join(" "),
+      ].join(" "),
+    ).toMatch(/Eco|Comfort|Scheduling|fan speed|local thermostat/i);
+
+    expect(symptomById.get("coleman-48000-heat-pump-high-pressure-lockout")?.sourceIds).toEqual([
+      "coleman-48000-heat-pump-owner-1980-023",
+    ]);
+    expect(
+      [
+        symptomById.get("coleman-48000-heat-pump-high-pressure-lockout")?.summary,
+        symptomById.get("coleman-48000-heat-pump-high-pressure-lockout")?.safeChecklist.join(" "),
+      ].join(" "),
+    ).toMatch(/High Pressure Switch|dirty filters|qualified technician|lockout/i);
+
     expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
   });
 

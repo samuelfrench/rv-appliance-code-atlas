@@ -3,7 +3,7 @@ import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 
 const nextAutomatedBatchGoal =
-  "Triage official Coleman-Mach Wi-Fi/48000 thermostat and rooftop AC symptom-only sources, then add only owner-safe guides without inventing code entries.";
+  "Triage official Coleman-Mach 48000 AC owner manual and 2025 catalog sources, then enrich existing rooftop AC guides or add only non-duplicate owner-safe symptom pages.";
 
 describe("traffic readiness report", () => {
   it("keeps the next automated batch goal aligned with the current corpus backlog", () => {

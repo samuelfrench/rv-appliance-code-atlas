@@ -187,6 +187,38 @@
       "official": true
     },
     {
+      "id": "coleman-wifi-thermostat-product-page",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Wi-Fi Thermostats Product Page",
+      "url": "https://coleman-mach.com/products/thermostats/wifi-thermostats/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "coleman-wifi-thermostat-iom-9420-391",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 9420-391 Wi-Fi Thermostat User Guide",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2026/04/9420-391_WIFI-THERMOSTAT_IOM_Manual.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-wifi-thermostat-compatibility-guide",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Wi-Fi Thermostat Compatibility Guide",
+      "url": "https://coleman-mach.com/files/wifi/CM-160274.01_WiFi%20Thermostat%20Compatibility%20Guide.pdf",
+      "type": "manufacturer-guide",
+      "official": true
+    },
+    {
+      "id": "coleman-48000-heat-pump-owner-1980-023",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 48000 Series Heat Pump Owner Manual",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/12/1980-023.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
       "id": "dometic-ccc2-operating",
       "brand": "Dometic",
       "title": "Dometic Comfort Control Center 2 Thermostat Operating Instructions",
@@ -33985,6 +34017,10 @@
         "coleman-mach8-condensate-pump-kit-1976-681",
         "coleman-warranty-refrigeration-circuit",
         "coleman-46515-heat-pump-owner",
+        "coleman-wifi-thermostat-product-page",
+        "coleman-wifi-thermostat-iom-9420-391",
+        "coleman-wifi-thermostat-compatibility-guide",
+        "coleman-48000-heat-pump-owner-1980-023",
         "dometic-hydro-flame-afm-66618",
         "dometic-df-furnace-operating-2025",
         "suburban-furnace-guide",
@@ -34252,6 +34288,98 @@
         "coleman mach heat pump below 45 blower running",
         "coleman mach heat pump compressor shuts off below 45",
         "coleman mach heat pump 30 second compressor delay"
+      ]
+    },
+    {
+      "id": "coleman-wifi-thermostat-2-4ghz-app-connection",
+      "slug": "coleman-mach-wifi-thermostat-2-4ghz-app-connection",
+      "title": "Coleman-Mach Wi-Fi thermostat will not connect to the app",
+      "summary": "Coleman-Mach identifies the 9420-391 Wi-Fi thermostat as a connected-control thermostat for 2.4GHz Wi-Fi; the compatibility guide points owners to Smart Life or Tuya app setup while the thermostat remains usable from local controls.",
+      "safeChecklist": [
+        "Confirm the phone and RV router are using a 2.4GHz network before pairing.",
+        "Use the Smart Life or Tuya app named in the Coleman-Mach guide and re-enter the Wi-Fi password carefully.",
+        "Stay near the RV router and thermostat during app setup, then verify heating or cooling from local controls.",
+        "Call Coleman-Mach, the RV dealer, or a qualified installer if the thermostat still will not join or local controls do not respond."
+      ],
+      "sourceIds": [
+        "coleman-wifi-thermostat-product-page",
+        "coleman-wifi-thermostat-iom-9420-391",
+        "coleman-wifi-thermostat-compatibility-guide"
+      ],
+      "searchAliases": [
+        "coleman mach wifi thermostat 2.4ghz smart life tuya app not connecting",
+        "coleman mach wifi thermostat app will not connect",
+        "9420-391 2.4ghz wifi thermostat no device found",
+        "coleman mach thermostat tuya smart life no connection",
+        "coleman mach 48000 wifi thermostat app will not connect",
+        "coleman mach 48000 thermostat setup no device found"
+      ]
+    },
+    {
+      "id": "coleman-wifi-thermostat-compatibility-upgrade-check",
+      "slug": "coleman-mach-wifi-thermostat-compatibility-upgrade-check",
+      "title": "Coleman-Mach Wi-Fi thermostat compatibility before upgrade",
+      "summary": "Coleman-Mach frames the Wi-Fi thermostat as an upgrade path across 12VDC digital Bluetooth, analog, digital, 24VAC, single-stage, and dual-stage systems, but the compatibility guide warns that some features may operate differently depending on the system.",
+      "safeChecklist": [
+        "Identify the current thermostat model, rooftop unit family, and control type from labels or manuals before ordering.",
+        "Compare the coach against the Coleman-Mach compatibility guide, including 12VDC, 24VAC, analog, Bluetooth, single-stage, and dual-stage notes.",
+        "Stop at the compatibility check and do not start an upgrade when the system type is unclear.",
+        "Use a qualified installer for incompatible systems, unclear labels, or any setup that does not match the compatibility guide."
+      ],
+      "sourceIds": [
+        "coleman-wifi-thermostat-product-page",
+        "coleman-wifi-thermostat-compatibility-guide"
+      ],
+      "searchAliases": [
+        "coleman mach wifi thermostat compatibility 12vdc analog bluetooth upgrade",
+        "coleman mach wifi thermostat not compatible",
+        "coleman mach 9420-391 12vdc 24vac analog thermostat compatibility",
+        "coleman mach bluetooth thermostat upgrade wifi thermostat",
+        "coleman mach old thermostat wifi upgrade features may operate differently"
+      ]
+    },
+    {
+      "id": "coleman-wifi-thermostat-eco-comfort-schedule-mode",
+      "slug": "coleman-mach-wifi-thermostat-eco-comfort-schedule-mode",
+      "title": "Coleman-Mach Wi-Fi thermostat Eco, Comfort, or schedule mode surprise",
+      "summary": "Coleman-Mach lists Eco, Comfort, and Scheduling modes plus fan-speed and mode control for the Wi-Fi thermostat; a scheduled or app-selected mode can make the HVAC respond differently than a simple manual setpoint change.",
+      "safeChecklist": [
+        "Check whether Eco, Comfort, or Scheduling mode is active before treating the HVAC response as a failure.",
+        "Compare the app setpoint, fan speed, and mode against the local thermostat display.",
+        "Temporarily suspend the schedule from normal app or local thermostat controls and retry a simple heat or cool call.",
+        "Record screenshots, local thermostat display, time, zone, and fan speed before calling qualified RV HVAC service."
+      ],
+      "sourceIds": [
+        "coleman-wifi-thermostat-product-page",
+        "coleman-wifi-thermostat-compatibility-guide"
+      ],
+      "searchAliases": [
+        "coleman mach wifi thermostat eco comfort scheduling modes fan speed",
+        "coleman mach wifi thermostat schedule missing",
+        "9420-391 scheduling app only eco comfort mode",
+        "coleman mach wifi thermostat fan speed app mode",
+        "coleman mach connected control thermostat schedule setpoint mismatch"
+      ]
+    },
+    {
+      "id": "coleman-48000-heat-pump-high-pressure-lockout",
+      "slug": "coleman-mach-48000-heat-pump-high-pressure-lockout",
+      "title": "Coleman-Mach 48000 heat pump high-pressure switch lockout",
+      "summary": "The Coleman-Mach 48000 heat-pump manual says the High Pressure Switch can lock out compressor operation after abnormal conditions such as dirty filters, dirty condenser coil, or fan-motor failure, and repeated trips require a qualified technician.",
+      "safeChecklist": [
+        "Stop the heat or cool call from normal controls if the 48000 heat pump locks out or trips repeatedly.",
+        "Clean owner-accessible filters and restore normal airflow before another heating or cooling attempt.",
+        "Record outdoor temperature, filter condition, fan behavior, operating mode, and whether the lockout returns after a normal restart.",
+        "Use a qualified technician for repeated lockout, dirty condenser coil, fan-motor failure, compressor lockout, or internal equipment diagnosis."
+      ],
+      "sourceIds": [
+        "coleman-48000-heat-pump-owner-1980-023"
+      ],
+      "searchAliases": [
+        "coleman mach 48000 heat pump high pressure switch lockout dirty filters",
+        "coleman mach 48000 high pressure switch compressor lockout",
+        "48000 heat pump dirty filters fan motor failure qualified technician",
+        "coleman mach 48000 heat pump compressor locked out dirty condenser coil"
       ]
     },
     {

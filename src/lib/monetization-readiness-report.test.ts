@@ -204,7 +204,7 @@ describe("monetization readiness report", () => {
       source: "reports/gsc-weekly-traffic.json",
     });
     expect(report.nextAutomatedBatchGoal).toBe(
-      "Triage official Coleman-Mach Wi-Fi/48000 thermostat and rooftop AC symptom-only sources, then add only owner-safe guides without inventing code entries.",
+      "Triage official Coleman-Mach 48000 AC owner manual and 2025 catalog sources, then enrich existing rooftop AC guides or add only non-duplicate owner-safe symptom pages.",
     );
     expect(readFileSync("README.md", "utf8")).toContain("npm run traffic:monetization");
     expect(readFileSync("TODO.md", "utf8")).toContain(
