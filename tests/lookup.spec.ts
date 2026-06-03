@@ -1611,6 +1611,67 @@ test("lookup surfaces the manufacturer support-extension service-prep pages", as
   expect(pageErrors).toEqual([]);
 });
 
+test("lookup surfaces support-gap extension pages without generic hijacks", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    ["dometic brisk ac data tag mfg model maintenance", "/symptoms/dometic-brisk-ac-maintenance-data-tag-prep/"],
+    ["freshjet campsite power startup current delay fuse", "/symptoms/dometic-freshjet-campsite-power-startup-prep/"],
+    ["furrion net-zero power converter model support", "/symptoms/furrion-power-converter-model-support-routing-prep/"],
+    [
+      "lippert power gear hydraulic leveling touchpad owner manual",
+      "/symptoms/lippert-power-gear-hydraulic-leveling-touchpad-service-prep/",
+    ],
+    ["coleman underbunk ub11 ub15 washable filter service prep", "/symptoms/coleman-underbunk-ac-filter-model-service-prep/"],
+    ["maxxair pivot 00-61000 directional fan control", "/symptoms/maxxair-pivot-model-control-prep/"],
+    ["porta potti 245 bellows level indicator storage", "/symptoms/thetford-porta-potti-235-245-255-265-storage-flush-prep/"],
+    ["onan green label parts model spec qg 5500", "/symptoms/onan-green-label-parts-model-spec-service-prep/"],
+  ] as const;
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+  }
+
+  await searchbox.fill("power converter");
+  await expect(lookupResults.locator('a[href="/symptoms/furrion-power-converter-model-support-routing-prep/"]')).toHaveCount(0);
+
+  await searchbox.fill("hydraulic leveling");
+  await expect(lookupResults.locator('a[href="/symptoms/lippert-power-gear-hydraulic-leveling-touchpad-service-prep/"]')).toHaveCount(0);
+
+  await searchbox.fill("parts list");
+  await expect(lookupResults.locator('a[href="/symptoms/norcold-polar-n7x-n8x-support-manual-parts-prep/"]')).toHaveCount(0);
+
+  await searchbox.fill("dometic brisk ac data tag mfg model maintenance");
+  const dataTag = lookupResults.locator('a[href="/symptoms/dometic-brisk-ac-maintenance-data-tag-prep/"]');
+  await expect(dataTag).toBeVisible();
+  await dataTag.click();
+  await expect(page.getByRole("heading", { name: "Dometic Brisk AC maintenance data-tag prep" })).toBeVisible();
+  await expect(page.getByText(/Use the accessible inside data tag/i)).toBeVisible();
+
+  await page.goto("/");
+  await page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" }).fill("onan green label parts model spec qg 5500");
+  const onanGreenLabel = page
+    .locator('section[aria-label="Lookup results"]')
+    .locator('a[href="/symptoms/onan-green-label-parts-model-spec-service-prep/"]');
+  await expect(onanGreenLabel).toBeVisible();
+  await onanGreenLabel.click();
+  await expect(page.getByRole("heading", { name: "Onan Green Label parts model/spec service prep" })).toBeVisible();
+  await expect(page.getByText(/Record generator model, spec letter, serial number, hour meter/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 

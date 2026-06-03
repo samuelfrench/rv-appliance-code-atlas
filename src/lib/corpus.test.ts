@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 850;
-const expectedSourceCount = 538;
-const expectedSymptomCount = 372;
+const expectedSourceCount = 562;
+const expectedSymptomCount = 396;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -6564,6 +6564,249 @@ describe("verified corpus", () => {
     expect(lookupSymptomGuides(index, "coach care").map((symptom) => symptom.slug)).not.toContain(
       "onan-rv-generator-warranty-coach-care-service-prep",
     );
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds the official support-gap extension batch without code entries", () => {
+    const expectedSources = new Map<string, string>([
+      [
+        "dometic-brisk-ac-maintain-data-tags-support",
+        "https://support.dometic.com/en/brisk-ac/How-to-maintain-the-air-conditioner-952a",
+      ],
+      [
+        "dometic-brisk-ac-temperature-control-support",
+        "https://support.dometic.com/en/brisk-ac/How-to-control-the-temperature-fb34",
+      ],
+      [
+        "dometic-freshjet-campsite-power-support",
+        "https://support.dometic.com/en/freshjet-ac/How-to-run-my-RV-air-conditioner-on-the-campsite-cc4b",
+      ],
+      [
+        "dometic-ibis-ac-not-cooling-mode-support",
+        "https://support.dometic.com/en/ibis-ac/My-air-conditioner-is-not-cooling-well-584f",
+      ],
+      [
+        "dometic-ibis-ac-filter-efficiency-support",
+        "https://support.dometic.com/en/ibis-ac/What-should-I-do-to-make-sure-the-filter-on-my-rooftop-unit-is-clean-for-maximum-efficiency-2dad",
+      ],
+      ["dometic-affected-on-recall-action", "https://www.dometic.com/en-us/affected-on-recall"],
+      ["furrion-vent-fans-support-router", "https://support.lci1.com/vent-fans"],
+      ["furrion-ranges-support-router", "https://support.lci1.com/ranges"],
+      ["furrion-ovens-support-router", "https://support.lci1.com/ovens"],
+      ["furrion-power-converters-support-router", "https://support.lci1.com/power-converters"],
+      ["lippert-onecontrol-wireless-support-router", "https://support.lci1.com/onecontrol-wireless-formerly-myrv"],
+      ["lippert-power-gear-hydraulic-leveling-support", "https://support.lci1.com/power-gear-hydraulic-leveling-system"],
+      ["coleman-underbunk-central-ac-product", "https://coleman-mach.com/products/air-conditioners/Underbunk-series/"],
+      ["coleman-ceiling-assemblies-electric-heat-kits", "https://coleman-mach.com/products/ceiling-assemblies/default.aspx"],
+      ["maxxair-maxxfan-pivot-product", "https://www.maxxair.com/products/fans/maxxfan-pivot/"],
+      ["maxxair-maxxshades-category", "https://www.maxxair.com/Products/maxxshades/default.aspx"],
+      ["suburban-tank-water-heaters-product-family", "https://suburbanrv.com/water-heating/tank-water-heaters/"],
+      ["aquahot-125m-product-page", "https://www.aquahot.com/Products/RV/125m.aspx"],
+      [
+        "thetford-porta-potti-235-245-255-265-support",
+        "https://www.thetford.com/us/thetford-support/porta-potti-234-245-255-265/",
+      ],
+      [
+        "thetford-porta-potti-current-model-identification",
+        "https://www.thetford.com/app/uploads/2024/10/Porta-Potti-Serial-Number-Identification-and-Current-Part-Numbers.pdf",
+      ],
+      ["thetford-aqua-magic-residence-support", "https://thetford.com/us/thetford-support/aqua-magic-residence/"],
+      ["norcold-polar-n7x-support", "https://www.thetford.com/us/thetford-support/n7x/"],
+      ["norcold-n6-n8-series-support", "https://thetford.com/us/thetford-support/n6-n8-series/"],
+      ["onan-green-label-parts-reference-0075650", "https://mart.cummins.com/imagelibrary/data/assetfiles/0075650.pdf"],
+    ]);
+    const expectedSymptomSourceIds = new Map<string, string[]>([
+      ["dometic-brisk-ac-maintenance-data-tag-prep", ["dometic-brisk-ac-maintain-data-tags-support"]],
+      ["dometic-brisk-ac-temperature-thermostat-selector-prep", ["dometic-brisk-ac-temperature-control-support"]],
+      ["dometic-freshjet-campsite-power-startup-prep", ["dometic-freshjet-campsite-power-support"]],
+      ["dometic-ibis-ac-not-cooling-mode-prep", ["dometic-ibis-ac-not-cooling-mode-support"]],
+      ["dometic-ibis-ac-filter-maintenance-prep", ["dometic-ibis-ac-filter-efficiency-support"]],
+      ["dometic-refrigerator-recall-affected-action-prep", ["dometic-affected-on-recall-action"]],
+      ["furrion-vent-fan-model-control-service-prep", ["furrion-vent-fans-support-router"]],
+      ["furrion-range-model-manual-router-prep", ["furrion-ranges-support-router"]],
+      ["furrion-oven-chef-collection-model-manual-router", ["furrion-ovens-support-router"]],
+      ["furrion-power-converter-model-support-routing-prep", ["furrion-power-converters-support-router"]],
+      ["lippert-onecontrol-wireless-app-control-state-prep", ["lippert-onecontrol-wireless-support-router"]],
+      ["lippert-power-gear-hydraulic-leveling-touchpad-service-prep", ["lippert-power-gear-hydraulic-leveling-support"]],
+      ["coleman-underbunk-ac-filter-model-service-prep", ["coleman-underbunk-central-ac-product"]],
+      ["coleman-ceiling-assembly-control-box-part-capture", ["coleman-ceiling-assemblies-electric-heat-kits"]],
+      ["maxxair-pivot-model-control-prep", ["maxxair-maxxfan-pivot-product"]],
+      ["maxxair-maxxshade-vent-fan-compatibility-prep", ["maxxair-maxxshades-category"]],
+      ["suburban-tank-water-heater-family-model-prep", ["suburban-tank-water-heaters-product-family"]],
+      ["aquahot-125m-lcd-model-service-routing", ["aquahot-125m-product-page"]],
+      ["thetford-porta-potti-235-245-255-265-storage-flush-prep", ["thetford-porta-potti-235-245-255-265-support"]],
+      ["thetford-porta-potti-current-model-identification-prep", ["thetford-porta-potti-current-model-identification"]],
+      ["thetford-aqua-magic-residence-model-parts-service-prep", ["thetford-aqua-magic-residence-support"]],
+      ["norcold-polar-n7x-n8x-support-manual-parts-prep", ["norcold-polar-n7x-support"]],
+      ["norcold-n6-n8-series-control-storage-support-prep", ["norcold-n6-n8-series-support"]],
+      ["onan-green-label-parts-model-spec-service-prep", ["onan-green-label-parts-reference-0075650"]],
+    ]);
+    const expectedRequiredTerms = new Map<string, string[]>([
+      ["dometic-brisk-ac-maintenance-data-tag-prep", ["brisk"]],
+      ["dometic-brisk-ac-temperature-thermostat-selector-prep", ["brisk"]],
+      ["dometic-freshjet-campsite-power-startup-prep", ["freshjet"]],
+      ["dometic-ibis-ac-not-cooling-mode-prep", ["ibis"]],
+      ["dometic-ibis-ac-filter-maintenance-prep", ["ibis"]],
+      ["dometic-refrigerator-recall-affected-action-prep", ["dometic"]],
+      ["furrion-vent-fan-model-control-service-prep", ["electronic", "furrion"]],
+      ["furrion-range-model-manual-router-prep", ["airfry", "furrion"]],
+      ["furrion-oven-chef-collection-model-manual-router", ["chef", "furrion"]],
+      ["furrion-power-converter-model-support-routing-prep", ["netzero", "furrion"]],
+      ["lippert-onecontrol-wireless-app-control-state-prep", ["onecontrol"]],
+      ["lippert-power-gear-hydraulic-leveling-touchpad-service-prep", ["powergear", "lippert", "powerlevel"]],
+      ["coleman-underbunk-ac-filter-model-service-prep", ["underbunk"]],
+      ["coleman-ceiling-assembly-control-box-part-capture", ["controlbox", "coleman"]],
+      ["maxxair-pivot-model-control-prep", ["pivot"]],
+      ["maxxair-maxxshade-vent-fan-compatibility-prep", ["maxxshade"]],
+      ["suburban-tank-water-heater-family-model-prep", ["suburban"]],
+      ["aquahot-125m-lcd-model-service-routing", ["125m"]],
+      ["thetford-porta-potti-235-245-255-265-storage-flush-prep", ["245"]],
+      ["thetford-porta-potti-current-model-identification-prep", ["565e", "thetford"]],
+      ["thetford-aqua-magic-residence-model-parts-service-prep", ["residence"]],
+      ["norcold-polar-n7x-n8x-support-manual-parts-prep", ["n7x"]],
+      ["norcold-n6-n8-series-control-storage-support-prep", ["n6"]],
+      ["onan-green-label-parts-model-spec-service-prep", ["greenlabel", "onan", "cummins"]],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const sourcesById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const index = buildSymptomSearchIndex(corpus);
+    const summary = summarizeCorpus(corpus);
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\bline-voltage\b|\brefrigerant\b|\bprobe\b|\bwiring\b|\binternal\b|\broof\b|\bsupply line\b|\bopen (the )?(fuel|gas|electrical|rooftop)|remove.*shroud|remove.*cover|measure resistance|fuel nozzle|combustion|coolant pump|manual override|hydraulic work|hydraulic repair/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = sourcesById.get(sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(summary.indexablePages).toBe(expectedEntryCount + expectedSymptomCount + 1);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const [symptomId, sourceIds] of expectedSymptomSourceIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds, symptomId).toEqual(sourceIds);
+      expect(symptom?.searchRequiredTerms, symptomId).toEqual(expectedRequiredTerms.get(symptomId));
+      expect([symptom?.summary, ...(symptom?.safeChecklist ?? [])].join(" "), symptomId).not.toMatch(
+        unsafeOwnerActionPattern,
+      );
+    }
+
+    for (const symptomId of expectedSymptomSourceIds.keys()) {
+      const symptom = symptomById.get(symptomId);
+      for (const alias of symptom?.searchAliases ?? []) {
+        expect(
+          lookupSymptomGuides(index, alias)
+            .slice(0, 4)
+            .map((result) => result.slug),
+          `${symptomId}: ${alias}`,
+        ).toContain(symptom?.slug);
+      }
+    }
+
+    expect(lookupSymptomGuides(index, "dometic brisk ac data tag mfg model maintenance")[0]?.slug).toBe(
+      "dometic-brisk-ac-maintenance-data-tag-prep",
+    );
+    expect(lookupSymptomGuides(index, "dometic brisk temperature thermostat selector")[0]?.slug).toBe(
+      "dometic-brisk-ac-temperature-thermostat-selector-prep",
+    );
+    expect(lookupSymptomGuides(index, "freshjet campsite power startup current delay fuse")[0]?.slug).toBe(
+      "dometic-freshjet-campsite-power-startup-prep",
+    );
+    expect(lookupSymptomGuides(index, "dometic ibis cooling mode not cooling well")[0]?.slug).toBe(
+      "dometic-ibis-ac-not-cooling-mode-prep",
+    );
+    expect(lookupSymptomGuides(index, "ibis filter return air grille maximum efficiency")[0]?.slug).toBe(
+      "dometic-ibis-ac-filter-maintenance-prep",
+    );
+    expect(lookupSymptomGuides(index, "dometic refrigerator recall affected on recall kit rm2652")[0]?.slug).toBe(
+      "dometic-refrigerator-recall-affected-action-prep",
+    );
+    expect(lookupSymptomGuides(index, "furrion vent fan electronic lid model support")[0]?.slug).toBe(
+      "furrion-vent-fan-model-control-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "furrion range chef collection air fry manual model")[0]?.slug).toBe(
+      "furrion-range-model-manual-router-prep",
+    );
+    expect(lookupSymptomGuides(index, "furrion oven chef collection model manual")[0]?.slug).toBe(
+      "furrion-oven-chef-collection-model-manual-router",
+    );
+    expect(lookupSymptomGuides(index, "furrion net-zero power converter model support")[0]?.slug).toBe(
+      "furrion-power-converter-model-support-routing-prep",
+    );
+    expect(lookupSymptomGuides(index, "lippert onecontrol wireless myrv touch panel app setup")[0]?.slug).toBe(
+      "lippert-onecontrol-wireless-app-control-state-prep",
+    );
+    expect(lookupSymptomGuides(index, "lippert power gear hydraulic leveling touchpad owner manual")[0]?.slug).toBe(
+      "lippert-power-gear-hydraulic-leveling-touchpad-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "coleman underbunk ub11 ub15 washable filter service prep")[0]?.slug).toBe(
+      "coleman-underbunk-ac-filter-model-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "coleman ceiling assembly control box electric heat kit")[0]?.slug).toBe(
+      "coleman-ceiling-assembly-control-box-part-capture",
+    );
+    expect(lookupSymptomGuides(index, "maxxair pivot 00-61000 directional fan control")[0]?.slug).toBe(
+      "maxxair-pivot-model-control-prep",
+    );
+    expect(lookupSymptomGuides(index, "maxxair maxxshade plus 00-03901 vent fan compatibility")[0]?.slug).toBe(
+      "maxxair-maxxshade-vent-fan-compatibility-prep",
+    );
+    expect(lookupSymptomGuides(index, "suburban tank water heater 6 gallon 10 gallon anode model")[0]?.slug).toBe(
+      "suburban-tank-water-heater-family-model-prep",
+    );
+    expect(lookupSymptomGuides(index, "aquahot 125m lcd modular zones service routing")[0]?.slug).toBe(
+      "aquahot-125m-lcd-model-service-routing",
+    );
+    expect(lookupSymptomGuides(index, "porta potti 245 bellows level indicator storage")[0]?.slug).toBe(
+      "thetford-porta-potti-235-245-255-265-storage-flush-prep",
+    );
+    expect(lookupSymptomGuides(index, "porta potti serial current model 565e 365 345")[0]?.slug).toBe(
+      "thetford-porta-potti-current-model-identification-prep",
+    );
+    expect(lookupSymptomGuides(index, "aqua magic residence slow close single pedal parts list")[0]?.slug).toBe(
+      "thetford-aqua-magic-residence-model-parts-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "norcold polar n7x n8x model tag parts list")[0]?.slug).toBe(
+      "norcold-polar-n7x-n8x-support-manual-parts-prep",
+    );
+    expect(lookupSymptomGuides(index, "norcold n6 n8 series storage latches diagnostics door ajar")[0]?.slug).toBe(
+      "norcold-n6-n8-series-control-storage-support-prep",
+    );
+    expect(lookupSymptomGuides(index, "onan green label parts model spec qg 5500")[0]?.slug).toBe(
+      "onan-green-label-parts-model-spec-service-prep",
+    );
+
+    const anchoredSlugs = new Set(expectedSymptomSourceIds.keys());
+    for (const query of [
+      "data tag",
+      "temperature control",
+      "campsite power",
+      "filter maintenance",
+      "recall",
+      "vent fan",
+      "range manual",
+      "oven manual",
+      "power converter",
+      "hydraulic leveling",
+      "ceiling assembly",
+      "tank water heater",
+      "parts list",
+      "model serial",
+    ]) {
+      expect(
+        lookupSymptomGuides(index, query)
+          .slice(0, 5)
+          .map((symptom) => symptom.slug)
+          .filter((slug) => anchoredSlugs.has(slug)),
+        query,
+      ).toEqual([]);
+    }
     expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
   });
 });

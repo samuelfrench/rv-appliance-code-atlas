@@ -4329,6 +4329,198 @@
       "url": "https://mart.cummins.com/imagelibrary/data/assetfiles/0043135.pdf",
       "type": "manufacturer-brochure",
       "official": true
+    },
+    {
+      "id": "dometic-brisk-ac-maintain-data-tags-support",
+      "brand": "Dometic",
+      "title": "Dometic Brisk AC Maintain Air Conditioner Support",
+      "url": "https://support.dometic.com/en/brisk-ac/How-to-maintain-the-air-conditioner-952a",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-brisk-ac-temperature-control-support",
+      "brand": "Dometic",
+      "title": "Dometic Brisk AC Temperature Control Support",
+      "url": "https://support.dometic.com/en/brisk-ac/How-to-control-the-temperature-fb34",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-freshjet-campsite-power-support",
+      "brand": "Dometic",
+      "title": "Dometic FreshJet Campsite Power Support",
+      "url": "https://support.dometic.com/en/freshjet-ac/How-to-run-my-RV-air-conditioner-on-the-campsite-cc4b",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ibis-ac-not-cooling-mode-support",
+      "brand": "Dometic",
+      "title": "Dometic Ibis AC Not Cooling Support",
+      "url": "https://support.dometic.com/en/ibis-ac/My-air-conditioner-is-not-cooling-well-584f",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ibis-ac-filter-efficiency-support",
+      "brand": "Dometic",
+      "title": "Dometic Ibis AC Filter Efficiency Support",
+      "url": "https://support.dometic.com/en/ibis-ac/What-should-I-do-to-make-sure-the-filter-on-my-rooftop-unit-is-clean-for-maximum-efficiency-2dad",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-affected-on-recall-action",
+      "brand": "Dometic",
+      "title": "Dometic Affected On Recall Action Page",
+      "url": "https://www.dometic.com/en-us/affected-on-recall",
+      "type": "manufacturer-recall",
+      "official": true
+    },
+    {
+      "id": "furrion-vent-fans-support-router",
+      "brand": "Furrion",
+      "title": "Lippert Furrion Vent Fans Support Router",
+      "url": "https://support.lci1.com/vent-fans",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-ranges-support-router",
+      "brand": "Furrion",
+      "title": "Lippert Furrion Ranges Support Router",
+      "url": "https://support.lci1.com/ranges",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-ovens-support-router",
+      "brand": "Furrion",
+      "title": "Lippert Furrion Ovens Support Router",
+      "url": "https://support.lci1.com/ovens",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-power-converters-support-router",
+      "brand": "Furrion",
+      "title": "Lippert Furrion Power Converters Support Router",
+      "url": "https://support.lci1.com/power-converters",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "lippert-onecontrol-wireless-support-router",
+      "brand": "Lippert",
+      "title": "Lippert OneControl Wireless Support Router",
+      "url": "https://support.lci1.com/onecontrol-wireless-formerly-myrv",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "lippert-power-gear-hydraulic-leveling-support",
+      "brand": "Lippert",
+      "title": "Lippert Power Gear Hydraulic Leveling Support",
+      "url": "https://support.lci1.com/power-gear-hydraulic-leveling-system",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "coleman-underbunk-central-ac-product",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Underbunk Central AC Product Page",
+      "url": "https://coleman-mach.com/products/air-conditioners/Underbunk-series/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "coleman-ceiling-assemblies-electric-heat-kits",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Ceiling Assemblies and Electric Heat Kits",
+      "url": "https://coleman-mach.com/products/ceiling-assemblies/default.aspx",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-maxxfan-pivot-product",
+      "brand": "MaxxAir",
+      "title": "MaxxAir MaxxFan Pivot Product Page",
+      "url": "https://www.maxxair.com/products/fans/maxxfan-pivot/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-maxxshades-category",
+      "brand": "MaxxAir",
+      "title": "MaxxAir MaxxShades Product Category",
+      "url": "https://www.maxxair.com/Products/maxxshades/default.aspx",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "suburban-tank-water-heaters-product-family",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban Tank Water Heaters Product Family",
+      "url": "https://suburbanrv.com/water-heating/tank-water-heaters/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "aquahot-125m-product-page",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot 125M Product Page",
+      "url": "https://www.aquahot.com/Products/RV/125m.aspx",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "thetford-porta-potti-235-245-255-265-support",
+      "brand": "Thetford",
+      "title": "Thetford Porta Potti 235/245/255/265 Support",
+      "url": "https://www.thetford.com/us/thetford-support/porta-potti-234-245-255-265/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-porta-potti-current-model-identification",
+      "brand": "Thetford",
+      "title": "Thetford Porta Potti Current Model Identification PDF",
+      "url": "https://www.thetford.com/app/uploads/2024/10/Porta-Potti-Serial-Number-Identification-and-Current-Part-Numbers.pdf",
+      "type": "manufacturer-pdf",
+      "official": true
+    },
+    {
+      "id": "thetford-aqua-magic-residence-support",
+      "brand": "Thetford",
+      "title": "Thetford Aqua-Magic Residence Support",
+      "url": "https://thetford.com/us/thetford-support/aqua-magic-residence/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-polar-n7x-support",
+      "brand": "Norcold",
+      "title": "Thetford Norcold Polar N7X Support",
+      "url": "https://www.thetford.com/us/thetford-support/n7x/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-n6-n8-series-support",
+      "brand": "Norcold",
+      "title": "Thetford Norcold N6/N8 Series Support",
+      "url": "https://thetford.com/us/thetford-support/n6-n8-series/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "onan-green-label-parts-reference-0075650",
+      "brand": "Onan",
+      "title": "Cummins Onan Green Label Parts Reference 0075650",
+      "url": "https://mart.cummins.com/imagelibrary/data/assetfiles/0075650.pdf",
+      "type": "manufacturer-pdf",
+      "official": true
     }
   ],
   "entries": [
@@ -37133,7 +37325,31 @@
         "norcold-fault-code-routing-faq",
         "norcold-n15dc-support",
         "thetford-porta-potti-565e-support",
-        "onan-rv-lifestyle-coach-care-0043135"
+        "onan-rv-lifestyle-coach-care-0043135",
+        "dometic-brisk-ac-maintain-data-tags-support",
+        "dometic-brisk-ac-temperature-control-support",
+        "dometic-freshjet-campsite-power-support",
+        "dometic-ibis-ac-not-cooling-mode-support",
+        "dometic-ibis-ac-filter-efficiency-support",
+        "dometic-affected-on-recall-action",
+        "furrion-vent-fans-support-router",
+        "furrion-ranges-support-router",
+        "furrion-ovens-support-router",
+        "furrion-power-converters-support-router",
+        "lippert-onecontrol-wireless-support-router",
+        "lippert-power-gear-hydraulic-leveling-support",
+        "coleman-underbunk-central-ac-product",
+        "coleman-ceiling-assemblies-electric-heat-kits",
+        "maxxair-maxxfan-pivot-product",
+        "maxxair-maxxshades-category",
+        "suburban-tank-water-heaters-product-family",
+        "aquahot-125m-product-page",
+        "thetford-porta-potti-235-245-255-265-support",
+        "thetford-porta-potti-current-model-identification",
+        "thetford-aqua-magic-residence-support",
+        "norcold-polar-n7x-support",
+        "norcold-n6-n8-series-support",
+        "onan-green-label-parts-reference-0075650"
       ]
     },
     {
@@ -43605,6 +43821,568 @@
         "onan generator model spec serial coach care service prep"
       ],
       "searchRequiredTerms": [
+        "onan",
+        "cummins"
+      ]
+    },
+    {
+      "id": "dometic-brisk-ac-maintenance-data-tag-prep",
+      "slug": "dometic-brisk-ac-maintenance-data-tag-prep",
+      "title": "Dometic Brisk AC maintenance data-tag prep",
+      "summary": "Use this when a Dometic Brisk AC owner needs model, MFG, or maintenance notes from the accessible data tag before support.",
+      "safeChecklist": [
+        "Use the accessible inside data tag to record model, MFG, serial, air-conditioner family, thermostat type, and maintenance timing.",
+        "Record filter condition, airflow complaint, weather, campsite power behavior, and any photos available without disassembly.",
+        "Stop use for burning odor, repeated breaker trips, water inside the coach, or abnormal noise.",
+        "Use a Dometic authorized service provider for diagnosis, parts, access to the upper unit, or electrical/HVAC repairs."
+      ],
+      "sourceIds": [
+        "dometic-brisk-ac-maintain-data-tags-support"
+      ],
+      "searchAliases": [
+        "Dometic Brisk AC data tag MFG model maintenance",
+        "brisk air conditioner data tag inside label service prep",
+        "dometic brisk maintenance data tag model serial"
+      ],
+      "searchRequiredTerms": [
+        "brisk"
+      ]
+    },
+    {
+      "id": "dometic-brisk-ac-temperature-thermostat-selector-prep",
+      "slug": "dometic-brisk-ac-temperature-thermostat-selector-prep",
+      "title": "Dometic Brisk AC temperature thermostat selector prep",
+      "summary": "Use this when a Brisk AC owner is unsure which thermostat or selector controls temperature before service support.",
+      "safeChecklist": [
+        "Record Brisk model data, thermostat style, selector position, mode, fan setting, set temperature, room temperature, and whether cooling responds.",
+        "Use only normal thermostat or selector observations from the coach interior.",
+        "Stop use for burning odor, repeated breaker trips, water inside the coach, or abnormal sound.",
+        "Use Dometic support or qualified RV HVAC service for thermostat, sensor, control, or cooling diagnosis beyond normal settings."
+      ],
+      "sourceIds": [
+        "dometic-brisk-ac-temperature-control-support"
+      ],
+      "searchAliases": [
+        "Dometic Brisk temperature thermostat selector",
+        "brisk ac temperature control which thermostat",
+        "brisk ac adb ccc single zone bimetal control prep"
+      ],
+      "searchRequiredTerms": [
+        "brisk"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-campsite-power-startup-prep",
+      "slug": "dometic-freshjet-campsite-power-startup-prep",
+      "title": "Dometic FreshJet campsite power startup prep",
+      "summary": "Use this when a FreshJet owner needs campsite-power and startup-current notes before support.",
+      "safeChecklist": [
+        "Record FreshJet model, thermostat type, campsite power rating, generator or inverter use, startup behavior, and whether other loads were running.",
+        "Ask campsite management about available hookup capacity if the air conditioner struggles at startup.",
+        "Stop use for repeated breaker trips, burning odor, abnormal noise, or water inside the coach.",
+        "Use qualified RV HVAC or electrical service for repeated startup failure, breaker trips, or power-supply diagnosis."
+      ],
+      "sourceIds": [
+        "dometic-freshjet-campsite-power-support"
+      ],
+      "searchAliases": [
+        "FreshJet campsite power startup current delay fuse",
+        "dometic freshjet shore power startup current service prep",
+        "freshjet ac campsite hookup inverter startup service"
+      ],
+      "searchRequiredTerms": [
+        "freshjet"
+      ]
+    },
+    {
+      "id": "dometic-ibis-ac-not-cooling-mode-prep",
+      "slug": "dometic-ibis-ac-not-cooling-mode-prep",
+      "title": "Dometic Ibis AC cooling-mode prep",
+      "summary": "Use this when an Ibis AC owner reports weak cooling and needs mode-control notes before service.",
+      "safeChecklist": [
+        "Record Ibis model, remote or panel mode, set temperature, fan setting, room temperature, outside temperature, and whether cooling mode is selected.",
+        "Use normal owner controls only to confirm the unit is set to cooling mode.",
+        "Stop use for burning odor, repeated breaker trips, water inside the coach, or abnormal noise.",
+        "Use Dometic support or qualified RV HVAC service for cooling, sensor, sealed-system, or electrical diagnosis."
+      ],
+      "sourceIds": [
+        "dometic-ibis-ac-not-cooling-mode-support"
+      ],
+      "searchAliases": [
+        "Dometic Ibis cooling mode not cooling well",
+        "ibis ac not cooling mode button service prep",
+        "dometic ibis air conditioner cooling mode prep"
+      ],
+      "searchRequiredTerms": [
+        "ibis"
+      ]
+    },
+    {
+      "id": "dometic-ibis-ac-filter-maintenance-prep",
+      "slug": "dometic-ibis-ac-filter-maintenance-prep",
+      "title": "Dometic Ibis AC filter maintenance prep",
+      "summary": "Use this when an Ibis AC owner needs safe return-air filter notes before support.",
+      "safeChecklist": [
+        "Record Ibis model, filter condition, cleaning date, return-air grille condition, airflow complaint, and whether the unit was run without a filter.",
+        "Clean only the owner-accessible return-air filter according to the official support page.",
+        "Do not operate the air conditioner without the filter installed.",
+        "Use Dometic support or qualified RV HVAC service for persistent low airflow, icing, water inside, abnormal noise, or cooling loss."
+      ],
+      "sourceIds": [
+        "dometic-ibis-ac-filter-efficiency-support"
+      ],
+      "searchAliases": [
+        "Ibis filter return air grille maximum efficiency",
+        "dometic ibis ac filter maintenance support",
+        "ibis rooftop unit clean filter service prep"
+      ],
+      "searchRequiredTerms": [
+        "ibis"
+      ]
+    },
+    {
+      "id": "dometic-refrigerator-recall-affected-action-prep",
+      "slug": "dometic-refrigerator-recall-affected-action-prep",
+      "title": "Dometic refrigerator affected-recall action prep",
+      "summary": "Use this when a Dometic refrigerator owner believes the unit is affected by recall action and needs safe routing notes.",
+      "safeChecklist": [
+        "Record refrigerator model, serial number, recall notice number, warning signs, cooling status, odor, and support history.",
+        "Stop using the refrigerator immediately for yellow residue, ammonia smell, cooling-unit leak signs, overheating, or recall warning signs.",
+        "Do not treat recall information as permission to install a recall kit yourself.",
+        "Use Dometic recall support, a Dometic service center, or a qualified RV service technician for recall verification and repair."
+      ],
+      "sourceIds": [
+        "dometic-affected-on-recall-action"
+      ],
+      "searchAliases": [
+        "Dometic refrigerator recall affected on recall kit RM2652",
+        "dometic affected on recall 06e 076 08e 032 service prep",
+        "dometic recall action stop using refrigerator"
+      ],
+      "searchRequiredTerms": [
+        "dometic"
+      ]
+    },
+    {
+      "id": "furrion-vent-fan-model-control-service-prep",
+      "slug": "furrion-vent-fan-model-control-service-prep",
+      "title": "Furrion vent fan model and control service prep",
+      "summary": "Use this when a Furrion vent-fan owner needs model, lid, control, or support-router notes before service.",
+      "safeChecklist": [
+        "Record vent-fan model, serial or label details, lid position, keypad or remote behavior, fan speed, rain state, and exact symptom.",
+        "Use only normal owner controls and visible labels before contacting support.",
+        "Stop use and secure the fan if the lid will not close, water enters the coach, or the fan behaves unexpectedly.",
+        "Use Lippert/Furrion support or qualified RV ventilation service for parts, motor, sensor, or power diagnosis."
+      ],
+      "sourceIds": [
+        "furrion-vent-fans-support-router"
+      ],
+      "searchAliases": [
+        "Furrion vent fan electronic lid model support",
+        "furrion 14 inch vent fan not opening label service prep",
+        "furrion vent fan control service prep"
+      ],
+      "searchRequiredTerms": [
+        "electronic",
+        "furrion"
+      ]
+    },
+    {
+      "id": "furrion-range-model-manual-router-prep",
+      "slug": "furrion-range-model-manual-router-prep",
+      "title": "Furrion range model manual router prep",
+      "summary": "Use this when a Furrion range owner needs model, manual, or support-router notes without gas-service instructions.",
+      "safeChecklist": [
+        "Record range model, serial or production label, oven/range family, control behavior, odor, flame observation, and exact symptom.",
+        "Use the official Furrion range support page to find the correct manual or label resource before contacting support.",
+        "Stop use for gas odor, yellow flame, repeated ignition failure, carbon-monoxide alarm, overheating, or abnormal operation.",
+        "Use qualified RV gas appliance service for ignition, flame, oven, parts, warranty, or repair decisions."
+      ],
+      "sourceIds": [
+        "furrion-ranges-support-router"
+      ],
+      "searchAliases": [
+        "Furrion range Chef Collection air fry manual model",
+        "furrion 24 chef range model manual support",
+        "furrion range manual model support prep"
+      ],
+      "searchRequiredTerms": [
+        "airfry",
+        "furrion"
+      ]
+    },
+    {
+      "id": "furrion-oven-chef-collection-model-manual-router",
+      "slug": "furrion-oven-chef-collection-model-manual-router",
+      "title": "Furrion oven Chef Collection model manual router",
+      "summary": "Use this when a Furrion oven owner needs model-family and official manual routing before support.",
+      "safeChecklist": [
+        "Record oven model, serial or production label, control type, heat source, odor, display behavior, and exact symptom.",
+        "Use the official oven support router to find the model-specific manual or parts-list path.",
+        "Stop use for gas odor, sparks, overheating, carbon-monoxide alarm, repeated ignition failure, or abnormal operation.",
+        "Use qualified RV gas or electrical appliance service for heating, ignition, controls, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "furrion-ovens-support-router"
+      ],
+      "searchAliases": [
+        "Furrion oven Chef Collection model manual",
+        "furrion chef collection oven support prep",
+        "furrion oven model manual router"
+      ],
+      "searchRequiredTerms": [
+        "chef",
+        "furrion"
+      ]
+    },
+    {
+      "id": "furrion-power-converter-model-support-routing-prep",
+      "slug": "furrion-power-converter-model-support-routing-prep",
+      "title": "Furrion power converter model support routing prep",
+      "summary": "Use this when a Furrion power-converter or power-center owner needs model and support notes before qualified electrical service.",
+      "safeChecklist": [
+        "Record converter or power-center model, serial or label, LED/display state, battery symptom, shore-power state, and recent load changes.",
+        "Use only normal coach monitors and visible labels; do not access covered components.",
+        "Stop use for burning odor, smoke, overheating, repeated breaker trips, or exposed/damaged components.",
+        "Use Lippert/Furrion support or qualified RV electrical service for converter, inverter, distribution, transfer, or charging diagnosis."
+      ],
+      "sourceIds": [
+        "furrion-power-converters-support-router"
+      ],
+      "searchAliases": [
+        "Furrion Net-Zero power converter model support",
+        "furrion ac dc power converter manual service prep",
+        "furrion power center converter support routing"
+      ],
+      "searchRequiredTerms": [
+        "netzero",
+        "furrion"
+      ]
+    },
+    {
+      "id": "lippert-onecontrol-wireless-app-control-state-prep",
+      "slug": "lippert-onecontrol-wireless-app-control-state-prep",
+      "title": "Lippert OneControl Wireless app and control-state prep",
+      "summary": "Use this when a Lippert OneControl Wireless owner needs touch-panel, app, or control-state notes before support.",
+      "safeChecklist": [
+        "Record OneControl device type, touch-panel model, app version, pairing state, error text, network state, and which functions respond.",
+        "Use only normal app, tablet, or touch-panel observations before contacting support.",
+        "Stop moving slides, jacks, awnings, or other equipment if controls behave unexpectedly or movement is obstructed.",
+        "Use Lippert support or qualified RV service for controller, actuator, leveling, slide, or electrical diagnosis."
+      ],
+      "sourceIds": [
+        "lippert-onecontrol-wireless-support-router"
+      ],
+      "searchAliases": [
+        "Lippert OneControl wireless myRV touch panel app setup",
+        "onecontrol wireless app pairing control state service prep",
+        "lippert onecontrol touch panel support prep"
+      ],
+      "searchRequiredTerms": [
+        "onecontrol"
+      ]
+    },
+    {
+      "id": "lippert-power-gear-hydraulic-leveling-touchpad-service-prep",
+      "slug": "lippert-power-gear-hydraulic-leveling-touchpad-service-prep",
+      "title": "Lippert Power Gear hydraulic leveling touchpad service prep",
+      "summary": "Use this when a Power Gear leveling owner needs touchpad, model, or symptom notes before qualified service.",
+      "safeChecklist": [
+        "Record Power Gear model, touchpad type, displayed state, jack position, battery state, coach level, and exact symptom.",
+        "Use only normal touchpad observations and visible labels before contacting support.",
+        "Stop leveling attempts if the coach is unstable, jacks do not respond normally, movement is uneven, or an obstruction is present.",
+        "Use Lippert support or qualified RV leveling service for pump, jack, hose, valve, sensor, calibration, or electrical diagnosis."
+      ],
+      "sourceIds": [
+        "lippert-power-gear-hydraulic-leveling-support"
+      ],
+      "searchAliases": [
+        "Lippert Power Gear hydraulic leveling touchpad owner manual",
+        "power gear hydraulic leveling control state service prep",
+        "lippert powerlevel class c leveling operation guide"
+      ],
+      "searchRequiredTerms": [
+        "powergear",
+        "lippert",
+        "powerlevel"
+      ]
+    },
+    {
+      "id": "coleman-underbunk-ac-filter-model-service-prep",
+      "slug": "coleman-underbunk-ac-filter-model-service-prep",
+      "title": "Coleman-Mach Underbunk AC filter and model service prep",
+      "summary": "Use this when an Underbunk Coleman-Mach AC owner needs model, filter, ducting, or support notes.",
+      "safeChecklist": [
+        "Record Underbunk model, part number, thermostat type, filter condition, airflow symptom, duct outlet behavior, and service history.",
+        "Clean only the removable washable filter if it is owner-accessible and the unit is off.",
+        "Stop use for burning odor, repeated breaker trips, water inside the coach, or abnormal noise.",
+        "Use Coleman-Mach support or qualified RV HVAC service for ducting, controls, cooling, parts, or electrical diagnosis."
+      ],
+      "sourceIds": [
+        "coleman-underbunk-central-ac-product"
+      ],
+      "searchAliases": [
+        "Coleman Underbunk UB11 UB15 washable filter service prep",
+        "coleman mach underbunk central ac model filter",
+        "underbunk 46612 46615 ac service prep"
+      ],
+      "searchRequiredTerms": [
+        "underbunk"
+      ]
+    },
+    {
+      "id": "coleman-ceiling-assembly-control-box-part-capture",
+      "slug": "coleman-ceiling-assembly-control-box-part-capture",
+      "title": "Coleman-Mach ceiling assembly control-box part capture",
+      "summary": "Use this when a Coleman-Mach owner needs ceiling-assembly, control-box, or electric-heat-kit notes before service.",
+      "safeChecklist": [
+        "Record ceiling assembly type, visible part labels, control-box family, electric heat-kit presence, thermostat type, and exact symptom.",
+        "Use only visible interior labels and normal control observations before contacting support.",
+        "Stop use for burning odor, repeated breaker trips, overheating, water intrusion, or abnormal noise.",
+        "Use Coleman-Mach support or qualified RV HVAC service for assembly, heat kit, control, parts, or electrical diagnosis."
+      ],
+      "sourceIds": [
+        "coleman-ceiling-assemblies-electric-heat-kits"
+      ],
+      "searchAliases": [
+        "Coleman ceiling assembly control box electric heat kit",
+        "coleman mach ceiling assembly part capture service prep",
+        "coleman chillgrille control box electric heat kit label"
+      ],
+      "searchRequiredTerms": [
+        "controlbox",
+        "coleman"
+      ]
+    },
+    {
+      "id": "maxxair-pivot-model-control-prep",
+      "slug": "maxxair-pivot-model-control-prep",
+      "title": "MaxxAir MaxxFan Pivot model and control prep",
+      "summary": "Use this when a MaxxFan Pivot owner needs model, control, lid, or warranty notes before support.",
+      "safeChecklist": [
+        "Record Pivot model, part number, lid state, directional head position, fan speed, warranty question, and exact symptom.",
+        "Use only normal owner controls and visible labels before contacting support.",
+        "Stop use and secure the fan if the lid will not close, water enters the coach, or the fan behaves unexpectedly.",
+        "Use MaxxAir support or qualified RV ventilation service for motor, lid, sensor, control, parts, or power diagnosis."
+      ],
+      "sourceIds": [
+        "maxxair-maxxfan-pivot-product"
+      ],
+      "searchAliases": [
+        "MaxxAir Pivot 00-61000 directional fan control",
+        "maxxfan pivot 00-62000 lid closed operation service prep",
+        "maxxair pivot model control prep"
+      ],
+      "searchRequiredTerms": [
+        "pivot"
+      ]
+    },
+    {
+      "id": "maxxair-maxxshade-vent-fan-compatibility-prep",
+      "slug": "maxxair-maxxshade-vent-fan-compatibility-prep",
+      "title": "MaxxAir MaxxShade vent-fan compatibility prep",
+      "summary": "Use this when a MaxxShade owner needs model and vent-fan compatibility notes before support.",
+      "safeChecklist": [
+        "Record MaxxShade model, part number, vent size, fan model, power state, shade behavior, and warranty question.",
+        "Confirm only owner-visible model and vent-size details before contacting support.",
+        "Stop use if the shade binds, does not latch, blocks vent operation, or interferes with fan controls.",
+        "Use MaxxAir support or qualified RV ventilation service for compatibility, installation, parts, or electrical questions."
+      ],
+      "sourceIds": [
+        "maxxair-maxxshades-category"
+      ],
+      "searchAliases": [
+        "MaxxAir MaxxShade Plus 00-03901 vent fan compatibility",
+        "maxxshade 14x14 vent fan model service prep",
+        "maxxair maxxshade model compatibility support"
+      ],
+      "searchRequiredTerms": [
+        "maxxshade"
+      ]
+    },
+    {
+      "id": "suburban-tank-water-heater-family-model-prep",
+      "slug": "suburban-tank-water-heater-family-model-prep",
+      "title": "Suburban tank water-heater family model prep",
+      "summary": "Use this when a Suburban tank water-heater owner needs model-family, capacity, anode, or support notes before service.",
+      "safeChecklist": [
+        "Record Suburban tank model, serial number, capacity, energy source, anode/service history, water temperature symptom, and leak/odor status.",
+        "Use visible labels and owner documentation to identify the model family before contacting support.",
+        "Stop use for gas odor, soot, carbon-monoxide alarm, overheating, leak, or repeated ignition failure.",
+        "Use Suburban support or qualified RV water-heater service for gas, electric, anode, tank, control, parts, warranty, or repair decisions."
+      ],
+      "sourceIds": [
+        "suburban-tank-water-heaters-product-family"
+      ],
+      "searchAliases": [
+        "Suburban tank water heater 6 gallon 10 gallon anode model",
+        "suburban tank water heater family porcelain steel tank",
+        "suburban tank water heater model capacity service prep"
+      ],
+      "searchRequiredTerms": [
+        "suburban"
+      ]
+    },
+    {
+      "id": "aquahot-125m-lcd-model-service-routing",
+      "slug": "aquahot-125m-lcd-model-service-routing",
+      "title": "Aqua-Hot 125M LCD model service routing",
+      "summary": "Use this when an Aqua-Hot 125M owner needs display, model, heat-zone, or authorized-service notes.",
+      "safeChecklist": [
+        "Record 125M model, serial number, LCD text, heat-zone behavior, hot-water symptom, energy source, altitude condition, and battery status from normal coach monitors.",
+        "Use only normal owner controls and display observations from the installed unit.",
+        "Stop operation for leak, odor, overheating, alarm activity, or repeated no-heat/no-hot-water behavior.",
+        "Use Aqua-Hot authorized service for heat, hot-water, display, energy-source, or service-network questions."
+      ],
+      "sourceIds": [
+        "aquahot-125m-product-page"
+      ],
+      "searchAliases": [
+        "AquaHot 125M LCD modular zones service routing",
+        "aqua-hot 125m lcd controller model service prep",
+        "aquahot 125m high altitude heat zone support"
+      ],
+      "searchRequiredTerms": [
+        "125m"
+      ]
+    },
+    {
+      "id": "thetford-porta-potti-235-245-255-265-storage-flush-prep",
+      "slug": "thetford-porta-potti-235-245-255-265-storage-flush-prep",
+      "title": "Thetford Porta Potti 235/245/255/265 storage and flush prep",
+      "summary": "Use this when a Porta Potti 245-family owner needs bellows, flush, level-indicator, storage, or support notes.",
+      "safeChecklist": [
+        "Record model, current part number if available, bellows or pump behavior, level-indicator state, seal condition, odor, freeze exposure, and storage timing.",
+        "Use only normal owner care, emptying, storage, and seal-lubricant observations before contacting support.",
+        "Stop use for leak, cracked tank, repeated flush failure, or odor that normal cleaning does not resolve.",
+        "Use Thetford support or dealer service for pump, bellows, seal, leak, parts, or repeated flush symptoms."
+      ],
+      "sourceIds": [
+        "thetford-porta-potti-235-245-255-265-support"
+      ],
+      "searchAliases": [
+        "Porta Potti 245 bellows level indicator storage",
+        "thetford porta potti 235 245 255 265 flush prep",
+        "porta potti 245 no electricity bellows service prep"
+      ],
+      "searchRequiredTerms": [
+        "245"
+      ]
+    },
+    {
+      "id": "thetford-porta-potti-current-model-identification-prep",
+      "slug": "thetford-porta-potti-current-model-identification-prep",
+      "title": "Thetford Porta Potti current-model identification prep",
+      "summary": "Use this when a Porta Potti owner needs current model and part-number identification before support.",
+      "safeChecklist": [
+        "Record Porta Potti model, serial or label details, current part number, tank size, flush type, and exact symptom.",
+        "Use the official identification PDF to match model and part-number wording before contacting support.",
+        "Stop use for leak, cracked tank, repeated flush failure, or odor that normal cleaning does not resolve.",
+        "Use Thetford support or dealer service for parts, pump, seal, tank, warranty, or repeated flush symptoms."
+      ],
+      "sourceIds": [
+        "thetford-porta-potti-current-model-identification"
+      ],
+      "searchAliases": [
+        "Porta Potti serial current model 565E 365 345",
+        "thetford porta potti current part numbers serial identification",
+        "thetford campa potti porta potti model identification support"
+      ],
+      "searchRequiredTerms": [
+        "565e",
+        "thetford"
+      ]
+    },
+    {
+      "id": "thetford-aqua-magic-residence-model-parts-service-prep",
+      "slug": "thetford-aqua-magic-residence-model-parts-service-prep",
+      "title": "Thetford Aqua-Magic Residence model and parts service prep",
+      "summary": "Use this when an Aqua-Magic Residence owner needs model, parts-list, serial, or support-routing notes.",
+      "safeChecklist": [
+        "Record Residence model, serial or label details, pedal behavior, bowl-water condition, leak location, seal condition, and warranty question.",
+        "Use only normal owner care observations and official model/parts-list routing before contacting support.",
+        "Stop use for leak, cracked base, repeated flush failure, or odor that normal cleaning does not resolve.",
+        "Use Thetford support or dealer service for water valve, seal, pedal, parts, leak, or warranty decisions."
+      ],
+      "sourceIds": [
+        "thetford-aqua-magic-residence-support"
+      ],
+      "searchAliases": [
+        "Aqua Magic Residence slow close single pedal parts list",
+        "thetford aqua-magic residence model serial support prep",
+        "aqua magic residence toilet parts service prep"
+      ],
+      "searchRequiredTerms": [
+        "residence"
+      ]
+    },
+    {
+      "id": "norcold-polar-n7x-n8x-support-manual-parts-prep",
+      "slug": "norcold-polar-n7x-n8x-support-manual-parts-prep",
+      "title": "Norcold Polar N7X/N8X support manual and parts prep",
+      "summary": "Use this when a Norcold Polar N7X or N8X owner needs manual, parts-list, model-tag, or support-routing notes.",
+      "safeChecklist": [
+        "Record N7X/N8X model, serial number, model-tag location, control type, displayed text, power source, door state, and exact cooling symptom.",
+        "Use the official support page to find the model-specific manual, parts list, recall notes, and authorized service routing.",
+        "Shut the refrigerator down for ammonia odor, fuel odor, overheating, alarm activity, or repeated stopped-operation symptoms.",
+        "Use authorized Norcold service for cooling, power, HTS, parts, warranty, or diagnostic questions beyond normal owner documentation."
+      ],
+      "sourceIds": [
+        "norcold-polar-n7x-support"
+      ],
+      "searchAliases": [
+        "Norcold Polar N7X N8X model tag parts list",
+        "norcold n7x n8x support manual parts prep",
+        "polar n7x touch control lcd model tag service prep"
+      ],
+      "searchRequiredTerms": [
+        "n7x"
+      ]
+    },
+    {
+      "id": "norcold-n6-n8-series-control-storage-support-prep",
+      "slug": "norcold-n6-n8-series-control-storage-support-prep",
+      "title": "Norcold N6/N8 Series control and storage support prep",
+      "summary": "Use this when a Norcold N6/N8 Series owner needs control, storage-latch, diagnostics, or support notes.",
+      "safeChecklist": [
+        "Record N6/N8 model, serial number, storage-latch state, door alarm behavior, displayed text, power source, and exact cooling symptom.",
+        "Use the official support page to find the correct manual, parts list, diagnostic notes, and support routing.",
+        "Shut the refrigerator down for ammonia odor, fuel odor, overheating, alarm activity, or repeated stopped-operation symptoms.",
+        "Use authorized Norcold service for cooling, power, HTS, parts, warranty, or diagnostic questions beyond normal owner documentation."
+      ],
+      "sourceIds": [
+        "norcold-n6-n8-series-support"
+      ],
+      "searchAliases": [
+        "Norcold N6 N8 Series storage latches diagnostics door ajar",
+        "norcold n6 n8 series support manual parts prep",
+        "norcold n6 n8 controls storage latch service prep"
+      ],
+      "searchRequiredTerms": [
+        "n6"
+      ]
+    },
+    {
+      "id": "onan-green-label-parts-model-spec-service-prep",
+      "slug": "onan-green-label-parts-model-spec-service-prep",
+      "title": "Onan Green Label parts model/spec service prep",
+      "summary": "Use this when an Onan RV generator owner needs model/spec and Green Label parts-reference notes before authorized service.",
+      "safeChecklist": [
+        "Record generator model, spec letter, serial number, hour meter, fuel type, displayed message, maintenance history, and exact symptom.",
+        "Use the Green Label reference only to prepare model/spec and parts-reference questions before service.",
+        "Keep the generator off for exhaust concern, odor, smoke, overheating, abnormal sound, no output, or repeated shutdown.",
+        "Use Cummins Care, Coach Care, or authorized Onan service for diagnosis, parts, warranty, output issues, start failures, or repair decisions."
+      ],
+      "sourceIds": [
+        "onan-green-label-parts-reference-0075650"
+      ],
+      "searchAliases": [
+        "Onan Green Label parts model spec QG 5500",
+        "cummins onan green label parts reference qg 4000 qg 7000",
+        "onan model spec service parts reference prep"
+      ],
+      "searchRequiredTerms": [
+        "greenlabel",
         "onan",
         "cummins"
       ]
