@@ -219,6 +219,22 @@
       "official": true
     },
     {
+      "id": "coleman-48000-ac-owner-1976-523",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 48000 Series AC Owner Manual",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/12/1976-523.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-2025-amcat-catalog",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 2025 AMCAT Catalog",
+      "url": "https://coleman-mach.com/files/catalog/CM-4040.02_2025%20AMCAT.pdf",
+      "type": "manufacturer-catalog",
+      "official": true
+    },
+    {
       "id": "dometic-ccc2-operating",
       "brand": "Dometic",
       "title": "Dometic Comfort Control Center 2 Thermostat Operating Instructions",
@@ -33492,7 +33508,8 @@
         "furrion-electric-fireplace-1465w",
         "furrion-flat-curved-electric-fireplace",
         "furrion-range-17-21-user-manual",
-        "furrion-range-17-21-troubleshooting-service"
+        "furrion-range-17-21-troubleshooting-service",
+        "coleman-48000-ac-owner-1976-523"
       ]
     },
     {
@@ -33576,7 +33593,8 @@
         "furrion-french-door-refrigerator",
         "onan-generator-quick-start",
         "onan-rv-generator-handbook",
-        "dometic-freshjet-fjx-operating"
+        "dometic-freshjet-fjx-operating",
+        "coleman-48000-ac-owner-1976-523"
       ]
     },
     {
@@ -34086,7 +34104,9 @@
         "furrion-electric-fireplace-1465w",
         "furrion-flat-curved-electric-fireplace",
         "furrion-range-17-21-user-manual",
-        "furrion-range-17-21-troubleshooting-service"
+        "furrion-range-17-21-troubleshooting-service",
+        "coleman-48000-ac-owner-1976-523",
+        "coleman-2025-amcat-catalog"
       ]
     },
     {
@@ -34113,7 +34133,8 @@
         "dometic-freshjet-fjx-operating",
         "dometic-bluetooth-ct-thermostat-operating",
         "dometic-brisk-ac-filter-efficiency",
-        "dometic-brisk-ac-heat-gain"
+        "dometic-brisk-ac-heat-gain",
+        "coleman-48000-ac-owner-1976-523"
       ]
     },
     {
@@ -34148,7 +34169,8 @@
       "sourceIds": [
         "coleman-mach-faqs",
         "coleman-cooling-performance-worksheet",
-        "coleman-rooftop-operation-maintenance-1971-982"
+        "coleman-rooftop-operation-maintenance-1971-982",
+        "coleman-48000-ac-owner-1976-523"
       ],
       "searchAliases": [
         "coleman mach ac not cooling 16 22 degree temperature split",
@@ -34171,7 +34193,8 @@
         "coleman-mach-faqs",
         "coleman-rooftop-operation-maintenance-1971-982",
         "coleman-chillgrille-control-kit-1976-658",
-        "coleman-46515-heat-pump-owner"
+        "coleman-46515-heat-pump-owner",
+        "coleman-48000-ac-owner-1976-523"
       ],
       "searchAliases": [
         "coleman mach ac freeze up high fan dirty filter",
@@ -34193,7 +34216,8 @@
       "sourceIds": [
         "coleman-mach-faqs",
         "coleman-45000-installation-1976-687",
-        "coleman-46515-heat-pump-owner"
+        "coleman-46515-heat-pump-owner",
+        "coleman-48000-ac-owner-1976-523"
       ],
       "searchAliases": [
         "coleman mach low voltage extension cord cheater plug",
@@ -34380,6 +34404,91 @@
         "coleman mach 48000 high pressure switch compressor lockout",
         "48000 heat pump dirty filters fan motor failure qualified technician",
         "coleman mach 48000 heat pump compressor locked out dirty condenser coil"
+      ]
+    },
+    {
+      "id": "coleman-48000-ac-cool-night-evaporator-ice-up",
+      "slug": "coleman-mach-48000-ac-cool-night-evaporator-ice-up",
+      "title": "Coleman-Mach 48000 AC cool-night evaporator ice-up",
+      "summary": "The Coleman-Mach 48000 AC owner manual says cooling during outdoor temperatures below 75 F can ice the evaporator coil when the thermostat is set too cold, stopping normal cooling until the coil defrosts with HIGH FAN and maximum air flow.",
+      "safeChecklist": [
+        "Turn cooling off from normal controls if airflow drops or cooling stops during a cool, humid night.",
+        "Set the thermostat midpoint between Warmer and Cooler when outdoor temperature is below 75 F instead of using the coldest setting.",
+        "Run HIGH FAN with maximum air flow until increased or full air flow returns, then resume cooling cautiously.",
+        "Clean owner-accessible filters and call qualified RV HVAC service if icing repeats or airflow does not recover."
+      ],
+      "sourceIds": [
+        "coleman-48000-ac-owner-1976-523"
+      ],
+      "searchAliases": [
+        "coleman mach 48000 ac cool night below 75 evaporator coil iced up high fan",
+        "coleman mach 48000 air conditioner ices up at night high fan defrost",
+        "48000 series roof top air conditioner cooling coil iced up below 75",
+        "coleman mach ac stops cooling cool night thermostat cooler setting"
+      ]
+    },
+    {
+      "id": "coleman-48000-ac-short-cycle-breaker-trip",
+      "slug": "coleman-mach-48000-ac-short-cycle-breaker-trip",
+      "title": "Coleman-Mach 48000 AC short-cycle breaker trip",
+      "summary": "The Coleman-Mach 48000 AC owner manual says the compressor needs two to three minutes for pressure to equalize after shutoff; restarting too quickly can short-cycle the compressor and trip a breaker or overload.",
+      "safeChecklist": [
+        "Turn the selector or thermostat off from normal controls and wait at least three minutes before retrying a cooling call.",
+        "Avoid repeated off-on cycling when the compressor does not restart immediately.",
+        "Record whether the fan ran, whether the compressor tried to start, and whether a coach breaker or overload tripped.",
+        "Use a qualified technician or electrician if trips repeat after the normal waiting period."
+      ],
+      "sourceIds": [
+        "coleman-48000-ac-owner-1976-523"
+      ],
+      "searchAliases": [
+        "coleman mach 48000 air conditioner short cycle breaker trips wait 2 minutes",
+        "coleman mach 48000 ac compressor restart delay two to three minutes",
+        "48000 series ac breaker trips after turning off and on quickly",
+        "coleman mach air conditioner overload after short cycling compressor"
+      ]
+    },
+    {
+      "id": "coleman-48000-elect-a-heat-not-furnace",
+      "slug": "coleman-mach-48000-elect-a-heat-not-furnace",
+      "title": "Coleman-Mach 48000 Elect-A-Heat is not a furnace",
+      "summary": "The Coleman-Mach 48000 AC owner manual describes optional Elect-A-Heat as a chill chaser for air that is only a few degrees too cool, not a furnace substitute, and says the heating coil normally should not be expected to glow.",
+      "safeChecklist": [
+        "Confirm the ceiling assembly is actually a Heat/Cool model with Elect-A-Heat before expecting heat from LOW HEAT.",
+        "Use the RV furnace or another approved heat source when the coach needs more than a small temperature bump.",
+        "Do not treat a heating coil that does not glow as a failure by itself; the manual says it normally will not turn red.",
+        "Call qualified RV HVAC service if heat mode is selected on an equipped unit but no warm air ever appears."
+      ],
+      "sourceIds": [
+        "coleman-48000-ac-owner-1976-523"
+      ],
+      "searchAliases": [
+        "coleman mach 48000 elect-a-heat not enough heat chill chaser not furnace",
+        "coleman mach elect a heat coil does not glow low heat",
+        "48000 series heat cool ceiling assembly low heat not furnace",
+        "coleman mach air conditioner heat strip only takes chill out"
+      ]
+    },
+    {
+      "id": "coleman-2025-amcat-part-model-lookup",
+      "slug": "coleman-mach-2025-amcat-part-model-lookup",
+      "title": "Coleman-Mach 2025 AMCAT catalog model and part lookup",
+      "summary": "The 2025 Coleman-Mach AMCAT catalog groups rooftop AC and heat-pump families, ceiling assemblies, shrouds, filters, soft start kits, thermostats, and conversion kits by model family, profile, color, and part number for pre-service identification.",
+      "safeChecklist": [
+        "Capture rooftop model number, profile, shroud color, ceiling assembly or control box, thermostat model, and visible part numbers before shopping.",
+        "Use the catalog to distinguish Signature, Quiet, Power Saver, Soft Start, Roughneck, Mach 8, Mach 10, Mach 15, and accessory families.",
+        "For soft start kits, control boxes, conversion kits, or rooftop unit swaps, stop at part identification and use a qualified installer.",
+        "Do not order solely from a photo; match model/profile and confirm with Coleman-Mach, a dealer, or qualified RV HVAC service."
+      ],
+      "sourceIds": [
+        "coleman-2025-amcat-catalog"
+      ],
+      "searchAliases": [
+        "coleman mach 2025 amcat catalog shroud filter soft start part lookup",
+        "coleman mach replacement shroud filter part number catalog",
+        "coleman mach mach 8 mach 10 mach 15 model profile lookup",
+        "coleman mach soft start control box conversion kit catalog",
+        "coleman mach 4800 7000 8000 series replacement shroud part number"
       ]
     },
     {

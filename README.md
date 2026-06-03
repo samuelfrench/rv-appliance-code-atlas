@@ -102,9 +102,9 @@ npm run traffic:monitor
 
 Current corpus:
 - `850` verified entries
-- `195` symptom guides
-- `346` official sources
-- `1046` generated indexable pages
+- `199` symptom guides
+- `348` official sources
+- `1050` generated indexable pages
 
 Next automated batch goal:
-- Triage official Coleman-Mach 48000 AC owner manual and 2025 catalog sources, then enrich existing rooftop AC guides or add only non-duplicate owner-safe symptom pages.
+- Triage official Coleman-Mach 48000 Series Air Conditioners-International and remaining model-family manual sources, then add only non-duplicate owner-safe symptom pages or source wiring.

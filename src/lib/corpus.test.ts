@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 850;
-const expectedSourceCount = 346;
-const expectedSymptomCount = 195;
+const expectedSourceCount = 348;
+const expectedSymptomCount = 199;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -431,6 +431,23 @@ describe("verified corpus", () => {
     );
     expect(lookupSymptomGuides(index, "coleman mach 48000 heat pump high pressure switch lockout dirty filters")[0]?.slug).toBe(
       "coleman-mach-48000-heat-pump-high-pressure-lockout",
+    );
+  });
+
+  it("finds Coleman-Mach 48000 AC owner-manual and 2025 catalog support pages from owner searches", () => {
+    const index = buildSymptomSearchIndex(corpus);
+
+    expect(lookupSymptomGuides(index, "coleman mach 48000 ac cool night below 75 evaporator coil iced up high fan")[0]?.slug).toBe(
+      "coleman-mach-48000-ac-cool-night-evaporator-ice-up",
+    );
+    expect(lookupSymptomGuides(index, "coleman mach 48000 air conditioner short cycle breaker trips wait 2 minutes")[0]?.slug).toBe(
+      "coleman-mach-48000-ac-short-cycle-breaker-trip",
+    );
+    expect(lookupSymptomGuides(index, "coleman mach 48000 elect-a-heat not enough heat chill chaser not furnace")[0]?.slug).toBe(
+      "coleman-mach-48000-elect-a-heat-not-furnace",
+    );
+    expect(lookupSymptomGuides(index, "coleman mach 2025 amcat catalog shroud filter soft start part lookup")[0]?.slug).toBe(
+      "coleman-mach-2025-amcat-part-model-lookup",
     );
   });
 
@@ -4042,6 +4059,83 @@ describe("verified corpus", () => {
         symptomById.get("coleman-48000-heat-pump-high-pressure-lockout")?.safeChecklist.join(" "),
       ].join(" "),
     ).toMatch(/High Pressure Switch|dirty filters|qualified technician|lockout/i);
+
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds official Coleman-Mach 48000 AC owner manual and 2025 AMCAT catalog sources without inventing code entries", () => {
+    const expectedSources = new Map([
+      ["coleman-48000-ac-owner-1976-523", "https://library.coleman-mach.com/wp-content/uploads/2023/12/1976-523.pdf"],
+      ["coleman-2025-amcat-catalog", "https://coleman-mach.com/files/catalog/CM-4040.02_2025%20AMCAT.pdf"],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const newSymptomIds = [
+      "coleman-48000-ac-cool-night-evaporator-ice-up",
+      "coleman-48000-ac-short-cycle-breaker-trip",
+      "coleman-48000-elect-a-heat-not-furnace",
+      "coleman-2025-amcat-part-model-lookup",
+    ];
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\brefrigerant\b|\bprobe\b|\bopen (the )?(fuel|gas|electrical|rooftop)|wire|wiring|line-voltage|breaker panel|remove.*thermostat|replace.*control|remove.*shroud|install.*soft start/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = corpus.sources.find((item) => item.id === sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const symptomId of newSymptomIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds.length, symptomId).toBeGreaterThan(0);
+      expect(symptom?.safeChecklist.join(" "), symptomId).not.toMatch(unsafeOwnerActionPattern);
+    }
+
+    expect(symptomById.get("coleman-48000-ac-cool-night-evaporator-ice-up")?.sourceIds).toEqual(
+      expect.arrayContaining(["coleman-48000-ac-owner-1976-523"]),
+    );
+    expect(
+      [
+        symptomById.get("coleman-48000-ac-cool-night-evaporator-ice-up")?.summary,
+        symptomById.get("coleman-48000-ac-cool-night-evaporator-ice-up")?.safeChecklist.join(" "),
+      ].join(" "),
+    ).toMatch(/below 75|evaporator|HIGH FAN|defrost|air flow/i);
+
+    expect(symptomById.get("coleman-48000-ac-short-cycle-breaker-trip")?.sourceIds).toEqual(
+      expect.arrayContaining(["coleman-48000-ac-owner-1976-523"]),
+    );
+    expect(
+      [
+        symptomById.get("coleman-48000-ac-short-cycle-breaker-trip")?.summary,
+        symptomById.get("coleman-48000-ac-short-cycle-breaker-trip")?.safeChecklist.join(" "),
+      ].join(" "),
+    ).toMatch(/two to three minutes|short cycling|breaker|qualified|electrician/i);
+
+    expect(symptomById.get("coleman-48000-elect-a-heat-not-furnace")?.sourceIds).toEqual(
+      expect.arrayContaining(["coleman-48000-ac-owner-1976-523"]),
+    );
+    expect(
+      [
+        symptomById.get("coleman-48000-elect-a-heat-not-furnace")?.summary,
+        symptomById.get("coleman-48000-elect-a-heat-not-furnace")?.safeChecklist.join(" "),
+      ].join(" "),
+    ).toMatch(/Elect-A-Heat|chill chaser|not a substitute for a furnace|LOW HEAT/i);
+
+    expect(symptomById.get("coleman-2025-amcat-part-model-lookup")?.sourceIds).toEqual(
+      expect.arrayContaining(["coleman-2025-amcat-catalog"]),
+    );
+    expect(
+      [
+        symptomById.get("coleman-2025-amcat-part-model-lookup")?.summary,
+        symptomById.get("coleman-2025-amcat-part-model-lookup")?.safeChecklist.join(" "),
+      ].join(" "),
+    ).toMatch(/AMCAT|shroud|filter|soft start|model|part/i);
 
     expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
   });

@@ -409,6 +409,35 @@ test("lookup surfaces Coleman-Mach Wi-Fi thermostat and 48000 support pages", as
   ).toBeVisible();
 });
 
+test("lookup surfaces Coleman-Mach 48000 AC owner-manual and 2025 catalog support pages", async ({ page }) => {
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("coleman mach 48000 ac cool night below 75 evaporator coil iced up high fan");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/coleman-mach-48000-ac-cool-night-evaporator-ice-up/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("coleman mach 48000 air conditioner short cycle breaker trips wait 2 minutes");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/coleman-mach-48000-ac-short-cycle-breaker-trip/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("coleman mach 48000 elect-a-heat not enough heat chill chaser not furnace");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/coleman-mach-48000-elect-a-heat-not-furnace/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("coleman mach 2025 amcat catalog shroud filter soft start part lookup");
+  const catalogGuide = lookupResults.locator('a[href="/symptoms/coleman-mach-2025-amcat-part-model-lookup/"]');
+  await expect(catalogGuide).toBeVisible();
+
+  await catalogGuide.click();
+  await expect(page.getByRole("heading", { name: "Coleman-Mach 2025 AMCAT catalog model and part lookup" })).toBeVisible();
+});
+
 test("lookup surfaces Dometic CCC2 thermostat symptom support pages", async ({ page }) => {
   await page.goto("/");
 
