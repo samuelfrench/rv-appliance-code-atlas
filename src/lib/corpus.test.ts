@@ -69,6 +69,12 @@ describe("verified corpus", () => {
     expect(lookupEntries(index, "freshjet fjx e9 compressor ipm module")[0]?.slug).toBe(
       "dometic-freshjet-fjx-e9-compressor-drive-ipm-module-fault",
     );
+    expect(lookupEntries(index, "furrion fireplace ee thermostat sensor")[0]?.slug).toBe(
+      "furrion-electric-fireplace-ee-thermostat-sensor",
+    );
+    expect(lookupEntries(index, "furrion fireplace 88 overheat protection")[0]?.slug).toBe(
+      "furrion-electric-fireplace-88-overheat-protection",
+    );
     expect(lookupEntries(index, "furrion e3 thermostat").map((entry) => entry.code)).toContain("E3");
     expect(lookupEntries(index, "suburban reset light").map((entry) => entry.brand)).toContain("Suburban/Atwood");
   });
@@ -355,6 +361,32 @@ describe("verified corpus", () => {
     );
     expect(lookupSymptomGuides(index, "furrion furnace soot yellow flame exhaust service")[0]?.slug).toBe(
       "furrion-furnace-soot-yellow-flame-exhaust-service",
+    );
+  });
+
+  it("finds Furrion fireplace and range symptom support pages from owner searches", () => {
+    const index = buildSymptomSearchIndex(corpus);
+
+    expect(lookupSymptomGuides(index, "furrion fireplace red led blinking blower motor proximity 6 inches")[0]?.slug).toBe(
+      "furrion-electric-fireplace-red-led-proximity-cutoff",
+    );
+    expect(lookupSymptomGuides(index, "furrion fireplace no warm air 30 second cooldown thermostat setting")[0]?.slug).toBe(
+      "furrion-electric-fireplace-no-warm-air-cooldown-thermostat",
+    );
+    expect(lookupSymptomGuides(index, "furrion fireplace remote not working batteries less than 20 feet")[0]?.slug).toBe(
+      "furrion-electric-fireplace-remote-control-not-working",
+    );
+    expect(lookupSymptomGuides(index, "furrion range surface burners do not light ffd hold knob 5 seconds")[0]?.slug).toBe(
+      "furrion-range-cooktop-burners-do-not-light-ffd",
+    );
+    expect(lookupSymptomGuides(index, "furrion range surface flame orange half way around burner")[0]?.slug).toBe(
+      "furrion-range-surface-flame-orange-halfway",
+    );
+    expect(lookupSymptomGuides(index, "furrion range smell gas carbon monoxide space heater")[0]?.slug).toBe(
+      "furrion-range-gas-odor-carbon-monoxide-boundary",
+    );
+    expect(lookupSymptomGuides(index, "furrion oven pilot flame goes out wait five minutes ventilation foil")[0]?.slug).toBe(
+      "furrion-range-oven-pilot-flame-blowout-ventilation",
     );
   });
 
@@ -649,7 +681,7 @@ describe("verified corpus", () => {
       type: "manufacturer-manual",
       url: "https://media.dometic.com/externalassets/ct-single-zone-thermostat_9108853315_55910.pdf",
     });
-    expect(corpus.entries).toHaveLength(848);
+    expect(corpus.entries).toHaveLength(850);
     expect(entries.map((entry) => entry.code).sort()).toEqual(["E1", "E2", "E3", "E4", "E5"]);
 
     for (const entry of entries) {
@@ -680,8 +712,8 @@ describe("verified corpus", () => {
       type: "manufacturer-manual",
       url: "https://media.dometic.com/externalassets/dometic-freshjet-fjx7-3000_9620001685_123479.pdf",
     });
-    expect(corpus.sources).toHaveLength(335);
-    expect(corpus.entries).toHaveLength(848);
+    expect(corpus.sources).toHaveLength(339);
+    expect(corpus.entries).toHaveLength(850);
     expect(new Set(entries.map((entry) => entry.code))).toEqual(
       new Set(["P0", "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P9", "E0", "E1", "E2", "E3", "E7", "E8", "E9", "EA", "EE", "EL"]),
     );
@@ -719,7 +751,7 @@ describe("verified corpus", () => {
     ];
 
     expect(corpus.sources.find((source) => source.id === sourceId)?.official).toBe(true);
-    expect(corpus.entries).toHaveLength(848);
+    expect(corpus.entries).toHaveLength(850);
     expect(
       corpus.entries
         .filter((entry) => entry.sourceIds.includes(sourceId))
@@ -758,7 +790,7 @@ describe("verified corpus", () => {
       "dometic-single-zone-hot-weather-filter-maintenance",
     ];
 
-    expect(corpus.symptoms).toHaveLength(178);
+    expect(corpus.symptoms).toHaveLength(185);
 
     for (const symptomId of expectedSymptomIds) {
       const symptom = symptomById.get(symptomId);
@@ -793,7 +825,7 @@ describe("verified corpus", () => {
       type: "manufacturer-manual",
       url: "https://media.dometic.com/externalassets/bluetooth-thermostat_9108887112_64643.pdf",
     });
-    expect(corpus.entries).toHaveLength(848);
+    expect(corpus.entries).toHaveLength(850);
     expect(entries.map((entry) => entry.code).sort()).toEqual(["E1", "E2", "E3", "E4", "E5"]);
 
     for (const entry of entries) {
@@ -833,7 +865,7 @@ describe("verified corpus", () => {
       "dometic-bluetooth-ct-hot-weather-filter-maintenance",
     ];
 
-    expect(corpus.symptoms).toHaveLength(178);
+    expect(corpus.symptoms).toHaveLength(185);
     for (const sourceId of [pdfSourceId, ...supportSourceIds]) {
       expect(corpus.sources.find((source) => source.id === sourceId), sourceId).toMatchObject({
         brand: "Dometic",
@@ -891,7 +923,7 @@ describe("verified corpus", () => {
       "dometic-freshjet-fjx-voltage-protection-campsite-power",
     ];
 
-    expect(corpus.symptoms).toHaveLength(178);
+    expect(corpus.symptoms).toHaveLength(185);
 
     for (const symptomId of expectedSymptomIds) {
       const symptom = symptomById.get(symptomId);
@@ -920,6 +952,115 @@ describe("verified corpus", () => {
     expect(symptomById.get("low-voltage")?.sourceIds).toContain(sourceId);
   });
 
+  it("includes official Furrion electric fireplace display faults with owner-safe boundaries", () => {
+    const sourceIds = ["furrion-electric-fireplace-1465w", "furrion-flat-curved-electric-fireplace"];
+    const entries = corpus.entries.filter((entry) => sourceIds.some((sourceId) => entry.sourceIds.includes(sourceId)));
+    const entryByCode = new Map(entries.map((entry) => [entry.code, entry]));
+
+    expect(corpus.sources.find((source) => source.id === "furrion-electric-fireplace-1465w")).toMatchObject({
+      brand: "Furrion",
+      official: true,
+      type: "manufacturer-manual",
+      url: "https://lci-support-doc.s3.amazonaws.com/Furrion/ccd-0005575.pdf",
+    });
+    expect(corpus.sources.find((source) => source.id === "furrion-flat-curved-electric-fireplace")).toMatchObject({
+      brand: "Furrion",
+      official: true,
+      type: "manufacturer-manual",
+      url: "https://lci-support-doc.s3.amazonaws.com/Furrion/ccd-0005582.pdf",
+    });
+    expect(entries.map((entry) => entry.code).sort()).toEqual(["88", "EE"]);
+
+    for (const entry of entries) {
+      expect(entry.modelFamilies).toEqual([
+        "Furrion built-in electric fireplace",
+        "Furrion flat glass electric fireplace",
+        "Furrion curved glass electric fireplace",
+      ]);
+      expect(entry.ownerSafeActions.join(" "), entry.id).not.toMatch(
+        /\b(back panel|main circuit board|120\s*V|wiring|wire|probe|bypass|jump|open|remove|replace thermostat sensor)\b/i,
+      );
+      expect(entry.serviceOnlyActions.join(" "), entry.id).toMatch(/Lippert|Furrion|qualified RV electrical/i);
+      expect(entry.safetyBoundary, entry.id).toMatch(/disconnect power|qualified RV electrical/i);
+    }
+
+    expect(entryByCode.get("EE")?.plainMeaning).toMatch(/thermostat sensor|broken|disconnected/i);
+    expect(entryByCode.get("88")?.plainMeaning).toMatch(/manual reset overheat protection/i);
+  });
+
+  it("adds official Furrion fireplace and range symptom pages without unsafe owner steps", () => {
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const expectedSymptoms: Record<string, string[]> = {
+      "furrion-electric-fireplace-red-led-proximity-cutoff": [
+        "furrion-electric-fireplace-1465w",
+        "furrion-flat-curved-electric-fireplace",
+      ],
+      "furrion-electric-fireplace-no-warm-air-cooldown-thermostat": [
+        "furrion-electric-fireplace-1465w",
+        "furrion-flat-curved-electric-fireplace",
+      ],
+      "furrion-electric-fireplace-remote-control-not-working": [
+        "furrion-electric-fireplace-1465w",
+        "furrion-flat-curved-electric-fireplace",
+      ],
+      "furrion-range-cooktop-burners-do-not-light-ffd": [
+        "furrion-range-17-21-user-manual",
+        "furrion-range-17-21-troubleshooting-service",
+      ],
+      "furrion-range-surface-flame-orange-halfway": [
+        "furrion-range-17-21-user-manual",
+        "furrion-range-17-21-troubleshooting-service",
+      ],
+      "furrion-range-gas-odor-carbon-monoxide-boundary": [
+        "furrion-range-17-21-user-manual",
+        "furrion-range-17-21-troubleshooting-service",
+      ],
+      "furrion-range-oven-pilot-flame-blowout-ventilation": [
+        "furrion-range-17-21-user-manual",
+      ],
+    };
+
+    expect(corpus.sources.find((source) => source.id === "furrion-range-17-21-user-manual")).toMatchObject({
+      brand: "Furrion",
+      official: true,
+      type: "manufacturer-manual",
+      url: "https://lci-support-doc.s3.amazonaws.com/furrion_cooking/ranges/ccd-0008141-en-fr.pdf",
+    });
+    expect(corpus.sources.find((source) => source.id === "furrion-range-17-21-troubleshooting-service")).toMatchObject({
+      brand: "Furrion",
+      official: true,
+      type: "manufacturer-service-manual",
+      url: "https://lci-support-doc.s3.amazonaws.com/furrion%20documentation/ranges/ccd-0008217.pdf",
+    });
+
+    for (const [symptomId, sourceIds] of Object.entries(expectedSymptoms)) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds).toEqual(sourceIds);
+      expect(symptom?.safeChecklist.join(" "), symptomId).not.toMatch(
+        /\b(back panel|main circuit board|pressure check|leak test|wire|wiring|orifice|gas pressure|service manual|replace|repair)\b/i,
+      );
+    }
+
+    expect(symptomById.get("furrion-electric-fireplace-red-led-proximity-cutoff")?.summary).toMatch(/red LED|6 inches|proximity/i);
+    expect(symptomById.get("furrion-electric-fireplace-no-warm-air-cooldown-thermostat")?.summary).toMatch(
+      /30 seconds|thermostat setting|warm air/i,
+    );
+    expect(symptomById.get("furrion-electric-fireplace-remote-control-not-working")?.summary).toMatch(/batteries|20 feet/i);
+    expect(symptomById.get("furrion-range-cooktop-burners-do-not-light-ffd")?.summary).toMatch(/FFD|5 seconds|gas supply/i);
+    expect(symptomById.get("furrion-range-surface-flame-orange-halfway")?.summary).toMatch(/half way|orange|dust|salt air/i);
+    expect(symptomById.get("furrion-range-gas-odor-carbon-monoxide-boundary")?.summary).toMatch(
+      /smell gas|carbon monoxide|space heater/i,
+    );
+    expect(symptomById.get("furrion-range-oven-pilot-flame-blowout-ventilation")?.summary).toMatch(
+      /pilot|five minutes|foil|ventilation/i,
+    );
+
+    expect(symptomById.get("airflow-or-venting")?.sourceIds).toContain("furrion-range-17-21-user-manual");
+    expect(symptomById.get("service-call-prep")?.sourceIds).toContain("furrion-electric-fireplace-1465w");
+    expect(symptomById.get("service-call-prep")?.sourceIds).toContain("furrion-range-17-21-user-manual");
+  });
+
   it("adds official Dometic DF furnace operating-manual symptom pages without inventing code entries or unsafe owner steps", () => {
     const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
     const sourceId = "dometic-df-furnace-operating-2025";
@@ -936,7 +1077,7 @@ describe("verified corpus", () => {
       official: true,
       type: "manufacturer-manual",
     });
-    expect(corpus.entries).toHaveLength(848);
+    expect(corpus.entries).toHaveLength(850);
     expect(corpus.entries.filter((entry) => entry.sourceIds.includes(sourceId))).toHaveLength(0);
 
     for (const symptomId of expectedSymptomIds) {
@@ -989,7 +1130,7 @@ describe("verified corpus", () => {
       });
     }
 
-    expect(corpus.entries).toHaveLength(848);
+    expect(corpus.entries).toHaveLength(850);
     expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => sourceIds.includes(sourceId)))).toHaveLength(0);
 
     for (const symptomId of expectedSymptomIds) {
@@ -1889,9 +2030,9 @@ describe("verified corpus", () => {
       expect(supportUrls.get(sourceId), sourceId).toBe(url);
     }
     expect(corpus.sources.filter((source) => toiletSourceIds.includes(source.id))).toHaveLength(toiletSourceIds.length);
-    expect(corpus.entries).toHaveLength(848);
+    expect(corpus.entries).toHaveLength(850);
     expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => toiletSourceIds.includes(sourceId)))).toHaveLength(0);
-    expect(corpus.symptoms).toHaveLength(178);
+    expect(corpus.symptoms).toHaveLength(185);
 
     expect(symptomById.get("thetford-rv-toilet-bowl-water-does-not-hold-seal")?.sourceIds).toEqual(
       expect.arrayContaining(["thetford-permanent-rv-toilet-owner", "thetford-faq-lip-seal-replacement"]),
@@ -2685,7 +2826,7 @@ describe("verified corpus", () => {
       expect(source?.url, sourceId).toBe(url);
     }
 
-    expect(corpus.entries).toHaveLength(848);
+    expect(corpus.entries).toHaveLength(850);
     expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
 
     for (const symptomId of newSymptomIds) {
@@ -3257,7 +3398,7 @@ describe("verified corpus", () => {
 
     expect(sourceById.get("suburban-rv-faqs")?.official).toBe(true);
     expect(sourceById.get("suburban-rv-faqs")?.url).toBe("https://suburbanrv.com/service-support/faqs/");
-    expect(corpus.entries).toHaveLength(848);
+    expect(corpus.entries).toHaveLength(850);
     expect(corpus.entries.filter((entry) => entry.sourceIds.includes("suburban-rv-faqs"))).toHaveLength(0);
 
     for (const symptomId of newSymptomIds) {
@@ -3342,7 +3483,7 @@ describe("verified corpus", () => {
     expect(sourceById.get("suburban-st42-st60-product-overview")?.url).toBe(
       "https://suburbanrv.com/files/product_documents/Tankless%20Water%20Heater/ST%204260%20Tankless%20Water%20Heater%20Sell%20Sheet%20111522.pdf",
     );
-    expect(corpus.entries).toHaveLength(848);
+    expect(corpus.entries).toHaveLength(850);
 
     for (const sourceId of newSourceIds) {
       expect(corpus.entries.filter((entry) => entry.sourceIds.includes(sourceId)), sourceId).toHaveLength(0);
@@ -3586,7 +3727,7 @@ describe("verified corpus", () => {
       expect(source?.url, sourceId).toBe(url);
     }
 
-    expect(corpus.entries).toHaveLength(848);
+    expect(corpus.entries).toHaveLength(850);
     expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
 
     for (const symptomId of newSymptomIds) {

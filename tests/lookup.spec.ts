@@ -215,6 +215,42 @@ test("lookup surfaces Furrion furnace symptom support pages", async ({ page }) =
   await expect(page.getByText(/shut the furnace down/i)).toBeVisible();
 });
 
+test("lookup surfaces Furrion fireplace and range support pages", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("furrion fireplace ee thermostat sensor");
+  await expect(lookupResults.locator('a[href="/codes/furrion-electric-fireplace-ee-thermostat-sensor/"]')).toBeVisible();
+
+  await searchbox.fill("furrion fireplace 88 overheat protection");
+  await expect(lookupResults.locator('a[href="/codes/furrion-electric-fireplace-88-overheat-protection/"]')).toBeVisible();
+
+  await searchbox.fill("furrion fireplace red led blinking blower motor proximity");
+  await expect(lookupResults.locator('a[href="/symptoms/furrion-electric-fireplace-red-led-proximity-cutoff/"]')).toBeVisible();
+
+  await searchbox.fill("furrion range surface burners do not light ffd hold knob");
+  await expect(lookupResults.locator('a[href="/symptoms/furrion-range-cooktop-burners-do-not-light-ffd/"]')).toBeVisible();
+
+  await searchbox.fill("furrion range smell gas carbon monoxide space heater");
+  const gasBoundary = lookupResults.locator('a[href="/symptoms/furrion-range-gas-odor-carbon-monoxide-boundary/"]');
+  await expect(gasBoundary).toBeVisible();
+  await gasBoundary.click();
+
+  await expect(page.getByRole("heading", { name: "Furrion range gas odor and carbon monoxide boundary" })).toBeVisible();
+  await expect(page.getByText(/Never use the range or oven as a heat source/i)).toBeVisible();
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("lookup surfaces Lippert leveling and slide symptom support pages", async ({ page }) => {
   await page.goto("/");
 

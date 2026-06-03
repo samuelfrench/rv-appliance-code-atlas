@@ -32,6 +32,13 @@ describe("traffic readiness report", () => {
       dryRunCommand: "npm run traffic:gsc:weekly:dry-run",
       cadence: "weekly",
     });
+    expect(report.ga4TrafficArtifact).toEqual({
+      path: "reports/ga4-weekly-traffic.json",
+      command: "npm run traffic:ga4:weekly",
+      dryRunCommand: "npm run traffic:ga4:weekly:dry-run",
+      cadence: "weekly",
+      auth: "service-account-json",
+    });
     expect(report.monetizationReadinessArtifact).toEqual({
       path: "reports/monetization-readiness.json",
       command: "npm run traffic:monetization",
@@ -48,6 +55,7 @@ describe("traffic readiness report", () => {
     );
 
     expect(readFileSync("README.md", "utf8")).toContain(report.weeklyTrafficArtifact.command);
+    expect(readFileSync("README.md", "utf8")).toContain(report.ga4TrafficArtifact.command);
     expect(readFileSync("README.md", "utf8")).toContain(report.monetizationReadinessArtifact.command);
     expect(readFileSync("README.md", "utf8")).toContain(report.indexNow.submitCommand);
     expect(readFileSync("README.md", "utf8")).toContain(report.nextAutomatedBatchGoal);

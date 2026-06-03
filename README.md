@@ -14,6 +14,7 @@ Google Analytics:
 - Web stream: `properties/540096507/dataStreams/14992447658`
 - Measurement ID: `G-9824RBXHHR`
 - Default URI: `https://rvappliancefaultcodes.com`
+- Local GA4 Data API reporting uses service-account JSON at `~/.config/google/rv-appliance-code-atlas-ga4.json`.
 
 Scope:
 - Dometic
@@ -68,6 +69,17 @@ Writes ignored local report artifact: `reports/gsc-weekly-traffic.json`
 Monetization readiness writes ignored local report artifact: `reports/monetization-readiness.json`. It reads page impressions from the weekly GSC artifact and keeps checkout, ad slots, affiliate placeholders, repair leads, and sponsor slots disabled until manual review.
 
 Default range: last 7 Pacific-time days ending 3 days ago, to avoid preliminary GSC data. The script tries a readonly Search Console token first and falls back to the locally authorized `webmasters` ADC scope when needed.
+
+Weekly GA4 traffic artifact:
+
+```bash
+npm run traffic:ga4:weekly:dry-run
+npm run traffic:ga4:weekly
+```
+
+Writes ignored local report artifact: `reports/ga4-weekly-traffic.json`
+
+Default range: last 7 Pacific-time days ending yesterday. The script uses a local service-account JSON path instead of browser OAuth or API Explorer clicks.
 
 IndexNow launch:
 

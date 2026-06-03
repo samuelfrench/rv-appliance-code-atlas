@@ -14,6 +14,13 @@ const weeklyTrafficArtifact = {
   dryRunCommand: "npm run traffic:gsc:weekly:dry-run",
   cadence: "weekly",
 };
+const ga4TrafficArtifact = {
+  path: "reports/ga4-weekly-traffic.json",
+  command: "npm run traffic:ga4:weekly",
+  dryRunCommand: "npm run traffic:ga4:weekly:dry-run",
+  cadence: "weekly",
+  auth: "service-account-json",
+};
 const monetizationReadinessArtifact = {
   path: "reports/monetization-readiness.json",
   command: "npm run traffic:monetization",
@@ -40,6 +47,7 @@ function buildReport() {
     analytics,
     searchConsole,
     weeklyTrafficArtifact,
+    ga4TrafficArtifact,
     monetizationReadinessArtifact,
     indexNow,
     verifiedEntries: corpus.entries.length,

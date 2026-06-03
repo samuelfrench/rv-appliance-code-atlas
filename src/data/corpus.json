@@ -2705,6 +2705,38 @@
       "url": "https://media.dometic.com/externalassets/dometic-freshjet-fjx7-3000_9620001685_123479.pdf",
       "type": "manufacturer-manual",
       "official": true
+    },
+    {
+      "id": "furrion-electric-fireplace-1465w",
+      "brand": "Furrion",
+      "title": "Furrion 1465W Built-In Electric Fireplace Instruction Manual",
+      "url": "https://lci-support-doc.s3.amazonaws.com/Furrion/ccd-0005575.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-flat-curved-electric-fireplace",
+      "brand": "Furrion",
+      "title": "Furrion Flat and Curved Glass Electric Fireplace Operating and Installation Manual",
+      "url": "https://lci-support-doc.s3.amazonaws.com/Furrion/ccd-0005582.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-range-17-21-user-manual",
+      "brand": "Furrion",
+      "title": "Furrion 17 and 21 Inch 3-Burner All Glass Gas Range with FFD User Manual",
+      "url": "https://lci-support-doc.s3.amazonaws.com/furrion_cooking/ranges/ccd-0008141-en-fr.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-range-17-21-troubleshooting-service",
+      "brand": "Furrion",
+      "title": "Furrion 17 and 21 Inch 3-Burner All Glass Gas Range with FFD Troubleshooting and Service Manual",
+      "url": "https://lci-support-doc.s3.amazonaws.com/furrion%20documentation/ranges/ccd-0008217.pdf",
+      "type": "manufacturer-service-manual",
+      "official": true
     }
   ],
   "entries": [
@@ -33152,6 +33184,80 @@
         "Shore-power or campsite voltage context and active loads",
         "Recent service history and prior recurring codes"
       ]
+    },
+    {
+      "id": "furrion-electric-fireplace-ee-thermostat-sensor",
+      "brand": "Furrion",
+      "equipmentType": "Electric fireplace",
+      "modelFamilies": [
+        "Furrion built-in electric fireplace",
+        "Furrion flat glass electric fireplace",
+        "Furrion curved glass electric fireplace"
+      ],
+      "code": "EE",
+      "slug": "furrion-electric-fireplace-ee-thermostat-sensor",
+      "plainMeaning": "The official Furrion electric fireplace manuals list display EE as a thermostat sensor broken or disconnected condition.",
+      "ownerSafeActions": [
+        "Record the EE display, fireplace model, and whether heat or fan output was present.",
+        "Turn the fireplace off from normal controls and disconnect coach power to the fireplace before service.",
+        "Stop using the fireplace until Lippert, Furrion, or qualified RV electrical service checks the thermostat sensor fault."
+      ],
+      "serviceOnlyActions": [
+        "Thermostat sensor connection, back-panel access, main circuit board checks, and sensor replacement belong with Lippert, Furrion, or qualified RV electrical service."
+      ],
+      "safetyBoundary": "Disconnect power before fireplace service. Internal sensor, heater, and qualified RV electrical work are not owner troubleshooting steps.",
+      "sourceIds": [
+        "furrion-electric-fireplace-1465w",
+        "furrion-flat-curved-electric-fireplace"
+      ],
+      "symptomIds": [
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "fireplace model",
+        "display photo",
+        "recent power interruption",
+        "slide-out position",
+        "shore power or inverter source"
+      ]
+    },
+    {
+      "id": "furrion-electric-fireplace-88-overheat-protection",
+      "brand": "Furrion",
+      "equipmentType": "Electric fireplace",
+      "modelFamilies": [
+        "Furrion built-in electric fireplace",
+        "Furrion flat glass electric fireplace",
+        "Furrion curved glass electric fireplace"
+      ],
+      "code": "88",
+      "slug": "furrion-electric-fireplace-88-overheat-protection",
+      "plainMeaning": "The official Furrion electric fireplace manuals list display 88 as manual reset overheat protection triggered.",
+      "ownerSafeActions": [
+        "Turn the fireplace off from normal controls and let it cool completely.",
+        "Confirm visible air inlets and outlets are clear and soft goods are at least 6 inches away.",
+        "Restart once with the normal power button after cooling; stop using the fireplace if 88 returns."
+      ],
+      "serviceOnlyActions": [
+        "Repeated overheat protection, heater inspection, sensor diagnosis, and internal electrical service belong with Lippert, Furrion, or qualified RV electrical service."
+      ],
+      "safetyBoundary": "Disconnect power before fireplace service. Internal heater, sensor, and qualified RV electrical work are not owner troubleshooting steps.",
+      "sourceIds": [
+        "furrion-electric-fireplace-1465w",
+        "furrion-flat-curved-electric-fireplace"
+      ],
+      "symptomIds": [
+        "airflow-or-venting",
+        "service-call-prep",
+        "furrion-electric-fireplace-red-led-proximity-cutoff"
+      ],
+      "partCaptureHints": [
+        "fireplace model",
+        "display photo",
+        "nearby obstructions",
+        "slide-out position",
+        "recent overheat or odor"
+      ]
     }
   ],
   "symptoms": [
@@ -33326,7 +33432,11 @@
         "dometic-single-zone-lcd-thermostat-operating",
         "dometic-freshjet-fjx-operating",
         "dometic-bluetooth-ct-thermostat-operating",
-        "dometic-brisk-ac-filter-efficiency"
+        "dometic-brisk-ac-filter-efficiency",
+        "furrion-electric-fireplace-1465w",
+        "furrion-flat-curved-electric-fireplace",
+        "furrion-range-17-21-user-manual",
+        "furrion-range-17-21-troubleshooting-service"
       ]
     },
     {
@@ -33773,7 +33883,11 @@
         "furrion-12v-refrigerator-service-line-faq",
         "thetford-rv-toilet-support",
         "thetford-permanent-rv-toilet-owner",
-        "dometic-bluetooth-ct-thermostat-operating"
+        "dometic-bluetooth-ct-thermostat-operating",
+        "furrion-electric-fireplace-1465w",
+        "furrion-flat-curved-electric-fireplace",
+        "furrion-range-17-21-user-manual",
+        "furrion-range-17-21-troubleshooting-service"
       ]
     },
     {
@@ -37083,6 +37197,150 @@
         "aqua magic toilet frozen water do not flush",
         "thetford sanitation system winterize antifreeze",
         "thetford toilet potable antifreeze seal lubricant"
+      ]
+    },
+    {
+      "id": "furrion-electric-fireplace-red-led-proximity-cutoff",
+      "slug": "furrion-electric-fireplace-red-led-proximity-cutoff",
+      "title": "Furrion electric fireplace red LED or proximity cutoff",
+      "summary": "Furrion electric fireplace manuals say a constantly blinking red LED with the blower motor not starting can mean the proximity switch cut off the fireplace; keep obstructions at least 6 inches away and confirm any slide-out is fully extended before use.",
+      "safeChecklist": [
+        "Turn the fireplace off from normal controls and let it cool.",
+        "Keep blankets, trim, and stored items at least 6 inches from the fireplace face and vents.",
+        "Confirm the slide-out is fully extended before fireplace use.",
+        "Restart once with the normal power button after the area is clear; stop if the red LED returns."
+      ],
+      "sourceIds": [
+        "furrion-electric-fireplace-1465w",
+        "furrion-flat-curved-electric-fireplace"
+      ],
+      "searchAliases": [
+        "furrion fireplace red led blinking blower motor proximity 6 inches",
+        "furrion fireplace slide out safety cutoff red led",
+        "furrion fireplace proximity switch cut off blower motor does not start"
+      ]
+    },
+    {
+      "id": "furrion-electric-fireplace-no-warm-air-cooldown-thermostat",
+      "slug": "furrion-electric-fireplace-no-warm-air-cooldown-thermostat",
+      "title": "Furrion electric fireplace no warm air during cooldown or thermostat hold",
+      "summary": "Furrion fireplace manuals describe a normal 30 seconds cool down cycle and a thermostat setting that can prevent warm air when the setpoint is not above current room temperature.",
+      "safeChecklist": [
+        "Wait through the normal 30 seconds cool down cycle before judging heat output.",
+        "Set the thermostat above the current room temperature and confirm the heat mode is selected.",
+        "Record fan, flame, timer, and thermostat settings if warm air still does not start."
+      ],
+      "sourceIds": [
+        "furrion-electric-fireplace-1465w",
+        "furrion-flat-curved-electric-fireplace"
+      ],
+      "searchAliases": [
+        "furrion fireplace no warm air 30 second cooldown thermostat setting",
+        "furrion fireplace cool down cycle no heat",
+        "furrion fireplace thermostat setting above room temperature"
+      ]
+    },
+    {
+      "id": "furrion-electric-fireplace-remote-control-not-working",
+      "slug": "furrion-electric-fireplace-remote-control-not-working",
+      "title": "Furrion electric fireplace remote control not working",
+      "summary": "Furrion fireplace manuals list weak remote batteries, poor signal, distance greater than 20 feet, and not pointing at the control panel as common remote-control causes.",
+      "safeChecklist": [
+        "Use fresh remote batteries and confirm polarity.",
+        "Operate within 20 feet and point the remote at the fireplace control panel.",
+        "Use the built-in controls to record whether only the remote is affected."
+      ],
+      "sourceIds": [
+        "furrion-electric-fireplace-1465w",
+        "furrion-flat-curved-electric-fireplace"
+      ],
+      "searchAliases": [
+        "furrion fireplace remote not working batteries less than 20 feet",
+        "furrion fireplace remote poor signal point at control panel"
+      ]
+    },
+    {
+      "id": "furrion-range-cooktop-burners-do-not-light-ffd",
+      "slug": "furrion-range-cooktop-burners-do-not-light-ffd",
+      "title": "Furrion range cooktop burners do not light with FFD",
+      "summary": "Furrion range manuals say surface burners do not light when the knob is not completely turned, the gas supply is unavailable, low cylinder level or moisture is present, or the FFD sequence is not held after ignition; if ignition fails within 5 seconds, turn the knob OFF and wait before trying again.",
+      "safeChecklist": [
+        "Start with all knobs OFF and the glass cover fully raised before normal ignition.",
+        "If a burner does not ignite within 5 seconds, turn it OFF and wait at least 5 minutes before one more normal attempt.",
+        "Confirm LP is available, the cylinder is not empty, and the cooktop area is dry.",
+        "Stop use and call qualified service if ignition still fails or any gas odor is present."
+      ],
+      "sourceIds": [
+        "furrion-range-17-21-user-manual",
+        "furrion-range-17-21-troubleshooting-service"
+      ],
+      "searchAliases": [
+        "furrion range surface burners do not light ffd hold knob 5 seconds",
+        "furrion cooktop burner does not ignite flame fault detector",
+        "furrion range knob off wait 5 minutes surface burner"
+      ]
+    },
+    {
+      "id": "furrion-range-surface-flame-orange-halfway",
+      "slug": "furrion-range-surface-flame-orange-halfway",
+      "title": "Furrion range surface flame orange or burns half way around",
+      "summary": "Furrion range manuals list flame burning half way around the burner, orange flame from dust in the main line, and salt air near coastal areas; persistent irregular flame, soot, or excessive yellow flame needs qualified service.",
+      "safeChecklist": [
+        "Turn the affected knob OFF if flame color or pattern looks abnormal.",
+        "Let the cooking surface cool and record the flame color, pattern, and whether soot is present.",
+        "Do not use the appliance if the abnormal flame returns; call qualified service."
+      ],
+      "sourceIds": [
+        "furrion-range-17-21-user-manual",
+        "furrion-range-17-21-troubleshooting-service"
+      ],
+      "searchAliases": [
+        "furrion range surface flame orange half way around burner",
+        "furrion range flame burns half way around orange dust salt air",
+        "furrion cooktop yellow flame soot qualified service"
+      ]
+    },
+    {
+      "id": "furrion-range-gas-odor-carbon-monoxide-boundary",
+      "slug": "furrion-range-gas-odor-carbon-monoxide-boundary",
+      "title": "Furrion range gas odor and carbon monoxide boundary",
+      "summary": "Furrion range manuals say if you smell gas, do not light appliances, avoid switches and phones, leave the RV, shut off LP at the container if safe, and call the gas supplier or fire department; they also warn never to use the range or oven as a space heater because of carbon monoxide risk.",
+      "safeChecklist": [
+        "Do not light any appliance or create flames.",
+        "Avoid electrical switches and phones inside the RV.",
+        "Get everyone out of the RV and shut off LP at the container if you can do so safely.",
+        "Call the gas supplier or fire department from outside the RV, then use qualified service before returning to use.",
+        "Never use the range or oven as a heat source for the RV."
+      ],
+      "sourceIds": [
+        "furrion-range-17-21-user-manual",
+        "furrion-range-17-21-troubleshooting-service"
+      ],
+      "searchAliases": [
+        "furrion range smell gas carbon monoxide space heater",
+        "furrion gas range odor do not light appliances switches phones",
+        "furrion oven never use as space heater carbon monoxide"
+      ]
+    },
+    {
+      "id": "furrion-range-oven-pilot-flame-blowout-ventilation",
+      "slug": "furrion-range-oven-pilot-flame-blowout-ventilation",
+      "title": "Furrion range oven pilot flame blowout and ventilation",
+      "summary": "Furrion range manuals say if the oven pilot flame goes out, turn the control OFF and wait five minutes before relighting; they also warn that foil over slots, holes, passages, the bottom, or racks can block ventilation and create carbon monoxide risk.",
+      "safeChecklist": [
+        "Stop immediately if you smell gas when the oven door is opened.",
+        "If the pilot flame goes out, turn the control OFF and wait at least five minutes before normal relight.",
+        "Keep oven slots, holes, passages, bottom, and racks uncovered so ventilation is not blocked.",
+        "Never line the oven bottom or rack with foil.",
+        "Never use the oven as a heat source for the RV."
+      ],
+      "sourceIds": [
+        "furrion-range-17-21-user-manual"
+      ],
+      "searchAliases": [
+        "furrion oven pilot flame goes out wait five minutes ventilation foil",
+        "furrion range oven pilot flame blowout carbon monoxide",
+        "furrion oven foil blocks ventilation slots holes passages"
       ]
     }
   ],

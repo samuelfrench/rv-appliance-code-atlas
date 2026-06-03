@@ -20,6 +20,8 @@
     "traffic:gsc:submit": "npm run build && node scripts/gsc-submit-sitemap.mjs --submit",
     "traffic:gsc:weekly:dry-run": "node scripts/gsc-weekly-report.mjs --dry-run",
     "traffic:gsc:weekly": "node scripts/gsc-weekly-report.mjs --fetch",
+    "traffic:ga4:weekly:dry-run": "node scripts/ga4-weekly-report.mjs --dry-run",
+    "traffic:ga4:weekly": "node scripts/ga4-weekly-report.mjs --fetch",
     "traffic:monetization": "node scripts/monetization-readiness-report.mjs",
     "traffic:indexnow:dry-run": "npm run build && node scripts/indexnow-submit.mjs --dry-run",
     "traffic:indexnow:submit": "npm run build && node scripts/indexnow-submit.mjs --submit",
