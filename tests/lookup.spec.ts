@@ -134,6 +134,36 @@ test("lookup surfaces Norcold and Thetford symptom support pages", async ({ page
   await expect(lookupResults.locator('a[href="/symptoms/norcold-n2000-condensation-drip-tray/"]')).toBeVisible();
 });
 
+test("lookup surfaces Thetford RV toilet symptom support pages", async ({ page }) => {
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("thetford toilet bowl will not hold water lip seal");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/thetford-rv-toilet-bowl-water-does-not-hold-seal/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("aqua magic weak flush no water pedal");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/thetford-rv-toilet-no-flush-or-poor-flush-water-supply/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("thetford toilet leak behind base water valve");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/thetford-rv-toilet-leak-behind-or-around-base/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("thetford rv toilet winterize freeze damage leak");
+  const winterizing = lookupResults.locator('a[href="/symptoms/thetford-rv-toilet-winterizing-freeze-damage/"]');
+  await expect(winterizing).toBeVisible();
+
+  await winterizing.click();
+  await expect(page.getByRole("heading", { name: "Thetford RV toilet winterizing and freeze-damage risk" })).toBeVisible();
+  await expect(page.getByText(/Do not operate a toilet that leaked after freezing/i)).toBeVisible();
+});
+
 test("lookup surfaces Furrion refrigerator symptom support pages", async ({ page }) => {
   await page.goto("/");
 

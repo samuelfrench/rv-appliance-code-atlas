@@ -74,6 +74,18 @@ describe("verified corpus", () => {
     expect(lookupSymptomGuides(index, "rm10 ammonia smell")[0]?.slug).toBe("dometic-rm10-ammonia-smell");
     expect(lookupSymptomGuides(index, "rm10 defrost ice")[0]?.slug).toBe("dometic-rm10-defrost-evaporator-ice-buildup");
     expect(lookupSymptomGuides(index, "rm10 internal batteries")[0]?.slug).toBe("dometic-rm10-internal-battery-packs");
+    expect(lookupSymptomGuides(index, "thetford toilet bowl will not hold water lip seal")[0]?.slug).toBe(
+      "thetford-rv-toilet-bowl-water-does-not-hold-seal",
+    );
+    expect(lookupSymptomGuides(index, "aqua magic weak flush no water pedal")[0]?.slug).toBe(
+      "thetford-rv-toilet-no-flush-or-poor-flush-water-supply",
+    );
+    expect(lookupSymptomGuides(index, "thetford toilet leak behind base water valve")[0]?.slug).toBe(
+      "thetford-rv-toilet-leak-behind-or-around-base",
+    );
+    expect(lookupSymptomGuides(index, "thetford rv toilet winterize freeze damage leak")[0]?.slug).toBe(
+      "thetford-rv-toilet-winterizing-freeze-damage",
+    );
   });
 
   it("finds Dometic 10-series symptom aliases from RMD/RML/RMS owner searches", () => {
@@ -633,7 +645,7 @@ describe("verified corpus", () => {
       type: "manufacturer-manual",
       url: "https://media.dometic.com/externalassets/dometic-freshjet-fjx7-3000_9620001685_123479.pdf",
     });
-    expect(corpus.sources).toHaveLength(324);
+    expect(corpus.sources).toHaveLength(329);
     expect(corpus.entries).toHaveLength(843);
     expect(new Set(entries.map((entry) => entry.code))).toEqual(
       new Set(["P0", "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P9", "E0", "E1", "E2", "E3", "E7", "E8", "E9", "EA", "EE", "EL"]),
@@ -711,7 +723,7 @@ describe("verified corpus", () => {
       "dometic-single-zone-hot-weather-filter-maintenance",
     ];
 
-    expect(corpus.symptoms).toHaveLength(166);
+    expect(corpus.symptoms).toHaveLength(170);
 
     for (const symptomId of expectedSymptomIds) {
       const symptom = symptomById.get(symptomId);
@@ -747,7 +759,7 @@ describe("verified corpus", () => {
       "dometic-freshjet-fjx-voltage-protection-campsite-power",
     ];
 
-    expect(corpus.symptoms).toHaveLength(166);
+    expect(corpus.symptoms).toHaveLength(170);
 
     for (const symptomId of expectedSymptomIds) {
       const symptom = symptomById.get(symptomId);
@@ -1708,6 +1720,86 @@ describe("verified corpus", () => {
     expect(lookupEntries(index, "norcold n8dc e3")[0]?.slug).toBe("norcold-n8dcx-n10dcx-e3");
     expect(lookupEntries(index, "norcold n8dc power module flash 1")[0]?.slug).toBe(
       "norcold-n8dcx-n10dcx-power-module-flash-1",
+    );
+  });
+
+  it("adds official Thetford RV toilet symptom support pages without inventing code entries", () => {
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const supportUrls = new Map(corpus.sources.map((source) => [source.id, source.url]));
+    const toiletSourceIds = [
+      "thetford-rv-toilet-support",
+      "thetford-permanent-rv-toilet-owner",
+      "thetford-faq-lip-seal-replacement",
+      "thetford-faq-leak-behind-toilet",
+      "thetford-faq-rv-sanitation-winterize",
+    ];
+    const toiletSymptomIds = [
+      "thetford-rv-toilet-bowl-water-does-not-hold-seal",
+      "thetford-rv-toilet-no-flush-or-poor-flush-water-supply",
+      "thetford-rv-toilet-leak-behind-or-around-base",
+      "thetford-rv-toilet-winterizing-freeze-damage",
+    ];
+    const expectedSources = new Map([
+      ["thetford-rv-toilet-support", "https://www.thetford.com/us/rv-toilet-support/"],
+      [
+        "thetford-permanent-rv-toilet-owner",
+        "https://www.thetford.com/app/uploads/2026/02/OM_Permanent_RV_Toilet_42088_0226_V1_EN-KOR-IT.pdf",
+      ],
+      ["thetford-faq-lip-seal-replacement", "https://www.thetford.com/us/faq/how-often-do-i-have-to-replace-the-lip-seal/"],
+      ["thetford-faq-leak-behind-toilet", "https://www.thetford.com/us/faq/what-is-causing-the-leak-behind-my-toilet/"],
+      [
+        "thetford-faq-rv-sanitation-winterize",
+        "https://www.thetford.com/us/faq/what-products-should-i-use-to-winterize-my-rv-sanitation-system/",
+      ],
+    ]);
+
+    for (const [sourceId, url] of expectedSources) {
+      expect(supportUrls.get(sourceId), sourceId).toBe(url);
+    }
+    expect(corpus.sources.filter((source) => toiletSourceIds.includes(source.id))).toHaveLength(toiletSourceIds.length);
+    expect(corpus.entries).toHaveLength(843);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => toiletSourceIds.includes(sourceId)))).toHaveLength(0);
+    expect(corpus.symptoms).toHaveLength(170);
+
+    expect(symptomById.get("thetford-rv-toilet-bowl-water-does-not-hold-seal")?.sourceIds).toEqual(
+      expect.arrayContaining(["thetford-permanent-rv-toilet-owner", "thetford-faq-lip-seal-replacement"]),
+    );
+    expect(symptomById.get("thetford-rv-toilet-no-flush-or-poor-flush-water-supply")?.sourceIds).toEqual(
+      expect.arrayContaining(["thetford-rv-toilet-support", "thetford-permanent-rv-toilet-owner"]),
+    );
+    expect(symptomById.get("thetford-rv-toilet-leak-behind-or-around-base")?.sourceIds).toEqual(
+      expect.arrayContaining(["thetford-permanent-rv-toilet-owner", "thetford-faq-leak-behind-toilet"]),
+    );
+    expect(symptomById.get("thetford-rv-toilet-winterizing-freeze-damage")?.sourceIds).toEqual(
+      expect.arrayContaining(["thetford-permanent-rv-toilet-owner", "thetford-faq-rv-sanitation-winterize"]),
+    );
+
+    for (const symptomId of toiletSymptomIds) {
+      expect(symptomById.get(symptomId), symptomId).toBeDefined();
+      const checklist = symptomById.get(symptomId)?.safeChecklist.join(" ") ?? "";
+      expect(checklist, symptomId).not.toMatch(
+        /\b(wiring|wire|120\s*V|12\s*V|probe|bypass|control board|gas valve|burner|replace (?:the )?(?:water )?valve|water valve replacement|replace vacuum breaker|vacuum breaker replacement|disassemble|remove (?:the )?toilet|perform toilet removal|attempt toilet removal|electrical repair|gas work|open wall)\b/i,
+      );
+      expect(checklist, symptomId).toMatch(/Thetford|qualified RV service|authorized service|dealer/i);
+
+      for (const sentence of checklist.split(/(?<=\.)\s+/)) {
+        if (
+          /\b(disconnecting the supply line|valve work|water valve failure|vacuum breaker|flange leaks?|toilet removal|freeze damage|water-line damage)\b/i.test(
+            sentence,
+          )
+        ) {
+          expect(sentence, `${symptomId}: ${sentence}`).toMatch(/Contact Thetford|qualified RV service|dealer|Stop owner checks/i);
+        }
+      }
+    }
+
+    expect(symptomById.get("thetford-rv-toilet-bowl-water-does-not-hold-seal")?.summary).toMatch(/bowl water|lip seal/i);
+    expect(symptomById.get("thetford-rv-toilet-no-flush-or-poor-flush-water-supply")?.summary).toMatch(/flush|water supply|pedal/i);
+    expect(symptomById.get("thetford-rv-toilet-leak-behind-or-around-base")?.summary).toMatch(/leak|water supply|behind/i);
+    expect(symptomById.get("thetford-rv-toilet-winterizing-freeze-damage")?.summary).toMatch(/winteriz|freeze/i);
+
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(
+      expect.arrayContaining(["thetford-rv-toilet-support", "thetford-permanent-rv-toilet-owner"]),
     );
   });
 

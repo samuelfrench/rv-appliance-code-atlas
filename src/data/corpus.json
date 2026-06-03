@@ -1931,6 +1931,46 @@
       "official": true
     },
     {
+      "id": "thetford-rv-toilet-support",
+      "brand": "Thetford",
+      "title": "Thetford RV Toilet Support",
+      "url": "https://www.thetford.com/us/rv-toilet-support/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-permanent-rv-toilet-owner",
+      "brand": "Thetford",
+      "title": "Thetford Permanent RV Toilet Owners' Manual",
+      "url": "https://www.thetford.com/app/uploads/2026/02/OM_Permanent_RV_Toilet_42088_0226_V1_EN-KOR-IT.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "thetford-faq-lip-seal-replacement",
+      "brand": "Thetford",
+      "title": "Thetford FAQ: Lip Seal Replacement",
+      "url": "https://www.thetford.com/us/faq/how-often-do-i-have-to-replace-the-lip-seal/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-faq-leak-behind-toilet",
+      "brand": "Thetford",
+      "title": "Thetford FAQ: Leak Behind Toilet",
+      "url": "https://www.thetford.com/us/faq/what-is-causing-the-leak-behind-my-toilet/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-faq-rv-sanitation-winterize",
+      "brand": "Thetford",
+      "title": "Thetford FAQ: Winterize RV Sanitation System",
+      "url": "https://www.thetford.com/us/faq/what-products-should-i-use-to-winterize-my-rv-sanitation-system/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
       "id": "norcold-n10lx-owner",
       "brand": "Norcold",
       "title": "Norcold N10LX and NA10LX Owner's Manual",
@@ -33505,7 +33545,9 @@
         "furrion-refrigerator-storage-qr",
         "furrion-refrigerant-leak-boundary-faq",
         "furrion-refrigerator-hard-reset-faq",
-        "furrion-12v-refrigerator-service-line-faq"
+        "furrion-12v-refrigerator-service-line-faq",
+        "thetford-rv-toilet-support",
+        "thetford-permanent-rv-toilet-owner"
       ]
     },
     {
@@ -36548,6 +36590,94 @@
         "freshjet fjx overvoltage campsite power management",
         "dometic freshjet p1 p3 e9 campsite voltage sufficient",
         "freshjet series 7 voltage protection active electrical consumers cable drum"
+      ]
+    },
+    {
+      "id": "thetford-rv-toilet-bowl-water-does-not-hold-seal",
+      "slug": "thetford-rv-toilet-bowl-water-does-not-hold-seal",
+      "title": "Thetford RV toilet bowl water does not hold",
+      "summary": "Use this when Thetford permanent RV toilet or Aqua-Magic bowl water will not hold, points to the blade or ball seal track, or needs lip-seal maintenance before service.",
+      "safeChecklist": [
+        "Record the toilet model family, how quickly bowl water drains, and whether the blade or ball visibly closes from normal owner access.",
+        "Clean the bowl and visible seal area only with Thetford-compatible non-abrasive cleaner, a soft brush, sponge, or cloth.",
+        "Check for and remove visible debris from the blade or ball seal track; use Thetford toilet seal lubricant or conditioner only as the manual and FAQ allow.",
+        "Contact Thetford, a dealer, or qualified RV service if the bowl still will not hold water, the seal looks worn, or the mechanism does not close freely."
+      ],
+      "sourceIds": [
+        "thetford-permanent-rv-toilet-owner",
+        "thetford-faq-lip-seal-replacement"
+      ],
+      "searchAliases": [
+        "thetford toilet bowl will not hold water lip seal",
+        "aqua magic toilet bowl does not hold water",
+        "thetford permanent rv toilet ball seal leak",
+        "thetford blade seal water drains from bowl"
+      ]
+    },
+    {
+      "id": "thetford-rv-toilet-no-flush-or-poor-flush-water-supply",
+      "slug": "thetford-rv-toilet-no-flush-or-poor-flush-water-supply",
+      "title": "Thetford RV toilet no flush or weak flush",
+      "summary": "Use this when a Thetford permanent RV toilet or Aqua-Magic flush is weak, has little water, or the pedal is not being held fully open during the documented flush cycle.",
+      "safeChecklist": [
+        "Identify the exact Thetford toilet model from the RV toilet support page or owner paperwork before assuming the flush style.",
+        "Confirm the RV water supply is on from normal owner controls and that the bowl is not frozen before attempting a flush.",
+        "Hold the pedal fully open during the flush and compare the result with the manual's normal two-to-three-second flush expectation.",
+        "Stop owner checks and contact Thetford, a dealer, or qualified RV service if water flow stays weak or diagnosis would require disconnecting the supply line, valve work, or toilet removal."
+      ],
+      "sourceIds": [
+        "thetford-rv-toilet-support",
+        "thetford-permanent-rv-toilet-owner"
+      ],
+      "searchAliases": [
+        "aqua magic weak flush no water pedal",
+        "thetford rv toilet no flush water supply",
+        "thetford permanent toilet poor flush two seconds",
+        "aqua magic pedal fully open flush"
+      ]
+    },
+    {
+      "id": "thetford-rv-toilet-leak-behind-or-around-base",
+      "slug": "thetford-rv-toilet-leak-behind-or-around-base",
+      "title": "Thetford RV toilet leak behind toilet or at base",
+      "summary": "Use this when a Thetford RV toilet leaks behind the bowl, at the water supply connection, while flushing, or between the closet flange and toilet base.",
+      "safeChecklist": [
+        "Turn off the RV water supply or water pump from normal owner controls and dry visible water before the leak spreads.",
+        "Record whether water appears behind the toilet, during flushing, at the visible supply connection, or between the toilet and floor.",
+        "From normal access only, check that the visible water supply line connection at the toilet is seated and not loose.",
+        "Contact Thetford, a dealer, or qualified RV service for persistent leaks, suspected vacuum breaker or water valve failure, flange leaks, or any step that would require toilet removal."
+      ],
+      "sourceIds": [
+        "thetford-permanent-rv-toilet-owner",
+        "thetford-faq-leak-behind-toilet"
+      ],
+      "searchAliases": [
+        "thetford toilet leak behind base water valve",
+        "aqua magic leak behind toilet",
+        "thetford rv toilet leaking at base closet flange",
+        "thetford toilet vacuum breaker leaks while flushing"
+      ]
+    },
+    {
+      "id": "thetford-rv-toilet-winterizing-freeze-damage",
+      "slug": "thetford-rv-toilet-winterizing-freeze-damage",
+      "title": "Thetford RV toilet winterizing and freeze-damage risk",
+      "summary": "Use this when a Thetford RV toilet may freeze, has frozen water in the bowl or valve area, or needs sanitation-system winterizing with RV potable antifreeze.",
+      "safeChecklist": [
+        "If water is frozen in the toilet, do not flush until the ice has thawed.",
+        "Turn off the RV water supply, drain the bowl, and follow Thetford's sanitation winterizing steps using RV potable antifreeze only; do not use automotive antifreeze.",
+        "Add Thetford-compatible seal lubricant and antifreeze to the bowl as Thetford describes for winterizing.",
+        "Do not operate a toilet that leaked after freezing; contact Thetford, a dealer, or qualified RV service for suspected freeze damage, valve leaks, or water-line damage."
+      ],
+      "sourceIds": [
+        "thetford-permanent-rv-toilet-owner",
+        "thetford-faq-rv-sanitation-winterize"
+      ],
+      "searchAliases": [
+        "thetford rv toilet winterize freeze damage leak",
+        "aqua magic toilet frozen water do not flush",
+        "thetford sanitation system winterize antifreeze",
+        "thetford toilet potable antifreeze seal lubricant"
       ]
     }
   ],

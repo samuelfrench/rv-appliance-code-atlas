@@ -90,9 +90,9 @@ npm run traffic:monitor
 
 Current corpus:
 - `843` verified entries
-- `166` symptom guides
-- `324` official sources
-- `1010` generated indexable pages
+- `170` symptom guides
+- `329` official sources
+- `1014` generated indexable pages
 
 Next automated batch goal:
 - Run weekly GSC report and review monetization readiness after page impressions appear.

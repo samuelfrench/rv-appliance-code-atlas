@@ -48,21 +48,22 @@
 - [x] Add official Suburban range/cooktop, griddle, and electric wall-heater symptom-only support pages for gas odor, burner relight, abnormal flame, oven vent/CO, griddle ignition/grease/storage, griddle flame/venturi service, and wall-heater thermostat/high-limit boundaries without inventing code entries.
 - [x] Add official Dometic Single Zone LCD thermostat E1-E5 table plus owner-safe symptom guides for auto fan, compressor delay, heat-pump defrost, low-ambient lockout, and hot-weather/filter maintenance.
 - [x] Add official Dometic FreshJet FJX P/E display-code table plus owner-safe rooftop AC symptom guides for temperature limits, airflow/filter, drainage, icing sensor, and campsite voltage protection.
+- [x] Add official Thetford RV toilet symptom pages for bowl-water loss, weak/no flush, leaks, and winterizing/freeze-risk boundaries without inventing code entries.
 - [x] Add initial GSC property and sitemap automation after the first live URL was stable.
 - [x] Add weekly traffic report artifact once GSC is configured.
 - [x] Add IndexNow key after domain/live URL is chosen.
 - [x] Add impression-based monetization readiness report after GSC data exists.
 - [x] Submit canonical-domain sitemap to GSC after the permanent-domain deploy is live.
 - [x] Submit canonical-domain URLs to IndexNow after the permanent-domain deploy is live.
-- [ ] Add RV Appliance Fault Codes to Sam's portfolio after permanent-domain launch verification is complete.
+- [x] Add RV Appliance Fault Codes to Sam's portfolio after permanent-domain launch verification is complete.
 
-## Current State — 2026-06-02
+## Current State — 2026-06-03
 - Live URL: `https://rvappliancefaultcodes.com/`
 - Permanent domain: Route53 registration `rvappliancefaultcodes.com` succeeded at `2026-06-02T23:06:27Z`; auto-renew and transfer lock are on. Route53 `.com` billing is `$15/year` registration plus `$15/year` renewal.
 - GitHub repo: `https://github.com/samuelfrench/rv-appliance-code-atlas`
 - Fly app: `rv-appliance-code-atlas`, one `shared-cpu-1x` 256 MB machine in `dfw`, auto-stop enabled.
 - Latest deploy: commit `cdffbfe` deployed via GitHub Actions run `26856216183` to Fly v51 image `deployment-01KT5E3NQCBWNP89XDMW6Q384K` at `2026-06-03T00:29:10Z`; live endpoints verified the refreshed IndexNow metadata, FreshJet corpus, and canonical-domain routes.
-- Corpus: `843` verified entries, `166` symptom guides, `324` official sources, `1010` generated indexable pages.
+- Corpus: `843` verified entries, `170` symptom guides, `329` official sources, `1014` generated indexable pages locally; production remains at the previous FreshJet deploy until the Thetford batch deploy completes.
 - GA4 property `properties/540096507`, stream `properties/540096507/dataStreams/14992447658`, and measurement ID `G-9824RBXHHR` were created automatically for `https://rvappliancefaultcodes.com` at `2026-06-02T23:04:00Z`.
 - GSC URL-prefix property `https://rvappliancefaultcodes.com/` verified with FILE token `googled22aa40f3a0e4dca.html`; Google Site Verification insert returned HTTP `200` at `2026-06-02T23:11:41Z`.
 - GSC sitemap `https://rvappliancefaultcodes.com/sitemap.xml` submitted after the canonical-domain deploy; Search Console site add and sitemap submit returned HTTP `204` at `2026-06-02T23:19:52Z`.
@@ -159,7 +160,7 @@
 - [x] Triage official Suburban range/cooktop, drop-in cooktop, griddle, and electric wall-heater manuals for owner-safe cooking/heater symptoms; add only non-duplicate symptom guides and no display-code entries unless an official code table is found.
 - [x] Triage official Dometic Single Zone LCD thermostat operating manual for E1-E5 display codes and owner-safe operating symptom guides.
 - [x] Triage official Dometic FreshJet FJX troubleshooting table for P/E display codes and owner-safe rooftop AC symptoms.
-- [ ] Triage official Thetford RV toilet manuals/support pages for owner-safe flush, bowl-water, leak, and freeze-damage symptoms.
+- [x] Triage official Thetford RV toilet manuals/support pages for owner-safe flush, bowl-water, leak, and freeze-damage symptoms.
 
 ## Launch Automation
 - [x] Add weekly traffic report artifact once GSC is configured.
