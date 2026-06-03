@@ -2600,6 +2600,71 @@ test("lookup surfaces the next model, control, warranty, and service-prep batch"
   expect(pageErrors).toEqual([]);
 });
 
+test("lookup surfaces the CFX Porta Potti Greystone Furrion microwave and hydronic prep batch", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    ["dometic cfx3 35 9600024617 app prep", "/symptoms/dometic-cfx3-35-model-app-prep/"],
+    [
+      "dometic crx pro 65 crx 0065t freezer storage prep",
+      "/symptoms/dometic-crx-pro-65-freezer-compartment-storage-prep/",
+    ],
+    [
+      "thetford porta potti 365 level indicator storage prep",
+      "/symptoms/thetford-porta-potti-365-level-indicator-storage-prep/",
+    ],
+    [
+      "greystone 24 slide in range ccd0007534 service prep",
+      "/symptoms/greystone-24-slide-in-range-service-prep/",
+    ],
+    [
+      "greystone double induction hob ccd0008385 cookware",
+      "/symptoms/greystone-double-induction-hob-cookware-prep/",
+    ],
+    [
+      "furrion 15 otr convection microwave imfha00133 service prep",
+      "/symptoms/furrion-15-otr-convection-microwave-service-prep/",
+    ],
+    [
+      "furrion 17 otr air fry microwave ccd0010982 prep",
+      "/symptoms/furrion-17-otr-air-fry-microwave-service-prep/",
+    ],
+    [
+      "aqua hot 125 d02 ahm 125d lcd altitude winterization",
+      "/symptoms/aquahot-125-d02-lcd-altitude-winterization-prep/",
+    ],
+    [
+      "maxxair maxxfan deluxe 00 07500k remote thermostat prep",
+      "/symptoms/maxxair-maxxfan-deluxe-07500k-remote-thermostat-prep/",
+    ],
+  ] as const;
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+  }
+
+  await searchbox.fill("dometic cfx3 35 9600024617 app prep");
+  const cfx3 = lookupResults.locator('a[href="/symptoms/dometic-cfx3-35-model-app-prep/"]');
+  await expect(cfx3).toBeVisible();
+  await cfx3.click();
+  await expect(page.getByRole("heading", { name: "Dometic CFX3 35 model and app prep" })).toBeVisible();
+  await expect(page.getByText(/Record the CFX3 35 model/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 

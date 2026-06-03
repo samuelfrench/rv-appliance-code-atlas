@@ -6185,6 +6185,222 @@
       "url": "https://suburbanrv.com/water-heating/tankless-water-heaters/advantage-tankless-water-heater-control/",
       "type": "manufacturer-product",
       "official": true
+    },
+    {
+      "id": "dometic-cfx3-35-product",
+      "brand": "Dometic",
+      "title": "Dometic CFX3 35 electric cooler product page",
+      "url": "https://www.dometic.com/en-us/product/dometic-cfx3-35-9600024617",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx3-operating-manual",
+      "brand": "Dometic",
+      "title": "Dometic CFX3 operating manual",
+      "url": "https://www.dometic.com/externalassets/dometic-cfx3-45_9600024618_77453.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx5-45-product",
+      "brand": "Dometic",
+      "title": "Dometic CFX5 45 electric cooler product page",
+      "url": "https://www.dometic.com/en-us/product/cfx5-45-electric-cooler-97000050755",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx5-operating-manual",
+      "brand": "Dometic",
+      "title": "Dometic CFX5 operating manual",
+      "url": "https://www.dometic.com/externalassets/dometic-cfx5-25-electric-cooler_9620015957_119335.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "dometic-crx-pro-65-operating-manual",
+      "brand": "Dometic",
+      "title": "Dometic CRX Pro 65 operating manual",
+      "url": "https://media.dometic.com/externalassets/dometic-crx-pro-65_83815.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "dometic-975-portable-toilet-product",
+      "brand": "Dometic",
+      "title": "Dometic 975 portable toilet product page",
+      "url": "https://www.dometic.com/en-us/product/dometic-975-portable-toilet-with-mounting-brackets-9108552686?v=9108552685",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "dometic-970-series-portable-toilet-operating-manual",
+      "brand": "Dometic",
+      "title": "Dometic 970 series portable toilet operating manual",
+      "url": "https://www.dometic.com/externalassets/dometic-972-portable-toilet_9108552682_114646.pdf?ref=-170932578",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "thetford-porta-potti-365-support",
+      "brand": "Thetford",
+      "title": "Thetford Porta Potti 365 support page",
+      "url": "https://thetford.com/us/thetford-support/porta-potti-365/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-porta-potti-565-quick-start",
+      "brand": "Thetford",
+      "title": "Thetford Porta Potti 565 quick start guide",
+      "url": "https://www.thetford.com/app/uploads/2025/01/QSG_Porta-Potti-565_EN_92122-0119.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "thetford-aqua-magic-style-plus-owner-manual-42088f",
+      "brand": "Thetford",
+      "title": "Thetford Aqua-Magic Style Plus owner manual 42088F",
+      "url": "https://www.thetford.com/app/uploads/2024/07/42088F_AM6-OM.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "greystone-24-slide-in-range-manual-ccd0007534",
+      "brand": "Lippert",
+      "title": "Greystone 24 inch slide-in RV gas range manual CCD-0007534",
+      "url": "https://support.lci1.com/documents/ccd-0007534",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "greystone-17-2in1-range-ffd-manual-ccd0008338",
+      "brand": "Lippert",
+      "title": "Greystone 17 inch 2-in-1 gas range with FFD manual CCD-0008338",
+      "url": "https://support.lci1.com/documents/ccd-0008338",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "greystone-17-2in1-digital-range-manual-ccd0006126",
+      "brand": "Lippert",
+      "title": "Greystone 17 inch 2-in-1 digital gas range manual CCD-0006126",
+      "url": "https://support.lci1.com/documents/ccd-0006126",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "greystone-17-21-digital-range-manual-ccd0009625",
+      "brand": "Lippert",
+      "title": "Greystone 17 and 21 inch digital gas range manual CCD-0009625",
+      "url": "https://support.lci1.com/documents/ccd-0009625",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "greystone-17-21-gas-range-manual-ccd0007530",
+      "brand": "Lippert",
+      "title": "Greystone 17 and 21 inch RV gas range manual CCD-0007530",
+      "url": "https://support.lci1.com/documents/ccd-0007530",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "greystone-21-freestanding-digital-range-manual-ccd0008340",
+      "brand": "Lippert",
+      "title": "Greystone 21 inch freestanding digital gas range manual CCD-0008340",
+      "url": "https://support.lci1.com/documents/ccd-0008340",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "greystone-17-inch-griddle-manual-ccd0007536",
+      "brand": "Lippert",
+      "title": "Greystone 17 inch LP gas griddle manual CCD-0007536",
+      "url": "https://support.lci1.com/documents/ccd-0007536",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "greystone-2-burner-cooktop-bifold-manual-ccd0008143",
+      "brand": "Lippert",
+      "title": "Greystone 2-burner gas cooktop with bi-fold glass user manual CCD-0008143",
+      "url": "https://support.lci1.com/documents/ccd-0008143",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "greystone-double-induction-hob-manual-ccd0008385",
+      "brand": "Lippert",
+      "title": "Greystone double induction hob manual CCD-0008385",
+      "url": "https://support.lci1.com/documents/ccd-0008385",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "greystone-cooktop-mwo-combo-manual-ccd0008348",
+      "brand": "Lippert",
+      "title": "Greystone 3 burner cooktop MWO combo manual CCD-0008348",
+      "url": "https://support.lci1.com/documents/ccd-0008348",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-09-built-in-microwave-manual",
+      "brand": "Furrion",
+      "title": "Furrion 0.9 cu ft built-in microwave oven user manual",
+      "url": "https://support.lci1.com/documents/furrion-09-built-in-mircrowave-oven-user-manual",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-09-countertop-microwave-manual",
+      "brand": "Furrion",
+      "title": "Furrion 0.9 cu ft countertop microwave oven user manual",
+      "url": "https://support.lci1.com/documents/furrion-09-countertop-microwave-oven",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-15-otr-convection-microwave-user-manual",
+      "brand": "Furrion",
+      "title": "Furrion 1.5 cu ft OTR convection microwave oven user manual",
+      "url": "https://support.lci1.com/documents/furrion-ort-convention-microwave-oven-user-manual",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-16-17-otr-nonconvection-user-manual-ccd0006073",
+      "brand": "Furrion",
+      "title": "Furrion 1.6 and 1.7 cu ft OTR non-convection microwave oven user manual CCD-0006073",
+      "url": "https://support.lci1.com/documents/ccd-0006073",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-17-otr-air-fry-microwave-user-manual-ccd0010982",
+      "brand": "Furrion",
+      "title": "Furrion 1.7 cu ft OTR air fry microwave oven user manual CCD-0010982",
+      "url": "https://support.lci1.com/documents/ccd-0010982",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "aquahot-125-d02-use-care-guide",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot AHM-125-D02 use and care guide",
+      "url": "https://library.aquahot.com/wp-content/uploads/2025/03/AHM-125-D02-Use-and-Care-Guide-5.6.24.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "maxxair-maxxfan-deluxe-07500k-product",
+      "brand": "MaxxAir",
+      "title": "MaxxAir MaxxFan Deluxe 00-07500K product page",
+      "url": "https://www.maxxair.com/Products/fans/maxxfan-deluxe-00-07500K/",
+      "type": "manufacturer-product",
+      "official": true
     }
   ],
   "entries": [
@@ -39761,7 +39977,34 @@
         "coleman-mach-12v-wall-thermostat-manual",
         "coleman-46000-underbunk-owner-1976-583",
         "maxxair-original-vent-cover-product",
-        "suburban-tankless-control-center-product"
+        "suburban-tankless-control-center-product",
+        "dometic-cfx3-35-product",
+        "dometic-cfx3-operating-manual",
+        "dometic-cfx5-45-product",
+        "dometic-cfx5-operating-manual",
+        "dometic-crx-pro-65-operating-manual",
+        "dometic-975-portable-toilet-product",
+        "dometic-970-series-portable-toilet-operating-manual",
+        "thetford-porta-potti-365-support",
+        "thetford-porta-potti-565-quick-start",
+        "thetford-aqua-magic-style-plus-owner-manual-42088f",
+        "greystone-24-slide-in-range-manual-ccd0007534",
+        "greystone-17-2in1-range-ffd-manual-ccd0008338",
+        "greystone-17-2in1-digital-range-manual-ccd0006126",
+        "greystone-17-21-digital-range-manual-ccd0009625",
+        "greystone-17-21-gas-range-manual-ccd0007530",
+        "greystone-21-freestanding-digital-range-manual-ccd0008340",
+        "greystone-17-inch-griddle-manual-ccd0007536",
+        "greystone-2-burner-cooktop-bifold-manual-ccd0008143",
+        "greystone-double-induction-hob-manual-ccd0008385",
+        "greystone-cooktop-mwo-combo-manual-ccd0008348",
+        "furrion-09-built-in-microwave-manual",
+        "furrion-09-countertop-microwave-manual",
+        "furrion-15-otr-convection-microwave-user-manual",
+        "furrion-16-17-otr-nonconvection-user-manual-ccd0006073",
+        "furrion-17-otr-air-fry-microwave-user-manual-ccd0010982",
+        "aquahot-125-d02-use-care-guide",
+        "maxxair-maxxfan-deluxe-07500k-product"
       ]
     },
     {
@@ -51686,6 +51929,605 @@
       "searchRequiredTerms": [
         "suburban+tankless+control",
         "suburban+digital+control"
+      ]
+    },
+    {
+      "id": "dometic-cfx3-35-model-app-prep",
+      "slug": "dometic-cfx3-35-model-app-prep",
+      "title": "Dometic CFX3 35 model and app prep",
+      "summary": "Use this Dometic CFX3 35 guide to record cooler model, app, temperature, and power details before support.",
+      "safeChecklist": [
+        "Record the CFX3 35 model, part 9600024617, set temperature, app connection state, current power source, and whether the concern happens while driving or parked.",
+        "Save screenshots of the app or display and photos of the product label and power source from normal owner access.",
+        "Use Dometic support or qualified RV electrical service for repeated power, app, installed 12V, or cooling concerns."
+      ],
+      "sourceIds": [
+        "dometic-cfx3-35-product"
+      ],
+      "searchAliases": [
+        "dometic cfx3 35 9600024617 app prep",
+        "cfx335 app model prep"
+      ],
+      "searchRequiredTerms": [
+        "cfx3+35",
+        "9600024617",
+        "cfx335"
+      ]
+    },
+    {
+      "id": "dometic-cfx3-battery-protection-storage-prep",
+      "slug": "dometic-cfx3-battery-protection-storage-prep",
+      "title": "Dometic CFX3 battery protection and storage prep",
+      "summary": "Use this CFX3 manual-backed guide to capture battery-protection, temperature, and storage facts before support.",
+      "safeChecklist": [
+        "Record the CFX3 model, selected battery-protection level, temperature setting, ambient temperature, and whether the cooler was pre-chilled.",
+        "Before storage, remove food, wipe owner-accessible surfaces dry, leave the lid aired if safe, and note the power source used.",
+        "Use Dometic support or qualified RV electrical service for repeated shutdown, installed 12V supply, or cooling concerns."
+      ],
+      "sourceIds": [
+        "dometic-cfx3-operating-manual"
+      ],
+      "searchAliases": [
+        "dometic cfx3 battery protection storage prep",
+        "cfx3 storage battery protection prep"
+      ],
+      "searchRequiredTerms": [
+        "cfx3+battery+protection",
+        "cfx3+storage"
+      ]
+    },
+    {
+      "id": "dometic-cfx5-45-app-power-prep",
+      "slug": "dometic-cfx5-45-app-power-prep",
+      "title": "Dometic CFX5 45 app and power prep",
+      "summary": "Use this Dometic CFX5 45 guide to record app, power, model, and temperature details before support.",
+      "safeChecklist": [
+        "Record the CFX5 45 model, part 97000050755, set temperature, app status, current power source, and whether the issue happens on vehicle or shore power.",
+        "Save photos of the label, display, owner-visible cable condition, and screenshots of the app if used.",
+        "Use Dometic support or qualified RV electrical service for repeated power loss, installed 12V, app, or cooling concerns."
+      ],
+      "sourceIds": [
+        "dometic-cfx5-45-product"
+      ],
+      "searchAliases": [
+        "dometic cfx5 45 97000050755 app power prep",
+        "cfx545 app power prep"
+      ],
+      "searchRequiredTerms": [
+        "cfx5+45",
+        "97000050755",
+        "cfx545"
+      ]
+    },
+    {
+      "id": "dometic-cfx5-reset-battery-monitor-prep",
+      "slug": "dometic-cfx5-reset-battery-monitor-prep",
+      "title": "Dometic CFX5 reset and battery monitor prep",
+      "summary": "Use this CFX5 manual-backed guide to capture reset, battery monitor, temperature, and storage details before support.",
+      "safeChecklist": [
+        "Record the CFX5 model, battery monitor setting, display state, set temperature, ambient temperature, and any reset or app prompt shown.",
+        "Move food if temperature is unsafe and save photos or screenshots before changing settings.",
+        "Use Dometic support or qualified RV electrical service for repeated shutdown, installed 12V, app, or cooling concerns."
+      ],
+      "sourceIds": [
+        "dometic-cfx5-operating-manual"
+      ],
+      "searchAliases": [
+        "dometic cfx5 battery monitor reset prep",
+        "cfx5 reset battery monitor prep"
+      ],
+      "searchRequiredTerms": [
+        "cfx5+battery+monitor",
+        "cfx5+reset"
+      ]
+    },
+    {
+      "id": "dometic-crx-pro-65-freezer-compartment-storage-prep",
+      "slug": "dometic-crx-pro-65-freezer-compartment-storage-prep",
+      "title": "Dometic CRX Pro 65 freezer/storage prep",
+      "summary": "Use this CRX Pro 65 guide to document freezer compartment, ventilation, storage, and service facts before support.",
+      "safeChecklist": [
+        "Record the CRX Pro 65 or CRX-0065T model, serial number, thermostat setting, freezer compartment use, ventilation context, and food temperature concern.",
+        "For storage, remove food, clean owner-accessible surfaces, dry the cabinet, and document whether the door is latched or aired.",
+        "Use Dometic support or qualified RV refrigerator service for installed electrical, cabinet-fit, or cooling decisions."
+      ],
+      "sourceIds": [
+        "dometic-crx-pro-65-operating-manual"
+      ],
+      "searchAliases": [
+        "dometic crx pro 65 crx 0065t freezer storage prep",
+        "crx pro 65 freezer storage service prep"
+      ],
+      "searchRequiredTerms": [
+        "crx+pro+65",
+        "crx+0065t"
+      ]
+    },
+    {
+      "id": "dometic-975-portable-toilet-mounting-model-prep",
+      "slug": "dometic-975-portable-toilet-mounting-model-prep",
+      "title": "Dometic 975 portable toilet mounting/model prep",
+      "summary": "Use this Dometic 975 guide to record model, mounting-bracket, tank, and support details before parts or service routing.",
+      "safeChecklist": [
+        "Record the Dometic 975 model, part 9108552686, mounting-bracket condition, tank status, flush behavior, and odor or leak location if visible.",
+        "Save photos of the product label, mounting area, tank level, and purchase paperwork.",
+        "Use Dometic support or qualified RV sanitation service for mounted toilet, leak, seal, or parts decisions."
+      ],
+      "sourceIds": [
+        "dometic-975-portable-toilet-product"
+      ],
+      "searchAliases": [
+        "dometic 975 9108552686 portable toilet mounting prep",
+        "dometic 975 portable toilet model prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+975",
+        "9108552686"
+      ]
+    },
+    {
+      "id": "dometic-970-series-portable-toilet-cleaning-storage-prep",
+      "slug": "dometic-970-series-portable-toilet-cleaning-storage-prep",
+      "title": "Dometic 970 series portable toilet cleaning/storage prep",
+      "summary": "Use this Dometic 970 series guide to capture cleaning, storage, tank, and model details before support.",
+      "safeChecklist": [
+        "Record the 970 series portable toilet model, whether it is a 972, 975, or 975MSD, tank status, flush condition, and cleaning product used.",
+        "Empty and rinse only according to normal owner instructions, then store clean and dry with caps secured.",
+        "Use Dometic support or qualified RV sanitation service for leak, seal, mounted toilet, or parts decisions."
+      ],
+      "sourceIds": [
+        "dometic-970-series-portable-toilet-operating-manual"
+      ],
+      "searchAliases": [
+        "dometic 970 portable toilet 975msd cleaning storage prep",
+        "dometic 970 series portable toilet storage prep"
+      ],
+      "searchRequiredTerms": [
+        "970+portable+toilet",
+        "975msd",
+        "9108552682"
+      ]
+    },
+    {
+      "id": "thetford-porta-potti-365-level-indicator-storage-prep",
+      "slug": "thetford-porta-potti-365-level-indicator-storage-prep",
+      "title": "Thetford Porta Potti 365 level indicator/storage prep",
+      "summary": "Use this Porta Potti 365 guide to record level-indicator, flush, storage, and model details before Thetford support.",
+      "safeChecklist": [
+        "Record the Porta Potti 365 model, level indicator reading, tank status, flush pump behavior, odor, and cleaning or storage history.",
+        "Empty and rinse only by normal owner instructions, then document whether the cap, seal, or level indicator is the complaint.",
+        "Use Thetford support or qualified RV sanitation service for leak, seal, or parts decisions."
+      ],
+      "sourceIds": [
+        "thetford-porta-potti-365-support"
+      ],
+      "searchAliases": [
+        "thetford porta potti 365 level indicator storage prep",
+        "porta potti 365 level indicator service prep"
+      ],
+      "searchRequiredTerms": [
+        "porta+potti+365",
+        "365+level+indicator"
+      ]
+    },
+    {
+      "id": "thetford-porta-potti-565-quick-start-electric-flush-prep",
+      "slug": "thetford-porta-potti-565-quick-start-electric-flush-prep",
+      "title": "Thetford Porta Potti 565 electric flush prep",
+      "summary": "Use this Porta Potti 565 quick-start guide to capture electric flush, setup, tank, and storage details before support.",
+      "safeChecklist": [
+        "Record whether the Porta Potti is 565P or 565E, electric-flush status if 565E, tank level, setup step, and storage condition.",
+        "Save photos of the model label, tank latch, level indicator, and any battery or electric-flush status visible from owner access.",
+        "Use Thetford support or qualified RV sanitation service for leak, seal, electric flush, or parts decisions."
+      ],
+      "sourceIds": [
+        "thetford-porta-potti-565-quick-start"
+      ],
+      "searchAliases": [
+        "thetford porta potti 565e electric flush quick start",
+        "porta potti 565 quick start electric flush prep"
+      ],
+      "searchRequiredTerms": [
+        "porta+potti+565",
+        "565e+electric"
+      ]
+    },
+    {
+      "id": "thetford-aqua-magic-style-plus-cleaning-serial-prep",
+      "slug": "thetford-aqua-magic-style-plus-cleaning-serial-prep",
+      "title": "Thetford Aqua-Magic Style Plus cleaning/serial prep",
+      "summary": "Use this Aqua-Magic Style Plus guide to capture serial, cleaning, flush, and service-call details before support.",
+      "safeChecklist": [
+        "Record the Aqua-Magic Style Plus model, serial number, flush behavior, bowl-water status, visible leak location, and cleaning product used.",
+        "Save photos of the model/serial label, owner manual number 42088F, bowl, and pedal or hand controls.",
+        "Use Thetford support or qualified RV sanitation service for installed plumbing, leak, seal, or parts decisions."
+      ],
+      "sourceIds": [
+        "thetford-aqua-magic-style-plus-owner-manual-42088f"
+      ],
+      "searchAliases": [
+        "thetford aqua magic style plus 42088f serial cleaning prep",
+        "aqua magic style plus serial cleaning prep"
+      ],
+      "searchRequiredTerms": [
+        "style+plus",
+        "42088f",
+        "aqua+magic+style+plus"
+      ]
+    },
+    {
+      "id": "greystone-24-slide-in-range-service-prep",
+      "slug": "greystone-24-slide-in-range-service-prep",
+      "title": "Greystone 24 slide-in range service prep",
+      "summary": "Use this Greystone 24 inch slide-in range guide to capture model, label, flame, control, and service facts before support.",
+      "safeChecklist": [
+        "Record the Greystone 24 inch slide-in range model, document CCD-0007534, control state, oven or cooktop complaint, odor, and visible flame condition from normal use.",
+        "Shut the range off if you smell LP or see abnormal flame, and save photos of the label and controls.",
+        "Use Lippert/Greystone support or qualified RV gas-appliance service for LP, installed appliance, ignition, flame, or electrical decisions."
+      ],
+      "sourceIds": [
+        "greystone-24-slide-in-range-manual-ccd0007534"
+      ],
+      "searchAliases": [
+        "greystone 24 slide in range ccd0007534 service prep",
+        "greystone 24 slide in gas range prep"
+      ],
+      "searchRequiredTerms": [
+        "greystone+24+slide",
+        "ccd0007534"
+      ]
+    },
+    {
+      "id": "greystone-17-2in1-range-ffd-service-prep",
+      "slug": "greystone-17-2in1-range-ffd-service-prep",
+      "title": "Greystone 17 2-in-1 FFD range service prep",
+      "summary": "Use this Greystone 17 inch 2-in-1 range guide to record FFD model, control, flame, and service facts before support.",
+      "safeChecklist": [
+        "Record the Greystone 17 inch 2-in-1 FFD range model, document CCD-0008338, control state, oven or cooktop complaint, odor, and visible flame condition from normal use.",
+        "Shut the range off if you smell LP or see abnormal flame, and save photos of the label and controls.",
+        "Use Lippert/Greystone support or qualified RV gas-appliance service for LP, installed appliance, ignition, flame, or electrical decisions."
+      ],
+      "sourceIds": [
+        "greystone-17-2in1-range-ffd-manual-ccd0008338"
+      ],
+      "searchAliases": [
+        "greystone 17 2in1 ffd range ccd0008338 prep",
+        "greystone 17 2 in 1 ffd range prep"
+      ],
+      "searchRequiredTerms": [
+        "greystone+17+2in1+ffd",
+        "ccd0008338"
+      ]
+    },
+    {
+      "id": "greystone-17-2in1-digital-range-control-prep",
+      "slug": "greystone-17-2in1-digital-range-control-prep",
+      "title": "Greystone 17 2-in-1 digital range control prep",
+      "summary": "Use this Greystone 17 inch 2-in-1 digital range guide to capture display, model, and service-call facts before support.",
+      "safeChecklist": [
+        "Record the Greystone 17 inch 2-in-1 digital range model, document CCD-0006126, clock or display state, selected mode, odor, and visible flame condition from normal use.",
+        "Shut the range off if you smell LP or see abnormal flame, and save photos of the display, controls, and label.",
+        "Use Lippert/Greystone support or qualified RV gas-appliance service for LP, installed appliance, ignition, flame, or electrical decisions."
+      ],
+      "sourceIds": [
+        "greystone-17-2in1-digital-range-manual-ccd0006126"
+      ],
+      "searchAliases": [
+        "greystone 17 2in1 digital range ccd0006126 control",
+        "greystone 17 digital range control prep"
+      ],
+      "searchRequiredTerms": [
+        "greystone+17+2in1+digital",
+        "ccd0006126"
+      ]
+    },
+    {
+      "id": "greystone-17-21-digital-range-knob-control-prep",
+      "slug": "greystone-17-21-digital-range-knob-control-prep",
+      "title": "Greystone 17/21 digital range knob/control prep",
+      "summary": "Use this Greystone 17 and 21 inch digital range guide to record knob, display, flame, and support details before service.",
+      "safeChecklist": [
+        "Record whether the range is 17 or 21 inch, document CCD-0009625, knob position, display state, odor, and visible flame condition from normal use.",
+        "Shut the range off if you smell LP or see abnormal flame, and save photos of the controls and model label.",
+        "Use Lippert/Greystone support or qualified RV gas-appliance service for LP, installed appliance, ignition, flame, or electrical decisions."
+      ],
+      "sourceIds": [
+        "greystone-17-21-digital-range-manual-ccd0009625"
+      ],
+      "searchAliases": [
+        "greystone 17 21 digital range ccd0009625 knob control",
+        "greystone 17 21 digital range control prep"
+      ],
+      "searchRequiredTerms": [
+        "greystone+17+21+digital",
+        "ccd0009625"
+      ]
+    },
+    {
+      "id": "greystone-17-21-gas-range-model-service-prep",
+      "slug": "greystone-17-21-gas-range-model-service-prep",
+      "title": "Greystone 17/21 gas range model service prep",
+      "summary": "Use this Greystone 17 and 21 inch gas range guide to capture model, label, flame, and service facts before support.",
+      "safeChecklist": [
+        "Record whether the range is 17 or 21 inch, document CCD-0007530, model label, control state, odor, and visible flame condition from normal use.",
+        "Shut the range off if you smell LP or see abnormal flame, and save photos of the model label and controls.",
+        "Use Lippert/Greystone support or qualified RV gas-appliance service for LP, installed appliance, ignition, flame, or electrical decisions."
+      ],
+      "sourceIds": [
+        "greystone-17-21-gas-range-manual-ccd0007530"
+      ],
+      "searchAliases": [
+        "greystone 17 21 gas range ccd0007530 model service",
+        "greystone 17 21 gas range model prep"
+      ],
+      "searchRequiredTerms": [
+        "greystone+17+21+gas+range",
+        "ccd0007530"
+      ]
+    },
+    {
+      "id": "greystone-21-freestanding-digital-range-drawer-prep",
+      "slug": "greystone-21-freestanding-digital-range-drawer-prep",
+      "title": "Greystone 21 freestanding digital range drawer prep",
+      "summary": "Use this Greystone 21 inch freestanding digital range guide to capture drawer, display, model, and service details before support.",
+      "safeChecklist": [
+        "Record the Greystone 21 inch freestanding digital range model, document CCD-0008340, drawer condition, display state, odor, and visible flame condition from normal use.",
+        "Shut the range off if you smell LP or see abnormal flame, and save photos of the model label, drawers, and controls.",
+        "Use Lippert/Greystone support or qualified RV gas-appliance service for LP, installed appliance, ignition, flame, or electrical decisions."
+      ],
+      "sourceIds": [
+        "greystone-21-freestanding-digital-range-manual-ccd0008340"
+      ],
+      "searchAliases": [
+        "greystone 21 freestanding digital range ccd0008340 drawer",
+        "greystone 21 freestanding digital range prep"
+      ],
+      "searchRequiredTerms": [
+        "greystone+21+freestanding+digital",
+        "ccd0008340"
+      ]
+    },
+    {
+      "id": "greystone-17-inch-griddle-grease-storage-prep",
+      "slug": "greystone-17-inch-griddle-grease-storage-prep",
+      "title": "Greystone 17 inch griddle grease/storage prep",
+      "summary": "Use this Greystone 17 inch griddle guide to document grease, storage, label, and service details before support.",
+      "safeChecklist": [
+        "Record the Greystone 17 inch griddle model, document CCD-0007536, grease condition, storage condition, odor, and visible flame condition from normal use.",
+        "After the griddle is cool, clean only owner-accessible surfaces and save photos of the label and cooking plate condition.",
+        "Use Lippert/Greystone support or qualified RV gas-appliance service for LP, installed appliance, ignition, flame, or parts decisions."
+      ],
+      "sourceIds": [
+        "greystone-17-inch-griddle-manual-ccd0007536"
+      ],
+      "searchAliases": [
+        "greystone 17 inch griddle ccd0007536 grease storage",
+        "greystone 17 inch griddle storage prep"
+      ],
+      "searchRequiredTerms": [
+        "greystone+17+griddle",
+        "ccd0007536"
+      ]
+    },
+    {
+      "id": "greystone-2-burner-cooktop-bifold-glass-prep",
+      "slug": "greystone-2-burner-cooktop-bifold-glass-prep",
+      "title": "Greystone 2-burner cooktop bi-fold glass prep",
+      "summary": "Use this Greystone 2-burner cooktop guide to document bi-fold glass, model, flame, and service details before support.",
+      "safeChecklist": [
+        "Record the Greystone 2-burner cooktop model, document CCD-0008143, bi-fold glass condition, knob status, odor, and visible flame condition from normal use.",
+        "Shut the cooktop off if you smell LP or see abnormal flame, and save photos of the label, controls, and glass.",
+        "Use Lippert/Greystone support or qualified RV gas-appliance service for LP, installed appliance, ignition, flame, or parts decisions."
+      ],
+      "sourceIds": [
+        "greystone-2-burner-cooktop-bifold-manual-ccd0008143"
+      ],
+      "searchAliases": [
+        "greystone 2 burner bifold glass ccd0008143 cooktop prep",
+        "greystone 2 burner bi fold glass prep"
+      ],
+      "searchRequiredTerms": [
+        "greystone+2+burner+bifold",
+        "ccd0008143"
+      ]
+    },
+    {
+      "id": "greystone-double-induction-hob-cookware-prep",
+      "slug": "greystone-double-induction-hob-cookware-prep",
+      "title": "Greystone double induction hob cookware prep",
+      "summary": "Use this Greystone double induction hob guide to document cookware, control, model, and support facts before service.",
+      "safeChecklist": [
+        "Record the Greystone double induction hob model, document CCD-0008385, cookware type, selected power level, display status, and overheat or shutdown behavior.",
+        "Turn the hob off and let it cool before cleaning owner-accessible surfaces or moving cookware.",
+        "Use Lippert/Greystone support or qualified RV appliance service for installed electrical, control, repeated overheat, or parts decisions."
+      ],
+      "sourceIds": [
+        "greystone-double-induction-hob-manual-ccd0008385"
+      ],
+      "searchAliases": [
+        "greystone double induction hob ccd0008385 cookware",
+        "greystone double induction cookware prep"
+      ],
+      "searchRequiredTerms": [
+        "greystone+double+induction",
+        "ccd0008385"
+      ]
+    },
+    {
+      "id": "greystone-cooktop-mwo-combo-service-prep",
+      "slug": "greystone-cooktop-mwo-combo-service-prep",
+      "title": "Greystone cooktop/MWO combo service prep",
+      "summary": "Use this Greystone cooktop MWO combo guide to capture cooktop, microwave, model, and support details before service.",
+      "safeChecklist": [
+        "Record the Greystone cooktop MWO combo model, document CCD-0008348, cooktop status, microwave status, odor, and visible flame condition from normal use.",
+        "Stop using the appliance if you smell LP, see abnormal flame, or the microwave sparks, then save photos of labels and controls.",
+        "Use Lippert/Greystone support or qualified RV appliance service for LP, microwave, installed electrical, control, or parts decisions."
+      ],
+      "sourceIds": [
+        "greystone-cooktop-mwo-combo-manual-ccd0008348"
+      ],
+      "searchAliases": [
+        "greystone cooktop mwo combo ccd0008348 service prep",
+        "greystone cooktop microwave combo prep"
+      ],
+      "searchRequiredTerms": [
+        "greystone+cooktop+mwo",
+        "ccd0008348"
+      ]
+    },
+    {
+      "id": "furrion-09-built-in-microwave-service-prep",
+      "slug": "furrion-09-built-in-microwave-service-prep",
+      "title": "Furrion 0.9 built-in microwave service prep",
+      "summary": "Use this Furrion 0.9 cu ft built-in microwave guide to capture model, display, turntable, and service details before support.",
+      "safeChecklist": [
+        "Record the Furrion 0.9 built-in microwave model, IM-FHA00116 reference, display status, no-heat or turntable symptom, and whether any sparking occurred.",
+        "Stop using the microwave if it sparks, smells hot, or heats abnormally, then save photos of the label, cavity condition, and display.",
+        "Use Furrion support or qualified RV appliance service for microwave, installed electrical, control, or parts decisions."
+      ],
+      "sourceIds": [
+        "furrion-09-built-in-microwave-manual"
+      ],
+      "searchAliases": [
+        "furrion 09 built in microwave imfha00116 service prep",
+        "furrion 0.9 built in microwave service prep"
+      ],
+      "searchRequiredTerms": [
+        "furrion+09+built+in",
+        "imfha00116"
+      ]
+    },
+    {
+      "id": "furrion-09-countertop-microwave-service-prep",
+      "slug": "furrion-09-countertop-microwave-service-prep",
+      "title": "Furrion 0.9 countertop microwave service prep",
+      "summary": "Use this Furrion 0.9 cu ft countertop microwave guide to capture model, display, turntable, and service details before support.",
+      "safeChecklist": [
+        "Record the Furrion 0.9 countertop microwave model, IM-FHA00053 reference, display status, no-heat or turntable symptom, and whether any sparking occurred.",
+        "Stop using the microwave if it sparks, smells hot, or heats abnormally, then save photos of the label, cavity condition, and display.",
+        "Use Furrion support or qualified RV appliance service for microwave, installed electrical, control, or parts decisions."
+      ],
+      "sourceIds": [
+        "furrion-09-countertop-microwave-manual"
+      ],
+      "searchAliases": [
+        "furrion 09 countertop microwave imfha00053 service prep",
+        "furrion 0.9 countertop microwave prep"
+      ],
+      "searchRequiredTerms": [
+        "furrion+09+countertop",
+        "imfha00053"
+      ]
+    },
+    {
+      "id": "furrion-15-otr-convection-microwave-service-prep",
+      "slug": "furrion-15-otr-convection-microwave-service-prep",
+      "title": "Furrion 1.5 OTR convection microwave service prep",
+      "summary": "Use this Furrion 1.5 cu ft OTR convection microwave guide to capture model, fan, display, and service details before support.",
+      "safeChecklist": [
+        "Record the Furrion 1.5 OTR convection microwave model, IM-FHA00133 reference, display status, fan or convection symptom, and whether any sparking occurred.",
+        "Stop using the microwave if it sparks, smells hot, or heats abnormally, then save photos of the label, cavity condition, and display.",
+        "Use Furrion support or qualified RV appliance service for microwave, installed electrical, venting, control, or parts decisions."
+      ],
+      "sourceIds": [
+        "furrion-15-otr-convection-microwave-user-manual"
+      ],
+      "searchAliases": [
+        "furrion 15 otr convection microwave imfha00133 service prep",
+        "furrion 1.5 otr convection microwave prep"
+      ],
+      "searchRequiredTerms": [
+        "furrion+15+otr+convection",
+        "imfha00133"
+      ]
+    },
+    {
+      "id": "furrion-16-17-otr-nonconvection-microwave-service-prep",
+      "slug": "furrion-16-17-otr-nonconvection-microwave-service-prep",
+      "title": "Furrion 1.6/1.7 OTR non-convection microwave service prep",
+      "summary": "Use this Furrion 1.6 and 1.7 cu ft OTR non-convection microwave guide to capture model, fan, display, and service details before support.",
+      "safeChecklist": [
+        "Record the Furrion 1.6 or 1.7 OTR non-convection microwave model, CCD-0006073 reference, display status, fan symptom, and whether any sparking occurred.",
+        "Stop using the microwave if it sparks, smells hot, or heats abnormally, then save photos of the label, cavity condition, and display.",
+        "Use Furrion support or qualified RV appliance service for microwave, installed electrical, venting, control, or parts decisions."
+      ],
+      "sourceIds": [
+        "furrion-16-17-otr-nonconvection-user-manual-ccd0006073"
+      ],
+      "searchAliases": [
+        "furrion 16 17 otr nonconvection microwave ccd0006073 prep",
+        "furrion 1.6 1.7 otr non convection microwave prep"
+      ],
+      "searchRequiredTerms": [
+        "furrion+16+17+otr",
+        "ccd0006073"
+      ]
+    },
+    {
+      "id": "furrion-17-otr-air-fry-microwave-service-prep",
+      "slug": "furrion-17-otr-air-fry-microwave-service-prep",
+      "title": "Furrion 1.7 OTR air fry microwave service prep",
+      "summary": "Use this Furrion 1.7 cu ft OTR air fry microwave guide to capture model, air-fry, display, and service details before support.",
+      "safeChecklist": [
+        "Record the Furrion 1.7 OTR air fry microwave model, CCD-0010982 reference, display status, air-fry or fan symptom, and whether any sparking occurred.",
+        "Stop using the microwave if it sparks, smells hot, or heats abnormally, then save photos of the label, cavity condition, and display.",
+        "Use Furrion support or qualified RV appliance service for microwave, installed electrical, venting, control, or parts decisions."
+      ],
+      "sourceIds": [
+        "furrion-17-otr-air-fry-microwave-user-manual-ccd0010982"
+      ],
+      "searchAliases": [
+        "furrion 17 otr air fry microwave ccd0010982 prep",
+        "furrion 1.7 otr air fry microwave prep"
+      ],
+      "searchRequiredTerms": [
+        "furrion+17+otr+air+fry",
+        "ccd0010982"
+      ]
+    },
+    {
+      "id": "aquahot-125-d02-lcd-altitude-winterization-prep",
+      "slug": "aquahot-125-d02-lcd-altitude-winterization-prep",
+      "title": "Aqua-Hot 125-D02 LCD/altitude/winterization prep",
+      "summary": "Use this Aqua-Hot 125-D02 guide to document LCD, altitude, winterization, heat, and service facts before support.",
+      "safeChecklist": [
+        "Record the AHM-125-D02 model, LCD state, heat or hot-water symptom, altitude setting if shown, winterization status, and any visible leak location.",
+        "Shut the Aqua-Hot system off if there is a leak, unusual odor, or unsafe heat condition, then save photos of the display and label.",
+        "Use Aqua-Hot support or qualified hydronic service for fuel, exhaust, coolant, installed electrical, heat, or parts decisions."
+      ],
+      "sourceIds": [
+        "aquahot-125-d02-use-care-guide"
+      ],
+      "searchAliases": [
+        "aqua hot 125 d02 ahm 125d lcd altitude winterization",
+        "aquahot 125 d02 lcd winterization prep"
+      ],
+      "searchRequiredTerms": [
+        "125+d02",
+        "ahm+125d",
+        "5+6+24"
+      ]
+    },
+    {
+      "id": "maxxair-maxxfan-deluxe-07500k-remote-thermostat-prep",
+      "slug": "maxxair-maxxfan-deluxe-07500k-remote-thermostat-prep",
+      "title": "MaxxAir MaxxFan Deluxe 00-07500K remote/thermostat prep",
+      "summary": "Use this MaxxFan Deluxe 00-07500K guide to document remote, thermostat, rain shield, and model facts before support.",
+      "safeChecklist": [
+        "Record the MaxxFan Deluxe 00-07500K model, remote status, thermostat setting, fan speed, rain-shield response, and whether the fan is intake or exhaust.",
+        "Save photos of the product label, keypad or remote, and lid position from normal owner access.",
+        "Use MaxxAir support or qualified RV ventilation service for roof, motor, installed electrical, lid, or parts decisions."
+      ],
+      "sourceIds": [
+        "maxxair-maxxfan-deluxe-07500k-product"
+      ],
+      "searchAliases": [
+        "maxxair maxxfan deluxe 00 07500k remote thermostat prep",
+        "maxxfan deluxe 07500k remote thermostat prep"
+      ],
+      "searchRequiredTerms": [
+        "00+07500k",
+        "maxxfan+deluxe+remote"
       ]
     }
   ],

@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 864;
-const expectedSourceCount = 770;
-const expectedSymptomCount = 603;
+const expectedSourceCount = 797;
+const expectedSymptomCount = 630;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -8755,10 +8755,10 @@ describe("verified corpus", () => {
       expect(source?.url, sourceId).toBe(url);
     }
 
-    expect(corpus.sources).toHaveLength(770);
-    expect(corpus.entries).toHaveLength(864);
-    expect(corpus.symptoms).toHaveLength(603);
-    expect(summary.indexablePages).toBe(864 + 603 + 1);
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(summary.indexablePages).toBe(expectedEntryCount + expectedSymptomCount + 1);
     expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
 
     for (const [symptomId, sourceIds] of expectedSymptomSourceIds) {
@@ -8831,6 +8831,142 @@ describe("verified corpus", () => {
     ]) {
       expect(
         topSlugsFor(query).filter((slug) => newSlugs.has(slug)),
+        query,
+      ).toEqual([]);
+    }
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds official CFX, Porta Potti, Greystone, Furrion microwave, and hydronic prep guides without code entries", () => {
+    const expectedSources = new Map<string, string>([
+      ["dometic-cfx3-35-product", "https://www.dometic.com/en-us/product/dometic-cfx3-35-9600024617"],
+      ["dometic-cfx3-operating-manual", "https://www.dometic.com/externalassets/dometic-cfx3-45_9600024618_77453.pdf"],
+      ["dometic-cfx5-45-product", "https://www.dometic.com/en-us/product/cfx5-45-electric-cooler-97000050755"],
+      ["dometic-cfx5-operating-manual", "https://www.dometic.com/externalassets/dometic-cfx5-25-electric-cooler_9620015957_119335.pdf"],
+      ["dometic-crx-pro-65-operating-manual", "https://media.dometic.com/externalassets/dometic-crx-pro-65_83815.pdf"],
+      [
+        "dometic-975-portable-toilet-product",
+        "https://www.dometic.com/en-us/product/dometic-975-portable-toilet-with-mounting-brackets-9108552686?v=9108552685",
+      ],
+      [
+        "dometic-970-series-portable-toilet-operating-manual",
+        "https://www.dometic.com/externalassets/dometic-972-portable-toilet_9108552682_114646.pdf?ref=-170932578",
+      ],
+      ["thetford-porta-potti-365-support", "https://thetford.com/us/thetford-support/porta-potti-365/"],
+      ["thetford-porta-potti-565-quick-start", "https://www.thetford.com/app/uploads/2025/01/QSG_Porta-Potti-565_EN_92122-0119.pdf"],
+      ["thetford-aqua-magic-style-plus-owner-manual-42088f", "https://www.thetford.com/app/uploads/2024/07/42088F_AM6-OM.pdf"],
+      ["greystone-24-slide-in-range-manual-ccd0007534", "https://support.lci1.com/documents/ccd-0007534"],
+      ["greystone-17-2in1-range-ffd-manual-ccd0008338", "https://support.lci1.com/documents/ccd-0008338"],
+      ["greystone-17-2in1-digital-range-manual-ccd0006126", "https://support.lci1.com/documents/ccd-0006126"],
+      ["greystone-17-21-digital-range-manual-ccd0009625", "https://support.lci1.com/documents/ccd-0009625"],
+      ["greystone-17-21-gas-range-manual-ccd0007530", "https://support.lci1.com/documents/ccd-0007530"],
+      ["greystone-21-freestanding-digital-range-manual-ccd0008340", "https://support.lci1.com/documents/ccd-0008340"],
+      ["greystone-17-inch-griddle-manual-ccd0007536", "https://support.lci1.com/documents/ccd-0007536"],
+      ["greystone-2-burner-cooktop-bifold-manual-ccd0008143", "https://support.lci1.com/documents/ccd-0008143"],
+      ["greystone-double-induction-hob-manual-ccd0008385", "https://support.lci1.com/documents/ccd-0008385"],
+      ["greystone-cooktop-mwo-combo-manual-ccd0008348", "https://support.lci1.com/documents/ccd-0008348"],
+      ["furrion-09-built-in-microwave-manual", "https://support.lci1.com/documents/furrion-09-built-in-mircrowave-oven-user-manual"],
+      ["furrion-09-countertop-microwave-manual", "https://support.lci1.com/documents/furrion-09-countertop-microwave-oven"],
+      [
+        "furrion-15-otr-convection-microwave-user-manual",
+        "https://support.lci1.com/documents/furrion-ort-convention-microwave-oven-user-manual",
+      ],
+      ["furrion-16-17-otr-nonconvection-user-manual-ccd0006073", "https://support.lci1.com/documents/ccd-0006073"],
+      ["furrion-17-otr-air-fry-microwave-user-manual-ccd0010982", "https://support.lci1.com/documents/ccd-0010982"],
+      ["aquahot-125-d02-use-care-guide", "https://library.aquahot.com/wp-content/uploads/2025/03/AHM-125-D02-Use-and-Care-Guide-5.6.24.pdf"],
+      ["maxxair-maxxfan-deluxe-07500k-product", "https://www.maxxair.com/Products/fans/maxxfan-deluxe-00-07500K/"],
+    ]);
+    const expectedSymptoms = new Map<string, { sourceIds: string[]; requiredTerms: string[]; query: string }>([
+      ["dometic-cfx3-35-model-app-prep", { sourceIds: ["dometic-cfx3-35-product"], requiredTerms: ["cfx3+35", "9600024617", "cfx335"], query: "dometic cfx3 35 9600024617 app prep" }],
+      ["dometic-cfx3-battery-protection-storage-prep", { sourceIds: ["dometic-cfx3-operating-manual"], requiredTerms: ["cfx3+battery+protection", "cfx3+storage"], query: "dometic cfx3 battery protection storage prep" }],
+      ["dometic-cfx5-45-app-power-prep", { sourceIds: ["dometic-cfx5-45-product"], requiredTerms: ["cfx5+45", "97000050755", "cfx545"], query: "dometic cfx5 45 97000050755 app power prep" }],
+      ["dometic-cfx5-reset-battery-monitor-prep", { sourceIds: ["dometic-cfx5-operating-manual"], requiredTerms: ["cfx5+battery+monitor", "cfx5+reset"], query: "dometic cfx5 battery monitor reset prep" }],
+      ["dometic-crx-pro-65-freezer-compartment-storage-prep", { sourceIds: ["dometic-crx-pro-65-operating-manual"], requiredTerms: ["crx+pro+65", "crx+0065t"], query: "dometic crx pro 65 crx 0065t freezer storage prep" }],
+      ["dometic-975-portable-toilet-mounting-model-prep", { sourceIds: ["dometic-975-portable-toilet-product"], requiredTerms: ["dometic+975", "9108552686"], query: "dometic 975 9108552686 portable toilet mounting prep" }],
+      ["dometic-970-series-portable-toilet-cleaning-storage-prep", { sourceIds: ["dometic-970-series-portable-toilet-operating-manual"], requiredTerms: ["970+portable+toilet", "975msd", "9108552682"], query: "dometic 970 portable toilet 975msd cleaning storage prep" }],
+      ["thetford-porta-potti-365-level-indicator-storage-prep", { sourceIds: ["thetford-porta-potti-365-support"], requiredTerms: ["porta+potti+365", "365+level+indicator"], query: "thetford porta potti 365 level indicator storage prep" }],
+      ["thetford-porta-potti-565-quick-start-electric-flush-prep", { sourceIds: ["thetford-porta-potti-565-quick-start"], requiredTerms: ["porta+potti+565", "565e+electric"], query: "thetford porta potti 565e electric flush quick start" }],
+      ["thetford-aqua-magic-style-plus-cleaning-serial-prep", { sourceIds: ["thetford-aqua-magic-style-plus-owner-manual-42088f"], requiredTerms: ["style+plus", "42088f", "aqua+magic+style+plus"], query: "thetford aqua magic style plus 42088f serial cleaning prep" }],
+      ["greystone-24-slide-in-range-service-prep", { sourceIds: ["greystone-24-slide-in-range-manual-ccd0007534"], requiredTerms: ["greystone+24+slide", "ccd0007534"], query: "greystone 24 slide in range ccd0007534 service prep" }],
+      ["greystone-17-2in1-range-ffd-service-prep", { sourceIds: ["greystone-17-2in1-range-ffd-manual-ccd0008338"], requiredTerms: ["greystone+17+2in1+ffd", "ccd0008338"], query: "greystone 17 2in1 ffd range ccd0008338 prep" }],
+      ["greystone-17-2in1-digital-range-control-prep", { sourceIds: ["greystone-17-2in1-digital-range-manual-ccd0006126"], requiredTerms: ["greystone+17+2in1+digital", "ccd0006126"], query: "greystone 17 2in1 digital range ccd0006126 control" }],
+      ["greystone-17-21-digital-range-knob-control-prep", { sourceIds: ["greystone-17-21-digital-range-manual-ccd0009625"], requiredTerms: ["greystone+17+21+digital", "ccd0009625"], query: "greystone 17 21 digital range ccd0009625 knob control" }],
+      ["greystone-17-21-gas-range-model-service-prep", { sourceIds: ["greystone-17-21-gas-range-manual-ccd0007530"], requiredTerms: ["greystone+17+21+gas+range", "ccd0007530"], query: "greystone 17 21 gas range ccd0007530 model service" }],
+      ["greystone-21-freestanding-digital-range-drawer-prep", { sourceIds: ["greystone-21-freestanding-digital-range-manual-ccd0008340"], requiredTerms: ["greystone+21+freestanding+digital", "ccd0008340"], query: "greystone 21 freestanding digital range ccd0008340 drawer" }],
+      ["greystone-17-inch-griddle-grease-storage-prep", { sourceIds: ["greystone-17-inch-griddle-manual-ccd0007536"], requiredTerms: ["greystone+17+griddle", "ccd0007536"], query: "greystone 17 inch griddle ccd0007536 grease storage" }],
+      ["greystone-2-burner-cooktop-bifold-glass-prep", { sourceIds: ["greystone-2-burner-cooktop-bifold-manual-ccd0008143"], requiredTerms: ["greystone+2+burner+bifold", "ccd0008143"], query: "greystone 2 burner bifold glass ccd0008143 cooktop prep" }],
+      ["greystone-double-induction-hob-cookware-prep", { sourceIds: ["greystone-double-induction-hob-manual-ccd0008385"], requiredTerms: ["greystone+double+induction", "ccd0008385"], query: "greystone double induction hob ccd0008385 cookware" }],
+      ["greystone-cooktop-mwo-combo-service-prep", { sourceIds: ["greystone-cooktop-mwo-combo-manual-ccd0008348"], requiredTerms: ["greystone+cooktop+mwo", "ccd0008348"], query: "greystone cooktop mwo combo ccd0008348 service prep" }],
+      ["furrion-09-built-in-microwave-service-prep", { sourceIds: ["furrion-09-built-in-microwave-manual"], requiredTerms: ["furrion+09+built+in", "imfha00116"], query: "furrion 09 built in microwave imfha00116 service prep" }],
+      ["furrion-09-countertop-microwave-service-prep", { sourceIds: ["furrion-09-countertop-microwave-manual"], requiredTerms: ["furrion+09+countertop", "imfha00053"], query: "furrion 09 countertop microwave imfha00053 service prep" }],
+      ["furrion-15-otr-convection-microwave-service-prep", { sourceIds: ["furrion-15-otr-convection-microwave-user-manual"], requiredTerms: ["furrion+15+otr+convection", "imfha00133"], query: "furrion 15 otr convection microwave imfha00133 service prep" }],
+      ["furrion-16-17-otr-nonconvection-microwave-service-prep", { sourceIds: ["furrion-16-17-otr-nonconvection-user-manual-ccd0006073"], requiredTerms: ["furrion+16+17+otr", "ccd0006073"], query: "furrion 16 17 otr nonconvection microwave ccd0006073 prep" }],
+      ["furrion-17-otr-air-fry-microwave-service-prep", { sourceIds: ["furrion-17-otr-air-fry-microwave-user-manual-ccd0010982"], requiredTerms: ["furrion+17+otr+air+fry", "ccd0010982"], query: "furrion 17 otr air fry microwave ccd0010982 prep" }],
+      ["aquahot-125-d02-lcd-altitude-winterization-prep", { sourceIds: ["aquahot-125-d02-use-care-guide"], requiredTerms: ["125+d02", "ahm+125d", "5+6+24"], query: "aqua hot 125 d02 ahm 125d lcd altitude winterization" }],
+      ["maxxair-maxxfan-deluxe-07500k-remote-thermostat-prep", { sourceIds: ["maxxair-maxxfan-deluxe-07500k-product"], requiredTerms: ["00+07500k", "maxxfan+deluxe+remote"], query: "maxxair maxxfan deluxe 00 07500k remote thermostat prep" }],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const newSlugs = new Set(expectedSymptoms.keys());
+    const sourcesById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const index = buildSymptomSearchIndex(corpus);
+    const summary = summarizeCorpus(corpus);
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|burner\s+(repair|work|service|port|assembly)|\borifice\b|\bcontrol board\b|\b120\s*vac\b|\b110\s*v\b|\bline-voltage\b|\brefrigerant\b|\bprobe\b|\bwiring\b|\bsupply line\b|\bopen (the )?(fuel|gas|electrical|rooftop)|remove.*shroud|remove.*cover|remove.*toilet|replace.*valve|measure resistance|fuel nozzle|combustion|coolant pump|manual override|hydraulic work|hydraulic repair/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = sourcesById.get(sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(summary.indexablePages).toBe(expectedEntryCount + expectedSymptomCount + 1);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const [symptomId, expected] of expectedSymptoms) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds, symptomId).toEqual(expected.sourceIds);
+      expect(symptom?.searchRequiredTerms, symptomId).toEqual(expected.requiredTerms);
+      expect([symptom?.summary, ...(symptom?.safeChecklist ?? [])].join(" "), symptomId).not.toMatch(
+        unsafeOwnerActionPattern,
+      );
+      expect(lookupSymptomGuides(index, expected.query)[0]?.slug, expected.query).toBe(symptomId);
+    }
+
+    for (const query of [
+      "app setup",
+      "battery protection",
+      "owner manual",
+      "portable toilet",
+      "toilet",
+      "range service",
+      "gas range",
+      "range hood",
+      "microwave service",
+      "microwave",
+      "induction cooktop",
+      "griddle storage",
+      "griddle",
+      "digital control",
+      "control center",
+      "manual lid",
+      "service prep",
+      "warranty",
+      "freeze protection",
+      "thermostat",
+      "remote thermostat",
+      "cooler",
+      "winterization",
+    ]) {
+      expect(
+        lookupSymptomGuides(index, query)
+          .slice(0, 5)
+          .map((symptom) => symptom.slug)
+          .filter((slug) => newSlugs.has(slug)),
         query,
       ).toEqual([]);
     }
