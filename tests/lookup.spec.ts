@@ -1799,6 +1799,84 @@ test("lookup surfaces Dometic warranty, Suburban Advantage, and Norcold support-
   expect(pageErrors).toEqual([]);
 });
 
+test("lookup surfaces Coleman, MaxxAir, Dometic Ibis, and current warranty statement guides", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    ["dometic ibis maintenance inspect return air filter", "/symptoms/dometic-ibis-ac-maintenance-inspection-prep/"],
+    ["dometic ibis maintenance ac filter model service prep", "/symptoms/dometic-ibis-ac-maintenance-inspection-prep/"],
+    ["coleman mach quiet series model family soft start", "/symptoms/coleman-quiet-series-model-family-prep/"],
+    ["coleman mach powersaver low profile model prep", "/symptoms/coleman-powersaver-series-model-family-prep/"],
+    ["coleman mach power saver model label support", "/symptoms/coleman-powersaver-series-model-family-prep/"],
+    ["coleman mach roughneck ac model family prep", "/symptoms/coleman-roughneck-series-model-family-prep/"],
+    ["maxxair fanmate cover model vent rain protection", "/symptoms/maxxair-fanmate-cover-family-prep/"],
+    ["maxxair fanmate 955002 smoke cover model prep", "/symptoms/maxxair-fanmate-955002-model-prep/"],
+    ["maxxair fanmate 00-955002 cover support", "/symptoms/maxxair-fanmate-955002-model-prep/"],
+    [
+      "norcold warranty refrigeration consumer statement model serial",
+      "/symptoms/norcold-current-refrigeration-warranty-statement-prep/",
+    ],
+    [
+      "norcold warranty refrigerator claim paperwork prep",
+      "/symptoms/norcold-current-refrigeration-warranty-statement-prep/",
+    ],
+    [
+      "thetford warranty sanitation consumer statement toilet model",
+      "/symptoms/thetford-current-sanitation-warranty-statement-prep/",
+    ],
+    [
+      "thetford warranty toilet model serial purchase date",
+      "/symptoms/thetford-current-sanitation-warranty-statement-prep/",
+    ],
+  ] as const;
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+  }
+
+  for (const [query, href] of [
+    ["maintenance", "/symptoms/dometic-ibis-ac-maintenance-inspection-prep/"],
+    ["filter", "/symptoms/dometic-ibis-ac-maintenance-inspection-prep/"],
+    ["quiet air conditioner", "/symptoms/coleman-quiet-series-model-family-prep/"],
+    ["power saver", "/symptoms/coleman-powersaver-series-model-family-prep/"],
+    ["fan cover", "/symptoms/maxxair-fanmate-cover-family-prep/"],
+    ["warranty", "/symptoms/norcold-current-refrigeration-warranty-statement-prep/"],
+    ["toilet warranty", "/symptoms/thetford-current-sanitation-warranty-statement-prep/"],
+    ["norcold refrigerator not cooling", "/symptoms/norcold-current-refrigeration-warranty-statement-prep/"],
+  ] as const) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toHaveCount(0);
+  }
+
+  await searchbox.fill("coleman mach quiet series model family soft start");
+  const quietSeries = lookupResults.locator('a[href="/symptoms/coleman-quiet-series-model-family-prep/"]');
+  await expect(quietSeries).toBeVisible();
+  await quietSeries.click();
+  await expect(page.getByRole("heading", { name: "Coleman-Mach Quiet Series model-family prep" })).toBeVisible();
+  await expect(page.getByText(/Record the Quiet Series model family/i)).toBeVisible();
+
+  await page.goto("/");
+  await searchbox.fill("maxxair fanmate 955002 smoke cover model prep");
+  const fanmate955002 = lookupResults.locator('a[href="/symptoms/maxxair-fanmate-955002-model-prep/"]');
+  await expect(fanmate955002).toBeVisible();
+  await fanmate955002.click();
+  await expect(page.getByRole("heading", { name: "MaxxAir FanMate 00-955002 model prep" })).toBeVisible();
+  await expect(page.getByText(/Record FanMate 00-955002/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 

@@ -4689,6 +4689,70 @@
       "url": "https://www.thetford.com/us/thetford-support/n2152r/",
       "type": "manufacturer-support",
       "official": true
+    },
+    {
+      "id": "dometic-ibis-inspect-maintenance-support",
+      "brand": "Dometic",
+      "title": "Dometic Ibis AC Inspection and Maintenance Support",
+      "url": "https://support.dometic.com/en/ibis-ac/How-to-Inspectperform-maintenance-890",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "coleman-mach-quiet-series-product-family",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Quiet Series Air Conditioners",
+      "url": "https://coleman-mach.com/products/air-conditioners/quiet-series/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "coleman-mach-powersaver-series-product-family",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach PowerSaver Series Air Conditioners",
+      "url": "https://coleman-mach.com/products/air-conditioners/powersaver-series/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "coleman-mach-roughneck-series-product-family",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Roughneck Series Air Conditioners",
+      "url": "https://coleman-mach.com/products/air-conditioners/roughneck-series/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-fanmate-product-family",
+      "brand": "MaxxAir",
+      "title": "MaxxAir FanMate Vent Cover Product Family",
+      "url": "https://www.maxxair.com/products/covers/fanmate/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-fanmate-955002-product",
+      "brand": "MaxxAir",
+      "title": "MaxxAir FanMate 00-955002 Product Page",
+      "url": "https://www.maxxair.com/products/covers/fanmate-00-955002",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "norcold-refrigeration-warranty-statement-641507b",
+      "brand": "Norcold",
+      "title": "Norcold Refrigeration Warranty Statement 641507B",
+      "url": "https://www.thetford.com/app/uploads/2025/05/641507B_NorcoldWarrantyStatement_Consumer.pdf",
+      "type": "manufacturer-pdf",
+      "official": true
+    },
+    {
+      "id": "thetford-sanitation-warranty-statement-95395a",
+      "brand": "Thetford",
+      "title": "Thetford Sanitation Warranty Statement 95395A",
+      "url": "https://www.thetford.com/app/uploads/2025/05/95395A_ThetfordWarrantyStatement_Consumer.pdf",
+      "type": "manufacturer-pdf",
+      "official": true
     }
   ],
   "entries": [
@@ -38078,7 +38142,15 @@
         "dometic-water-heaters-limited-warranty-62323",
         "suburban-advantage-tank-water-heaters",
         "norcold-n400-n400-3-n402-3-support",
-        "norcold-n2152r-support"
+        "norcold-n2152r-support",
+        "dometic-ibis-inspect-maintenance-support",
+        "coleman-mach-quiet-series-product-family",
+        "coleman-mach-powersaver-series-product-family",
+        "coleman-mach-roughneck-series-product-family",
+        "maxxair-fanmate-product-family",
+        "maxxair-fanmate-955002-product",
+        "norcold-refrigeration-warranty-statement-641507b",
+        "thetford-sanitation-warranty-statement-95395a"
       ]
     },
     {
@@ -45571,6 +45643,193 @@
       "searchRequiredTerms": [
         "n2152",
         "n2152r"
+      ]
+    },
+    {
+      "id": "dometic-ibis-ac-maintenance-inspection-prep",
+      "slug": "dometic-ibis-ac-maintenance-inspection-prep",
+      "title": "Dometic Ibis AC maintenance inspection prep",
+      "summary": "Use the official Dometic Ibis AC maintenance support page to collect filter, data-tag, and service notes before support.",
+      "safeChecklist": [
+        "Record the Ibis model, visible data-tag details, return-air filter condition, control mode, and exact cooling or airflow symptom.",
+        "Save photos of the air distribution box, remote or wall control state, and any owner-accessible maintenance history before contacting support.",
+        "Use Dometic, a dealer, or qualified RV HVAC service for sealed-system, sensor, fan-motor, installed-power, or hidden service decisions."
+      ],
+      "sourceIds": [
+        "dometic-ibis-inspect-maintenance-support"
+      ],
+      "searchAliases": [
+        "dometic ibis maintenance inspect return air filter",
+        "dometic ibis maintenance inspect data tag",
+        "dometic ibis maintenance ac filter model service prep",
+        "dometic ibis maintenance air conditioner support"
+      ],
+      "searchRequiredTerms": [
+        "ibismaintenance"
+      ]
+    },
+    {
+      "id": "coleman-quiet-series-model-family-prep",
+      "slug": "coleman-quiet-series-model-family-prep",
+      "title": "Coleman-Mach Quiet Series model-family prep",
+      "summary": "Use the official Coleman-Mach Quiet Series page to identify model-family details before support or replacement discussions.",
+      "safeChecklist": [
+        "Record the Quiet Series model family, ceiling assembly, control style, RV make and model, and the exact cooling or heat-pump symptom.",
+        "Save data-label photos, purchase or install notes, and whether soft-start or low-noise operation is part of the support question.",
+        "Use Coleman-Mach, an Airxcel dealer, or qualified RV HVAC service for fitment, installed-power, sealed-system, or repair decisions."
+      ],
+      "sourceIds": [
+        "coleman-mach-quiet-series-product-family"
+      ],
+      "searchAliases": [
+        "coleman mach quiet series model family soft start",
+        "coleman mach quiet series air conditioner model prep",
+        "coleman mach quiet series low noise ac service prep",
+        "coleman mach quiet series support model label"
+      ],
+      "searchRequiredTerms": [
+        "machquiet"
+      ]
+    },
+    {
+      "id": "coleman-powersaver-series-model-family-prep",
+      "slug": "coleman-powersaver-series-model-family-prep",
+      "title": "Coleman-Mach PowerSaver Series model-family prep",
+      "summary": "Use the official Coleman-Mach PowerSaver Series page to capture low-profile model-family details before support.",
+      "safeChecklist": [
+        "Record the PowerSaver model family, ceiling assembly, control style, RV make and model, and the exact cooling or startup symptom.",
+        "Save data-label photos, generator or shore-power notes, purchase or install notes, and any visible control or thermostat state.",
+        "Use Coleman-Mach, an Airxcel dealer, or qualified RV HVAC service for fitment, installed-power, sealed-system, or repair decisions."
+      ],
+      "sourceIds": [
+        "coleman-mach-powersaver-series-product-family"
+      ],
+      "searchAliases": [
+        "coleman mach powersaver low profile model prep",
+        "coleman mach powersaver series air conditioner",
+        "coleman mach powersaver ac model family service prep",
+        "coleman mach power saver model label support"
+      ],
+      "searchRequiredTerms": [
+        "machpowersaver",
+        "machpower"
+      ]
+    },
+    {
+      "id": "coleman-roughneck-series-model-family-prep",
+      "slug": "coleman-roughneck-series-model-family-prep",
+      "title": "Coleman-Mach Roughneck Series model-family prep",
+      "summary": "Use the official Coleman-Mach Roughneck Series page to capture model-family and support details before service.",
+      "safeChecklist": [
+        "Record the Roughneck model family, data-label details, ceiling assembly, RV make and model, and the exact cooling symptom.",
+        "Save installation or purchase notes, control state, and whether the support question is about ruggedized or specialty model fitment.",
+        "Use Coleman-Mach, an Airxcel dealer, or qualified RV HVAC service for fitment, installed-power, sealed-system, or repair decisions."
+      ],
+      "sourceIds": [
+        "coleman-mach-roughneck-series-product-family"
+      ],
+      "searchAliases": [
+        "coleman mach roughneck ac model family prep",
+        "coleman mach roughneck series air conditioner",
+        "coleman mach roughneck model label service prep",
+        "coleman mach roughneck support model family"
+      ],
+      "searchRequiredTerms": [
+        "machroughneck"
+      ]
+    },
+    {
+      "id": "maxxair-fanmate-cover-family-prep",
+      "slug": "maxxair-fanmate-cover-family-prep",
+      "title": "MaxxAir FanMate cover family prep",
+      "summary": "Use the official MaxxAir FanMate product-family page to identify vent-cover model details before support.",
+      "safeChecklist": [
+        "Record the FanMate cover family, vent or fan model, visible part number, color, lid condition, and exact fitment or weather-protection question.",
+        "Save photos of the cover, vent opening, product label, and purchase notes before contacting MaxxAir or an RV service provider.",
+        "Use MaxxAir, a dealer, or qualified RV service for cover mounting, sealant, fan-lid, or compatibility decisions."
+      ],
+      "sourceIds": [
+        "maxxair-fanmate-product-family"
+      ],
+      "searchAliases": [
+        "maxxair fanmate cover model vent rain protection",
+        "maxxair fanmate vent cover model family",
+        "maxxair fanmate cover model service prep",
+        "maxxair fanmate rain cover compatibility"
+      ],
+      "searchRequiredTerms": [
+        "maxxairfanmate"
+      ]
+    },
+    {
+      "id": "maxxair-fanmate-955002-model-prep",
+      "slug": "maxxair-fanmate-955002-model-prep",
+      "title": "MaxxAir FanMate 00-955002 model prep",
+      "summary": "Use the official MaxxAir FanMate 00-955002 page to capture exact cover model details before support.",
+      "safeChecklist": [
+        "Record FanMate 00-955002, cover color, vent or fan model, visible part number, purchase notes, and exact fitment or damage question.",
+        "Save photos of the cover, label, vent opening, and any visible cracks or missing hardware before contacting support.",
+        "Use MaxxAir, a dealer, or qualified RV service for cover mounting, sealant, fan-lid, or replacement decisions."
+      ],
+      "sourceIds": [
+        "maxxair-fanmate-955002-product"
+      ],
+      "searchAliases": [
+        "maxxair fanmate 955002 smoke cover model prep",
+        "maxxair fanmate 00-955002 cover support",
+        "fanmate 955002 vent cover model service prep",
+        "maxxair fanmate 955002 smoke lid"
+      ],
+      "searchRequiredTerms": [
+        "fanmate955002",
+        "fanmate00",
+        "00955002"
+      ]
+    },
+    {
+      "id": "norcold-current-refrigeration-warranty-statement-prep",
+      "slug": "norcold-current-refrigeration-warranty-statement-prep",
+      "title": "Norcold current refrigeration warranty statement prep",
+      "summary": "Use the current official Norcold refrigeration warranty statement to collect claim paperwork and model details.",
+      "safeChecklist": [
+        "Record Norcold model, serial number, purchase date, installation date, RV make and model, and the exact cooling or display symptom.",
+        "Keep bill-of-sale, product label photos, displayed message photos, temperature notes, and prior service history with the claim notes.",
+        "Use Norcold support, an authorized service center, dealer, or qualified RV refrigerator service for diagnosis, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "norcold-refrigeration-warranty-statement-641507b"
+      ],
+      "searchAliases": [
+        "norcold warranty refrigeration consumer statement model serial",
+        "norcold warranty current refrigeration statement 641507b",
+        "norcold warranty refrigerator model serial purchase date",
+        "norcold warranty refrigerator claim paperwork prep"
+      ],
+      "searchRequiredTerms": [
+        "norcoldwarranty"
+      ]
+    },
+    {
+      "id": "thetford-current-sanitation-warranty-statement-prep",
+      "slug": "thetford-current-sanitation-warranty-statement-prep",
+      "title": "Thetford current sanitation warranty statement prep",
+      "summary": "Use the current official Thetford sanitation warranty statement to collect toilet claim paperwork and model details.",
+      "safeChecklist": [
+        "Record Thetford toilet model, serial number, purchase date, installation date, RV make and model, and the exact flush, seal, or leak symptom.",
+        "Keep bill-of-sale, product label photos, visible symptom photos, winterization notes, and prior service history with the claim notes.",
+        "Use Thetford support, an authorized service center, dealer, or qualified RV sanitation service for diagnosis, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "thetford-sanitation-warranty-statement-95395a"
+      ],
+      "searchAliases": [
+        "thetford warranty sanitation consumer statement toilet model",
+        "thetford warranty current sanitation statement 95395a",
+        "thetford warranty toilet model serial purchase date",
+        "thetford warranty sanitation claim paperwork prep"
+      ],
+      "searchRequiredTerms": [
+        "thetfordwarranty"
       ]
     }
   ],

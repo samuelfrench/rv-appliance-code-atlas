@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 864;
-const expectedSourceCount = 583;
-const expectedSymptomCount = 416;
+const expectedSourceCount = 591;
+const expectedSymptomCount = 424;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -7145,6 +7145,132 @@ describe("verified corpus", () => {
       "norcold refrigerator not cooling",
       "refrigerator parts",
       "heat pump not working",
+    ]) {
+      expect(
+        lookupSymptomGuides(index, query)
+          .slice(0, 5)
+          .map((symptom) => symptom.slug)
+          .filter((slug) => anchoredSlugs.has(slug)),
+        query,
+      ).toEqual([]);
+    }
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds official Coleman, MaxxAir, Dometic Ibis, and current Thetford warranty guides without code entries", () => {
+    const expectedSources = new Map<string, string>([
+      [
+        "dometic-ibis-inspect-maintenance-support",
+        "https://support.dometic.com/en/ibis-ac/How-to-Inspectperform-maintenance-890",
+      ],
+      ["coleman-mach-quiet-series-product-family", "https://coleman-mach.com/products/air-conditioners/quiet-series/"],
+      ["coleman-mach-powersaver-series-product-family", "https://coleman-mach.com/products/air-conditioners/powersaver-series/"],
+      ["coleman-mach-roughneck-series-product-family", "https://coleman-mach.com/products/air-conditioners/roughneck-series/"],
+      ["maxxair-fanmate-product-family", "https://www.maxxair.com/products/covers/fanmate/"],
+      ["maxxair-fanmate-955002-product", "https://www.maxxair.com/products/covers/fanmate-00-955002"],
+      [
+        "norcold-refrigeration-warranty-statement-641507b",
+        "https://www.thetford.com/app/uploads/2025/05/641507B_NorcoldWarrantyStatement_Consumer.pdf",
+      ],
+      [
+        "thetford-sanitation-warranty-statement-95395a",
+        "https://www.thetford.com/app/uploads/2025/05/95395A_ThetfordWarrantyStatement_Consumer.pdf",
+      ],
+    ]);
+    const expectedSymptomSourceIds = new Map<string, string[]>([
+      ["dometic-ibis-ac-maintenance-inspection-prep", ["dometic-ibis-inspect-maintenance-support"]],
+      ["coleman-quiet-series-model-family-prep", ["coleman-mach-quiet-series-product-family"]],
+      ["coleman-powersaver-series-model-family-prep", ["coleman-mach-powersaver-series-product-family"]],
+      ["coleman-roughneck-series-model-family-prep", ["coleman-mach-roughneck-series-product-family"]],
+      ["maxxair-fanmate-cover-family-prep", ["maxxair-fanmate-product-family"]],
+      ["maxxair-fanmate-955002-model-prep", ["maxxair-fanmate-955002-product"]],
+      ["norcold-current-refrigeration-warranty-statement-prep", ["norcold-refrigeration-warranty-statement-641507b"]],
+      ["thetford-current-sanitation-warranty-statement-prep", ["thetford-sanitation-warranty-statement-95395a"]],
+    ]);
+    const expectedRequiredTerms = new Map<string, string[]>([
+      ["dometic-ibis-ac-maintenance-inspection-prep", ["ibismaintenance"]],
+      ["coleman-quiet-series-model-family-prep", ["machquiet"]],
+      ["coleman-powersaver-series-model-family-prep", ["machpowersaver", "machpower"]],
+      ["coleman-roughneck-series-model-family-prep", ["machroughneck"]],
+      ["maxxair-fanmate-cover-family-prep", ["maxxairfanmate"]],
+      ["maxxair-fanmate-955002-model-prep", ["fanmate955002", "fanmate00", "00955002"]],
+      ["norcold-current-refrigeration-warranty-statement-prep", ["norcoldwarranty"]],
+      ["thetford-current-sanitation-warranty-statement-prep", ["thetfordwarranty"]],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const sourcesById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const index = buildSymptomSearchIndex(corpus);
+    const summary = summarizeCorpus(corpus);
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\b110\s*v\b|\bline-voltage\b|\brefrigerant\b|\bprobe\b|\bwiring\b|\binternal\b|\broof\b|\bsupply line\b|\bopen (the )?(fuel|gas|electrical|rooftop)|remove.*shroud|remove.*cover|measure resistance|fuel nozzle|combustion|coolant pump|manual override|hydraulic work|hydraulic repair/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = sourcesById.get(sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(summary.indexablePages).toBe(expectedEntryCount + expectedSymptomCount + 1);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const [symptomId, sourceIds] of expectedSymptomSourceIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds, symptomId).toEqual(sourceIds);
+      expect(symptom?.searchRequiredTerms, symptomId).toEqual(expectedRequiredTerms.get(symptomId));
+      expect([symptom?.summary, ...(symptom?.safeChecklist ?? [])].join(" "), symptomId).not.toMatch(
+        unsafeOwnerActionPattern,
+      );
+    }
+
+    const topSlugsFor = (query: string) => lookupSymptomGuides(index, query).slice(0, 5).map((symptom) => symptom.slug);
+
+    expect(topSlugsFor("dometic ibis maintenance inspect return air filter")).toContain(
+      "dometic-ibis-ac-maintenance-inspection-prep",
+    );
+    expect(topSlugsFor("coleman mach quiet series model family soft start")).toContain(
+      "coleman-quiet-series-model-family-prep",
+    );
+    expect(topSlugsFor("coleman mach powersaver low profile model prep")).toContain(
+      "coleman-powersaver-series-model-family-prep",
+    );
+    expect(topSlugsFor("coleman mach roughneck ac model family prep")).toContain(
+      "coleman-roughneck-series-model-family-prep",
+    );
+    expect(topSlugsFor("maxxair fanmate cover model vent rain protection")).toContain(
+      "maxxair-fanmate-cover-family-prep",
+    );
+    expect(topSlugsFor("maxxair fanmate 955002 smoke cover model prep")).toContain(
+      "maxxair-fanmate-955002-model-prep",
+    );
+    expect(topSlugsFor("norcold warranty refrigeration consumer statement model serial")).toContain(
+      "norcold-current-refrigeration-warranty-statement-prep",
+    );
+    expect(topSlugsFor("thetford warranty sanitation consumer statement toilet model")).toContain(
+      "thetford-current-sanitation-warranty-statement-prep",
+    );
+
+    for (const [symptomId] of expectedSymptomSourceIds) {
+      const symptom = symptomById.get(symptomId);
+      for (const alias of symptom?.searchAliases ?? []) {
+        expect(topSlugsFor(alias), `${symptomId}: ${alias}`).toContain(symptom?.slug);
+      }
+    }
+
+    const anchoredSlugs = new Set(expectedSymptomSourceIds.keys());
+    for (const query of [
+      "maintenance",
+      "filter",
+      "quiet air conditioner",
+      "power saver",
+      "fan cover",
+      "warranty",
+      "toilet warranty",
+      "norcold refrigerator not cooling",
     ]) {
       expect(
         lookupSymptomGuides(index, query)
