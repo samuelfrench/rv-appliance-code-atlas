@@ -1436,6 +1436,82 @@ test("lookup surfaces the fresh official gap-scan service-prep pages", async ({ 
   expect(pageErrors).toEqual([]);
 });
 
+test("lookup surfaces the cross-brand support-depth service-prep pages", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    ["is atwood now dometic water heater furnace support", "/symptoms/dometic-atwood-brand-transition-support-routing/"],
+    [
+      "dometic freshjet control panel symbols fan aa sleep air purifier",
+      "/symptoms/dometic-freshjet-control-panel-symbols-prep/",
+    ],
+    [
+      "furrion standard single zone thermostat e1 e2 e3 fan mode",
+      "/symptoms/furrion-standard-single-zone-thermostat-control-service-prep/",
+    ],
+    [
+      "furrion washer dryer combo error code winterization filter",
+      "/symptoms/furrion-washer-dryer-combo-cleaning-storage-error-service-prep/",
+    ],
+    ["lippert furrion recall technical service bulletin lookup", "/symptoms/lippert-furrion-recall-tsb-lookup-service-prep/"],
+    ["coleman mach rv climate app pairing 6 digit id", "/symptoms/coleman-bluetooth-thermostat-pairing-phone-limit/"],
+    ["maxxair warranty registration bill of sale", "/symptoms/maxxair-warranty-bill-of-sale-service-prep/"],
+    ["suburban sw6de sw6d del dec model meaning", "/symptoms/suburban-sw-water-heater-model-suffix-service-prep/"],
+    [
+      "aqua hot factory authorized service center mobile warranty repair",
+      "/symptoms/aquahot-authorized-mobile-service-warranty-routing/",
+    ],
+    ["norcold polar n10 n10lx owner manual parts list", "/symptoms/norcold-polar-n10-manual-parts-service-prep/"],
+    [
+      "onan generator model spec serial number authorized service dealer",
+      "/symptoms/onan-generator-nameplate-authorized-dealer-directory-prep/",
+    ],
+    ["cummins care onan generator support registration manuals warranty", "/symptoms/cummins-care-onan-support-registration-manuals-prep/"],
+  ] as const;
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+  }
+
+  await searchbox.fill("water heater no hot water");
+  await expect(lookupResults.locator('a[href="/symptoms/dometic-water-heater-current-model-lineup-label-prep/"]')).toHaveCount(0);
+
+  await searchbox.fill("norcold refrigerator not cooling");
+  await expect(lookupResults.locator('a[href="/symptoms/norcold-polar-n10-manual-parts-service-prep/"]')).toHaveCount(0);
+
+  async function openGuide(query: string, href: string) {
+    await page.goto("/");
+    await page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" }).fill(query);
+    const link = page.locator('section[aria-label="Lookup results"]').locator(`a[href="${href}"]`);
+    await expect(link).toBeVisible();
+    await link.click();
+  }
+
+  await openGuide("is atwood now dometic water heater furnace support", "/symptoms/dometic-atwood-brand-transition-support-routing/");
+  await expect(page.getByRole("heading", { name: "Dometic/Atwood brand-transition support routing" })).toBeVisible();
+  await expect(page.getByText(/Use the Dometic transition page/i)).toBeVisible();
+
+  await openGuide(
+    "onan generator model spec serial number authorized service dealer",
+    "/symptoms/onan-generator-nameplate-authorized-dealer-directory-prep/",
+  );
+  await expect(page.getByRole("heading", { name: "Onan generator nameplate and authorized dealer directory prep" })).toBeVisible();
+  await expect(page.getByText(/Record the generator model, spec, and serial/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 

@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 850;
-const expectedSourceCount = 490;
-const expectedSymptomCount = 324;
+const expectedSourceCount = 514;
+const expectedSymptomCount = 348;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -6075,6 +6075,237 @@ describe("verified corpus", () => {
     );
     expect(lookupSymptomGuides(index, "thetford toilet serial")[0]?.slug).toBe(
       "thetford-rv-toilet-serial-model-label-service-prep",
+    );
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds the official cross-brand support-depth batch without code entries", () => {
+    const expectedSources = new Map([
+      ["dometic-rebranded-atwood-routing", "https://www.dometic.com/en-us/lp/rebranded-atwood"],
+      ["dometic-rv-water-heaters-current-lineup", "https://www.dometic.com/en-us/lp/rv-waterheaters"],
+      ["dometic-rv-furnaces-essential-lineup", "https://www.dometic.com/en-us/lp/rv-furnaces"],
+      [
+        "dometic-freshjet-remote-batteries-support",
+        "https://support.dometic.com/en/freshjet-ac/How-to-Replace-the-remote-control-batteries-b8f9",
+      ],
+      [
+        "dometic-freshjet-control-panel-elements-support",
+        "https://support.dometic.com/en/freshjet-ac/I-want-to-know-more-about-the-elements-on-the-control-panel-4a4d",
+      ],
+      [
+        "dometic-americana-replacement-dimensions-support",
+        "https://support.dometic.com/en/americana-refrigerators/I-need-help-with-replacement-or-dimensions-of-my-refrigerator-52b0",
+      ],
+      [
+        "furrion-single-zone-premium-thermostat-instruction",
+        "https://support.lci1.com/documents/furrion-single-zone-premium-wall-thermostat-instruction-manual",
+      ],
+      [
+        "furrion-standard-single-zone-thermostat-quick-start",
+        "https://support.lci1.com/documents/furrion-standard-single-zone-wall-thermostat-quick-start-guide",
+      ],
+      ["furrion-furnace-wall-thermostat-quick-start", "https://support.lci1.com/documents/ccd-0008670"],
+      ["furrion-variable-speed-wall-thermostat-gen3", "https://support.lci1.com/documents/ccd-0010980"],
+      ["furrion-washer-dryer-combo-instruction-manual", "https://support.lci1.com/documents/ccd-0008970"],
+      ["lippert-recalls-technical-service-bulletins-router", "https://support.lci1.com/recalls-technical-service-bulletins/"],
+      [
+        "coleman-mach-bluetooth-thermostat-product-page",
+        "https://coleman-mach.com/products/thermostats/bluetooth-thermostats/",
+      ],
+      [
+        "coleman-mach-bluetooth-pairing-new-thermostat",
+        "https://www.coleman-mach.com/files/bluetooth/pairing-a-new-thermostat.pdf",
+      ],
+      ["coleman-mach-soft-start-series-product", "https://coleman-mach.com/products/air-conditioners/soft-start-series/"],
+      ["maxxair-warranty-information", "https://www.maxxair.com/service-support/warranty/"],
+      [
+        "suburban-tank-water-heater-controls-product-sheet",
+        "https://suburbanrv.com/files/product_documents/Water%20Heater%20Controls/Tank%20Water%20Heater%20101121.pdf",
+      ],
+      ["aquahot-service-support-authorized-centers", "https://www.aquahot.com/Service-Help.aspx"],
+      ["thetford-contact-us-consumer-support", "https://www.thetford.com/us/contact-us/"],
+      ["norcold-n1095-support", "https://www.thetford.com/us/thetford-support/n1095/"],
+      ["norcold-polar-n10-support", "https://www.thetford.com/us/thetford-support/polar-n10/"],
+      ["norcold-2118-polarmax-support", "https://www.thetford.com/us/thetford-support/2118-polarmax/"],
+      [
+        "onan-rv-generator-dealer-directory-5600464",
+        "https://www.cummins.com/sites/default/files/2022-03/rv-dealer-directory-5600464.pdf",
+      ],
+      ["cummins-care-support-5600280", "https://mart.cummins.com/imagelibrary/data/assetfiles/0073620.pdf"],
+    ]);
+    const expectedSymptomSourceIds = new Map<string, string[]>([
+      ["dometic-atwood-brand-transition-support-routing", ["dometic-rebranded-atwood-routing"]],
+      ["dometic-water-heater-current-model-lineup-label-prep", ["dometic-rv-water-heaters-current-lineup"]],
+      ["dometic-furnace-essential-model-family-prep", ["dometic-rv-furnaces-essential-lineup"]],
+      ["dometic-freshjet-remote-battery-service-prep", ["dometic-freshjet-remote-batteries-support"]],
+      ["dometic-freshjet-control-panel-symbols-prep", ["dometic-freshjet-control-panel-elements-support"]],
+      ["dometic-americana-replacement-dimensions-service-prep", ["dometic-americana-replacement-dimensions-support"]],
+      ["furrion-premium-wall-thermostat-mode-fan-control", ["furrion-single-zone-premium-thermostat-instruction"]],
+      [
+        "furrion-standard-single-zone-thermostat-control-service-prep",
+        ["furrion-standard-single-zone-thermostat-quick-start"],
+      ],
+      ["furrion-furnace-wall-thermostat-setpoint-service-prep", ["furrion-furnace-wall-thermostat-quick-start"]],
+      [
+        "furrion-chill-cube-variable-speed-thermostat-gear-timer-control",
+        ["furrion-variable-speed-wall-thermostat-gen3"],
+      ],
+      ["furrion-washer-dryer-combo-cleaning-storage-error-service-prep", ["furrion-washer-dryer-combo-instruction-manual"]],
+      ["lippert-furrion-recall-tsb-lookup-service-prep", ["lippert-recalls-technical-service-bulletins-router"]],
+      ["coleman-bluetooth-thermostat-compatibility-service-prep", ["coleman-mach-bluetooth-thermostat-product-page"]],
+      ["coleman-bluetooth-thermostat-pairing-phone-limit", ["coleman-mach-bluetooth-pairing-new-thermostat"]],
+      ["coleman-soft-start-breaker-trip-generator-prep", ["coleman-mach-soft-start-series-product"]],
+      ["maxxair-warranty-bill-of-sale-service-prep", ["maxxair-warranty-information"]],
+      ["suburban-sw-water-heater-model-suffix-service-prep", ["suburban-tank-water-heater-controls-product-sheet"]],
+      ["aquahot-authorized-mobile-service-warranty-routing", ["aquahot-service-support-authorized-centers"]],
+      ["thetford-norcold-contact-us-service-routing-prep", ["thetford-contact-us-consumer-support"]],
+      ["norcold-n1095-support-manual-parts-service-prep", ["norcold-n1095-support"]],
+      ["norcold-polar-n10-manual-parts-service-prep", ["norcold-polar-n10-support"]],
+      ["norcold-2118-polarmax-manual-parts-water-dispenser-prep", ["norcold-2118-polarmax-support"]],
+      ["onan-generator-nameplate-authorized-dealer-directory-prep", ["onan-rv-generator-dealer-directory-5600464"]],
+      ["cummins-care-onan-support-registration-manuals-prep", ["cummins-care-support-5600280"]],
+    ]);
+    const expectedRequiredTerms = new Map<string, string[]>([
+      ["dometic-atwood-brand-transition-support-routing", ["atwood", "dometic"]],
+      ["dometic-water-heater-current-model-lineup-label-prep", ["dometic", "wh"]],
+      ["dometic-furnace-essential-model-family-prep", ["dometic", "essential"]],
+      ["dometic-freshjet-remote-battery-service-prep", ["freshjet", "remote"]],
+      ["dometic-freshjet-control-panel-symbols-prep", ["freshjet", "control"]],
+      ["dometic-americana-replacement-dimensions-service-prep", ["americana", "dimensions"]],
+      ["furrion-premium-wall-thermostat-mode-fan-control", ["furrion", "premium"]],
+      ["furrion-standard-single-zone-thermostat-control-service-prep", ["furrion", "standard"]],
+      ["furrion-furnace-wall-thermostat-setpoint-service-prep", ["furrion", "furnace"]],
+      ["furrion-chill-cube-variable-speed-thermostat-gear-timer-control", ["furrion", "variable"]],
+      ["furrion-washer-dryer-combo-cleaning-storage-error-service-prep", ["furrion", "washer"]],
+      ["lippert-furrion-recall-tsb-lookup-service-prep", ["lippert", "recall"]],
+      ["coleman-bluetooth-thermostat-compatibility-service-prep", ["coleman", "bluetooth"]],
+      ["coleman-bluetooth-thermostat-pairing-phone-limit", ["coleman", "pairing"]],
+      ["coleman-soft-start-breaker-trip-generator-prep", ["coleman", "soft"]],
+      ["maxxair-warranty-bill-of-sale-service-prep", ["maxxair", "warranty"]],
+      ["suburban-sw-water-heater-model-suffix-service-prep", ["suburban", "sw"]],
+      ["aquahot-authorized-mobile-service-warranty-routing", ["aqua", "hot"]],
+      ["thetford-norcold-contact-us-service-routing-prep", ["thetford", "contact"]],
+      ["norcold-n1095-support-manual-parts-service-prep", ["n1095"]],
+      ["norcold-polar-n10-manual-parts-service-prep", ["n10"]],
+      ["norcold-2118-polarmax-manual-parts-water-dispenser-prep", ["2118"]],
+      ["onan-generator-nameplate-authorized-dealer-directory-prep", ["onan", "dealer"]],
+      ["cummins-care-onan-support-registration-manuals-prep", ["cummins", "care"]],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const sourcesById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const index = buildSymptomSearchIndex(corpus);
+    const summary = summarizeCorpus(corpus);
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\bline-voltage\b|\brefrigerant\b|\bprobe\b|\bwiring\b|\binternal\b|\broof\b|\bsupply line\b|\bopen (the )?(fuel|gas|electrical|rooftop)|remove.*shroud|remove.*cover|measure resistance|fuel nozzle|combustion|coolant pump|manual override|hydraulic work/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = sourcesById.get(sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(sourcesById.has("cummins-coach-care-rv-service-locations")).toBe(false);
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(summary.indexablePages).toBe(expectedEntryCount + expectedSymptomCount + 1);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const [symptomId, sourceIds] of expectedSymptomSourceIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds, symptomId).toEqual(sourceIds);
+      expect(symptom?.searchRequiredTerms, symptomId).toEqual(expectedRequiredTerms.get(symptomId));
+      expect([symptom?.summary, ...(symptom?.safeChecklist ?? [])].join(" "), symptomId).not.toMatch(
+        unsafeOwnerActionPattern,
+      );
+    }
+
+    expect(lookupSymptomGuides(index, "is atwood now dometic water heater furnace support")[0]?.slug).toBe(
+      "dometic-atwood-brand-transition-support-routing",
+    );
+    expect(lookupSymptomGuides(index, "dometic wh-6ga wh-6gea wh-9gea model number water heater")[0]?.slug).toBe(
+      "dometic-water-heater-current-model-lineup-label-prep",
+    );
+    expect(lookupSymptomGuides(index, "dometic furnace essential 12k 18k 25k 30k 35k model")[0]?.slug).toBe(
+      "dometic-furnace-essential-model-family-prep",
+    );
+    expect(lookupSymptomGuides(index, "dometic freshjet remote batteries not working fjx fj")[0]?.slug).toBe(
+      "dometic-freshjet-remote-battery-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "dometic freshjet control panel symbols fan aa sleep air purifier")[0]?.slug).toBe(
+      "dometic-freshjet-control-panel-symbols-prep",
+    );
+    expect(lookupSymptomGuides(index, "dometic americana replacement dimensions venting clearance")[0]?.slug).toBe(
+      "dometic-americana-replacement-dimensions-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "furrion single zone premium thermostat fan mode sleep mode")[0]?.slug).toBe(
+      "furrion-premium-wall-thermostat-mode-fan-control",
+    );
+    expect(lookupSymptomGuides(index, "furrion standard single zone thermostat e1 e2 e3 fan mode")[0]?.slug).toBe(
+      "furrion-standard-single-zone-thermostat-control-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "furrion furnace wall thermostat set temperature will not turn on")[0]?.slug).toBe(
+      "furrion-furnace-wall-thermostat-setpoint-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "furrion facw10esvs3 variable speed thermostat gear timer turbo fan error")[0]?.slug).toBe(
+      "furrion-chill-cube-variable-speed-thermostat-gear-timer-control",
+    );
+    expect(lookupSymptomGuides(index, "furrion washer dryer combo error code winterization filter")[0]?.slug).toBe(
+      "furrion-washer-dryer-combo-cleaning-storage-error-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "lippert furrion recall technical service bulletin lookup")[0]?.slug).toBe(
+      "lippert-furrion-recall-tsb-lookup-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "coleman mach bluetooth thermostat compatible 9430 9630")[0]?.slug).toBe(
+      "coleman-bluetooth-thermostat-compatibility-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "coleman mach rv climate app pairing 6 digit id")[0]?.slug).toBe(
+      "coleman-bluetooth-thermostat-pairing-phone-limit",
+    );
+    expect(lookupSymptomGuides(index, "coleman mach soft start breaker trips generator")[0]?.slug).toBe(
+      "coleman-soft-start-breaker-trip-generator-prep",
+    );
+    expect(lookupSymptomGuides(index, "maxxair warranty registration bill of sale")[0]?.slug).toBe(
+      "maxxair-warranty-bill-of-sale-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "suburban sw6de sw6d del dec model meaning")[0]?.slug).toBe(
+      "suburban-sw-water-heater-model-suffix-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "aqua hot factory authorized service center mobile warranty repair")[0]?.slug).toBe(
+      "aquahot-authorized-mobile-service-warranty-routing",
+    );
+    expect(lookupSymptomGuides(index, "thetford contact support model serial vin technical question")[0]?.slug).toBe(
+      "thetford-norcold-contact-us-service-routing-prep",
+    );
+    expect(lookupSymptomGuides(index, "norcold n1095 manual parts warranty service prep")[0]?.slug).toBe(
+      "norcold-n1095-support-manual-parts-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "norcold polar n10 n10lx owner manual parts list")[0]?.slug).toBe(
+      "norcold-polar-n10-manual-parts-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "norcold 2118 polarmax water dispenser manual parts service")[0]?.slug).toBe(
+      "norcold-2118-polarmax-manual-parts-water-dispenser-prep",
+    );
+    expect(lookupSymptomGuides(index, "onan generator model spec serial number authorized service dealer")[0]?.slug).toBe(
+      "onan-generator-nameplate-authorized-dealer-directory-prep",
+    );
+    expect(lookupSymptomGuides(index, "cummins care onan generator support registration manuals warranty")[0]?.slug).toBe(
+      "cummins-care-onan-support-registration-manuals-prep",
+    );
+
+    expect(lookupSymptomGuides(index, "water heater no hot water").slice(0, 5).map((symptom) => symptom.slug)).not.toContain(
+      "dometic-water-heater-current-model-lineup-label-prep",
+    );
+    expect(lookupSymptomGuides(index, "furnace no heat").slice(0, 5).map((symptom) => symptom.slug)).not.toContain(
+      "dometic-furnace-essential-model-family-prep",
+    );
+    expect(lookupSymptomGuides(index, "freshjet not cooling").slice(0, 5).map((symptom) => symptom.slug)).not.toContain(
+      "dometic-freshjet-control-panel-symbols-prep",
+    );
+    expect(lookupSymptomGuides(index, "norcold refrigerator not cooling").slice(0, 5).map((symptom) => symptom.slug)).not.toContain(
+      "norcold-polar-n10-manual-parts-service-prep",
     );
     expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
   });

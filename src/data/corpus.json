@@ -3945,6 +3945,198 @@
       "url": "https://www.thetford.com/app/uploads/Thetford_Cassette-toilet_2024_EN.pdf",
       "type": "manufacturer-manual",
       "official": true
+    },
+    {
+      "id": "dometic-rebranded-atwood-routing",
+      "brand": "Dometic",
+      "title": "Dometic Rebranded Atwood Support Routing",
+      "url": "https://www.dometic.com/en-us/lp/rebranded-atwood",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rv-water-heaters-current-lineup",
+      "brand": "Dometic",
+      "title": "Dometic RV Water Heaters Current Lineup",
+      "url": "https://www.dometic.com/en-us/lp/rv-waterheaters",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "dometic-rv-furnaces-essential-lineup",
+      "brand": "Dometic",
+      "title": "Dometic RV Furnaces Essential Series Lineup",
+      "url": "https://www.dometic.com/en-us/lp/rv-furnaces",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "dometic-freshjet-remote-batteries-support",
+      "brand": "Dometic",
+      "title": "Dometic FreshJet Remote Battery Support",
+      "url": "https://support.dometic.com/en/freshjet-ac/How-to-Replace-the-remote-control-batteries-b8f9",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-freshjet-control-panel-elements-support",
+      "brand": "Dometic",
+      "title": "Dometic FreshJet Control Panel Elements Support",
+      "url": "https://support.dometic.com/en/freshjet-ac/I-want-to-know-more-about-the-elements-on-the-control-panel-4a4d",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-americana-replacement-dimensions-support",
+      "brand": "Dometic",
+      "title": "Dometic Americana Replacement And Dimensions Support",
+      "url": "https://support.dometic.com/en/americana-refrigerators/I-need-help-with-replacement-or-dimensions-of-my-refrigerator-52b0",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-single-zone-premium-thermostat-instruction",
+      "brand": "Furrion",
+      "title": "Furrion Single Zone Premium Wall Thermostat Instruction Manual",
+      "url": "https://support.lci1.com/documents/furrion-single-zone-premium-wall-thermostat-instruction-manual",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-standard-single-zone-thermostat-quick-start",
+      "brand": "Furrion",
+      "title": "Furrion Standard Single Zone Wall Thermostat Quick Start Guide",
+      "url": "https://support.lci1.com/documents/furrion-standard-single-zone-wall-thermostat-quick-start-guide",
+      "type": "manufacturer-guide",
+      "official": true
+    },
+    {
+      "id": "furrion-furnace-wall-thermostat-quick-start",
+      "brand": "Furrion",
+      "title": "Furrion Furnace Wall Thermostat Quick Start Guide",
+      "url": "https://support.lci1.com/documents/ccd-0008670",
+      "type": "manufacturer-guide",
+      "official": true
+    },
+    {
+      "id": "furrion-variable-speed-wall-thermostat-gen3",
+      "brand": "Furrion",
+      "title": "Furrion Single Zone Variable Speed Wall Thermostat Gen 3 Instruction Manual",
+      "url": "https://support.lci1.com/documents/ccd-0010980",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-washer-dryer-combo-instruction-manual",
+      "brand": "Furrion",
+      "title": "Furrion 2.7 cu ft Front Loading Combo Washing Machine Instruction Manual",
+      "url": "https://support.lci1.com/documents/ccd-0008970",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "lippert-recalls-technical-service-bulletins-router",
+      "brand": "Lippert",
+      "title": "Lippert Recalls And Technical Service Bulletins Router",
+      "url": "https://support.lci1.com/recalls-technical-service-bulletins/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "coleman-mach-bluetooth-thermostat-product-page",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Bluetooth Thermostats Product Page",
+      "url": "https://coleman-mach.com/products/thermostats/bluetooth-thermostats/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "coleman-mach-bluetooth-pairing-new-thermostat",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Pairing A New Bluetooth Thermostat Guide",
+      "url": "https://www.coleman-mach.com/files/bluetooth/pairing-a-new-thermostat.pdf",
+      "type": "manufacturer-guide",
+      "official": true
+    },
+    {
+      "id": "coleman-mach-soft-start-series-product",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Soft Start Series Product Page",
+      "url": "https://coleman-mach.com/products/air-conditioners/soft-start-series/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "maxxair-warranty-information",
+      "brand": "MaxxAir",
+      "title": "MaxxAir Warranty Information",
+      "url": "https://www.maxxair.com/service-support/warranty/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "suburban-tank-water-heater-controls-product-sheet",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban Porcelain Steel Tank Water Heater Controls Product Sheet",
+      "url": "https://suburbanrv.com/files/product_documents/Water%20Heater%20Controls/Tank%20Water%20Heater%20101121.pdf",
+      "type": "manufacturer-product-sheet",
+      "official": true
+    },
+    {
+      "id": "aquahot-service-support-authorized-centers",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot Service And Support Authorized Centers",
+      "url": "https://www.aquahot.com/Service-Help.aspx",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-contact-us-consumer-support",
+      "brand": "Thetford/Norcold",
+      "title": "Thetford Contact Us Consumer Support",
+      "url": "https://www.thetford.com/us/contact-us/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-n1095-support",
+      "brand": "Norcold",
+      "title": "Thetford Norcold N1095 Support",
+      "url": "https://www.thetford.com/us/thetford-support/n1095/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-polar-n10-support",
+      "brand": "Norcold",
+      "title": "Thetford Norcold Polar N10 Support",
+      "url": "https://www.thetford.com/us/thetford-support/polar-n10/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-2118-polarmax-support",
+      "brand": "Norcold",
+      "title": "Thetford Norcold 2118 PolarMax Support",
+      "url": "https://www.thetford.com/us/thetford-support/2118-polarmax/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "onan-rv-generator-dealer-directory-5600464",
+      "brand": "Onan",
+      "title": "Cummins Onan RV Generator Dealer Directory 5600464",
+      "url": "https://www.cummins.com/sites/default/files/2022-03/rv-dealer-directory-5600464.pdf",
+      "type": "manufacturer-directory",
+      "official": true
+    },
+    {
+      "id": "cummins-care-support-5600280",
+      "brand": "Onan",
+      "title": "Cummins Care Support Flyer 5600280",
+      "url": "https://mart.cummins.com/imagelibrary/data/assetfiles/0073620.pdf",
+      "type": "manufacturer-support",
+      "official": true
     }
   ],
   "entries": [
@@ -36701,7 +36893,31 @@
         "thetford-aqua-kem-liquid-support",
         "thetford-cassette-toilet-maintenance-inspiration",
         "thetford-toilet-care-additives-faq",
-        "thetford-cassette-toilets-2024-spec-overview"
+        "thetford-cassette-toilets-2024-spec-overview",
+        "dometic-rebranded-atwood-routing",
+        "dometic-rv-water-heaters-current-lineup",
+        "dometic-rv-furnaces-essential-lineup",
+        "dometic-freshjet-remote-batteries-support",
+        "dometic-freshjet-control-panel-elements-support",
+        "dometic-americana-replacement-dimensions-support",
+        "furrion-single-zone-premium-thermostat-instruction",
+        "furrion-standard-single-zone-thermostat-quick-start",
+        "furrion-furnace-wall-thermostat-quick-start",
+        "furrion-variable-speed-wall-thermostat-gen3",
+        "furrion-washer-dryer-combo-instruction-manual",
+        "lippert-recalls-technical-service-bulletins-router",
+        "coleman-mach-bluetooth-thermostat-product-page",
+        "coleman-mach-bluetooth-pairing-new-thermostat",
+        "coleman-mach-soft-start-series-product",
+        "maxxair-warranty-information",
+        "suburban-tank-water-heater-controls-product-sheet",
+        "aquahot-service-support-authorized-centers",
+        "thetford-contact-us-consumer-support",
+        "norcold-n1095-support",
+        "norcold-polar-n10-support",
+        "norcold-2118-polarmax-support",
+        "onan-rv-generator-dealer-directory-5600464",
+        "cummins-care-support-5600280"
       ]
     },
     {
@@ -42032,6 +42248,579 @@
       ],
       "searchRequiredTerms": [
         "cassette"
+      ]
+    },
+    {
+      "id": "dometic-atwood-brand-transition-support-routing",
+      "slug": "dometic-atwood-brand-transition-support-routing",
+      "title": "Dometic/Atwood brand-transition support routing",
+      "summary": "Use this when an Atwood-labeled water heater, furnace, or appliance needs current Dometic support routing and brand-transition notes before service.",
+      "safeChecklist": [
+        "Use the Dometic transition page to confirm whether the Atwood product family now routes through Dometic support.",
+        "Record Atwood and Dometic names shown on labels, appliance type, model, serial number, purchase year, and exact symptom.",
+        "Photograph owner-visible labels and installed controls from normal access before contacting support.",
+        "Keep the appliance off for odor, smoke, heat concern, alarm activity, leak, or repeated failure until qualified service responds."
+      ],
+      "sourceIds": [
+        "dometic-rebranded-atwood-routing"
+      ],
+      "searchAliases": [
+        "is atwood now dometic water heater furnace support",
+        "dometic rebranded atwood appliance support routing",
+        "atwood dometic brand transition model serial support"
+      ],
+      "searchRequiredTerms": [
+        "atwood",
+        "dometic"
+      ]
+    },
+    {
+      "id": "dometic-water-heater-current-model-lineup-label-prep",
+      "slug": "dometic-water-heater-current-model-lineup-label-prep",
+      "title": "Dometic water-heater current model-lineup label prep",
+      "summary": "Use this when a Dometic WH-series water-heater model name, capacity, door size, or label detail must be documented before support.",
+      "safeChecklist": [
+        "Record WH model, capacity, door style, installed location, visible labels, and whether the symptom appears on LP, electric, or both modes.",
+        "Use the lineup page only to match product-family names and owner-visible model details.",
+        "Shut the water heater down for odor, leak, overheating, or repeated failure.",
+        "Use Dometic support or qualified RV water-heater service for parts selection, operating failures, or symptoms beyond normal controls."
+      ],
+      "sourceIds": [
+        "dometic-rv-water-heaters-current-lineup"
+      ],
+      "searchAliases": [
+        "Dometic WH-6GA WH-6GEA WH-9GEA model number water heater",
+        "dometic water heater current lineup label prep",
+        "dometic wh series door size capacity support prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic",
+        "wh"
+      ]
+    },
+    {
+      "id": "dometic-furnace-essential-model-family-prep",
+      "slug": "dometic-furnace-essential-model-family-prep",
+      "title": "Dometic furnace Essential model-family prep",
+      "summary": "Use this when a Dometic Furnace Essential model or BTU family must be identified before service scheduling.",
+      "safeChecklist": [
+        "Record model family, BTU size if listed, thermostat setting, blower timing, outside temperature, battery state, and exact heat symptom.",
+        "Use the lineup page only to confirm product-family names and label details.",
+        "Shut the furnace off for odor, soot, alarm activity, abnormal heat, or repeated no-heat behavior.",
+        "Use Dometic support or qualified RV furnace service for any diagnosis beyond normal thermostat settings and documentation."
+      ],
+      "sourceIds": [
+        "dometic-rv-furnaces-essential-lineup"
+      ],
+      "searchAliases": [
+        "Dometic Furnace Essential 12K 18K 25K 30K 35K model",
+        "dometic essential furnace model family btu prep",
+        "dometic furnace essential support model serial"
+      ],
+      "searchRequiredTerms": [
+        "dometic",
+        "essential"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-remote-battery-service-prep",
+      "slug": "dometic-freshjet-remote-battery-service-prep",
+      "title": "Dometic FreshJet remote battery service prep",
+      "summary": "Use this when a FreshJet remote has weak display, no response, or battery questions before support.",
+      "safeChecklist": [
+        "Record FreshJet model family, remote display state, battery age, mode selected, and whether buttons respond from normal standing access.",
+        "Try only normal handheld remote battery replacement and control checks described by Dometic.",
+        "Photograph the remote, visible AC controls, and appliance label if accessible from normal owner access.",
+        "Use Dometic support or qualified RV HVAC service if the remote still will not operate the installed system."
+      ],
+      "sourceIds": [
+        "dometic-freshjet-remote-batteries-support"
+      ],
+      "searchAliases": [
+        "Dometic FreshJet remote batteries not working FJX FJ",
+        "freshjet remote battery display not working service prep",
+        "dometic freshjet fjx fj remote battery support"
+      ],
+      "searchRequiredTerms": [
+        "freshjet",
+        "remote"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-control-panel-symbols-prep",
+      "slug": "dometic-freshjet-control-panel-symbols-prep",
+      "title": "Dometic FreshJet control-panel symbols prep",
+      "summary": "Use this when a FreshJet owner needs control-panel symbol, fan, sleep, or air-purifier notes before support.",
+      "safeChecklist": [
+        "Record model family, control-panel symbol shown, mode, fan setting, sleep or purifier selection, remote state, and room temperature.",
+        "Use only normal buttons and remote commands already available to the owner.",
+        "Photograph the control panel and visible appliance label before contacting support.",
+        "Use Dometic support or qualified RV HVAC service if control symbols do not match the installed model or the unit behaves abnormally."
+      ],
+      "sourceIds": [
+        "dometic-freshjet-control-panel-elements-support"
+      ],
+      "searchAliases": [
+        "Dometic FreshJet control panel symbols fan AA sleep air purifier",
+        "freshjet control panel elements fan sleep purifier symbols",
+        "dometic freshjet buttons display symbol service prep"
+      ],
+      "searchRequiredTerms": [
+        "freshjet",
+        "control"
+      ]
+    },
+    {
+      "id": "dometic-americana-replacement-dimensions-service-prep",
+      "slug": "dometic-americana-replacement-dimensions-service-prep",
+      "title": "Dometic Americana replacement dimensions service prep",
+      "summary": "Use this when an Americana refrigerator owner needs model, dimensions, and replacement-note documentation before support.",
+      "safeChecklist": [
+        "Record refrigerator model, serial number, rough cabinet opening, door swing, visible vent condition, and exact cooling or fitment question.",
+        "Use the Dometic support page only to prepare dimensions, photos, and model details before support.",
+        "Photograph labels, cabinet edges, door clearance, and visible trim from normal owner access.",
+        "Use Dometic support or qualified RV refrigerator service before changing appliance fitment, airflow clearances, or installed equipment."
+      ],
+      "sourceIds": [
+        "dometic-americana-replacement-dimensions-support"
+      ],
+      "searchAliases": [
+        "Dometic Americana refrigerator replacement dimensions venting clearance",
+        "americana refrigerator replacement dimensions service prep",
+        "dometic americana model dimensions cabinet opening support"
+      ],
+      "searchRequiredTerms": [
+        "americana",
+        "dimensions"
+      ]
+    },
+    {
+      "id": "furrion-premium-wall-thermostat-mode-fan-control",
+      "slug": "furrion-premium-wall-thermostat-mode-fan-control",
+      "title": "Furrion premium wall thermostat mode and fan control",
+      "summary": "Use this when a Furrion single-zone premium wall thermostat needs mode, fan, sleep, light, or display-state notes before service.",
+      "safeChecklist": [
+        "Record thermostat model, mode, fan setting, set temperature, sleep or light selection, displayed message, and controlled appliance response.",
+        "Use only normal thermostat buttons and installed controls.",
+        "Photograph the thermostat face, display, and affected appliance label from normal access.",
+        "Use Lippert/Furrion support or qualified RV HVAC service if the thermostat or appliance does not respond normally."
+      ],
+      "sourceIds": [
+        "furrion-single-zone-premium-thermostat-instruction"
+      ],
+      "searchAliases": [
+        "Furrion single zone premium thermostat fan mode sleep mode",
+        "furrion premium wall thermostat mode fan light service prep",
+        "furrion premium thermostat sleep mood light display"
+      ],
+      "searchRequiredTerms": [
+        "furrion",
+        "premium"
+      ]
+    },
+    {
+      "id": "furrion-standard-single-zone-thermostat-control-service-prep",
+      "slug": "furrion-standard-single-zone-thermostat-control-service-prep",
+      "title": "Furrion standard single-zone thermostat control service prep",
+      "summary": "Use this when a Furrion standard single-zone thermostat has E-code, fan, mode, or response questions before support.",
+      "safeChecklist": [
+        "Record thermostat model, displayed E-code if present, mode, fan state, set temperature, zone, and appliance response.",
+        "Use only normal buttons and installed controls from the thermostat face.",
+        "Photograph the display and affected appliance label from normal access.",
+        "Use Lippert/Furrion support or qualified RV HVAC service for repeated E-code, no response, or appliance behavior that does not match normal settings."
+      ],
+      "sourceIds": [
+        "furrion-standard-single-zone-thermostat-quick-start"
+      ],
+      "searchAliases": [
+        "Furrion standard single zone thermostat E1 E2 E3 fan mode",
+        "furrion standard single zone thermostat control service prep",
+        "furrion standard thermostat e code fan mode support"
+      ],
+      "searchRequiredTerms": [
+        "furrion",
+        "standard"
+      ]
+    },
+    {
+      "id": "furrion-furnace-wall-thermostat-setpoint-service-prep",
+      "slug": "furrion-furnace-wall-thermostat-setpoint-service-prep",
+      "title": "Furrion furnace wall thermostat setpoint service prep",
+      "summary": "Use this when a Furrion furnace wall thermostat has setpoint, temperature display, or no-response questions before support.",
+      "safeChecklist": [
+        "Record set temperature, room temperature, display state, temperature format, battery state if shown, blower timing, and exact heat symptom.",
+        "Use only normal thermostat controls and do not continue running heat if odor, soot, alarm activity, or abnormal cycling appears.",
+        "Photograph the thermostat face and furnace label from normal access if visible.",
+        "Use Lippert/Furrion support or qualified RV furnace service for no heat, repeated cycling, or controls that do not respond normally."
+      ],
+      "sourceIds": [
+        "furrion-furnace-wall-thermostat-quick-start"
+      ],
+      "searchAliases": [
+        "Furrion furnace wall thermostat set temperature will not turn on",
+        "furrion furnace wall thermostat setpoint service prep",
+        "furrion furnace thermostat temperature display no response"
+      ],
+      "searchRequiredTerms": [
+        "furrion",
+        "furnace"
+      ]
+    },
+    {
+      "id": "furrion-chill-cube-variable-speed-thermostat-gear-timer-control",
+      "slug": "furrion-chill-cube-variable-speed-thermostat-gear-timer-control",
+      "title": "Furrion Chill Cube variable-speed thermostat gear and timer control",
+      "summary": "Use this when a Furrion variable-speed wall thermostat needs gear, timer, turbo, fan, or displayed-error notes before support.",
+      "safeChecklist": [
+        "Record thermostat model, gear mode, timer setting, turbo or fan selection, displayed message, room temperature, and appliance response.",
+        "Use only normal thermostat controls already installed in the RV.",
+        "Photograph the thermostat, display state, and affected appliance label from normal access.",
+        "Use Lippert/Furrion support or qualified RV HVAC service if the displayed error or response does not clear with normal controls."
+      ],
+      "sourceIds": [
+        "furrion-variable-speed-wall-thermostat-gen3"
+      ],
+      "searchAliases": [
+        "Furrion FACW10ESVS3 gear mode timer turbo fan error",
+        "furrion variable speed wall thermostat gen 3 gear timer control",
+        "furrion chill cube variable speed thermostat turbo fan service prep"
+      ],
+      "searchRequiredTerms": [
+        "furrion",
+        "variable"
+      ]
+    },
+    {
+      "id": "furrion-washer-dryer-combo-cleaning-storage-error-service-prep",
+      "slug": "furrion-washer-dryer-combo-cleaning-storage-error-service-prep",
+      "title": "Furrion washer/dryer combo cleaning, storage, and error service prep",
+      "summary": "Use this when a Furrion washer/dryer combo needs cycle, error, cleaning, storage, or winter-prep documentation before support.",
+      "safeChecklist": [
+        "Stop the cycle for leak, abnormal smell, no drain, no spin, repeated error, or controls that do not respond normally.",
+        "Record model, serial, selected cycle, detergent drawer condition, visible water, displayed message, storage status, and recent winter exposure.",
+        "Use only normal cleaning, cycle selection, and storage steps described for owners.",
+        "Use Lippert/Furrion support or qualified appliance service for leaks, no drain, repeated messages, or symptoms beyond normal owner controls."
+      ],
+      "sourceIds": [
+        "furrion-washer-dryer-combo-instruction-manual"
+      ],
+      "searchAliases": [
+        "Furrion 2.7 washer dryer combo error code winterization filter",
+        "furrion washer dryer combo cleaning storage error service prep",
+        "furrion front loading combo washing machine cycle error storage"
+      ],
+      "searchRequiredTerms": [
+        "furrion",
+        "washer"
+      ]
+    },
+    {
+      "id": "lippert-furrion-recall-tsb-lookup-service-prep",
+      "slug": "lippert-furrion-recall-tsb-lookup-service-prep",
+      "title": "Lippert/Furrion recall and TSB lookup service prep",
+      "summary": "Use this when a Lippert or Furrion owner needs recall, technical bulletin, serial, or applicability notes before support.",
+      "safeChecklist": [
+        "Record brand, model, serial number, RV year, installed product family, exact symptom, and any bulletin or recall title found.",
+        "Use the Lippert page only to check official applicability and prepare documentation.",
+        "Photograph owner-visible labels and symptom evidence from normal access.",
+        "Use Lippert/Furrion support or qualified service for bulletin actions, parts, or product symptoms beyond normal owner documentation."
+      ],
+      "sourceIds": [
+        "lippert-recalls-technical-service-bulletins-router"
+      ],
+      "searchAliases": [
+        "Lippert Furrion recall technical service bulletin lookup",
+        "lippert furrion recall tsb lookup service prep",
+        "lippert technical service bulletin model serial support"
+      ],
+      "searchRequiredTerms": [
+        "lippert",
+        "recall"
+      ]
+    },
+    {
+      "id": "coleman-bluetooth-thermostat-compatibility-service-prep",
+      "slug": "coleman-bluetooth-thermostat-compatibility-service-prep",
+      "title": "Coleman-Mach Bluetooth thermostat compatibility service prep",
+      "summary": "Use this when a Coleman-Mach owner needs Bluetooth thermostat model, app, or compatibility notes before support.",
+      "safeChecklist": [
+        "Record thermostat model, app name, zone count, paired device state, AC or heat-pump family, and exact control symptom.",
+        "Use only normal app and thermostat controls already installed in the RV.",
+        "Photograph the thermostat face, display, app error if any, and visible equipment labels.",
+        "Use Coleman-Mach support or qualified RV HVAC service for compatibility, parts, or control symptoms that do not resolve with normal settings."
+      ],
+      "sourceIds": [
+        "coleman-mach-bluetooth-thermostat-product-page"
+      ],
+      "searchAliases": [
+        "coleman mach bluetooth thermostat compatible 9430 9630",
+        "coleman bluetooth thermostat compatibility service prep",
+        "coleman mach rv climate bluetooth thermostat app model"
+      ],
+      "searchRequiredTerms": [
+        "coleman",
+        "bluetooth"
+      ]
+    },
+    {
+      "id": "coleman-bluetooth-thermostat-pairing-phone-limit",
+      "slug": "coleman-bluetooth-thermostat-pairing-phone-limit",
+      "title": "Coleman-Mach Bluetooth thermostat pairing and phone-limit prep",
+      "summary": "Use this when a Coleman-Mach Bluetooth thermostat needs pairing, six-digit ID, zone-name, or phone-limit notes before support.",
+      "safeChecklist": [
+        "Record thermostat model, six-digit ID if shown, paired phone count, zone name, app screen, and whether the thermostat responds locally.",
+        "Use only normal app pairing and button steps from Coleman-Mach guidance.",
+        "Photograph the app screen, thermostat face, and visible model labels before support.",
+        "Use Coleman-Mach support or qualified RV HVAC service if pairing fails repeatedly or controls behave abnormally."
+      ],
+      "sourceIds": [
+        "coleman-mach-bluetooth-pairing-new-thermostat"
+      ],
+      "searchAliases": [
+        "coleman mach rv climate app pairing 6 digit id",
+        "coleman mach bluetooth pairing new thermostat phone limit",
+        "coleman bluetooth thermostat zone name pairing support prep"
+      ],
+      "searchRequiredTerms": [
+        "coleman",
+        "pairing"
+      ]
+    },
+    {
+      "id": "coleman-soft-start-breaker-trip-generator-prep",
+      "slug": "coleman-soft-start-breaker-trip-generator-prep",
+      "title": "Coleman-Mach Soft Start breaker-trip and generator prep",
+      "summary": "Use this when a Coleman-Mach Soft Start Series AC has breaker-trip, startup, or generator-capacity questions before support.",
+      "safeChecklist": [
+        "Record AC model, Soft Start Series model if known, generator rating, breaker event timing, outside temperature, thermostat mode, and shore-power state.",
+        "Use the product page only to identify current model family and owner-visible product names.",
+        "Stop using the AC if breaker trips repeat, odor appears, controls act abnormally, or generator operation is unstable.",
+        "Use Coleman-Mach support or qualified RV HVAC service for parts, startup issues, repeated trips, or generator matching decisions."
+      ],
+      "sourceIds": [
+        "coleman-mach-soft-start-series-product"
+      ],
+      "searchAliases": [
+        "coleman mach soft start breaker trips generator",
+        "coleman soft start series generator prep breaker trip",
+        "coleman mach soft start model service prep"
+      ],
+      "searchRequiredTerms": [
+        "coleman",
+        "soft"
+      ]
+    },
+    {
+      "id": "maxxair-warranty-bill-of-sale-service-prep",
+      "slug": "maxxair-warranty-bill-of-sale-service-prep",
+      "title": "MaxxAir warranty bill-of-sale service prep",
+      "summary": "Use this when a MaxxAir owner needs warranty-period, proof-of-purchase, or service-note preparation before a claim.",
+      "safeChecklist": [
+        "Record MaxxAir model, serial number, purchase date, bill of sale, fan family, control type, and exact symptom.",
+        "Use the MaxxAir warranty page to prepare proof-of-purchase and warranty-period notes only.",
+        "Photograph labels, controls, lid position, and symptom evidence from normal access.",
+        "Use MaxxAir support or qualified RV ventilation service for failed controls, stuck lids, water entry, or parts decisions."
+      ],
+      "sourceIds": [
+        "maxxair-warranty-information"
+      ],
+      "searchAliases": [
+        "maxxair warranty registration bill of sale",
+        "maxxair warranty proof purchase bill of sale service prep",
+        "maxxfan warranty period model serial claim prep"
+      ],
+      "searchRequiredTerms": [
+        "maxxair",
+        "warranty"
+      ]
+    },
+    {
+      "id": "suburban-sw-water-heater-model-suffix-service-prep",
+      "slug": "suburban-sw-water-heater-model-suffix-service-prep",
+      "title": "Suburban SW water-heater model-suffix service prep",
+      "summary": "Use this when a Suburban SW water-heater model suffix, capacity, or control option must be documented before support.",
+      "safeChecklist": [
+        "Record SW model suffix, capacity, control option, installed location, visible labels, power source selected, and exact hot-water symptom.",
+        "Use the Suburban sheet only to decode model-family and control-option names from owner-visible labels.",
+        "Shut the water heater down for odor, leak, overheating, repeated failure, or control behavior that does not feel normal.",
+        "Use Suburban support or qualified RV water-heater service for model suffix questions, parts selection, or symptoms beyond normal controls."
+      ],
+      "sourceIds": [
+        "suburban-tank-water-heater-controls-product-sheet"
+      ],
+      "searchAliases": [
+        "suburban SW6DE SW6D DEL DEC model meaning",
+        "suburban sw water heater model suffix service prep",
+        "suburban tank water heater controls product sheet d de del dec"
+      ],
+      "searchRequiredTerms": [
+        "suburban",
+        "sw"
+      ]
+    },
+    {
+      "id": "aquahot-authorized-mobile-service-warranty-routing",
+      "slug": "aquahot-authorized-mobile-service-warranty-routing",
+      "title": "Aqua-Hot authorized mobile service and warranty routing",
+      "summary": "Use this when an Aqua-Hot owner needs authorized service, mobile appointment, warranty authorization, or documentation notes before support.",
+      "safeChecklist": [
+        "Record Aqua-Hot model, serial number, control state, heat-source selection, affected zone, hot-water symptom, and warranty status if known.",
+        "Use the Aqua-Hot service page to identify authorized service and warranty routing before scheduling.",
+        "Photograph labels, controls, and visible symptom evidence from normal owner access.",
+        "Stop operation for leak, abnormal odor, overheating, alarm activity, or repeated no-heat/no-hot-water behavior until qualified Aqua-Hot service responds."
+      ],
+      "sourceIds": [
+        "aquahot-service-support-authorized-centers"
+      ],
+      "searchAliases": [
+        "aqua hot factory authorized service center mobile warranty repair",
+        "aquahot authorized mobile service warranty routing",
+        "aqua hot service support factory authorized center prep"
+      ],
+      "searchRequiredTerms": [
+        "aqua",
+        "hot"
+      ]
+    },
+    {
+      "id": "thetford-norcold-contact-us-service-routing-prep",
+      "slug": "thetford-norcold-contact-us-service-routing-prep",
+      "title": "Thetford/Norcold contact-us service routing prep",
+      "summary": "Use this when Thetford or Norcold support needs contact-form details, model, serial, VIN, or symptom notes before routing.",
+      "safeChecklist": [
+        "Record product brand, appliance type, model, serial number, RV VIN if requested, exact symptom, and any displayed message.",
+        "Use the contact page to choose the correct consumer support path and prepare form details.",
+        "Photograph labels, controls, and symptom evidence from normal access before submitting the request.",
+        "Use authorized service for refrigerator cooling, odor, alarm, leak, toilet leak, or repeated failure symptoms beyond normal owner care."
+      ],
+      "sourceIds": [
+        "thetford-contact-us-consumer-support"
+      ],
+      "searchAliases": [
+        "thetford norcold contact support model serial vin technical question",
+        "thetford contact support model serial vin technical question",
+        "norcold thetford contact us consumer support service routing prep"
+      ],
+      "searchRequiredTerms": [
+        "thetford",
+        "contact"
+      ]
+    },
+    {
+      "id": "norcold-n1095-support-manual-parts-service-prep",
+      "slug": "norcold-n1095-support-manual-parts-service-prep",
+      "title": "Norcold N1095 manual, parts, and service prep",
+      "summary": "Use this when a Norcold N1095 owner needs official manual, parts-list, warranty, or service notes before support.",
+      "safeChecklist": [
+        "Record N1095 model, serial number, control state, power source selected, door condition, level condition, and exact cooling symptom.",
+        "Use the official support page to find model-specific manual and parts-list routing before contacting support.",
+        "Shut the refrigerator down for ammonia odor, fuel odor, overheating, alarm activity, or repeated stopped-operation symptoms.",
+        "Use authorized Norcold service for cooling, power, parts, warranty, or service questions beyond normal owner documentation."
+      ],
+      "sourceIds": [
+        "norcold-n1095-support"
+      ],
+      "searchAliases": [
+        "norcold n1095 manual parts warranty service prep",
+        "norcold n1095 support manual parts list",
+        "norcold n1095 refrigerator model serial authorized service prep"
+      ],
+      "searchRequiredTerms": [
+        "n1095"
+      ]
+    },
+    {
+      "id": "norcold-polar-n10-manual-parts-service-prep",
+      "slug": "norcold-polar-n10-manual-parts-service-prep",
+      "title": "Norcold Polar N10 manual and parts service prep",
+      "summary": "Use this when a Norcold Polar N10 or N10LX owner needs official manual, parts-list, model, or service notes before support.",
+      "safeChecklist": [
+        "Record N10 or N10LX model, serial number, control state, power source selected, door condition, level condition, and exact cooling symptom.",
+        "Use the support page to find model-specific manual and parts-list routing before contacting support.",
+        "Shut the refrigerator down for ammonia odor, fuel odor, overheating, alarm activity, or repeated stopped-operation symptoms.",
+        "Use authorized Norcold service for cooling, power, parts, warranty, or service questions beyond normal owner documentation."
+      ],
+      "sourceIds": [
+        "norcold-polar-n10-support"
+      ],
+      "searchAliases": [
+        "norcold polar n10 n10lx owner manual parts list",
+        "norcold polar n10 manual parts service prep",
+        "norcold n10lx support manual model serial prep"
+      ],
+      "searchRequiredTerms": [
+        "n10"
+      ]
+    },
+    {
+      "id": "norcold-2118-polarmax-manual-parts-water-dispenser-prep",
+      "slug": "norcold-2118-polarmax-manual-parts-water-dispenser-prep",
+      "title": "Norcold 2118 PolarMax manual, parts, and water-dispenser prep",
+      "summary": "Use this when a Norcold 2118 PolarMax owner needs official manual, parts-list, dispenser notes, or service documentation before support.",
+      "safeChecklist": [
+        "Record 2118 model, serial number, control state, power source selected, door or dispenser symptom, level condition, and exact cooling symptom.",
+        "Use the support page to find model-specific manual and parts-list routing before contacting support.",
+        "Shut the refrigerator down for ammonia odor, fuel odor, overheating, alarm activity, leak, or repeated stopped-operation symptoms.",
+        "Use authorized Norcold service for cooling, dispenser, power, parts, warranty, or service questions beyond normal owner documentation."
+      ],
+      "sourceIds": [
+        "norcold-2118-polarmax-support"
+      ],
+      "searchAliases": [
+        "norcold 2118 polarmax water dispenser manual parts service",
+        "norcold 2118 polarmax support manual parts water dispenser prep",
+        "norcold polarmax 2118 model serial service prep"
+      ],
+      "searchRequiredTerms": [
+        "2118"
+      ]
+    },
+    {
+      "id": "onan-generator-nameplate-authorized-dealer-directory-prep",
+      "slug": "onan-generator-nameplate-authorized-dealer-directory-prep",
+      "title": "Onan generator nameplate and authorized dealer directory prep",
+      "summary": "Use this when an Onan generator owner needs model, spec, serial, and authorized dealer-directory notes before service.",
+      "safeChecklist": [
+        "Record the generator model, spec, and serial from the nameplate plus hour meter, displayed message, start attempt count, fuel type, and battery state.",
+        "Use the Cummins Onan dealer directory to prepare authorized dealer contact details before service scheduling.",
+        "Keep the generator off for exhaust concern, odor, smoke, overheating, abnormal sound, no output, or repeated shutdown.",
+        "Use authorized Onan service for diagnosis, parts, output issues, start failures, or symptoms beyond normal owner documentation."
+      ],
+      "sourceIds": [
+        "onan-rv-generator-dealer-directory-5600464"
+      ],
+      "searchAliases": [
+        "onan generator model spec serial number authorized service dealer",
+        "cummins onan rv generator dealer directory nameplate prep",
+        "onan generator authorized dealer model spec serial service prep"
+      ],
+      "searchRequiredTerms": [
+        "onan",
+        "dealer"
+      ]
+    },
+    {
+      "id": "cummins-care-onan-support-registration-manuals-prep",
+      "slug": "cummins-care-onan-support-registration-manuals-prep",
+      "title": "Cummins Care Onan support, registration, and manuals prep",
+      "summary": "Use this when an Onan owner needs Cummins Care support, registration, manual, or warranty lookup notes before service.",
+      "safeChecklist": [
+        "Record generator model, spec, serial, hour meter, RV year, purchase details, displayed message, and exact symptom before contacting Cummins Care.",
+        "Use the Cummins Care support flyer to prepare registration, manual, warranty, and contact-path details.",
+        "Keep the generator off for exhaust concern, odor, smoke, overheating, abnormal sound, no output, or repeated shutdown.",
+        "Use Cummins Care or authorized Onan service for diagnosis, parts, warranty, output issues, start failures, or symptoms beyond normal owner documentation."
+      ],
+      "sourceIds": [
+        "cummins-care-support-5600280"
+      ],
+      "searchAliases": [
+        "cummins care onan generator support registration manuals warranty",
+        "cummins care onan support registration manual warranty prep",
+        "onan generator cummins care manuals warranty service prep"
+      ],
+      "searchRequiredTerms": [
+        "cummins",
+        "care"
       ]
     }
   ],

@@ -100,11 +100,11 @@ Traffic monitor:
 npm run traffic:monitor
 ```
 
-Current corpus:
+Local corpus pending deploy:
 - `850` verified entries
-- `324` symptom guides
-- `490` official sources
-- `1175` generated indexable pages
+- `348` symptom guides
+- `514` official sources
+- `1199` generated indexable pages
 
 Next automated batch goal:
 - Continue official-source gap scans across currently supported brands for non-duplicate owner-safe service-prep, model-label, control-behavior, storage, recall, warranty, or service-locator guides; add no code entries unless a current manufacturer-hosted display or fault table is verified.
