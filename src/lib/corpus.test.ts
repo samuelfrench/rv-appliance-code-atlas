@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 850;
-const expectedSourceCount = 466;
-const expectedSymptomCount = 300;
+const expectedSourceCount = 490;
+const expectedSymptomCount = 324;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -5863,6 +5863,218 @@ describe("verified corpus", () => {
     );
     expect(lookupSymptomGuides(index, "microwave no heat").slice(0, 5).map((symptom) => symptom.slug)).not.toContain(
       "furrion-microwave-manual-model-service-prep",
+    );
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds the official fresh gap-scan owner-safe router batch without code entries", () => {
+    const expectedSources = new Map([
+      ["dometic-hydro-flame-afs-afm-afl-user-manual", "https://www.dometic.com/externalassets/afm_66617.pdf"],
+      [
+        "dometic-brisk-fan-black-graphic-data-tag-support",
+        "https://support.dometic.com/en/brisk-ac/How-to-operate-the-Fan-Black-Graphic-of-the-airconditioner-1b6b",
+      ],
+      [
+        "dometic-brisk-auto-fan-thermostat-selector-support",
+        "https://support.dometic.com/en/brisk-ac/How-to-control-AUTO-FAN-5ac7",
+      ],
+      [
+        "dometic-freshjet-fj-fjx-mode-routing-support",
+        "https://support.dometic.com/en/freshjet-ac/How-to-Control-Air-conditioning-modes-62dd",
+      ],
+      [
+        "dometic-freshjet-remote-not-registering-support",
+        "https://support.dometic.com/en/freshjet-ac/My-remote-control-does-not-register-a42",
+      ],
+      [
+        "dometic-americana-too-cold-thermostat-support",
+        "https://support.dometic.com/en/americana-refrigerators/The-refrigerator-is-too-cold-8bbe",
+      ],
+      [
+        "dometic-water-heater-combo-operation-failure-mode-router",
+        "https://support.dometic.com/en/waterheaters-combo/Water-heater-operation-failure-fe99",
+      ],
+      ["coleman-45000-heat-pump-owner-1980-054", "https://library.coleman-mach.com/wp-content/uploads/2023/12/1980-054.pdf"],
+      [
+        "maxxair-maxxfan-plus-mini-iom-11f90000k",
+        "https://library.maxxair.com/wp-content/uploads/2023/03/11f90000k_maxxfanmini-maxxfan-maxxfan-plus-install-01-2018.pdf",
+      ],
+      [
+        "maxxair-maxxfan-dome-iom-11-90056",
+        "https://library.maxxair.com/wp-content/uploads/2023/03/11-90056_mxr-maxxfan-dome-iom-09-24-2019-1.pdf",
+      ],
+      ["suburban-2025-amcat-catalog", "https://suburbanrv.com/files/catalog/SUB-401.02_2025%20AMCAT.pdf"],
+      ["aquahot-450d-use-care-guide", "https://aquahot.com/files/owners_manual/AHE-450-DE5_Use_and_Care_Guide.pdf"],
+      ["aquahot-600d-use-care-guide", "https://www.aquahot.com/files/owners_manual/AHE-600-D04_Use_and_Care_Guide.pdf"],
+      ["furrion-washing-machines-support", "https://support.lci1.com/washing-machines"],
+      ["furrion-thermostats-support-index", "https://support.lci1.com/thermostats"],
+      ["lippert-leveling-stabilization-support-router", "https://support.lci1.com/leveling-and-stabilization/"],
+      ["lippert-slide-outs-support-router", "https://support.lci1.com/slide-outs/"],
+      ["norcold-323-n260-3-support", "https://www.thetford.com/us/thetford-support/323-n260-3/"],
+      ["norcold-n300-n302-support", "https://www.thetford.com/us/thetford-support/n300-n302/"],
+      ["norcold-n305-n306-support", "https://www.thetford.com/us/thetford-support/n305-n306/"],
+      ["thetford-aqua-kem-liquid-support", "https://www.thetford.com/us/thetford-support/aqua-kem-liquid/"],
+      [
+        "thetford-cassette-toilet-maintenance-inspiration",
+        "https://www.thetford.com/int/inspiration/cassette-toilet-maintenance/",
+      ],
+      [
+        "thetford-toilet-care-additives-faq",
+        "https://www.thetford.com/int/faq/which-thetford-toilet-care-additives-do-i-need-2-2/",
+      ],
+      [
+        "thetford-cassette-toilets-2024-spec-overview",
+        "https://www.thetford.com/app/uploads/Thetford_Cassette-toilet_2024_EN.pdf",
+      ],
+    ]);
+    const expectedSymptomSourceIds = new Map<string, string[]>([
+      ["dometic-hydro-flame-furnace-operation-maintenance-safety-prep", ["dometic-hydro-flame-afs-afm-afl-user-manual"]],
+      ["dometic-brisk-ac-fan-control-model-label-prep", ["dometic-brisk-fan-black-graphic-data-tag-support"]],
+      ["dometic-brisk-ac-auto-fan-thermostat-identification", ["dometic-brisk-auto-fan-thermostat-selector-support"]],
+      ["dometic-freshjet-fj-fjx-mode-control-model-label", ["dometic-freshjet-fj-fjx-mode-routing-support"]],
+      ["dometic-freshjet-remote-does-not-register", ["dometic-freshjet-remote-not-registering-support"]],
+      ["dometic-americana-refrigerator-too-cold", ["dometic-americana-too-cold-thermostat-support"]],
+      [
+        "dometic-atwood-combo-water-heater-gas-electric-mode-failure-prep",
+        ["dometic-water-heater-combo-operation-failure-mode-router"],
+      ],
+      ["coleman-45000-heat-pump-model-serial-temperature-split-prep", ["coleman-45000-heat-pump-owner-1980-054"]],
+      ["maxxair-maxxfan-plus-rain-sensor-remote-control-prep", ["maxxair-maxxfan-plus-mini-iom-11f90000k"]],
+      ["maxxair-maxxfan-dome-model-ventilation-service-prep", ["maxxair-maxxfan-dome-iom-11-90056"]],
+      [
+        "suburban-2025-amcat-model-family-warranty-service-prep",
+        ["suburban-2025-amcat-catalog", "suburban-service-center-dealer-locator", "suburban-warranty-service-paperwork"],
+      ],
+      ["aquahot-450d-hot-water-priority-service-prep", ["aquahot-450d-use-care-guide"]],
+      ["aquahot-600d-reporter-network-service-prep", ["aquahot-600d-use-care-guide"]],
+      ["furrion-washer-dryer-combo-leak-drain-service-prep", ["furrion-washing-machines-support"]],
+      ["furrion-thermostat-manual-model-control-router", ["furrion-thermostats-support-index"]],
+      ["lippert-leveling-stabilization-system-router", ["lippert-leveling-stabilization-support-router"]],
+      ["lippert-slideout-system-identification-router", ["lippert-slide-outs-support-router"]],
+      ["norcold-323-n260-3-discontinued-support-prep", ["norcold-323-n260-3-support"]],
+      ["norcold-n300-n302-discontinued-support-prep", ["norcold-n300-n302-support"]],
+      [
+        "norcold-n305-n306-recall-service-prep",
+        [
+          "norcold-n305-n306-support",
+          "norcold-product-compliance-recall-info",
+          "norcold-refrigeration-warranty-statement",
+          "thetford-norcold-dealer-locator",
+        ],
+      ],
+      ["thetford-holding-tank-treatment-freeze-sensor-care", ["thetford-aqua-kem-liquid-support"]],
+      ["thetford-cassette-toilet-odor-seal-maintenance", ["thetford-cassette-toilet-maintenance-inspiration"]],
+      ["thetford-toilet-care-additive-selection", ["thetford-toilet-care-additives-faq"]],
+      ["thetford-cassette-toilet-c220-c260-c400-model-prep", ["thetford-cassette-toilets-2024-spec-overview"]],
+    ]);
+    const expectedRequiredTerms = new Map<string, string[]>([
+      ["dometic-hydro-flame-furnace-operation-maintenance-safety-prep", ["hydro", "afm", "afl"]],
+      ["dometic-brisk-ac-fan-control-model-label-prep", ["brisk"]],
+      ["dometic-brisk-ac-auto-fan-thermostat-identification", ["brisk"]],
+      ["dometic-freshjet-fj-fjx-mode-control-model-label", ["freshjet"]],
+      ["dometic-freshjet-remote-does-not-register", ["freshjet"]],
+      ["dometic-americana-refrigerator-too-cold", ["americana"]],
+      ["dometic-atwood-combo-water-heater-gas-electric-mode-failure-prep", ["atwood", "combo"]],
+      ["coleman-45000-heat-pump-model-serial-temperature-split-prep", ["45000"]],
+      ["maxxair-maxxfan-plus-rain-sensor-remote-control-prep", ["plus", "mini"]],
+      ["maxxair-maxxfan-dome-model-ventilation-service-prep", ["dome"]],
+      ["suburban-2025-amcat-model-family-warranty-service-prep", ["amcat"]],
+      ["aquahot-450d-hot-water-priority-service-prep", ["450d"]],
+      ["aquahot-600d-reporter-network-service-prep", ["600d"]],
+      ["furrion-washer-dryer-combo-leak-drain-service-prep", ["washing", "washer"]],
+      ["furrion-thermostat-manual-model-control-router", ["thermostat"]],
+      ["lippert-leveling-stabilization-system-router", ["leveling", "stabilization"]],
+      ["lippert-slideout-system-identification-router", ["slide", "slideout"]],
+      ["norcold-323-n260-3-discontinued-support-prep", ["n260", "323"]],
+      ["norcold-n300-n302-discontinued-support-prep", ["n300", "n302"]],
+      ["norcold-n305-n306-recall-service-prep", ["n305", "n306"]],
+      ["thetford-holding-tank-treatment-freeze-sensor-care", ["aquakem"]],
+      ["thetford-cassette-toilet-odor-seal-maintenance", ["cassette"]],
+      ["thetford-toilet-care-additive-selection", ["additive", "additives"]],
+      ["thetford-cassette-toilet-c220-c260-c400-model-prep", ["cassette"]],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const sourcesById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const index = buildSymptomSearchIndex(corpus);
+    const summary = summarizeCorpus(corpus);
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\bline-voltage\b|\brefrigerant\b|\bprobe\b|\bwiring\b|\binternal\b|\broof\b|\bsupply line\b|\bopen (the )?(fuel|gas|electrical|rooftop)|remove.*shroud|remove.*cover|measure resistance|fuel nozzle|combustion|coolant pump|manual override|hydraulic work/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = sourcesById.get(sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(sourcesById.has("cummins-coach-care-rv-service-locations")).toBe(false);
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(summary.indexablePages).toBe(expectedEntryCount + expectedSymptomCount + 1);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const [symptomId, sourceIds] of expectedSymptomSourceIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds, symptomId).toEqual(sourceIds);
+      expect(symptom?.searchRequiredTerms, symptomId).toEqual(expectedRequiredTerms.get(symptomId));
+      expect([symptom?.summary, ...(symptom?.safeChecklist ?? [])].join(" "), symptomId).not.toMatch(
+        unsafeOwnerActionPattern,
+      );
+    }
+
+    expect(lookupSymptomGuides(index, "hydro flame afm furnace soot vent erratic cycling")[0]?.slug).toBe(
+      "dometic-hydro-flame-furnace-operation-maintenance-safety-prep",
+    );
+    expect(lookupSymptomGuides(index, "dometic brisk fan control black graphic brisk 1 brisk 2")[0]?.slug).toBe(
+      "dometic-brisk-ac-fan-control-model-label-prep",
+    );
+    expect(lookupSymptomGuides(index, "dometic brisk auto fan which thermostat do i have")[0]?.slug).toBe(
+      "dometic-brisk-ac-auto-fan-thermostat-identification",
+    );
+    expect(lookupSymptomGuides(index, "freshjet remote does not register battery display")[0]?.slug).toBe(
+      "dometic-freshjet-remote-does-not-register",
+    );
+    expect(lookupSymptomGuides(index, "atwood combo water heater works on gas not electric")[0]?.slug).toBe(
+      "dometic-atwood-combo-water-heater-gas-electric-mode-failure-prep",
+    );
+    expect(lookupSymptomGuides(index, "coleman mach 45000 heat pump temperature split model serial")[0]?.slug).toBe(
+      "coleman-45000-heat-pump-model-serial-temperature-split-prep",
+    );
+    expect(lookupSymptomGuides(index, "maxxfan dome 3812 bathroom fan led not working")[0]?.slug).toBe(
+      "maxxair-maxxfan-dome-model-ventilation-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "aqua hot 450d cabin heat stops when hot water is running")[0]?.slug).toBe(
+      "aquahot-450d-hot-water-priority-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "furrion washer dryer combo leaking not draining")[0]?.slug).toBe(
+      "furrion-washer-dryer-combo-leak-drain-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "which lippert slide out system in-wall slimrack through frame")[0]?.slug).toBe(
+      "lippert-slideout-system-identification-router",
+    );
+    expect(lookupSymptomGuides(index, "norcold n305 n306 recall warranty service prep")[0]?.slug).toBe(
+      "norcold-n305-n306-recall-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "thetford aqua kem holding tank odor sensor freeze")[0]?.slug).toBe(
+      "thetford-holding-tank-treatment-freeze-sensor-care",
+    );
+    expect(lookupSymptomGuides(index, "which thetford toilet additive blue green aqua rinse grey water")[0]?.slug).toBe(
+      "thetford-toilet-care-additive-selection",
+    );
+    expect(lookupSymptomGuides(index, "thetford cassette toilet c220 c260 c400 model tank capacity")[0]?.slug).toBe(
+      "thetford-cassette-toilet-c220-c260-c400-model-prep",
+    );
+
+    expect(lookupSymptomGuides(index, "furrion microwave no heat").slice(0, 5).map((symptom) => symptom.slug)).not.toContain(
+      "furrion-thermostat-manual-model-control-router",
+    );
+    expect(lookupSymptomGuides(index, "maxxair maxxfan deluxe 07000k remote thermostat")[0]?.slug).toBe(
+      "maxxair-maxxfan-deluxe-model-control-prep",
+    );
+    expect(lookupSymptomGuides(index, "thetford toilet serial")[0]?.slug).toBe(
+      "thetford-rv-toilet-serial-model-label-service-prep",
     );
     expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
   });

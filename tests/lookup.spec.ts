@@ -1365,6 +1365,77 @@ test("lookup surfaces the official Dometic Coleman Furrion Aqua-Hot Thetford and
   expect(pageErrors).toEqual([]);
 });
 
+test("lookup surfaces the fresh official gap-scan service-prep pages", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    ["hydro flame afm furnace soot vent erratic cycling", "/symptoms/dometic-hydro-flame-furnace-operation-maintenance-safety-prep/"],
+    ["freshjet remote does not register battery display", "/symptoms/dometic-freshjet-remote-does-not-register/"],
+    [
+      "atwood combo water heater works on gas not electric",
+      "/symptoms/dometic-atwood-combo-water-heater-gas-electric-mode-failure-prep/",
+    ],
+    ["maxxfan dome 3812 bathroom fan led not working", "/symptoms/maxxair-maxxfan-dome-model-ventilation-service-prep/"],
+    ["aqua hot 450d cabin heat stops when hot water is running", "/symptoms/aquahot-450d-hot-water-priority-service-prep/"],
+    ["furrion washer dryer combo leaking not draining", "/symptoms/furrion-washer-dryer-combo-leak-drain-service-prep/"],
+    ["which lippert slide out system in-wall slimrack through frame", "/symptoms/lippert-slideout-system-identification-router/"],
+    ["norcold n305 n306 recall warranty service prep", "/symptoms/norcold-n305-n306-recall-service-prep/"],
+    ["which thetford toilet additive blue green aqua rinse grey water", "/symptoms/thetford-toilet-care-additive-selection/"],
+    [
+      "thetford cassette toilet c220 c260 c400 model tank capacity",
+      "/symptoms/thetford-cassette-toilet-c220-c260-c400-model-prep/",
+    ],
+  ] as const;
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+  }
+
+  await searchbox.fill("maxxair maxxfan deluxe 07000k remote thermostat");
+  await expect(lookupResults.locator('a[href="/symptoms/maxxair-maxxfan-deluxe-model-control-prep/"]')).toBeVisible();
+
+  await searchbox.fill("thetford toilet serial");
+  await expect(lookupResults.locator('a[href="/symptoms/thetford-rv-toilet-serial-model-label-service-prep/"]')).toBeVisible();
+
+  async function openGuide(query: string, href: string) {
+    await page.goto("/");
+    await page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" }).fill(query);
+    const link = page.locator('section[aria-label="Lookup results"]').locator(`a[href="${href}"]`);
+    await expect(link).toBeVisible();
+    await link.click();
+  }
+
+  await openGuide(
+    "atwood combo water heater works on gas not electric",
+    "/symptoms/dometic-atwood-combo-water-heater-gas-electric-mode-failure-prep/",
+  );
+  await expect(
+    page.getByRole("heading", { name: "Dometic/Atwood combo water heater gas/electric mode failure prep" }),
+  ).toBeVisible();
+  await expect(page.getByText(/Shut the water heater down/i)).toBeVisible();
+  await expect(page.getByText(/qualified RV water-heater service/i)).toBeVisible();
+
+  await openGuide(
+    "thetford cassette toilet c220 c260 c400 model tank capacity",
+    "/symptoms/thetford-cassette-toilet-c220-c260-c400-model-prep/",
+  );
+  await expect(page.getByRole("heading", { name: "Thetford cassette toilet C220/C260/C400 model prep" })).toBeVisible();
+  await expect(page.getByText(/Do not use the overview as retrofit/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 

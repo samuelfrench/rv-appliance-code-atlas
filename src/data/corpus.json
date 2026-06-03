@@ -3753,6 +3753,198 @@
       "url": "https://www.maxxair.com/products/fans/maxxfan-deluxe/",
       "type": "manufacturer-product-page",
       "official": true
+    },
+    {
+      "id": "dometic-hydro-flame-afs-afm-afl-user-manual",
+      "brand": "Dometic",
+      "title": "Dometic Hydro Flame AFS AFM AFL User Information Manual",
+      "url": "https://www.dometic.com/externalassets/afm_66617.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "dometic-brisk-fan-black-graphic-data-tag-support",
+      "brand": "Dometic",
+      "title": "Dometic Brisk Fan Black Graphic Data Tag Support",
+      "url": "https://support.dometic.com/en/brisk-ac/How-to-operate-the-Fan-Black-Graphic-of-the-airconditioner-1b6b",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-brisk-auto-fan-thermostat-selector-support",
+      "brand": "Dometic",
+      "title": "Dometic Brisk Auto Fan Thermostat Selector Support",
+      "url": "https://support.dometic.com/en/brisk-ac/How-to-control-AUTO-FAN-5ac7",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-freshjet-fj-fjx-mode-routing-support",
+      "brand": "Dometic",
+      "title": "Dometic FreshJet FJ FJX Mode Routing Support",
+      "url": "https://support.dometic.com/en/freshjet-ac/How-to-Control-Air-conditioning-modes-62dd",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-freshjet-remote-not-registering-support",
+      "brand": "Dometic",
+      "title": "Dometic FreshJet Remote Does Not Register Support",
+      "url": "https://support.dometic.com/en/freshjet-ac/My-remote-control-does-not-register-a42",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-americana-too-cold-thermostat-support",
+      "brand": "Dometic",
+      "title": "Dometic Americana Refrigerator Too Cold Support",
+      "url": "https://support.dometic.com/en/americana-refrigerators/The-refrigerator-is-too-cold-8bbe",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-water-heater-combo-operation-failure-mode-router",
+      "brand": "Dometic",
+      "title": "Dometic Combo Gas Electric Water Heater Operation Failure Router",
+      "url": "https://support.dometic.com/en/waterheaters-combo/Water-heater-operation-failure-fe99",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "coleman-45000-heat-pump-owner-1980-054",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 45000 Series Heat Pump Owner Manual 1980-054",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/12/1980-054.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "maxxair-maxxfan-plus-mini-iom-11f90000k",
+      "brand": "MaxxAir",
+      "title": "MaxxAir MaxxFan Mini MaxxFan MaxxFan Plus IOM",
+      "url": "https://library.maxxair.com/wp-content/uploads/2023/03/11f90000k_maxxfanmini-maxxfan-maxxfan-plus-install-01-2018.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "maxxair-maxxfan-dome-iom-11-90056",
+      "brand": "MaxxAir",
+      "title": "MaxxAir MaxxFan Dome IOM 11-90056",
+      "url": "https://library.maxxair.com/wp-content/uploads/2023/03/11-90056_mxr-maxxfan-dome-iom-09-24-2019-1.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "suburban-2025-amcat-catalog",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban 2025 AMCAT Catalog",
+      "url": "https://suburbanrv.com/files/catalog/SUB-401.02_2025%20AMCAT.pdf",
+      "type": "manufacturer-catalog",
+      "official": true
+    },
+    {
+      "id": "aquahot-450d-use-care-guide",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot AHE-450-DE5 Use And Care Guide",
+      "url": "https://aquahot.com/files/owners_manual/AHE-450-DE5_Use_and_Care_Guide.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "aquahot-600d-use-care-guide",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot AHE-600-D04 Use And Care Guide",
+      "url": "https://www.aquahot.com/files/owners_manual/AHE-600-D04_Use_and_Care_Guide.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-washing-machines-support",
+      "brand": "Furrion",
+      "title": "Lippert Furrion Washing Machines Support",
+      "url": "https://support.lci1.com/washing-machines",
+      "type": "manufacturer-support-index",
+      "official": true
+    },
+    {
+      "id": "furrion-thermostats-support-index",
+      "brand": "Furrion",
+      "title": "Lippert Furrion Thermostats Support Index",
+      "url": "https://support.lci1.com/thermostats",
+      "type": "manufacturer-support-index",
+      "official": true
+    },
+    {
+      "id": "lippert-leveling-stabilization-support-router",
+      "brand": "Lippert",
+      "title": "Lippert Leveling And Stabilization Support Router",
+      "url": "https://support.lci1.com/leveling-and-stabilization/",
+      "type": "manufacturer-support-index",
+      "official": true
+    },
+    {
+      "id": "lippert-slide-outs-support-router",
+      "brand": "Lippert",
+      "title": "Lippert Slide-Outs Support Router",
+      "url": "https://support.lci1.com/slide-outs/",
+      "type": "manufacturer-support-index",
+      "official": true
+    },
+    {
+      "id": "norcold-323-n260-3-support",
+      "brand": "Norcold",
+      "title": "Thetford Norcold 323 N260.3 Support",
+      "url": "https://www.thetford.com/us/thetford-support/323-n260-3/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-n300-n302-support",
+      "brand": "Norcold",
+      "title": "Thetford Norcold N300 N302 Support",
+      "url": "https://www.thetford.com/us/thetford-support/n300-n302/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-n305-n306-support",
+      "brand": "Norcold",
+      "title": "Thetford Norcold N305 N306 Support",
+      "url": "https://www.thetford.com/us/thetford-support/n305-n306/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-aqua-kem-liquid-support",
+      "brand": "Thetford",
+      "title": "Thetford Aqua-Kem Liquid Support",
+      "url": "https://www.thetford.com/us/thetford-support/aqua-kem-liquid/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-cassette-toilet-maintenance-inspiration",
+      "brand": "Thetford",
+      "title": "Thetford Cassette Toilet Maintenance Guide",
+      "url": "https://www.thetford.com/int/inspiration/cassette-toilet-maintenance/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-toilet-care-additives-faq",
+      "brand": "Thetford",
+      "title": "Thetford Toilet Care Additives FAQ",
+      "url": "https://www.thetford.com/int/faq/which-thetford-toilet-care-additives-do-i-need-2-2/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-cassette-toilets-2024-spec-overview",
+      "brand": "Thetford",
+      "title": "Thetford Cassette Toilets 2024 Technical Overview",
+      "url": "https://www.thetford.com/app/uploads/Thetford_Cassette-toilet_2024_EN.pdf",
+      "type": "manufacturer-manual",
+      "official": true
     }
   ],
   "entries": [
@@ -36485,7 +36677,31 @@
         "aquahot-400d-use-care-guide",
         "thetford-cassette-toilet-serial-identification",
         "thetford-cassette-left-right-faq-2024",
-        "maxxair-maxxfan-deluxe-product-matrix"
+        "maxxair-maxxfan-deluxe-product-matrix",
+        "dometic-hydro-flame-afs-afm-afl-user-manual",
+        "dometic-brisk-fan-black-graphic-data-tag-support",
+        "dometic-brisk-auto-fan-thermostat-selector-support",
+        "dometic-freshjet-fj-fjx-mode-routing-support",
+        "dometic-freshjet-remote-not-registering-support",
+        "dometic-americana-too-cold-thermostat-support",
+        "dometic-water-heater-combo-operation-failure-mode-router",
+        "coleman-45000-heat-pump-owner-1980-054",
+        "maxxair-maxxfan-plus-mini-iom-11f90000k",
+        "maxxair-maxxfan-dome-iom-11-90056",
+        "suburban-2025-amcat-catalog",
+        "aquahot-450d-use-care-guide",
+        "aquahot-600d-use-care-guide",
+        "furrion-washing-machines-support",
+        "furrion-thermostats-support-index",
+        "lippert-leveling-stabilization-support-router",
+        "lippert-slide-outs-support-router",
+        "norcold-323-n260-3-support",
+        "norcold-n300-n302-support",
+        "norcold-n305-n306-support",
+        "thetford-aqua-kem-liquid-support",
+        "thetford-cassette-toilet-maintenance-inspiration",
+        "thetford-toilet-care-additives-faq",
+        "thetford-cassette-toilets-2024-spec-overview"
       ]
     },
     {
@@ -41248,6 +41464,574 @@
       "searchRequiredTerms": [
         "maxxair",
         "maxxfan"
+      ]
+    },
+    {
+      "id": "dometic-hydro-flame-furnace-operation-maintenance-safety-prep",
+      "slug": "dometic-hydro-flame-furnace-operation-maintenance-safety-prep",
+      "title": "Dometic Hydro Flame furnace operation, maintenance, and safety prep",
+      "summary": "Use this when a Dometic/Hydro Flame AFS, AFM, or AFL furnace has soot, blocked-air, erratic heat, fuel odor, or service-prep questions from the user information manual.",
+      "safeChecklist": [
+        "Shut the furnace off for fuel odor, soot, alarm activity, abnormal cycling, or heat that does not feel normal.",
+        "Record model series, thermostat setting, outside temperature, inlet and outlet air condition, visible soot, and whether the furnace recently sat unused.",
+        "Check only owner-visible air openings and exterior outlet areas for obvious obstruction from normal standing access.",
+        "Use qualified RV furnace service for soot, fuel odor, repeated cycling, no heat, or any inspection beyond normal owner-visible surfaces."
+      ],
+      "sourceIds": [
+        "dometic-hydro-flame-afs-afm-afl-user-manual"
+      ],
+      "searchAliases": [
+        "hydro flame afm furnace soot vent erratic cycling",
+        "dometic hydro flame afs afl user information manual maintenance",
+        "hydro flame furnace fuel odor soot exterior outlet service prep"
+      ],
+      "searchRequiredTerms": [
+        "hydro",
+        "afm",
+        "afl"
+      ]
+    },
+    {
+      "id": "dometic-brisk-ac-fan-control-model-label-prep",
+      "slug": "dometic-brisk-ac-fan-control-model-label-prep",
+      "title": "Dometic Brisk AC fan control and model-label prep",
+      "summary": "Use this when a Brisk owner needs the black-graphic fan-control support path, Brisk 1 versus Brisk 2 notes, or data-tag details before AC service.",
+      "safeChecklist": [
+        "Use only normal wall, ceiling, or remote controls to confirm fan mode behavior.",
+        "Photograph the owner-visible data tag, indoor controls, filter grille, and displayed mode from normal access.",
+        "Record whether the unit is Brisk 1 or Brisk 2, fan speed selected, cooling mode, and whether airflow changes at the vents.",
+        "Use qualified RV AC service if the fan does not respond, airflow is abnormal, or label access is not available from normal owner access."
+      ],
+      "sourceIds": [
+        "dometic-brisk-fan-black-graphic-data-tag-support"
+      ],
+      "searchAliases": [
+        "dometic brisk fan control black graphic brisk 1 brisk 2",
+        "dometic brisk air conditioner fan data tag model label",
+        "brisk ac fan mode black graphic support prep"
+      ],
+      "searchRequiredTerms": [
+        "brisk"
+      ]
+    },
+    {
+      "id": "dometic-brisk-ac-auto-fan-thermostat-identification",
+      "slug": "dometic-brisk-ac-auto-fan-thermostat-identification",
+      "title": "Dometic Brisk AC Auto Fan thermostat identification",
+      "summary": "Use this when a Brisk AC owner needs to identify the visible thermostat or control type before understanding Auto Fan behavior.",
+      "safeChecklist": [
+        "Record the visible thermostat or control model, zone, current mode, fan setting, and whether Auto Fan changes speed.",
+        "Use only normal control buttons, remote commands, or app controls already installed for the RV.",
+        "Photograph the thermostat face, current mode, and AC model label if it is owner-visible.",
+        "Use qualified RV AC service if Auto Fan behavior does not match the installed control type or if controls do not respond normally."
+      ],
+      "sourceIds": [
+        "dometic-brisk-auto-fan-thermostat-selector-support"
+      ],
+      "searchAliases": [
+        "dometic brisk auto fan which thermostat do i have",
+        "brisk air conditioner auto fan thermostat selector",
+        "dometic brisk ac auto fan control identification"
+      ],
+      "searchRequiredTerms": [
+        "brisk"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-fj-fjx-mode-control-model-label",
+      "slug": "dometic-freshjet-fj-fjx-mode-control-model-label",
+      "title": "Dometic FreshJet FJ/FJX mode-control model label prep",
+      "summary": "Use this when a FreshJet owner needs to distinguish FJ from FJX mode-control instructions before normal cooling, fan, dry, or heat mode use.",
+      "safeChecklist": [
+        "Record the FreshJet model label, remote model, current mode icon, set temperature, and whether the unit is FJ or FJX.",
+        "Use only normal remote, display, or control-panel mode selection.",
+        "Photograph the model label, remote display, and air outlet display from normal access.",
+        "Use qualified RV AC service if mode selection does not change operation or the unit does not respond to normal controls."
+      ],
+      "sourceIds": [
+        "dometic-freshjet-fj-fjx-mode-routing-support"
+      ],
+      "searchAliases": [
+        "dometic freshjet fj or fjx mode control data tag",
+        "freshjet control air conditioning modes fj fjx model label",
+        "dometic freshjet mode control model label service prep"
+      ],
+      "searchRequiredTerms": [
+        "freshjet"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-remote-does-not-register",
+      "slug": "dometic-freshjet-remote-does-not-register",
+      "title": "Dometic FreshJet remote does not register",
+      "summary": "Use this when a FreshJet remote control does not register commands at the air outlet display or the owner needs service notes before AC support.",
+      "safeChecklist": [
+        "Point the remote at the air outlet display and record whether any icon, beep, or response appears.",
+        "Record remote battery condition, display state, selected mode, room temperature, and whether other normal controls respond.",
+        "Photograph the remote display, air outlet display, and FreshJet model label from normal access.",
+        "Use qualified RV AC service if the remote still does not register after normal battery and line-of-sight checks."
+      ],
+      "sourceIds": [
+        "dometic-freshjet-remote-not-registering-support"
+      ],
+      "searchAliases": [
+        "freshjet remote does not register battery display",
+        "dometic freshjet remote control not registering air outlet display",
+        "freshjet remote no response service prep"
+      ],
+      "searchRequiredTerms": [
+        "freshjet"
+      ]
+    },
+    {
+      "id": "dometic-americana-refrigerator-too-cold",
+      "slug": "dometic-americana-refrigerator-too-cold",
+      "title": "Dometic Americana refrigerator too cold",
+      "summary": "Use this when a Dometic Americana refrigerator or freezer is too cold and the owner needs thermostat and condition notes before service.",
+      "safeChecklist": [
+        "Move the thermostat one step warmer and wait for normal refrigerator temperature stabilization before drawing conclusions.",
+        "Record thermostat setting, food location, air space around items, outside temperature, and whether the freezer or refrigerator section is affected.",
+        "Photograph the control setting and any frost or frozen-food evidence from normal access.",
+        "Shut the refrigerator down and call qualified service for ammonia smell, fuel odor, melting-plastic odor, or repeated too-cold behavior after normal setting changes."
+      ],
+      "sourceIds": [
+        "dometic-americana-too-cold-thermostat-support"
+      ],
+      "searchAliases": [
+        "dometic americana refrigerator too cold",
+        "dometic americana fridge freezer too cold thermostat",
+        "americana refrigerator frozen food too cold service prep"
+      ],
+      "searchRequiredTerms": [
+        "americana"
+      ]
+    },
+    {
+      "id": "dometic-atwood-combo-water-heater-gas-electric-mode-failure-prep",
+      "slug": "dometic-atwood-combo-water-heater-gas-electric-mode-failure-prep",
+      "title": "Dometic/Atwood combo water heater gas/electric mode failure prep",
+      "summary": "Use this when a Dometic/Atwood combo gas and electric water heater works in one mode but not the other, has lockout behavior, or needs mode-specific service notes.",
+      "safeChecklist": [
+        "Shut the water heater down if there is fuel odor, soot, overheating, repeated lockout, or water leaking around the appliance.",
+        "Record whether gas mode, electric mode, or both modes fail; include switch position, lockout light state, recent storage, water flow, and weather.",
+        "Photograph the wall switch, model label, service notes, and any visible light or control state from normal access.",
+        "Use qualified RV water-heater service for repeated mode failure, fuel odor, overheating, no hot water, or any diagnosis beyond normal controls."
+      ],
+      "sourceIds": [
+        "dometic-water-heater-combo-operation-failure-mode-router"
+      ],
+      "searchAliases": [
+        "atwood combo water heater works on gas not electric",
+        "dometic atwood water heater gas electric mode failure",
+        "dometic combo water heater operation failure lockout light"
+      ],
+      "searchRequiredTerms": [
+        "atwood",
+        "combo"
+      ]
+    },
+    {
+      "id": "coleman-45000-heat-pump-model-serial-temperature-split-prep",
+      "slug": "coleman-45000-heat-pump-model-serial-temperature-split-prep",
+      "title": "Coleman-Mach 45000 heat pump model and temperature-split prep",
+      "summary": "Use this when a Coleman-Mach 45000 heat pump owner needs model, serial, ambient, return-air, and supply-air notes before HVAC service.",
+      "safeChecklist": [
+        "Record model number, serial number, thermostat setting, fan speed, mode, outside temperature, and inside temperature.",
+        "Measure only normal return-air and supply-register temperatures if the RV is safe and the unit is operating normally.",
+        "Photograph owner-visible labels, thermostat state, filter condition, and the symptom timing.",
+        "Use qualified RV HVAC service for no cooling, no heat, high-pressure lockout, abnormal noise, repeated shutdown, or service beyond normal filter and control checks."
+      ],
+      "sourceIds": [
+        "coleman-45000-heat-pump-owner-1980-054"
+      ],
+      "searchAliases": [
+        "coleman mach 45000 heat pump temperature split model serial",
+        "coleman 45000 heat pump not cooling model serial temperature split",
+        "coleman-mach 45000 heat pump owner manual service prep"
+      ],
+      "searchRequiredTerms": [
+        "45000"
+      ]
+    },
+    {
+      "id": "maxxair-maxxfan-plus-rain-sensor-remote-control-prep",
+      "slug": "maxxair-maxxfan-plus-rain-sensor-remote-control-prep",
+      "title": "MaxxAir MaxxFan Plus rain-sensor and remote-control prep",
+      "summary": "Use this when a MaxxFan Plus, MaxxFan, or MaxxFan Mini owner needs operating notes for rain-sensor, remote, Auto mode, keypad, or manual knob behavior.",
+      "safeChecklist": [
+        "Record model family, lid position, fan speed, Auto mode, remote response, rain-sensor response, and any beep pattern.",
+        "Try only normal keypad, remote, and remote-battery checks from ordinary owner operation.",
+        "Photograph the fan controls, lid position, label if visible, and remote display.",
+        "Use MaxxAir or qualified RV ventilation service if the lid, motor, keypad, remote, or rain sensor still behaves abnormally."
+      ],
+      "sourceIds": [
+        "maxxair-maxxfan-plus-mini-iom-11f90000k"
+      ],
+      "searchAliases": [
+        "maxxair maxxfan plus rain sensor blinking remote beeps manual knob",
+        "maxxfan plus mini remote rain sensor auto mode service prep",
+        "maxxair maxxfan plus remote control not responding rain sensor"
+      ],
+      "searchRequiredTerms": [
+        "plus",
+        "mini"
+      ]
+    },
+    {
+      "id": "maxxair-maxxfan-dome-model-ventilation-service-prep",
+      "slug": "maxxair-maxxfan-dome-model-ventilation-service-prep",
+      "title": "MaxxAir MaxxFan Dome model and ventilation service prep",
+      "summary": "Use this when a MaxxFan Dome 3810 or 3812 bathroom or galley fan has lid, fan, light, exhaust, or model-identification symptoms.",
+      "safeChecklist": [
+        "Record whether the fan is model 3810 or 3812, the installed room, lid position, exhaust behavior, switch response, and light behavior if equipped.",
+        "Turn the fan off before ordinary surface cleaning or documenting a stuck lid or abnormal sound.",
+        "Photograph owner-visible labels, control state, lid position, and visible symptom evidence from normal access.",
+        "Use MaxxAir or qualified RV ventilation service for light failure, fan failure, stuck-lid behavior, water entry, or parts questions."
+      ],
+      "sourceIds": [
+        "maxxair-maxxfan-dome-iom-11-90056"
+      ],
+      "searchAliases": [
+        "maxxfan dome 3812 bathroom fan led not working",
+        "maxxair maxxfan dome 3810 3812 model ventilation service prep",
+        "maxxfan dome exhaust fan light service prep"
+      ],
+      "searchRequiredTerms": [
+        "dome"
+      ]
+    },
+    {
+      "id": "suburban-2025-amcat-model-family-warranty-service-prep",
+      "slug": "suburban-2025-amcat-model-family-warranty-service-prep",
+      "title": "Suburban 2025 AMCAT model-family and warranty service prep",
+      "summary": "Use this when a Suburban owner needs catalog model-family, appliance type, part-family, warranty, or service-router notes before support.",
+      "safeChecklist": [
+        "Record appliance family, model number, serial number, catalog family, installed location, and exact symptom from normal owner-visible labels or paperwork.",
+        "Use the catalog to identify product family names only; do not assume parts fitment from a catalog row.",
+        "Shut LP appliances off for fuel odor, abnormal flame, soot, alarm activity, overheating, or repeated no-heat/no-hot-water symptoms.",
+        "Use Suburban support or qualified service for gas appliance symptoms, part fitment, warranty routing, or any diagnosis beyond normal controls."
+      ],
+      "sourceIds": [
+        "suburban-2025-amcat-catalog",
+        "suburban-service-center-dealer-locator",
+        "suburban-warranty-service-paperwork"
+      ],
+      "searchAliases": [
+        "suburban 2025 amcat model family warranty service prep",
+        "suburban water heater furnace model part warranty service locator",
+        "suburban amcat catalog appliance family service prep"
+      ],
+      "searchRequiredTerms": [
+        "amcat"
+      ]
+    },
+    {
+      "id": "aquahot-450d-hot-water-priority-service-prep",
+      "slug": "aquahot-450d-hot-water-priority-service-prep",
+      "title": "Aqua-Hot 450D hot-water-priority service prep",
+      "summary": "Use this when an Aqua-Hot 450D owner observes cabin heat changing during domestic hot-water use or needs 450D control and label notes before service.",
+      "safeChecklist": [
+        "Record whether cabin heat pauses or changes while hot water is running, plus control-panel state, heat-source selection, outside temperature, and RV zone affected.",
+        "Photograph the Aqua-Hot identity label, control panel, reporter or switch state, and visible service notes from normal access.",
+        "Use only normal owner controls and do not continue operating if the unit overheats, leaks, smells abnormal, or alarms.",
+        "Use qualified Aqua-Hot service for repeated no heat, no hot water, leaks, abnormal odor, or control symptoms beyond normal settings."
+      ],
+      "sourceIds": [
+        "aquahot-450d-use-care-guide"
+      ],
+      "searchAliases": [
+        "aqua hot 450d cabin heat stops when hot water is running",
+        "aquahot 450d hot water priority service prep",
+        "ahe 450 de5 use care guide cabin heat hot water"
+      ],
+      "searchRequiredTerms": [
+        "450d"
+      ]
+    },
+    {
+      "id": "aquahot-600d-reporter-network-service-prep",
+      "slug": "aquahot-600d-reporter-network-service-prep",
+      "title": "Aqua-Hot 600D Reporter and network service prep",
+      "summary": "Use this when an Aqua-Hot 600D Reporter, control screen, network message, or manual-mode question needs safe documentation before support.",
+      "safeChecklist": [
+        "Record Reporter state, displayed message, control version if visible, heat-source selection, RV zone affected, and whether hot water or cabin heat is affected.",
+        "Photograph the Aqua-Hot identity label, Reporter screen, control status, and visible symptom evidence from normal access.",
+        "Use only normal controls already installed in the RV and stop operation for leaks, overheating, alarm activity, abnormal odor, or repeated failure.",
+        "Use qualified Aqua-Hot service for network messages, no heat, no hot water, abnormal odor, leaks, or control behavior that does not clear with normal settings."
+      ],
+      "sourceIds": [
+        "aquahot-600d-use-care-guide"
+      ],
+      "searchAliases": [
+        "aqua hot 600d reporter network failure manual mode service prep",
+        "aquahot 600d reporter control screen service prep",
+        "ahe 600 d04 use care guide reporter network"
+      ],
+      "searchRequiredTerms": [
+        "600d"
+      ]
+    },
+    {
+      "id": "furrion-washer-dryer-combo-leak-drain-service-prep",
+      "slug": "furrion-washer-dryer-combo-leak-drain-service-prep",
+      "title": "Furrion washer/dryer combo leak, drain, or service prep",
+      "summary": "Use this when a Furrion washing-machine or washer/dryer combo support page is needed for leaking, draining, model, manual, or service-call notes.",
+      "safeChecklist": [
+        "Stop the cycle if water is leaking, the drum will not drain, the appliance smells abnormal, or the controls do not respond normally.",
+        "Shut the water supply off if it can be done from normal access and leaking is active.",
+        "Record model, serial, cycle selected, water level, drain behavior, error message if any, and photos of visible water from normal access.",
+        "Use Lippert/Furrion support or qualified service for leaks, no drain, no spin, repeated error messages, or service beyond normal owner controls."
+      ],
+      "sourceIds": [
+        "furrion-washing-machines-support"
+      ],
+      "searchAliases": [
+        "furrion washer dryer combo leaking not draining",
+        "furrion washing machine support model manual service prep",
+        "furrion washer dryer combo drain leak error service"
+      ],
+      "searchRequiredTerms": [
+        "washing",
+        "washer"
+      ]
+    },
+    {
+      "id": "furrion-thermostat-manual-model-control-router",
+      "slug": "furrion-thermostat-manual-model-control-router",
+      "title": "Furrion thermostat manual, model, and control router",
+      "summary": "Use this when a Furrion thermostat owner needs to identify the thermostat family, app-controlled model, RV-C context, or control manual before service.",
+      "safeChecklist": [
+        "Record thermostat model, displayed message, mode, set temperature, zone, fan setting, app state, and whether the controlled appliance responds.",
+        "Use only normal thermostat buttons, remote, or app controls already installed in the RV.",
+        "Photograph the thermostat face, model label if visible, displayed message, and affected appliance label from normal access.",
+        "Use Lippert/Furrion support or qualified HVAC service if the thermostat will not respond or if the controlled appliance behaves abnormally."
+      ],
+      "sourceIds": [
+        "furrion-thermostats-support-index"
+      ],
+      "searchAliases": [
+        "furrion thermostat app controlled rv-c multizone manual model",
+        "furrion thermostat manual model control router",
+        "furrion thermostat support index app rv c zone service prep"
+      ],
+      "searchRequiredTerms": [
+        "thermostat"
+      ]
+    },
+    {
+      "id": "lippert-leveling-stabilization-system-router",
+      "slug": "lippert-leveling-stabilization-system-router",
+      "title": "Lippert leveling and stabilization system router",
+      "summary": "Use this when a Lippert owner needs to identify an electric, hydraulic, tongue-jack, landing-gear, or stabilization family before choosing the correct support path.",
+      "safeChecklist": [
+        "Park safely, keep people clear of moving supports, and stop operation if movement is abnormal or the site is unstable.",
+        "Record touchpad or switch labels, RV type, battery state, shore-power state, displayed message, support position, and visible labels from normal access.",
+        "Photograph controls and labels without reaching under moving supports or relying on unsupported equipment.",
+        "Use Lippert support or qualified RV leveling service if the system family is uncertain or the equipment will not respond normally."
+      ],
+      "sourceIds": [
+        "lippert-leveling-stabilization-support-router"
+      ],
+      "searchAliases": [
+        "which Lippert leveling system do I have electric hydraulic tongue jack landing gear",
+        "lippert leveling stabilization system router",
+        "lippert leveling electric hydraulic stabilizer service prep"
+      ],
+      "searchRequiredTerms": [
+        "leveling",
+        "stabilization"
+      ]
+    },
+    {
+      "id": "lippert-slideout-system-identification-router",
+      "slug": "lippert-slideout-system-identification-router",
+      "title": "Lippert slideout system identification router",
+      "summary": "Use this when a Lippert slide room needs system-family identification across In-Wall, SlimRack, Kwikee, or through-frame support paths before service.",
+      "safeChecklist": [
+        "Stop slide operation if the room is uneven, noisy, stuck, or does not respond normally.",
+        "Keep people and objects clear of the room path before taking photos or notes.",
+        "Record room position, switch response, system family names from owner-visible labels, battery state, shore-power state, and recent obstruction history.",
+        "Use Lippert support or qualified RV slide service for stuck rooms, repeated stops, abnormal movement, or uncertain system identification."
+      ],
+      "sourceIds": [
+        "lippert-slide-outs-support-router"
+      ],
+      "searchAliases": [
+        "which lippert slide out system in-wall slimrack through frame",
+        "lippert slideout system identification router",
+        "lippert slide outs support in-wall slimrack kwikee through frame"
+      ],
+      "searchRequiredTerms": [
+        "slide",
+        "slideout"
+      ]
+    },
+    {
+      "id": "norcold-323-n260-3-discontinued-support-prep",
+      "slug": "norcold-323-n260-3-discontinued-support-prep",
+      "title": "Norcold 323 / N260.3 discontinued support prep",
+      "summary": "Use this when a Norcold 323 or N260.3 owner needs discontinued-model manual, parts-list, model, serial, and authorized-service notes.",
+      "safeChecklist": [
+        "Record model, serial, controls, power source selected, door condition, level condition, and exact symptom from normal owner access.",
+        "Use the official support page to identify owner manuals or parts lists before calling support.",
+        "Shut the refrigerator down for ammonia smell, fuel odor, overheating, alarm activity, or repeated stopped-operation symptoms.",
+        "Use authorized Norcold service for LP, ignition, high-temperature sensor, power, cooling, or discontinued-parts questions beyond normal owner documentation."
+      ],
+      "sourceIds": [
+        "norcold-323-n260-3-support"
+      ],
+      "searchAliases": [
+        "norcold 323 n260.3 manual parts service prep",
+        "norcold n260 3 discontinued support model serial",
+        "norcold 323 refrigerator support owner manual parts list"
+      ],
+      "searchRequiredTerms": [
+        "n260",
+        "323"
+      ]
+    },
+    {
+      "id": "norcold-n300-n302-discontinued-support-prep",
+      "slug": "norcold-n300-n302-discontinued-support-prep",
+      "title": "Norcold N300 / N302 discontinued support prep",
+      "summary": "Use this when a Norcold N300 or N302 owner needs official discontinued-model support, manual, parts-list, model, and service notes.",
+      "safeChecklist": [
+        "Record model, serial, control state, level condition, door condition, power source, recent travel, and exact cooling symptom.",
+        "Use the official support page to identify the correct owner manual or parts-list path.",
+        "Shut the refrigerator down for ammonia smell, fuel odor, overheating, alarm activity, or repeated stopped-operation symptoms.",
+        "Use authorized Norcold service for LP, ignition, high-temperature sensor, power, cooling, or service questions beyond normal owner documentation."
+      ],
+      "sourceIds": [
+        "norcold-n300-n302-support"
+      ],
+      "searchAliases": [
+        "norcold n300 n302 manual parts service prep",
+        "norcold n300 n302 discontinued support model serial",
+        "norcold compact refrigerator support owner manual parts list"
+      ],
+      "searchRequiredTerms": [
+        "n300",
+        "n302"
+      ]
+    },
+    {
+      "id": "norcold-n305-n306-recall-service-prep",
+      "slug": "norcold-n305-n306-recall-service-prep",
+      "title": "Norcold N305 / N306 recall and service prep",
+      "summary": "Use this when a Norcold N305 or N306 owner needs official model support, recall or warranty routing, serial documentation, and authorized-service notes.",
+      "safeChecklist": [
+        "Record model, serial, refrigerator controls, power source, cooling symptom, and any recall or warranty note shown on official support materials.",
+        "Photograph owner-visible model labels and control state before contacting Norcold or Thetford support.",
+        "Shut the refrigerator down for ammonia smell, fuel odor, overheating, alarm activity, or repeated stopped-operation symptoms.",
+        "Use authorized Norcold service for recall questions, LP symptoms, high-temperature sensor symptoms, power issues, or discontinued-parts routing."
+      ],
+      "sourceIds": [
+        "norcold-n305-n306-support",
+        "norcold-product-compliance-recall-info",
+        "norcold-refrigeration-warranty-statement",
+        "thetford-norcold-dealer-locator"
+      ],
+      "searchAliases": [
+        "norcold n305 n306 recall warranty service prep",
+        "norcold n305 n306 support model serial recall",
+        "norcold n305 n306 discontinued refrigerator authorized service"
+      ],
+      "searchRequiredTerms": [
+        "n305",
+        "n306"
+      ]
+    },
+    {
+      "id": "thetford-holding-tank-treatment-freeze-sensor-care",
+      "slug": "thetford-holding-tank-treatment-freeze-sensor-care",
+      "title": "Thetford holding-tank treatment, freeze, and sensor care",
+      "summary": "Use this when a Thetford Aqua-Kem Liquid support page is needed for holding-tank odor, freezing conditions, full-tank timing, or sensor-care notes.",
+      "safeChecklist": [
+        "Use only Thetford tank-treatment products and dosing guidance appropriate for the holding-tank type and trip length.",
+        "Record odor, tank level, outside temperature, freezing exposure, product used, and whether sensors appear affected by sludge.",
+        "Empty and rinse tanks only at approved dump stations and follow RV sanitation product directions.",
+        "Use Thetford support or qualified RV sanitation service for leaks, persistent odor, frozen-tank damage, or sensor symptoms that do not improve with approved care."
+      ],
+      "sourceIds": [
+        "thetford-aqua-kem-liquid-support"
+      ],
+      "searchAliases": [
+        "thetford aqua kem holding tank odor sensor freeze",
+        "aqua kem liquid black tank odor freeze sensor care",
+        "thetford holding tank treatment level gauge cleaner service prep"
+      ],
+      "searchRequiredTerms": [
+        "aquakem"
+      ]
+    },
+    {
+      "id": "thetford-cassette-toilet-odor-seal-maintenance",
+      "slug": "thetford-cassette-toilet-odor-seal-maintenance",
+      "title": "Thetford cassette toilet odor and seal maintenance",
+      "summary": "Use this when a Thetford cassette toilet has odor, seal-care, emptying, cleaning-product, or maintenance-schedule questions.",
+      "safeChecklist": [
+        "Empty and rinse the cassette regularly and use Thetford cassette additives according to product instructions.",
+        "Avoid bleach, vinegar, abrasive cleaners, or non-Thetford products when Thetford guidance warns against them.",
+        "Record odor timing, additive used, emptying frequency, lip-seal condition from normal access, and whether the slide operates normally.",
+        "Use Thetford support or qualified service for leaks, persistent odor, damaged seals, stuck slides, or symptoms beyond normal owner care."
+      ],
+      "sourceIds": [
+        "thetford-cassette-toilet-maintenance-inspiration"
+      ],
+      "searchAliases": [
+        "thetford cassette toilet smells lip seal maintenance",
+        "thetford cassette toilet odor seal maintenance additives",
+        "thetford cassette toilet empty rinse clean lip seal"
+      ],
+      "searchRequiredTerms": [
+        "cassette"
+      ]
+    },
+    {
+      "id": "thetford-toilet-care-additive-selection",
+      "slug": "thetford-toilet-care-additive-selection",
+      "title": "Thetford toilet-care additive selection",
+      "summary": "Use this when an owner needs to choose Thetford waste-tank, flush-water, grey-water, periodic-cleaner, or daily-cleaner products without mixing unsupported chemicals.",
+      "safeChecklist": [
+        "Identify whether the need is waste tank, flush water, grey water, periodic deep cleaning, or daily bowl cleaning.",
+        "Use only Thetford additive categories and product directions for the tank or surface involved.",
+        "Record product used, tank type, odor, sensor behavior, flush-water setup, and storage or freezing exposure.",
+        "Use Thetford support for persistent odor, sensor problems, seal symptoms, or uncertainty about product compatibility."
+      ],
+      "sourceIds": [
+        "thetford-toilet-care-additives-faq"
+      ],
+      "searchAliases": [
+        "which thetford toilet additive blue green aqua rinse grey water",
+        "thetford toilet care additives waste tank flush water grey water",
+        "thetford additive selection aqua kem aqua rinse grey water"
+      ],
+      "searchRequiredTerms": [
+        "additive",
+        "additives"
+      ]
+    },
+    {
+      "id": "thetford-cassette-toilet-c220-c260-c400-model-prep",
+      "slug": "thetford-cassette-toilet-c220-c260-c400-model-prep",
+      "title": "Thetford cassette toilet C220/C260/C400 model prep",
+      "summary": "Use this when a Thetford cassette toilet owner needs C220, C260, C400, tank-capacity, service-door, or visible model-family documentation before support.",
+      "safeChecklist": [
+        "Compare only visible model family, tank capacity, service-door orientation, bowl shape, and label photos from normal owner access.",
+        "Do not use the overview as retrofit, cutout, plumbing, or installation instructions.",
+        "Record cassette model family, waste-tank capacity, flush-water setup, service-door side, serial-label photo, and exact symptom.",
+        "Use Thetford support or qualified service if identification requires removal, retrofit decisions, hidden plumbing, or parts compatibility decisions."
+      ],
+      "sourceIds": [
+        "thetford-cassette-toilets-2024-spec-overview"
+      ],
+      "searchAliases": [
+        "thetford cassette toilet c220 c260 c400 model tank capacity",
+        "thetford cassette toilet C220 C260 C400 model tank capacity service door",
+        "thetford cassette toilet 2024 spec overview model prep"
+      ],
+      "searchRequiredTerms": [
+        "cassette"
       ]
     }
   ],
