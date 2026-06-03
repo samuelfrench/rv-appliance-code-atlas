@@ -3593,6 +3593,166 @@
       "url": "https://www.aquahot.com/service-help/warranty-registration.aspx",
       "type": "manufacturer-support",
       "official": true
+    },
+    {
+      "id": "dometic-rm8-not-cooling-support",
+      "brand": "Dometic",
+      "title": "Dometic RM8 Refrigerator Not Cooling Sufficiently Support",
+      "url": "https://support.dometic.com/en/rm8-refrigerators/My-refrigerator-is-not-cooling-sufficiently-f8da",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm8-not-working-level-support",
+      "brand": "Dometic",
+      "title": "Dometic RM8 Refrigerator Not Working At All Support",
+      "url": "https://support.dometic.com/en/rm8-refrigerators/My-refrigerator-is-not-working-at-all-30ec",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm8-smell-ammonia-support",
+      "brand": "Dometic",
+      "title": "Dometic RM8 Ammonia Smell Support",
+      "url": "https://support.dometic.com/en/rm8-refrigerators/I-smell-ammonia-317c",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm8-smell-gas-support",
+      "brand": "Dometic",
+      "title": "Dometic RM8 Gas Smell Support",
+      "url": "https://support.dometic.com/en/rm8-refrigerators/I-smell-gas-6fd1",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm8-smell-melting-plastic-support",
+      "brand": "Dometic",
+      "title": "Dometic RM8 Melting Plastic Smell Support",
+      "url": "https://support.dometic.com/en/rm8-refrigerators/I-smell-melting-plastic-e9da",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-freshjet-filter-efficiency-support",
+      "brand": "Dometic",
+      "title": "Dometic FreshJet Filter Maximum Efficiency Support",
+      "url": "https://support.dometic.com/en/freshjet-ac/What-should-I-do-to-make-sure-the-filter-on-my-rooftop-unit-is-clean-for-maximum-efficiency-2dad",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-freshjet-generator-power-support",
+      "brand": "Dometic",
+      "title": "Dometic FreshJet Generator Power Support",
+      "url": "https://support.dometic.com/en/freshjet-ac/How-to-run-my-RV-AC-with-a-generator-bcde",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-americana-food-storage-support",
+      "brand": "Dometic",
+      "title": "Dometic Americana Refrigerator Food Storage Support",
+      "url": "https://support.dometic.com/en/americana-refrigerators/How-to-best-store-food-in-the-refrigerator-bd4a",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-americana-save-energy-support",
+      "brand": "Dometic",
+      "title": "Dometic Americana Refrigerator Save Energy Support",
+      "url": "https://support.dometic.com/en/americana-refrigerators/How-to-save-energy-b718",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "coleman-45000-ac-owner-1976-711",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 45000 Series Air Conditioner Owner Manual 1976-711",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/12/1976-711.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-46000-backwall-owner-1976-572",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 46000 Backwall Owner Manual 1976-572",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-572.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "lippert-customer-service-warranty-forms",
+      "brand": "Lippert",
+      "title": "Lippert Customer Service And Warranty Forms",
+      "url": "https://support.lci1.com/customer-service-and-warranty-forms",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-air-conditioning-support-index",
+      "brand": "Furrion",
+      "title": "Lippert Furrion Air Conditioning Support Index",
+      "url": "https://support.lci1.com/air-conditioning",
+      "type": "manufacturer-support-index",
+      "official": true
+    },
+    {
+      "id": "furrion-microwaves-support-index",
+      "brand": "Furrion",
+      "title": "Lippert Furrion Microwaves Support Index",
+      "url": "https://support.lci1.com/microwaves",
+      "type": "manufacturer-support-index",
+      "official": true
+    },
+    {
+      "id": "suburban-literature-technical-documents-router",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban Literature And Technical Documents Router",
+      "url": "https://suburbanrv.com/service-support/documents/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "aquahot-product-manuals-library",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot Product Manuals Library",
+      "url": "https://www.aquahot.com/Library.aspx",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "aquahot-400d-use-care-guide",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot AHE-400-D02 Use And Care Guide",
+      "url": "https://aquahot.com/files/owners_manual/AHE-400-D02_Use_and_Care_Guide.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "thetford-cassette-toilet-serial-identification",
+      "brand": "Thetford",
+      "title": "Thetford Cassette Toilets Serial Number Identification",
+      "url": "https://www.thetford.com/us/document/cassette-toilets-serial-number-identification/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-cassette-left-right-faq-2024",
+      "brand": "Thetford",
+      "title": "Thetford Cassette FAQs Left Right Identification",
+      "url": "https://www.thetford.com/app/uploads/2024/10/Cassette-FAQs.pdf",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "maxxair-maxxfan-deluxe-product-matrix",
+      "brand": "MaxxAir",
+      "title": "MaxxAir MaxxFan Deluxe Product Matrix",
+      "url": "https://www.maxxair.com/products/fans/maxxfan-deluxe/",
+      "type": "manufacturer-product-page",
+      "official": true
     }
   ],
   "entries": [
@@ -35641,6 +35801,468 @@
       ]
     },
     {
+      "id": "dometic-rm8-not-cooling-level-ventilation-prep",
+      "slug": "dometic-rm8-not-cooling-level-ventilation-prep",
+      "title": "Dometic RM8 not-cooling level and ventilation prep",
+      "summary": "Use Dometic RM8 support pages to prepare level, ventilation, temperature, and symptom notes when an RM8 refrigerator is not cooling or not working.",
+      "safeChecklist": [
+        "Record RM8 model family, selected energy source, temperature setting, outside temperature, parking level, vent clearance, frost, and whether food temperature is unsafe.",
+        "Move perishables if temperature is unsafe and keep exterior ventilation grilles clear from normal owner access.",
+        "Confirm the refrigerator is parked level and has normal airflow before repeating a cooling check.",
+        "Call qualified Dometic service if the RM8 still does not cool, will not work after normal setup, or shows odor, display, or repeated ignition symptoms."
+      ],
+      "sourceIds": [
+        "dometic-rm8-not-cooling-support",
+        "dometic-rm8-not-working-level-support"
+      ],
+      "searchAliases": [
+        "dometic rm8 refrigerator not cooling level ventilation",
+        "rm8 not cooling sufficiently level vents",
+        "rm8 refrigerator not working at all level",
+        "rm 8 not cooling ventilation prep"
+      ],
+      "searchRequiredTerms": [
+        "rm8"
+      ]
+    },
+    {
+      "id": "dometic-rm8-ammonia-odor-shutdown-prep",
+      "slug": "dometic-rm8-ammonia-odor-shutdown-prep",
+      "title": "Dometic RM8 ammonia odor shutdown prep",
+      "summary": "Use Dometic RM8 ammonia-odor support to prepare shutdown and service notes when the owner smells ammonia around the refrigerator.",
+      "safeChecklist": [
+        "Shut the refrigerator down and move people away from the odor if ammonia smell is present.",
+        "Move perishables if refrigerator temperature is unsafe.",
+        "Record RM8 model, serial, odor timing, yellow residue if visible, cooling status, and where the smell was noticed.",
+        "Do not restart the refrigerator until qualified Dometic service has reviewed the ammonia-odor condition."
+      ],
+      "sourceIds": [
+        "dometic-rm8-smell-ammonia-support"
+      ],
+      "searchAliases": [
+        "rm-8 smell ammonia yellow residue shutdown",
+        "dometic rm8 ammonia smell",
+        "rm8 ammonia odor cooling unit service prep",
+        "rm 8 ammonia refrigerator smell"
+      ],
+      "searchRequiredTerms": [
+        "rm8"
+      ]
+    },
+    {
+      "id": "dometic-rm8-gas-odor-shutdown-prep",
+      "slug": "dometic-rm8-gas-odor-shutdown-prep",
+      "title": "Dometic RM8 gas odor shutdown prep",
+      "summary": "Use Dometic RM8 gas-odor support to prepare owner-safe shutdown and service notes when LP odor is present near the refrigerator.",
+      "safeChecklist": [
+        "Shut LP off from normal owner controls if a gas odor is present and leave the area if odor continues.",
+        "Do not use refrigerator LP mode while the odor is unresolved.",
+        "Record RM8 model, selected energy source, odor timing, recent refueling or service context, and whether the odor appears only during LP operation.",
+        "Use qualified RV LP or Dometic service for any repeated or unresolved gas odor."
+      ],
+      "sourceIds": [
+        "dometic-rm8-smell-gas-support"
+      ],
+      "searchAliases": [
+        "rm 8 smell gas shut off lp",
+        "dometic rm8 gas smell refrigerator",
+        "rm8 lp odor service prep",
+        "rm-8 gas odor shutdown"
+      ],
+      "searchRequiredTerms": [
+        "rm8"
+      ]
+    },
+    {
+      "id": "dometic-rm8-melting-plastic-odor-shutdown-prep",
+      "slug": "dometic-rm8-melting-plastic-odor-shutdown-prep",
+      "title": "Dometic RM8 melting-plastic odor shutdown prep",
+      "summary": "Use Dometic RM8 melting-plastic odor support to prepare shutdown notes when an owner smells hot plastic around the refrigerator.",
+      "safeChecklist": [
+        "Shut the refrigerator down if a melting-plastic odor appears.",
+        "Record model, serial, selected energy source, display state, when the odor started, and whether any owner-visible area is unusually warm.",
+        "Do not keep operating the refrigerator to see if the smell clears.",
+        "Use qualified Dometic service for repeated or unresolved hot-plastic odor."
+      ],
+      "sourceIds": [
+        "dometic-rm8-smell-melting-plastic-support"
+      ],
+      "searchAliases": [
+        "dometic rm8 smell melting plastic shutdown",
+        "rm8 hot plastic smell refrigerator",
+        "rm-8 melting plastic odor service prep",
+        "rm 8 electrical smell plastic odor"
+      ],
+      "searchRequiredTerms": [
+        "rm8"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-filter-cleaning-airflow-prep",
+      "slug": "dometic-freshjet-filter-cleaning-airflow-prep",
+      "title": "Dometic FreshJet filter cleaning and airflow prep",
+      "summary": "Use Dometic FreshJet filter-efficiency support to prepare owner-safe low-airflow and filter-cleaning notes.",
+      "safeChecklist": [
+        "Record FreshJet model, return-air grille style, filter condition, fan speed, selected mode, and whether low airflow appears in cooling or fan mode.",
+        "Clean and fully dry the accessible return-air filter before reinstalling it.",
+        "Do not run the FreshJet without the filter installed.",
+        "Use qualified RV HVAC service if airflow remains poor after normal filter and vent checks."
+      ],
+      "sourceIds": [
+        "dometic-freshjet-filter-efficiency-support"
+      ],
+      "searchAliases": [
+        "fresh jet filter clean low airflow maximum efficiency",
+        "freshjet filter clean",
+        "dometic freshjet low airflow filter",
+        "freshjet return air filter wash dry"
+      ],
+      "searchRequiredTerms": [
+        "freshjet"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-generator-power-prep",
+      "slug": "dometic-freshjet-generator-power-prep",
+      "title": "Dometic FreshJet generator power prep",
+      "summary": "Use Dometic FreshJet generator-power support to prepare owner notes about generator sizing, waveform, starting load, and normal control symptoms.",
+      "safeChecklist": [
+        "Record FreshJet model, generator model and rating, other loads running, selected mode, outside temperature, and whether the unit starts or trips off.",
+        "Confirm the generator and any power equipment are rated for the air conditioner before retesting.",
+        "Keep generator, transfer, and AC power equipment work with qualified service.",
+        "Use qualified RV HVAC or generator service for repeated trips, low-power symptoms, or startup problems."
+      ],
+      "sourceIds": [
+        "dometic-freshjet-generator-power-support"
+      ],
+      "searchAliases": [
+        "freshjet generator pure sine smartstart power prep",
+        "dometic rv ac generator pure sine",
+        "freshjet generator power support",
+        "fresh jet generator smartstart power"
+      ],
+      "searchRequiredTerms": [
+        "freshjet"
+      ]
+    },
+    {
+      "id": "dometic-americana-food-loading-airflow-storage",
+      "slug": "dometic-americana-food-loading-airflow-storage",
+      "title": "Dometic Americana food loading and airflow storage prep",
+      "summary": "Use Dometic Americana food-storage support to prepare refrigerator loading, airflow, and temperature notes before service.",
+      "safeChecklist": [
+        "Record Americana model, food load, door-open time, recent warm food loading, thermostat setting, and whether shelves or vents are blocked.",
+        "Avoid overfilling the compartment and leave space for cold air circulation.",
+        "Pre-cool food before loading when possible and avoid blocking owner-visible air paths.",
+        "Call qualified service if cooling remains poor after normal loading, airflow, and temperature-setting checks."
+      ],
+      "sourceIds": [
+        "dometic-americana-food-storage-support"
+      ],
+      "searchAliases": [
+        "dometic americana refrigerator food storage overfilled airflow",
+        "americana fridge overfilled",
+        "dometic americana food loading airflow",
+        "americana refrigerator storage prep"
+      ],
+      "searchRequiredTerms": [
+        "americana"
+      ]
+    },
+    {
+      "id": "dometic-americana-energy-use-prep",
+      "slug": "dometic-americana-energy-use-prep",
+      "title": "Dometic Americana energy-use prep",
+      "summary": "Use Dometic Americana energy-saving support to prepare normal-use notes when the refrigerator runs often or struggles in hot conditions.",
+      "safeChecklist": [
+        "Record thermostat setting, door-open time, outside temperature, shade, food loading, frost level, and whether the refrigerator was pre-cooled.",
+        "Use the midpoint thermostat setting and reduce door-open time during hot weather when practical.",
+        "Keep shelf spacing and owner-visible ventilation clear to support normal operation.",
+        "Use qualified service if energy-use changes do not explain poor cooling or repeated operation."
+      ],
+      "sourceIds": [
+        "dometic-americana-save-energy-support"
+      ],
+      "searchAliases": [
+        "dometic americana save energy thermostat shade",
+        "americana refrigerator runs too much",
+        "americana energy use prep",
+        "dometic americana efficient refrigerator operation"
+      ],
+      "searchRequiredTerms": [
+        "americana"
+      ]
+    },
+    {
+      "id": "coleman-45000-ac-freeze-filter-lockout-prep",
+      "slug": "coleman-45000-ac-freeze-filter-lockout-prep",
+      "title": "Coleman-Mach 45000 AC freeze, filter, and lockout prep",
+      "summary": "Use the Coleman-Mach 45000 owner manual to prepare owner notes for filter maintenance, cooler-night icing recovery, and repeated shutdown symptoms.",
+      "safeChecklist": [
+        "Record Coleman-Mach 45000 model, serial, fan setting, thermostat setting, outside temperature, filter condition, and whether cooling stops after a long run.",
+        "Use high fan and normal filter cleaning or replacement steps from owner-access areas when the manual allows it.",
+        "Record whether cooling returns after normal thaw time and airflow setup.",
+        "Use qualified Coleman-Mach service for repeated lockout, breaker trip, or unresolved cooling failure."
+      ],
+      "sourceIds": [
+        "coleman-45000-ac-owner-1976-711"
+      ],
+      "searchAliases": [
+        "coleman mach 45000 filter freeze high fan lockout",
+        "coleman 45000 ac filter freeze service prep",
+        "45000 ac high pressure lockout",
+        "coleman mach 45000 owner manual airflow"
+      ],
+      "searchRequiredTerms": [
+        "coleman",
+        "45000"
+      ]
+    },
+    {
+      "id": "coleman-46000-backwall-control-freeze-service-prep",
+      "slug": "coleman-46000-backwall-control-freeze-service-prep",
+      "title": "Coleman-Mach 46000 backwall control and freeze service prep",
+      "summary": "Use the Coleman-Mach 46000 backwall owner manual to prepare control, filter, heat switch, and freeze-switch symptom notes.",
+      "safeChecklist": [
+        "Record 46000 or 461xx model, thermostat setting, HI or LO heat switch position, fan behavior, freeze-switch symptoms, and filter condition.",
+        "Use only normal owner controls and accessible filter cleaning described for routine operation.",
+        "Record whether the compressor stops, fan continues, or heat output changes before service.",
+        "Use qualified Coleman-Mach service for repeated freeze-switch symptoms, no-heat behavior, or unresolved cooling failure."
+      ],
+      "sourceIds": [
+        "coleman-46000-backwall-owner-1976-572"
+      ],
+      "searchAliases": [
+        "coleman 46000 backwall freeze switch heat filter",
+        "coleman 46101 46103 freeze switch",
+        "coleman 46000 backwall control service prep",
+        "coleman 46000 hi low heat switch"
+      ],
+      "searchRequiredTerms": [
+        "coleman",
+        "46000"
+      ]
+    },
+    {
+      "id": "furrion-lippert-warranty-forms-service-prep",
+      "slug": "furrion-lippert-warranty-forms-service-prep",
+      "title": "Furrion and Lippert warranty-forms service prep",
+      "summary": "Use Lippert customer-service and warranty forms to prepare Furrion or Lippert owner paperwork without treating a form as service approval.",
+      "safeChecklist": [
+        "Record product brand, model, serial, RV make/model, purchase date, photos, dealer notes, and work-order context before choosing a form.",
+        "Use the official forms index to identify whether the request belongs to owner, dealer, or service-provider paperwork.",
+        "Do not treat a form submission as approval to keep using an unsafe appliance.",
+        "Use qualified service for repeated appliance faults, unsafe odors, heat, water leaks, or power symptoms."
+      ],
+      "sourceIds": [
+        "lippert-customer-service-warranty-forms"
+      ],
+      "searchAliases": [
+        "furrion warranty form lippert w-013 w-017",
+        "lippert warranty forms customer service",
+        "furrion lippert warranty form prep",
+        "lippert customer service warranty forms"
+      ],
+      "searchRequiredTerms": [
+        "furrion",
+        "lippert"
+      ]
+    },
+    {
+      "id": "furrion-ac-manual-model-warranty-router",
+      "slug": "furrion-ac-manual-model-warranty-router",
+      "title": "Furrion air-conditioner manual, model, and warranty router",
+      "summary": "Use Lippert Furrion air-conditioning support index to route owners to the right AC manual, model family, control document, or warranty reference.",
+      "safeChecklist": [
+        "Record Furrion AC model, control or air-distribution-box model, display state, selected mode, filter condition, and exact symptom.",
+        "Use the support index to identify the correct owner manual or control document before service or warranty paperwork.",
+        "Stay at normal controls, filters, model labels, and paperwork prep.",
+        "Use qualified RV HVAC service for repeated shutdown, poor cooling, power symptoms, or any equipment-access question."
+      ],
+      "sourceIds": [
+        "furrion-air-conditioning-support-index"
+      ],
+      "searchAliases": [
+        "furrion air conditioning chill r32 low profile adb controller",
+        "furrion ac manual model warranty router",
+        "furrion chill r32 low profile ac support",
+        "furrion adb controller manual service prep"
+      ],
+      "searchRequiredTerms": [
+        "furrion"
+      ]
+    },
+    {
+      "id": "furrion-microwave-manual-model-service-prep",
+      "slug": "furrion-microwave-manual-model-service-prep",
+      "title": "Furrion microwave manual and service-prep router",
+      "summary": "Use Lippert Furrion microwave support index to identify model family and prepare turntable, light, fan, keypad, or no-heat notes before service.",
+      "safeChecklist": [
+        "Record Furrion microwave model, serial, size, display state, turntable behavior, light or fan behavior, odor, sparking, and whether heating works.",
+        "Use the support index to find the matching owner manual before support or warranty paperwork.",
+        "Stop using the microwave for sparking, hot odor, damaged door, or repeated no-heat symptoms.",
+        "Keep microwave service with qualified technicians."
+      ],
+      "sourceIds": [
+        "furrion-microwaves-support-index"
+      ],
+      "searchAliases": [
+        "furrion microwave fmcm15 turntable no heat service prep",
+        "furrion microwave manual model service prep",
+        "fmsm09 fmsm13 fmam11 fmcm15 microwave",
+        "furrion microwave turntable fan light no heat"
+      ],
+      "searchRequiredTerms": [
+        "furrion"
+      ]
+    },
+    {
+      "id": "suburban-manual-library-service-boundary-prep",
+      "slug": "suburban-manual-library-service-boundary-prep",
+      "title": "Suburban manual-library service-boundary prep",
+      "summary": "Use Suburban literature and technical documents to route owners to the right operation manual while preserving certified-service boundaries.",
+      "safeChecklist": [
+        "Record Suburban appliance type, model, serial, visible code, exact symptom, and whether the document needed is operation, maintenance, or service routing.",
+        "Use the official documents page to find the matching operation or maintenance manual before contacting support.",
+        "Keep propane, electrical, and appliance service decisions with qualified Suburban service.",
+        "Use a certified technician for any step beyond normal owner operation and paperwork prep."
+      ],
+      "sourceIds": [
+        "suburban-literature-technical-documents-router"
+      ],
+      "searchAliases": [
+        "suburban literature technical documents operation manual",
+        "suburban documents operation manual",
+        "suburban manual library service boundary",
+        "suburban rv technical documents prep"
+      ],
+      "searchRequiredTerms": [
+        "suburban"
+      ]
+    },
+    {
+      "id": "aquahot-model-manual-locator-service-prep",
+      "slug": "aquahot-model-manual-locator-service-prep",
+      "title": "Aqua-Hot model manual locator service prep",
+      "summary": "Use Aqua-Hot product manuals library to find the right owner manual and prepare model-specific service notes before calling support.",
+      "safeChecklist": [
+        "Record Aqua-Hot model, serial, coach make/model, control-panel state, Reporter message if present, and which owner manual appears to match.",
+        "Use the manuals library to identify the right 125, 250, 400, 450, 600, or 675 family document before support.",
+        "Keep heating-system service, fluid questions, and power symptoms with qualified Aqua-Hot service.",
+        "Do not assume procedures from another Aqua-Hot model family apply to the installed unit."
+      ],
+      "sourceIds": [
+        "aquahot-product-manuals-library"
+      ],
+      "searchAliases": [
+        "aqua hot manual library 400d 600d owner manual",
+        "aquahot library owner manual",
+        "aqua-hot 400d manual locator",
+        "aquahot model manual service prep"
+      ],
+      "searchRequiredTerms": [
+        "aqua",
+        "aquahot"
+      ]
+    },
+    {
+      "id": "aquahot-400d-reporter-controls-winterization-service-prep",
+      "slug": "aquahot-400d-reporter-controls-winterization-service-prep",
+      "title": "Aqua-Hot 400D Reporter controls and winterization prep",
+      "summary": "Use the Aqua-Hot 400D use-and-care guide to prepare Reporter control, low-voltage, winterization, and service-call notes.",
+      "safeChecklist": [
+        "Record Aqua-Hot 400D model, serial, Reporter screen or message, control switch positions, coach battery state from normal monitors, and winterization status.",
+        "Use normal owner controls only to document whether electric, diesel, or heat functions are selected.",
+        "Prepare winterization and model notes from the owner guide before service or storage planning.",
+        "Use qualified Aqua-Hot service for unresolved heat, hot-water, low-voltage, fluid, or circulation symptoms."
+      ],
+      "sourceIds": [
+        "aquahot-400d-use-care-guide"
+      ],
+      "searchAliases": [
+        "aqua hot 400d reporter low voltage winterize",
+        "aquahot reporter 400d controls",
+        "400d low voltage aqua-hot winterization",
+        "aqua hot 400d use care guide service prep"
+      ],
+      "searchRequiredTerms": [
+        "400d"
+      ]
+    },
+    {
+      "id": "thetford-cassette-toilet-serial-label-prep",
+      "slug": "thetford-cassette-toilet-serial-label-prep",
+      "title": "Thetford cassette toilet serial-label prep",
+      "summary": "Use Thetford cassette-toilet serial-identification support to prepare model and serial notes before warranty, parts, or support routing.",
+      "safeChecklist": [
+        "Record cassette toilet model family, serial sticker location, cassette tank label details, RV make/model, and exact flush or tank symptom.",
+        "Photograph only owner-visible cassette and toilet labels from normal access.",
+        "Use the serial-identification page before ordering parts or contacting Thetford support.",
+        "Use authorized service for leaks, cracked parts, repeated flush symptoms, or anything beyond normal owner operation."
+      ],
+      "sourceIds": [
+        "thetford-cassette-toilet-serial-identification"
+      ],
+      "searchAliases": [
+        "thetford cassette toilet serial sticker c402",
+        "thetford cassette toilet serial number",
+        "cassette tank serial sticker",
+        "c402 c403 c223 c224 serial"
+      ],
+      "searchRequiredTerms": [
+        "cassette"
+      ]
+    },
+    {
+      "id": "thetford-cassette-left-right-model-prep",
+      "slug": "thetford-cassette-left-right-model-prep",
+      "title": "Thetford cassette left/right model prep",
+      "summary": "Use Thetford cassette FAQ support to identify left-hand or right-hand cassette model family before ordering or support.",
+      "safeChecklist": [
+        "Record toilet model, cassette part number, left-hand or right-hand orientation, tank label, and exact symptom before support.",
+        "Use Thetford cassette FAQ model details to avoid mixing C200, C220, C223, C224, C400, and C402 parts.",
+        "Do not force a cassette, door, latch, or tank part that does not match the model family.",
+        "Use Thetford or dealer service for leaks, latch damage, cracked parts, or repeated flush symptoms."
+      ],
+      "sourceIds": [
+        "thetford-cassette-left-right-faq-2024"
+      ],
+      "searchAliases": [
+        "thetford cassette left hand right hand c223 c224",
+        "c402 rh lh cassette tank",
+        "thetford cassette left right model prep",
+        "c223 c224 cassette tank part number"
+      ],
+      "searchRequiredTerms": [
+        "cassette"
+      ]
+    },
+    {
+      "id": "maxxair-maxxfan-deluxe-model-control-prep",
+      "slug": "maxxair-maxxfan-deluxe-model-control-prep",
+      "title": "MaxxAir MaxxFan Deluxe model and control prep",
+      "summary": "Use the MaxxAir MaxxFan Deluxe product matrix to identify model features, remote or keypad controls, rain-shield behavior, and thermostat notes before support.",
+      "safeChecklist": [
+        "Record MaxxFan Deluxe model, lid style, remote or keypad type, fan speed, thermostat behavior, intake or exhaust direction, and rain-shield response.",
+        "Use the product matrix to distinguish 07500K, 07000K, 06200K, 05100K, 06401K, and 05301K feature sets.",
+        "Try only normal owner controls and remote-battery checks before support.",
+        "Use MaxxAir or qualified RV ventilation service for stuck lid, abnormal motor behavior, repeated control symptoms, or parts questions."
+      ],
+      "sourceIds": [
+        "maxxair-maxxfan-deluxe-product-matrix"
+      ],
+      "searchAliases": [
+        "maxxair maxxfan deluxe 07000k remote thermostat",
+        "maxxfan deluxe 07500k rain shield",
+        "maxxair 07500k thermostat remote",
+        "05301k 06401k maxxfan deluxe 4 speed"
+      ],
+      "searchRequiredTerms": [
+        "maxxair",
+        "maxxfan"
+      ]
+    },
+    {
       "id": "service-call-prep",
       "slug": "rv-appliance-service-call-checklist",
       "title": "Pre-service checklist for RV appliance calls",
@@ -35843,7 +36465,27 @@
         "thetford-sanitation-warranty-statement",
         "norcold-refrigeration-warranty-statement",
         "coleman-mach-claims-paperwork",
-        "aquahot-warranty-registration"
+        "aquahot-warranty-registration",
+        "dometic-rm8-not-cooling-support",
+        "dometic-rm8-not-working-level-support",
+        "dometic-rm8-smell-ammonia-support",
+        "dometic-rm8-smell-gas-support",
+        "dometic-rm8-smell-melting-plastic-support",
+        "dometic-freshjet-filter-efficiency-support",
+        "dometic-freshjet-generator-power-support",
+        "dometic-americana-food-storage-support",
+        "dometic-americana-save-energy-support",
+        "coleman-45000-ac-owner-1976-711",
+        "coleman-46000-backwall-owner-1976-572",
+        "lippert-customer-service-warranty-forms",
+        "furrion-air-conditioning-support-index",
+        "furrion-microwaves-support-index",
+        "suburban-literature-technical-documents-router",
+        "aquahot-product-manuals-library",
+        "aquahot-400d-use-care-guide",
+        "thetford-cassette-toilet-serial-identification",
+        "thetford-cassette-left-right-faq-2024",
+        "maxxair-maxxfan-deluxe-product-matrix"
       ]
     },
     {

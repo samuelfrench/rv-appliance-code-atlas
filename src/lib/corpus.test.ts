@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 850;
-const expectedSourceCount = 446;
-const expectedSymptomCount = 281;
+const expectedSourceCount = 466;
+const expectedSymptomCount = 300;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -5693,6 +5693,176 @@ describe("verified corpus", () => {
     );
     expect(lookupSymptomGuides(index, "aqua hot no hot water").slice(0, 5).map((symptom) => symptom.slug)).not.toContain(
       "aquahot-warranty-registration-paperwork-prep",
+    );
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds the official owner-safe Dometic, Coleman, Furrion, Thetford, MaxxAir, Suburban, and Aqua-Hot support-router batch without code entries", () => {
+    const expectedSources = new Map([
+      [
+        "dometic-rm8-not-cooling-support",
+        "https://support.dometic.com/en/rm8-refrigerators/My-refrigerator-is-not-cooling-sufficiently-f8da",
+      ],
+      [
+        "dometic-rm8-not-working-level-support",
+        "https://support.dometic.com/en/rm8-refrigerators/My-refrigerator-is-not-working-at-all-30ec",
+      ],
+      ["dometic-rm8-smell-ammonia-support", "https://support.dometic.com/en/rm8-refrigerators/I-smell-ammonia-317c"],
+      ["dometic-rm8-smell-gas-support", "https://support.dometic.com/en/rm8-refrigerators/I-smell-gas-6fd1"],
+      [
+        "dometic-rm8-smell-melting-plastic-support",
+        "https://support.dometic.com/en/rm8-refrigerators/I-smell-melting-plastic-e9da",
+      ],
+      [
+        "dometic-freshjet-filter-efficiency-support",
+        "https://support.dometic.com/en/freshjet-ac/What-should-I-do-to-make-sure-the-filter-on-my-rooftop-unit-is-clean-for-maximum-efficiency-2dad",
+      ],
+      ["dometic-freshjet-generator-power-support", "https://support.dometic.com/en/freshjet-ac/How-to-run-my-RV-AC-with-a-generator-bcde"],
+      [
+        "dometic-americana-food-storage-support",
+        "https://support.dometic.com/en/americana-refrigerators/How-to-best-store-food-in-the-refrigerator-bd4a",
+      ],
+      [
+        "dometic-americana-save-energy-support",
+        "https://support.dometic.com/en/americana-refrigerators/How-to-save-energy-b718",
+      ],
+      ["coleman-45000-ac-owner-1976-711", "https://library.coleman-mach.com/wp-content/uploads/2023/12/1976-711.pdf"],
+      ["coleman-46000-backwall-owner-1976-572", "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-572.pdf"],
+      ["lippert-customer-service-warranty-forms", "https://support.lci1.com/customer-service-and-warranty-forms"],
+      ["furrion-air-conditioning-support-index", "https://support.lci1.com/air-conditioning"],
+      ["furrion-microwaves-support-index", "https://support.lci1.com/microwaves"],
+      ["suburban-literature-technical-documents-router", "https://suburbanrv.com/service-support/documents/"],
+      ["aquahot-product-manuals-library", "https://www.aquahot.com/Library.aspx"],
+      ["aquahot-400d-use-care-guide", "https://aquahot.com/files/owners_manual/AHE-400-D02_Use_and_Care_Guide.pdf"],
+      [
+        "thetford-cassette-toilet-serial-identification",
+        "https://www.thetford.com/us/document/cassette-toilets-serial-number-identification/",
+      ],
+      ["thetford-cassette-left-right-faq-2024", "https://www.thetford.com/app/uploads/2024/10/Cassette-FAQs.pdf"],
+      ["maxxair-maxxfan-deluxe-product-matrix", "https://www.maxxair.com/products/fans/maxxfan-deluxe/"],
+    ]);
+    const expectedSymptomSourceIds = new Map<string, string[]>([
+      [
+        "dometic-rm8-not-cooling-level-ventilation-prep",
+        ["dometic-rm8-not-cooling-support", "dometic-rm8-not-working-level-support"],
+      ],
+      ["dometic-rm8-ammonia-odor-shutdown-prep", ["dometic-rm8-smell-ammonia-support"]],
+      ["dometic-rm8-gas-odor-shutdown-prep", ["dometic-rm8-smell-gas-support"]],
+      ["dometic-rm8-melting-plastic-odor-shutdown-prep", ["dometic-rm8-smell-melting-plastic-support"]],
+      ["dometic-freshjet-filter-cleaning-airflow-prep", ["dometic-freshjet-filter-efficiency-support"]],
+      ["dometic-freshjet-generator-power-prep", ["dometic-freshjet-generator-power-support"]],
+      ["dometic-americana-food-loading-airflow-storage", ["dometic-americana-food-storage-support"]],
+      ["dometic-americana-energy-use-prep", ["dometic-americana-save-energy-support"]],
+      ["coleman-45000-ac-freeze-filter-lockout-prep", ["coleman-45000-ac-owner-1976-711"]],
+      ["coleman-46000-backwall-control-freeze-service-prep", ["coleman-46000-backwall-owner-1976-572"]],
+      ["furrion-lippert-warranty-forms-service-prep", ["lippert-customer-service-warranty-forms"]],
+      ["furrion-ac-manual-model-warranty-router", ["furrion-air-conditioning-support-index"]],
+      ["furrion-microwave-manual-model-service-prep", ["furrion-microwaves-support-index"]],
+      ["suburban-manual-library-service-boundary-prep", ["suburban-literature-technical-documents-router"]],
+      ["aquahot-model-manual-locator-service-prep", ["aquahot-product-manuals-library"]],
+      ["aquahot-400d-reporter-controls-winterization-service-prep", ["aquahot-400d-use-care-guide"]],
+      ["thetford-cassette-toilet-serial-label-prep", ["thetford-cassette-toilet-serial-identification"]],
+      ["thetford-cassette-left-right-model-prep", ["thetford-cassette-left-right-faq-2024"]],
+      ["maxxair-maxxfan-deluxe-model-control-prep", ["maxxair-maxxfan-deluxe-product-matrix"]],
+    ]);
+    const expectedRequiredTerms = new Map<string, string[]>([
+      ["dometic-rm8-not-cooling-level-ventilation-prep", ["rm8"]],
+      ["dometic-rm8-ammonia-odor-shutdown-prep", ["rm8"]],
+      ["dometic-rm8-gas-odor-shutdown-prep", ["rm8"]],
+      ["dometic-rm8-melting-plastic-odor-shutdown-prep", ["rm8"]],
+      ["dometic-freshjet-filter-cleaning-airflow-prep", ["freshjet"]],
+      ["dometic-freshjet-generator-power-prep", ["freshjet"]],
+      ["dometic-americana-food-loading-airflow-storage", ["americana"]],
+      ["dometic-americana-energy-use-prep", ["americana"]],
+      ["coleman-45000-ac-freeze-filter-lockout-prep", ["coleman", "45000"]],
+      ["coleman-46000-backwall-control-freeze-service-prep", ["coleman", "46000"]],
+      ["furrion-lippert-warranty-forms-service-prep", ["furrion", "lippert"]],
+      ["furrion-ac-manual-model-warranty-router", ["furrion"]],
+      ["furrion-microwave-manual-model-service-prep", ["furrion"]],
+      ["suburban-manual-library-service-boundary-prep", ["suburban"]],
+      ["aquahot-model-manual-locator-service-prep", ["aqua", "aquahot"]],
+      ["aquahot-400d-reporter-controls-winterization-service-prep", ["400d"]],
+      ["thetford-cassette-toilet-serial-label-prep", ["cassette"]],
+      ["thetford-cassette-left-right-model-prep", ["cassette"]],
+      ["maxxair-maxxfan-deluxe-model-control-prep", ["maxxair", "maxxfan"]],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const sourcesById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const index = buildSymptomSearchIndex(corpus);
+    const summary = summarizeCorpus(corpus);
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\bline-voltage\b|\brefrigerant\b|\bprobe\b|\bwiring\b|\binternal\b|\broof\b|\bsupply line\b|\bopen (the )?(fuel|gas|electrical|rooftop)|remove.*shroud|remove.*cover|measure resistance|fuel nozzle|combustion|coolant pump/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = sourcesById.get(sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(sourcesById.has("cummins-onan-product-guide-403")).toBe(false);
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(summary.indexablePages).toBe(expectedEntryCount + expectedSymptomCount + 1);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const [symptomId, sourceIds] of expectedSymptomSourceIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds, symptomId).toEqual(sourceIds);
+      expect(symptom?.searchRequiredTerms, symptomId).toEqual(expectedRequiredTerms.get(symptomId));
+      expect([symptom?.summary, ...(symptom?.safeChecklist ?? [])].join(" "), symptomId).not.toMatch(
+        unsafeOwnerActionPattern,
+      );
+    }
+
+    expect(lookupSymptomGuides(index, "dometic rm8 refrigerator not cooling level ventilation")[0]?.slug).toBe(
+      "dometic-rm8-not-cooling-level-ventilation-prep",
+    );
+    expect(lookupSymptomGuides(index, "rm-8 smell ammonia yellow residue shutdown")[0]?.slug).toBe(
+      "dometic-rm8-ammonia-odor-shutdown-prep",
+    );
+    expect(lookupSymptomGuides(index, "rm 8 smell gas shut off lp")[0]?.slug).toBe("dometic-rm8-gas-odor-shutdown-prep");
+    expect(lookupSymptomGuides(index, "fresh jet filter clean low airflow maximum efficiency")[0]?.slug).toBe(
+      "dometic-freshjet-filter-cleaning-airflow-prep",
+    );
+    expect(lookupSymptomGuides(index, "freshjet generator pure sine smartstart power prep")[0]?.slug).toBe(
+      "dometic-freshjet-generator-power-prep",
+    );
+    expect(lookupSymptomGuides(index, "dometic americana refrigerator food storage overfilled airflow")[0]?.slug).toBe(
+      "dometic-americana-food-loading-airflow-storage",
+    );
+    expect(lookupSymptomGuides(index, "coleman mach 45000 filter freeze high fan lockout")[0]?.slug).toBe(
+      "coleman-45000-ac-freeze-filter-lockout-prep",
+    );
+    expect(lookupSymptomGuides(index, "furrion microwave fmcm15 turntable no heat service prep")[0]?.slug).toBe(
+      "furrion-microwave-manual-model-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "suburban literature technical documents operation manual")[0]?.slug).toBe(
+      "suburban-manual-library-service-boundary-prep",
+    );
+    expect(lookupSymptomGuides(index, "aqua hot 400d reporter low voltage winterize")[0]?.slug).toBe(
+      "aquahot-400d-reporter-controls-winterization-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "thetford cassette toilet serial sticker c402")[0]?.slug).toBe(
+      "thetford-cassette-toilet-serial-label-prep",
+    );
+    expect(lookupSymptomGuides(index, "thetford toilet serial")[0]?.slug).toBe(
+      "thetford-rv-toilet-serial-model-label-service-prep",
+    );
+    expect(lookupSymptomGuides(index, "maxxair maxxfan deluxe 07000k remote thermostat")[0]?.slug).toBe(
+      "maxxair-maxxfan-deluxe-model-control-prep",
+    );
+
+    expect(lookupSymptomGuides(index, "refrigerator not cooling").slice(0, 5).map((symptom) => symptom.slug)).not.toContain(
+      "dometic-rm8-not-cooling-level-ventilation-prep",
+    );
+    expect(lookupSymptomGuides(index, "generator power").slice(0, 5).map((symptom) => symptom.slug)).not.toContain(
+      "dometic-freshjet-generator-power-prep",
+    );
+    expect(lookupSymptomGuides(index, "microwave no heat").slice(0, 5).map((symptom) => symptom.slug)).not.toContain(
+      "furrion-microwave-manual-model-service-prep",
     );
     expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
   });

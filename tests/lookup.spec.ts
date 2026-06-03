@@ -1298,6 +1298,73 @@ test("lookup surfaces official owner-safe RM8, FreshJet, warranty, claims, and r
   expect(pageErrors).toEqual([]);
 });
 
+test("lookup surfaces the official Dometic Coleman Furrion Aqua-Hot Thetford and MaxxAir router batch", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    ["dometic rm8 refrigerator not cooling level ventilation", "/symptoms/dometic-rm8-not-cooling-level-ventilation-prep/"],
+    ["rm-8 smell ammonia yellow residue shutdown", "/symptoms/dometic-rm8-ammonia-odor-shutdown-prep/"],
+    ["rm 8 smell gas shut off lp", "/symptoms/dometic-rm8-gas-odor-shutdown-prep/"],
+    ["fresh jet filter clean low airflow maximum efficiency", "/symptoms/dometic-freshjet-filter-cleaning-airflow-prep/"],
+    ["freshjet generator pure sine smartstart power prep", "/symptoms/dometic-freshjet-generator-power-prep/"],
+    ["dometic americana refrigerator food storage overfilled airflow", "/symptoms/dometic-americana-food-loading-airflow-storage/"],
+    ["coleman mach 45000 filter freeze high fan lockout", "/symptoms/coleman-45000-ac-freeze-filter-lockout-prep/"],
+    ["coleman 46000 backwall freeze switch heat filter", "/symptoms/coleman-46000-backwall-control-freeze-service-prep/"],
+    ["furrion warranty form lippert w-013 w-017", "/symptoms/furrion-lippert-warranty-forms-service-prep/"],
+    ["furrion air conditioning chill r32 low profile adb controller", "/symptoms/furrion-ac-manual-model-warranty-router/"],
+    ["furrion microwave fmcm15 turntable no heat service prep", "/symptoms/furrion-microwave-manual-model-service-prep/"],
+    ["suburban literature technical documents operation manual", "/symptoms/suburban-manual-library-service-boundary-prep/"],
+    ["aqua hot manual library 400d 600d owner manual", "/symptoms/aquahot-model-manual-locator-service-prep/"],
+    ["aqua hot 400d reporter low voltage winterize", "/symptoms/aquahot-400d-reporter-controls-winterization-service-prep/"],
+    ["thetford cassette toilet serial sticker c402", "/symptoms/thetford-cassette-toilet-serial-label-prep/"],
+    ["thetford cassette left hand right hand c223 c224", "/symptoms/thetford-cassette-left-right-model-prep/"],
+    ["maxxair maxxfan deluxe 07000k remote thermostat", "/symptoms/maxxair-maxxfan-deluxe-model-control-prep/"],
+  ] as const;
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+  }
+
+  async function openGuide(query: string, href: string) {
+    await page.goto("/");
+    await page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" }).fill(query);
+    const link = page.locator('section[aria-label="Lookup results"]').locator(`a[href="${href}"]`);
+    await expect(link).toBeVisible();
+    await link.click();
+  }
+
+  await openGuide("rm-8 smell ammonia yellow residue shutdown", "/symptoms/dometic-rm8-ammonia-odor-shutdown-prep/");
+  await expect(page.getByRole("heading", { name: "Dometic RM8 ammonia odor shutdown prep" })).toBeVisible();
+  await expect(page.getByText(/Shut the refrigerator down and move people away from the odor/i)).toBeVisible();
+
+  await openGuide("freshjet generator pure sine smartstart power prep", "/symptoms/dometic-freshjet-generator-power-prep/");
+  await expect(page.getByRole("heading", { name: "Dometic FreshJet generator power prep" })).toBeVisible();
+  await expect(page.getByText(/Keep generator, transfer, and AC power equipment work with qualified service/i)).toBeVisible();
+
+  await openGuide("furrion microwave fmcm15 turntable no heat service prep", "/symptoms/furrion-microwave-manual-model-service-prep/");
+  await expect(page.getByRole("heading", { name: "Furrion microwave manual and service-prep router" })).toBeVisible();
+  await expect(page.getByText(/Keep microwave service with qualified technicians/i)).toBeVisible();
+
+  await page.goto("/");
+  await searchbox.fill("refrigerator not cooling");
+  await expect(lookupResults.locator('a[href="/symptoms/dometic-rm8-not-cooling-level-ventilation-prep/"]')).toHaveCount(0);
+  await searchbox.fill("microwave no heat");
+  await expect(lookupResults.locator('a[href="/symptoms/furrion-microwave-manual-model-service-prep/"]')).toHaveCount(0);
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 
