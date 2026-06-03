@@ -51,7 +51,7 @@ describe("traffic readiness report", () => {
       keyLocation: "https://rvappliancefaultcodes.com/2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18.txt",
       dryRunCommand: "npm run traffic:indexnow:dry-run",
       submitCommand: "npm run traffic:indexnow:submit",
-      submittedAt: "2026-06-03T10:55:21.901Z",
+      submittedAt: "2026-06-03T11:41:12.339Z",
     });
     expect(report.nextAutomatedBatchGoal).toBe(nextAutomatedBatchGoal);
 
