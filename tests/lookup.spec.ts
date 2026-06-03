@@ -2535,6 +2535,71 @@ test("lookup surfaces toilet, control, locator, warranty, and service prep batch
   expect(pageErrors).toEqual([]);
 });
 
+test("lookup surfaces the next model, control, warranty, and service-prep batch", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    ["dometic acc3100 select mode turbo sleep auto manual", "/symptoms/dometic-acc3100-mode-sequence-prep/"],
+    [
+      "dometic acc3100 ventilation system software update app",
+      "/symptoms/dometic-acc3100-software-update-prep/",
+    ],
+    [
+      "dometic ccc2 auto change over mode thermostat heat cool",
+      "/symptoms/dometic-ccc2-auto-changeover-behavior-prep/",
+    ],
+    ["norcold n20dc manual parts service prep", "/symptoms/norcold-n20dc-manual-parts-service-prep/"],
+    [
+      "thetford c403l cassette toilet model service prep",
+      "/symptoms/thetford-c403l-cassette-model-service-prep/",
+    ],
+    [
+      "furrion 12v range hood ccd0005505 filter model prep",
+      "/symptoms/furrion-12v-range-hood-filter-model-prep/",
+    ],
+    [
+      "furrion electronic lid vent fan kit ccd0010788 prep",
+      "/symptoms/furrion-14in-vent-fan-electronic-lid-kit-prep/",
+    ],
+    ["lippert onecontrol wireless qr061 connection prep", "/symptoms/lippert-onecontrol-wireless-connection-prep/"],
+    [
+      "coleman mach 12 vdc wall thermostat control prep",
+      "/symptoms/coleman-mach-12v-wall-thermostat-control-prep/",
+    ],
+    [
+      "suburban tankless digital control center model prep",
+      "/symptoms/suburban-tankless-control-center-model-prep/",
+    ],
+  ] as const;
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+  }
+
+  await searchbox.fill("dometic ccc2 auto change over mode thermostat heat cool");
+  const autoChangeover = lookupResults.locator(
+    'a[href="/symptoms/dometic-ccc2-auto-changeover-behavior-prep/"]',
+  );
+  await expect(autoChangeover).toBeVisible();
+  await autoChangeover.click();
+  await expect(page.getByRole("heading", { name: "Dometic CCC2 auto change-over behavior prep" })).toBeVisible();
+  await expect(page.getByText(/qualified RV HVAC service/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 

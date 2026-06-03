@@ -5945,6 +5945,246 @@
       "url": "https://shop.cummins.com/SC/product/onan-qg-4000-gasoline-rv-generator-with-30a-breaker-a055e867/01t4N0000048pf4QAA",
       "type": "manufacturer-product",
       "official": true
+    },
+    {
+      "id": "dometic-acc3100-select-mode-support",
+      "brand": "Dometic",
+      "title": "Dometic ACC3100 select mode support",
+      "url": "https://support.dometic.com/en/ACC3100/How-to-select-the-mode-fe4c",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-acc3100-climate-app-use-support",
+      "brand": "Dometic",
+      "title": "Dometic ACC3100 Climate App use support",
+      "url": "https://support.dometic.com/en/ACC3100/How-to-use-the-the-Dometic-Climate-App-65c5",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-acc3100-software-update-support",
+      "brand": "Dometic",
+      "title": "Dometic ACC3100 ventilation system software update support",
+      "url": "https://support.dometic.com/en/ACC3100/How-to-update-the-ventilation-system-software-4ee1",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ccc2-auto-changeover-support",
+      "brand": "Dometic",
+      "title": "Dometic CCC2 Auto Change Over mode support",
+      "url": "https://support.dometic.com/en/brisk-ac/How-to-control-AUTO-Auto-Change-Over-Mode-COMFORT-CONTROL-CENTER-2-THERMOSTAT-cce4",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm10-turn-off-refrigerator-support",
+      "brand": "Dometic",
+      "title": "Dometic RM10 refrigerator turn off support",
+      "url": "https://support.dometic.com/en/rm10-refrigerators/How-to-turn-off-the-refrigerator-bb42",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rm8-food-storage-support",
+      "brand": "Dometic",
+      "title": "Dometic RM8 food storage support",
+      "url": "https://support.dometic.com/en/rm8-refrigerators/How-to-best-store-food-in-the-refrigerator-1432",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rua-clean-maintain-refrigerator-support",
+      "brand": "Dometic",
+      "title": "Dometic RUA refrigerator cleaning and maintenance support",
+      "url": "https://support.dometic.com/en/rua-refrigerator/How-to-clean-and-maintain-the-refrigerator-47a9",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-fantastic-vent-2250-product",
+      "brand": "Dometic",
+      "title": "Dometic 2250 Fan-Tastic Vent roof fan product page",
+      "url": "https://www.dometic.com/en-us/product/dometic-2250-fan-tastic-vent-roof-fan-9108869049",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "dometic-1450-vent-roof-fan-product",
+      "brand": "Dometic",
+      "title": "Dometic 1450 vent roof fan product page",
+      "url": "https://www.dometic.com/en-us/product/dometic-1450-vent-roof-fan-9600008500",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "dometic-fantastic-vent-fans-seven-year-warranty-62311",
+      "brand": "Dometic",
+      "title": "Dometic Fan-Tastic Vent fans limited seven-year warranty statement",
+      "url": "https://www.dometic.com/globalassets/1-outdoor/out-support/out-warranty-statements/fantastic_vent_fans_limited_seven-year_warranty-_-62311.pdf",
+      "type": "manufacturer-warranty",
+      "official": true
+    },
+    {
+      "id": "norcold-n20dc-support",
+      "brand": "Norcold",
+      "title": "Norcold N20DC support page",
+      "url": "https://www.thetford.com/us/thetford-support/n20dc/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-n8dc-support",
+      "brand": "Norcold",
+      "title": "Norcold N8DC support page",
+      "url": "https://www.thetford.com/us/thetford-support/n8dc/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-polar-nv10dc-support",
+      "brand": "Norcold",
+      "title": "Norcold Polar NV10DC support page",
+      "url": "https://www.thetford.com/us/thetford-support/polar-nv10dc/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-n180-3-support",
+      "brand": "Norcold",
+      "title": "Norcold N180.3 support page",
+      "url": "https://www.thetford.com/us/thetford-support/n180-3/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-n4104-support",
+      "brand": "Norcold",
+      "title": "Norcold N4104 support page",
+      "url": "https://www.thetford.com/us/thetford-support/n4104/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-de105-support",
+      "brand": "Norcold",
+      "title": "Norcold DE105 support page",
+      "url": "https://www.thetford.com/us/thetford-support/de105/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-c403l-cassette-toilet-support",
+      "brand": "Thetford",
+      "title": "Thetford C403L cassette toilet support page",
+      "url": "https://www.thetford.com/us/thetford-support/c403l-cassette-toilet/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-c223-s-cassette-toilet-support",
+      "brand": "Thetford",
+      "title": "Thetford C223-S cassette toilet support page",
+      "url": "https://www.thetford.com/us/thetford-support/c223-s-cassette-toilet/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-12v-range-hood-user-manual-ccd0005505",
+      "brand": "Furrion",
+      "title": "Furrion 12V range hood user manual CCD-0005505",
+      "url": "https://support.lci1.com/documents/ccd-0005505",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-13in-sloped-rangehood-manual-ccd0008551",
+      "brand": "Furrion",
+      "title": "Furrion 13 inch sloped rangehood manual CCD-0008551",
+      "url": "https://support.lci1.com/documents/ccd-0008551",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-vent-fan-manual-lid-aftermarket-ccd0008554",
+      "brand": "Furrion",
+      "title": "Furrion 14 inch vent fan manual lid aftermarket manual CCD-0008554",
+      "url": "https://support.lci1.com/documents/ccd-0008554",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-vent-fan-electronic-lid-kit-ccd0010788",
+      "brand": "Furrion",
+      "title": "Furrion electronic lid vent fan kit document CCD-0010788",
+      "url": "https://support.lci1.com/documents/ccd-0010788",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-w012-8-10-refrigerator-warranty-form-ccd0008130",
+      "brand": "Furrion",
+      "title": "Furrion W012 8 and 10 cu ft refrigerator warranty form CCD-0008130",
+      "url": "https://support.lci1.com/documents/ccd-0008130",
+      "type": "manufacturer-warranty",
+      "official": true
+    },
+    {
+      "id": "furrion-w015-general-warranty-request-form-ccd0008246",
+      "brand": "Furrion",
+      "title": "Furrion W015 general warranty request form CCD-0008246",
+      "url": "https://support.lci1.com/documents/ccd-0008246",
+      "type": "manufacturer-warranty",
+      "official": true
+    },
+    {
+      "id": "lippert-onecontrol-wireless-qr061",
+      "brand": "Lippert",
+      "title": "Lippert OneControl wireless connection QR-061",
+      "url": "https://support.lci1.com/documents/qr-061-connecting-to-onecontrol-using-wireless",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "lippert-onecontrol-app-setup-qr077",
+      "brand": "Lippert",
+      "title": "Lippert OneControl application setup QR-077",
+      "url": "https://support.lci1.com/documents/qr-077-onecontrolreg-application-setup",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "coleman-mach-12v-wall-thermostat-manual",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 12 VDC wall thermostat manual",
+      "url": "https://library.coleman-mach.com/manual/12-vdc-wall-thermostat/",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-46000-underbunk-owner-1976-583",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 46000 Underbunk owner manual 1976-583",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-583.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "maxxair-original-vent-cover-product",
+      "brand": "MaxxAir",
+      "title": "MaxxAir Original Vent Cover product page",
+      "url": "https://www.maxxair.com/Products/covers/maxxair/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "suburban-tankless-control-center-product",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban Tankless Digital Control Center product page",
+      "url": "https://suburbanrv.com/water-heating/tankless-water-heaters/advantage-tankless-water-heater-control/",
+      "type": "manufacturer-product",
+      "official": true
     }
   ],
   "entries": [
@@ -39491,7 +39731,37 @@
         "lippert-qualified-tech-map",
         "girard-15-6-12v-refrigerator-manual",
         "furrion-rchef-electric-oven-manual",
-        "onan-qg4000-shop-gsn-product-page"
+        "onan-qg4000-shop-gsn-product-page",
+        "dometic-acc3100-select-mode-support",
+        "dometic-acc3100-climate-app-use-support",
+        "dometic-acc3100-software-update-support",
+        "dometic-ccc2-auto-changeover-support",
+        "dometic-rm10-turn-off-refrigerator-support",
+        "dometic-rm8-food-storage-support",
+        "dometic-rua-clean-maintain-refrigerator-support",
+        "dometic-fantastic-vent-2250-product",
+        "dometic-1450-vent-roof-fan-product",
+        "dometic-fantastic-vent-fans-seven-year-warranty-62311",
+        "norcold-n20dc-support",
+        "norcold-n8dc-support",
+        "norcold-polar-nv10dc-support",
+        "norcold-n180-3-support",
+        "norcold-n4104-support",
+        "norcold-de105-support",
+        "thetford-c403l-cassette-toilet-support",
+        "thetford-c223-s-cassette-toilet-support",
+        "furrion-12v-range-hood-user-manual-ccd0005505",
+        "furrion-13in-sloped-rangehood-manual-ccd0008551",
+        "furrion-vent-fan-manual-lid-aftermarket-ccd0008554",
+        "furrion-vent-fan-electronic-lid-kit-ccd0010788",
+        "furrion-w012-8-10-refrigerator-warranty-form-ccd0008130",
+        "furrion-w015-general-warranty-request-form-ccd0008246",
+        "lippert-onecontrol-wireless-qr061",
+        "lippert-onecontrol-app-setup-qr077",
+        "coleman-mach-12v-wall-thermostat-manual",
+        "coleman-46000-underbunk-owner-1976-583",
+        "maxxair-original-vent-cover-product",
+        "suburban-tankless-control-center-product"
       ]
     },
     {
@@ -50751,6 +51021,671 @@
         "a055e867",
         "4kyfa+6747",
         "qg+4000"
+      ]
+    },
+    {
+      "id": "dometic-acc3100-mode-sequence-prep",
+      "slug": "dometic-acc3100-mode-sequence-prep",
+      "title": "Dometic ACC3100 mode sequence prep",
+      "summary": "Use this ACC3100 guide when selecting or documenting the ventilation mode sequence such as turbo, sleep, auto, or manual before support review.",
+      "safeChecklist": [
+        "Record the ACC3100 model, current mode, app status, and whether the concern happens in turbo, sleep, auto, or manual mode.",
+        "Save photos of the display or app screen before changing settings.",
+        "Use Dometic support or authorized RV climate service for installed ventilation, electrical, roof, or controller decisions."
+      ],
+      "sourceIds": [
+        "dometic-acc3100-select-mode-support"
+      ],
+      "searchAliases": [
+        "dometic acc3100 select mode turbo sleep auto manual",
+        "acc3100 select mode sequence prep"
+      ],
+      "searchRequiredTerms": [
+        "acc3100+select",
+        "acc3100+turbo",
+        "acc3100+sleep"
+      ]
+    },
+    {
+      "id": "dometic-acc3100-climate-app-use-prep",
+      "slug": "dometic-acc3100-climate-app-use-prep",
+      "title": "Dometic ACC3100 Climate App use prep",
+      "summary": "Use this ACC3100 Climate App guide to capture app control, vent control, and owner-visible setup details before asking Dometic support for help.",
+      "safeChecklist": [
+        "Record the ACC3100 model, mobile device, app version if visible, and which vent or mode control is not matching the display.",
+        "Save screenshots of the Climate App screen and the appliance display.",
+        "Use Dometic support or authorized RV climate service for installed ventilation, electrical, roof, or controller decisions."
+      ],
+      "sourceIds": [
+        "dometic-acc3100-climate-app-use-support"
+      ],
+      "searchAliases": [
+        "dometic acc3100 climate app use vent control",
+        "acc3100 climate app vent control prep"
+      ],
+      "searchRequiredTerms": [
+        "acc3100+climate+app"
+      ]
+    },
+    {
+      "id": "dometic-acc3100-software-update-prep",
+      "slug": "dometic-acc3100-software-update-prep",
+      "title": "Dometic ACC3100 software update prep",
+      "summary": "Use this ACC3100 software update guide to prepare app, model, and status details before following Dometic support prompts for ventilation system software.",
+      "safeChecklist": [
+        "Record the ACC3100 model, app status, visible software prompt, and whether the update is pending, running, or failed.",
+        "Keep screenshots of the update prompt and current ventilation status.",
+        "Use Dometic support or authorized RV climate service for update failures tied to installed controls, roof equipment, or electrical decisions."
+      ],
+      "sourceIds": [
+        "dometic-acc3100-software-update-support"
+      ],
+      "searchAliases": [
+        "dometic acc3100 ventilation system software update app",
+        "acc3100 software update app prep"
+      ],
+      "searchRequiredTerms": [
+        "acc3100+software",
+        "acc3100+update",
+        "ventilation+software"
+      ]
+    },
+    {
+      "id": "dometic-ccc2-auto-changeover-behavior-prep",
+      "slug": "dometic-ccc2-auto-changeover-behavior-prep",
+      "title": "Dometic CCC2 auto change-over behavior prep",
+      "summary": "Use this CCC2 guide when AUTO change-over behavior needs documentation across heat, cool, zone, and setpoint conditions before service review.",
+      "safeChecklist": [
+        "Record the CCC2 zone, selected mode, heat and cool setpoints, room temperature, and whether AUTO changes between heat and cool as expected.",
+        "Save photos of the thermostat screen and note which roof or furnace equipment is connected to the zone.",
+        "Use qualified RV HVAC service for thermostat, zone-control, rooftop, furnace, or installed climate-system decisions."
+      ],
+      "sourceIds": [
+        "dometic-ccc2-auto-changeover-support"
+      ],
+      "searchAliases": [
+        "dometic ccc2 auto change over mode thermostat heat cool",
+        "ccc2 auto change over thermostat prep"
+      ],
+      "searchRequiredTerms": [
+        "ccc2+auto+change",
+        "ccc2+change+over"
+      ]
+    },
+    {
+      "id": "dometic-rm10-shutdown-control-prep",
+      "slug": "dometic-rm10-shutdown-control-prep",
+      "title": "Dometic RM10 shutdown control prep",
+      "summary": "Use this RM10 guide when turning the refrigerator off or documenting shutdown behavior before storage, travel, or service routing.",
+      "safeChecklist": [
+        "Record the RM10 model, current energy source, display status, and whether the refrigerator fully turns off from the control.",
+        "Move food if temperature is unsafe and save a photo of the display before shutdown.",
+        "Use Dometic support or qualified RV refrigerator service for repeated shutdown, gas, installed appliance, or electrical concerns."
+      ],
+      "sourceIds": [
+        "dometic-rm10-turn-off-refrigerator-support"
+      ],
+      "searchAliases": [
+        "dometic rm10 turn off refrigerator shutdown control",
+        "rm10 shutdown control prep"
+      ],
+      "searchRequiredTerms": [
+        "rm10+turn+off",
+        "rm10+shutdown"
+      ]
+    },
+    {
+      "id": "dometic-rm8-food-storage-airflow-prep",
+      "slug": "dometic-rm8-food-storage-airflow-prep",
+      "title": "Dometic RM8 food storage and airflow prep",
+      "summary": "Use this RM8 guide when food loading, airflow, or cooling complaints need owner-safe documentation before support or service review.",
+      "safeChecklist": [
+        "Record the RM8 model, food load, shelf placement, outside temperature, and whether air space around stored food is blocked.",
+        "Save photos of shelf loading and temperature readings if food safety is a concern.",
+        "Use Dometic support or qualified RV refrigerator service for persistent cooling, gas, installed appliance, or electrical concerns."
+      ],
+      "sourceIds": [
+        "dometic-rm8-food-storage-support"
+      ],
+      "searchAliases": [
+        "dometic rm8 food storage airflow cooling prep",
+        "rm8 food storage airflow prep"
+      ],
+      "searchRequiredTerms": [
+        "rm8+food",
+        "rm8+airflow",
+        "rm8+storage"
+      ]
+    },
+    {
+      "id": "dometic-rua-cleaning-maintenance-prep",
+      "slug": "dometic-rua-cleaning-maintenance-prep",
+      "title": "Dometic RUA cleaning maintenance prep",
+      "summary": "Use this RUA guide to document cleaning and maintenance status before support review without moving into refrigerator repair steps.",
+      "safeChecklist": [
+        "Record the RUA model, cleaning date, food residue, odor, door condition, and visible user-maintenance status.",
+        "Save photos of owner-accessible compartments and paperwork before a service call.",
+        "Use Dometic support or qualified RV refrigerator service for gas, installed appliance, cooling, or electrical decisions."
+      ],
+      "sourceIds": [
+        "dometic-rua-clean-maintain-refrigerator-support"
+      ],
+      "searchAliases": [
+        "dometic rua clean maintain refrigerator service prep",
+        "rua cleaning maintenance refrigerator prep"
+      ],
+      "searchRequiredTerms": [
+        "rua+clean",
+        "rua+maintain",
+        "rua+maintenance"
+      ]
+    },
+    {
+      "id": "dometic-fantastic-vent-2250-model-control-prep",
+      "slug": "dometic-fantastic-vent-2250-model-control-prep",
+      "title": "Dometic Fan-Tastic Vent 2250 model/control prep",
+      "summary": "Use this Fan-Tastic Vent 2250 guide to capture model and control details before owner support, parts lookup, or qualified roof ventilation service.",
+      "safeChecklist": [
+        "Record the 2250 model name, roof fan label, switch behavior, and whether the fan, lid, or control is the concern.",
+        "Save photos of the product label, roof fan from inside the RV, and purchase paperwork.",
+        "Use Dometic support or qualified RV ventilation service for roof, fan motor, installed control, or electrical decisions."
+      ],
+      "sourceIds": [
+        "dometic-fantastic-vent-2250-product"
+      ],
+      "searchAliases": [
+        "dometic fantastic vent 2250 model control prep",
+        "fantastic vent 2250 roof fan prep"
+      ],
+      "searchRequiredTerms": [
+        "fantastic+2250",
+        "2250+vent"
+      ]
+    },
+    {
+      "id": "dometic-1450-vent-model-control-prep",
+      "slug": "dometic-1450-vent-model-control-prep",
+      "title": "Dometic 1450 vent model/control prep",
+      "summary": "Use this Dometic 1450 vent guide to capture roof fan model and control details before support or qualified roof ventilation service.",
+      "safeChecklist": [
+        "Record the 1450 model name, roof fan label, control behavior, and whether the concern is the lid, fan, or switch.",
+        "Save photos of the vent assembly, label, and purchase paperwork.",
+        "Use Dometic support or qualified RV ventilation service for roof, fan motor, installed control, or electrical decisions."
+      ],
+      "sourceIds": [
+        "dometic-1450-vent-roof-fan-product"
+      ],
+      "searchAliases": [
+        "dometic 1450 vent roof fan model control prep",
+        "dometic 1450 vent control prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+1450",
+        "1450+vent",
+        "9600008500"
+      ]
+    },
+    {
+      "id": "dometic-fantastic-vent-warranty-paperwork-prep",
+      "slug": "dometic-fantastic-vent-warranty-paperwork-prep",
+      "title": "Dometic Fan-Tastic Vent warranty paperwork prep",
+      "summary": "Use this Fan-Tastic Vent warranty guide to collect seven-year warranty paperwork, model details, and photos before contacting official support.",
+      "safeChecklist": [
+        "Record the Fan-Tastic Vent model, serial or product label if present, purchase date, installation date, and symptom timeline.",
+        "Save the warranty statement, receipt, photos, and any support case notes in one folder.",
+        "Use Dometic support or authorized RV ventilation service for warranty decisions involving roof, installed controls, or electrical work."
+      ],
+      "sourceIds": [
+        "dometic-fantastic-vent-fans-seven-year-warranty-62311"
+      ],
+      "searchAliases": [
+        "dometic fantastic vent seven year warranty paperwork prep",
+        "fantastic vent seven year warranty prep"
+      ],
+      "searchRequiredTerms": [
+        "fantastic+seven+year",
+        "fantastic+warranty",
+        "62311"
+      ]
+    },
+    {
+      "id": "norcold-n20dc-manual-parts-service-prep",
+      "slug": "norcold-n20dc-manual-parts-service-prep",
+      "title": "Norcold N20DC manual, parts, and service prep",
+      "summary": "Use this N20DC support guide to gather manuals, parts resources, model details, and service notes before contacting Norcold or an authorized service provider.",
+      "safeChecklist": [
+        "Record the N20DC model, serial number, control status, temperature concern, and whether food temperature is unsafe.",
+        "Save photos of the data label, control panel, manual link, and parts paperwork.",
+        "Use Norcold support or qualified RV refrigerator service for installed appliance, electrical, cooling, or cabinet-fit decisions."
+      ],
+      "sourceIds": [
+        "norcold-n20dc-support"
+      ],
+      "searchAliases": [
+        "norcold n20dc manual parts service prep",
+        "n20dc manual parts service prep"
+      ],
+      "searchRequiredTerms": [
+        "n20dc",
+        "n20dc+manual"
+      ]
+    },
+    {
+      "id": "norcold-n8dc-manual-parts-service-prep",
+      "slug": "norcold-n8dc-manual-parts-service-prep",
+      "title": "Norcold N8DC manual and parts service prep",
+      "summary": "Use this N8DC support guide to collect manuals, parts resources, model details, and service notes before support or qualified service.",
+      "safeChecklist": [
+        "Record the N8DC model, serial number, control status, temperature concern, and whether the refrigerator is in travel or storage use.",
+        "Save photos of the data label, controls, manual link, and parts paperwork.",
+        "Use Norcold support or qualified RV refrigerator service for installed appliance, electrical, cooling, or cabinet-fit decisions."
+      ],
+      "sourceIds": [
+        "norcold-n8dc-support"
+      ],
+      "searchAliases": [
+        "norcold n8dc manual parts service prep",
+        "n8dc manual parts service prep"
+      ],
+      "searchRequiredTerms": [
+        "n8dc",
+        "n8dc+manual"
+      ]
+    },
+    {
+      "id": "norcold-polar-nv10dc-model-control-service-prep",
+      "slug": "norcold-polar-nv10dc-model-control-service-prep",
+      "title": "Norcold Polar NV10DC model/control service prep",
+      "summary": "Use this Polar NV10DC guide to document model, controls, manuals, and parts resources before support or qualified service.",
+      "safeChecklist": [
+        "Record the Polar NV10DC model, serial number, control setting, temperature concern, and battery or shore-power context.",
+        "Save photos of the data label, display or control, and official support page resources.",
+        "Use Norcold support or qualified RV refrigerator service for installed appliance, electrical, cooling, or cabinet-fit decisions."
+      ],
+      "sourceIds": [
+        "norcold-polar-nv10dc-support"
+      ],
+      "searchAliases": [
+        "norcold polar nv10dc model control service prep",
+        "polar nv10dc model control prep"
+      ],
+      "searchRequiredTerms": [
+        "nv10dc",
+        "polar+nv10dc"
+      ]
+    },
+    {
+      "id": "norcold-n180-3-discontinued-storage-parts-prep",
+      "slug": "norcold-n180-3-discontinued-storage-parts-prep",
+      "title": "Norcold N180.3 discontinued storage and parts prep",
+      "summary": "Use this N180.3 support guide to record discontinued-model, storage, and parts details before deciding whether support or replacement routing is needed.",
+      "safeChecklist": [
+        "Record the N180.3 model, serial number, storage condition, control status, and any visible support-page discontinued notes.",
+        "Save photos of the data label, cabinet fit, controls, and available parts resources.",
+        "Use Norcold support or qualified RV refrigerator service for installed appliance, electrical, cooling, or replacement-fit decisions."
+      ],
+      "sourceIds": [
+        "norcold-n180-3-support"
+      ],
+      "searchAliases": [
+        "norcold n180.3 discontinued storage parts prep",
+        "n180 3 discontinued storage parts prep"
+      ],
+      "searchRequiredTerms": [
+        "n180+3",
+        "n180",
+        "discontinued+storage"
+      ]
+    },
+    {
+      "id": "norcold-n4104-model-manual-parts-prep",
+      "slug": "norcold-n4104-model-manual-parts-prep",
+      "title": "Norcold N4104 model, manual, and parts prep",
+      "summary": "Use this N4104 support guide to collect model, manual, and parts information before support or qualified service.",
+      "safeChecklist": [
+        "Record the N4104 model, serial number, control status, and whether the concern is cooling, storage, or parts lookup.",
+        "Save photos of the data label, controls, manual link, and parts resources.",
+        "Use Norcold support or qualified RV refrigerator service for installed appliance, electrical, cooling, or cabinet-fit decisions."
+      ],
+      "sourceIds": [
+        "norcold-n4104-support"
+      ],
+      "searchAliases": [
+        "norcold n4104 model manual parts prep",
+        "n4104 model manual parts prep"
+      ],
+      "searchRequiredTerms": [
+        "n4104"
+      ]
+    },
+    {
+      "id": "norcold-de105-acdc-refrigerator-service-prep",
+      "slug": "norcold-de105-acdc-refrigerator-service-prep",
+      "title": "Norcold DE105 AC/DC refrigerator service prep",
+      "summary": "Use this DE105 support guide to capture AC/DC refrigerator model, power-source, and parts details before support or qualified service.",
+      "safeChecklist": [
+        "Record the DE105 model, serial number, AC or DC operating context, control status, and temperature concern.",
+        "Save photos of the data label, controls, manual link, and parts resources.",
+        "Use Norcold support or qualified RV refrigerator service for installed appliance, electrical, cooling, or cabinet-fit decisions."
+      ],
+      "sourceIds": [
+        "norcold-de105-support"
+      ],
+      "searchAliases": [
+        "norcold de105 ac dc refrigerator service prep",
+        "de105 ac dc refrigerator service prep"
+      ],
+      "searchRequiredTerms": [
+        "de105"
+      ]
+    },
+    {
+      "id": "thetford-c403l-cassette-model-service-prep",
+      "slug": "thetford-c403l-cassette-model-service-prep",
+      "title": "Thetford C403L cassette model service prep",
+      "summary": "Use this C403L cassette toilet guide to record model, cassette, control, and service details before Thetford support or qualified RV sanitation service.",
+      "safeChecklist": [
+        "Record the C403L model, cassette condition, flush control status, leak location if any, and winterization history.",
+        "Save photos of the toilet label, cassette, control panel, and paperwork.",
+        "Use Thetford support or qualified RV sanitation service for installed plumbing, electrical, leak, or removal decisions."
+      ],
+      "sourceIds": [
+        "thetford-c403l-cassette-toilet-support"
+      ],
+      "searchAliases": [
+        "thetford c403l cassette toilet model service prep",
+        "c403l cassette toilet model service prep"
+      ],
+      "searchRequiredTerms": [
+        "c403l"
+      ]
+    },
+    {
+      "id": "thetford-c223-s-cassette-model-service-prep",
+      "slug": "thetford-c223-s-cassette-model-service-prep",
+      "title": "Thetford C223-S cassette model service prep",
+      "summary": "Use this C223-S cassette toilet guide to record model, cassette, control, and service details before Thetford support or qualified RV sanitation service.",
+      "safeChecklist": [
+        "Record the C223-S model, cassette condition, flush control status, leak location if any, and winterization history.",
+        "Save photos of the toilet label, cassette, control panel, and paperwork.",
+        "Use Thetford support or qualified RV sanitation service for installed plumbing, electrical, leak, or removal decisions."
+      ],
+      "sourceIds": [
+        "thetford-c223-s-cassette-toilet-support"
+      ],
+      "searchAliases": [
+        "thetford c223-s cassette toilet model service prep",
+        "c223 s cassette toilet model service prep"
+      ],
+      "searchRequiredTerms": [
+        "c223+s",
+        "c223s"
+      ]
+    },
+    {
+      "id": "furrion-12v-range-hood-filter-model-prep",
+      "slug": "furrion-12v-range-hood-filter-model-prep",
+      "title": "Furrion 12V range hood filter/model prep",
+      "summary": "Use this Furrion 12V range hood guide to capture model, filter, light, and fan details before support or qualified appliance service.",
+      "safeChecklist": [
+        "Record the range hood model, 12V label, filter condition, fan speed behavior, light behavior, and cooking-area ventilation concern.",
+        "Save photos of the data label, filter, controls, and official document number CCD-0005505.",
+        "Use Furrion support or qualified RV appliance service for installed electrical, fan, duct, or control decisions."
+      ],
+      "sourceIds": [
+        "furrion-12v-range-hood-user-manual-ccd0005505"
+      ],
+      "searchAliases": [
+        "furrion 12v range hood ccd0005505 filter model prep",
+        "furrion 12v range hood filter model prep"
+      ],
+      "searchRequiredTerms": [
+        "ccd0005505",
+        "12v+range+hood"
+      ]
+    },
+    {
+      "id": "furrion-13in-sloped-rangehood-model-prep",
+      "slug": "furrion-13in-sloped-rangehood-model-prep",
+      "title": "Furrion 13-inch sloped rangehood model prep",
+      "summary": "Use this Furrion 13-inch sloped rangehood guide to capture model, filter, light, and fan details before support or qualified appliance service.",
+      "safeChecklist": [
+        "Record the 13-inch sloped rangehood model, filter condition, fan behavior, light behavior, and whether cooking ventilation is the concern.",
+        "Save photos of the data label, filter, controls, and official document number CCD-0008551.",
+        "Use Furrion support or qualified RV appliance service for installed electrical, fan, duct, or control decisions."
+      ],
+      "sourceIds": [
+        "furrion-13in-sloped-rangehood-manual-ccd0008551"
+      ],
+      "searchAliases": [
+        "furrion 13 inch sloped rangehood ccd0008551 model prep",
+        "furrion 13 inch sloped rangehood model prep"
+      ],
+      "searchRequiredTerms": [
+        "ccd0008551",
+        "13+sloped+rangehood"
+      ]
+    },
+    {
+      "id": "furrion-14in-vent-fan-manual-lid-model-prep",
+      "slug": "furrion-14in-vent-fan-manual-lid-model-prep",
+      "title": "Furrion 14-inch manual-lid vent fan prep",
+      "summary": "Use this Furrion 14-inch manual-lid vent fan guide to capture model, lid, screen, and fan behavior before support or qualified roof ventilation service.",
+      "safeChecklist": [
+        "Record the 14-inch vent fan model, manual-lid behavior, fan speed, screen condition, and roof-leak symptoms if visible.",
+        "Save photos of the label, interior garnish, controls, lid position, and official document number CCD-0008554.",
+        "Use Furrion support or qualified RV ventilation service for roof, fan motor, installed control, or electrical decisions."
+      ],
+      "sourceIds": [
+        "furrion-vent-fan-manual-lid-aftermarket-ccd0008554"
+      ],
+      "searchAliases": [
+        "furrion 14 inch vent fan manual lid ccd0008554 model prep",
+        "furrion manual lid vent fan ccd0008554 prep"
+      ],
+      "searchRequiredTerms": [
+        "ccd0008554",
+        "furrion+manual+lid"
+      ]
+    },
+    {
+      "id": "furrion-14in-vent-fan-electronic-lid-kit-prep",
+      "slug": "furrion-14in-vent-fan-electronic-lid-kit-prep",
+      "title": "Furrion electronic-lid vent fan kit prep",
+      "summary": "Use this Furrion electronic-lid vent fan kit guide to capture kit, lid, switch, and fan details before support or qualified roof ventilation service.",
+      "safeChecklist": [
+        "Record the electronic-lid kit model, fan model, lid status, switch behavior, and whether the issue is intermittent or repeatable.",
+        "Save photos of the kit label, fan label, controls, lid position, and official document number CCD-0010788.",
+        "Use Furrion support or qualified RV ventilation service for roof, actuator, installed control, or electrical decisions."
+      ],
+      "sourceIds": [
+        "furrion-vent-fan-electronic-lid-kit-ccd0010788"
+      ],
+      "searchAliases": [
+        "furrion electronic lid vent fan kit ccd0010788 prep",
+        "furrion electronic lid vent fan kit prep"
+      ],
+      "searchRequiredTerms": [
+        "ccd0010788",
+        "furrion+electronic+lid"
+      ]
+    },
+    {
+      "id": "furrion-8-10-refrigerator-warranty-paperwork-prep",
+      "slug": "furrion-8-10-refrigerator-warranty-paperwork-prep",
+      "title": "Furrion 8 and 10 cu ft refrigerator warranty paperwork prep",
+      "summary": "Use this Furrion W012 guide to gather 8 and 10 cu ft refrigerator warranty paperwork, photos, model details, and service history before claim routing.",
+      "safeChecklist": [
+        "Record the 8 or 10 cu ft refrigerator model, serial number, purchase date, temperature concern, and support case notes.",
+        "Save photos of the data label, control panel, receipt, warranty form W012, and official document number CCD-0008130.",
+        "Use Furrion support or authorized RV refrigerator service for warranty decisions involving installed appliance, electrical, or cooling concerns."
+      ],
+      "sourceIds": [
+        "furrion-w012-8-10-refrigerator-warranty-form-ccd0008130"
+      ],
+      "searchAliases": [
+        "furrion w012 8 10 refrigerator warranty ccd0008130 prep",
+        "furrion 8 10 refrigerator warranty paperwork prep"
+      ],
+      "searchRequiredTerms": [
+        "ccd0008130",
+        "w012",
+        "8+10+refrigerator"
+      ]
+    },
+    {
+      "id": "furrion-general-warranty-request-paperwork-prep",
+      "slug": "furrion-general-warranty-request-paperwork-prep",
+      "title": "Furrion general warranty request paperwork prep",
+      "summary": "Use this Furrion W015 guide to collect general warranty request paperwork, model details, photos, and support notes before claim routing.",
+      "safeChecklist": [
+        "Record the Furrion product model, serial number, purchase date, installed location, symptom timeline, and prior support case numbers.",
+        "Save photos of the data label, receipt, warranty request form W015, and official document number CCD-0008246.",
+        "Use Furrion support or authorized RV service for warranty decisions involving installed appliance, gas, roof, electrical, or control concerns."
+      ],
+      "sourceIds": [
+        "furrion-w015-general-warranty-request-form-ccd0008246"
+      ],
+      "searchAliases": [
+        "furrion w015 general warranty request ccd0008246 prep",
+        "furrion general warranty request paperwork prep"
+      ],
+      "searchRequiredTerms": [
+        "ccd0008246",
+        "w015",
+        "furrion+general+warranty"
+      ]
+    },
+    {
+      "id": "lippert-onecontrol-wireless-connection-prep",
+      "slug": "lippert-onecontrol-wireless-connection-prep",
+      "title": "Lippert OneControl wireless connection prep",
+      "summary": "Use this Lippert OneControl wireless guide to capture QR-061 setup details, device status, and connection symptoms before support review.",
+      "safeChecklist": [
+        "Record the OneControl device, app version if visible, wireless network name, QR-061 reference, and exact connection step that fails.",
+        "Save screenshots of the app, device status, and any error message.",
+        "Use Lippert support or qualified RV electronics service for installed control, gateway, appliance, or electrical decisions."
+      ],
+      "sourceIds": [
+        "lippert-onecontrol-wireless-qr061"
+      ],
+      "searchAliases": [
+        "lippert onecontrol wireless qr061 connection prep",
+        "onecontrol wireless qr061 connection prep"
+      ],
+      "searchRequiredTerms": [
+        "qr061",
+        "onecontrol+wireless"
+      ]
+    },
+    {
+      "id": "lippert-onecontrol-application-setup-prep",
+      "slug": "lippert-onecontrol-application-setup-prep",
+      "title": "Lippert OneControl application setup prep",
+      "summary": "Use this Lippert OneControl application setup guide to capture QR-077 app, account, and device setup status before support review.",
+      "safeChecklist": [
+        "Record the OneControl app version if visible, account status, paired device, QR-077 reference, and exact setup step that fails.",
+        "Save screenshots of the app setup screen, device status, and any error message.",
+        "Use Lippert support or qualified RV electronics service for installed control, gateway, appliance, or electrical decisions."
+      ],
+      "sourceIds": [
+        "lippert-onecontrol-app-setup-qr077"
+      ],
+      "searchAliases": [
+        "lippert onecontrol application setup qr077 prep",
+        "onecontrol application setup qr077 prep"
+      ],
+      "searchRequiredTerms": [
+        "qr077",
+        "onecontrol+application"
+      ]
+    },
+    {
+      "id": "coleman-mach-12v-wall-thermostat-control-prep",
+      "slug": "coleman-mach-12v-wall-thermostat-control-prep",
+      "title": "Coleman-Mach 12 VDC wall thermostat control prep",
+      "summary": "Use this Coleman-Mach 12 VDC wall thermostat guide to document control settings, display state, and equipment behavior before HVAC support or service.",
+      "safeChecklist": [
+        "Record the thermostat model, 12 VDC wall control type, selected mode, setpoint, room temperature, and which appliance responds.",
+        "Save photos of the thermostat display, connected equipment labels, and official manual page.",
+        "Use Coleman-Mach support or qualified RV HVAC service for thermostat, rooftop unit, furnace, or installed electrical decisions."
+      ],
+      "sourceIds": [
+        "coleman-mach-12v-wall-thermostat-manual"
+      ],
+      "searchAliases": [
+        "coleman mach 12 vdc wall thermostat control prep",
+        "coleman mach 12v wall thermostat control prep"
+      ],
+      "searchRequiredTerms": [
+        "12+vdc+wall",
+        "coleman+thermostat"
+      ]
+    },
+    {
+      "id": "coleman-mach-46000-underbunk-control-service-prep",
+      "slug": "coleman-mach-46000-underbunk-control-service-prep",
+      "title": "Coleman-Mach 46000 Underbunk control and service prep",
+      "summary": "Use this Coleman-Mach 46000 Underbunk guide to capture control behavior, model details, and service facts before HVAC support or qualified service.",
+      "safeChecklist": [
+        "Record the 46000 Underbunk model, thermostat or control status, airflow complaint, cooling or heating mode, and cabinet installation context.",
+        "Save photos of the data label, controls, return-air area, and official manual number 1976-583.",
+        "Use Coleman-Mach support or qualified RV HVAC service for installed HVAC, airflow, electrical, or sealed-system decisions."
+      ],
+      "sourceIds": [
+        "coleman-46000-underbunk-owner-1976-583"
+      ],
+      "searchAliases": [
+        "coleman mach 46000 underbunk control service prep",
+        "46000 underbunk 1976 583 service prep"
+      ],
+      "searchRequiredTerms": [
+        "46000+underbunk",
+        "1976+583"
+      ]
+    },
+    {
+      "id": "maxxair-original-vent-cover-compatibility-prep",
+      "slug": "maxxair-original-vent-cover-compatibility-prep",
+      "title": "MaxxAir Original Vent Cover compatibility prep",
+      "summary": "Use this MaxxAir Original Vent Cover guide to document cover compatibility, vent model, and installation context before support or qualified roof service.",
+      "safeChecklist": [
+        "Record the MaxxAir Original Vent Cover model, existing roof vent size, lid style, roof condition, and compatibility question.",
+        "Save photos of the vent, cover label from normal owner access, and purchase paperwork.",
+        "Use MaxxAir support or qualified RV roof ventilation service for roof, sealant, installed fastener, or ladder-height decisions."
+      ],
+      "sourceIds": [
+        "maxxair-original-vent-cover-product"
+      ],
+      "searchAliases": [
+        "maxxair original vent cover compatibility prep",
+        "maxxair original vent cover prep"
+      ],
+      "searchRequiredTerms": [
+        "maxxair+original",
+        "vent+cover+compatibility"
+      ]
+    },
+    {
+      "id": "suburban-tankless-control-center-model-prep",
+      "slug": "suburban-tankless-control-center-model-prep",
+      "title": "Suburban Tankless Digital Control Center prep",
+      "summary": "Use this Suburban Tankless Digital Control Center guide to capture model, display, and water-heater control details before support or qualified service.",
+      "safeChecklist": [
+        "Record the Suburban tankless water heater model, digital control center status, set temperature, water flow complaint, and fuel or power context.",
+        "Save photos of the control center, appliance data label, display state, and purchase paperwork.",
+        "Use Suburban support or qualified RV water-heater service for gas, venting, installed appliance, electrical, or control decisions."
+      ],
+      "sourceIds": [
+        "suburban-tankless-control-center-product"
+      ],
+      "searchAliases": [
+        "suburban tankless digital control center model prep",
+        "suburban tankless control center prep"
+      ],
+      "searchRequiredTerms": [
+        "suburban+tankless+control",
+        "suburban+digital+control"
       ]
     }
   ],

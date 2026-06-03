@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 864;
-const expectedSourceCount = 740;
-const expectedSymptomCount = 573;
+const expectedSourceCount = 770;
+const expectedSymptomCount = 603;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -8598,6 +8598,239 @@ describe("verified corpus", () => {
           .slice(0, 5)
           .map((symptom) => symptom.slug)
           .filter((slug) => anchoredSlugs.has(slug)),
+        query,
+      ).toEqual([]);
+    }
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds the next official model, control, warranty, and service-prep batch without code entries", () => {
+    const expectedSources = new Map<string, string>([
+      ["dometic-acc3100-select-mode-support", "https://support.dometic.com/en/ACC3100/How-to-select-the-mode-fe4c"],
+      [
+        "dometic-acc3100-climate-app-use-support",
+        "https://support.dometic.com/en/ACC3100/How-to-use-the-the-Dometic-Climate-App-65c5",
+      ],
+      [
+        "dometic-acc3100-software-update-support",
+        "https://support.dometic.com/en/ACC3100/How-to-update-the-ventilation-system-software-4ee1",
+      ],
+      [
+        "dometic-ccc2-auto-changeover-support",
+        "https://support.dometic.com/en/brisk-ac/How-to-control-AUTO-Auto-Change-Over-Mode-COMFORT-CONTROL-CENTER-2-THERMOSTAT-cce4",
+      ],
+      [
+        "dometic-rm10-turn-off-refrigerator-support",
+        "https://support.dometic.com/en/rm10-refrigerators/How-to-turn-off-the-refrigerator-bb42",
+      ],
+      [
+        "dometic-rm8-food-storage-support",
+        "https://support.dometic.com/en/rm8-refrigerators/How-to-best-store-food-in-the-refrigerator-1432",
+      ],
+      [
+        "dometic-rua-clean-maintain-refrigerator-support",
+        "https://support.dometic.com/en/rua-refrigerator/How-to-clean-and-maintain-the-refrigerator-47a9",
+      ],
+      [
+        "dometic-fantastic-vent-2250-product",
+        "https://www.dometic.com/en-us/product/dometic-2250-fan-tastic-vent-roof-fan-9108869049",
+      ],
+      [
+        "dometic-1450-vent-roof-fan-product",
+        "https://www.dometic.com/en-us/product/dometic-1450-vent-roof-fan-9600008500",
+      ],
+      [
+        "dometic-fantastic-vent-fans-seven-year-warranty-62311",
+        "https://www.dometic.com/globalassets/1-outdoor/out-support/out-warranty-statements/fantastic_vent_fans_limited_seven-year_warranty-_-62311.pdf",
+      ],
+      ["norcold-n20dc-support", "https://www.thetford.com/us/thetford-support/n20dc/"],
+      ["norcold-n8dc-support", "https://www.thetford.com/us/thetford-support/n8dc/"],
+      ["norcold-polar-nv10dc-support", "https://www.thetford.com/us/thetford-support/polar-nv10dc/"],
+      ["norcold-n180-3-support", "https://www.thetford.com/us/thetford-support/n180-3/"],
+      ["norcold-n4104-support", "https://www.thetford.com/us/thetford-support/n4104/"],
+      ["norcold-de105-support", "https://www.thetford.com/us/thetford-support/de105/"],
+      ["thetford-c403l-cassette-toilet-support", "https://www.thetford.com/us/thetford-support/c403l-cassette-toilet/"],
+      ["thetford-c223-s-cassette-toilet-support", "https://www.thetford.com/us/thetford-support/c223-s-cassette-toilet/"],
+      ["furrion-12v-range-hood-user-manual-ccd0005505", "https://support.lci1.com/documents/ccd-0005505"],
+      ["furrion-13in-sloped-rangehood-manual-ccd0008551", "https://support.lci1.com/documents/ccd-0008551"],
+      ["furrion-vent-fan-manual-lid-aftermarket-ccd0008554", "https://support.lci1.com/documents/ccd-0008554"],
+      ["furrion-vent-fan-electronic-lid-kit-ccd0010788", "https://support.lci1.com/documents/ccd-0010788"],
+      [
+        "furrion-w012-8-10-refrigerator-warranty-form-ccd0008130",
+        "https://support.lci1.com/documents/ccd-0008130",
+      ],
+      ["furrion-w015-general-warranty-request-form-ccd0008246", "https://support.lci1.com/documents/ccd-0008246"],
+      [
+        "lippert-onecontrol-wireless-qr061",
+        "https://support.lci1.com/documents/qr-061-connecting-to-onecontrol-using-wireless",
+      ],
+      [
+        "lippert-onecontrol-app-setup-qr077",
+        "https://support.lci1.com/documents/qr-077-onecontrolreg-application-setup",
+      ],
+      ["coleman-mach-12v-wall-thermostat-manual", "https://library.coleman-mach.com/manual/12-vdc-wall-thermostat/"],
+      ["coleman-46000-underbunk-owner-1976-583", "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-583.pdf"],
+      ["maxxair-original-vent-cover-product", "https://www.maxxair.com/Products/covers/maxxair/"],
+      [
+        "suburban-tankless-control-center-product",
+        "https://suburbanrv.com/water-heating/tankless-water-heaters/advantage-tankless-water-heater-control/",
+      ],
+    ]);
+    const expectedSymptomSourceIds = new Map<string, string[]>([
+      ["dometic-acc3100-mode-sequence-prep", ["dometic-acc3100-select-mode-support"]],
+      ["dometic-acc3100-climate-app-use-prep", ["dometic-acc3100-climate-app-use-support"]],
+      ["dometic-acc3100-software-update-prep", ["dometic-acc3100-software-update-support"]],
+      ["dometic-ccc2-auto-changeover-behavior-prep", ["dometic-ccc2-auto-changeover-support"]],
+      ["dometic-rm10-shutdown-control-prep", ["dometic-rm10-turn-off-refrigerator-support"]],
+      ["dometic-rm8-food-storage-airflow-prep", ["dometic-rm8-food-storage-support"]],
+      ["dometic-rua-cleaning-maintenance-prep", ["dometic-rua-clean-maintain-refrigerator-support"]],
+      ["dometic-fantastic-vent-2250-model-control-prep", ["dometic-fantastic-vent-2250-product"]],
+      ["dometic-1450-vent-model-control-prep", ["dometic-1450-vent-roof-fan-product"]],
+      ["dometic-fantastic-vent-warranty-paperwork-prep", ["dometic-fantastic-vent-fans-seven-year-warranty-62311"]],
+      ["norcold-n20dc-manual-parts-service-prep", ["norcold-n20dc-support"]],
+      ["norcold-n8dc-manual-parts-service-prep", ["norcold-n8dc-support"]],
+      ["norcold-polar-nv10dc-model-control-service-prep", ["norcold-polar-nv10dc-support"]],
+      ["norcold-n180-3-discontinued-storage-parts-prep", ["norcold-n180-3-support"]],
+      ["norcold-n4104-model-manual-parts-prep", ["norcold-n4104-support"]],
+      ["norcold-de105-acdc-refrigerator-service-prep", ["norcold-de105-support"]],
+      ["thetford-c403l-cassette-model-service-prep", ["thetford-c403l-cassette-toilet-support"]],
+      ["thetford-c223-s-cassette-model-service-prep", ["thetford-c223-s-cassette-toilet-support"]],
+      ["furrion-12v-range-hood-filter-model-prep", ["furrion-12v-range-hood-user-manual-ccd0005505"]],
+      ["furrion-13in-sloped-rangehood-model-prep", ["furrion-13in-sloped-rangehood-manual-ccd0008551"]],
+      ["furrion-14in-vent-fan-manual-lid-model-prep", ["furrion-vent-fan-manual-lid-aftermarket-ccd0008554"]],
+      ["furrion-14in-vent-fan-electronic-lid-kit-prep", ["furrion-vent-fan-electronic-lid-kit-ccd0010788"]],
+      ["furrion-8-10-refrigerator-warranty-paperwork-prep", ["furrion-w012-8-10-refrigerator-warranty-form-ccd0008130"]],
+      ["furrion-general-warranty-request-paperwork-prep", ["furrion-w015-general-warranty-request-form-ccd0008246"]],
+      ["lippert-onecontrol-wireless-connection-prep", ["lippert-onecontrol-wireless-qr061"]],
+      ["lippert-onecontrol-application-setup-prep", ["lippert-onecontrol-app-setup-qr077"]],
+      ["coleman-mach-12v-wall-thermostat-control-prep", ["coleman-mach-12v-wall-thermostat-manual"]],
+      ["coleman-mach-46000-underbunk-control-service-prep", ["coleman-46000-underbunk-owner-1976-583"]],
+      ["maxxair-original-vent-cover-compatibility-prep", ["maxxair-original-vent-cover-product"]],
+      ["suburban-tankless-control-center-model-prep", ["suburban-tankless-control-center-product"]],
+    ]);
+    const expectedRequiredTerms = new Map<string, string[]>([
+      ["dometic-acc3100-mode-sequence-prep", ["acc3100+select", "acc3100+turbo", "acc3100+sleep"]],
+      ["dometic-acc3100-climate-app-use-prep", ["acc3100+climate+app"]],
+      ["dometic-acc3100-software-update-prep", ["acc3100+software", "acc3100+update", "ventilation+software"]],
+      ["dometic-ccc2-auto-changeover-behavior-prep", ["ccc2+auto+change", "ccc2+change+over"]],
+      ["dometic-rm10-shutdown-control-prep", ["rm10+turn+off", "rm10+shutdown"]],
+      ["dometic-rm8-food-storage-airflow-prep", ["rm8+food", "rm8+airflow", "rm8+storage"]],
+      ["dometic-rua-cleaning-maintenance-prep", ["rua+clean", "rua+maintain", "rua+maintenance"]],
+      ["dometic-fantastic-vent-2250-model-control-prep", ["fantastic+2250", "2250+vent"]],
+      ["dometic-1450-vent-model-control-prep", ["dometic+1450", "1450+vent", "9600008500"]],
+      ["dometic-fantastic-vent-warranty-paperwork-prep", ["fantastic+seven+year", "fantastic+warranty", "62311"]],
+      ["norcold-n20dc-manual-parts-service-prep", ["n20dc", "n20dc+manual"]],
+      ["norcold-n8dc-manual-parts-service-prep", ["n8dc", "n8dc+manual"]],
+      ["norcold-polar-nv10dc-model-control-service-prep", ["nv10dc", "polar+nv10dc"]],
+      ["norcold-n180-3-discontinued-storage-parts-prep", ["n180+3", "n180", "discontinued+storage"]],
+      ["norcold-n4104-model-manual-parts-prep", ["n4104"]],
+      ["norcold-de105-acdc-refrigerator-service-prep", ["de105"]],
+      ["thetford-c403l-cassette-model-service-prep", ["c403l"]],
+      ["thetford-c223-s-cassette-model-service-prep", ["c223+s", "c223s"]],
+      ["furrion-12v-range-hood-filter-model-prep", ["ccd0005505", "12v+range+hood"]],
+      ["furrion-13in-sloped-rangehood-model-prep", ["ccd0008551", "13+sloped+rangehood"]],
+      ["furrion-14in-vent-fan-manual-lid-model-prep", ["ccd0008554", "furrion+manual+lid"]],
+      ["furrion-14in-vent-fan-electronic-lid-kit-prep", ["ccd0010788", "furrion+electronic+lid"]],
+      ["furrion-8-10-refrigerator-warranty-paperwork-prep", ["ccd0008130", "w012", "8+10+refrigerator"]],
+      ["furrion-general-warranty-request-paperwork-prep", ["ccd0008246", "w015", "furrion+general+warranty"]],
+      ["lippert-onecontrol-wireless-connection-prep", ["qr061", "onecontrol+wireless"]],
+      ["lippert-onecontrol-application-setup-prep", ["qr077", "onecontrol+application"]],
+      ["coleman-mach-12v-wall-thermostat-control-prep", ["12+vdc+wall", "coleman+thermostat"]],
+      ["coleman-mach-46000-underbunk-control-service-prep", ["46000+underbunk", "1976+583"]],
+      ["maxxair-original-vent-cover-compatibility-prep", ["maxxair+original", "vent+cover+compatibility"]],
+      ["suburban-tankless-control-center-model-prep", ["suburban+tankless+control", "suburban+digital+control"]],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const newSlugs = new Set(expectedSymptomSourceIds.keys());
+    const sourcesById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const index = buildSymptomSearchIndex(corpus);
+    const summary = summarizeCorpus(corpus);
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\borifice\b|\bcontrol board\b|\b120\s*vac\b|\b110\s*v\b|\bline-voltage\b|\brefrigerant\b|\bprobe\b|\bwiring\b|\binternal\b|\bsupply line\b|\bopen (the )?(fuel|gas|electrical|rooftop)|remove.*shroud|remove.*cover|measure resistance|fuel nozzle|combustion|coolant pump|manual override|hydraulic work|hydraulic repair/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = sourcesById.get(sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(770);
+    expect(corpus.entries).toHaveLength(864);
+    expect(corpus.symptoms).toHaveLength(603);
+    expect(summary.indexablePages).toBe(864 + 603 + 1);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const [symptomId, sourceIds] of expectedSymptomSourceIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.id, symptomId).toBe(symptomId);
+      expect(symptom?.slug, symptomId).toBe(symptomId);
+      expect(symptom?.sourceIds, symptomId).toEqual(sourceIds);
+      expect(symptom?.searchRequiredTerms, symptomId).toEqual(expectedRequiredTerms.get(symptomId));
+      expect([symptom?.summary, ...(symptom?.safeChecklist ?? [])].join(" "), symptomId).not.toMatch(
+        unsafeOwnerActionPattern,
+      );
+    }
+
+    const topSlugsFor = (query: string) => lookupSymptomGuides(index, query).slice(0, 5).map((symptom) => symptom.slug);
+
+    for (const [query, slug] of [
+      ["dometic acc3100 select mode turbo sleep auto manual", "dometic-acc3100-mode-sequence-prep"],
+      ["dometic acc3100 climate app use vent control", "dometic-acc3100-climate-app-use-prep"],
+      ["dometic acc3100 ventilation system software update app", "dometic-acc3100-software-update-prep"],
+      ["dometic ccc2 auto change over mode thermostat heat cool", "dometic-ccc2-auto-changeover-behavior-prep"],
+      ["dometic rm10 turn off refrigerator shutdown control", "dometic-rm10-shutdown-control-prep"],
+      ["dometic rm8 food storage airflow cooling prep", "dometic-rm8-food-storage-airflow-prep"],
+      ["dometic rua clean maintain refrigerator service prep", "dometic-rua-cleaning-maintenance-prep"],
+      ["dometic fantastic vent 2250 model control prep", "dometic-fantastic-vent-2250-model-control-prep"],
+      ["dometic 1450 vent roof fan model control prep", "dometic-1450-vent-model-control-prep"],
+      ["dometic fantastic vent seven year warranty paperwork prep", "dometic-fantastic-vent-warranty-paperwork-prep"],
+      ["norcold n20dc manual parts service prep", "norcold-n20dc-manual-parts-service-prep"],
+      ["norcold n8dc manual parts service prep", "norcold-n8dc-manual-parts-service-prep"],
+      ["norcold polar nv10dc model control service prep", "norcold-polar-nv10dc-model-control-service-prep"],
+      ["norcold n180.3 discontinued storage parts prep", "norcold-n180-3-discontinued-storage-parts-prep"],
+      ["norcold n4104 model manual parts prep", "norcold-n4104-model-manual-parts-prep"],
+      ["norcold de105 ac dc refrigerator service prep", "norcold-de105-acdc-refrigerator-service-prep"],
+      ["thetford c403l cassette toilet model service prep", "thetford-c403l-cassette-model-service-prep"],
+      ["thetford c223-s cassette toilet model service prep", "thetford-c223-s-cassette-model-service-prep"],
+      ["furrion 12v range hood ccd0005505 filter model prep", "furrion-12v-range-hood-filter-model-prep"],
+      ["furrion 13 inch sloped rangehood ccd0008551 model prep", "furrion-13in-sloped-rangehood-model-prep"],
+      ["furrion 14 inch vent fan manual lid ccd0008554 model prep", "furrion-14in-vent-fan-manual-lid-model-prep"],
+      ["furrion electronic lid vent fan kit ccd0010788 prep", "furrion-14in-vent-fan-electronic-lid-kit-prep"],
+      ["furrion w012 8 10 refrigerator warranty ccd0008130 prep", "furrion-8-10-refrigerator-warranty-paperwork-prep"],
+      ["furrion w015 general warranty request ccd0008246 prep", "furrion-general-warranty-request-paperwork-prep"],
+      ["lippert onecontrol wireless qr061 connection prep", "lippert-onecontrol-wireless-connection-prep"],
+      ["lippert onecontrol application setup qr077 prep", "lippert-onecontrol-application-setup-prep"],
+      ["coleman mach 12 vdc wall thermostat control prep", "coleman-mach-12v-wall-thermostat-control-prep"],
+      ["coleman mach 46000 underbunk control service prep", "coleman-mach-46000-underbunk-control-service-prep"],
+      ["maxxair original vent cover compatibility prep", "maxxair-original-vent-cover-compatibility-prep"],
+      ["suburban tankless digital control center model prep", "suburban-tankless-control-center-model-prep"],
+    ] as const) {
+      expect(topSlugsFor(query)[0], query).toBe(slug);
+    }
+
+    for (const query of [
+      "mode",
+      "app",
+      "software update",
+      "warranty",
+      "owner manual",
+      "service prep",
+      "vent cover",
+      "thermostat",
+      "wireless connection",
+      "tankless control",
+      "range hood",
+      "cassette toilet",
+      "change over",
+      "manual lid",
+      "electronic lid",
+      "general warranty request",
+      "digital control center",
+    ]) {
+      expect(
+        topSlugsFor(query).filter((slug) => newSlugs.has(slug)),
         query,
       ).toEqual([]);
     }
