@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 864;
-const expectedSourceCount = 623;
-const expectedSymptomCount = 456;
+const expectedSourceCount = 653;
+const expectedSymptomCount = 486;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -7659,6 +7659,231 @@ describe("verified corpus", () => {
       "vent lid",
       "low profile",
       "compatibility chart",
+    ]) {
+      expect(
+        lookupSymptomGuides(index, query)
+          .slice(0, 5)
+          .map((symptom) => symptom.slug)
+          .filter((slug) => anchoredSlugs.has(slug)),
+        query,
+      ).toEqual([]);
+    }
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds the next official ACC3100, Furrion/Lippert, Airxcel, Thetford/Norcold, and Onan support-prep guides without code entries", () => {
+    const expectedSources = new Map<string, string>([
+      ["dometic-acc3100-maintenance-filter-support", "https://support.dometic.com/en/ACC3100/How-to-maintain-the-product-cc9"],
+      [
+        "dometic-acc3100-climate-app-pairing-support",
+        "https://support.dometic.com/en/ACC3100/How-to-pair-the-ventilation-system-and-the-Dometic-Climate-App-1220",
+      ],
+      [
+        "dometic-acc3100-outside-air-filter-replacement-support",
+        "https://support.dometic.com/en/ACC3100/How-to-replace-the-outside-air-filter-98b",
+      ],
+      ["dometic-acc3100-reset-ventilation-system-support", "https://support.dometic.com/en/ACC3100/How-to-reset-the-ventilation-system-fc38"],
+      ["dometic-acc3100-inside-air-filter-blocked-support", "https://support.dometic.com/en/ACC3100/The-inside-air-filter-is-blocked-48b6"],
+      ["dometic-acc3100-outside-air-filter-blocked-support", "https://support.dometic.com/en/ACC3100/The-outside-air-filter-is-blocked-30d9"],
+      ["dometic-acc3100-display-not-responding-support", "https://support.dometic.com/en/ACC3100/The-display-does-not-respond-b174"],
+      ["dometic-acc3100-display-error-code-router", "https://support.dometic.com/en/ACC3100/The-display-shows-an-error-code-fad7"],
+      ["furrion-brand-support-router", "https://support.lci1.com/furrion/"],
+      ["furrion-appliances-support-router", "https://support.lci1.com/furrion-appliances/"],
+      ["furrion-comfort-support-router", "https://support.lci1.com/comfort/"],
+      ["furrion-cooking-support-router", "https://support.lci1.com/cooking/"],
+      ["furrion-energy-support-router", "https://support.lci1.com/furrion-energy/"],
+      ["furrion-off-grid-energy-support-index", "https://support.lci1.com/off-grid-energy"],
+      ["furrion-power-distribution-support-router", "https://support.lci1.com/power-distribution/"],
+      ["lippert-greystone-support-router", "https://support.lci1.com/greystone/"],
+      ["coleman-mach-signature-mach-3-plus-product", "https://coleman-mach.com/products/air-conditioners/signature-series-mach-3-plus/"],
+      ["coleman-mach-signature-mach-8-plus-product", "https://coleman-mach.com/products/air-conditioners/signature-series-mach-8-plus/"],
+      ["coleman-mach-quiet-series-mach-3-product", "https://coleman-mach.com/products/air-conditioners/quiet-series-mach-3/"],
+      ["maxxair-maxxfan-plus-product-family", "https://www.maxxair.com/Products/fans/maxxfan/"],
+      ["maxxair-maxxfan-dome-product-family", "https://www.maxxair.com/products/fans/maxxfan-dome/"],
+      ["suburban-air-fryers-product-family", "https://suburbanrv.com/kitchen-galley/air-fryers/"],
+      [
+        "suburban-propane-your-rv-safety-brochure",
+        "https://suburbanrv.com/files/product_documents/LP%20Gas%20Accessories/Propane-YourRV-brochure-Smaller.pdf",
+      ],
+      ["aquahot-125-dn1-use-care-guide", "https://library.aquahot.com/wp-content/uploads/2022/04/AHE-125-DN1-Use-and-Care-Guide.pdf"],
+      ["norcold-dc105-support", "https://www.thetford.com/us/thetford-support/dc105/"],
+      [
+        "norcold-dc105-owner-install-641476",
+        "https://www.thetford.com/app/uploads/2024/09/641476_DC105-InstallationOwners-Manual_RevA.pdf",
+      ],
+      ["thetford-aqua-magic-galaxy-starlite-support", "https://www.thetford.com/us/thetford-support/aqua-magic-galaxy-starlite/"],
+      [
+        "thetford-tecma-silence-plus-2g-soft-close-support",
+        "https://www.thetford.com/us/thetford-support/tecma-silence-plus-2g-soft-close/",
+      ],
+      ["onan-qg-2500-lp-kv-0981-0129", "https://www.cummins.com/sites/default/files/rv-manuals/0981-0129.pdf"],
+      ["onan-qg-2800-kvc-0981-0158", "https://www.cummins.com/sites/default/files/rv-manuals/0981-0158.pdf"],
+    ]);
+    const expectedSymptomSourceIds = new Map<string, string[]>([
+      ["dometic-acc3100-maintenance-filter-service-prep", ["dometic-acc3100-maintenance-filter-support"]],
+      ["dometic-acc3100-climate-app-pairing-prep", ["dometic-acc3100-climate-app-pairing-support"]],
+      ["dometic-acc3100-outside-filter-service-boundary", ["dometic-acc3100-outside-air-filter-replacement-support"]],
+      ["dometic-acc3100-reset-service-prep", ["dometic-acc3100-reset-ventilation-system-support"]],
+      ["dometic-acc3100-inside-filter-blocked-authorized-service", ["dometic-acc3100-inside-air-filter-blocked-support"]],
+      ["dometic-acc3100-outside-filter-blocked-prep", ["dometic-acc3100-outside-air-filter-blocked-support"]],
+      ["dometic-acc3100-display-not-responding-reset-prep", ["dometic-acc3100-display-not-responding-support"]],
+      ["dometic-acc3100-display-error-indicator-prep", ["dometic-acc3100-display-error-code-router"]],
+      ["furrion-brand-product-family-support-routing-prep", ["furrion-brand-support-router"]],
+      ["furrion-appliances-dishwasher-washing-machine-router-prep", ["furrion-appliances-support-router"]],
+      ["furrion-comfort-ac-water-heater-fireplace-thermostat-router", ["furrion-comfort-support-router"]],
+      ["furrion-cooking-category-router-prep", ["furrion-cooking-support-router"]],
+      ["furrion-energy-power-solar-router-prep", ["furrion-energy-support-router"]],
+      ["furrion-off-grid-energy-model-manual-prep", ["furrion-off-grid-energy-support-index"]],
+      ["furrion-power-distribution-cordset-converter-router", ["furrion-power-distribution-support-router"]],
+      ["greystone-appliance-family-router-prep", ["lippert-greystone-support-router"]],
+      ["coleman-mach-3-plus-model-service-prep", ["coleman-mach-signature-mach-3-plus-product"]],
+      ["coleman-mach-8-plus-low-profile-service-prep", ["coleman-mach-signature-mach-8-plus-product"]],
+      ["coleman-quiet-mach-3-ducted-nonducted-prep", ["coleman-mach-quiet-series-mach-3-product"]],
+      ["maxxair-maxxfan-plus-model-control-prep", ["maxxair-maxxfan-plus-product-family"]],
+      ["maxxair-maxxfan-dome-bath-sidewall-prep", ["maxxair-maxxfan-dome-product-family"]],
+      ["suburban-air-fryer-model-power-gas-prep", ["suburban-air-fryers-product-family"]],
+      ["suburban-lp-gas-safety-shutdown-prep", ["suburban-propane-your-rv-safety-brochure"]],
+      ["aquahot-125-dn1-lcd-voltage-fluid-prep", ["aquahot-125-dn1-use-care-guide"]],
+      ["norcold-dc105-model-cooling-service-prep", ["norcold-dc105-support"]],
+      ["norcold-dc105-low-voltage-defrost-door-prep", ["norcold-dc105-owner-install-641476"]],
+      ["thetford-aqua-magic-galaxy-starlite-model-service-prep", ["thetford-aqua-magic-galaxy-starlite-support"]],
+      ["thetford-tecma-silence-plus-2g-controller-macerator-service-prep", ["thetford-tecma-silence-plus-2g-soft-close-support"]],
+      ["onan-qg-2500-lp-kv-model-spec-service-prep", ["onan-qg-2500-lp-kv-0981-0129"]],
+      ["onan-qg-2800-kvc-model-spec-service-prep", ["onan-qg-2800-kvc-0981-0158"]],
+    ]);
+    const expectedRequiredTerms = new Map<string, string[]>([
+      ["dometic-acc3100-maintenance-filter-service-prep", ["acc3100+maintenance", "acc3100+filter"]],
+      ["dometic-acc3100-climate-app-pairing-prep", ["acc3100+pairing", "acc3100+app", "acc3100+bluetooth"]],
+      [
+        "dometic-acc3100-outside-filter-service-boundary",
+        ["acc3100+outside+filter+service", "acc3100+outside+replacement", "acc3100+replace+outside"],
+      ],
+      ["dometic-acc3100-reset-service-prep", ["acc3100+reset"]],
+      ["dometic-acc3100-inside-filter-blocked-authorized-service", ["acc3100+inside", "acc3100+blocked"]],
+      ["dometic-acc3100-outside-filter-blocked-prep", ["acc3100+outside+blocked"]],
+      ["dometic-acc3100-display-not-responding-reset-prep", ["acc3100+display"]],
+      ["dometic-acc3100-display-error-indicator-prep", ["acc3100+error"]],
+      ["furrion-brand-product-family-support-routing-prep", ["furrion+support"]],
+      ["furrion-appliances-dishwasher-washing-machine-router-prep", ["furrion+appliances"]],
+      ["furrion-comfort-ac-water-heater-fireplace-thermostat-router", ["furrion+comfort"]],
+      ["furrion-cooking-category-router-prep", ["furrion+cooking"]],
+      ["furrion-energy-power-solar-router-prep", ["furrion+energy+power"]],
+      ["furrion-off-grid-energy-model-manual-prep", ["furrion+offgrid", "furrion+solar"]],
+      ["furrion-power-distribution-cordset-converter-router", ["furrion+powerdistribution"]],
+      ["greystone-appliance-family-router-prep", ["greystone+support", "greystone+lippert"]],
+      ["coleman-mach-3-plus-model-service-prep", ["coleman+mach3", "mach3plus", "38203"]],
+      ["coleman-mach-8-plus-low-profile-service-prep", ["coleman+mach8", "mach8plus", "37203"]],
+      ["coleman-quiet-mach-3-ducted-nonducted-prep", ["quiet+mach3", "382030660"]],
+      ["maxxair-maxxfan-plus-model-control-prep", ["maxxfan+plus+model", "0004500k", "00a04301k"]],
+      ["maxxair-maxxfan-dome-bath-sidewall-prep", ["maxxfan+dome", "maxxair+dome"]],
+      ["suburban-air-fryer-model-power-gas-prep", ["suburban+airfryer", "3907a", "3910a"]],
+      ["suburban-lp-gas-safety-shutdown-prep", ["suburban+propane", "propane+rv"]],
+      ["aquahot-125-dn1-lcd-voltage-fluid-prep", ["125dn1", "aquahot+125dn1"]],
+      ["norcold-dc105-model-cooling-service-prep", ["dc105"]],
+      ["norcold-dc105-low-voltage-defrost-door-prep", ["dc105+641476", "641476"]],
+      ["thetford-aqua-magic-galaxy-starlite-model-service-prep", ["galaxy+starlite"]],
+      ["thetford-tecma-silence-plus-2g-controller-macerator-service-prep", ["tecma+2g", "silence+2g"]],
+      ["onan-qg-2500-lp-kv-model-spec-service-prep", ["2500+kv", "09810129"]],
+      ["onan-qg-2800-kvc-model-spec-service-prep", ["kvc", "09810158"]],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const sourcesById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const index = buildSymptomSearchIndex(corpus);
+    const summary = summarizeCorpus(corpus);
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\borifice\b|\bcontrol board\b|\b120\s*vac\b|\b110\s*v\b|\bline-voltage\b|\brefrigerant\b|\bprobe\b|\bwiring\b|\binternal\b|\bsupply line\b|\bopen (the )?(fuel|gas|electrical|rooftop)|remove.*shroud|remove.*cover|measure resistance|fuel nozzle|combustion|coolant pump|manual override|hydraulic work|hydraulic repair/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = sourcesById.get(sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(summary.indexablePages).toBe(expectedEntryCount + expectedSymptomCount + 1);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const [symptomId, sourceIds] of expectedSymptomSourceIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds, symptomId).toEqual(sourceIds);
+      expect(symptom?.searchRequiredTerms, symptomId).toEqual(expectedRequiredTerms.get(symptomId));
+      expect([symptom?.summary, ...(symptom?.safeChecklist ?? [])].join(" "), symptomId).not.toMatch(
+        unsafeOwnerActionPattern,
+      );
+    }
+
+    const topSlugsFor = (query: string) => lookupSymptomGuides(index, query).slice(0, 5).map((symptom) => symptom.slug);
+
+    for (const [query, slug] of [
+      ["dometic acc3100 maintenance air filter blocked", "dometic-acc3100-maintenance-filter-service-prep"],
+      ["dometic acc3100 climate app pairing bluetooth", "dometic-acc3100-climate-app-pairing-prep"],
+      ["dometic acc3100 outside air filter service prep", "dometic-acc3100-outside-filter-service-boundary"],
+      ["dometic acc3100 reset ventilation system", "dometic-acc3100-reset-service-prep"],
+      ["dometic acc3100 inside filter blocked authorized service", "dometic-acc3100-inside-filter-blocked-authorized-service"],
+      ["dometic acc3100 outside filter blocked prep", "dometic-acc3100-outside-filter-blocked-prep"],
+      ["dometic acc3100 display does not respond reset", "dometic-acc3100-display-not-responding-reset-prep"],
+      ["dometic acc3100 display shows error code indicator", "dometic-acc3100-display-error-indicator-prep"],
+      ["furrion support router rv appliance product family", "furrion-brand-product-family-support-routing-prep"],
+      ["furrion appliances dishwasher washing machine support", "furrion-appliances-dishwasher-washing-machine-router-prep"],
+      ["furrion comfort ac water heater fireplace thermostat support", "furrion-comfort-ac-water-heater-fireplace-thermostat-router"],
+      ["furrion cooking range oven microwave support", "furrion-cooking-category-router-prep"],
+      ["furrion energy power solar router", "furrion-energy-power-solar-router-prep"],
+      ["furrion off grid energy solar controller support", "furrion-off-grid-energy-model-manual-prep"],
+      ["furrion power distribution cordset converter support", "furrion-power-distribution-cordset-converter-router"],
+      ["greystone support lippert rv appliance router", "greystone-appliance-family-router-prep"],
+      ["coleman mach 3 plus 38203 model service prep", "coleman-mach-3-plus-model-service-prep"],
+      ["coleman mach 8 plus 37203 low profile service prep", "coleman-mach-8-plus-low-profile-service-prep"],
+      ["coleman quiet series mach 3 ducted nonducted prep", "coleman-quiet-mach-3-ducted-nonducted-prep"],
+      ["maxxair maxxfan plus 00 04500k model control prep", "maxxair-maxxfan-plus-model-control-prep"],
+      ["maxxair maxxfan dome bathroom sidewall prep", "maxxair-maxxfan-dome-bath-sidewall-prep"],
+      ["suburban air fryer 3907a model power prep", "suburban-air-fryer-model-power-gas-prep"],
+      ["suburban propane your rv lp gas safety shutdown", "suburban-lp-gas-safety-shutdown-prep"],
+      ["aqua hot 125 dn1 lcd voltage fluid prep", "aquahot-125-dn1-lcd-voltage-fluid-prep"],
+      ["norcold dc105 support not cooling service prep", "norcold-dc105-model-cooling-service-prep"],
+      ["norcold dc105 641476 manual low voltage defrost door", "norcold-dc105-low-voltage-defrost-door-prep"],
+      ["thetford aqua magic galaxy starlite discontinued model", "thetford-aqua-magic-galaxy-starlite-model-service-prep"],
+      ["thetford tecma silence plus 2g controller macerator", "thetford-tecma-silence-plus-2g-controller-macerator-service-prep"],
+      ["onan qg 2500 lp kv 0981 0129 spec service prep", "onan-qg-2500-lp-kv-model-spec-service-prep"],
+      ["onan qg 2800 kvc 0981 0158 spec service prep", "onan-qg-2800-kvc-model-spec-service-prep"],
+    ] as const) {
+      expect(topSlugsFor(query), query).toContain(slug);
+    }
+
+    for (const [symptomId] of expectedSymptomSourceIds) {
+      const symptom = symptomById.get(symptomId);
+      for (const alias of symptom?.searchAliases ?? []) {
+        expect(topSlugsFor(alias)[0], `${symptomId}: ${alias}`).toBe(symptom?.slug);
+      }
+    }
+
+    const anchoredSlugs = new Set(expectedSymptomSourceIds.keys());
+    for (const query of [
+      "maintenance filter",
+      "climate app",
+      "outside filter",
+      "reset ventilation",
+      "inside filter blocked",
+      "display not responding",
+      "error code",
+      "support router",
+      "comfort support",
+      "cooking support",
+      "energy support",
+      "power distribution",
+      "appliance router",
+      "mach 3",
+      "mach 8",
+      "maxxfan plus",
+      "dome fan",
+      "air fryer",
+      "propane safety",
+      "low voltage",
+      "not cooling",
+      "model service prep",
     ]) {
       expect(
         lookupSymptomGuides(index, query)

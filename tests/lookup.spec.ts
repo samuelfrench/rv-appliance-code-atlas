@@ -2047,6 +2047,125 @@ test("lookup surfaces the next official support-router batch without generic hij
   expect(pageErrors).toEqual([]);
 });
 
+test("lookup surfaces ACC3100 and brand-router prep batch without generic hijacks", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    ["dometic acc3100 maintenance air filter blocked", "/symptoms/dometic-acc3100-maintenance-filter-service-prep/"],
+    ["dometic acc3100 climate app pairing bluetooth", "/symptoms/dometic-acc3100-climate-app-pairing-prep/"],
+    ["dometic acc3100 outside air filter service prep", "/symptoms/dometic-acc3100-outside-filter-service-boundary/"],
+    ["dometic acc3100 reset ventilation system", "/symptoms/dometic-acc3100-reset-service-prep/"],
+    [
+      "dometic acc3100 inside filter blocked authorized service",
+      "/symptoms/dometic-acc3100-inside-filter-blocked-authorized-service/",
+    ],
+    ["dometic acc3100 outside filter blocked prep", "/symptoms/dometic-acc3100-outside-filter-blocked-prep/"],
+    [
+      "dometic acc3100 display does not respond reset",
+      "/symptoms/dometic-acc3100-display-not-responding-reset-prep/",
+    ],
+    ["dometic acc3100 display shows error code indicator", "/symptoms/dometic-acc3100-display-error-indicator-prep/"],
+    ["furrion support router rv appliance product family", "/symptoms/furrion-brand-product-family-support-routing-prep/"],
+    [
+      "furrion appliances dishwasher washing machine support",
+      "/symptoms/furrion-appliances-dishwasher-washing-machine-router-prep/",
+    ],
+    [
+      "furrion comfort ac water heater fireplace thermostat support",
+      "/symptoms/furrion-comfort-ac-water-heater-fireplace-thermostat-router/",
+    ],
+    ["furrion cooking range oven microwave support", "/symptoms/furrion-cooking-category-router-prep/"],
+    ["furrion energy power solar router", "/symptoms/furrion-energy-power-solar-router-prep/"],
+    ["furrion off grid energy solar controller support", "/symptoms/furrion-off-grid-energy-model-manual-prep/"],
+    [
+      "furrion power distribution cordset converter support",
+      "/symptoms/furrion-power-distribution-cordset-converter-router/",
+    ],
+    ["greystone support lippert rv appliance router", "/symptoms/greystone-appliance-family-router-prep/"],
+    ["coleman mach 3 plus 38203 model service prep", "/symptoms/coleman-mach-3-plus-model-service-prep/"],
+    ["coleman mach 8 plus 37203 low profile service prep", "/symptoms/coleman-mach-8-plus-low-profile-service-prep/"],
+    ["coleman quiet series mach 3 ducted nonducted prep", "/symptoms/coleman-quiet-mach-3-ducted-nonducted-prep/"],
+    ["maxxair maxxfan plus 00 04500k model control prep", "/symptoms/maxxair-maxxfan-plus-model-control-prep/"],
+    ["maxxair maxxfan dome bathroom sidewall prep", "/symptoms/maxxair-maxxfan-dome-bath-sidewall-prep/"],
+    ["suburban air fryer 3907a model power prep", "/symptoms/suburban-air-fryer-model-power-gas-prep/"],
+    ["suburban propane your rv lp gas safety shutdown", "/symptoms/suburban-lp-gas-safety-shutdown-prep/"],
+    ["aqua hot 125 dn1 lcd voltage fluid prep", "/symptoms/aquahot-125-dn1-lcd-voltage-fluid-prep/"],
+    ["norcold dc105 support not cooling service prep", "/symptoms/norcold-dc105-model-cooling-service-prep/"],
+    ["norcold dc105 641476 manual low voltage defrost door", "/symptoms/norcold-dc105-low-voltage-defrost-door-prep/"],
+    [
+      "thetford aqua magic galaxy starlite discontinued model",
+      "/symptoms/thetford-aqua-magic-galaxy-starlite-model-service-prep/",
+    ],
+    [
+      "thetford tecma silence plus 2g controller macerator",
+      "/symptoms/thetford-tecma-silence-plus-2g-controller-macerator-service-prep/",
+    ],
+    ["onan qg 2500 lp kv 0981 0129 spec service prep", "/symptoms/onan-qg-2500-lp-kv-model-spec-service-prep/"],
+    ["onan qg 2800 kvc 0981 0158 spec service prep", "/symptoms/onan-qg-2800-kvc-model-spec-service-prep/"],
+  ] as const;
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+  }
+
+  for (const [query, href] of [
+    ["maintenance filter", "/symptoms/dometic-acc3100-maintenance-filter-service-prep/"],
+    ["climate app", "/symptoms/dometic-acc3100-climate-app-pairing-prep/"],
+    ["outside filter", "/symptoms/dometic-acc3100-outside-filter-service-boundary/"],
+    ["reset ventilation", "/symptoms/dometic-acc3100-reset-service-prep/"],
+    ["inside filter blocked", "/symptoms/dometic-acc3100-inside-filter-blocked-authorized-service/"],
+    ["display not responding", "/symptoms/dometic-acc3100-display-not-responding-reset-prep/"],
+    ["error code", "/symptoms/dometic-acc3100-display-error-indicator-prep/"],
+    ["support router", "/symptoms/furrion-brand-product-family-support-routing-prep/"],
+    ["comfort support", "/symptoms/furrion-comfort-ac-water-heater-fireplace-thermostat-router/"],
+    ["cooking support", "/symptoms/furrion-cooking-category-router-prep/"],
+    ["energy support", "/symptoms/furrion-energy-power-solar-router-prep/"],
+    ["power distribution", "/symptoms/furrion-power-distribution-cordset-converter-router/"],
+    ["appliance router", "/symptoms/greystone-appliance-family-router-prep/"],
+    ["mach 3", "/symptoms/coleman-mach-3-plus-model-service-prep/"],
+    ["mach 8", "/symptoms/coleman-mach-8-plus-low-profile-service-prep/"],
+    ["maxxfan plus", "/symptoms/maxxair-maxxfan-plus-model-control-prep/"],
+    ["dome fan", "/symptoms/maxxair-maxxfan-dome-bath-sidewall-prep/"],
+    ["air fryer", "/symptoms/suburban-air-fryer-model-power-gas-prep/"],
+    ["propane safety", "/symptoms/suburban-lp-gas-safety-shutdown-prep/"],
+    ["low voltage", "/symptoms/norcold-dc105-low-voltage-defrost-door-prep/"],
+    ["not cooling", "/symptoms/norcold-dc105-model-cooling-service-prep/"],
+    ["model service prep", "/symptoms/onan-qg-2500-lp-kv-model-spec-service-prep/"],
+  ] as const) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toHaveCount(0);
+  }
+
+  await searchbox.fill("dometic acc3100 display shows error code indicator");
+  const acc3100Error = lookupResults.locator('a[href="/symptoms/dometic-acc3100-display-error-indicator-prep/"]');
+  await expect(acc3100Error).toBeVisible();
+  await acc3100Error.click();
+  await expect(page.getByRole("heading", { name: "Dometic ACC3100 display error indicator prep" })).toBeVisible();
+  await expect(page.getByText(/Record the ACC3100 model/i)).toBeVisible();
+
+  await page.goto("/");
+  await searchbox.fill("onan qg 2500 lp kv 0981 0129 spec service prep");
+  const qg2500 = lookupResults.locator('a[href="/symptoms/onan-qg-2500-lp-kv-model-spec-service-prep/"]');
+  await expect(qg2500).toBeVisible();
+  await qg2500.click();
+  await expect(page.getByRole("heading", { name: "Onan QG 2500 LP KV model spec prep" })).toBeVisible();
+  await expect(page.getByText(/Record the QG 2500 LP KV model/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 

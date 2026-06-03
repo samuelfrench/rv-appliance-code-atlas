@@ -5009,6 +5009,246 @@
       "url": "https://cssna-ec.cummins.com/pub/AGSCompatiblityChart.pdf",
       "type": "manufacturer-pdf",
       "official": true
+    },
+    {
+      "id": "dometic-acc3100-maintenance-filter-support",
+      "brand": "Dometic",
+      "title": "Dometic ACC3100 Maintenance Support",
+      "url": "https://support.dometic.com/en/ACC3100/How-to-maintain-the-product-cc9",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-acc3100-climate-app-pairing-support",
+      "brand": "Dometic",
+      "title": "Dometic ACC3100 Climate App Pairing Support",
+      "url": "https://support.dometic.com/en/ACC3100/How-to-pair-the-ventilation-system-and-the-Dometic-Climate-App-1220",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-acc3100-outside-air-filter-replacement-support",
+      "brand": "Dometic",
+      "title": "Dometic ACC3100 Outside Air Filter Support",
+      "url": "https://support.dometic.com/en/ACC3100/How-to-replace-the-outside-air-filter-98b",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-acc3100-reset-ventilation-system-support",
+      "brand": "Dometic",
+      "title": "Dometic ACC3100 Ventilation System Reset Support",
+      "url": "https://support.dometic.com/en/ACC3100/How-to-reset-the-ventilation-system-fc38",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-acc3100-inside-air-filter-blocked-support",
+      "brand": "Dometic",
+      "title": "Dometic ACC3100 Inside Air Filter Blocked Support",
+      "url": "https://support.dometic.com/en/ACC3100/The-inside-air-filter-is-blocked-48b6",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-acc3100-outside-air-filter-blocked-support",
+      "brand": "Dometic",
+      "title": "Dometic ACC3100 Outside Air Filter Blocked Support",
+      "url": "https://support.dometic.com/en/ACC3100/The-outside-air-filter-is-blocked-30d9",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-acc3100-display-not-responding-support",
+      "brand": "Dometic",
+      "title": "Dometic ACC3100 Display Not Responding Support",
+      "url": "https://support.dometic.com/en/ACC3100/The-display-does-not-respond-b174",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-acc3100-display-error-code-router",
+      "brand": "Dometic",
+      "title": "Dometic ACC3100 Display Error Code Router",
+      "url": "https://support.dometic.com/en/ACC3100/The-display-shows-an-error-code-fad7",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-brand-support-router",
+      "brand": "Furrion",
+      "title": "Lippert Furrion Brand Support Router",
+      "url": "https://support.lci1.com/furrion/",
+      "type": "manufacturer-support-index",
+      "official": true
+    },
+    {
+      "id": "furrion-appliances-support-router",
+      "brand": "Furrion",
+      "title": "Lippert Furrion Appliances Support Router",
+      "url": "https://support.lci1.com/furrion-appliances/",
+      "type": "manufacturer-support-index",
+      "official": true
+    },
+    {
+      "id": "furrion-comfort-support-router",
+      "brand": "Furrion",
+      "title": "Lippert Furrion Comfort Support Router",
+      "url": "https://support.lci1.com/comfort/",
+      "type": "manufacturer-support-index",
+      "official": true
+    },
+    {
+      "id": "furrion-cooking-support-router",
+      "brand": "Furrion",
+      "title": "Lippert Furrion Cooking Support Router",
+      "url": "https://support.lci1.com/cooking/",
+      "type": "manufacturer-support-index",
+      "official": true
+    },
+    {
+      "id": "furrion-energy-support-router",
+      "brand": "Furrion",
+      "title": "Lippert Furrion Energy Support Router",
+      "url": "https://support.lci1.com/furrion-energy/",
+      "type": "manufacturer-support-index",
+      "official": true
+    },
+    {
+      "id": "furrion-off-grid-energy-support-index",
+      "brand": "Furrion",
+      "title": "Lippert Furrion Off-Grid Energy Support Index",
+      "url": "https://support.lci1.com/off-grid-energy",
+      "type": "manufacturer-support-index",
+      "official": true
+    },
+    {
+      "id": "furrion-power-distribution-support-router",
+      "brand": "Furrion",
+      "title": "Lippert Furrion Power Distribution Support Router",
+      "url": "https://support.lci1.com/power-distribution/",
+      "type": "manufacturer-support-index",
+      "official": true
+    },
+    {
+      "id": "lippert-greystone-support-router",
+      "brand": "Lippert",
+      "title": "Lippert Greystone Support Router",
+      "url": "https://support.lci1.com/greystone/",
+      "type": "manufacturer-support-index",
+      "official": true
+    },
+    {
+      "id": "coleman-mach-signature-mach-3-plus-product",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Signature Series Mach 3 Plus",
+      "url": "https://coleman-mach.com/products/air-conditioners/signature-series-mach-3-plus/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "coleman-mach-signature-mach-8-plus-product",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Signature Series Mach 8 Plus",
+      "url": "https://coleman-mach.com/products/air-conditioners/signature-series-mach-8-plus/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "coleman-mach-quiet-series-mach-3-product",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Quiet Series Mach 3",
+      "url": "https://coleman-mach.com/products/air-conditioners/quiet-series-mach-3/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-maxxfan-plus-product-family",
+      "brand": "MaxxAir",
+      "title": "MaxxAir MaxxFan Plus Product Family",
+      "url": "https://www.maxxair.com/Products/fans/maxxfan/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-maxxfan-dome-product-family",
+      "brand": "MaxxAir",
+      "title": "MaxxAir MaxxFan Dome Product Family",
+      "url": "https://www.maxxair.com/products/fans/maxxfan-dome/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "suburban-air-fryers-product-family",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban Air Fryers Product Family",
+      "url": "https://suburbanrv.com/kitchen-galley/air-fryers/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "suburban-propane-your-rv-safety-brochure",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban Propane and Your RV Safety Brochure",
+      "url": "https://suburbanrv.com/files/product_documents/LP%20Gas%20Accessories/Propane-YourRV-brochure-Smaller.pdf",
+      "type": "manufacturer-pdf",
+      "official": true
+    },
+    {
+      "id": "aquahot-125-dn1-use-care-guide",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot 125-DN1 Use and Care Guide",
+      "url": "https://library.aquahot.com/wp-content/uploads/2022/04/AHE-125-DN1-Use-and-Care-Guide.pdf",
+      "type": "manufacturer-pdf",
+      "official": true
+    },
+    {
+      "id": "norcold-dc105-support",
+      "brand": "Norcold",
+      "title": "Norcold DC105 Support",
+      "url": "https://www.thetford.com/us/thetford-support/dc105/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-dc105-owner-install-641476",
+      "brand": "Norcold",
+      "title": "Norcold DC105 Installation and Owners Manual",
+      "url": "https://www.thetford.com/app/uploads/2024/09/641476_DC105-InstallationOwners-Manual_RevA.pdf",
+      "type": "manufacturer-pdf",
+      "official": true
+    },
+    {
+      "id": "thetford-aqua-magic-galaxy-starlite-support",
+      "brand": "Thetford",
+      "title": "Thetford Aqua-Magic Galaxy Starlite Support",
+      "url": "https://www.thetford.com/us/thetford-support/aqua-magic-galaxy-starlite/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-tecma-silence-plus-2g-soft-close-support",
+      "brand": "Thetford",
+      "title": "Thetford Tecma Silence Plus 2G Soft Close Support",
+      "url": "https://www.thetford.com/us/thetford-support/tecma-silence-plus-2g-soft-close/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "onan-qg-2500-lp-kv-0981-0129",
+      "brand": "Onan",
+      "title": "Cummins Onan QG 2500 LP KV Operator Manual 0981-0129",
+      "url": "https://www.cummins.com/sites/default/files/rv-manuals/0981-0129.pdf",
+      "type": "manufacturer-pdf",
+      "official": true
+    },
+    {
+      "id": "onan-qg-2800-kvc-0981-0158",
+      "brand": "Onan",
+      "title": "Cummins Onan QG 2800 KVC Operator Manual 0981-0158",
+      "url": "https://www.cummins.com/sites/default/files/rv-manuals/0981-0158.pdf",
+      "type": "manufacturer-pdf",
+      "official": true
     }
   ],
   "entries": [
@@ -38438,7 +38678,37 @@
         "maxxair-unimaxx-vent-lid-product",
         "aquahot-125d-product",
         "aquahot-175m-product",
-        "onan-ec-ags-compatibility-chart"
+        "onan-ec-ags-compatibility-chart",
+        "dometic-acc3100-maintenance-filter-support",
+        "dometic-acc3100-climate-app-pairing-support",
+        "dometic-acc3100-outside-air-filter-replacement-support",
+        "dometic-acc3100-reset-ventilation-system-support",
+        "dometic-acc3100-inside-air-filter-blocked-support",
+        "dometic-acc3100-outside-air-filter-blocked-support",
+        "dometic-acc3100-display-not-responding-support",
+        "dometic-acc3100-display-error-code-router",
+        "furrion-brand-support-router",
+        "furrion-appliances-support-router",
+        "furrion-comfort-support-router",
+        "furrion-cooking-support-router",
+        "furrion-energy-support-router",
+        "furrion-off-grid-energy-support-index",
+        "furrion-power-distribution-support-router",
+        "lippert-greystone-support-router",
+        "coleman-mach-signature-mach-3-plus-product",
+        "coleman-mach-signature-mach-8-plus-product",
+        "coleman-mach-quiet-series-mach-3-product",
+        "maxxair-maxxfan-plus-product-family",
+        "maxxair-maxxfan-dome-product-family",
+        "suburban-air-fryers-product-family",
+        "suburban-propane-your-rv-safety-brochure",
+        "aquahot-125-dn1-use-care-guide",
+        "norcold-dc105-support",
+        "norcold-dc105-owner-install-641476",
+        "thetford-aqua-magic-galaxy-starlite-support",
+        "thetford-tecma-silence-plus-2g-soft-close-support",
+        "onan-qg-2500-lp-kv-0981-0129",
+        "onan-qg-2800-kvc-0981-0158"
       ]
     },
     {
@@ -46884,6 +47154,720 @@
         "agscompatibility",
         "ecags",
         "onanec"
+      ]
+    },
+    {
+      "id": "dometic-acc3100-maintenance-filter-service-prep",
+      "slug": "dometic-acc3100-maintenance-filter-service-prep",
+      "title": "Dometic ACC3100 maintenance filter service prep",
+      "summary": "Use the official Dometic ACC3100 maintenance support page to collect filter, blockage, and product-condition notes before support.",
+      "safeChecklist": [
+        "Turn the ACC3100 off from normal controls before inspection or cleaning notes.",
+        "Record the model, visible filter condition, displayed state, air-quality indicator state, RV make and model, and recent cleaning date.",
+        "Use Dometic, a dealer, or qualified RV ventilation service for installed power, mounted parts, or repeated blocked-filter symptoms."
+      ],
+      "sourceIds": [
+        "dometic-acc3100-maintenance-filter-support"
+      ],
+      "searchAliases": [
+        "dometic acc3100 maintenance air filter blocked",
+        "acc3100 roof vent maintain product filter",
+        "dometic acc3100 filter service prep",
+        "acc3100 maintenance filter blocked support"
+      ],
+      "searchRequiredTerms": [
+        "acc3100+maintenance",
+        "acc3100+filter"
+      ]
+    },
+    {
+      "id": "dometic-acc3100-climate-app-pairing-prep",
+      "slug": "dometic-acc3100-climate-app-pairing-prep",
+      "title": "Dometic ACC3100 Climate App pairing prep",
+      "summary": "Use the official Dometic ACC3100 app-pairing support page to document pairing state before assuming a product fault.",
+      "safeChecklist": [
+        "Record the ACC3100 model, app name, phone operating system, Bluetooth state, displayed product state, and step where pairing stops.",
+        "Save screenshots of the app device list, error message, and visible ACC3100 display or button state.",
+        "Use Dometic support or qualified RV ventilation service for mounted-device, installed power, or persistent control problems."
+      ],
+      "sourceIds": [
+        "dometic-acc3100-climate-app-pairing-support"
+      ],
+      "searchAliases": [
+        "dometic acc3100 climate app pairing bluetooth",
+        "acc3100 bluetooth pair ventilation system",
+        "dometic acc3100 add new device app",
+        "acc3100 climate app will not pair"
+      ],
+      "searchRequiredTerms": [
+        "acc3100+pairing",
+        "acc3100+app",
+        "acc3100+bluetooth"
+      ]
+    },
+    {
+      "id": "dometic-acc3100-outside-filter-service-boundary",
+      "slug": "dometic-acc3100-outside-filter-service-boundary",
+      "title": "Dometic ACC3100 outside filter service boundary",
+      "summary": "Use the official Dometic ACC3100 outside-filter support page to collect blocked-filter details while keeping mounted work with qualified service.",
+      "safeChecklist": [
+        "Record the ACC3100 model, outside-filter message, airflow symptom, weather, RV make and model, and whether the symptom returns after normal cleaning.",
+        "Save photos of owner-visible displays, labels, and filter-condition evidence available from normal safe access.",
+        "Use Dometic, a dealer, or qualified RV ventilation service for mounted parts, installed power, sealing, or replacement decisions."
+      ],
+      "sourceIds": [
+        "dometic-acc3100-outside-air-filter-replacement-support"
+      ],
+      "searchAliases": [
+        "dometic acc3100 outside air filter service prep",
+        "acc3100 replace outside air filter",
+        "acc3100 outside filter service prep",
+        "dometic acc3100 outside filter replacement support"
+      ],
+      "searchRequiredTerms": [
+        "acc3100+outside+filter+service",
+        "acc3100+outside+replacement",
+        "acc3100+replace+outside"
+      ]
+    },
+    {
+      "id": "dometic-acc3100-reset-service-prep",
+      "slug": "dometic-acc3100-reset-service-prep",
+      "title": "Dometic ACC3100 reset service prep",
+      "summary": "Use the official Dometic ACC3100 reset support page to document reset attempts and control state before support.",
+      "safeChecklist": [
+        "Record the ACC3100 model, display state, mode, app state, battery or shore-power state shown by the RV, and exact reset result.",
+        "Save photos or screenshots of the display, app state, product label, and the timing of the reset attempt.",
+        "Use Dometic, a dealer, or qualified RV ventilation service if the display or control state does not recover from normal controls."
+      ],
+      "sourceIds": [
+        "dometic-acc3100-reset-ventilation-system-support"
+      ],
+      "searchAliases": [
+        "dometic acc3100 reset ventilation system",
+        "acc3100 ventilation system reset prep",
+        "dometic acc3100 reset button",
+        "acc3100 reset control service prep"
+      ],
+      "searchRequiredTerms": [
+        "acc3100+reset"
+      ]
+    },
+    {
+      "id": "dometic-acc3100-inside-filter-blocked-authorized-service",
+      "slug": "dometic-acc3100-inside-filter-blocked-authorized-service",
+      "title": "Dometic ACC3100 inside filter blocked service prep",
+      "summary": "Use the official Dometic ACC3100 inside-filter blocked support page to document the indicator and prepare for authorized service.",
+      "safeChecklist": [
+        "Record the ACC3100 model, exact inside-filter message, display state, mode, airflow symptom, and recent cleaning history.",
+        "Save photos of the visible display, product label, and any owner-visible filter condition from normal safe access.",
+        "Use Dometic, a dealer, or qualified RV ventilation service for blocked inside-filter diagnosis, mounted parts, or repeated warning states."
+      ],
+      "sourceIds": [
+        "dometic-acc3100-inside-air-filter-blocked-support"
+      ],
+      "searchAliases": [
+        "dometic acc3100 inside filter blocked authorized service",
+        "acc3100 inside air filter blocked",
+        "acc3100 filter blocked authorized service",
+        "dometic acc3100 inside filter warning"
+      ],
+      "searchRequiredTerms": [
+        "acc3100+inside",
+        "acc3100+blocked"
+      ]
+    },
+    {
+      "id": "dometic-acc3100-outside-filter-blocked-prep",
+      "slug": "dometic-acc3100-outside-filter-blocked-prep",
+      "title": "Dometic ACC3100 outside filter blocked prep",
+      "summary": "Use the official Dometic ACC3100 outside-filter blocked support page to document the warning before support.",
+      "safeChecklist": [
+        "Record the ACC3100 model, exact outside-filter warning, airflow symptom, weather, display state, and recent maintenance history.",
+        "Save photos of the visible display, product label, and any owner-visible filter-condition evidence from normal safe access.",
+        "Use Dometic, a dealer, or qualified RV ventilation service for mounted parts, sealing, installed power, or repeated blocked-filter warnings."
+      ],
+      "sourceIds": [
+        "dometic-acc3100-outside-air-filter-blocked-support"
+      ],
+      "searchAliases": [
+        "dometic acc3100 outside filter blocked prep",
+        "acc3100 outside air filter blocked",
+        "acc3100 blocked filter outside air filter",
+        "dometic acc3100 outside filter blocked warning"
+      ],
+      "searchRequiredTerms": [
+        "acc3100+outside+blocked"
+      ]
+    },
+    {
+      "id": "dometic-acc3100-display-not-responding-reset-prep",
+      "slug": "dometic-acc3100-display-not-responding-reset-prep",
+      "title": "Dometic ACC3100 display not responding prep",
+      "summary": "Use the official Dometic ACC3100 display-not-responding support page to capture display and reset evidence before service.",
+      "safeChecklist": [
+        "Record the ACC3100 model, display state, button response, app state, RV power state shown by normal monitors, and exact timing.",
+        "Save photos or screenshots of the display, app state, visible label, and any owner-visible status message.",
+        "Use Dometic, a dealer, or qualified RV ventilation service when normal controls and reset guidance do not restore display response."
+      ],
+      "sourceIds": [
+        "dometic-acc3100-display-not-responding-support"
+      ],
+      "searchAliases": [
+        "dometic acc3100 display does not respond reset",
+        "acc3100 display not responding",
+        "acc3100 roof vent display reset",
+        "dometic acc3100 display dead service prep"
+      ],
+      "searchRequiredTerms": [
+        "acc3100+display"
+      ]
+    },
+    {
+      "id": "dometic-acc3100-display-error-indicator-prep",
+      "slug": "dometic-acc3100-display-error-indicator-prep",
+      "title": "Dometic ACC3100 display error indicator prep",
+      "summary": "Use the official Dometic ACC3100 display-error support page to capture which indicator appears before support.",
+      "safeChecklist": [
+        "Record the ACC3100 model, exact indicator or button state, mode, app state, fan behavior, and when the error appeared.",
+        "Save photos or screenshots of the display, app state, product label, and any visible error indicator.",
+        "Use Dometic, a dealer, or qualified RV ventilation service for repeated errors, mounted parts, installed power, or control decisions."
+      ],
+      "sourceIds": [
+        "dometic-acc3100-display-error-code-router"
+      ],
+      "searchAliases": [
+        "dometic acc3100 display shows error code indicator",
+        "acc3100 error indicator mode button flashes",
+        "acc3100 bluetooth solar air quality auto turbo sleep filters error",
+        "dometic acc3100 error code router"
+      ],
+      "searchRequiredTerms": [
+        "acc3100+error"
+      ]
+    },
+    {
+      "id": "furrion-brand-product-family-support-routing-prep",
+      "slug": "furrion-brand-product-family-support-routing-prep",
+      "title": "Furrion product-family support routing prep",
+      "summary": "Use the official Lippert Furrion support router to identify the right product family before collecting model details.",
+      "safeChecklist": [
+        "Record whether the issue belongs to Furrion appliances, comfort, cooking, energy, electronics, TV, Greystone, or Everchill support.",
+        "Save photos of the product label, front controls, displayed message, purchase paperwork, and the support category you plan to use.",
+        "Use Lippert or qualified RV service for installed power, LP equipment, mounted parts, replacement, or repair decisions."
+      ],
+      "sourceIds": [
+        "furrion-brand-support-router"
+      ],
+      "searchAliases": [
+        "furrion support router rv appliance product family",
+        "furrion support router product family",
+        "lippert furrion support customer care",
+        "furrion product family support routing"
+      ],
+      "searchRequiredTerms": [
+        "furrion+support"
+      ]
+    },
+    {
+      "id": "furrion-appliances-dishwasher-washing-machine-router-prep",
+      "slug": "furrion-appliances-dishwasher-washing-machine-router-prep",
+      "title": "Furrion appliances router prep",
+      "summary": "Use the official Lippert Furrion appliances router to separate dishwasher and washing-machine support questions.",
+      "safeChecklist": [
+        "Record the appliance type, model, visible label, displayed state, water or drain symptom, RV make and model, and exact support question.",
+        "Save photos of the product label, controls, visible hoses from normal access, purchase paperwork, and support category.",
+        "Use Lippert, a dealer, or qualified RV service for installed power, plumbing, mounted parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "furrion-appliances-support-router"
+      ],
+      "searchAliases": [
+        "furrion appliances dishwasher washing machine support",
+        "furrion appliances dishwasher support router",
+        "lippert furrion appliances manuals",
+        "furrion appliances support router"
+      ],
+      "searchRequiredTerms": [
+        "furrion+appliances"
+      ]
+    },
+    {
+      "id": "furrion-comfort-ac-water-heater-fireplace-thermostat-router",
+      "slug": "furrion-comfort-ac-water-heater-fireplace-thermostat-router",
+      "title": "Furrion comfort category router prep",
+      "summary": "Use the official Lippert Furrion comfort router to route AC, water-heater, fireplace, thermostat, heating, and vent-fan support.",
+      "safeChecklist": [
+        "Record the comfort product category, model label, displayed state, thermostat or control state, RV make and model, and exact symptom.",
+        "Save photos of labels, controls, visible messages, purchase paperwork, and the support category you plan to use.",
+        "Use Lippert, a dealer, or qualified RV service for installed power, LP equipment, rooftop, mounted parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "furrion-comfort-support-router"
+      ],
+      "searchAliases": [
+        "furrion comfort ac water heater fireplace thermostat support",
+        "furrion comfort support",
+        "furrion comfort ac water heater support",
+        "furrion comfort thermostat fireplace support"
+      ],
+      "searchRequiredTerms": [
+        "furrion+comfort"
+      ]
+    },
+    {
+      "id": "furrion-cooking-category-router-prep",
+      "slug": "furrion-cooking-category-router-prep",
+      "title": "Furrion cooking category router prep",
+      "summary": "Use the official Lippert Furrion cooking router to route range, cooktop, oven, microwave, grill, BBQ, and range-hood questions.",
+      "safeChecklist": [
+        "Record the cooking product category, model label, fuel or power type, visible control state, RV make and model, and exact symptom.",
+        "Save photos of labels, controls, displayed messages, purchase paperwork, and the support category you plan to use.",
+        "Use Lippert, a dealer, or qualified RV service for LP equipment, installed power, mounted parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "furrion-cooking-support-router"
+      ],
+      "searchAliases": [
+        "furrion cooking range oven microwave support",
+        "furrion cooking support",
+        "furrion cooking manuals",
+        "furrion cooking range oven microwave support router"
+      ],
+      "searchRequiredTerms": [
+        "furrion+cooking"
+      ]
+    },
+    {
+      "id": "furrion-energy-power-solar-router-prep",
+      "slug": "furrion-energy-power-solar-router-prep",
+      "title": "Furrion energy and solar router prep",
+      "summary": "Use the official Lippert Furrion energy router to route off-grid, power-distribution, converter, and solar support questions.",
+      "safeChecklist": [
+        "Record the energy product category, model label, displayed state, battery or RV power state shown by normal monitors, and exact question.",
+        "Save photos of labels, controls, display messages, purchase paperwork, and the support category you plan to use.",
+        "Use Lippert, a dealer, or qualified RV electrical service for installed power, battery, solar, converter, or repair decisions."
+      ],
+      "sourceIds": [
+        "furrion-energy-support-router"
+      ],
+      "searchAliases": [
+        "furrion energy power solar router",
+        "furrion energy power support",
+        "furrion energy power distribution support",
+        "furrion energy power solar controller manual"
+      ],
+      "searchRequiredTerms": [
+        "furrion+energy+power"
+      ]
+    },
+    {
+      "id": "furrion-off-grid-energy-model-manual-prep",
+      "slug": "furrion-off-grid-energy-model-manual-prep",
+      "title": "Furrion off-grid energy manual prep",
+      "summary": "Use the official Lippert Furrion off-grid energy index to identify solar, controller, and battery-monitor support documents.",
+      "safeChecklist": [
+        "Record the off-grid product type, model label, display state, battery or solar state shown by normal monitors, and exact support question.",
+        "Save photos of labels, displays, app screens, purchase paperwork, and the specific support document you plan to use.",
+        "Use Lippert, a dealer, or qualified RV electrical service for installed power, battery, solar, controller, or repair decisions."
+      ],
+      "sourceIds": [
+        "furrion-off-grid-energy-support-index"
+      ],
+      "searchAliases": [
+        "furrion off grid energy solar controller support",
+        "furrion off grid energy",
+        "furrion solar charge controller support",
+        "furrion off grid battery monitor manual"
+      ],
+      "searchRequiredTerms": [
+        "furrion+offgrid",
+        "furrion+solar"
+      ]
+    },
+    {
+      "id": "furrion-power-distribution-cordset-converter-router",
+      "slug": "furrion-power-distribution-cordset-converter-router",
+      "title": "Furrion power distribution support converter prep",
+      "summary": "Use the official Lippert Furrion power-distribution router to route cordset, inlet, connector, battery, and converter questions.",
+      "safeChecklist": [
+        "Record the power product category, model label, visible rating, RV power state shown by normal monitors, and exact support question.",
+        "Save photos of labels, displays, connectors from normal safe access, purchase paperwork, and the support category.",
+        "Shut off power before service visits and use Lippert, a dealer, or qualified RV electrical service for installed power, battery, converter, or repair decisions."
+      ],
+      "sourceIds": [
+        "furrion-power-distribution-support-router"
+      ],
+      "searchAliases": [
+        "furrion power distribution cordset converter support",
+        "furrion power distribution support",
+        "furrion power distribution cordset adapter inlet support",
+        "furrion power distribution cordset ac dc converter support"
+      ],
+      "searchRequiredTerms": [
+        "furrion+powerdistribution"
+      ]
+    },
+    {
+      "id": "greystone-appliance-family-router-prep",
+      "slug": "greystone-appliance-family-router-prep",
+      "title": "Greystone appliance family router prep",
+      "summary": "Use the official Lippert Greystone support router to identify fireplace, microwave, range, cooktop, and griddle support paths.",
+      "safeChecklist": [
+        "Record the Greystone product category, model label, visible control state, RV make and model, and exact support question.",
+        "Save photos of labels, controls, displayed messages, purchase paperwork, and the support category you plan to use.",
+        "Use Lippert, a dealer, or qualified RV service for LP equipment, installed power, mounted parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "lippert-greystone-support-router"
+      ],
+      "searchAliases": [
+        "greystone support lippert rv appliance router",
+        "greystone support lippert",
+        "greystone rv appliance support",
+        "greystone fireplace microwave range support"
+      ],
+      "searchRequiredTerms": [
+        "greystone+support",
+        "greystone+lippert"
+      ]
+    },
+    {
+      "id": "coleman-mach-3-plus-model-service-prep",
+      "slug": "coleman-mach-3-plus-model-service-prep",
+      "title": "Coleman-Mach 3 Plus model service prep",
+      "summary": "Use the official Coleman-Mach Mach 3 Plus product page to collect model, data-label, airflow, and load details before support.",
+      "safeChecklist": [
+        "Record the Mach 3 Plus model, visible data-label details, control type, RV make and model, campsite power notes, and exact cooling symptom.",
+        "Save photos of the visible label, thermostat or control state, air-distribution-box style, purchase paperwork, and load-management notes.",
+        "Use Coleman-Mach, an Airxcel service center, dealer, or qualified RV HVAC service for installed power, compressor, fan, parts, or replacement decisions."
+      ],
+      "sourceIds": [
+        "coleman-mach-signature-mach-3-plus-product"
+      ],
+      "searchAliases": [
+        "coleman mach 3 plus 38203 model service prep",
+        "coleman mach 3 plus",
+        "mach 3 plus 38203",
+        "coleman 38203 ac"
+      ],
+      "searchRequiredTerms": [
+        "coleman+mach3",
+        "mach3plus",
+        "38203"
+      ]
+    },
+    {
+      "id": "coleman-mach-8-plus-low-profile-service-prep",
+      "slug": "coleman-mach-8-plus-low-profile-service-prep",
+      "title": "Coleman-Mach 8 Plus low-profile service prep",
+      "summary": "Use the official Coleman-Mach Mach 8 Plus product page to collect model, low-profile fitment, and control details before support.",
+      "safeChecklist": [
+        "Record the Mach 8 Plus or Cub Plus model, visible data-label details, control type, RV make and model, and exact cooling or heat-pump symptom.",
+        "Save photos of the visible label, thermostat or control state, ceiling assembly, purchase paperwork, and any load-management notes.",
+        "Use Coleman-Mach, an Airxcel service center, dealer, or qualified RV HVAC service for installed power, compressor, fan, parts, or replacement decisions."
+      ],
+      "sourceIds": [
+        "coleman-mach-signature-mach-8-plus-product"
+      ],
+      "searchAliases": [
+        "coleman mach 8 plus 37203 low profile service prep",
+        "coleman mach 8 plus",
+        "coleman mach8 plus cub plus",
+        "37004 37203 37204"
+      ],
+      "searchRequiredTerms": [
+        "coleman+mach8",
+        "mach8plus",
+        "37203"
+      ]
+    },
+    {
+      "id": "coleman-quiet-mach-3-ducted-nonducted-prep",
+      "slug": "coleman-quiet-mach-3-ducted-nonducted-prep",
+      "title": "Coleman Quiet Mach 3 ducted or non-ducted prep",
+      "summary": "Use the official Coleman-Mach Quiet Series Mach 3 page to identify ducted versus non-ducted models before support.",
+      "safeChecklist": [
+        "Record the Quiet Mach 3 model, visible data-label details, ducted or non-ducted setup, control type, RV make and model, and exact symptom.",
+        "Save photos of the visible label, ceiling assembly, thermostat or control state, purchase paperwork, and airflow notes.",
+        "Use Coleman-Mach, an Airxcel service center, dealer, or qualified RV HVAC service for installed power, compressor, fan, parts, or replacement decisions."
+      ],
+      "sourceIds": [
+        "coleman-mach-quiet-series-mach-3-product"
+      ],
+      "searchAliases": [
+        "coleman quiet series mach 3 ducted nonducted prep",
+        "quiet series mach 3",
+        "mach 3 ducted quiet",
+        "38203-0660 quiet mach 3"
+      ],
+      "searchRequiredTerms": [
+        "quiet+mach3",
+        "382030660"
+      ]
+    },
+    {
+      "id": "maxxair-maxxfan-plus-model-control-prep",
+      "slug": "maxxair-maxxfan-plus-model-control-prep",
+      "title": "MaxxAir MaxxFan Plus model control prep",
+      "summary": "Use the official MaxxAir MaxxFan product page to identify MaxxFan and Plus models, lid, thermostat, and control options.",
+      "safeChecklist": [
+        "Record the MaxxFan or Plus model, visible label details, lid color, control style, rain state, travel state, and exact fan or lid symptom.",
+        "Save photos of the visible label, lid, controls, purchase paperwork, and weather or travel context.",
+        "Use MaxxAir, Airxcel support, an authorized service center, dealer, or qualified RV service for installed power, motor, lid, parts, or replacement decisions."
+      ],
+      "sourceIds": [
+        "maxxair-maxxfan-plus-product-family"
+      ],
+      "searchAliases": [
+        "maxxair maxxfan plus 00 04500k model control prep",
+        "maxxfan plus model",
+        "maxxair 00-04500K",
+        "maxxfan 00A04301K"
+      ],
+      "searchRequiredTerms": [
+        "maxxfan+plus+model",
+        "0004500k",
+        "00a04301k"
+      ]
+    },
+    {
+      "id": "maxxair-maxxfan-dome-bath-sidewall-prep",
+      "slug": "maxxair-maxxfan-dome-bath-sidewall-prep",
+      "title": "MaxxAir MaxxFan Dome bath or sidewall prep",
+      "summary": "Use the official MaxxAir MaxxFan Dome page to identify bath, rooftop, and sidewall fan support details.",
+      "safeChecklist": [
+        "Record the MaxxFan Dome or Dome Plus model, visible label details, mounting location, control style, RV make and model, and exact fan symptom.",
+        "Save photos of the visible label, fan location, controls, purchase paperwork, and weather or travel context.",
+        "Use MaxxAir, Airxcel support, an authorized service center, dealer, or qualified RV service for installed power, mounting, lid, parts, or replacement decisions."
+      ],
+      "sourceIds": [
+        "maxxair-maxxfan-dome-product-family"
+      ],
+      "searchAliases": [
+        "maxxair maxxfan dome bathroom sidewall prep",
+        "maxxfan dome",
+        "maxxair dome plus",
+        "maxxair dome 6 inch fan"
+      ],
+      "searchRequiredTerms": [
+        "maxxfan+dome",
+        "maxxair+dome"
+      ]
+    },
+    {
+      "id": "suburban-air-fryer-model-power-gas-prep",
+      "slug": "suburban-air-fryer-model-power-gas-prep",
+      "title": "Suburban air fryer model and power prep",
+      "summary": "Use the official Suburban air-fryers product page to collect model, cooking, power, and LP notes before support.",
+      "safeChecklist": [
+        "Record the Suburban air-fryer model, visible label details, oven or cooktop state, RV make and model, and exact cooking symptom.",
+        "Save photos of the label, controls, purchase paperwork, ventilation context, and any owner-visible message.",
+        "Use Suburban, an Airxcel service center, dealer, or qualified RV appliance service for LP equipment, installed power, mounted parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "suburban-air-fryers-product-family"
+      ],
+      "searchAliases": [
+        "suburban air fryer 3907a model power prep",
+        "suburban air fryer",
+        "suburban 3907A",
+        "suburban 3910A"
+      ],
+      "searchRequiredTerms": [
+        "suburban+airfryer",
+        "3907a",
+        "3910a"
+      ]
+    },
+    {
+      "id": "suburban-lp-gas-safety-shutdown-prep",
+      "slug": "suburban-lp-gas-safety-shutdown-prep",
+      "title": "Suburban LP gas safety shutdown prep",
+      "summary": "Use the official Suburban Propane and Your RV brochure to document LP smell, detector alarm, travel, storage, and inspection questions.",
+      "safeChecklist": [
+        "Shut off LP from normal owner controls and leave the area if you smell propane or an LP alarm sounds.",
+        "Record the appliance involved, alarm state, odor location, recent travel or storage condition, RV make and model, and exact question.",
+        "Use Suburban, an Airxcel service center, dealer, LP professional, or qualified RV service for leak checks, annual inspection, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "suburban-propane-your-rv-safety-brochure"
+      ],
+      "searchAliases": [
+        "suburban propane your rv lp gas safety shutdown",
+        "suburban propane your rv",
+        "suburban propane lp gas safety",
+        "rv propane smell suburban"
+      ],
+      "searchRequiredTerms": [
+        "suburban+propane",
+        "propane+rv"
+      ]
+    },
+    {
+      "id": "aquahot-125-dn1-lcd-voltage-fluid-prep",
+      "slug": "aquahot-125-dn1-lcd-voltage-fluid-prep",
+      "title": "Aqua-Hot 125-DN1 LCD voltage and fluid prep",
+      "summary": "Use the official Aqua-Hot 125-DN1 use and care guide to collect LCD, low-voltage, fluid, and heat symptom notes before support.",
+      "safeChecklist": [
+        "Record the Aqua-Hot 125-DN1 model, serial details, LCD state, low-voltage or fluid message, hot-water symptom, cabin-heat symptom, and RV make and model.",
+        "Save photos of the visible label, LCD or control panel, owner-accessible status lights, purchase paperwork, and recent maintenance notes.",
+        "Use Aqua-Hot, an authorized service center, dealer, or qualified hydronic service for fuel system, exhaust, fluid loop, installed power, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "aquahot-125-dn1-use-care-guide"
+      ],
+      "searchAliases": [
+        "aqua hot 125 dn1 lcd voltage fluid prep",
+        "aqua-hot 125-dn1",
+        "aquahot 125dn1",
+        "AHE-125-DN1"
+      ],
+      "searchRequiredTerms": [
+        "125dn1",
+        "aquahot+125dn1"
+      ]
+    },
+    {
+      "id": "norcold-dc105-model-cooling-service-prep",
+      "slug": "norcold-dc105-model-cooling-service-prep",
+      "title": "Norcold DC105 model cooling service prep",
+      "summary": "Use the official Norcold DC105 support page to collect model, cooling, manual, and service-routing details.",
+      "safeChecklist": [
+        "Record the DC105 model and serial details, RV make and model, control state, temperature notes, defrost state, door state, and exact symptom.",
+        "Save photos of the product label, front controls, food-compartment condition, purchase paperwork, and the support document link.",
+        "Use Norcold, Thetford support, an authorized service center, dealer, or qualified RV refrigerator service for installed power, sensors, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "norcold-dc105-support"
+      ],
+      "searchAliases": [
+        "norcold dc105 support not cooling service prep",
+        "norcold dc105 support",
+        "norcold dc105 not cooling",
+        "dc105 refrigerator manual service prep"
+      ],
+      "searchRequiredTerms": [
+        "dc105"
+      ]
+    },
+    {
+      "id": "norcold-dc105-low-voltage-defrost-door-prep",
+      "slug": "norcold-dc105-low-voltage-defrost-door-prep",
+      "title": "Norcold DC105 low-voltage defrost door prep",
+      "summary": "Use the official Norcold DC105 manual to collect owner-visible low-voltage, defrost, storage, and door details before service.",
+      "safeChecklist": [
+        "Record the DC105 model and serial details, RV make and model, control state, temperature notes, door state, defrost history, and battery state shown by the RV.",
+        "Save photos of the product label, front controls, food-compartment condition, owner-visible power state, and purchase paperwork.",
+        "Use Norcold, Thetford support, an authorized service center, dealer, or qualified RV refrigerator service for installed power, sensors, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "norcold-dc105-owner-install-641476"
+      ],
+      "searchAliases": [
+        "norcold dc105 641476 manual low voltage defrost door",
+        "641476 dc105 manual",
+        "norcold dc105 641476 installation owners manual",
+        "dc105 641476 12 24 volt refrigerator low voltage"
+      ],
+      "searchRequiredTerms": [
+        "dc105+641476",
+        "641476"
+      ]
+    },
+    {
+      "id": "thetford-aqua-magic-galaxy-starlite-model-service-prep",
+      "slug": "thetford-aqua-magic-galaxy-starlite-model-service-prep",
+      "title": "Thetford Aqua-Magic Galaxy/Starlite prep",
+      "summary": "Use the official Thetford Aqua-Magic Galaxy/Starlite support page to identify discontinued toilet models before support.",
+      "safeChecklist": [
+        "Record whether the toilet is Galaxy or Starlite, model and serial details, flush behavior, bowl-water state, cleaning history, winterizing state, and exact symptom.",
+        "Save photos of the visible label or identification area, bowl condition, flush control, purchase paperwork, and support document link.",
+        "Use Thetford, a dealer, or qualified RV sanitation service for water valve, mechanism, mounted parts, or replacement decisions."
+      ],
+      "sourceIds": [
+        "thetford-aqua-magic-galaxy-starlite-support"
+      ],
+      "searchAliases": [
+        "thetford aqua magic galaxy starlite discontinued model",
+        "aqua magic galaxy starlite support",
+        "thetford starlite galaxy toilet manual",
+        "aqua magic galaxy starlite discontinued model"
+      ],
+      "searchRequiredTerms": [
+        "galaxy+starlite"
+      ]
+    },
+    {
+      "id": "thetford-tecma-silence-plus-2g-controller-macerator-service-prep",
+      "slug": "thetford-tecma-silence-plus-2g-controller-macerator-service-prep",
+      "title": "Thetford Tecma Silence Plus 2G service prep",
+      "summary": "Use the official Thetford Tecma Silence Plus 2G support page to collect macerator-toilet controller and model details before service.",
+      "safeChecklist": [
+        "Record the Tecma Silence Plus 2G model, serial details, controller state, flush behavior, tank state shown by normal controls, winterizing state, and exact symptom.",
+        "Save photos of the visible label, controller, bowl condition, purchase paperwork, and support document link.",
+        "Shut off water and power before a service visit and use Thetford, a dealer, or qualified RV sanitation service for pump, controller, mounted parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "thetford-tecma-silence-plus-2g-soft-close-support"
+      ],
+      "searchAliases": [
+        "thetford tecma silence plus 2g controller macerator",
+        "tecma silence plus 2g soft close",
+        "thetford tecma silence plus 2g controller",
+        "tecma 2g macerator toilet service prep"
+      ],
+      "searchRequiredTerms": [
+        "tecma+2g",
+        "silence+2g"
+      ]
+    },
+    {
+      "id": "onan-qg-2500-lp-kv-model-spec-service-prep",
+      "slug": "onan-qg-2500-lp-kv-model-spec-service-prep",
+      "title": "Onan QG 2500 LP KV model spec prep",
+      "summary": "Use the official Cummins Onan QG 2500 LP KV operator manual to collect model, spec, and pre-service details.",
+      "safeChecklist": [
+        "Record the QG 2500 LP KV model, spec letter, serial number, hour-meter reading, fuel type, load state, storage state, and exact start or output symptom.",
+        "Save photos of the generator label, display or switch state, owner paperwork, maintenance records, and the manual page you plan to cite.",
+        "Use Cummins Onan, Coach Care, an authorized service provider, or qualified generator service for fuel system, exhaust, installed power, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "onan-qg-2500-lp-kv-0981-0129"
+      ],
+      "searchAliases": [
+        "onan qg 2500 lp kv 0981 0129 spec service prep",
+        "onan qg 2500 lp kv 981-0129",
+        "cummins onan 0981-0129",
+        "qg 2500 lp kv spec a b manual"
+      ],
+      "searchRequiredTerms": [
+        "2500+kv",
+        "09810129"
+      ]
+    },
+    {
+      "id": "onan-qg-2800-kvc-model-spec-service-prep",
+      "slug": "onan-qg-2800-kvc-model-spec-service-prep",
+      "title": "Onan QG 2800 KVC model spec prep",
+      "summary": "Use the official Cummins Onan QG 2800 KVC operator manual to collect model, spec, and pre-service details.",
+      "safeChecklist": [
+        "Record the QG 2800 or 2800 EVAP KVC model, spec letter, serial number, hour-meter reading, fuel type, load state, storage state, and exact symptom.",
+        "Save photos of the generator label, display or switch state, owner paperwork, maintenance records, and the manual page you plan to cite.",
+        "Use Cummins Onan, Coach Care, an authorized service provider, or qualified generator service for fuel system, exhaust, installed power, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "onan-qg-2800-kvc-0981-0158"
+      ],
+      "searchAliases": [
+        "onan qg 2800 kvc 0981 0158 spec service prep",
+        "onan qg 2800 kvc 0981-0158",
+        "cummins onan kvc spec a c",
+        "qg 2800 evap kvc manual"
+      ],
+      "searchRequiredTerms": [
+        "kvc",
+        "09810158"
       ]
     }
   ],
