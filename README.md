@@ -92,7 +92,7 @@ Key location: `https://rvappliancefaultcodes.com/2653afc6f17313e900711f1d3eb1dca
 
 Writes ignored local report artifact: `reports/indexnow-submit-report.json`
 
-Submitted: `2026-06-03T01:29:16.560Z` with `1027` URLs and IndexNow HTTP `200`
+Submitted: `2026-06-03T02:11:41.900Z` with `1036` URLs and IndexNow HTTP `200`
 
 Traffic monitor:
 
@@ -101,10 +101,10 @@ npm run traffic:monitor
 ```
 
 Current corpus:
-- `848` verified entries
-- `178` symptom guides
-- `335` official sources
-- `1027` generated indexable pages
+- `850` verified entries
+- `185` symptom guides
+- `339` official sources
+- `1036` generated indexable pages
 
 Next automated batch goal:
 - Run weekly GSC report and review monetization readiness after page impressions appear.
