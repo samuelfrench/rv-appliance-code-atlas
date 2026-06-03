@@ -2405,6 +2405,136 @@ test("lookup surfaces display, model, vent, thermostat, and hydronic prep batch 
   expect(pageErrors).toEqual([]);
 });
 
+test("lookup surfaces toilet, control, locator, warranty, and service prep batch without generic hijacks", async ({
+  page,
+}) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    ["dometic masterflush 8500 flush mode storage prep", "/symptoms/dometic-masterflush-flush-mode-storage-prep/"],
+    ["dometic acc3100 storage mode service prep", "/symptoms/dometic-acc3100-storage-mode-service-prep/"],
+    ["dometic freshjet set timer remote control prep", "/symptoms/dometic-freshjet-timer-control-prep/"],
+    ["dometic harrier adjust air nozzles airflow", "/symptoms/dometic-harrier-air-nozzle-control-prep/"],
+    [
+      "thetford tecma silence plus 2g owner manual",
+      "/symptoms/thetford-tecma-silence-plus-2g-control-service-prep/",
+    ],
+    [
+      "thetford electra magic model 80 rv service prep",
+      "/symptoms/thetford-electra-magic-model-80-rv-service-prep/",
+    ],
+    [
+      "thetford aqua magic iv hand flush parts",
+      "/symptoms/thetford-aqua-magic-iv-hand-flush-model-service-prep/",
+    ],
+    [
+      "thetford c223 cs cassette toilet owner manual",
+      "/symptoms/thetford-c223-cs-cassette-toilet-model-service-prep/",
+    ],
+    ["norcold 2117 owner manual parts list", "/symptoms/norcold-2117-support-manual-parts-prep/"],
+    [
+      "norcold dc0788 de0788 ev0788 cooling prep",
+      "/symptoms/norcold-dc0788-de0788-ev0788-model-cooling-prep/",
+    ],
+    ["airxcel service center dealer locator rv brands", "/symptoms/airxcel-family-service-locator-prep/"],
+    [
+      "coleman mach products air conditioners thermostats documentation",
+      "/symptoms/coleman-mach-product-family-router-prep/",
+    ],
+    [
+      "coleman mach conversion kits air vantage carrier conversions",
+      "/symptoms/coleman-mach-conversion-kit-compatibility-prep/",
+    ],
+    [
+      "maxxair 11a90030z mini plus deluxe wall control",
+      "/symptoms/maxxair-mini-plus-deluxe-wall-control-prep/",
+    ],
+    ["maxxair fanmate 755 855 955 ezclip model prep", "/symptoms/maxxair-fanmate-cover-ezclip-model-prep/"],
+    ["maxxair maxxshade 3900 3901 fan shade service prep", "/symptoms/maxxair-maxxshade-fan-shade-service-prep/"],
+    ["suburban sf fq furnace model service prep", "/symptoms/suburban-sf-fq-furnace-model-service-prep/"],
+    ["suburban elite range 17 22 model prep", "/symptoms/suburban-elite-range-model-prep/"],
+    [
+      "suburban anode rod 233514 233516 water heater prep",
+      "/symptoms/suburban-water-heater-anode-rod-service-prep/",
+    ],
+    ["aqua hot wave40 wave 40 wifi controls service prep", "/symptoms/aquahot-wave40-model-control-service-prep/"],
+    ["furrion fcr10dcgta qr190 storage reset prep", "/symptoms/furrion-fcr10dcgta-storage-reset-prep/"],
+    ["furrion fcr11dc qr191 storage reset prep", "/symptoms/furrion-fcr11dc-storage-reset-prep/"],
+    ["furrion warranty manual ccd0004843 model serial", "/symptoms/furrion-product-warranty-model-serial-prep/"],
+    ["lippert w022 warranty claim ccd0009742 prep", "/symptoms/lippert-furrion-submit-warranty-claim-prep/"],
+    ["furrion ac warranty request w013 adb controller prep", "/symptoms/furrion-ac-warranty-model-controller-prep/"],
+    [
+      "furrion furnace warranty checklist w023 model serial",
+      "/symptoms/furrion-furnace-warranty-checklist-prep/",
+    ],
+    ["lippert qualified tech map service routing", "/symptoms/lippert-qualified-technician-service-routing-prep/"],
+    [
+      "girard 15 6 12v refrigerator ccd0005727 storage prep",
+      "/symptoms/girard-15-6-12v-refrigerator-control-storage-prep/",
+    ],
+    ["furrion rchef electric oven ccd0005576 control prep", "/symptoms/furrion-rchef-electric-oven-control-service-prep/"],
+    ["onan qg 4000 a055e867 4kyfa 6747 gsn warranty prep", "/symptoms/onan-qg4000-gsn-model-warranty-prep/"],
+  ] as const;
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+  }
+
+  for (const [query, href] of [
+    ["storage mode", "/symptoms/dometic-acc3100-storage-mode-service-prep/"],
+    ["set timer", "/symptoms/dometic-freshjet-timer-control-prep/"],
+    ["air nozzles", "/symptoms/dometic-harrier-air-nozzle-control-prep/"],
+    ["owner manual", "/symptoms/thetford-tecma-silence-plus-2g-control-service-prep/"],
+    ["parts list", "/symptoms/norcold-2117-support-manual-parts-prep/"],
+    ["service locator", "/symptoms/airxcel-family-service-locator-prep/"],
+    ["conversion kit", "/symptoms/coleman-mach-conversion-kit-compatibility-prep/"],
+    ["wall control", "/symptoms/maxxair-mini-plus-deluxe-wall-control-prep/"],
+    ["furnace model", "/symptoms/suburban-sf-fq-furnace-model-service-prep/"],
+    ["range model", "/symptoms/suburban-elite-range-model-prep/"],
+    ["warranty request", "/symptoms/furrion-ac-warranty-model-controller-prep/"],
+    ["service routing", "/symptoms/lippert-qualified-technician-service-routing-prep/"],
+    ["electric oven", "/symptoms/furrion-rchef-electric-oven-control-service-prep/"],
+    ["generator warranty", "/symptoms/onan-qg4000-gsn-model-warranty-prep/"],
+    ["hand flush", "/symptoms/thetford-aqua-magic-iv-hand-flush-model-service-prep/"],
+    ["conversion kits", "/symptoms/coleman-mach-conversion-kit-compatibility-prep/"],
+    ["anode rod", "/symptoms/suburban-water-heater-anode-rod-service-prep/"],
+    ["water heater anode rod", "/symptoms/suburban-water-heater-anode-rod-service-prep/"],
+    ["warranty claim", "/symptoms/lippert-furrion-submit-warranty-claim-prep/"],
+  ] as const) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toHaveCount(0);
+  }
+
+  await searchbox.fill("dometic masterflush 8500 flush mode storage prep");
+  const masterflush = lookupResults.locator('a[href="/symptoms/dometic-masterflush-flush-mode-storage-prep/"]');
+  await expect(masterflush).toBeVisible();
+  await masterflush.click();
+  await expect(page.getByRole("heading", { name: "Dometic MasterFlush flush-mode and storage prep" })).toBeVisible();
+  await expect(page.getByText(/Record the MasterFlush model/i)).toBeVisible();
+
+  await page.goto("/");
+  await searchbox.fill("furrion furnace warranty checklist w023 model serial");
+  const furnaceWarranty = lookupResults.locator('a[href="/symptoms/furrion-furnace-warranty-checklist-prep/"]');
+  await expect(furnaceWarranty).toBeVisible();
+  await furnaceWarranty.click();
+  await expect(page.getByRole("heading", { name: "Furrion furnace warranty checklist prep" })).toBeVisible();
+  await expect(page.getByText(/Shut the furnace off/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 

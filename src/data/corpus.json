@@ -5705,6 +5705,246 @@
       "url": "https://www.aquahot.com/products/rv/400P.aspx",
       "type": "manufacturer-product",
       "official": true
+    },
+    {
+      "id": "dometic-masterflush-8100-8500-8600-8700-8900-operating",
+      "brand": "Dometic",
+      "title": "Dometic MasterFlush 8000 Series Operation Manual",
+      "url": "https://media.dometic.com/externalassets/dometic-masterflush-8500_9600006448_64582.pdf",
+      "type": "manufacturer-pdf",
+      "official": true
+    },
+    {
+      "id": "dometic-acc3100-storage-mode-support",
+      "brand": "Dometic",
+      "title": "Dometic ACC3100 Storage Mode Support",
+      "url": "https://support.dometic.com/en/ACC3100/How-to-activate-and-deactivate-the-STORAGE-mode-9367",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-freshjet-timer-control-support",
+      "brand": "Dometic",
+      "title": "Dometic FreshJet Timer Control Support",
+      "url": "https://support.dometic.com/en/freshjet-ac/How-to-Set-the-timer-2168",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-harrier-air-nozzles-support",
+      "brand": "Dometic",
+      "title": "Dometic Harrier Air Nozzle Support",
+      "url": "https://support.dometic.com/en/harrier-ac/How-to-Adjust-the-air-nozzles-17a",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-tecma-silence-plus-2g-support",
+      "brand": "Thetford",
+      "title": "Thetford Tecma Silence Plus 2G Support",
+      "url": "https://www.thetford.com/us/thetford-support/tecma-silence-plus-2g/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-electra-magic-model-80-rv-support",
+      "brand": "Thetford",
+      "title": "Thetford Electra Magic Model 80 RV Support",
+      "url": "https://www.thetford.com/us/thetford-support/electra-magic-model-80-rv/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-aqua-magic-iv-hand-flush-support",
+      "brand": "Thetford",
+      "title": "Thetford Aqua-Magic IV Hand Flush Support",
+      "url": "https://www.thetford.com/us/thetford-support/aqua-magic-iv-hand-flush/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-c223-cs-cassette-toilet-support",
+      "brand": "Thetford",
+      "title": "Thetford C223-CS Cassette Toilet Support",
+      "url": "https://www.thetford.com/us/thetford-support/c223-cs-cassette-toilet/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-2117-support",
+      "brand": "Norcold",
+      "title": "Norcold 2117 Support",
+      "url": "https://www.thetford.com/us/thetford-support/2117-2/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-dc0788-de0788-ev0788-support",
+      "brand": "Norcold",
+      "title": "Norcold DC0788 DE0788 EV0788 Support",
+      "url": "https://www.thetford.com/us/thetford-support/dc0788-de0788-ev0788/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "airxcel-service-center-dealer-locator",
+      "brand": "Airxcel",
+      "title": "Airxcel Service Center and Dealer Locator",
+      "url": "https://www.airxcel.com/service-locator/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "coleman-mach-products-router",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Products Router",
+      "url": "https://coleman-mach.com/products/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "coleman-mach-conversion-kits-router",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Conversion Kits Router",
+      "url": "https://coleman-mach.com/products/conversion-kits/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-mini-wall-control-iom-11a90030z",
+      "brand": "MaxxAir",
+      "title": "MaxxFan Mini Plus and Deluxe Wall Control IOM 11A90030Z",
+      "url": "https://library.maxxair.com/wp-content/uploads/2023/03/11a90030z_mxfan-mini-plus-mini-deluxe-with-wall-control-iom-08-2019.pdf",
+      "type": "manufacturer-pdf",
+      "official": true
+    },
+    {
+      "id": "maxxair-fanmate-755-855-955-iom",
+      "brand": "MaxxAir",
+      "title": "MaxxAir FanMate 755 855 955 IOM",
+      "url": "https://library.maxxair.com/wp-content/uploads/2023/03/10a11955z_fanmate-assy-install-for-755-855-955-models-legal-rev-a-11-2015.pdf",
+      "type": "manufacturer-pdf",
+      "official": true
+    },
+    {
+      "id": "maxxair-maxxshade-3900-3901-iom",
+      "brand": "MaxxAir",
+      "title": "MaxxAir MaxxShade 3900 3901 IOM",
+      "url": "https://library.maxxair.com/wp-content/uploads/2023/03/10-03911z_maxxshade-iom-05-2018.pdf",
+      "type": "manufacturer-pdf",
+      "official": true
+    },
+    {
+      "id": "suburban-sf-fq-furnaces-product",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban SF-FQ Series Furnaces Product Page",
+      "url": "https://suburbanrv.com/climate-control/furnaces/sf-fq-series-furnaces/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "suburban-ranges-product-family",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban Elite Series Ranges Product Family",
+      "url": "https://suburbanrv.com/kitchen-galley/ranges/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "suburban-water-heater-anode-rod-product",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban Replacement Anode Rod Product Page",
+      "url": "https://suburbanrv.com/water-heating/tank-water-heaters/tank-water-heater-accessories/replacement-anode-rod/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "aquahot-wave40-product",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot Wave 40 Product Page",
+      "url": "https://www.aquahot.com/products/rv/wave40.aspx",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "furrion-fcr10dcgta-storage-qr190",
+      "brand": "Furrion",
+      "title": "QR-190 Proper Storage of a Furrion Model FCR10DCGTA Refrigerator",
+      "url": "https://support.lci1.com/documents/ccd-0008583",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-fcr11dc-storage-qr191",
+      "brand": "Furrion",
+      "title": "QR-191 Proper Storage of a Furrion Model FCR11DC Refrigerator",
+      "url": "https://support.lci1.com/documents/ccd-0008584",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-warranty-manual-ccd0004843",
+      "brand": "Furrion",
+      "title": "Furrion Warranty Manual EN FR ES CCD-0004843",
+      "url": "https://support.lci1.com/documents/ccd-0004843",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "lippert-w022-submit-warranty-claim",
+      "brand": "Lippert",
+      "title": "W-022 How to Submit a Warranty Claim",
+      "url": "https://support.lci1.com/documents/ccd-0009742",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-ac-warranty-request-w013",
+      "brand": "Furrion",
+      "title": "W-013 Furrion AC Warranty Request Form",
+      "url": "https://support.lci1.com/documents/ccd-0008244",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-furnace-warranty-checklist-w023",
+      "brand": "Furrion",
+      "title": "W-023 Furrion Furnace Checklist for Warranty Request",
+      "url": "https://support.lci1.com/documents/ccd-0011145",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "lippert-qualified-tech-map",
+      "brand": "Lippert",
+      "title": "Lippert Qualified Tech Map",
+      "url": "https://support.lci1.com/qualified-tech-map",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "girard-15-6-12v-refrigerator-manual",
+      "brand": "Girard",
+      "title": "Girard 15.6 cu ft 12V Side by Side Refrigerator User Manual",
+      "url": "https://support.lci1.com/documents/girard-15-cu-ft-12v-side-by-side",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-rchef-electric-oven-manual",
+      "brand": "Furrion",
+      "title": "Furrion RCHEF Collection Electric Oven User Manual",
+      "url": "https://support.lci1.com/documents/furrion-rchef-collection-electric-oven-user-manual",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "onan-qg4000-shop-gsn-product-page",
+      "brand": "Onan",
+      "title": "Cummins Onan QG 4000 A055E867 Product and GSN Page",
+      "url": "https://shop.cummins.com/SC/product/onan-qg-4000-gasoline-rv-generator-with-30a-breaker-a055e867/01t4N0000048pf4QAA",
+      "type": "manufacturer-product",
+      "official": true
     }
   ],
   "entries": [
@@ -39221,7 +39461,37 @@
         "suburban-e-series-120v-water-heater-interior-product",
         "aquahot-250-d03-use-care-guide",
         "aquahot-250p-product-page",
-        "aquahot-400p-product-page"
+        "aquahot-400p-product-page",
+        "dometic-masterflush-8100-8500-8600-8700-8900-operating",
+        "dometic-acc3100-storage-mode-support",
+        "dometic-freshjet-timer-control-support",
+        "dometic-harrier-air-nozzles-support",
+        "thetford-tecma-silence-plus-2g-support",
+        "thetford-electra-magic-model-80-rv-support",
+        "thetford-aqua-magic-iv-hand-flush-support",
+        "thetford-c223-cs-cassette-toilet-support",
+        "norcold-2117-support",
+        "norcold-dc0788-de0788-ev0788-support",
+        "airxcel-service-center-dealer-locator",
+        "coleman-mach-products-router",
+        "coleman-mach-conversion-kits-router",
+        "maxxair-mini-wall-control-iom-11a90030z",
+        "maxxair-fanmate-755-855-955-iom",
+        "maxxair-maxxshade-3900-3901-iom",
+        "suburban-sf-fq-furnaces-product",
+        "suburban-ranges-product-family",
+        "suburban-water-heater-anode-rod-product",
+        "aquahot-wave40-product",
+        "furrion-fcr10dcgta-storage-qr190",
+        "furrion-fcr11dc-storage-qr191",
+        "furrion-warranty-manual-ccd0004843",
+        "lippert-w022-submit-warranty-claim",
+        "furrion-ac-warranty-request-w013",
+        "furrion-furnace-warranty-checklist-w023",
+        "lippert-qualified-tech-map",
+        "girard-15-6-12v-refrigerator-manual",
+        "furrion-rchef-electric-oven-manual",
+        "onan-qg4000-shop-gsn-product-page"
       ]
     },
     {
@@ -49747,6 +50017,740 @@
       "searchRequiredTerms": [
         "400p+propane",
         "aquahot+400p"
+      ]
+    },
+    {
+      "id": "dometic-masterflush-flush-mode-storage-prep",
+      "slug": "dometic-masterflush-flush-mode-storage-prep",
+      "title": "Dometic MasterFlush flush-mode and storage prep",
+      "summary": "Use the official Dometic MasterFlush 8000 Series manual to collect flush-mode, tank-monitor, cleaning, and storage details before support.",
+      "safeChecklist": [
+        "Record the MasterFlush model, control panel state, tank-monitor lights, flush mode, storage or winterization status, water level, and exact toilet symptom.",
+        "Save photos of the toilet control, visible model label, tank-monitor panel, owner paperwork, and the current control setting from normal access.",
+        "Use Dometic, a dealer, or qualified RV sanitation service for mounted toilet equipment, powered parts, pump behavior, plumbing, or repeated symptoms."
+      ],
+      "sourceIds": [
+        "dometic-masterflush-8100-8500-8600-8700-8900-operating"
+      ],
+      "searchAliases": [
+        "dometic masterflush 8500 flush mode storage prep",
+        "dometic masterflush 8100 tank monitor flush",
+        "dometic masterflush winterizing storage",
+        "dometic masterflush 8000 series operation manual prep"
+      ],
+      "searchRequiredTerms": [
+        "masterflush+8500",
+        "dometic+masterflush"
+      ]
+    },
+    {
+      "id": "dometic-acc3100-storage-mode-service-prep",
+      "slug": "dometic-acc3100-storage-mode-service-prep",
+      "title": "Dometic ACC3100 storage-mode prep",
+      "summary": "Use the official Dometic ACC3100 storage-mode support page to collect ventilation-mode state before support.",
+      "safeChecklist": [
+        "Record the ACC3100 control state, selected mode, storage-mode status, app connection state, roof-vent behavior, and exact symptom.",
+        "Save photos of the control display, app screen if used, model paperwork, and visible vent state from normal owner access.",
+        "Use Dometic, a dealer, or qualified RV ventilation service for mounted controls, powered parts, roof access, or repeated storage-mode problems."
+      ],
+      "sourceIds": [
+        "dometic-acc3100-storage-mode-support"
+      ],
+      "searchAliases": [
+        "dometic acc3100 storage mode service prep",
+        "acc3100 activate storage mode",
+        "dometic acc3100 roof vent storage mode",
+        "acc3100 deactivate storage mode prep"
+      ],
+      "searchRequiredTerms": [
+        "acc3100+storage",
+        "acc3100+mode"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-timer-control-prep",
+      "slug": "dometic-freshjet-timer-control-prep",
+      "title": "Dometic FreshJet timer-control prep",
+      "summary": "Use the official Dometic FreshJet timer support page to record remote timer settings before support.",
+      "safeChecklist": [
+        "Record the FreshJet model, remote model, current mode, timer setting, selected temperature, fan setting, and exact control symptom.",
+        "Save photos of the remote display, air-conditioner model label if already visible, owner paperwork, and timer state.",
+        "Use Dometic, a dealer, or qualified RV HVAC service for rooftop equipment, installed power, mounted controls, or repeated timer-control symptoms."
+      ],
+      "sourceIds": [
+        "dometic-freshjet-timer-control-support"
+      ],
+      "searchAliases": [
+        "dometic freshjet set timer remote control prep",
+        "freshjet ac timer support",
+        "dometic freshjet remote timer",
+        "freshjet timer control prep"
+      ],
+      "searchRequiredTerms": [
+        "freshjet+timer",
+        "dometic+timer"
+      ]
+    },
+    {
+      "id": "dometic-harrier-air-nozzle-control-prep",
+      "slug": "dometic-harrier-air-nozzle-control-prep",
+      "title": "Dometic Harrier air-nozzle control prep",
+      "summary": "Use the official Dometic Harrier air-nozzle support page to capture airflow-direction details before support.",
+      "safeChecklist": [
+        "Record the Harrier model, air-nozzle position, fan mode, airflow direction, room symptoms, and whether airflow changed after normal adjustment.",
+        "Save photos of the outlet, remote or control panel, model paperwork, and affected air direction from normal access.",
+        "Use Dometic, a dealer, or qualified RV HVAC service for duct, mounted outlet, rooftop equipment, installed power, or repeated airflow symptoms."
+      ],
+      "sourceIds": [
+        "dometic-harrier-air-nozzles-support"
+      ],
+      "searchAliases": [
+        "dometic harrier adjust air nozzles airflow",
+        "harrier ac air nozzles",
+        "dometic harrier air flow direction",
+        "harrier air nozzle control prep"
+      ],
+      "searchRequiredTerms": [
+        "harrier+nozzle",
+        "harrier+air"
+      ]
+    },
+    {
+      "id": "thetford-tecma-silence-plus-2g-control-service-prep",
+      "slug": "thetford-tecma-silence-plus-2g-control-service-prep",
+      "title": "Thetford Tecma Silence Plus 2G control prep",
+      "summary": "Use the official Thetford Tecma Silence Plus 2G support page to collect model, manual, and control details before service.",
+      "safeChecklist": [
+        "Record the Tecma Silence Plus 2G model, control-panel state, flush behavior, water level, tank status if visible, and exact symptom.",
+        "Save photos of the toilet, control, owner paperwork, visible label, and any displayed status from normal access.",
+        "Use Thetford, a dealer, or qualified RV sanitation service for powered toilet equipment, installed controls, pump behavior, or recurring symptoms."
+      ],
+      "sourceIds": [
+        "thetford-tecma-silence-plus-2g-support"
+      ],
+      "searchAliases": [
+        "thetford tecma silence plus 2g owner manual",
+        "tecma silence plus 2g control service prep",
+        "thetford tecma silence plus 2g parts list",
+        "tecma silence plus 2g support"
+      ],
+      "searchRequiredTerms": [
+        "tecma+silence+plus+2g"
+      ]
+    },
+    {
+      "id": "thetford-electra-magic-model-80-rv-service-prep",
+      "slug": "thetford-electra-magic-model-80-rv-service-prep",
+      "title": "Thetford Electra Magic Model 80 RV service prep",
+      "summary": "Use the official Thetford Electra Magic Model 80 RV support page to collect legacy model and parts-list details before service.",
+      "safeChecklist": [
+        "Record the Electra Magic Model 80 RV name, visible label, control or flush behavior, water status, and exact symptom.",
+        "Save photos of the toilet, visible model label, owner manual or parts paperwork, and affected area from normal access.",
+        "Use Thetford, a dealer, or qualified RV sanitation service for powered parts, mounted toilet equipment, seals, plumbing, or repeated symptoms."
+      ],
+      "sourceIds": [
+        "thetford-electra-magic-model-80-rv-support"
+      ],
+      "searchAliases": [
+        "thetford electra magic model 80 rv service prep",
+        "electra magic model 80 owner manual",
+        "thetford electra magic model 80 parts list",
+        "model 80 rv toilet support"
+      ],
+      "searchRequiredTerms": [
+        "electra+magic+80",
+        "model+80+rv"
+      ]
+    },
+    {
+      "id": "thetford-aqua-magic-iv-hand-flush-model-service-prep",
+      "slug": "thetford-aqua-magic-iv-hand-flush-model-service-prep",
+      "title": "Thetford Aqua-Magic IV hand-flush model prep",
+      "summary": "Use the official Thetford Aqua-Magic IV Hand Flush support page to separate hand-flush models from pedal-flush models before service.",
+      "safeChecklist": [
+        "Record the Aqua-Magic IV hand-flush model, handle behavior, water level, leak location if visible, storage status, and exact symptom.",
+        "Save photos of the hand-flush control, toilet base, visible label, owner paperwork, and affected area from normal access.",
+        "Use Thetford, a dealer, or qualified RV sanitation service for mounted parts, seals, plumbing, or repeated flush symptoms."
+      ],
+      "sourceIds": [
+        "thetford-aqua-magic-iv-hand-flush-support"
+      ],
+      "searchAliases": [
+        "thetford aqua magic iv hand flush parts",
+        "aqua magic iv hand flush owner manual",
+        "thetford aqua magic iv hand flush model prep",
+        "aqua magic iv hand flush support"
+      ],
+      "searchRequiredTerms": [
+        "aqua+magic+iv+hand",
+        "iv+hand+flush"
+      ]
+    },
+    {
+      "id": "thetford-c223-cs-cassette-toilet-model-service-prep",
+      "slug": "thetford-c223-cs-cassette-toilet-model-service-prep",
+      "title": "Thetford C223-CS cassette toilet model prep",
+      "summary": "Use the official Thetford C223-CS Cassette Toilet support page to collect model, manual, and parts-list details before service.",
+      "safeChecklist": [
+        "Record the C223-CS model, cassette status, flush behavior, water level, visible label, and exact symptom.",
+        "Save photos of the toilet, cassette area from normal access, control if present, owner paperwork, and model label.",
+        "Use Thetford, a dealer, or qualified RV sanitation service for mounted cassette equipment, powered flush parts, seals, plumbing, or repeated symptoms."
+      ],
+      "sourceIds": [
+        "thetford-c223-cs-cassette-toilet-support"
+      ],
+      "searchAliases": [
+        "thetford c223 cs cassette toilet owner manual",
+        "c223-cs owner manual",
+        "thetford c223 cs parts list",
+        "c223 cs cassette toilet model prep"
+      ],
+      "searchRequiredTerms": [
+        "c223+cs",
+        "c223+toilet"
+      ]
+    },
+    {
+      "id": "norcold-2117-support-manual-parts-prep",
+      "slug": "norcold-2117-support-manual-parts-prep",
+      "title": "Norcold 2117 manual and parts prep",
+      "summary": "Use the official Norcold 2117 support page to collect model, manual, parts-list, and service details before support.",
+      "safeChecklist": [
+        "Record the Norcold 2117 model, visible serial details, power-source selection, temperature setting, cooling symptom, and exact support need.",
+        "Save photos of the model label, control panel, owner paperwork, parts-list reference, and affected refrigerator area from normal access.",
+        "Use Norcold, an authorized service center, dealer, or qualified RV refrigerator service for cooling equipment, LP equipment, installed power, or repeated symptoms."
+      ],
+      "sourceIds": [
+        "norcold-2117-support"
+      ],
+      "searchAliases": [
+        "norcold 2117 owner manual parts list",
+        "norcold 2117 support",
+        "thetford norcold 2117 parts list",
+        "norcold 2117 manual parts prep"
+      ],
+      "searchRequiredTerms": [
+        "norcold+2117",
+        "2117+parts"
+      ]
+    },
+    {
+      "id": "norcold-dc0788-de0788-ev0788-model-cooling-prep",
+      "slug": "norcold-dc0788-de0788-ev0788-model-cooling-prep",
+      "title": "Norcold DC0788 DE0788 EV0788 model prep",
+      "summary": "Use the official Norcold DC0788/DE0788/EV0788 support page to collect model and cooling details before service.",
+      "safeChecklist": [
+        "Record the DC0788, DE0788, or EV0788 model, visible serial details, power-source context from normal monitors, temperature setting, and cooling symptom.",
+        "Save photos of the model label, control setting, owner paperwork, parts-list reference, and affected refrigerator area from normal access.",
+        "Use Norcold, an authorized service center, dealer, or qualified RV refrigerator service for installed power, compressor equipment, cooling equipment, or repeated symptoms."
+      ],
+      "sourceIds": [
+        "norcold-dc0788-de0788-ev0788-support"
+      ],
+      "searchAliases": [
+        "norcold dc0788 de0788 ev0788 cooling prep",
+        "norcold dc0788 support",
+        "norcold de0788 ev0788 owner manual",
+        "dc0788 de0788 ev0788 parts list"
+      ],
+      "searchRequiredTerms": [
+        "dc0788",
+        "de0788",
+        "ev0788"
+      ]
+    },
+    {
+      "id": "airxcel-family-service-locator-prep",
+      "slug": "airxcel-family-service-locator-prep",
+      "title": "Airxcel family service-locator prep",
+      "summary": "Use the official Airxcel service-center and dealer locator to prepare brand, model, location, and service details before contacting support.",
+      "safeChecklist": [
+        "Record the Airxcel-family brand, appliance model, serial details, RV location, ZIP code, symptom, and whether a dealer or service center is needed.",
+        "Save photos of visible labels, the appliance, control display, owner paperwork, and any status indicators from normal access.",
+        "Use Airxcel, the official locator, a listed dealer, or qualified RV service for mounted appliances, installed power, LP equipment, or repair decisions."
+      ],
+      "sourceIds": [
+        "airxcel-service-center-dealer-locator"
+      ],
+      "searchAliases": [
+        "airxcel service center dealer locator rv brands",
+        "airxcel family service locator prep",
+        "airxcel brands locator rv"
+      ],
+      "searchRequiredTerms": [
+        "airxcel+service+locator",
+        "locator+airxcel"
+      ]
+    },
+    {
+      "id": "coleman-mach-product-family-router-prep",
+      "slug": "coleman-mach-product-family-router-prep",
+      "title": "Coleman-Mach product-family router prep",
+      "summary": "Use the official Coleman-Mach products page to route air-conditioner, thermostat, ceiling assembly, accessory, and documentation searches.",
+      "safeChecklist": [
+        "Record the Coleman-Mach product family, model or part number, thermostat or ceiling-assembly details, RV make and model, and exact symptom.",
+        "Save photos of visible labels, controls, ceiling assembly, owner paperwork, and documentation references from normal access.",
+        "Use Coleman-Mach, Airxcel support, a dealer, or qualified RV HVAC service for rooftop equipment, installed power, mounted controls, or parts decisions."
+      ],
+      "sourceIds": [
+        "coleman-mach-products-router"
+      ],
+      "searchAliases": [
+        "coleman mach products air conditioners thermostats documentation",
+        "coleman mach products family router prep",
+        "coleman mach documentation library",
+        "coleman mach products service center dealer locator"
+      ],
+      "searchRequiredTerms": [
+        "coleman+mach+products",
+        "coleman+documentation"
+      ]
+    },
+    {
+      "id": "coleman-mach-conversion-kit-compatibility-prep",
+      "slug": "coleman-mach-conversion-kit-compatibility-prep",
+      "title": "Coleman-Mach conversion-kit compatibility prep",
+      "summary": "Use the official Coleman-Mach conversion-kits page to collect existing unit and control details before dealer compatibility help.",
+      "safeChecklist": [
+        "Record the existing rooftop brand, model, thermostat or control package, Air-Vantage or Carrier conversion context, RV make and model, and reason for the compatibility check.",
+        "Save photos of the existing labels, thermostat, ceiling assembly, owner paperwork, and any conversion-kit paperwork from normal access.",
+        "Use Coleman-Mach, Airxcel support, a dealer, or qualified RV HVAC service for conversion-kit fitment, rooftop equipment, mounted controls, and installation decisions."
+      ],
+      "sourceIds": [
+        "coleman-mach-conversion-kits-router"
+      ],
+      "searchAliases": [
+        "coleman mach conversion kits air vantage carrier conversions",
+        "coleman mach conversion kits compatibility prep",
+        "carrier conversions to coleman mach conversion kits",
+        "dometic rooftop ac to coleman mach conversion kits"
+      ],
+      "searchRequiredTerms": [
+        "coleman+conversion+kits",
+        "air+vantage",
+        "carrier+conversions"
+      ]
+    },
+    {
+      "id": "maxxair-mini-plus-deluxe-wall-control-prep",
+      "slug": "maxxair-mini-plus-deluxe-wall-control-prep",
+      "title": "MaxxAir Mini Plus/Deluxe wall-control prep",
+      "summary": "Use the official MaxxAir Mini Plus and Mini Deluxe wall-control IOM to capture model and wall-control behavior before support.",
+      "safeChecklist": [
+        "Record the MaxxFan Mini model, wall-control model, fan speed, lid state, light state if present, selected control action, and exact symptom.",
+        "Save photos of the wall control, fan trim, visible label, owner paperwork, and current control state from normal access.",
+        "Use MaxxAir, Airxcel support, a dealer, or qualified RV ventilation service for mounted controls, powered parts, roof access, or repeated symptoms."
+      ],
+      "sourceIds": [
+        "maxxair-mini-wall-control-iom-11a90030z"
+      ],
+      "searchAliases": [
+        "maxxair 11a90030z mini plus deluxe wall control",
+        "maxxair 3852 wall control",
+        "maxxfan mini deluxe wall control operation",
+        "maxxair mini wall control prep"
+      ],
+      "searchRequiredTerms": [
+        "11a90030z",
+        "mini+wall+control",
+        "3852+wall"
+      ]
+    },
+    {
+      "id": "maxxair-fanmate-cover-ezclip-model-prep",
+      "slug": "maxxair-fanmate-cover-ezclip-model-prep",
+      "title": "MaxxAir FanMate EZClip model prep",
+      "summary": "Use the official MaxxAir FanMate 755/855/955 IOM to collect cover model, care, and fitment details before support.",
+      "safeChecklist": [
+        "Record the FanMate 755, 855, or 955 model, EZClip context, vent or fan model, cover color, water-entry symptom, and roof-access limitations.",
+        "Save photos of the cover, vent or fan, visible label, owner paperwork, and water path from safe normal access.",
+        "Use MaxxAir, Airxcel support, a dealer, or qualified RV ventilation service for mounted accessories, roof access, fitment, or replacement decisions."
+      ],
+      "sourceIds": [
+        "maxxair-fanmate-755-855-955-iom"
+      ],
+      "searchAliases": [
+        "maxxair fanmate 755 855 955 ezclip model prep",
+        "10a11955z fanmate ezclip",
+        "fanmate 755 vent cover care mild soap water",
+        "maxxair fanmate 955 cover model prep"
+      ],
+      "searchRequiredTerms": [
+        "fanmate+755",
+        "fanmate+855",
+        "fanmate+955",
+        "10a11955z"
+      ]
+    },
+    {
+      "id": "maxxair-maxxshade-fan-shade-service-prep",
+      "slug": "maxxair-maxxshade-fan-shade-service-prep",
+      "title": "MaxxAir MaxxShade fan-shade prep",
+      "summary": "Use the official MaxxAir MaxxShade 3900/3901 IOM to collect shade, fan-use, and service details before support.",
+      "safeChecklist": [
+        "Record the MaxxShade 3900 or 3901 model, fan model, shade position, fan-use context, light behavior if present, and exact symptom.",
+        "Save photos of the shade, fan opening, visible label, owner paperwork, and current shade position from normal access.",
+        "Use MaxxAir, Airxcel support, a dealer, or qualified RV ventilation service for mounted parts, powered accessories, roof access, or repeated symptoms."
+      ],
+      "sourceIds": [
+        "maxxair-maxxshade-3900-3901-iom"
+      ],
+      "searchAliases": [
+        "maxxair maxxshade 3900 3901 fan shade service prep",
+        "maxxair maxxshade 3900 fan should not run shade closed",
+        "10 03911z maxxshade iom",
+        "maxxshade 3900 3901 prep"
+      ],
+      "searchRequiredTerms": [
+        "maxxshade+3900",
+        "maxxshade+3901",
+        "10+03911z"
+      ]
+    },
+    {
+      "id": "suburban-sf-fq-furnace-model-service-prep",
+      "slug": "suburban-sf-fq-furnace-model-service-prep",
+      "title": "Suburban SF-FQ furnace model prep",
+      "summary": "Use the official Suburban SF-FQ furnace product page to collect model-family and service details before support.",
+      "safeChecklist": [
+        "Record the Suburban SF-FQ model, visible label, BTU family if shown, thermostat call, fan state, LP state, and exact symptom.",
+        "Shut the furnace off from normal controls and leave the area if propane odor or an LP alarm is present.",
+        "Use Suburban, an Airxcel service center, dealer, or qualified RV furnace service for LP appliances, installed power, mounted parts, or service decisions."
+      ],
+      "sourceIds": [
+        "suburban-sf-fq-furnaces-product"
+      ],
+      "searchAliases": [
+        "suburban sf fq furnace model service prep",
+        "suburban sf-fq series furnaces",
+        "sf fq ducted heating furnace",
+        "suburban sf fq 20000 40000 btu"
+      ],
+      "searchRequiredTerms": [
+        "sf+fq",
+        "suburban+sf+fq"
+      ]
+    },
+    {
+      "id": "suburban-elite-range-model-prep",
+      "slug": "suburban-elite-range-model-prep",
+      "title": "Suburban Elite range model prep",
+      "summary": "Use the official Suburban Elite ranges product-family page to collect range-family, model, and service details before support.",
+      "safeChecklist": [
+        "Record the Suburban Elite or Elite Plus range model, 17-inch or 22-inch family, visible label, oven or cooktop symptom, and RV make and model.",
+        "Shut the range off from normal controls and leave the area if propane odor, abnormal flame, or a carbon monoxide alarm is present.",
+        "Use Suburban, an Airxcel service center, dealer, or qualified RV range service for LP appliances, installed power, mounted parts, or service decisions."
+      ],
+      "sourceIds": [
+        "suburban-ranges-product-family"
+      ],
+      "searchAliases": [
+        "suburban elite range 17 22 model prep",
+        "suburban elite range series",
+        "17 inch elite series range suburban",
+        "22 elite series plus range built in cover"
+      ],
+      "searchRequiredTerms": [
+        "suburban+elite+range",
+        "17+elite",
+        "22+elite"
+      ]
+    },
+    {
+      "id": "suburban-water-heater-anode-rod-service-prep",
+      "slug": "suburban-water-heater-anode-rod-service-prep",
+      "title": "Suburban water-heater anode-rod prep",
+      "summary": "Use the official Suburban replacement anode-rod page to capture tank water-heater model and part details before service.",
+      "safeChecklist": [
+        "Record the Suburban tank water-heater model, visible label, anode part number 233514 or 233516 if known, odor or corrosion symptom, and service history.",
+        "Turn the water heater off from normal controls if leak, overheating, odor, or repeated no-hot-water behavior appears.",
+        "Use Suburban, an Airxcel service center, dealer, or qualified RV water-heater service for tank service, mounted parts, LP equipment, or installed power decisions."
+      ],
+      "sourceIds": [
+        "suburban-water-heater-anode-rod-product"
+      ],
+      "searchAliases": [
+        "suburban anode rod 233514 233516 water heater prep",
+        "suburban replacement anode rod 233514",
+        "suburban aluminum anode 233516",
+        "suburban tank water heater anode rod 233514 233516"
+      ],
+      "searchRequiredTerms": [
+        "suburban+anode+rod",
+        "233514",
+        "233516"
+      ]
+    },
+    {
+      "id": "aquahot-wave40-model-control-service-prep",
+      "slug": "aquahot-wave40-model-control-service-prep",
+      "title": "Aqua-Hot Wave 40 control service prep",
+      "summary": "Use the official Aqua-Hot Wave 40 product page to collect model, control, hot-water, and cabin-heat details before support.",
+      "safeChecklist": [
+        "Record the Aqua-Hot Wave 40 model, serial details, controller state, Wi-Fi control context, hot-water symptom, cabin-heat symptom, and RV make and model.",
+        "Shut the unit down from normal controls and leave the area if overheating, fluid leak, fuel odor, or alarm activity appears.",
+        "Use Aqua-Hot, an authorized service center, dealer, or qualified Aqua-Hot service for heat, hot-water, fluid-loop, installed power, parts, or service decisions."
+      ],
+      "sourceIds": [
+        "aquahot-wave40-product"
+      ],
+      "searchAliases": [
+        "aqua hot wave40 wave 40 wifi controls service prep",
+        "aquahot wave 40 heating on demand water heater",
+        "aqua hot wave40 wifi controls",
+        "wave40 model control service prep"
+      ],
+      "searchRequiredTerms": [
+        "wave40",
+        "wave+40"
+      ]
+    },
+    {
+      "id": "furrion-fcr10dcgta-storage-reset-prep",
+      "slug": "furrion-fcr10dcgta-storage-reset-prep",
+      "title": "Furrion FCR10DCGTA storage reset prep",
+      "summary": "Use the official QR-190 Furrion FCR10DCGTA storage document to collect storage, ventilation, and reset-prep details before support.",
+      "safeChecklist": [
+        "Record the FCR10DCGTA model, QR-190 reference, storage duration, door position, ventilation status, temperature setting, and exact symptom.",
+        "Save photos of the refrigerator label, control setting, door position, owner paperwork, and storage context from normal access.",
+        "Use Furrion, Lippert support, a dealer, or qualified RV refrigerator service for installed power, powered parts, cooling equipment, or repeated symptoms."
+      ],
+      "sourceIds": [
+        "furrion-fcr10dcgta-storage-qr190"
+      ],
+      "searchAliases": [
+        "furrion fcr10dcgta qr190 storage reset prep",
+        "qr 190 fcr10dcgta proper storage",
+        "ccd0008583 furrion refrigerator storage",
+        "fcr10dcgta storage ventilation prep"
+      ],
+      "searchRequiredTerms": [
+        "fcr10dcgta",
+        "qr190",
+        "ccd0008583"
+      ]
+    },
+    {
+      "id": "furrion-fcr11dc-storage-reset-prep",
+      "slug": "furrion-fcr11dc-storage-reset-prep",
+      "title": "Furrion FCR11DC storage reset prep",
+      "summary": "Use the official QR-191 Furrion FCR11DC storage document to collect storage, ventilation, and reset-prep details before support.",
+      "safeChecklist": [
+        "Record the FCR11DC model, QR-191 reference, storage duration, door position, ventilation status, temperature setting, and exact symptom.",
+        "Save photos of the refrigerator label, control setting, door position, owner paperwork, and storage context from normal access.",
+        "Use Furrion, Lippert support, a dealer, or qualified RV refrigerator service for installed power, powered parts, cooling equipment, or repeated symptoms."
+      ],
+      "sourceIds": [
+        "furrion-fcr11dc-storage-qr191"
+      ],
+      "searchAliases": [
+        "furrion fcr11dc qr191 storage reset prep",
+        "qr 191 fcr11dc proper storage",
+        "ccd0008584 furrion refrigerator storage",
+        "fcr11dc gba sg dc storage ventilation prep"
+      ],
+      "searchRequiredTerms": [
+        "fcr11dc",
+        "qr191",
+        "ccd0008584"
+      ]
+    },
+    {
+      "id": "furrion-product-warranty-model-serial-prep",
+      "slug": "furrion-product-warranty-model-serial-prep",
+      "title": "Furrion warranty model/serial prep",
+      "summary": "Use the official Furrion warranty manual to gather model, serial, purchase, registration, and support details before a claim.",
+      "safeChecklist": [
+        "Record the Furrion product model, serial number, purchase date, retailer or dealer, warranty manual reference, and exact support request.",
+        "Save photos of the model label, purchase proof, owner paperwork, visible product condition, and any displayed status from normal access.",
+        "Use Furrion, Lippert support, a dealer, or qualified RV service for warranty routing, parts decisions, mounted appliances, or repeated symptoms."
+      ],
+      "sourceIds": [
+        "furrion-warranty-manual-ccd0004843"
+      ],
+      "searchAliases": [
+        "furrion warranty manual ccd0004843 model serial",
+        "furrion warranty manual product model number serial number",
+        "furrion warranty manual ccd0004843 prep",
+        "ccd0004843 furrion warranty"
+      ],
+      "searchRequiredTerms": [
+        "furrion+warranty+manual",
+        "ccd0004843"
+      ]
+    },
+    {
+      "id": "lippert-furrion-submit-warranty-claim-prep",
+      "slug": "lippert-furrion-submit-warranty-claim-prep",
+      "title": "Lippert/Furrion warranty-claim prep",
+      "summary": "Use the official Lippert W-022 warranty-claim document to collect claim requirements, photos, and case details before support.",
+      "safeChecklist": [
+        "Record the Lippert or Furrion product, model, serial number, claim reason, purchase or install date, dealer details, and existing case number if present.",
+        "Save photos of the label, product condition, paperwork, proof of purchase, and symptom from normal access before contacting support.",
+        "Use Lippert support, Furrion support, a dealer, or qualified RV service for claim routing, part return decisions, pre-authorization, or service decisions."
+      ],
+      "sourceIds": [
+        "lippert-w022-submit-warranty-claim"
+      ],
+      "searchAliases": [
+        "lippert w022 warranty claim ccd0009742 prep",
+        "w 022 how to submit a warranty claim",
+        "lippert w022 warranty claim requirements",
+        "furrion w022 warranty claim prep"
+      ],
+      "searchRequiredTerms": [
+        "w022",
+        "w022+warranty+claim",
+        "ccd0009742"
+      ]
+    },
+    {
+      "id": "furrion-ac-warranty-model-controller-prep",
+      "slug": "furrion-ac-warranty-model-controller-prep",
+      "title": "Furrion AC warranty model/controller prep",
+      "summary": "Use the official W-013 Furrion AC warranty-request form to collect model, controller, thermostat, and photo details before support.",
+      "safeChecklist": [
+        "Record the Furrion AC model, serial number, thermostat model, ADB or ceiling assembly, controller details, heat-strip context if applicable, and exact symptom.",
+        "Save photos of visible labels, thermostat, ceiling assembly, controller paperwork, purchase proof, and the symptom from normal access.",
+        "Use Furrion, Lippert support, a dealer, or qualified RV HVAC service for rooftop equipment, installed power, mounted controls, warranty routing, or service decisions."
+      ],
+      "sourceIds": [
+        "furrion-ac-warranty-request-w013"
+      ],
+      "searchAliases": [
+        "furrion ac warranty request w013 adb controller prep",
+        "w013 furrion ac warranty request form",
+        "furrion ac warranty adb controller model",
+        "ccd0008244 furrion ac warranty prep"
+      ],
+      "searchRequiredTerms": [
+        "w013",
+        "furrion+ac+warranty",
+        "ccd0008244"
+      ]
+    },
+    {
+      "id": "furrion-furnace-warranty-checklist-prep",
+      "slug": "furrion-furnace-warranty-checklist-prep",
+      "title": "Furrion furnace warranty checklist prep",
+      "summary": "Use the official W-023 Furrion furnace warranty checklist to collect model, serial, symptom, and support details before a warranty request.",
+      "safeChecklist": [
+        "Record the Furrion furnace model, serial number, thermostat call, fan state, LP state, purchase or install date, and exact symptom.",
+        "Shut the furnace off from normal controls and leave the area if propane odor, abnormal flame, exhaust concern, or an LP alarm is present.",
+        "Use Furrion, Lippert support, a dealer, or qualified RV furnace service for LP appliance service, installed power, mounted parts, warranty routing, or service decisions."
+      ],
+      "sourceIds": [
+        "furrion-furnace-warranty-checklist-w023"
+      ],
+      "searchAliases": [
+        "furrion furnace warranty checklist w023 model serial",
+        "w023 furrion furnace checklist warranty request",
+        "furrion furnace warranty request model serial",
+        "ccd0011145 furnace warranty prep"
+      ],
+      "searchRequiredTerms": [
+        "w023",
+        "furrion+furnace+warranty",
+        "ccd0011145"
+      ]
+    },
+    {
+      "id": "lippert-qualified-technician-service-routing-prep",
+      "slug": "lippert-qualified-technician-service-routing-prep",
+      "title": "Lippert qualified-technician routing prep",
+      "summary": "Use the official Lippert Qualified Tech Map to prepare product, model, location, and service details before technician routing.",
+      "safeChecklist": [
+        "Record the Lippert or Furrion product, model, serial number, RV location, ZIP code, symptom, and whether qualified technician routing is needed.",
+        "Save photos of visible labels, the affected product, owner paperwork, and symptom details from normal access.",
+        "Use Lippert support, the official map, a listed technician, a dealer, or qualified RV service for mounted equipment, installed power, LP equipment, or repair decisions."
+      ],
+      "sourceIds": [
+        "lippert-qualified-tech-map"
+      ],
+      "searchAliases": [
+        "lippert qualified tech map service routing",
+        "lippert qualified technician service prep",
+        "support lci1 qualified tech map",
+        "lippert qualified technician locator"
+      ],
+      "searchRequiredTerms": [
+        "qualified+tech+map",
+        "lippert+qualified"
+      ]
+    },
+    {
+      "id": "girard-15-6-12v-refrigerator-control-storage-prep",
+      "slug": "girard-15-6-12v-refrigerator-control-storage-prep",
+      "title": "Girard 15.6 cu ft 12V refrigerator prep",
+      "summary": "Use the official Girard 15.6 cu ft 12V refrigerator manual to collect model, control, storage, and service details before support.",
+      "safeChecklist": [
+        "Record the Girard 15.6 cu ft 12V refrigerator model, visible label, temperature setting, storage status, door state, cooling symptom, and RV make and model.",
+        "Save photos of the model label, control setting, door position, owner paperwork, and affected refrigerator area from normal access.",
+        "Use Girard, Lippert support, a dealer, or qualified RV refrigerator service for installed power, powered parts, cooling equipment, or repeated symptoms."
+      ],
+      "sourceIds": [
+        "girard-15-6-12v-refrigerator-manual"
+      ],
+      "searchAliases": [
+        "girard 15 6 12v refrigerator ccd0005727 storage prep",
+        "girard 15.6 cu ft 12v refrigerator manual",
+        "im fha00121 v4.0 girard refrigerator",
+        "girard 15 6 side by side 12v refrigerator prep"
+      ],
+      "searchRequiredTerms": [
+        "girard+15+6",
+        "ccd0005727",
+        "fha00121"
+      ]
+    },
+    {
+      "id": "furrion-rchef-electric-oven-control-service-prep",
+      "slug": "furrion-rchef-electric-oven-control-service-prep",
+      "title": "Furrion RCHEF electric oven prep",
+      "summary": "Use the official Furrion RCHEF electric oven manual to collect model, control, safe-use, and service details before support.",
+      "safeChecklist": [
+        "Record the Furrion RCHEF electric oven model, visible label, control setting, heating symptom, purchase date, and RV make and model.",
+        "Turn the oven off from normal controls if overheating, smoke, odor, or repeated heating symptoms appear.",
+        "Use Furrion, Lippert support, a dealer, or qualified RV appliance service for installed power, mounted parts, warranty routing, or service decisions."
+      ],
+      "sourceIds": [
+        "furrion-rchef-electric-oven-manual"
+      ],
+      "searchAliases": [
+        "furrion rchef electric oven ccd0005576 control prep",
+        "furrion rchef collection electric oven",
+        "im fha00005 v3.0 furrion oven",
+        "furrion rchef electric oven service prep"
+      ],
+      "searchRequiredTerms": [
+        "rchef+electric+oven",
+        "ccd0005576",
+        "fha00005"
+      ]
+    },
+    {
+      "id": "onan-qg4000-gsn-model-warranty-prep",
+      "slug": "onan-qg4000-gsn-model-warranty-prep",
+      "title": "Onan QG 4000 GSN/model warranty prep",
+      "summary": "Use the official Cummins Shop Onan QG 4000 product page to collect model, GSN, part, and warranty details before support.",
+      "safeChecklist": [
+        "Record the Onan QG 4000 model, part A055E867, model family 4KYFA-6747 if shown, generator serial number, warranty context, and exact support need.",
+        "Save photos of the generator label, RV generator compartment label from normal access, purchase or service paperwork, and any displayed status.",
+        "Use Cummins, Cummins Coach Care, an authorized dealer, or qualified RV generator service for fuel, exhaust, installed power, generator operation, or service decisions."
+      ],
+      "sourceIds": [
+        "onan-qg4000-shop-gsn-product-page"
+      ],
+      "searchAliases": [
+        "onan qg 4000 a055e867 4kyfa 6747 gsn warranty prep",
+        "onan qg 4000 generator serial number gsn",
+        "cummins onan qg 4000 a055e867 warranty",
+        "4kyfa 6747 qg4000 model prep"
+      ],
+      "searchRequiredTerms": [
+        "a055e867",
+        "4kyfa+6747",
+        "qg+4000"
       ]
     }
   ],
