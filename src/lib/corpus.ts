@@ -31,6 +31,7 @@ export type SymptomGuide = {
   safeChecklist: string[];
   sourceIds: string[];
   searchAliases?: string[];
+  searchRequiredTerms?: string[];
 };
 
 export type Corpus = {
@@ -159,6 +160,17 @@ export function validateCorpus(corpus: Corpus): ValidationReport {
         });
       }
     }
+    if (symptom.searchRequiredTerms !== undefined) {
+      if (!Array.isArray(symptom.searchRequiredTerms)) {
+        failures.push(`Symptom ${symptom.id} searchRequiredTerms must be an array of non-empty strings.`);
+      } else {
+        symptom.searchRequiredTerms.forEach((term, index) => {
+          if (typeof term !== "string" || !term.trim()) {
+            failures.push(`Symptom ${symptom.id} searchRequiredTerms[${index}] must be a non-empty string.`);
+          }
+        });
+      }
+    }
     if (!symptom.sourceIds.length) failures.push(`Symptom ${symptom.id} has no source citation.`);
     for (const sourceId of symptom.sourceIds) {
       const source = sourcesById.get(sourceId);
@@ -207,7 +219,11 @@ export function summarizeCorpus(corpus: Corpus): CorpusSummary {
 }
 
 export type SearchIndexEntry = CorpusEntry & { searchText: string; searchTokens: Set<string> };
-export type SymptomSearchIndexEntry = SymptomGuide & { searchText: string; searchTokens: Set<string> };
+export type SymptomSearchIndexEntry = SymptomGuide & {
+  searchText: string;
+  searchTokens: Set<string>;
+  searchRequiredTokens: Set<string>;
+};
 
 function searchableParts(parts: string[]) {
   const joined = parts.join(" ").toLowerCase();
@@ -243,6 +259,14 @@ export function buildSearchIndex(corpus: Corpus): SearchIndexEntry[] {
 export function buildSymptomSearchIndex(corpus: Corpus): SymptomSearchIndexEntry[] {
   return corpus.symptoms.map((symptom) => ({
     ...symptom,
+    searchRequiredTokens: new Set(
+      (symptom.searchRequiredTerms ?? []).flatMap((term) =>
+        term
+          .toLowerCase()
+          .split(/[^a-z0-9]+/)
+          .filter(Boolean),
+      ),
+    ),
     ...searchableParts([
       symptom.id,
       symptom.slug,
@@ -306,6 +330,9 @@ export function lookupSymptomGuides(index: SymptomSearchIndexEntry[], query: str
 
   return index
     .map((symptom) => {
+      if (symptom.searchRequiredTokens.size && !terms.some((term) => symptom.searchRequiredTokens.has(term))) {
+        return { symptom, score: 0 };
+      }
       const matchedTerms = terms.filter((term) => symptom.searchTokens.has(term) || symptom.searchText.includes(term));
       const allTermsMatch = matchedTerms.length === terms.length;
       const missingTerms = terms.length - matchedTerms.length;

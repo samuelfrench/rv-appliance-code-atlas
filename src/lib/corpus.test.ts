@@ -556,6 +556,25 @@ describe("verified corpus", () => {
     );
   });
 
+  it("does not let brand-specific service-prep aliases hijack unbranded generic searches", () => {
+    const index = buildSymptomSearchIndex(corpus);
+    const brandSpecificSlugs = new Set([
+      "maxxair-maxxfan-deluxe-lid-fan-control-service-prep",
+      "maxxair-4-5-6-key-wall-control-service-prep",
+      "aquahot-250-p01-use-care-winterization-service-prep",
+    ]);
+
+    for (const query of ["fan not working", "lid not opening", "leaking", "cabin heat not working"]) {
+      expect(
+        lookupSymptomGuides(index, query)
+          .slice(0, 5)
+          .map((symptom) => symptom.slug)
+          .filter((slug) => brandSpecificSlugs.has(slug)),
+        query,
+      ).toEqual([]);
+    }
+  });
+
   it("finds Coleman-Mach Wi-Fi thermostat and 48000 heat-pump symptom pages from owner searches", () => {
     const index = buildSymptomSearchIndex(corpus);
 

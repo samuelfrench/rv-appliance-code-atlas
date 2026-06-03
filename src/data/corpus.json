@@ -34576,6 +34576,9 @@
         "suburban rv model number serial number locator",
         "suburban service center dealer locator rv",
         "suburban appliance label model serial service prep"
+      ],
+      "searchRequiredTerms": [
+        "suburban"
       ]
     },
     {
@@ -34602,6 +34605,10 @@
         "maxxair maxxfan lid will not open",
         "maxxair maxxfan deluxe auto mode thermostat rain sensor beeps",
         "maxxair maxxfan deluxe remote lid fan speed service prep"
+      ],
+      "searchRequiredTerms": [
+        "maxxair",
+        "maxxfan"
       ]
     },
     {
@@ -34623,6 +34630,10 @@
         "MaxxAir 4 5 6 key wall control operation manual",
         "maxxair wall control rain sensor AUTO mode",
         "maxxair wall control in out fan speed display service prep"
+      ],
+      "searchRequiredTerms": [
+        "maxxair",
+        "maxxfan"
       ]
     },
     {
@@ -34649,6 +34660,12 @@
         "aqua hot cabin heat not working",
         "aquahot 250p hot water cabin heat winterization storage",
         "aqua-hot 250 p01 factory authorized service center prep"
+      ],
+      "searchRequiredTerms": [
+        "aqua",
+        "aquahot",
+        "250",
+        "p01"
       ]
     },
     {
