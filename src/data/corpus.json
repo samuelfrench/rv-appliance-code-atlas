@@ -4841,6 +4841,174 @@
       "url": "https://www.cummins.com/sites/default/files/2018-08/PGBU-Warranty-Statement.pdf",
       "type": "manufacturer-pdf",
       "official": true
+    },
+    {
+      "id": "dometic-freshjet-inspect-maintenance-support",
+      "brand": "Dometic",
+      "title": "Dometic FreshJet AC Inspection and Maintenance Support",
+      "url": "https://support.dometic.com/en/freshjet-ac/How-to-Inspectperform-maintenance-dbee",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-acc3100-modes-support",
+      "brand": "Dometic",
+      "title": "Dometic ACC3100 Available Modes Support",
+      "url": "https://support.dometic.com/en/ACC3100/Which-modes-are-available-4dc9",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-acc3100-cleaning-support",
+      "brand": "Dometic",
+      "title": "Dometic ACC3100 Cleaning Support",
+      "url": "https://support.dometic.com/en/ACC3100/How-to-clean-the-product-82f8",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-rooftop-ac-category",
+      "brand": "Dometic",
+      "title": "Dometic Rooftop RV Air Conditioners Product Category",
+      "url": "https://www.dometic.com/en-us/category/rv-and-van/rv-air-conditioners/rooftop-rv-air-conditioners",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "furrion-range-hoods-support-index",
+      "brand": "Furrion",
+      "title": "Lippert Furrion Range Hoods Support Index",
+      "url": "https://support.lci1.com/range-hoods",
+      "type": "manufacturer-support-index",
+      "official": true
+    },
+    {
+      "id": "furrion-dishwashers-support-index",
+      "brand": "Furrion",
+      "title": "Lippert Furrion Dishwashers Support Index",
+      "url": "https://support.lci1.com/dishwashers",
+      "type": "manufacturer-support-index",
+      "official": true
+    },
+    {
+      "id": "furrion-cooktops-support-index",
+      "brand": "Furrion",
+      "title": "Lippert Furrion Cooktops Support Index",
+      "url": "https://support.lci1.com/cooktops",
+      "type": "manufacturer-support-index",
+      "official": true
+    },
+    {
+      "id": "girard-appliances-support-index",
+      "brand": "Lippert",
+      "title": "Lippert Girard Appliances Support Index",
+      "url": "https://support.lci1.com/girards-appliances",
+      "type": "manufacturer-support-index",
+      "official": true
+    },
+    {
+      "id": "suburban-advantage-tankless-water-heater-product",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban Advantage Tankless Water Heater",
+      "url": "https://suburbanrv.com/water-heating/tankless-water-heaters/advantage-tankless-water-heater/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "suburban-can-slide-out-kitchen-3250ast-product",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban CAN Slide-Out Kitchen 3250AST",
+      "url": "https://suburbanrv.com/kitchen-galley/can-galley-appliances/3250AST/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "thetford-aqua-magic-vi-support",
+      "brand": "Thetford",
+      "title": "Thetford Aqua-Magic VI Support",
+      "url": "https://www.thetford.com/us/thetford-support/aqua-magic-vi/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-aqua-magic-style-ii-support",
+      "brand": "Thetford",
+      "title": "Thetford Aqua-Magic Style II Support",
+      "url": "https://www.thetford.com/us/thetford-support/aqua-magic-style-ii/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-n10dc-support",
+      "brand": "Norcold",
+      "title": "Norcold N10DC Support",
+      "url": "https://www.thetford.com/us/thetford-support/n10dc/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-nr740-support",
+      "brand": "Norcold",
+      "title": "Norcold NR740 Support",
+      "url": "https://www.thetford.com/us/thetford-support/nr740/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "coleman-mach-signature-mach-10-product",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Signature Series Mach 10",
+      "url": "https://coleman-mach.com/products/air-conditioners/signature-series-mach-10/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "coleman-mach-signature-mach-15-product",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Signature Series Mach 15",
+      "url": "https://coleman-mach.com/products/air-conditioners/signature-series-mach-15/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-maxxfan-low-profile-product",
+      "brand": "MaxxAir",
+      "title": "MaxxAir MaxxFan Low Profile",
+      "url": "https://www.maxxair.com/products/fans/maxxfan-low-profile/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-unimaxx-vent-lid-product",
+      "brand": "MaxxAir",
+      "title": "MaxxAir Unimaxx Vent Lid",
+      "url": "https://www.maxxair.com/products/covers/unimaxx-vent-lid/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "aquahot-125d-product",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot 125D Product Page",
+      "url": "https://www.aquahot.com/Products/RV/125D.aspx",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "aquahot-175m-product",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot 175M Product Page",
+      "url": "https://www.aquahot.com/products/rv/175m.aspx",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "onan-ec-ags-compatibility-chart",
+      "brand": "Onan",
+      "title": "Cummins Onan EC-AGS+ Compatibility Chart",
+      "url": "https://cssna-ec.cummins.com/pub/AGSCompatiblityChart.pdf",
+      "type": "manufacturer-pdf",
+      "official": true
     }
   ],
   "entries": [
@@ -38249,7 +38417,28 @@
         "suburban-nt-park-model-furnaces-product",
         "maxxair-service-locator",
         "maxxair-return-policy-support",
-        "onan-rv-generator-warranty-statement-pdf"
+        "onan-rv-generator-warranty-statement-pdf",
+        "dometic-freshjet-inspect-maintenance-support",
+        "dometic-acc3100-modes-support",
+        "dometic-acc3100-cleaning-support",
+        "dometic-rooftop-ac-category",
+        "furrion-range-hoods-support-index",
+        "furrion-dishwashers-support-index",
+        "furrion-cooktops-support-index",
+        "girard-appliances-support-index",
+        "suburban-advantage-tankless-water-heater-product",
+        "suburban-can-slide-out-kitchen-3250ast-product",
+        "thetford-aqua-magic-vi-support",
+        "thetford-aqua-magic-style-ii-support",
+        "norcold-n10dc-support",
+        "norcold-nr740-support",
+        "coleman-mach-signature-mach-10-product",
+        "coleman-mach-signature-mach-15-product",
+        "maxxair-maxxfan-low-profile-product",
+        "maxxair-unimaxx-vent-lid-product",
+        "aquahot-125d-product",
+        "aquahot-175m-product",
+        "onan-ec-ags-compatibility-chart"
       ]
     },
     {
@@ -46189,6 +46378,512 @@
       "searchRequiredTerms": [
         "onanwarranty",
         "cumminswarranty"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-inspection-maintenance-model-tag-prep",
+      "slug": "dometic-freshjet-inspection-maintenance-model-tag-prep",
+      "title": "Dometic FreshJet inspection and maintenance prep",
+      "summary": "Use the official Dometic FreshJet inspection and maintenance support page to collect model-label and owner-accessible maintenance notes.",
+      "safeChecklist": [
+        "Record the FreshJet model, visible data-label details, return-air filter condition, control mode, airflow symptom, and maintenance history.",
+        "Save photos from normal interior access, including the air distribution box, filters, and any visible dust or condensate note.",
+        "Use Dometic, a dealer, or qualified RV HVAC service for fitted-unit service, sensors, fans, sealed-system work, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "dometic-freshjet-inspect-maintenance-support"
+      ],
+      "searchAliases": [
+        "dometic freshjet inspection maintenance data label service prep",
+        "freshjet inspect maintenance model tag prep",
+        "freshjet maintenance filter service notes",
+        "dometic freshjet service prep inspection support"
+      ],
+      "searchRequiredTerms": [
+        "freshjetinspection",
+        "freshjetinspect",
+        "freshjetmaintenance",
+        "freshjetservice"
+      ]
+    },
+    {
+      "id": "dometic-acc3100-mode-control-prep",
+      "slug": "dometic-acc3100-mode-control-prep",
+      "title": "Dometic ACC3100 roof-vent mode control prep",
+      "summary": "Use the official Dometic ACC3100 modes support page to document mode, control, and display-state questions.",
+      "safeChecklist": [
+        "Record the ACC3100 model, visible product label, current mode, display state, remote or wall-control state, and exact behavior.",
+        "Save photos of the control display, remote, visible label, and RV make and model before contacting support.",
+        "Use Dometic, a dealer, or qualified RV service for installed controls, motor, sensors, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "dometic-acc3100-modes-support"
+      ],
+      "searchAliases": [
+        "dometic acc3100 modes auto manual sleep vent control",
+        "dometic acc3100 mode control support prep",
+        "acc3100 available modes display support",
+        "acc3100 auto manual sleep mode prep"
+      ],
+      "searchRequiredTerms": [
+        "acc3100modes",
+        "acc3100control",
+        "acc3100"
+      ]
+    },
+    {
+      "id": "dometic-acc3100-cleaning-shutdown-prep",
+      "slug": "dometic-acc3100-cleaning-shutdown-prep",
+      "title": "Dometic ACC3100 cleaning shutdown prep",
+      "summary": "Use the official Dometic ACC3100 cleaning support page to document safe owner-accessible cleaning questions.",
+      "safeChecklist": [
+        "Record the ACC3100 model, visible product label, cleaning question, finish condition, current mode, and visible debris from normal access.",
+        "Save photos of the visible surfaces, controls, and product label before contacting support.",
+        "Use Dometic, a dealer, or qualified RV service for installed-unit service, filters, motor, sensors, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "dometic-acc3100-cleaning-support"
+      ],
+      "searchAliases": [
+        "dometic acc3100 cleaning shutdown product support",
+        "acc3100 cleaning support visible surfaces",
+        "dometic acc3100 product cleaning prep",
+        "acc3100 clean product support notes"
+      ],
+      "searchRequiredTerms": [
+        "acc3100cleaning",
+        "acc3100"
+      ]
+    },
+    {
+      "id": "dometic-rooftop-ac-penguin-blizzard-model-routing",
+      "slug": "dometic-rooftop-ac-penguin-blizzard-model-routing",
+      "title": "Dometic rooftop AC Penguin and Blizzard model routing",
+      "summary": "Use the official Dometic rooftop RV air-conditioner category page to identify Penguin, Blizzard, and related model families before support.",
+      "safeChecklist": [
+        "Record the Dometic model family, visible data-label details, air-distribution-box style, control type, RV make and model, and exact symptom.",
+        "Save photos of the visible product label, inside controls, grille, and purchase or installation paperwork before contacting support.",
+        "Use Dometic, a dealer, or qualified RV HVAC service for installed-unit fit, sealed-system service, parts, or replacement decisions."
+      ],
+      "sourceIds": [
+        "dometic-rooftop-ac-category"
+      ],
+      "searchAliases": [
+        "dometic rooftop ac penguin blizzard model routing",
+        "dometic penguin blizzard rooftop air conditioner support",
+        "dometic rooftop rv air conditioner category prep",
+        "dometic rv ac model family penguin blizzard"
+      ],
+      "searchRequiredTerms": [
+        "dometicrooftop",
+        "penguinblizzard"
+      ]
+    },
+    {
+      "id": "furrion-range-hood-model-manual-router-prep",
+      "slug": "furrion-range-hood-model-manual-router-prep",
+      "title": "Furrion range hood manual router prep",
+      "summary": "Use the official Lippert Furrion range hoods support index to route model, manual, and support questions.",
+      "safeChecklist": [
+        "Record the Furrion range hood model, visible label details, fan or light symptom, RV make and model, and the support document you plan to use.",
+        "Save photos of the visible label, front controls, light state, fan state, purchase paperwork, and surrounding cabinet context.",
+        "Use Furrion, Lippert, a dealer, or qualified RV appliance service for installed power, ducting, fan, light, parts, or replacement decisions."
+      ],
+      "sourceIds": [
+        "furrion-range-hoods-support-index"
+      ],
+      "searchAliases": [
+        "furrion range hood support manuals model prep",
+        "furrion range hood manual router prep",
+        "lippert furrion range hoods support index",
+        "furrion range hood model serial support"
+      ],
+      "searchRequiredTerms": [
+        "furrion+hood",
+        "furrion+hoods"
+      ]
+    },
+    {
+      "id": "furrion-dishwasher-model-manual-router-prep",
+      "slug": "furrion-dishwasher-model-manual-router-prep",
+      "title": "Furrion dishwasher manual router prep",
+      "summary": "Use the official Lippert Furrion dishwashers support index to route model, manual, and support questions.",
+      "safeChecklist": [
+        "Record the Furrion dishwasher model, visible label details, selected cycle, displayed state, water condition, RV make and model, and exact symptom.",
+        "Save photos of the product label, controls, visible water or drain symptom, purchase paperwork, and support document link.",
+        "Use Furrion, Lippert, a dealer, or qualified RV appliance service for installed power, plumbing, pump, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "furrion-dishwashers-support-index"
+      ],
+      "searchAliases": [
+        "furrion dishwasher support manuals model prep",
+        "furrion dishwasher manual router prep",
+        "lippert furrion dishwashers support index",
+        "furrion dishwasher model serial support"
+      ],
+      "searchRequiredTerms": [
+        "furriondishwasher",
+        "furriondishwashers"
+      ]
+    },
+    {
+      "id": "furrion-cooktop-current-model-support-router",
+      "slug": "furrion-cooktop-current-model-support-router",
+      "title": "Furrion cooktop current model support router",
+      "summary": "Use the official Lippert Furrion cooktops support index to route current cooktop model and manual questions.",
+      "safeChecklist": [
+        "Record the Furrion cooktop model, visible label details, fuel or power type shown on the label, control state, RV make and model, and exact support question.",
+        "Save photos of the visible product label, controls, purchase paperwork, and the support document link before contacting support.",
+        "Use Furrion, Lippert, a dealer, or qualified RV appliance service for fuel setup, installed power, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "furrion-cooktops-support-index"
+      ],
+      "searchAliases": [
+        "furrion cooktop current model support router",
+        "furrion cooktop support manuals model prep",
+        "lippert furrion cooktops support index",
+        "furrion cooktop model serial support"
+      ],
+      "searchRequiredTerms": [
+        "furrioncooktop",
+        "furrioncooktops"
+      ]
+    },
+    {
+      "id": "girard-appliance-support-router-refrigerator-tankless-prep",
+      "slug": "girard-appliance-support-router-refrigerator-tankless-prep",
+      "title": "Girard appliance support router prep",
+      "summary": "Use the official Lippert Girard Appliances support index to route refrigerator, tankless, and appliance-support questions.",
+      "safeChecklist": [
+        "Record the Girard appliance type, model, serial details, display state, water or temperature symptom, RV make and model, and exact support question.",
+        "Save photos of the product label, front panel, any displayed message, purchase paperwork, and the support document link.",
+        "Use Girard, Lippert, a dealer, or qualified RV appliance service for fuel setup, water flow, installed power, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "girard-appliances-support-index"
+      ],
+      "searchAliases": [
+        "girard appliance support refrigerator tankless prep",
+        "girard appliances support index model prep",
+        "lippert girard appliance manuals support",
+        "girard refrigerator tankless support routing"
+      ],
+      "searchRequiredTerms": [
+        "girardappliance",
+        "girardappliances",
+        "girardrefrigerator"
+      ]
+    },
+    {
+      "id": "suburban-advantage-tankless-control-freeze-prep",
+      "slug": "suburban-advantage-tankless-control-freeze-prep",
+      "title": "Suburban Advantage tankless control and freeze prep",
+      "summary": "Use the official Suburban Advantage Tankless Water Heater product page to capture control, freeze-protection, and model-family notes.",
+      "safeChecklist": [
+        "Record the Suburban Advantage tankless model, visible label details, control state, water-temperature symptom, freeze exposure, RV make and model, and exact question.",
+        "Save photos of the visible label, control display, plumbing bay context from normal access, purchase paperwork, and any freeze-event notes.",
+        "Use Suburban, an authorized service center, dealer, or qualified RV water-heater service for installation, venting, fuel setup, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "suburban-advantage-tankless-water-heater-product"
+      ],
+      "searchAliases": [
+        "suburban advantage tankless control freeze prep",
+        "suburban advantage tankless water heater model",
+        "advantage tankless suburban freeze control support",
+        "suburban tankless advantage water heater support"
+      ],
+      "searchRequiredTerms": [
+        "suburbanadvantage",
+        "advantagetankless",
+        "suburbantankless",
+        "tanklessadvantage"
+      ]
+    },
+    {
+      "id": "suburban-can-slide-out-kitchen-model-product-prep",
+      "slug": "suburban-can-slide-out-kitchen-model-product-prep",
+      "title": "Suburban CAN slide-out kitchen model prep",
+      "summary": "Use the official Suburban CAN 3250AST slide-out kitchen product page to capture model and product-family notes.",
+      "safeChecklist": [
+        "Record the 3250AST model, visible label details, RV make and model, product configuration, purchase paperwork, and exact support question.",
+        "Save photos of the visible product label, controls, sink or galley layout from normal access, and any visible shipping or fitment issue.",
+        "Use Suburban, an authorized service center, dealer, or qualified RV appliance service for LP setup, water connections, installation, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "suburban-can-slide-out-kitchen-3250ast-product"
+      ],
+      "searchAliases": [
+        "suburban 3250ast can slide out kitchen model",
+        "suburban can slide out kitchen model prep",
+        "suburban 3250ast kitchen product support",
+        "suburban can galley appliance 3250ast"
+      ],
+      "searchRequiredTerms": [
+        "3250ast",
+        "slideoutkitchen",
+        "suburbancan"
+      ]
+    },
+    {
+      "id": "thetford-aqua-magic-vi-toilet-model-flush-winterizing-prep",
+      "slug": "thetford-aqua-magic-vi-toilet-model-flush-winterizing-prep",
+      "title": "Thetford Aqua-Magic VI flush and winterizing prep",
+      "summary": "Use the official Thetford Aqua-Magic VI support page to collect toilet model, flush, cleaning, and winterizing notes.",
+      "safeChecklist": [
+        "Record Aqua-Magic VI model and serial details, RV make and model, flush symptom, water-retention note, cleaning product used, and winterizing history.",
+        "Save photos of the product label, visible bowl or seal symptom, purchase paperwork, and safe additive or cleaning notes.",
+        "Use Thetford support, an authorized service center, dealer, or qualified RV sanitation service for parts, mechanism, seal, water-module, or replacement decisions."
+      ],
+      "sourceIds": [
+        "thetford-aqua-magic-vi-support"
+      ],
+      "searchAliases": [
+        "thetford aqua magic vi toilet flush winterizing prep",
+        "aqua magic vi toilet model support",
+        "thetford aqua magic vi cleaning winterizing",
+        "aqua magic vi flush support model serial"
+      ],
+      "searchRequiredTerms": [
+        "magicvi"
+      ]
+    },
+    {
+      "id": "thetford-aqua-magic-style-ii-cleaning-leak-model-prep",
+      "slug": "thetford-aqua-magic-style-ii-cleaning-leak-model-prep",
+      "title": "Thetford Aqua-Magic Style II cleaning and leak prep",
+      "summary": "Use the official Thetford Aqua-Magic Style II support page to collect cleaning, leak, model, and warranty-routing notes.",
+      "safeChecklist": [
+        "Record Aqua-Magic Style II model and serial details, RV make and model, leak location, flush symptom, cleaning product used, and winterizing history.",
+        "Save photos of the product label, visible leak or bowl symptom, purchase paperwork, and safe additive or cleaning notes.",
+        "Use Thetford support, an authorized service center, dealer, or qualified RV sanitation service for parts, seal, water-module, base, or replacement decisions."
+      ],
+      "sourceIds": [
+        "thetford-aqua-magic-style-ii-support"
+      ],
+      "searchAliases": [
+        "thetford aqua magic style ii toilet cleaning leak model",
+        "aqua magic style ii leak cleaning prep",
+        "thetford style ii toilet support model serial",
+        "aqua magic style ii winterizing support"
+      ],
+      "searchRequiredTerms": [
+        "styleii"
+      ]
+    },
+    {
+      "id": "norcold-n10dc-model-control-service-routing-prep",
+      "slug": "norcold-n10dc-model-control-service-routing-prep",
+      "title": "Norcold N10DC model and control routing prep",
+      "summary": "Use the official Norcold N10DC support page to collect model, control, manual, and service-routing details.",
+      "safeChecklist": [
+        "Record the N10DC model and serial details, RV make and model, control state, temperature notes, battery state shown by the RV, and exact symptom.",
+        "Save photos of the product label, front controls, displayed state, installation paperwork, and the support document link.",
+        "Use Norcold, Thetford support, an authorized service center, dealer, or qualified RV refrigerator service for installed power, sensors, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "norcold-n10dc-support"
+      ],
+      "searchAliases": [
+        "norcold n10dc model control service routing prep",
+        "n10dc refrigerator support model serial",
+        "norcold n10dc control manual support",
+        "n10dc service routing temperature notes"
+      ],
+      "searchRequiredTerms": [
+        "n10dc"
+      ]
+    },
+    {
+      "id": "norcold-nr740-discontinued-refrigerator-model-defrost-prep",
+      "slug": "norcold-nr740-discontinued-refrigerator-model-defrost-prep",
+      "title": "Norcold NR740 discontinued refrigerator prep",
+      "summary": "Use the official Norcold NR740 support page to collect discontinued-model, defrost, odor, and support-routing details.",
+      "safeChecklist": [
+        "Record the NR740 model and serial details, RV make and model, temperature notes, defrost history, odor notes, and exact support question.",
+        "Save photos of the product label, front controls, food-compartment condition, purchase paperwork, and the support document link.",
+        "Use Norcold, Thetford support, an authorized service center, dealer, or qualified RV refrigerator service for installed power, cooling unit, parts, or replacement decisions."
+      ],
+      "sourceIds": [
+        "norcold-nr740-support"
+      ],
+      "searchAliases": [
+        "norcold nr740 discontinued refrigerator defrost prep",
+        "nr740 refrigerator support model serial",
+        "norcold nr740 defrost odor support",
+        "norcold nr740 discontinued model routing"
+      ],
+      "searchRequiredTerms": [
+        "nr740"
+      ]
+    },
+    {
+      "id": "coleman-mach-10-model-family-lookup-prep",
+      "slug": "coleman-mach-10-model-family-lookup-prep",
+      "title": "Coleman-Mach Mach 10 model family lookup prep",
+      "summary": "Use the official Coleman-Mach Signature Series Mach 10 product page to identify the model family before support.",
+      "safeChecklist": [
+        "Record the Mach 10 model family, visible data-label details, control type, RV make and model, campsite power notes, and exact cooling or heat-pump symptom.",
+        "Save photos of the visible label, thermostat or control state, air-distribution-box style, purchase paperwork, and any load-management notes.",
+        "Use Coleman-Mach, an Airxcel service center, dealer, or qualified RV HVAC service for installed power, compressor, fan, parts, or replacement decisions."
+      ],
+      "sourceIds": [
+        "coleman-mach-signature-mach-10-product"
+      ],
+      "searchAliases": [
+        "coleman mach 10 signature series model family lookup",
+        "coleman mach10 model family support prep",
+        "mach 10 signature series coleman model",
+        "coleman mach 10 load support notes"
+      ],
+      "searchRequiredTerms": [
+        "mach10"
+      ]
+    },
+    {
+      "id": "coleman-mach-15-model-family-load-prep",
+      "slug": "coleman-mach-15-model-family-load-prep",
+      "title": "Coleman-Mach Mach 15 model and load prep",
+      "summary": "Use the official Coleman-Mach Signature Series Mach 15 product page to identify the model family and collect load notes before support.",
+      "safeChecklist": [
+        "Record the Mach 15 model family, visible data-label details, control type, RV make and model, campsite power notes, and exact cooling symptom.",
+        "Save photos of the visible label, thermostat or control state, air-distribution-box style, purchase paperwork, and any generator or pedestal note.",
+        "Use Coleman-Mach, an Airxcel service center, dealer, or qualified RV HVAC service for installed power, compressor, fan, parts, or replacement decisions."
+      ],
+      "sourceIds": [
+        "coleman-mach-signature-mach-15-product"
+      ],
+      "searchAliases": [
+        "coleman mach 15 signature series model load prep",
+        "coleman mach15 model family support prep",
+        "mach 15 signature series coleman model",
+        "coleman mach 15 load management notes"
+      ],
+      "searchRequiredTerms": [
+        "mach15"
+      ]
+    },
+    {
+      "id": "maxxair-maxxfan-low-profile-model-control-prep",
+      "slug": "maxxair-maxxfan-low-profile-model-control-prep",
+      "title": "MaxxAir MaxxFan Low Profile model prep",
+      "summary": "Use the official MaxxAir MaxxFan Low Profile product page to identify the fan model and control family before support.",
+      "safeChecklist": [
+        "Record the MaxxFan Low Profile model, visible label details, lid color, control style, rain state, travel state, and exact fan or lid symptom.",
+        "Save photos of the visible label, lid, control state, purchase paperwork, and any weather or travel context.",
+        "Use MaxxAir, Airxcel support, an authorized service center, dealer, or qualified RV service for installed power, motor, lid, parts, or replacement decisions."
+      ],
+      "sourceIds": [
+        "maxxair-maxxfan-low-profile-product"
+      ],
+      "searchAliases": [
+        "maxxair maxxfan low profile model control prep",
+        "maxxfan low profile support model serial",
+        "maxxair low profile fan lid control",
+        "maxxfan low profile product support"
+      ],
+      "searchRequiredTerms": [
+        "maxxfan+low",
+        "maxxair+low"
+      ]
+    },
+    {
+      "id": "maxxair-unimaxx-vent-lid-identification-prep",
+      "slug": "maxxair-unimaxx-vent-lid-identification-prep",
+      "title": "MaxxAir Unimaxx vent lid identification prep",
+      "summary": "Use the official MaxxAir Unimaxx Vent Lid product page to identify cover type and support details before ordering or service.",
+      "safeChecklist": [
+        "Record the Unimaxx model, visible lid or vent details, color, hinge style, RV make and model, purchase notes, and exact fitment question.",
+        "Save photos of the existing vent from safe ground-level or normal interior access, product packaging, label, and purchase paperwork.",
+        "Use MaxxAir, Airxcel support, an authorized service center, dealer, or qualified RV service for fitment, mounting, sealant, parts, or replacement decisions."
+      ],
+      "sourceIds": [
+        "maxxair-unimaxx-vent-lid-product"
+      ],
+      "searchAliases": [
+        "maxxair unimaxx vent lid identification prep",
+        "unimaxx vent lid model support",
+        "maxxair unimaxx replacement lid fitment",
+        "unimaxx vent cover support prep"
+      ],
+      "searchRequiredTerms": [
+        "unimaxx"
+      ]
+    },
+    {
+      "id": "aquahot-125d-model-control-service-prep",
+      "slug": "aquahot-125d-model-control-service-prep",
+      "title": "Aqua-Hot 125D model and control prep",
+      "summary": "Use the official Aqua-Hot 125D product page to collect model, control, hot-water, and cabin-heat notes before support.",
+      "safeChecklist": [
+        "Record the Aqua-Hot 125D model, serial details, control state, hot-water symptom, cabin-heat symptom, RV make and model, and exact support question.",
+        "Save photos of the visible label, control panel, owner-accessible status lights, purchase paperwork, and recent maintenance notes.",
+        "Use Aqua-Hot, an authorized service center, dealer, or qualified hydronic service for fuel system, exhaust, fluid loop, installed power, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "aquahot-125d-product"
+      ],
+      "searchAliases": [
+        "aqua hot 125d model control service prep",
+        "aquahot 125d product support model",
+        "aqua hot 125d hot water cabin heat notes",
+        "aquahot 125d service routing prep"
+      ],
+      "searchRequiredTerms": [
+        "aquahot125d",
+        "125d"
+      ]
+    },
+    {
+      "id": "aquahot-175m-model-support-routing-prep",
+      "slug": "aquahot-175m-model-support-routing-prep",
+      "title": "Aqua-Hot 175M model support routing prep",
+      "summary": "Use the official Aqua-Hot 175M product page to collect model, modular-heater, hot-water, and cabin-heat notes before support.",
+      "safeChecklist": [
+        "Record the Aqua-Hot 175M model, serial details, control state, hot-water symptom, cabin-heat symptom, RV make and model, and exact support question.",
+        "Save photos of the visible label, control panel, owner-accessible status lights, purchase paperwork, and recent maintenance notes.",
+        "Use Aqua-Hot, an authorized service center, dealer, or qualified hydronic service for fuel system, exhaust, fluid loop, installed power, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "aquahot-175m-product"
+      ],
+      "searchAliases": [
+        "aqua hot 175m modular model support routing",
+        "aquahot 175m product support model",
+        "aqua hot 175m hot water cabin heat notes",
+        "aquahot 175m service routing prep"
+      ],
+      "searchRequiredTerms": [
+        "aquahot175m",
+        "175m"
+      ]
+    },
+    {
+      "id": "onan-ec-ags-compatibility-model-prep",
+      "slug": "onan-ec-ags-compatibility-model-prep",
+      "title": "Onan EC-AGS+ compatibility model prep",
+      "summary": "Use the official Cummins Onan EC-AGS+ compatibility chart to collect generator, harness, and kit-compatibility details before support.",
+      "safeChecklist": [
+        "Record the EC-AGS or AGS+ kit, generator model, spec letter, serial number, RV make and model, air-conditioner control type, and exact compatibility question.",
+        "Save photos of the generator label, AGS display or module label, purchase paperwork, and the chart row you plan to reference.",
+        "Use Cummins Onan, Coach Care, an authorized service provider, or qualified generator service for compatibility, installed power, auto-start setup, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "onan-ec-ags-compatibility-chart"
+      ],
+      "searchAliases": [
+        "cummins onan ec ags compatibility chart model prep",
+        "onan ec ags plus compatibility model chart",
+        "cummins ec ags compatibility generator model",
+        "onan ags compatibility chart service prep"
+      ],
+      "searchRequiredTerms": [
+        "ecagscompatibility",
+        "agscompatibility",
+        "ecags",
+        "onanec"
       ]
     }
   ],

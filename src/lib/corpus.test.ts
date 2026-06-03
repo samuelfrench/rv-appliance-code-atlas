@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 864;
-const expectedSourceCount = 602;
-const expectedSymptomCount = 435;
+const expectedSourceCount = 623;
+const expectedSymptomCount = 456;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -7425,6 +7425,240 @@ describe("verified corpus", () => {
       "service locator",
       "return policy",
       "generator warranty",
+    ]) {
+      expect(
+        lookupSymptomGuides(index, query)
+          .slice(0, 5)
+          .map((symptom) => symptom.slug)
+          .filter((slug) => anchoredSlugs.has(slug)),
+        query,
+      ).toEqual([]);
+    }
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds official Dometic, Furrion/Girard, Suburban, Thetford/Norcold, Coleman, MaxxAir, Aqua-Hot, and Onan support-router guides without code entries", () => {
+    const expectedSources = new Map<string, string>([
+      [
+        "dometic-freshjet-inspect-maintenance-support",
+        "https://support.dometic.com/en/freshjet-ac/How-to-Inspectperform-maintenance-dbee",
+      ],
+      ["dometic-acc3100-modes-support", "https://support.dometic.com/en/ACC3100/Which-modes-are-available-4dc9"],
+      ["dometic-acc3100-cleaning-support", "https://support.dometic.com/en/ACC3100/How-to-clean-the-product-82f8"],
+      [
+        "dometic-rooftop-ac-category",
+        "https://www.dometic.com/en-us/category/rv-and-van/rv-air-conditioners/rooftop-rv-air-conditioners",
+      ],
+      ["furrion-range-hoods-support-index", "https://support.lci1.com/range-hoods"],
+      ["furrion-dishwashers-support-index", "https://support.lci1.com/dishwashers"],
+      ["furrion-cooktops-support-index", "https://support.lci1.com/cooktops"],
+      ["girard-appliances-support-index", "https://support.lci1.com/girards-appliances"],
+      [
+        "suburban-advantage-tankless-water-heater-product",
+        "https://suburbanrv.com/water-heating/tankless-water-heaters/advantage-tankless-water-heater/",
+      ],
+      [
+        "suburban-can-slide-out-kitchen-3250ast-product",
+        "https://suburbanrv.com/kitchen-galley/can-galley-appliances/3250AST/",
+      ],
+      ["thetford-aqua-magic-vi-support", "https://www.thetford.com/us/thetford-support/aqua-magic-vi/"],
+      [
+        "thetford-aqua-magic-style-ii-support",
+        "https://www.thetford.com/us/thetford-support/aqua-magic-style-ii/",
+      ],
+      ["norcold-n10dc-support", "https://www.thetford.com/us/thetford-support/n10dc/"],
+      ["norcold-nr740-support", "https://www.thetford.com/us/thetford-support/nr740/"],
+      [
+        "coleman-mach-signature-mach-10-product",
+        "https://coleman-mach.com/products/air-conditioners/signature-series-mach-10/",
+      ],
+      [
+        "coleman-mach-signature-mach-15-product",
+        "https://coleman-mach.com/products/air-conditioners/signature-series-mach-15/",
+      ],
+      ["maxxair-maxxfan-low-profile-product", "https://www.maxxair.com/products/fans/maxxfan-low-profile/"],
+      ["maxxair-unimaxx-vent-lid-product", "https://www.maxxair.com/products/covers/unimaxx-vent-lid/"],
+      ["aquahot-125d-product", "https://www.aquahot.com/Products/RV/125D.aspx"],
+      ["aquahot-175m-product", "https://www.aquahot.com/products/rv/175m.aspx"],
+      ["onan-ec-ags-compatibility-chart", "https://cssna-ec.cummins.com/pub/AGSCompatiblityChart.pdf"],
+    ]);
+    const expectedSymptomSourceIds = new Map<string, string[]>([
+      ["dometic-freshjet-inspection-maintenance-model-tag-prep", ["dometic-freshjet-inspect-maintenance-support"]],
+      ["dometic-acc3100-mode-control-prep", ["dometic-acc3100-modes-support"]],
+      ["dometic-acc3100-cleaning-shutdown-prep", ["dometic-acc3100-cleaning-support"]],
+      ["dometic-rooftop-ac-penguin-blizzard-model-routing", ["dometic-rooftop-ac-category"]],
+      ["furrion-range-hood-model-manual-router-prep", ["furrion-range-hoods-support-index"]],
+      ["furrion-dishwasher-model-manual-router-prep", ["furrion-dishwashers-support-index"]],
+      ["furrion-cooktop-current-model-support-router", ["furrion-cooktops-support-index"]],
+      ["girard-appliance-support-router-refrigerator-tankless-prep", ["girard-appliances-support-index"]],
+      ["suburban-advantage-tankless-control-freeze-prep", ["suburban-advantage-tankless-water-heater-product"]],
+      ["suburban-can-slide-out-kitchen-model-product-prep", ["suburban-can-slide-out-kitchen-3250ast-product"]],
+      ["thetford-aqua-magic-vi-toilet-model-flush-winterizing-prep", ["thetford-aqua-magic-vi-support"]],
+      ["thetford-aqua-magic-style-ii-cleaning-leak-model-prep", ["thetford-aqua-magic-style-ii-support"]],
+      ["norcold-n10dc-model-control-service-routing-prep", ["norcold-n10dc-support"]],
+      ["norcold-nr740-discontinued-refrigerator-model-defrost-prep", ["norcold-nr740-support"]],
+      ["coleman-mach-10-model-family-lookup-prep", ["coleman-mach-signature-mach-10-product"]],
+      ["coleman-mach-15-model-family-load-prep", ["coleman-mach-signature-mach-15-product"]],
+      ["maxxair-maxxfan-low-profile-model-control-prep", ["maxxair-maxxfan-low-profile-product"]],
+      ["maxxair-unimaxx-vent-lid-identification-prep", ["maxxair-unimaxx-vent-lid-product"]],
+      ["aquahot-125d-model-control-service-prep", ["aquahot-125d-product"]],
+      ["aquahot-175m-model-support-routing-prep", ["aquahot-175m-product"]],
+      ["onan-ec-ags-compatibility-model-prep", ["onan-ec-ags-compatibility-chart"]],
+    ]);
+    const expectedRequiredTerms = new Map<string, string[]>([
+      [
+        "dometic-freshjet-inspection-maintenance-model-tag-prep",
+        ["freshjetinspection", "freshjetinspect", "freshjetmaintenance", "freshjetservice"],
+      ],
+      ["dometic-acc3100-mode-control-prep", ["acc3100modes", "acc3100control", "acc3100"]],
+      ["dometic-acc3100-cleaning-shutdown-prep", ["acc3100cleaning", "acc3100"]],
+      ["dometic-rooftop-ac-penguin-blizzard-model-routing", ["dometicrooftop", "penguinblizzard"]],
+      ["furrion-range-hood-model-manual-router-prep", ["furrion+hood", "furrion+hoods"]],
+      ["furrion-dishwasher-model-manual-router-prep", ["furriondishwasher", "furriondishwashers"]],
+      ["furrion-cooktop-current-model-support-router", ["furrioncooktop", "furrioncooktops"]],
+      [
+        "girard-appliance-support-router-refrigerator-tankless-prep",
+        ["girardappliance", "girardappliances", "girardrefrigerator"],
+      ],
+      [
+        "suburban-advantage-tankless-control-freeze-prep",
+        ["suburbanadvantage", "advantagetankless", "suburbantankless", "tanklessadvantage"],
+      ],
+      ["suburban-can-slide-out-kitchen-model-product-prep", ["3250ast", "slideoutkitchen", "suburbancan"]],
+      ["thetford-aqua-magic-vi-toilet-model-flush-winterizing-prep", ["magicvi"]],
+      ["thetford-aqua-magic-style-ii-cleaning-leak-model-prep", ["styleii"]],
+      ["norcold-n10dc-model-control-service-routing-prep", ["n10dc"]],
+      ["norcold-nr740-discontinued-refrigerator-model-defrost-prep", ["nr740"]],
+      ["coleman-mach-10-model-family-lookup-prep", ["mach10"]],
+      ["coleman-mach-15-model-family-load-prep", ["mach15"]],
+      ["maxxair-maxxfan-low-profile-model-control-prep", ["maxxfan+low", "maxxair+low"]],
+      ["maxxair-unimaxx-vent-lid-identification-prep", ["unimaxx"]],
+      ["aquahot-125d-model-control-service-prep", ["aquahot125d", "125d"]],
+      ["aquahot-175m-model-support-routing-prep", ["aquahot175m", "175m"]],
+      ["onan-ec-ags-compatibility-model-prep", ["ecagscompatibility", "agscompatibility", "ecags", "onanec"]],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const sourcesById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const index = buildSymptomSearchIndex(corpus);
+    const summary = summarizeCorpus(corpus);
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\borifice\b|\bcontrol board\b|\b120\s*vac\b|\b110\s*v\b|\bline-voltage\b|\brefrigerant\b|\bprobe\b|\bwiring\b|\binternal\b|\bsupply line\b|\bopen (the )?(fuel|gas|electrical|rooftop)|remove.*shroud|remove.*cover|measure resistance|fuel nozzle|combustion|coolant pump|manual override|hydraulic work|hydraulic repair/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = sourcesById.get(sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(summary.indexablePages).toBe(expectedEntryCount + expectedSymptomCount + 1);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const [symptomId, sourceIds] of expectedSymptomSourceIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds, symptomId).toEqual(sourceIds);
+      expect(symptom?.searchRequiredTerms, symptomId).toEqual(expectedRequiredTerms.get(symptomId));
+      expect([symptom?.summary, ...(symptom?.safeChecklist ?? [])].join(" "), symptomId).not.toMatch(
+        unsafeOwnerActionPattern,
+      );
+    }
+
+    const topSlugsFor = (query: string) => lookupSymptomGuides(index, query).slice(0, 5).map((symptom) => symptom.slug);
+
+    expect(topSlugsFor("dometic freshjet inspection maintenance data label service prep")).toContain(
+      "dometic-freshjet-inspection-maintenance-model-tag-prep",
+    );
+    expect(topSlugsFor("dometic acc3100 modes auto manual sleep vent control")).toContain(
+      "dometic-acc3100-mode-control-prep",
+    );
+    expect(topSlugsFor("dometic acc3100 cleaning shutdown product support")).toContain(
+      "dometic-acc3100-cleaning-shutdown-prep",
+    );
+    expect(topSlugsFor("dometic rooftop ac penguin blizzard model routing")).toContain(
+      "dometic-rooftop-ac-penguin-blizzard-model-routing",
+    );
+    expect(topSlugsFor("furrion range hood support manuals model prep")).toContain(
+      "furrion-range-hood-model-manual-router-prep",
+    );
+    expect(topSlugsFor("furrion dishwasher support manuals model prep")).toContain(
+      "furrion-dishwasher-model-manual-router-prep",
+    );
+    expect(topSlugsFor("furrion cooktop current model support router")).toContain(
+      "furrion-cooktop-current-model-support-router",
+    );
+    expect(topSlugsFor("girard appliance support refrigerator tankless prep")).toContain(
+      "girard-appliance-support-router-refrigerator-tankless-prep",
+    );
+    expect(topSlugsFor("suburban advantage tankless control freeze prep")).toContain(
+      "suburban-advantage-tankless-control-freeze-prep",
+    );
+    expect(topSlugsFor("suburban 3250ast can slide out kitchen model")).toContain(
+      "suburban-can-slide-out-kitchen-model-product-prep",
+    );
+    expect(topSlugsFor("thetford aqua magic vi toilet flush winterizing prep")).toContain(
+      "thetford-aqua-magic-vi-toilet-model-flush-winterizing-prep",
+    );
+    expect(topSlugsFor("thetford aqua magic style ii toilet cleaning leak model")).toContain(
+      "thetford-aqua-magic-style-ii-cleaning-leak-model-prep",
+    );
+    expect(topSlugsFor("norcold n10dc model control service routing prep")).toContain(
+      "norcold-n10dc-model-control-service-routing-prep",
+    );
+    expect(topSlugsFor("norcold nr740 discontinued refrigerator defrost prep")).toContain(
+      "norcold-nr740-discontinued-refrigerator-model-defrost-prep",
+    );
+    expect(topSlugsFor("coleman mach 10 signature series model family lookup")).toContain(
+      "coleman-mach-10-model-family-lookup-prep",
+    );
+    expect(topSlugsFor("coleman mach 15 signature series model load prep")).toContain(
+      "coleman-mach-15-model-family-load-prep",
+    );
+    expect(topSlugsFor("maxxair maxxfan low profile model control prep")).toContain(
+      "maxxair-maxxfan-low-profile-model-control-prep",
+    );
+    expect(topSlugsFor("maxxair unimaxx vent lid identification prep")).toContain(
+      "maxxair-unimaxx-vent-lid-identification-prep",
+    );
+    expect(topSlugsFor("aqua hot 125d model control service prep")).toContain(
+      "aquahot-125d-model-control-service-prep",
+    );
+    expect(topSlugsFor("aqua hot 175m modular model support routing")).toContain(
+      "aquahot-175m-model-support-routing-prep",
+    );
+    expect(topSlugsFor("cummins onan ec ags compatibility chart model prep")).toContain(
+      "onan-ec-ags-compatibility-model-prep",
+    );
+
+    for (const [symptomId] of expectedSymptomSourceIds) {
+      const symptom = symptomById.get(symptomId);
+      for (const alias of symptom?.searchAliases ?? []) {
+        expect(topSlugsFor(alias), `${symptomId}: ${alias}`).toContain(symptom?.slug);
+      }
+    }
+
+    const anchoredSlugs = new Set(expectedSymptomSourceIds.keys());
+    for (const query of [
+      "inspection maintenance",
+      "cleaning shutdown",
+      "mode control",
+      "model routing",
+      "range hood",
+      "furrion range support",
+      "furrion range model support",
+      "dishwasher support",
+      "cooktop support",
+      "tankless control",
+      "slide out",
+      "toilet flush",
+      "service routing",
+      "signature series",
+      "vent lid",
+      "low profile",
+      "compatibility chart",
     ]) {
       expect(
         lookupSymptomGuides(index, query)

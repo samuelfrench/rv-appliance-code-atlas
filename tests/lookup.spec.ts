@@ -1949,6 +1949,104 @@ test("lookup surfaces Harrier, toilet, MaxxAir, Furrion/Girard, Suburban, and On
   expect(pageErrors).toEqual([]);
 });
 
+test("lookup surfaces the next official support-router batch without generic hijacks", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    [
+      "dometic freshjet inspection maintenance data label service prep",
+      "/symptoms/dometic-freshjet-inspection-maintenance-model-tag-prep/",
+    ],
+    ["dometic acc3100 modes auto manual sleep vent control", "/symptoms/dometic-acc3100-mode-control-prep/"],
+    ["dometic acc3100 cleaning shutdown product support", "/symptoms/dometic-acc3100-cleaning-shutdown-prep/"],
+    ["dometic rooftop ac penguin blizzard model routing", "/symptoms/dometic-rooftop-ac-penguin-blizzard-model-routing/"],
+    ["furrion range hood support manuals model prep", "/symptoms/furrion-range-hood-model-manual-router-prep/"],
+    ["furrion dishwasher support manuals model prep", "/symptoms/furrion-dishwasher-model-manual-router-prep/"],
+    ["furrion cooktop current model support router", "/symptoms/furrion-cooktop-current-model-support-router/"],
+    [
+      "girard appliance support refrigerator tankless prep",
+      "/symptoms/girard-appliance-support-router-refrigerator-tankless-prep/",
+    ],
+    ["suburban advantage tankless control freeze prep", "/symptoms/suburban-advantage-tankless-control-freeze-prep/"],
+    ["suburban 3250ast can slide out kitchen model", "/symptoms/suburban-can-slide-out-kitchen-model-product-prep/"],
+    [
+      "thetford aqua magic vi toilet flush winterizing prep",
+      "/symptoms/thetford-aqua-magic-vi-toilet-model-flush-winterizing-prep/",
+    ],
+    [
+      "thetford aqua magic style ii toilet cleaning leak model",
+      "/symptoms/thetford-aqua-magic-style-ii-cleaning-leak-model-prep/",
+    ],
+    ["norcold n10dc model control service routing prep", "/symptoms/norcold-n10dc-model-control-service-routing-prep/"],
+    [
+      "norcold nr740 discontinued refrigerator defrost prep",
+      "/symptoms/norcold-nr740-discontinued-refrigerator-model-defrost-prep/",
+    ],
+    ["coleman mach 10 signature series model family lookup", "/symptoms/coleman-mach-10-model-family-lookup-prep/"],
+    ["coleman mach 15 signature series model load prep", "/symptoms/coleman-mach-15-model-family-load-prep/"],
+    ["maxxair maxxfan low profile model control prep", "/symptoms/maxxair-maxxfan-low-profile-model-control-prep/"],
+    ["maxxair unimaxx vent lid identification prep", "/symptoms/maxxair-unimaxx-vent-lid-identification-prep/"],
+    ["aqua hot 125d model control service prep", "/symptoms/aquahot-125d-model-control-service-prep/"],
+    ["aqua hot 175m modular model support routing", "/symptoms/aquahot-175m-model-support-routing-prep/"],
+    ["cummins onan ec ags compatibility chart model prep", "/symptoms/onan-ec-ags-compatibility-model-prep/"],
+  ] as const;
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+  }
+
+  for (const [query, href] of [
+    ["inspection maintenance", "/symptoms/dometic-freshjet-inspection-maintenance-model-tag-prep/"],
+    ["cleaning shutdown", "/symptoms/dometic-acc3100-cleaning-shutdown-prep/"],
+    ["mode control", "/symptoms/dometic-acc3100-mode-control-prep/"],
+    ["model routing", "/symptoms/dometic-rooftop-ac-penguin-blizzard-model-routing/"],
+    ["range hood", "/symptoms/furrion-range-hood-model-manual-router-prep/"],
+    ["furrion range support", "/symptoms/furrion-range-hood-model-manual-router-prep/"],
+    ["furrion range model support", "/symptoms/furrion-range-hood-model-manual-router-prep/"],
+    ["dishwasher support", "/symptoms/furrion-dishwasher-model-manual-router-prep/"],
+    ["cooktop support", "/symptoms/furrion-cooktop-current-model-support-router/"],
+    ["tankless control", "/symptoms/suburban-advantage-tankless-control-freeze-prep/"],
+    ["slide out", "/symptoms/suburban-can-slide-out-kitchen-model-product-prep/"],
+    ["toilet flush", "/symptoms/thetford-aqua-magic-vi-toilet-model-flush-winterizing-prep/"],
+    ["service routing", "/symptoms/norcold-n10dc-model-control-service-routing-prep/"],
+    ["signature series", "/symptoms/coleman-mach-10-model-family-lookup-prep/"],
+    ["vent lid", "/symptoms/maxxair-unimaxx-vent-lid-identification-prep/"],
+    ["low profile", "/symptoms/maxxair-maxxfan-low-profile-model-control-prep/"],
+    ["compatibility chart", "/symptoms/onan-ec-ags-compatibility-model-prep/"],
+  ] as const) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toHaveCount(0);
+  }
+
+  await searchbox.fill("dometic acc3100 modes auto manual sleep vent control");
+  const acc3100Modes = lookupResults.locator('a[href="/symptoms/dometic-acc3100-mode-control-prep/"]');
+  await expect(acc3100Modes).toBeVisible();
+  await acc3100Modes.click();
+  await expect(page.getByRole("heading", { name: "Dometic ACC3100 roof-vent mode control prep" })).toBeVisible();
+  await expect(page.getByText(/Record the ACC3100 model/i)).toBeVisible();
+
+  await page.goto("/");
+  await searchbox.fill("cummins onan ec ags compatibility chart model prep");
+  const agsCompatibility = lookupResults.locator('a[href="/symptoms/onan-ec-ags-compatibility-model-prep/"]');
+  await expect(agsCompatibility).toBeVisible();
+  await agsCompatibility.click();
+  await expect(page.getByRole("heading", { name: "Onan EC-AGS+ compatibility model prep" })).toBeVisible();
+  await expect(page.getByText(/Record the EC-AGS/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 

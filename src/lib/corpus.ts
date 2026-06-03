@@ -222,7 +222,7 @@ export type SearchIndexEntry = CorpusEntry & { searchText: string; searchTokens:
 export type SymptomSearchIndexEntry = SymptomGuide & {
   searchText: string;
   searchTokens: Set<string>;
-  searchRequiredTokens: Set<string>;
+  searchRequiredTokenGroups: string[][];
 };
 
 function searchableParts(parts: string[]) {
@@ -259,14 +259,14 @@ export function buildSearchIndex(corpus: Corpus): SearchIndexEntry[] {
 export function buildSymptomSearchIndex(corpus: Corpus): SymptomSearchIndexEntry[] {
   return corpus.symptoms.map((symptom) => ({
     ...symptom,
-    searchRequiredTokens: new Set(
-      (symptom.searchRequiredTerms ?? []).flatMap((term) =>
+    searchRequiredTokenGroups: (symptom.searchRequiredTerms ?? [])
+      .map((term) =>
         term
           .toLowerCase()
-          .split(/[^a-z0-9]+/)
-          .filter(Boolean),
-      ),
-    ),
+          .split("+")
+          .flatMap((part) => part.split(/[^a-z0-9]+/).filter(Boolean)),
+      )
+      .filter((group) => group.length > 0),
     ...searchableParts([
       symptom.id,
       symptom.slug,
@@ -336,8 +336,8 @@ export function lookupSymptomGuides(index: SymptomSearchIndexEntry[], query: str
   return index
     .map((symptom) => {
       if (
-        symptom.searchRequiredTokens.size &&
-        !Array.from(symptom.searchRequiredTokens).some((term) => requiredTermMatches.has(term))
+        symptom.searchRequiredTokenGroups.length &&
+        !symptom.searchRequiredTokenGroups.some((group) => group.every((term) => requiredTermMatches.has(term)))
       ) {
         return { symptom, score: 0 };
       }
