@@ -66,7 +66,7 @@
 - Permanent domain: Route53 registration `rvappliancefaultcodes.com` succeeded at `2026-06-02T23:06:27Z`; auto-renew and transfer lock are on. Route53 `.com` billing is `$15/year` registration plus `$15/year` renewal.
 - GitHub repo: `https://github.com/samuelfrench/rv-appliance-code-atlas`
 - Fly app: `rv-appliance-code-atlas`, one `shared-cpu-1x` 256 MB machine in `dfw`, auto-stop enabled.
-- Latest deploy: code commit `308db2b` deployed via GitHub Actions run `26860487260` to Fly v58 image `deployment-01KT5NSXHG567552E5X6XTZJ6F` at `2026-06-03T02:43:26Z`; live endpoints verified the Cummins Energy Command AGS corpus, refreshed IndexNow metadata, and canonical-domain routes.
+- Latest deploy: metadata/report commit `188bcfe` deployed via GitHub Actions run `26860681952` to Fly v59 image `deployment-01KT5P571F8BD3Y8CRA2RV8QKJ` at `2026-06-03T02:49:31Z`; live endpoints verified the Cummins Energy Command AGS corpus, refreshed IndexNow metadata, and canonical-domain routes.
 - Corpus: `850` verified entries, `191` symptom guides, `342` official sources, `1042` generated indexable pages.
 - GA4 property `properties/540096507`, stream `properties/540096507/dataStreams/14992447658`, and measurement ID `G-9824RBXHHR` were created automatically for `https://rvappliancefaultcodes.com` at `2026-06-02T23:04:00Z`.
 - Weekly GA4 traffic artifact command added: `npm run traffic:ga4:weekly` writes ignored local artifact `reports/ga4-weekly-traffic.json`; dry-run is `npm run traffic:ga4:weekly:dry-run`. Local service-account JSON path `~/.config/google/rv-appliance-code-atlas-ga4.json` works with `printablespark-ga4-reporter@coffee-explorer-480514.iam.gserviceaccount.com`, so no API Explorer click is needed for current GA4 reporting.
