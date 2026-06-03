@@ -235,6 +235,54 @@
       "official": true
     },
     {
+      "id": "coleman-48000-air-conditioners-international-library",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Library: 48000 Series Air Conditioners-International",
+      "url": "https://library.coleman-mach.com/manual/48000-series-air-conditioners-international/",
+      "type": "manufacturer-library-page",
+      "official": true
+    },
+    {
+      "id": "coleman-47000-ac-owner-1976-617",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 47000 Series AC Owner Manual",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/12/1976-617.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-47000-heat-pump-owner-1976-606",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 47000 Series Heat Pump Owner Manual",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/12/1976-606.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-47000-international-install-1976-686",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 47000 Series 230/240 VAC 50Hz International Installation Instructions",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-686.pdf",
+      "type": "manufacturer-installation-instruction",
+      "official": true
+    },
+    {
+      "id": "coleman-473xx-international-owner-1976-678",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 473XX-XXX5 Series 230/240 VAC 50Hz International Owner Manual",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-678.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-476xx-international-owner-1976-698",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 476XX-XXX5 Series 230/240 VAC 50Hz International Owner Manual",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-698.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
       "id": "dometic-ccc2-operating",
       "brand": "Dometic",
       "title": "Dometic Comfort Control Center 2 Thermostat Operating Instructions",
@@ -33509,7 +33557,9 @@
         "furrion-flat-curved-electric-fireplace",
         "furrion-range-17-21-user-manual",
         "furrion-range-17-21-troubleshooting-service",
-        "coleman-48000-ac-owner-1976-523"
+        "coleman-48000-ac-owner-1976-523",
+        "coleman-47000-ac-owner-1976-617",
+        "coleman-47000-heat-pump-owner-1976-606"
       ]
     },
     {
@@ -33594,7 +33644,9 @@
         "onan-generator-quick-start",
         "onan-rv-generator-handbook",
         "dometic-freshjet-fjx-operating",
-        "coleman-48000-ac-owner-1976-523"
+        "coleman-48000-ac-owner-1976-523",
+        "coleman-47000-ac-owner-1976-617",
+        "coleman-473xx-international-owner-1976-678"
       ]
     },
     {
@@ -34106,7 +34158,13 @@
         "furrion-range-17-21-user-manual",
         "furrion-range-17-21-troubleshooting-service",
         "coleman-48000-ac-owner-1976-523",
-        "coleman-2025-amcat-catalog"
+        "coleman-2025-amcat-catalog",
+        "coleman-48000-air-conditioners-international-library",
+        "coleman-47000-ac-owner-1976-617",
+        "coleman-47000-heat-pump-owner-1976-606",
+        "coleman-47000-international-install-1976-686",
+        "coleman-473xx-international-owner-1976-678",
+        "coleman-476xx-international-owner-1976-698"
       ]
     },
     {
@@ -34134,7 +34192,9 @@
         "dometic-bluetooth-ct-thermostat-operating",
         "dometic-brisk-ac-filter-efficiency",
         "dometic-brisk-ac-heat-gain",
-        "coleman-48000-ac-owner-1976-523"
+        "coleman-48000-ac-owner-1976-523",
+        "coleman-47000-ac-owner-1976-617",
+        "coleman-473xx-international-owner-1976-678"
       ]
     },
     {
@@ -34170,7 +34230,9 @@
         "coleman-mach-faqs",
         "coleman-cooling-performance-worksheet",
         "coleman-rooftop-operation-maintenance-1971-982",
-        "coleman-48000-ac-owner-1976-523"
+        "coleman-48000-ac-owner-1976-523",
+        "coleman-47000-ac-owner-1976-617",
+        "coleman-473xx-international-owner-1976-678"
       ],
       "searchAliases": [
         "coleman mach ac not cooling 16 22 degree temperature split",
@@ -34194,7 +34256,10 @@
         "coleman-rooftop-operation-maintenance-1971-982",
         "coleman-chillgrille-control-kit-1976-658",
         "coleman-46515-heat-pump-owner",
-        "coleman-48000-ac-owner-1976-523"
+        "coleman-48000-ac-owner-1976-523",
+        "coleman-47000-ac-owner-1976-617",
+        "coleman-47000-heat-pump-owner-1976-606",
+        "coleman-473xx-international-owner-1976-678"
       ],
       "searchAliases": [
         "coleman mach ac freeze up high fan dirty filter",
@@ -34217,7 +34282,9 @@
         "coleman-mach-faqs",
         "coleman-45000-installation-1976-687",
         "coleman-46515-heat-pump-owner",
-        "coleman-48000-ac-owner-1976-523"
+        "coleman-48000-ac-owner-1976-523",
+        "coleman-47000-ac-owner-1976-617",
+        "coleman-473xx-international-owner-1976-678"
       ],
       "searchAliases": [
         "coleman mach low voltage extension cord cheater plug",
@@ -34306,7 +34373,8 @@
       ],
       "sourceIds": [
         "coleman-mach-faqs",
-        "coleman-46515-heat-pump-owner"
+        "coleman-46515-heat-pump-owner",
+        "coleman-47000-heat-pump-owner-1976-606"
       ],
       "searchAliases": [
         "coleman mach heat pump below 45 blower running",
@@ -34489,6 +34557,72 @@
         "coleman mach mach 8 mach 10 mach 15 model profile lookup",
         "coleman mach soft start control box conversion kit catalog",
         "coleman mach 4800 7000 8000 series replacement shroud part number"
+      ]
+    },
+    {
+      "id": "coleman-48000-international-service-prep",
+      "slug": "coleman-mach-48000-international-service-prep",
+      "title": "Coleman-Mach 48000 International service prep",
+      "summary": "Coleman-Mach publishes a live library page for 48000 Series Air Conditioners-International, while adjacent international manuals identify 230/240 VAC, 50Hz model families and warn that installation and service are for qualified licensed personnel.",
+      "safeChecklist": [
+        "Capture the exact Coleman-Mach model and serial number from normal owner-visible labels or paperwork before requesting parts or service.",
+        "Note whether the coach is a North American 115-volt unit or an international 230/240-volt, 50Hz installation before comparing manuals.",
+        "Use the blank 48000 International library record as a source-discovery clue, not as a procedure to follow.",
+        "Stop at identification and call Coleman-Mach, the dealer, or qualified licensed HVAC service for international installation or service questions."
+      ],
+      "sourceIds": [
+        "coleman-48000-air-conditioners-international-library",
+        "coleman-47000-international-install-1976-686",
+        "coleman-473xx-international-owner-1976-678",
+        "coleman-476xx-international-owner-1976-698"
+      ],
+      "searchAliases": [
+        "coleman mach 48000 international 230 240 vac 50hz model serial qualified installer",
+        "48000 series air conditioners international coleman mach blank download",
+        "coleman mach international air conditioner model serial number service prep",
+        "coleman mach 230 240 vac 50hz roof top air conditioner qualified service"
+      ]
+    },
+    {
+      "id": "coleman-47000-ac-owner-cooling-and-power-check",
+      "slug": "coleman-mach-47000-ac-owner-cooling-and-power-check",
+      "title": "Coleman-Mach 47000 AC cooling and power check",
+      "summary": "The Coleman-Mach 47000 AC owner manual says 47000 rooftop air conditioners are designed for 115 VAC, 60 HZ, 1 phase power, should show about a 15 to 20 degree cooling split, and need qualified technician verification when power or cooling is not normal.",
+      "safeChecklist": [
+        "Run normal HIGH COOL long enough to compare return-air and supply-air temperature before assuming an internal HVAC problem.",
+        "Clean or replace owner-accessible filters and keep windows, doors, shades, and heat-producing appliances managed during hot weather.",
+        "Record power source, outdoor temperature, return-air temperature, supply-air temperature, filter condition, and whether the compressor started.",
+        "Call Coleman-Mach, the dealer, or a qualified technician if the power supply or cooling split is not normal after owner-visible checks."
+      ],
+      "sourceIds": [
+        "coleman-47000-ac-owner-1976-617"
+      ],
+      "searchAliases": [
+        "coleman mach 47000 ac 115 vac 60 hz 15 to 20 degree filter qualified technician",
+        "47000 series air conditioner 15 to 20 degree cooling split",
+        "coleman mach 47000 roof top ac not cooling qualified technician power supply",
+        "coleman mach 47000 ac filter cooling coil icing owner manual"
+      ]
+    },
+    {
+      "id": "coleman-47000-heat-pump-freezing-aux-heat-limit",
+      "slug": "coleman-mach-47000-heat-pump-freezing-aux-heat-limit",
+      "title": "Coleman-Mach 47000 heat pump freezing and auxiliary heat limits",
+      "summary": "The Coleman-Mach 47000 heat-pump owner manual says the heat pump shuts down near freezing to prevent outdoor coil freeze-up, auxiliary resistance heat is only a chill chaser and not a furnace substitute, and repeated high-pressure lockouts need qualified service.",
+      "safeChecklist": [
+        "Use normal furnace or approved backup heat when outdoor temperature is near freezing and the heat pump cannot keep up.",
+        "If cooling airflow drops from coil icing, stop cooling and run HIGH FAN until full airflow returns before retrying.",
+        "Clean owner-accessible filters and record outdoor temperature, mode, airflow, and whether auxiliary heat was expected.",
+        "Call qualified RV HVAC service if heat-pump shutdowns, high-pressure lockouts, or weak heating repeat in moderate weather."
+      ],
+      "sourceIds": [
+        "coleman-47000-heat-pump-owner-1976-606"
+      ],
+      "searchAliases": [
+        "coleman mach 47000 heat pump near freezing high fan auxiliary heat not furnace",
+        "47000 series heat pump shuts down near freezing outdoor coil freeze up",
+        "coleman mach 47000 auxiliary electric resistance heater not a substitute for furnace",
+        "coleman mach 47000 heat pump high pressure lockout qualified technician"
       ]
     },
     {

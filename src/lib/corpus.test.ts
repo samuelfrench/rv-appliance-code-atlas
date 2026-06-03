@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 850;
-const expectedSourceCount = 348;
-const expectedSymptomCount = 199;
+const expectedSourceCount = 354;
+const expectedSymptomCount = 202;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -4137,6 +4137,102 @@ describe("verified corpus", () => {
       ].join(" "),
     ).toMatch(/AMCAT|shroud|filter|soft start|model|part/i);
 
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds official Coleman-Mach 48000 international and adjacent model-family sources without inventing code entries", () => {
+    const expectedSources = new Map([
+      [
+        "coleman-48000-air-conditioners-international-library",
+        "https://library.coleman-mach.com/manual/48000-series-air-conditioners-international/",
+      ],
+      ["coleman-47000-ac-owner-1976-617", "https://library.coleman-mach.com/wp-content/uploads/2023/12/1976-617.pdf"],
+      ["coleman-47000-heat-pump-owner-1976-606", "https://library.coleman-mach.com/wp-content/uploads/2023/12/1976-606.pdf"],
+      [
+        "coleman-47000-international-install-1976-686",
+        "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-686.pdf",
+      ],
+      [
+        "coleman-473xx-international-owner-1976-678",
+        "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-678.pdf",
+      ],
+      [
+        "coleman-476xx-international-owner-1976-698",
+        "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-698.pdf",
+      ],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const newSymptomIds = [
+      "coleman-48000-international-service-prep",
+      "coleman-47000-ac-owner-cooling-and-power-check",
+      "coleman-47000-heat-pump-freezing-aux-heat-limit",
+    ];
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\brefrigerant\b|\bprobe\b|\bopen (the )?(fuel|gas|electrical|rooftop)|wire|wiring|line-voltage|breaker panel|remove.*thermostat|replace.*control|remove.*shroud|install.*soft start|route.*wiring/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = corpus.sources.find((item) => item.id === sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const symptomId of newSymptomIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds.length, symptomId).toBeGreaterThan(0);
+      expect(symptom?.safeChecklist.join(" "), symptomId).not.toMatch(unsafeOwnerActionPattern);
+    }
+
+    expect(symptomById.get("coleman-48000-international-service-prep")?.sourceIds).toEqual(
+      expect.arrayContaining([
+        "coleman-48000-air-conditioners-international-library",
+        "coleman-47000-international-install-1976-686",
+        "coleman-473xx-international-owner-1976-678",
+        "coleman-476xx-international-owner-1976-698",
+      ]),
+    );
+    expect(
+      [
+        symptomById.get("coleman-48000-international-service-prep")?.summary,
+        symptomById.get("coleman-48000-international-service-prep")?.safeChecklist.join(" "),
+      ].join(" "),
+    ).toMatch(/International|230\/240 VAC|50Hz|model and serial|qualified/i);
+
+    expect(symptomById.get("coleman-47000-ac-owner-cooling-and-power-check")?.sourceIds).toEqual(
+      expect.arrayContaining(["coleman-47000-ac-owner-1976-617"]),
+    );
+    expect(
+      [
+        symptomById.get("coleman-47000-ac-owner-cooling-and-power-check")?.summary,
+        symptomById.get("coleman-47000-ac-owner-cooling-and-power-check")?.safeChecklist.join(" "),
+      ].join(" "),
+    ).toMatch(/47000|115 VAC|60 HZ|15 to 20|qualified technician|filter/i);
+
+    expect(symptomById.get("coleman-47000-heat-pump-freezing-aux-heat-limit")?.sourceIds).toEqual(
+      expect.arrayContaining(["coleman-47000-heat-pump-owner-1976-606"]),
+    );
+    expect(
+      [
+        symptomById.get("coleman-47000-heat-pump-freezing-aux-heat-limit")?.summary,
+        symptomById.get("coleman-47000-heat-pump-freezing-aux-heat-limit")?.safeChecklist.join(" "),
+      ].join(" "),
+    ).toMatch(/47000|near freezing|HIGH FAN|not a substitute for a furnace|qualified technician/i);
+
+    expect(symptomById.get("air-conditioner-not-cooling")?.sourceIds).toEqual(
+      expect.arrayContaining(["coleman-47000-ac-owner-1976-617", "coleman-473xx-international-owner-1976-678"]),
+    );
+    expect(symptomById.get("airflow-or-venting")?.sourceIds).toEqual(
+      expect.arrayContaining(["coleman-47000-ac-owner-1976-617", "coleman-47000-heat-pump-owner-1976-606"]),
+    );
+    expect(symptomById.get("low-voltage")?.sourceIds).toEqual(
+      expect.arrayContaining(["coleman-47000-ac-owner-1976-617", "coleman-473xx-international-owner-1976-678"]),
+    );
     expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
   });
 

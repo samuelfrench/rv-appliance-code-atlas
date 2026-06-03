@@ -438,6 +438,32 @@ test("lookup surfaces Coleman-Mach 48000 AC owner-manual and 2025 catalog suppor
   await expect(page.getByRole("heading", { name: "Coleman-Mach 2025 AMCAT catalog model and part lookup" })).toBeVisible();
 });
 
+test("lookup surfaces Coleman-Mach 48000 international and 47000 model-family support pages", async ({ page }) => {
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("coleman mach 48000 international 230 240 vac 50hz model serial qualified installer");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/coleman-mach-48000-international-service-prep/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("coleman mach 47000 ac 115 vac 60 hz 15 to 20 degree filter qualified technician");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/coleman-mach-47000-ac-owner-cooling-and-power-check/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("coleman mach 47000 heat pump near freezing high fan auxiliary heat not furnace");
+  const heatPumpGuide = lookupResults.locator(
+    'a[href="/symptoms/coleman-mach-47000-heat-pump-freezing-aux-heat-limit/"]',
+  );
+  await expect(heatPumpGuide).toBeVisible();
+
+  await heatPumpGuide.click();
+  await expect(page.getByRole("heading", { name: "Coleman-Mach 47000 heat pump freezing and auxiliary heat limits" })).toBeVisible();
+});
+
 test("lookup surfaces Dometic CCC2 thermostat symptom support pages", async ({ page }) => {
   await page.goto("/");
 
