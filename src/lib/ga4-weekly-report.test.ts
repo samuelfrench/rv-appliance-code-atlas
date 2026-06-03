@@ -1,3 +1,5 @@
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { describe, expect, it } from "vitest";
 
 import {
@@ -6,6 +8,8 @@ import {
   getDefaultGa4WeeklyDateRange,
   normalizeGa4Rows,
 } from "../../scripts/ga4-weekly-report.mjs";
+
+const projectRoot = path.dirname(fileURLToPath(new URL("../../package.json", import.meta.url)));
 
 describe("GA4 weekly traffic report", () => {
   it("uses the last seven Pacific-time days ending yesterday by default", () => {
@@ -58,7 +62,7 @@ describe("GA4 weekly traffic report", () => {
   it("keeps GA4 fetch output constrained to ignored report artifacts", () => {
     expect(
       buildGa4WeeklyReportPlan({
-        outputPath: "/home/sam/claude-workspace/rv-appliance-code-atlas/reports/custom-ga4.json",
+        outputPath: path.join(projectRoot, "reports", "custom-ga4.json"),
       }).outputPath,
     ).toBe("reports/custom-ga4.json");
     expect(buildGa4WeeklyReportPlan({ outputPath: "reports/nested/custom-ga4.json" }).outputPath).toBe(
