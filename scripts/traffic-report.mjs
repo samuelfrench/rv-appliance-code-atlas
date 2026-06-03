@@ -27,7 +27,7 @@ const monetizationReadinessArtifact = {
   source: weeklyTrafficArtifact.path,
 };
 const nextSourceBackedBatchGoal =
-  "Run a fresh official-source gap scan across current supported brands for non-duplicate owner-safe service-prep, model-label, control-behavior, storage, or service-locator guides; add no code entries unless a current manufacturer-hosted display or fault table is verified.";
+  "Continue official-source gap scans across currently supported brands for non-duplicate owner-safe service-prep, model-label, control-behavior, storage, recall, warranty, or service-locator guides; add no code entries unless a current manufacturer-hosted display or fault table is verified.";
 const indexNow = indexNowConfig
   ? {
       keyLocation: indexNowConfig.keyLocation,

@@ -204,7 +204,7 @@ describe("monetization readiness report", () => {
       source: "reports/gsc-weekly-traffic.json",
     });
     expect(report.nextAutomatedBatchGoal).toBe(
-      "Run a fresh official-source gap scan across current supported brands for non-duplicate owner-safe service-prep, model-label, control-behavior, storage, or service-locator guides; add no code entries unless a current manufacturer-hosted display or fault table is verified.",
+      "Continue official-source gap scans across currently supported brands for non-duplicate owner-safe service-prep, model-label, control-behavior, storage, recall, warranty, or service-locator guides; add no code entries unless a current manufacturer-hosted display or fault table is verified.",
     );
     expect(readFileSync("README.md", "utf8")).toContain("npm run traffic:monetization");
     expect(readFileSync("TODO.md", "utf8")).toContain(

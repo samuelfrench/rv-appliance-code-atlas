@@ -92,7 +92,7 @@ Key location: `https://rvappliancefaultcodes.com/2653afc6f17313e900711f1d3eb1dca
 
 Writes ignored local report artifact: `reports/indexnow-submit-report.json`
 
-Submitted: `2026-06-03T09:37:19.222Z` with `1107` URLs and IndexNow HTTP `200`
+Submitted: `2026-06-03T12:58:10.476Z` with `1175` URLs and IndexNow HTTP `200`
 
 Traffic monitor:
 
@@ -102,9 +102,9 @@ npm run traffic:monitor
 
 Current corpus:
 - `850` verified entries
-- `256` symptom guides
-- `419` official sources
-- `1107` generated indexable pages
+- `324` symptom guides
+- `490` official sources
+- `1175` generated indexable pages
 
 Next automated batch goal:
-- Run a fresh official-source gap scan across current supported brands for non-duplicate owner-safe service-prep, model-label, control-behavior, storage, or service-locator guides; add no code entries unless a current manufacturer-hosted display or fault table is verified.
+- Continue official-source gap scans across currently supported brands for non-duplicate owner-safe service-prep, model-label, control-behavior, storage, recall, warranty, or service-locator guides; add no code entries unless a current manufacturer-hosted display or fault table is verified.
