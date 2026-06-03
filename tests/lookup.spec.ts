@@ -402,6 +402,35 @@ test("lookup surfaces Dometic Single Zone LCD thermostat codes and symptom pages
   await expect(page.getByText(/minimum of every 2 weeks/i)).toBeVisible();
 });
 
+test("lookup surfaces Dometic Bluetooth CT thermostat codes and symptom pages", async ({ page }) => {
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("dometic bluetooth ct 3316420 e1 communication");
+  await expect(lookupResults.locator('a[href="/codes/dometic-bluetooth-ct-e1/"]')).toBeVisible();
+
+  await searchbox.fill("dometic bluetooth thermostat e5 freeze sensor");
+  await expect(lookupResults.locator('a[href="/codes/dometic-bluetooth-ct-e5/"]')).toBeVisible();
+
+  await searchbox.fill("dometic bluetooth ct app pairing 2 digit pin off mode");
+  await expect(lookupResults.locator('a[href="/symptoms/dometic-bluetooth-ct-pairing-mobile-device/"]')).toBeVisible();
+
+  await searchbox.fill("bluetooth ct heat pump defrost cold air 25 minutes");
+  await expect(lookupResults.locator('a[href="/symptoms/dometic-bluetooth-ct-heat-pump-defrost-cold-air/"]')).toBeVisible();
+
+  await searchbox.fill("bluetooth ct filter every 2 weeks hot weather heat gain");
+  const filterMaintenance = lookupResults.locator(
+    'a[href="/symptoms/dometic-bluetooth-ct-hot-weather-filter-maintenance/"]',
+  );
+  await expect(filterMaintenance).toBeVisible();
+
+  await filterMaintenance.click();
+  await expect(page.getByRole("heading", { name: "Dometic Bluetooth CT hot-weather filter maintenance" })).toBeVisible();
+  await expect(page.getByRole("listitem").filter({ hasText: /minimum of every 2 weeks/i })).toBeVisible();
+});
+
 test("lookup surfaces Dometic FreshJet FJX codes and symptom pages", async ({ page }) => {
   await page.goto("/");
 

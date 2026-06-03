@@ -203,6 +203,54 @@
       "official": true
     },
     {
+      "id": "dometic-bluetooth-ct-thermostat-operating",
+      "brand": "Dometic",
+      "title": "Dometic 3316420.XXX Bluetooth CT Thermostat Operating Instructions",
+      "url": "https://media.dometic.com/externalassets/bluetooth-thermostat_9108887112_64643.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "dometic-capacitive-touch-mode-selection",
+      "brand": "Dometic",
+      "title": "Dometic Capacitive Touch Thermostat Mode Selection Support",
+      "url": "https://support.dometic.com/en/brisk-ac/How-to-control-Mode-Selection-Capacitive-touch-thermostat-40f",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-capacitive-touch-inside-temperature",
+      "brand": "Dometic",
+      "title": "Dometic Capacitive Touch Thermostat Inside Temperature Support",
+      "url": "https://support.dometic.com/en/brisk-ac/How-to-display-the-inside-temperature-Capacitive-touch-thermostat-6075",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-brisk-ac-heat-gain",
+      "brand": "Dometic",
+      "title": "Dometic Brisk Air Conditioner Heat Gain Support",
+      "url": "https://support.dometic.com/en/brisk-ac/General-info-about-Heat-Gain-9c18",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-brisk-ac-filter-efficiency",
+      "brand": "Dometic",
+      "title": "Dometic Brisk Air Conditioner Return-Air Filter Efficiency Support",
+      "url": "https://support.dometic.com/en/brisk-ac/What-should-I-do-to-make-sure-the-filter-on-my-rooftop-unit-is-clean-for-maximum-efficiency-2dad",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-brisk-ac-frost-heating",
+      "brand": "Dometic",
+      "title": "Dometic Brisk Air Conditioner Frost Formation While Heating Support",
+      "url": "https://support.dometic.com/en/brisk-ac/Why-do-I-see-a-Frost-Formation-On-the-Outdoor-Coil-While-Heating-3855",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
       "id": "dometic-df-furnace",
       "brand": "Dometic",
       "title": "Dometic DF Series Furnace Installation Manual",
@@ -6021,6 +6069,179 @@
         "Single Zone LCD thermostat model",
         "air conditioner or heat pump model number",
         "photo of LCD error code and mode LED"
+      ]
+    },
+    {
+      "id": "dometic-bluetooth-ct-e1",
+      "brand": "Dometic",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "Bluetooth CT thermostat",
+        "Capacitive Touch thermostat",
+        "3316420.XXX"
+      ],
+      "code": "E1",
+      "slug": "dometic-bluetooth-ct-e1",
+      "plainMeaning": "The Dometic Bluetooth CT thermostat manual lists E1 as loss of communication between the CT thermostat and module board; the LCD cycles between E1 and the previous mode setting, and the system shuts down.",
+      "ownerSafeActions": [
+        "Record the displayed code, previous mode, setpoint, fan setting, and Bluetooth icon state.",
+        "Turn the CT thermostat to Off with the normal Mode button if the HVAC equipment is not responding.",
+        "Note whether normal RV shore, generator, or battery indicators show available power before arranging service."
+      ],
+      "serviceOnlyActions": [
+        "CT thermostat communication and module-board diagnosis should be handled by authorized Dometic service or qualified RV HVAC service."
+      ],
+      "safetyBoundary": "Do not remove thermostat, rooftop HVAC, or electrical compartment covers, and do not bypass communication or sensor circuits. Shut the affected HVAC system off from normal controls and arrange authorized Dometic service or qualified RV HVAC service for unresolved Bluetooth CT faults.",
+      "sourceIds": [
+        "dometic-bluetooth-ct-thermostat-operating"
+      ],
+      "symptomIds": [
+        "thermostat-communication",
+        "thermostat-delay-or-no-response",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Bluetooth CT thermostat model number",
+        "air conditioner or heat pump model number",
+        "photo of LCD error code, mode, and Bluetooth icon state"
+      ]
+    },
+    {
+      "id": "dometic-bluetooth-ct-e2",
+      "brand": "Dometic",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "Bluetooth CT thermostat",
+        "Capacitive Touch thermostat",
+        "3316420.XXX"
+      ],
+      "code": "E2",
+      "slug": "dometic-bluetooth-ct-e2",
+      "plainMeaning": "The Dometic Bluetooth CT thermostat manual lists E2 as an open circuit or out-of-range Indoor Temperature Sensor; heating and cooling operation lock out while fan operation can continue.",
+      "ownerSafeActions": [
+        "Record the E2 code, room temperature shown by the thermostat if available, mode, fan setting, and setpoint.",
+        "Use only normal thermostat controls to stop heating or cooling if the coach is uncomfortable.",
+        "Note whether fan-only operation continues before arranging service."
+      ],
+      "serviceOnlyActions": [
+        "Indoor temperature sensor and CT thermostat circuit diagnosis should be handled by authorized Dometic service or qualified RV HVAC service."
+      ],
+      "safetyBoundary": "Do not remove thermostat, rooftop HVAC, or electrical compartment covers, and do not bypass communication or sensor circuits. Shut the affected HVAC system off from normal controls and arrange authorized Dometic service or qualified RV HVAC service for unresolved Bluetooth CT faults.",
+      "sourceIds": [
+        "dometic-bluetooth-ct-thermostat-operating"
+      ],
+      "symptomIds": [
+        "thermostat-display",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Bluetooth CT thermostat model number",
+        "air conditioner or heat pump model number",
+        "photo of LCD error code, mode, and Bluetooth icon state"
+      ]
+    },
+    {
+      "id": "dometic-bluetooth-ct-e3",
+      "brand": "Dometic",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "Bluetooth CT thermostat",
+        "Capacitive Touch thermostat",
+        "3316420.XXX"
+      ],
+      "code": "E3",
+      "slug": "dometic-bluetooth-ct-e3",
+      "plainMeaning": "The Dometic Bluetooth CT thermostat manual lists E3 as a shorted Indoor Temperature Sensor; heating and cooling operation lock out while fan operation can continue.",
+      "ownerSafeActions": [
+        "Record the E3 code, room temperature shown by the thermostat if available, mode, fan setting, and setpoint.",
+        "Use only normal thermostat controls to stop heating or cooling if the coach is uncomfortable.",
+        "Note whether fan-only operation continues before arranging service."
+      ],
+      "serviceOnlyActions": [
+        "Indoor temperature sensor and CT thermostat circuit diagnosis should be handled by authorized Dometic service or qualified RV HVAC service."
+      ],
+      "safetyBoundary": "Do not remove thermostat, rooftop HVAC, or electrical compartment covers, and do not bypass communication or sensor circuits. Shut the affected HVAC system off from normal controls and arrange authorized Dometic service or qualified RV HVAC service for unresolved Bluetooth CT faults.",
+      "sourceIds": [
+        "dometic-bluetooth-ct-thermostat-operating"
+      ],
+      "symptomIds": [
+        "thermostat-display",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Bluetooth CT thermostat model number",
+        "air conditioner or heat pump model number",
+        "photo of LCD error code, mode, and Bluetooth icon state"
+      ]
+    },
+    {
+      "id": "dometic-bluetooth-ct-e4",
+      "brand": "Dometic",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "Bluetooth CT thermostat",
+        "Capacitive Touch thermostat",
+        "3316420.XXX"
+      ],
+      "code": "E4",
+      "slug": "dometic-bluetooth-ct-e4",
+      "plainMeaning": "The Dometic Bluetooth CT thermostat manual lists E4 as an open circuit or out-of-range Outdoor Temperature Sensor on select models; Heat Pump operation locks out while Air Conditioner, Fan, and Furnace operation can continue.",
+      "ownerSafeActions": [
+        "Record the E4 code, selected mode, fan setting, setpoint, and outdoor temperature estimate.",
+        "Use normal furnace or heat-strip controls if equipped when the heat pump is locked out and the RV needs heat.",
+        "Avoid repeated heat-pump retries if the E4 code returns."
+      ],
+      "serviceOnlyActions": [
+        "Outdoor temperature sensor and heat-pump control diagnosis should be handled by authorized Dometic service or qualified RV HVAC service."
+      ],
+      "safetyBoundary": "Do not remove thermostat, rooftop HVAC, or electrical compartment covers, and do not bypass communication or sensor circuits. Shut the affected HVAC system off from normal controls and arrange authorized Dometic service or qualified RV HVAC service for unresolved Bluetooth CT faults.",
+      "sourceIds": [
+        "dometic-bluetooth-ct-thermostat-operating"
+      ],
+      "symptomIds": [
+        "thermostat-display",
+        "dometic-bluetooth-ct-low-ambient-heat-pump-lockout",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Bluetooth CT thermostat model number",
+        "air conditioner or heat pump model number",
+        "photo of LCD error code, mode, and Bluetooth icon state"
+      ]
+    },
+    {
+      "id": "dometic-bluetooth-ct-e5",
+      "brand": "Dometic",
+      "equipmentType": "Thermostat",
+      "modelFamilies": [
+        "Bluetooth CT thermostat",
+        "Capacitive Touch thermostat",
+        "3316420.XXX"
+      ],
+      "code": "E5",
+      "slug": "dometic-bluetooth-ct-e5",
+      "plainMeaning": "The Dometic Bluetooth CT thermostat manual lists E5 as an open circuit or out-of-range Freeze Sensor; Air Conditioner mode locks out while the LCD displays the last temperature setpoint.",
+      "ownerSafeActions": [
+        "Record the E5 code, selected mode, last setpoint, and whether cooling had been running.",
+        "Turn cooling off from normal thermostat controls if the air conditioner is locked out.",
+        "Check only owner-accessible return-air filter condition and supply-air nozzles before arranging service."
+      ],
+      "serviceOnlyActions": [
+        "Freeze-sensor, evaporator-protection, and air-conditioner diagnosis should be handled by authorized Dometic service or qualified RV HVAC service."
+      ],
+      "safetyBoundary": "Do not remove thermostat, rooftop HVAC, or electrical compartment covers, and do not bypass communication or sensor circuits. Shut the affected HVAC system off from normal controls and arrange authorized Dometic service or qualified RV HVAC service for unresolved Bluetooth CT faults.",
+      "sourceIds": [
+        "dometic-bluetooth-ct-thermostat-operating"
+      ],
+      "symptomIds": [
+        "air-conditioner-not-cooling",
+        "airflow-or-venting",
+        "service-call-prep"
+      ],
+      "partCaptureHints": [
+        "Bluetooth CT thermostat model number",
+        "air conditioner or heat pump model number",
+        "photo of LCD error code, mode, and Bluetooth icon state"
       ]
     },
     {
@@ -33103,7 +33324,9 @@
         "onan-rv-generator-handbook",
         "dometic-ccc2-operating",
         "dometic-single-zone-lcd-thermostat-operating",
-        "dometic-freshjet-fjx-operating"
+        "dometic-freshjet-fjx-operating",
+        "dometic-bluetooth-ct-thermostat-operating",
+        "dometic-brisk-ac-filter-efficiency"
       ]
     },
     {
@@ -33124,7 +33347,8 @@
         "dometic-single-zone-lcd-thermostat-operating",
         "dometic-rm10-rms10-operating",
         "dometic-rmd10-5-operating",
-        "dometic-rml10-4-operating"
+        "dometic-rml10-4-operating",
+        "dometic-bluetooth-ct-thermostat-operating"
       ]
     },
     {
@@ -33139,7 +33363,8 @@
       ],
       "sourceIds": [
         "coleman-9420-thermostat",
-        "dometic-single-zone-lcd-thermostat-operating"
+        "dometic-single-zone-lcd-thermostat-operating",
+        "dometic-bluetooth-ct-thermostat-operating"
       ]
     },
     {
@@ -33547,7 +33772,8 @@
         "furrion-refrigerator-hard-reset-faq",
         "furrion-12v-refrigerator-service-line-faq",
         "thetford-rv-toilet-support",
-        "thetford-permanent-rv-toilet-owner"
+        "thetford-permanent-rv-toilet-owner",
+        "dometic-bluetooth-ct-thermostat-operating"
       ]
     },
     {
@@ -33571,7 +33797,10 @@
         "coleman-6633-service",
         "dometic-ccc2-operating",
         "dometic-single-zone-lcd-thermostat-operating",
-        "dometic-freshjet-fjx-operating"
+        "dometic-freshjet-fjx-operating",
+        "dometic-bluetooth-ct-thermostat-operating",
+        "dometic-brisk-ac-filter-efficiency",
+        "dometic-brisk-ac-heat-gain"
       ]
     },
     {
@@ -33959,6 +34188,181 @@
       ]
     },
     {
+      "id": "dometic-bluetooth-ct-pairing-mobile-device",
+      "slug": "dometic-bluetooth-ct-pairing-mobile-device",
+      "title": "Dometic Bluetooth CT mobile-device pairing",
+      "summary": "Dometic Bluetooth CT instructions say pairing should be done within 3 feet of the thermostat, with the Bluetooth icon blinking slowly, OFF mode selected for the 2-digit PIN, and the PIN entered twice within 15 seconds.",
+      "safeChecklist": [
+        "Stand within 3 feet of the CT thermostat and let the backlight go dark before pairing.",
+        "If the Bluetooth icon is not visible, press any thermostat button once to wake the Bluetooth radio and wait for the slow blink.",
+        "In the Dometic Climate Control App, choose Add New Connection and select the CT thermostat whose backlight illuminates.",
+        "Use OFF mode to display the 2-digit PIN, then enter that PIN twice in the app within 15 seconds.",
+        "Call qualified RV HVAC service if the thermostat never appears or the backlight never confirms the selected thermostat."
+      ],
+      "sourceIds": [
+        "dometic-bluetooth-ct-thermostat-operating"
+      ],
+      "searchAliases": [
+        "dometic bluetooth ct app pairing 2 digit pin off mode",
+        "bluetooth ct thermostat pair management add new connection",
+        "dometic 3316420 bluetooth icon blinking slowly",
+        "dometic climate control app enter pin twice 15 seconds"
+      ]
+    },
+    {
+      "id": "dometic-bluetooth-ct-lost-pairs-factory-reset",
+      "slug": "dometic-bluetooth-ct-lost-pairs-factory-reset",
+      "title": "Dometic Bluetooth CT lost pairs after reset",
+      "summary": "Dometic Bluetooth CT instructions say system initialization resets the Bluetooth system and removes known mobile-device pairs; the CT thermostat remembers pairing information for the four most recent devices.",
+      "safeChecklist": [
+        "Treat lost app control after initialization or pair removal as a reason to pair the mobile device again.",
+        "Remove the old CT thermostat pair from the app list if the app reports it is no longer paired.",
+        "If more than four mobile devices use the thermostat, pair the intended default device again after older pairs roll off.",
+        "Record the app message and thermostat display state before contacting service."
+      ],
+      "sourceIds": [
+        "dometic-bluetooth-ct-thermostat-operating"
+      ],
+      "searchAliases": [
+        "bluetooth ct lost pairs factory reset four devices",
+        "dometic bluetooth thermostat no longer paired app",
+        "dometic 3316420 factory reset removes mobile device pairs",
+        "ct thermostat remembers four most recent devices"
+      ]
+    },
+    {
+      "id": "dometic-bluetooth-ct-touch-display-inside-temperature",
+      "slug": "dometic-bluetooth-ct-touch-display-inside-temperature",
+      "title": "Dometic Bluetooth CT touch display and inside temperature",
+      "summary": "Dometic capacitive touch guidance says inside temperature display is available from Off Mode, while the touch interface requires skin contact and can become unresponsive until moisture evaporates from wet fingers or cleaning.",
+      "safeChecklist": [
+        "Use normal controls to put the CT thermostat in Off Mode before viewing inside temperature.",
+        "Use bare, dry fingers on the capacitive touch buttons; gloves or bandages can prevent response.",
+        "If moisture or a damp cloth made the touch surface unresponsive, allow time for the surface to dry.",
+        "Do not spray water or solvents on the CT thermostat.",
+        "Call qualified RV HVAC service if dry touch controls and normal display steps do not restore response."
+      ],
+      "sourceIds": [
+        "dometic-bluetooth-ct-thermostat-operating",
+        "dometic-capacitive-touch-inside-temperature"
+      ],
+      "searchAliases": [
+        "capacitive touch thermostat inside temperature off mode wet fingers",
+        "dometic bluetooth ct display inside temperature off mode",
+        "dometic ct thermostat touch screen not responding wet fingers",
+        "dometic capacitive touch thermostat gloves bandage not working"
+      ]
+    },
+    {
+      "id": "dometic-bluetooth-ct-auto-fan-furnace-fan",
+      "slug": "dometic-bluetooth-ct-auto-fan-furnace-fan",
+      "title": "Dometic Bluetooth CT auto fan and furnace fan behavior",
+      "summary": "Dometic Bluetooth CT instructions say Auto fan varies by the difference between setpoint and room temperature, and Furnace mode leaves the air-conditioner fan off in Auto while Low or High keeps that fan running continuously.",
+      "safeChecklist": [
+        "Record mode, setpoint, room temperature, and whether Fan shows Low, High, or Auto.",
+        "Treat normal Auto fan speed changes as expected when room temperature approaches the setpoint.",
+        "In Furnace mode, select Auto fan if extra air-conditioner circulation is not desired.",
+        "Use Low or High only when continuous fan circulation is desired.",
+        "Call qualified RV HVAC service if display selections change but fan behavior never matches the selected mode."
+      ],
+      "sourceIds": [
+        "dometic-bluetooth-ct-thermostat-operating",
+        "dometic-capacitive-touch-mode-selection"
+      ],
+      "searchAliases": [
+        "dometic bluetooth ct furnace fan auto low high",
+        "bluetooth ct auto fan high low 5 degrees",
+        "dometic 3316420 furnace mode fan auto off",
+        "capacitive touch thermostat mode fan cool furnace heat pump"
+      ]
+    },
+    {
+      "id": "dometic-bluetooth-ct-compressor-time-delay",
+      "slug": "dometic-bluetooth-ct-compressor-time-delay",
+      "title": "Dometic Bluetooth CT compressor time delay",
+      "summary": "Dometic Bluetooth CT instructions say a time delay of approximately 2 minutes occurs any time the compressor is required to begin a cooling or heat-pump cycle.",
+      "safeChecklist": [
+        "Record selected mode, setpoint, room temperature, and whether cooling or heat pump was just requested.",
+        "Wait at least 2 minutes after a normal cooling or heat-pump call before treating startup as failed.",
+        "Do not repeatedly cycle the thermostat to force immediate compressor startup.",
+        "Call qualified RV HVAC service if the compressor never starts after the normal delay."
+      ],
+      "sourceIds": [
+        "dometic-bluetooth-ct-thermostat-operating"
+      ],
+      "searchAliases": [
+        "bluetooth ct compressor time delay 2 minutes",
+        "dometic bluetooth thermostat cooling delay compressor start",
+        "dometic 3316420 heat pump two minute delay",
+        "capacitive touch thermostat waits before compressor starts"
+      ]
+    },
+    {
+      "id": "dometic-bluetooth-ct-heat-pump-defrost-cold-air",
+      "slug": "dometic-bluetooth-ct-heat-pump-defrost-cold-air",
+      "title": "Dometic Bluetooth CT heat-pump defrost cold air",
+      "summary": "Dometic Bluetooth CT instructions say heat-pump defrost can temporarily put the unit back into air-conditioning mode; it is normal below 42 F and above 30 F, and typically repeats every 25 minutes of compressor run time.",
+      "safeChecklist": [
+        "Record outside temperature estimate, selected heat-pump mode, fan setting, and how often cold air appears.",
+        "Let the automatic defrost cycle finish if the RV remains safe and warm enough.",
+        "Use normal furnace or heat-strip controls when the heat pump cannot keep the coach warm.",
+        "Call qualified RV HVAC service if heat-pump heating fails in moderate weather or defrost behavior does not match the manual."
+      ],
+      "sourceIds": [
+        "dometic-bluetooth-ct-thermostat-operating",
+        "dometic-brisk-ac-frost-heating"
+      ],
+      "searchAliases": [
+        "bluetooth ct heat pump defrost cold air 25 minutes",
+        "dometic bluetooth ct heat pump blows cold air defrost",
+        "dometic 3316420 heat pump defrost below 42 above 30",
+        "capacitive touch thermostat heat pump air conditioning mode in heat"
+      ]
+    },
+    {
+      "id": "dometic-bluetooth-ct-low-ambient-heat-pump-lockout",
+      "slug": "dometic-bluetooth-ct-low-ambient-heat-pump-lockout",
+      "title": "Dometic Bluetooth CT low-ambient heat-pump lockout",
+      "summary": "Dometic Bluetooth CT instructions say the heat pump locks out below 30 F; Auto fan turns off, while Low or High fan can remain on without compressor heat.",
+      "safeChecklist": [
+        "Record outside temperature estimate, selected mode, fan setting, and whether the compressor is off below 30 F.",
+        "Use normal furnace or heat-strip controls if equipped when the heat pump is below its operating range.",
+        "Do not keep forcing heat-pump starts below the documented low-ambient lockout temperature.",
+        "Call qualified RV HVAC service if heat-pump heating fails above the documented low-ambient range."
+      ],
+      "sourceIds": [
+        "dometic-bluetooth-ct-thermostat-operating"
+      ],
+      "searchAliases": [
+        "bluetooth ct heat pump lockout below 30 fan remains on",
+        "dometic bluetooth ct low ambient heat pump lock out",
+        "dometic 3316420 heat pump no heat below 30",
+        "capacitive touch thermostat fan remains on compressor not running"
+      ]
+    },
+    {
+      "id": "dometic-bluetooth-ct-hot-weather-filter-maintenance",
+      "slug": "dometic-bluetooth-ct-hot-weather-filter-maintenance",
+      "title": "Dometic Bluetooth CT hot-weather filter maintenance",
+      "summary": "Dometic Bluetooth CT instructions say High Fan/Cooling gives optimum efficiency in high humidity or high outside temperatures, heat gain should be reduced with shade and closed doors/windows, and the return-air filter should be washed at a minimum of every 2 weeks of operation.",
+      "safeChecklist": [
+        "Use normal HIGH FAN and COOL controls during high humidity or high outside temperature.",
+        "Park in shade when possible, use window coverings, keep doors and windows shut, and avoid heat-producing appliances.",
+        "Wash the owner-accessible return-air filter with soap and warm water at a minimum of every 2 weeks of operation, let it dry, and reinstall it before running the air conditioner.",
+        "Call qualified RV HVAC service if owner-visible heat-gain and filter checks do not improve cooling."
+      ],
+      "sourceIds": [
+        "dometic-bluetooth-ct-thermostat-operating",
+        "dometic-brisk-ac-heat-gain"
+      ],
+      "searchAliases": [
+        "bluetooth ct filter every 2 weeks hot weather heat gain",
+        "dometic bluetooth ct high fan cooling high humidity",
+        "dometic 3316420 wash return air filter warm water",
+        "capacitive touch thermostat air conditioner hot day shade windows"
+      ]
+    },
+    {
       "id": "dometic-df-furnace-blower-runs-will-not-light",
       "slug": "dometic-df-furnace-blower-runs-will-not-light",
       "title": "Dometic DF furnace blower runs but will not light",
@@ -34162,7 +34566,8 @@
         "coleman-comfortguard-service",
         "coleman-6633-service",
         "dometic-ccc2-operating",
-        "dometic-single-zone-lcd-thermostat-operating"
+        "dometic-single-zone-lcd-thermostat-operating",
+        "dometic-bluetooth-ct-thermostat-operating"
       ]
     },
     {

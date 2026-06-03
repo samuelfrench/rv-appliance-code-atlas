@@ -57,6 +57,12 @@ describe("verified corpus", () => {
       "dometic-single-zone-lcd-e1",
     );
     expect(lookupEntries(index, "dometic 3313193 e5 freeze sensor")[0]?.slug).toBe("dometic-single-zone-lcd-e5");
+    expect(lookupEntries(index, "dometic bluetooth ct 3316420 e1 communication")[0]?.slug).toBe(
+      "dometic-bluetooth-ct-e1",
+    );
+    expect(lookupEntries(index, "dometic bluetooth thermostat e5 freeze sensor")[0]?.slug).toBe(
+      "dometic-bluetooth-ct-e5",
+    );
     expect(lookupEntries(index, "dometic freshjet fjx p1 under voltage campsite")[0]?.slug).toBe(
       "dometic-freshjet-fjx-p1-under-voltage-protection",
     );
@@ -165,6 +171,35 @@ describe("verified corpus", () => {
     );
     expect(lookupSymptomGuides(symptomIndex, "dometic single zone filter every 2 weeks hot weather cooling")[0]?.slug).toBe(
       "dometic-single-zone-hot-weather-filter-maintenance",
+    );
+  });
+
+  it("finds Dometic Bluetooth CT thermostat code and symptom support pages from owner searches", () => {
+    const symptomIndex = buildSymptomSearchIndex(corpus);
+
+    expect(lookupSymptomGuides(symptomIndex, "dometic bluetooth ct app pairing 2 digit pin off mode")[0]?.slug).toBe(
+      "dometic-bluetooth-ct-pairing-mobile-device",
+    );
+    expect(lookupSymptomGuides(symptomIndex, "bluetooth ct lost pairs factory reset four devices")[0]?.slug).toBe(
+      "dometic-bluetooth-ct-lost-pairs-factory-reset",
+    );
+    expect(lookupSymptomGuides(symptomIndex, "capacitive touch thermostat inside temperature off mode wet fingers")[0]?.slug).toBe(
+      "dometic-bluetooth-ct-touch-display-inside-temperature",
+    );
+    expect(lookupSymptomGuides(symptomIndex, "dometic bluetooth ct furnace fan auto low high")[0]?.slug).toBe(
+      "dometic-bluetooth-ct-auto-fan-furnace-fan",
+    );
+    expect(lookupSymptomGuides(symptomIndex, "bluetooth ct compressor time delay 2 minutes")[0]?.slug).toBe(
+      "dometic-bluetooth-ct-compressor-time-delay",
+    );
+    expect(lookupSymptomGuides(symptomIndex, "bluetooth ct heat pump defrost cold air 25 minutes")[0]?.slug).toBe(
+      "dometic-bluetooth-ct-heat-pump-defrost-cold-air",
+    );
+    expect(lookupSymptomGuides(symptomIndex, "bluetooth ct heat pump lockout below 30 fan remains on")[0]?.slug).toBe(
+      "dometic-bluetooth-ct-low-ambient-heat-pump-lockout",
+    );
+    expect(lookupSymptomGuides(symptomIndex, "bluetooth ct filter every 2 weeks hot weather heat gain")[0]?.slug).toBe(
+      "dometic-bluetooth-ct-hot-weather-filter-maintenance",
     );
   });
 
@@ -614,7 +649,7 @@ describe("verified corpus", () => {
       type: "manufacturer-manual",
       url: "https://media.dometic.com/externalassets/ct-single-zone-thermostat_9108853315_55910.pdf",
     });
-    expect(corpus.entries).toHaveLength(843);
+    expect(corpus.entries).toHaveLength(848);
     expect(entries.map((entry) => entry.code).sort()).toEqual(["E1", "E2", "E3", "E4", "E5"]);
 
     for (const entry of entries) {
@@ -645,8 +680,8 @@ describe("verified corpus", () => {
       type: "manufacturer-manual",
       url: "https://media.dometic.com/externalassets/dometic-freshjet-fjx7-3000_9620001685_123479.pdf",
     });
-    expect(corpus.sources).toHaveLength(329);
-    expect(corpus.entries).toHaveLength(843);
+    expect(corpus.sources).toHaveLength(335);
+    expect(corpus.entries).toHaveLength(848);
     expect(new Set(entries.map((entry) => entry.code))).toEqual(
       new Set(["P0", "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P9", "E0", "E1", "E2", "E3", "E7", "E8", "E9", "EA", "EE", "EL"]),
     );
@@ -684,7 +719,7 @@ describe("verified corpus", () => {
     ];
 
     expect(corpus.sources.find((source) => source.id === sourceId)?.official).toBe(true);
-    expect(corpus.entries).toHaveLength(843);
+    expect(corpus.entries).toHaveLength(848);
     expect(
       corpus.entries
         .filter((entry) => entry.sourceIds.includes(sourceId))
@@ -723,7 +758,7 @@ describe("verified corpus", () => {
       "dometic-single-zone-hot-weather-filter-maintenance",
     ];
 
-    expect(corpus.symptoms).toHaveLength(170);
+    expect(corpus.symptoms).toHaveLength(178);
 
     for (const symptomId of expectedSymptomIds) {
       const symptom = symptomById.get(symptomId);
@@ -747,6 +782,103 @@ describe("verified corpus", () => {
     expect(symptomById.get("airflow-or-venting")?.sourceIds).toContain(sourceId);
   });
 
+  it("includes the official Dometic Bluetooth CT thermostat E1-E5 table with owner-safe boundaries", () => {
+    const sourceId = "dometic-bluetooth-ct-thermostat-operating";
+    const source = corpus.sources.find((item) => item.id === sourceId);
+    const entries = corpus.entries.filter((entry) => entry.sourceIds.includes(sourceId));
+
+    expect(source).toMatchObject({
+      brand: "Dometic",
+      official: true,
+      type: "manufacturer-manual",
+      url: "https://media.dometic.com/externalassets/bluetooth-thermostat_9108887112_64643.pdf",
+    });
+    expect(corpus.entries).toHaveLength(848);
+    expect(entries.map((entry) => entry.code).sort()).toEqual(["E1", "E2", "E3", "E4", "E5"]);
+
+    for (const entry of entries) {
+      expect(entry.modelFamilies).toEqual(["Bluetooth CT thermostat", "Capacitive Touch thermostat", "3316420.XXX"]);
+      expect(entry.ownerSafeActions.join(" "), entry.id).not.toMatch(
+        /\b(control board|module board|120\s*V|12\s*V|fuse|breaker|wiring|wire|probe|bypass|jump|open)\b/i,
+      );
+      expect(entry.serviceOnlyActions.join(" "), entry.id).toMatch(/qualified RV HVAC service|authorized Dometic service/i);
+      expect(entry.safetyBoundary, entry.id).toMatch(/qualified RV HVAC service|authorized Dometic service/i);
+    }
+
+    expect(entries.find((entry) => entry.code === "E1")?.plainMeaning).toMatch(/cycles between E1 and the previous mode/i);
+    expect(entries.find((entry) => entry.code === "E2")?.plainMeaning).toMatch(/open circuit|Indoor Temperature Sensor/i);
+    expect(entries.find((entry) => entry.code === "E3")?.plainMeaning).toMatch(/Shorted Indoor Temperature Sensor/i);
+    expect(entries.find((entry) => entry.code === "E4")?.plainMeaning).toMatch(/Outdoor Temperature Sensor|Heat Pump/i);
+    expect(entries.find((entry) => entry.code === "E5")?.plainMeaning).toMatch(/Freeze Sensor|Air Conditioner mode/i);
+  });
+
+  it("adds official Dometic Bluetooth CT thermostat symptom pages without unsafe owner steps", () => {
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const pdfSourceId = "dometic-bluetooth-ct-thermostat-operating";
+    const supportSourceIds = [
+      "dometic-capacitive-touch-mode-selection",
+      "dometic-capacitive-touch-inside-temperature",
+      "dometic-brisk-ac-heat-gain",
+      "dometic-brisk-ac-filter-efficiency",
+      "dometic-brisk-ac-frost-heating",
+    ];
+    const expectedSymptomIds = [
+      "dometic-bluetooth-ct-pairing-mobile-device",
+      "dometic-bluetooth-ct-lost-pairs-factory-reset",
+      "dometic-bluetooth-ct-touch-display-inside-temperature",
+      "dometic-bluetooth-ct-auto-fan-furnace-fan",
+      "dometic-bluetooth-ct-compressor-time-delay",
+      "dometic-bluetooth-ct-heat-pump-defrost-cold-air",
+      "dometic-bluetooth-ct-low-ambient-heat-pump-lockout",
+      "dometic-bluetooth-ct-hot-weather-filter-maintenance",
+    ];
+
+    expect(corpus.symptoms).toHaveLength(178);
+    for (const sourceId of [pdfSourceId, ...supportSourceIds]) {
+      expect(corpus.sources.find((source) => source.id === sourceId), sourceId).toMatchObject({
+        brand: "Dometic",
+        official: true,
+      });
+    }
+
+    for (const symptomId of expectedSymptomIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds).toContain(pdfSourceId);
+      expect(symptom?.safeChecklist.join(" "), symptomId).not.toMatch(
+        /\b(control board|module board|120\s*V|12\s*V|fuse|breaker|wiring|wire|probe|bypass|jump|refrigerant|open)\b/i,
+      );
+    }
+
+    expect(symptomById.get("dometic-bluetooth-ct-pairing-mobile-device")?.summary).toMatch(/3 feet|2-digit|15 seconds/i);
+    expect(symptomById.get("dometic-bluetooth-ct-lost-pairs-factory-reset")?.summary).toMatch(/factory reset|four most recent/i);
+    expect(symptomById.get("dometic-bluetooth-ct-touch-display-inside-temperature")?.summary).toMatch(/Off Mode|skin contact|wet fingers/i);
+    expect(symptomById.get("dometic-bluetooth-ct-auto-fan-furnace-fan")?.summary).toMatch(/Auto|Low|High|Furnace/i);
+    expect(symptomById.get("dometic-bluetooth-ct-compressor-time-delay")?.summary).toMatch(/2 minutes|cooling|heat pump/i);
+    expect(symptomById.get("dometic-bluetooth-ct-heat-pump-defrost-cold-air")?.summary).toMatch(/25 minutes|42|30|normal/i);
+    expect(symptomById.get("dometic-bluetooth-ct-low-ambient-heat-pump-lockout")?.summary).toMatch(/below 30|lock out/i);
+    expect(symptomById.get("dometic-bluetooth-ct-hot-weather-filter-maintenance")?.summary).toMatch(/2 weeks|heat gain|shade/i);
+    expect(symptomById.get("dometic-bluetooth-ct-heat-pump-defrost-cold-air")?.sourceIds).toContain(
+      "dometic-brisk-ac-frost-heating",
+    );
+    expect(symptomById.get("dometic-bluetooth-ct-low-ambient-heat-pump-lockout")?.sourceIds).toEqual([
+      pdfSourceId,
+    ]);
+    expect(symptomById.get("dometic-bluetooth-ct-hot-weather-filter-maintenance")?.sourceIds).toEqual([
+      pdfSourceId,
+      "dometic-brisk-ac-heat-gain",
+    ]);
+    expect(symptomById.get("dometic-bluetooth-ct-hot-weather-filter-maintenance")?.sourceIds).not.toContain(
+      "dometic-brisk-ac-filter-efficiency",
+    );
+
+    expect(symptomById.get("thermostat-communication")?.sourceIds).toContain(pdfSourceId);
+    expect(symptomById.get("thermostat-display")?.sourceIds).toContain(pdfSourceId);
+    expect(symptomById.get("thermostat-delay-or-no-response")?.sourceIds).toContain(pdfSourceId);
+    expect(symptomById.get("air-conditioner-not-cooling")?.sourceIds).toContain(pdfSourceId);
+    expect(symptomById.get("airflow-or-venting")?.sourceIds).toContain(pdfSourceId);
+  });
+
   it("adds official Dometic FreshJet FJX symptom pages without unsafe owner steps", () => {
     const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
     const sourceId = "dometic-freshjet-fjx-operating";
@@ -759,7 +891,7 @@ describe("verified corpus", () => {
       "dometic-freshjet-fjx-voltage-protection-campsite-power",
     ];
 
-    expect(corpus.symptoms).toHaveLength(170);
+    expect(corpus.symptoms).toHaveLength(178);
 
     for (const symptomId of expectedSymptomIds) {
       const symptom = symptomById.get(symptomId);
@@ -804,7 +936,7 @@ describe("verified corpus", () => {
       official: true,
       type: "manufacturer-manual",
     });
-    expect(corpus.entries).toHaveLength(843);
+    expect(corpus.entries).toHaveLength(848);
     expect(corpus.entries.filter((entry) => entry.sourceIds.includes(sourceId))).toHaveLength(0);
 
     for (const symptomId of expectedSymptomIds) {
@@ -857,7 +989,7 @@ describe("verified corpus", () => {
       });
     }
 
-    expect(corpus.entries).toHaveLength(843);
+    expect(corpus.entries).toHaveLength(848);
     expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => sourceIds.includes(sourceId)))).toHaveLength(0);
 
     for (const symptomId of expectedSymptomIds) {
@@ -1757,9 +1889,9 @@ describe("verified corpus", () => {
       expect(supportUrls.get(sourceId), sourceId).toBe(url);
     }
     expect(corpus.sources.filter((source) => toiletSourceIds.includes(source.id))).toHaveLength(toiletSourceIds.length);
-    expect(corpus.entries).toHaveLength(843);
+    expect(corpus.entries).toHaveLength(848);
     expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => toiletSourceIds.includes(sourceId)))).toHaveLength(0);
-    expect(corpus.symptoms).toHaveLength(170);
+    expect(corpus.symptoms).toHaveLength(178);
 
     expect(symptomById.get("thetford-rv-toilet-bowl-water-does-not-hold-seal")?.sourceIds).toEqual(
       expect.arrayContaining(["thetford-permanent-rv-toilet-owner", "thetford-faq-lip-seal-replacement"]),
@@ -2553,7 +2685,7 @@ describe("verified corpus", () => {
       expect(source?.url, sourceId).toBe(url);
     }
 
-    expect(corpus.entries).toHaveLength(843);
+    expect(corpus.entries).toHaveLength(848);
     expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
 
     for (const symptomId of newSymptomIds) {
@@ -3125,7 +3257,7 @@ describe("verified corpus", () => {
 
     expect(sourceById.get("suburban-rv-faqs")?.official).toBe(true);
     expect(sourceById.get("suburban-rv-faqs")?.url).toBe("https://suburbanrv.com/service-support/faqs/");
-    expect(corpus.entries).toHaveLength(843);
+    expect(corpus.entries).toHaveLength(848);
     expect(corpus.entries.filter((entry) => entry.sourceIds.includes("suburban-rv-faqs"))).toHaveLength(0);
 
     for (const symptomId of newSymptomIds) {
@@ -3210,7 +3342,7 @@ describe("verified corpus", () => {
     expect(sourceById.get("suburban-st42-st60-product-overview")?.url).toBe(
       "https://suburbanrv.com/files/product_documents/Tankless%20Water%20Heater/ST%204260%20Tankless%20Water%20Heater%20Sell%20Sheet%20111522.pdf",
     );
-    expect(corpus.entries).toHaveLength(843);
+    expect(corpus.entries).toHaveLength(848);
 
     for (const sourceId of newSourceIds) {
       expect(corpus.entries.filter((entry) => entry.sourceIds.includes(sourceId)), sourceId).toHaveLength(0);
@@ -3454,7 +3586,7 @@ describe("verified corpus", () => {
       expect(source?.url, sourceId).toBe(url);
     }
 
-    expect(corpus.entries).toHaveLength(843);
+    expect(corpus.entries).toHaveLength(848);
     expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
 
     for (const symptomId of newSymptomIds) {
