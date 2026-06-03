@@ -4753,6 +4753,94 @@
       "url": "https://www.thetford.com/app/uploads/2025/05/95395A_ThetfordWarrantyStatement_Consumer.pdf",
       "type": "manufacturer-pdf",
       "official": true
+    },
+    {
+      "id": "dometic-harrier-water-entry-support",
+      "brand": "Dometic",
+      "title": "Dometic Harrier AC Water Enters the Vehicle Support",
+      "url": "https://support.dometic.com/en/harrier-ac/Water-enters-the-vehicle-237a",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-harrier-inspect-maintenance-support",
+      "brand": "Dometic",
+      "title": "Dometic Harrier AC Inspection and Maintenance Support",
+      "url": "https://support.dometic.com/en/harrier-ac/How-to-Inspectperform-maintenance-2e32",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-harrier-cleaning-support",
+      "brand": "Dometic",
+      "title": "Dometic Harrier AC Cleaning Support",
+      "url": "https://support.dometic.com/en/harrier-ac/How-to-Clean-the-roof-air-conditioner-28d3",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-bravura-support",
+      "brand": "Thetford",
+      "title": "Thetford Bravura Support",
+      "url": "https://www.thetford.com/us/thetford-support/bravura/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-c224-cw-cassette-toilet-support",
+      "brand": "Thetford",
+      "title": "Thetford C224-CW Cassette Toilet Support",
+      "url": "https://www.thetford.com/us/thetford-support/c224-cw-cassette-toilet/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-electric-fireplaces-product-category",
+      "brand": "Furrion",
+      "title": "Furrion Electric Fireplaces Product Category",
+      "url": "https://furrion.com/collections/electric-fireplaces/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "girard-cooking-support-index",
+      "brand": "Lippert",
+      "title": "Lippert Girard Cooking Support Index",
+      "url": "https://support.lci1.com/girard-cooking",
+      "type": "manufacturer-support-index",
+      "official": true
+    },
+    {
+      "id": "suburban-nt-park-model-furnaces-product",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban NT and Park Model Furnaces",
+      "url": "https://suburbanrv.com/climate-control/furnaces/nt-park-model-furnaces/default.aspx",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-service-locator",
+      "brand": "MaxxAir",
+      "title": "MaxxAir Service Locator",
+      "url": "https://www.maxxair.com/service-support/service-locator/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "maxxair-return-policy-support",
+      "brand": "MaxxAir",
+      "title": "MaxxAir Return Policy and Consumer Support Routing",
+      "url": "https://www.maxxair.com/service-support/return-policy/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "onan-rv-generator-warranty-statement-pdf",
+      "brand": "Onan",
+      "title": "Cummins Onan RV Generator Warranty Statement",
+      "url": "https://www.cummins.com/sites/default/files/2018-08/PGBU-Warranty-Statement.pdf",
+      "type": "manufacturer-pdf",
+      "official": true
     }
   ],
   "entries": [
@@ -38150,7 +38238,18 @@
         "maxxair-fanmate-product-family",
         "maxxair-fanmate-955002-product",
         "norcold-refrigeration-warranty-statement-641507b",
-        "thetford-sanitation-warranty-statement-95395a"
+        "thetford-sanitation-warranty-statement-95395a",
+        "dometic-harrier-water-entry-support",
+        "dometic-harrier-inspect-maintenance-support",
+        "dometic-harrier-cleaning-support",
+        "thetford-bravura-support",
+        "thetford-c224-cw-cassette-toilet-support",
+        "furrion-electric-fireplaces-product-category",
+        "girard-cooking-support-index",
+        "suburban-nt-park-model-furnaces-product",
+        "maxxair-service-locator",
+        "maxxair-return-policy-support",
+        "onan-rv-generator-warranty-statement-pdf"
       ]
     },
     {
@@ -45830,6 +45929,266 @@
       ],
       "searchRequiredTerms": [
         "thetfordwarranty"
+      ]
+    },
+    {
+      "id": "dometic-harrier-water-entry-service-prep",
+      "slug": "dometic-harrier-water-entry-service-prep",
+      "title": "Dometic Harrier water-entry service prep",
+      "summary": "Use the official Dometic Harrier water-entry support page to document where water appears before support.",
+      "safeChecklist": [
+        "Record the Harrier model, visible data-label details, where water appears inside the vehicle, weather, travel state, and control mode.",
+        "Save photos from normal interior access, including the air distribution box, nearby ceiling area, and any visible drip pattern.",
+        "Use Dometic, a dealer, or qualified RV HVAC service for gasket, shell, seal, drainage, installed-unit, or water-entry repair decisions."
+      ],
+      "sourceIds": [
+        "dometic-harrier-water-entry-support"
+      ],
+      "searchAliases": [
+        "dometic harrier water enters vehicle document leak",
+        "dometic harrier water leak service prep",
+        "harrier water entry air conditioner support",
+        "harrier water inside vehicle service notes"
+      ],
+      "searchRequiredTerms": [
+        "harrierwater"
+      ]
+    },
+    {
+      "id": "dometic-harrier-maintenance-inspection-prep",
+      "slug": "dometic-harrier-maintenance-inspection-prep",
+      "title": "Dometic Harrier maintenance inspection prep",
+      "summary": "Use the official Dometic Harrier inspection and maintenance support page to collect filter and service notes.",
+      "safeChecklist": [
+        "Record the Harrier model, visible data-label details, return-air filter condition, control mode, airflow symptom, and maintenance history.",
+        "Save photos of owner-accessible filters, the air distribution box, and any visible condensate note before contacting support.",
+        "Use Dometic, a dealer, or qualified RV HVAC service for annual service, installed-unit checks, sensor, fan, or sealed-system decisions."
+      ],
+      "sourceIds": [
+        "dometic-harrier-inspect-maintenance-support"
+      ],
+      "searchAliases": [
+        "dometic harrier maintenance inspect filter service prep",
+        "dometic harrier inspect maintenance data label",
+        "harrier maintenance air conditioner annual service prep",
+        "harrier inspect return air filter cleaning"
+      ],
+      "searchRequiredTerms": [
+        "harriermaintenance",
+        "harrierinspect"
+      ]
+    },
+    {
+      "id": "dometic-harrier-cleaning-prep",
+      "slug": "dometic-harrier-cleaning-prep",
+      "title": "Dometic Harrier AC cleaning prep",
+      "summary": "Use the official Dometic Harrier cleaning support page to document owner-accessible cleaning questions.",
+      "safeChecklist": [
+        "Record the Harrier model, visible data-label details, cleaning question, finish condition, and any nearby dirt or debris visible from normal access.",
+        "Use gentle cleaning notes only; avoid pressure washers, solvents, abrasive cleaners, and water sprayed into openings.",
+        "Use Dometic, a dealer, or qualified RV HVAC service for fitted-unit cleaning, shell, seal, drainage, or repair decisions."
+      ],
+      "sourceIds": [
+        "dometic-harrier-cleaning-support"
+      ],
+      "searchAliases": [
+        "dometic harrier cleaning roof air conditioner support",
+        "dometic harrier roof ac cleaning prep",
+        "harrier cleaning exterior air conditioner prep",
+        "harrier roof conditioner cleaning support"
+      ],
+      "searchRequiredTerms": [
+        "harriercleaning",
+        "harrierroof"
+      ]
+    },
+    {
+      "id": "thetford-bravura-model-support-prep",
+      "slug": "thetford-bravura-model-support-prep",
+      "title": "Thetford Bravura model support prep",
+      "summary": "Use the official Thetford Bravura support page to collect model, serial, cleaning, winterizing, and product-use notes.",
+      "safeChecklist": [
+        "Record Bravura model and serial details, RV make and model, flush symptom, water-retention note, cleaning product used, and winterizing history.",
+        "Save photos of the product label, visible bowl or seal symptom, and purchase or installation paperwork before contacting Thetford.",
+        "Use Thetford support, an authorized service center, dealer, or qualified RV sanitation service for parts, mechanism, seal, or replacement decisions."
+      ],
+      "sourceIds": [
+        "thetford-bravura-support"
+      ],
+      "searchAliases": [
+        "thetford bravura toilet model support prep",
+        "bravura toilet support model serial",
+        "thetford bravura cleaning winterizing support",
+        "bravura rv toilet product support page"
+      ],
+      "searchRequiredTerms": [
+        "bravura"
+      ]
+    },
+    {
+      "id": "thetford-c224-cw-cassette-model-support-prep",
+      "slug": "thetford-c224-cw-cassette-model-support-prep",
+      "title": "Thetford C224-CW cassette model support prep",
+      "summary": "Use the official Thetford C224-CW support page to collect cassette-toilet model and support-routing notes.",
+      "safeChecklist": [
+        "Record C224-CW model and serial details, cassette tank state, flush-tank condition, travel-water note, RV make and model, and exact symptom.",
+        "Save photos of the product label, cassette tank, visible control state, purchase paperwork, and any safe cleaning or additive notes.",
+        "Use Thetford support, an authorized service center, dealer, or qualified RV sanitation service for pump, water system, seal, parts, or installation decisions."
+      ],
+      "sourceIds": [
+        "thetford-c224-cw-cassette-toilet-support"
+      ],
+      "searchAliases": [
+        "thetford c224 cw cassette toilet support prep",
+        "thetford c224cw cassette toilet model support",
+        "c224 cassette toilet support model serial",
+        "c224 cw travel flush tank support"
+      ],
+      "searchRequiredTerms": [
+        "c224",
+        "c224cw"
+      ]
+    },
+    {
+      "id": "furrion-fireplace-current-product-family-prep",
+      "slug": "furrion-fireplace-current-product-family-prep",
+      "title": "Furrion fireplace current product-family prep",
+      "summary": "Use the official Furrion electric fireplaces category page to identify current fireplace family and support details.",
+      "safeChecklist": [
+        "Record Furrion fireplace model, Greystone or Furrion family, visible label details, display state, remote state, and exact heat or appearance question.",
+        "Save photos of the front panel, visible label, display, remote, purchase notes, and RV make and model before contacting support.",
+        "Use Furrion, Lippert, a dealer, or qualified RV service for installed power, heater, fan, mounting, parts, or replacement decisions."
+      ],
+      "sourceIds": [
+        "furrion-electric-fireplaces-product-category"
+      ],
+      "searchAliases": [
+        "furrion fireplace current product family support",
+        "furrion fireplace greystone product routing prep",
+        "greystone fireplace model family support",
+        "furrion fireplace product category service prep"
+      ],
+      "searchRequiredTerms": [
+        "furrionfireplace",
+        "greystonefireplace"
+      ]
+    },
+    {
+      "id": "girard-cooking-support-router-prep",
+      "slug": "girard-cooking-support-router-prep",
+      "title": "Girard cooking support router prep",
+      "summary": "Use the official Lippert Girard Cooking support index to route range, hood, or microwave owners to current manuals.",
+      "safeChecklist": [
+        "Record Girard cooking appliance type, model, serial details, RV make and model, control state, and exact range, hood, or microwave support question.",
+        "Save photos of the product label, front panel, any displayed message, purchase notes, and the support-document link you plan to use.",
+        "Use Girard, Lippert, a dealer, or qualified RV appliance service for installation, ventilation, heating, appliance operation, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "girard-cooking-support-index"
+      ],
+      "searchAliases": [
+        "girard cooking support index range hood microwave model",
+        "girard cooking range hood manual support",
+        "girard cooking microwave model serial prep",
+        "lippert girard cooking support documents"
+      ],
+      "searchRequiredTerms": [
+        "girardcooking"
+      ]
+    },
+    {
+      "id": "suburban-nt-park-model-furnace-prep",
+      "slug": "suburban-nt-park-model-furnace-prep",
+      "title": "Suburban NT park-model furnace prep",
+      "summary": "Use the official Suburban NT and Park Model Furnaces page to capture furnace-family and application notes.",
+      "safeChecklist": [
+        "Record the Suburban NT or Park Model furnace family, visible label details, RV or park-model application, control state, and exact heating symptom.",
+        "Save photos of the product label, thermostat or control state, purchase or installation notes, and any capacity or application question.",
+        "Use Suburban, an authorized service center, dealer, or qualified RV furnace service for installation, venting, fuel setup, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "suburban-nt-park-model-furnaces-product"
+      ],
+      "searchAliases": [
+        "suburban nt park model furnace family prep",
+        "suburban nt park furnace product page support",
+        "nt park model suburban furnace support prep",
+        "suburban nt park application notes"
+      ],
+      "searchRequiredTerms": [
+        "ntpark",
+        "suburbannt"
+      ]
+    },
+    {
+      "id": "maxxair-authorized-service-locator-prep",
+      "slug": "maxxair-authorized-service-locator-prep",
+      "title": "MaxxAir authorized service locator prep",
+      "summary": "Use the official MaxxAir service locator to route fan, vent, cover, or control questions to an authorized provider.",
+      "safeChecklist": [
+        "Record MaxxAir fan, vent, cover, or control model details, visible label information, purchase notes, RV make and model, and exact symptom.",
+        "Save photos of the product label, visible damage or control state, and any weather or travel context before contacting a service provider.",
+        "Use the MaxxAir locator, Airxcel support, a dealer, or qualified RV service for mounting, sealant, motor, parts, or replacement decisions."
+      ],
+      "sourceIds": [
+        "maxxair-service-locator"
+      ],
+      "searchAliases": [
+        "maxxair service locator authorized dealer fan prep",
+        "maxxair locator service center vent support",
+        "maxxair service center dealer locator prep",
+        "maxxair service support locator model serial"
+      ],
+      "searchRequiredTerms": [
+        "maxxairservice",
+        "maxxairlocator"
+      ]
+    },
+    {
+      "id": "maxxair-return-policy-routing-prep",
+      "slug": "maxxair-return-policy-routing-prep",
+      "title": "MaxxAir return-policy support routing prep",
+      "summary": "Use the official MaxxAir return-policy page to document consumer support routing before a return or service request.",
+      "safeChecklist": [
+        "Record MaxxAir model and serial details, purchase channel, order date, bill of sale, visible label information, and exact defect or fitment question.",
+        "Save photos of the product, packaging, label, visible issue, and all purchase paperwork before contacting MaxxAir, Airxcel, or the seller.",
+        "Use MaxxAir, Airxcel support, an authorized service center, or the seller for return eligibility, warranty routing, replacement, or service decisions."
+      ],
+      "sourceIds": [
+        "maxxair-return-policy-support"
+      ],
+      "searchAliases": [
+        "maxxair return policy consumer support routing",
+        "maxxair return policy authorized service center",
+        "maxxair return defective product support prep",
+        "maxxair return support documentation"
+      ],
+      "searchRequiredTerms": [
+        "maxxairreturn"
+      ]
+    },
+    {
+      "id": "onan-rv-generator-warranty-statement-prep",
+      "slug": "onan-rv-generator-warranty-statement-prep",
+      "title": "Onan RV generator warranty statement prep",
+      "summary": "Use the official Cummins Onan RV generator warranty statement to collect warranty-period and paperwork details.",
+      "safeChecklist": [
+        "Record the generator model, spec letter, serial number, purchase date, RV make and model, hour-meter reading, displayed code, and exact symptom.",
+        "Keep bill-of-sale, product-label photos, displayed-code photos, service history, and usage notes with the warranty paperwork.",
+        "Use Cummins Onan, Coach Care, an authorized service provider, or qualified generator service for diagnosis, warranty routing, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "onan-rv-generator-warranty-statement-pdf"
+      ],
+      "searchAliases": [
+        "cummins onan warranty statement rv generator paperwork",
+        "onan warranty rv generator set paperwork",
+        "cummins warranty statement generator model serial",
+        "onan warranty generator purchase date service prep"
+      ],
+      "searchRequiredTerms": [
+        "onanwarranty",
+        "cumminswarranty"
       ]
     }
   ],

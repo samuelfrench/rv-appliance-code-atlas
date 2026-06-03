@@ -1877,6 +1877,78 @@ test("lookup surfaces Coleman, MaxxAir, Dometic Ibis, and current warranty state
   expect(pageErrors).toEqual([]);
 });
 
+test("lookup surfaces Harrier, toilet, MaxxAir, Furrion/Girard, Suburban, and Onan support guides", async ({
+  page,
+}) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    ["dometic harrier water enters vehicle document leak", "/symptoms/dometic-harrier-water-entry-service-prep/"],
+    [
+      "dometic harrier maintenance inspect filter service prep",
+      "/symptoms/dometic-harrier-maintenance-inspection-prep/",
+    ],
+    ["dometic harrier cleaning roof air conditioner support", "/symptoms/dometic-harrier-cleaning-prep/"],
+    ["thetford bravura toilet model support prep", "/symptoms/thetford-bravura-model-support-prep/"],
+    ["thetford c224 cw cassette toilet support prep", "/symptoms/thetford-c224-cw-cassette-model-support-prep/"],
+    ["furrion fireplace current product family support", "/symptoms/furrion-fireplace-current-product-family-prep/"],
+    ["girard cooking support index range hood microwave model", "/symptoms/girard-cooking-support-router-prep/"],
+    ["suburban nt park model furnace family prep", "/symptoms/suburban-nt-park-model-furnace-prep/"],
+    ["maxxair service locator authorized dealer fan prep", "/symptoms/maxxair-authorized-service-locator-prep/"],
+    ["maxxair return policy consumer support routing", "/symptoms/maxxair-return-policy-routing-prep/"],
+    ["cummins onan warranty statement rv generator paperwork", "/symptoms/onan-rv-generator-warranty-statement-prep/"],
+  ] as const;
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+  }
+
+  for (const [query, href] of [
+    ["water enters vehicle", "/symptoms/dometic-harrier-water-entry-service-prep/"],
+    ["maintenance inspection", "/symptoms/dometic-harrier-maintenance-inspection-prep/"],
+    ["cleaning air conditioner", "/symptoms/dometic-harrier-cleaning-prep/"],
+    ["toilet support", "/symptoms/thetford-bravura-model-support-prep/"],
+    ["cassette toilet", "/symptoms/thetford-c224-cw-cassette-model-support-prep/"],
+    ["electric fireplace", "/symptoms/furrion-fireplace-current-product-family-prep/"],
+    ["cooking support", "/symptoms/girard-cooking-support-router-prep/"],
+    ["park model furnace", "/symptoms/suburban-nt-park-model-furnace-prep/"],
+    ["service locator", "/symptoms/maxxair-authorized-service-locator-prep/"],
+    ["return policy", "/symptoms/maxxair-return-policy-routing-prep/"],
+    ["generator warranty", "/symptoms/onan-rv-generator-warranty-statement-prep/"],
+  ] as const) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toHaveCount(0);
+  }
+
+  await searchbox.fill("dometic harrier water enters vehicle document leak");
+  const harrierWater = lookupResults.locator('a[href="/symptoms/dometic-harrier-water-entry-service-prep/"]');
+  await expect(harrierWater).toBeVisible();
+  await harrierWater.click();
+  await expect(page.getByRole("heading", { name: "Dometic Harrier water-entry service prep" })).toBeVisible();
+  await expect(page.getByText(/Record the Harrier model/i)).toBeVisible();
+
+  await page.goto("/");
+  await searchbox.fill("cummins onan warranty statement rv generator paperwork");
+  const onanWarranty = lookupResults.locator('a[href="/symptoms/onan-rv-generator-warranty-statement-prep/"]');
+  await expect(onanWarranty).toBeVisible();
+  await onanWarranty.click();
+  await expect(page.getByRole("heading", { name: "Onan RV generator warranty statement prep" })).toBeVisible();
+  await expect(page.getByText(/Record the generator model/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 

@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 864;
-const expectedSourceCount = 591;
-const expectedSymptomCount = 424;
+const expectedSourceCount = 602;
+const expectedSymptomCount = 435;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -7271,6 +7271,160 @@ describe("verified corpus", () => {
       "warranty",
       "toilet warranty",
       "norcold refrigerator not cooling",
+    ]) {
+      expect(
+        lookupSymptomGuides(index, query)
+          .slice(0, 5)
+          .map((symptom) => symptom.slug)
+          .filter((slug) => anchoredSlugs.has(slug)),
+        query,
+      ).toEqual([]);
+    }
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds official Harrier, Thetford toilet, MaxxAir, Furrion/Girard, Suburban, and Onan support guides without code entries", () => {
+    const expectedSources = new Map<string, string>([
+      [
+        "dometic-harrier-water-entry-support",
+        "https://support.dometic.com/en/harrier-ac/Water-enters-the-vehicle-237a",
+      ],
+      [
+        "dometic-harrier-inspect-maintenance-support",
+        "https://support.dometic.com/en/harrier-ac/How-to-Inspectperform-maintenance-2e32",
+      ],
+      [
+        "dometic-harrier-cleaning-support",
+        "https://support.dometic.com/en/harrier-ac/How-to-Clean-the-roof-air-conditioner-28d3",
+      ],
+      ["thetford-bravura-support", "https://www.thetford.com/us/thetford-support/bravura/"],
+      [
+        "thetford-c224-cw-cassette-toilet-support",
+        "https://www.thetford.com/us/thetford-support/c224-cw-cassette-toilet/",
+      ],
+      ["furrion-electric-fireplaces-product-category", "https://furrion.com/collections/electric-fireplaces/"],
+      ["girard-cooking-support-index", "https://support.lci1.com/girard-cooking"],
+      [
+        "suburban-nt-park-model-furnaces-product",
+        "https://suburbanrv.com/climate-control/furnaces/nt-park-model-furnaces/default.aspx",
+      ],
+      ["maxxair-service-locator", "https://www.maxxair.com/service-support/service-locator/"],
+      ["maxxair-return-policy-support", "https://www.maxxair.com/service-support/return-policy/"],
+      [
+        "onan-rv-generator-warranty-statement-pdf",
+        "https://www.cummins.com/sites/default/files/2018-08/PGBU-Warranty-Statement.pdf",
+      ],
+    ]);
+    const expectedSymptomSourceIds = new Map<string, string[]>([
+      ["dometic-harrier-water-entry-service-prep", ["dometic-harrier-water-entry-support"]],
+      ["dometic-harrier-maintenance-inspection-prep", ["dometic-harrier-inspect-maintenance-support"]],
+      ["dometic-harrier-cleaning-prep", ["dometic-harrier-cleaning-support"]],
+      ["thetford-bravura-model-support-prep", ["thetford-bravura-support"]],
+      ["thetford-c224-cw-cassette-model-support-prep", ["thetford-c224-cw-cassette-toilet-support"]],
+      ["furrion-fireplace-current-product-family-prep", ["furrion-electric-fireplaces-product-category"]],
+      ["girard-cooking-support-router-prep", ["girard-cooking-support-index"]],
+      ["suburban-nt-park-model-furnace-prep", ["suburban-nt-park-model-furnaces-product"]],
+      ["maxxair-authorized-service-locator-prep", ["maxxair-service-locator"]],
+      ["maxxair-return-policy-routing-prep", ["maxxair-return-policy-support"]],
+      ["onan-rv-generator-warranty-statement-prep", ["onan-rv-generator-warranty-statement-pdf"]],
+    ]);
+    const expectedRequiredTerms = new Map<string, string[]>([
+      ["dometic-harrier-water-entry-service-prep", ["harrierwater"]],
+      ["dometic-harrier-maintenance-inspection-prep", ["harriermaintenance", "harrierinspect"]],
+      ["dometic-harrier-cleaning-prep", ["harriercleaning", "harrierroof"]],
+      ["thetford-bravura-model-support-prep", ["bravura"]],
+      ["thetford-c224-cw-cassette-model-support-prep", ["c224", "c224cw"]],
+      ["furrion-fireplace-current-product-family-prep", ["furrionfireplace", "greystonefireplace"]],
+      ["girard-cooking-support-router-prep", ["girardcooking"]],
+      ["suburban-nt-park-model-furnace-prep", ["ntpark", "suburbannt"]],
+      ["maxxair-authorized-service-locator-prep", ["maxxairservice", "maxxairlocator"]],
+      ["maxxair-return-policy-routing-prep", ["maxxairreturn"]],
+      ["onan-rv-generator-warranty-statement-prep", ["onanwarranty", "cumminswarranty"]],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const sourcesById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const index = buildSymptomSearchIndex(corpus);
+    const summary = summarizeCorpus(corpus);
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\borifice\b|\bcontrol board\b|\b120\s*vac\b|\b110\s*v\b|\bline-voltage\b|\brefrigerant\b|\bprobe\b|\bwiring\b|\binternal\b|\broof\b|\bsupply line\b|\bopen (the )?(fuel|gas|electrical|rooftop)|remove.*shroud|remove.*cover|measure resistance|fuel nozzle|combustion|coolant pump|manual override|hydraulic work|hydraulic repair/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = sourcesById.get(sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(summary.indexablePages).toBe(expectedEntryCount + expectedSymptomCount + 1);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const [symptomId, sourceIds] of expectedSymptomSourceIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds, symptomId).toEqual(sourceIds);
+      expect(symptom?.searchRequiredTerms, symptomId).toEqual(expectedRequiredTerms.get(symptomId));
+      expect([symptom?.summary, ...(symptom?.safeChecklist ?? [])].join(" "), symptomId).not.toMatch(
+        unsafeOwnerActionPattern,
+      );
+    }
+
+    const topSlugsFor = (query: string) => lookupSymptomGuides(index, query).slice(0, 5).map((symptom) => symptom.slug);
+
+    expect(topSlugsFor("dometic harrier water enters vehicle document leak")).toContain(
+      "dometic-harrier-water-entry-service-prep",
+    );
+    expect(topSlugsFor("dometic harrier maintenance inspect filter service prep")).toContain(
+      "dometic-harrier-maintenance-inspection-prep",
+    );
+    expect(topSlugsFor("dometic harrier cleaning roof air conditioner support")).toContain(
+      "dometic-harrier-cleaning-prep",
+    );
+    expect(topSlugsFor("thetford bravura toilet model support prep")).toContain("thetford-bravura-model-support-prep");
+    expect(topSlugsFor("thetford c224 cw cassette toilet support prep")).toContain(
+      "thetford-c224-cw-cassette-model-support-prep",
+    );
+    expect(topSlugsFor("furrion fireplace current product family support")).toContain(
+      "furrion-fireplace-current-product-family-prep",
+    );
+    expect(topSlugsFor("girard cooking support index range hood microwave model")).toContain(
+      "girard-cooking-support-router-prep",
+    );
+    expect(topSlugsFor("suburban nt park model furnace family prep")).toContain(
+      "suburban-nt-park-model-furnace-prep",
+    );
+    expect(topSlugsFor("maxxair service locator authorized dealer fan prep")).toContain(
+      "maxxair-authorized-service-locator-prep",
+    );
+    expect(topSlugsFor("maxxair return policy consumer support routing")).toContain(
+      "maxxair-return-policy-routing-prep",
+    );
+    expect(topSlugsFor("cummins onan warranty statement rv generator paperwork")).toContain(
+      "onan-rv-generator-warranty-statement-prep",
+    );
+
+    for (const [symptomId] of expectedSymptomSourceIds) {
+      const symptom = symptomById.get(symptomId);
+      for (const alias of symptom?.searchAliases ?? []) {
+        expect(topSlugsFor(alias), `${symptomId}: ${alias}`).toContain(symptom?.slug);
+      }
+    }
+
+    const anchoredSlugs = new Set(expectedSymptomSourceIds.keys());
+    for (const query of [
+      "water enters vehicle",
+      "maintenance inspection",
+      "cleaning air conditioner",
+      "toilet support",
+      "cassette toilet",
+      "electric fireplace",
+      "cooking support",
+      "park model furnace",
+      "service locator",
+      "return policy",
+      "generator warranty",
     ]) {
       expect(
         lookupSymptomGuides(index, query)
