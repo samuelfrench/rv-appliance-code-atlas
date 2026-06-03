@@ -283,6 +283,54 @@
       "official": true
     },
     {
+      "id": "coleman-49000-ac-owner-1976-542",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 49000 Series AC Owner Manual",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-542.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-49000-heat-pump-owner-1976-545",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 49000 Series Heat Pump Owner Manual",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-545.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-9000-ac-owner-1976-368",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 9000 Series 240 VAC 50Hz AC Owner Manual",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-368.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-8000-chillgrille-1976-328",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 8000 Series Chillgrille Direct Airflow Operating Instructions",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-328.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-47000-remote-controller-owner-1976a662",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 47000 Series Remote Controller Owner Manual",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976A662.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-473xx-international-owner-1976-671-rev1",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 473XX-XXX5 Series 230/240 VAC 50Hz International Owner Manual Rev. 1",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-671-Rev.-1.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
       "id": "dometic-ccc2-operating",
       "brand": "Dometic",
       "title": "Dometic Comfort Control Center 2 Thermostat Operating Instructions",
@@ -33559,7 +33607,13 @@
         "furrion-range-17-21-troubleshooting-service",
         "coleman-48000-ac-owner-1976-523",
         "coleman-47000-ac-owner-1976-617",
-        "coleman-47000-heat-pump-owner-1976-606"
+        "coleman-47000-heat-pump-owner-1976-606",
+        "coleman-49000-ac-owner-1976-542",
+        "coleman-49000-heat-pump-owner-1976-545",
+        "coleman-9000-ac-owner-1976-368",
+        "coleman-8000-chillgrille-1976-328",
+        "coleman-47000-remote-controller-owner-1976a662",
+        "coleman-473xx-international-owner-1976-671-rev1"
       ]
     },
     {
@@ -33646,7 +33700,11 @@
         "dometic-freshjet-fjx-operating",
         "coleman-48000-ac-owner-1976-523",
         "coleman-47000-ac-owner-1976-617",
-        "coleman-473xx-international-owner-1976-678"
+        "coleman-473xx-international-owner-1976-678",
+        "coleman-49000-ac-owner-1976-542",
+        "coleman-49000-heat-pump-owner-1976-545",
+        "coleman-9000-ac-owner-1976-368",
+        "coleman-473xx-international-owner-1976-671-rev1"
       ]
     },
     {
@@ -34164,7 +34222,13 @@
         "coleman-47000-heat-pump-owner-1976-606",
         "coleman-47000-international-install-1976-686",
         "coleman-473xx-international-owner-1976-678",
-        "coleman-476xx-international-owner-1976-698"
+        "coleman-476xx-international-owner-1976-698",
+        "coleman-49000-ac-owner-1976-542",
+        "coleman-49000-heat-pump-owner-1976-545",
+        "coleman-9000-ac-owner-1976-368",
+        "coleman-8000-chillgrille-1976-328",
+        "coleman-47000-remote-controller-owner-1976a662",
+        "coleman-473xx-international-owner-1976-671-rev1"
       ]
     },
     {
@@ -34194,7 +34258,11 @@
         "dometic-brisk-ac-heat-gain",
         "coleman-48000-ac-owner-1976-523",
         "coleman-47000-ac-owner-1976-617",
-        "coleman-473xx-international-owner-1976-678"
+        "coleman-473xx-international-owner-1976-678",
+        "coleman-49000-ac-owner-1976-542",
+        "coleman-49000-heat-pump-owner-1976-545",
+        "coleman-9000-ac-owner-1976-368",
+        "coleman-473xx-international-owner-1976-671-rev1"
       ]
     },
     {
@@ -34232,7 +34300,10 @@
         "coleman-rooftop-operation-maintenance-1971-982",
         "coleman-48000-ac-owner-1976-523",
         "coleman-47000-ac-owner-1976-617",
-        "coleman-473xx-international-owner-1976-678"
+        "coleman-473xx-international-owner-1976-678",
+        "coleman-49000-ac-owner-1976-542",
+        "coleman-49000-heat-pump-owner-1976-545",
+        "coleman-9000-ac-owner-1976-368"
       ],
       "searchAliases": [
         "coleman mach ac not cooling 16 22 degree temperature split",
@@ -34259,7 +34330,11 @@
         "coleman-48000-ac-owner-1976-523",
         "coleman-47000-ac-owner-1976-617",
         "coleman-47000-heat-pump-owner-1976-606",
-        "coleman-473xx-international-owner-1976-678"
+        "coleman-473xx-international-owner-1976-678",
+        "coleman-49000-ac-owner-1976-542",
+        "coleman-49000-heat-pump-owner-1976-545",
+        "coleman-9000-ac-owner-1976-368",
+        "coleman-8000-chillgrille-1976-328"
       ],
       "searchAliases": [
         "coleman mach ac freeze up high fan dirty filter",
@@ -34284,7 +34359,9 @@
         "coleman-46515-heat-pump-owner",
         "coleman-48000-ac-owner-1976-523",
         "coleman-47000-ac-owner-1976-617",
-        "coleman-473xx-international-owner-1976-678"
+        "coleman-473xx-international-owner-1976-678",
+        "coleman-49000-ac-owner-1976-542",
+        "coleman-49000-heat-pump-owner-1976-545"
       ],
       "searchAliases": [
         "coleman mach low voltage extension cord cheater plug",
@@ -34574,7 +34651,8 @@
         "coleman-48000-air-conditioners-international-library",
         "coleman-47000-international-install-1976-686",
         "coleman-473xx-international-owner-1976-678",
-        "coleman-476xx-international-owner-1976-698"
+        "coleman-476xx-international-owner-1976-698",
+        "coleman-473xx-international-owner-1976-671-rev1"
       ],
       "searchAliases": [
         "coleman mach 48000 international 230 240 vac 50hz model serial qualified installer",
@@ -34623,6 +34701,111 @@
         "47000 series heat pump shuts down near freezing outdoor coil freeze up",
         "coleman mach 47000 auxiliary electric resistance heater not a substitute for furnace",
         "coleman mach 47000 heat pump high pressure lockout qualified technician"
+      ]
+    },
+    {
+      "id": "coleman-49000-ac-high-pressure-lockout",
+      "slug": "coleman-mach-49000-ac-high-pressure-lockout",
+      "title": "Coleman-Mach 49000 AC high-pressure lockout",
+      "summary": "The Coleman-Mach 49000 AC owner manual says R410A rooftop air conditioners use a High Pressure Switch lockout that can stop the compressor after abnormal conditions such as dirty filters, a dirty condenser coil, or fan-motor failure; repeated lockouts require a qualified technician.",
+      "safeChecklist": [
+        "Stop the cooling call from normal controls if the 49000 AC locks out, short-cycles, or trips repeatedly.",
+        "Clean owner-accessible return-air filters and confirm supply and return grilles are open before another normal cooling attempt.",
+        "Record outdoor temperature, return-air temperature, supply-air temperature, filter condition, and whether the compressor tried to restart.",
+        "Call Coleman-Mach, the dealer, or qualified RV HVAC service if the High Pressure Switch lockout repeats or airflow does not recover."
+      ],
+      "sourceIds": [
+        "coleman-49000-ac-owner-1976-542"
+      ],
+      "searchAliases": [
+        "coleman mach 49000 ac high pressure switch lockout dirty filters qualified technician",
+        "49000 series rooftop air conditioner high pressure switch compressor locked out",
+        "coleman mach 49000 dirty filters condenser coil fan motor high pressure lockout",
+        "coleman mach 49000 ac compressor will not restart lockout"
+      ]
+    },
+    {
+      "id": "coleman-49000-heat-pump-freeze-switch-low-heat",
+      "slug": "coleman-mach-49000-heat-pump-freeze-switch-low-heat",
+      "title": "Coleman-Mach 49000 heat pump freeze-switch low heat",
+      "summary": "The Coleman-Mach 49000 heat-pump owner manual says normal heating temperature rise is 25 to 40 degrees, but when outdoor temperature activates the freeze switch the rise may be only 10 to 20 degrees and the heat pump can shut down near freezing to protect the outdoor coil.",
+      "safeChecklist": [
+        "Use normal furnace or approved backup heat when outdoor temperature is near freezing and the 49000 heat pump cannot keep up.",
+        "Clean owner-accessible filters and keep supply louvers open so reduced airflow is not mistaken for a freeze-switch or heat-pump fault.",
+        "Record outdoor temperature, inlet temperature, supply temperature, heat-pump mode, and whether auxiliary resistance heat was expected.",
+        "Call qualified RV HVAC service if weak heat or freeze-switch shutdown repeats when outdoor temperatures are well above freezing."
+      ],
+      "sourceIds": [
+        "coleman-49000-heat-pump-owner-1976-545"
+      ],
+      "searchAliases": [
+        "coleman mach 49000 heat pump freeze switch near freezing 25 to 40 10 to 20",
+        "49000 series heat pump low heat outdoor coil freeze switch",
+        "coleman mach 49000 heat pump shuts down near freezing auxiliary electric heat",
+        "coleman mach 49000 heat pump dirty filters low temperature rise qualified service"
+      ]
+    },
+    {
+      "id": "coleman-9000-ac-240v-cooling-filter-check",
+      "slug": "coleman-mach-9000-ac-240v-cooling-filter-check",
+      "title": "Coleman-Mach 9000 AC 240V cooling and filter check",
+      "summary": "The Coleman-Mach 9000 AC owner manual identifies 240 VAC, 50 HZ, 1 phase units, says normal cooling is about a 15 to 20 degree drop from return air to discharge air, and says electrical work or inspection belongs to accredited service personnel.",
+      "safeChecklist": [
+        "Confirm from owner paperwork or visible labels that the unit is a 9000 Series 240 VAC, 50 HZ model before comparing manuals.",
+        "Run normal cooling long enough to compare return-air and discharge-air temperatures, then record the measured temperature split.",
+        "Clean owner-accessible filters at least every two weeks during operation and stop cooling if airflow loss or icing appears.",
+        "Use accredited service personnel for power-supply, compressor-start, or repeated breaker or overload symptoms."
+      ],
+      "sourceIds": [
+        "coleman-9000-ac-owner-1976-368"
+      ],
+      "searchAliases": [
+        "coleman mach 9000 240 vac 50 hz 15 to 20 filters accredited service",
+        "9000 series roof top air conditioner 240 vac 50hz cooling split",
+        "coleman mach 9000 international ac not cooling filter every two weeks",
+        "coleman mach 9000 ac compressor will not start accredited service personnel"
+      ]
+    },
+    {
+      "id": "coleman-8000-chillgrille-airflow-filter-louvers",
+      "slug": "coleman-mach-8000-chillgrille-airflow-filter-louvers",
+      "title": "Coleman-Mach 8000 Chillgrille airflow and filter check",
+      "summary": "The Coleman-Mach 8000 Chillgrille instructions describe DirectFlow louvers that send conditioned air directly into the living space or through the duct system, plus an EZReach washable filter that should be checked and cleaned once a month, or more often in dusty conditions.",
+      "safeChecklist": [
+        "Use the Chillgrille louvers only from inside the RV to choose direct airflow into the living space or ducted airflow through the ceiling ducts.",
+        "Check and clean the washable filter once a month during normal use, and more often when the RV is used in dusty conditions.",
+        "Confirm the filter assembly is locked in place before running cooling after a normal owner cleaning.",
+        "Call an RV service professional for any ceiling assembly fit, power, or retrofit problem beyond normal louver and filter operation."
+      ],
+      "sourceIds": [
+        "coleman-8000-chillgrille-1976-328"
+      ],
+      "searchAliases": [
+        "coleman mach 8000 chillgrille directflow louvers washable filter once a month",
+        "8000 series chillgrille ezreach washable air filter clean monthly",
+        "coleman mach chillgrille louvers direct airflow duct system",
+        "coleman mach 8000 direct airflow ceiling assembly filter dusty conditions"
+      ]
+    },
+    {
+      "id": "coleman-47000-remote-controller-mode-led-check",
+      "slug": "coleman-mach-47000-remote-controller-mode-led-check",
+      "title": "Coleman-Mach 47000 remote-controller mode and LED check",
+      "summary": "The Coleman-Mach 47000 remote-controller owner manual documents owner-visible remote modes, Follow Me, F/C display selection, timer/programming controls, ceiling LED/button behavior, and routine filter care; control, power, and ceiling-assembly faults stay with qualified service.",
+      "safeChecklist": [
+        "Confirm the exact Coleman-Mach 47000 model and serial number before comparing remote-controller instructions.",
+        "Use only normal remote buttons and owner-visible display indicators to verify mode, temperature units, timer/programming, and Follow Me state.",
+        "Record ceiling LED color or button behavior, remote display state, filter condition, and whether the unit responds to normal mode changes.",
+        "Call Coleman-Mach, the dealer, or qualified RV HVAC service for repeated control, power, or ceiling-assembly faults."
+      ],
+      "sourceIds": [
+        "coleman-47000-remote-controller-owner-1976a662"
+      ],
+      "searchAliases": [
+        "coleman mach 47000 remote controller follow me f c ceiling led button filter",
+        "47000 series remote control mode led button follow me",
+        "coleman mach 47000 remote f c timer programming display",
+        "coleman mach 47000 ceiling led remote controller not responding"
       ]
     },
     {

@@ -464,6 +464,53 @@ test("lookup surfaces Coleman-Mach 48000 international and 47000 model-family su
   await expect(page.getByRole("heading", { name: "Coleman-Mach 47000 heat pump freezing and auxiliary heat limits" })).toBeVisible();
 });
 
+test("lookup surfaces Coleman-Mach 49000, 9000, and 8000 model-family support pages", async ({ page }) => {
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("coleman mach 49000 ac high pressure switch lockout dirty filters qualified technician");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/coleman-mach-49000-ac-high-pressure-lockout/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("coleman mach 49000 heat pump freeze switch near freezing 25 to 40 10 to 20");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/coleman-mach-49000-heat-pump-freeze-switch-low-heat/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("coleman mach 9000 240 vac 50 hz 15 to 20 filters accredited service");
+  await expect(
+    lookupResults.locator('a[href="/symptoms/coleman-mach-9000-ac-240v-cooling-filter-check/"]'),
+  ).toBeVisible();
+
+  await searchbox.fill("coleman mach 8000 chillgrille directflow louvers washable filter once a month");
+  const chillgrilleGuide = lookupResults.locator(
+    'a[href="/symptoms/coleman-mach-8000-chillgrille-airflow-filter-louvers/"]',
+  );
+  await expect(chillgrilleGuide).toBeVisible();
+
+  await chillgrilleGuide.click();
+  await expect(page.getByRole("heading", { name: "Coleman-Mach 8000 Chillgrille airflow and filter check" })).toBeVisible();
+});
+
+test("lookup surfaces Coleman-Mach 47000 remote-controller support page", async ({ page }) => {
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+
+  await searchbox.fill("coleman mach 47000 remote controller follow me f c ceiling led button filter");
+  const remoteGuide = lookupResults.locator(
+    'a[href="/symptoms/coleman-mach-47000-remote-controller-mode-led-check/"]',
+  );
+  await expect(remoteGuide).toBeVisible();
+
+  await remoteGuide.click();
+  await expect(page.getByRole("heading", { name: "Coleman-Mach 47000 remote-controller mode and LED check" })).toBeVisible();
+});
+
 test("lookup surfaces Dometic CCC2 thermostat symptom support pages", async ({ page }) => {
   await page.goto("/");
 

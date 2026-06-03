@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 850;
-const expectedSourceCount = 354;
-const expectedSymptomCount = 202;
+const expectedSourceCount = 360;
+const expectedSymptomCount = 207;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -4234,6 +4234,129 @@ describe("verified corpus", () => {
       expect.arrayContaining(["coleman-47000-ac-owner-1976-617", "coleman-473xx-international-owner-1976-678"]),
     );
     expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds official Coleman-Mach 49000, 9000, and 8000 owner-safe sources without inventing code entries", () => {
+    const expectedSources = new Map([
+      ["coleman-49000-ac-owner-1976-542", "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-542.pdf"],
+      ["coleman-49000-heat-pump-owner-1976-545", "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-545.pdf"],
+      ["coleman-9000-ac-owner-1976-368", "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-368.pdf"],
+      ["coleman-8000-chillgrille-1976-328", "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-328.pdf"],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const newSymptomIds = [
+      "coleman-49000-ac-high-pressure-lockout",
+      "coleman-49000-heat-pump-freeze-switch-low-heat",
+      "coleman-9000-ac-240v-cooling-filter-check",
+      "coleman-8000-chillgrille-airflow-filter-louvers",
+    ];
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\brefrigerant\b|\bprobe\b|\bopen (the )?(fuel|gas|electrical|rooftop)|wire|wiring|line-voltage|breaker panel|remove.*thermostat|replace.*control|remove.*shroud|install.*soft start|route.*wiring|install.*chillgrille/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = corpus.sources.find((item) => item.id === sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const symptomId of newSymptomIds) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds.length, symptomId).toBeGreaterThan(0);
+      expect(symptom?.safeChecklist.join(" "), symptomId).not.toMatch(unsafeOwnerActionPattern);
+    }
+
+    expect(symptomById.get("coleman-49000-ac-high-pressure-lockout")?.sourceIds).toEqual(
+      expect.arrayContaining(["coleman-49000-ac-owner-1976-542"]),
+    );
+    expect(
+      [
+        symptomById.get("coleman-49000-ac-high-pressure-lockout")?.summary,
+        symptomById.get("coleman-49000-ac-high-pressure-lockout")?.safeChecklist.join(" "),
+      ].join(" "),
+    ).toMatch(/49000|High Pressure Switch|dirty filters|lockout|qualified technician/i);
+
+    expect(symptomById.get("coleman-49000-heat-pump-freeze-switch-low-heat")?.sourceIds).toEqual(
+      expect.arrayContaining(["coleman-49000-heat-pump-owner-1976-545"]),
+    );
+    expect(
+      [
+        symptomById.get("coleman-49000-heat-pump-freeze-switch-low-heat")?.summary,
+        symptomById.get("coleman-49000-heat-pump-freeze-switch-low-heat")?.safeChecklist.join(" "),
+      ].join(" "),
+    ).toMatch(/49000|freeze switch|25 to 40|10 to 20|near freezing|qualified/i);
+
+    expect(symptomById.get("coleman-9000-ac-240v-cooling-filter-check")?.sourceIds).toEqual(
+      expect.arrayContaining(["coleman-9000-ac-owner-1976-368"]),
+    );
+    expect(
+      [
+        symptomById.get("coleman-9000-ac-240v-cooling-filter-check")?.summary,
+        symptomById.get("coleman-9000-ac-240v-cooling-filter-check")?.safeChecklist.join(" "),
+      ].join(" "),
+    ).toMatch(/9000|240 VAC|50 HZ|15 to 20|filters|accredited service/i);
+
+    expect(symptomById.get("coleman-8000-chillgrille-airflow-filter-louvers")?.sourceIds).toEqual(
+      expect.arrayContaining(["coleman-8000-chillgrille-1976-328"]),
+    );
+    expect(
+      [
+        symptomById.get("coleman-8000-chillgrille-airflow-filter-louvers")?.summary,
+        symptomById.get("coleman-8000-chillgrille-airflow-filter-louvers")?.safeChecklist.join(" "),
+      ].join(" "),
+    ).toMatch(/8000|Chillgrille|DirectFlow|louvers|washable filter|once a month/i);
+
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds official Coleman-Mach 47000 remote-controller and 473XX Rev. 1 owner-safe sources without inventing code entries", () => {
+    const expectedSources = new Map([
+      ["coleman-47000-remote-controller-owner-1976a662", "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976A662.pdf"],
+      ["coleman-473xx-international-owner-1976-671-rev1", "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-671-Rev.-1.pdf"],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const remoteSymptom = symptomById.get("coleman-47000-remote-controller-mode-led-check");
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|\bburner\b|\bcontrol board\b|\b120\s*vac\b|\brefrigerant\b|\bprobe\b|\bopen (the )?(fuel|gas|electrical|rooftop)|wire|wiring|line-voltage|breaker panel|remove.*thermostat|replace.*control|remove.*shroud|install.*soft start|route.*wiring/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = corpus.sources.find((item) => item.id === sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    expect(remoteSymptom).toBeDefined();
+    expect(remoteSymptom?.sourceIds).toEqual(["coleman-47000-remote-controller-owner-1976a662"]);
+    expect(remoteSymptom?.safeChecklist.join(" ")).not.toMatch(unsafeOwnerActionPattern);
+    expect([remoteSymptom?.summary, remoteSymptom?.safeChecklist.join(" ")].join(" ")).toMatch(
+      /47000|remote|Follow Me|F\/C|timer|programming|ceiling LED|button|filter|qualified/i,
+    );
+
+    expect(symptomById.get("coleman-48000-international-service-prep")?.sourceIds).toEqual(
+      expect.arrayContaining(["coleman-473xx-international-owner-1976-671-rev1"]),
+    );
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+    expect(symptomById.get("air-conditioner-not-cooling")?.sourceIds).toEqual(
+      expect.arrayContaining(["coleman-473xx-international-owner-1976-671-rev1"]),
+    );
+    expect(symptomById.get("airflow-or-venting")?.sourceIds).toEqual(
+      expect.arrayContaining(["coleman-47000-remote-controller-owner-1976a662", "coleman-473xx-international-owner-1976-671-rev1"]),
+    );
+    expect(symptomById.get("low-voltage")?.sourceIds).toEqual(
+      expect.arrayContaining(["coleman-473xx-international-owner-1976-671-rev1"]),
+    );
   });
 
   it("adds official Girard GSWH-2 owner-manual display codes and keeps Girard tankless symptoms separate", () => {

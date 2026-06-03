@@ -102,9 +102,9 @@ npm run traffic:monitor
 
 Current corpus:
 - `850` verified entries
-- `202` symptom guides
-- `354` official sources
-- `1053` generated indexable pages
+- `207` symptom guides
+- `360` official sources
+- `1058` generated indexable pages
 
 Next automated batch goal:
-- Triage remaining official Coleman-Mach 49000/9000/8000/47000-476XX model-family pages and service-only rows, then add only owner-safe non-duplicate source wiring or symptom guides; move to the next manufacturer once Coleman-Mach owner-safe gaps are exhausted.
+- Triage post-Coleman official support rows by traffic potential, starting with refrigerator and HVAC symptom-only Dometic, Norcold/Thetford, Furrion/Lippert, Suburban/Airxcel, and Cummins pages; add only owner-safe non-duplicate source wiring or guides and keep service-only rows rejected except model or service-call prep.
