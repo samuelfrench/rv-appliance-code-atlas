@@ -62,7 +62,7 @@
 - Permanent domain: Route53 registration `rvappliancefaultcodes.com` succeeded at `2026-06-02T23:06:27Z`; auto-renew and transfer lock are on. Route53 `.com` billing is `$15/year` registration plus `$15/year` renewal.
 - GitHub repo: `https://github.com/samuelfrench/rv-appliance-code-atlas`
 - Fly app: `rv-appliance-code-atlas`, one `shared-cpu-1x` 256 MB machine in `dfw`, auto-stop enabled.
-- Latest deploy: commit `65ab005` deployed via GitHub Actions run `26857222067` to Fly v52 image `deployment-01KT5FV3VEFPM41PXX6QZ3EQJF` at `2026-06-03T00:59:04Z`; live endpoints verified the Thetford corpus and canonical-domain routes.
+- Latest deploy: commit `4f72951` deployed via GitHub Actions run `26857322532` to Fly v53 image `deployment-01KT5G0NTKG52YKZHGYSMKT7SJ` at `2026-06-03T01:02:05Z`; live endpoints verified the Thetford corpus, refreshed IndexNow metadata, and canonical-domain routes.
 - Corpus: `843` verified entries, `170` symptom guides, `329` official sources, `1014` generated indexable pages.
 - GA4 property `properties/540096507`, stream `properties/540096507/dataStreams/14992447658`, and measurement ID `G-9824RBXHHR` were created automatically for `https://rvappliancefaultcodes.com` at `2026-06-02T23:04:00Z`.
 - GSC URL-prefix property `https://rvappliancefaultcodes.com/` verified with FILE token `googled22aa40f3a0e4dca.html`; Google Site Verification insert returned HTTP `200` at `2026-06-02T23:11:41Z`.
