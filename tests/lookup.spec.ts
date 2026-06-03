@@ -2281,6 +2281,130 @@ test("lookup surfaces control, model-label, storage, warranty, and parts-prep ba
   expect(pageErrors).toEqual([]);
 });
 
+test("lookup surfaces display, model, vent, thermostat, and hydronic prep batch without generic hijacks", async ({
+  page,
+}) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    ["dometic acc3100 display symbols mean icon ventilation", "/symptoms/dometic-acc3100-display-symbols-prep/"],
+    [
+      "dometic acc3100 ventilation does not switch on power",
+      "/symptoms/dometic-acc3100-ventilation-not-switching-on-prep/",
+    ],
+    [
+      "dometic freshjet roof ac does not switch on power",
+      "/symptoms/dometic-freshjet-roof-ac-not-switching-on-prep/",
+    ],
+    ["dometic freshjet water enters vehicle leak service prep", "/symptoms/dometic-freshjet-water-entry-service-prep/"],
+    [
+      "dometic brisk no display when air conditioner heat pump turned on",
+      "/symptoms/dometic-brisk-ac-no-display-service-prep/",
+    ],
+    ["dometic ccc2 load shed comfort control center 2", "/symptoms/dometic-ccc2-load-shed-control-prep/"],
+    [
+      "thetford aria deluxe ii model control service prep",
+      "/symptoms/thetford-aria-deluxe-ii-model-control-service-prep/",
+    ],
+    [
+      "thetford aqua magic aurora model service prep",
+      "/symptoms/thetford-aqua-magic-aurora-model-service-prep/",
+    ],
+    [
+      "thetford aqua magic style lite toilet model storage prep",
+      "/symptoms/thetford-aqua-magic-style-lite-model-storage-prep/",
+    ],
+    ["norcold n2090r model cooling service prep", "/symptoms/norcold-n2090r-model-cooling-service-prep/"],
+    ["norcold polar nv8dc model control service prep", "/symptoms/norcold-polar-nv8dc-model-control-service-prep/"],
+    ["furrion 14 vent fan lid ccd0007282 control prep", "/symptoms/furrion-14in-vent-fan-lid-control-prep/"],
+    [
+      "furrion electronic lid vent fan ccd0009643 control prep",
+      "/symptoms/furrion-electronic-lid-vent-fan-control-prep/",
+    ],
+    ["furrion mppt bt app ccd0007727 status prep", "/symptoms/furrion-mppt-bt-app-status-prep/"],
+    ["furrion solar warranty request w018 prep", "/symptoms/furrion-solar-warranty-paperwork-prep/"],
+    ["furrion 13 range hood imfha00131 filter prep", "/symptoms/furrion-13in-ducted-range-hood-filter-prep/"],
+    ["girard 10 refrigerator ccd0005837 service prep", "/symptoms/girard-10cuft-refrigerator-service-prep/"],
+    ["girard grf16dbgs qr183 proper storage prep", "/symptoms/girard-grf16dbgs-refrigerator-storage-prep/"],
+    ["girard 12v range hood imfha00122 control prep", "/symptoms/girard-12v-range-hood-control-prep/"],
+    ["girard gmw09ab microwave service prep", "/symptoms/girard-gmw09ab-microwave-service-prep/"],
+    ["onan qg 2800i 2500i lp 0064324 model label prep", "/symptoms/onan-qg-2800i-2500i-model-label-prep/"],
+    ["coleman analog 7330 thermostat part number prep", "/symptoms/coleman-analog-thermostat-part-number-prep/"],
+    [
+      "coleman 9xxx zone 9330a3341 control package prep",
+      "/symptoms/coleman-9xxx-zone-thermostat-control-package-prep/",
+    ],
+    ["maxxair maxx ii 00 933081 cover prep", "/symptoms/maxxair-maxx-ii-00933081-cover-prep/"],
+    ["maxxair maxxfan mini 00 03801 control prep", "/symptoms/maxxair-maxxfan-mini-3801-control-prep/"],
+    [
+      "suburban nt seq nt16seq 2503abk furnace service prep",
+      "/symptoms/suburban-nt-seq-furnace-model-service-prep/",
+    ],
+    ["suburban sw7ecn e series 120v water heater prep", "/symptoms/suburban-e-series-120v-water-heater-prep/"],
+    [
+      "aqua hot 250 d03 ahe 250 d03 lcd winterization service prep",
+      "/symptoms/aquahot-250-d03-lcd-winterization-service-prep/",
+    ],
+    ["aqua hot 250p propane model service prep", "/symptoms/aquahot-250p-propane-model-service-prep/"],
+    ["aqua hot 400p propane electric service prep", "/symptoms/aquahot-400p-propane-electric-service-prep/"],
+  ] as const;
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+  }
+
+  for (const [query, href] of [
+    ["display symbols", "/symptoms/dometic-acc3100-display-symbols-prep/"],
+    ["does not switch on", "/symptoms/dometic-acc3100-ventilation-not-switching-on-prep/"],
+    ["roof ac water leak", "/symptoms/dometic-freshjet-water-entry-service-prep/"],
+    ["load shed", "/symptoms/dometic-ccc2-load-shed-control-prep/"],
+    ["aqua magic toilet", "/symptoms/thetford-aqua-magic-aurora-model-service-prep/"],
+    ["refrigerator cooling", "/symptoms/norcold-n2090r-model-cooling-service-prep/"],
+    ["vent fan lid", "/symptoms/furrion-14in-vent-fan-lid-control-prep/"],
+    ["solar warranty", "/symptoms/furrion-solar-warranty-paperwork-prep/"],
+    ["range hood", "/symptoms/furrion-13in-ducted-range-hood-filter-prep/"],
+    ["microwave service", "/symptoms/girard-gmw09ab-microwave-service-prep/"],
+    ["thermostat part number", "/symptoms/coleman-analog-thermostat-part-number-prep/"],
+    ["zone thermostat", "/symptoms/coleman-9xxx-zone-thermostat-control-package-prep/"],
+    ["vent cover", "/symptoms/maxxair-maxx-ii-00933081-cover-prep/"],
+    ["water heater prep", "/symptoms/suburban-e-series-120v-water-heater-prep/"],
+    ["propane service", "/symptoms/aquahot-250p-propane-model-service-prep/"],
+    ["hydronic heating", "/symptoms/aquahot-400p-propane-electric-service-prep/"],
+  ] as const) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toHaveCount(0);
+  }
+
+  await searchbox.fill("dometic freshjet water enters vehicle leak service prep");
+  const freshjetLeak = lookupResults.locator('a[href="/symptoms/dometic-freshjet-water-entry-service-prep/"]');
+  await expect(freshjetLeak).toBeVisible();
+  await freshjetLeak.click();
+  await expect(page.getByRole("heading", { name: "Dometic FreshJet water-entry service prep" })).toBeVisible();
+  await expect(page.getByText(/Record the FreshJet model/i)).toBeVisible();
+
+  await page.goto("/");
+  await searchbox.fill("aqua hot 250 d03 ahe 250 d03 lcd winterization service prep");
+  const aquaHot250D03 = lookupResults.locator('a[href="/symptoms/aquahot-250-d03-lcd-winterization-service-prep/"]');
+  await expect(aquaHot250D03).toBeVisible();
+  await aquaHot250D03.click();
+  await expect(page.getByRole("heading", { name: "Aqua-Hot 250-D03 LCD and winterization service prep" })).toBeVisible();
+  await expect(page.getByText(/Record the Aqua-Hot AHE-250-D03 model/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 
