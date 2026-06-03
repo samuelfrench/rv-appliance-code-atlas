@@ -27,7 +27,7 @@ const monetizationReadinessArtifact = {
   source: weeklyTrafficArtifact.path,
 };
 const nextSourceBackedBatchGoal =
-  "Triage official Coleman-Mach 48000 Series Air Conditioners-International and remaining model-family manual sources, then add only non-duplicate owner-safe symptom pages or source wiring.";
+  "Triage remaining official Coleman-Mach 49000/9000/8000/47000-476XX model-family pages and service-only rows, then add only owner-safe non-duplicate source wiring or symptom guides; move to the next manufacturer once Coleman-Mach owner-safe gaps are exhausted.";
 const indexNow = indexNowConfig
   ? {
       keyLocation: indexNowConfig.keyLocation,

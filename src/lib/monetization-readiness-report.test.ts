@@ -204,7 +204,7 @@ describe("monetization readiness report", () => {
       source: "reports/gsc-weekly-traffic.json",
     });
     expect(report.nextAutomatedBatchGoal).toBe(
-      "Triage official Coleman-Mach 48000 Series Air Conditioners-International and remaining model-family manual sources, then add only non-duplicate owner-safe symptom pages or source wiring.",
+      "Triage remaining official Coleman-Mach 49000/9000/8000/47000-476XX model-family pages and service-only rows, then add only owner-safe non-duplicate source wiring or symptom guides; move to the next manufacturer once Coleman-Mach owner-safe gaps are exhausted.",
     );
     expect(readFileSync("README.md", "utf8")).toContain("npm run traffic:monetization");
     expect(readFileSync("TODO.md", "utf8")).toContain(

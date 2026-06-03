@@ -3,7 +3,7 @@ import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 
 const nextAutomatedBatchGoal =
-  "Triage official Coleman-Mach 48000 Series Air Conditioners-International and remaining model-family manual sources, then add only non-duplicate owner-safe symptom pages or source wiring.";
+  "Triage remaining official Coleman-Mach 49000/9000/8000/47000-476XX model-family pages and service-only rows, then add only owner-safe non-duplicate source wiring or symptom guides; move to the next manufacturer once Coleman-Mach owner-safe gaps are exhausted.";
 
 describe("traffic readiness report", () => {
   it("keeps the next automated batch goal aligned with the current corpus backlog", () => {
@@ -51,7 +51,7 @@ describe("traffic readiness report", () => {
       keyLocation: "https://rvappliancefaultcodes.com/2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18.txt",
       dryRunCommand: "npm run traffic:indexnow:dry-run",
       submitCommand: "npm run traffic:indexnow:submit",
-      submittedAt: "2026-06-03T03:40:52.499Z",
+      submittedAt: "2026-06-03T04:09:25.344Z",
     });
     expect(report.nextAutomatedBatchGoal).toBe(nextAutomatedBatchGoal);
 

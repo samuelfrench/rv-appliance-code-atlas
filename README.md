@@ -92,7 +92,7 @@ Key location: `https://rvappliancefaultcodes.com/2653afc6f17313e900711f1d3eb1dca
 
 Writes ignored local report artifact: `reports/indexnow-submit-report.json`
 
-Submitted: `2026-06-03T03:40:52.499Z` with `1050` URLs and IndexNow HTTP `200`
+Submitted: `2026-06-03T04:09:25.344Z` with `1053` URLs and IndexNow HTTP `200`
 
 Traffic monitor:
 
@@ -102,9 +102,9 @@ npm run traffic:monitor
 
 Current corpus:
 - `850` verified entries
-- `199` symptom guides
-- `348` official sources
-- `1050` generated indexable pages
+- `202` symptom guides
+- `354` official sources
+- `1053` generated indexable pages
 
 Next automated batch goal:
-- Triage official Coleman-Mach 48000 Series Air Conditioners-International and remaining model-family manual sources, then add only non-duplicate owner-safe symptom pages or source wiring.
+- Triage remaining official Coleman-Mach 49000/9000/8000/47000-476XX model-family pages and service-only rows, then add only owner-safe non-duplicate source wiring or symptom guides; move to the next manufacturer once Coleman-Mach owner-safe gaps are exhausted.
