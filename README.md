@@ -92,7 +92,7 @@ Key location: `https://rvappliancefaultcodes.com/2653afc6f17313e900711f1d3eb1dca
 
 Writes ignored local report artifact: `reports/indexnow-submit-report.json`
 
-Submitted: `2026-06-03T08:13:11.182Z` with `1089` URLs and IndexNow HTTP `200`
+Submitted: `2026-06-03T08:42:45.251Z` with `1093` URLs and IndexNow HTTP `200`
 
 Traffic monitor:
 
@@ -102,9 +102,9 @@ npm run traffic:monitor
 
 Current corpus:
 - `850` verified entries
-- `238` symptom guides
-- `398` official sources
-- `1089` generated indexable pages
+- `242` symptom guides
+- `403` official sources
+- `1093` generated indexable pages
 
 Next automated batch goal:
-- Triage accepted Suburban model/service-locator plus Airxcel MaxxAir/Aqua-Hot official candidates; add only owner-safe model-label, control-behavior, or service-prep guides and reject installer-only roof, propane, hydronic, wiring, or line-voltage steps.
+- Run a fresh official-source gap scan across current supported brands for non-duplicate owner-safe service-prep, model-label, control-behavior, storage, or service-locator guides; add no code entries unless a current manufacturer-hosted display or fault table is verified.

@@ -27,7 +27,7 @@ const monetizationReadinessArtifact = {
   source: weeklyTrafficArtifact.path,
 };
 const nextSourceBackedBatchGoal =
-  "Triage accepted Suburban model/service-locator plus Airxcel MaxxAir/Aqua-Hot official candidates; add only owner-safe model-label, control-behavior, or service-prep guides and reject installer-only roof, propane, hydronic, wiring, or line-voltage steps.";
+  "Run a fresh official-source gap scan across current supported brands for non-duplicate owner-safe service-prep, model-label, control-behavior, storage, or service-locator guides; add no code entries unless a current manufacturer-hosted display or fault table is verified.";
 const indexNow = indexNowConfig
   ? {
       keyLocation: indexNowConfig.keyLocation,

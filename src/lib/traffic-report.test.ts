@@ -3,7 +3,7 @@ import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 
 const nextAutomatedBatchGoal =
-  "Triage accepted Suburban model/service-locator plus Airxcel MaxxAir/Aqua-Hot official candidates; add only owner-safe model-label, control-behavior, or service-prep guides and reject installer-only roof, propane, hydronic, wiring, or line-voltage steps.";
+  "Run a fresh official-source gap scan across current supported brands for non-duplicate owner-safe service-prep, model-label, control-behavior, storage, or service-locator guides; add no code entries unless a current manufacturer-hosted display or fault table is verified.";
 
 describe("traffic readiness report", () => {
   it("keeps the next automated batch goal aligned with the current corpus backlog", () => {
@@ -51,7 +51,7 @@ describe("traffic readiness report", () => {
       keyLocation: "https://rvappliancefaultcodes.com/2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18.txt",
       dryRunCommand: "npm run traffic:indexnow:dry-run",
       submitCommand: "npm run traffic:indexnow:submit",
-      submittedAt: "2026-06-03T08:13:11.182Z",
+      submittedAt: "2026-06-03T08:42:45.251Z",
     });
     expect(report.nextAutomatedBatchGoal).toBe(nextAutomatedBatchGoal);
 

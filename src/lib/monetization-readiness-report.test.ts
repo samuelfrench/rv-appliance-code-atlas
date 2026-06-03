@@ -204,7 +204,7 @@ describe("monetization readiness report", () => {
       source: "reports/gsc-weekly-traffic.json",
     });
     expect(report.nextAutomatedBatchGoal).toBe(
-      "Triage accepted Suburban model/service-locator plus Airxcel MaxxAir/Aqua-Hot official candidates; add only owner-safe model-label, control-behavior, or service-prep guides and reject installer-only roof, propane, hydronic, wiring, or line-voltage steps.",
+      "Run a fresh official-source gap scan across current supported brands for non-duplicate owner-safe service-prep, model-label, control-behavior, storage, or service-locator guides; add no code entries unless a current manufacturer-hosted display or fault table is verified.",
     );
     expect(readFileSync("README.md", "utf8")).toContain("npm run traffic:monetization");
     expect(readFileSync("TODO.md", "utf8")).toContain(
