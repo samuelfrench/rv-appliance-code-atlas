@@ -2,7 +2,7 @@
   "site": {
     "name": "RV Appliance Code Atlas",
     "baseUrl": "https://rvappliancefaultcodes.com",
-    "generatedAt": "2026-06-03T23:51:13-05:00",
+    "generatedAt": "2026-06-04T00:30:15-05:00",
     "safetyBoundary": "Use this atlas to identify likely meaning and prepare for service. Shut off power, LP gas, fuel, or water when a listed appliance condition involves flame, gas smell, exhaust, generator shutdown, high temperature, moving jacks/slides, refrigerant, 120 VAC, control boards, repeated ignition failure, or a persistent lockout. Call the appliance maker, RV dealer, or a qualified RV technician for repair.",
     "searchConsole": {
       "propertyType": "URL_PREFIX",
@@ -14,7 +14,7 @@
     "indexNow": {
       "key": "2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18",
       "keyLocation": "https://rvappliancefaultcodes.com/2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18.txt",
-      "submittedAt": "2026-06-04T04:58:41.716Z"
+      "submittedAt": null
     },
     "analytics": {
       "provider": "GA4",
@@ -7880,6 +7880,398 @@
       "title": "Cummins Onan P5000iDF EFI Specification Sheet",
       "url": "https://www.cummins.com/sites/default/files/2025-04/p5000idf-efi-spec-sheet.pdf",
       "type": "manufacturer-spec-sheet",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx5-warranty-statements-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX5 warranty statements support",
+      "url": "https://support.dometic.com/en/cfx5-coolers/Where-do-I-find-warranty-statements-for-my-product-ca5",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx5-standing-weight-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX5 standing load support",
+      "url": "https://support.dometic.com/en/cfx5-coolers/Can-I-stand-on-any-of-the-CFX5-models-23a0",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx5-battery-protection-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX5 battery protection system support",
+      "url": "https://support.dometic.com/en/cfx5-coolers/What-is-the-battery-protection-system-4263",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx5-power-type-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX5 power type support",
+      "url": "https://support.dometic.com/en/cfx5-coolers/What-type-of-power-does-the-CFX5-need-9a38",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx5-power-cord-parts-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX5 power cord and parts support",
+      "url": "https://support.dometic.com/en/cfx5-coolers/How-can-I-get-a-new-power-cord-or-another-part-bbbb",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx5-product-registration-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX5 product registration support",
+      "url": "https://support.dometic.com/en/cfx5-coolers/How-can-I-register-my-product-34b0",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx5-solar-power-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX5 solar power support",
+      "url": "https://support.dometic.com/en/cfx5-coolers/How-do-I-power-the-CFX5-with-solar-6bf6",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx3-solar-power-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX3 solar power support",
+      "url": "https://support.dometic.com/en/cfx3-coolers/How-do-I-power-the-CFX3-with-solar-1765",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx3-warranty-statements-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX3 warranty statements support",
+      "url": "https://support.dometic.com/en/cfx3-coolers/Where-do-I-find-warranty-statements-for-my-product-ca5",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx3-product-registration-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX3 product registration support",
+      "url": "https://support.dometic.com/en/cfx3-coolers/How-can-I-register-my-product-34b0",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx3-power-cord-parts-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX3 power cord and parts support",
+      "url": "https://support.dometic.com/en/cfx3-coolers/How-can-I-get-a-new-power-cord-or-another-part-2e17",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cff-cooling-range-support",
+      "brand": "Dometic",
+      "title": "Dometic CFF cooling range support",
+      "url": "https://support.dometic.com/en/cff-coolers/How-cold-can-the-CFF-coolers-get-3c9e",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cff20-technical-data-support",
+      "brand": "Dometic",
+      "title": "Dometic CFF 20 technical data support",
+      "url": "https://support.dometic.com/en/cff-coolers/What-is-the-technical-data-of-the-CFF-20-f934",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cff-too-cold-freezing-support",
+      "brand": "Dometic",
+      "title": "Dometic CFF too cold or freezing support",
+      "url": "https://support.dometic.com/en/cff-coolers/The-food-and-beverages-are-getting-too-cold-or-freezing-7019",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx2-use-cooler-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX2 use the cooler support",
+      "url": "https://support.dometic.com/en/cfx2-coolers/How-to-use-the-cooler-ab7a",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx2-temperature-setting-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX2 temperature setting support",
+      "url": "https://support.dometic.com/en/cfx2-coolers/How-to-set-the-temperature-a2c9",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx2-not-cooling-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX2 not cooling support",
+      "url": "https://support.dometic.com/en/cfx2-coolers/The-cooler-is-not-cooling-461",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-11-air-fry-microwave-manual-ccd0008956",
+      "brand": "Furrion",
+      "title": "Furrion FMAM11AA air-fry microwave instruction manual CCD-0008956",
+      "url": "https://support.lci1.com/documents/ccd-0008956",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-furnace-e2-error-video",
+      "brand": "Furrion",
+      "title": "Furrion furnace E2 error code support video",
+      "url": "https://support.lci1.com/videos/e2-error-code-on-furrion-furnace",
+      "type": "manufacturer-video",
+      "official": true
+    },
+    {
+      "id": "furrion-furnace-e3-e6-error-video",
+      "brand": "Furrion",
+      "title": "Furrion furnace E3 and E6 error code support video",
+      "url": "https://support.lci1.com/videos/e3-and-e6-error-code-on-furrion-furnace",
+      "type": "manufacturer-video",
+      "official": true
+    },
+    {
+      "id": "girard-tankless-e3-error-video",
+      "brand": "Girard",
+      "title": "Girard tankless water heater E3 error support video",
+      "url": "https://support.lci1.com/videos/e3-error-code-on-girard-tankless-water-heater",
+      "type": "manufacturer-video",
+      "official": true
+    },
+    {
+      "id": "greystone-cfrvhob12-cooktop-manual-ccd0009642",
+      "brand": "Greystone",
+      "title": "Greystone CF-RVHOB12 cooktop instruction manual CCD-0009642",
+      "url": "https://support.lci1.com/documents/ccd-0009642",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "greystone-single-induction-hob-ccd0009628",
+      "brand": "Greystone",
+      "title": "Greystone single induction hob instruction manual CCD-0009628",
+      "url": "https://support.lci1.com/documents/ccd-0009628",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "onan-p4500i-owner-manual-2021",
+      "brand": "Onan",
+      "title": "Cummins Onan P4500i inverter portable generator owner manual",
+      "url": "https://www.cummins.com/sites/default/files/files/manuals/onan-p4500i-inverter-portable-generator-manual-03-2021.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "onan-p4500idf-owner-manual-2025",
+      "brand": "Onan",
+      "title": "Cummins Onan P4500iDF dual-fuel portable generator owner manual",
+      "url": "https://www.cummins.com/sites/default/files/2025-04/p4500idf-owners-manual.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx5-lid-open-alert-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX5 lid open alert support",
+      "url": "https://support.dometic.com/en/cfx5-coolers/ALERT-Lid-open-greater-3-min-4118",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-freshjet-low-air-output-support",
+      "brand": "Dometic",
+      "title": "Dometic FreshJet low air output support",
+      "url": "https://support.dometic.com/en/freshjet-ac/My-air-conditioner-is-giving-me-low-air-output-1abf",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-freshjet-does-not-switch-off-support",
+      "brand": "Dometic",
+      "title": "Dometic FreshJet roof air conditioner does not switch off support",
+      "url": "https://support.dometic.com/en/freshjet-ac/My-roof-air-conditioner-does-not-switch-off-c0f3",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-brisk-air-filter-maintenance-support",
+      "brand": "Dometic",
+      "title": "Dometic Brisk air filter maintenance support",
+      "url": "https://support.dometic.com/en/brisk-ac/How-to-maintain-the-air-filter-15e1",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-brisk-campsite-operation-support",
+      "brand": "Dometic",
+      "title": "Dometic Brisk campsite air-conditioner operation support",
+      "url": "https://support.dometic.com/en/brisk-ac/How-to-run-my-RV-air-conditioner-on-the-campsite-cc4b",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-harrier-remote-not-registering-support",
+      "brand": "Dometic",
+      "title": "Dometic Harrier remote control does not register support",
+      "url": "https://support.dometic.com/en/harrier-ac/My-remote-control-does-not-register-b09c",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-1200-series-support",
+      "brand": "Norcold",
+      "title": "Norcold 1200 Series Thetford support page",
+      "url": "https://www.thetford.com/us/thetford-support/1200-series/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-1210-ultraline-support",
+      "brand": "Norcold",
+      "title": "Norcold 1210 Ultraline Thetford support page",
+      "url": "https://www.thetford.com/us/thetford-support/1210-ultraline/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-n3000-series-us-support",
+      "brand": "Norcold",
+      "title": "Norcold N3000 Series Thetford US support page",
+      "url": "https://www.thetford.com/us/thetford-support/n300-series/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-ac-lp-refrigerator-level-faq",
+      "brand": "Norcold",
+      "title": "Thetford Norcold AC/LP refrigerator level FAQ",
+      "url": "https://www.thetford.com/us/faq/how-level-must-my-ac-lp-refrigerator-be/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-refrigerator-not-cooling-faq",
+      "brand": "Norcold",
+      "title": "Thetford Norcold refrigerator not cooling FAQ",
+      "url": "https://www.thetford.com/us/faq/what-if-my-refrigerator-is-not-cooling-property/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-toilet-flush-not-working-faq",
+      "brand": "Thetford",
+      "title": "Thetford toilet flush does not work FAQ",
+      "url": "https://www.thetford.com/us/faq/what-can-i-do-when-the-flush-of-my-toilet-doesnt-work/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "coleman-mach-merv6-replacement-filters",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach MERV 6 replacement air filters",
+      "url": "https://coleman-mach.com/products/climate-control-accessories/replacement-air-filters/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "coleman-mach-chillgrille-ceiling-assembly",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach ChillGrille ceiling assemblies",
+      "url": "https://coleman-mach.com/products/ceiling-assemblies/chillgrille/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "coleman-mach-carrier-conversion-kits",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Carrier conversion kits",
+      "url": "https://coleman-mach.com/products/conversion-kits/carrier-conversions/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "maxxair-service-video-library",
+      "brand": "MaxxAir",
+      "title": "MaxxAir technical and service videos",
+      "url": "https://www.maxxair.com/service-support/videos/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "maxxair-mini-deluxe-iom-10a03893z",
+      "brand": "MaxxAir",
+      "title": "MaxxFan Mini Deluxe installation and operation manual 10A03893Z",
+      "url": "https://library.maxxair.com/wp-content/uploads/2023/03/10a03893z_mxfan-mini-deluxe-iom-05-24-2019.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "maxxair-skymaxx-iom-11b90014",
+      "brand": "MaxxAir",
+      "title": "MaxxAir SkyMaxx and SkyMaxx Plus manual 11B90014",
+      "url": "https://library.maxxair.com/wp-content/uploads/2023/03/11b90014_skymaxx-skymaxx-plus-iom-07-2019.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "suburban-6-gallon-advantage-sw6d",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban 6 Gallon Advantage SW6D tank water heater",
+      "url": "https://suburbanrv.com/water-heating/tank-water-heaters/advantage-water-heaters/6-gallon-tank/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "suburban-10-gallon-advantage-sw10d",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban 10 Gallon Advantage SW10D tank water heater",
+      "url": "https://suburbanrv.com/water-heating/tank-water-heaters/advantage-water-heaters/10-gallon-tank/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "suburban-st60-tankless-water-heater",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban ST-60 tankless water heater",
+      "url": "https://suburbanrv.com/water-heating/tankless-water-heaters/st-water-heaters/st60-water-heater/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "aquahot-ahe-375-p02-owner-manual",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot AHE-375-P02 owner manual",
+      "url": "https://library.aquahot.com/wp-content/uploads/2022/07/AHE-375-P02-OwnersManual-02-2011.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "aquahot-525-d-owner-manual",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot 525-D owner manual",
+      "url": "https://library.aquahot.com/wp-content/uploads/2022/04/Aqua-Hot525-DRevAOwnerManual12-20-07.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "aquahot-gen1-diesel-gasoline-user-manual-2023",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot GEN1 NA diesel/gasoline user manual",
+      "url": "https://library.aquahot.com/wp-content/uploads/2023/05/GEN1-NA-DIESEL-GASOLINE-User-Manual-7.17.23.pdf",
+      "type": "manufacturer-manual",
       "official": true
     }
   ],
@@ -41669,7 +42061,56 @@
         "onan-p2500i-shop-product",
         "onan-p2500i-maintenance-kit-shop",
         "onan-p9500df-owner-manual-2025",
-        "onan-p5000idf-efi-spec-sheet-2025"
+        "onan-p5000idf-efi-spec-sheet-2025",
+        "dometic-cfx5-warranty-statements-support",
+        "dometic-cfx5-standing-weight-support",
+        "dometic-cfx5-battery-protection-support",
+        "dometic-cfx5-power-type-support",
+        "dometic-cfx5-power-cord-parts-support",
+        "dometic-cfx5-product-registration-support",
+        "dometic-cfx5-solar-power-support",
+        "dometic-cfx3-solar-power-support",
+        "dometic-cfx3-warranty-statements-support",
+        "dometic-cfx3-product-registration-support",
+        "dometic-cfx3-power-cord-parts-support",
+        "dometic-cff-cooling-range-support",
+        "dometic-cff20-technical-data-support",
+        "dometic-cff-too-cold-freezing-support",
+        "dometic-cfx2-use-cooler-support",
+        "dometic-cfx2-temperature-setting-support",
+        "dometic-cfx2-not-cooling-support",
+        "furrion-11-air-fry-microwave-manual-ccd0008956",
+        "furrion-furnace-e2-error-video",
+        "furrion-furnace-e3-e6-error-video",
+        "girard-tankless-e3-error-video",
+        "greystone-cfrvhob12-cooktop-manual-ccd0009642",
+        "greystone-single-induction-hob-ccd0009628",
+        "onan-p4500i-owner-manual-2021",
+        "onan-p4500idf-owner-manual-2025",
+        "dometic-cfx5-lid-open-alert-support",
+        "dometic-freshjet-low-air-output-support",
+        "dometic-freshjet-does-not-switch-off-support",
+        "dometic-brisk-air-filter-maintenance-support",
+        "dometic-brisk-campsite-operation-support",
+        "dometic-harrier-remote-not-registering-support",
+        "norcold-1200-series-support",
+        "norcold-1210-ultraline-support",
+        "norcold-n3000-series-us-support",
+        "norcold-ac-lp-refrigerator-level-faq",
+        "norcold-refrigerator-not-cooling-faq",
+        "thetford-toilet-flush-not-working-faq",
+        "coleman-mach-merv6-replacement-filters",
+        "coleman-mach-chillgrille-ceiling-assembly",
+        "coleman-mach-carrier-conversion-kits",
+        "maxxair-service-video-library",
+        "maxxair-mini-deluxe-iom-10a03893z",
+        "maxxair-skymaxx-iom-11b90014",
+        "suburban-6-gallon-advantage-sw6d",
+        "suburban-10-gallon-advantage-sw10d",
+        "suburban-st60-tankless-water-heater",
+        "aquahot-ahe-375-p02-owner-manual",
+        "aquahot-525-d-owner-manual",
+        "aquahot-gen1-diesel-gasoline-user-manual-2023"
       ]
     },
     {
@@ -58469,6 +58910,1114 @@
         "p5000idf+efi",
         "vft+co",
         "p5000idf"
+      ]
+    },
+    {
+      "id": "dometic-cfx5-warranty-statement-prep",
+      "slug": "dometic-cfx5-warranty-statement-prep",
+      "title": "Dometic CFX5 Warranty Statement Prep",
+      "summary": "Use this when a CFX5 owner needs the official warranty-statement source before opening a support case or documenting coverage.",
+      "safeChecklist": [
+        "Record the CFX5 model, serial number, purchase date, and seller before contacting support.",
+        "Keep photos of the product label and receipt with the warranty notes.",
+        "Use Dometic support or an authorized service provider for any cooling, app, or power problem that is not simple paperwork."
+      ],
+      "searchAliases": [
+        "dometic cfx5 warranty statement prep",
+        "cfx5 warranty support statement",
+        "where find warranty statements cfx5"
+      ],
+      "searchRequiredTerms": [
+        "cfx5+warranty"
+      ],
+      "sourceIds": [
+        "dometic-cfx5-warranty-statements-support"
+      ]
+    },
+    {
+      "id": "dometic-cfx5-standing-load-prep",
+      "slug": "dometic-cfx5-standing-load-prep",
+      "title": "Dometic CFX5 Standing Load Prep",
+      "summary": "Use this when checking Dometic guidance before allowing weight on a CFX5 lid or cabinet.",
+      "safeChecklist": [
+        "Record the CFX5 size and lid condition before relying on any load guidance.",
+        "Keep the cooler on stable ground and stop using the lid as a step if it flexes, cracks, or does not close cleanly.",
+        "Do not modify hinges, latches, or seals; document the condition and contact Dometic support if the lid is damaged."
+      ],
+      "searchAliases": [
+        "dometic cfx5 stand on cooler weight prep",
+        "cfx5 standing load support",
+        "can i stand on cfx5 cooler"
+      ],
+      "searchRequiredTerms": [
+        "cfx5+stand",
+        "cfx5+standing"
+      ],
+      "sourceIds": [
+        "dometic-cfx5-standing-weight-support"
+      ]
+    },
+    {
+      "id": "dometic-cfx5-battery-protection-system-prep",
+      "slug": "dometic-cfx5-battery-protection-system-prep",
+      "title": "Dometic CFX5 Battery Protection System Prep",
+      "summary": "Use this when a CFX5 battery-protection setting, low-voltage alert, or early shutoff needs owner notes before support.",
+      "safeChecklist": [
+        "Record the CFX5 model, battery-protection level, input source, and any alert shown in the app or display.",
+        "Test only with normal plug-in power sources and known-good portable leads.",
+        "Stop if the cooler repeatedly shuts down on a healthy source; capture photos and contact Dometic support."
+      ],
+      "searchAliases": [
+        "dometic cfx5 battery protection system prep",
+        "cfx5 battery protection setting",
+        "dometic cfx5 low voltage battery protect"
+      ],
+      "searchRequiredTerms": [
+        "cfx5+battery+protection"
+      ],
+      "sourceIds": [
+        "dometic-cfx5-battery-protection-support"
+      ]
+    },
+    {
+      "id": "dometic-cfx5-power-type-prep",
+      "slug": "dometic-cfx5-power-type-prep",
+      "title": "Dometic CFX5 Power Type Prep",
+      "summary": "Use this when confirming which normal power sources a CFX5 can use before documenting a power complaint.",
+      "safeChecklist": [
+        "Record whether the cooler was connected to vehicle power, household power, or a portable power station.",
+        "Use only the normal Dometic-supported cord type and a known-good outlet or battery source.",
+        "If the cord, plug, or cooler port is hot, loose, damaged, or wet, stop using it and contact qualified service."
+      ],
+      "searchAliases": [
+        "dometic cfx5 power type dc ac prep",
+        "cfx5 power type support",
+        "what type of power does cfx5 need"
+      ],
+      "searchRequiredTerms": [
+        "cfx5+power+type"
+      ],
+      "sourceIds": [
+        "dometic-cfx5-power-type-support"
+      ]
+    },
+    {
+      "id": "dometic-cfx5-power-cord-parts-prep",
+      "slug": "dometic-cfx5-power-cord-parts-prep",
+      "title": "Dometic CFX5 Power Cord and Parts Prep",
+      "summary": "Use this when a CFX5 owner needs the official parts path for a missing or damaged power cord.",
+      "safeChecklist": [
+        "Record the CFX5 model, serial number, cord type, and photos of the label before ordering parts.",
+        "Stop using any cord with heat marks, bent pins, cracked insulation, or intermittent contact.",
+        "Use Dometic parts support instead of adapting an unknown cord."
+      ],
+      "searchAliases": [
+        "dometic cfx5 power cord parts prep",
+        "cfx5 new power cord part",
+        "cfx5 replacement cord support"
+      ],
+      "searchRequiredTerms": [
+        "cfx5+power+cord"
+      ],
+      "sourceIds": [
+        "dometic-cfx5-power-cord-parts-support"
+      ]
+    },
+    {
+      "id": "dometic-cfx5-product-registration-prep",
+      "slug": "dometic-cfx5-product-registration-prep",
+      "title": "Dometic CFX5 Product Registration Prep",
+      "summary": "Use this when preparing CFX5 registration details before a warranty or support contact.",
+      "safeChecklist": [
+        "Record the CFX5 model, serial number, purchase date, seller, and owner contact details.",
+        "Keep a photo of the product label and the receipt with the registration record.",
+        "Registration does not replace service diagnosis for cooling, power, app, or damaged-part complaints."
+      ],
+      "searchAliases": [
+        "dometic cfx5 product registration prep",
+        "cfx5 register product support",
+        "cfx5 registration warranty support"
+      ],
+      "searchRequiredTerms": [
+        "cfx5+register",
+        "cfx5+registration"
+      ],
+      "sourceIds": [
+        "dometic-cfx5-product-registration-support"
+      ]
+    },
+    {
+      "id": "dometic-cfx5-solar-power-prep",
+      "slug": "dometic-cfx5-solar-power-prep",
+      "title": "Dometic CFX5 Solar Power Prep",
+      "summary": "Use this when documenting a CFX5 solar or portable-power setup before support.",
+      "safeChecklist": [
+        "Record the CFX5 model, battery-protection level, power-station output, and solar controller status.",
+        "Use normal plug-in outputs from listed portable-power equipment only.",
+        "Have qualified RV electrical service review any fixed solar or battery installation concern."
+      ],
+      "searchAliases": [
+        "dometic cfx5 solar power prep",
+        "cfx5 solar portable power station",
+        "how power cfx5 with solar"
+      ],
+      "searchRequiredTerms": [
+        "cfx5+solar"
+      ],
+      "sourceIds": [
+        "dometic-cfx5-solar-power-support"
+      ]
+    },
+    {
+      "id": "dometic-cfx3-solar-power-prep",
+      "slug": "dometic-cfx3-solar-power-prep",
+      "title": "Dometic CFX3 Solar Power Prep",
+      "summary": "Use this when documenting a CFX3 solar or portable-power setup before support.",
+      "safeChecklist": [
+        "Record the CFX3 model, battery-protection level, power-station output, and solar controller status.",
+        "Use normal plug-in outputs from listed portable-power equipment only.",
+        "Have qualified RV electrical service review any fixed solar or battery installation concern."
+      ],
+      "searchAliases": [
+        "dometic cfx3 solar power prep",
+        "cfx3 solar portable power station",
+        "how power cfx3 with solar"
+      ],
+      "searchRequiredTerms": [
+        "cfx3+solar"
+      ],
+      "sourceIds": [
+        "dometic-cfx3-solar-power-support"
+      ]
+    },
+    {
+      "id": "dometic-cfx3-warranty-statement-prep",
+      "slug": "dometic-cfx3-warranty-statement-prep",
+      "title": "Dometic CFX3 Warranty Statement Prep",
+      "summary": "Use this when a CFX3 owner needs the official warranty-statement source before opening a support case.",
+      "safeChecklist": [
+        "Record the CFX3 model, serial number, purchase date, and seller before contacting support.",
+        "Keep photos of the product label and receipt with warranty notes.",
+        "Use Dometic support or an authorized service provider for non-paperwork product faults."
+      ],
+      "searchAliases": [
+        "dometic cfx3 warranty statement prep",
+        "cfx3 warranty support statement",
+        "where find warranty statements cfx3"
+      ],
+      "searchRequiredTerms": [
+        "cfx3+warranty"
+      ],
+      "sourceIds": [
+        "dometic-cfx3-warranty-statements-support"
+      ]
+    },
+    {
+      "id": "dometic-cfx3-product-registration-prep",
+      "slug": "dometic-cfx3-product-registration-prep",
+      "title": "Dometic CFX3 Product Registration Prep",
+      "summary": "Use this when preparing CFX3 registration details before a warranty or support contact.",
+      "safeChecklist": [
+        "Record the CFX3 model, serial number, purchase date, seller, and owner contact details.",
+        "Keep a photo of the product label and receipt with the registration record.",
+        "Registration does not replace service diagnosis for cooling, power, app, or damaged-part complaints."
+      ],
+      "searchAliases": [
+        "dometic cfx3 product registration prep",
+        "cfx3 register product support",
+        "cfx3 registration warranty support"
+      ],
+      "searchRequiredTerms": [
+        "cfx3+register",
+        "cfx3+registration"
+      ],
+      "sourceIds": [
+        "dometic-cfx3-product-registration-support"
+      ]
+    },
+    {
+      "id": "dometic-cfx3-power-cord-parts-prep",
+      "slug": "dometic-cfx3-power-cord-parts-prep",
+      "title": "Dometic CFX3 Power Cord and Parts Prep",
+      "summary": "Use this when a CFX3 owner needs the official parts path for a missing or damaged power cord.",
+      "safeChecklist": [
+        "Record the CFX3 model, serial number, cord type, and product-label photo before ordering parts.",
+        "Stop using any cord with heat marks, bent pins, cracked insulation, or intermittent contact.",
+        "Use Dometic parts support instead of adapting an unknown cord."
+      ],
+      "searchAliases": [
+        "dometic cfx3 power cord parts prep",
+        "cfx3 new power cord part",
+        "cfx3 replacement cord support"
+      ],
+      "searchRequiredTerms": [
+        "cfx3+power+cord"
+      ],
+      "sourceIds": [
+        "dometic-cfx3-power-cord-parts-support"
+      ]
+    },
+    {
+      "id": "dometic-cff-cooling-range-prep",
+      "slug": "dometic-cff-cooling-range-prep",
+      "title": "Dometic CFF Cooling Range Prep",
+      "summary": "Use this when documenting expected CFF cooling range before treating temperature behavior as a service issue.",
+      "safeChecklist": [
+        "Record the CFF model, set temperature, ambient temperature, contents, and ventilation around the cooler.",
+        "Allow normal stabilization time after loading warm contents or changing settings.",
+        "Contact Dometic support if the cooler cannot hold the expected range on a known-good source."
+      ],
+      "searchAliases": [
+        "dometic cff cooling range prep",
+        "cff cooler how cold can get",
+        "dometic cff cold range support"
+      ],
+      "searchRequiredTerms": [
+        "cff+cooling",
+        "cff+cold"
+      ],
+      "sourceIds": [
+        "dometic-cff-cooling-range-support"
+      ]
+    },
+    {
+      "id": "dometic-cff20-technical-data-prep",
+      "slug": "dometic-cff20-technical-data-prep",
+      "title": "Dometic CFF20 Technical Data Prep",
+      "summary": "Use this when a CFF20 owner needs official technical-data details for support, storage, or compatibility notes.",
+      "safeChecklist": [
+        "Record the CFF20 model label, serial number, power source, and the spec detail being checked.",
+        "Compare accessories and storage locations against the official technical-data page.",
+        "Use Dometic support for product damage, abnormal noise, or cooling behavior outside the expected range."
+      ],
+      "searchAliases": [
+        "dometic cff20 technical data prep",
+        "dometic cff 20 technical data",
+        "cff20 dimensions power spec support"
+      ],
+      "searchRequiredTerms": [
+        "cff20+technical",
+        "cff+20+technical"
+      ],
+      "sourceIds": [
+        "dometic-cff20-technical-data-support"
+      ]
+    },
+    {
+      "id": "dometic-cff-too-cold-freezing-prep",
+      "slug": "dometic-cff-too-cold-freezing-prep",
+      "title": "Dometic CFF Too Cold or Freezing Prep",
+      "summary": "Use this when food or beverages freeze in a CFF cooler and owner notes are needed before support.",
+      "safeChecklist": [
+        "Record the CFF model, set temperature, actual contents, location of frozen items, and recent setting changes.",
+        "Move freeze-sensitive food and let the cooler stabilize after setting changes.",
+        "Contact Dometic support if the cooler ignores normal settings on a known-good source."
+      ],
+      "searchAliases": [
+        "dometic cff food freezing too cold prep",
+        "cff cooler too cold freezing",
+        "dometic cff beverages getting too cold"
+      ],
+      "searchRequiredTerms": [
+        "cff+freezing",
+        "cff+too+cold"
+      ],
+      "sourceIds": [
+        "dometic-cff-too-cold-freezing-support"
+      ]
+    },
+    {
+      "id": "dometic-cfx2-use-cooler-prep",
+      "slug": "dometic-cfx2-use-cooler-prep",
+      "title": "Dometic CFX2 Use Cooler Prep",
+      "summary": "Use this when a CFX2 owner needs official setup and use notes before calling support.",
+      "safeChecklist": [
+        "Record the CFX2 model, power source, app or display state, and how the cooler is loaded.",
+        "Confirm the lid closes normally and vents are unobstructed.",
+        "Contact Dometic support if normal use guidance does not restore expected cooling."
+      ],
+      "searchAliases": [
+        "dometic cfx2 use cooler prep",
+        "how to use cfx2 cooler",
+        "cfx2 setup use support"
+      ],
+      "searchRequiredTerms": [
+        "cfx2+cooler"
+      ],
+      "sourceIds": [
+        "dometic-cfx2-use-cooler-support"
+      ]
+    },
+    {
+      "id": "dometic-cfx2-temperature-setting-prep",
+      "slug": "dometic-cfx2-temperature-setting-prep",
+      "title": "Dometic CFX2 Temperature Setting Prep",
+      "summary": "Use this when documenting CFX2 temperature setting behavior before support.",
+      "safeChecklist": [
+        "Record the CFX2 set temperature, ambient temperature, app or display state, and whether the contents were already cold.",
+        "Let the cooler stabilize after setting changes and loading warm items.",
+        "Contact Dometic support if the displayed setting cannot be changed or the cooler ignores normal settings."
+      ],
+      "searchAliases": [
+        "dometic cfx2 set temperature prep",
+        "cfx2 temperature setting support",
+        "how set temperature cfx2"
+      ],
+      "searchRequiredTerms": [
+        "cfx2+temperature"
+      ],
+      "sourceIds": [
+        "dometic-cfx2-temperature-setting-support"
+      ]
+    },
+    {
+      "id": "dometic-cfx2-not-cooling-prep",
+      "slug": "dometic-cfx2-not-cooling-prep",
+      "title": "Dometic CFX2 Not Cooling Prep",
+      "summary": "Use this when a CFX2 cooler is not cooling and owner-safe notes are needed before service.",
+      "safeChecklist": [
+        "Record the CFX2 model, set temperature, input source, ambient temperature, contents, and any display or app message.",
+        "Confirm the lid is closed, vents are clear, and the cooler has had time to stabilize.",
+        "Stop using the cooler for food safety if temperatures are unsafe and contact Dometic support."
+      ],
+      "searchAliases": [
+        "dometic cfx2 not cooling prep",
+        "cfx2 cooler is not cooling",
+        "dometic cfx2 no cooling support"
+      ],
+      "searchRequiredTerms": [
+        "cfx2+cooling"
+      ],
+      "sourceIds": [
+        "dometic-cfx2-not-cooling-support"
+      ]
+    },
+    {
+      "id": "furrion-fmam11aa-air-fry-microwave-control-prep",
+      "slug": "furrion-fmam11aa-air-fry-microwave-control-prep",
+      "title": "Furrion FMAM11AA Air-Fry Microwave Control Prep",
+      "summary": "Use this when a Furrion FMAM11AA air-fry microwave needs model, control, or support notes before service.",
+      "safeChecklist": [
+        "Record the FMAM11AA model, serial number, control message, cooking mode, and whether the outlet or plug looks damaged.",
+        "Stop using the microwave if there is smoke, arcing, overheating, abnormal odor, or door damage.",
+        "Do not service internal microwave parts; document the symptom and contact qualified appliance service."
+      ],
+      "searchAliases": [
+        "furrion fmam11aa air fry microwave control prep",
+        "furrion 11 air fry microwave manual",
+        "ccd 0008956 fmam11aa microwave"
+      ],
+      "searchRequiredTerms": [
+        "fmam11aa",
+        "furrion+air+fry+microwave"
+      ],
+      "sourceIds": [
+        "furrion-11-air-fry-microwave-manual-ccd0008956"
+      ]
+    },
+    {
+      "id": "furrion-furnace-e2-error-service-prep",
+      "slug": "furrion-furnace-e2-error-service-prep",
+      "title": "Furrion Furnace E2 Error Service Prep",
+      "summary": "Use this when a Furrion furnace shows E2 and owner-safe service notes are needed before calling a technician.",
+      "safeChecklist": [
+        "Record the furnace model, thermostat setting, E2 timing, battery voltage reading from a normal monitor, and whether airflow paths are blocked.",
+        "Shut off LP and power if there is odor, soot, repeated lockout, or abnormal heat.",
+        "Do not diagnose internal furnace safety parts; use the official support video as service-call context."
+      ],
+      "searchAliases": [
+        "furrion furnace e2 error service prep",
+        "e2 error code on furrion furnace",
+        "furrion furnace e2 support video"
+      ],
+      "searchRequiredTerms": [
+        "furrion+furnace+e2"
+      ],
+      "sourceIds": [
+        "furrion-furnace-e2-error-video"
+      ]
+    },
+    {
+      "id": "furrion-furnace-e3-e6-error-service-prep",
+      "slug": "furrion-furnace-e3-e6-error-service-prep",
+      "title": "Furrion Furnace E3/E6 Error Service Prep",
+      "summary": "Use this when a Furrion furnace shows E3 or E6 and owner-safe service notes are needed before calling a technician.",
+      "safeChecklist": [
+        "Record the furnace model, exact E3 or E6 display, thermostat setting, cycle timing, and airflow conditions.",
+        "Shut off LP and power if the furnace repeats the error, produces odor, or heats abnormally.",
+        "Do not service internal furnace safety parts; provide the support-video link to qualified service."
+      ],
+      "searchAliases": [
+        "furrion furnace e3 e6 error service prep",
+        "e3 e6 error code on furrion furnace",
+        "furrion furnace e3 e6 support video"
+      ],
+      "searchRequiredTerms": [
+        "furrion+furnace+e3",
+        "furrion+furnace+e6"
+      ],
+      "sourceIds": [
+        "furrion-furnace-e3-e6-error-video"
+      ]
+    },
+    {
+      "id": "girard-tankless-e3-video-service-prep",
+      "slug": "girard-tankless-e3-video-service-prep",
+      "title": "Girard Tankless E3 Support Video Service Prep",
+      "summary": "Use this when a Girard tankless water heater E3 support-video source is needed alongside service notes.",
+      "safeChecklist": [
+        "Record the Girard model, E3 timing, water-flow condition, LP status, and any other displayed code.",
+        "Shut off LP, water, and power if there is odor, overheating, leakage, or repeated E3.",
+        "Use the official video as support context and have qualified service handle unsafe tankless-water-heater faults."
+      ],
+      "searchAliases": [
+        "girard tankless e3 support video service prep",
+        "e3 error code girard tankless water heater",
+        "girard tankless e3 video prep"
+      ],
+      "searchRequiredTerms": [
+        "girard+tankless+e3"
+      ],
+      "sourceIds": [
+        "girard-tankless-e3-error-video"
+      ]
+    },
+    {
+      "id": "greystone-cf-rvhob12-cooktop-flame-prep",
+      "slug": "greystone-cf-rvhob12-cooktop-flame-prep",
+      "title": "Greystone CF-RVHOB12 Cooktop Flame Prep",
+      "summary": "Use this when a Greystone CF-RVHOB12 cooktop has an abnormal visible flame condition and support notes are needed.",
+      "safeChecklist": [
+        "Record the CF-RVHOB12 model, serial number, knob position, LP supply status, and photos from a safe distance.",
+        "Shut off LP and stop using the cooktop if there is odor, delayed ignition, unstable flame, or heat damage.",
+        "Have qualified RV gas-appliance service handle any repeated or unsafe flame condition."
+      ],
+      "searchAliases": [
+        "greystone cf rvhob12 cooktop flame prep",
+        "cfrvhob12 cooktop manual",
+        "ccd 0009642 greystone cooktop"
+      ],
+      "searchRequiredTerms": [
+        "cfrvhob12",
+        "cf+rvhob12"
+      ],
+      "sourceIds": [
+        "greystone-cfrvhob12-cooktop-manual-ccd0009642"
+      ]
+    },
+    {
+      "id": "greystone-single-induction-hob-power-cookware-prep",
+      "slug": "greystone-single-induction-hob-power-cookware-prep",
+      "title": "Greystone Single Induction Hob Power and Cookware Prep",
+      "summary": "Use this when a Greystone single induction hob has power, pan, or control behavior that needs owner notes before support.",
+      "safeChecklist": [
+        "Record the hob model, displayed message, cookware type, pan size, setting, and outlet condition.",
+        "Stop using the hob if the cord, plug, glass, or control area is hot, cracked, wet, or damaged.",
+        "Use qualified service for repeated power or heating faults."
+      ],
+      "searchAliases": [
+        "greystone single induction hob cookware power prep",
+        "greystone single induction hob manual",
+        "ccd 0009628 induction hob"
+      ],
+      "searchRequiredTerms": [
+        "greystone+single+induction",
+        "greystone+induction+hob"
+      ],
+      "sourceIds": [
+        "greystone-single-induction-hob-ccd0009628"
+      ]
+    },
+    {
+      "id": "onan-p4500i-overload-led-service-prep",
+      "slug": "onan-p4500i-overload-led-service-prep",
+      "title": "Onan P4500i Overload LED Service Prep",
+      "summary": "Use this when a Cummins Onan P4500i overload LED or output complaint needs owner-safe notes before service.",
+      "safeChecklist": [
+        "Operate portable generators outdoors only and away from openings; record model, serial number, load, LED state, and runtime.",
+        "Disconnect loads and shut the generator down if the overload LED repeats, output is unstable, or exhaust conditions are unsafe.",
+        "Use qualified generator service for repeated overload, output, engine, or fuel-system faults."
+      ],
+      "searchAliases": [
+        "onan p4500i overload led service prep",
+        "cummins onan p4500i owner manual overload",
+        "p4500i overload indicator generator prep"
+      ],
+      "searchRequiredTerms": [
+        "p4500i+overload"
+      ],
+      "sourceIds": [
+        "onan-p4500i-owner-manual-2021"
+      ]
+    },
+    {
+      "id": "onan-p4500idf-fuel-display-service-prep",
+      "slug": "onan-p4500idf-fuel-display-service-prep",
+      "title": "Onan P4500iDF Fuel Display Service Prep",
+      "summary": "Use this when a Cummins Onan P4500iDF fuel display, VFT display, or dual-fuel setup needs owner-safe notes before service.",
+      "safeChecklist": [
+        "Operate portable generators outdoors only and away from openings; record model, serial number, fuel selection, display state, load, and runtime.",
+        "Shut the generator down if fuel odor, unstable output, repeated shutdown, or exhaust-safety concern appears.",
+        "Use qualified generator service for repeated dual-fuel, output, engine, or display faults."
+      ],
+      "searchAliases": [
+        "onan p4500idf fuel display service prep",
+        "cummins onan p4500idf owner manual display",
+        "p4500idf vft fuel display prep"
+      ],
+      "searchRequiredTerms": [
+        "p4500idf",
+        "p4500idf+fuel",
+        "p4500idf+display"
+      ],
+      "sourceIds": [
+        "onan-p4500idf-owner-manual-2025"
+      ]
+    },
+    {
+      "id": "dometic-cfx5-lid-open-alert-prep",
+      "slug": "dometic-cfx5-lid-open-alert-prep",
+      "title": "Dometic CFX5 Lid Open Alert Prep",
+      "summary": "Use this when a CFX5 reports a lid-open alert after the lid has been open for several minutes or does not latch normally.",
+      "safeChecklist": [
+        "Record the CFX5 model, alert text, lid position, gasket condition, load height, and app or display state.",
+        "Clear items blocking the lid and let the cooler stabilize after the lid is closed.",
+        "Contact Dometic support if the alert remains with the lid closed or the latch or seal is damaged."
+      ],
+      "searchAliases": [
+        "dometic cfx5 alert lid open greater 3 min prep",
+        "cfx5 lid open alert support",
+        "alert lid open greater 3 min cfx5"
+      ],
+      "searchRequiredTerms": [
+        "cfx5+lid+open"
+      ],
+      "sourceIds": [
+        "dometic-cfx5-lid-open-alert-support"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-low-air-output-prep",
+      "slug": "dometic-freshjet-low-air-output-prep",
+      "title": "Dometic FreshJet Low Air Output Prep",
+      "summary": "Use this when a FreshJet air conditioner gives low air output and owner-safe notes are needed before service.",
+      "safeChecklist": [
+        "Record the FreshJet model label, mode, fan setting, filter condition, room temperature, and which vents feel weak.",
+        "Check only user-accessible filters, louvers, and return-air paths from inside the RV.",
+        "Shut the unit down and call qualified RV air-conditioner service if airflow stays weak or the unit cycles abnormally."
+      ],
+      "searchAliases": [
+        "dometic freshjet low air output prep",
+        "freshjet low airflow filter vents",
+        "freshjet air conditioner low output"
+      ],
+      "searchRequiredTerms": [
+        "freshjet+low+air"
+      ],
+      "sourceIds": [
+        "dometic-freshjet-low-air-output-support"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-does-not-switch-off-prep",
+      "slug": "dometic-freshjet-does-not-switch-off-prep",
+      "title": "Dometic FreshJet Does Not Switch Off Prep",
+      "summary": "Use this when a FreshJet roof air conditioner keeps running after normal controls should stop it.",
+      "safeChecklist": [
+        "Record the FreshJet model label, thermostat mode, setpoint, room temperature, timer state, and remote or wall-control behavior.",
+        "Try normal off and mode controls only; document whether the fan or cooling continues.",
+        "Shut the unit down at the normal RV power disconnect and call qualified service if it will not stop normally."
+      ],
+      "searchAliases": [
+        "dometic freshjet roof air conditioner does not switch off prep",
+        "freshjet does not switch off",
+        "freshjet roof ac keeps running"
+      ],
+      "searchRequiredTerms": [
+        "freshjet+switch+off"
+      ],
+      "sourceIds": [
+        "dometic-freshjet-does-not-switch-off-support"
+      ]
+    },
+    {
+      "id": "dometic-brisk-air-filter-maintenance-prep",
+      "slug": "dometic-brisk-air-filter-maintenance-prep",
+      "title": "Dometic Brisk Air Filter Maintenance Prep",
+      "summary": "Use this when a Dometic Brisk air-filter maintenance source is needed before support or seasonal cleaning.",
+      "safeChecklist": [
+        "Record the Brisk model label, filter condition, room temperature, and airflow complaint.",
+        "Clean only user-accessible interior filters and let them dry before reuse.",
+        "Call qualified RV air-conditioner service if cleaning the filter does not restore normal airflow or cooling."
+      ],
+      "searchAliases": [
+        "dometic brisk ac maintain air filter prep",
+        "brisk air filter maintenance support",
+        "dometic brisk filter cleaning prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+brisk+filter",
+        "brisk+filter"
+      ],
+      "sourceIds": [
+        "dometic-brisk-air-filter-maintenance-support"
+      ]
+    },
+    {
+      "id": "dometic-brisk-campsite-power-operation-prep",
+      "slug": "dometic-brisk-campsite-power-operation-prep",
+      "title": "Dometic Brisk Campsite Power Operation Prep",
+      "summary": "Use this when a Dometic Brisk air conditioner has campsite-power or load-management questions before service.",
+      "safeChecklist": [
+        "Record the Brisk model, campsite source rating, other running loads, thermostat setting, and any shutdown or dimming symptoms.",
+        "Use normal campsite power management and reduce other loads before restarting the air conditioner.",
+        "Have qualified RV electrical service review repeated power trips, overheating plugs, or low-voltage symptoms."
+      ],
+      "searchAliases": [
+        "dometic brisk rv air conditioner campsite operation prep",
+        "brisk ac campsite power operation",
+        "how run brisk rv ac on campsite"
+      ],
+      "searchRequiredTerms": [
+        "dometic+brisk+campsite",
+        "brisk+campsite"
+      ],
+      "sourceIds": [
+        "dometic-brisk-campsite-operation-support"
+      ]
+    },
+    {
+      "id": "dometic-harrier-remote-not-registering-prep",
+      "slug": "dometic-harrier-remote-not-registering-prep",
+      "title": "Dometic Harrier Remote Not Registering Prep",
+      "summary": "Use this when a Harrier air-conditioner remote does not register commands and owner notes are needed before support.",
+      "safeChecklist": [
+        "Record the Harrier model, remote model, battery state, display state, and whether line of sight changes behavior.",
+        "Try fresh batteries and normal remote pairing or control steps only.",
+        "Call qualified service if the remote and unit still do not communicate or the unit behaves unpredictably."
+      ],
+      "searchAliases": [
+        "dometic harrier remote control does not register prep",
+        "harrier remote not registering support",
+        "dometic harrier remote no response"
+      ],
+      "searchRequiredTerms": [
+        "harrier+remote"
+      ],
+      "sourceIds": [
+        "dometic-harrier-remote-not-registering-support"
+      ]
+    },
+    {
+      "id": "norcold-1200-series-support-prep",
+      "slug": "norcold-1200-series-support-prep",
+      "title": "Norcold 1200 Series Support Prep",
+      "summary": "Use this when a Norcold 1200 Series owner needs the official Thetford support route before service.",
+      "safeChecklist": [
+        "Record the 1200 Series model, serial number, display message, power mode, and recall-status notes.",
+        "Move food if temperatures are unsafe and shut the refrigerator down for odor, heat damage, or repeated alarms.",
+        "Use qualified RV refrigerator service for LP, electric, cooling-unit, or board-related faults."
+      ],
+      "searchAliases": [
+        "norcold 1200 series thetford support prep",
+        "norcold 1200 series support page",
+        "thetford 1200 series refrigerator support"
+      ],
+      "searchRequiredTerms": [
+        "norcold+1200"
+      ],
+      "sourceIds": [
+        "norcold-1200-series-support"
+      ]
+    },
+    {
+      "id": "norcold-1210-ultraline-support-prep",
+      "slug": "norcold-1210-ultraline-support-prep",
+      "title": "Norcold 1210 Ultraline Support Prep",
+      "summary": "Use this when a Norcold 1210 Ultraline owner needs the official Thetford support route before service.",
+      "safeChecklist": [
+        "Record the 1210 Ultraline model, serial number, display message, power mode, and recall-status notes.",
+        "Move food if temperatures are unsafe and shut the refrigerator down for odor, heat damage, or repeated alarms.",
+        "Use qualified RV refrigerator service for LP, electric, cooling-unit, or board-related faults."
+      ],
+      "searchAliases": [
+        "norcold 1210 ultraline thetford support prep",
+        "norcold 1210 ultraline support page",
+        "thetford 1210 ultraline refrigerator support"
+      ],
+      "searchRequiredTerms": [
+        "norcold+1210",
+        "1210+ultraline"
+      ],
+      "sourceIds": [
+        "norcold-1210-ultraline-support"
+      ]
+    },
+    {
+      "id": "norcold-n3000-series-us-support-prep",
+      "slug": "norcold-n3000-series-us-support-prep",
+      "title": "Norcold N3000 Series US Support Prep",
+      "summary": "Use this when a Norcold N3000 Series owner needs the official Thetford US support route before service.",
+      "safeChecklist": [
+        "Record the N3000 model, serial number, display message, source mode, and recent travel or leveling conditions.",
+        "Move food if temperatures are unsafe and shut the refrigerator down for odor, heat damage, or repeated alarms.",
+        "Use qualified RV refrigerator service for LP, electric, cooling-unit, or board-related faults."
+      ],
+      "searchAliases": [
+        "norcold n3000 series thetford support prep",
+        "norcold n3000 us support page",
+        "thetford n300 series n3000 support"
+      ],
+      "searchRequiredTerms": [
+        "norcold+n3000",
+        "n3000+series"
+      ],
+      "sourceIds": [
+        "norcold-n3000-series-us-support"
+      ]
+    },
+    {
+      "id": "norcold-ac-lp-refrigerator-level-prep",
+      "slug": "norcold-ac-lp-refrigerator-level-prep",
+      "title": "Norcold AC/LP Refrigerator Level Prep",
+      "summary": "Use this when documenting whether a Norcold AC/LP refrigerator has been operated level enough for support.",
+      "safeChecklist": [
+        "Record the Norcold model, campsite slope, leveling status, run time, power mode, and cooling result.",
+        "Level the RV within normal operating limits before judging refrigerator performance.",
+        "Shut the refrigerator down and call qualified service for odor, heat damage, repeated alarms, or poor cooling after level operation."
+      ],
+      "searchAliases": [
+        "norcold ac lp refrigerator how level prep",
+        "how level must norcold ac lp refrigerator be",
+        "norcold refrigerator level faq"
+      ],
+      "searchRequiredTerms": [
+        "norcold+level",
+        "norcold+ac+lp+refrigerator+level"
+      ],
+      "sourceIds": [
+        "norcold-ac-lp-refrigerator-level-faq"
+      ]
+    },
+    {
+      "id": "norcold-refrigerator-not-cooling-faq-prep",
+      "slug": "norcold-refrigerator-not-cooling-faq-prep",
+      "title": "Norcold Refrigerator Not Cooling FAQ Prep",
+      "summary": "Use this when a Norcold refrigerator is not cooling and the official Thetford FAQ should be tied to owner notes.",
+      "safeChecklist": [
+        "Record the Norcold model, serial number, power mode, level status, outside temperature, vent condition, and display message.",
+        "Move food if temperatures are unsafe and shut the refrigerator down for odor, heat damage, or repeated alarms.",
+        "Use qualified RV refrigerator service if normal leveling, ventilation, and source checks do not restore cooling."
+      ],
+      "searchAliases": [
+        "norcold refrigerator not cooling thetford faq prep",
+        "what if my norcold refrigerator is not cooling",
+        "thetford faq norcold not cooling"
+      ],
+      "searchRequiredTerms": [
+        "norcold+not+cooling"
+      ],
+      "sourceIds": [
+        "norcold-refrigerator-not-cooling-faq"
+      ]
+    },
+    {
+      "id": "thetford-toilet-flush-not-working-faq-prep",
+      "slug": "thetford-toilet-flush-not-working-faq-prep",
+      "title": "Thetford Toilet Flush Not Working FAQ Prep",
+      "summary": "Use this when a Thetford toilet flush does not work and owner-safe notes are needed before support.",
+      "safeChecklist": [
+        "Record the Thetford model, flush type, water level, cassette or tank status, and whether the control returns normally.",
+        "Use only visible controls, normal cleaning, and official owner guidance.",
+        "Stop use and contact Thetford support for leaks, repeated flush failure, abnormal odor, or suspected freeze damage."
+      ],
+      "searchAliases": [
+        "thetford toilet flush does not work faq prep",
+        "thetford toilet flush not working support",
+        "what can i do when toilet flush does not work"
+      ],
+      "searchRequiredTerms": [
+        "thetford+flush"
+      ],
+      "sourceIds": [
+        "thetford-toilet-flush-not-working-faq"
+      ]
+    },
+    {
+      "id": "coleman-mach-merv6-filter-access-prep",
+      "slug": "coleman-mach-merv6-filter-access-prep",
+      "title": "Coleman-Mach MERV 6 Filter Access Prep",
+      "summary": "Use this when identifying Coleman-Mach MERV 6 replacement filters before support or owner maintenance.",
+      "safeChecklist": [
+        "Record the Coleman-Mach model, ceiling assembly type, filter size, and filter condition.",
+        "Clean or replace only user-accessible filters specified for the assembly.",
+        "Call qualified RV air-conditioner service if filter service does not restore airflow or cooling."
+      ],
+      "searchAliases": [
+        "coleman mach merv6 replacement air filters prep",
+        "coleman mach merv 6 filter access prep",
+        "8430 3801 replacement air filter"
+      ],
+      "searchRequiredTerms": [
+        "coleman+mach+merv6",
+        "coleman+merv6+filter"
+      ],
+      "sourceIds": [
+        "coleman-mach-merv6-replacement-filters"
+      ]
+    },
+    {
+      "id": "coleman-mach-chillgrille-filter-control-prep",
+      "slug": "coleman-mach-chillgrille-filter-control-prep",
+      "title": "Coleman-Mach ChillGrille Filter and Control Prep",
+      "summary": "Use this when documenting Coleman-Mach ChillGrille filter access, EZReach behavior, or control notes before support.",
+      "safeChecklist": [
+        "Record the Coleman-Mach model, ChillGrille assembly type, control style, filter condition, and airflow complaint.",
+        "Use only user-facing filter and control observations from inside the RV.",
+        "Call qualified RV air-conditioner service for persistent airflow, cooling, or control faults."
+      ],
+      "searchAliases": [
+        "coleman mach chillgrille ezreach filter prep",
+        "coleman mach chillgrille filter control prep",
+        "chillgrille ceiling assembly filter"
+      ],
+      "searchRequiredTerms": [
+        "coleman+mach+chillgrille",
+        "chillgrille+ezreach"
+      ],
+      "sourceIds": [
+        "coleman-mach-chillgrille-ceiling-assembly"
+      ]
+    },
+    {
+      "id": "coleman-mach-carrier-conversion-service-prep",
+      "slug": "coleman-mach-carrier-conversion-service-prep",
+      "title": "Coleman-Mach Carrier Conversion Service Prep",
+      "summary": "Use this when a Carrier-to-Coleman-Mach conversion kit source is needed for compatibility notes before qualified service.",
+      "safeChecklist": [
+        "Record the existing unit model, ceiling assembly, thermostat type, roof opening notes, and kit number being considered.",
+        "Treat conversion compatibility as service-planning information only.",
+        "Have qualified RV air-conditioner service handle conversion fitment and installation."
+      ],
+      "searchAliases": [
+        "coleman mach carrier conversion rooftop adapter kit prep",
+        "carrier conversion kit coleman mach prep",
+        "coleman mach carrier conversion service prep"
+      ],
+      "searchRequiredTerms": [
+        "coleman+mach+carrier",
+        "carrier+conversion"
+      ],
+      "sourceIds": [
+        "coleman-mach-carrier-conversion-kits"
+      ]
+    },
+    {
+      "id": "maxxair-official-video-support-prep",
+      "slug": "maxxair-official-video-support-prep",
+      "title": "MaxxAir Official Video Support Prep",
+      "summary": "Use this when routing a MaxxAir owner to official technical and service videos without turning them into DIY repair steps.",
+      "safeChecklist": [
+        "Record the MaxxAir model, serial number, control type, symptom, and which official video appears relevant.",
+        "Use official videos for identification and support context only.",
+        "Use qualified RV service for roof, motor, powered-lift, or electrical faults."
+      ],
+      "searchAliases": [
+        "maxxair technical service videos library prep",
+        "maxxair official video support prep",
+        "maxxair service support videos"
+      ],
+      "searchRequiredTerms": [
+        "maxxair+video",
+        "maxxair+technical+videos"
+      ],
+      "sourceIds": [
+        "maxxair-service-video-library"
+      ]
+    },
+    {
+      "id": "maxxair-mini-deluxe-control-prep",
+      "slug": "maxxair-mini-deluxe-control-prep",
+      "title": "MaxxAir Mini Deluxe Control Prep",
+      "summary": "Use this when a MaxxFan Mini Deluxe owner needs model and control notes before service.",
+      "safeChecklist": [
+        "Record the Mini Deluxe model, manual number, control position, lid position, fan behavior, and weather conditions.",
+        "Use only normal wall or unit controls from inside the RV.",
+        "Use qualified service for roof, fan motor, powered-lift, or electrical faults."
+      ],
+      "searchAliases": [
+        "maxxfan mini deluxe 10a03893z control prep",
+        "maxxair mini deluxe control prep",
+        "10a03893z mxfan mini deluxe iom"
+      ],
+      "searchRequiredTerms": [
+        "maxxfan+mini+deluxe",
+        "maxxair+mini+deluxe",
+        "10a03893z"
+      ],
+      "sourceIds": [
+        "maxxair-mini-deluxe-iom-10a03893z"
+      ]
+    },
+    {
+      "id": "maxxair-skymaxx-model-control-prep",
+      "slug": "maxxair-skymaxx-model-control-prep",
+      "title": "MaxxAir SkyMaxx Model and Control Prep",
+      "summary": "Use this when a SkyMaxx or SkyMaxx Plus owner needs model and control notes before support.",
+      "safeChecklist": [
+        "Record the SkyMaxx model, manual number, control type, lid position, fan behavior, and weather conditions.",
+        "Use only normal owner controls and visible condition checks from inside the RV.",
+        "Use qualified service for roof, fan motor, powered-lift, or electrical faults."
+      ],
+      "searchAliases": [
+        "skymaxx skymaxx plus iom 11b90014 maxxair prep",
+        "maxxair skymaxx model control prep",
+        "11b90014 skymaxx plus manual"
+      ],
+      "searchRequiredTerms": [
+        "skymaxx",
+        "11b90014"
+      ],
+      "sourceIds": [
+        "maxxair-skymaxx-iom-11b90014"
+      ]
+    },
+    {
+      "id": "suburban-sw6d-water-heater-model-prep",
+      "slug": "suburban-sw6d-water-heater-model-prep",
+      "title": "Suburban SW6D Water Heater Model Prep",
+      "summary": "Use this when identifying a Suburban SW6D 6-gallon water heater before support or replacement planning.",
+      "safeChecklist": [
+        "Record the SW6D model, serial number, rating label, switch position, water temperature complaint, and any light or odor.",
+        "Shut off LP and electric mode for odor, leakage, overheating, or repeated ignition failure.",
+        "Use qualified RV water-heater service for gas, electric, or repeated heating faults."
+      ],
+      "searchAliases": [
+        "suburban sw6d 5238a 6 gallon tank water heater prep",
+        "suburban sw6d water heater model prep",
+        "6 gallon advantage sw6d suburban"
+      ],
+      "searchRequiredTerms": [
+        "suburban+sw6d",
+        "sw6d+5238a"
+      ],
+      "sourceIds": [
+        "suburban-6-gallon-advantage-sw6d"
+      ]
+    },
+    {
+      "id": "suburban-sw10d-water-heater-model-prep",
+      "slug": "suburban-sw10d-water-heater-model-prep",
+      "title": "Suburban SW10D Water Heater Model Prep",
+      "summary": "Use this when identifying a Suburban SW10D 10-gallon water heater before support or replacement planning.",
+      "safeChecklist": [
+        "Record the SW10D model, serial number, rating label, switch position, water temperature complaint, and any light or odor.",
+        "Shut off LP and electric mode for odor, leakage, overheating, or repeated ignition failure.",
+        "Use qualified RV water-heater service for gas, electric, or repeated heating faults."
+      ],
+      "searchAliases": [
+        "suburban sw10d 5242a 10 gallon tank water heater prep",
+        "suburban sw10d water heater model prep",
+        "10 gallon advantage sw10d suburban"
+      ],
+      "searchRequiredTerms": [
+        "suburban+sw10d",
+        "sw10d+5242a"
+      ],
+      "sourceIds": [
+        "suburban-10-gallon-advantage-sw10d"
+      ]
+    },
+    {
+      "id": "suburban-st60-tankless-control-prep",
+      "slug": "suburban-st60-tankless-control-prep",
+      "title": "Suburban ST60 Tankless Control Prep",
+      "summary": "Use this when a Suburban ST60 tankless water heater needs model and control notes before service.",
+      "safeChecklist": [
+        "Record the ST60 model, serial number, control setting, water-flow symptom, LP status, and any displayed message.",
+        "Shut off LP, water, and power for odor, leakage, overheating, or repeated shutdown.",
+        "Use qualified RV tankless-water-heater service for gas, heating, or internal faults."
+      ],
+      "searchAliases": [
+        "suburban st60 5382a tankless water heater control prep",
+        "suburban st60 tankless control prep",
+        "st60 water heater model service prep"
+      ],
+      "searchRequiredTerms": [
+        "suburban+st60",
+        "st60+5382a"
+      ],
+      "sourceIds": [
+        "suburban-st60-tankless-water-heater"
+      ]
+    },
+    {
+      "id": "aquahot-375-p02-owner-manual-prep",
+      "slug": "aquahot-375-p02-owner-manual-prep",
+      "title": "Aqua-Hot 375-P02 Owner Manual Prep",
+      "summary": "Use this when an Aqua-Hot AHE-375-P02 owner manual source is needed for model, control, or service-call notes.",
+      "safeChecklist": [
+        "Record the AHE-375-P02 model, serial number, switch positions, indicator lights, hot-water symptom, and cabin-heat symptom.",
+        "Shut the system down for leakage, overheating, exhaust odor, or repeated fault behavior.",
+        "Use qualified Aqua-Hot service for diesel, hydronic, coolant, heating, or internal faults."
+      ],
+      "searchAliases": [
+        "aqua hot ahe 375 p02 owner manual prep",
+        "aquahot 375 p02 owner manual",
+        "ahe 375 p02 service prep"
+      ],
+      "searchRequiredTerms": [
+        "375+p02",
+        "ahe+375"
+      ],
+      "sourceIds": [
+        "aquahot-ahe-375-p02-owner-manual"
+      ]
+    },
+    {
+      "id": "aquahot-525-d-owner-manual-prep",
+      "slug": "aquahot-525-d-owner-manual-prep",
+      "title": "Aqua-Hot 525-D Owner Manual Prep",
+      "summary": "Use this when an Aqua-Hot 525-D owner manual source is needed for model, control, or service-call notes.",
+      "safeChecklist": [
+        "Record the 525-D model, serial number, switch positions, indicator lights, hot-water symptom, and cabin-heat symptom.",
+        "Shut the system down for leakage, overheating, exhaust odor, or repeated fault behavior.",
+        "Use qualified Aqua-Hot service for diesel, hydronic, coolant, heating, or internal faults."
+      ],
+      "searchAliases": [
+        "aqua hot 525 d rev a owner manual prep",
+        "aquahot 525 d owner manual",
+        "525 d aqua hot service prep"
+      ],
+      "searchRequiredTerms": [
+        "525+d",
+        "aqua+hot+525"
+      ],
+      "sourceIds": [
+        "aquahot-525-d-owner-manual"
+      ]
+    },
+    {
+      "id": "aquahot-gen1-diesel-gasoline-user-prep",
+      "slug": "aquahot-gen1-diesel-gasoline-user-prep",
+      "title": "Aqua-Hot GEN1 Diesel/Gasoline User Prep",
+      "summary": "Use this when an Aqua-Hot GEN1 diesel/gasoline user manual source is needed for owner notes before service.",
+      "safeChecklist": [
+        "Record the GEN1 model, serial number, fuel type, display state, hot-water symptom, cabin-heat symptom, and storage status.",
+        "Shut the system down for leakage, overheating, exhaust odor, or repeated fault behavior.",
+        "Use qualified Aqua-Hot service for fuel, exhaust, hydronic, coolant, heating, or internal faults."
+      ],
+      "searchAliases": [
+        "aqua hot gen1 na diesel gasoline user manual prep",
+        "aquahot gen1 diesel gasoline user prep",
+        "gen1 na diesel gasoline aqua hot manual"
+      ],
+      "searchRequiredTerms": [
+        "gen1+diesel",
+        "gen1+gasoline"
+      ],
+      "sourceIds": [
+        "aquahot-gen1-diesel-gasoline-user-manual-2023"
       ]
     }
   ],

@@ -3133,6 +3133,132 @@ test("lookup surfaces the next CFX5 Thetford Norcold MaxxAir Coleman Suburban Aq
   expect(pageErrors).toEqual([]);
 });
 
+test("lookup surfaces the next official Dometic cooler HVAC Thetford Norcold Coleman MaxxAir Suburban Aqua-Hot Furrion Greystone Girard and Onan batch", async ({
+  page,
+}) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    ["dometic cfx5 warranty statement prep", "/symptoms/dometic-cfx5-warranty-statement-prep/"],
+    ["dometic cfx5 stand on cooler weight prep", "/symptoms/dometic-cfx5-standing-load-prep/"],
+    ["dometic cfx5 battery protection system prep", "/symptoms/dometic-cfx5-battery-protection-system-prep/"],
+    ["dometic cfx5 power type dc ac prep", "/symptoms/dometic-cfx5-power-type-prep/"],
+    ["dometic cfx5 power cord parts prep", "/symptoms/dometic-cfx5-power-cord-parts-prep/"],
+    ["dometic cfx5 product registration prep", "/symptoms/dometic-cfx5-product-registration-prep/"],
+    ["dometic cfx5 solar power prep", "/symptoms/dometic-cfx5-solar-power-prep/"],
+    ["dometic cfx3 solar power prep", "/symptoms/dometic-cfx3-solar-power-prep/"],
+    ["dometic cfx3 warranty statement prep", "/symptoms/dometic-cfx3-warranty-statement-prep/"],
+    ["dometic cfx3 product registration prep", "/symptoms/dometic-cfx3-product-registration-prep/"],
+    ["dometic cfx3 power cord parts prep", "/symptoms/dometic-cfx3-power-cord-parts-prep/"],
+    ["dometic cff cooling range prep", "/symptoms/dometic-cff-cooling-range-prep/"],
+    ["dometic cff20 technical data prep", "/symptoms/dometic-cff20-technical-data-prep/"],
+    ["dometic cff food freezing too cold prep", "/symptoms/dometic-cff-too-cold-freezing-prep/"],
+    ["dometic cfx2 use cooler prep", "/symptoms/dometic-cfx2-use-cooler-prep/"],
+    ["dometic cfx2 set temperature prep", "/symptoms/dometic-cfx2-temperature-setting-prep/"],
+    ["dometic cfx2 not cooling prep", "/symptoms/dometic-cfx2-not-cooling-prep/"],
+    ["furrion fmam11aa air fry microwave control prep", "/symptoms/furrion-fmam11aa-air-fry-microwave-control-prep/"],
+    ["furrion furnace e2 error service prep", "/symptoms/furrion-furnace-e2-error-service-prep/"],
+    ["furrion furnace e3 e6 error service prep", "/symptoms/furrion-furnace-e3-e6-error-service-prep/"],
+    ["girard tankless e3 support video service prep", "/symptoms/girard-tankless-e3-video-service-prep/"],
+    ["greystone cf rvhob12 cooktop flame prep", "/symptoms/greystone-cf-rvhob12-cooktop-flame-prep/"],
+    ["greystone single induction hob cookware power prep", "/symptoms/greystone-single-induction-hob-power-cookware-prep/"],
+    ["onan p4500i overload led service prep", "/symptoms/onan-p4500i-overload-led-service-prep/"],
+    ["onan p4500idf fuel display service prep", "/symptoms/onan-p4500idf-fuel-display-service-prep/"],
+    ["dometic cfx5 alert lid open greater 3 min prep", "/symptoms/dometic-cfx5-lid-open-alert-prep/"],
+    ["dometic freshjet low air output prep", "/symptoms/dometic-freshjet-low-air-output-prep/"],
+    ["dometic freshjet roof air conditioner does not switch off prep", "/symptoms/dometic-freshjet-does-not-switch-off-prep/"],
+    ["dometic brisk ac maintain air filter prep", "/symptoms/dometic-brisk-air-filter-maintenance-prep/"],
+    ["dometic brisk rv air conditioner campsite operation prep", "/symptoms/dometic-brisk-campsite-power-operation-prep/"],
+    ["dometic harrier remote control does not register prep", "/symptoms/dometic-harrier-remote-not-registering-prep/"],
+    ["norcold 1200 series thetford support prep", "/symptoms/norcold-1200-series-support-prep/"],
+    ["norcold 1210 ultraline thetford support prep", "/symptoms/norcold-1210-ultraline-support-prep/"],
+    ["norcold n3000 series thetford support prep", "/symptoms/norcold-n3000-series-us-support-prep/"],
+    ["norcold ac lp refrigerator how level prep", "/symptoms/norcold-ac-lp-refrigerator-level-prep/"],
+    ["norcold refrigerator not cooling thetford faq prep", "/symptoms/norcold-refrigerator-not-cooling-faq-prep/"],
+    ["thetford toilet flush does not work faq prep", "/symptoms/thetford-toilet-flush-not-working-faq-prep/"],
+    ["coleman mach merv6 replacement air filters prep", "/symptoms/coleman-mach-merv6-filter-access-prep/"],
+    ["coleman mach chillgrille ezreach filter prep", "/symptoms/coleman-mach-chillgrille-filter-control-prep/"],
+    ["coleman mach carrier conversion rooftop adapter kit prep", "/symptoms/coleman-mach-carrier-conversion-service-prep/"],
+    ["maxxair technical service videos library prep", "/symptoms/maxxair-official-video-support-prep/"],
+    ["maxxfan mini deluxe 10a03893z control prep", "/symptoms/maxxair-mini-deluxe-control-prep/"],
+    ["skymaxx skymaxx plus iom 11b90014 maxxair prep", "/symptoms/maxxair-skymaxx-model-control-prep/"],
+    ["suburban sw6d 5238a 6 gallon tank water heater prep", "/symptoms/suburban-sw6d-water-heater-model-prep/"],
+    ["suburban sw10d 5242a 10 gallon tank water heater prep", "/symptoms/suburban-sw10d-water-heater-model-prep/"],
+    ["suburban st60 5382a tankless water heater control prep", "/symptoms/suburban-st60-tankless-control-prep/"],
+    ["aqua hot ahe 375 p02 owner manual prep", "/symptoms/aquahot-375-p02-owner-manual-prep/"],
+    ["aqua hot 525 d rev a owner manual prep", "/symptoms/aquahot-525-d-owner-manual-prep/"],
+    ["aqua hot gen1 na diesel gasoline user manual prep", "/symptoms/aquahot-gen1-diesel-gasoline-user-prep/"],
+    ["dometic cfx5 battery protection", "/symptoms/dometic-cfx5-battery-protection-system-prep/"],
+    ["dometic cfx2 not cooling", "/symptoms/dometic-cfx2-not-cooling-prep/"],
+    ["furrion furnace e2", "/symptoms/furrion-furnace-e2-error-service-prep/"],
+    ["girard tankless e3 support video", "/symptoms/girard-tankless-e3-video-service-prep/"],
+    ["greystone induction hob cookware", "/symptoms/greystone-single-induction-hob-power-cookware-prep/"],
+    ["suburban sw10d", "/symptoms/suburban-sw10d-water-heater-model-prep/"],
+    ["aqua hot 525 d", "/symptoms/aquahot-525-d-owner-manual-prep/"],
+    ["onan p4500idf", "/symptoms/onan-p4500idf-fuel-display-service-prep/"],
+  ] as const;
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+  }
+
+  for (const query of [
+    "warranty",
+    "registration",
+    "power",
+    "solar",
+    "battery protection",
+    "standing",
+    "temperature",
+    "not cooling",
+    "microwave",
+    "furnace",
+    "tankless",
+    "cooktop",
+    "induction",
+    "induction hob",
+    "generator",
+    "overload",
+    "fuel display",
+    "filter",
+    "merv6 filter",
+    "carrier",
+    "conversion",
+    "owner manual",
+    "service video",
+    "water heater",
+    "hydronic",
+    "mini deluxe",
+    "ac lp refrigerator level",
+  ]) {
+    await searchbox.fill(query);
+    for (const [, href] of cases) {
+      await expect(lookupResults.locator(`a[href="${href}"]`), `${query} -> ${href}`).toHaveCount(0);
+    }
+  }
+
+  await searchbox.fill("furrion fmam11aa air fry microwave control prep");
+  const microwave = lookupResults.locator('a[href="/symptoms/furrion-fmam11aa-air-fry-microwave-control-prep/"]');
+  await expect(microwave).toBeVisible();
+  await microwave.click();
+  await expect(page.getByRole("heading", { name: "Furrion FMAM11AA Air-Fry Microwave Control Prep" })).toBeVisible();
+  await expect(page.getByText(/Record the FMAM11AA model/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 
