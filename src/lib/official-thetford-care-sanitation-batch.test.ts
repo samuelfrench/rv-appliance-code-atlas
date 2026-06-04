@@ -3,8 +3,8 @@ import corpus from "../data/corpus.json";
 import { buildSymptomSearchIndex, lookupSymptomGuides, summarizeCorpus } from "./corpus";
 
 const expectedEntryCount = 864;
-const expectedSourceCount = 1224;
-const expectedSymptomCount = 1052;
+const expectedSourceCount = 1245;
+const expectedSymptomCount = 1073;
 
 const officialCareAndScoutBatch = [
   ["thetford-waste-treatments-product-group", "https://www.thetford.com/us/rv-tank-treatments/waste-treatments/", "thetford-waste-treatments-holding-tank-prep", ["thetford+waste+treatments", "aqua+kem"], "thetford waste treatments aqua kem aquabio campa fresh"],

@@ -3,8 +3,8 @@ import corpus from "../data/corpus.json";
 import { buildSymptomSearchIndex, lookupSymptomGuides, summarizeCorpus } from "./corpus";
 
 const expectedEntryCount = 864;
-const expectedSourceCount = 1224;
-const expectedSymptomCount = 1052;
+const expectedSourceCount = 1245;
+const expectedSymptomCount = 1073;
 
 const dometicAppHvacBatch = [
   ["dometic-cfx5-app-graph-support", "https://support.dometic.com/en/cfx5-coolers/How-do-I-read-the-graph-in-the-CFX5-app-5423", "dometic-cfx5-app-graph-prep", ["cfx5+app+graph", "dometic+cfx5+app+graph"], "cfx5 app graph 5423 cooler"],

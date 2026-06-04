@@ -3820,3 +3820,112 @@ test("lookup surfaces the official Thetford care and scout follow-up batch witho
   expect(consoleErrors).toEqual([]);
   expect(pageErrors).toEqual([]);
 });
+
+test("lookup surfaces the official remaining scout batch without generic hijacks", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    ["Dometic FreshJet clean roof air conditioner cd8f", "/symptoms/dometic-freshjet-clean-roof-ac-prep/"],
+    ["Dometic FreshJet ideal air conditioning temperature 4b6", "/symptoms/dometic-freshjet-ideal-temperature-prep/"],
+    ["Dometic Brisk how to control Auxiliary Heat bcdc", "/symptoms/dometic-brisk-auxiliary-heat-control-prep/"],
+    ["Dometic Brisk how to control Stage Control 565e", "/symptoms/dometic-brisk-stage-control-prep/"],
+    ["Thetford Aqua Soft single roll tank safe toilet paper", "/symptoms/thetford-aqua-soft-single-roll-tank-safe-prep/"],
+    [
+      "Furrion 9K 12K BTU rooftop air conditioner user manual IM-FAV00124",
+      "/symptoms/furrion-9k-12k-rooftop-ac-control-model-prep/",
+    ],
+    [
+      "Furrion enhanced standard single-zone controller 2 fan speed",
+      "/symptoms/furrion-enhanced-single-zone-controller-prep/",
+    ],
+    ["Furrion Chill HE 15K RV roof air conditioner", "/symptoms/furrion-chill-he-15k-roof-ac-model-prep/"],
+    [
+      "Furrion 15.6 cu ft Arctic 12V side-by-side refrigerator CCD-0005509",
+      "/symptoms/furrion-15-6-arctic-side-by-side-refrigerator-prep/",
+    ],
+    [
+      "Furrion Arctic 12V French Door refrigerator CCD-0007862",
+      "/symptoms/furrion-arctic-french-door-refrigerator-prep/",
+    ],
+    [
+      "Furrion 15 cu ft built-in frost-free refrigerator-freezer CCD-0009151",
+      "/symptoms/furrion-15-built-in-frost-free-refrigerator-prep/",
+    ],
+    ["Furrion 50Q electric cooler user manual CCD-0005610", "/symptoms/furrion-50q-electric-cooler-model-prep/"],
+    [
+      "Furrion 3.3 cu ft single-door mini refrigerator CCD-0008637",
+      "/symptoms/furrion-3-3-mini-refrigerator-prep/",
+    ],
+    [
+      "Furrion Arctic 8 cu ft dual-swing refrigerator CCD-0007849",
+      "/symptoms/furrion-arctic-8-dual-swing-refrigerator-prep/",
+    ],
+    [
+      "Furrion Arctic 10.7 cu ft drawer-freezer refrigerator CCD-0007851",
+      "/symptoms/furrion-arctic-10-7-drawer-freezer-refrigerator-prep/",
+    ],
+    [
+      "Furrion Arctic 12 cu ft bottom-freezer French Door refrigerator CCD-0008955",
+      "/symptoms/furrion-arctic-12-bottom-freezer-french-door-prep/",
+    ],
+    ["Furrion FCR16ACGFA operation mode settings video", "/symptoms/furrion-fcr16acgfa-operation-mode-settings-prep/"],
+    ["Furrion FCR20DCAFA proper storage video", "/symptoms/furrion-fcr20dcafa-storage-prep/"],
+    ["Aqua-Hot AHE-600-D04 Use and Care Guide", "/symptoms/aquahot-600-d04-use-care-service-prep/"],
+    ["Shop Cummins contact support Onan generator", "/symptoms/onan-cummins-shop-contact-support-prep/"],
+    [
+      "Genuine Cummins parts information FAQs Onan generator",
+      "/symptoms/onan-cummins-genuine-parts-faq-prep/",
+    ],
+  ] as const;
+  const protectedHrefs = cases.map(([, href]) => href);
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+  }
+
+  for (const query of [
+    "clean roof air conditioner",
+    "ideal air conditioning temperature",
+    "auxiliary heat",
+    "stage control",
+    "single roll",
+    "rooftop air conditioner user manual",
+    "roof air conditioner",
+    "single zone controller",
+    "2 fan speed",
+    "furrion 2 fan speed",
+    "refrigerator manual",
+    "operation mode settings",
+    "proper storage",
+    "furrion proper storage",
+    "use and care guide",
+    "contact support",
+    "parts FAQ",
+  ]) {
+    await searchbox.fill(query);
+    for (const href of protectedHrefs) {
+      await expect(lookupResults.locator(`a[href="${href}"]`), `${query} -> ${href}`).toHaveCount(0);
+    }
+  }
+
+  await searchbox.fill("Thetford Aqua Soft single roll tank safe toilet paper");
+  const aquaSoft = lookupResults.locator('a[href="/symptoms/thetford-aqua-soft-single-roll-tank-safe-prep/"]');
+  await expect(aquaSoft).toBeVisible();
+  await aquaSoft.click();
+  await expect(page.getByRole("heading", { name: "Thetford Aqua Soft single-roll tank-safe prep" })).toBeVisible();
+  await expect(page.getByText(/Record the Aqua Soft product/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});

@@ -2,7 +2,7 @@
   "site": {
     "name": "RV Appliance Code Atlas",
     "baseUrl": "https://rvappliancefaultcodes.com",
-    "generatedAt": "2026-06-04T06:46:58-05:00",
+    "generatedAt": "2026-06-04T12:30:54.960Z",
     "safetyBoundary": "Use this atlas to identify likely meaning and prepare for service. Shut off power, LP gas, fuel, or water when a listed appliance condition involves flame, gas smell, exhaust, generator shutdown, high temperature, moving jacks/slides, refrigerant, 120 VAC, control boards, repeated ignition failure, or a persistent lockout. Call the appliance maker, RV dealer, or a qualified RV technician for repair.",
     "searchConsole": {
       "propertyType": "URL_PREFIX",
@@ -9816,6 +9816,174 @@
       "title": "Shop Cummins Warranty Information",
       "url": "https://shop.cummins.com/SC/c/warranty-information-MCJG7MQZ6FRRA6LHZR3KISINXBXA",
       "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-freshjet-clean-roof-ac-support",
+      "brand": "Dometic",
+      "title": "Dometic FreshJet Clean the Roof Air Conditioner Support",
+      "url": "https://support.dometic.com/en/freshjet-ac/How-to-Clean-the-roof-air-conditioner-cd8f",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-freshjet-ideal-temperature-support",
+      "brand": "Dometic",
+      "title": "Dometic FreshJet Ideal Air Conditioning Temperature Support",
+      "url": "https://support.dometic.com/en/freshjet-ac/What-is-the-ideal-air-conditioning-temperature-4b6",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-brisk-auxiliary-heat-control-support",
+      "brand": "Dometic",
+      "title": "Dometic Brisk Auxiliary Heat Control Support",
+      "url": "https://support.dometic.com/en/brisk-ac/How-to-control-Auxiliary-Heat-bcdc",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-brisk-stage-control-support",
+      "brand": "Dometic",
+      "title": "Dometic Brisk Stage Control Support",
+      "url": "https://support.dometic.com/en/brisk-ac/How-to-control-Stage-Control-565e",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-aqua-soft-single-roll-support",
+      "brand": "Thetford",
+      "title": "Thetford Aqua Soft Single Roll Support",
+      "url": "https://www.thetford.com/us/thetford-support/aqua-soft-single-roll/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-9k-12k-rooftop-ac-user-manual-im-fav00124",
+      "brand": "Furrion",
+      "title": "Furrion 9K and 12K BTU Rooftop Air Conditioner User Manual IM-FAV00124",
+      "url": "https://support.lci1.com/documents/furrion-9k-and-12k-btu-rooftop-air-conditioner-user-manual-im-fav00124-v1.0",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-enhanced-single-zone-controller-document",
+      "brand": "Furrion",
+      "title": "Furrion Enhanced Standard Single-Zone Controller Document",
+      "url": "https://support.lci1.com/documents/furrion-enhanced-standard-single-zone-controller-for-chill-air-conditioner-system-with-2-fan-speed",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-chill-he-15k-roof-ac-document",
+      "brand": "Furrion",
+      "title": "Furrion Chill HE 15K RV Roof Air Conditioner Document",
+      "url": "https://support.lci1.com/documents/furrion-chill-he-15k-rv-roof-air-conditioner",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-15-6-arctic-side-by-side-refrigerator-manual",
+      "brand": "Furrion",
+      "title": "Furrion 15.6 Cu Ft Arctic Side-by-Side Refrigerator Manual CCD-0005509",
+      "url": "https://support.lci1.com/documents/furrion-ccd-0005509",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-arctic-french-door-refrigerator-manual-ccd0007862",
+      "brand": "Furrion",
+      "title": "Furrion Arctic 12V French Door Refrigerator Manual CCD-0007862",
+      "url": "https://support.lci1.com/documents/ccd-0007862",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-15-built-in-frost-free-refrigerator-manual",
+      "brand": "Furrion",
+      "title": "Furrion 15 Cu Ft Built-In Frost-Free Refrigerator-Freezer Manual CCD-0009151",
+      "url": "https://support.lci1.com/documents/ccd-0009151",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-50q-electric-cooler-manual",
+      "brand": "Furrion",
+      "title": "Furrion 50Q Electric Cooler User Manual CCD-0005610",
+      "url": "https://support.lci1.com/documents/ccd-0005610",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-3-3-mini-refrigerator-manual",
+      "brand": "Furrion",
+      "title": "Furrion 3.3 Cu Ft Single-Door Mini Refrigerator Manual CCD-0008637",
+      "url": "https://support.lci1.com/documents/ccd-0008637",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-arctic-8-dual-swing-refrigerator-manual",
+      "brand": "Furrion",
+      "title": "Furrion Arctic 8 Cu Ft Dual-Swing Refrigerator Manual CCD-0007849",
+      "url": "https://support.lci1.com/documents/ccd-0007849",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-arctic-10-7-drawer-freezer-refrigerator-manual",
+      "brand": "Furrion",
+      "title": "Furrion Arctic 10.7 Cu Ft Drawer-Freezer Refrigerator Manual CCD-0007851",
+      "url": "https://support.lci1.com/documents/ccd-0007851",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-arctic-12-bottom-freezer-french-door-manual",
+      "brand": "Furrion",
+      "title": "Furrion Arctic 12 Cu Ft Bottom-Freezer French Door Refrigerator Manual CCD-0008955",
+      "url": "https://support.lci1.com/documents/ccd-0008955",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-fcr16acgfa-operation-mode-settings-video",
+      "brand": "Furrion",
+      "title": "Furrion FCR16ACGFA Operation Mode Settings Video",
+      "url": "https://support.lci1.com/videos/how-to-change-operation-mode-settings-on-fcr16acgfa-furrion-refrigerator",
+      "type": "manufacturer-support-video",
+      "official": true
+    },
+    {
+      "id": "furrion-fcr20dcafa-storage-video",
+      "brand": "Furrion",
+      "title": "Furrion FCR20DCAFA Proper Storage Video",
+      "url": "https://support.lci1.com/videos/proper-storage-of-a-furrion-model-fcr20dcafa-refrigerator",
+      "type": "manufacturer-support-video",
+      "official": true
+    },
+    {
+      "id": "aquahot-600-d04-use-care-guide",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot AHE-600-D04 Use and Care Guide",
+      "url": "https://library.aquahot.com/wp-content/uploads/2022/04/AHE-600-D04-Use-and-Care-Guide.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "cummins-shop-contact-support",
+      "brand": "Onan",
+      "title": "Shop Cummins Contact Support",
+      "url": "https://shop.cummins.com/SC/contact-us",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "cummins-genuine-parts-faq",
+      "brand": "Onan",
+      "title": "Genuine Cummins Parts Information and FAQs",
+      "url": "https://shop.cummins.com/SC/knowledge-hub/d-us/genuine-cummins-parts-information-and-faqs-MC7LKLCN7FQFCX7PGOANFZBWN5UA",
+      "type": "manufacturer-faq",
       "official": true
     }
   ],
@@ -65994,6 +66162,489 @@
       "searchRequiredTerms": [
         "cummins+onan+warranty",
         "shop+cummins+warranty"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-clean-roof-ac-prep",
+      "slug": "dometic-freshjet-clean-roof-ac-prep",
+      "title": "Dometic FreshJet cleaning service prep",
+      "summary": "Use the official Dometic FreshJet cleaning support page to capture cleaning and service-prep details before treating poor airflow or dirty components as a fault.",
+      "safeChecklist": [
+        "Record the FreshJet model, filter condition, visible debris, recent travel conditions, control setting, and whether airflow changed after normal owner cleaning.",
+        "Save photos of the control display, safe visible model label or paperwork, and the Dometic support title you matched.",
+        "Keep installed AC equipment, sealed cooling-system parts, and high-power components for qualified RV HVAC service; shut the unit down if safety is uncertain."
+      ],
+      "sourceIds": [
+        "dometic-freshjet-clean-roof-ac-support"
+      ],
+      "searchAliases": [
+        "Dometic FreshJet clean roof air conditioner cd8f",
+        "dometic freshjet cleaning service prep",
+        "freshjet clean air conditioner support cd8f"
+      ],
+      "searchRequiredTerms": [
+        "dometic+freshjet+clean+roof",
+        "freshjet+clean+cd8f"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-ideal-temperature-prep",
+      "slug": "dometic-freshjet-ideal-temperature-prep",
+      "title": "Dometic FreshJet temperature expectation prep",
+      "summary": "Use the official Dometic FreshJet temperature support page to compare comfort expectations, setpoint, and site conditions before assuming a cooling fault.",
+      "safeChecklist": [
+        "Record the FreshJet model, indoor temperature, outdoor temperature, selected mode, setpoint, fan setting, shade exposure, and how long the unit has been running.",
+        "Save photos of the control display, thermometer reading if available, safe visible model label or paperwork, and the Dometic support title you matched.",
+        "Use qualified RV HVAC service for repeat shutdowns, water intrusion, abnormal sound, odor, or cooling loss that does not match normal support guidance."
+      ],
+      "sourceIds": [
+        "dometic-freshjet-ideal-temperature-support"
+      ],
+      "searchAliases": [
+        "Dometic FreshJet ideal air conditioning temperature 4b6",
+        "dometic freshjet ideal temperature prep",
+        "freshjet air conditioning temperature support 4b6"
+      ],
+      "searchRequiredTerms": [
+        "dometic+freshjet+ideal+temperature",
+        "freshjet+temperature+4b6"
+      ]
+    },
+    {
+      "id": "dometic-brisk-auxiliary-heat-control-prep",
+      "slug": "dometic-brisk-auxiliary-heat-control-prep",
+      "title": "Dometic Brisk auxiliary heat control prep",
+      "summary": "Use the official Dometic Brisk auxiliary-heat support page to identify the control setting and operating context before support contact.",
+      "safeChecklist": [
+        "Record the Brisk model, thermostat model, selected mode, setpoint, room temperature, displayed state, and whether auxiliary heat appears as an available control option.",
+        "Save photos of the thermostat display, safe visible model label or paperwork, and the Dometic support title you matched.",
+        "Keep installed heating and AC equipment service for qualified RV HVAC service; shut the unit down if safety is uncertain."
+      ],
+      "sourceIds": [
+        "dometic-brisk-auxiliary-heat-control-support"
+      ],
+      "searchAliases": [
+        "Dometic Brisk how to control Auxiliary Heat bcdc",
+        "dometic brisk auxiliary heat control prep",
+        "brisk auxiliary heat support bcdc"
+      ],
+      "searchRequiredTerms": [
+        "dometic+brisk+auxiliary+heat",
+        "auxiliary+heat+bcdc"
+      ]
+    },
+    {
+      "id": "dometic-brisk-stage-control-prep",
+      "slug": "dometic-brisk-stage-control-prep",
+      "title": "Dometic Brisk stage control prep",
+      "summary": "Use the official Dometic Brisk stage-control support page to capture stage-control behavior and thermostat context before support contact.",
+      "safeChecklist": [
+        "Record the Brisk model, thermostat model, selected mode, displayed stage, setpoint, room temperature, and which zones or stages appear active.",
+        "Save photos of the thermostat display, safe visible model label or paperwork, and the Dometic support title you matched.",
+        "Use qualified RV HVAC service for repeat shutdowns, abnormal sound, odor, water intrusion, or cooling and heating loss outside normal control guidance."
+      ],
+      "sourceIds": [
+        "dometic-brisk-stage-control-support"
+      ],
+      "searchAliases": [
+        "Dometic Brisk how to control Stage Control 565e",
+        "dometic brisk stage control prep",
+        "brisk stage control support 565e"
+      ],
+      "searchRequiredTerms": [
+        "dometic+brisk+stage+control",
+        "stage+control+565e"
+      ]
+    },
+    {
+      "id": "thetford-aqua-soft-single-roll-tank-safe-prep",
+      "slug": "thetford-aqua-soft-single-roll-tank-safe-prep",
+      "title": "Thetford Aqua Soft single-roll tank-safe prep",
+      "summary": "Use the official Thetford Aqua Soft single-roll support page to confirm tank-safe paper choice before treating repeat clogs or slow draining as an equipment fault.",
+      "safeChecklist": [
+        "Record the Aqua Soft product, toilet model, flush-water amount, tank treatment used, and when slow-drain or clog symptoms appear.",
+        "Save photos of the packaging, toilet model paperwork, and the Thetford support title you matched.",
+        "Avoid forcing stuck sanitation parts; use Thetford support or qualified RV service for repeat clogs, leakage, damaged seals, or backup symptoms."
+      ],
+      "sourceIds": [
+        "thetford-aqua-soft-single-roll-support"
+      ],
+      "searchAliases": [
+        "Thetford Aqua Soft single roll tank safe toilet paper",
+        "thetford aqua soft single roll tank safe prep",
+        "thetford aqua soft rv toilet paper support"
+      ],
+      "searchRequiredTerms": [
+        "thetford+aqua+soft",
+        "aqua+soft+single+roll"
+      ]
+    },
+    {
+      "id": "furrion-9k-12k-rooftop-ac-control-model-prep",
+      "slug": "furrion-9k-12k-rooftop-ac-control-model-prep",
+      "title": "Furrion 9K/12K AC control and model prep",
+      "summary": "Use the official Furrion 9K and 12K BTU air-conditioner manual to capture model, control, and owner-operation context before support contact.",
+      "safeChecklist": [
+        "Record the Furrion model, document number, control type, selected mode, display state, airflow symptom, and power source shown by normal owner controls.",
+        "Save photos of the control display, safe visible model label or paperwork, and the Lippert support document title.",
+        "Keep installed AC equipment, sealed cooling-system parts, and high-power components for qualified RV HVAC service; shut the unit down if safety is uncertain."
+      ],
+      "sourceIds": [
+        "furrion-9k-12k-rooftop-ac-user-manual-im-fav00124"
+      ],
+      "searchAliases": [
+        "Furrion 9K 12K BTU rooftop air conditioner user manual IM-FAV00124",
+        "furrion 9k 12k ac control model prep",
+        "furrion im fav00124 manual prep"
+      ],
+      "searchRequiredTerms": [
+        "furrion+9k+12k+rooftop",
+        "im+fav00124"
+      ]
+    },
+    {
+      "id": "furrion-enhanced-single-zone-controller-prep",
+      "slug": "furrion-enhanced-single-zone-controller-prep",
+      "title": "Furrion enhanced single-zone controller prep",
+      "summary": "Use the official Furrion enhanced single-zone controller document to identify the controller version and mode behavior before support contact.",
+      "safeChecklist": [
+        "Record the Furrion controller model, fan-speed version, selected mode, displayed state, setpoint, room temperature, and connected AC model if listed in paperwork.",
+        "Save photos of the controller display, safe visible model label or paperwork, and the Lippert support document title.",
+        "Use Lippert/Furrion support or qualified RV HVAC service for repeat shutdowns, no response, abnormal sound, odor, or cooling and heating loss."
+      ],
+      "sourceIds": [
+        "furrion-enhanced-single-zone-controller-document"
+      ],
+      "searchAliases": [
+        "Furrion enhanced standard single-zone controller 2 fan speed",
+        "furrion enhanced single zone controller prep",
+        "furrion chill controller two fan speed document"
+      ],
+      "searchRequiredTerms": [
+        "furrion+enhanced+single+zone",
+        "furrion+enhanced+2+fan+speed"
+      ]
+    },
+    {
+      "id": "furrion-chill-he-15k-roof-ac-model-prep",
+      "slug": "furrion-chill-he-15k-roof-ac-model-prep",
+      "title": "Furrion Chill HE 15K AC model prep",
+      "summary": "Use the official Furrion Chill HE 15K air-conditioner document to capture model-family details before support contact.",
+      "safeChecklist": [
+        "Record the Chill HE 15K model, control type, selected mode, display state, airflow symptom, and power source shown by normal owner controls.",
+        "Save photos of the control display, safe visible model label or paperwork, and the Lippert support document title.",
+        "Keep installed AC equipment, sealed cooling-system parts, and high-power components for qualified RV HVAC service; shut the unit down if safety is uncertain."
+      ],
+      "sourceIds": [
+        "furrion-chill-he-15k-roof-ac-document"
+      ],
+      "searchAliases": [
+        "Furrion Chill HE 15K RV roof air conditioner",
+        "furrion chill he 15k roof ac model prep",
+        "furrion chill he 15k ac document prep"
+      ],
+      "searchRequiredTerms": [
+        "furrion+chill+he+15k",
+        "furrion+chill+he+roof+air+conditioner"
+      ]
+    },
+    {
+      "id": "furrion-15-6-arctic-side-by-side-refrigerator-prep",
+      "slug": "furrion-15-6-arctic-side-by-side-refrigerator-prep",
+      "title": "Furrion 15.6 Arctic refrigerator prep",
+      "summary": "Use the official Furrion 15.6 cu ft Arctic side-by-side refrigerator manual to capture model, control, and storage details before support contact.",
+      "safeChecklist": [
+        "Record the refrigerator model, document number, control setting, displayed state, door status, storage state, and symptom timing.",
+        "Save photos of the control panel, safe visible model label or paperwork, and the Lippert support document title.",
+        "Use Lippert/Furrion support or qualified RV appliance service for repeat shutdowns, no cooling, abnormal sound, odor, leakage, or unsafe operation."
+      ],
+      "sourceIds": [
+        "furrion-15-6-arctic-side-by-side-refrigerator-manual"
+      ],
+      "searchAliases": [
+        "Furrion 15.6 cu ft Arctic 12V side-by-side refrigerator CCD-0005509",
+        "furrion 15 6 arctic side by side refrigerator prep",
+        "furrion ccd 0005509 refrigerator manual prep"
+      ],
+      "searchRequiredTerms": [
+        "furrion+15+6+arctic",
+        "ccd+0005509"
+      ]
+    },
+    {
+      "id": "furrion-arctic-french-door-refrigerator-prep",
+      "slug": "furrion-arctic-french-door-refrigerator-prep",
+      "title": "Furrion Arctic French Door refrigerator prep",
+      "summary": "Use the official Furrion Arctic 12V French Door refrigerator manual to capture model, control, and storage details before support contact.",
+      "safeChecklist": [
+        "Record the refrigerator model, document number, control setting, displayed state, door status, storage state, and symptom timing.",
+        "Save photos of the control panel, safe visible model label or paperwork, and the Lippert support document title.",
+        "Use Lippert/Furrion support or qualified RV appliance service for repeat shutdowns, no cooling, abnormal sound, odor, leakage, or unsafe operation."
+      ],
+      "sourceIds": [
+        "furrion-arctic-french-door-refrigerator-manual-ccd0007862"
+      ],
+      "searchAliases": [
+        "Furrion Arctic 12V French Door refrigerator CCD-0007862",
+        "furrion arctic french door refrigerator prep",
+        "furrion ccd 0007862 refrigerator manual prep"
+      ],
+      "searchRequiredTerms": [
+        "furrion+arctic+french+door",
+        "ccd+0007862"
+      ]
+    },
+    {
+      "id": "furrion-15-built-in-frost-free-refrigerator-prep",
+      "slug": "furrion-15-built-in-frost-free-refrigerator-prep",
+      "title": "Furrion 15 cu ft refrigerator prep",
+      "summary": "Use the official Furrion 15 cu ft built-in frost-free refrigerator-freezer manual to capture model, control, and storage details before support contact.",
+      "safeChecklist": [
+        "Record the refrigerator model, document number, control setting, displayed state, door status, storage state, and symptom timing.",
+        "Save photos of the control panel, safe visible model label or paperwork, and the Lippert support document title.",
+        "Use Lippert/Furrion support or qualified RV appliance service for repeat shutdowns, no cooling, abnormal sound, odor, leakage, or unsafe operation."
+      ],
+      "sourceIds": [
+        "furrion-15-built-in-frost-free-refrigerator-manual"
+      ],
+      "searchAliases": [
+        "Furrion 15 cu ft built-in frost-free refrigerator-freezer CCD-0009151",
+        "furrion 15 built in frost free refrigerator prep",
+        "furrion ccd 0009151 refrigerator manual prep"
+      ],
+      "searchRequiredTerms": [
+        "furrion+15+built+in+frost+free",
+        "ccd+0009151"
+      ]
+    },
+    {
+      "id": "furrion-50q-electric-cooler-model-prep",
+      "slug": "furrion-50q-electric-cooler-model-prep",
+      "title": "Furrion 50Q electric cooler model prep",
+      "summary": "Use the official Furrion 50Q electric cooler manual to capture model, control, and power-mode details before support contact.",
+      "safeChecklist": [
+        "Record the cooler model, document number, power source selected by the normal owner controls, temperature setting, displayed state, and symptom timing.",
+        "Save photos of the control panel, safe visible model label or paperwork, and the Lippert support document title.",
+        "Use Lippert/Furrion support or qualified RV appliance service for repeat shutdowns, no cooling, abnormal sound, odor, leakage, or unsafe operation."
+      ],
+      "sourceIds": [
+        "furrion-50q-electric-cooler-manual"
+      ],
+      "searchAliases": [
+        "Furrion 50Q electric cooler user manual CCD-0005610",
+        "furrion 50q electric cooler model prep",
+        "furrion ccd 0005610 electric cooler manual prep"
+      ],
+      "searchRequiredTerms": [
+        "furrion+50q+electric+cooler",
+        "ccd+0005610"
+      ]
+    },
+    {
+      "id": "furrion-3-3-mini-refrigerator-prep",
+      "slug": "furrion-3-3-mini-refrigerator-prep",
+      "title": "Furrion 3.3 mini refrigerator prep",
+      "summary": "Use the official Furrion 3.3 cu ft single-door mini refrigerator manual to capture model, setup, and storage details before support contact.",
+      "safeChecklist": [
+        "Record the mini refrigerator model, document number, temperature setting, displayed state if present, door status, storage state, and symptom timing.",
+        "Save photos of the control area, safe visible model label or paperwork, and the Lippert support document title.",
+        "Use Lippert/Furrion support or qualified RV appliance service for repeat shutdowns, no cooling, abnormal sound, odor, leakage, or unsafe operation."
+      ],
+      "sourceIds": [
+        "furrion-3-3-mini-refrigerator-manual"
+      ],
+      "searchAliases": [
+        "Furrion 3.3 cu ft single-door mini refrigerator CCD-0008637",
+        "furrion 3 3 mini refrigerator prep",
+        "furrion ccd 0008637 mini refrigerator manual prep"
+      ],
+      "searchRequiredTerms": [
+        "furrion+3+3+mini+refrigerator",
+        "ccd+0008637"
+      ]
+    },
+    {
+      "id": "furrion-arctic-8-dual-swing-refrigerator-prep",
+      "slug": "furrion-arctic-8-dual-swing-refrigerator-prep",
+      "title": "Furrion Arctic 8 dual-swing refrigerator prep",
+      "summary": "Use the official Furrion Arctic 8 cu ft dual-swing refrigerator manual to capture model, control, and storage details before support contact.",
+      "safeChecklist": [
+        "Record the refrigerator model, document number, control setting, displayed state, door-swing configuration, storage state, and symptom timing.",
+        "Save photos of the control panel, safe visible model label or paperwork, and the Lippert support document title.",
+        "Use Lippert/Furrion support or qualified RV appliance service for repeat shutdowns, no cooling, abnormal sound, odor, leakage, or unsafe operation."
+      ],
+      "sourceIds": [
+        "furrion-arctic-8-dual-swing-refrigerator-manual"
+      ],
+      "searchAliases": [
+        "Furrion Arctic 8 cu ft dual-swing refrigerator CCD-0007849",
+        "furrion arctic 8 dual swing refrigerator prep",
+        "furrion ccd 0007849 refrigerator manual prep"
+      ],
+      "searchRequiredTerms": [
+        "furrion+arctic+8+dual+swing",
+        "ccd+0007849"
+      ]
+    },
+    {
+      "id": "furrion-arctic-10-7-drawer-freezer-refrigerator-prep",
+      "slug": "furrion-arctic-10-7-drawer-freezer-refrigerator-prep",
+      "title": "Furrion Arctic 10.7 drawer-freezer prep",
+      "summary": "Use the official Furrion Arctic 10.7 cu ft drawer-freezer refrigerator manual to capture model, control, and storage details before support contact.",
+      "safeChecklist": [
+        "Record the refrigerator model, document number, control setting, displayed state, drawer status, storage state, and symptom timing.",
+        "Save photos of the control panel, safe visible model label or paperwork, and the Lippert support document title.",
+        "Use Lippert/Furrion support or qualified RV appliance service for repeat shutdowns, no cooling, abnormal sound, odor, leakage, or unsafe operation."
+      ],
+      "sourceIds": [
+        "furrion-arctic-10-7-drawer-freezer-refrigerator-manual"
+      ],
+      "searchAliases": [
+        "Furrion Arctic 10.7 cu ft drawer-freezer refrigerator CCD-0007851",
+        "furrion arctic 10 7 drawer freezer refrigerator prep",
+        "furrion ccd 0007851 refrigerator manual prep"
+      ],
+      "searchRequiredTerms": [
+        "furrion+arctic+10+7+drawer",
+        "ccd+0007851"
+      ]
+    },
+    {
+      "id": "furrion-arctic-12-bottom-freezer-french-door-prep",
+      "slug": "furrion-arctic-12-bottom-freezer-french-door-prep",
+      "title": "Furrion Arctic 12 bottom-freezer French Door prep",
+      "summary": "Use the official Furrion Arctic 12 cu ft bottom-freezer French Door refrigerator manual to capture model, control, and storage details before support contact.",
+      "safeChecklist": [
+        "Record the refrigerator model, document number, control setting, displayed state, door and freezer status, storage state, and symptom timing.",
+        "Save photos of the control panel, safe visible model label or paperwork, and the Lippert support document title.",
+        "Use Lippert/Furrion support or qualified RV appliance service for repeat shutdowns, no cooling, abnormal sound, odor, leakage, or unsafe operation."
+      ],
+      "sourceIds": [
+        "furrion-arctic-12-bottom-freezer-french-door-manual"
+      ],
+      "searchAliases": [
+        "Furrion Arctic 12 cu ft bottom-freezer French Door refrigerator CCD-0008955",
+        "furrion arctic 12 bottom freezer french door prep",
+        "furrion ccd 0008955 refrigerator manual prep"
+      ],
+      "searchRequiredTerms": [
+        "furrion+arctic+12+bottom+freezer",
+        "ccd+0008955"
+      ]
+    },
+    {
+      "id": "furrion-fcr16acgfa-operation-mode-settings-prep",
+      "slug": "furrion-fcr16acgfa-operation-mode-settings-prep",
+      "title": "Furrion FCR16ACGFA operation-mode prep",
+      "summary": "Use the official Lippert Furrion FCR16ACGFA operation-mode video to capture mode settings and control context before support contact.",
+      "safeChecklist": [
+        "Record the FCR16ACGFA model, current mode, temperature setting, displayed state, door status, storage state, and symptom timing.",
+        "Save photos of the control panel, safe visible model label or paperwork, and the Lippert support video title.",
+        "Use Lippert/Furrion support or qualified RV appliance service for repeat shutdowns, no cooling, abnormal sound, odor, leakage, or unsafe operation."
+      ],
+      "sourceIds": [
+        "furrion-fcr16acgfa-operation-mode-settings-video"
+      ],
+      "searchAliases": [
+        "Furrion FCR16ACGFA operation mode settings video",
+        "furrion fcr16acgfa operation mode settings prep",
+        "fcr16acgfa change operation mode settings"
+      ],
+      "searchRequiredTerms": [
+        "furrion+fcr16acgfa+operation+mode",
+        "fcr16acgfa+operation+settings"
+      ]
+    },
+    {
+      "id": "furrion-fcr20dcafa-storage-prep",
+      "slug": "furrion-fcr20dcafa-storage-prep",
+      "title": "Furrion FCR20DCAFA storage prep",
+      "summary": "Use the official Lippert Furrion FCR20DCAFA storage video to capture storage state and restart context before support contact.",
+      "safeChecklist": [
+        "Record the FCR20DCAFA model, storage duration, door position, cleanliness, dryness, temperature setting, and any symptom seen after restart.",
+        "Save photos of the control panel, safe visible model label or paperwork, and the Lippert support video title.",
+        "Use Lippert/Furrion support or qualified RV appliance service for repeat shutdowns, no cooling, abnormal sound, odor, leakage, or unsafe operation."
+      ],
+      "sourceIds": [
+        "furrion-fcr20dcafa-storage-video"
+      ],
+      "searchAliases": [
+        "Furrion FCR20DCAFA proper storage video",
+        "furrion fcr20dcafa storage prep",
+        "proper storage of a furrion model fcr20dcafa refrigerator"
+      ],
+      "searchRequiredTerms": [
+        "furrion+fcr20dcafa+storage",
+        "furrion+fcr20dcafa+proper+storage"
+      ]
+    },
+    {
+      "id": "aquahot-600-d04-use-care-service-prep",
+      "slug": "aquahot-600-d04-use-care-service-prep",
+      "title": "Aqua-Hot 600-D04 use-care service prep",
+      "summary": "Use the official Aqua-Hot AHE-600-D04 Use and Care Guide to capture model, controls, and winterization context before support contact.",
+      "safeChecklist": [
+        "Record the AHE-600-D04 model, control-panel state, heat and hot-water behavior, winterization status, owner-visible fluid level if available, and any displayed warning.",
+        "Save photos of the control panel, safe visible model label or paperwork, and the Aqua-Hot guide title.",
+        "Keep sealed heating components, leaks, exhaust odor, and installed power components for Aqua-Hot support or qualified RV service; shut the unit down if safety is uncertain."
+      ],
+      "sourceIds": [
+        "aquahot-600-d04-use-care-guide"
+      ],
+      "searchAliases": [
+        "Aqua-Hot AHE-600-D04 Use and Care Guide",
+        "aquahot 600 d04 use care service prep",
+        "aqua hot 600 d04 guide prep"
+      ],
+      "searchRequiredTerms": [
+        "aqua+hot+600+d04",
+        "ahe+600+d04"
+      ]
+    },
+    {
+      "id": "onan-cummins-shop-contact-support-prep",
+      "slug": "onan-cummins-shop-contact-support-prep",
+      "title": "Cummins Onan contact support prep",
+      "summary": "Use the official Shop Cummins contact page to prepare Onan generator model and support-routing details before contacting Cummins.",
+      "safeChecklist": [
+        "Record the Onan or Cummins product model, serial number, purchase date, symptom, operating hours if visible, and the part or product category involved.",
+        "Save photos of the product label, purchase record, safe visible hour display if present, and the Shop Cummins contact page title.",
+        "Use Cummins/Onan support or qualified generator service for startup problems, shutdowns, abnormal sound, odor, warranty questions, parts questions, or unsafe operation."
+      ],
+      "sourceIds": [
+        "cummins-shop-contact-support"
+      ],
+      "searchAliases": [
+        "Shop Cummins contact support Onan generator",
+        "onan cummins shop contact support prep",
+        "cummins contact support generator prep"
+      ],
+      "searchRequiredTerms": [
+        "shop+cummins+contact",
+        "cummins+contact+support"
+      ]
+    },
+    {
+      "id": "onan-cummins-genuine-parts-faq-prep",
+      "slug": "onan-cummins-genuine-parts-faq-prep",
+      "title": "Cummins Onan genuine parts FAQ prep",
+      "summary": "Use the official Genuine Cummins parts FAQ to prepare Onan generator parts and GSN details before ordering or support contact.",
+      "safeChecklist": [
+        "Record the Onan or Cummins product model, serial number, purchase date, part name, part number if known, and the symptom or maintenance context.",
+        "Save photos of the product label, current part packaging if available, purchase record, and the Shop Cummins FAQ title.",
+        "Use Cummins/Onan support or qualified generator service for fitment, installation, startup problems, shutdowns, abnormal sound, odor, or unsafe operation."
+      ],
+      "sourceIds": [
+        "cummins-genuine-parts-faq"
+      ],
+      "searchAliases": [
+        "Genuine Cummins parts information FAQs Onan generator",
+        "onan cummins genuine parts faq prep",
+        "cummins parts faq gsn generator prep"
+      ],
+      "searchRequiredTerms": [
+        "genuine+cummins+parts",
+        "cummins+parts+faq"
       ]
     }
   ],
