@@ -3272,3 +3272,77 @@ test("part capture panel persists owner-entered model and part notes locally", a
   await expect(page.getByRole("textbox", { name: "Model number", exact: true })).toHaveValue("FACW12ESPA-BL");
   await expect(page.getByRole("textbox", { name: "Part or board number", exact: true })).toHaveValue("control box label unreadable");
 });
+
+test("lookup surfaces the next official source gap batch without generic hijacks", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    ["dometic cfx2 orange power led", "/symptoms/dometic-cfx2-orange-power-led-prep/"],
+    ["dometic cfx3 warning 34", "/symptoms/dometic-cfx3-warning-34-service-prep/"],
+    ["thetford t1000e 693095", "/symptoms/thetford-t1000e-user-manual-control-prep/"],
+    ["coleman mach 8430 1976 657", "/symptoms/coleman-chillgrille-8430-straight-through-control-prep/"],
+    ["maxxair 00 03810w dome plus", "/symptoms/maxxair-dome-plus-03810w-led-control-prep/"],
+    ["suburban sw12d 5246a", "/symptoms/suburban-sw12d-12-gallon-model-prep/"],
+    ["aqua hot edge ah 1041 02", "/symptoms/aquahot-edge-tankless-controller-prep/"],
+    ["furrion furnace e7", "/symptoms/furrion-furnace-e7-error-service-prep/"],
+    ["girard tankless e8", "/symptoms/girard-tankless-e8-service-prep/"],
+    ["onan p9500df efi", "/symptoms/onan-p9500df-efi-vft-co-fuel-prep/"],
+  ] as const;
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+  }
+
+  for (const query of [
+    "display",
+    "bluetooth led",
+    "battery monitor",
+    "orange power led",
+    "defrost cooler",
+    "warning code",
+    "flush panel",
+    "cassette",
+    "chillgrille",
+    "dome plus",
+    "fanmate",
+    "water heater",
+    "door version",
+    "control center",
+    "air fryer",
+    "tankless controller",
+    "furnace e7",
+    "tankless e4",
+    "quiet adb",
+    "thermostat adapter",
+    "range oven",
+    "electric oven",
+    "mini rangehood",
+    "efi generator",
+  ]) {
+    await searchbox.fill(query);
+    for (const [, href] of cases) {
+      await expect(lookupResults.locator(`a[href="${href}"]`), `${query} -> ${href}`).toHaveCount(0);
+    }
+  }
+
+  await searchbox.fill("dometic cfx2 orange power led");
+  const cfx2 = lookupResults.locator('a[href="/symptoms/dometic-cfx2-orange-power-led-prep/"]');
+  await expect(cfx2).toBeVisible();
+  await cfx2.click();
+  await expect(page.getByRole("heading", { name: "Dometic CFX2 Orange Power LED Prep" })).toBeVisible();
+  await expect(page.getByText(/Record the CFX2 model/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});

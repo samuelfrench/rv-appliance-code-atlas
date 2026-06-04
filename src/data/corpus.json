@@ -2,7 +2,7 @@
   "site": {
     "name": "RV Appliance Code Atlas",
     "baseUrl": "https://rvappliancefaultcodes.com",
-    "generatedAt": "2026-06-04T00:30:15-05:00",
+    "generatedAt": "2026-06-04T01:26:19-05:00",
     "safetyBoundary": "Use this atlas to identify likely meaning and prepare for service. Shut off power, LP gas, fuel, or water when a listed appliance condition involves flame, gas smell, exhaust, generator shutdown, high temperature, moving jacks/slides, refrigerant, 120 VAC, control boards, repeated ignition failure, or a persistent lockout. Call the appliance maker, RV dealer, or a qualified RV technician for repair.",
     "searchConsole": {
       "propertyType": "URL_PREFIX",
@@ -14,7 +14,7 @@
     "indexNow": {
       "key": "2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18",
       "keyLocation": "https://rvappliancefaultcodes.com/2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18.txt",
-      "submittedAt": "2026-06-04T06:04:25.641Z"
+      "submittedAt": null
     },
     "analytics": {
       "provider": "GA4",
@@ -8271,6 +8271,382 @@
       "brand": "Aqua-Hot",
       "title": "Aqua-Hot GEN1 NA diesel/gasoline user manual",
       "url": "https://library.aquahot.com/wp-content/uploads/2023/05/GEN1-NA-DIESEL-GASOLINE-User-Manual-7.17.23.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx2-americas-operating-manual-112266",
+      "brand": "Dometic",
+      "title": "Dometic CFX2 Americas Operating Manual 112266",
+      "url": "https://media.dometic.com/externalassets/07-0703-070327-070327003_97000040397_112266.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx2-operating-display-elements-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX2 Operating and Display Elements Support",
+      "url": "https://support.dometic.com/en/cfx2-coolers/Operating-and-display-elements-acf9",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx2-error-e02-e07-service-routing-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX2 Error E02-E07 Service Routing Support",
+      "url": "https://support.dometic.com/en/cfx2-coolers/I-see-Error-code-E-02-d76",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx2-battery-monitor-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX2 Battery Monitor Support",
+      "url": "https://support.dometic.com/en/cfx2-coolers/How-to-use-the-battery-monitor-2cc1",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx2-power-led-orange-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX2 Power LED Orange Support",
+      "url": "https://support.dometic.com/en/cfx2-coolers/The-power-LED-lights-up-orange-9632",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx2-defrost-owner-maintenance-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX2 Defrost Owner Maintenance Support",
+      "url": "https://support.dometic.com/en/cfx2-coolers/How-to-defrost-the-cooler-c45a",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx-alert-warning-code-router-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX Alert Message or Warning Code Router Support",
+      "url": "https://support.dometic.com/en/cfx-coolers/I-see-an-alert-message-or-warning-code-c674",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx3-warning-34-compressor-speed-low-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX3 Warning 34 Compressor Speed Low Support",
+      "url": "https://support.dometic.com/en/cfx3-coolers/WARNING-34-Compressor-speed-low-92f",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-masterflush-8540-product-control-label-prep",
+      "brand": "Dometic",
+      "title": "Dometic MasterFlush 8540 Product Control Label Prep",
+      "url": "https://www.dometic.com/en-us/product/dometic-masterflush-8540-12v-macerator-toilet-with-dftp-flush-panel-9600006448",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "dometic-masterflush-8700-series-operating-manual-64820",
+      "brand": "Dometic",
+      "title": "Dometic MasterFlush 8700 Series Operating Manual 64820",
+      "url": "https://media.dometic.com/externalassets/dometic-masterflush-8740_9600012038_64820.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "thetford-n4000-series-support-router",
+      "brand": "Thetford/Norcold",
+      "title": "Thetford N4000 Series Support Router",
+      "url": "https://www.thetford.com/en/thetford-service-and-support/n4000-series/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-t2000-user-manual-693098-0425",
+      "brand": "Thetford",
+      "title": "Thetford T2000 User Manual 693098 0425",
+      "url": "https://www.thetford.com/app/uploads/2025/05/UM_T2000_EN_693098_0425-V02.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "thetford-t1000e-series-support-router",
+      "brand": "Thetford",
+      "title": "Thetford T1000E Series Support Router",
+      "url": "https://www.thetford.com/en/thetford-service-and-support/t1000e-series/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-t1000e-user-manual-693095-0426",
+      "brand": "Thetford",
+      "title": "Thetford T1000E User Manual 693095 0426",
+      "url": "https://www.thetford.com/app/uploads/2026/04/UM_T1000E_693095_0426-v04-EN.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "thetford-c260-series-support-router",
+      "brand": "Thetford",
+      "title": "Thetford C260 Series Support Router",
+      "url": "https://www.thetford.com/en/thetford-service-and-support/c260-series/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-c400-series-support-router",
+      "brand": "Thetford",
+      "title": "Thetford C400 Series Support Router",
+      "url": "https://www.thetford.com/en/thetford-service-and-support/c400-series/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "coleman-chillgrille-straight-through-1976-657",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach ChillGrille Straight-Through 1976-657",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-657.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-chillgrille-flush-mount-1976-656",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach ChillGrille Flush-Mount 1976-656",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-656.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "maxxair-dome-plus-03810w-product",
+      "brand": "MaxxAir",
+      "title": "MaxxAir MaxxFan Dome Plus 00-03810W Product Page",
+      "url": "https://www.maxxair.com/products/fans/maxxfan-dome-plus-00-03810W/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-dome-03812w-product",
+      "brand": "MaxxAir",
+      "title": "MaxxAir MaxxFan Dome 00-03812W Product Page",
+      "url": "https://www.maxxair.com/products/fans/maxxfan-dome-00-03812W/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-fanmate-955001-cover-product",
+      "brand": "MaxxAir",
+      "title": "MaxxAir FanMate 00-955001 Cover Product Page",
+      "url": "https://www.maxxair.com/products/covers/fanmate-00-955001/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-fanmate-955003-cover-product",
+      "brand": "MaxxAir",
+      "title": "MaxxAir FanMate 00-955003 Cover Product Page",
+      "url": "https://www.maxxair.com/products/covers/fanmate-00-955003/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "suburban-sw12d-12-gallon-water-heater-product",
+      "brand": "Suburban",
+      "title": "Suburban SW12D 12-Gallon Water Heater Product Page",
+      "url": "https://suburbanrv.com/water-heating/tank-water-heaters/advantage-water-heaters/12-gallon-tank/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "suburban-sw16d-16-gallon-water-heater-product",
+      "brand": "Suburban",
+      "title": "Suburban SW16D 16-Gallon Water Heater Product Page",
+      "url": "https://suburbanrv.com/water-heating/tank-water-heaters/advantage-water-heaters/16-gallon-tank/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "suburban-e-series-120v-door-water-heater-product",
+      "brand": "Suburban",
+      "title": "Suburban E-Series 120V Door Water Heater Product Page",
+      "url": "https://suburbanrv.com/water-heating/tank-water-heaters/e-series-120v-tank-water-heaters/door-version/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "suburban-del-water-heater-control-product",
+      "brand": "Suburban",
+      "title": "Suburban DEL Water Heater Control Product Page",
+      "url": "https://suburbanrv.com/water-heating/tank-water-heaters/tank-water-heater-controls/tank-water-heater-control-del/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "suburban-3909a-air-fryer-stainless-product",
+      "brand": "Suburban",
+      "title": "Suburban 3909A 17-Inch Air Fryer Stainless Product Page",
+      "url": "https://suburbanrv.com/kitchen-galley/air-fryers/17-air-fryer-stainless/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "aquahot-edge-tankless-ah1041-sell-sheet",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot Edge Tankless AH-1041.02 Sell Sheet",
+      "url": "https://www.aquahot.com/files/product_sheet/AH-1041.02__AQUA-HOT%20Edge%20Tankless%20Water%20Heater%20Sell%20Sheet.pdf",
+      "type": "manufacturer-product-sheet",
+      "official": true
+    },
+    {
+      "id": "aquahot-wave40-ah10130-sell-sheet",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot Wave 40 AH-10130.03 Sell Sheet",
+      "url": "https://www.aquahot.com/files/product_sheet/AH-10130.03_WAVE-40_Sell_Sheet.pdf",
+      "type": "manufacturer-product-sheet",
+      "official": true
+    },
+    {
+      "id": "aquahot-400-series-owners-manual",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot 400 Series Owners Manual",
+      "url": "https://www.aquahot.com/files/owners_manual/400%20Series%20Owners.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-furnace-e7-error-video",
+      "brand": "Furrion/Lippert",
+      "title": "Furrion Furnace E7 Error Support Video",
+      "url": "https://support.lci1.com/videos/e7-error-code-on-furrion-furnace",
+      "type": "manufacturer-support-video",
+      "official": true
+    },
+    {
+      "id": "girard-tankless-e4-error-video",
+      "brand": "Girard/Lippert",
+      "title": "Girard Tankless Water Heater E4 Error Support Video",
+      "url": "https://support.lci1.com/videos/e4-error-code-on-girard-tankless-water-heater",
+      "type": "manufacturer-support-video",
+      "official": true
+    },
+    {
+      "id": "girard-tankless-e5-error-video",
+      "brand": "Girard/Lippert",
+      "title": "Girard Tankless Water Heater E5 Error Support Video",
+      "url": "https://support.lci1.com/videos/e5-error-code-on-girard-tankless-water-heater",
+      "type": "manufacturer-support-video",
+      "official": true
+    },
+    {
+      "id": "girard-tankless-e6-error-video",
+      "brand": "Girard/Lippert",
+      "title": "Girard Tankless Water Heater E6 Error Support Video",
+      "url": "https://support.lci1.com/videos/e6-error-code-on-girard-tankless-water-heater",
+      "type": "manufacturer-support-video",
+      "official": true
+    },
+    {
+      "id": "girard-tankless-e7-error-video",
+      "brand": "Girard/Lippert",
+      "title": "Girard Tankless Water Heater E7 Error Support Video",
+      "url": "https://support.lci1.com/videos/e7-error-code-on-girard-tankless-water-heater",
+      "type": "manufacturer-support-video",
+      "official": true
+    },
+    {
+      "id": "girard-tankless-e8-error-video",
+      "brand": "Girard/Lippert",
+      "title": "Girard Tankless Water Heater E8 Error Support Video",
+      "url": "https://support.lci1.com/videos/e8-error-code-on-girard-tankless-water-heater",
+      "type": "manufacturer-support-video",
+      "official": true
+    },
+    {
+      "id": "furrion-chill-r32-rooftop-aftermarket-manual-ccd0009378",
+      "brand": "Furrion/Lippert",
+      "title": "Furrion Chill R32 Rooftop Aftermarket Manual CCD-0009378",
+      "url": "https://support.lci1.com/documents/ccd-0009378",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-low-profile-r32-ac-manual-ccd0009380",
+      "brand": "Furrion/Lippert",
+      "title": "Furrion Low Profile R32 AC Manual CCD-0009380",
+      "url": "https://support.lci1.com/documents/ccd-0009380",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-chill-quiet-manual-control-user-manual-ccd0010397",
+      "brand": "Furrion/Lippert",
+      "title": "Furrion Chill Quiet Manual Control User Manual CCD-0010397",
+      "url": "https://support.lci1.com/documents/ccd-0010397",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-variable-speed-quiet-adb-manual-ccd0010932",
+      "brand": "Furrion/Lippert",
+      "title": "Furrion Variable Speed Quiet ADB Manual CCD-0010932",
+      "url": "https://support.lci1.com/documents/ccd-0010932",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-adb-quick-start-ccd0009363",
+      "brand": "Furrion/Lippert",
+      "title": "Furrion ADB Quick Start CCD-0009363",
+      "url": "https://support.lci1.com/documents/ccd-0009363",
+      "type": "manufacturer-quick-start",
+      "official": true
+    },
+    {
+      "id": "furrion-thermostat-adapter-kit-ccd0010976",
+      "brand": "Furrion/Lippert",
+      "title": "Furrion Thermostat Adapter Kit CCD-0010976",
+      "url": "https://support.lci1.com/documents/ccd-0010976",
+      "type": "manufacturer-quick-start",
+      "official": true
+    },
+    {
+      "id": "furrion-2-in-1-range-oven-imfha00083",
+      "brand": "Furrion/Lippert",
+      "title": "Furrion 2-in-1 Range Oven Instruction Manual IM-FHA00083",
+      "url": "https://support.lci1.com/documents/furrion-2-in-1-range-oven-instruction-manual-im-fha00083-v3.0",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-21-chef-electric-oven-ccd0005681",
+      "brand": "Furrion/Lippert",
+      "title": "Furrion 21 Chef Electric Oven Manual CCD-0005681",
+      "url": "https://support.lci1.com/documents/ccd-0005681",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-13-mini-rangehood-troubleshooting-ccd0008524",
+      "brand": "Furrion/Lippert",
+      "title": "Furrion 13 Mini Rangehood Troubleshooting CCD-0008524",
+      "url": "https://support.lci1.com/documents/ccd-0008524",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "onan-p5000idf-efi-owner-manual-2025",
+      "brand": "Onan",
+      "title": "Cummins Onan P5000iDF EFI Owner Manual 2025",
+      "url": "https://www.cummins.com/sites/default/files/2025-04/p5000idf-efi-owners-manual.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "onan-p9500df-efi-owner-manual-2025",
+      "brand": "Onan",
+      "title": "Cummins Onan P9500DF EFI Owner Manual 2025",
+      "url": "https://www.cummins.com/sites/default/files/2025-04/p9500df-efi-owners-manual.pdf",
       "type": "manufacturer-manual",
       "official": true
     }
@@ -42110,7 +42486,54 @@
         "suburban-st60-tankless-water-heater",
         "aquahot-ahe-375-p02-owner-manual",
         "aquahot-525-d-owner-manual",
-        "aquahot-gen1-diesel-gasoline-user-manual-2023"
+        "aquahot-gen1-diesel-gasoline-user-manual-2023",
+        "dometic-cfx2-americas-operating-manual-112266",
+        "dometic-cfx2-operating-display-elements-support",
+        "dometic-cfx2-error-e02-e07-service-routing-support",
+        "dometic-cfx2-battery-monitor-support",
+        "dometic-cfx2-power-led-orange-support",
+        "dometic-cfx2-defrost-owner-maintenance-support",
+        "dometic-cfx-alert-warning-code-router-support",
+        "dometic-cfx3-warning-34-compressor-speed-low-support",
+        "dometic-masterflush-8540-product-control-label-prep",
+        "dometic-masterflush-8700-series-operating-manual-64820",
+        "thetford-n4000-series-support-router",
+        "thetford-t2000-user-manual-693098-0425",
+        "thetford-t1000e-series-support-router",
+        "thetford-t1000e-user-manual-693095-0426",
+        "thetford-c260-series-support-router",
+        "thetford-c400-series-support-router",
+        "coleman-chillgrille-straight-through-1976-657",
+        "coleman-chillgrille-flush-mount-1976-656",
+        "maxxair-dome-plus-03810w-product",
+        "maxxair-dome-03812w-product",
+        "maxxair-fanmate-955001-cover-product",
+        "maxxair-fanmate-955003-cover-product",
+        "suburban-sw12d-12-gallon-water-heater-product",
+        "suburban-sw16d-16-gallon-water-heater-product",
+        "suburban-e-series-120v-door-water-heater-product",
+        "suburban-del-water-heater-control-product",
+        "suburban-3909a-air-fryer-stainless-product",
+        "aquahot-edge-tankless-ah1041-sell-sheet",
+        "aquahot-wave40-ah10130-sell-sheet",
+        "aquahot-400-series-owners-manual",
+        "furrion-furnace-e7-error-video",
+        "girard-tankless-e4-error-video",
+        "girard-tankless-e5-error-video",
+        "girard-tankless-e6-error-video",
+        "girard-tankless-e7-error-video",
+        "girard-tankless-e8-error-video",
+        "furrion-chill-r32-rooftop-aftermarket-manual-ccd0009378",
+        "furrion-low-profile-r32-ac-manual-ccd0009380",
+        "furrion-chill-quiet-manual-control-user-manual-ccd0010397",
+        "furrion-variable-speed-quiet-adb-manual-ccd0010932",
+        "furrion-adb-quick-start-ccd0009363",
+        "furrion-thermostat-adapter-kit-ccd0010976",
+        "furrion-2-in-1-range-oven-imfha00083",
+        "furrion-21-chef-electric-oven-ccd0005681",
+        "furrion-13-mini-rangehood-troubleshooting-ccd0008524",
+        "onan-p5000idf-efi-owner-manual-2025",
+        "onan-p9500df-efi-owner-manual-2025"
       ]
     },
     {
@@ -60018,6 +60441,1062 @@
       ],
       "sourceIds": [
         "aquahot-gen1-diesel-gasoline-user-manual-2023"
+      ]
+    },
+    {
+      "id": "dometic-cfx2-model-control-battery-prep",
+      "slug": "dometic-cfx2-model-control-battery-prep",
+      "title": "Dometic CFX2 Model Control Battery Prep",
+      "summary": "Use this CFX2 owner manual source to collect model, display, control, and battery-monitor details before support.",
+      "safeChecklist": [
+        "Record the CFX2 model, serial, set temperature, input source, battery-monitor setting, display state, and cooler temperature.",
+        "Save photos of the model label, control panel, power source, and any alert or warning message.",
+        "Stop using the cooler for perishables if temperatures are unsafe or repeated alerts continue, then contact Dometic support or qualified RV appliance service."
+      ],
+      "sourceIds": [
+        "dometic-cfx2-americas-operating-manual-112266"
+      ],
+      "searchAliases": [
+        "dometic cfx2 97000040397 model display battery prep",
+        "cfx2 112266 owner manual control prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+cfx2+97000040397",
+        "cfx2+112266"
+      ]
+    },
+    {
+      "id": "dometic-cfx2-display-led-control-prep",
+      "slug": "dometic-cfx2-display-led-control-prep",
+      "title": "Dometic CFX2 Display LED Control Prep",
+      "summary": "Use this CFX2 support page to document display lights, control state, and Bluetooth indicator behavior before support.",
+      "safeChecklist": [
+        "Record the CFX2 model, set temperature, display icons, power LED color, Bluetooth LED state, and button response.",
+        "Save photos of the display and control panel while the symptom is present.",
+        "Use Dometic support or qualified RV appliance service if the display state repeats or the cooler will not hold safe temperature."
+      ],
+      "sourceIds": [
+        "dometic-cfx2-operating-display-elements-support"
+      ],
+      "searchAliases": [
+        "dometic cfx2 display bluetooth led control prep",
+        "cfx2 operating display elements support"
+      ],
+      "searchRequiredTerms": [
+        "dometic+cfx2+display",
+        "cfx2+bluetooth+led"
+      ]
+    },
+    {
+      "id": "dometic-cfx2-error-e02-e07-service-prep",
+      "slug": "dometic-cfx2-error-e02-e07-service-prep",
+      "title": "Dometic CFX2 Error E02 E07 Service Prep",
+      "summary": "Use this CFX2 support page to record E02 through E07 error details and route the cooler to support.",
+      "safeChecklist": [
+        "Record the CFX2 model, exact E-code, set temperature, input source, ambient temperature, and whether the code returns after normal restart.",
+        "Save photos of the display, model label, and power source condition from normal owner access.",
+        "Move perishables and contact Dometic support or qualified RV appliance service when an E-code persists or temperatures are unsafe."
+      ],
+      "sourceIds": [
+        "dometic-cfx2-error-e02-e07-service-routing-support"
+      ],
+      "searchAliases": [
+        "dometic cfx2 e02 e07 service prep",
+        "cfx2 error e 02 e 07 support"
+      ],
+      "searchRequiredTerms": [
+        "dometic+cfx2+e02",
+        "dometic+cfx2+e03",
+        "dometic+cfx2+e04",
+        "dometic+cfx2+e05",
+        "dometic+cfx2+e06",
+        "dometic+cfx2+e07"
+      ]
+    },
+    {
+      "id": "dometic-cfx2-battery-monitor-setting-prep",
+      "slug": "dometic-cfx2-battery-monitor-setting-prep",
+      "title": "Dometic CFX2 Battery Monitor Setting Prep",
+      "summary": "Use this CFX2 support page to document the battery-monitor mode and low-voltage behavior before support.",
+      "safeChecklist": [
+        "Record the CFX2 model, selected LOW/MED/HIGH battery-monitor setting, input source, display state, and cooler temperature.",
+        "Save photos of the control panel and power source label if visible without opening equipment.",
+        "Stop relying on the cooler for perishables if it shuts down repeatedly or temperatures are unsafe, then contact Dometic support."
+      ],
+      "sourceIds": [
+        "dometic-cfx2-battery-monitor-support"
+      ],
+      "searchAliases": [
+        "dometic cfx2 battery monitor low med high prep",
+        "cfx2 low med high battery monitor prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+cfx2+battery+monitor",
+        "cfx2+low+med+high"
+      ]
+    },
+    {
+      "id": "dometic-cfx2-orange-power-led-prep",
+      "slug": "dometic-cfx2-orange-power-led-prep",
+      "title": "Dometic CFX2 Orange Power LED Prep",
+      "summary": "Use this CFX2 support page when the power LED is orange and owner-safe notes are needed before support.",
+      "safeChecklist": [
+        "Record the CFX2 model, power LED color, battery-monitor setting, input source, display state, and cooler temperature.",
+        "Save photos of the display, control panel, model label, and power source condition from normal owner access.",
+        "Move perishables if temperatures are unsafe and contact Dometic support if the orange LED state repeats."
+      ],
+      "sourceIds": [
+        "dometic-cfx2-power-led-orange-support"
+      ],
+      "searchAliases": [
+        "dometic cfx2 orange power led prep",
+        "dometic cfx2 power led lights orange",
+        "cfx2 orange led support"
+      ],
+      "searchRequiredTerms": [
+        "dometic+cfx2+orange",
+        "cfx2+power+led"
+      ]
+    },
+    {
+      "id": "dometic-cfx2-defrost-storage-prep",
+      "slug": "dometic-cfx2-defrost-storage-prep",
+      "title": "Dometic CFX2 Defrost Storage Prep",
+      "summary": "Use this CFX2 support page to document frost, storage, and cleaning details before support.",
+      "safeChecklist": [
+        "Record the CFX2 model, frost location, set temperature, recent use pattern, contents, and ambient conditions.",
+        "Empty perishables as needed, keep photos of frost buildup, and follow the official defrost guidance without sharp tools.",
+        "Contact Dometic support if frost returns quickly, the lid does not seal, or temperatures remain unsafe."
+      ],
+      "sourceIds": [
+        "dometic-cfx2-defrost-owner-maintenance-support"
+      ],
+      "searchAliases": [
+        "dometic cfx2 defrost storage prep",
+        "cfx2 cooler defrost support"
+      ],
+      "searchRequiredTerms": [
+        "dometic+cfx2+defrost",
+        "cfx2+cooler+defrost"
+      ]
+    },
+    {
+      "id": "dometic-cfx-alert-warning-code-router-prep",
+      "slug": "dometic-cfx-alert-warning-code-router-prep",
+      "title": "Dometic CFX Alert Warning Code Router Prep",
+      "summary": "Use this CFX support page to capture the exact alert or warning code before contacting support.",
+      "safeChecklist": [
+        "Record the CFX model, exact alert text or warning code, set temperature, power source, and whether cooling is affected.",
+        "Save photos of the display and model label while the alert is visible.",
+        "Stop using the cooler for perishables if temperatures are unsafe and contact Dometic support for repeated alerts."
+      ],
+      "sourceIds": [
+        "dometic-cfx-alert-warning-code-router-support"
+      ],
+      "searchAliases": [
+        "dometic cfx alert warning code router prep",
+        "cfx alert message warning code support"
+      ],
+      "searchRequiredTerms": [
+        "dometic+cfx+warning+code",
+        "cfx+alert+message"
+      ]
+    },
+    {
+      "id": "dometic-cfx3-warning-34-service-prep",
+      "slug": "dometic-cfx3-warning-34-service-prep",
+      "title": "Dometic CFX3 Warning 34 Service Prep",
+      "summary": "Use this CFX3 support page to record WARNING 34 details and prepare a support request.",
+      "safeChecklist": [
+        "Record the CFX3 model, WARNING 34 display, set temperature, input source, ambient temperature, and cooler placement.",
+        "Save photos of the display, model label, app message if shown, and power source condition from normal owner access.",
+        "Move perishables and contact Dometic support or qualified RV appliance service if WARNING 34 returns or cooling is unsafe."
+      ],
+      "sourceIds": [
+        "dometic-cfx3-warning-34-compressor-speed-low-support"
+      ],
+      "searchAliases": [
+        "dometic cfx3 warning 34 compressor speed low prep",
+        "cfx3 warning 34 service prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+cfx3+warning+34",
+        "cfx3+compressor+speed+low"
+      ]
+    },
+    {
+      "id": "dometic-masterflush-8540-flush-panel-model-prep",
+      "slug": "dometic-masterflush-8540-flush-panel-model-prep",
+      "title": "Dometic MasterFlush 8540 Flush Panel Model Prep",
+      "summary": "Use this MasterFlush 8540 product page to capture model, panel, and toilet state details before support.",
+      "safeChecklist": [
+        "Record the MasterFlush 8540 model, product number, flush-panel state, power condition, and symptom timing.",
+        "Save photos of the toilet label, flush panel, and any visible message or indicator from normal owner access.",
+        "Stop using the toilet if there is leak, odor, overflow, or repeated flush failure, then contact Dometic support or qualified RV sanitation service."
+      ],
+      "sourceIds": [
+        "dometic-masterflush-8540-product-control-label-prep"
+      ],
+      "searchAliases": [
+        "dometic masterflush 8540 flush panel model prep",
+        "masterflush 8540 9600006448 support prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+masterflush+8540",
+        "9600006448"
+      ]
+    },
+    {
+      "id": "dometic-masterflush-8700-flush-control-prep",
+      "slug": "dometic-masterflush-8700-flush-control-prep",
+      "title": "Dometic MasterFlush 8700 Flush Control Prep",
+      "summary": "Use this MasterFlush 8700 operating manual to collect flush-control and support details before service.",
+      "safeChecklist": [
+        "Record the MasterFlush 8700 or 8740 model, product number, flush-control state, power condition, and symptom timing.",
+        "Save photos of the model label, control panel, and visible indicators from normal owner access.",
+        "Stop using the toilet for leak, odor, overflow, or repeated flush failure and contact Dometic support or qualified RV sanitation service."
+      ],
+      "sourceIds": [
+        "dometic-masterflush-8700-series-operating-manual-64820"
+      ],
+      "searchAliases": [
+        "dometic masterflush 8700 8740 flush control prep",
+        "masterflush 8740 9600012038 operating manual prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+masterflush+8700",
+        "8740+9600012038"
+      ]
+    },
+    {
+      "id": "thetford-n4000-model-error-support-router-prep",
+      "slug": "thetford-n4000-model-error-support-router-prep",
+      "title": "Thetford N4000 Model Error Support Router Prep",
+      "summary": "Use this N4000 support router to collect model, display, and service details before contacting Thetford.",
+      "safeChecklist": [
+        "Record the N4000 model, serial, display state, warning text or error number, temperature setting, and cooling condition.",
+        "Save photos of the model label, display, door area, and control settings before support.",
+        "Move perishables and use Thetford support or qualified refrigerator service when temperatures are unsafe or errors repeat."
+      ],
+      "sourceIds": [
+        "thetford-n4000-series-support-router"
+      ],
+      "searchAliases": [
+        "thetford n4000 n4080 n4175 service router prep",
+        "n4000 model error support router prep"
+      ],
+      "searchRequiredTerms": [
+        "thetford+n4000",
+        "n4080+n4175"
+      ]
+    },
+    {
+      "id": "thetford-t2000-control-maintenance-service-prep",
+      "slug": "thetford-t2000-control-maintenance-service-prep",
+      "title": "Thetford T2000 Control Maintenance Service Prep",
+      "summary": "Use this T2000 user manual to prepare control, cleaning, storage, and support details.",
+      "safeChecklist": [
+        "Record the T2000 model, serial, display state, temperature setting, cooling condition, cleaning status, and storage status.",
+        "Save photos of the model label, display, controls, vents, and door condition from normal owner access.",
+        "Move perishables and contact Thetford support or qualified refrigerator service if temperature is unsafe, odor is present, or warnings repeat."
+      ],
+      "sourceIds": [
+        "thetford-t2000-user-manual-693098-0425"
+      ],
+      "searchAliases": [
+        "thetford t2000 user manual controls maintenance prep",
+        "thetford t2000 693098 0425 service prep"
+      ],
+      "searchRequiredTerms": [
+        "thetford+t2000",
+        "693098+0425"
+      ]
+    },
+    {
+      "id": "thetford-t1000e-led-model-service-router-prep",
+      "slug": "thetford-t1000e-led-model-service-router-prep",
+      "title": "Thetford T1000E LED Model Service Router Prep",
+      "summary": "Use this T1000E support router to collect model, LED, display, and service-routing details.",
+      "safeChecklist": [
+        "Record the T1000E, T1090E, or T1156E model, serial, LED or display state, temperature setting, and cooling condition.",
+        "Save photos of the model label, display, controls, door area, and any warning message.",
+        "Move perishables and use Thetford support or qualified refrigerator service when cooling is unsafe or warnings repeat."
+      ],
+      "sourceIds": [
+        "thetford-t1000e-series-support-router"
+      ],
+      "searchAliases": [
+        "thetford t1000e led model service router prep",
+        "thetford t1090e t1156e support prep"
+      ],
+      "searchRequiredTerms": [
+        "thetford+t1000e",
+        "thetford+t1090e",
+        "thetford+t1156e"
+      ]
+    },
+    {
+      "id": "thetford-t1000e-user-manual-control-prep",
+      "slug": "thetford-t1000e-user-manual-control-prep",
+      "title": "Thetford T1000E User Manual Control Prep",
+      "summary": "Use this T1000E user manual to prepare owner-control, cleaning, storage, and support notes.",
+      "safeChecklist": [
+        "Record the T1000E model, serial, display or LED state, temperature setting, cooling condition, and recent cleaning or storage status.",
+        "Save photos of the model label, controls, door area, and any warning message before support.",
+        "Move perishables and contact Thetford support or qualified refrigerator service if temperature is unsafe or warnings repeat."
+      ],
+      "sourceIds": [
+        "thetford-t1000e-user-manual-693095-0426"
+      ],
+      "searchAliases": [
+        "thetford t1000e 693095 user manual prep",
+        "thetford t1000e 0426 control prep"
+      ],
+      "searchRequiredTerms": [
+        "thetford+t1000e+693095",
+        "t1000e+0426"
+      ]
+    },
+    {
+      "id": "thetford-c260-cassette-model-leak-prep",
+      "slug": "thetford-c260-cassette-model-leak-prep",
+      "title": "Thetford C260 Cassette Model Leak Prep",
+      "summary": "Use this C260 support router to document model, cassette, level, leak, and support details.",
+      "safeChecklist": [
+        "Record the C260, C262SWE, or C263CS model, serial, cassette status, level indicator state, flush behavior, and leak location if visible.",
+        "Save photos of the model label, cassette label, control area, and visible leak evidence without disassembly.",
+        "Stop using the toilet for leak, odor, overflow, or freeze risk and contact Thetford support or qualified RV sanitation service."
+      ],
+      "sourceIds": [
+        "thetford-c260-series-support-router"
+      ],
+      "searchAliases": [
+        "thetford c260 c262swe c263cs cassette prep",
+        "thetford c260 cassette model leak prep"
+      ],
+      "searchRequiredTerms": [
+        "thetford+c260",
+        "thetford+c262swe",
+        "thetford+c263cs"
+      ]
+    },
+    {
+      "id": "thetford-c400-cassette-level-storage-prep",
+      "slug": "thetford-c400-cassette-level-storage-prep",
+      "title": "Thetford C400 Cassette Level Storage Prep",
+      "summary": "Use this C400 support router to prepare model, cassette, level, cleaning, and storage details.",
+      "safeChecklist": [
+        "Record the C400, C402C, or C403L model, serial, cassette status, level indicator state, flush behavior, and storage condition.",
+        "Save photos of the model label, cassette label, controls, and visible indicators from normal owner access.",
+        "Stop using the toilet for leak, odor, overflow, or freeze risk and contact Thetford support or qualified RV sanitation service."
+      ],
+      "sourceIds": [
+        "thetford-c400-series-support-router"
+      ],
+      "searchAliases": [
+        "thetford c400 c402c c403l cassette storage prep",
+        "thetford c400 level indicator support prep"
+      ],
+      "searchRequiredTerms": [
+        "thetford+c400",
+        "thetford+c402c"
+      ]
+    },
+    {
+      "id": "coleman-chillgrille-8430-straight-through-control-prep",
+      "slug": "coleman-chillgrille-8430-straight-through-control-prep",
+      "title": "Coleman-Mach 8430 ChillGrille Straight Through Control Prep",
+      "summary": "Use this Coleman-Mach ChillGrille source to collect model, control, and thermostat details before support.",
+      "safeChecklist": [
+        "Record the Coleman-Mach 8430 model, ChillGrille label, thermostat setting, fan mode, cooling or heat behavior, and control response.",
+        "Save photos of the ceiling assembly label, thermostat, control area, and any owner-facing paperwork.",
+        "Use Coleman-Mach support or qualified RV HVAC service for installed electrical, roof unit, heat accessory, or control decisions."
+      ],
+      "sourceIds": [
+        "coleman-chillgrille-straight-through-1976-657"
+      ],
+      "searchAliases": [
+        "coleman mach 8430 chillgrille 1976 657 control prep",
+        "coleman mach 8430 straight through chillgrille prep"
+      ],
+      "searchRequiredTerms": [
+        "coleman+mach+8430",
+        "chillgrille+1976+657"
+      ]
+    },
+    {
+      "id": "coleman-chillgrille-8430-flush-mount-model-prep",
+      "slug": "coleman-chillgrille-8430-flush-mount-model-prep",
+      "title": "Coleman-Mach 8430 ChillGrille Flush Mount Model Prep",
+      "summary": "Use this Coleman-Mach flush-mount ChillGrille source to prepare model and control notes before support.",
+      "safeChecklist": [
+        "Record the Coleman-Mach 8430-633 model, ChillGrille label, thermostat setting, fan mode, air behavior, and control response.",
+        "Save photos of the ceiling assembly label, thermostat, control area, and visible owner paperwork.",
+        "Use Coleman-Mach support or qualified RV HVAC service for installed electrical, roof unit, heat accessory, or control decisions."
+      ],
+      "sourceIds": [
+        "coleman-chillgrille-flush-mount-1976-656"
+      ],
+      "searchAliases": [
+        "coleman mach 8430 633 chillgrille flush mount prep",
+        "coleman mach chillgrille 1976 656 prep"
+      ],
+      "searchRequiredTerms": [
+        "coleman+mach+8430+633",
+        "chillgrille+1976+656"
+      ]
+    },
+    {
+      "id": "maxxair-dome-plus-03810w-led-control-prep",
+      "slug": "maxxair-dome-plus-03810w-led-control-prep",
+      "title": "MaxxAir Dome Plus 03810W LED Control Prep",
+      "summary": "Use this MaxxAir Dome Plus 00-03810W page to document fan, LED, lid, and model details before support.",
+      "safeChecklist": [
+        "Record the MaxxFan Dome Plus 00-03810W model, LED behavior, fan response, lid state, and airflow condition.",
+        "Save photos of the product label and control area from normal owner access.",
+        "Use MaxxAir support or qualified RV ventilation service for exterior mounting, installed electrical, motor, lid, or parts decisions."
+      ],
+      "sourceIds": [
+        "maxxair-dome-plus-03810w-product"
+      ],
+      "searchAliases": [
+        "maxxair 00 03810w dome plus led control prep",
+        "maxxfan dome plus 03810w led prep"
+      ],
+      "searchRequiredTerms": [
+        "maxxair+03810w",
+        "maxxfan+dome+plus+led"
+      ]
+    },
+    {
+      "id": "maxxair-dome-03812w-fan-model-prep",
+      "slug": "maxxair-dome-03812w-fan-model-prep",
+      "title": "MaxxAir Dome 03812W Fan Model Prep",
+      "summary": "Use this MaxxAir Dome 00-03812W page to document fan, lid, model, and airflow details before support.",
+      "safeChecklist": [
+        "Record the MaxxFan Dome 00-03812W model, fan response, lid state, control state, and airflow condition.",
+        "Save photos of the product label and control area from normal owner access.",
+        "Use MaxxAir support or qualified RV ventilation service for exterior mounting, installed electrical, motor, lid, or parts decisions."
+      ],
+      "sourceIds": [
+        "maxxair-dome-03812w-product"
+      ],
+      "searchAliases": [
+        "maxxair 00 03812w dome fan model prep",
+        "maxxfan dome 03812w support prep"
+      ],
+      "searchRequiredTerms": [
+        "maxxair+03812w",
+        "maxxfan+dome+03812w"
+      ]
+    },
+    {
+      "id": "maxxair-fanmate-955001-cover-fit-prep",
+      "slug": "maxxair-fanmate-955001-cover-fit-prep",
+      "title": "MaxxAir FanMate 955001 Cover Fit Prep",
+      "summary": "Use this MaxxAir FanMate 00-955001 page to record cover model, color, fit, and claim details before support.",
+      "safeChecklist": [
+        "Record the FanMate 00-955001 model, color, existing fan model, visible fit issue, and purchase or warranty details.",
+        "Save photos of the product label, cover condition, and fan model label from normal owner access.",
+        "Use MaxxAir support, dealer support, or qualified RV ventilation service for exterior mounting, sealant, or parts decisions."
+      ],
+      "sourceIds": [
+        "maxxair-fanmate-955001-cover-product"
+      ],
+      "searchAliases": [
+        "maxxair fanmate 00 955001 cover fit prep",
+        "maxxair 955001 fanmate white cover prep"
+      ],
+      "searchRequiredTerms": [
+        "maxxair+955001",
+        "fanmate+955001"
+      ]
+    },
+    {
+      "id": "maxxair-fanmate-955003-cover-fit-prep",
+      "slug": "maxxair-fanmate-955003-cover-fit-prep",
+      "title": "MaxxAir FanMate 955003 Cover Fit Prep",
+      "summary": "Use this MaxxAir FanMate 00-955003 page to record smoke cover model, fit, and claim details before support.",
+      "safeChecklist": [
+        "Record the FanMate 00-955003 model, smoke color, existing fan model, visible fit issue, and purchase or warranty details.",
+        "Save photos of the product label, cover condition, and fan model label from normal owner access.",
+        "Use MaxxAir support, dealer support, or qualified RV ventilation service for exterior mounting, sealant, or parts decisions."
+      ],
+      "sourceIds": [
+        "maxxair-fanmate-955003-cover-product"
+      ],
+      "searchAliases": [
+        "maxxair fanmate 00 955003 smoke cover prep",
+        "maxxair 955003 fanmate cover fit prep"
+      ],
+      "searchRequiredTerms": [
+        "maxxair+955003",
+        "fanmate+955003+smoke"
+      ]
+    },
+    {
+      "id": "suburban-sw12d-12-gallon-model-prep",
+      "slug": "suburban-sw12d-12-gallon-model-prep",
+      "title": "Suburban SW12D 12 Gallon Model Prep",
+      "summary": "Use this Suburban SW12D page to collect model, control, water-heater, and service details before support.",
+      "safeChecklist": [
+        "Record the SW12D model, item number, control setting, water temperature symptom, recent weather, and any owner-facing indicator.",
+        "Save photos of the exterior label, control switch, and visible product information from normal owner access.",
+        "Shut the water heater down for odor, leak, overheating, freeze concern, or repeated fault behavior, then contact Suburban support or qualified RV service."
+      ],
+      "sourceIds": [
+        "suburban-sw12d-12-gallon-water-heater-product"
+      ],
+      "searchAliases": [
+        "suburban sw12d 5246a 12 gallon water heater prep",
+        "suburban sw12d model prep"
+      ],
+      "searchRequiredTerms": [
+        "suburban+sw12d",
+        "sw12d+5246a"
+      ]
+    },
+    {
+      "id": "suburban-sw16d-16-gallon-model-prep",
+      "slug": "suburban-sw16d-16-gallon-model-prep",
+      "title": "Suburban SW16D 16 Gallon Model Prep",
+      "summary": "Use this Suburban SW16D page to collect model, control, water-heater, and service details before support.",
+      "safeChecklist": [
+        "Record the SW16D model, control setting, water temperature symptom, recent weather, and any owner-facing indicator.",
+        "Save photos of the exterior label, control switch, and visible product information from normal owner access.",
+        "Shut the water heater down for odor, leak, overheating, freeze concern, or repeated fault behavior, then contact Suburban support or qualified RV service."
+      ],
+      "sourceIds": [
+        "suburban-sw16d-16-gallon-water-heater-product"
+      ],
+      "searchAliases": [
+        "suburban sw16d 16 gallon water heater prep",
+        "suburban sw16d model service prep"
+      ],
+      "searchRequiredTerms": [
+        "suburban+sw16d",
+        "suburban+16+gallon"
+      ]
+    },
+    {
+      "id": "suburban-e-series-120v-door-version-prep",
+      "slug": "suburban-e-series-120v-door-version-prep",
+      "title": "Suburban E-Series Door Version Prep",
+      "summary": "Use this Suburban E-Series door-version page to collect model, control, and service details before support.",
+      "safeChecklist": [
+        "Record the E-Series model, door-version identifier, control state, water temperature symptom, recent weather, and any owner-facing indicator.",
+        "Save photos of the exterior label, control switch, and visible product information from normal owner access.",
+        "Shut the water heater down for odor, leak, overheating, freeze concern, or unsafe power behavior, then contact Suburban support or qualified RV service."
+      ],
+      "sourceIds": [
+        "suburban-e-series-120v-door-water-heater-product"
+      ],
+      "searchAliases": [
+        "suburban e series door version water heater prep",
+        "suburban door version e series prep"
+      ],
+      "searchRequiredTerms": [
+        "suburban+e+series+120v",
+        "suburban+door+version"
+      ]
+    },
+    {
+      "id": "suburban-del-water-heater-switch-prep",
+      "slug": "suburban-del-water-heater-switch-prep",
+      "title": "Suburban DEL Water Heater Switch Prep",
+      "summary": "Use this Suburban DEL control page to document switch, mode, and water-heater behavior before support.",
+      "safeChecklist": [
+        "Record the DEL control model, water-heater model, switch position, mode, indicator state, and hot-water symptom.",
+        "Save photos of the control, exterior label, and visible product information from normal owner access.",
+        "Shut the water heater down for odor, leak, overheating, freeze concern, or unsafe power behavior, then contact Suburban support or qualified RV service."
+      ],
+      "sourceIds": [
+        "suburban-del-water-heater-control-product"
+      ],
+      "searchAliases": [
+        "suburban del water heater control switch prep",
+        "suburban control del water heater prep"
+      ],
+      "searchRequiredTerms": [
+        "suburban+del+water+heater",
+        "suburban+control+del"
+      ]
+    },
+    {
+      "id": "suburban-advantage-tankless-control-center-prep",
+      "slug": "suburban-advantage-tankless-control-center-prep",
+      "title": "Suburban Advantage Tankless Control Center Prep",
+      "summary": "Use this Suburban Advantage control page to document tankless control-center details before support.",
+      "safeChecklist": [
+        "Record the Advantage tankless model, digital control-center display, temperature setting, water-temperature symptom, recent weather, and any owner-facing indicator.",
+        "Save photos of the control center, exterior label, and visible product information from normal owner access.",
+        "Shut the water heater down for odor, leak, overheating, freeze concern, or repeated fault behavior, then contact Suburban support or qualified RV service."
+      ],
+      "sourceIds": [
+        "suburban-tankless-control-center-product"
+      ],
+      "searchAliases": [
+        "suburban advantage tankless control center prep",
+        "suburban tankless digital control center prep"
+      ],
+      "searchRequiredTerms": [
+        "suburban+advantage+tankless"
+      ]
+    },
+    {
+      "id": "suburban-3909a-air-fryer-stainless-control-prep",
+      "slug": "suburban-3909a-air-fryer-stainless-control-prep",
+      "title": "Suburban 3909A Air Fryer Stainless Control Prep",
+      "summary": "Use this Suburban 3909A air-fryer page to document model, control, cooking, and support details.",
+      "safeChecklist": [
+        "Record the 3909A model, control setting, oven or air-fryer symptom, power state, odor or overheating concern, and recent use.",
+        "Save photos of the product label, controls, display if present, and visible product information from normal owner access.",
+        "Stop using the appliance for odor, smoke, overheating, or unsafe power behavior, then contact Suburban support or qualified RV service."
+      ],
+      "sourceIds": [
+        "suburban-3909a-air-fryer-stainless-product"
+      ],
+      "searchAliases": [
+        "suburban 3909a dark stainless 17 air fryer prep",
+        "suburban 3909a air fryer stainless control prep"
+      ],
+      "searchRequiredTerms": [
+        "suburban+3909a",
+        "suburban+17+air+fryer"
+      ]
+    },
+    {
+      "id": "aquahot-edge-tankless-controller-prep",
+      "slug": "aquahot-edge-tankless-controller-prep",
+      "title": "Aqua-Hot Edge Tankless Controller Prep",
+      "summary": "Use this Aqua-Hot Edge sheet to prepare controller, hot-water, and service details before support.",
+      "safeChecklist": [
+        "Record the Edge tankless model, controller state, hot-water symptom, recent weather, altitude if shown, and any visible leak location.",
+        "Save photos of the controller, model label, and visible product information from normal owner access.",
+        "Shut the system down for odor, leak, overheating, freeze concern, or unsafe power behavior, then contact Aqua-Hot support or authorized service."
+      ],
+      "sourceIds": [
+        "aquahot-edge-tankless-ah1041-sell-sheet"
+      ],
+      "searchAliases": [
+        "aqua hot edge tankless ah 1041 02 controller prep",
+        "aquahot edge tankless controller prep"
+      ],
+      "searchRequiredTerms": [
+        "aqua+hot+edge+tankless",
+        "ah+1041+02"
+      ]
+    },
+    {
+      "id": "aquahot-wave40-control-mode-prep",
+      "slug": "aquahot-wave40-control-mode-prep",
+      "title": "Aqua-Hot Wave 40 Control Mode Prep",
+      "summary": "Use this Aqua-Hot Wave 40 sheet to collect mode, controller, heat, and support details before service.",
+      "safeChecklist": [
+        "Record the Wave 40 model, controller mode, hot-water or cabin-heat symptom, recent weather, altitude if shown, and any visible leak location.",
+        "Save photos of the controller, model label, and visible product information from normal owner access.",
+        "Shut the system down for odor, leak, overheating, freeze concern, or unsafe power behavior, then contact Aqua-Hot support or authorized service."
+      ],
+      "sourceIds": [
+        "aquahot-wave40-ah10130-sell-sheet"
+      ],
+      "searchAliases": [
+        "aqua hot wave 40 ah 10130 03 control mode prep",
+        "aquahot wave40 controller service prep"
+      ],
+      "searchRequiredTerms": [
+        "aqua+hot+wave+40",
+        "ah+10130+03"
+      ]
+    },
+    {
+      "id": "aquahot-400-series-owner-manual-prep",
+      "slug": "aquahot-400-series-owner-manual-prep",
+      "title": "Aqua-Hot 400 Series Owner Manual Prep",
+      "summary": "Use this Aqua-Hot 400 Series owner manual to collect display, heat, hot-water, and service-call details.",
+      "safeChecklist": [
+        "Record the 400 Series model, display state, hot-water symptom, cabin-heat symptom, recent weather, and any visible leak location.",
+        "Save photos of the display, model label, and visible owner-facing indicators before support.",
+        "Shut the system down for odor, leak, overheating, freeze concern, or unsafe power behavior, then contact Aqua-Hot support or authorized service."
+      ],
+      "sourceIds": [
+        "aquahot-400-series-owners-manual"
+      ],
+      "searchAliases": [
+        "aqua hot 400 series owners manual service prep",
+        "aquahot 400 series owner manual prep"
+      ],
+      "searchRequiredTerms": [
+        "aqua+hot+400+series",
+        "400+series+owners"
+      ]
+    },
+    {
+      "id": "furrion-furnace-e7-error-service-prep",
+      "slug": "furrion-furnace-e7-error-service-prep",
+      "title": "Furrion Furnace E7 Error Service Prep",
+      "summary": "Use this Lippert/Furrion support video page to record E7 furnace details before service.",
+      "safeChecklist": [
+        "Record the Furrion furnace model, thermostat setting, E7 display, fan behavior, recent weather, and any odor or shutdown condition.",
+        "Save photos of the thermostat, display, model label if accessible, and visible owner-facing indicators.",
+        "Shut the furnace down for odor, overheating, repeated E7 behavior, or unsafe operation, then contact Lippert support or qualified RV furnace service."
+      ],
+      "sourceIds": [
+        "furrion-furnace-e7-error-video"
+      ],
+      "searchAliases": [
+        "furrion furnace e7 error service prep",
+        "furrion furnace e7 support video"
+      ],
+      "searchRequiredTerms": [
+        "furrion+furnace+e7"
+      ]
+    },
+    {
+      "id": "girard-tankless-e4-service-prep",
+      "slug": "girard-tankless-e4-service-prep",
+      "title": "Girard Tankless E4 Service Prep",
+      "summary": "Use this Lippert/Girard support video page to record E4 tankless water-heater details before service.",
+      "safeChecklist": [
+        "Record the Girard tankless model, controller display, E4 error, water-temperature symptom, recent weather, and any odor or leak condition.",
+        "Save photos of the controller, exterior label, and visible owner-facing indicators.",
+        "Shut the water heater down for odor, leak, overheating, freeze concern, or repeated E4 behavior, then contact Lippert support or qualified RV service."
+      ],
+      "sourceIds": [
+        "girard-tankless-e4-error-video"
+      ],
+      "searchAliases": [
+        "girard tankless e4 service prep",
+        "girard e4 tankless water heater support"
+      ],
+      "searchRequiredTerms": [
+        "girard+tankless+e4"
+      ]
+    },
+    {
+      "id": "girard-tankless-e5-service-prep",
+      "slug": "girard-tankless-e5-service-prep",
+      "title": "Girard Tankless E5 Service Prep",
+      "summary": "Use this Lippert/Girard support video page to record E5 tankless water-heater details before service.",
+      "safeChecklist": [
+        "Record the Girard tankless model, controller display, E5 error, water-temperature symptom, recent weather, and any odor or leak condition.",
+        "Save photos of the controller, exterior label, and visible owner-facing indicators.",
+        "Shut the water heater down for odor, leak, overheating, freeze concern, or repeated E5 behavior, then contact Lippert support or qualified RV service."
+      ],
+      "sourceIds": [
+        "girard-tankless-e5-error-video"
+      ],
+      "searchAliases": [
+        "girard tankless e5 service prep",
+        "girard e5 tankless water heater support"
+      ],
+      "searchRequiredTerms": [
+        "girard+tankless+e5"
+      ]
+    },
+    {
+      "id": "girard-tankless-e6-service-prep",
+      "slug": "girard-tankless-e6-service-prep",
+      "title": "Girard Tankless E6 Service Prep",
+      "summary": "Use this Lippert/Girard support video page to record E6 tankless water-heater details before service.",
+      "safeChecklist": [
+        "Record the Girard tankless model, controller display, E6 error, water-temperature symptom, recent weather, and any odor or leak condition.",
+        "Save photos of the controller, exterior label, and visible owner-facing indicators.",
+        "Shut the water heater down for odor, leak, overheating, freeze concern, or repeated E6 behavior, then contact Lippert support or qualified RV service."
+      ],
+      "sourceIds": [
+        "girard-tankless-e6-error-video"
+      ],
+      "searchAliases": [
+        "girard tankless e6 service prep",
+        "girard e6 tankless water heater support"
+      ],
+      "searchRequiredTerms": [
+        "girard+tankless+e6"
+      ]
+    },
+    {
+      "id": "girard-tankless-e7-service-prep",
+      "slug": "girard-tankless-e7-service-prep",
+      "title": "Girard Tankless E7 Service Prep",
+      "summary": "Use this Lippert/Girard support video page to record E7 tankless water-heater details before service.",
+      "safeChecklist": [
+        "Record the Girard tankless model, controller display, E7 error, water-temperature symptom, recent weather, and any odor or leak condition.",
+        "Save photos of the controller, exterior label, and visible owner-facing indicators.",
+        "Shut the water heater down for odor, leak, overheating, freeze concern, or repeated E7 behavior, then contact Lippert support or qualified RV service."
+      ],
+      "sourceIds": [
+        "girard-tankless-e7-error-video"
+      ],
+      "searchAliases": [
+        "girard tankless e7 service prep",
+        "girard e7 tankless water heater support"
+      ],
+      "searchRequiredTerms": [
+        "girard+tankless+e7"
+      ]
+    },
+    {
+      "id": "girard-tankless-e8-service-prep",
+      "slug": "girard-tankless-e8-service-prep",
+      "title": "Girard Tankless E8 Service Prep",
+      "summary": "Use this Lippert/Girard support video page to record E8 tankless water-heater details before service.",
+      "safeChecklist": [
+        "Record the Girard tankless model, controller display, E8 error, water-temperature symptom, recent weather, and any odor or leak condition.",
+        "Save photos of the controller, exterior label, and visible owner-facing indicators.",
+        "Shut the water heater down for odor, leak, overheating, freeze concern, or repeated E8 behavior, then contact Lippert support or qualified RV service."
+      ],
+      "sourceIds": [
+        "girard-tankless-e8-error-video"
+      ],
+      "searchAliases": [
+        "girard tankless e8 service prep",
+        "girard e8 tankless water heater support"
+      ],
+      "searchRequiredTerms": [
+        "girard+tankless+e8"
+      ]
+    },
+    {
+      "id": "furrion-chill-r32-rooftop-model-label-prep",
+      "slug": "furrion-chill-r32-rooftop-model-label-prep",
+      "title": "Furrion Chill R32 Rooftop Model Label Prep",
+      "summary": "Use this Furrion Chill R32 document page to record AC model, control, and service details before support.",
+      "safeChecklist": [
+        "Record the Furrion Chill R32 model, ceiling control or thermostat state, fan mode, cooling condition, ambient temperature, and any owner-facing alert.",
+        "Save photos of the interior controls, visible labels, and owner paperwork from normal owner access.",
+        "Use Lippert support or qualified RV HVAC service for roof unit, cooling-system, installed electrical, or parts decisions."
+      ],
+      "sourceIds": [
+        "furrion-chill-r32-rooftop-aftermarket-manual-ccd0009378"
+      ],
+      "searchAliases": [
+        "furrion chill r32 rooftop model label prep",
+        "furrion chill r32 ccd 0009378 prep"
+      ],
+      "searchRequiredTerms": [
+        "furrion+chill+r32",
+        "ccd+0009378"
+      ]
+    },
+    {
+      "id": "furrion-low-profile-r32-ac-control-prep",
+      "slug": "furrion-low-profile-r32-ac-control-prep",
+      "title": "Furrion Low Profile R32 AC Control Prep",
+      "summary": "Use this Furrion Low Profile R32 document page to record AC model, control, and service details before support.",
+      "safeChecklist": [
+        "Record the Furrion Low Profile R32 model, ceiling control or thermostat state, fan mode, cooling condition, ambient temperature, and any owner-facing alert.",
+        "Save photos of the interior controls, visible labels, and owner paperwork from normal owner access.",
+        "Use Lippert support or qualified RV HVAC service for roof unit, cooling-system, installed electrical, or parts decisions."
+      ],
+      "sourceIds": [
+        "furrion-low-profile-r32-ac-manual-ccd0009380"
+      ],
+      "searchAliases": [
+        "furrion low profile r32 ac control prep",
+        "furrion ccd 0009380 low profile prep"
+      ],
+      "searchRequiredTerms": [
+        "furrion+low+profile+r32",
+        "ccd+0009380"
+      ]
+    },
+    {
+      "id": "furrion-chill-quiet-manual-control-prep",
+      "slug": "furrion-chill-quiet-manual-control-prep",
+      "title": "Furrion Chill Quiet Manual Control Prep",
+      "summary": "Use this Furrion Chill Quiet manual-control page to document control settings and support details.",
+      "safeChecklist": [
+        "Record the Furrion Chill Quiet model, manual-control setting, fan mode, cooling condition, ambient temperature, and owner-facing indicators.",
+        "Save photos of the manual controls, visible labels, and owner paperwork from normal owner access.",
+        "Use Lippert support or qualified RV HVAC service for roof unit, cooling-system, installed electrical, or parts decisions."
+      ],
+      "sourceIds": [
+        "furrion-chill-quiet-manual-control-user-manual-ccd0010397"
+      ],
+      "searchAliases": [
+        "furrion chill quiet manual control prep",
+        "furrion quiet manual control ccd 0010397"
+      ],
+      "searchRequiredTerms": [
+        "furrion+quiet+manual+control",
+        "ccd+0010397"
+      ]
+    },
+    {
+      "id": "furrion-variable-speed-quiet-adb-control-prep",
+      "slug": "furrion-variable-speed-quiet-adb-control-prep",
+      "title": "Furrion Variable Speed Quiet ADB Control Prep",
+      "summary": "Use this Furrion Variable Speed Quiet ADB page to record control, airflow, and support details.",
+      "safeChecklist": [
+        "Record the Furrion Variable Speed model, Quiet ADB control state, fan mode, cooling condition, ambient temperature, and owner-facing indicators.",
+        "Save photos of the air-distribution controls, visible labels, and owner paperwork from normal owner access.",
+        "Use Lippert support or qualified RV HVAC service for roof unit, cooling-system, installed electrical, or parts decisions."
+      ],
+      "sourceIds": [
+        "furrion-variable-speed-quiet-adb-manual-ccd0010932"
+      ],
+      "searchAliases": [
+        "furrion variable speed quiet adb control prep",
+        "quiet adb 0010932 furrion prep"
+      ],
+      "searchRequiredTerms": [
+        "ccd+0010932",
+        "quiet+adb+0010932"
+      ]
+    },
+    {
+      "id": "furrion-adb-control-state-prep",
+      "slug": "furrion-adb-control-state-prep",
+      "title": "Furrion ADB Control State Prep",
+      "summary": "Use this Furrion ADB quick-start page to record air-distribution control state before support.",
+      "safeChecklist": [
+        "Record the Furrion air-distribution box model, ADB control state, fan mode, cooling condition, and owner-facing indicators.",
+        "Save photos of the controls, visible labels, and owner paperwork from normal owner access.",
+        "Use Lippert support or qualified RV HVAC service for roof unit, cooling-system, installed electrical, or parts decisions."
+      ],
+      "sourceIds": [
+        "furrion-adb-quick-start-ccd0009363"
+      ],
+      "searchAliases": [
+        "furrion air distribution box adb control state prep",
+        "furrion adb 9363 quick start prep"
+      ],
+      "searchRequiredTerms": [
+        "ccd+0009363",
+        "furrion+adb+9363"
+      ]
+    },
+    {
+      "id": "furrion-thermostat-adapter-kit-service-prep",
+      "slug": "furrion-thermostat-adapter-kit-service-prep",
+      "title": "Furrion Thermostat Adapter Kit Service Prep",
+      "summary": "Use this Furrion thermostat adapter kit page to record kit, thermostat, and service details.",
+      "safeChecklist": [
+        "Record the FACC13VSD2 kit, thermostat model, control state, connected appliance model, symptom timing, and owner-facing indicators.",
+        "Save photos of the thermostat, adapter-kit label if visible, and owner paperwork from normal owner access.",
+        "Use Lippert support or qualified RV HVAC service for thermostat integration, installed electrical, or parts decisions."
+      ],
+      "sourceIds": [
+        "furrion-thermostat-adapter-kit-ccd0010976"
+      ],
+      "searchAliases": [
+        "furrion thermostat adapter facc13vsd2 service prep",
+        "furrion thermostat adapter kit ccd 0010976"
+      ],
+      "searchRequiredTerms": [
+        "furrion+thermostat+adapter",
+        "facc13vsd2"
+      ]
+    },
+    {
+      "id": "furrion-2-in-1-range-oven-imfha00083-prep",
+      "slug": "furrion-2-in-1-range-oven-imfha00083-prep",
+      "title": "Furrion 2-in-1 Range Oven IM-FHA00083 Prep",
+      "summary": "Use this Furrion 2-in-1 range oven manual page to record model, control, and support details.",
+      "safeChecklist": [
+        "Record the IM-FHA00083 manual reference, range or oven model, control setting, cooking symptom, power state, odor or overheating concern, and recent use.",
+        "Save photos of the product label, controls, display if present, and visible owner paperwork from normal owner access.",
+        "Stop using the appliance for odor, smoke, overheating, or unsafe power behavior, then contact Lippert support or qualified RV cooking-appliance service."
+      ],
+      "sourceIds": [
+        "furrion-2-in-1-range-oven-imfha00083"
+      ],
+      "searchAliases": [
+        "furrion im fha00083 2 in 1 range oven prep",
+        "furrion 2 in 1 range oven im fha00083 support"
+      ],
+      "searchRequiredTerms": [
+        "furrion+im+fha00083",
+        "furrion+2+in+1+range+oven"
+      ]
+    },
+    {
+      "id": "furrion-21-chef-electric-oven-control-prep",
+      "slug": "furrion-21-chef-electric-oven-control-prep",
+      "title": "Furrion 21 Chef Electric Oven Control Prep",
+      "summary": "Use this Furrion Chef electric oven page to record model, controls, and service details before support.",
+      "safeChecklist": [
+        "Record the Furrion Chef electric oven model, control setting, cooking symptom, power state, odor or overheating concern, and recent use.",
+        "Save photos of the product label, controls, display if present, and visible owner paperwork from normal owner access.",
+        "Stop using the appliance for odor, smoke, overheating, or unsafe power behavior, then contact Lippert support or qualified RV cooking-appliance service."
+      ],
+      "sourceIds": [
+        "furrion-21-chef-electric-oven-ccd0005681"
+      ],
+      "searchAliases": [
+        "furrion 21 chef electric oven control prep",
+        "furrion chef electric oven ccd 0005681"
+      ],
+      "searchRequiredTerms": [
+        "furrion+chef+electric+oven",
+        "ccd+0005681"
+      ]
+    },
+    {
+      "id": "furrion-13-mini-rangehood-filter-control-prep",
+      "slug": "furrion-13-mini-rangehood-filter-control-prep",
+      "title": "Furrion 13 Mini Rangehood Filter Control Prep",
+      "summary": "Use this Furrion 13-inch mini rangehood page to record filter, fan, light, and support details.",
+      "safeChecklist": [
+        "Record the FH013SDSF or rangehood model, fan response, light response, filter condition, odor or smoke condition, and recent use.",
+        "Save photos of the product label, controls, filter area, and visible owner paperwork from normal owner access.",
+        "Stop using nearby cooking appliances for smoke, overheating, or unsafe power behavior, then contact Lippert support or qualified RV appliance service."
+      ],
+      "sourceIds": [
+        "furrion-13-mini-rangehood-troubleshooting-ccd0008524"
+      ],
+      "searchAliases": [
+        "furrion 13 mini rangehood filter control prep",
+        "furrion fh013sdsf rangehood ccd 0008524"
+      ],
+      "searchRequiredTerms": [
+        "furrion+13+mini+rangehood",
+        "fh013sdsf"
+      ]
+    },
+    {
+      "id": "onan-p5000idf-efi-vft-co-service-prep",
+      "slug": "onan-p5000idf-efi-vft-co-service-prep",
+      "title": "Onan P5000iDF EFI VFT CO Service Prep",
+      "summary": "Use this Cummins Onan owner manual to record P5000iDF EFI display, CO, power, and service-call details.",
+      "safeChecklist": [
+        "Record the P5000iDF EFI model, serial, VFT display state, CO indicator state, fuel type, load condition, shutdown timing, and recent weather.",
+        "Save photos of the model label, display, owner-facing indicators, and generator location from normal owner access.",
+        "Shut the generator down for CO alarm, exhaust concern, fuel odor, overheating, unsafe power behavior, or repeated shutdown, then contact Cummins support or qualified generator service."
+      ],
+      "sourceIds": [
+        "onan-p5000idf-efi-owner-manual-2025"
+      ],
+      "searchAliases": [
+        "onan p5000idf efi vft co service prep",
+        "cummins p5000idf efi owner manual 2025"
+      ],
+      "searchRequiredTerms": [
+        "onan+p5000idf+efi",
+        "p5000idf+vft"
+      ]
+    },
+    {
+      "id": "onan-p9500df-efi-vft-co-fuel-prep",
+      "slug": "onan-p9500df-efi-vft-co-fuel-prep",
+      "title": "Onan P9500DF EFI VFT CO Fuel Prep",
+      "summary": "Use this Cummins Onan owner manual to record P9500DF EFI display, CO, fuel, and service-call details.",
+      "safeChecklist": [
+        "Record the P9500DF EFI model, serial, VFT display state, CO indicator state, fuel type, load condition, shutdown timing, and recent weather.",
+        "Save photos of the model label, display, owner-facing indicators, and generator location from normal owner access.",
+        "Shut the generator down for CO alarm, exhaust concern, fuel odor, overheating, unsafe power behavior, or repeated shutdown, then contact Cummins support or qualified generator service."
+      ],
+      "sourceIds": [
+        "onan-p9500df-efi-owner-manual-2025"
+      ],
+      "searchAliases": [
+        "onan p9500df efi vft co fuel prep",
+        "cummins p9500df efi owner manual 2025"
+      ],
+      "searchRequiredTerms": [
+        "onan+p9500df+efi",
+        "p9500df+vft"
       ]
     }
   ],

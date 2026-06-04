@@ -3,8 +3,8 @@ import corpus from "../data/corpus.json";
 import { buildSymptomSearchIndex, lookupSymptomGuides, summarizeCorpus } from "./corpus";
 
 const expectedEntryCount = 864;
-const expectedSourceCount = 1031;
-const expectedSymptomCount = 863;
+const expectedSourceCount = 1078;
+const expectedSymptomCount = 911;
 
 const nextBatch = [
   ["dometic-cfx5-warranty-statements-support", "https://support.dometic.com/en/cfx5-coolers/Where-do-I-find-warranty-statements-for-my-product-ca5", "dometic-cfx5-warranty-statement-prep", ["cfx5+warranty"], "dometic cfx5 warranty statement prep"],
