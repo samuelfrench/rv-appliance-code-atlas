@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 864;
-const expectedSourceCount = 818;
-const expectedSymptomCount = 650;
+const expectedSourceCount = 848;
+const expectedSymptomCount = 680;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -8973,219 +8973,284 @@ describe("verified corpus", () => {
     expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
   });
 
-  it("adds the next official-source gap-scan prep batch without code entries", () => {
+  it("adds the Thetford, MaxxAir, Suburban, Aqua-Hot, Furrion, and Onan official-source gap-scan prep batch without code entries", () => {
     const expectedSources = new Map<string, string>([
+      ["thetford-porta-potti-135-support", "https://www.thetford.com/us/thetford-support/porta-potti-135/"],
+      ["thetford-porta-potti-335-support", "https://www.thetford.com/us/thetford-support/porta-potti-335/"],
+      ["thetford-c220-series-support", "https://www.thetford.com/en/thetford-service-and-support/c220-series/"],
+      ["thetford-c500-series-support", "https://www.thetford.com/en/thetford-service-and-support/c500-series/"],
+      ["thetford-c260-user-manual-router", "https://www.thetford.com/en/document/um-c260/"],
+      ["thetford-twusch-2025-compatibility-pdf", "https://www.thetford.com/app/uploads/2025/05/Thetford_Twusch_2025_EN.pdf"],
+      ["maxxair-maxxfan-pivot-0061000-product", "https://www.maxxair.com/Products/fans/maxxfan-pivot-00-61000/"],
+      ["maxxair-maxxfan-low-profile-04301m-product", "https://www.maxxair.com/products/fans/maxxfan-low-profile-00-04301M.aspx"],
+      ["maxxair-maxxfan-low-profile-04401m-product", "https://www.maxxair.com/products/fans/maxxfan-low-profile-00-04401M.aspx"],
+      ["maxxair-maxxfan-mini-deluxe-3807-product", "https://www.maxxair.com/Products/fans/maxxfan-mini-3807/"],
+      ["maxxair-maxxfan-mini-deluxe-3857-product", "https://www.maxxair.com/Products/fans/maxxfan-mini-3857/"],
+      ["maxxair-maxxfan-mini-plus-3851-product", "https://www.maxxair.com/Products/fans/maxxfan-mini-3851/"],
+      ["maxxair-maxxfan-deluxe-05301k-product", "https://www.maxxair.com/products/fans/maxxfan-deluxe-00-05301K/"],
+      ["maxxair-maxxfan-deluxe-06401k-product", "https://www.maxxair.com/products/fans/maxxfan-deluxe-00-06401K/"],
+      ["maxxair-maxxfan-plus-04751ks-product", "https://www.maxxair.com/products/fans/maxxfan-plus-00-04751KS/"],
+      ["maxxair-maxxfan-dome-03812b-product", "https://www.maxxair.com/products/fans/maxxfan-dome-00-03812B/"],
+      ["maxxair-maxxfan-dome-plus-03810b-product", "https://www.maxxair.com/products/fans/maxxfan-dome-plus-00-03810B/"],
       [
-        "onan-rv-spring-startup-knowledge-hub",
-        "https://shop.cummins.com/SC/knowledge-hub/d-us/rv-spring-startup-getting-your-onan-generator-adventure-ready-MCITW6IGRH7FEFNO3AD3I5ELEA4M",
+        "suburban-saw6d-direct-fit-water-heater-product",
+        "https://suburbanrv.com/water-heating/tank-water-heaters/direct-fit-replacement-water-heaters/advantage-direct-fit-water-heater/",
       ],
+      ["suburban-23-elite-griddle-product", "https://suburbanrv.com/kitchen-galley/griddles/23-elite-series-griddle/"],
+      ["suburban-23-griddle-bottle-adapter-product", "https://suburbanrv.com/kitchen-galley/griddles/23-gas-griddle-with-bottle-adapter/"],
+      ["suburban-17-elite-plus-range-product", "https://suburbanrv.com/kitchen-galley/ranges/17-elite-series-plus-range/"],
+      ["suburban-22-elite-plus-range-product", "https://suburbanrv.com/kitchen-galley/ranges/22-elite-series-plus-range/"],
+      ["suburban-3-burner-slide-in-cooktop-product", "https://suburbanrv.com/kitchen-galley/cooktops/slide-in-cooktops/3-burner-slide-in-cooktop/"],
       [
-        "onan-generator-maintenance-checklist-knowledge-hub",
-        "https://shop.cummins.com/SC/knowledge-hub/d-us/how-to-get-the-best-life-out-of-your-generator-MCFGQV6RPXFNCOHNHSGKGVP2UX3Y",
+        "suburban-double-element-induction-cooktop-product",
+        "https://suburbanrv.com/kitchen-galley/cooktops/induction-cooktops/double-element-induction-cooktop/",
       ],
-      [
-        "onan-rv-generator-winterize-tips-knowledge-hub",
-        "https://shop.cummins.com/SC/knowledge-hub/d-us/winterize-your-rv-generator-with-these-tips-MCU6UG2BURBRG3NMPQUK2OSQURTI",
-      ],
-      ["onan-rv-generator-maintenance-kits-0058719", "https://mart.cummins.com/imagelibrary/data/assetfiles/0058719.pdf"],
-      ["thetford-c200-cassette-toilet-support", "https://thetford.com/us/thetford-support/c200-cassette-toilet/"],
-      [
-        "thetford-c402c-cassette-toilet-support",
-        "https://www.thetford.com/us/thetford-support/c402c-cassette-toilet/",
-      ],
-      ["thetford-porta-potti-345-support", "https://www.thetford.com/us/thetford-support/porta-potti-345/"],
-      ["maxxair-maxxfan-deluxe-07000k-product", "https://www.maxxair.com/products/fans/maxxfan-deluxe-00-07000K/"],
-      ["maxxair-maxxfan-deluxe-06200k-product", "https://www.maxxair.com/products/fans/maxxfan-deluxe-00-06200K/"],
-      ["maxxair-maxxfan-plus-04000k-product", "https://www.maxxair.com/products/fans/maxxfan-plus-00-04000K/"],
-      [
-        "suburban-18-griddle-bottle-adapter-product",
-        "https://suburbanrv.com/kitchen-galley/griddles/18-gas-griddle-with-bottle-adapter/",
-      ],
-      ["suburban-18-elite-griddle-product", "https://suburbanrv.com/kitchen-galley/griddles/18-elite-series-griddle/"],
-      [
-        "suburban-sf-q-series-furnace-product",
-        "https://suburbanrv.com/climate-control/furnaces/sf-q-series-furnaces/sf-q-series-furnace/",
-      ],
-      [
-        "suburban-sf-fq-series-furnace-product",
-        "https://suburbanrv.com/climate-control/furnaces/sf-fq-series-furnaces/sf-fq-series-furnace/",
-      ],
-      ["aquahot-current-products-library", "https://library.aquahot.com/products/L91541418896/"],
-      ["aquahot-250-d01-use-care-guide", "https://library.aquahot.com/wp-content/uploads/2022/07/AHE-250-D01-Use-and-Care-Guide.pdf"],
-      ["aquahot-675-d04-use-care-guide", "https://library.aquahot.com/wp-content/uploads/2022/04/AHE-675-D04-Use-and-Care-Guide.pdf"],
-      ["greystone-20-inch-3-burner-cooktop-ffd-manual-ccd0008339", "https://support.lci1.com/documents/ccd-0008339"],
-      [
-        "furrion-2-in-1-range-oven-manual-imfha00013",
-        "https://support.lci1.com/documents/furrion-2-in-1-range-oven-instruction-manual",
-      ],
-      [
-        "furrion-chef-built-in-gas-oven-manual-imfha00099",
-        "https://support.lci1.com/documents/furrion-chef-collection-rv-built-in-gas-oven-instructions-manual-im-fha00099-v2.0",
-      ],
-      [
-        "furrion-rv-gas-oven-manual-imfha00023",
-        "https://support.lci1.com/documents/furrion-rv-gas-oven-instruction-manuals",
-      ],
+      ["aquahot-125g-product-page", "https://www.aquahot.com/products/rv/125G.aspx"],
+      ["aquahot-200-series-use-care-guide", "https://www.aquahot.com/files/owners_manual/200-Series-UseandCare.pdf"],
+      ["lippert-furrion-chill-ac-compatibility-page", "https://www.lippert.com/rv-camping/collections/furrion-rv-air-conditioners/compatibility"],
+      ["furrion-chill-adb-manual-single-zone-control-product", "https://www.lippert.com/air-distribution-box-with-manual-single-zone-control-white-2021123818"],
+      ["onan-qg4000i-owner-guide-0056746", "https://mart.cummins.com/imagelibrary/data/assetfiles/0056746.pdf"],
+      ["onan-qd3200-spec-sheet-0058692", "https://mart.cummins.com/imagelibrary/data/assetfiles/0058692.pdf"],
     ]);
     const expectedSymptoms = new Map<string, { sourceIds: string[]; requiredTerms: string[]; query: string }>([
       [
-        "onan-generator-spring-startup-model-spec-prep",
+        "thetford-porta-potti-135-bellows-storage-prep",
         {
-          sourceIds: ["onan-rv-spring-startup-knowledge-hub"],
-          requiredTerms: ["spring+startup", "onan+spring", "mcitw6"],
-          query: "onan spring startup model spec serial gsn prep",
+          sourceIds: ["thetford-porta-potti-135-support"],
+          requiredTerms: ["porta+potti+135", "bellows"],
+          query: "thetford porta potti 135 bellows storage prep",
         },
       ],
       [
-        "onan-generator-maintenance-checklist-kit-prep",
+        "thetford-porta-potti-335-piston-pump-level-prep",
         {
-          sourceIds: ["onan-generator-maintenance-checklist-knowledge-hub", "onan-rv-generator-maintenance-kits-0058719"],
-          requiredTerms: ["maintenance+checklist", "maintenance+kit", "0058719"],
-          query: "onan maintenance checklist kit 0058719 green label prep",
+          sourceIds: ["thetford-porta-potti-335-support"],
+          requiredTerms: ["porta+potti+335", "piston+pump"],
+          query: "thetford porta potti 335 piston pump level prep",
         },
       ],
       [
-        "onan-rv-generator-winterize-storage-tips-prep",
+        "thetford-c220-cassette-toilet-model-manual-prep",
         {
-          sourceIds: ["onan-rv-generator-winterize-tips-knowledge-hub"],
-          requiredTerms: ["winterize+generator", "onan+winterize", "mcu6ug2"],
-          query: "onan winterize generator storage tips mcu6ug2 prep",
+          sourceIds: ["thetford-c220-series-support"],
+          requiredTerms: ["c220"],
+          query: "thetford c220 cassette toilet model manual prep",
         },
       ],
       [
-        "thetford-c200-cassette-toilet-model-cleaning-prep",
+        "thetford-c500-cassette-toilet-model-manual-prep",
         {
-          sourceIds: ["thetford-c200-cassette-toilet-support"],
-          requiredTerms: ["c200+cassette", "c200"],
-          query: "thetford c200 cassette toilet model cleaning prep",
+          sourceIds: ["thetford-c500-series-support"],
+          requiredTerms: ["c500"],
+          query: "thetford c500 cassette toilet model manual prep",
         },
       ],
       [
-        "thetford-c402c-cassette-toilet-model-travel-prep",
+        "thetford-c260-user-manual-model-prep",
         {
-          sourceIds: ["thetford-c402c-cassette-toilet-support"],
-          requiredTerms: ["c402c+cassette", "c402c"],
-          query: "thetford c402c cassette toilet travel flush tank prep",
+          sourceIds: ["thetford-c260-user-manual-router"],
+          requiredTerms: ["um+c260", "c260"],
+          query: "thetford c260 user manual model prep",
         },
       ],
       [
-        "thetford-porta-potti-345-flush-storage-prep",
+        "thetford-twusch-compatibility-model-prep",
         {
-          sourceIds: ["thetford-porta-potti-345-support"],
-          requiredTerms: ["porta+potti+345", "345+flush"],
-          query: "thetford porta potti 345 flush storage prep",
+          sourceIds: ["thetford-twusch-2025-compatibility-pdf"],
+          requiredTerms: ["twusch+2025", "compatibility"],
+          query: "thetford twusch 2025 compatibility model prep",
         },
       ],
       [
-        "maxxair-maxxfan-deluxe-07000k-remote-model-prep",
+        "maxxair-maxxfan-pivot-0061000-keypad-prep",
         {
-          sourceIds: ["maxxair-maxxfan-deluxe-07000k-product"],
-          requiredTerms: ["00+07000k", "07000k+model+prep"],
-          query: "maxxair maxxfan deluxe 00 07000k remote model prep",
+          sourceIds: ["maxxair-maxxfan-pivot-0061000-product"],
+          requiredTerms: ["00+61000", "pivot"],
+          query: "maxxair maxxfan pivot 00 61000 keypad prep",
         },
       ],
       [
-        "maxxair-maxxfan-deluxe-06200k-ceiling-control-prep",
+        "maxxair-maxxfan-low-profile-04301m-model-prep",
         {
-          sourceIds: ["maxxair-maxxfan-deluxe-06200k-product"],
-          requiredTerms: ["00+06200k", "06200k"],
-          query: "maxxair maxxfan deluxe 00 06200k ceiling control prep",
+          sourceIds: ["maxxair-maxxfan-low-profile-04301m-product"],
+          requiredTerms: ["00+04301m", "low+profile"],
+          query: "maxxair maxxfan low profile 00 04301m model prep",
         },
       ],
       [
-        "maxxair-maxxfan-plus-04000k-manual-control-prep",
+        "maxxair-maxxfan-low-profile-04401m-model-prep",
         {
-          sourceIds: ["maxxair-maxxfan-plus-04000k-product"],
-          requiredTerms: ["00+04000k", "04000k"],
-          query: "maxxair maxxfan plus 00 04000k manual control prep",
+          sourceIds: ["maxxair-maxxfan-low-profile-04401m-product"],
+          requiredTerms: ["00+04401m", "low+profile"],
+          query: "maxxair maxxfan low profile 00 04401m model prep",
         },
       ],
       [
-        "suburban-18-griddle-bottle-adapter-storage-prep",
+        "maxxair-maxxfan-mini-deluxe-3807-remote-prep",
         {
-          sourceIds: ["suburban-18-griddle-bottle-adapter-product"],
-          requiredTerms: ["4062a", "18+griddle+bottle"],
-          query: "suburban 4062a 18 griddle bottle adapter storage prep",
+          sourceIds: ["maxxair-maxxfan-mini-deluxe-3807-product"],
+          requiredTerms: ["00+03807", "mini+deluxe"],
+          query: "maxxair maxxfan mini deluxe 00 03807 remote prep",
         },
       ],
       [
-        "suburban-18-elite-griddle-flare-storage-prep",
+        "maxxair-maxxfan-mini-deluxe-3857-remote-prep",
         {
-          sourceIds: ["suburban-18-elite-griddle-product"],
-          requiredTerms: ["3060a", "18+elite+griddle"],
-          query: "suburban 3060a 18 elite griddle flare storage prep",
+          sourceIds: ["maxxair-maxxfan-mini-deluxe-3857-product"],
+          requiredTerms: ["00+03857", "mini+deluxe"],
+          query: "maxxair maxxfan mini deluxe 00 03857 remote prep",
         },
       ],
       [
-        "suburban-sf-q-furnace-door-return-air-prep",
+        "maxxair-maxxfan-mini-plus-3851-model-prep",
         {
-          sourceIds: ["suburban-sf-q-series-furnace-product"],
-          requiredTerms: ["sf+q+series", "2552a"],
-          query: "suburban sf q series 2552a furnace door return air prep",
+          sourceIds: ["maxxair-maxxfan-mini-plus-3851-product"],
+          requiredTerms: ["mini+plus"],
+          query: "maxxair maxxfan mini plus 00 03851 model prep",
         },
       ],
       [
-        "suburban-sf-fq-furnace-interior-service-prep",
+        "maxxair-maxxfan-deluxe-05301k-exhaust-prep",
         {
-          sourceIds: ["suburban-sf-fq-series-furnace-product"],
-          requiredTerms: ["sf+fq+series", "2551a"],
-          query: "suburban sf fq series 2551a furnace interior service prep",
+          sourceIds: ["maxxair-maxxfan-deluxe-05301k-product"],
+          requiredTerms: ["00+05301k", "deluxe"],
+          query: "maxxair maxxfan deluxe 00 05301k exhaust prep",
         },
       ],
       [
-        "aquahot-current-product-manual-library-prep",
+        "maxxair-maxxfan-deluxe-06401k-exhaust-prep",
         {
-          sourceIds: ["aquahot-current-products-library"],
-          requiredTerms: ["current+aqua+hot+products", "l91541418896"],
-          query: "aqua hot current products l91541418896 manual library prep",
+          sourceIds: ["maxxair-maxxfan-deluxe-06401k-product"],
+          requiredTerms: ["00+06401k", "deluxe"],
+          query: "maxxair maxxfan deluxe 00 06401k exhaust prep",
         },
       ],
       [
-        "aquahot-250-d01-winterization-service-prep",
+        "maxxair-maxxfan-plus-04751ks-thermostat-prep",
         {
-          sourceIds: ["aquahot-250-d01-use-care-guide"],
-          requiredTerms: ["250+d01", "ahe+250+d01"],
-          query: "aqua hot 250 d01 ahe 250 d01 winterization service prep",
+          sourceIds: ["maxxair-maxxfan-plus-04751ks-product"],
+          requiredTerms: ["00+04751ks", "thermostat"],
+          query: "maxxair maxxfan plus 00 04751ks thermostat prep",
         },
       ],
       [
-        "aquahot-675-d04-winterization-service-prep",
+        "maxxair-maxxfan-dome-03812b-model-prep",
         {
-          sourceIds: ["aquahot-675-d04-use-care-guide"],
-          requiredTerms: ["675+d04", "ahe+675+d04"],
-          query: "aqua hot 675 d04 ahe 675 d04 winterization service prep",
+          sourceIds: ["maxxair-maxxfan-dome-03812b-product"],
+          requiredTerms: ["00+03812b"],
+          query: "maxxair maxxfan dome 00 03812b model prep",
         },
       ],
       [
-        "greystone-20-inch-3-burner-cooktop-ffd-prep",
+        "maxxair-maxxfan-dome-plus-03810b-model-prep",
         {
-          sourceIds: ["greystone-20-inch-3-burner-cooktop-ffd-manual-ccd0008339"],
-          requiredTerms: ["greystone+20+inch", "ccd0008339"],
-          query: "greystone 20 inch 3 burner cooktop ffd ccd0008339 prep",
+          sourceIds: ["maxxair-maxxfan-dome-plus-03810b-product"],
+          requiredTerms: ["00+03810b"],
+          query: "maxxair maxxfan dome plus 00 03810b model prep",
         },
       ],
       [
-        "furrion-2-in-1-range-oven-model-service-prep",
+        "suburban-saw6d-direct-fit-water-heater-prep",
         {
-          sourceIds: ["furrion-2-in-1-range-oven-manual-imfha00013"],
-          requiredTerms: ["im+fha00013", "2+in+1+range+oven"],
-          query: "furrion 2 in 1 range oven im fha00013 model service prep",
+          sourceIds: ["suburban-saw6d-direct-fit-water-heater-product"],
+          requiredTerms: ["saw6d", "direct+fit"],
+          query: "suburban saw6d direct fit water heater prep",
         },
       ],
       [
-        "furrion-chef-built-in-gas-oven-model-prep",
+        "suburban-23-elite-griddle-flare-storage-prep",
         {
-          sourceIds: ["furrion-chef-built-in-gas-oven-manual-imfha00099"],
-          requiredTerms: ["im+fha00099", "chef+built+in"],
-          query: "furrion chef built in gas oven im fha00099 model prep",
+          sourceIds: ["suburban-23-elite-griddle-product"],
+          requiredTerms: ["23+elite+griddle", "3061a"],
+          query: "suburban 3061a 23 elite griddle flare storage prep",
         },
       ],
       [
-        "furrion-rv-gas-oven-imfha00023-service-prep",
+        "suburban-23-griddle-bottle-adapter-storage-prep",
         {
-          sourceIds: ["furrion-rv-gas-oven-manual-imfha00023"],
-          requiredTerms: ["im+fha00023", "rv+gas+oven"],
-          query: "furrion rv gas oven im fha00023 service prep",
+          sourceIds: ["suburban-23-griddle-bottle-adapter-product"],
+          requiredTerms: ["23+gas+griddle", "4063a"],
+          query: "suburban 4063a 23 gas griddle bottle adapter storage prep",
+        },
+      ],
+      [
+        "suburban-17-elite-plus-range-model-prep",
+        {
+          sourceIds: ["suburban-17-elite-plus-range-product"],
+          requiredTerms: ["17+elite+plus"],
+          query: "suburban 17 elite plus range model prep",
+        },
+      ],
+      [
+        "suburban-22-elite-plus-range-model-prep",
+        {
+          sourceIds: ["suburban-22-elite-plus-range-product"],
+          requiredTerms: ["22+elite+plus"],
+          query: "suburban 22 elite plus range model prep",
+        },
+      ],
+      [
+        "suburban-3-burner-slide-in-cooktop-flame-prep",
+        {
+          sourceIds: ["suburban-3-burner-slide-in-cooktop-product"],
+          requiredTerms: ["3+burner+slide+in"],
+          query: "suburban 3 burner slide in cooktop flame prep",
+        },
+      ],
+      [
+        "suburban-double-element-induction-cooktop-control-prep",
+        {
+          sourceIds: ["suburban-double-element-induction-cooktop-product"],
+          requiredTerms: ["double+element+induction"],
+          query: "suburban double element induction cooktop control prep",
+        },
+      ],
+      [
+        "aquahot-125g-gasoline-model-service-prep",
+        {
+          sourceIds: ["aquahot-125g-product-page"],
+          requiredTerms: ["125g", "gasoline"],
+          query: "aqua hot 125g gasoline model service prep",
+        },
+      ],
+      [
+        "aquahot-200-series-fluid-winterization-prep",
+        {
+          sourceIds: ["aquahot-200-series-use-care-guide"],
+          requiredTerms: ["200+series", "use+and+care"],
+          query: "aqua hot 200 series fluid winterization prep",
+        },
+      ],
+      [
+        "furrion-chill-ac-compatibility-control-prep",
+        {
+          sourceIds: ["lippert-furrion-chill-ac-compatibility-page"],
+          requiredTerms: ["furrion+rv+air+conditioners", "compatibility"],
+          query: "furrion chill ac compatibility control prep",
+        },
+      ],
+      [
+        "furrion-chill-adb-manual-single-zone-control-prep",
+        {
+          sourceIds: ["furrion-chill-adb-manual-single-zone-control-product"],
+          requiredTerms: ["2021123818", "manual+single+zone"],
+          query: "furrion chill adb manual single zone control 2021123818 prep",
+        },
+      ],
+      [
+        "onan-qg4000i-owner-guide-load-prep",
+        {
+          sourceIds: ["onan-qg4000i-owner-guide-0056746"],
+          requiredTerms: ["qg+4000i", "0056746"],
+          query: "onan qg4000i owner guide load 0056746 prep",
+        },
+      ],
+      [
+        "onan-qd3200-spec-sheet-model-prep",
+        {
+          sourceIds: ["onan-qd3200-spec-sheet-0058692"],
+          requiredTerms: ["qd+3200", "0058692"],
+          query: "onan qd3200 spec sheet model 0058692 prep",
         },
       ],
     ]);
@@ -9233,17 +9298,22 @@ describe("verified corpus", () => {
       "toilet",
       "fan",
       "furnace",
-      "water heater",
+      "manual control",
       "generator",
       "hydronic",
       "remote",
       "thermostat",
       "storage",
       "recall",
-      "cassette toilet",
+      "single zone",
       "griddle",
       "gas oven",
       "manual library",
+      "water heater",
+      "cooktop",
+      "air conditioner",
+      "portable toilet",
+      "cassette toilet",
     ]) {
       expect(
         lookupSymptomGuides(index, query)

@@ -2665,7 +2665,9 @@ test("lookup surfaces the CFX Porta Potti Greystone Furrion microwave and hydron
   expect(pageErrors).toEqual([]);
 });
 
-test("lookup surfaces the next official-source gap-scan prep batch without generic hijacks", async ({ page }) => {
+test("lookup surfaces the Thetford MaxxAir Suburban Aqua-Hot Furrion Onan gap-scan prep batch without generic hijacks", async ({
+  page,
+}) => {
   const consoleErrors: string[] = [];
   const pageErrors: string[] = [];
   page.on("console", (message) => {
@@ -2679,26 +2681,30 @@ test("lookup surfaces the next official-source gap-scan prep batch without gener
   const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
   const cases = [
     [
-      "onan spring startup model spec serial gsn prep",
-      "/symptoms/onan-generator-spring-startup-model-spec-prep/",
+      "thetford porta potti 135 bellows storage prep",
+      "/symptoms/thetford-porta-potti-135-bellows-storage-prep/",
     ],
     [
-      "onan maintenance checklist kit 0058719 green label prep",
-      "/symptoms/onan-generator-maintenance-checklist-kit-prep/",
+      "thetford c500 cassette toilet model manual prep",
+      "/symptoms/thetford-c500-cassette-toilet-model-manual-prep/",
     ],
-    ["thetford c200 cassette toilet model cleaning prep", "/symptoms/thetford-c200-cassette-toilet-model-cleaning-prep/"],
-    ["thetford porta potti 345 flush storage prep", "/symptoms/thetford-porta-potti-345-flush-storage-prep/"],
     [
-      "maxxair maxxfan deluxe 00 07000k remote model prep",
-      "/symptoms/maxxair-maxxfan-deluxe-07000k-remote-model-prep/",
+      "maxxair maxxfan pivot 00 61000 keypad prep",
+      "/symptoms/maxxair-maxxfan-pivot-0061000-keypad-prep/",
     ],
-    ["suburban 4062a 18 griddle bottle adapter storage prep", "/symptoms/suburban-18-griddle-bottle-adapter-storage-prep/"],
-    ["aqua hot 250 d01 ahe 250 d01 winterization service prep", "/symptoms/aquahot-250-d01-winterization-service-prep/"],
     [
-      "greystone 20 inch 3 burner cooktop ffd ccd0008339 prep",
-      "/symptoms/greystone-20-inch-3-burner-cooktop-ffd-prep/",
+      "maxxair maxxfan plus 00 04751ks thermostat prep",
+      "/symptoms/maxxair-maxxfan-plus-04751ks-thermostat-prep/",
     ],
-    ["furrion chef built in gas oven im fha00099 model prep", "/symptoms/furrion-chef-built-in-gas-oven-model-prep/"],
+    ["suburban saw6d direct fit water heater prep", "/symptoms/suburban-saw6d-direct-fit-water-heater-prep/"],
+    ["suburban 4063a 23 gas griddle bottle adapter storage prep", "/symptoms/suburban-23-griddle-bottle-adapter-storage-prep/"],
+    ["suburban double element induction cooktop control prep", "/symptoms/suburban-double-element-induction-cooktop-control-prep/"],
+    ["aqua hot 200 series fluid winterization prep", "/symptoms/aquahot-200-series-fluid-winterization-prep/"],
+    [
+      "furrion chill adb manual single zone control 2021123818 prep",
+      "/symptoms/furrion-chill-adb-manual-single-zone-control-prep/",
+    ],
+    ["onan qd3200 spec sheet model 0058692 prep", "/symptoms/onan-qd3200-spec-sheet-model-prep/"],
   ] as const;
 
   for (const [query, href] of cases) {
@@ -2714,6 +2720,8 @@ test("lookup surfaces the next official-source gap-scan prep batch without gener
     "model number",
     "gas range",
     "toilet",
+    "portable toilet",
+    "cassette toilet",
     "fan",
     "furnace",
     "generator",
@@ -2722,6 +2730,9 @@ test("lookup surfaces the next official-source gap-scan prep batch without gener
     "thermostat",
     "storage",
     "recall",
+    "water heater",
+    "cooktop",
+    "air conditioner",
   ]) {
     await searchbox.fill(query);
     for (const [, href] of cases) {
@@ -2729,12 +2740,12 @@ test("lookup surfaces the next official-source gap-scan prep batch without gener
     }
   }
 
-  await searchbox.fill("onan spring startup model spec serial gsn prep");
-  const startup = lookupResults.locator('a[href="/symptoms/onan-generator-spring-startup-model-spec-prep/"]');
-  await expect(startup).toBeVisible();
-  await startup.click();
-  await expect(page.getByRole("heading", { name: "Onan generator spring-startup model and spec prep" })).toBeVisible();
-  await expect(page.getByText(/Record the generator model, spec, serial/i)).toBeVisible();
+  await searchbox.fill("thetford porta potti 135 bellows storage prep");
+  const portaPotti = lookupResults.locator('a[href="/symptoms/thetford-porta-potti-135-bellows-storage-prep/"]');
+  await expect(portaPotti).toBeVisible();
+  await portaPotti.click();
+  await expect(page.getByRole("heading", { name: "Thetford Porta Potti 135 bellows storage prep" })).toBeVisible();
+  await expect(page.getByText(/Record the Porta Potti 135 model/i)).toBeVisible();
 
   expect(consoleErrors).toEqual([]);
   expect(pageErrors).toEqual([]);

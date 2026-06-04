@@ -6569,6 +6569,246 @@
       "url": "https://support.lci1.com/documents/furrion-rv-gas-oven-instruction-manuals",
       "type": "manufacturer-manual",
       "official": true
+    },
+    {
+      "id": "thetford-porta-potti-135-support",
+      "brand": "Thetford",
+      "title": "Thetford Porta Potti 135 support page",
+      "url": "https://www.thetford.com/us/thetford-support/porta-potti-135/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-porta-potti-335-support",
+      "brand": "Thetford",
+      "title": "Thetford Porta Potti 335 support page",
+      "url": "https://www.thetford.com/us/thetford-support/porta-potti-335/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-c220-series-support",
+      "brand": "Thetford",
+      "title": "Thetford C220 Series support page",
+      "url": "https://www.thetford.com/en/thetford-service-and-support/c220-series/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-c500-series-support",
+      "brand": "Thetford",
+      "title": "Thetford C500 Series support page",
+      "url": "https://www.thetford.com/en/thetford-service-and-support/c500-series/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-c260-user-manual-router",
+      "brand": "Thetford",
+      "title": "Thetford C260 user manual router",
+      "url": "https://www.thetford.com/en/document/um-c260/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-twusch-2025-compatibility-pdf",
+      "brand": "Thetford",
+      "title": "Thetford Twusch 2025 compatibility PDF",
+      "url": "https://www.thetford.com/app/uploads/2025/05/Thetford_Twusch_2025_EN.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "maxxair-maxxfan-pivot-0061000-product",
+      "brand": "MaxxAir",
+      "title": "MaxxAir MaxxFan Pivot 00-61000 product page",
+      "url": "https://www.maxxair.com/Products/fans/maxxfan-pivot-00-61000/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-maxxfan-low-profile-04301m-product",
+      "brand": "MaxxAir",
+      "title": "MaxxAir MaxxFan Low Profile 00-04301M product page",
+      "url": "https://www.maxxair.com/products/fans/maxxfan-low-profile-00-04301M.aspx",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-maxxfan-low-profile-04401m-product",
+      "brand": "MaxxAir",
+      "title": "MaxxAir MaxxFan Low Profile 00-04401M product page",
+      "url": "https://www.maxxair.com/products/fans/maxxfan-low-profile-00-04401M.aspx",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-maxxfan-mini-deluxe-3807-product",
+      "brand": "MaxxAir",
+      "title": "MaxxAir MaxxFan Mini Deluxe 00-03807 product page",
+      "url": "https://www.maxxair.com/Products/fans/maxxfan-mini-3807/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-maxxfan-mini-deluxe-3857-product",
+      "brand": "MaxxAir",
+      "title": "MaxxAir MaxxFan Mini Deluxe 00-03857 product page",
+      "url": "https://www.maxxair.com/Products/fans/maxxfan-mini-3857/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-maxxfan-mini-plus-3851-product",
+      "brand": "MaxxAir",
+      "title": "MaxxAir MaxxFan Mini Plus 00-03851 product page",
+      "url": "https://www.maxxair.com/Products/fans/maxxfan-mini-3851/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-maxxfan-deluxe-05301k-product",
+      "brand": "MaxxAir",
+      "title": "MaxxAir MaxxFan Deluxe 00-05301K product page",
+      "url": "https://www.maxxair.com/products/fans/maxxfan-deluxe-00-05301K/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-maxxfan-deluxe-06401k-product",
+      "brand": "MaxxAir",
+      "title": "MaxxAir MaxxFan Deluxe 00-06401K product page",
+      "url": "https://www.maxxair.com/products/fans/maxxfan-deluxe-00-06401K/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-maxxfan-plus-04751ks-product",
+      "brand": "MaxxAir",
+      "title": "MaxxAir MaxxFan Plus 00-04751KS product page",
+      "url": "https://www.maxxair.com/products/fans/maxxfan-plus-00-04751KS/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-maxxfan-dome-03812b-product",
+      "brand": "MaxxAir",
+      "title": "MaxxAir MaxxFan Dome 00-03812B product page",
+      "url": "https://www.maxxair.com/products/fans/maxxfan-dome-00-03812B/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-maxxfan-dome-plus-03810b-product",
+      "brand": "MaxxAir",
+      "title": "MaxxAir MaxxFan Dome Plus 00-03810B product page",
+      "url": "https://www.maxxair.com/products/fans/maxxfan-dome-plus-00-03810B/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "suburban-saw6d-direct-fit-water-heater-product",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban Advantage direct fit water heater product page",
+      "url": "https://suburbanrv.com/water-heating/tank-water-heaters/direct-fit-replacement-water-heaters/advantage-direct-fit-water-heater/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "suburban-23-elite-griddle-product",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban 23 inch Elite Series griddle product page",
+      "url": "https://suburbanrv.com/kitchen-galley/griddles/23-elite-series-griddle/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "suburban-23-griddle-bottle-adapter-product",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban 23 inch gas griddle with bottle adapter product page",
+      "url": "https://suburbanrv.com/kitchen-galley/griddles/23-gas-griddle-with-bottle-adapter/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "suburban-17-elite-plus-range-product",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban 17 inch Elite Series Plus range product page",
+      "url": "https://suburbanrv.com/kitchen-galley/ranges/17-elite-series-plus-range/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "suburban-22-elite-plus-range-product",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban 22 inch Elite Series Plus range product page",
+      "url": "https://suburbanrv.com/kitchen-galley/ranges/22-elite-series-plus-range/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "suburban-3-burner-slide-in-cooktop-product",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban 3 burner slide-in cooktop product page",
+      "url": "https://suburbanrv.com/kitchen-galley/cooktops/slide-in-cooktops/3-burner-slide-in-cooktop/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "suburban-double-element-induction-cooktop-product",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban double element induction cooktop product page",
+      "url": "https://suburbanrv.com/kitchen-galley/cooktops/induction-cooktops/double-element-induction-cooktop/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "aquahot-125g-product-page",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot 125G product page",
+      "url": "https://www.aquahot.com/products/rv/125G.aspx",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "aquahot-200-series-use-care-guide",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot 200 Series use and care guide",
+      "url": "https://www.aquahot.com/files/owners_manual/200-Series-UseandCare.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "lippert-furrion-chill-ac-compatibility-page",
+      "brand": "Furrion",
+      "title": "Lippert Furrion RV air conditioners compatibility page",
+      "url": "https://www.lippert.com/rv-camping/collections/furrion-rv-air-conditioners/compatibility",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-chill-adb-manual-single-zone-control-product",
+      "brand": "Furrion",
+      "title": "Furrion Chill air distribution box with manual single zone control",
+      "url": "https://www.lippert.com/air-distribution-box-with-manual-single-zone-control-white-2021123818",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "onan-qg4000i-owner-guide-0056746",
+      "brand": "Onan",
+      "title": "Cummins Onan QG 4000i owner guide 0056746",
+      "url": "https://mart.cummins.com/imagelibrary/data/assetfiles/0056746.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "onan-qd3200-spec-sheet-0058692",
+      "brand": "Onan",
+      "title": "Cummins Onan QD 3200 spec sheet 0058692",
+      "url": "https://mart.cummins.com/imagelibrary/data/assetfiles/0058692.pdf",
+      "type": "manufacturer-manual",
+      "official": true
     }
   ],
   "entries": [
@@ -40193,7 +40433,37 @@
         "greystone-20-inch-3-burner-cooktop-ffd-manual-ccd0008339",
         "furrion-2-in-1-range-oven-manual-imfha00013",
         "furrion-chef-built-in-gas-oven-manual-imfha00099",
-        "furrion-rv-gas-oven-manual-imfha00023"
+        "furrion-rv-gas-oven-manual-imfha00023",
+        "thetford-porta-potti-135-support",
+        "thetford-porta-potti-335-support",
+        "thetford-c220-series-support",
+        "thetford-c500-series-support",
+        "thetford-c260-user-manual-router",
+        "thetford-twusch-2025-compatibility-pdf",
+        "maxxair-maxxfan-pivot-0061000-product",
+        "maxxair-maxxfan-low-profile-04301m-product",
+        "maxxair-maxxfan-low-profile-04401m-product",
+        "maxxair-maxxfan-mini-deluxe-3807-product",
+        "maxxair-maxxfan-mini-deluxe-3857-product",
+        "maxxair-maxxfan-mini-plus-3851-product",
+        "maxxair-maxxfan-deluxe-05301k-product",
+        "maxxair-maxxfan-deluxe-06401k-product",
+        "maxxair-maxxfan-plus-04751ks-product",
+        "maxxair-maxxfan-dome-03812b-product",
+        "maxxair-maxxfan-dome-plus-03810b-product",
+        "suburban-saw6d-direct-fit-water-heater-product",
+        "suburban-23-elite-griddle-product",
+        "suburban-23-griddle-bottle-adapter-product",
+        "suburban-17-elite-plus-range-product",
+        "suburban-22-elite-plus-range-product",
+        "suburban-3-burner-slide-in-cooktop-product",
+        "suburban-double-element-induction-cooktop-product",
+        "aquahot-125g-product-page",
+        "aquahot-200-series-use-care-guide",
+        "lippert-furrion-chill-ac-compatibility-page",
+        "furrion-chill-adb-manual-single-zone-control-product",
+        "onan-qg4000i-owner-guide-0056746",
+        "onan-qd3200-spec-sheet-0058692"
       ]
     },
     {
@@ -53161,6 +53431,657 @@
       "searchRequiredTerms": [
         "im+fha00023",
         "rv+gas+oven"
+      ]
+    },
+    {
+      "id": "thetford-porta-potti-135-bellows-storage-prep",
+      "slug": "thetford-porta-potti-135-bellows-storage-prep",
+      "title": "Thetford Porta Potti 135 bellows storage prep",
+      "summary": "Use this Thetford Porta Potti 135 guide to document bellows, model, cleaning, and storage details before support.",
+      "safeChecklist": [
+        "Record the Porta Potti 135 model, bellows action, flush-water level, waste-tank level, cleaning product used, and storage state.",
+        "Use only normal owner cleaning, emptying, and storage observations from the support page.",
+        "Use Thetford support for parts, seal, pump, plumbing, or repair decisions."
+      ],
+      "sourceIds": [
+        "thetford-porta-potti-135-support"
+      ],
+      "searchAliases": [
+        "thetford porta potti 135 bellows storage prep",
+        "porta potti 135 bellows model prep"
+      ],
+      "searchRequiredTerms": [
+        "porta+potti+135",
+        "bellows"
+      ]
+    },
+    {
+      "id": "thetford-porta-potti-335-piston-pump-level-prep",
+      "slug": "thetford-porta-potti-335-piston-pump-level-prep",
+      "title": "Thetford Porta Potti 335 piston-pump level prep",
+      "summary": "Use this Thetford Porta Potti 335 guide to document piston-pump, level, cleaning, and storage details before support.",
+      "safeChecklist": [
+        "Record the Porta Potti 335 model, piston-pump action, flush-water level, waste-tank level, cleaning product used, and storage state.",
+        "Use only normal owner cleaning, emptying, and storage observations from the support page.",
+        "Use Thetford support for parts, seal, pump, plumbing, or repair decisions."
+      ],
+      "sourceIds": [
+        "thetford-porta-potti-335-support"
+      ],
+      "searchAliases": [
+        "thetford porta potti 335 piston pump level prep",
+        "porta potti 335 piston pump storage prep"
+      ],
+      "searchRequiredTerms": [
+        "porta+potti+335",
+        "piston+pump"
+      ]
+    },
+    {
+      "id": "thetford-c220-cassette-toilet-model-manual-prep",
+      "slug": "thetford-c220-cassette-toilet-model-manual-prep",
+      "title": "Thetford C220 cassette toilet model manual prep",
+      "summary": "Use this Thetford C220 cassette toilet guide to document model, manual, cleaning, and cassette details before support.",
+      "safeChecklist": [
+        "Record the C220 model, cassette version, flush control response, cleaning product used, and visible serial or label details.",
+        "Save support-page and manual references before ordering accessories or requesting service.",
+        "Use Thetford support for cassette, seal, pump, plumbing, or installation decisions."
+      ],
+      "sourceIds": [
+        "thetford-c220-series-support"
+      ],
+      "searchAliases": [
+        "thetford c220 cassette toilet model manual prep",
+        "c220 series cassette toilet manual prep"
+      ],
+      "searchRequiredTerms": [
+        "c220"
+      ]
+    },
+    {
+      "id": "thetford-c500-cassette-toilet-model-manual-prep",
+      "slug": "thetford-c500-cassette-toilet-model-manual-prep",
+      "title": "Thetford C500 cassette toilet model manual prep",
+      "summary": "Use this Thetford C500 cassette toilet guide to document model, manual, cleaning, and cassette details before support.",
+      "safeChecklist": [
+        "Record the C500 model, cassette version, flush control response, cleaning product used, and visible serial or label details.",
+        "Save support-page and manual references before ordering accessories or requesting service.",
+        "Use Thetford support for cassette, seal, pump, plumbing, or installation decisions."
+      ],
+      "sourceIds": [
+        "thetford-c500-series-support"
+      ],
+      "searchAliases": [
+        "thetford c500 cassette toilet model manual prep",
+        "c500 series cassette toilet manual prep"
+      ],
+      "searchRequiredTerms": [
+        "c500"
+      ]
+    },
+    {
+      "id": "thetford-c260-user-manual-model-prep",
+      "slug": "thetford-c260-user-manual-model-prep",
+      "title": "Thetford C260 user manual model prep",
+      "summary": "Use this Thetford C260 user-manual router to document the exact model and manual reference before support.",
+      "safeChecklist": [
+        "Record the C260 model, cassette details, flush control response, manual URL, and visible serial or label details.",
+        "Use owner manual and support references for cleaning, storage, and accessory compatibility only.",
+        "Use Thetford support for cassette, seal, pump, plumbing, or installation decisions."
+      ],
+      "sourceIds": [
+        "thetford-c260-user-manual-router"
+      ],
+      "searchAliases": [
+        "thetford c260 user manual model prep",
+        "thetford um c260 manual prep"
+      ],
+      "searchRequiredTerms": [
+        "um+c260",
+        "c260"
+      ]
+    },
+    {
+      "id": "thetford-twusch-compatibility-model-prep",
+      "slug": "thetford-twusch-compatibility-model-prep",
+      "title": "Thetford Twusch compatibility model prep",
+      "summary": "Use this Thetford Twusch compatibility guide to document toilet model and accessory-fit details before support.",
+      "safeChecklist": [
+        "Record the toilet model, Twusch compatibility reference, accessory version, visible label details, and photos of normal owner-access areas.",
+        "Use the compatibility chart only for accessory fit and model confirmation.",
+        "Use Thetford support for accessory fit conflicts, seal, pump, plumbing, or installation decisions."
+      ],
+      "sourceIds": [
+        "thetford-twusch-2025-compatibility-pdf"
+      ],
+      "searchAliases": [
+        "thetford twusch 2025 compatibility model prep",
+        "twusch compatibility toilet model prep"
+      ],
+      "searchRequiredTerms": [
+        "twusch+2025",
+        "compatibility"
+      ]
+    },
+    {
+      "id": "maxxair-maxxfan-pivot-0061000-keypad-prep",
+      "slug": "maxxair-maxxfan-pivot-0061000-keypad-prep",
+      "title": "MaxxAir MaxxFan Pivot 00-61000 keypad prep",
+      "summary": "Use this MaxxFan Pivot 00-61000 guide to document keypad, model, lid, and airflow details before support.",
+      "safeChecklist": [
+        "Record the MaxxFan Pivot 00-61000 model, keypad response, fan speed, lid state, thermostat setting if shown, and intake or exhaust behavior.",
+        "Save photos of the product label, keypad, and lid position from normal owner access.",
+        "Use MaxxAir support or qualified RV ventilation service for roof, motor, lid, installed electrical, or parts decisions."
+      ],
+      "sourceIds": [
+        "maxxair-maxxfan-pivot-0061000-product"
+      ],
+      "searchAliases": [
+        "maxxair maxxfan pivot 00 61000 keypad prep",
+        "maxxfan pivot 0061000 keypad model prep"
+      ],
+      "searchRequiredTerms": [
+        "00+61000",
+        "pivot"
+      ]
+    },
+    {
+      "id": "maxxair-maxxfan-low-profile-04301m-model-prep",
+      "slug": "maxxair-maxxfan-low-profile-04301m-model-prep",
+      "title": "MaxxAir MaxxFan Low Profile 00-04301M model prep",
+      "summary": "Use this MaxxFan Low Profile 00-04301M guide to document model, control, lid, and airflow details before support.",
+      "safeChecklist": [
+        "Record the MaxxFan Low Profile 00-04301M model, control response, fan speed, lid state, and intake or exhaust behavior.",
+        "Save photos of the product label and control area from normal owner access.",
+        "Use MaxxAir support or qualified RV ventilation service for roof, motor, lid, installed electrical, or parts decisions."
+      ],
+      "sourceIds": [
+        "maxxair-maxxfan-low-profile-04301m-product"
+      ],
+      "searchAliases": [
+        "maxxair maxxfan low profile 00 04301m model prep",
+        "maxxfan low profile 04301m prep"
+      ],
+      "searchRequiredTerms": [
+        "00+04301m",
+        "low+profile"
+      ]
+    },
+    {
+      "id": "maxxair-maxxfan-low-profile-04401m-model-prep",
+      "slug": "maxxair-maxxfan-low-profile-04401m-model-prep",
+      "title": "MaxxAir MaxxFan Low Profile 00-04401M model prep",
+      "summary": "Use this MaxxFan Low Profile 00-04401M guide to document model, control, lid, and airflow details before support.",
+      "safeChecklist": [
+        "Record the MaxxFan Low Profile 00-04401M model, control response, fan speed, lid state, and intake or exhaust behavior.",
+        "Save photos of the product label and control area from normal owner access.",
+        "Use MaxxAir support or qualified RV ventilation service for roof, motor, lid, installed electrical, or parts decisions."
+      ],
+      "sourceIds": [
+        "maxxair-maxxfan-low-profile-04401m-product"
+      ],
+      "searchAliases": [
+        "maxxair maxxfan low profile 00 04401m model prep",
+        "maxxfan low profile 04401m prep"
+      ],
+      "searchRequiredTerms": [
+        "00+04401m",
+        "low+profile"
+      ]
+    },
+    {
+      "id": "maxxair-maxxfan-mini-deluxe-3807-remote-prep",
+      "slug": "maxxair-maxxfan-mini-deluxe-3807-remote-prep",
+      "title": "MaxxAir MaxxFan Mini Deluxe 00-03807 remote prep",
+      "summary": "Use this MaxxFan Mini Deluxe 00-03807 guide to document remote, model, lid, and airflow details before support.",
+      "safeChecklist": [
+        "Record the MaxxFan Mini Deluxe 00-03807 model, remote response, control response, fan speed, lid state, and intake or exhaust behavior.",
+        "Save photos of the product label, remote, and control area from normal owner access.",
+        "Use MaxxAir support or qualified RV ventilation service for roof, motor, lid, installed electrical, or parts decisions."
+      ],
+      "sourceIds": [
+        "maxxair-maxxfan-mini-deluxe-3807-product"
+      ],
+      "searchAliases": [
+        "maxxair maxxfan mini deluxe 00 03807 remote prep",
+        "maxxfan mini deluxe 3807 remote model prep"
+      ],
+      "searchRequiredTerms": [
+        "00+03807",
+        "mini+deluxe"
+      ]
+    },
+    {
+      "id": "maxxair-maxxfan-mini-deluxe-3857-remote-prep",
+      "slug": "maxxair-maxxfan-mini-deluxe-3857-remote-prep",
+      "title": "MaxxAir MaxxFan Mini Deluxe 00-03857 remote prep",
+      "summary": "Use this MaxxFan Mini Deluxe 00-03857 guide to document remote, model, lid, and airflow details before support.",
+      "safeChecklist": [
+        "Record the MaxxFan Mini Deluxe 00-03857 model, remote response, control response, fan speed, lid state, and intake or exhaust behavior.",
+        "Save photos of the product label, remote, and control area from normal owner access.",
+        "Use MaxxAir support or qualified RV ventilation service for roof, motor, lid, installed electrical, or parts decisions."
+      ],
+      "sourceIds": [
+        "maxxair-maxxfan-mini-deluxe-3857-product"
+      ],
+      "searchAliases": [
+        "maxxair maxxfan mini deluxe 00 03857 remote prep",
+        "maxxfan mini deluxe 3857 remote model prep"
+      ],
+      "searchRequiredTerms": [
+        "00+03857",
+        "mini+deluxe"
+      ]
+    },
+    {
+      "id": "maxxair-maxxfan-mini-plus-3851-model-prep",
+      "slug": "maxxair-maxxfan-mini-plus-3851-model-prep",
+      "title": "MaxxAir MaxxFan Mini Plus 00-03851 model prep",
+      "summary": "Use this MaxxFan Mini Plus 00-03851 guide to document model, control, lid, and airflow details before support.",
+      "safeChecklist": [
+        "Record the MaxxFan Mini Plus 00-03851 model, control response, fan speed, lid state, and intake or exhaust behavior.",
+        "Save photos of the product label and control area from normal owner access.",
+        "Use MaxxAir support or qualified RV ventilation service for roof, motor, lid, installed electrical, or parts decisions."
+      ],
+      "sourceIds": [
+        "maxxair-maxxfan-mini-plus-3851-product"
+      ],
+      "searchAliases": [
+        "maxxair maxxfan mini plus 00 03851 model prep",
+        "maxxfan mini plus 3851 model prep"
+      ],
+      "searchRequiredTerms": [
+        "mini+plus"
+      ]
+    },
+    {
+      "id": "maxxair-maxxfan-deluxe-05301k-exhaust-prep",
+      "slug": "maxxair-maxxfan-deluxe-05301k-exhaust-prep",
+      "title": "MaxxAir MaxxFan Deluxe 00-05301K exhaust prep",
+      "summary": "Use this MaxxFan Deluxe 00-05301K guide to document model, control, thermostat, lid, and exhaust details before support.",
+      "safeChecklist": [
+        "Record the MaxxFan Deluxe 00-05301K model, keypad response, fan speed, thermostat setting, lid state, and exhaust behavior.",
+        "Save photos of the product label, keypad, and lid position from normal owner access.",
+        "Use MaxxAir support or qualified RV ventilation service for roof, motor, lid, installed electrical, or parts decisions."
+      ],
+      "sourceIds": [
+        "maxxair-maxxfan-deluxe-05301k-product"
+      ],
+      "searchAliases": [
+        "maxxair maxxfan deluxe 00 05301k exhaust prep",
+        "maxxfan deluxe 05301k exhaust model prep"
+      ],
+      "searchRequiredTerms": [
+        "00+05301k",
+        "deluxe"
+      ]
+    },
+    {
+      "id": "maxxair-maxxfan-deluxe-06401k-exhaust-prep",
+      "slug": "maxxair-maxxfan-deluxe-06401k-exhaust-prep",
+      "title": "MaxxAir MaxxFan Deluxe 00-06401K exhaust prep",
+      "summary": "Use this MaxxFan Deluxe 00-06401K guide to document model, control, thermostat, lid, and exhaust details before support.",
+      "safeChecklist": [
+        "Record the MaxxFan Deluxe 00-06401K model, keypad response, fan speed, thermostat setting, lid state, and exhaust behavior.",
+        "Save photos of the product label, keypad, and lid position from normal owner access.",
+        "Use MaxxAir support or qualified RV ventilation service for roof, motor, lid, installed electrical, or parts decisions."
+      ],
+      "sourceIds": [
+        "maxxair-maxxfan-deluxe-06401k-product"
+      ],
+      "searchAliases": [
+        "maxxair maxxfan deluxe 00 06401k exhaust prep",
+        "maxxfan deluxe 06401k exhaust model prep"
+      ],
+      "searchRequiredTerms": [
+        "00+06401k",
+        "deluxe"
+      ]
+    },
+    {
+      "id": "maxxair-maxxfan-plus-04751ks-thermostat-prep",
+      "slug": "maxxair-maxxfan-plus-04751ks-thermostat-prep",
+      "title": "MaxxAir MaxxFan Plus 00-04751KS thermostat prep",
+      "summary": "Use this MaxxFan Plus 00-04751KS guide to document thermostat, control, lid, and model facts before support.",
+      "safeChecklist": [
+        "Record the MaxxFan Plus 00-04751KS model, control response, fan speed, thermostat setting, lid state, and intake or exhaust behavior.",
+        "Save photos of the product label and control area from normal owner access.",
+        "Use MaxxAir support or qualified RV ventilation service for roof, motor, lid, installed electrical, or parts decisions."
+      ],
+      "sourceIds": [
+        "maxxair-maxxfan-plus-04751ks-product"
+      ],
+      "searchAliases": [
+        "maxxair maxxfan plus 00 04751ks thermostat prep",
+        "maxxfan plus 04751ks thermostat model prep"
+      ],
+      "searchRequiredTerms": [
+        "00+04751ks",
+        "thermostat"
+      ]
+    },
+    {
+      "id": "maxxair-maxxfan-dome-03812b-model-prep",
+      "slug": "maxxair-maxxfan-dome-03812b-model-prep",
+      "title": "MaxxAir MaxxFan Dome 00-03812B model prep",
+      "summary": "Use this MaxxFan Dome 00-03812B guide to document model, control, lid, and airflow details before support.",
+      "safeChecklist": [
+        "Record the MaxxFan Dome 00-03812B model, control response, fan speed, lid state, and airflow behavior.",
+        "Save photos of the product label and control area from normal owner access.",
+        "Use MaxxAir support or qualified RV ventilation service for roof, motor, lid, installed electrical, or parts decisions."
+      ],
+      "sourceIds": [
+        "maxxair-maxxfan-dome-03812b-product"
+      ],
+      "searchAliases": [
+        "maxxair maxxfan dome 00 03812b model prep",
+        "maxxfan dome 03812b model prep"
+      ],
+      "searchRequiredTerms": [
+        "00+03812b"
+      ]
+    },
+    {
+      "id": "maxxair-maxxfan-dome-plus-03810b-model-prep",
+      "slug": "maxxair-maxxfan-dome-plus-03810b-model-prep",
+      "title": "MaxxAir MaxxFan Dome Plus 00-03810B model prep",
+      "summary": "Use this MaxxFan Dome Plus 00-03810B guide to document model, control, lid, and airflow details before support.",
+      "safeChecklist": [
+        "Record the MaxxFan Dome Plus 00-03810B model, control response, fan speed, lid state, and airflow behavior.",
+        "Save photos of the product label and control area from normal owner access.",
+        "Use MaxxAir support or qualified RV ventilation service for roof, motor, lid, installed electrical, or parts decisions."
+      ],
+      "sourceIds": [
+        "maxxair-maxxfan-dome-plus-03810b-product"
+      ],
+      "searchAliases": [
+        "maxxair maxxfan dome plus 00 03810b model prep",
+        "maxxfan dome plus 03810b model prep"
+      ],
+      "searchRequiredTerms": [
+        "00+03810b"
+      ]
+    },
+    {
+      "id": "suburban-saw6d-direct-fit-water-heater-prep",
+      "slug": "suburban-saw6d-direct-fit-water-heater-prep",
+      "title": "Suburban SAW6D direct-fit water heater prep",
+      "summary": "Use this Suburban SAW6D direct-fit water heater guide to document model, control, odor, and service facts before support.",
+      "safeChecklist": [
+        "Record the SAW6D model, replacement fit notes, control state, water-heater symptom, flame appearance if visible during normal use, and any LP odor.",
+        "Shut LP off and stop using the water heater if you smell LP, see abnormal flame, or controls behave unsafely.",
+        "Use Suburban support or qualified RV LP appliance service for LP, ignition, heat, installed electrical, or parts decisions."
+      ],
+      "sourceIds": [
+        "suburban-saw6d-direct-fit-water-heater-product"
+      ],
+      "searchAliases": [
+        "suburban saw6d direct fit water heater prep",
+        "suburban advantage direct fit saw6d service prep"
+      ],
+      "searchRequiredTerms": [
+        "saw6d",
+        "direct+fit"
+      ]
+    },
+    {
+      "id": "suburban-23-elite-griddle-flare-storage-prep",
+      "slug": "suburban-23-elite-griddle-flare-storage-prep",
+      "title": "Suburban 23 inch Elite griddle flare/storage prep",
+      "summary": "Use this Suburban 3061A griddle guide to document model, flare connection, storage, and LP-safety facts before support.",
+      "safeChecklist": [
+        "Record the 3061A model, connection setup, ignition behavior, flame appearance, grease tray state, and storage position.",
+        "Shut LP off and stop using the griddle if you smell LP, see abnormal flame, or the appliance was damaged in travel.",
+        "Use Suburban support or qualified RV LP appliance service for LP connection, ignition, flame, installed mounting, or parts decisions."
+      ],
+      "sourceIds": [
+        "suburban-23-elite-griddle-product"
+      ],
+      "searchAliases": [
+        "suburban 3061a 23 elite griddle flare storage prep",
+        "suburban 23 elite griddle model storage prep"
+      ],
+      "searchRequiredTerms": [
+        "23+elite+griddle",
+        "3061a"
+      ]
+    },
+    {
+      "id": "suburban-23-griddle-bottle-adapter-storage-prep",
+      "slug": "suburban-23-griddle-bottle-adapter-storage-prep",
+      "title": "Suburban 23 inch griddle bottle-adapter storage prep",
+      "summary": "Use this Suburban 4063A griddle guide to document model, adapter, storage, and LP-safety facts before support.",
+      "safeChecklist": [
+        "Record the 4063A model, quick-connect or 1 lb bottle adapter use, ignition behavior, flame appearance, grease tray state, and storage position.",
+        "Shut LP off and stop using the griddle if you smell LP, see abnormal flame, or the appliance was damaged in travel.",
+        "Use Suburban support or qualified RV LP appliance service for LP connection, ignition, flame, installed mounting, or parts decisions."
+      ],
+      "sourceIds": [
+        "suburban-23-griddle-bottle-adapter-product"
+      ],
+      "searchAliases": [
+        "suburban 4063a 23 gas griddle bottle adapter storage prep",
+        "suburban 23 griddle bottle adapter storage prep"
+      ],
+      "searchRequiredTerms": [
+        "23+gas+griddle",
+        "4063a"
+      ]
+    },
+    {
+      "id": "suburban-17-elite-plus-range-model-prep",
+      "slug": "suburban-17-elite-plus-range-model-prep",
+      "title": "Suburban 17 inch Elite Plus range model prep",
+      "summary": "Use this Suburban 17 inch Elite Plus range guide to document model, flame, control, and support facts before service.",
+      "safeChecklist": [
+        "Record the 17 inch Elite Plus range model, control setting, ignition behavior, oven behavior, flame appearance, and any LP odor.",
+        "Shut LP off and stop using the range if you smell LP, see abnormal flame, or heat control is unsafe.",
+        "Use Suburban support or qualified RV LP appliance service for LP, ignition, flame, oven heat, installed electrical, or parts decisions."
+      ],
+      "sourceIds": [
+        "suburban-17-elite-plus-range-product"
+      ],
+      "searchAliases": [
+        "suburban 17 elite plus range model prep",
+        "suburban 17 elite series plus range service prep"
+      ],
+      "searchRequiredTerms": [
+        "17+elite+plus"
+      ]
+    },
+    {
+      "id": "suburban-22-elite-plus-range-model-prep",
+      "slug": "suburban-22-elite-plus-range-model-prep",
+      "title": "Suburban 22 inch Elite Plus range model prep",
+      "summary": "Use this Suburban 22 inch Elite Plus range guide to document model, flame, control, and support facts before service.",
+      "safeChecklist": [
+        "Record the 22 inch Elite Plus range model, control setting, ignition behavior, oven behavior, flame appearance, and any LP odor.",
+        "Shut LP off and stop using the range if you smell LP, see abnormal flame, or heat control is unsafe.",
+        "Use Suburban support or qualified RV LP appliance service for LP, ignition, flame, oven heat, installed electrical, or parts decisions."
+      ],
+      "sourceIds": [
+        "suburban-22-elite-plus-range-product"
+      ],
+      "searchAliases": [
+        "suburban 22 elite plus range model prep",
+        "suburban 22 elite series plus range service prep"
+      ],
+      "searchRequiredTerms": [
+        "22+elite+plus"
+      ]
+    },
+    {
+      "id": "suburban-3-burner-slide-in-cooktop-flame-prep",
+      "slug": "suburban-3-burner-slide-in-cooktop-flame-prep",
+      "title": "Suburban 3 burner slide-in cooktop flame prep",
+      "summary": "Use this Suburban 3 burner slide-in cooktop guide to document model, flame, control, and LP-safety facts before service.",
+      "safeChecklist": [
+        "Record the 3 burner slide-in cooktop model, control setting, ignition behavior, flame appearance, and any LP odor.",
+        "Shut LP off and stop using the cooktop if you smell LP, see abnormal flame, or heat control is unsafe.",
+        "Use Suburban support or qualified RV LP appliance service for LP, ignition, flame, installed mounting, or parts decisions."
+      ],
+      "sourceIds": [
+        "suburban-3-burner-slide-in-cooktop-product"
+      ],
+      "searchAliases": [
+        "suburban 3 burner slide in cooktop flame prep",
+        "suburban three burner slide in cooktop model prep"
+      ],
+      "searchRequiredTerms": [
+        "3+burner+slide+in"
+      ]
+    },
+    {
+      "id": "suburban-double-element-induction-cooktop-control-prep",
+      "slug": "suburban-double-element-induction-cooktop-control-prep",
+      "title": "Suburban double element induction cooktop control prep",
+      "summary": "Use this Suburban double element induction cooktop guide to document cookware, control, display, and service facts before support.",
+      "safeChecklist": [
+        "Record the double element induction cooktop model, cookware used, control setting, display behavior, and any heat-control concern.",
+        "Stop using the cooktop if controls behave unsafely, the surface is damaged, or an installed electrical concern is suspected.",
+        "Use Suburban support or qualified RV appliance service for installed electrical, control, heat, mounting, or parts decisions."
+      ],
+      "sourceIds": [
+        "suburban-double-element-induction-cooktop-product"
+      ],
+      "searchAliases": [
+        "suburban double element induction cooktop control prep",
+        "suburban double induction cooktop cookware display prep"
+      ],
+      "searchRequiredTerms": [
+        "double+element+induction"
+      ]
+    },
+    {
+      "id": "aquahot-125g-gasoline-model-service-prep",
+      "slug": "aquahot-125g-gasoline-model-service-prep",
+      "title": "Aqua-Hot 125G gasoline model service prep",
+      "summary": "Use this Aqua-Hot 125G guide to document model, fuel, control, fluid, winterization, and service details before support.",
+      "safeChecklist": [
+        "Record the Aqua-Hot 125G model, gasoline fuel type, control-panel state, hot-water symptom, cabin-heat symptom, fluid status if visible, and winterization status.",
+        "Shut the Aqua-Hot system off if there is a leak, unusual odor, overheating, or unsafe hot-water condition.",
+        "Use Aqua-Hot support or qualified Aqua-Hot service for fuel, exhaust, hydronic fluid, installed electrical, heat, or parts decisions."
+      ],
+      "sourceIds": [
+        "aquahot-125g-product-page"
+      ],
+      "searchAliases": [
+        "aqua hot 125g gasoline model service prep",
+        "aquahot 125g model fuel control prep"
+      ],
+      "searchRequiredTerms": [
+        "125g",
+        "gasoline"
+      ]
+    },
+    {
+      "id": "aquahot-200-series-fluid-winterization-prep",
+      "slug": "aquahot-200-series-fluid-winterization-prep",
+      "title": "Aqua-Hot 200 Series fluid winterization prep",
+      "summary": "Use this Aqua-Hot 200 Series guide to document fluid, winterization, model, control, and service details before support.",
+      "safeChecklist": [
+        "Record the 200 Series model, control-panel state, hot-water symptom, cabin-heat symptom, fluid status if visible, and winterization status.",
+        "Shut the Aqua-Hot system off if there is a leak, unusual odor, overheating, or unsafe hot-water condition.",
+        "Use Aqua-Hot support or qualified Aqua-Hot service for fuel, exhaust, hydronic fluid, installed electrical, heat, or parts decisions."
+      ],
+      "sourceIds": [
+        "aquahot-200-series-use-care-guide"
+      ],
+      "searchAliases": [
+        "aqua hot 200 series fluid winterization prep",
+        "aquahot 200 series use and care winterization prep"
+      ],
+      "searchRequiredTerms": [
+        "200+series",
+        "use+and+care"
+      ]
+    },
+    {
+      "id": "furrion-chill-ac-compatibility-control-prep",
+      "slug": "furrion-chill-ac-compatibility-control-prep",
+      "title": "Furrion Chill AC compatibility control prep",
+      "summary": "Use this Furrion Chill AC compatibility guide to document model, control, filter, and compatibility details before support.",
+      "safeChecklist": [
+        "Record the Furrion Chill AC model, control type, air distribution box model, thermostat or manual control details, filter condition, and compatibility page notes.",
+        "Use owner-accessible filter and model-label observations only.",
+        "Use Lippert/Furrion support or qualified RV AC service for installed electrical, cooling, control-box, rooftop, or parts decisions."
+      ],
+      "sourceIds": [
+        "lippert-furrion-chill-ac-compatibility-page"
+      ],
+      "searchAliases": [
+        "furrion chill ac compatibility control prep",
+        "furrion rv air conditioners compatibility prep"
+      ],
+      "searchRequiredTerms": [
+        "furrion+rv+air+conditioners",
+        "compatibility"
+      ]
+    },
+    {
+      "id": "furrion-chill-adb-manual-single-zone-control-prep",
+      "slug": "furrion-chill-adb-manual-single-zone-control-prep",
+      "title": "Furrion Chill ADB manual single-zone control prep",
+      "summary": "Use this Furrion Chill air distribution box guide to document manual single-zone control, model, and filter details before support.",
+      "safeChecklist": [
+        "Record product 2021123818, manual single-zone control response, Furrion Chill AC model, filter condition, knob or selector position, and airflow symptom.",
+        "Use owner-accessible filter and control observations only.",
+        "Use Lippert/Furrion support or qualified RV AC service for installed electrical, cooling, control-box, rooftop, or parts decisions."
+      ],
+      "sourceIds": [
+        "furrion-chill-adb-manual-single-zone-control-product"
+      ],
+      "searchAliases": [
+        "furrion chill adb manual single zone control 2021123818 prep",
+        "furrion air distribution box manual single zone control prep"
+      ],
+      "searchRequiredTerms": [
+        "2021123818",
+        "manual+single+zone"
+      ]
+    },
+    {
+      "id": "onan-qg4000i-owner-guide-load-prep",
+      "slug": "onan-qg4000i-owner-guide-load-prep",
+      "title": "Onan QG 4000i owner guide load prep",
+      "summary": "Use this Cummins Onan QG 4000i owner guide to document model, spec, load, altitude, and service details before support.",
+      "safeChecklist": [
+        "Record the QG 4000i model, spec, serial, nameplate details, load condition, altitude setting, fuel state, and shutdown behavior.",
+        "Shut the generator down for fuel odor, exhaust concern, CO alarm, abnormal heat, or electrical safety concern.",
+        "Use qualified Cummins/Onan service for fuel, exhaust, generator electrical, internal control, or parts decisions."
+      ],
+      "sourceIds": [
+        "onan-qg4000i-owner-guide-0056746"
+      ],
+      "searchAliases": [
+        "onan qg4000i owner guide load 0056746 prep",
+        "cummins onan qg 4000i load altitude prep"
+      ],
+      "searchRequiredTerms": [
+        "qg+4000i",
+        "0056746"
+      ]
+    },
+    {
+      "id": "onan-qd3200-spec-sheet-model-prep",
+      "slug": "onan-qd3200-spec-sheet-model-prep",
+      "title": "Onan QD 3200 spec sheet model prep",
+      "summary": "Use this Cummins Onan QD 3200 spec sheet to document model, spec, load, altitude, and service details before support.",
+      "safeChecklist": [
+        "Record the QD 3200 model, spec-sheet reference 0058692, nameplate details, load condition, altitude or site conditions, and shutdown behavior.",
+        "Shut the generator down for fuel odor, exhaust concern, CO alarm, abnormal heat, or electrical safety concern.",
+        "Use qualified Cummins/Onan service for fuel, exhaust, generator electrical, internal control, or parts decisions."
+      ],
+      "sourceIds": [
+        "onan-qd3200-spec-sheet-0058692"
+      ],
+      "searchAliases": [
+        "onan qd3200 spec sheet model 0058692 prep",
+        "cummins onan qd 3200 spec sheet model prep"
+      ],
+      "searchRequiredTerms": [
+        "qd+3200",
+        "0058692"
       ]
     }
   ],
