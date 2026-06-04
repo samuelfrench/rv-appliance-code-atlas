@@ -2927,6 +2927,102 @@ test("lookup surfaces Dometic Thetford Coleman MaxxAir Suburban Aqua-Hot Furrion
   expect(pageErrors).toEqual([]);
 });
 
+test("lookup surfaces CFX5 Thetford Norcold Coleman Suburban Aqua-Hot Furrion Greystone Girard MaxxAir and Onan prep batch without generic hijacks", async ({
+  page,
+}) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    ["dometic cfx5 alert voltage low battery protection prep", "/symptoms/dometic-cfx5-alert-voltage-low-service-prep/"],
+    ["dometic cfx5 warning 33 compressor start fail service prep", "/symptoms/dometic-cfx5-warning-33-compressor-start-fail/"],
+    ["dometic cfx5 authentication problem app connect cooler prep", "/symptoms/dometic-cfx5-app-authentication-connection-prep/"],
+    ["dometic cfx5 flattening batteries battery protection prep", "/symptoms/dometic-cfx5-battery-drain-protection-prep/"],
+    ["dometic freshjet roof air conditioner constantly switches itself off prep", "/symptoms/dometic-freshjet-constant-shutoff-service-prep/"],
+    ["thetford campa potti xg tank level storage prep", "/symptoms/thetford-campa-potti-xg-storage-level-prep/"],
+    ["thetford porta potti 155 155sl bellows pump storage prep", "/symptoms/thetford-porta-potti-155-bellows-storage-prep/"],
+    ["thetford c250 cassette toilet data badge model label service prep", "/symptoms/thetford-c250-cassette-model-label-service-prep/"],
+    ["thetford c260 electric ventilator filter odor prep", "/symptoms/thetford-c260-electric-ventilator-filter-prep/"],
+    ["norcold dc740 model serial cooling service prep", "/symptoms/norcold-dc740-model-label-cooling-service-prep/"],
+    ["norcold dc751 model label cooling service prep", "/symptoms/norcold-dc751-model-label-cooling-service-prep/"],
+    ["norcold de0041 ev0041 de0061 ev0061 ac dc refrigerator service prep", "/symptoms/norcold-de-ev-acdc-refrigerator-service-prep/"],
+    ["maxxair maxxfan plus 00 04002k control model prep", "/symptoms/maxxair-maxxfan-plus-04002k-control-model-prep/"],
+    ["maxxair maxxfan deluxe 00 05100k thermostat control prep", "/symptoms/maxxair-maxxfan-deluxe-05100k-thermostat-control-prep/"],
+    ["maxxair maxx i 00 933066 cover fit service prep", "/symptoms/maxxair-maxx-i-00933066-cover-fit-service-prep/"],
+    ["maxxair maxx ii 00 933083 smoke cover fit prep", "/symptoms/maxxair-maxx-ii-00933083-cover-fit-service-prep/"],
+    ["coleman mach bluetooth ceiling assembly app control prep", "/symptoms/coleman-bluetooth-ceiling-assembly-app-control-prep/"],
+    ["coleman mach deluxe chillgrille filter control prep", "/symptoms/coleman-deluxe-chillgrille-filter-control-prep/"],
+    ["coleman mach electric heat strips mode service prep", "/symptoms/coleman-electric-heat-strip-mode-service-prep/"],
+    ["suburban 17 elite series range black panel flame prep", "/symptoms/suburban-17-elite-range-model-flame-prep/"],
+    ["suburban 22 air fryer black glass power control prep", "/symptoms/suburban-22-air-fryer-power-control-prep/"],
+    ["suburban st42 tankless water heater model control prep", "/symptoms/suburban-st42-tankless-model-control-prep/"],
+    ["suburban 4 gallon dsi water heater switch light prep", "/symptoms/suburban-4-gallon-dsi-water-heater-prep/"],
+    ["suburban single element induction cooktop cookware power prep", "/symptoms/suburban-single-induction-cookware-power-prep/"],
+    ["aqua hot faq antifreeze ltco model service prep", "/symptoms/aquahot-faq-antifreeze-ltco-service-prep/"],
+    ["aqua hot annual service kits model part prep", "/symptoms/aquahot-annual-service-kit-model-prep/"],
+    ["aqua hot glenwood flooring system touchscreen control prep", "/symptoms/aquahot-glenwood-floor-control-prep/"],
+    ["furrion fmcm15aa 1.5 convection microwave ccd 0009356 control prep", "/symptoms/furrion-15-convection-microwave-control-prep/"],
+    ["furrion 17 inch 2 burner range air fry oven ccd 0010484 control prep", "/symptoms/furrion-17-range-air-fry-control-prep/"],
+    ["greystone 26 inch electric flat fireplace ccd 0007546 remote control prep", "/symptoms/greystone-26-fireplace-control-prep/"],
+    ["greystone 25 combo griddle ccd 0009781 storage prep", "/symptoms/greystone-25-combo-griddle-storage-prep/"],
+    ["greystone double induction hob ccd 0009481 power cookware prep", "/symptoms/greystone-double-induction-hob-power-prep/"],
+    ["girard tankless water heater e1 e2 error code service prep", "/symptoms/girard-tankless-e1-e2-service-prep/"],
+    ["cummins onan rv generators category gsn model family prep", "/symptoms/onan-rv-generator-gsn-model-family-prep/"],
+  ] as const;
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+  }
+
+  for (const query of [
+    "voltage low",
+    "compressor",
+    "app",
+    "battery",
+    "storage",
+    "service prep",
+    "owner manual",
+    "model number",
+    "control",
+    "toilet",
+    "refrigerator",
+    "fan",
+    "ceiling assembly",
+    "water heater",
+    "air fryer",
+    "black glass",
+    "induction",
+    "fireplace",
+    "microwave",
+    "generator",
+  ]) {
+    await searchbox.fill(query);
+    for (const [, href] of cases) {
+      await expect(lookupResults.locator(`a[href="${href}"]`), `${query} -> ${href}`).toHaveCount(0);
+    }
+  }
+
+  await searchbox.fill("dometic cfx5 warning 33 compressor start fail service prep");
+  const cfx5 = lookupResults.locator('a[href="/symptoms/dometic-cfx5-warning-33-compressor-start-fail/"]');
+  await expect(cfx5).toBeVisible();
+  await cfx5.click();
+  await expect(page.getByRole("heading", { name: "Dometic CFX5 Warning 33 Compressor Start Fail Prep" })).toBeVisible();
+  await expect(page.getByText(/Record the CFX5 model/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 

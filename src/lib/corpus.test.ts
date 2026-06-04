@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 864;
-const expectedSourceCount = 910;
-const expectedSymptomCount = 742;
+const expectedSourceCount = 944;
+const expectedSymptomCount = 776;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -9683,6 +9683,209 @@ describe("verified corpus", () => {
       "electric flush",
       "diesel",
       "black glass",
+    ]) {
+      expect(
+        lookupSymptomGuides(index, query)
+          .slice(0, 5)
+          .map((symptom) => symptom.slug)
+          .filter((slug) => newSlugs.has(slug)),
+        query,
+      ).toEqual([]);
+    }
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds the official CFX5 Thetford Norcold Coleman Suburban Aqua-Hot Furrion Greystone Girard MaxxAir and Onan prep batch without code entries", () => {
+    const expectedSources = new Map<string, string>([
+      ["dometic-cfx5-alert-voltage-low-service-prep", "https://support.dometic.com/en/cfx5-coolers/ALERT-Voltage-low-6276"],
+      ["dometic-cfx5-warning-33-compressor-start-fail", "https://support.dometic.com/en/cfx5-coolers/WARNING-33-Compressor-start-fail-96cf"],
+      [
+        "dometic-cfx5-app-authentication-connection-prep",
+        "https://support.dometic.com/en/cfx5-coolers/Authentication-problem-message-when-trying-to-connect-to-my-cooler-7e57",
+      ],
+      ["dometic-cfx5-battery-drain-protection-prep", "https://support.dometic.com/en/cfx5-coolers/Flattening-batteries-2b61"],
+      [
+        "dometic-freshjet-constant-shutoff-service-prep",
+        "https://support.dometic.com/en/freshjet-ac/My-roof-air-conditioner-constantly-switches-itself-off-7ab7",
+      ],
+      ["thetford-campa-potti-xg-storage-level-prep", "https://www.thetford.com/us/thetford-support/campa-potti-xg/"],
+      ["thetford-porta-potti-155-bellows-storage-prep", "https://www.thetford.com/us/thetford-support/porta-potti-155-155sl/"],
+      ["thetford-c250-cassette-model-label-service-prep", "https://www.thetford.com/en/thetford-service-and-support/c250-series/"],
+      ["thetford-c260-electric-ventilator-filter-prep", "https://www.thetford.com/en/accessory/electric-ventilator-c260/"],
+      ["norcold-dc740-model-label-cooling-service-prep", "https://www.thetford.com/us/thetford-support/dc740/"],
+      ["norcold-dc751-model-label-cooling-service-prep", "https://www.thetford.com/us/thetford-support/dc751/"],
+      [
+        "norcold-de-ev-acdc-refrigerator-service-prep",
+        "https://www.thetford.com/us/thetford-support/de0041-ev0041-de0061-ev0061/",
+      ],
+      ["maxxair-maxxfan-plus-04002k-control-model-prep", "https://www.maxxair.com/products/fans/maxxfan-plus-00-04002K/"],
+      ["maxxair-maxxfan-deluxe-05100k-thermostat-control-prep", "https://www.maxxair.com/products/fans/maxxfan-deluxe-00-05100K/"],
+      ["maxxair-maxx-i-00933066-cover-fit-service-prep", "https://www.maxxair.com/products/covers/maxx-i-00-933066/"],
+      ["maxxair-maxx-ii-00933083-cover-fit-service-prep", "https://www.maxxair.com/Products/covers/maxx-ii-00-933083/"],
+      ["coleman-bluetooth-ceiling-assembly-app-control-prep", "https://coleman-mach.com/products/ceiling-assemblies/bluetooth/"],
+      ["coleman-deluxe-chillgrille-filter-control-prep", "https://coleman-mach.com/products/ceiling-assemblies/deluxe-chillgrille/"],
+      ["coleman-electric-heat-strip-mode-service-prep", "https://coleman-mach.com/products/ceiling-assemblies/electric-heat-strips/"],
+      ["suburban-17-elite-range-model-flame-prep", "https://suburbanrv.com/kitchen-galley/ranges/17-elite-series-range/"],
+      ["suburban-22-air-fryer-power-control-prep", "https://suburbanrv.com/kitchen-galley/air-fryers/22-air-fryer-black/"],
+      [
+        "suburban-st42-tankless-model-control-prep",
+        "https://suburbanrv.com/water-heating/tankless-water-heaters/st-water-heaters/st42-water-heater/",
+      ],
+      [
+        "suburban-4-gallon-dsi-water-heater-prep",
+        "https://suburbanrv.com/water-heating/tank-water-heaters/advantage-water-heaters/4-gallon-tank/",
+      ],
+      [
+        "suburban-single-induction-cookware-power-prep",
+        "https://suburbanrv.com/kitchen-galley/cooktops/induction-cooktops/single-element-induction-cooktop/",
+      ],
+      ["aquahot-faq-antifreeze-ltco-service-prep", "https://www.aquahot.com/faqs.aspx"],
+      ["aquahot-annual-service-kit-model-prep", "https://www.aquahot.com/products/rv/annual-service-kits.aspx"],
+      ["aquahot-glenwood-floor-control-prep", "https://www.aquahot.com/products/rv/glenwood-flooring-system.aspx"],
+      ["furrion-15-convection-microwave-control-prep", "https://support.lci1.com/documents/ccd-0009356"],
+      ["furrion-17-range-air-fry-control-prep", "https://support.lci1.com/documents/ccd-0010484"],
+      ["greystone-26-fireplace-control-prep", "https://support.lci1.com/documents/ccd-0007546"],
+      ["greystone-25-combo-griddle-storage-prep", "https://support.lci1.com/documents/ccd-0009781"],
+      ["greystone-double-induction-hob-power-prep", "https://support.lci1.com/documents/ccd-0009481"],
+      [
+        "girard-tankless-e1-e2-service-prep",
+        "https://support.lci1.com/videos/e1-and-e2-error-code-on-girard-tankless-water-heater",
+      ],
+      ["onan-rv-generator-gsn-model-family-prep", "https://shop.cummins.com/SC/category/brands/onan/onan-rv-generators/0ZG4N0000004G2hWAE"],
+    ]);
+    const expectedSymptoms = new Map<string, { sourceIds: string[]; requiredTerms: string[]; query: string }>(
+      Array.from(expectedSources.keys()).map((id) => [
+        id,
+        {
+          sourceIds: [id],
+          requiredTerms: {
+            "dometic-cfx5-alert-voltage-low-service-prep": ["cfx5+voltage+low", "alert+voltage+low"],
+            "dometic-cfx5-warning-33-compressor-start-fail": ["cfx5+warning+33", "compressor+start+fail"],
+            "dometic-cfx5-app-authentication-connection-prep": ["cfx5+authentication", "cfx5+app+connect"],
+            "dometic-cfx5-battery-drain-protection-prep": ["cfx5+flattening+batteries", "battery+protection"],
+            "dometic-freshjet-constant-shutoff-service-prep": ["freshjet+constantly+switches", "roof+air+conditioner+switches+off"],
+            "thetford-campa-potti-xg-storage-level-prep": ["campa+potti+xg"],
+            "thetford-porta-potti-155-bellows-storage-prep": ["porta+potti+155", "155sl"],
+            "thetford-c250-cassette-model-label-service-prep": ["c250", "c250+series"],
+            "thetford-c260-electric-ventilator-filter-prep": ["c260+electric+ventilator"],
+            "norcold-dc740-model-label-cooling-service-prep": ["dc740"],
+            "norcold-dc751-model-label-cooling-service-prep": ["dc751"],
+            "norcold-de-ev-acdc-refrigerator-service-prep": ["de0041+ev0041", "de0061+ev0061"],
+            "maxxair-maxxfan-plus-04002k-control-model-prep": ["00+04002k", "04002k"],
+            "maxxair-maxxfan-deluxe-05100k-thermostat-control-prep": ["00+05100k", "05100k"],
+            "maxxair-maxx-i-00933066-cover-fit-service-prep": ["00+933066", "maxx+i"],
+            "maxxair-maxx-ii-00933083-cover-fit-service-prep": ["00+933083", "maxx+ii"],
+            "coleman-bluetooth-ceiling-assembly-app-control-prep": ["bluetooth+ceiling+assembly"],
+            "coleman-deluxe-chillgrille-filter-control-prep": ["deluxe+chillgrille"],
+            "coleman-electric-heat-strip-mode-service-prep": ["electric+heat+strips"],
+            "suburban-17-elite-range-model-flame-prep": ["17+elite+series+range"],
+            "suburban-22-air-fryer-power-control-prep": ["22+air+fryer", "22+black+glass"],
+            "suburban-st42-tankless-model-control-prep": ["st42+water+heater"],
+            "suburban-4-gallon-dsi-water-heater-prep": ["4+gallon+dsi"],
+            "suburban-single-induction-cookware-power-prep": ["single+element+induction"],
+            "aquahot-faq-antifreeze-ltco-service-prep": ["aquahot+faq+ltco", "antifreeze+ltco"],
+            "aquahot-annual-service-kit-model-prep": ["annual+service+kits"],
+            "aquahot-glenwood-floor-control-prep": ["glenwood+flooring"],
+            "furrion-15-convection-microwave-control-prep": ["ccd+0009356", "fmcm15aa"],
+            "furrion-17-range-air-fry-control-prep": ["ccd+0010484", "air+fry+oven"],
+            "greystone-26-fireplace-control-prep": ["ccd+0007546", "26+fireplace"],
+            "greystone-25-combo-griddle-storage-prep": ["ccd+0009781", "25+combo+griddle"],
+            "greystone-double-induction-hob-power-prep": ["ccd+0009481", "double+induction+hob"],
+            "girard-tankless-e1-e2-service-prep": ["girard+tankless+e1+e2"],
+            "onan-rv-generator-gsn-model-family-prep": ["onan+rv+generators+category", "gsn+model+family"],
+          }[id] ?? [],
+          query: {
+            "dometic-cfx5-alert-voltage-low-service-prep": "dometic cfx5 alert voltage low battery protection prep",
+            "dometic-cfx5-warning-33-compressor-start-fail": "dometic cfx5 warning 33 compressor start fail service prep",
+            "dometic-cfx5-app-authentication-connection-prep": "dometic cfx5 authentication problem app connect cooler prep",
+            "dometic-cfx5-battery-drain-protection-prep": "dometic cfx5 flattening batteries battery protection prep",
+            "dometic-freshjet-constant-shutoff-service-prep": "dometic freshjet roof air conditioner constantly switches itself off prep",
+            "thetford-campa-potti-xg-storage-level-prep": "thetford campa potti xg tank level storage prep",
+            "thetford-porta-potti-155-bellows-storage-prep": "thetford porta potti 155 155sl bellows pump storage prep",
+            "thetford-c250-cassette-model-label-service-prep": "thetford c250 cassette toilet data badge model label service prep",
+            "thetford-c260-electric-ventilator-filter-prep": "thetford c260 electric ventilator filter odor prep",
+            "norcold-dc740-model-label-cooling-service-prep": "norcold dc740 model serial cooling service prep",
+            "norcold-dc751-model-label-cooling-service-prep": "norcold dc751 model label cooling service prep",
+            "norcold-de-ev-acdc-refrigerator-service-prep": "norcold de0041 ev0041 de0061 ev0061 ac dc refrigerator service prep",
+            "maxxair-maxxfan-plus-04002k-control-model-prep": "maxxair maxxfan plus 00 04002k control model prep",
+            "maxxair-maxxfan-deluxe-05100k-thermostat-control-prep": "maxxair maxxfan deluxe 00 05100k thermostat control prep",
+            "maxxair-maxx-i-00933066-cover-fit-service-prep": "maxxair maxx i 00 933066 cover fit service prep",
+            "maxxair-maxx-ii-00933083-cover-fit-service-prep": "maxxair maxx ii 00 933083 smoke cover fit prep",
+            "coleman-bluetooth-ceiling-assembly-app-control-prep": "coleman mach bluetooth ceiling assembly app control prep",
+            "coleman-deluxe-chillgrille-filter-control-prep": "coleman mach deluxe chillgrille filter control prep",
+            "coleman-electric-heat-strip-mode-service-prep": "coleman mach electric heat strips mode service prep",
+            "suburban-17-elite-range-model-flame-prep": "suburban 17 elite series range black panel flame prep",
+            "suburban-22-air-fryer-power-control-prep": "suburban 22 air fryer black glass power control prep",
+            "suburban-st42-tankless-model-control-prep": "suburban st42 tankless water heater model control prep",
+            "suburban-4-gallon-dsi-water-heater-prep": "suburban 4 gallon dsi water heater switch light prep",
+            "suburban-single-induction-cookware-power-prep": "suburban single element induction cooktop cookware power prep",
+            "aquahot-faq-antifreeze-ltco-service-prep": "aqua hot faq antifreeze ltco model service prep",
+            "aquahot-annual-service-kit-model-prep": "aqua hot annual service kits model part prep",
+            "aquahot-glenwood-floor-control-prep": "aqua hot glenwood flooring system touchscreen control prep",
+            "furrion-15-convection-microwave-control-prep": "furrion fmcm15aa 1.5 convection microwave ccd 0009356 control prep",
+            "furrion-17-range-air-fry-control-prep": "furrion 17 inch 2 burner range air fry oven ccd 0010484 control prep",
+            "greystone-26-fireplace-control-prep": "greystone 26 inch electric flat fireplace ccd 0007546 remote control prep",
+            "greystone-25-combo-griddle-storage-prep": "greystone 25 combo griddle ccd 0009781 storage prep",
+            "greystone-double-induction-hob-power-prep": "greystone double induction hob ccd 0009481 power cookware prep",
+            "girard-tankless-e1-e2-service-prep": "girard tankless water heater e1 e2 error code service prep",
+            "onan-rv-generator-gsn-model-family-prep": "cummins onan rv generators category gsn model family prep",
+          }[id] ?? id,
+        },
+      ]),
+    );
+    const newSourceIds = Array.from(expectedSources.keys());
+    const newSlugs = new Set(expectedSymptoms.keys());
+    const sourcesById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const index = buildSymptomSearchIndex(corpus);
+    const summary = summarizeCorpus(corpus);
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|burner\s+(repair|work|service|port|assembly)|\borifice\b|\bcontrol[- ]board\b|\b120\s*vac\b|\b110\s*v\b|\bline[- ]voltage\b|\brefrigerant\b|\bprobe\b|\bwiring\b|\bsupply line\b|\bopen (the )?(fuel|gas|electrical|rooftop)|remove.*shroud|remove.*cover|remove.*toilet|replace.*valve|measure resistance|fuel nozzle|combustion|coolant pump|manual override|hydraulic work|hydraulic repair|macerator|internal plumbing|seal removal|compressor repair|pump service|magnetron|capacitor|door switch|roof climbing/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = sourcesById.get(sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(summary.indexablePages).toBe(expectedEntryCount + expectedSymptomCount + 1);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const [symptomId, expected] of expectedSymptoms) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds, symptomId).toEqual(expected.sourceIds);
+      expect(symptom?.searchRequiredTerms, symptomId).toEqual(expected.requiredTerms);
+      expect([symptom?.summary, ...(symptom?.safeChecklist ?? [])].join(" "), symptomId).not.toMatch(
+        unsafeOwnerActionPattern,
+      );
+      expect(lookupSymptomGuides(index, expected.query)[0]?.slug, expected.query).toBe(symptomId);
+    }
+
+    for (const query of [
+      "voltage low",
+      "compressor",
+      "app",
+      "battery",
+      "storage",
+      "service prep",
+      "owner manual",
+      "model number",
+      "control",
+      "toilet",
+      "refrigerator",
+      "fan",
+      "ceiling assembly",
+      "water heater",
+      "air fryer",
+      "black glass",
+      "induction",
+      "fireplace",
+      "microwave",
+      "generator",
     ]) {
       expect(
         lookupSymptomGuides(index, query)
