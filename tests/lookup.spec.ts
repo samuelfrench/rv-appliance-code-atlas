@@ -3023,6 +3023,116 @@ test("lookup surfaces CFX5 Thetford Norcold Coleman Suburban Aqua-Hot Furrion Gr
   expect(pageErrors).toEqual([]);
 });
 
+test("lookup surfaces the next CFX5 Thetford Norcold MaxxAir Coleman Suburban Aqua-Hot Furrion Greystone Girard and Onan support batch without generic hijacks", async ({
+  page,
+}) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    ["dometic cfx5 recommended temperatures refrigerating freezing prep", "/symptoms/dometic-cfx5-temperature-settings-service-prep/"],
+    ["dometic cfx5 reverse lid direction model prep", "/symptoms/dometic-cfx5-lid-direction-model-prep/"],
+    ["dometic cfx5 power draw battery runtime prep", "/symptoms/dometic-cfx5-battery-runtime-power-prep/"],
+    ["dometic cfx5 bluetooth cooler connect app prep", "/symptoms/dometic-cfx5-app-bluetooth-control-prep/"],
+    ["dometic cfx5 nearest service provider warranty prep", "/symptoms/dometic-cfx5-service-provider-warranty-prep/"],
+    ["thetford permanent toilets model fit prep", "/symptoms/thetford-permanent-toilet-model-fit-prep/"],
+    ["thetford portable toilets porta potti storage prep", "/symptoms/thetford-porta-potti-model-storage-prep/"],
+    ["thetford cassette toilets tank model prep", "/symptoms/thetford-cassette-toilet-model-tank-prep/"],
+    ["thetford aqua magic vi dimensions model prep", "/symptoms/thetford-aqua-magic-vi-dimensions-model-prep/"],
+    ["norcold nv1090 support model control prep", "/symptoms/norcold-nv1090-service-model-prep/"],
+    ["thetford t2095 drawer refrigerator control prep", "/symptoms/thetford-t2095-control-model-prep/"],
+    ["norcold dc refrigerators product group model prep", "/symptoms/norcold-dc-refrigerator-family-model-prep/"],
+    ["norcold refrigerator warranty faq paperwork prep", "/symptoms/norcold-refrigerator-warranty-paperwork-prep/"],
+    ["maxxair maxxshade plus led fit control prep", "/symptoms/maxxair-maxxshade-plus-led-fit-prep/"],
+    ["maxxair covers product family fit prep", "/symptoms/maxxair-cover-family-fit-prep/"],
+    ["maxxair unimaxx 00 335002 vent lid fit prep", "/symptoms/maxxair-unimaxx-vent-lid-fit-prep/"],
+    ["maxxair ii cover family fit service prep", "/symptoms/maxxair-ii-cover-fit-service-prep/"],
+    ["maxxair 10b335015z unimaxx lid hardware service prep", "/symptoms/maxxair-unimaxx-lid-hardware-service-prep/"],
+    ["coleman mach iwave m air purifier accessory prep", "/symptoms/coleman-iwave-air-purifier-accessory-prep/"],
+    ["coleman mach thermostat controlled ceiling assembly prep", "/symptoms/coleman-thermostat-controlled-ceiling-assembly-prep/"],
+    ["coleman mach 8xxx zone thermostats control packages prep", "/symptoms/coleman-8xxx-zone-thermostat-replacement-prep/"],
+    ["coleman air vantage conversion kit ct thermostat prep", "/symptoms/coleman-air-vantage-ct-thermostat-prep/"],
+    ["suburban rv one combo heater water furnace service prep", "/symptoms/suburban-rv-one-combo-heater-service-prep/"],
+    ["suburban 120v electric wall heater control prep", "/symptoms/suburban-electric-wall-heater-control-prep/"],
+    ["suburban d de water heater control switch prep", "/symptoms/suburban-d-de-water-heater-switch-prep/"],
+    ["suburban furnace core replacement modules service prep", "/symptoms/suburban-furnace-core-module-service-prep/"],
+    ["aqua hot gen1 lpg lcd storage prep", "/symptoms/aquahot-gen1-lpg-lcd-storage-prep/"],
+    ["aqua hot gen1 gasoline lcd storage prep", "/symptoms/aquahot-gen1-gasoline-lcd-storage-prep/"],
+    ["aqua hot contact technical service prep", "/symptoms/aquahot-technical-service-contact-prep/"],
+    ["furrion tvs support model warranty prep", "/symptoms/furrion-tv-model-warranty-prep/"],
+    ["greystone ranges support manual model label prep", "/symptoms/greystone-range-manual-model-label-prep/"],
+    ["greystone cooktops griddles manual storage prep", "/symptoms/greystone-cooktop-griddle-manual-storage-prep/"],
+    ["greystone microwaves support model control prep", "/symptoms/greystone-microwave-model-control-prep/"],
+    ["girard gp llc other products tankless warranty source prep", "/symptoms/girard-tankless-warranty-source-prep/"],
+    ["onan p2500i a074z433 model gsn prep", "/symptoms/onan-p2500i-model-gsn-prep/"],
+    ["onan p2500i maintenance kit a058u946 prep", "/symptoms/onan-p2500i-maintenance-kit-prep/"],
+    ["onan p9500df vft fuel storage prep", "/symptoms/onan-p9500df-vft-fuel-storage-prep/"],
+    ["onan p5000idf efi vft co prep", "/symptoms/onan-p5000idf-efi-vft-co-prep/"],
+    ["dometic cfx5 temperature", "/symptoms/dometic-cfx5-temperature-settings-service-prep/"],
+    ["suburban 120v wall heater", "/symptoms/suburban-electric-wall-heater-control-prep/"],
+    ["greystone range", "/symptoms/greystone-range-manual-model-label-prep/"],
+    ["greystone microwave", "/symptoms/greystone-microwave-model-control-prep/"],
+    ["onan p5000idf", "/symptoms/onan-p5000idf-efi-vft-co-prep/"],
+  ] as const;
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+  }
+
+  for (const query of [
+    "temperature",
+    "power",
+    "bluetooth",
+    "service provider",
+    "toilet",
+    "portable toilet",
+    "cassette",
+    "refrigerator",
+    "warranty",
+    "cover",
+    "lid",
+    "ceiling assembly",
+    "thermostat",
+    "wall heater",
+    "water heater",
+    "furnace",
+    "hydronic",
+    "contact",
+    "tv",
+    "range",
+    "griddle",
+    "microwave",
+    "generator",
+    "maintenance kit",
+    "fuel",
+  ]) {
+    await searchbox.fill(query);
+    for (const [, href] of cases) {
+      await expect(lookupResults.locator(`a[href="${href}"]`), `${query} -> ${href}`).toHaveCount(0);
+    }
+  }
+
+  await searchbox.fill("dometic cfx5 power draw battery runtime prep");
+  const cfx5Power = lookupResults.locator('a[href="/symptoms/dometic-cfx5-battery-runtime-power-prep/"]');
+  await expect(cfx5Power).toBeVisible();
+  await cfx5Power.click();
+  await expect(page.getByRole("heading", { name: "Dometic CFX5 Battery Runtime and Power Prep" })).toBeVisible();
+  await expect(page.getByText(/Record the CFX5 model/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 

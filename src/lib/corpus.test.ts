@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 864;
-const expectedSourceCount = 944;
-const expectedSymptomCount = 776;
+const expectedSourceCount = 982;
+const expectedSymptomCount = 814;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -9886,6 +9886,457 @@ describe("verified corpus", () => {
       "fireplace",
       "microwave",
       "generator",
+    ]) {
+      expect(
+        lookupSymptomGuides(index, query)
+          .slice(0, 5)
+          .map((symptom) => symptom.slug)
+          .filter((slug) => newSlugs.has(slug)),
+        query,
+      ).toEqual([]);
+    }
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds the next official CFX5 toilet refrigerator cover HVAC hydronic TV cooking microwave Girard and Onan support prep batch without code entries", () => {
+    const expectedSources = new Map<string, string>([
+      [
+        "dometic-cfx5-recommended-temperature-support",
+        "https://support.dometic.com/en/cfx5-coolers/What-are-the-recommended-temperatures-for-refrigerating-and-freezing-9aa",
+      ],
+      [
+        "dometic-cfx5-lid-direction-support",
+        "https://support.dometic.com/en/cfx5-coolers/Can-I-reverse-the-lid-direction-on-the-CFX5-8911",
+      ],
+      [
+        "dometic-cfx5-power-draw-runtime-support",
+        "https://support.dometic.com/en/cfx5-coolers/How-do-I-calculate-how-much-power-a-CFX5-will-draw-6bf6",
+      ],
+      ["dometic-cfx5-bluetooth-connection-support", "https://support.dometic.com/en/cfx5-coolers/My-cooler-wont-connect-to-bluetooth-6963"],
+      [
+        "dometic-cfx5-service-provider-routing-support",
+        "https://support.dometic.com/en/cfx5-coolers/Where-can-I-find-the-nearest-service-provider-bb4c",
+      ],
+      ["thetford-permanent-toilets-model-family-page", "https://www.thetford.com/us/portable-and-rv-toilets/permanent-toilets/"],
+      ["thetford-portable-toilets-model-family-page", "https://www.thetford.com/us/portable-and-rv-toilets/portable-toilets/"],
+      ["thetford-cassette-toilets-model-family-page", "https://www.thetford.com/us/portable-and-rv-toilets/cassette-toilets/"],
+      [
+        "thetford-aqua-magic-vi-dimensions-2025",
+        "https://www.thetford.com/app/uploads/2025/02/Thetford-Aqua-Magic-VI-RV-Toilet-Dimensions.pdf",
+      ],
+      ["norcold-nv1090-support-page", "https://www.thetford.com/us/thetford-support/nv1090/"],
+      ["thetford-t2095-support-page", "https://www.thetford.com/us/thetford-support/t2095/"],
+      ["norcold-dc-refrigerators-product-group", "https://www.thetford.com/us/product-group/dc-refrigerators/"],
+      ["norcold-refrigerator-warranty-faq", "https://www.thetford.com/us/faq/what-is-the-warranty-for-my-refrigerator/"],
+      ["maxxair-maxxshade-plus-product", "https://www.maxxair.com/products/maxxshades/maxxshade-plus/"],
+      ["maxxair-covers-product-family", "https://www.maxxair.com/Products/covers/"],
+      ["maxxair-unimaxx-00335002-product", "https://www.maxxair.com/products/covers/unimaxx-00-335002/"],
+      ["maxxair-maxxair-ii-cover-family", "https://www.maxxair.com/Products/covers/maxxair-2/"],
+      [
+        "maxxair-unimaxx-lid-installation-guide-10b335015z",
+        "https://library.maxxair.com/wp-content/uploads/2023/03/10b335015z_unimaxx-universal-roof-vent-lid-installation-08-26-2019.pdf",
+      ],
+      ["coleman-iwave-air-purifier-accessory-prep", "https://coleman-mach.com/products/climate-control-accessories/iwave-m-air-purifier"],
+      ["coleman-thermostat-controlled-ceiling-assembly", "https://coleman-mach.com/products/ceiling-assemblies/thermostat-controlled/"],
+      [
+        "coleman-8xxx-zone-thermostats-repair-parts",
+        "https://coleman-mach.com/products/thermostats/8xxx-series-zone-thermostats-control-packages/",
+      ],
+      ["coleman-air-vantage-conversion-kit", "https://coleman-mach.com/products/conversion-kits/air-vantage/"],
+      ["suburban-rv-one-combo-heater-product", "https://suburbanrv.com/rv-one/"],
+      ["suburban-120v-electric-wall-heater-product", "https://suburbanrv.com/climate-control/wall-heaters/120v-electric-wall-heater/"],
+      [
+        "suburban-d-de-water-heater-control-switch",
+        "https://suburbanrv.com/water-heating/tank-water-heaters/tank-water-heater-controls/tank-water-heater-control-d-de/",
+      ],
+      ["suburban-furnace-core-replacement-modules", "https://suburbanrv.com/climate-control/furnaces/furnace-core-replacement-modules/"],
+      ["aquahot-gen1-lpg-use-care-guide", "https://library.aquahot.com/wp-content/uploads/2023/05/GEN1-NA-LPG-User-Manual-3.13.23.pdf"],
+      ["aquahot-gen1-gasoline-use-care-guide", "https://library.aquahot.com/wp-content/uploads/2023/05/GEN1-NA-GAS-User-Manual-3.13.23.pdf"],
+      ["aquahot-contact-technical-service", "https://www.aquahot.com/contact.aspx"],
+      ["furrion-tvs-support-index", "https://support.lci1.com/furrion-tvs/"],
+      ["greystone-ranges-support-index", "https://support.lci1.com/greystone-ranges"],
+      ["greystone-cooktops-griddles-support-index", "https://support.lci1.com/greystone-cooktops-griddles"],
+      ["greystone-microwaves-support-index", "https://support.lci1.com/greystone-microwaves"],
+      ["girard-other-products-support-index", "https://support.lci1.com/gp-llc-other-products"],
+      ["onan-p2500i-shop-product", "https://shop.cummins.com/SC/product/onan-p2500i-inverter-generator-epa-a074z433/01tUz00000CiVu1IAF"],
+      ["onan-p2500i-maintenance-kit-shop", "https://shop.cummins.com/SC/product/onan-p2500i-maintenance-kit-a058u946/01t4N0000048ZZcQAM"],
+      ["onan-p9500df-owner-manual-2025", "https://www.cummins.com/sites/default/files/2025-04/p9500df-owners-manual.pdf"],
+      ["onan-p5000idf-efi-spec-sheet-2025", "https://www.cummins.com/sites/default/files/2025-04/p5000idf-efi-spec-sheet.pdf"],
+    ]);
+    const expectedSymptoms = new Map<string, { sourceIds: string[]; requiredTerms: string[]; query: string }>([
+      [
+        "dometic-cfx5-temperature-settings-service-prep",
+        {
+          sourceIds: ["dometic-cfx5-recommended-temperature-support"],
+          requiredTerms: ["cfx5+recommended+temperatures", "refrigerating+freezing", "cfx5+temperature"],
+          query: "dometic cfx5 recommended temperatures refrigerating freezing prep",
+        },
+      ],
+      [
+        "dometic-cfx5-lid-direction-model-prep",
+        {
+          sourceIds: ["dometic-cfx5-lid-direction-support"],
+          requiredTerms: ["cfx5+lid+direction", "reverse+lid"],
+          query: "dometic cfx5 reverse lid direction model prep",
+        },
+      ],
+      [
+        "dometic-cfx5-battery-runtime-power-prep",
+        {
+          sourceIds: ["dometic-cfx5-power-draw-runtime-support"],
+          requiredTerms: ["cfx5+power+draw", "battery+runtime"],
+          query: "dometic cfx5 power draw battery runtime prep",
+        },
+      ],
+      [
+        "dometic-cfx5-app-bluetooth-control-prep",
+        {
+          sourceIds: ["dometic-cfx5-bluetooth-connection-support"],
+          requiredTerms: ["cfx5+bluetooth", "cooler+connect"],
+          query: "dometic cfx5 bluetooth cooler connect app prep",
+        },
+      ],
+      [
+        "dometic-cfx5-service-provider-warranty-prep",
+        {
+          sourceIds: ["dometic-cfx5-service-provider-routing-support"],
+          requiredTerms: ["cfx5+service+provider"],
+          query: "dometic cfx5 nearest service provider warranty prep",
+        },
+      ],
+      [
+        "thetford-permanent-toilet-model-fit-prep",
+        {
+          sourceIds: ["thetford-permanent-toilets-model-family-page"],
+          requiredTerms: ["permanent+toilets", "thetford+permanent"],
+          query: "thetford permanent toilets model fit prep",
+        },
+      ],
+      [
+        "thetford-porta-potti-model-storage-prep",
+        {
+          sourceIds: ["thetford-portable-toilets-model-family-page"],
+          requiredTerms: ["portable+toilets", "porta+potti"],
+          query: "thetford portable toilets porta potti storage prep",
+        },
+      ],
+      [
+        "thetford-cassette-toilet-model-tank-prep",
+        {
+          sourceIds: ["thetford-cassette-toilets-model-family-page"],
+          requiredTerms: ["cassette+toilets", "cassette+tank"],
+          query: "thetford cassette toilets tank model prep",
+        },
+      ],
+      [
+        "thetford-aqua-magic-vi-dimensions-model-prep",
+        {
+          sourceIds: ["thetford-aqua-magic-vi-dimensions-2025"],
+          requiredTerms: ["aqua+magic+vi", "dimensions"],
+          query: "thetford aqua magic vi dimensions model prep",
+        },
+      ],
+      [
+        "norcold-nv1090-service-model-prep",
+        {
+          sourceIds: ["norcold-nv1090-support-page"],
+          requiredTerms: ["nv1090"],
+          query: "norcold nv1090 support model control prep",
+        },
+      ],
+      [
+        "thetford-t2095-control-model-prep",
+        {
+          sourceIds: ["thetford-t2095-support-page"],
+          requiredTerms: ["t2095"],
+          query: "thetford t2095 drawer refrigerator control prep",
+        },
+      ],
+      [
+        "norcold-dc-refrigerator-family-model-prep",
+        {
+          sourceIds: ["norcold-dc-refrigerators-product-group"],
+          requiredTerms: ["dc+refrigerators", "norcold+dc"],
+          query: "norcold dc refrigerators product group model prep",
+        },
+      ],
+      [
+        "norcold-refrigerator-warranty-paperwork-prep",
+        {
+          sourceIds: ["norcold-refrigerator-warranty-faq"],
+          requiredTerms: ["refrigerator+warranty", "norcold+warranty"],
+          query: "norcold refrigerator warranty faq paperwork prep",
+        },
+      ],
+      [
+        "maxxair-maxxshade-plus-led-fit-prep",
+        {
+          sourceIds: ["maxxair-maxxshade-plus-product"],
+          requiredTerms: ["maxxshade+plus"],
+          query: "maxxair maxxshade plus led fit control prep",
+        },
+      ],
+      [
+        "maxxair-cover-family-fit-prep",
+        {
+          sourceIds: ["maxxair-covers-product-family"],
+          requiredTerms: ["maxxair+covers", "covers+family"],
+          query: "maxxair covers product family fit prep",
+        },
+      ],
+      [
+        "maxxair-unimaxx-vent-lid-fit-prep",
+        {
+          sourceIds: ["maxxair-unimaxx-00335002-product"],
+          requiredTerms: ["00+335002", "unimaxx"],
+          query: "maxxair unimaxx 00 335002 vent lid fit prep",
+        },
+      ],
+      [
+        "maxxair-ii-cover-fit-service-prep",
+        {
+          sourceIds: ["maxxair-maxxair-ii-cover-family"],
+          requiredTerms: ["maxxair+2", "maxxair+ii+cover"],
+          query: "maxxair ii cover family fit service prep",
+        },
+      ],
+      [
+        "maxxair-unimaxx-lid-hardware-service-prep",
+        {
+          sourceIds: ["maxxair-unimaxx-lid-installation-guide-10b335015z"],
+          requiredTerms: ["10b335015z", "unimaxx+lid"],
+          query: "maxxair 10b335015z unimaxx lid hardware service prep",
+        },
+      ],
+      [
+        "coleman-iwave-air-purifier-accessory-prep",
+        {
+          sourceIds: ["coleman-iwave-air-purifier-accessory-prep"],
+          requiredTerms: ["iwave+m", "air+purifier"],
+          query: "coleman mach iwave m air purifier accessory prep",
+        },
+      ],
+      [
+        "coleman-thermostat-controlled-ceiling-assembly-prep",
+        {
+          sourceIds: ["coleman-thermostat-controlled-ceiling-assembly"],
+          requiredTerms: ["thermostat+controlled+ceiling"],
+          query: "coleman mach thermostat controlled ceiling assembly prep",
+        },
+      ],
+      [
+        "coleman-8xxx-zone-thermostat-replacement-prep",
+        {
+          sourceIds: ["coleman-8xxx-zone-thermostats-repair-parts"],
+          requiredTerms: ["8xxx+zone", "thermostats+control+packages"],
+          query: "coleman mach 8xxx zone thermostats control packages prep",
+        },
+      ],
+      [
+        "coleman-air-vantage-ct-thermostat-prep",
+        {
+          sourceIds: ["coleman-air-vantage-conversion-kit"],
+          requiredTerms: ["air+vantage", "ct+thermostat"],
+          query: "coleman air vantage conversion kit ct thermostat prep",
+        },
+      ],
+      [
+        "suburban-rv-one-combo-heater-service-prep",
+        {
+          sourceIds: ["suburban-rv-one-combo-heater-product"],
+          requiredTerms: ["rv+one", "combo+heater"],
+          query: "suburban rv one combo heater water furnace service prep",
+        },
+      ],
+      [
+        "suburban-electric-wall-heater-control-prep",
+        {
+          sourceIds: ["suburban-120v-electric-wall-heater-product"],
+          requiredTerms: ["120v+electric+wall+heater", "120v+wall+heater"],
+          query: "suburban 120v electric wall heater control prep",
+        },
+      ],
+      [
+        "suburban-d-de-water-heater-switch-prep",
+        {
+          sourceIds: ["suburban-d-de-water-heater-control-switch"],
+          requiredTerms: ["d+de+water+heater", "control+d+de"],
+          query: "suburban d de water heater control switch prep",
+        },
+      ],
+      [
+        "suburban-furnace-core-module-service-prep",
+        {
+          sourceIds: ["suburban-furnace-core-replacement-modules"],
+          requiredTerms: ["furnace+core+replacement", "core+module"],
+          query: "suburban furnace core replacement modules service prep",
+        },
+      ],
+      [
+        "aquahot-gen1-lpg-lcd-storage-prep",
+        {
+          sourceIds: ["aquahot-gen1-lpg-use-care-guide"],
+          requiredTerms: ["gen1+lpg", "lcd+storage"],
+          query: "aqua hot gen1 lpg lcd storage prep",
+        },
+      ],
+      [
+        "aquahot-gen1-gasoline-lcd-storage-prep",
+        {
+          sourceIds: ["aquahot-gen1-gasoline-use-care-guide"],
+          requiredTerms: ["gen1+gasoline", "lcd+storage"],
+          query: "aqua hot gen1 gasoline lcd storage prep",
+        },
+      ],
+      [
+        "aquahot-technical-service-contact-prep",
+        {
+          sourceIds: ["aquahot-contact-technical-service"],
+          requiredTerms: ["aqua+hot+contact", "technical+service"],
+          query: "aqua hot contact technical service prep",
+        },
+      ],
+      [
+        "furrion-tv-model-warranty-prep",
+        {
+          sourceIds: ["furrion-tvs-support-index"],
+          requiredTerms: ["furrion+tvs", "tv+support"],
+          query: "furrion tvs support model warranty prep",
+        },
+      ],
+      [
+        "greystone-range-manual-model-label-prep",
+        {
+          sourceIds: ["greystone-ranges-support-index"],
+          requiredTerms: ["greystone+ranges", "range+manual", "greystone+range"],
+          query: "greystone ranges support manual model label prep",
+        },
+      ],
+      [
+        "greystone-cooktop-griddle-manual-storage-prep",
+        {
+          sourceIds: ["greystone-cooktops-griddles-support-index"],
+          requiredTerms: ["greystone+cooktops+griddles", "griddle+storage"],
+          query: "greystone cooktops griddles manual storage prep",
+        },
+      ],
+      [
+        "greystone-microwave-model-control-prep",
+        {
+          sourceIds: ["greystone-microwaves-support-index"],
+          requiredTerms: ["greystone+microwaves", "microwave+model", "greystone+microwave"],
+          query: "greystone microwaves support model control prep",
+        },
+      ],
+      [
+        "girard-tankless-warranty-source-prep",
+        {
+          sourceIds: ["girard-other-products-support-index"],
+          requiredTerms: ["gp+llc+other+products", "girard+tankless"],
+          query: "girard gp llc other products tankless warranty source prep",
+        },
+      ],
+      [
+        "onan-p2500i-model-gsn-prep",
+        {
+          sourceIds: ["onan-p2500i-shop-product"],
+          requiredTerms: ["p2500i", "a074z433"],
+          query: "onan p2500i a074z433 model gsn prep",
+        },
+      ],
+      [
+        "onan-p2500i-maintenance-kit-prep",
+        {
+          sourceIds: ["onan-p2500i-maintenance-kit-shop"],
+          requiredTerms: ["p2500i+maintenance+kit", "a058u946"],
+          query: "onan p2500i maintenance kit a058u946 prep",
+        },
+      ],
+      [
+        "onan-p9500df-vft-fuel-storage-prep",
+        {
+          sourceIds: ["onan-p9500df-owner-manual-2025"],
+          requiredTerms: ["p9500df", "vft+storage"],
+          query: "onan p9500df vft fuel storage prep",
+        },
+      ],
+      [
+        "onan-p5000idf-efi-vft-co-prep",
+        {
+          sourceIds: ["onan-p5000idf-efi-spec-sheet-2025"],
+          requiredTerms: ["p5000idf+efi", "vft+co", "p5000idf"],
+          query: "onan p5000idf efi vft co prep",
+        },
+      ],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const newSlugs = new Set(expectedSymptoms.keys());
+    const sourcesById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const index = buildSymptomSearchIndex(corpus);
+    const summary = summarizeCorpus(corpus);
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|burner\s+(repair|work|service|port|assembly)|\borifice\b|\bcontrol[- ]board\b|\b120\s*vac\b|\b110\s*v\b|\bline[- ]voltage\b|\brefrigerant\b|\bprobe\b|\bwiring\b|\bsupply line\b|\bopen (the )?(fuel|gas|electrical|rooftop)|remove.*shroud|remove.*cover|remove.*toilet|replace.*valve|measure resistance|fuel nozzle|combustion|coolant pump|manual override|hydraulic work|hydraulic repair|macerator|internal plumbing|seal removal|compressor repair|pump service|magnetron|capacitor|door switch|roof climbing/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = sourcesById.get(sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(summary.indexablePages).toBe(expectedEntryCount + expectedSymptomCount + 1);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const [symptomId, expected] of expectedSymptoms) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds, symptomId).toEqual(expected.sourceIds);
+      expect(symptom?.searchRequiredTerms, symptomId).toEqual(expected.requiredTerms);
+      expect([symptom?.summary, ...(symptom?.safeChecklist ?? [])].join(" "), symptomId).not.toMatch(
+        unsafeOwnerActionPattern,
+      );
+      expect(lookupSymptomGuides(index, expected.query)[0]?.slug, expected.query).toBe(symptomId);
+    }
+
+    for (const [query, slug] of [
+      ["dometic cfx5 temperature", "dometic-cfx5-temperature-settings-service-prep"],
+      ["suburban 120v wall heater", "suburban-electric-wall-heater-control-prep"],
+      ["greystone range", "greystone-range-manual-model-label-prep"],
+      ["greystone microwave", "greystone-microwave-model-control-prep"],
+      ["onan p5000idf", "onan-p5000idf-efi-vft-co-prep"],
+    ]) {
+      expect(lookupSymptomGuides(index, query)[0]?.slug, query).toBe(slug);
+    }
+
+    for (const query of [
+      "temperature",
+      "power",
+      "bluetooth",
+      "service provider",
+      "toilet",
+      "portable toilet",
+      "cassette",
+      "refrigerator",
+      "warranty",
+      "cover",
+      "lid",
+      "ceiling assembly",
+      "thermostat",
+      "wall heater",
+      "water heater",
+      "furnace",
+      "hydronic",
+      "contact",
+      "tv",
+      "range",
+      "griddle",
+      "microwave",
+      "generator",
+      "maintenance kit",
+      "fuel",
     ]) {
       expect(
         lookupSymptomGuides(index, query)

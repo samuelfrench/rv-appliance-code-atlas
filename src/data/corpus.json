@@ -2,7 +2,7 @@
   "site": {
     "name": "RV Appliance Code Atlas",
     "baseUrl": "https://rvappliancefaultcodes.com",
-    "generatedAt": "2026-06-03T22:32:50-05:00",
+    "generatedAt": "2026-06-03T23:51:13-05:00",
     "safetyBoundary": "Use this atlas to identify likely meaning and prepare for service. Shut off power, LP gas, fuel, or water when a listed appliance condition involves flame, gas smell, exhaust, generator shutdown, high temperature, moving jacks/slides, refrigerant, 120 VAC, control boards, repeated ignition failure, or a persistent lockout. Call the appliance maker, RV dealer, or a qualified RV technician for repair.",
     "searchConsole": {
       "propertyType": "URL_PREFIX",
@@ -14,7 +14,7 @@
     "indexNow": {
       "key": "2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18",
       "keyLocation": "https://rvappliancefaultcodes.com/2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18.txt",
-      "submittedAt": "2026-06-04T04:08:04.240Z"
+      "submittedAt": null
     },
     "analytics": {
       "provider": "GA4",
@@ -7576,6 +7576,310 @@
       "title": "Cummins Onan RV Generators Category",
       "url": "https://shop.cummins.com/SC/category/brands/onan/onan-rv-generators/0ZG4N0000004G2hWAE",
       "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx5-recommended-temperature-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX5 Recommended Temperatures Support",
+      "url": "https://support.dometic.com/en/cfx5-coolers/What-are-the-recommended-temperatures-for-refrigerating-and-freezing-9aa",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx5-lid-direction-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX5 Lid Direction Support",
+      "url": "https://support.dometic.com/en/cfx5-coolers/Can-I-reverse-the-lid-direction-on-the-CFX5-8911",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx5-power-draw-runtime-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX5 Power Draw Runtime Support",
+      "url": "https://support.dometic.com/en/cfx5-coolers/How-do-I-calculate-how-much-power-a-CFX5-will-draw-6bf6",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx5-bluetooth-connection-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX5 Bluetooth Connection Support",
+      "url": "https://support.dometic.com/en/cfx5-coolers/My-cooler-wont-connect-to-bluetooth-6963",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx5-service-provider-routing-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX5 Service Provider Routing Support",
+      "url": "https://support.dometic.com/en/cfx5-coolers/Where-can-I-find-the-nearest-service-provider-bb4c",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-permanent-toilets-model-family-page",
+      "brand": "Thetford",
+      "title": "Thetford Permanent Toilets Product Family",
+      "url": "https://www.thetford.com/us/portable-and-rv-toilets/permanent-toilets/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "thetford-portable-toilets-model-family-page",
+      "brand": "Thetford",
+      "title": "Thetford Portable Toilets Product Family",
+      "url": "https://www.thetford.com/us/portable-and-rv-toilets/portable-toilets/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "thetford-cassette-toilets-model-family-page",
+      "brand": "Thetford",
+      "title": "Thetford Cassette Toilets Product Family",
+      "url": "https://www.thetford.com/us/portable-and-rv-toilets/cassette-toilets/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "thetford-aqua-magic-vi-dimensions-2025",
+      "brand": "Thetford",
+      "title": "Thetford Aqua-Magic VI RV Toilet Dimensions",
+      "url": "https://www.thetford.com/app/uploads/2025/02/Thetford-Aqua-Magic-VI-RV-Toilet-Dimensions.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "norcold-nv1090-support-page",
+      "brand": "Norcold",
+      "title": "Norcold NV1090 Support Page",
+      "url": "https://www.thetford.com/us/thetford-support/nv1090/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-t2095-support-page",
+      "brand": "Thetford",
+      "title": "Thetford T2095 Support Page",
+      "url": "https://www.thetford.com/us/thetford-support/t2095/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-dc-refrigerators-product-group",
+      "brand": "Norcold",
+      "title": "Norcold DC Refrigerators Product Group",
+      "url": "https://www.thetford.com/us/product-group/dc-refrigerators/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "norcold-refrigerator-warranty-faq",
+      "brand": "Norcold",
+      "title": "Norcold Refrigerator Warranty FAQ",
+      "url": "https://www.thetford.com/us/faq/what-is-the-warranty-for-my-refrigerator/",
+      "type": "manufacturer-faq",
+      "official": true
+    },
+    {
+      "id": "maxxair-maxxshade-plus-product",
+      "brand": "MaxxAir",
+      "title": "MaxxAir Maxxshade Plus Product Page",
+      "url": "https://www.maxxair.com/products/maxxshades/maxxshade-plus/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "maxxair-covers-product-family",
+      "brand": "MaxxAir",
+      "title": "MaxxAir Covers Product Family",
+      "url": "https://www.maxxair.com/Products/covers/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "maxxair-unimaxx-00335002-product",
+      "brand": "MaxxAir",
+      "title": "MaxxAir UniMaxx 00-335002 Vent Lid Product Page",
+      "url": "https://www.maxxair.com/products/covers/unimaxx-00-335002/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "maxxair-maxxair-ii-cover-family",
+      "brand": "MaxxAir",
+      "title": "MaxxAir II Cover Product Family",
+      "url": "https://www.maxxair.com/Products/covers/maxxair-2/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "maxxair-unimaxx-lid-installation-guide-10b335015z",
+      "brand": "MaxxAir",
+      "title": "MaxxAir UniMaxx Universal Roof Vent Lid Installation Guide 10B335015Z",
+      "url": "https://library.maxxair.com/wp-content/uploads/2023/03/10b335015z_unimaxx-universal-roof-vent-lid-installation-08-26-2019.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-iwave-air-purifier-accessory-prep",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach iWave-M Air Purifier Accessory",
+      "url": "https://coleman-mach.com/products/climate-control-accessories/iwave-m-air-purifier",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "coleman-thermostat-controlled-ceiling-assembly",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Thermostat Controlled Ceiling Assembly",
+      "url": "https://coleman-mach.com/products/ceiling-assemblies/thermostat-controlled/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "coleman-8xxx-zone-thermostats-repair-parts",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 8XXX Series Zone Thermostats and Control Packages",
+      "url": "https://coleman-mach.com/products/thermostats/8xxx-series-zone-thermostats-control-packages/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "coleman-air-vantage-conversion-kit",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Air Vantage Conversion Kit",
+      "url": "https://coleman-mach.com/products/conversion-kits/air-vantage/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "suburban-rv-one-combo-heater-product",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban RV One Combination Heater Product Page",
+      "url": "https://suburbanrv.com/rv-one/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "suburban-120v-electric-wall-heater-product",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban 120V Electric Wall Heater Product Page",
+      "url": "https://suburbanrv.com/climate-control/wall-heaters/120v-electric-wall-heater/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "suburban-d-de-water-heater-control-switch",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban D/DE Water Heater Control Switch",
+      "url": "https://suburbanrv.com/water-heating/tank-water-heaters/tank-water-heater-controls/tank-water-heater-control-d-de/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "suburban-furnace-core-replacement-modules",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban Furnace Core Replacement Modules",
+      "url": "https://suburbanrv.com/climate-control/furnaces/furnace-core-replacement-modules/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "aquahot-gen1-lpg-use-care-guide",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot GEN1 LPG Use and Care Guide",
+      "url": "https://library.aquahot.com/wp-content/uploads/2023/05/GEN1-NA-LPG-User-Manual-3.13.23.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "aquahot-gen1-gasoline-use-care-guide",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot GEN1 Gasoline Use and Care Guide",
+      "url": "https://library.aquahot.com/wp-content/uploads/2023/05/GEN1-NA-GAS-User-Manual-3.13.23.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "aquahot-contact-technical-service",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot Contact and Technical Service Page",
+      "url": "https://www.aquahot.com/contact.aspx",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "furrion-tvs-support-index",
+      "brand": "Furrion",
+      "title": "Furrion TVs Support Index",
+      "url": "https://support.lci1.com/furrion-tvs/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "greystone-ranges-support-index",
+      "brand": "Greystone",
+      "title": "Greystone Ranges Support Index",
+      "url": "https://support.lci1.com/greystone-ranges",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "greystone-cooktops-griddles-support-index",
+      "brand": "Greystone",
+      "title": "Greystone Cooktops and Griddles Support Index",
+      "url": "https://support.lci1.com/greystone-cooktops-griddles",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "greystone-microwaves-support-index",
+      "brand": "Greystone",
+      "title": "Greystone Microwaves Support Index",
+      "url": "https://support.lci1.com/greystone-microwaves",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "girard-other-products-support-index",
+      "brand": "Girard",
+      "title": "Girard Other Products Support Index",
+      "url": "https://support.lci1.com/gp-llc-other-products",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "onan-p2500i-shop-product",
+      "brand": "Onan",
+      "title": "Cummins Onan P2500i Inverter Generator Product Page",
+      "url": "https://shop.cummins.com/SC/product/onan-p2500i-inverter-generator-epa-a074z433/01tUz00000CiVu1IAF",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "onan-p2500i-maintenance-kit-shop",
+      "brand": "Onan",
+      "title": "Cummins Onan P2500i Maintenance Kit Product Page",
+      "url": "https://shop.cummins.com/SC/product/onan-p2500i-maintenance-kit-a058u946/01t4N0000048ZZcQAM",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "onan-p9500df-owner-manual-2025",
+      "brand": "Onan",
+      "title": "Cummins Onan P9500df Owner Manual",
+      "url": "https://www.cummins.com/sites/default/files/2025-04/p9500df-owners-manual.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "onan-p5000idf-efi-spec-sheet-2025",
+      "brand": "Onan",
+      "title": "Cummins Onan P5000iDF EFI Specification Sheet",
+      "url": "https://www.cummins.com/sites/default/files/2025-04/p5000idf-efi-spec-sheet.pdf",
+      "type": "manufacturer-spec-sheet",
       "official": true
     }
   ],
@@ -41327,7 +41631,45 @@
         "greystone-25-combo-griddle-storage-prep",
         "greystone-double-induction-hob-power-prep",
         "girard-tankless-e1-e2-service-prep",
-        "onan-rv-generator-gsn-model-family-prep"
+        "onan-rv-generator-gsn-model-family-prep",
+        "dometic-cfx5-recommended-temperature-support",
+        "dometic-cfx5-lid-direction-support",
+        "dometic-cfx5-power-draw-runtime-support",
+        "dometic-cfx5-bluetooth-connection-support",
+        "dometic-cfx5-service-provider-routing-support",
+        "thetford-permanent-toilets-model-family-page",
+        "thetford-portable-toilets-model-family-page",
+        "thetford-cassette-toilets-model-family-page",
+        "thetford-aqua-magic-vi-dimensions-2025",
+        "norcold-nv1090-support-page",
+        "thetford-t2095-support-page",
+        "norcold-dc-refrigerators-product-group",
+        "norcold-refrigerator-warranty-faq",
+        "maxxair-maxxshade-plus-product",
+        "maxxair-covers-product-family",
+        "maxxair-unimaxx-00335002-product",
+        "maxxair-maxxair-ii-cover-family",
+        "maxxair-unimaxx-lid-installation-guide-10b335015z",
+        "coleman-iwave-air-purifier-accessory-prep",
+        "coleman-thermostat-controlled-ceiling-assembly",
+        "coleman-8xxx-zone-thermostats-repair-parts",
+        "coleman-air-vantage-conversion-kit",
+        "suburban-rv-one-combo-heater-product",
+        "suburban-120v-electric-wall-heater-product",
+        "suburban-d-de-water-heater-control-switch",
+        "suburban-furnace-core-replacement-modules",
+        "aquahot-gen1-lpg-use-care-guide",
+        "aquahot-gen1-gasoline-use-care-guide",
+        "aquahot-contact-technical-service",
+        "furrion-tvs-support-index",
+        "greystone-ranges-support-index",
+        "greystone-cooktops-griddles-support-index",
+        "greystone-microwaves-support-index",
+        "girard-other-products-support-index",
+        "onan-p2500i-shop-product",
+        "onan-p2500i-maintenance-kit-shop",
+        "onan-p9500df-owner-manual-2025",
+        "onan-p5000idf-efi-spec-sheet-2025"
       ]
     },
     {
@@ -57216,6 +57558,917 @@
       "slug": "onan-rv-generator-gsn-model-family-prep",
       "sourceIds": [
         "onan-rv-generator-gsn-model-family-prep"
+      ]
+    },
+    {
+      "id": "dometic-cfx5-temperature-settings-service-prep",
+      "slug": "dometic-cfx5-temperature-settings-service-prep",
+      "title": "Dometic CFX5 Temperature Settings Service Prep",
+      "summary": "Use the Dometic CFX5 recommended-temperature support page to record setpoint and food-safety details before support.",
+      "safeChecklist": [
+        "Record the CFX5 model, current set temperature, refrigerator or freezer use, ambient temperature, food or medicine risk, and how long the cooler has been running.",
+        "Save photos of the display, app temperature screen if available, model label, and contents category without sharing private trip details publicly.",
+        "Move temperature-sensitive contents if the cooler cannot hold a safe temperature or the display temperature does not match the use case.",
+        "Use Dometic support or qualified service for cooler electronics, sealed cooling system, warranty, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "dometic-cfx5-recommended-temperature-support"
+      ],
+      "searchAliases": [
+        "dometic cfx5 recommended temperatures refrigerating freezing prep",
+        "dometic cfx5 temperature settings service prep",
+        "cfx5 recommended temperatures refrigerating freezing freezer prep"
+      ],
+      "searchRequiredTerms": [
+        "cfx5+recommended+temperatures",
+        "refrigerating+freezing",
+        "cfx5+temperature"
+      ]
+    },
+    {
+      "id": "dometic-cfx5-lid-direction-model-prep",
+      "slug": "dometic-cfx5-lid-direction-model-prep",
+      "title": "Dometic CFX5 Lid Direction Model Prep",
+      "summary": "Use the Dometic CFX5 lid-direction support page to capture model and lid-swing details before asking about fit or service.",
+      "safeChecklist": [
+        "Record the CFX5 model, current lid opening direction, installed location, clearance limits, and whether the lid was recently handled or damaged.",
+        "Save photos of the lid, hinge area from normal access, model label, and the surrounding storage space.",
+        "Stop using the cooler in a tight compartment if the lid cannot close fully or the seal is visibly distorted.",
+        "Use Dometic support or qualified service for hinge, seal, case, parts, warranty, or repair decisions."
+      ],
+      "sourceIds": [
+        "dometic-cfx5-lid-direction-support"
+      ],
+      "searchAliases": [
+        "dometic cfx5 reverse lid direction model prep",
+        "dometic cfx5 lid direction model prep",
+        "cfx5 reverse lid direction support prep"
+      ],
+      "searchRequiredTerms": [
+        "cfx5+lid+direction",
+        "reverse+lid"
+      ]
+    },
+    {
+      "id": "dometic-cfx5-battery-runtime-power-prep",
+      "slug": "dometic-cfx5-battery-runtime-power-prep",
+      "title": "Dometic CFX5 Battery Runtime and Power Prep",
+      "summary": "Use the Dometic CFX5 power-draw support page to record runtime, supply, and battery-planning details before support.",
+      "safeChecklist": [
+        "Record the CFX5 model, power source, battery-protection setting, set temperature, ambient temperature, load contents, and observed runtime.",
+        "Save screenshots or photos of the app setting, display, normal-access power plug, model label, and any low-supply message.",
+        "Move contents or switch to a stable supply if runtime is shorter than the trip or the cooler cannot hold temperature.",
+        "Use Dometic support or qualified RV electrical service for installed power, charging equipment, cooler electronics, parts, warranty, or repair decisions."
+      ],
+      "sourceIds": [
+        "dometic-cfx5-power-draw-runtime-support"
+      ],
+      "searchAliases": [
+        "dometic cfx5 power draw battery runtime prep",
+        "dometic cfx5 battery runtime power prep",
+        "cfx5 power draw runtime service prep"
+      ],
+      "searchRequiredTerms": [
+        "cfx5+power+draw",
+        "battery+runtime"
+      ]
+    },
+    {
+      "id": "dometic-cfx5-app-bluetooth-control-prep",
+      "slug": "dometic-cfx5-app-bluetooth-control-prep",
+      "title": "Dometic CFX5 Bluetooth Cooler Connect App Prep",
+      "summary": "Use the Dometic CFX5 Bluetooth support page to record cooler-connect app behavior and local-control details before support.",
+      "safeChecklist": [
+        "Record the CFX5 model, phone operating system, app version, Bluetooth status, product-selection state, and whether local controls still change settings.",
+        "Save screenshots of the app message, phone Bluetooth screen, product list, and cooler display without sharing account credentials publicly.",
+        "Use the cooler local controls and protect contents if the app connection is unreliable.",
+        "Use Dometic support for app account, firmware, product registration, electronics, warranty, or parts decisions."
+      ],
+      "sourceIds": [
+        "dometic-cfx5-bluetooth-connection-support"
+      ],
+      "searchAliases": [
+        "dometic cfx5 bluetooth cooler connect app prep",
+        "dometic cfx5 app bluetooth control prep",
+        "cfx5 cooler bluetooth connection support prep"
+      ],
+      "searchRequiredTerms": [
+        "cfx5+bluetooth",
+        "cooler+connect"
+      ]
+    },
+    {
+      "id": "dometic-cfx5-service-provider-warranty-prep",
+      "slug": "dometic-cfx5-service-provider-warranty-prep",
+      "title": "Dometic CFX5 Service Provider Routing Prep",
+      "summary": "Use the Dometic CFX5 service-provider support page to gather product and service-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the CFX5 model, serial if visible, purchase date, symptom, support case number if any, and current location.",
+        "Save photos of the model label, display, app message if relevant, purchase paperwork, and the cooler setup from normal access.",
+        "Keep food-safety notes separate from product paperwork so support can see urgency and product details quickly.",
+        "Use Dometic official support or an authorized provider for service routing, parts, electronics, sealed cooling system, or repair decisions."
+      ],
+      "sourceIds": [
+        "dometic-cfx5-service-provider-routing-support"
+      ],
+      "searchAliases": [
+        "dometic cfx5 nearest service provider warranty prep",
+        "dometic cfx5 service provider warranty prep",
+        "cfx5 service provider support routing prep"
+      ],
+      "searchRequiredTerms": [
+        "cfx5+service+provider"
+      ]
+    },
+    {
+      "id": "thetford-permanent-toilet-model-fit-prep",
+      "slug": "thetford-permanent-toilet-model-fit-prep",
+      "title": "Thetford Permanent Toilet Model Fit Prep",
+      "summary": "Use the Thetford permanent-toilets family page to identify toilet family, fit, and paperwork details before support.",
+      "safeChecklist": [
+        "Record the toilet model family, bowl height or profile if known, floor footprint, visible label details, and whether the issue is fit, operation, or paperwork.",
+        "Save photos of the toilet from normal access, base area, label, purchase paperwork, and any compatible-product page you are comparing.",
+        "Stop using the toilet if it leaks, shifts, or will not hold water during travel.",
+        "Use Thetford support or qualified RV sanitation service for water connection, seal, base, internal mechanism, warranty, or replacement decisions."
+      ],
+      "sourceIds": [
+        "thetford-permanent-toilets-model-family-page"
+      ],
+      "searchAliases": [
+        "thetford permanent toilets model fit prep",
+        "thetford permanent toilet model fit prep",
+        "thetford permanent rv toilet family prep"
+      ],
+      "searchRequiredTerms": [
+        "permanent+toilets",
+        "thetford+permanent"
+      ]
+    },
+    {
+      "id": "thetford-porta-potti-model-storage-prep",
+      "slug": "thetford-porta-potti-model-storage-prep",
+      "title": "Thetford Porta Potti Model and Storage Prep",
+      "summary": "Use the Thetford portable-toilets page to capture Porta Potti model, storage, and accessory details before support.",
+      "safeChecklist": [
+        "Record the Porta Potti model, tank sizes if known, pump style, storage condition, travel use, and any hold-down or floor-plate accessory.",
+        "Save photos of the model label, tanks from normal access, pump area, latch area, and current storage setup.",
+        "Do not travel with a portable toilet that leaks, will not latch, or cannot be secured.",
+        "Use Thetford support for tank, seal, latch, pump, accessory, warranty, or replacement decisions."
+      ],
+      "sourceIds": [
+        "thetford-portable-toilets-model-family-page"
+      ],
+      "searchAliases": [
+        "thetford portable toilets porta potti storage prep",
+        "thetford porta potti model storage prep",
+        "thetford portable toilet model family prep"
+      ],
+      "searchRequiredTerms": [
+        "portable+toilets",
+        "porta+potti"
+      ]
+    },
+    {
+      "id": "thetford-cassette-toilet-model-tank-prep",
+      "slug": "thetford-cassette-toilet-model-tank-prep",
+      "title": "Thetford Cassette Toilet Model and Tank Prep",
+      "summary": "Use the Thetford cassette-toilets page to record cassette model, tank, and service details before support.",
+      "safeChecklist": [
+        "Record the cassette toilet family, cassette tank type, label details, door-side orientation if known, travel status, and exact symptom.",
+        "Save photos of the visible cassette door, tank handle from normal access, label, toilet control area, and purchase paperwork.",
+        "Stop use if the cassette leaks, will not latch, or cannot be secured for travel.",
+        "Use Thetford support or qualified RV sanitation service for tank, seal, base, internal mechanism, warranty, or replacement decisions."
+      ],
+      "sourceIds": [
+        "thetford-cassette-toilets-model-family-page"
+      ],
+      "searchAliases": [
+        "thetford cassette toilets tank model prep",
+        "thetford cassette toilet model tank prep",
+        "thetford cassette tank model service prep"
+      ],
+      "searchRequiredTerms": [
+        "cassette+toilets",
+        "cassette+tank"
+      ]
+    },
+    {
+      "id": "thetford-aqua-magic-vi-dimensions-model-prep",
+      "slug": "thetford-aqua-magic-vi-dimensions-model-prep",
+      "title": "Thetford Aqua-Magic VI Dimensions Model Prep",
+      "summary": "Use the Thetford Aqua-Magic VI dimensions PDF to capture fit and model details before ordering or support.",
+      "safeChecklist": [
+        "Record the Aqua-Magic VI model, high or low profile if known, available space, existing toilet footprint, and visible label details.",
+        "Save photos of the toilet from normal access, label, floor area, wall clearance, and the dimension sheet used for comparison.",
+        "Pause replacement planning if dimensions, profile, or floor fit are uncertain.",
+        "Use Thetford support or qualified RV sanitation service for fit, connection, seal, base, warranty, or replacement decisions."
+      ],
+      "sourceIds": [
+        "thetford-aqua-magic-vi-dimensions-2025"
+      ],
+      "searchAliases": [
+        "thetford aqua magic vi dimensions model prep",
+        "aqua magic vi dimensions model prep",
+        "thetford aqua magic vi toilet dimension sheet prep"
+      ],
+      "searchRequiredTerms": [
+        "aqua+magic+vi",
+        "dimensions"
+      ]
+    },
+    {
+      "id": "norcold-nv1090-service-model-prep",
+      "slug": "norcold-nv1090-service-model-prep",
+      "title": "Norcold NV1090 Service Model Prep",
+      "summary": "Use the Norcold NV1090 support page to capture model, control, and refrigerator details before support.",
+      "safeChecklist": [
+        "Record the NV1090 model, serial if visible, control setting, temperature behavior, door condition, and any display or support-page detail.",
+        "Save photos of the model label, control panel, interior, door gasket from normal access, and installation context.",
+        "Move temperature-sensitive contents if the refrigerator cannot maintain safe temperatures.",
+        "Use Norcold support or qualified RV refrigeration service for electronics, sealed cooling system, installed power, warranty, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "norcold-nv1090-support-page"
+      ],
+      "searchAliases": [
+        "norcold nv1090 support model control prep",
+        "norcold nv1090 service model prep",
+        "nv1090 refrigerator control service prep"
+      ],
+      "searchRequiredTerms": [
+        "nv1090"
+      ]
+    },
+    {
+      "id": "thetford-t2095-control-model-prep",
+      "slug": "thetford-t2095-control-model-prep",
+      "title": "Thetford T2095 Control Model Prep",
+      "summary": "Use the Thetford T2095 support page to record drawer refrigerator model and control details before support.",
+      "safeChecklist": [
+        "Record the T2095 model, serial if visible, drawer position, control state, temperature behavior, night mode if relevant, and door or gasket condition.",
+        "Save photos of the label, drawer, control area, interior, and any support-page reference you used.",
+        "Move temperature-sensitive contents if the refrigerator cannot hold safe temperatures.",
+        "Use Thetford support or qualified RV refrigeration service for electronics, sealed cooling system, installed power, warranty, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "thetford-t2095-support-page"
+      ],
+      "searchAliases": [
+        "thetford t2095 drawer refrigerator control prep",
+        "thetford t2095 control model prep",
+        "t2095 drawer fridge model service prep"
+      ],
+      "searchRequiredTerms": [
+        "t2095"
+      ]
+    },
+    {
+      "id": "norcold-dc-refrigerator-family-model-prep",
+      "slug": "norcold-dc-refrigerator-family-model-prep",
+      "title": "Norcold DC Refrigerator Family Model Prep",
+      "summary": "Use the Norcold DC refrigerators product group to identify model family and support details before service.",
+      "safeChecklist": [
+        "Record the Norcold DC refrigerator model, size family, temperature behavior, control setting, door condition, and current power source.",
+        "Save photos of the label, control panel, interior, door gasket from normal access, and product-family page used for comparison.",
+        "Move temperature-sensitive contents if cooling is unreliable.",
+        "Use Norcold support or qualified RV refrigeration service for electronics, sealed cooling system, installed power, warranty, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "norcold-dc-refrigerators-product-group"
+      ],
+      "searchAliases": [
+        "norcold dc refrigerators product group model prep",
+        "norcold dc refrigerator family model prep",
+        "norcold dc fridge model family service prep"
+      ],
+      "searchRequiredTerms": [
+        "dc+refrigerators",
+        "norcold+dc"
+      ]
+    },
+    {
+      "id": "norcold-refrigerator-warranty-paperwork-prep",
+      "slug": "norcold-refrigerator-warranty-paperwork-prep",
+      "title": "Norcold Refrigerator Warranty Paperwork Prep",
+      "summary": "Use the Norcold refrigerator warranty FAQ to gather model, purchase, and support paperwork before contacting service.",
+      "safeChecklist": [
+        "Record the refrigerator model, serial if visible, purchase date, dealer, symptom, and any previous support case number.",
+        "Save photos of the model label, purchase paperwork, display or control area, and current installation context from normal access.",
+        "Keep food-safety and service-urgency notes with the warranty packet if cooling is unreliable.",
+        "Use Norcold support or an authorized provider for warranty, parts, electronics, sealed cooling system, or repair decisions."
+      ],
+      "sourceIds": [
+        "norcold-refrigerator-warranty-faq"
+      ],
+      "searchAliases": [
+        "norcold refrigerator warranty faq paperwork prep",
+        "norcold refrigerator warranty paperwork prep",
+        "norcold warranty refrigerator service prep"
+      ],
+      "searchRequiredTerms": [
+        "refrigerator+warranty",
+        "norcold+warranty"
+      ]
+    },
+    {
+      "id": "maxxair-maxxshade-plus-led-fit-prep",
+      "slug": "maxxair-maxxshade-plus-led-fit-prep",
+      "title": "MaxxAir Maxxshade Plus LED Fit Prep",
+      "summary": "Use the MaxxAir Maxxshade Plus page to capture shade, LED, and fit details before support.",
+      "safeChecklist": [
+        "Record the Maxxshade Plus model, vent opening size, LED behavior, shade movement, trim color, and current installation context.",
+        "Save photos of the shade, LED state, label or packaging, vent opening from inside the coach, and purchase paperwork.",
+        "Stop using the shade if it binds, hangs loose, or cannot stay secured for travel.",
+        "Use MaxxAir support or qualified RV ventilation service for installed power, mounting, parts, warranty, or replacement decisions."
+      ],
+      "sourceIds": [
+        "maxxair-maxxshade-plus-product"
+      ],
+      "searchAliases": [
+        "maxxair maxxshade plus led fit control prep",
+        "maxxair maxxshade plus led fit prep",
+        "maxxshade plus shade led model prep"
+      ],
+      "searchRequiredTerms": [
+        "maxxshade+plus"
+      ]
+    },
+    {
+      "id": "maxxair-cover-family-fit-prep",
+      "slug": "maxxair-cover-family-fit-prep",
+      "title": "MaxxAir Cover Family Fit Prep",
+      "summary": "Use the MaxxAir covers family page to identify cover family, fit, and service details before ordering or support.",
+      "safeChecklist": [
+        "Record the existing vent or fan model, cover family being compared, lid color, hinge style if visible, and travel condition.",
+        "Save photos from normal owner access of the interior garnish, visible label, existing cover profile from a safe location, and product page.",
+        "Do not travel with a loose or cracked cover that cannot be secured.",
+        "Use MaxxAir support or qualified RV roof service for exterior access, mounting, parts, warranty, or replacement decisions."
+      ],
+      "sourceIds": [
+        "maxxair-covers-product-family"
+      ],
+      "searchAliases": [
+        "maxxair covers product family fit prep",
+        "maxxair cover family fit prep",
+        "maxxair vent cover product family service prep"
+      ],
+      "searchRequiredTerms": [
+        "maxxair+covers",
+        "covers+family"
+      ]
+    },
+    {
+      "id": "maxxair-unimaxx-vent-lid-fit-prep",
+      "slug": "maxxair-unimaxx-vent-lid-fit-prep",
+      "title": "MaxxAir UniMaxx Vent Lid Fit Prep",
+      "summary": "Use the MaxxAir UniMaxx 00-335002 page to capture vent-lid fit and part details before support.",
+      "safeChecklist": [
+        "Record the 00-335002 reference, existing vent size, lid color, hinge style if visible, travel status, and whether the lid is cracked or loose.",
+        "Save photos from normal owner access of the interior vent, visible exterior profile from a safe location, label or packaging, and product page.",
+        "Do not travel with a loose lid or cover that cannot be secured.",
+        "Use MaxxAir support or qualified RV roof service for exterior access, mounting, parts, warranty, or replacement decisions."
+      ],
+      "sourceIds": [
+        "maxxair-unimaxx-00335002-product"
+      ],
+      "searchAliases": [
+        "maxxair unimaxx 00 335002 vent lid fit prep",
+        "maxxair unimaxx vent lid fit prep",
+        "unimaxx 00 335002 smoke lid model prep"
+      ],
+      "searchRequiredTerms": [
+        "00+335002",
+        "unimaxx"
+      ]
+    },
+    {
+      "id": "maxxair-ii-cover-fit-service-prep",
+      "slug": "maxxair-ii-cover-fit-service-prep",
+      "title": "MaxxAir II Cover Fit Service Prep",
+      "summary": "Use the MaxxAir II cover family page to capture cover fit and service details before support.",
+      "safeChecklist": [
+        "Record the MaxxAir II cover family, existing fan or vent model, color, travel condition, and any visible part number.",
+        "Save photos from normal owner access of the interior garnish, visible cover profile from a safe location, label or packaging, and product page.",
+        "Do not travel with a cover that is loose, cracked, or cannot be secured.",
+        "Use MaxxAir support or qualified RV roof service for exterior access, mounting, parts, warranty, or replacement decisions."
+      ],
+      "sourceIds": [
+        "maxxair-maxxair-ii-cover-family"
+      ],
+      "searchAliases": [
+        "maxxair ii cover family fit service prep",
+        "maxxair 2 cover fit service prep",
+        "maxxair maxxair ii cover family prep"
+      ],
+      "searchRequiredTerms": [
+        "maxxair+2",
+        "maxxair+ii+cover"
+      ]
+    },
+    {
+      "id": "maxxair-unimaxx-lid-hardware-service-prep",
+      "slug": "maxxair-unimaxx-lid-hardware-service-prep",
+      "title": "MaxxAir UniMaxx Lid Hardware Service Prep",
+      "summary": "Use the MaxxAir UniMaxx 10B335015Z guide to collect hardware and model details before support.",
+      "safeChecklist": [
+        "Record the 10B335015Z guide reference, existing vent model if known, lid color, hinge style, hardware packet status, and travel condition.",
+        "Save photos from normal owner access of the interior vent, lid profile from a safe location, hardware packet, and purchase paperwork.",
+        "Do not travel if the lid cannot close or stay secured.",
+        "Use MaxxAir support or qualified RV roof service for exterior access, mounting, sealant, parts, warranty, or replacement decisions."
+      ],
+      "sourceIds": [
+        "maxxair-unimaxx-lid-installation-guide-10b335015z"
+      ],
+      "searchAliases": [
+        "maxxair 10b335015z unimaxx lid hardware service prep",
+        "maxxair unimaxx lid hardware service prep",
+        "10b335015z unimaxx universal roof vent lid prep"
+      ],
+      "searchRequiredTerms": [
+        "10b335015z",
+        "unimaxx+lid"
+      ]
+    },
+    {
+      "id": "coleman-iwave-air-purifier-accessory-prep",
+      "slug": "coleman-iwave-air-purifier-accessory-prep",
+      "title": "Coleman-Mach iWave-M Air Purifier Accessory Prep",
+      "summary": "Use the Coleman-Mach iWave-M product page to capture accessory compatibility and service details before support.",
+      "safeChecklist": [
+        "Record the iWave-M accessory name, air-conditioner model, ceiling assembly type, symptom, purchase paperwork, and whether the accessory is already installed.",
+        "Save photos of the thermostat or controls, ceiling assembly from inside the coach, model label if visible, and accessory paperwork.",
+        "Do not continue using the accessory if there is odor, overheating, abnormal noise, or unsafe operation.",
+        "Use Coleman-Mach support or qualified RV HVAC service for installed power, ceiling assembly access, parts, warranty, or replacement decisions."
+      ],
+      "sourceIds": [
+        "coleman-iwave-air-purifier-accessory-prep"
+      ],
+      "searchAliases": [
+        "coleman mach iwave m air purifier accessory prep",
+        "coleman iwave air purifier accessory prep",
+        "iwave m coleman mach climate control accessory prep"
+      ],
+      "searchRequiredTerms": [
+        "iwave+m",
+        "air+purifier"
+      ]
+    },
+    {
+      "id": "coleman-thermostat-controlled-ceiling-assembly-prep",
+      "slug": "coleman-thermostat-controlled-ceiling-assembly-prep",
+      "title": "Coleman-Mach Thermostat Controlled Ceiling Assembly Prep",
+      "summary": "Use the Coleman-Mach thermostat-controlled ceiling assembly page to identify control package and model details before support.",
+      "safeChecklist": [
+        "Record the ceiling assembly type, thermostat model if known, air-conditioner model, control symptoms, mode setting, and any label visible from inside the coach.",
+        "Save photos of the thermostat, ceiling assembly face, controls, filters from normal access, and product page used for comparison.",
+        "Use only normal thermostat and filter-access steps before support.",
+        "Use Coleman-Mach support or qualified RV HVAC service for installed power, ceiling assembly access, parts, warranty, or replacement decisions."
+      ],
+      "sourceIds": [
+        "coleman-thermostat-controlled-ceiling-assembly"
+      ],
+      "searchAliases": [
+        "coleman mach thermostat controlled ceiling assembly prep",
+        "coleman thermostat controlled ceiling assembly prep",
+        "coleman mach ceiling assembly thermostat control package prep"
+      ],
+      "searchRequiredTerms": [
+        "thermostat+controlled+ceiling"
+      ]
+    },
+    {
+      "id": "coleman-8xxx-zone-thermostat-replacement-prep",
+      "slug": "coleman-8xxx-zone-thermostat-replacement-prep",
+      "title": "Coleman-Mach 8XXX Zone Thermostat Replacement Prep",
+      "summary": "Use the Coleman-Mach 8XXX zone thermostat page to record thermostat and control-package details before replacement support.",
+      "safeChecklist": [
+        "Record the 8XXX thermostat model, zone count, control-package reference, air-conditioner model, current mode, and exact display or control symptom.",
+        "Save photos of the thermostat face, labels, zone screen if present, product page, and purchase paperwork.",
+        "Do not remove controls or panels before support; collect visible details only.",
+        "Use Coleman-Mach support or qualified RV HVAC service for control package, installed power, parts, warranty, or replacement decisions."
+      ],
+      "sourceIds": [
+        "coleman-8xxx-zone-thermostats-repair-parts"
+      ],
+      "searchAliases": [
+        "coleman mach 8xxx zone thermostats control packages prep",
+        "coleman mach 8xxx zone thermostat replacement prep",
+        "coleman 8xxx thermostat control package service prep"
+      ],
+      "searchRequiredTerms": [
+        "8xxx+zone",
+        "thermostats+control+packages"
+      ]
+    },
+    {
+      "id": "coleman-air-vantage-ct-thermostat-prep",
+      "slug": "coleman-air-vantage-ct-thermostat-prep",
+      "title": "Coleman-Mach Air Vantage CT Thermostat Prep",
+      "summary": "Use the Coleman-Mach Air Vantage conversion-kit page to record CT thermostat compatibility details before support.",
+      "safeChecklist": [
+        "Record the Air Vantage kit name, CT thermostat model, Coleman-Mach air-conditioner model, current controls, symptoms, and purchase paperwork.",
+        "Save photos of the thermostat, ceiling assembly from inside the coach, model labels if visible, and product page used for comparison.",
+        "Do not disassemble controls, access panels, or ceiling assemblies before support; collect visible details only.",
+        "Use Coleman-Mach support or qualified RV HVAC service for conversion kit, installed power, control package, parts, warranty, or replacement decisions."
+      ],
+      "sourceIds": [
+        "coleman-air-vantage-conversion-kit"
+      ],
+      "searchAliases": [
+        "coleman air vantage conversion kit ct thermostat prep",
+        "coleman mach air vantage ct thermostat prep",
+        "air vantage conversion kit ct thermostat coleman prep"
+      ],
+      "searchRequiredTerms": [
+        "air+vantage",
+        "ct+thermostat"
+      ]
+    },
+    {
+      "id": "suburban-rv-one-combo-heater-service-prep",
+      "slug": "suburban-rv-one-combo-heater-service-prep",
+      "title": "Suburban RV One Combo Heater Service Prep",
+      "summary": "Use the Suburban RV One product page to capture combined water-heater and furnace model details before support.",
+      "safeChecklist": [
+        "Record the RV One model, water-heating symptom, cabin-heat symptom, control state, fuel status, purchase paperwork, and any visible label details.",
+        "Save photos of controls, visible labels, exterior access door from a safe location, and product page used for comparison.",
+        "Shut the appliance down for fuel odor, exhaust concern, water leak, abnormal heat, repeated shutdown, or unsafe operation.",
+        "Use Suburban support or qualified RV service for fuel system, installed power, venting, water connections, parts, warranty, or repair decisions."
+      ],
+      "sourceIds": [
+        "suburban-rv-one-combo-heater-product"
+      ],
+      "searchAliases": [
+        "suburban rv one combo heater water furnace service prep",
+        "suburban rv one combo heater service prep",
+        "rv one water heater furnace suburban prep"
+      ],
+      "searchRequiredTerms": [
+        "rv+one",
+        "combo+heater"
+      ]
+    },
+    {
+      "id": "suburban-electric-wall-heater-control-prep",
+      "slug": "suburban-electric-wall-heater-control-prep",
+      "title": "Suburban Electric Wall Heater Control Prep",
+      "summary": "Use the Suburban electric wall-heater page to record model, control, and safety details before support.",
+      "safeChecklist": [
+        "Record the wall-heater model, control setting, room conditions, symptom, purchase paperwork, and any visible label details.",
+        "Save photos of the controls, heater face from normal access, label if visible, and product page used for comparison.",
+        "Turn the heater off for odor, abnormal heat, repeated shutdown, damaged face, or unsafe operation.",
+        "Use Suburban support or qualified electrical service for installed power, mounting, parts, warranty, or repair decisions."
+      ],
+      "sourceIds": [
+        "suburban-120v-electric-wall-heater-product"
+      ],
+      "searchAliases": [
+        "suburban 120v electric wall heater control prep",
+        "suburban electric wall heater control prep",
+        "suburban wall heater control service prep"
+      ],
+      "searchRequiredTerms": [
+        "120v+electric+wall+heater",
+        "120v+wall+heater"
+      ]
+    },
+    {
+      "id": "suburban-d-de-water-heater-switch-prep",
+      "slug": "suburban-d-de-water-heater-switch-prep",
+      "title": "Suburban D/DE Water Heater Switch Prep",
+      "summary": "Use the Suburban D/DE water-heater control-switch page to capture switch and model details before support.",
+      "safeChecklist": [
+        "Record the water-heater model, D or DE control reference, switch position, indicator behavior, water-heating symptom, and purchase paperwork.",
+        "Save photos of the switch, control label if visible, exterior access door from a safe location, and product page used for comparison.",
+        "Shut the water heater down for fuel odor, water leak, abnormal heat, repeated shutdown, or unsafe operation.",
+        "Use Suburban support or qualified RV service for fuel system, installed power, water connections, parts, warranty, or repair decisions."
+      ],
+      "sourceIds": [
+        "suburban-d-de-water-heater-control-switch"
+      ],
+      "searchAliases": [
+        "suburban d de water heater control switch prep",
+        "suburban d de water heater switch prep",
+        "suburban control d de water heater prep"
+      ],
+      "searchRequiredTerms": [
+        "d+de+water+heater",
+        "control+d+de"
+      ]
+    },
+    {
+      "id": "suburban-furnace-core-module-service-prep",
+      "slug": "suburban-furnace-core-module-service-prep",
+      "title": "Suburban Furnace Core Module Service Prep",
+      "summary": "Use the Suburban furnace core replacement module page to capture model and service details before support.",
+      "safeChecklist": [
+        "Record the furnace model, coach model, cabin-heat symptom, thermostat setting, shutdown behavior, fuel status, and any visible label details.",
+        "Save photos of the thermostat, visible grille, exterior access door from a safe location, label if visible, and product page used for comparison.",
+        "Shut the furnace down for fuel odor, exhaust concern, soot, abnormal heat, repeated shutdown, or unsafe operation.",
+        "Use Suburban support or qualified RV furnace service for fuel system, venting, installed power, module fit, parts, warranty, or repair decisions."
+      ],
+      "sourceIds": [
+        "suburban-furnace-core-replacement-modules"
+      ],
+      "searchAliases": [
+        "suburban furnace core replacement modules service prep",
+        "suburban furnace core module service prep",
+        "suburban furnace core replacement model prep"
+      ],
+      "searchRequiredTerms": [
+        "furnace+core+replacement",
+        "core+module"
+      ]
+    },
+    {
+      "id": "aquahot-gen1-lpg-lcd-storage-prep",
+      "slug": "aquahot-gen1-lpg-lcd-storage-prep",
+      "title": "Aqua-Hot GEN1 LPG LCD and Storage Prep",
+      "summary": "Use the Aqua-Hot GEN1 LPG use-and-care guide to record LCD, storage, and service details before support.",
+      "safeChecklist": [
+        "Record the GEN1 LPG model, LCD state, heat or hot-water symptom, storage status, antifreeze notes, and any visible label details.",
+        "Save photos of the LCD, controls, product label from normal access, fluid level indicators if normally visible, and service paperwork.",
+        "Shut the system down for fuel odor, exhaust concern, fluid leak, abnormal heat, repeated shutdown, or unsafe operation.",
+        "Use Aqua-Hot support or qualified hydronic service for fuel system, installed power, fluid system, parts, warranty, or repair decisions."
+      ],
+      "sourceIds": [
+        "aquahot-gen1-lpg-use-care-guide"
+      ],
+      "searchAliases": [
+        "aqua hot gen1 lpg lcd storage prep",
+        "aquahot gen1 lpg lcd storage prep",
+        "aqua hot gen1 lpg use care guide prep"
+      ],
+      "searchRequiredTerms": [
+        "gen1+lpg",
+        "lcd+storage"
+      ]
+    },
+    {
+      "id": "aquahot-gen1-gasoline-lcd-storage-prep",
+      "slug": "aquahot-gen1-gasoline-lcd-storage-prep",
+      "title": "Aqua-Hot GEN1 Gasoline LCD and Storage Prep",
+      "summary": "Use the Aqua-Hot GEN1 gasoline use-and-care guide to record LCD, fuel-mode, storage, and service details before support.",
+      "safeChecklist": [
+        "Record the GEN1 gasoline model, LCD state, heat or hot-water symptom, storage status, fuel mode, and any visible label details.",
+        "Save photos of the LCD, controls, product label from normal access, fluid level indicators if normally visible, and service paperwork.",
+        "Shut the system down for fuel odor, exhaust concern, fluid leak, abnormal heat, repeated shutdown, or unsafe operation.",
+        "Use Aqua-Hot support or qualified hydronic service for fuel system, installed power, fluid system, parts, warranty, or repair decisions."
+      ],
+      "sourceIds": [
+        "aquahot-gen1-gasoline-use-care-guide"
+      ],
+      "searchAliases": [
+        "aqua hot gen1 gasoline lcd storage prep",
+        "aquahot gen1 gasoline lcd storage prep",
+        "aqua hot gen1 gasoline use care guide prep"
+      ],
+      "searchRequiredTerms": [
+        "gen1+gasoline",
+        "lcd+storage"
+      ]
+    },
+    {
+      "id": "aquahot-technical-service-contact-prep",
+      "slug": "aquahot-technical-service-contact-prep",
+      "title": "Aqua-Hot Technical Service Contact Prep",
+      "summary": "Use the Aqua-Hot contact page to gather model, symptom, and service details before contacting technical service.",
+      "safeChecklist": [
+        "Record the Aqua-Hot model, serial if visible, heat or hot-water symptom, support history, coach location, and preferred contact details.",
+        "Save photos of the product label, controls, display if present, service paperwork, and any visible leak or shutdown indication from normal access.",
+        "Shut the system down for fuel odor, exhaust concern, fluid leak, abnormal heat, repeated shutdown, or unsafe operation.",
+        "Use Aqua-Hot technical service or qualified hydronic service for fuel system, installed power, fluid system, parts, warranty, or repair decisions."
+      ],
+      "sourceIds": [
+        "aquahot-contact-technical-service"
+      ],
+      "searchAliases": [
+        "aqua hot contact technical service prep",
+        "aquahot technical service contact prep",
+        "aqua hot technical service support prep"
+      ],
+      "searchRequiredTerms": [
+        "aqua+hot+contact",
+        "technical+service"
+      ]
+    },
+    {
+      "id": "furrion-tv-model-warranty-prep",
+      "slug": "furrion-tv-model-warranty-prep",
+      "title": "Furrion TV Model and Warranty Prep",
+      "summary": "Use the Furrion TVs support index to collect model, warranty, and control details before support.",
+      "safeChecklist": [
+        "Record the TV model, serial if visible, screen symptom, remote behavior, input source, purchase date, and mount location.",
+        "Save photos of the model label, screen condition, remote, input selection, purchase paperwork, and support page used for comparison.",
+        "Turn the TV off for abnormal heat, smoke odor, damaged case, liquid exposure, or unsafe operation.",
+        "Use Furrion support or qualified electronics service for installed power, mounting, internal electronics, warranty, parts, or replacement decisions."
+      ],
+      "sourceIds": [
+        "furrion-tvs-support-index"
+      ],
+      "searchAliases": [
+        "furrion tvs support model warranty prep",
+        "furrion tv model warranty prep",
+        "furrion tv support index warranty prep"
+      ],
+      "searchRequiredTerms": [
+        "furrion+tvs",
+        "tv+support"
+      ]
+    },
+    {
+      "id": "greystone-range-manual-model-label-prep",
+      "slug": "greystone-range-manual-model-label-prep",
+      "title": "Greystone Range Manual and Model Label Prep",
+      "summary": "Use the Greystone ranges support index to gather manual, model-label, and service details before support.",
+      "safeChecklist": [
+        "Record the Greystone range model, serial if visible, oven or cooktop symptom, fuel status, purchase paperwork, and manual page used.",
+        "Save photos of the model label, controls, cooktop surface, oven face, purchase paperwork, and support index used for comparison.",
+        "Shut the appliance down for fuel odor, abnormal flame, smoke, carbon-monoxide alarm, abnormal heat, or unsafe operation.",
+        "Use Greystone or Lippert support or qualified RV cooking-appliance service for fuel system, ignition, installed power, parts, warranty, or repair decisions."
+      ],
+      "sourceIds": [
+        "greystone-ranges-support-index"
+      ],
+      "searchAliases": [
+        "greystone ranges support manual model label prep",
+        "greystone range manual model label prep",
+        "greystone range support manual service prep"
+      ],
+      "searchRequiredTerms": [
+        "greystone+ranges",
+        "range+manual",
+        "greystone+range"
+      ]
+    },
+    {
+      "id": "greystone-cooktop-griddle-manual-storage-prep",
+      "slug": "greystone-cooktop-griddle-manual-storage-prep",
+      "title": "Greystone Cooktop and Griddle Manual Storage Prep",
+      "summary": "Use the Greystone cooktops and griddles support index to collect manual, storage, and model details before support.",
+      "safeChecklist": [
+        "Record the Greystone cooktop or griddle model, storage condition, fuel or power source, cooking-surface symptom, and manual page used.",
+        "Save photos of the model label, controls, cooking surface, storage location, purchase paperwork, and support index used for comparison.",
+        "Shut the appliance down for fuel odor, abnormal flame, smoke, abnormal heat, damaged surface, or unsafe operation.",
+        "Use Greystone or Lippert support or qualified RV cooking-appliance service for fuel system, installed power, parts, warranty, or repair decisions."
+      ],
+      "sourceIds": [
+        "greystone-cooktops-griddles-support-index"
+      ],
+      "searchAliases": [
+        "greystone cooktops griddles manual storage prep",
+        "greystone cooktop griddle manual storage prep",
+        "greystone griddle storage manual support prep"
+      ],
+      "searchRequiredTerms": [
+        "greystone+cooktops+griddles",
+        "griddle+storage"
+      ]
+    },
+    {
+      "id": "greystone-microwave-model-control-prep",
+      "slug": "greystone-microwave-model-control-prep",
+      "title": "Greystone Microwave Model and Control Prep",
+      "summary": "Use the Greystone microwaves support index to collect model, control, and manual details before support.",
+      "safeChecklist": [
+        "Record the Greystone microwave model, serial if visible, control-panel state, display text, cooking symptom, and manual page used.",
+        "Save photos of the model label, control panel, display, door exterior, purchase paperwork, and support index used for comparison.",
+        "Stop using the microwave for smoke, arcing, abnormal heat, damaged door, liquid exposure, or unsafe operation.",
+        "Use Greystone or Lippert support or qualified appliance service for installed power, internal electronics, warranty, parts, or replacement decisions."
+      ],
+      "sourceIds": [
+        "greystone-microwaves-support-index"
+      ],
+      "searchAliases": [
+        "greystone microwaves support model control prep",
+        "greystone microwave model control prep",
+        "greystone microwave support manual model prep"
+      ],
+      "searchRequiredTerms": [
+        "greystone+microwaves",
+        "microwave+model",
+        "greystone+microwave"
+      ]
+    },
+    {
+      "id": "girard-tankless-warranty-source-prep",
+      "slug": "girard-tankless-warranty-source-prep",
+      "title": "Girard Tankless Source Routing Prep",
+      "summary": "Use the Girard other-products support index to route tankless water-heater source, manual, and support details before service.",
+      "safeChecklist": [
+        "Record the Girard tankless model, display message if present, hot-water symptom, purchase date, support history, and manual or video reference used.",
+        "Save photos of the model label, display, controls, exterior access door from a safe location, and purchase paperwork.",
+        "Shut the water heater down for fuel odor, water leak, exhaust concern, abnormal heat, repeated shutdown, or unsafe operation.",
+        "Use Girard or Lippert support or qualified RV water-heater service for fuel system, installed power, water connections, parts, support routing, or repair decisions."
+      ],
+      "sourceIds": [
+        "girard-other-products-support-index"
+      ],
+      "searchAliases": [
+        "girard gp llc other products tankless warranty source prep",
+        "girard tankless warranty source prep",
+        "girard other products support index tankless prep"
+      ],
+      "searchRequiredTerms": [
+        "gp+llc+other+products",
+        "girard+tankless"
+      ]
+    },
+    {
+      "id": "onan-p2500i-model-gsn-prep",
+      "slug": "onan-p2500i-model-gsn-prep",
+      "title": "Onan P2500i Model and GSN Prep",
+      "summary": "Use the Cummins Onan P2500i product page to record model, GSN, and support details before service.",
+      "safeChecklist": [
+        "Record the P2500i model, A074Z433 reference, GSN or product identifier if shown, hours if visible, symptom, load condition, and purchase paperwork.",
+        "Save photos of the nameplate, display, exterior condition from normal access, accessories, and product page used for comparison.",
+        "Shut the generator down for CO alarm, exhaust concern, fuel odor, abnormal heat, unsafe power behavior, or repeated shutdown.",
+        "Use Cummins Onan support or qualified generator service for engine, installed power, fuel system, exhaust, parts, warranty, or repair decisions."
+      ],
+      "sourceIds": [
+        "onan-p2500i-shop-product"
+      ],
+      "searchAliases": [
+        "onan p2500i a074z433 model gsn prep",
+        "onan p2500i model gsn prep",
+        "cummins onan p2500i inverter generator a074z433 prep"
+      ],
+      "searchRequiredTerms": [
+        "p2500i",
+        "a074z433"
+      ]
+    },
+    {
+      "id": "onan-p2500i-maintenance-kit-prep",
+      "slug": "onan-p2500i-maintenance-kit-prep",
+      "title": "Onan P2500i Maintenance Kit Prep",
+      "summary": "Use the Cummins Onan P2500i maintenance-kit product page to match kit and product details before support.",
+      "safeChecklist": [
+        "Record the P2500i model, A058U946 maintenance-kit reference, generator hours if visible, current maintenance paperwork, and kit contents being compared.",
+        "Save photos of the nameplate, kit label, service paperwork, product page, and visible exterior condition from normal access.",
+        "Do not run the generator if it has a CO alarm, fuel odor, oil leak, exhaust concern, abnormal heat, or unsafe power behavior.",
+        "Use Cummins Onan support or qualified generator service for maintenance procedure, fuel system, exhaust, installed power, parts, warranty, or repair decisions."
+      ],
+      "sourceIds": [
+        "onan-p2500i-maintenance-kit-shop"
+      ],
+      "searchAliases": [
+        "onan p2500i maintenance kit a058u946 prep",
+        "onan p2500i maintenance kit prep",
+        "cummins onan p2500i a058u946 kit prep"
+      ],
+      "searchRequiredTerms": [
+        "p2500i+maintenance+kit",
+        "a058u946"
+      ]
+    },
+    {
+      "id": "onan-p9500df-vft-fuel-storage-prep",
+      "slug": "onan-p9500df-vft-fuel-storage-prep",
+      "title": "Onan P9500df VFT Fuel and Storage Prep",
+      "summary": "Use the Cummins Onan P9500df owner manual to capture VFT display, fuel, and storage details before support.",
+      "safeChecklist": [
+        "Record the P9500df model, VFT display state, hours if visible, fuel selected, storage history, load condition, and exact shutdown behavior.",
+        "Save photos of the nameplate, VFT display, exterior condition from normal access, fuel selector area from normal access, and service paperwork.",
+        "Shut the generator down for CO alarm, exhaust concern, fuel odor, abnormal heat, unsafe power behavior, or repeated shutdown.",
+        "Use Cummins Onan support or qualified generator service for fuel system, exhaust, engine, installed power, parts, warranty, or repair decisions."
+      ],
+      "sourceIds": [
+        "onan-p9500df-owner-manual-2025"
+      ],
+      "searchAliases": [
+        "onan p9500df vft fuel storage prep",
+        "onan p9500df vft fuel storage service prep",
+        "cummins onan p9500df owner manual vft prep"
+      ],
+      "searchRequiredTerms": [
+        "p9500df",
+        "vft+storage"
+      ]
+    },
+    {
+      "id": "onan-p5000idf-efi-vft-co-prep",
+      "slug": "onan-p5000idf-efi-vft-co-prep",
+      "title": "Onan P5000iDF EFI VFT and CO Prep",
+      "summary": "Use the Cummins Onan P5000iDF EFI spec sheet to capture VFT, CO-safety, and model details before support.",
+      "safeChecklist": [
+        "Record the P5000iDF EFI model, VFT display state, CO-safety event if any, high-altitude setting if visible, load condition, and purchase paperwork.",
+        "Save photos of the nameplate, VFT display, exterior condition from normal access, labels, and spec sheet used for comparison.",
+        "Shut the generator down immediately for CO alarm, exhaust concern, fuel odor, abnormal heat, unsafe power behavior, or repeated shutdown.",
+        "Use Cummins Onan support or qualified generator service for fuel system, exhaust, engine, installed power, parts, warranty, or repair decisions."
+      ],
+      "sourceIds": [
+        "onan-p5000idf-efi-spec-sheet-2025"
+      ],
+      "searchAliases": [
+        "onan p5000idf efi vft co prep",
+        "onan p5000idf efi vft co service prep",
+        "cummins onan p5000idf efi spec sheet vft prep"
+      ],
+      "searchRequiredTerms": [
+        "p5000idf+efi",
+        "vft+co",
+        "p5000idf"
       ]
     }
   ],
