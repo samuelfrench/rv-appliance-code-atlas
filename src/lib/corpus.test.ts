@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 864;
-const expectedSourceCount = 1138;
-const expectedSymptomCount = 971;
+const expectedSourceCount = 1176;
+const expectedSymptomCount = 1004;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -6401,7 +6401,10 @@ describe("verified corpus", () => {
       ["thetford-norcold-warranty-claim-asc-dealer-prep", ["thetford-warranty-claim-faq"]],
       ["norcold-recall-repair-reimbursement-routing", ["norcold-recall-reimbursement-faq"]],
       ["norcold-refrigerator-fault-code-record-model-prep", ["norcold-fault-code-routing-faq"]],
-      ["norcold-n15dc-support-manual-parts-prep", ["norcold-n15dc-support"]],
+      [
+        "norcold-n15dc-support-manual-parts-prep",
+        ["norcold-n15dc-support", "norcold-n15dc-n20dc-parts-list-641044-082025"],
+      ],
       ["thetford-porta-potti-565e-battery-flush-storage-prep", ["thetford-porta-potti-565e-support"]],
       ["onan-rv-generator-warranty-coach-care-service-prep", ["onan-rv-lifestyle-coach-care-0043135"]],
     ]);
@@ -6427,7 +6430,7 @@ describe("verified corpus", () => {
       ["thetford-norcold-warranty-claim-asc-dealer-prep", ["thetford", "norcold"]],
       ["norcold-recall-repair-reimbursement-routing", ["norcold"]],
       ["norcold-refrigerator-fault-code-record-model-prep", ["norcold"]],
-      ["norcold-n15dc-support-manual-parts-prep", ["n15dc"]],
+      ["norcold-n15dc-support-manual-parts-prep", ["n15dc", "n15dc+641044", "n15dc+parts+list"]],
       ["thetford-porta-potti-565e-battery-flush-storage-prep", ["565e"]],
       ["onan-rv-generator-warranty-coach-care-service-prep", ["onan", "cummins"]],
     ]);
@@ -6637,7 +6640,10 @@ describe("verified corpus", () => {
       ["thetford-porta-potti-235-245-255-265-storage-flush-prep", ["thetford-porta-potti-235-245-255-265-support"]],
       ["thetford-porta-potti-current-model-identification-prep", ["thetford-porta-potti-current-model-identification"]],
       ["thetford-aqua-magic-residence-model-parts-service-prep", ["thetford-aqua-magic-residence-support"]],
-      ["norcold-polar-n7x-n8x-support-manual-parts-prep", ["norcold-polar-n7x-support"]],
+      [
+        "norcold-polar-n7x-n8x-support-manual-parts-prep",
+        ["norcold-polar-n7x-support", "norcold-n7-n8-polar-parts-list-639735-06102025"],
+      ],
       ["norcold-n6-n8-series-control-storage-support-prep", ["norcold-n6-n8-series-support"]],
       ["onan-green-label-parts-model-spec-service-prep", ["onan-green-label-parts-reference-0075650"]],
     ]);
@@ -6663,7 +6669,10 @@ describe("verified corpus", () => {
       ["thetford-porta-potti-235-245-255-265-storage-flush-prep", ["245"]],
       ["thetford-porta-potti-current-model-identification-prep", ["565e", "thetford"]],
       ["thetford-aqua-magic-residence-model-parts-service-prep", ["residence"]],
-      ["norcold-polar-n7x-n8x-support-manual-parts-prep", ["n7x"]],
+      [
+        "norcold-polar-n7x-n8x-support-manual-parts-prep",
+        ["n7x", "norcold+n7+n8", "norcold+639735", "norcold+n7+n8+parts"],
+      ],
       ["norcold-n6-n8-series-control-storage-support-prep", ["n6"]],
       ["onan-green-label-parts-model-spec-service-prep", ["greenlabel", "onan", "cummins"]],
     ]);
@@ -7495,7 +7504,7 @@ describe("verified corpus", () => {
       ["suburban-can-slide-out-kitchen-model-product-prep", ["suburban-can-slide-out-kitchen-3250ast-product"]],
       ["thetford-aqua-magic-vi-toilet-model-flush-winterizing-prep", ["thetford-aqua-magic-vi-support"]],
       ["thetford-aqua-magic-style-ii-cleaning-leak-model-prep", ["thetford-aqua-magic-style-ii-support"]],
-      ["norcold-n10dc-model-control-service-routing-prep", ["norcold-n10dc-support"]],
+      ["norcold-n10dc-model-control-service-routing-prep", ["norcold-n10dc-support", "norcold-n8dc-n10dc-parts-list-640138"]],
       ["norcold-nr740-discontinued-refrigerator-model-defrost-prep", ["norcold-nr740-support"]],
       ["coleman-mach-10-model-family-lookup-prep", ["coleman-mach-signature-mach-10-product"]],
       ["coleman-mach-15-model-family-load-prep", ["coleman-mach-signature-mach-15-product"]],
@@ -7527,7 +7536,7 @@ describe("verified corpus", () => {
       ["suburban-can-slide-out-kitchen-model-product-prep", ["3250ast", "slideoutkitchen", "suburbancan"]],
       ["thetford-aqua-magic-vi-toilet-model-flush-winterizing-prep", ["magicvi"]],
       ["thetford-aqua-magic-style-ii-cleaning-leak-model-prep", ["styleii"]],
-      ["norcold-n10dc-model-control-service-routing-prep", ["n10dc"]],
+      ["norcold-n10dc-model-control-service-routing-prep", ["n10dc", "n10dc+640138", "n10dc+parts+list"]],
       ["norcold-nr740-discontinued-refrigerator-model-defrost-prep", ["nr740"]],
       ["coleman-mach-10-model-family-lookup-prep", ["mach10"]],
       ["coleman-mach-15-model-family-load-prep", ["mach15"]],
@@ -7984,7 +7993,7 @@ describe("verified corpus", () => {
       ["aquahot-250d-model-prep", ["aquahot-250d-product-page"]],
       ["aquahot-400d-dual-fuel-prep", ["aquahot-400d-product-page"]],
       ["furrion-fcr06dcgba-storage-reset-prep", ["furrion-fcr06-storage-qr188"]],
-      ["furrion-fcr20dcafa-storage-reset-prep", ["furrion-fcr20-storage-qr189"]],
+      ["furrion-fcr20dcafa-storage-reset-prep", ["furrion-fcr20-storage-qr189", "furrion-fcr20dcafa-storage-reset-video"]],
       ["furrion-refrigerator-warranty-request-prep", ["furrion-refrigerator-warranty-request-w017"]],
       ["furrion-ac-single-zone-controller-mode-prep", ["furrion-single-zone-controller-quick-start-ccd0006086"]],
       ["furrion-enhanced-multizone-app-control-prep", ["furrion-enhanced-multizone-app-thermostat-ig-fcm00037"]],
@@ -8013,7 +8022,7 @@ describe("verified corpus", () => {
       ["aquahot-250d-model-prep", ["aquahot+250d", "250d"]],
       ["aquahot-400d-dual-fuel-prep", ["aquahot+400d", "400d"]],
       ["furrion-fcr06dcgba-storage-reset-prep", ["fcr06dcgba", "qr188"]],
-      ["furrion-fcr20dcafa-storage-reset-prep", ["fcr20dcafa", "qr189"]],
+      ["furrion-fcr20dcafa-storage-reset-prep", ["fcr20dcafa", "qr189", "fcr20dcafa+storage", "fcr20dcafa+reset"]],
       ["furrion-refrigerator-warranty-request-prep", ["w017", "furrion+refrigerator+warranty"]],
       ["furrion-ac-single-zone-controller-mode-prep", ["fac+c10sa", "fac+c10essa", "furrion+single+zone+controller"]],
       ["furrion-enhanced-multizone-app-control-prep", ["igfcm00037", "enhanced+multizone"]],
@@ -8687,8 +8696,8 @@ describe("verified corpus", () => {
       ["dometic-fantastic-vent-2250-model-control-prep", ["dometic-fantastic-vent-2250-product"]],
       ["dometic-1450-vent-model-control-prep", ["dometic-1450-vent-roof-fan-product"]],
       ["dometic-fantastic-vent-warranty-paperwork-prep", ["dometic-fantastic-vent-fans-seven-year-warranty-62311"]],
-      ["norcold-n20dc-manual-parts-service-prep", ["norcold-n20dc-support"]],
-      ["norcold-n8dc-manual-parts-service-prep", ["norcold-n8dc-support"]],
+      ["norcold-n20dc-manual-parts-service-prep", ["norcold-n20dc-support", "norcold-n15dc-n20dc-parts-list-641044-082025"]],
+      ["norcold-n8dc-manual-parts-service-prep", ["norcold-n8dc-support", "norcold-n8dc-n10dc-parts-list-640138"]],
       ["norcold-polar-nv10dc-model-control-service-prep", ["norcold-polar-nv10dc-support"]],
       ["norcold-n180-3-discontinued-storage-parts-prep", ["norcold-n180-3-support"]],
       ["norcold-n4104-model-manual-parts-prep", ["norcold-n4104-support"]],
@@ -8719,8 +8728,8 @@ describe("verified corpus", () => {
       ["dometic-fantastic-vent-2250-model-control-prep", ["fantastic+2250", "2250+vent"]],
       ["dometic-1450-vent-model-control-prep", ["dometic+1450", "1450+vent", "9600008500"]],
       ["dometic-fantastic-vent-warranty-paperwork-prep", ["fantastic+seven+year", "fantastic+warranty", "62311"]],
-      ["norcold-n20dc-manual-parts-service-prep", ["n20dc", "n20dc+manual"]],
-      ["norcold-n8dc-manual-parts-service-prep", ["n8dc", "n8dc+manual"]],
+      ["norcold-n20dc-manual-parts-service-prep", ["n20dc", "n20dc+manual", "n20dc+641044", "n20dc+parts+list"]],
+      ["norcold-n8dc-manual-parts-service-prep", ["n8dc", "n8dc+manual", "n8dc+640138", "n8dc+parts+list"]],
       ["norcold-polar-nv10dc-model-control-service-prep", ["nv10dc", "polar+nv10dc"]],
       ["norcold-n180-3-discontinued-storage-parts-prep", ["n180+3", "n180", "discontinued+storage"]],
       ["norcold-n4104-model-manual-parts-prep", ["n4104"]],
@@ -9389,7 +9398,14 @@ describe("verified corpus", () => {
       ["lippert-dealer-locator-service-routing-prep", { sourceIds: ["lippert-find-a-dealer-locator"], requiredTerms: ["lippert+find+a+dealer"], query: "lippert find a dealer service routing prep" }],
       ["furrion-20cuft-refrigerator-model-storage-prep", { sourceIds: ["furrion-20cuft-refrigerator-manual-ccd0005599"], requiredTerms: ["furrion+20+cu+ft", "ccd+0005599"], query: "furrion 20 cu ft refrigerator ccd 0005599 model storage prep" }],
       ["furrion-20-6-side-by-side-refrigerator-service-prep", { sourceIds: ["furrion-20-6-side-by-side-refrigerator-manual-ccd0009671"], requiredTerms: ["furrion+20+6", "ccd+0009671"], query: "furrion 20.6 side by side refrigerator ccd 0009671 service prep" }],
-      ["furrion-fcr10dcgfa-storage-reset-prep", { sourceIds: ["furrion-fcr10dcgfa-storage-qr192"], requiredTerms: ["fcr10dc", "qr+192"], query: "furrion fcr10dc gfa qr 192 storage reset prep" }],
+      [
+        "furrion-fcr10dcgfa-storage-reset-prep",
+        {
+          sourceIds: ["furrion-fcr10dcgfa-storage-qr192", "furrion-fcr10dcgfa-storage-reset-video"],
+          requiredTerms: ["fcr10dc", "qr+192", "fcr10dcgfa+proper+storage", "fcr10dcgfa+reset"],
+          query: "furrion fcr10dc gfa qr 192 storage reset prep",
+        },
+      ],
       ["furrion-furnace-v2-model-shutdown-service-prep", { sourceIds: ["furrion-furnace-v2-manual-ccd0009365"], requiredTerms: ["furrion+furnace+v2", "ccd+0009365"], query: "furrion furnace v2 ccd 0009365 model shutdown service prep" }],
       ["greystone-17-21-digital-range-ffd-model-prep", { sourceIds: ["greystone-17-21-digital-range-ffd-spec-ccd0008655"], requiredTerms: ["greystone+digital+range", "ccd+0008655"], query: "greystone 17 21 digital range ffd ccd 0008655 model prep" }],
       ["suburban-drop-in-2-burner-model-service-prep", { sourceIds: ["suburban-drop-in-2-burner-product"], requiredTerms: ["suburban+drop+in+2+burner"], query: "suburban drop in 2 burner cooktop model service prep" }],

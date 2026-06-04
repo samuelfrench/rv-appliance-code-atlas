@@ -3470,3 +3470,168 @@ test("lookup surfaces the official source control-router batch without generic h
   expect(consoleErrors).toEqual([]);
   expect(pageErrors).toEqual([]);
 });
+
+test("lookup surfaces the official source scout batch without generic hijacks", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    ["coleman mach rv owners documentation video library", "/symptoms/coleman-mach-rv-owners-support-routing-prep/"],
+    ["suburban tankless water heaters freeze protection control center", "/symptoms/suburban-tankless-water-heaters-control-freeze-prep/"],
+    ["maxxfan plus 4000ki 4500ki 355mm 12 volt dc", "/symptoms/maxxair-international-maxxfan-plus-opening-power-prep/"],
+    ["aqua hot 125 g02 lcd winterizing low voltage shutdown", "/symptoms/aquahot-125-g02-lcd-winterization-prep/"],
+    ["fcr20dcafa warm middle beam automatic defrost", "/symptoms/furrion-fcr20dcafa-warm-middle-beam-defrost-prep/"],
+    ["furrion air distribution box filter cleaning adb", "/symptoms/furrion-adb-filter-cleaning-prep/"],
+    ["onan gsn rv generators maintenance kits prep", "/symptoms/onan-shop-brand-category-gsn-prep/"],
+    ["cfx2 connect cooler ac power supply battery", "/symptoms/dometic-cfx2-connect-power-router-prep/"],
+    ["norcold n20dc 641044 parts list", "/symptoms/norcold-n20dc-manual-parts-service-prep/"],
+    ["norcold n10dc 640138 parts list", "/symptoms/norcold-n10dc-model-control-service-routing-prep/"],
+    ["thetford porta potti 565 200458 user manual", "/symptoms/thetford-porta-potti-565-user-manual-prep/"],
+  ] as const;
+  const protectedHrefs = [
+    "/symptoms/coleman-mach-rv-owners-support-routing-prep/",
+    "/symptoms/coleman-mach-video-library-service-prep/",
+    "/symptoms/coleman-mach-contact-technical-support-prep/",
+    "/symptoms/airxcel-contact-brand-routing-prep/",
+    "/symptoms/suburban-video-library-prep/",
+    "/symptoms/suburban-water-heating-family-router-prep/",
+    "/symptoms/suburban-tankless-water-heaters-control-freeze-prep/",
+    "/symptoms/suburban-st-tankless-digital-control-prep/",
+    "/symptoms/suburban-tank-water-heater-accessories-prep/",
+    "/symptoms/maxxair-maxxfan-plus-family-model-prep/",
+    "/symptoms/maxxair-maxxfan-plus-international-library-prep/",
+    "/symptoms/maxxair-maxxfan-plus-international-4000ki-prep/",
+    "/symptoms/maxxair-maxxfan-plus-international-serial-prep/",
+    "/symptoms/maxxair-international-maxxfan-plus-opening-power-prep/",
+    "/symptoms/aquahot-125-g02-lcd-winterization-prep/",
+    "/symptoms/aquahot-125d-125g-contact-routing-prep/",
+    "/symptoms/aquahot-rv-products-model-family-router-prep/",
+    "/symptoms/aquahot-125g-antifreeze-service-boundary-prep/",
+    "/symptoms/furrion-fcr20dcafa-warm-middle-beam-defrost-prep/",
+    "/symptoms/furrion-fcr10dcgfa-lockout-look-prep/",
+    "/symptoms/furrion-fcr10dcgfa-storage-reset-prep/",
+    "/symptoms/furrion-fcr20dcafa-storage-reset-prep/",
+    "/symptoms/furrion-adb-filter-cleaning-prep/",
+    "/symptoms/furrion-adb-replacement-service-prep/",
+    "/symptoms/furrion-tankless-introduction-model-control-prep/",
+    "/symptoms/onan-shop-brand-category-gsn-prep/",
+    "/symptoms/onan-generator-type-load-planning-prep/",
+    "/symptoms/onan-rv-generator-road-maintenance-prep/",
+    "/symptoms/onan-portable-generator-camping-load-prep/",
+    "/symptoms/dometic-cfx2-switch-off-storage-prep/",
+    "/symptoms/dometic-cfx2-connect-power-router-prep/",
+    "/symptoms/dometic-cfx2-temperature-unit-control-prep/",
+    "/symptoms/dometic-harrier-constant-switch-off-service-prep/",
+    "/symptoms/dometic-cfx2-passive-electric-expectations-prep/",
+    "/symptoms/norcold-polar-n7x-n8x-support-manual-parts-prep/",
+    "/symptoms/norcold-n15dc-support-manual-parts-prep/",
+    "/symptoms/norcold-n20dc-manual-parts-service-prep/",
+    "/symptoms/norcold-n8dc-manual-parts-service-prep/",
+    "/symptoms/norcold-n10dc-model-control-service-routing-prep/",
+    "/symptoms/thetford-porta-potti-565-user-manual-prep/",
+  ] as const;
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+  }
+
+  for (const query of [
+    "rv owners",
+    "video library",
+    "coleman mach video library",
+    "coleman mach rv owners",
+    "coleman mach contact",
+    "airxcel contact",
+    "technical service videos",
+    "coleman mach technical service videos",
+    "coleman mach service support videos",
+    "coleman mach technical support",
+    "brand directly",
+    "airxcel brand directly",
+    "airxcel technical experts",
+    "technical experts",
+    "water heating",
+    "suburban water heating",
+    "suburban service support videos",
+    "suburban tankless water heaters",
+    "suburban freeze protection",
+    "suburban control center",
+    "suburban tank water heater accessories",
+    "suburban replacement anode rod",
+    "tankless",
+    "freeze protection",
+    "control center",
+    "maxxfan plus",
+    "maxxair maxxfan plus",
+    "maxxfan plus international",
+    "manual 465",
+    "serial number",
+    "aqua hot",
+    "aqua hot products",
+    "aqua hot 125g",
+    "low voltage shutdown",
+    "antifreeze",
+    "adb",
+    "furrion adb",
+    "furrion air distribution box",
+    "furrion filter cleaning",
+    "automatic defrost",
+    "dometic cooler",
+    "st 42",
+    "st 60",
+    "4000ki",
+    "4000ki44",
+    "4500ki",
+    "355mm",
+    "125g",
+    "125g contact",
+    "250p",
+    "400d",
+    "rv generator",
+    "onan rv generators",
+    "onan maintenance kits",
+    "filter cleaning",
+    "reset furrion",
+    "maintenance tips",
+    "maintenance kits",
+    "green label parts",
+    "water heater introduction",
+    "furrion tankless",
+    "furrion water heater introduction",
+    "p4500i",
+    "qg 4000",
+    "dometic cfx2",
+    "dometic cfx2 cooler",
+    "dometic harrier",
+    "battery",
+    "electric coolers",
+    "parts list",
+    "user manual",
+    "thetford user manual",
+  ]) {
+    await searchbox.fill(query);
+    for (const href of protectedHrefs) {
+      await expect(lookupResults.locator(`a[href="${href}"]`), `${query} -> ${href}`).toHaveCount(0);
+    }
+  }
+
+  await searchbox.fill("coleman mach rv owners documentation video library");
+  const ownerRouter = lookupResults.locator('a[href="/symptoms/coleman-mach-rv-owners-support-routing-prep/"]');
+  await expect(ownerRouter).toBeVisible();
+  await ownerRouter.click();
+  await expect(page.getByRole("heading", { name: "Coleman-Mach RV Owners Support Routing Prep" })).toBeVisible();
+  await expect(page.getByText(/Record the Coleman-Mach model/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
