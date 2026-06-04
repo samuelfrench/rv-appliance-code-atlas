@@ -3732,3 +3732,91 @@ test("lookup surfaces the Dometic app and HVAC support batch without generic hij
   expect(consoleErrors).toEqual([]);
   expect(pageErrors).toEqual([]);
 });
+
+test("lookup surfaces the official Thetford care and scout follow-up batch without generic hijacks", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    ["thetford waste treatments aqua kem aquabio campa fresh", "/symptoms/thetford-waste-treatments-holding-tank-prep/"],
+    ["thetford maintenance drain valve lubricant holding tank cleaner", "/symptoms/thetford-tank-treatment-maintenance-prep/"],
+    ["thetford toilet paper rv sanitation paper", "/symptoms/thetford-rv-toilet-paper-tank-safe-prep/"],
+    ["thetford all surface care rv cleaning", "/symptoms/thetford-all-surface-care-routing-prep/"],
+    ["thetford interior cleaning toilet bowl seal safe", "/symptoms/thetford-interior-cleaning-surface-prep/"],
+    ["thetford exterior cleaning rv wash awning", "/symptoms/thetford-exterior-cleaning-surface-prep/"],
+    ["thetford exterior maintenance rubber roof seal lubricant", "/symptoms/thetford-exterior-maintenance-surface-prep/"],
+    ["thetford rv sanitation portable totes sewer hoses sani con", "/symptoms/thetford-rv-sanitation-routing-prep/"],
+    ["thetford portable totes waste tote sanitation", "/symptoms/thetford-portable-totes-waste-transfer-prep/"],
+    ["thetford rv sewer hoses titan sewer kit", "/symptoms/thetford-rv-sewer-hoses-service-prep/"],
+    ["thetford sani con turbo system prep", "/symptoms/thetford-sani-con-turbo-service-prep/"],
+    ["thetford drain valve lubricant sticky drain valve seal wear", "/symptoms/thetford-drain-valve-lubricant-prep/"],
+    ["thetford aqua kem toss ins holding tank odor", "/symptoms/thetford-aqua-kem-toss-ins-prep/"],
+    ["Dometic FreshJet How to switch roof air conditioner on and off 22", "/symptoms/dometic-freshjet-switch-on-off-control-prep/"],
+    ["Dometic FreshJet How to set the time 8e4", "/symptoms/dometic-freshjet-remote-time-control-prep/"],
+    ["Dometic Brisk How to control automatic generator start AGS b557", "/symptoms/dometic-brisk-ags-control-prep/"],
+    ["Thetford where can I locate the serial number for my toilet", "/symptoms/thetford-toilet-serial-number-prep/"],
+    [
+      "Thetford where is the serial number located on my cassette toilet",
+      "/symptoms/thetford-cassette-toilet-serial-number-prep/",
+    ],
+    [
+      "Furrion Air Conditioner Controller Generation 3 Spec Sheet CCD-0010641",
+      "/symptoms/furrion-ac-controller-gen3-identification-prep/",
+    ],
+    ["Furrion Chill Cube A/C System User Manual CCD-0007294", "/symptoms/furrion-chill-cube-ac-control-model-prep/"],
+    [
+      "Lippert Furrion how to check proper seal of refrigerator door video",
+      "/symptoms/furrion-refrigerator-door-seal-check-prep/",
+    ],
+    ["Aqua-Hot AHE-400-P02 Use and Care Guide", "/symptoms/aquahot-400-p02-control-winterize-prep/"],
+    [
+      "Shop Cummins warranty information Onan portable generator warranty",
+      "/symptoms/onan-cummins-warranty-routing-prep/",
+    ],
+  ] as const;
+  const protectedHrefs = cases.map(([, href]) => href);
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+  }
+
+  for (const query of [
+    "waste treatments",
+    "maintenance",
+    "toilet paper",
+    "cleaning",
+    "sanitation",
+    "portable totes",
+    "sewer hoses",
+    "sani con",
+    "serial number",
+    "controller",
+    "door seal",
+    "warranty",
+  ]) {
+    await searchbox.fill(query);
+    for (const href of protectedHrefs) {
+      await expect(lookupResults.locator(`a[href="${href}"]`), `${query} -> ${href}`).toHaveCount(0);
+    }
+  }
+
+  await searchbox.fill("thetford drain valve lubricant sticky drain valve seal wear");
+  const drainValve = lookupResults.locator('a[href="/symptoms/thetford-drain-valve-lubricant-prep/"]');
+  await expect(drainValve).toBeVisible();
+  await drainValve.click();
+  await expect(page.getByRole("heading", { name: "Thetford drain-valve lubricant prep" })).toBeVisible();
+  await expect(page.getByText(/Record the drain-valve lubricant product/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});

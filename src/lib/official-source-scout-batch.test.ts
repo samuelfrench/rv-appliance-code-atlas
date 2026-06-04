@@ -3,8 +3,8 @@ import corpus from "../data/corpus.json";
 import { buildSymptomSearchIndex, lookupSymptomGuides, summarizeCorpus } from "./corpus";
 
 const expectedEntryCount = 864;
-const expectedSourceCount = 1201;
-const expectedSymptomCount = 1029;
+const expectedSourceCount = 1224;
+const expectedSymptomCount = 1052;
 
 const scoutBatch = [
   ["coleman-mach-rv-owners-router", "https://coleman-mach.com/rv-owners/", "coleman-mach-rv-owners-support-routing-prep", ["coleman+mach+rv+owners+documentation", "coleman+mach+documentation+library"], "coleman mach rv owners documentation video library"],

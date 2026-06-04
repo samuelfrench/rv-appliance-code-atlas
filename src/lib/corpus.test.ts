@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 864;
-const expectedSourceCount = 1201;
-const expectedSymptomCount = 1029;
+const expectedSourceCount = 1224;
+const expectedSymptomCount = 1052;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {

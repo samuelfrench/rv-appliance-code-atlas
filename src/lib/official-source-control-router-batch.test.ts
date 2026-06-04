@@ -3,8 +3,8 @@ import corpus from "../data/corpus.json";
 import { buildSymptomSearchIndex, lookupSymptomGuides, summarizeCorpus } from "./corpus";
 
 const expectedEntryCount = 864;
-const expectedSourceCount = 1201;
-const expectedSymptomCount = 1029;
+const expectedSourceCount = 1224;
+const expectedSymptomCount = 1052;
 
 const controlRouterBatch = [
   ["dometic-harrier-set-temperature-control-support", "https://support.dometic.com/en/harrier-ac/How-to-Set-the-temperature-895b", "dometic-harrier-set-temperature-control-prep", ["dometic+harrier+temperature", "set+temperature+895b"], "dometic harrier set temperature 895b"],

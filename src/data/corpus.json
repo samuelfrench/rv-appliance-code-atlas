@@ -2,7 +2,7 @@
   "site": {
     "name": "RV Appliance Code Atlas",
     "baseUrl": "https://rvappliancefaultcodes.com",
-    "generatedAt": "2026-06-04T02:22:09-05:00",
+    "generatedAt": "2026-06-04T06:46:58-05:00",
     "safetyBoundary": "Use this atlas to identify likely meaning and prepare for service. Shut off power, LP gas, fuel, or water when a listed appliance condition involves flame, gas smell, exhaust, generator shutdown, high temperature, moving jacks/slides, refrigerant, 120 VAC, control boards, repeated ignition failure, or a persistent lockout. Call the appliance maker, RV dealer, or a qualified RV technician for repair.",
     "searchConsole": {
       "propertyType": "URL_PREFIX",
@@ -9631,6 +9631,190 @@
       "brand": "Dometic",
       "title": "Dometic Brisk Error Code Router Support",
       "url": "https://support.dometic.com/en/brisk-ac/I-see-an-error-code-26fc",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-waste-treatments-product-group",
+      "brand": "Thetford",
+      "title": "Thetford Waste Treatments Product Group",
+      "url": "https://www.thetford.com/us/rv-tank-treatments/waste-treatments/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "thetford-tank-treatment-maintenance-product-group",
+      "brand": "Thetford",
+      "title": "Thetford Tank Treatment Maintenance Product Group",
+      "url": "https://www.thetford.com/us/rv-tank-treatments/maintenance/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "thetford-rv-toilet-paper-product-group",
+      "brand": "Thetford",
+      "title": "Thetford RV Toilet Paper Product Group",
+      "url": "https://www.thetford.com/us/rv-tank-treatments/toilet-paper/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "thetford-all-surface-care-product-group",
+      "brand": "Thetford",
+      "title": "Thetford All Surface Care Product Group",
+      "url": "https://www.thetford.com/us/all-surface-care/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "thetford-interior-cleaning-product-group",
+      "brand": "Thetford",
+      "title": "Thetford Interior Cleaning Product Group",
+      "url": "https://www.thetford.com/us/all-surface-care/interior-cleaning/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "thetford-exterior-cleaning-product-group",
+      "brand": "Thetford",
+      "title": "Thetford Exterior Cleaning Product Group",
+      "url": "https://www.thetford.com/us/all-surface-care/exterior-cleaning/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "thetford-exterior-maintenance-product-group",
+      "brand": "Thetford",
+      "title": "Thetford Exterior Maintenance Product Group",
+      "url": "https://www.thetford.com/us/all-surface-care/exterior-maintenance/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "thetford-rv-sanitation-product-group",
+      "brand": "Thetford",
+      "title": "Thetford RV Sanitation Product Group",
+      "url": "https://www.thetford.com/us/rv-sanitation/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "thetford-portable-totes-product-group",
+      "brand": "Thetford",
+      "title": "Thetford Portable Totes Product Group",
+      "url": "https://www.thetford.com/us/rv-sanitation/portable-totes/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "thetford-rv-sewer-hoses-product-group",
+      "brand": "Thetford",
+      "title": "Thetford RV Sewer Hoses Product Group",
+      "url": "https://www.thetford.com/us/rv-sanitation/rv-sewer-hoses/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "thetford-sani-con-turbo-product-group",
+      "brand": "Thetford",
+      "title": "Thetford Sani-Con Turbo Product Group",
+      "url": "https://www.thetford.com/us/rv-sanitation/sani-con-turbo/",
+      "type": "manufacturer-product-page",
+      "official": true
+    },
+    {
+      "id": "thetford-drain-valve-lubricant-support",
+      "brand": "Thetford",
+      "title": "Thetford Drain Valve Lubricant Support",
+      "url": "https://www.thetford.com/us/thetford-support/drain-valve-lubricant/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-aqua-kem-toss-ins-support",
+      "brand": "Thetford",
+      "title": "Thetford Aqua-Kem Toss-Ins Support",
+      "url": "https://www.thetford.com/us/thetford-support/aqua-kem-toss-ins/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-freshjet-switch-on-off-support",
+      "brand": "Dometic",
+      "title": "Dometic FreshJet Switch On and Off Support",
+      "url": "https://support.dometic.com/en/freshjet-ac/How-to-Switch-the-roof-air-conditioner-on-and-off-22",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-freshjet-set-time-support",
+      "brand": "Dometic",
+      "title": "Dometic FreshJet Set Time Support",
+      "url": "https://support.dometic.com/en/freshjet-ac/How-to-Set-the-time-8e4",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-brisk-ags-control-support",
+      "brand": "Dometic",
+      "title": "Dometic Brisk Automatic Generator Start Control Support",
+      "url": "https://support.dometic.com/en/brisk-ac/How-to-control-automatic-generator-start-AGS-b557",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-toilet-serial-number-faq",
+      "brand": "Thetford",
+      "title": "Thetford FAQ: Where Can I Locate the Serial Number for My Toilet?",
+      "url": "https://www.thetford.com/us/faq/where-can-i-locate-the-serial-number-for-my-toilet/",
+      "type": "manufacturer-faq",
+      "official": true
+    },
+    {
+      "id": "thetford-cassette-toilet-serial-number-faq",
+      "brand": "Thetford",
+      "title": "Thetford FAQ: Where Is the Serial Number Located on My Cassette Toilet?",
+      "url": "https://www.thetford.com/us/faq/where-is-the-serial-number-located-on-my-cassette-toilet/",
+      "type": "manufacturer-faq",
+      "official": true
+    },
+    {
+      "id": "furrion-ac-controller-generation-3-spec-ccd0010641",
+      "brand": "Furrion",
+      "title": "Furrion Air Conditioner Controller Generation 3 Spec Sheet CCD-0010641",
+      "url": "https://support.lci1.com/documents/ccd-0010641",
+      "type": "manufacturer-spec-sheet",
+      "official": true
+    },
+    {
+      "id": "furrion-chill-cube-ac-system-user-manual-ccd0007294",
+      "brand": "Furrion",
+      "title": "Furrion Chill Cube A/C System User Manual CCD-0007294",
+      "url": "https://support.lci1.com/documents/ccd-0007294",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-refrigerator-door-seal-check-video",
+      "brand": "Furrion",
+      "title": "Lippert Support Video: How to Check for Proper Seal of Refrigerator Door",
+      "url": "https://support.lci1.com/videos/how-to-check-for-proper-seal-of-refrigerator-door",
+      "type": "manufacturer-support-video",
+      "official": true
+    },
+    {
+      "id": "aquahot-400-p02-use-care-guide",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot AHE-400-P02 Use and Care Guide",
+      "url": "https://library.aquahot.com/wp-content/uploads/2022/04/AHE-400-P02-Use-and-Care-Guide.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "cummins-shop-warranty-information",
+      "brand": "Onan",
+      "title": "Shop Cummins Warranty Information",
+      "url": "https://shop.cummins.com/SC/c/warranty-information-MCJG7MQZ6FRRA6LHZR3KISINXBXA",
       "type": "manufacturer-support",
       "official": true
     }
@@ -65290,6 +65474,526 @@
       "searchRequiredTerms": [
         "brisk+error+code+26fc",
         "dometic+brisk+error+code+26fc"
+      ]
+    },
+    {
+      "id": "thetford-waste-treatments-holding-tank-prep",
+      "slug": "thetford-waste-treatments-holding-tank-prep",
+      "title": "Thetford waste treatments holding-tank prep",
+      "summary": "Use the official Thetford waste-treatments product group to pick the right holding-tank treatment family and document what was used before support contact.",
+      "safeChecklist": [
+        "Record the RV toilet model, holding-tank size if known, treatment product name, dose, temperature, storage state, and odor or clog symptom.",
+        "Save photos of the product label, tank-treatment package, and safe visible toilet or cassette model label or paperwork.",
+        "Use Thetford support or qualified RV service for persistent odor, leakage, backup, damaged seals, or sanitation-system parts beyond normal owner cleaning."
+      ],
+      "sourceIds": [
+        "thetford-waste-treatments-product-group"
+      ],
+      "searchAliases": [
+        "thetford waste treatments aqua kem aquabio campa fresh",
+        "thetford holding tank treatment prep",
+        "aqua kem waste treatment selection"
+      ],
+      "searchRequiredTerms": [
+        "thetford+waste+treatments",
+        "aqua+kem"
+      ]
+    },
+    {
+      "id": "thetford-tank-treatment-maintenance-prep",
+      "slug": "thetford-tank-treatment-maintenance-prep",
+      "title": "Thetford tank-treatment maintenance prep",
+      "summary": "Use the official Thetford maintenance product group to choose tank-care maintenance products and prepare notes before support contact.",
+      "safeChecklist": [
+        "Record the Thetford product, tank-cleaning routine, drain-valve behavior, seal condition visible during normal owner use, and any odor or sticking symptom.",
+        "Save photos of the product label, packaging, safe visible toilet or cassette model label, and maintenance date notes.",
+        "Stop normal use and route to Thetford support or qualified RV service for leaks, stuck sanitation parts, damaged seals, or repeat backups."
+      ],
+      "sourceIds": [
+        "thetford-tank-treatment-maintenance-product-group"
+      ],
+      "searchAliases": [
+        "thetford maintenance drain valve lubricant holding tank cleaner",
+        "thetford tank treatment maintenance prep",
+        "thetford holding tank cleaner maintenance"
+      ],
+      "searchRequiredTerms": [
+        "thetford+maintenance",
+        "tank+treatment+maintenance"
+      ]
+    },
+    {
+      "id": "thetford-rv-toilet-paper-tank-safe-prep",
+      "slug": "thetford-rv-toilet-paper-tank-safe-prep",
+      "title": "Thetford RV toilet paper tank-safe prep",
+      "summary": "Use the official Thetford RV toilet-paper product group to confirm tank-safe paper choices before treating clog or poor-dissolving complaints as equipment faults.",
+      "safeChecklist": [
+        "Record the toilet-paper product, toilet model, holding-tank treatment used, flush-water amount, and when clog or slow-drain symptoms appear.",
+        "Save photos of the packaging, toilet model paperwork, and any support page title matched from Thetford.",
+        "Avoid forcing stuck sanitation parts; use Thetford support or qualified RV service for repeat clogs, leakage, damaged seals, or backup symptoms."
+      ],
+      "sourceIds": [
+        "thetford-rv-toilet-paper-product-group"
+      ],
+      "searchAliases": [
+        "thetford toilet paper rv sanitation paper",
+        "thetford rv toilet paper tank safe prep",
+        "thetford aqua soft toilet paper holding tank"
+      ],
+      "searchRequiredTerms": [
+        "thetford+toilet+paper"
+      ]
+    },
+    {
+      "id": "thetford-all-surface-care-routing-prep",
+      "slug": "thetford-all-surface-care-routing-prep",
+      "title": "Thetford all-surface care routing prep",
+      "summary": "Use the official Thetford all-surface-care product group to route RV cleaning questions by surface before assuming an appliance or toilet fault.",
+      "safeChecklist": [
+        "Record the surface, cleaner product, stain or residue description, appliance or toilet model if involved, and recent chemical exposure.",
+        "Save photos of the cleaner label, affected surface from normal owner access, and Thetford product page title.",
+        "Stop using a cleaner that softens, cracks, discolors, or damages seals and route product-compatibility questions to Thetford support."
+      ],
+      "sourceIds": [
+        "thetford-all-surface-care-product-group"
+      ],
+      "searchAliases": [
+        "thetford all surface care rv cleaning",
+        "thetford surface care cleaning prep",
+        "thetford rv cleaner product routing"
+      ],
+      "searchRequiredTerms": [
+        "thetford+all+surface+care"
+      ]
+    },
+    {
+      "id": "thetford-interior-cleaning-surface-prep",
+      "slug": "thetford-interior-cleaning-surface-prep",
+      "title": "Thetford interior cleaning surface prep",
+      "summary": "Use the official Thetford interior-cleaning product group to prepare surface and product details for toilet-area or RV-interior cleaning questions.",
+      "safeChecklist": [
+        "Record the interior surface, cleaner product, residue or odor symptom, toilet model if relevant, and whether any seal or finish changed after cleaning.",
+        "Save photos of the cleaner label, affected interior surface, and safe visible toilet model label or paperwork.",
+        "Stop using the product on any surface that changes texture or appearance and route compatibility questions to Thetford support."
+      ],
+      "sourceIds": [
+        "thetford-interior-cleaning-product-group"
+      ],
+      "searchAliases": [
+        "thetford interior cleaning toilet bowl seal safe",
+        "thetford interior cleaning surface prep",
+        "thetford rv interior cleaner toilet area"
+      ],
+      "searchRequiredTerms": [
+        "thetford+interior+cleaning"
+      ]
+    },
+    {
+      "id": "thetford-exterior-cleaning-surface-prep",
+      "slug": "thetford-exterior-cleaning-surface-prep",
+      "title": "Thetford exterior cleaning surface prep",
+      "summary": "Use the official Thetford exterior-cleaning product group to prepare product and surface details for RV exterior cleaning questions.",
+      "safeChecklist": [
+        "Record the exterior surface, cleaner product, residue or streaking symptom, and whether the area was recently waxed or stored outside.",
+        "Save photos of the cleaner label, affected surface from safe owner access, and Thetford product page title.",
+        "Route cracked, leaking, lifted, or damaged exterior components to qualified RV service instead of treating them as cleaning-only issues."
+      ],
+      "sourceIds": [
+        "thetford-exterior-cleaning-product-group"
+      ],
+      "searchAliases": [
+        "thetford exterior cleaning rv wash awning",
+        "thetford exterior cleaning surface prep",
+        "thetford rv exterior cleaner product group"
+      ],
+      "searchRequiredTerms": [
+        "thetford+exterior+cleaning"
+      ]
+    },
+    {
+      "id": "thetford-exterior-maintenance-surface-prep",
+      "slug": "thetford-exterior-maintenance-surface-prep",
+      "title": "Thetford exterior maintenance surface prep",
+      "summary": "Use the official Thetford exterior-maintenance product group to document maintenance-product choices before support contact.",
+      "safeChecklist": [
+        "Record the exterior-maintenance product, target surface, storage conditions, date applied, and whether the complaint is appearance, residue, or movement-related.",
+        "Save photos of the product label, affected surface from safe owner access, and any Thetford product page title matched.",
+        "Use qualified RV service for cracks, water entry, loose exterior hardware, or damaged components; keep this guide to product-selection prep."
+      ],
+      "sourceIds": [
+        "thetford-exterior-maintenance-product-group"
+      ],
+      "searchAliases": [
+        "thetford exterior maintenance rubber roof seal lubricant",
+        "thetford exterior maintenance surface prep",
+        "thetford rv exterior maintenance products"
+      ],
+      "searchRequiredTerms": [
+        "thetford+exterior+maintenance"
+      ]
+    },
+    {
+      "id": "thetford-rv-sanitation-routing-prep",
+      "slug": "thetford-rv-sanitation-routing-prep",
+      "title": "Thetford RV sanitation routing prep",
+      "summary": "Use the official Thetford RV sanitation product group to route portable-tote, hose, and waste-transfer questions before support contact.",
+      "safeChecklist": [
+        "Record the Thetford sanitation product family, hose or tote model if known, connector style, symptom, storage state, and recent product use.",
+        "Save photos of packaging, model labels, connector condition from normal owner access, and the Thetford product group title.",
+        "Stop use for leaks, cracked fittings, stuck connectors, or unsafe waste handling and contact Thetford support or qualified RV service."
+      ],
+      "sourceIds": [
+        "thetford-rv-sanitation-product-group"
+      ],
+      "searchAliases": [
+        "thetford rv sanitation portable totes sewer hoses sani con",
+        "thetford rv sanitation routing prep",
+        "thetford waste transfer hose tote support"
+      ],
+      "searchRequiredTerms": [
+        "thetford+rv+sanitation"
+      ]
+    },
+    {
+      "id": "thetford-portable-totes-waste-transfer-prep",
+      "slug": "thetford-portable-totes-waste-transfer-prep",
+      "title": "Thetford portable totes waste-transfer prep",
+      "summary": "Use the official Thetford portable-totes product group to capture tote model and waste-transfer details before support contact.",
+      "safeChecklist": [
+        "Record the portable-tote model, capacity, wheel or handle symptom, hose connection, cap condition, storage state, and leak location if visible.",
+        "Save photos of the product label, connection style, cap, and affected area from normal owner access.",
+        "Stop use for leaks, cracked containers, stuck fittings, or unsafe waste handling and route replacement or repair decisions to Thetford support."
+      ],
+      "sourceIds": [
+        "thetford-portable-totes-product-group"
+      ],
+      "searchAliases": [
+        "thetford portable totes waste tote sanitation",
+        "thetford portable tote waste transfer prep",
+        "thetford smarttote portable waste tank prep"
+      ],
+      "searchRequiredTerms": [
+        "thetford+portable+totes"
+      ]
+    },
+    {
+      "id": "thetford-rv-sewer-hoses-service-prep",
+      "slug": "thetford-rv-sewer-hoses-service-prep",
+      "title": "Thetford RV sewer hoses service prep",
+      "summary": "Use the official Thetford RV sewer-hoses product group to capture hose, fitting, and kit details before support contact.",
+      "safeChecklist": [
+        "Record the sewer-hose product, length, fitting style, cap or bayonet symptom, storage state, and whether leakage appears at a fitting or hose section.",
+        "Save photos of the hose label or packaging, fitting condition, and any visible damage from normal owner access.",
+        "Stop use for leaks, cracked fittings, or unsafe waste handling and contact Thetford support for replacement or qualified RV service routing."
+      ],
+      "sourceIds": [
+        "thetford-rv-sewer-hoses-product-group"
+      ],
+      "searchAliases": [
+        "thetford rv sewer hoses titan sewer kit",
+        "thetford sewer hose service prep",
+        "thetford titan hose fitting leak prep"
+      ],
+      "searchRequiredTerms": [
+        "thetford+sewer+hoses"
+      ]
+    },
+    {
+      "id": "thetford-sani-con-turbo-service-prep",
+      "slug": "thetford-sani-con-turbo-service-prep",
+      "title": "Thetford Sani-Con Turbo service prep",
+      "summary": "Use the official Thetford Sani-Con Turbo product group to capture model and waste-transfer-system details before support contact.",
+      "safeChecklist": [
+        "Record the Sani-Con Turbo model, hose behavior, connector condition, control state, power state, storage state, and when the symptom started.",
+        "Save photos of safe visible labels, hose routing, connectors, and any display or switch state without disassembly.",
+        "Stop use for leakage, abnormal noise, stalled operation, unsafe power behavior, or damaged hoses and route service decisions to Thetford support."
+      ],
+      "sourceIds": [
+        "thetford-sani-con-turbo-product-group"
+      ],
+      "searchAliases": [
+        "thetford sani con turbo system prep",
+        "thetford sani-con turbo waste transfer prep",
+        "thetford sani con hose control support"
+      ],
+      "searchRequiredTerms": [
+        "thetford+sani+con",
+        "sani+con+turbo"
+      ]
+    },
+    {
+      "id": "thetford-drain-valve-lubricant-prep",
+      "slug": "thetford-drain-valve-lubricant-prep",
+      "title": "Thetford drain-valve lubricant prep",
+      "summary": "Use the official Thetford drain-valve lubricant support page to prepare product and symptom details for sticky drain-valve complaints.",
+      "safeChecklist": [
+        "Record the drain-valve lubricant product, valve symptom, sanitation product family, storage conditions, and whether sticking is intermittent or constant.",
+        "Save photos of the lubricant label, packaging, safe visible sanitation product label, and normal owner-access valve area if reachable without disassembly.",
+        "Stop use and route to Thetford support or qualified RV service for leaks, cracked fittings, damaged seals, or stuck parts that do not move normally."
+      ],
+      "sourceIds": [
+        "thetford-drain-valve-lubricant-support"
+      ],
+      "searchAliases": [
+        "thetford drain valve lubricant sticky drain valve seal wear",
+        "thetford drain valve lubricant prep",
+        "thetford drain valve sticking lubricant support"
+      ],
+      "searchRequiredTerms": [
+        "thetford+drain+valve+lubricant"
+      ]
+    },
+    {
+      "id": "thetford-aqua-kem-toss-ins-prep",
+      "slug": "thetford-aqua-kem-toss-ins-prep",
+      "title": "Thetford Aqua-Kem Toss-Ins prep",
+      "summary": "Use the official Thetford Aqua-Kem Toss-Ins support page to document treatment choice, dose, and odor context before support contact.",
+      "safeChecklist": [
+        "Record the Toss-Ins product, dose count, holding-tank size if known, water amount, storage temperature, odor symptom, and recent dump or cleaning date.",
+        "Save photos of the product packaging, lot or label details if visible, and safe visible toilet or cassette model paperwork.",
+        "Use Thetford support for persistent odor, leakage, backups, or treatment-compatibility questions after normal owner use."
+      ],
+      "sourceIds": [
+        "thetford-aqua-kem-toss-ins-support"
+      ],
+      "searchAliases": [
+        "thetford aqua kem toss ins holding tank odor",
+        "aqua kem toss ins treatment prep",
+        "thetford toss-ins holding tank treatment"
+      ],
+      "searchRequiredTerms": [
+        "aqua+kem+toss+ins",
+        "thetford+toss+ins"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-switch-on-off-control-prep",
+      "slug": "dometic-freshjet-switch-on-off-control-prep",
+      "title": "Dometic FreshJet switch on/off control prep",
+      "summary": "Use the official Dometic FreshJet support page for switch-on and switch-off control behavior before treating the condition as a fault.",
+      "safeChecklist": [
+        "Record the FreshJet model, remote or wall-control model, selected mode, display state, campsite power source, and whether the unit responds to the normal control sequence.",
+        "Save photos of the control display, safe visible model label or paperwork, and the official Dometic support title you matched.",
+        "Keep installed AC equipment, sealed cooling-system parts, and high-power components for qualified RV service; shut the unit down if safety is uncertain."
+      ],
+      "sourceIds": [
+        "dometic-freshjet-switch-on-off-support"
+      ],
+      "searchAliases": [
+        "Dometic FreshJet How to switch roof air conditioner on and off 22",
+        "dometic freshjet switch on off control prep",
+        "freshjet switch on off support 22"
+      ],
+      "searchRequiredTerms": [
+        "dometic+freshjet+switch+on+off",
+        "freshjet+roof+air+conditioner+22"
+      ]
+    },
+    {
+      "id": "dometic-freshjet-remote-time-control-prep",
+      "slug": "dometic-freshjet-remote-time-control-prep",
+      "title": "Dometic FreshJet remote time control prep",
+      "summary": "Use the official Dometic FreshJet support page for remote time setting before troubleshooting timer or control complaints.",
+      "safeChecklist": [
+        "Record the FreshJet model, remote model, displayed time, timer state, battery age, and whether the setting changes are saved.",
+        "Save photos of the remote display, control panel if present, safe visible model label or paperwork, and the Dometic support title.",
+        "Keep installed AC equipment and high-power components for qualified RV service; treat this guide as control-documentation prep only."
+      ],
+      "sourceIds": [
+        "dometic-freshjet-set-time-support"
+      ],
+      "searchAliases": [
+        "Dometic FreshJet How to set the time 8e4",
+        "dometic freshjet remote time control prep",
+        "freshjet set time remote support 8e4"
+      ],
+      "searchRequiredTerms": [
+        "dometic+freshjet+set+time",
+        "freshjet+remote+time+8e4"
+      ]
+    },
+    {
+      "id": "dometic-brisk-ags-control-prep",
+      "slug": "dometic-brisk-ags-control-prep",
+      "title": "Dometic Brisk AGS control prep",
+      "summary": "Use the official Dometic Brisk support page to document automatic-generator-start thermostat settings before support contact.",
+      "safeChecklist": [
+        "Record the Brisk model, thermostat model, AGS setting state, selected mode, temperature setting, generator controller brand if known, and whether the setting appears on the display.",
+        "Save photos of the thermostat display, safe visible model label or paperwork, and the Dometic support title you matched.",
+        "Keep generator startup behavior, installed AC equipment, and high-power components for qualified RV service; shut equipment down if safety is uncertain."
+      ],
+      "sourceIds": [
+        "dometic-brisk-ags-control-support"
+      ],
+      "searchAliases": [
+        "Dometic Brisk How to control automatic generator start AGS b557",
+        "dometic brisk ags control prep",
+        "brisk automatic generator start thermostat support b557"
+      ],
+      "searchRequiredTerms": [
+        "dometic+brisk+automatic+generator+start",
+        "dometic+brisk+ags+b557"
+      ]
+    },
+    {
+      "id": "thetford-toilet-serial-number-prep",
+      "slug": "thetford-toilet-serial-number-prep",
+      "title": "Thetford toilet serial-number FAQ prep",
+      "summary": "Use the official Thetford FAQ to locate permanent-toilet serial-number details before warranty, parts, or support contact.",
+      "safeChecklist": [
+        "Record the toilet model family, serial number location found from the FAQ, purchase date if known, symptom, and any visible product label details.",
+        "Save photos of the serial label or paperwork from normal owner access and the official Thetford FAQ title.",
+        "Do not disassemble the toilet to search for a label; route missing-label or parts-identification questions to Thetford support."
+      ],
+      "sourceIds": [
+        "thetford-toilet-serial-number-faq"
+      ],
+      "searchAliases": [
+        "Thetford where can I locate the serial number for my toilet",
+        "thetford toilet serial number faq prep",
+        "where can i locate the serial number for my thetford toilet"
+      ],
+      "searchRequiredTerms": [
+        "thetford+where+can+i+locate+serial+number",
+        "thetford+toilet+serial+number+faq"
+      ]
+    },
+    {
+      "id": "thetford-cassette-toilet-serial-number-prep",
+      "slug": "thetford-cassette-toilet-serial-number-prep",
+      "title": "Thetford cassette toilet serial-number FAQ prep",
+      "summary": "Use the official Thetford FAQ to locate cassette-toilet serial-number details before warranty, parts, or support contact.",
+      "safeChecklist": [
+        "Record the cassette-toilet model family, cassette side if known, serial number location found from the FAQ, purchase date, and symptom.",
+        "Save photos of the serial label or paperwork from normal owner access and the official Thetford FAQ title.",
+        "Do not disassemble the cassette toilet to search for a label; route missing-label or parts-identification questions to Thetford support."
+      ],
+      "sourceIds": [
+        "thetford-cassette-toilet-serial-number-faq"
+      ],
+      "searchAliases": [
+        "Thetford where is the serial number located on my cassette toilet",
+        "thetford cassette toilet serial number faq prep",
+        "where is the serial number located on my thetford cassette toilet"
+      ],
+      "searchRequiredTerms": [
+        "thetford+cassette+toilet+serial+number+faq",
+        "where+is+serial+number+located+cassette"
+      ]
+    },
+    {
+      "id": "furrion-ac-controller-gen3-identification-prep",
+      "slug": "furrion-ac-controller-gen3-identification-prep",
+      "title": "Furrion A/C controller Generation 3 identification prep",
+      "summary": "Use the official Furrion Generation 3 controller spec sheet to capture controller identity and compatibility details before support contact.",
+      "safeChecklist": [
+        "Record the Furrion air-conditioner model, controller generation, thermostat or wall-control model, document number, and symptom or compatibility question.",
+        "Save photos of the controller label, thermostat display, safe visible model label or paperwork, and the Lippert support document title.",
+        "Keep installed AC equipment and high-power components for qualified RV service; use this guide for identification and paperwork prep only."
+      ],
+      "sourceIds": [
+        "furrion-ac-controller-generation-3-spec-ccd0010641"
+      ],
+      "searchAliases": [
+        "Furrion Air Conditioner Controller Generation 3 Spec Sheet CCD-0010641",
+        "furrion ac controller gen3 identification prep",
+        "furrion generation 3 air conditioner controller ccd0010641"
+      ],
+      "searchRequiredTerms": [
+        "furrion+air+conditioner+controller+generation+3",
+        "ccd0010641"
+      ]
+    },
+    {
+      "id": "furrion-chill-cube-ac-control-model-prep",
+      "slug": "furrion-chill-cube-ac-control-model-prep",
+      "title": "Furrion Chill Cube A/C control and model prep",
+      "summary": "Use the official Furrion Chill Cube A/C System manual to capture model, control, and owner-operation context before support contact.",
+      "safeChecklist": [
+        "Record the Chill Cube model, control type, selected mode, display state, airflow symptom, power source, and document number from the manual.",
+        "Save photos of the control display, safe visible model label or paperwork, and the Lippert support document title.",
+        "Keep installed AC equipment, sealed cooling-system parts, and high-power components for qualified RV service; shut the unit down if safety is uncertain."
+      ],
+      "sourceIds": [
+        "furrion-chill-cube-ac-system-user-manual-ccd0007294"
+      ],
+      "searchAliases": [
+        "Furrion Chill Cube A/C System User Manual CCD-0007294",
+        "furrion chill cube ac control model prep",
+        "furrion chill cube manual ccd0007294"
+      ],
+      "searchRequiredTerms": [
+        "furrion+chill+cube",
+        "ccd0007294"
+      ]
+    },
+    {
+      "id": "furrion-refrigerator-door-seal-check-prep",
+      "slug": "furrion-refrigerator-door-seal-check-prep",
+      "title": "Furrion refrigerator door-seal check prep",
+      "summary": "Use the official Lippert support video to document a Furrion refrigerator door-seal check before support contact.",
+      "safeChecklist": [
+        "Record the Furrion refrigerator model, door affected, gasket appearance from normal owner access, temperature symptom, and when the seal concern appears.",
+        "Save photos of the door alignment, gasket edge, safe visible model label or paperwork, and the Lippert support video title.",
+        "Route torn gaskets, misaligned doors, repeated temperature problems, or sealed-system concerns to Lippert/Furrion support or qualified RV service."
+      ],
+      "sourceIds": [
+        "furrion-refrigerator-door-seal-check-video"
+      ],
+      "searchAliases": [
+        "Lippert Furrion how to check proper seal of refrigerator door video",
+        "furrion refrigerator door seal check prep",
+        "proper seal refrigerator door furrion support video"
+      ],
+      "searchRequiredTerms": [
+        "furrion+refrigerator+door+seal",
+        "proper+seal+refrigerator+door"
+      ]
+    },
+    {
+      "id": "aquahot-400-p02-control-winterize-prep",
+      "slug": "aquahot-400-p02-control-winterize-prep",
+      "title": "Aqua-Hot 400-P02 control and winterization prep",
+      "summary": "Use the official Aqua-Hot AHE-400-P02 Use and Care Guide to capture model, controls, and winterization context before support contact.",
+      "safeChecklist": [
+        "Record the AHE-400-P02 model, control-panel state, heat and hot-water behavior, winterization status, fluid level shown by normal owner checks, and any displayed warning.",
+        "Save photos of the control panel, safe visible model label or paperwork, and the Aqua-Hot guide title.",
+        "Keep heating-equipment internals, fluid leaks, exhaust odor, and installed power components for Aqua-Hot support or qualified RV service; shut the unit down if safety is uncertain."
+      ],
+      "sourceIds": [
+        "aquahot-400-p02-use-care-guide"
+      ],
+      "searchAliases": [
+        "Aqua-Hot AHE-400-P02 Use and Care Guide",
+        "aquahot 400 p02 control winterize prep",
+        "aqua hot 400 p02 use care guide prep"
+      ],
+      "searchRequiredTerms": [
+        "aqua+hot+400+p02",
+        "ahe+400+p02"
+      ]
+    },
+    {
+      "id": "onan-cummins-warranty-routing-prep",
+      "slug": "onan-cummins-warranty-routing-prep",
+      "title": "Cummins Onan warranty routing prep",
+      "summary": "Use the official Shop Cummins warranty information page to prepare Onan generator warranty details before support contact.",
+      "safeChecklist": [
+        "Record the Onan or Cummins product model, serial number, purchase date, symptom, operating hours if visible, and the part or product category involved.",
+        "Save photos of the product label, purchase record, safe visible hour display if present, and the Shop Cummins warranty page title.",
+        "Use Cummins/Onan support or qualified generator service for warranty eligibility, parts, startup problems, shutdowns, abnormal sound, odor, or unsafe operation."
+      ],
+      "sourceIds": [
+        "cummins-shop-warranty-information"
+      ],
+      "searchAliases": [
+        "Shop Cummins warranty information Onan portable generator warranty",
+        "onan cummins warranty routing prep",
+        "cummins onan generator warranty information shop cummins"
+      ],
+      "searchRequiredTerms": [
+        "cummins+onan+warranty",
+        "shop+cummins+warranty"
       ]
     }
   ],

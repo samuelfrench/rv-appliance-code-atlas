@@ -3,8 +3,8 @@ import corpus from "../data/corpus.json";
 import { buildSymptomSearchIndex, lookupSymptomGuides, summarizeCorpus } from "./corpus";
 
 const expectedEntryCount = 864;
-const expectedSourceCount = 1201;
-const expectedSymptomCount = 1029;
+const expectedSourceCount = 1224;
+const expectedSymptomCount = 1052;
 
 const continuationBatch = [
   ["dometic-cfx3-warning-xx-display-router", "https://support.dometic.com/en/cfx3-coolers/What-does-the-WARNING-XX-mean-on-my-cooler-display-cff4", "dometic-cfx3-warning-xx-service-prep", ["dometic+cfx3+warning+xx", "cfx3+cooler+display"], "dometic cfx3 warning xx display"],
