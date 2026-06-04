@@ -2751,6 +2751,111 @@ test("lookup surfaces the Thetford MaxxAir Suburban Aqua-Hot Furrion Onan gap-sc
   expect(pageErrors).toEqual([]);
 });
 
+test("lookup surfaces Dometic Norcold Thetford Coleman Lippert Furrion Suburban Aqua-Hot Onan prep batch without generic hijacks", async ({
+  page,
+}) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    [
+      "dometic masterflush 7120 9610007270 control prep",
+      "/symptoms/dometic-masterflush-7100-control-prep/",
+    ],
+    ["norcold n4141 model control prep", "/symptoms/norcold-n4141-model-control-prep/"],
+    ["thetford t2000 warning code prep", "/symptoms/thetford-t2000-warning-code-prep/"],
+    ["thetford c4 cassette toilet model prep", "/symptoms/thetford-c4-cassette-toilet-model-prep/"],
+    [
+      "coleman mach document library model manual prep",
+      "/symptoms/coleman-mach-document-library-model-manual-prep/",
+    ],
+    ["lippert find a dealer service routing prep", "/symptoms/lippert-dealer-locator-service-routing-prep/"],
+    [
+      "furrion 20.6 side by side refrigerator ccd 0009671 service prep",
+      "/symptoms/furrion-20-6-side-by-side-refrigerator-service-prep/",
+    ],
+    [
+      "suburban drop in 2 burner cooktop model service prep",
+      "/symptoms/suburban-drop-in-2-burner-model-service-prep/",
+    ],
+    ["aqua hot 175 controller service prep", "/symptoms/aquahot-175-controller-service-prep/"],
+    ["onan qg 6500 lp a063b875 gsn warranty prep", "/symptoms/onan-qg6500-lp-gsn-warranty-prep/"],
+  ] as const;
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+  }
+
+  for (const query of [
+    "warranty",
+    "service prep",
+    "owner manual",
+    "model number",
+    "control center",
+    "gas range",
+    "refrigerator",
+    "toilet",
+    "fan",
+    "furnace",
+    "manual control",
+    "generator",
+    "hydronic",
+    "remote",
+    "thermostat",
+    "storage",
+    "recall",
+    "single zone",
+    "gas oven",
+    "manual library",
+    "water heater",
+    "cooktop",
+    "air conditioner",
+    "portable toilet",
+    "cassette toilet",
+    "dealer locator",
+    "find dealer",
+    "find a dealer",
+    "contact us",
+    "documents",
+    "document library",
+    "toilets",
+    "air conditioners",
+    "thermostats",
+    "specialty units",
+    "20 cu ft",
+    "20.6 refrigerator",
+    "furnace v2",
+    "digital range",
+    "drop in 2 burner",
+    "175",
+  ]) {
+    await searchbox.fill(query);
+    for (const [, href] of cases) {
+      await expect(lookupResults.locator(`a[href="${href}"]`), `${query} -> ${href}`).toHaveCount(0);
+    }
+  }
+
+  await searchbox.fill("dometic masterflush 7120 9610007270 control prep");
+  const masterflush = lookupResults.locator('a[href="/symptoms/dometic-masterflush-7100-control-prep/"]');
+  await expect(masterflush).toBeVisible();
+  await masterflush.click();
+  await expect(page.getByRole("heading", { name: "Dometic MasterFlush 7100 control prep" })).toBeVisible();
+  await expect(page.getByText(/Record the MasterFlush 7120 model/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 

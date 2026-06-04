@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 864;
-const expectedSourceCount = 848;
-const expectedSymptomCount = 680;
+const expectedSourceCount = 878;
+const expectedSymptomCount = 710;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -9314,6 +9314,163 @@ describe("verified corpus", () => {
       "air conditioner",
       "portable toilet",
       "cassette toilet",
+    ]) {
+      expect(
+        lookupSymptomGuides(index, query)
+          .slice(0, 5)
+          .map((symptom) => symptom.slug)
+          .filter((slug) => newSlugs.has(slug)),
+        query,
+      ).toEqual([]);
+    }
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds the official Dometic Norcold Thetford Coleman Lippert Furrion Suburban Aqua-Hot and Onan prep batch without code entries", () => {
+    const expectedSources = new Map<string, string>([
+      ["dometic-find-a-dealer", "https://www.dometic.com/en-us/support/find-a-dealer"],
+      ["dometic-contact-us-rv-van-support", "https://www.dometic.com/en-us/support/contact-us"],
+      ["dometic-rv-van-toilets-category", "https://www.dometic.com/en-us/category/rv-and-van/toilets"],
+      ["dometic-masterflush-7120-operating", "https://media.dometic.com/externalassets/dometic-masterflush-7120_9610007270_111263.pdf"],
+      [
+        "dometic-masterflush-8700-series-product-info",
+        "https://media.dometic.com/externalassets/dometic-masterflush-8740_9600012036_113325.pdf?ref=-456850054",
+      ],
+      ["dometic-cfx5-series-landing", "https://www.dometic.com/en-us/lp/cfx5"],
+      ["norcold-n1152-support", "https://www.thetford.com/us/thetford-support/n1152/"],
+      ["norcold-n4141-support", "https://www.thetford.com/us/thetford-support/n4141/"],
+      ["norcold-nr751-support", "https://www.thetford.com/us/thetford-support/nr751/"],
+      ["norcold-lp-gas-refrigerators-product-group", "https://www.thetford.com/us/product-group/lp-gas-refrigerators/"],
+      ["thetford-t2000-series-compressor-support", "https://www.thetford.com/en/thetford-service-and-support/t2000-series-compressor-refrigerator/"],
+      ["thetford-t1000-series-compressor-support", "https://www.thetford.com/en/thetford-service-and-support/t1000-series-compressor-refrigerator/"],
+      ["thetford-c2-cassette-toilet-support", "https://www.thetford.com/us/thetford-support/c2-cassette-toilet/"],
+      ["thetford-c4-cassette-toilet-support", "https://www.thetford.com/us/thetford-support/c4-cassette-toilet/"],
+      ["thetford-campa-potti-mt-support", "https://www.thetford.com/us/thetford-support/campa-potti-mt/"],
+      ["coleman-mach-air-conditioners-router", "https://coleman-mach.com/products/air-conditioners/default.aspx"],
+      ["coleman-mach-thermostats-router", "https://coleman-mach.com/products/thermostats/default.aspx"],
+      ["coleman-mach-document-library", "https://library.coleman-mach.com/"],
+      ["coleman-mach-specialty-units-product", "https://coleman-mach.com/products/air-conditioners/specialty-units/"],
+      ["lippert-support-document-library", "https://support.lci1.com/documents/"],
+      ["lippert-find-a-dealer-locator", "https://www.lippert.com/find-a-dealer"],
+      ["furrion-20cuft-refrigerator-manual-ccd0005599", "https://support.lci1.com/documents/ccd-0005599"],
+      ["furrion-20-6-side-by-side-refrigerator-manual-ccd0009671", "https://support.lci1.com/documents/ccd-0009671"],
+      ["furrion-fcr10dcgfa-storage-qr192", "https://support.lci1.com/documents/ccd-0008585"],
+      ["furrion-furnace-v2-manual-ccd0009365", "https://support.lci1.com/documents/ccd-0009365"],
+      ["greystone-17-21-digital-range-ffd-spec-ccd0008655", "https://support.lci1.com/documents/ccd-0008655"],
+      ["suburban-drop-in-2-burner-product", "https://suburbanrv.com/kitchen-galley/cooktops/drop-in-cooktops/drop-in-2-burner/"],
+      ["maxxair-original-maxxfan-00a04301k-product", "https://www.maxxair.com/Products/fans/maxxfan-00A04301K/"],
+      ["aquahot-175-product-page", "https://www.aquahot.com/products/rv/175.aspx"],
+      [
+        "onan-qg6500-lp-shop-product",
+        "https://shop.cummins.com/SC/product/onan-qg-6500-lp-vapor-rv-generator-with-30a-breakers-a063b875/01t4N0000048nhAQAQ",
+      ],
+    ]);
+    const expectedSymptoms = new Map<string, { sourceIds: string[]; requiredTerms: string[]; query: string }>([
+      ["dometic-service-provider-prep", { sourceIds: ["dometic-find-a-dealer"], requiredTerms: ["dometic+dealer"], query: "dometic find a dealer service provider prep" }],
+      ["dometic-rv-van-support-contact-prep", { sourceIds: ["dometic-contact-us-rv-van-support"], requiredTerms: ["dometic+contact"], query: "dometic rv van support contact prep" }],
+      ["dometic-toilet-family-model-prep", { sourceIds: ["dometic-rv-van-toilets-category"], requiredTerms: ["dometic+toilets"], query: "dometic rv van toilets family model prep" }],
+      ["dometic-masterflush-7100-control-prep", { sourceIds: ["dometic-masterflush-7120-operating"], requiredTerms: ["masterflush+7120", "9610007270"], query: "dometic masterflush 7120 9610007270 control prep" }],
+      ["dometic-masterflush-8700-wall-switch-prep", { sourceIds: ["dometic-masterflush-8700-series-product-info"], requiredTerms: ["masterflush+8740", "9600012036"], query: "dometic masterflush 8740 9600012036 wall switch prep" }],
+      ["dometic-cfx5-app-power-prep", { sourceIds: ["dometic-cfx5-series-landing"], requiredTerms: ["dometic+cfx5"], query: "dometic cfx5 app power prep" }],
+      ["norcold-n1152-dc-fridge-service-prep", { sourceIds: ["norcold-n1152-support"], requiredTerms: ["n1152"], query: "norcold n1152 dc fridge service prep" }],
+      ["norcold-n4141-model-control-prep", { sourceIds: ["norcold-n4141-support"], requiredTerms: ["n4141"], query: "norcold n4141 model control prep" }],
+      ["norcold-nr751-acdc-fridge-service-prep", { sourceIds: ["norcold-nr751-support"], requiredTerms: ["nr751"], query: "norcold nr751 ac dc fridge service prep" }],
+      ["norcold-lp-gas-fridge-family-prep", { sourceIds: ["norcold-lp-gas-refrigerators-product-group"], requiredTerms: ["norcold+lp+gas+refrigerators"], query: "norcold lp gas refrigerators family prep" }],
+      ["thetford-t2000-warning-code-prep", { sourceIds: ["thetford-t2000-series-compressor-support"], requiredTerms: ["t2000+warning+code"], query: "thetford t2000 warning code prep" }],
+      ["thetford-t1000-compressor-fridge-storage-prep", { sourceIds: ["thetford-t1000-series-compressor-support"], requiredTerms: ["t1000+compressor+refrigerator"], query: "thetford t1000 compressor refrigerator storage prep" }],
+      ["thetford-c2-cassette-toilet-model-prep", { sourceIds: ["thetford-c2-cassette-toilet-support"], requiredTerms: ["thetford+c2+cassette"], query: "thetford c2 cassette toilet model prep" }],
+      ["thetford-c4-cassette-toilet-model-prep", { sourceIds: ["thetford-c4-cassette-toilet-support"], requiredTerms: ["thetford+c4+cassette"], query: "thetford c4 cassette toilet model prep" }],
+      ["thetford-campa-potti-mt-storage-service-prep", { sourceIds: ["thetford-campa-potti-mt-support"], requiredTerms: ["thetford+campa+potti+mt"], query: "thetford campa potti mt storage service prep" }],
+      ["coleman-mach-ac-family-model-prep", { sourceIds: ["coleman-mach-air-conditioners-router"], requiredTerms: ["coleman+mach+air+conditioners"], query: "coleman mach air conditioners family model prep" }],
+      ["coleman-mach-thermostat-family-control-prep", { sourceIds: ["coleman-mach-thermostats-router"], requiredTerms: ["coleman+mach+thermostats"], query: "coleman mach thermostats family control prep" }],
+      ["coleman-mach-document-library-model-manual-prep", { sourceIds: ["coleman-mach-document-library"], requiredTerms: ["coleman+mach+document+library"], query: "coleman mach document library model manual prep" }],
+      ["coleman-mach-specialty-units-model-prep", { sourceIds: ["coleman-mach-specialty-units-product"], requiredTerms: ["coleman+mach+specialty+units"], query: "coleman mach specialty units model prep" }],
+      ["lippert-document-library-source-prep", { sourceIds: ["lippert-support-document-library"], requiredTerms: ["lippert+document"], query: "lippert document library source prep" }],
+      ["lippert-dealer-locator-service-routing-prep", { sourceIds: ["lippert-find-a-dealer-locator"], requiredTerms: ["lippert+find+a+dealer"], query: "lippert find a dealer service routing prep" }],
+      ["furrion-20cuft-refrigerator-model-storage-prep", { sourceIds: ["furrion-20cuft-refrigerator-manual-ccd0005599"], requiredTerms: ["furrion+20+cu+ft", "ccd+0005599"], query: "furrion 20 cu ft refrigerator ccd 0005599 model storage prep" }],
+      ["furrion-20-6-side-by-side-refrigerator-service-prep", { sourceIds: ["furrion-20-6-side-by-side-refrigerator-manual-ccd0009671"], requiredTerms: ["furrion+20+6", "ccd+0009671"], query: "furrion 20.6 side by side refrigerator ccd 0009671 service prep" }],
+      ["furrion-fcr10dcgfa-storage-reset-prep", { sourceIds: ["furrion-fcr10dcgfa-storage-qr192"], requiredTerms: ["fcr10dc", "qr+192"], query: "furrion fcr10dc gfa qr 192 storage reset prep" }],
+      ["furrion-furnace-v2-model-shutdown-service-prep", { sourceIds: ["furrion-furnace-v2-manual-ccd0009365"], requiredTerms: ["furrion+furnace+v2", "ccd+0009365"], query: "furrion furnace v2 ccd 0009365 model shutdown service prep" }],
+      ["greystone-17-21-digital-range-ffd-model-prep", { sourceIds: ["greystone-17-21-digital-range-ffd-spec-ccd0008655"], requiredTerms: ["greystone+digital+range", "ccd+0008655"], query: "greystone 17 21 digital range ffd ccd 0008655 model prep" }],
+      ["suburban-drop-in-2-burner-model-service-prep", { sourceIds: ["suburban-drop-in-2-burner-product"], requiredTerms: ["suburban+drop+in+2+burner"], query: "suburban drop in 2 burner cooktop model service prep" }],
+      ["maxxair-original-maxxfan-00a04301k-control-prep", { sourceIds: ["maxxair-original-maxxfan-00a04301k-product"], requiredTerms: ["00a04301k", "maxxair+original+maxxfan"], query: "maxxair original maxxfan 00a04301k control prep" }],
+      ["aquahot-175-controller-service-prep", { sourceIds: ["aquahot-175-product-page"], requiredTerms: ["aqua+hot+175"], query: "aqua hot 175 controller service prep" }],
+      ["onan-qg6500-lp-gsn-warranty-prep", { sourceIds: ["onan-qg6500-lp-shop-product"], requiredTerms: ["qg+6500", "a063b875"], query: "onan qg 6500 lp a063b875 gsn warranty prep" }],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const newSlugs = new Set(expectedSymptoms.keys());
+    const sourcesById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const index = buildSymptomSearchIndex(corpus);
+    const summary = summarizeCorpus(corpus);
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|burner\s+(repair|work|service|port|assembly)|\borifice\b|\bcontrol[- ]board\b|\b120\s*vac\b|\b110\s*v\b|\bline[- ]voltage\b|\brefrigerant\b|\bprobe\b|\bwiring\b|\bsupply line\b|\bopen (the )?(fuel|gas|electrical|rooftop)|remove.*shroud|remove.*cover|remove.*toilet|replace.*valve|measure resistance|fuel nozzle|combustion|coolant pump|manual override|hydraulic work|hydraulic repair|macerator|internal plumbing|seal removal|compressor repair|pump service/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = sourcesById.get(sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(summary.indexablePages).toBe(expectedEntryCount + expectedSymptomCount + 1);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const [symptomId, expected] of expectedSymptoms) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds, symptomId).toEqual(expected.sourceIds);
+      expect(symptom?.searchRequiredTerms, symptomId).toEqual(expected.requiredTerms);
+      expect([symptom?.summary, ...(symptom?.safeChecklist ?? [])].join(" "), symptomId).not.toMatch(
+        unsafeOwnerActionPattern,
+      );
+      expect(lookupSymptomGuides(index, expected.query)[0]?.slug, expected.query).toBe(symptomId);
+    }
+
+    for (const query of [
+      "warranty",
+      "service prep",
+      "owner manual",
+      "model number",
+      "control center",
+      "gas range",
+      "refrigerator",
+      "toilet",
+      "fan",
+      "furnace",
+      "manual control",
+      "generator",
+      "hydronic",
+      "remote",
+      "thermostat",
+      "storage",
+      "recall",
+      "single zone",
+      "gas oven",
+      "manual library",
+      "water heater",
+      "cooktop",
+      "air conditioner",
+      "portable toilet",
+      "cassette toilet",
+      "dealer locator",
+      "find dealer",
+      "find a dealer",
+      "contact us",
+      "documents",
+      "document library",
+      "toilets",
+      "air conditioners",
+      "thermostats",
+      "specialty units",
+      "20 cu ft",
+      "20.6 refrigerator",
+      "furnace v2",
+      "digital range",
+      "drop in 2 burner",
+      "175",
     ]) {
       expect(
         lookupSymptomGuides(index, query)
