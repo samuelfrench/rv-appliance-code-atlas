@@ -7685,7 +7685,7 @@
     {
       "id": "maxxair-maxxshade-plus-product",
       "brand": "MaxxAir",
-      "title": "MaxxAir Maxxshade Plus Product Page",
+      "title": "MaxxAir MaxxShade Plus Product Page",
       "url": "https://www.maxxair.com/products/maxxshades/maxxshade-plus/",
       "type": "manufacturer-product-page",
       "official": true
@@ -8887,6 +8887,246 @@
       "brand": "MaxxAir",
       "title": "MaxxAir Vent Covers UniMaxx MaxxShade MaxxFan IOM 10D50905Z",
       "url": "https://library.maxxair.com/wp-content/uploads/2023/03/axl-mxr_10d50905z_vent-covers-unimaxx-maxxshade-maxxfan-08-2018.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "dometic-harrier-set-temperature-control-support",
+      "brand": "Dometic",
+      "title": "Dometic Harrier Set Temperature Control",
+      "url": "https://support.dometic.com/en/harrier-ac/How-to-Set-the-temperature-895b",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-harrier-timer-control-support",
+      "brand": "Dometic",
+      "title": "Dometic Harrier Timer Control",
+      "url": "https://support.dometic.com/en/harrier-ac/How-to-Set-the-timer-25a0",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-harrier-fan-setting-control-support",
+      "brand": "Dometic",
+      "title": "Dometic Harrier Fan Setting Control",
+      "url": "https://support.dometic.com/en/harrier-ac/How-to-select-the-fan-setting-manually-6ebb",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-harrier-operating-modes-support",
+      "brand": "Dometic",
+      "title": "Dometic Harrier Operating Modes",
+      "url": "https://support.dometic.com/en/harrier-ac/What-operating-modes-are-available-for-my-product-27b4",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-harrier-remote-control-use-support",
+      "brand": "Dometic",
+      "title": "Dometic Harrier Remote Control Use",
+      "url": "https://support.dometic.com/en/harrier-ac/How-to-Use-the-remote-control-682c",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-harrier-air-conditioning-mode-support",
+      "brand": "Dometic",
+      "title": "Dometic Harrier Air Conditioning Mode",
+      "url": "https://support.dometic.com/en/harrier-ac/How-to-Select-the-air-conditioning-mode-66a6",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-harrier-optimize-performance-support",
+      "brand": "Dometic",
+      "title": "Dometic Harrier Optimize Performance",
+      "url": "https://support.dometic.com/en/harrier-ac/How-to-Optimize-performance-of-the-air-conditioner-ffdf",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ibis-set-temperature-control-support",
+      "brand": "Dometic",
+      "title": "Dometic Ibis Set Temperature Control",
+      "url": "https://support.dometic.com/en/ibis-ac/How-to-Set-the-temperature-73ca",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ibis-timer-control-support",
+      "brand": "Dometic",
+      "title": "Dometic Ibis Timer Control",
+      "url": "https://support.dometic.com/en/ibis-ac/How-to-Set-the-timer-fcdf",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ibis-fan-setting-control-support",
+      "brand": "Dometic",
+      "title": "Dometic Ibis Fan Setting Control",
+      "url": "https://support.dometic.com/en/ibis-ac/How-to-select-the-fan-setting-manually-87f0",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ibis-remote-control-use-support",
+      "brand": "Dometic",
+      "title": "Dometic Ibis Remote Control Use",
+      "url": "https://support.dometic.com/en/ibis-ac/How-to-Use-the-remote-control-ee0",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ibis-roof-ac-does-not-switch-on-support",
+      "brand": "Dometic",
+      "title": "Dometic Ibis Roof AC Does Not Switch On",
+      "url": "https://support.dometic.com/en/ibis-ac/My-roof-air-conditioner-does-not-switch-on-dc8e",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-brisk-fan-speed-control-support",
+      "brand": "Dometic",
+      "title": "Dometic Brisk Fan Speed Control",
+      "url": "https://support.dometic.com/en/brisk-ac/How-to-control-Fan-Speed-4828",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-brisk-zone-control-support",
+      "brand": "Dometic",
+      "title": "Dometic Brisk Zone Control",
+      "url": "https://support.dometic.com/en/brisk-ac/How-to-control-Zone-Control-517a",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-brisk-quick-cool-return-support",
+      "brand": "Dometic",
+      "title": "Dometic Brisk Quick Cool Return",
+      "url": "https://support.dometic.com/en/brisk-ac/How-to-control-Quick-Cool-Return-on-thermostat-23ea",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx2-lid-latch-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX2 Lid Latch",
+      "url": "https://support.dometic.com/en/cfx2-coolers/How-to-latch-the-cooler-lid-d3b",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx2-battery-connection-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX2 Battery Connection",
+      "url": "https://support.dometic.com/en/cfx2-coolers/How-to-connect-the-cooler-to-a-battery-c9e0",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx2-display-brightness-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX2 Display Brightness",
+      "url": "https://support.dometic.com/en/cfx2-coolers/How-to-set-the-display-brightness-3715",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-thetford-refrigeration-router",
+      "brand": "Norcold/Thetford",
+      "title": "Norcold Thetford Refrigeration",
+      "url": "https://www.thetford.com/us/refrigeration",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-us-product-range-router",
+      "brand": "Thetford",
+      "title": "Thetford North America Product Range",
+      "url": "https://www.thetford.com/us/all-products/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-int-support-router",
+      "brand": "Thetford",
+      "title": "Thetford International Support",
+      "url": "https://www.thetford.com/int/thetford-service-and-support/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-int-product-overview-router",
+      "brand": "Thetford",
+      "title": "Thetford International Product Overview",
+      "url": "https://www.thetford.com/int/overview-all-products/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "coleman-8330-multiple-zone-thermostat-router",
+      "brand": "Coleman-Mach",
+      "title": "Coleman 8330 Multiple Zone Thermostat",
+      "url": "https://library.coleman-mach.com/manual/8330-331-335-multiple-zone-thermostat-controller-system/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "coleman-9420-digital-thermostats-router",
+      "brand": "Coleman-Mach",
+      "title": "Coleman 9420 Digital Thermostats",
+      "url": "https://library.coleman-mach.com/manual/digital-thermostats-9420-381-9420-382/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "coleman-9430-wall-thermostat-router",
+      "brand": "Coleman-Mach",
+      "title": "Coleman 9430 Wall Thermostat",
+      "url": "https://library.coleman-mach.com/manual/installation-operation-instructions-airxcel-9430-series-wall-thermostat/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "coleman-6535-335-heat-pump-wall-thermostat-router",
+      "brand": "Coleman-Mach",
+      "title": "Coleman 6535 335 Heat Pump Wall Thermostat",
+      "url": "https://library.coleman-mach.com/manual/6535-335-2-stage-heat-pump-wall-thermostat-3/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "maxxair-maxxshade-library-router",
+      "brand": "MaxxAir",
+      "title": "MaxxAir MaxxShade Library",
+      "url": "https://library.maxxair.com/manual/482/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "maxxair-skymaxx-97550-97510-router",
+      "brand": "MaxxAir",
+      "title": "MaxxAir SkyMaxx 97550 97510",
+      "url": "https://library.maxxair.com/manual/494/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "greystone-26-40-fireplace-manual-ccd0007548",
+      "brand": "Greystone",
+      "title": "Greystone 26 40 Fireplace Manual",
+      "url": "https://support.lci1.com/documents/ccd-0007548",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "greystone-60-electric-fireplace-manual-ccd0009757",
+      "brand": "Greystone",
+      "title": "Greystone 60 Electric Fireplace Manual",
+      "url": "https://support.lci1.com/documents/ccd-0009757",
       "type": "manufacturer-manual",
       "official": true
     }
@@ -42803,7 +43043,37 @@
         "coleman-9330-9530-ir-thermostat-router",
         "coleman-extended-parts-warranty-1976-338",
         "maxxair-mini-repair-parts-r700",
-        "maxxair-vent-covers-unimaxx-maxxshade-10d50905z"
+        "maxxair-vent-covers-unimaxx-maxxshade-10d50905z",
+        "dometic-harrier-set-temperature-control-support",
+        "dometic-harrier-timer-control-support",
+        "dometic-harrier-fan-setting-control-support",
+        "dometic-harrier-operating-modes-support",
+        "dometic-harrier-remote-control-use-support",
+        "dometic-harrier-air-conditioning-mode-support",
+        "dometic-harrier-optimize-performance-support",
+        "dometic-ibis-set-temperature-control-support",
+        "dometic-ibis-timer-control-support",
+        "dometic-ibis-fan-setting-control-support",
+        "dometic-ibis-remote-control-use-support",
+        "dometic-ibis-roof-ac-does-not-switch-on-support",
+        "dometic-brisk-fan-speed-control-support",
+        "dometic-brisk-zone-control-support",
+        "dometic-brisk-quick-cool-return-support",
+        "dometic-cfx2-lid-latch-support",
+        "dometic-cfx2-battery-connection-support",
+        "dometic-cfx2-display-brightness-support",
+        "norcold-thetford-refrigeration-router",
+        "thetford-us-product-range-router",
+        "thetford-int-support-router",
+        "thetford-int-product-overview-router",
+        "coleman-8330-multiple-zone-thermostat-router",
+        "coleman-9420-digital-thermostats-router",
+        "coleman-9430-wall-thermostat-router",
+        "coleman-6535-335-heat-pump-wall-thermostat-router",
+        "maxxair-maxxshade-library-router",
+        "maxxair-skymaxx-97550-97510-router",
+        "greystone-26-40-fireplace-manual-ccd0007548",
+        "greystone-60-electric-fireplace-manual-ccd0009757"
       ]
     },
     {
@@ -59007,10 +59277,10 @@
     {
       "id": "maxxair-maxxshade-plus-led-fit-prep",
       "slug": "maxxair-maxxshade-plus-led-fit-prep",
-      "title": "MaxxAir Maxxshade Plus LED Fit Prep",
-      "summary": "Use the MaxxAir Maxxshade Plus page to capture shade, LED, and fit details before support.",
+      "title": "MaxxAir MaxxShade Plus LED Fit Prep",
+      "summary": "Use the MaxxAir MaxxShade Plus page to capture shade, LED, and fit details before support.",
       "safeChecklist": [
-        "Record the Maxxshade Plus model, vent opening size, LED behavior, shade movement, trim color, and current installation context.",
+        "Record the MaxxShade Plus model, vent opening size, LED behavior, shade movement, trim color, and current installation context.",
         "Save photos of the shade, LED state, label or packaging, vent opening from inside the coach, and purchase paperwork.",
         "Stop using the shade if it binds, hangs loose, or cannot stay secured for travel.",
         "Use MaxxAir support or qualified RV ventilation service for installed power, mounting, parts, warranty, or replacement decisions."
@@ -62429,6 +62699,666 @@
       "searchRequiredTerms": [
         "maxxair+unimaxx+maxxshade",
         "10d50905z"
+      ]
+    },
+    {
+      "id": "dometic-harrier-set-temperature-control-prep",
+      "slug": "dometic-harrier-set-temperature-control-prep",
+      "title": "Dometic Harrier Set Temperature Control Prep",
+      "summary": "Use this official Dometic source to record Harrier model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the Harrier model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the Harrier controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-harrier-set-temperature-control-support"
+      ],
+      "searchAliases": [
+        "dometic harrier set temperature 895b",
+        "dometic harrier set temperature control prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+harrier+temperature",
+        "set+temperature+895b"
+      ]
+    },
+    {
+      "id": "dometic-harrier-timer-control-prep",
+      "slug": "dometic-harrier-timer-control-prep",
+      "title": "Dometic Harrier Timer Control Prep",
+      "summary": "Use this official Dometic source to record Harrier model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the Harrier model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the Harrier controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-harrier-timer-control-support"
+      ],
+      "searchAliases": [
+        "dometic harrier set timer 25a0",
+        "dometic harrier timer control prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+harrier+timer",
+        "set+timer+25a0"
+      ]
+    },
+    {
+      "id": "dometic-harrier-fan-setting-control-prep",
+      "slug": "dometic-harrier-fan-setting-control-prep",
+      "title": "Dometic Harrier Fan Setting Control Prep",
+      "summary": "Use this official Dometic source to record Harrier model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the Harrier model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the Harrier controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-harrier-fan-setting-control-support"
+      ],
+      "searchAliases": [
+        "dometic harrier fan setting manually",
+        "dometic harrier fan setting control prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+harrier+fan+setting",
+        "fan+setting+manually"
+      ]
+    },
+    {
+      "id": "dometic-harrier-operating-modes-prep",
+      "slug": "dometic-harrier-operating-modes-prep",
+      "title": "Dometic Harrier Operating Modes Prep",
+      "summary": "Use this official Dometic source to record Harrier model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the Harrier model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the Harrier controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-harrier-operating-modes-support"
+      ],
+      "searchAliases": [
+        "dometic harrier operating modes 27b4",
+        "dometic harrier operating modes prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+harrier+operating+modes",
+        "modes+27b4"
+      ]
+    },
+    {
+      "id": "dometic-harrier-remote-control-use-prep",
+      "slug": "dometic-harrier-remote-control-use-prep",
+      "title": "Dometic Harrier Remote Control Use Prep",
+      "summary": "Use this official Dometic source to record Harrier model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the Harrier model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the Harrier controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-harrier-remote-control-use-support"
+      ],
+      "searchAliases": [
+        "dometic harrier remote control 682c",
+        "dometic harrier remote control use prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+harrier+remote+control",
+        "use+remote+682c"
+      ]
+    },
+    {
+      "id": "dometic-harrier-air-conditioning-mode-prep",
+      "slug": "dometic-harrier-air-conditioning-mode-prep",
+      "title": "Dometic Harrier Air Conditioning Mode Prep",
+      "summary": "Use this official Dometic source to record Harrier model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the Harrier model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the Harrier controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-harrier-air-conditioning-mode-support"
+      ],
+      "searchAliases": [
+        "dometic harrier air conditioning mode 66a6",
+        "dometic harrier air conditioning mode prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+harrier+air+conditioning+mode",
+        "select+mode+66a6"
+      ]
+    },
+    {
+      "id": "dometic-harrier-performance-prep",
+      "slug": "dometic-harrier-performance-prep",
+      "title": "Dometic Harrier Performance Prep",
+      "summary": "Use this official Dometic source to record Harrier model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the Harrier model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the Harrier controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-harrier-optimize-performance-support"
+      ],
+      "searchAliases": [
+        "dometic harrier optimize performance ffdf",
+        "dometic harrier performance prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+harrier+optimize+performance",
+        "air+conditioner+ffdf"
+      ]
+    },
+    {
+      "id": "dometic-ibis-set-temperature-control-prep",
+      "slug": "dometic-ibis-set-temperature-control-prep",
+      "title": "Dometic Ibis Set Temperature Control Prep",
+      "summary": "Use this official Dometic source to record Ibis model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the Ibis model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the Ibis controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-ibis-set-temperature-control-support"
+      ],
+      "searchAliases": [
+        "dometic ibis set temperature 73ca",
+        "dometic ibis set temperature control prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+ibis+temperature",
+        "set+temperature+73ca"
+      ]
+    },
+    {
+      "id": "dometic-ibis-timer-control-prep",
+      "slug": "dometic-ibis-timer-control-prep",
+      "title": "Dometic Ibis Timer Control Prep",
+      "summary": "Use this official Dometic source to record Ibis model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the Ibis model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the Ibis controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-ibis-timer-control-support"
+      ],
+      "searchAliases": [
+        "dometic ibis set timer fcdf",
+        "dometic ibis timer control prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+ibis+timer",
+        "set+timer+fcdf"
+      ]
+    },
+    {
+      "id": "dometic-ibis-fan-setting-control-prep",
+      "slug": "dometic-ibis-fan-setting-control-prep",
+      "title": "Dometic Ibis Fan Setting Control Prep",
+      "summary": "Use this official Dometic source to record Ibis model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the Ibis model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the Ibis controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-ibis-fan-setting-control-support"
+      ],
+      "searchAliases": [
+        "dometic ibis fan setting manually 87f0",
+        "dometic ibis fan setting control prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+ibis+fan+setting",
+        "fan+setting+87f0"
+      ]
+    },
+    {
+      "id": "dometic-ibis-remote-control-use-prep",
+      "slug": "dometic-ibis-remote-control-use-prep",
+      "title": "Dometic Ibis Remote Control Use Prep",
+      "summary": "Use this official Dometic source to record Ibis model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the Ibis model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the Ibis controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-ibis-remote-control-use-support"
+      ],
+      "searchAliases": [
+        "dometic ibis remote control ee0",
+        "dometic ibis remote control use prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+ibis+remote+control",
+        "use+remote+ee0"
+      ]
+    },
+    {
+      "id": "dometic-ibis-roof-ac-does-not-switch-on-service-prep",
+      "slug": "dometic-ibis-roof-ac-does-not-switch-on-service-prep",
+      "title": "Dometic Ibis Roof AC Does Not Switch On Service Prep",
+      "summary": "Use this official Dometic source to record Ibis model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the Ibis model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the Ibis controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-ibis-roof-ac-does-not-switch-on-support"
+      ],
+      "searchAliases": [
+        "dometic ibis roof air conditioner does not switch on dc8e",
+        "dometic ibis roof ac does not switch on service prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+ibis+does+not+switch+on",
+        "roof+air+conditioner+dc8e"
+      ]
+    },
+    {
+      "id": "dometic-brisk-fan-speed-control-prep",
+      "slug": "dometic-brisk-fan-speed-control-prep",
+      "title": "Dometic Brisk Fan Speed Control Prep",
+      "summary": "Use this official Dometic source to record Brisk model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the Brisk model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the Brisk controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-brisk-fan-speed-control-support"
+      ],
+      "searchAliases": [
+        "dometic brisk fan speed 4828",
+        "dometic brisk fan speed control prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+brisk+fan+speed",
+        "control+fan+speed+4828"
+      ]
+    },
+    {
+      "id": "dometic-brisk-zone-control-prep",
+      "slug": "dometic-brisk-zone-control-prep",
+      "title": "Dometic Brisk Zone Control Prep",
+      "summary": "Use this official Dometic source to record Brisk model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the Brisk model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the Brisk controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-brisk-zone-control-support"
+      ],
+      "searchAliases": [
+        "dometic brisk zone control 517a",
+        "dometic brisk zone control prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+brisk+zone+control",
+        "zone+control+517a"
+      ]
+    },
+    {
+      "id": "dometic-brisk-quick-cool-return-control-prep",
+      "slug": "dometic-brisk-quick-cool-return-control-prep",
+      "title": "Dometic Brisk Quick Cool Return Control Prep",
+      "summary": "Use this official Dometic source to record Brisk model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the Brisk model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the Brisk controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-brisk-quick-cool-return-support"
+      ],
+      "searchAliases": [
+        "dometic brisk quick cool return 23ea",
+        "dometic brisk quick cool return control prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+brisk+quick+cool",
+        "quick+cool+return+23ea"
+      ]
+    },
+    {
+      "id": "dometic-cfx2-lid-latch-travel-prep",
+      "slug": "dometic-cfx2-lid-latch-travel-prep",
+      "title": "Dometic CFX2 Lid Latch Travel Prep",
+      "summary": "Use this official Dometic source to record CFX2 model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the CFX2 model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the CFX2 controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-cfx2-lid-latch-support"
+      ],
+      "searchAliases": [
+        "dometic cfx2 latch cooler lid d3b",
+        "dometic cfx2 lid latch travel prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+cfx2+lid+latch",
+        "cooler+lid+d3b"
+      ]
+    },
+    {
+      "id": "dometic-cfx2-battery-connection-prep",
+      "slug": "dometic-cfx2-battery-connection-prep",
+      "title": "Dometic CFX2 Battery Connection Prep",
+      "summary": "Use this official Dometic source to record CFX2 model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the CFX2 model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the CFX2 controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-cfx2-battery-connection-support"
+      ],
+      "searchAliases": [
+        "dometic cfx2 connect cooler to battery c9e0",
+        "dometic cfx2 battery connection prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+cfx2+battery+connection",
+        "cooler+battery+c9e0"
+      ]
+    },
+    {
+      "id": "dometic-cfx2-display-brightness-control-prep",
+      "slug": "dometic-cfx2-display-brightness-control-prep",
+      "title": "Dometic CFX2 Display Brightness Control Prep",
+      "summary": "Use this official Dometic source to record CFX2 model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the CFX2 model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the CFX2 controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-cfx2-display-brightness-support"
+      ],
+      "searchAliases": [
+        "dometic cfx2 display brightness 3715",
+        "dometic cfx2 display brightness control prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+cfx2+display+brightness",
+        "brightness+3715"
+      ]
+    },
+    {
+      "id": "norcold-thetford-refrigeration-model-router-prep",
+      "slug": "norcold-thetford-refrigeration-model-router-prep",
+      "title": "Norcold Thetford Refrigeration Model Router Prep",
+      "summary": "Use this official Norcold/Thetford source to record Norcold/Thetford refrigerator model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the Norcold/Thetford refrigerator model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the Norcold/Thetford refrigerator controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "norcold-thetford-refrigeration-router"
+      ],
+      "searchAliases": [
+        "norcold thetford refrigeration model router",
+        "norcold thetford refrigeration model router prep"
+      ],
+      "searchRequiredTerms": [
+        "norcold+thetford+refrigeration",
+        "refrigeration+model+router"
+      ]
+    },
+    {
+      "id": "thetford-us-product-range-router-prep",
+      "slug": "thetford-us-product-range-router-prep",
+      "title": "Thetford US Product Range Router Prep",
+      "summary": "Use this official Thetford source to record Thetford product model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the Thetford product model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the Thetford product controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "thetford-us-product-range-router"
+      ],
+      "searchAliases": [
+        "thetford all products product range",
+        "thetford us product range router prep"
+      ],
+      "searchRequiredTerms": [
+        "thetford+all+products",
+        "thetford+product+range"
+      ]
+    },
+    {
+      "id": "thetford-int-support-router-prep",
+      "slug": "thetford-int-support-router-prep",
+      "title": "Thetford International Support Router Prep",
+      "summary": "Use this official Thetford source to record Thetford product model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the Thetford product model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the Thetford product controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "thetford-int-support-router"
+      ],
+      "searchAliases": [
+        "thetford service and support label positions",
+        "thetford int support router prep"
+      ],
+      "searchRequiredTerms": [
+        "thetford+service+support",
+        "label+positions"
+      ]
+    },
+    {
+      "id": "thetford-int-product-overview-router-prep",
+      "slug": "thetford-int-product-overview-router-prep",
+      "title": "Thetford International Product Overview Router Prep",
+      "summary": "Use this official Thetford source to record Thetford product model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the Thetford product model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the Thetford product controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "thetford-int-product-overview-router"
+      ],
+      "searchAliases": [
+        "thetford product overview all products",
+        "thetford int product overview router prep"
+      ],
+      "searchRequiredTerms": [
+        "thetford+product+overview",
+        "overview+all+products"
+      ]
+    },
+    {
+      "id": "coleman-8330-multiple-zone-thermostat-prep",
+      "slug": "coleman-8330-multiple-zone-thermostat-prep",
+      "title": "Coleman 8330 Multiple Zone Thermostat Prep",
+      "summary": "Use this official Coleman-Mach source to record Coleman-Mach thermostat model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the Coleman-Mach thermostat model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the Coleman-Mach thermostat controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "coleman-8330-multiple-zone-thermostat-router"
+      ],
+      "searchAliases": [
+        "coleman 8330 331 335 multiple zone thermostat",
+        "coleman 8330 multiple zone thermostat prep"
+      ],
+      "searchRequiredTerms": [
+        "coleman+8330+multiple+zone",
+        "8330+331+335"
+      ]
+    },
+    {
+      "id": "coleman-9420-digital-thermostat-prep",
+      "slug": "coleman-9420-digital-thermostat-prep",
+      "title": "Coleman 9420 Digital Thermostat Prep",
+      "summary": "Use this official Coleman-Mach source to record Coleman-Mach thermostat model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the Coleman-Mach thermostat model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the Coleman-Mach thermostat controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "coleman-9420-digital-thermostats-router"
+      ],
+      "searchAliases": [
+        "coleman 9420 381 9420 382 digital thermostat",
+        "coleman 9420 digital thermostat prep"
+      ],
+      "searchRequiredTerms": [
+        "coleman+9420+digital+thermostat",
+        "9420+381+9420+382"
+      ]
+    },
+    {
+      "id": "coleman-9430-wall-thermostat-prep",
+      "slug": "coleman-9430-wall-thermostat-prep",
+      "title": "Coleman 9430 Wall Thermostat Prep",
+      "summary": "Use this official Coleman-Mach source to record Coleman-Mach thermostat model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the Coleman-Mach thermostat model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the Coleman-Mach thermostat controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "coleman-9430-wall-thermostat-router"
+      ],
+      "searchAliases": [
+        "coleman airxcel 9430 wall thermostat",
+        "coleman 9430 wall thermostat prep"
+      ],
+      "searchRequiredTerms": [
+        "coleman+9430+wall+thermostat",
+        "airxcel+9430"
+      ]
+    },
+    {
+      "id": "coleman-6535-335-heat-pump-wall-thermostat-prep",
+      "slug": "coleman-6535-335-heat-pump-wall-thermostat-prep",
+      "title": "Coleman 6535 335 Heat Pump Wall Thermostat Prep",
+      "summary": "Use this official Coleman-Mach source to record Coleman-Mach thermostat model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the Coleman-Mach thermostat model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the Coleman-Mach thermostat controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "coleman-6535-335-heat-pump-wall-thermostat-router"
+      ],
+      "searchAliases": [
+        "coleman 6535 335 heat pump wall thermostat",
+        "coleman 6535 335 heat pump wall thermostat prep"
+      ],
+      "searchRequiredTerms": [
+        "coleman+6535+335+thermostat",
+        "heat+pump+wall+thermostat"
+      ]
+    },
+    {
+      "id": "maxxair-maxxshade-library-prep",
+      "slug": "maxxair-maxxshade-library-prep",
+      "title": "MaxxAir MaxxShade Library Prep",
+      "summary": "Use this official MaxxAir source to record MaxxAir product model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the MaxxAir product model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the MaxxAir product controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "maxxair-maxxshade-library-router"
+      ],
+      "searchAliases": [
+        "maxxair maxxshade 482 library",
+        "maxxair maxxshade library prep"
+      ],
+      "searchRequiredTerms": [
+        "maxxair+maxxshade+482",
+        "maxxshade+library"
+      ]
+    },
+    {
+      "id": "maxxair-skymaxx-97550-97510-prep",
+      "slug": "maxxair-skymaxx-97550-97510-prep",
+      "title": "MaxxAir SkyMaxx 97550 97510 Prep",
+      "summary": "Use this official MaxxAir source to record MaxxAir product model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the MaxxAir product model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the MaxxAir product controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "maxxair-skymaxx-97550-97510-router"
+      ],
+      "searchAliases": [
+        "maxxair skymaxx 97550 97510",
+        "maxxair skymaxx 97550 97510 prep"
+      ],
+      "searchRequiredTerms": [
+        "maxxair+skymaxx+97550",
+        "skymaxx+97510"
+      ]
+    },
+    {
+      "id": "greystone-26-40-fireplace-control-prep",
+      "slug": "greystone-26-40-fireplace-control-prep",
+      "title": "Greystone 26 40 Fireplace Control Prep",
+      "summary": "Use this official Greystone source to record Greystone fireplace model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the Greystone fireplace model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the Greystone fireplace controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "greystone-26-40-fireplace-manual-ccd0007548"
+      ],
+      "searchAliases": [
+        "greystone 26 40 fireplace ccd 0007548",
+        "greystone 26 40 fireplace control prep"
+      ],
+      "searchRequiredTerms": [
+        "greystone+26+40+fireplace",
+        "ccd+0007548"
+      ]
+    },
+    {
+      "id": "greystone-60-fireplace-control-prep",
+      "slug": "greystone-60-fireplace-control-prep",
+      "title": "Greystone 60 Fireplace Control Prep",
+      "summary": "Use this official Greystone source to record Greystone fireplace model, control, document, or support-routing details before contacting support.",
+      "safeChecklist": [
+        "Record the Greystone fireplace model, visible label or product family, current control state, symptom summary, and the exact support question.",
+        "Save photos of the Greystone fireplace controls, display or product face, visible model label, owner paperwork, and the official source title you matched.",
+        "Do not service installed controls, gas equipment, rooftop equipment, or internal appliance parts yourself; contact the manufacturer support path or qualified RV service."
+      ],
+      "sourceIds": [
+        "greystone-60-electric-fireplace-manual-ccd0009757"
+      ],
+      "searchAliases": [
+        "greystone 60 built in electric fireplace ccd 0009757",
+        "greystone 60 fireplace control prep"
+      ],
+      "searchRequiredTerms": [
+        "greystone+60+fireplace",
+        "ccd+0009757"
       ]
     }
   ],

@@ -3,8 +3,8 @@ import corpus from "../data/corpus.json";
 import { buildSymptomSearchIndex, lookupSymptomGuides, summarizeCorpus } from "./corpus";
 
 const expectedEntryCount = 864;
-const expectedSourceCount = 1108;
-const expectedSymptomCount = 941;
+const expectedSourceCount = 1138;
+const expectedSymptomCount = 971;
 
 const officialGapBatch = [
   ["dometic-cfx2-americas-operating-manual-112266", "https://media.dometic.com/externalassets/07-0703-070327-070327003_97000040397_112266.pdf", "dometic-cfx2-model-control-battery-prep", ["dometic+cfx2+97000040397", "cfx2+112266"], "dometic cfx2 97000040397 model display battery prep"],

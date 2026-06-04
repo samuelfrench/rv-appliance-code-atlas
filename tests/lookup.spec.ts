@@ -3410,3 +3410,63 @@ test("lookup surfaces the official source continuation batch without generic hij
   expect(consoleErrors).toEqual([]);
   expect(pageErrors).toEqual([]);
 });
+
+test("lookup surfaces the official source control-router batch without generic hijacks", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    ["dometic harrier set temperature 895b", "/symptoms/dometic-harrier-set-temperature-control-prep/"],
+    ["dometic harrier fan setting manually", "/symptoms/dometic-harrier-fan-setting-control-prep/"],
+    ["dometic ibis roof air conditioner does not switch on dc8e", "/symptoms/dometic-ibis-roof-ac-does-not-switch-on-service-prep/"],
+    ["dometic brisk zone control 517a", "/symptoms/dometic-brisk-zone-control-prep/"],
+    ["dometic cfx2 display brightness 3715", "/symptoms/dometic-cfx2-display-brightness-control-prep/"],
+    ["norcold thetford refrigeration model router", "/symptoms/norcold-thetford-refrigeration-model-router-prep/"],
+    ["thetford all products product range", "/symptoms/thetford-us-product-range-router-prep/"],
+    ["coleman 8330 331 335 multiple zone thermostat", "/symptoms/coleman-8330-multiple-zone-thermostat-prep/"],
+    ["maxxair skymaxx 97550 97510", "/symptoms/maxxair-skymaxx-97550-97510-prep/"],
+    ["greystone 60 built in electric fireplace ccd 0009757", "/symptoms/greystone-60-fireplace-control-prep/"],
+  ] as const;
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+  }
+
+  for (const query of [
+    "set temperature",
+    "fan setting",
+    "does not switch on",
+    "zone control",
+    "display brightness",
+    "product range",
+    "thermostat",
+    "maxxshade",
+    "skymaxx",
+    "fireplace",
+  ]) {
+    await searchbox.fill(query);
+    for (const [, href] of cases) {
+      await expect(lookupResults.locator(`a[href="${href}"]`), `${query} -> ${href}`).toHaveCount(0);
+    }
+  }
+
+  await searchbox.fill("dometic harrier set temperature 895b");
+  const harrier = lookupResults.locator('a[href="/symptoms/dometic-harrier-set-temperature-control-prep/"]');
+  await expect(harrier).toBeVisible();
+  await harrier.click();
+  await expect(page.getByRole("heading", { name: "Dometic Harrier Set Temperature Control Prep" })).toBeVisible();
+  await expect(page.getByText(/Record the Harrier model/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
