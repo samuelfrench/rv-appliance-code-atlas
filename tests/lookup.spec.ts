@@ -3346,3 +3346,67 @@ test("lookup surfaces the next official source gap batch without generic hijacks
   expect(consoleErrors).toEqual([]);
   expect(pageErrors).toEqual([]);
 });
+
+test("lookup surfaces the official source continuation batch without generic hijacks", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    ["dometic cfx3 warning xx display", "/symptoms/dometic-cfx3-warning-xx-service-prep/"],
+    ["dometic cfx3 defrost storage", "/symptoms/dometic-cfx3-defrost-storage-prep/"],
+    ["dometic brisk thermostat control panel", "/symptoms/dometic-brisk-thermostat-control-identification-prep/"],
+    ["dometic harrier remote batteries", "/symptoms/dometic-harrier-remote-battery-prep/"],
+    ["coleman 7330 wall thermostat", "/symptoms/coleman-7330-wall-thermostat-model-state-prep/"],
+    ["coleman 7330d3371 7330d3381 thermostat", "/symptoms/coleman-7330d-digital-thermostat-face-prep/"],
+    ["maxxair mini maxfan mini plus", "/symptoms/maxxair-mini-model-control-service-prep/"],
+    ["suburban slide in cooktops", "/symptoms/suburban-slide-in-cooktops-model-prep/"],
+    ["aqua hot 250p owner manual", "/symptoms/aquahot-250p-owner-manual-service-prep/"],
+    ["norcold n2175 parts list 641001", "/symptoms/norcold-n2175-parts-list-model-prep/"],
+  ] as const;
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+  }
+
+  for (const query of [
+    "warning xx",
+    "display",
+    "display not responding",
+    "defrost",
+    "thermostat",
+    "nearest service provider",
+    "remote batteries",
+    "mini maxxfan",
+    "maxfan mini plus",
+    "cooktops",
+    "owner manual",
+    "parts list",
+    "e4",
+    "not working",
+  ]) {
+    await searchbox.fill(query);
+    for (const [, href] of cases) {
+      await expect(lookupResults.locator(`a[href="${href}"]`), `${query} -> ${href}`).toHaveCount(0);
+    }
+  }
+
+  await searchbox.fill("dometic cfx3 warning xx display");
+  const warningRouter = lookupResults.locator('a[href="/symptoms/dometic-cfx3-warning-xx-service-prep/"]');
+  await expect(warningRouter).toBeVisible();
+  await warningRouter.click();
+  await expect(page.getByRole("heading", { name: "Dometic CFX3 Warning XX Service Prep" })).toBeVisible();
+  await expect(page.getByText(/Record the CFX3 model/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});

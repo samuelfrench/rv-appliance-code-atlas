@@ -2,7 +2,7 @@
   "site": {
     "name": "RV Appliance Code Atlas",
     "baseUrl": "https://rvappliancefaultcodes.com",
-    "generatedAt": "2026-06-04T01:26:19-05:00",
+    "generatedAt": "2026-06-04T02:22:09-05:00",
     "safetyBoundary": "Use this atlas to identify likely meaning and prepare for service. Shut off power, LP gas, fuel, or water when a listed appliance condition involves flame, gas smell, exhaust, generator shutdown, high temperature, moving jacks/slides, refrigerant, 120 VAC, control boards, repeated ignition failure, or a persistent lockout. Call the appliance maker, RV dealer, or a qualified RV technician for repair.",
     "searchConsole": {
       "propertyType": "URL_PREFIX",
@@ -14,7 +14,7 @@
     "indexNow": {
       "key": "2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18",
       "keyLocation": "https://rvappliancefaultcodes.com/2653afc6f17313e900711f1d3eb1dcabad06e943193bf141716fcd4013f65f18.txt",
-      "submittedAt": "2026-06-04T06:49:35.586Z"
+      "submittedAt": null
     },
     "analytics": {
       "provider": "GA4",
@@ -8647,6 +8647,246 @@
       "brand": "Onan",
       "title": "Cummins Onan P9500DF EFI Owner Manual 2025",
       "url": "https://www.cummins.com/sites/default/files/2025-04/p9500df-efi-owners-manual.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx3-warning-xx-display-router",
+      "brand": "Dometic",
+      "title": "Dometic CFX3 Warning XX Display Support",
+      "url": "https://support.dometic.com/en/cfx3-coolers/What-does-the-WARNING-XX-mean-on-my-cooler-display-cff4",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx3-display-use-control-prep",
+      "brand": "Dometic",
+      "title": "Dometic CFX3 Display Use Support",
+      "url": "https://support.dometic.com/en/cfx3-coolers/How-to-use-the-display-c2c3",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx3-defrost-storage-prep",
+      "brand": "Dometic",
+      "title": "Dometic CFX3 Defrost Cooler Support",
+      "url": "https://support.dometic.com/en/cfx3-coolers/How-to-defrost-the-cooler-77f3",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx3-shutdown-e31-service-prep",
+      "brand": "Dometic",
+      "title": "Dometic CFX3 Unexpected Shutdown E31 Support",
+      "url": "https://support.dometic.com/en/cfx3-coolers/My-cooler-shuts-down-unexpectedly-80fe",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx3-power-draw-runtime-prep",
+      "brand": "Dometic",
+      "title": "Dometic CFX3 Power Draw Runtime Support",
+      "url": "https://support.dometic.com/en/cfx3-coolers/How-do-I-calculate-how-much-power-a-CFX3-will-draw-4b40",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx3-display-keystrokes-service-prep",
+      "brand": "Dometic",
+      "title": "Dometic CFX3 Display Keystrokes Support",
+      "url": "https://support.dometic.com/en/cfx3-coolers/My-display-does-not-respond-to-keystrokes-852c",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx3-ice-maker-clean-dry-storage-prep",
+      "brand": "Dometic",
+      "title": "Dometic CFX3 Ice Maker Clean and Dry Support",
+      "url": "https://support.dometic.com/en/cfx3-coolers/How-to-clean-and-dry-the-ice-maker-ea42",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx3-temperature-units-control-prep",
+      "brand": "Dometic",
+      "title": "Dometic CFX3 Temperature Units Support",
+      "url": "https://support.dometic.com/en/cfx3-coolers/How-to-set-the-temperature-units-501d",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-brisk-thermostat-control-panel-prep",
+      "brand": "Dometic",
+      "title": "Dometic Brisk Thermostat Control Panel Support",
+      "url": "https://support.dometic.com/en/brisk-ac/How-to-use-the-control-panel-on-thermostat-d66d",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-brisk-temperature-format-control-prep",
+      "brand": "Dometic",
+      "title": "Dometic Brisk Temperature Format Support",
+      "url": "https://support.dometic.com/en/brisk-ac/How-to-change-Temperature-Format-74ae",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-brisk-service-provider-routing-prep",
+      "brand": "Dometic",
+      "title": "Dometic Brisk Nearest Service Provider Support",
+      "url": "https://support.dometic.com/en/brisk-ac/Where-can-I-find-the-nearest-service-provider-bb4c",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-freshjet-remote-elements-control-prep",
+      "brand": "Dometic",
+      "title": "Dometic FreshJet Remote Control Elements Support",
+      "url": "https://support.dometic.com/en/freshjet-ac/What-are-the-functionalities-of-the-elements-on-the-remote-control-28f4",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-harrier-return-air-filter-prep",
+      "brand": "Dometic",
+      "title": "Dometic Harrier Return Air Filter Support",
+      "url": "https://support.dometic.com/en/harrier-ac/What-should-I-do-to-make-sure-the-filter-on-my-rooftop-unit-is-clean-for-maximum-efficiency-2dad",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-harrier-remote-battery-prep",
+      "brand": "Dometic",
+      "title": "Dometic Harrier Remote Control Batteries Support",
+      "url": "https://support.dometic.com/en/harrier-ac/How-to-Replace-the-remote-control-batteries-fe1e",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx3-warning-32-fan-overcurrent-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX3 Warning 32 Fan Overcurrent Support",
+      "url": "https://support.dometic.com/en/cfx3-coolers/WARNING-32-Fan-overcurrent-5720",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx3-warning-35-controller-overtemperature-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX3 Warning 35 Controller Overtemperature Support",
+      "url": "https://support.dometic.com/en/cfx3-coolers/WARNING-35-Controller-overtemperature-8728",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx3-warning-0343-communication-error-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX3 Warning 0343 Communication Error Support",
+      "url": "https://support.dometic.com/en/cfx3-coolers/WARNING-0343-Communication-error-523c",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cff-battery-monitor-mode-support",
+      "brand": "Dometic",
+      "title": "Dometic CFF Battery Monitor Mode Support",
+      "url": "https://support.dometic.com/en/cff-coolers/How-to-set-the-battery-monitor-mode-3d3f",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "coleman-7330-wall-thermostat-1976-190",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 7330 Wall Thermostat 1976-190",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-190.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "maxxair-mini-maxxfan-mini-iom-10d03708z",
+      "brand": "MaxxAir",
+      "title": "MaxxAir Mini MaxFan Mini and Mini Plus IOM 10D03708Z",
+      "url": "https://library.maxxair.com/wp-content/uploads/2023/03/10d03708z_maxxair-mini-maxxfan-mini-mini-plus_iom-05-2019-1.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "suburban-slide-in-cooktops-product-family",
+      "brand": "Suburban",
+      "title": "Suburban Slide-In Cooktops Product Family",
+      "url": "https://suburbanrv.com/kitchen-galley/cooktops/slide-in-cooktops/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "suburban-drop-in-cooktops-product-family",
+      "brand": "Suburban",
+      "title": "Suburban Drop-In Cooktops Product Family",
+      "url": "https://suburbanrv.com/kitchen-galley/cooktops/drop-in-cooktops/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "aquahot-250p-owner-manual",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot 200/250P Owner Manual LTE-300-000",
+      "url": "https://www.aquahot.com/files/owners_manual/200_250P_Owners_Manual_LTE-300-000.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "norcold-n2175-parts-list-641001",
+      "brand": "Norcold/Thetford",
+      "title": "Norcold N2175 Parts List 641001",
+      "url": "https://www.thetford.com/app/uploads/2024/09/641001_PL_N2175_082025.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-fcr20dcafa-not-working-video",
+      "brand": "Furrion/Lippert",
+      "title": "Furrion FCR20DCAFA Refrigerator On But Not Working Video",
+      "url": "https://support.lci1.com/videos/troubleshoot-refrigerator-is-on-but-not-working-on-fcr20dcafa-furrion-refrigerator",
+      "type": "manufacturer-video",
+      "official": true
+    },
+    {
+      "id": "coleman-7330d-wall-thermostat-1976-192",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 7330D Digital Wall Thermostat 1976-192",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-192.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "coleman-9330-9530-ir-thermostat-router",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach 9330/9530 IR Wall Thermostat Router",
+      "url": "https://library.coleman-mach.com/manual/model-9330-9530-ir-wall-thermostat-9330-ir-wall-thermostat-w-remote-transmitter/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "coleman-extended-parts-warranty-1976-338",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Extended Parts Warranty 1976-338",
+      "url": "https://library.coleman-mach.com/wp-content/uploads/2023/04/1976-338.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "maxxair-mini-repair-parts-r700",
+      "brand": "MaxxAir",
+      "title": "MaxxAir Mini and MaxFan Mini Repair Parts List R-700",
+      "url": "https://library.maxxair.com/wp-content/uploads/2023/03/r-700_mxr-mini-mxfan-mini-mini-plus-mini-deluxe-repair-parts-list-01-27-2020.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "maxxair-vent-covers-unimaxx-maxxshade-10d50905z",
+      "brand": "MaxxAir",
+      "title": "MaxxAir Vent Covers UniMaxx MaxxShade MaxxFan IOM 10D50905Z",
+      "url": "https://library.maxxair.com/wp-content/uploads/2023/03/axl-mxr_10d50905z_vent-covers-unimaxx-maxxshade-maxxfan-08-2018.pdf",
       "type": "manufacturer-manual",
       "official": true
     }
@@ -42533,7 +42773,37 @@
         "furrion-21-chef-electric-oven-ccd0005681",
         "furrion-13-mini-rangehood-troubleshooting-ccd0008524",
         "onan-p5000idf-efi-owner-manual-2025",
-        "onan-p9500df-efi-owner-manual-2025"
+        "onan-p9500df-efi-owner-manual-2025",
+        "dometic-cfx3-warning-xx-display-router",
+        "dometic-cfx3-display-use-control-prep",
+        "dometic-cfx3-defrost-storage-prep",
+        "dometic-cfx3-shutdown-e31-service-prep",
+        "dometic-cfx3-power-draw-runtime-prep",
+        "dometic-cfx3-display-keystrokes-service-prep",
+        "dometic-cfx3-ice-maker-clean-dry-storage-prep",
+        "dometic-cfx3-temperature-units-control-prep",
+        "dometic-brisk-thermostat-control-panel-prep",
+        "dometic-brisk-temperature-format-control-prep",
+        "dometic-brisk-service-provider-routing-prep",
+        "dometic-freshjet-remote-elements-control-prep",
+        "dometic-harrier-return-air-filter-prep",
+        "dometic-harrier-remote-battery-prep",
+        "dometic-cfx3-warning-32-fan-overcurrent-support",
+        "dometic-cfx3-warning-35-controller-overtemperature-support",
+        "dometic-cfx3-warning-0343-communication-error-support",
+        "dometic-cff-battery-monitor-mode-support",
+        "coleman-7330-wall-thermostat-1976-190",
+        "maxxair-mini-maxxfan-mini-iom-10d03708z",
+        "suburban-slide-in-cooktops-product-family",
+        "suburban-drop-in-cooktops-product-family",
+        "aquahot-250p-owner-manual",
+        "norcold-n2175-parts-list-641001",
+        "furrion-fcr20dcafa-not-working-video",
+        "coleman-7330d-wall-thermostat-1976-192",
+        "coleman-9330-9530-ir-thermostat-router",
+        "coleman-extended-parts-warranty-1976-338",
+        "maxxair-mini-repair-parts-r700",
+        "maxxair-vent-covers-unimaxx-maxxshade-10d50905z"
       ]
     },
     {
@@ -61497,6 +61767,668 @@
       "searchRequiredTerms": [
         "onan+p9500df+efi",
         "p9500df+vft"
+      ]
+    },
+    {
+      "id": "dometic-cfx3-warning-xx-service-prep",
+      "title": "Dometic CFX3 Warning XX Service Prep",
+      "summary": "Use this Dometic CFX3 Warning XX support page to identify the display message and prepare service details.",
+      "safeChecklist": [
+        "Record the CFX3 model, visible serial or data label, display message, power source, temperature setting, battery-monitor state, app state if used, and the full Warning XX text shown on the cooler display.",
+        "Save photos of the display, model label, normal owner-facing controls, and power-source setup from normal owner access.",
+        "Move food or drinks if temperature is unsafe, stop using the cooler for repeated warnings, overheating, or unsafe power behavior, then contact Dometic support or qualified RV refrigeration service."
+      ],
+      "sourceIds": [
+        "dometic-cfx3-warning-xx-display-router"
+      ],
+      "searchAliases": [
+        "dometic cfx3 warning xx display",
+        "dometic cfx3 cooler warning code message prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+cfx3+warning+xx",
+        "cfx3+cooler+display"
+      ],
+      "slug": "dometic-cfx3-warning-xx-service-prep"
+    },
+    {
+      "id": "dometic-cfx3-display-buttons-state-prep",
+      "title": "Dometic CFX3 Display Buttons State Prep",
+      "summary": "Use this Dometic CFX3 display support page to record owner-facing button and display state before support.",
+      "safeChecklist": [
+        "Record the CFX3 model, visible serial or data label, display message, power source, temperature setting, battery-monitor state, app state if used, and the display buttons, lock state, set temperature, and response to normal owner-facing controls.",
+        "Save photos of the display, model label, normal owner-facing controls, and power-source setup from normal owner access.",
+        "Move food or drinks if temperature is unsafe, stop using the cooler for repeated warnings, overheating, or unsafe power behavior, then contact Dometic support or qualified RV refrigeration service."
+      ],
+      "sourceIds": [
+        "dometic-cfx3-display-use-control-prep"
+      ],
+      "searchAliases": [
+        "dometic cfx3 display buttons state",
+        "dometic cfx3 how to use display buttons"
+      ],
+      "searchRequiredTerms": [
+        "dometic+cfx3+display",
+        "cfx3+buttons"
+      ],
+      "slug": "dometic-cfx3-display-buttons-state-prep"
+    },
+    {
+      "id": "dometic-cfx3-defrost-storage-prep",
+      "title": "Dometic CFX3 Defrost Storage Prep",
+      "summary": "Use this Dometic CFX3 defrost support page to record ice, storage, and temperature facts before support.",
+      "safeChecklist": [
+        "Record the CFX3 model, visible serial or data label, display message, power source, temperature setting, battery-monitor state, app state if used, and ice buildup, defrost timing, storage state, and recent cooler contents.",
+        "Save photos of the display, model label, normal owner-facing controls, and power-source setup from normal owner access.",
+        "Move food or drinks if temperature is unsafe, stop using the cooler for repeated warnings, overheating, or unsafe power behavior, then contact Dometic support or qualified RV refrigeration service."
+      ],
+      "sourceIds": [
+        "dometic-cfx3-defrost-storage-prep"
+      ],
+      "searchAliases": [
+        "dometic cfx3 defrost storage",
+        "dometic cfx3 how to defrost cooler"
+      ],
+      "searchRequiredTerms": [
+        "dometic+cfx3+defrost",
+        "cfx3+storage"
+      ],
+      "slug": "dometic-cfx3-defrost-storage-prep"
+    },
+    {
+      "id": "dometic-cfx3-shuts-down-e31-low-voltage-prep",
+      "title": "Dometic CFX3 Shuts Down E31 Low Voltage Prep",
+      "summary": "Use this Dometic CFX3 shutdown support page to record E31 and low-voltage facts before support.",
+      "safeChecklist": [
+        "Record the CFX3 model, visible serial or data label, display message, power source, temperature setting, battery-monitor state, app state if used, and shutdown timing, E31 message if shown, battery source, vehicle state, and any extension or adapter in use.",
+        "Save photos of the display, model label, normal owner-facing controls, and power-source setup from normal owner access.",
+        "Move food or drinks if temperature is unsafe, stop using the cooler for repeated warnings, overheating, or unsafe power behavior, then contact Dometic support or qualified RV refrigeration service."
+      ],
+      "sourceIds": [
+        "dometic-cfx3-shutdown-e31-service-prep"
+      ],
+      "searchAliases": [
+        "dometic cfx3 shuts down e31 low voltage",
+        "dometic cfx3 cooler shuts down unexpectedly"
+      ],
+      "searchRequiredTerms": [
+        "dometic+cfx3+shuts+down",
+        "cfx3+e31"
+      ],
+      "slug": "dometic-cfx3-shuts-down-e31-low-voltage-prep"
+    },
+    {
+      "id": "dometic-cfx3-power-runtime-prep",
+      "title": "Dometic CFX3 Power Runtime Prep",
+      "summary": "Use this Dometic CFX3 power-draw page to record power-source and runtime facts before support.",
+      "safeChecklist": [
+        "Record the CFX3 model, visible serial or data label, display message, power source, temperature setting, battery-monitor state, app state if used, and battery size, expected runtime, temperature setting, ambient heat, and observed runtime.",
+        "Save photos of the display, model label, normal owner-facing controls, and power-source setup from normal owner access.",
+        "Move food or drinks if temperature is unsafe, stop using the cooler for repeated warnings, overheating, or unsafe power behavior, then contact Dometic support or qualified RV refrigeration service."
+      ],
+      "sourceIds": [
+        "dometic-cfx3-power-draw-runtime-prep"
+      ],
+      "searchAliases": [
+        "dometic cfx3 power draw runtime",
+        "dometic cfx3 calculate power draw"
+      ],
+      "searchRequiredTerms": [
+        "dometic+cfx3+power+draw",
+        "cfx3+runtime"
+      ],
+      "slug": "dometic-cfx3-power-runtime-prep"
+    },
+    {
+      "id": "dometic-cfx3-display-not-responding-prep",
+      "title": "Dometic CFX3 Display Not Responding Prep",
+      "summary": "Use this Dometic CFX3 display support page to record an unresponsive display before support.",
+      "safeChecklist": [
+        "Record the CFX3 model, visible serial or data label, display message, power source, temperature setting, battery-monitor state, app state if used, and display response, keystroke behavior, lock state, power source, and app status if used.",
+        "Save photos of the display, model label, normal owner-facing controls, and power-source setup from normal owner access.",
+        "Move food or drinks if temperature is unsafe, stop using the cooler for repeated warnings, overheating, or unsafe power behavior, then contact Dometic support or qualified RV refrigeration service."
+      ],
+      "sourceIds": [
+        "dometic-cfx3-display-keystrokes-service-prep"
+      ],
+      "searchAliases": [
+        "dometic cfx3 display not responding keystrokes",
+        "dometic cfx3 display does not respond"
+      ],
+      "searchRequiredTerms": [
+        "dometic+cfx3+display+keystrokes",
+        "dometic+cfx3+display+not+responding"
+      ],
+      "slug": "dometic-cfx3-display-not-responding-prep"
+    },
+    {
+      "id": "dometic-cfx3-ice-maker-storage-prep",
+      "title": "Dometic CFX3 Ice Maker Storage Prep",
+      "summary": "Use this Dometic CFX3 ice-maker page to record cleaning, drying, and storage state before support.",
+      "safeChecklist": [
+        "Record the CFX3 model, visible serial or data label, display message, power source, temperature setting, battery-monitor state, app state if used, and ice-maker use, cleaning and drying state, storage timing, and any odor or moisture concern.",
+        "Save photos of the display, model label, normal owner-facing controls, and power-source setup from normal owner access.",
+        "Move food or drinks if temperature is unsafe, stop using the cooler for repeated warnings, overheating, or unsafe power behavior, then contact Dometic support or qualified RV refrigeration service."
+      ],
+      "sourceIds": [
+        "dometic-cfx3-ice-maker-clean-dry-storage-prep"
+      ],
+      "searchAliases": [
+        "dometic cfx3 ice maker clean dry",
+        "dometic cfx3 clean and dry ice maker"
+      ],
+      "searchRequiredTerms": [
+        "dometic+cfx3+ice+maker",
+        "clean+dry+ice+maker"
+      ],
+      "slug": "dometic-cfx3-ice-maker-storage-prep"
+    },
+    {
+      "id": "dometic-cfx3-temperature-units-prep",
+      "title": "Dometic CFX3 Temperature Units Prep",
+      "summary": "Use this Dometic CFX3 temperature-units page to record Celsius/Fahrenheit and display-setting details.",
+      "safeChecklist": [
+        "Record the CFX3 model, visible serial or data label, display message, power source, temperature setting, battery-monitor state, app state if used, and temperature-unit setting, displayed temperature, target temperature, and app setting if used.",
+        "Save photos of the display, model label, normal owner-facing controls, and power-source setup from normal owner access.",
+        "Move food or drinks if temperature is unsafe, stop using the cooler for repeated warnings, overheating, or unsafe power behavior, then contact Dometic support or qualified RV refrigeration service."
+      ],
+      "sourceIds": [
+        "dometic-cfx3-temperature-units-control-prep"
+      ],
+      "searchAliases": [
+        "dometic cfx3 temperature units celsius fahrenheit",
+        "dometic cfx3 set temperature units"
+      ],
+      "searchRequiredTerms": [
+        "dometic+cfx3+temperature+units",
+        "cfx3+celsius+fahrenheit"
+      ],
+      "slug": "dometic-cfx3-temperature-units-prep"
+    },
+    {
+      "id": "dometic-brisk-thermostat-control-identification-prep",
+      "title": "Dometic Brisk Thermostat Control Identification Prep",
+      "summary": "Use this Dometic Brisk thermostat page to record control-panel state and model context before support.",
+      "safeChecklist": [
+        "Record the Brisk air conditioner model, thermostat or remote display state, mode, fan setting, temperature setting, recent weather, filter state if visible, and control-panel or thermostat behavior.",
+        "Save photos of the thermostat or remote display, owner-facing controls, and any visible data label or paperwork from normal owner access.",
+        "Stop the air conditioner for water entry, burning smell, repeated shutdown, or unsafe power behavior, then contact Dometic support or qualified RV HVAC service."
+      ],
+      "sourceIds": [
+        "dometic-brisk-thermostat-control-panel-prep"
+      ],
+      "searchAliases": [
+        "dometic brisk thermostat control panel",
+        "dometic brisk how to use thermostat control panel"
+      ],
+      "searchRequiredTerms": [
+        "dometic+brisk+thermostat",
+        "brisk+control+panel"
+      ],
+      "slug": "dometic-brisk-thermostat-control-identification-prep"
+    },
+    {
+      "id": "dometic-brisk-temperature-format-prep",
+      "title": "Dometic Brisk Temperature Format Prep",
+      "summary": "Use this Dometic Brisk temperature-format page to record Fahrenheit/Celsius display state before support.",
+      "safeChecklist": [
+        "Record the Brisk air conditioner model, thermostat or remote display state, mode, fan setting, temperature setting, recent weather, filter state if visible, and temperature-format setting and temperature-display mismatch.",
+        "Save photos of the thermostat or remote display, owner-facing controls, and any visible data label or paperwork from normal owner access.",
+        "Stop the air conditioner for water entry, burning smell, repeated shutdown, or unsafe power behavior, then contact Dometic support or qualified RV HVAC service."
+      ],
+      "sourceIds": [
+        "dometic-brisk-temperature-format-control-prep"
+      ],
+      "searchAliases": [
+        "dometic brisk temperature format fahrenheit celsius",
+        "dometic brisk change temperature format"
+      ],
+      "searchRequiredTerms": [
+        "dometic+brisk+temperature+format",
+        "brisk+fahrenheit+celsius"
+      ],
+      "slug": "dometic-brisk-temperature-format-prep"
+    },
+    {
+      "id": "dometic-brisk-service-provider-routing-prep",
+      "title": "Dometic Brisk Service Provider Routing Prep",
+      "summary": "Use this Dometic Brisk service-provider page to collect details before contacting qualified support.",
+      "safeChecklist": [
+        "Record the Brisk air conditioner model, thermostat or remote display state, mode, fan setting, temperature setting, recent weather, filter state if visible, and nearest-service-provider routing details, model, purchase date, and symptom summary.",
+        "Save photos of the thermostat or remote display, owner-facing controls, and any visible data label or paperwork from normal owner access.",
+        "Stop the air conditioner for water entry, burning smell, repeated shutdown, or unsafe power behavior, then contact Dometic support or qualified RV HVAC service."
+      ],
+      "sourceIds": [
+        "dometic-brisk-service-provider-routing-prep"
+      ],
+      "searchAliases": [
+        "dometic brisk nearest service provider",
+        "dometic brisk service provider routing prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+brisk+service+provider",
+        "dometic+brisk+nearest+service+provider"
+      ],
+      "slug": "dometic-brisk-service-provider-routing-prep"
+    },
+    {
+      "id": "dometic-freshjet-remote-symbols-prep",
+      "title": "Dometic FreshJet Remote Control Symbols Prep",
+      "summary": "Use this Dometic FreshJet remote-control page to record symbols, modes, and control response before support.",
+      "safeChecklist": [
+        "Record the FreshJet air conditioner model, thermostat or remote display state, mode, fan setting, temperature setting, recent weather, filter state if visible, and remote symbol, mode, fan setting, and control response.",
+        "Save photos of the thermostat or remote display, owner-facing controls, and any visible data label or paperwork from normal owner access.",
+        "Stop the air conditioner for water entry, burning smell, repeated shutdown, or unsafe power behavior, then contact Dometic support or qualified RV HVAC service."
+      ],
+      "sourceIds": [
+        "dometic-freshjet-remote-elements-control-prep"
+      ],
+      "searchAliases": [
+        "dometic freshjet remote control symbols",
+        "freshjet remote control elements functionality"
+      ],
+      "searchRequiredTerms": [
+        "dometic+freshjet+remote+control",
+        "freshjet+remote+symbols"
+      ],
+      "slug": "dometic-freshjet-remote-symbols-prep"
+    },
+    {
+      "id": "dometic-harrier-return-air-filter-prep",
+      "title": "Dometic Harrier Return Air Filter Prep",
+      "summary": "Use this Dometic Harrier filter page to record accessible filter and airflow facts before support.",
+      "safeChecklist": [
+        "Record the Harrier air conditioner model, thermostat or remote display state, mode, fan setting, temperature setting, recent weather, filter state if visible, and accessible return-air filter condition and airflow concern.",
+        "Save photos of the thermostat or remote display, owner-facing controls, and any visible data label or paperwork from normal owner access.",
+        "Stop the air conditioner for water entry, burning smell, repeated shutdown, or unsafe power behavior, then contact Dometic support or qualified RV HVAC service."
+      ],
+      "sourceIds": [
+        "dometic-harrier-return-air-filter-prep"
+      ],
+      "searchAliases": [
+        "dometic harrier filter maximum efficiency",
+        "dometic harrier return air filter prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+harrier+filter",
+        "harrier+maximum+efficiency"
+      ],
+      "slug": "dometic-harrier-return-air-filter-prep"
+    },
+    {
+      "id": "dometic-harrier-remote-battery-prep",
+      "title": "Dometic Harrier Remote Battery Prep",
+      "summary": "Use this Dometic Harrier remote-battery page to record remote-control battery and response details.",
+      "safeChecklist": [
+        "Record the Harrier air conditioner model, thermostat or remote display state, mode, fan setting, temperature setting, recent weather, filter state if visible, and remote-control battery state, button response, and display response.",
+        "Save photos of the thermostat or remote display, owner-facing controls, and any visible data label or paperwork from normal owner access.",
+        "Stop the air conditioner for water entry, burning smell, repeated shutdown, or unsafe power behavior, then contact Dometic support or qualified RV HVAC service."
+      ],
+      "sourceIds": [
+        "dometic-harrier-remote-battery-prep"
+      ],
+      "searchAliases": [
+        "dometic harrier remote control batteries",
+        "dometic harrier remote batteries prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+harrier+remote",
+        "remote+control+batteries"
+      ],
+      "slug": "dometic-harrier-remote-battery-prep"
+    },
+    {
+      "id": "dometic-cfx3-warning-32-fan-service-prep",
+      "title": "Dometic CFX3 Warning 32 Fan Service Prep",
+      "summary": "Use this Dometic CFX3 Warning 32 page to record fan-overcurrent display details before support.",
+      "safeChecklist": [
+        "Record the CFX3 model, visible serial or data label, display message, power source, temperature setting, battery-monitor state, app state if used, and Warning 32 fan-overcurrent message, operating temperature, ventilation around the cooler, and load state.",
+        "Save photos of the display, model label, normal owner-facing controls, and power-source setup from normal owner access.",
+        "Move food or drinks if temperature is unsafe, stop using the cooler for repeated warnings, overheating, or unsafe power behavior, then contact Dometic support or qualified RV refrigeration service."
+      ],
+      "sourceIds": [
+        "dometic-cfx3-warning-32-fan-overcurrent-support"
+      ],
+      "searchAliases": [
+        "dometic cfx3 warning 32 fan overcurrent",
+        "dometic cfx3 fan overcurrent warning 32"
+      ],
+      "searchRequiredTerms": [
+        "dometic+cfx3+warning+32",
+        "fan+overcurrent+cfx3"
+      ],
+      "slug": "dometic-cfx3-warning-32-fan-service-prep"
+    },
+    {
+      "id": "dometic-cfx3-warning-35-controller-temperature-prep",
+      "title": "Dometic CFX3 Warning 35 Controller Temperature Prep",
+      "summary": "Use this Dometic CFX3 Warning 35 page to record controller-temperature display details before support.",
+      "safeChecklist": [
+        "Record the CFX3 model, visible serial or data label, display message, power source, temperature setting, battery-monitor state, app state if used, and Warning 35 controller-temperature message, ambient heat, ventilation around the cooler, and recent runtime.",
+        "Save photos of the display, model label, normal owner-facing controls, and power-source setup from normal owner access.",
+        "Move food or drinks if temperature is unsafe, stop using the cooler for repeated warnings, overheating, or unsafe power behavior, then contact Dometic support or qualified RV refrigeration service."
+      ],
+      "sourceIds": [
+        "dometic-cfx3-warning-35-controller-overtemperature-support"
+      ],
+      "searchAliases": [
+        "dometic cfx3 warning 35 controller overtemperature",
+        "dometic cfx3 controller overtemperature warning 35"
+      ],
+      "searchRequiredTerms": [
+        "dometic+cfx3+warning+35",
+        "controller+overtemperature+cfx3"
+      ],
+      "slug": "dometic-cfx3-warning-35-controller-temperature-prep"
+    },
+    {
+      "id": "dometic-cfx3-warning-0343-communication-prep",
+      "title": "Dometic CFX3 Warning 0343 Communication Prep",
+      "summary": "Use this Dometic CFX3 Warning 0343 page to record communication-error display details before support.",
+      "safeChecklist": [
+        "Record the CFX3 model, visible serial or data label, display message, power source, temperature setting, battery-monitor state, app state if used, and Warning 0343 communication message, display state, app state if used, power source, and timing.",
+        "Save photos of the display, model label, normal owner-facing controls, and power-source setup from normal owner access.",
+        "Move food or drinks if temperature is unsafe, stop using the cooler for repeated warnings, overheating, or unsafe power behavior, then contact Dometic support or qualified RV refrigeration service."
+      ],
+      "sourceIds": [
+        "dometic-cfx3-warning-0343-communication-error-support"
+      ],
+      "searchAliases": [
+        "dometic cfx3 warning 0343 communication error",
+        "dometic cfx3 communication error 0343"
+      ],
+      "searchRequiredTerms": [
+        "dometic+cfx3+warning+0343",
+        "communication+error+cfx3"
+      ],
+      "slug": "dometic-cfx3-warning-0343-communication-prep"
+    },
+    {
+      "id": "dometic-cff-battery-monitor-mode-prep",
+      "title": "Dometic CFF Battery Monitor Mode Prep",
+      "summary": "Use this Dometic CFF battery-monitor page to record mode and power-source facts before support.",
+      "safeChecklist": [
+        "Record the CFF model, visible serial or data label, display message, power source, temperature setting, battery-monitor state, app state if used, and battery-monitor mode, power source, vehicle battery condition, and shutdown timing.",
+        "Save photos of the display, model label, normal owner-facing controls, and power-source setup from normal owner access.",
+        "Move food or drinks if temperature is unsafe, stop using the cooler for repeated warnings, overheating, or unsafe power behavior, then contact Dometic support or qualified RV refrigeration service."
+      ],
+      "sourceIds": [
+        "dometic-cff-battery-monitor-mode-support"
+      ],
+      "searchAliases": [
+        "dometic cff battery monitor mode",
+        "dometic cff set battery monitor mode"
+      ],
+      "searchRequiredTerms": [
+        "dometic+cff+battery+monitor",
+        "cff+battery+mode"
+      ],
+      "slug": "dometic-cff-battery-monitor-mode-prep"
+    },
+    {
+      "id": "coleman-7330-wall-thermostat-model-state-prep",
+      "title": "Coleman 7330 Wall Thermostat Model State Prep",
+      "summary": "Use this Coleman-Mach thermostat document to record 7330 thermostat face, mode, and response details before service.",
+      "safeChecklist": [
+        "Record the 7330 thermostat model, heat/cool/fan selections, temperature setting, response from each normal owner-facing switch, and coach equipment served by the thermostat.",
+        "Save photos of the thermostat face, model markings, owner paperwork, and current mode settings from normal owner access.",
+        "Do not replace, reconfigure, or service the thermostat yourself; contact Coleman-Mach support or qualified RV HVAC service for no response or repeated control failure."
+      ],
+      "sourceIds": [
+        "coleman-7330-wall-thermostat-1976-190"
+      ],
+      "searchAliases": [
+        "coleman 7330 wall thermostat heat cool fan",
+        "coleman 7330 thermostat model state prep"
+      ],
+      "searchRequiredTerms": [
+        "coleman+7330+thermostat",
+        "7330+wall+thermostat"
+      ],
+      "slug": "coleman-7330-wall-thermostat-model-state-prep"
+    },
+    {
+      "id": "maxxair-mini-model-control-service-prep",
+      "title": "MaxxAir Mini MaxFan Mini Model Control Service Prep",
+      "summary": "Use this MaxxAir Mini/MaxFan Mini IOM to record model, control, and service-call details before support.",
+      "safeChecklist": [
+        "Record the MaxxAir Mini, MaxFan Mini, or Mini Plus model, 3801 or 3851 family if visible, fan speed, lid position, switch or control response, and travel/weather state.",
+        "Save photos of the fan label if visible from normal owner access, owner-facing controls, lid position, and purchase paperwork.",
+        "Stop using the fan for smoke, burning smell, repeated shutdown, or unsafe power behavior, then contact MaxxAir support or qualified RV ventilation service."
+      ],
+      "sourceIds": [
+        "maxxair-mini-maxxfan-mini-iom-10d03708z"
+      ],
+      "searchAliases": [
+        "maxxair mini maxxfan mini plus 3801 3851",
+        "maxxair mini maxfan mini mini plus iom 10d03708z",
+        "maxxair mini maxfan mini plus"
+      ],
+      "searchRequiredTerms": [
+        "maxxair+mini+maxfan",
+        "maxxair+mini+maxxfan",
+        "3801+3851"
+      ],
+      "slug": "maxxair-mini-model-control-service-prep"
+    },
+    {
+      "id": "suburban-slide-in-cooktops-model-prep",
+      "title": "Suburban Slide-In Cooktops Model Prep",
+      "summary": "Use this Suburban slide-in cooktop page to record product-family, model, and cooking-symptom details before service.",
+      "safeChecklist": [
+        "Record the Suburban slide-in cooktop family, model or part number, control setting, flame condition if safely visible, odor concern, and recent use.",
+        "Save photos of the product label, controls, owner paperwork, and installation location from normal owner access.",
+        "Stop using the cooktop and shut off LP for gas odor, abnormal flame, overheating, or repeated ignition trouble, then contact Suburban support or qualified RV cooking-appliance service."
+      ],
+      "sourceIds": [
+        "suburban-slide-in-cooktops-product-family"
+      ],
+      "searchAliases": [
+        "suburban slide in cooktops",
+        "suburban cooktop slide in model prep"
+      ],
+      "searchRequiredTerms": [
+        "suburban+slide-in+cooktops",
+        "suburban+cooktop+slide-in"
+      ],
+      "slug": "suburban-slide-in-cooktops-model-prep"
+    },
+    {
+      "id": "suburban-drop-in-cooktops-model-prep",
+      "title": "Suburban Drop-In Cooktops Model Prep",
+      "summary": "Use this Suburban drop-in cooktop page to record product-family, model, and cooking-symptom details before service.",
+      "safeChecklist": [
+        "Record the Suburban drop-in cooktop family, model or part number, control setting, flame condition if safely visible, odor concern, and recent use.",
+        "Save photos of the product label, controls, owner paperwork, and counter location from normal owner access.",
+        "Stop using the cooktop and shut off LP for gas odor, abnormal flame, overheating, or repeated ignition trouble, then contact Suburban support or qualified RV cooking-appliance service."
+      ],
+      "sourceIds": [
+        "suburban-drop-in-cooktops-product-family"
+      ],
+      "searchAliases": [
+        "suburban drop in cooktops",
+        "suburban cooktop drop in model prep"
+      ],
+      "searchRequiredTerms": [
+        "suburban+drop-in+cooktops",
+        "suburban+cooktop+drop-in"
+      ],
+      "slug": "suburban-drop-in-cooktops-model-prep"
+    },
+    {
+      "id": "aquahot-250p-owner-manual-service-prep",
+      "title": "Aqua-Hot 250P Owner Manual Service Prep",
+      "summary": "Use this Aqua-Hot 200/250P owner manual to record model, control, heat, hot-water, and service-call details.",
+      "safeChecklist": [
+        "Record the Aqua-Hot 250P or 200/250P model, serial if visible, control status, hot-water behavior, cabin-heat zone behavior, leak or fume concern, and recent storage state.",
+        "Save photos of the model label, owner-facing controls, visible status indicators, and owner paperwork from normal owner access.",
+        "Shut the Aqua-Hot down for leaks, fumes, overheating, unsafe power behavior, or repeated shutdown, then contact Aqua-Hot support or authorized hydronic service."
+      ],
+      "sourceIds": [
+        "aquahot-250p-owner-manual"
+      ],
+      "searchAliases": [
+        "aqua hot 250p owner manual",
+        "aquahot 200 250p owners manual lte 300 000"
+      ],
+      "searchRequiredTerms": [
+        "aqua+hot+250p",
+        "200+250p+owners+manual"
+      ],
+      "slug": "aquahot-250p-owner-manual-service-prep"
+    },
+    {
+      "id": "norcold-n2175-parts-list-model-prep",
+      "title": "Norcold N2175 Parts List Model Prep",
+      "summary": "Use this Norcold N2175 parts list to record exact model and paperwork details before support.",
+      "safeChecklist": [
+        "Record the Norcold N2175 model, serial if visible, parts-list number 641001, purchase date if known, and the symptom you need help with.",
+        "Save photos of the model label, serial label, owner paperwork, and any exterior support sticker from normal owner access.",
+        "Do not perform internal refrigerator service from a parts list; contact Norcold/Thetford support or qualified RV refrigeration service with the recorded details."
+      ],
+      "sourceIds": [
+        "norcold-n2175-parts-list-641001"
+      ],
+      "searchAliases": [
+        "norcold n2175 parts list 641001",
+        "norcold n2175 model parts list prep"
+      ],
+      "searchRequiredTerms": [
+        "norcold+n2175+641001",
+        "n2175+parts+list"
+      ],
+      "slug": "norcold-n2175-parts-list-model-prep"
+    },
+    {
+      "id": "furrion-fcr20dcafa-not-working-service-prep",
+      "title": "Furrion FCR20DCAFA Not Working Service Prep",
+      "summary": "Use this Lippert Furrion FCR20DCAFA video page to record refrigerator-on-but-not-working details before support.",
+      "safeChecklist": [
+        "Record the FCR model, exact not-working symptom display, temperature setting, door position, power state, recent loading, ambient heat, and whether the refrigerator is on, display state, cooling state, and timing.",
+        "Save photos of the display, model label, owner-facing controls, and any visible support paperwork from normal owner access.",
+        "Move food if temperature is unsafe, stop using the refrigerator for repeated errors or unsafe power behavior, then contact Lippert support or qualified RV refrigeration service."
+      ],
+      "sourceIds": [
+        "furrion-fcr20dcafa-not-working-video"
+      ],
+      "searchAliases": [
+        "furrion fcr20dcafa refrigerator on not working",
+        "fcr20dcafa refrigerator on but not working service prep"
+      ],
+      "searchRequiredTerms": [
+        "furrion+fcr20dcafa",
+        "refrigerator+on+not+working"
+      ],
+      "slug": "furrion-fcr20dcafa-not-working-service-prep"
+    },
+    {
+      "id": "coleman-7330d-digital-thermostat-face-prep",
+      "slug": "coleman-7330d-digital-thermostat-face-prep",
+      "title": "Coleman 7330D Digital Thermostat Face Prep",
+      "summary": "Use this Coleman-Mach 7330D thermostat document to identify the digital thermostat face and record mode behavior before support.",
+      "safeChecklist": [
+        "Record the 7330D thermostat model, face marking such as 7330D3371 or 7330D3381, selected mode, fan state, temperature setting, and response from normal owner-facing controls.",
+        "Save photos of the thermostat face, model markings, display state, owner paperwork, and current mode settings from normal owner access.",
+        "Do not replace, reconfigure, or service the thermostat yourself; contact Coleman-Mach support or qualified RV HVAC service for no response or repeated control failure."
+      ],
+      "sourceIds": [
+        "coleman-7330d-wall-thermostat-1976-192"
+      ],
+      "searchAliases": [
+        "coleman 7330d3371 7330d3381 thermostat",
+        "coleman 7330d digital thermostat face prep"
+      ],
+      "searchRequiredTerms": [
+        "coleman+7330d+thermostat",
+        "7330d3371+7330d3381"
+      ]
+    },
+    {
+      "id": "coleman-ir-thermostat-remote-control-prep",
+      "slug": "coleman-ir-thermostat-remote-control-prep",
+      "title": "Coleman 9330 9530 IR Thermostat Remote Control Prep",
+      "summary": "Use this Coleman-Mach IR wall thermostat page to record thermostat, remote, and control-response details before support.",
+      "safeChecklist": [
+        "Record the Coleman 9330 or 9530 IR thermostat model, remote transmitter response, selected mode, fan state, temperature setting, and any display or no-response condition.",
+        "Save photos of the thermostat face, remote, visible model markings, display state, and owner paperwork from normal owner access.",
+        "Do not service receivers, boards, ceiling assemblies, or installed controls yourself; contact Coleman-Mach support or qualified RV HVAC service for repeated control failure."
+      ],
+      "sourceIds": [
+        "coleman-9330-9530-ir-thermostat-router"
+      ],
+      "searchAliases": [
+        "coleman 9330 9530 IR thermostat remote",
+        "coleman ir wall thermostat remote transmitter"
+      ],
+      "searchRequiredTerms": [
+        "coleman+9330+9530+remote",
+        "ir+wall+thermostat"
+      ]
+    },
+    {
+      "id": "coleman-mach-extended-parts-warranty-prep",
+      "slug": "coleman-mach-extended-parts-warranty-prep",
+      "title": "Coleman-Mach Extended Parts Warranty Prep",
+      "summary": "Use this Coleman-Mach extended-parts warranty document to collect paperwork facts before a warranty or service call.",
+      "safeChecklist": [
+        "Record the Coleman-Mach model, serial if visible, purchase date, installation date if known, dealer, symptom summary, and whether the extended-parts warranty document applies to your paperwork.",
+        "Save photos of the model label, receipt, warranty paperwork, owner manual, and service history from normal owner access.",
+        "Do not infer warranty approval from the checklist; contact Coleman-Mach support, the dealer, or qualified RV HVAC service with the recorded paperwork."
+      ],
+      "sourceIds": [
+        "coleman-extended-parts-warranty-1976-338"
+      ],
+      "searchAliases": [
+        "coleman mach extended parts warranty three years",
+        "coleman extended parts warranty 1976 338"
+      ],
+      "searchRequiredTerms": [
+        "coleman+extended+parts+warranty",
+        "three+year+limited"
+      ]
+    },
+    {
+      "id": "maxxair-mini-parts-label-service-prep",
+      "slug": "maxxair-mini-parts-label-service-prep",
+      "title": "MaxxAir Mini Parts Label Service Prep",
+      "summary": "Use this MaxxAir Mini repair-parts list to record model, label, and part-reference details for a technician.",
+      "safeChecklist": [
+        "Record the MaxxAir Mini, MaxFan Mini, Mini Plus, or Mini Deluxe model, visible part reference, fan response, lid state, and any label information you can see from normal owner access.",
+        "Save photos of the fan label if visible, owner-facing controls, lid position, purchase paperwork, and the part reference you need help identifying.",
+        "Do not replace motors, lids, controls, boards, or roof-mounted parts yourself; contact MaxxAir support or qualified RV ventilation service with the recorded details."
+      ],
+      "sourceIds": [
+        "maxxair-mini-repair-parts-r700"
+      ],
+      "searchAliases": [
+        "maxxair mini deluxe R-700 repair parts list",
+        "maxxair mini parts label service prep"
+      ],
+      "searchRequiredTerms": [
+        "maxxair+r700+mini",
+        "mini+repair+parts"
+      ]
+    },
+    {
+      "id": "maxxair-unimaxx-maxxshade-compatibility-prep",
+      "slug": "maxxair-unimaxx-maxxshade-compatibility-prep",
+      "title": "MaxxAir UniMaxx MaxxShade Compatibility Prep",
+      "summary": "Use this MaxxAir UniMaxx/MaxxShade/MaxxFan document to record cover, lid, shade, and compatibility details before support.",
+      "safeChecklist": [
+        "Record the MaxxAir cover, UniMaxx, MaxxShade, or MaxxFan model, visible label or part reference, lid or shade state, travel state, and the compatibility question for support.",
+        "Save photos of the visible label, cover or shade, owner-facing controls, purchase paperwork, and the area from normal owner access.",
+        "Do not perform roof work, sealant work, mounted-cover replacement, or installed fan service yourself; contact MaxxAir support or qualified RV ventilation service."
+      ],
+      "sourceIds": [
+        "maxxair-vent-covers-unimaxx-maxxshade-10d50905z"
+      ],
+      "searchAliases": [
+        "maxxair unimaxx maxxshade 10d50905z compatibility",
+        "maxxair vent covers unimaxx maxxshade maxxfan prep"
+      ],
+      "searchRequiredTerms": [
+        "maxxair+unimaxx+maxxshade",
+        "10d50905z"
       ]
     }
   ],
