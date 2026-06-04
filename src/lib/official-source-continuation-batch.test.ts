@@ -51,7 +51,7 @@ describe("official source continuation batch", () => {
     const unsafeOwnerActionPattern =
       /\bbypass\b|\bjump(er)?\b|\bgas valve\b|burner\s+(repair|work|service|port|assembly)|\borifice\b|\bcontrol[- ]board\b|\b120\s*vac\b|\b120\s*v\b|\b110\s*v\b|\bline[- ]voltage\b|\brefrigerant\b|\bprobe\b|\bwiring\b|\bsupply line\b|\bopen (the )?(fuel|gas|electrical|rooftop)|remove.*shroud|remove.*cover|remove.*toilet|replace.*valve|measure resistance|fuel nozzle|combustion|coolant pump|manual override|hydraulic work|hydraulic repair|macerator|internal plumbing|seal removal|compressor repair|pump service|magnetron|capacitor|door switch|roof climbing/i;
 
-    expect(corpus.site.indexNow?.submittedAt).toBe("2026-06-04T11:16:39.017Z");
+    expect(corpus.site.indexNow?.submittedAt).toBe("2026-06-04T12:00:01.383Z");
     expect(corpus.sources).toHaveLength(expectedSourceCount);
     expect(corpus.entries).toHaveLength(expectedEntryCount);
     expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
