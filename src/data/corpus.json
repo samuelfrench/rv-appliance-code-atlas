@@ -7049,6 +7049,262 @@
       "url": "https://shop.cummins.com/SC/product/onan-qg-6500-lp-vapor-rv-generator-with-30a-breakers-a063b875/01t4N0000048nhAQAQ",
       "type": "manufacturer-product",
       "official": true
+    },
+    {
+      "id": "dometic-fa25-fantastic-vent-drydock-model-control-prep",
+      "brand": "Dometic",
+      "title": "Dometic FA25 Fan-Tastic Vent DryDock model and control prep",
+      "url": "https://www.dometic.com/en-us/lp/rv-ventfans-essential",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "dometic-fa75-fantastic-vent-complete-control-prep",
+      "brand": "Dometic",
+      "title": "Dometic FA75 Fan-Tastic Vent Complete smart-control prep",
+      "url": "https://www.dometic.com/en-us/lp/rv-ventfans-complete",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "dometic-fa95-fantastic-vent-platinum-control-prep",
+      "brand": "Dometic",
+      "title": "Dometic FA95 Fan-Tastic Vent Platinum control and feature prep",
+      "url": "https://www.dometic.com/en-us/lp/rv-ventfans-platinum",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "dometic-400-401-essential-toilet-model-fit-prep",
+      "brand": "Dometic",
+      "title": "Dometic 400/401 Essential toilet model-fit and service-prep guide",
+      "url": "https://www.dometic.com/en-us/lp/rv-toilets-essential",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "dometic-410-411-complete-toilet-model-fit-prep",
+      "brand": "Dometic",
+      "title": "Dometic 410/411 Complete toilet model-fit and warranty prep",
+      "url": "https://www.dometic.com/en-us/lp/rv-toilets-complete",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "thetford-porta-potti-320-550-storage-maintenance-prep",
+      "brand": "Thetford",
+      "title": "Thetford Porta Potti 320/550 storage and maintenance prep",
+      "url": "https://www.thetford.com/us/thetford-support/porta-potti-320-345-365-550/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-porta-potti-555-735-flush-storage-prep",
+      "brand": "Thetford",
+      "title": "Thetford Porta Potti 555/735 flush and storage prep",
+      "url": "https://www.thetford.com/us/thetford-support/porta-potti-555-565-735/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-porta-potti-260b-model-storage-prep",
+      "brand": "Thetford",
+      "title": "Thetford Porta Potti 260B model and storage prep",
+      "url": "https://www.thetford.com/us/thetford-support/porta-potti-260b/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "thetford-porta-potti-465-msd-electric-flush-prep",
+      "brand": "Thetford",
+      "title": "Thetford Porta Potti 465/465 MSD electric-flush service prep",
+      "url": "https://www.thetford.com/us/thetford-support/porta-potti-465-465-msd/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "norcold-polar-n8x-hts-service-routing-prep",
+      "brand": "Norcold",
+      "title": "Norcold Polar N8X HTS, model-label, and service-routing prep",
+      "url": "https://www.thetford.com/us/thetford-support/n8x/",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "coleman-mach-quiet-mach-10-model-control-prep",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Quiet Mach 10 model and control prep",
+      "url": "https://coleman-mach.com/products/air-conditioners/quiet-series-mach-10/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "coleman-mach-quiet-mach-15-model-service-prep",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach Quiet Mach 15 model and service prep",
+      "url": "https://coleman-mach.com/products/air-conditioners/quiet-series-mach-15/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "coleman-mach-soft-start-kit-breaker-trip-prep",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach soft start kit breaker-trip prep",
+      "url": "https://coleman-mach.com/products/climate-control-accessories/soft-start-kit/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "coleman-mach-parkpac-36413-012-service-prep",
+      "brand": "Coleman-Mach",
+      "title": "Coleman-Mach ParkPAC 36413-012 service prep",
+      "url": "https://coleman-mach.com/products/air-conditioners/specialty-units-parkpac-air-conditioner/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-00a04401k-original-maxxfan-control-prep",
+      "brand": "MaxxAir",
+      "title": "MaxxAir 00A04401K Original Maxxfan control prep",
+      "url": "https://www.maxxair.com/products/fans/maxxfan-00A04401K/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-00a04501k-original-maxxfan-model-prep",
+      "brand": "MaxxAir",
+      "title": "MaxxAir 00A04501K Original Maxxfan model prep",
+      "url": "https://www.maxxair.com/products/fans/maxxfan-00A04501K/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "maxxair-00-04050k-maxxfan-plus-control-prep",
+      "brand": "MaxxAir",
+      "title": "MaxxAir 00-04050K Maxxfan Plus control prep",
+      "url": "https://www.maxxair.com/products/fans/maxxfan-plus-00-04050K/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "suburban-2938abk-drop-in-3-burner-service-prep",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban 2938ABK drop-in 3-burner service prep",
+      "url": "https://suburbanrv.com/kitchen-galley/cooktops/drop-in-cooktops/drop-in-3-burner/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "suburban-3907a-air-fryer-power-service-prep",
+      "brand": "Suburban/Atwood",
+      "title": "Suburban 3907A air fryer power and service prep",
+      "url": "https://suburbanrv.com/kitchen-galley/air-fryers/17-air-fryer-black/",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "aquahot-450d-model-energy-source-prep",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot 450D model and energy-source prep",
+      "url": "https://www.aquahot.com/products/rv/450D.aspx",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "aquahot-600d-model-energy-source-prep",
+      "brand": "Aqua-Hot",
+      "title": "Aqua-Hot 600D model and energy-source prep",
+      "url": "https://www.aquahot.com/products/rv/600D.aspx",
+      "type": "manufacturer-product",
+      "official": true
+    },
+    {
+      "id": "furrion-furnace-v1-model-control-service-prep",
+      "brand": "Furrion",
+      "title": "Furrion 20K/30K/35K Furnace V1 Model, Thermostat, and Service Prep",
+      "url": "https://support.lci1.com/documents/ccd-0006025",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-furnace-e1-error-service-prep",
+      "brand": "Furrion",
+      "title": "Furrion Furnace E1 Error: Owner-Safe Prep Before Service",
+      "url": "https://support.lci1.com/videos/e1-error-code-on-furrion-furnace",
+      "type": "manufacturer-video",
+      "official": true
+    },
+    {
+      "id": "furrion-furnace-e4-error-service-prep",
+      "brand": "Furrion",
+      "title": "Furrion Furnace E4 Error: What to Record Before Calling Service",
+      "url": "https://support.lci1.com/videos/e4-error-code-on-furrion-furnace",
+      "type": "manufacturer-video",
+      "official": true
+    },
+    {
+      "id": "furrion-fho23sacrv-range-hood-filter-control-prep",
+      "brand": "Furrion",
+      "title": "Furrion FHO23SACRV Range Hood Filter, Control, and Label Prep",
+      "url": "https://support.lci1.com/documents/ccd-0010314",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "greystone-09-microwave-control-label-service-prep",
+      "brand": "Greystone",
+      "title": "Greystone 0.9 cu ft Microwave Control and Model-Label Prep",
+      "url": "https://support.lci1.com/documents/ccd-0008905",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "greystone-16-1000w-microwave-control-service-prep",
+      "brand": "Greystone",
+      "title": "Greystone 1.6 cu ft Microwave Controls and Service Prep",
+      "url": "https://support.lci1.com/documents/ccd-0009770",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "greystone-electric-fireplace-model-control-routing",
+      "brand": "Greystone",
+      "title": "Greystone Electric Fireplace Model, Control, and Support Routing",
+      "url": "https://support.lci1.com/greystone-fireplaces",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "girard-tankless-e0-error-service-prep",
+      "brand": "Girard",
+      "title": "Girard Tankless Water Heater E0 Error: Owner-Safe Service Prep",
+      "url": "https://support.lci1.com/videos/e0-error-code-on-girard-tankless-water-heater",
+      "type": "manufacturer-video",
+      "official": true
+    },
+    {
+      "id": "girard-tankless-e9-error-service-prep",
+      "brand": "Girard",
+      "title": "Girard Tankless Water Heater E9 Error: What to Capture Before Service",
+      "url": "https://support.lci1.com/videos/e9-error-code-on-girard-tankless-water-heater",
+      "type": "manufacturer-video",
+      "official": true
+    },
+    {
+      "id": "onan-rv-generator-accessory-compatibility-service-prep",
+      "brand": "Onan",
+      "title": "Onan RV Generator Accessory and Breaker Compatibility Prep",
+      "url": "https://mart.cummins.com/imagelibrary/data/assetfiles/0058349.pdf",
+      "type": "manufacturer-pdf",
+      "official": true
+    },
+    {
+      "id": "onan-p2500i-led-display-storage-service-prep",
+      "brand": "Onan",
+      "title": "Onan P2500i LED Display, Storage, and Service Prep",
+      "url": "https://www.cummins.com/sites/default/files/2025-04/p2500i-owners-manual.pdf",
+      "type": "manufacturer-manual",
+      "official": true
     }
   ],
   "entries": [
@@ -40733,7 +40989,39 @@
         "suburban-drop-in-2-burner-product",
         "maxxair-original-maxxfan-00a04301k-product",
         "aquahot-175-product-page",
-        "onan-qg6500-lp-shop-product"
+        "onan-qg6500-lp-shop-product",
+        "dometic-fa25-fantastic-vent-drydock-model-control-prep",
+        "dometic-fa75-fantastic-vent-complete-control-prep",
+        "dometic-fa95-fantastic-vent-platinum-control-prep",
+        "dometic-400-401-essential-toilet-model-fit-prep",
+        "dometic-410-411-complete-toilet-model-fit-prep",
+        "thetford-porta-potti-320-550-storage-maintenance-prep",
+        "thetford-porta-potti-555-735-flush-storage-prep",
+        "thetford-porta-potti-260b-model-storage-prep",
+        "thetford-porta-potti-465-msd-electric-flush-prep",
+        "norcold-polar-n8x-hts-service-routing-prep",
+        "coleman-mach-quiet-mach-10-model-control-prep",
+        "coleman-mach-quiet-mach-15-model-service-prep",
+        "coleman-mach-soft-start-kit-breaker-trip-prep",
+        "coleman-mach-parkpac-36413-012-service-prep",
+        "maxxair-00a04401k-original-maxxfan-control-prep",
+        "maxxair-00a04501k-original-maxxfan-model-prep",
+        "maxxair-00-04050k-maxxfan-plus-control-prep",
+        "suburban-2938abk-drop-in-3-burner-service-prep",
+        "suburban-3907a-air-fryer-power-service-prep",
+        "aquahot-450d-model-energy-source-prep",
+        "aquahot-600d-model-energy-source-prep",
+        "furrion-furnace-v1-model-control-service-prep",
+        "furrion-furnace-e1-error-service-prep",
+        "furrion-furnace-e4-error-service-prep",
+        "furrion-fho23sacrv-range-hood-filter-control-prep",
+        "greystone-09-microwave-control-label-service-prep",
+        "greystone-16-1000w-microwave-control-service-prep",
+        "greystone-electric-fireplace-model-control-routing",
+        "girard-tankless-e0-error-service-prep",
+        "girard-tankless-e9-error-service-prep",
+        "onan-rv-generator-accessory-compatibility-service-prep",
+        "onan-p2500i-led-display-storage-service-prep"
       ]
     },
     {
@@ -55050,6 +55338,776 @@
       "searchRequiredTerms": [
         "qg+6500",
         "a063b875"
+      ]
+    },
+    {
+      "id": "dometic-fa25-fantastic-vent-drydock-model-control-prep",
+      "slug": "dometic-fa25-fantastic-vent-drydock-model-control-prep",
+      "title": "Dometic FA25 Fan-Tastic Vent DryDock model and control prep",
+      "summary": "Use the Dometic FA25 Fan-Tastic Vent DryDock page to capture the model family, DryDock feature set, control style, and support details before service.",
+      "safeChecklist": [
+        "Record the FA25 model, Fan-Tastic Vent name, DryDock notes, control response, lid position, fan speed, and exact symptom.",
+        "Save photos of the label, controls, lid, screen, and visible condition from normal owner access.",
+        "Stop using the fan for water entry, unsafe power behavior, stuck lid, abnormal motor behavior, or repeated control symptoms.",
+        "Use Dometic support or qualified RV ventilation service for installed electrical, motor, lighting package, water-entry, parts, or installation decisions."
+      ],
+      "sourceIds": [
+        "dometic-fa25-fantastic-vent-drydock-model-control-prep"
+      ],
+      "searchAliases": [
+        "dometic fa25 fan tastic vent drydock model control prep",
+        "dometic fa25 fantastic vent drydock control prep",
+        "fa25 fan tastic vent drydock service prep"
+      ],
+      "searchRequiredTerms": [
+        "fa25",
+        "fan+tastic+vent+drydock"
+      ]
+    },
+    {
+      "id": "dometic-fa75-fantastic-vent-complete-control-prep",
+      "slug": "dometic-fa75-fantastic-vent-complete-control-prep",
+      "title": "Dometic FA75 Fan-Tastic Vent Complete smart-control prep",
+      "summary": "Use the Dometic FA75 Fan-Tastic Vent Complete DryDock page to capture smart-control, sensor, and model details before support.",
+      "safeChecklist": [
+        "Record the FA75 model, Fan-Tastic Vent Complete name, DryDock notes, control response, remote or sensor behavior, and exact symptom.",
+        "Save photos of the label, controls, lid, screen, and visible condition from normal owner access.",
+        "Stop using the fan for water entry, unsafe power behavior, stuck lid, abnormal motor behavior, or repeated control symptoms.",
+        "Use Dometic support or qualified RV ventilation service for installed electrical, motor, water-entry, parts, or installation decisions."
+      ],
+      "sourceIds": [
+        "dometic-fa75-fantastic-vent-complete-control-prep"
+      ],
+      "searchAliases": [
+        "dometic fa75 fan tastic vent complete drydock smart control prep",
+        "dometic fa75 fantastic vent complete control prep",
+        "fa75 drydock fan tastic vent complete service prep"
+      ],
+      "searchRequiredTerms": [
+        "fa75",
+        "fantastic+vent+complete"
+      ]
+    },
+    {
+      "id": "dometic-fa95-fantastic-vent-platinum-control-prep",
+      "slug": "dometic-fa95-fantastic-vent-platinum-control-prep",
+      "title": "Dometic FA95 Fan-Tastic Vent Platinum control and feature prep",
+      "summary": "Use the Dometic FA95 Fan-Tastic Vent Platinum DryDock page to capture controls, feature package, lighting notes, and support details before service.",
+      "safeChecklist": [
+        "Record the FA95 model, Fan-Tastic Vent Platinum name, DryDock notes, controls, feature package, light behavior, and exact symptom.",
+        "Save photos of the label, controls, lid, screen, light area, and visible condition from normal owner access.",
+        "Stop using the fan for water entry, unsafe power behavior, stuck lid, abnormal motor behavior, light failure, or repeated control symptoms.",
+        "Use Dometic support or qualified RV ventilation service for installed electrical, motor, lighting package, water-entry, parts, or installation decisions."
+      ],
+      "sourceIds": [
+        "dometic-fa95-fantastic-vent-platinum-control-prep"
+      ],
+      "searchAliases": [
+        "dometic fa95 fan tastic vent platinum drydock feature prep",
+        "dometic fa95 fantastic vent platinum control prep",
+        "fa95 drydock fan tastic vent platinum service prep"
+      ],
+      "searchRequiredTerms": [
+        "fa95",
+        "fantastic+vent+platinum"
+      ]
+    },
+    {
+      "id": "dometic-400-401-essential-toilet-model-fit-prep",
+      "slug": "dometic-400-401-essential-toilet-model-fit-prep",
+      "title": "Dometic 400/401 Essential toilet model-fit and service-prep guide",
+      "summary": "Use the Dometic 400 and 401 Essential Toilet page to capture model, fit, visible parts, and service details before support.",
+      "safeChecklist": [
+        "Record whether the toilet is a Dometic 400 or 401 Essential Toilet, plus color, visible label, pedal behavior, and exact symptom.",
+        "Save photos of the model label, base, bowl, controls, and visible condition without removing the toilet.",
+        "Stop using the toilet for active leaks, floor movement, tank odor, or repeated flush symptoms.",
+        "Use Dometic support, a dealer, or qualified RV sanitation service for water connection, floor flange, removal, parts, or leak decisions."
+      ],
+      "sourceIds": [
+        "dometic-400-401-essential-toilet-model-fit-prep"
+      ],
+      "searchAliases": [
+        "dometic 400 401 essential toilet model fit prep",
+        "dometic 400 essential toilet service prep",
+        "dometic 401 essential toilet parts prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+400",
+        "dometic+401",
+        "essential+toilet"
+      ]
+    },
+    {
+      "id": "dometic-410-411-complete-toilet-model-fit-prep",
+      "slug": "dometic-410-411-complete-toilet-model-fit-prep",
+      "title": "Dometic 410/411 Complete toilet model-fit and warranty prep",
+      "summary": "Use the Dometic 410 and 411 Complete Toilet page to capture model, fit, warranty, visible parts, and service details before support.",
+      "safeChecklist": [
+        "Record whether the toilet is a Dometic 410 or 411 Complete Toilet, plus color, visible label, pedal behavior, and exact symptom.",
+        "Save photos of the model label, base, bowl, controls, and warranty paperwork without removing the toilet.",
+        "Stop using the toilet for active leaks, floor movement, tank odor, or repeated flush symptoms.",
+        "Use Dometic support, a dealer, or qualified RV sanitation service for water connection, floor flange, removal, parts, warranty, or leak decisions."
+      ],
+      "sourceIds": [
+        "dometic-410-411-complete-toilet-model-fit-prep"
+      ],
+      "searchAliases": [
+        "dometic 410 411 complete toilet warranty prep",
+        "dometic 410 complete toilet service prep",
+        "dometic 411 complete toilet model fit prep"
+      ],
+      "searchRequiredTerms": [
+        "dometic+410",
+        "dometic+411",
+        "complete+toilet"
+      ]
+    },
+    {
+      "id": "thetford-porta-potti-320-550-storage-maintenance-prep",
+      "slug": "thetford-porta-potti-320-550-storage-maintenance-prep",
+      "title": "Thetford Porta Potti 320/550 storage and maintenance prep",
+      "summary": "Use the Thetford Porta Potti 320/345/365/550 support page to capture model, storage, cleaning, battery, and seal-lubricant details.",
+      "safeChecklist": [
+        "Record the Porta Potti model, especially 320 or 550, plus flush type, level indicator state, battery condition if present, and exact symptom.",
+        "Use only Thetford-supported cleaning, storage, and seal-lubricant steps from normal owner access.",
+        "Save photos of labels, tank latch condition, level indicator, and visible seals before support.",
+        "Use Thetford support or qualified RV sanitation service for parts, leak, electric-flush, or damaged-tank decisions."
+      ],
+      "sourceIds": [
+        "thetford-porta-potti-320-550-storage-maintenance-prep"
+      ],
+      "searchAliases": [
+        "thetford porta potti 320 550 storage maintenance prep",
+        "porta potti 320 cleaning storage seal lubricant",
+        "porta potti 550 battery seal storage prep"
+      ],
+      "searchRequiredTerms": [
+        "porta+potti+320",
+        "porta+potti+550"
+      ]
+    },
+    {
+      "id": "thetford-porta-potti-555-735-flush-storage-prep",
+      "slug": "thetford-porta-potti-555-735-flush-storage-prep",
+      "title": "Thetford Porta Potti 555/735 flush and storage prep",
+      "summary": "Use the Thetford Porta Potti 555/565/735 support page to capture flush, storage, cleaning, battery, and seal-lubricant details.",
+      "safeChecklist": [
+        "Record the Porta Potti model, especially 555 or 735, plus flush type, level indicator state, battery condition if present, and exact symptom.",
+        "Use only Thetford-supported cleaning, storage, and seal-lubricant steps from normal owner access.",
+        "Save photos of labels, tank latch condition, level indicator, and visible seals before support.",
+        "Use Thetford support or qualified RV sanitation service for parts, leak, electric-flush, or damaged-tank decisions."
+      ],
+      "sourceIds": [
+        "thetford-porta-potti-555-735-flush-storage-prep"
+      ],
+      "searchAliases": [
+        "thetford porta potti 555 735 flush storage prep",
+        "porta potti 555 electric flush storage prep",
+        "porta potti 735 battery flush service prep"
+      ],
+      "searchRequiredTerms": [
+        "porta+potti+555",
+        "porta+potti+735"
+      ]
+    },
+    {
+      "id": "thetford-porta-potti-260b-model-storage-prep",
+      "slug": "thetford-porta-potti-260b-model-storage-prep",
+      "title": "Thetford Porta Potti 260B model and storage prep",
+      "summary": "Use the Thetford Porta Potti 260B support page to capture model, cleaning, storage, and service details.",
+      "safeChecklist": [
+        "Record the Porta Potti 260B model, tank condition, flush behavior, level indicator if present, and exact symptom.",
+        "Use only Thetford-supported cleaning and storage steps from normal owner access.",
+        "Save photos of labels, tank latch condition, and visible seals before support.",
+        "Use Thetford support or qualified RV sanitation service for parts, leak, or damaged-tank decisions."
+      ],
+      "sourceIds": [
+        "thetford-porta-potti-260b-model-storage-prep"
+      ],
+      "searchAliases": [
+        "thetford porta potti 260b model storage prep",
+        "porta potti 260b cleaning storage service prep"
+      ],
+      "searchRequiredTerms": [
+        "porta+potti+260b"
+      ]
+    },
+    {
+      "id": "thetford-porta-potti-465-msd-electric-flush-prep",
+      "slug": "thetford-porta-potti-465-msd-electric-flush-prep",
+      "title": "Thetford Porta Potti 465/465 MSD electric-flush service prep",
+      "summary": "Use the Thetford Porta Potti 465 and 465 MSD support page to capture model, electric-flush, MSD, storage, and service details.",
+      "safeChecklist": [
+        "Record the Porta Potti 465 or 465 MSD model, electric-flush response, battery condition, tank latch state, and exact symptom.",
+        "Save photos of the label, battery compartment exterior, tank latch, MSD markings, and visible condition.",
+        "Use only normal owner controls, cleaning, storage, and seal-lubricant steps before support.",
+        "Use Thetford support or qualified RV sanitation service for electric-flush, MSD fitting, floor securement, parts, or leak decisions."
+      ],
+      "sourceIds": [
+        "thetford-porta-potti-465-msd-electric-flush-prep"
+      ],
+      "searchAliases": [
+        "thetford porta potti 465 msd electric flush service prep",
+        "porta potti 465 msd battery flush prep",
+        "thetford 465 electric flush storage service prep"
+      ],
+      "searchRequiredTerms": [
+        "porta+potti+465",
+        "465+msd"
+      ]
+    },
+    {
+      "id": "norcold-polar-n8x-hts-service-routing-prep",
+      "slug": "norcold-polar-n8x-hts-service-routing-prep",
+      "title": "Norcold Polar N8X HTS, model-label, and service-routing prep",
+      "summary": "Use the Thetford/Norcold N8X support page to capture Polar N8X model, HTS status, power-source state, and service-routing details.",
+      "safeChecklist": [
+        "Record the Polar N8X model, serial if visible, HTS status, power-source selection, display state, and exact cooling symptom.",
+        "Save photos of the model label, display, visible vents, food temperature notes, and any alarm state.",
+        "Turn the refrigerator off and turn LP off for ammonia odor, yellow residue, HTS trip, heat damage, or repeated lockout.",
+        "Use Norcold/Thetford support or qualified refrigerator service for internal refrigerator, heat-source, LP, or installed power decisions."
+      ],
+      "sourceIds": [
+        "norcold-polar-n8x-hts-service-routing-prep"
+      ],
+      "searchAliases": [
+        "norcold polar n8x hts service routing prep",
+        "polar n8x model label hts service prep",
+        "norcold n8x thetford support service routing"
+      ],
+      "searchRequiredTerms": [
+        "polar+n8x",
+        "n8x+hts"
+      ]
+    },
+    {
+      "id": "coleman-mach-quiet-mach-10-model-control-prep",
+      "slug": "coleman-mach-quiet-mach-10-model-control-prep",
+      "title": "Coleman-Mach Quiet Mach 10 model and control prep",
+      "summary": "Use the Coleman-Mach Quiet Series Mach 10 page to capture model, control, airflow, and service details before support.",
+      "safeChecklist": [
+        "Record Quiet Series Mach 10 model numbers such as 35003-0794, 35203-0754, or 35203-0993, plus thermostat mode and exact symptom.",
+        "Save photos of the model label, interior controls, filters, and visible air outlet condition from normal owner access.",
+        "Stop using the air conditioner for unsafe power behavior, water entry, burning odor, repeated breaker trips, or no-cooling repeats.",
+        "Use Coleman-Mach support or qualified RV HVAC service for installed power, cooling circuit, compressor, motor, parts, or installation decisions."
+      ],
+      "sourceIds": [
+        "coleman-mach-quiet-mach-10-model-control-prep"
+      ],
+      "searchAliases": [
+        "coleman mach quiet mach 10 35003 0794 model control prep",
+        "quiet series mach 10 35203 0754 service prep",
+        "quiet mach 10 35203 0993 control prep"
+      ],
+      "searchRequiredTerms": [
+        "quiet+mach+10",
+        "35003+0794",
+        "35203+0754",
+        "35203+0993"
+      ]
+    },
+    {
+      "id": "coleman-mach-quiet-mach-15-model-service-prep",
+      "slug": "coleman-mach-quiet-mach-15-model-service-prep",
+      "title": "Coleman-Mach Quiet Mach 15 model and service prep",
+      "summary": "Use the Coleman-Mach Quiet Series Mach 15 page to capture model, control, airflow, and service details before support.",
+      "safeChecklist": [
+        "Record Quiet Series Mach 15 model numbers such as 38204-0660, 38204-0690, or 38209-0660, plus thermostat mode and exact symptom.",
+        "Save photos of the model label, interior controls, filters, and visible air outlet condition from normal owner access.",
+        "Stop using the air conditioner for unsafe power behavior, water entry, burning odor, repeated breaker trips, or no-cooling repeats.",
+        "Use Coleman-Mach support or qualified RV HVAC service for installed power, cooling circuit, compressor, motor, parts, or installation decisions."
+      ],
+      "sourceIds": [
+        "coleman-mach-quiet-mach-15-model-service-prep"
+      ],
+      "searchAliases": [
+        "coleman mach quiet mach 15 38204 0660 service prep",
+        "quiet series mach 15 38204 0690 model prep",
+        "quiet mach 15 38209 0660 service prep"
+      ],
+      "searchRequiredTerms": [
+        "quiet+mach+15",
+        "38204+0660",
+        "38204+0690",
+        "38209+0660"
+      ]
+    },
+    {
+      "id": "coleman-mach-soft-start-kit-breaker-trip-prep",
+      "slug": "coleman-mach-soft-start-kit-breaker-trip-prep",
+      "title": "Coleman-Mach soft start kit breaker-trip prep",
+      "summary": "Use the Coleman-Mach Soft Start Kit page to capture kit, AC model family, breaker-trip pattern, and service details before support.",
+      "safeChecklist": [
+        "Record the Soft Start Kit 1497-3601 reference, connected 45000, 47000, or 48000 family if known, thermostat mode, and breaker-trip timing.",
+        "Save photos of the model labels, interior controls, shore-power setup, and visible breaker position from normal owner access.",
+        "Stop repeated restart attempts after breaker trips, burning odor, or unsafe power behavior.",
+        "Use Coleman-Mach support or qualified RV HVAC service for installed power, kit fitment, rooftop equipment, parts, or installation decisions."
+      ],
+      "sourceIds": [
+        "coleman-mach-soft-start-kit-breaker-trip-prep"
+      ],
+      "searchAliases": [
+        "coleman mach soft start kit 1497 3601 breaker trip prep",
+        "soft start kit 45000 47000 48000 model prep",
+        "coleman soft start kit breaker trip service prep"
+      ],
+      "searchRequiredTerms": [
+        "soft+start+kit",
+        "1497+3601"
+      ]
+    },
+    {
+      "id": "coleman-mach-parkpac-36413-012-service-prep",
+      "slug": "coleman-mach-parkpac-36413-012-service-prep",
+      "title": "Coleman-Mach ParkPAC 36413-012 service prep",
+      "summary": "Use the Coleman-Mach ParkPAC page to capture 36413-012 model, recreational park trailer use, controls, and service details before support.",
+      "safeChecklist": [
+        "Record the ParkPAC 36413-012 model, recreational park trailer application, thermostat mode, airflow symptom, and exact condition.",
+        "Save photos of the model label, controls, filters, visible ducts, and service paperwork from normal owner access.",
+        "Stop using the unit for unsafe power behavior, water entry, burning odor, repeated breaker trips, or no-cooling repeats.",
+        "Use Coleman-Mach support or qualified RV HVAC service for installed power, duct coupling, thermostat setup, parts, or service-panel decisions."
+      ],
+      "sourceIds": [
+        "coleman-mach-parkpac-36413-012-service-prep"
+      ],
+      "searchAliases": [
+        "coleman mach parkpac 36413 012 service prep",
+        "parkpac recreational park trailer air conditioner service prep",
+        "coleman parkpac model service prep"
+      ],
+      "searchRequiredTerms": [
+        "parkpac",
+        "36413+012"
+      ]
+    },
+    {
+      "id": "maxxair-00a04401k-original-maxxfan-control-prep",
+      "slug": "maxxair-00a04401k-original-maxxfan-control-prep",
+      "title": "MaxxAir 00A04401K Original Maxxfan control prep",
+      "summary": "Use the MaxxAir 00A04401K Original Maxxfan page to capture smoke lid, 4-speed control, model, and support details.",
+      "safeChecklist": [
+        "Record the 00A04401K model, Original Maxxfan name, smoke lid, 4-speed control response, lid state, fan speed, and exact symptom.",
+        "Save photos of the product label, controls, lid condition, and fan condition from normal owner access.",
+        "Stop using the fan for water entry, unsafe power behavior, stuck lid, abnormal motor behavior, or repeated control symptoms.",
+        "Use MaxxAir support or qualified RV ventilation service for installed electrical, motor, lid, parts, warranty, or installation decisions."
+      ],
+      "sourceIds": [
+        "maxxair-00a04401k-original-maxxfan-control-prep"
+      ],
+      "searchAliases": [
+        "maxxair 00a04401k original maxxfan smoke 4 speed control prep",
+        "00a04401k original maxxfan control prep",
+        "maxxair original maxxfan 00a04401k service prep"
+      ],
+      "searchRequiredTerms": [
+        "00a04401k",
+        "original+maxxfan"
+      ]
+    },
+    {
+      "id": "maxxair-00a04501k-original-maxxfan-model-prep",
+      "slug": "maxxair-00a04501k-original-maxxfan-model-prep",
+      "title": "MaxxAir 00A04501K Original Maxxfan model prep",
+      "summary": "Use the MaxxAir 00A04501K Original Maxxfan page to capture black lid, 4-speed control, model, and support details.",
+      "safeChecklist": [
+        "Record the 00A04501K model, Original Maxxfan name, black lid, 4-speed control response, lid state, fan speed, and exact symptom.",
+        "Save photos of the product label, controls, lid condition, and fan condition from normal owner access.",
+        "Stop using the fan for water entry, unsafe power behavior, stuck lid, abnormal motor behavior, or repeated control symptoms.",
+        "Use MaxxAir support or qualified RV ventilation service for installed electrical, motor, lid, parts, warranty, or installation decisions."
+      ],
+      "sourceIds": [
+        "maxxair-00a04501k-original-maxxfan-model-prep"
+      ],
+      "searchAliases": [
+        "maxxair 00a04501k original maxxfan black 4 speed model prep",
+        "00a04501k original maxxfan model prep",
+        "maxxair original maxxfan 00a04501k service prep"
+      ],
+      "searchRequiredTerms": [
+        "00a04501k",
+        "original+maxxfan"
+      ]
+    },
+    {
+      "id": "maxxair-00-04050k-maxxfan-plus-control-prep",
+      "slug": "maxxair-00-04050k-maxxfan-plus-control-prep",
+      "title": "MaxxAir 00-04050K Maxxfan Plus control prep",
+      "summary": "Use the MaxxAir 00-04050K Maxxfan Plus page to capture smoke lid, 10-speed control, model, and support details.",
+      "safeChecklist": [
+        "Record the 00-04050K model, Maxxfan Plus name, smoke lid, 10-speed control response, lid state, fan speed, and exact symptom.",
+        "Save photos of the product label, controls, lid condition, and fan condition from normal owner access.",
+        "Stop using the fan for water entry, unsafe power behavior, stuck lid, abnormal motor behavior, or repeated control symptoms.",
+        "Use MaxxAir support or qualified RV ventilation service for installed electrical, motor, lid, parts, warranty, or installation decisions."
+      ],
+      "sourceIds": [
+        "maxxair-00-04050k-maxxfan-plus-control-prep"
+      ],
+      "searchAliases": [
+        "maxxair 00 04050k maxxfan plus 10 speed smoke control prep",
+        "00-04050k maxxfan plus control prep",
+        "maxxair maxxfan plus 004050k service prep"
+      ],
+      "searchRequiredTerms": [
+        "00+04050k",
+        "maxxfan+plus"
+      ]
+    },
+    {
+      "id": "suburban-2938abk-drop-in-3-burner-service-prep",
+      "slug": "suburban-2938abk-drop-in-3-burner-service-prep",
+      "title": "Suburban 2938ABK drop-in 3-burner service prep",
+      "summary": "Use the Suburban 2938ABK drop-in 3-burner page to capture model, visible condition, LP odor notes, and service details.",
+      "safeChecklist": [
+        "Record the 2938ABK or 2938AST model, Triple Burner Propane Drop-In Cooktop name, control positions, flame appearance, and exact symptom.",
+        "Save photos of the model label, controls, cooktop surface, and visible condition from normal owner access.",
+        "Shut LP off and stop using the cooktop for LP odor, abnormal flame, overheating, unsafe control behavior, or repeated symptoms.",
+        "Use Suburban support or qualified RV cooking appliance service for LP, heat, parts, warranty, and repair decisions."
+      ],
+      "sourceIds": [
+        "suburban-2938abk-drop-in-3-burner-service-prep"
+      ],
+      "searchAliases": [
+        "suburban 2938abk triple burner propane drop in cooktop service prep",
+        "suburban 2938ast 3 burner drop in cooktop prep",
+        "triple burner propane drop in cooktop 2938abk service prep"
+      ],
+      "searchRequiredTerms": [
+        "2938abk",
+        "triple+burner+propane+drop+in"
+      ]
+    },
+    {
+      "id": "suburban-3907a-air-fryer-power-service-prep",
+      "slug": "suburban-3907a-air-fryer-power-service-prep",
+      "title": "Suburban 3907A air fryer power and service prep",
+      "summary": "Use the Suburban 3907A 17 Air Fryer page to capture model, Black Glass finish, 120V label notes, controls, and service details.",
+      "safeChecklist": [
+        "Record the 3907A model, 17 Air Fryer name, Black Glass finish, label notes, control response, and exact symptom.",
+        "Save photos of the model label, controls, cooking cavity from normal access, and visible condition.",
+        "Stop using the air fryer for burning odor, smoke, overheating, unsafe power behavior, or repeated control symptoms.",
+        "Use Suburban support or qualified RV appliance service for installed power, internal parts, warranty, or disassembly decisions."
+      ],
+      "sourceIds": [
+        "suburban-3907a-air-fryer-power-service-prep"
+      ],
+      "searchAliases": [
+        "suburban 3907a 17 air fryer black glass power service prep",
+        "suburban 3907a 17 air fryer black glass model prep",
+        "17 air fryer black glass 120 service prep"
+      ],
+      "searchRequiredTerms": [
+        "3907a+17",
+        "17+air+fryer",
+        "3907a+black+glass"
+      ]
+    },
+    {
+      "id": "aquahot-450d-model-energy-source-prep",
+      "slug": "aquahot-450d-model-energy-source-prep",
+      "title": "Aqua-Hot 450D model and energy-source prep",
+      "summary": "Use the Aqua-Hot 450D page to capture AHE-450 model, TribridHot energy-source notes, diesel status, controls, and service details.",
+      "safeChecklist": [
+        "Record the Aqua-Hot 450D or AHE-450 model, TribridHot notes, diesel status, cabin-heat symptom, hot-water symptom, and control state.",
+        "Save photos of the model label, control panel, visible alerts, and service paperwork from normal owner access.",
+        "Shut the Aqua-Hot system off for leaks, unusual odor, overheating, unsafe hot-water condition, or repeated control symptoms.",
+        "Use Aqua-Hot support or qualified Aqua-Hot service for heating system, diesel source, engine-preheat, installed power, parts, warranty, or repair decisions."
+      ],
+      "sourceIds": [
+        "aquahot-450d-model-energy-source-prep"
+      ],
+      "searchAliases": [
+        "aqua hot 450d ahe 450 tribridhot diesel energy source prep",
+        "aquahot 450d model energy source prep",
+        "ahe 450 diesel aqua hot service prep"
+      ],
+      "searchRequiredTerms": [
+        "450d",
+        "ahe+450"
+      ]
+    },
+    {
+      "id": "aquahot-600d-model-energy-source-prep",
+      "slug": "aquahot-600d-model-energy-source-prep",
+      "title": "Aqua-Hot 600D model and energy-source prep",
+      "summary": "Use the Aqua-Hot 600D page to capture AHE-600 model, 600-series energy-source notes, diesel status, controls, and service details.",
+      "safeChecklist": [
+        "Record the Aqua-Hot 600D or AHE-600 model, 600-series notes, diesel status, cabin-heat symptom, hot-water symptom, and control state.",
+        "Save photos of the model label, control panel, visible alerts, and service paperwork from normal owner access.",
+        "Shut the Aqua-Hot system off for leaks, unusual odor, overheating, unsafe hot-water condition, or repeated control symptoms.",
+        "Use Aqua-Hot support or qualified Aqua-Hot service for heating system, diesel source, engine-preheat, installed power, parts, warranty, or repair decisions."
+      ],
+      "sourceIds": [
+        "aquahot-600d-model-energy-source-prep"
+      ],
+      "searchAliases": [
+        "aqua hot 600d ahe 600 diesel 600 series energy source prep",
+        "aquahot 600d model energy source prep",
+        "ahe 600 diesel aqua hot service prep"
+      ],
+      "searchRequiredTerms": [
+        "600d",
+        "ahe+600"
+      ]
+    },
+    {
+      "id": "furrion-furnace-v1-model-control-service-prep",
+      "slug": "furrion-furnace-v1-model-control-service-prep",
+      "title": "Furrion 20K/30K/35K Furnace V1 Model, Thermostat, and Service Prep",
+      "summary": "Use the Furrion Furnace V1 manual page to capture 20K, 30K, 35K, IM-FHA00127, thermostat state, shutdown state, and service details.",
+      "safeChecklist": [
+        "Record the Furrion Furnace V1 model, 20K, 30K, or 35K rating, IM-FHA00127 reference, thermostat state, blower behavior, and exact symptom.",
+        "Save photos of the model label, thermostat display, visible exterior condition, and service paperwork from normal owner access.",
+        "Shut the furnace down and turn LP off for LP odor, soot, yellow flame, blocked vent concern, overheating, or repeated ignition symptoms.",
+        "Use Furrion/Lippert support or qualified RV furnace service for internal furnace parts, LP system, airflow safety, installed power, or repair decisions."
+      ],
+      "sourceIds": [
+        "furrion-furnace-v1-model-control-service-prep"
+      ],
+      "searchAliases": [
+        "furrion furnace 20k 30k 35k im fha00127 model thermostat service prep",
+        "furrion furnace v1 im-fha00127 service prep",
+        "furrion 20k 30k 35k furnace model control prep"
+      ],
+      "searchRequiredTerms": [
+        "im+fha00127",
+        "furrion+furnace+v1"
+      ]
+    },
+    {
+      "id": "furrion-furnace-e1-error-service-prep",
+      "slug": "furrion-furnace-e1-error-service-prep",
+      "title": "Furrion Furnace E1 Error: Owner-Safe Prep Before Service",
+      "summary": "Use the Furrion Furnace E1 support video page as a source-only owner-safe prep guide; this page does not add a fault-code table entry.",
+      "safeChecklist": [
+        "Record the Furrion furnace model, E1 error code, thermostat state, blower behavior, LP state, battery state if known, and when the error appears.",
+        "Save photos of the display, thermostat, model label, exterior vent condition, and any service paperwork from normal owner access.",
+        "Shut the furnace down and turn LP off for LP odor, soot, yellow flame, blocked vent concern, overheating, or repeated E1 symptoms.",
+        "Use Furrion/Lippert support or qualified RV furnace service for internal furnace parts, LP system, airflow safety, installed power, or repair decisions."
+      ],
+      "sourceIds": [
+        "furrion-furnace-e1-error-service-prep"
+      ],
+      "searchAliases": [
+        "furrion furnace e1 error code service prep",
+        "furrion furnace e1 owner safe prep before service",
+        "e1 error code on furrion furnace what to record"
+      ],
+      "searchRequiredTerms": [
+        "furrion+furnace+e1"
+      ]
+    },
+    {
+      "id": "furrion-furnace-e4-error-service-prep",
+      "slug": "furrion-furnace-e4-error-service-prep",
+      "title": "Furrion Furnace E4 Error: What to Record Before Calling Service",
+      "summary": "Use the Furrion Furnace E4 support video page as a source-only owner-safe prep guide; this page does not add a fault-code table entry.",
+      "safeChecklist": [
+        "Record the Furrion furnace model, E4 error code, thermostat state, blower behavior, vent condition from outside, and when the error appears.",
+        "Save photos of the display, thermostat, model label, exterior vent condition, and any service paperwork from normal owner access.",
+        "Shut the furnace down and turn LP off for LP odor, soot, yellow flame, blocked vent concern, overheating, or repeated E4 symptoms.",
+        "Use Furrion/Lippert support or qualified RV furnace service for internal furnace parts, LP system, airflow safety, installed power, or repair decisions."
+      ],
+      "sourceIds": [
+        "furrion-furnace-e4-error-service-prep"
+      ],
+      "searchAliases": [
+        "furrion furnace e4 error code service prep",
+        "furrion furnace e4 what to record before calling service",
+        "e4 error code on furrion furnace prep"
+      ],
+      "searchRequiredTerms": [
+        "furrion+furnace+e4"
+      ]
+    },
+    {
+      "id": "furrion-fho23sacrv-range-hood-filter-control-prep",
+      "slug": "furrion-fho23sacrv-range-hood-filter-control-prep",
+      "title": "Furrion FHO23SACRV Range Hood Filter, Control, and Label Prep",
+      "summary": "Use the Furrion FHO23SACRV range hood page to capture model, 12V label notes, filter condition, controls, light, fan, and service details.",
+      "safeChecklist": [
+        "Record the FHO23SACRV model, range hood label, 12V notes, fan speed, light behavior, filter condition, and exact symptom.",
+        "Save photos of the label, controls, filter, light area, fan grille, and visible condition from normal owner access.",
+        "Stop using the range hood for burning odor, smoke, overheating, unsafe power behavior, or repeated control symptoms.",
+        "Use Furrion/Lippert support or qualified RV appliance service for installed power, fan motor, internal parts, warranty, or repair decisions."
+      ],
+      "sourceIds": [
+        "furrion-fho23sacrv-range-hood-filter-control-prep"
+      ],
+      "searchAliases": [
+        "furrion fho23sacrv range hood 12v filter control prep",
+        "fho23sacrv range hood label service prep",
+        "furrion range hood filter fan light control prep"
+      ],
+      "searchRequiredTerms": [
+        "fho23sacrv"
+      ]
+    },
+    {
+      "id": "greystone-09-microwave-control-label-service-prep",
+      "slug": "greystone-09-microwave-control-label-service-prep",
+      "title": "Greystone 0.9 cu ft Microwave Control and Model-Label Prep",
+      "summary": "Use the Greystone 0.9 cu ft microwave page to capture model label, control behavior, door condition, power symptom, and service details.",
+      "safeChecklist": [
+        "Record the Greystone 0.9 cu ft microwave model, CCD-0008905 reference, control response, display text, door condition, and exact symptom.",
+        "Save photos of the model label, control panel, turntable area from normal access, and visible condition.",
+        "Stop using the microwave for burning odor, smoke, arcing, overheating, damaged door, unsafe power behavior, or repeated control symptoms.",
+        "Use Greystone/Lippert support or qualified microwave service for internal high-energy parts, cabinet removal, internal controls, installed power, or repair decisions."
+      ],
+      "sourceIds": [
+        "greystone-09-microwave-control-label-service-prep"
+      ],
+      "searchAliases": [
+        "greystone 0.9 microwave ccd 0008905 control label prep",
+        "greystone 09 microwave control model label service prep",
+        "ccd 0008905 greystone microwave service prep"
+      ],
+      "searchRequiredTerms": [
+        "greystone+0+9+microwave",
+        "greystone+09+microwave",
+        "ccd+0008905"
+      ]
+    },
+    {
+      "id": "greystone-16-1000w-microwave-control-service-prep",
+      "slug": "greystone-16-1000w-microwave-control-service-prep",
+      "title": "Greystone 1.6 cu ft Microwave Controls and Service Prep",
+      "summary": "Use the Greystone 1.6 cu ft 1000-Watt microwave page to capture model label, control behavior, door condition, power symptom, and service details.",
+      "safeChecklist": [
+        "Record the Greystone 1.6 cu ft 1000-Watt microwave model, CCD-0009770 reference, control response, display text, door condition, and exact symptom.",
+        "Save photos of the model label, control panel, turntable area from normal access, and visible condition.",
+        "Stop using the microwave for burning odor, smoke, arcing, overheating, damaged door, unsafe power behavior, or repeated control symptoms.",
+        "Use Greystone/Lippert support or qualified microwave service for internal high-energy parts, cabinet removal, internal controls, installed power, or repair decisions."
+      ],
+      "sourceIds": [
+        "greystone-16-1000w-microwave-control-service-prep"
+      ],
+      "searchAliases": [
+        "greystone 1.6 1000 watt microwave ccd 0009770 controls service prep",
+        "greystone 16 microwave 1000 watt control service prep",
+        "ccd 0009770 greystone microwave service prep"
+      ],
+      "searchRequiredTerms": [
+        "greystone+1+6+microwave",
+        "greystone+16+microwave",
+        "ccd+0009770"
+      ]
+    },
+    {
+      "id": "greystone-electric-fireplace-model-control-routing",
+      "slug": "greystone-electric-fireplace-model-control-routing",
+      "title": "Greystone Electric Fireplace Model, Control, and Support Routing",
+      "summary": "Use the Greystone fireplaces support page to capture electric fireplace size, model, controls, heat behavior, and support-routing details.",
+      "safeChecklist": [
+        "Record the Greystone electric fireplace model, 26-inch to 60-inch size if known, remote or local control response, heat behavior, and exact symptom.",
+        "Save photos of the model label, controls, remote, display, and visible condition from normal owner access.",
+        "Stop using the fireplace for burning odor, smoke, overheating, unsafe power behavior, cracked glass, or repeated control symptoms.",
+        "Use Greystone/Lippert support or qualified RV appliance service for installed power, heater element, internal controls, cabinet removal, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "greystone-electric-fireplace-model-control-routing"
+      ],
+      "searchAliases": [
+        "greystone fireplace 26 inch 60 inch electric support routing",
+        "greystone electric fireplace model control routing",
+        "greystone fireplace control support prep"
+      ],
+      "searchRequiredTerms": [
+        "greystone+fireplace",
+        "60+inch+electric"
+      ]
+    },
+    {
+      "id": "girard-tankless-e0-error-service-prep",
+      "slug": "girard-tankless-e0-error-service-prep",
+      "title": "Girard Tankless Water Heater E0 Error: Owner-Safe Service Prep",
+      "summary": "Use the Girard Tankless Water Heater E0 support video page as a source-only owner-safe prep guide; this page does not add a fault-code table entry.",
+      "safeChecklist": [
+        "Record the Girard tankless water heater model, E0 display, water-flow symptom, LP state, power state if known, and when the error appears.",
+        "Save photos of the display, model label, exterior vent condition, water-temperature setting, and service paperwork from normal owner access.",
+        "Turn the water heater off and turn LP off for LP odor, exhaust concern, overheating, leak, or repeated E0 symptoms.",
+        "Use Girard/Lippert support or qualified water-heater service for LP system, installed power, water-heater internals, parts, warranty, or repair decisions."
+      ],
+      "sourceIds": [
+        "girard-tankless-e0-error-service-prep"
+      ],
+      "searchAliases": [
+        "girard tankless water heater e0 service prep",
+        "girard tankless e0 error code owner safe prep",
+        "e0 error code on girard tankless water heater prep"
+      ],
+      "searchRequiredTerms": [
+        "girard+tankless+e0"
+      ]
+    },
+    {
+      "id": "girard-tankless-e9-error-service-prep",
+      "slug": "girard-tankless-e9-error-service-prep",
+      "title": "Girard Tankless Water Heater E9 Error: What to Capture Before Service",
+      "summary": "Use the Girard Tankless Water Heater E9 support video page as a source-only owner-safe prep guide; this page does not add a fault-code table entry.",
+      "safeChecklist": [
+        "Record the Girard tankless water heater model, E9 display, water-flow symptom, LP state, power state if known, and when the error appears.",
+        "Save photos of the display, model label, exterior vent condition, water-temperature setting, and service paperwork from normal owner access.",
+        "Turn the water heater off and turn LP off for LP odor, exhaust concern, overheating, leak, or repeated E9 symptoms.",
+        "Use Girard/Lippert support or qualified water-heater service for LP system, installed power, water-heater internals, parts, warranty, or repair decisions."
+      ],
+      "sourceIds": [
+        "girard-tankless-e9-error-service-prep"
+      ],
+      "searchAliases": [
+        "girard tankless water heater e9 service prep",
+        "girard tankless e9 error code what to capture before service",
+        "e9 error code on girard tankless water heater prep"
+      ],
+      "searchRequiredTerms": [
+        "girard+tankless+e9"
+      ]
+    },
+    {
+      "id": "onan-rv-generator-accessory-compatibility-service-prep",
+      "slug": "onan-rv-generator-accessory-compatibility-service-prep",
+      "title": "Onan RV Generator Accessory and Breaker Compatibility Prep",
+      "summary": "Use the Cummins Onan RV accessories F-0832E PDF to capture accessory, breaker, model, and service compatibility details before support.",
+      "safeChecklist": [
+        "Record the Cummins Onan RV generator model, GSN or serial if visible, accessory reference, F-0832E or 0058349 document reference, and breaker configuration.",
+        "Save photos of the nameplate, breaker panel labels, accessory paperwork, and visible condition from normal owner access.",
+        "Shut the generator down for CO alarm, exhaust concern, fuel odor, abnormal heat, unsafe power behavior, or repeated shutdown symptoms.",
+        "Use Cummins Onan support or qualified generator service for mounting, installed power, transfer equipment, fuel source, exhaust, parts, or repair decisions."
+      ],
+      "sourceIds": [
+        "onan-rv-generator-accessory-compatibility-service-prep"
+      ],
+      "searchAliases": [
+        "cummins onan rv accessories f 0832e 0058349 breaker compatibility prep",
+        "onan rv generator accessory compatibility service prep",
+        "onan f-0832e 0058349 breaker accessory prep"
+      ],
+      "searchRequiredTerms": [
+        "f+0832e",
+        "0058349"
+      ]
+    },
+    {
+      "id": "onan-p2500i-led-display-storage-service-prep",
+      "slug": "onan-p2500i-led-display-storage-service-prep",
+      "title": "Onan P2500i LED Display, Storage, and Service Prep",
+      "summary": "Use the Cummins Onan P2500i owner manual to capture A062R850 model, LED display, storage, CO, fuel, exhaust, and service details before support.",
+      "safeChecklist": [
+        "Record the P2500i model, A062R850 reference, LED display state, hours if visible, load condition, storage history, and shutdown behavior.",
+        "Save photos of the nameplate, LED display, fuel cap area from normal access, accessories, and service paperwork.",
+        "Shut the generator down for CO alarm, exhaust concern, fuel odor, abnormal heat, unsafe power behavior, or repeated shutdown symptoms.",
+        "Use Cummins Onan support or qualified generator service for internal engine, installed power, fuel source, exhaust, parts, warranty, or repair decisions."
+      ],
+      "sourceIds": [
+        "onan-p2500i-led-display-storage-service-prep"
+      ],
+      "searchAliases": [
+        "onan p2500i a062r850 led display owner manual storage service prep",
+        "onan p2500i led display storage service prep",
+        "cummins onan p2500i owner manual a062r850 prep"
+      ],
+      "searchRequiredTerms": [
+        "p2500i",
+        "a062r850"
       ]
     }
   ],

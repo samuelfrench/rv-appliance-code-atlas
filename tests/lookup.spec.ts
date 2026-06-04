@@ -2856,6 +2856,77 @@ test("lookup surfaces Dometic Norcold Thetford Coleman Lippert Furrion Suburban 
   expect(pageErrors).toEqual([]);
 });
 
+test("lookup surfaces Dometic Thetford Coleman MaxxAir Suburban Aqua-Hot Furrion Greystone Girard Onan source-only prep batch without generic hijacks", async ({
+  page,
+}) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    ["dometic fa25 fan tastic vent drydock model control prep", "/symptoms/dometic-fa25-fantastic-vent-drydock-model-control-prep/"],
+    ["thetford porta potti 465 msd electric flush service prep", "/symptoms/thetford-porta-potti-465-msd-electric-flush-prep/"],
+    ["coleman mach soft start kit 1497 3601 breaker trip prep", "/symptoms/coleman-mach-soft-start-kit-breaker-trip-prep/"],
+    ["maxxair 00a04401k original maxxfan smoke 4 speed control prep", "/symptoms/maxxair-00a04401k-original-maxxfan-control-prep/"],
+    ["suburban 2938abk triple burner propane drop in cooktop service prep", "/symptoms/suburban-2938abk-drop-in-3-burner-service-prep/"],
+    ["aqua hot 450d ahe 450 tribridhot diesel energy source prep", "/symptoms/aquahot-450d-model-energy-source-prep/"],
+    ["furrion furnace e1 error code service prep", "/symptoms/furrion-furnace-e1-error-service-prep/"],
+    ["greystone 1.6 1000 watt microwave ccd 0009770 controls service prep", "/symptoms/greystone-16-1000w-microwave-control-service-prep/"],
+    ["greystone 09 microwave control model label service prep", "/symptoms/greystone-09-microwave-control-label-service-prep/"],
+    ["greystone 16 microwave 1000 watt control service prep", "/symptoms/greystone-16-1000w-microwave-control-service-prep/"],
+    ["girard tankless water heater e9 service prep", "/symptoms/girard-tankless-e9-error-service-prep/"],
+    ["onan p2500i a062r850 led display owner manual storage service prep", "/symptoms/onan-p2500i-led-display-storage-service-prep/"],
+    ["dometic 400 toilet", "/symptoms/dometic-400-401-essential-toilet-model-fit-prep/"],
+    ["coleman mach 35203 0754", "/symptoms/coleman-mach-quiet-mach-10-model-control-prep/"],
+    ["suburban 3907a 17 air fryer black glass", "/symptoms/suburban-3907a-air-fryer-power-service-prep/"],
+  ] as const;
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+  }
+
+  for (const query of [
+    "service prep",
+    "owner manual",
+    "toilet",
+    "fan",
+    "furnace",
+    "generator",
+    "hydronic",
+    "water heater",
+    "cooktop",
+    "air conditioner",
+    "microwave",
+    "error code",
+    "breaker trip",
+    "diesel",
+  ]) {
+    await searchbox.fill(query);
+    for (const [, href] of cases) {
+      await expect(lookupResults.locator(`a[href="${href}"]`), `${query} -> ${href}`).toHaveCount(0);
+    }
+  }
+
+  await searchbox.fill("onan p2500i a062r850 led display owner manual storage service prep");
+  const p2500i = lookupResults.locator('a[href="/symptoms/onan-p2500i-led-display-storage-service-prep/"]');
+  await expect(p2500i).toBeVisible();
+  await p2500i.click();
+  await expect(page.getByRole("heading", { name: "Onan P2500i LED Display, Storage, and Service Prep" })).toBeVisible();
+  await expect(page.getByText(/Record the P2500i model/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 

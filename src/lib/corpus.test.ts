@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 864;
-const expectedSourceCount = 878;
-const expectedSymptomCount = 710;
+const expectedSourceCount = 910;
+const expectedSymptomCount = 742;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -9471,6 +9471,218 @@ describe("verified corpus", () => {
       "digital range",
       "drop in 2 burner",
       "175",
+    ]) {
+      expect(
+        lookupSymptomGuides(index, query)
+          .slice(0, 5)
+          .map((symptom) => symptom.slug)
+          .filter((slug) => newSlugs.has(slug)),
+        query,
+      ).toEqual([]);
+    }
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds the official Dometic Thetford Norcold Coleman MaxxAir Suburban Aqua-Hot Furrion Greystone Girard and Onan prep batch without code entries", () => {
+    const expectedSources = new Map<string, string>([
+      ["dometic-fa25-fantastic-vent-drydock-model-control-prep", "https://www.dometic.com/en-us/lp/rv-ventfans-essential"],
+      ["dometic-fa75-fantastic-vent-complete-control-prep", "https://www.dometic.com/en-us/lp/rv-ventfans-complete"],
+      ["dometic-fa95-fantastic-vent-platinum-control-prep", "https://www.dometic.com/en-us/lp/rv-ventfans-platinum"],
+      ["dometic-400-401-essential-toilet-model-fit-prep", "https://www.dometic.com/en-us/lp/rv-toilets-essential"],
+      ["dometic-410-411-complete-toilet-model-fit-prep", "https://www.dometic.com/en-us/lp/rv-toilets-complete"],
+      ["thetford-porta-potti-320-550-storage-maintenance-prep", "https://www.thetford.com/us/thetford-support/porta-potti-320-345-365-550/"],
+      ["thetford-porta-potti-555-735-flush-storage-prep", "https://www.thetford.com/us/thetford-support/porta-potti-555-565-735/"],
+      ["thetford-porta-potti-260b-model-storage-prep", "https://www.thetford.com/us/thetford-support/porta-potti-260b/"],
+      ["thetford-porta-potti-465-msd-electric-flush-prep", "https://www.thetford.com/us/thetford-support/porta-potti-465-465-msd/"],
+      ["norcold-polar-n8x-hts-service-routing-prep", "https://www.thetford.com/us/thetford-support/n8x/"],
+      ["coleman-mach-quiet-mach-10-model-control-prep", "https://coleman-mach.com/products/air-conditioners/quiet-series-mach-10/"],
+      ["coleman-mach-quiet-mach-15-model-service-prep", "https://coleman-mach.com/products/air-conditioners/quiet-series-mach-15/"],
+      ["coleman-mach-soft-start-kit-breaker-trip-prep", "https://coleman-mach.com/products/climate-control-accessories/soft-start-kit/"],
+      ["coleman-mach-parkpac-36413-012-service-prep", "https://coleman-mach.com/products/air-conditioners/specialty-units-parkpac-air-conditioner/"],
+      ["maxxair-00a04401k-original-maxxfan-control-prep", "https://www.maxxair.com/products/fans/maxxfan-00A04401K/"],
+      ["maxxair-00a04501k-original-maxxfan-model-prep", "https://www.maxxair.com/products/fans/maxxfan-00A04501K/"],
+      ["maxxair-00-04050k-maxxfan-plus-control-prep", "https://www.maxxair.com/products/fans/maxxfan-plus-00-04050K/"],
+      ["suburban-2938abk-drop-in-3-burner-service-prep", "https://suburbanrv.com/kitchen-galley/cooktops/drop-in-cooktops/drop-in-3-burner/"],
+      ["suburban-3907a-air-fryer-power-service-prep", "https://suburbanrv.com/kitchen-galley/air-fryers/17-air-fryer-black/"],
+      ["aquahot-450d-model-energy-source-prep", "https://www.aquahot.com/products/rv/450D.aspx"],
+      ["aquahot-600d-model-energy-source-prep", "https://www.aquahot.com/products/rv/600D.aspx"],
+      ["furrion-furnace-v1-model-control-service-prep", "https://support.lci1.com/documents/ccd-0006025"],
+      ["furrion-furnace-e1-error-service-prep", "https://support.lci1.com/videos/e1-error-code-on-furrion-furnace"],
+      ["furrion-furnace-e4-error-service-prep", "https://support.lci1.com/videos/e4-error-code-on-furrion-furnace"],
+      ["furrion-fho23sacrv-range-hood-filter-control-prep", "https://support.lci1.com/documents/ccd-0010314"],
+      ["greystone-09-microwave-control-label-service-prep", "https://support.lci1.com/documents/ccd-0008905"],
+      ["greystone-16-1000w-microwave-control-service-prep", "https://support.lci1.com/documents/ccd-0009770"],
+      ["greystone-electric-fireplace-model-control-routing", "https://support.lci1.com/greystone-fireplaces"],
+      ["girard-tankless-e0-error-service-prep", "https://support.lci1.com/videos/e0-error-code-on-girard-tankless-water-heater"],
+      ["girard-tankless-e9-error-service-prep", "https://support.lci1.com/videos/e9-error-code-on-girard-tankless-water-heater"],
+      ["onan-rv-generator-accessory-compatibility-service-prep", "https://mart.cummins.com/imagelibrary/data/assetfiles/0058349.pdf"],
+      ["onan-p2500i-led-display-storage-service-prep", "https://www.cummins.com/sites/default/files/2025-04/p2500i-owners-manual.pdf"],
+    ]);
+    const expectedSymptoms = new Map<string, { sourceIds: string[]; requiredTerms: string[]; query: string }>(
+      Array.from(expectedSources.keys()).map((id) => [
+        id,
+        {
+          sourceIds: [id],
+          requiredTerms: {
+            "dometic-fa25-fantastic-vent-drydock-model-control-prep": ["fa25", "fan+tastic+vent+drydock"],
+            "dometic-fa75-fantastic-vent-complete-control-prep": ["fa75", "fantastic+vent+complete"],
+            "dometic-fa95-fantastic-vent-platinum-control-prep": ["fa95", "fantastic+vent+platinum"],
+            "dometic-400-401-essential-toilet-model-fit-prep": ["dometic+400", "dometic+401", "essential+toilet"],
+            "dometic-410-411-complete-toilet-model-fit-prep": ["dometic+410", "dometic+411", "complete+toilet"],
+            "thetford-porta-potti-320-550-storage-maintenance-prep": ["porta+potti+320", "porta+potti+550"],
+            "thetford-porta-potti-555-735-flush-storage-prep": ["porta+potti+555", "porta+potti+735"],
+            "thetford-porta-potti-260b-model-storage-prep": ["porta+potti+260b"],
+            "thetford-porta-potti-465-msd-electric-flush-prep": ["porta+potti+465", "465+msd"],
+            "norcold-polar-n8x-hts-service-routing-prep": ["polar+n8x", "n8x+hts"],
+            "coleman-mach-quiet-mach-10-model-control-prep": [
+              "quiet+mach+10",
+              "35003+0794",
+              "35203+0754",
+              "35203+0993",
+            ],
+            "coleman-mach-quiet-mach-15-model-service-prep": [
+              "quiet+mach+15",
+              "38204+0660",
+              "38204+0690",
+              "38209+0660",
+            ],
+            "coleman-mach-soft-start-kit-breaker-trip-prep": ["soft+start+kit", "1497+3601"],
+            "coleman-mach-parkpac-36413-012-service-prep": ["parkpac", "36413+012"],
+            "maxxair-00a04401k-original-maxxfan-control-prep": ["00a04401k", "original+maxxfan"],
+            "maxxair-00a04501k-original-maxxfan-model-prep": ["00a04501k", "original+maxxfan"],
+            "maxxair-00-04050k-maxxfan-plus-control-prep": ["00+04050k", "maxxfan+plus"],
+            "suburban-2938abk-drop-in-3-burner-service-prep": ["2938abk", "triple+burner+propane+drop+in"],
+            "suburban-3907a-air-fryer-power-service-prep": ["3907a+17", "17+air+fryer", "3907a+black+glass"],
+            "aquahot-450d-model-energy-source-prep": ["450d", "ahe+450"],
+            "aquahot-600d-model-energy-source-prep": ["600d", "ahe+600"],
+            "furrion-furnace-v1-model-control-service-prep": ["im+fha00127", "furrion+furnace+v1"],
+            "furrion-furnace-e1-error-service-prep": ["furrion+furnace+e1"],
+            "furrion-furnace-e4-error-service-prep": ["furrion+furnace+e4"],
+            "furrion-fho23sacrv-range-hood-filter-control-prep": ["fho23sacrv"],
+            "greystone-09-microwave-control-label-service-prep": [
+              "greystone+0+9+microwave",
+              "greystone+09+microwave",
+              "ccd+0008905",
+            ],
+            "greystone-16-1000w-microwave-control-service-prep": [
+              "greystone+1+6+microwave",
+              "greystone+16+microwave",
+              "ccd+0009770",
+            ],
+            "greystone-electric-fireplace-model-control-routing": ["greystone+fireplace", "60+inch+electric"],
+            "girard-tankless-e0-error-service-prep": ["girard+tankless+e0"],
+            "girard-tankless-e9-error-service-prep": ["girard+tankless+e9"],
+            "onan-rv-generator-accessory-compatibility-service-prep": ["f+0832e", "0058349"],
+            "onan-p2500i-led-display-storage-service-prep": ["p2500i", "a062r850"],
+          }[id] ?? [],
+          query: {
+            "dometic-fa25-fantastic-vent-drydock-model-control-prep": "dometic fa25 fan tastic vent drydock model control prep",
+            "dometic-fa75-fantastic-vent-complete-control-prep": "dometic fa75 fan tastic vent complete drydock smart control prep",
+            "dometic-fa95-fantastic-vent-platinum-control-prep": "dometic fa95 fan tastic vent platinum drydock feature prep",
+            "dometic-400-401-essential-toilet-model-fit-prep": "dometic 400 401 essential toilet model fit prep",
+            "dometic-410-411-complete-toilet-model-fit-prep": "dometic 410 411 complete toilet warranty prep",
+            "thetford-porta-potti-320-550-storage-maintenance-prep": "thetford porta potti 320 550 storage maintenance prep",
+            "thetford-porta-potti-555-735-flush-storage-prep": "thetford porta potti 555 735 flush storage prep",
+            "thetford-porta-potti-260b-model-storage-prep": "thetford porta potti 260b model storage prep",
+            "thetford-porta-potti-465-msd-electric-flush-prep": "thetford porta potti 465 msd electric flush service prep",
+            "norcold-polar-n8x-hts-service-routing-prep": "norcold polar n8x hts service routing prep",
+            "coleman-mach-quiet-mach-10-model-control-prep": "coleman mach quiet mach 10 35003 0794 model control prep",
+            "coleman-mach-quiet-mach-15-model-service-prep": "coleman mach quiet mach 15 38204 0660 service prep",
+            "coleman-mach-soft-start-kit-breaker-trip-prep": "coleman mach soft start kit 1497 3601 breaker trip prep",
+            "coleman-mach-parkpac-36413-012-service-prep": "coleman mach parkpac 36413 012 service prep",
+            "maxxair-00a04401k-original-maxxfan-control-prep": "maxxair 00a04401k original maxxfan smoke 4 speed control prep",
+            "maxxair-00a04501k-original-maxxfan-model-prep": "maxxair 00a04501k original maxxfan black 4 speed model prep",
+            "maxxair-00-04050k-maxxfan-plus-control-prep": "maxxair 00 04050k maxxfan plus 10 speed smoke control prep",
+            "suburban-2938abk-drop-in-3-burner-service-prep": "suburban 2938abk triple burner propane drop in cooktop service prep",
+            "suburban-3907a-air-fryer-power-service-prep": "suburban 3907a 17 air fryer black glass power service prep",
+            "aquahot-450d-model-energy-source-prep": "aqua hot 450d ahe 450 tribridhot diesel energy source prep",
+            "aquahot-600d-model-energy-source-prep": "aqua hot 600d ahe 600 diesel 600 series energy source prep",
+            "furrion-furnace-v1-model-control-service-prep": "furrion furnace 20k 30k 35k im fha00127 model thermostat service prep",
+            "furrion-furnace-e1-error-service-prep": "furrion furnace e1 error code service prep",
+            "furrion-furnace-e4-error-service-prep": "furrion furnace e4 error code service prep",
+            "furrion-fho23sacrv-range-hood-filter-control-prep": "furrion fho23sacrv range hood 12v filter control prep",
+            "greystone-09-microwave-control-label-service-prep": "greystone 0.9 microwave ccd 0008905 control label prep",
+            "greystone-16-1000w-microwave-control-service-prep": "greystone 1.6 1000 watt microwave ccd 0009770 controls service prep",
+            "greystone-electric-fireplace-model-control-routing": "greystone fireplace 26 inch 60 inch electric support routing",
+            "girard-tankless-e0-error-service-prep": "girard tankless water heater e0 service prep",
+            "girard-tankless-e9-error-service-prep": "girard tankless water heater e9 service prep",
+            "onan-rv-generator-accessory-compatibility-service-prep": "cummins onan rv accessories f 0832e 0058349 breaker compatibility prep",
+            "onan-p2500i-led-display-storage-service-prep": "onan p2500i a062r850 led display owner manual storage service prep",
+          }[id] ?? id,
+        },
+      ]),
+    );
+    const newSourceIds = Array.from(expectedSources.keys());
+    const newSlugs = new Set(expectedSymptoms.keys());
+    const sourcesById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const index = buildSymptomSearchIndex(corpus);
+    const summary = summarizeCorpus(corpus);
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|burner\s+(repair|work|service|port|assembly)|\borifice\b|\bcontrol[- ]board\b|\b120\s*vac\b|\b110\s*v\b|\bline[- ]voltage\b|\brefrigerant\b|\bprobe\b|\bwiring\b|\bsupply line\b|\bopen (the )?(fuel|gas|electrical|rooftop)|remove.*shroud|remove.*cover|remove.*toilet|replace.*valve|measure resistance|fuel nozzle|combustion|coolant pump|manual override|hydraulic work|hydraulic repair|macerator|internal plumbing|seal removal|compressor repair|pump service|magnetron|capacitor|door switch/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = sourcesById.get(sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(summary.indexablePages).toBe(expectedEntryCount + expectedSymptomCount + 1);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const [symptomId, expected] of expectedSymptoms) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds, symptomId).toEqual(expected.sourceIds);
+      expect(symptom?.searchRequiredTerms, symptomId).toEqual(expected.requiredTerms);
+      expect([symptom?.summary, ...(symptom?.safeChecklist ?? [])].join(" "), symptomId).not.toMatch(
+        unsafeOwnerActionPattern,
+      );
+      expect(lookupSymptomGuides(index, expected.query)[0]?.slug, expected.query).toBe(symptomId);
+    }
+
+    for (const [query, slug] of [
+      ["dometic 400 toilet", "dometic-400-401-essential-toilet-model-fit-prep"],
+      ["dometic 411 toilet", "dometic-410-411-complete-toilet-model-fit-prep"],
+      ["coleman mach 35203 0754", "coleman-mach-quiet-mach-10-model-control-prep"],
+      ["coleman mach 38209 0660", "coleman-mach-quiet-mach-15-model-service-prep"],
+      ["suburban 3907a 17 air fryer black glass", "suburban-3907a-air-fryer-power-service-prep"],
+      ["greystone 09 microwave control model label service prep", "greystone-09-microwave-control-label-service-prep"],
+      ["greystone 16 microwave 1000 watt control service prep", "greystone-16-1000w-microwave-control-service-prep"],
+    ]) {
+      expect(lookupSymptomGuides(index, query)[0]?.slug, query).toBe(slug);
+    }
+
+    for (const query of [
+      "warranty",
+      "service prep",
+      "owner manual",
+      "model number",
+      "control center",
+      "toilet",
+      "fan",
+      "furnace",
+      "manual control",
+      "generator",
+      "hydronic",
+      "remote",
+      "thermostat",
+      "storage",
+      "recall",
+      "water heater",
+      "cooktop",
+      "air conditioner",
+      "microwave",
+      "fireplace",
+      "range hood",
+      "error code",
+      "breaker trip",
+      "electric flush",
+      "diesel",
+      "black glass",
     ]) {
       expect(
         lookupSymptomGuides(index, query)
