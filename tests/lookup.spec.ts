@@ -3635,3 +3635,100 @@ test("lookup surfaces the official source scout batch without generic hijacks", 
   expect(consoleErrors).toEqual([]);
   expect(pageErrors).toEqual([]);
 });
+
+test("lookup surfaces the Dometic app and HVAC support batch without generic hijacks", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    ["cfx5 app graph 5423 cooler", "/symptoms/dometic-cfx5-app-graph-prep/"],
+    ["cfx5 app cannot control cooler 3caa", "/symptoms/dometic-cfx5-app-cannot-control-cooler-prep/"],
+    ["cfx5 ac mode doesnt work f3d8", "/symptoms/dometic-cfx5-ac-mode-doesnt-work-prep/"],
+    ["cfx5 ac mode does not work f3d8", "/symptoms/dometic-cfx5-ac-mode-doesnt-work-prep/"],
+    ["ibis water enters the vehicle d19a", "/symptoms/dometic-ibis-water-enters-vehicle-service-prep/"],
+    ["harrier roof air conditioner does not switch off 6373", "/symptoms/dometic-harrier-does-not-switch-off-prep/"],
+    ["dometic harrier switch on standby", "/symptoms/dometic-harrier-switch-on-standby-prep/"],
+    ["brisk fan doesnt operate compressor runs a18f", "/symptoms/dometic-brisk-fan-compressor-runs-service-prep/"],
+    ["brisk fan does not operate compressor runs a18f", "/symptoms/dometic-brisk-fan-compressor-runs-service-prep/"],
+    ["brisk error code 26fc", "/symptoms/dometic-brisk-error-code-router-prep/"],
+  ] as const;
+  const protectedHrefs = [
+    "/symptoms/dometic-cfx5-app-graph-prep/",
+    "/symptoms/dometic-cfx5-app-crash-password-prep/",
+    "/symptoms/dometic-cfx5-app-keeps-crashing-prep/",
+    "/symptoms/dometic-cfx5-app-loading-screen-prep/",
+    "/symptoms/dometic-cfx5-smartphone-wifi-app-prep/",
+    "/symptoms/dometic-cfx5-smartphone-connected-app-prep/",
+    "/symptoms/dometic-cfx5-app-cannot-control-cooler-prep/",
+    "/symptoms/dometic-cfx5-password-connect-prep/",
+    "/symptoms/dometic-cfx5-wifi-network-name-prep/",
+    "/symptoms/dometic-cfx5-display-key-strokes-prep/",
+    "/symptoms/dometic-cfx5-ac-mode-doesnt-work-prep/",
+    "/symptoms/dometic-ibis-control-panel-elements-prep/",
+    "/symptoms/dometic-ibis-remote-elements-prep/",
+    "/symptoms/dometic-ibis-not-heating-service-prep/",
+    "/symptoms/dometic-ibis-water-enters-vehicle-service-prep/",
+    "/symptoms/dometic-harrier-does-not-switch-off-prep/",
+    "/symptoms/dometic-harrier-ac-modes-prep/",
+    "/symptoms/dometic-harrier-switch-on-standby-prep/",
+    "/symptoms/dometic-harrier-not-heating-service-prep/",
+    "/symptoms/dometic-harrier-low-air-output-service-prep/",
+    "/symptoms/dometic-brisk-furnace-thermostat-prep/",
+    "/symptoms/dometic-brisk-button-functions-prep/",
+    "/symptoms/dometic-brisk-operates-improperly-service-prep/",
+    "/symptoms/dometic-brisk-fan-compressor-runs-service-prep/",
+    "/symptoms/dometic-brisk-error-code-router-prep/",
+  ] as const;
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+  }
+
+  for (const query of [
+    "dometic app",
+    "cfx5 app",
+    "password",
+    "loading screen",
+    "wifi",
+    "network name",
+    "display",
+    "key strokes",
+    "ac mode",
+    "ibis remote",
+    "ibis control panel",
+    "not heating",
+    "water enters",
+    "harrier modes",
+    "switch off",
+    "low air output",
+    "brisk furnace",
+    "button functions",
+    "error code",
+    "fan compressor",
+  ]) {
+    await searchbox.fill(query);
+    for (const href of protectedHrefs) {
+      await expect(lookupResults.locator(`a[href="${href}"]`), `${query} -> ${href}`).toHaveCount(0);
+    }
+  }
+
+  await searchbox.fill("cfx5 app graph 5423 cooler");
+  const graphGuide = lookupResults.locator('a[href="/symptoms/dometic-cfx5-app-graph-prep/"]');
+  await expect(graphGuide).toBeVisible();
+  await graphGuide.click();
+  await expect(page.getByRole("heading", { name: "Dometic CFX5 App Graph Prep" })).toBeVisible();
+  await expect(page.getByText(/Record the CFX5 model/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});

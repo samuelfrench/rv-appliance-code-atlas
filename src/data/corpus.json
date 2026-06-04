@@ -9433,6 +9433,206 @@
       "url": "https://www.thetford.com/app/uploads/2025/01/UM_Porta-Potti-565_200458-1118-V02.pdf",
       "type": "manufacturer-manual",
       "official": true
+    },
+    {
+      "id": "dometic-cfx5-app-graph-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX5 App Graph Support",
+      "url": "https://support.dometic.com/en/cfx5-coolers/How-do-I-read-the-graph-in-the-CFX5-app-5423",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx5-app-crash-password-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX5 App Crashes After Password Support",
+      "url": "https://support.dometic.com/en/cfx5-coolers/The-app-crashes-after-entering-password-94e7",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx5-app-keeps-crashing-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX5 App Keeps Crashing Support",
+      "url": "https://support.dometic.com/en/cfx5-coolers/The-app-keeps-crashing-8964",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx5-app-loading-screen-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX5 App Loading Screen Support",
+      "url": "https://support.dometic.com/en/cfx5-coolers/The-app-gets-stuck-on-the-loading-screen-de69",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx5-smartphone-wifi-app-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX5 Smartphone WiFi App Support",
+      "url": "https://support.dometic.com/en/cfx5-coolers/The-WiFi-on-my-smartphone-doesnt-work-while-using-the-app-68aa",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx5-smartphone-connected-app-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX5 Smartphone Connected App Support",
+      "url": "https://support.dometic.com/en/cfx5-coolers/My-smartphone-is-connected-to-the-cooler-but-the-app-is-not-working-84ac",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx5-app-cannot-control-cooler-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX5 App Cannot Control Cooler Support",
+      "url": "https://support.dometic.com/en/cfx5-coolers/The-app-cannot-control-the-cooler-3caa",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx5-password-connect-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX5 Password Connect Support",
+      "url": "https://support.dometic.com/en/cfx5-coolers/What-is-the-password-to-connect-the-CFX5-919d",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx5-wifi-network-name-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX5 WiFi Network Name Support",
+      "url": "https://support.dometic.com/en/cfx5-coolers/What-is-the-WiFi-network-name-for-my-CFX-df30",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx5-display-key-strokes-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX5 Display Key Strokes Support",
+      "url": "https://support.dometic.com/en/cfx5-coolers/The-display-does-not-respond-to-key-strokes-3b7e",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-cfx5-ac-mode-doesnt-work-support",
+      "brand": "Dometic",
+      "title": "Dometic CFX5 AC Mode Does Not Work Support",
+      "url": "https://support.dometic.com/en/cfx5-coolers/My-cooler-doesnt-work-when-in-AC-mode-f3d8",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ibis-control-panel-elements-support",
+      "brand": "Dometic",
+      "title": "Dometic Ibis Control Panel Elements Support",
+      "url": "https://support.dometic.com/en/ibis-ac/What-are-the-functionalities-of-the-elements-on-the-control-panels-19ba",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ibis-remote-elements-support",
+      "brand": "Dometic",
+      "title": "Dometic Ibis Remote Control Elements Support",
+      "url": "https://support.dometic.com/en/ibis-ac/What-are-the-functionalities-of-the-elements-on-the-remote-control-7484",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ibis-not-heating-support",
+      "brand": "Dometic",
+      "title": "Dometic Ibis Not Heating Support",
+      "url": "https://support.dometic.com/en/ibis-ac/My-air-conditioner-is-not-heating-well-55b",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-ibis-water-enters-vehicle-support",
+      "brand": "Dometic",
+      "title": "Dometic Ibis Water Enters Vehicle Support",
+      "url": "https://support.dometic.com/en/ibis-ac/Water-enters-the-vehicle-d19a",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-harrier-does-not-switch-off-support",
+      "brand": "Dometic",
+      "title": "Dometic Harrier Does Not Switch Off Support",
+      "url": "https://support.dometic.com/en/harrier-ac/My-roof-air-conditioner-does-not-switch-off-6373",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-harrier-ac-modes-support",
+      "brand": "Dometic",
+      "title": "Dometic Harrier Air Conditioner Modes Support",
+      "url": "https://support.dometic.com/en/harrier-ac/What-air-conditioner-modes-are-available-for-my-product-18b1",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-harrier-switch-on-standby-support",
+      "brand": "Dometic",
+      "title": "Dometic Harrier Switch On and Standby Support",
+      "url": "https://support.dometic.com/en/harrier-ac/How-to-Switch-the-roof-air-conditioner-on-and-to-stand-by-db",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-harrier-not-heating-support",
+      "brand": "Dometic",
+      "title": "Dometic Harrier Not Heating Support",
+      "url": "https://support.dometic.com/en/harrier-ac/My-air-conditioner-is-not-heating-well-811e",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-harrier-low-air-output-support",
+      "brand": "Dometic",
+      "title": "Dometic Harrier Low Air Output Support",
+      "url": "https://support.dometic.com/en/harrier-ac/My-air-conditioner-is-giving-me-low-air-output-d861",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-brisk-furnace-thermostat-support",
+      "brand": "Dometic",
+      "title": "Dometic Brisk Furnace Thermostat Support",
+      "url": "https://support.dometic.com/en/brisk-ac/How-to-control-Furnace-on-thermostat-a495",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-brisk-button-functions-support",
+      "brand": "Dometic",
+      "title": "Dometic Brisk Button Functions Support",
+      "url": "https://support.dometic.com/en/brisk-ac/How-to-use-the-button-functions-403a",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-brisk-operates-improperly-support",
+      "brand": "Dometic",
+      "title": "Dometic Brisk Operates Improperly Support",
+      "url": "https://support.dometic.com/en/brisk-ac/Air-Conditioner-fails-to-operate-or-operates-improperly-d0fe",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-brisk-fan-compressor-runs-support",
+      "brand": "Dometic",
+      "title": "Dometic Brisk Fan Does Not Operate Compressor Runs Support",
+      "url": "https://support.dometic.com/en/brisk-ac/Fan-doesnt-operate-but-compressor-runs-when-Air-ConditionerHeat-Pump-is-turned-on-a18f",
+      "type": "manufacturer-support",
+      "official": true
+    },
+    {
+      "id": "dometic-brisk-error-code-router-support",
+      "brand": "Dometic",
+      "title": "Dometic Brisk Error Code Router Support",
+      "url": "https://support.dometic.com/en/brisk-ac/I-see-an-error-code-26fc",
+      "type": "manufacturer-support",
+      "official": true
     }
   ],
   "entries": [
@@ -64509,6 +64709,587 @@
         "porta+potti+565",
         "200458",
         "thetford+porta+potti+565"
+      ]
+    },
+    {
+      "id": "dometic-cfx5-app-graph-prep",
+      "slug": "dometic-cfx5-app-graph-prep",
+      "title": "Dometic CFX5 App Graph Prep",
+      "summary": "Use this official Dometic source for CFX5 app graph questions before contacting support or choosing a model-specific guide.",
+      "safeChecklist": [
+        "Record the CFX5 model, app screen, graph time range, temperature setting, power source, and any alert or warning text shown.",
+        "Save photos or screenshots of the CFX5 display, app graph, cooler label, power connection, and the official Dometic support title you matched.",
+        "Do not repair internal cooler electronics yourself; shut the cooler down if it overheats, smells unusual, or keeps showing alerts, then use Dometic support or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-cfx5-app-graph-support"
+      ],
+      "searchAliases": [
+        "cfx5 app graph 5423 cooler",
+        "dometic cfx5 app graph prep",
+        "dometic cfx5 graph support"
+      ],
+      "searchRequiredTerms": [
+        "cfx5+app+graph",
+        "dometic+cfx5+app+graph"
+      ]
+    },
+    {
+      "id": "dometic-cfx5-app-crash-password-prep",
+      "slug": "dometic-cfx5-app-crash-password-prep",
+      "title": "Dometic CFX5 App Crash Password Prep",
+      "summary": "Use this official Dometic source when the CFX5 app crashes after entering a password before contacting support or choosing a model-specific guide.",
+      "safeChecklist": [
+        "Record the CFX5 model, phone operating system, app version, password step, network name, and whether the cooler display still responds.",
+        "Save screenshots of the app crash, photos of the cooler label and display, and the official Dometic support title you matched.",
+        "Do not repair internal cooler electronics yourself; shut the cooler down if it overheats, smells unusual, or keeps showing alerts, then use Dometic support or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-cfx5-app-crash-password-support"
+      ],
+      "searchAliases": [
+        "cfx5 app crashes after entering password 94e7",
+        "dometic cfx5 app crash password prep",
+        "dometic cfx5 password crash support"
+      ],
+      "searchRequiredTerms": [
+        "cfx5+app+crashes+password",
+        "dometic+cfx5+password+94e7"
+      ]
+    },
+    {
+      "id": "dometic-cfx5-app-keeps-crashing-prep",
+      "slug": "dometic-cfx5-app-keeps-crashing-prep",
+      "title": "Dometic CFX5 App Keeps Crashing Prep",
+      "summary": "Use this official Dometic source when the CFX5 app keeps crashing before contacting support or choosing a model-specific guide.",
+      "safeChecklist": [
+        "Record the CFX5 model, phone operating system, app version, connection method, power source, and what action triggers the app crash.",
+        "Save screenshots of the crash, photos of the cooler label and display, and the official Dometic support title you matched.",
+        "Do not repair internal cooler electronics yourself; shut the cooler down if it overheats, smells unusual, or keeps showing alerts, then use Dometic support or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-cfx5-app-keeps-crashing-support"
+      ],
+      "searchAliases": [
+        "cfx5 app keeps crashing 8964",
+        "dometic cfx5 app keeps crashing prep",
+        "dometic cfx5 app crash support"
+      ],
+      "searchRequiredTerms": [
+        "cfx5+app+keeps+crashing",
+        "dometic+cfx5+app+8964"
+      ]
+    },
+    {
+      "id": "dometic-cfx5-app-loading-screen-prep",
+      "slug": "dometic-cfx5-app-loading-screen-prep",
+      "title": "Dometic CFX5 App Loading Screen Prep",
+      "summary": "Use this official Dometic source when the CFX5 app is stuck on the loading screen before contacting support or choosing a model-specific guide.",
+      "safeChecklist": [
+        "Record the CFX5 model, app version, phone operating system, network name, power source, and how long the loading screen remains.",
+        "Save screenshots of the loading screen, photos of the cooler label and display, and the official Dometic support title you matched.",
+        "Do not repair internal cooler electronics yourself; shut the cooler down if it overheats, smells unusual, or keeps showing alerts, then use Dometic support or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-cfx5-app-loading-screen-support"
+      ],
+      "searchAliases": [
+        "cfx5 app stuck loading screen de69",
+        "dometic cfx5 app loading screen prep",
+        "dometic cfx5 loading screen support"
+      ],
+      "searchRequiredTerms": [
+        "cfx5+app+loading+screen",
+        "dometic+cfx5+loading+screen"
+      ]
+    },
+    {
+      "id": "dometic-cfx5-smartphone-wifi-app-prep",
+      "slug": "dometic-cfx5-smartphone-wifi-app-prep",
+      "title": "Dometic CFX5 Smartphone WiFi App Prep",
+      "summary": "Use this official Dometic source when smartphone WiFi does not work while using the CFX5 app before contacting support.",
+      "safeChecklist": [
+        "Record the CFX5 model, phone operating system, app version, WiFi network name, connection state, and whether Bluetooth or the display still works.",
+        "Save screenshots of the phone WiFi/app state, photos of the cooler label and display, and the official Dometic support title you matched.",
+        "Do not repair internal cooler electronics yourself; shut the cooler down if it overheats, smells unusual, or keeps showing alerts, then use Dometic support or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-cfx5-smartphone-wifi-app-support"
+      ],
+      "searchAliases": [
+        "cfx5 smartphone wifi app 68aa",
+        "dometic cfx5 smartphone wifi app prep",
+        "dometic cfx5 wifi app support"
+      ],
+      "searchRequiredTerms": [
+        "cfx5+smartphone+wifi+app",
+        "dometic+cfx5+wifi+68aa"
+      ]
+    },
+    {
+      "id": "dometic-cfx5-smartphone-connected-app-prep",
+      "slug": "dometic-cfx5-smartphone-connected-app-prep",
+      "title": "Dometic CFX5 Smartphone Connected App Prep",
+      "summary": "Use this official Dometic source when the smartphone is connected to the CFX5 but the app is not working before contacting support.",
+      "safeChecklist": [
+        "Record the CFX5 model, phone operating system, app version, connection state, cooler display state, and any alert or warning shown.",
+        "Save screenshots of the connected-but-not-working app state, photos of the cooler label and display, and the official Dometic support title you matched.",
+        "Do not repair internal cooler electronics yourself; shut the cooler down if it overheats, smells unusual, or keeps showing alerts, then use Dometic support or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-cfx5-smartphone-connected-app-support"
+      ],
+      "searchAliases": [
+        "cfx5 smartphone connected cooler app not working 84ac",
+        "dometic cfx5 smartphone connected app prep",
+        "dometic cfx5 app not working support"
+      ],
+      "searchRequiredTerms": [
+        "cfx5+smartphone+connected+app",
+        "dometic+cfx5+app+84ac"
+      ]
+    },
+    {
+      "id": "dometic-cfx5-app-cannot-control-cooler-prep",
+      "slug": "dometic-cfx5-app-cannot-control-cooler-prep",
+      "title": "Dometic CFX5 App Cannot Control Cooler Prep",
+      "summary": "Use this official Dometic source when the CFX5 app cannot control the cooler before contacting support or choosing a model-specific guide.",
+      "safeChecklist": [
+        "Record the CFX5 model, app version, phone operating system, current set point, app connection state, and what controls do not respond.",
+        "Save screenshots of the app control state, photos of the cooler label and display, and the official Dometic support title you matched.",
+        "Do not repair internal cooler electronics yourself; shut the cooler down if it overheats, smells unusual, or keeps showing alerts, then use Dometic support or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-cfx5-app-cannot-control-cooler-support"
+      ],
+      "searchAliases": [
+        "cfx5 app cannot control cooler 3caa",
+        "dometic cfx5 app cannot control cooler prep",
+        "dometic cfx5 app control support"
+      ],
+      "searchRequiredTerms": [
+        "cfx5+app+cannot+control+cooler",
+        "dometic+cfx5+control+3caa"
+      ]
+    },
+    {
+      "id": "dometic-cfx5-password-connect-prep",
+      "slug": "dometic-cfx5-password-connect-prep",
+      "title": "Dometic CFX5 Password Connect Prep",
+      "summary": "Use this official Dometic source for the password used to connect to a CFX5 before contacting support or choosing a model-specific guide.",
+      "safeChecklist": [
+        "Record the CFX5 model, phone operating system, app version, network name shown, password prompt wording, and cooler display state.",
+        "Save screenshots of the password prompt, photos of the cooler label and display, and the official Dometic support title you matched.",
+        "Do not repair internal cooler electronics yourself; shut the cooler down if it overheats, smells unusual, or keeps showing alerts, then use Dometic support or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-cfx5-password-connect-support"
+      ],
+      "searchAliases": [
+        "cfx5 password connect 919d",
+        "dometic cfx5 password connect prep",
+        "dometic cfx5 connection password support"
+      ],
+      "searchRequiredTerms": [
+        "cfx5+password+connect",
+        "dometic+cfx5+919d"
+      ]
+    },
+    {
+      "id": "dometic-cfx5-wifi-network-name-prep",
+      "slug": "dometic-cfx5-wifi-network-name-prep",
+      "title": "Dometic CFX5 WiFi Network Name Prep",
+      "summary": "Use this official Dometic source for the CFX5 WiFi network name before contacting support or choosing a model-specific guide.",
+      "safeChecklist": [
+        "Record the CFX5 model, phone operating system, app version, network name shown, cooler display state, and where the connection fails.",
+        "Save screenshots of the WiFi network list or app connection screen, photos of the cooler label and display, and the official Dometic support title you matched.",
+        "Do not repair internal cooler electronics yourself; shut the cooler down if it overheats, smells unusual, or keeps showing alerts, then use Dometic support or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-cfx5-wifi-network-name-support"
+      ],
+      "searchAliases": [
+        "cfx5 wifi network name df30",
+        "dometic cfx5 wifi network name prep",
+        "dometic cfx network name support"
+      ],
+      "searchRequiredTerms": [
+        "cfx5+wifi+network+name",
+        "dometic+cfx+df30"
+      ]
+    },
+    {
+      "id": "dometic-cfx5-display-key-strokes-prep",
+      "slug": "dometic-cfx5-display-key-strokes-prep",
+      "title": "Dometic CFX5 Display Key Strokes Prep",
+      "summary": "Use this official Dometic source when the CFX5 display does not respond to key strokes before contacting support.",
+      "safeChecklist": [
+        "Record the CFX5 model, display state, temperature setting, power source, app connection state, and which keys do not respond.",
+        "Save photos of the display, controls, cooler label, power connection, and the official Dometic support title you matched.",
+        "Do not repair internal cooler electronics yourself; shut the cooler down if it overheats, smells unusual, or keeps showing alerts, then use Dometic support or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-cfx5-display-key-strokes-support"
+      ],
+      "searchAliases": [
+        "cfx5 display key strokes 3b7e",
+        "dometic cfx5 display key strokes prep",
+        "dometic cfx5 display not respond support"
+      ],
+      "searchRequiredTerms": [
+        "cfx5+display+key+strokes",
+        "dometic+cfx5+3b7e"
+      ]
+    },
+    {
+      "id": "dometic-cfx5-ac-mode-doesnt-work-prep",
+      "slug": "dometic-cfx5-ac-mode-doesnt-work-prep",
+      "title": "Dometic CFX5 AC Mode Does Not Work Prep",
+      "summary": "Use this official Dometic source when the CFX5 cooler does not work in AC mode before contacting support.",
+      "safeChecklist": [
+        "Record the CFX5 model, AC adapter or shore-power setup, display state, alert text, app state, and whether the cooler works on another safe power source.",
+        "Save photos of the cooler label, display, external power cord connection, and the official Dometic support title you matched.",
+        "Do not repair cords, adapters, internal electronics, or 120-volt equipment yourself; shut the cooler down if safety is uncertain and use Dometic support or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-cfx5-ac-mode-doesnt-work-support"
+      ],
+      "searchAliases": [
+        "cfx5 ac mode doesnt work f3d8",
+        "cfx5 ac mode does not work f3d8",
+        "dometic cfx5 ac mode doesnt work prep",
+        "dometic cfx5 ac mode support"
+      ],
+      "searchRequiredTerms": [
+        "cfx5+ac+mode+doesnt+work",
+        "cfx5+ac+mode+does+not+work",
+        "dometic+cfx5+f3d8"
+      ]
+    },
+    {
+      "id": "dometic-ibis-control-panel-elements-prep",
+      "slug": "dometic-ibis-control-panel-elements-prep",
+      "title": "Dometic Ibis Control Panel Elements Prep",
+      "summary": "Use this official Dometic source for Ibis control panel element questions before contacting support or choosing a model-specific guide.",
+      "safeChecklist": [
+        "Record the Ibis model, control panel state, selected mode, temperature setting, fan setting, and any visible indicator or error text.",
+        "Save photos of the control panel, remote if present, rooftop-unit label from a safe location, and the official Dometic support title you matched.",
+        "Keep roof and rooftop-unit access for qualified RV service; shut the air conditioner down if safety is uncertain and use Dometic support or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-ibis-control-panel-elements-support"
+      ],
+      "searchAliases": [
+        "ibis control panel elements 19ba",
+        "dometic ibis control panel elements prep",
+        "dometic ibis control panel support"
+      ],
+      "searchRequiredTerms": [
+        "ibis+control+panel+elements",
+        "dometic+ibis+19ba"
+      ]
+    },
+    {
+      "id": "dometic-ibis-remote-elements-prep",
+      "slug": "dometic-ibis-remote-elements-prep",
+      "title": "Dometic Ibis Remote Elements Prep",
+      "summary": "Use this official Dometic source for Ibis remote-control element questions before contacting support or choosing a model-specific guide.",
+      "safeChecklist": [
+        "Record the Ibis model, remote-control display, selected mode, temperature setting, fan setting, and whether the ceiling controls still respond.",
+        "Save photos of the remote, ceiling controls, product label from a safe location, and the official Dometic support title you matched.",
+        "Keep roof and rooftop-unit access for qualified RV service; shut the air conditioner down if safety is uncertain and use Dometic support or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-ibis-remote-elements-support"
+      ],
+      "searchAliases": [
+        "ibis remote control elements 7484",
+        "dometic ibis remote elements prep",
+        "dometic ibis remote control support"
+      ],
+      "searchRequiredTerms": [
+        "ibis+remote+control+elements",
+        "dometic+ibis+7484"
+      ]
+    },
+    {
+      "id": "dometic-ibis-not-heating-service-prep",
+      "slug": "dometic-ibis-not-heating-service-prep",
+      "title": "Dometic Ibis Not Heating Service Prep",
+      "summary": "Use this official Dometic source when an Ibis air conditioner is not heating well before contacting support.",
+      "safeChecklist": [
+        "Record the Ibis model, outside temperature, selected heat mode, fan setting, elapsed runtime, and whether cooling mode still operates.",
+        "Save photos of the control state, remote if used, product label from a safe location, and the official Dometic support title you matched.",
+        "Keep roof access, sealed cooling-system work, and high-voltage component service for qualified RV service; shut the unit down and use qualified RV service for repair."
+      ],
+      "sourceIds": [
+        "dometic-ibis-not-heating-support"
+      ],
+      "searchAliases": [
+        "ibis air conditioner not heating well 55b",
+        "dometic ibis not heating service prep",
+        "dometic ibis heating support"
+      ],
+      "searchRequiredTerms": [
+        "ibis+not+heating",
+        "dometic+ibis+55b"
+      ]
+    },
+    {
+      "id": "dometic-ibis-water-enters-vehicle-service-prep",
+      "slug": "dometic-ibis-water-enters-vehicle-service-prep",
+      "title": "Dometic Ibis Water Enters Vehicle Service Prep",
+      "summary": "Use this official Dometic source when water enters the vehicle around an Ibis air conditioner before contacting support.",
+      "safeChecklist": [
+        "Record the Ibis model, when water appears, recent rain or cooling use, ceiling location, filter state, and whether the unit was recently serviced or installed.",
+        "Save photos of the interior water location, safe visible product label, control state, and the official Dometic support title you matched.",
+        "Keep roof access and exterior cover work for qualified RV service; shut the unit down if water reaches electrical areas and use qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-ibis-water-enters-vehicle-support"
+      ],
+      "searchAliases": [
+        "ibis water enters the vehicle d19a",
+        "dometic ibis water enters vehicle service prep",
+        "dometic ibis water leak support"
+      ],
+      "searchRequiredTerms": [
+        "ibis+water+enters+vehicle",
+        "dometic+ibis+d19a"
+      ]
+    },
+    {
+      "id": "dometic-harrier-does-not-switch-off-prep",
+      "slug": "dometic-harrier-does-not-switch-off-prep",
+      "title": "Dometic Harrier Does Not Switch Off Prep",
+      "summary": "Use this official Dometic source when a Harrier roof air conditioner does not switch off before contacting support.",
+      "safeChecklist": [
+        "Record the Harrier model, selected mode, set temperature, remote-control state, wall or ceiling control state, and whether the compressor or fan continues running.",
+        "Save photos of the control state, remote if used, safe visible product label, and the official Dometic support title you matched.",
+        "Keep rooftop and electrical component service for qualified RV service; shut power off at the RV control if safety is uncertain and use Dometic support or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-harrier-does-not-switch-off-support"
+      ],
+      "searchAliases": [
+        "harrier roof air conditioner does not switch off 6373",
+        "dometic harrier does not switch off prep",
+        "dometic harrier switch off support"
+      ],
+      "searchRequiredTerms": [
+        "harrier+does+not+switch+off",
+        "dometic+harrier+6373"
+      ]
+    },
+    {
+      "id": "dometic-harrier-ac-modes-prep",
+      "slug": "dometic-harrier-ac-modes-prep",
+      "title": "Dometic Harrier AC Modes Prep",
+      "summary": "Use this official Dometic source for Harrier air-conditioner mode questions before contacting support or choosing a model-specific guide.",
+      "safeChecklist": [
+        "Record the Harrier model, selected mode, temperature setting, fan setting, remote display, and the owner symptom or question.",
+        "Save photos of the remote, control display, safe visible product label, and the official Dometic support title you matched.",
+        "Keep rooftop and electrical component service for qualified RV service; shut the unit down if safety is uncertain and use Dometic support or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-harrier-ac-modes-support"
+      ],
+      "searchAliases": [
+        "harrier air conditioner modes 18b1",
+        "dometic harrier ac modes prep",
+        "dometic harrier operating modes support"
+      ],
+      "searchRequiredTerms": [
+        "harrier+air+conditioner+modes",
+        "dometic+harrier+18b1"
+      ]
+    },
+    {
+      "id": "dometic-harrier-switch-on-standby-prep",
+      "slug": "dometic-harrier-switch-on-standby-prep",
+      "title": "Dometic Harrier Switch On Standby Prep",
+      "summary": "Use this official Dometic source for Harrier switch-on and standby questions before contacting support or choosing a model-specific guide.",
+      "safeChecklist": [
+        "Record the Harrier model, remote-control state, standby state, selected mode, power state, and whether any control responds.",
+        "Save photos of the remote, control display, safe visible product label, and the official Dometic support title you matched.",
+        "Keep rooftop and electrical component service for qualified RV service; shut power off at the RV control if safety is uncertain and use Dometic support or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-harrier-switch-on-standby-support"
+      ],
+      "searchAliases": [
+        "harrier switch roof air conditioner on stand by db",
+        "dometic harrier switch on standby",
+        "dometic harrier switch on standby prep",
+        "dometic harrier standby support"
+      ],
+      "searchRequiredTerms": [
+        "harrier+switch+roof+air+conditioner+stand+by",
+        "dometic+harrier+switch+standby",
+        "dometic+harrier+db"
+      ]
+    },
+    {
+      "id": "dometic-harrier-not-heating-service-prep",
+      "slug": "dometic-harrier-not-heating-service-prep",
+      "title": "Dometic Harrier Not Heating Service Prep",
+      "summary": "Use this official Dometic source when a Harrier air conditioner is not heating well before contacting support.",
+      "safeChecklist": [
+        "Record the Harrier model, outside temperature, selected heat mode, fan setting, elapsed runtime, and whether cooling mode still operates.",
+        "Save photos of the control state, remote if used, safe visible product label, and the official Dometic support title you matched.",
+        "Keep roof access, sealed cooling-system work, and high-voltage component service for qualified RV service; shut the unit down and use qualified RV service for repair."
+      ],
+      "sourceIds": [
+        "dometic-harrier-not-heating-support"
+      ],
+      "searchAliases": [
+        "harrier air conditioner not heating well 811e",
+        "dometic harrier not heating service prep",
+        "dometic harrier heating support"
+      ],
+      "searchRequiredTerms": [
+        "harrier+not+heating",
+        "dometic+harrier+811e"
+      ]
+    },
+    {
+      "id": "dometic-harrier-low-air-output-service-prep",
+      "slug": "dometic-harrier-low-air-output-service-prep",
+      "title": "Dometic Harrier Low Air Output Service Prep",
+      "summary": "Use this official Dometic source when a Harrier air conditioner has low air output before contacting support.",
+      "safeChecklist": [
+        "Record the Harrier model, fan setting, mode, filter condition, supply-air symptoms, and whether the issue appears on every outlet.",
+        "Save photos of the filter area if owner-accessible, control state, safe visible product label, and the official Dometic support title you matched.",
+        "Keep roof access and exterior cover work for qualified RV service; shut the unit down if airflow loss is paired with heat, odor, or electrical symptoms and use qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-harrier-low-air-output-support"
+      ],
+      "searchAliases": [
+        "harrier low air output d861",
+        "dometic harrier low air output service prep",
+        "dometic harrier airflow support"
+      ],
+      "searchRequiredTerms": [
+        "harrier+low+air+output",
+        "dometic+harrier+d861"
+      ]
+    },
+    {
+      "id": "dometic-brisk-furnace-thermostat-prep",
+      "slug": "dometic-brisk-furnace-thermostat-prep",
+      "title": "Dometic Brisk Furnace Thermostat Prep",
+      "summary": "Use this official Dometic source for Brisk furnace-control thermostat questions before contacting support or choosing a model-specific guide.",
+      "safeChecklist": [
+        "Record the Brisk thermostat model, selected furnace mode, temperature setting, fan setting, zone if present, and whether any furnace safety issue is suspected.",
+        "Save photos of the thermostat/control display, safe visible model label or paperwork, and the official Dometic support title you matched.",
+        "Keep furnace, rooftop, thermostat-conductor, and high-voltage component service for qualified RV service; shut down power or LP if safety is uncertain."
+      ],
+      "sourceIds": [
+        "dometic-brisk-furnace-thermostat-support"
+      ],
+      "searchAliases": [
+        "brisk furnace thermostat a495",
+        "dometic brisk furnace thermostat prep",
+        "dometic brisk thermostat furnace support"
+      ],
+      "searchRequiredTerms": [
+        "brisk+furnace+thermostat+a495",
+        "dometic+brisk+furnace+thermostat"
+      ]
+    },
+    {
+      "id": "dometic-brisk-button-functions-prep",
+      "slug": "dometic-brisk-button-functions-prep",
+      "title": "Dometic Brisk Button Functions Prep",
+      "summary": "Use this official Dometic source for Brisk thermostat button-function questions before contacting support or choosing a model-specific guide.",
+      "safeChecklist": [
+        "Record the Brisk thermostat model, button sequence tried, display state, selected mode, zone if present, and the owner question.",
+        "Save photos of the thermostat/control display, safe visible model label or paperwork, and the official Dometic support title you matched.",
+        "Keep thermostat-conductor, rooftop, and high-voltage component service for qualified RV service; shut the system down if safety is uncertain and use Dometic support or qualified RV service."
+      ],
+      "sourceIds": [
+        "dometic-brisk-button-functions-support"
+      ],
+      "searchAliases": [
+        "brisk button functions 403a",
+        "dometic brisk button functions prep",
+        "dometic brisk thermostat buttons support"
+      ],
+      "searchRequiredTerms": [
+        "brisk+button+functions+403a",
+        "dometic+brisk+button+functions"
+      ]
+    },
+    {
+      "id": "dometic-brisk-operates-improperly-service-prep",
+      "slug": "dometic-brisk-operates-improperly-service-prep",
+      "title": "Dometic Brisk Operates Improperly Service Prep",
+      "summary": "Use this official Dometic source when a Brisk air conditioner fails to operate or operates improperly before contacting support.",
+      "safeChecklist": [
+        "Record the Brisk model, thermostat model, selected mode, power source, symptoms, any display state, and when the improper operation started.",
+        "Save photos of the thermostat/control display, safe visible model label or paperwork, and the official Dometic support title you matched.",
+        "Keep rooftop equipment, thermostat conductors, sealed cooling-system parts, compressor service, and high-voltage components for qualified RV service; shut the unit down if safety is uncertain."
+      ],
+      "sourceIds": [
+        "dometic-brisk-operates-improperly-support"
+      ],
+      "searchAliases": [
+        "brisk air conditioner fails operate improperly d0fe",
+        "dometic brisk operates improperly service prep",
+        "dometic brisk fails to operate support"
+      ],
+      "searchRequiredTerms": [
+        "brisk+air+conditioner+fails+operate+d0fe",
+        "dometic+brisk+operates+improperly"
+      ]
+    },
+    {
+      "id": "dometic-brisk-fan-compressor-runs-service-prep",
+      "slug": "dometic-brisk-fan-compressor-runs-service-prep",
+      "title": "Dometic Brisk Fan Compressor Runs Service Prep",
+      "summary": "Use this official Dometic source when the Brisk fan does not operate but the compressor runs before contacting support.",
+      "safeChecklist": [
+        "Record the Brisk model, thermostat model, selected mode, fan setting, compressor behavior, and whether the unit was recently serviced.",
+        "Save photos of the thermostat/control display, safe visible model label or paperwork, and the official Dometic support title you matched.",
+        "Keep rooftop equipment, fan parts, compressor service, sealed cooling-system parts, conductors, and high-voltage components for qualified RV service; shut the unit down if safety is uncertain."
+      ],
+      "sourceIds": [
+        "dometic-brisk-fan-compressor-runs-support"
+      ],
+      "searchAliases": [
+        "brisk fan doesnt operate compressor runs a18f",
+        "brisk fan does not operate compressor runs a18f",
+        "dometic brisk fan compressor runs service prep",
+        "dometic brisk compressor fan support"
+      ],
+      "searchRequiredTerms": [
+        "brisk+fan+doesnt+operate+compressor+runs",
+        "brisk+fan+does+not+operate+compressor+runs",
+        "dometic+brisk+a18f"
+      ]
+    },
+    {
+      "id": "dometic-brisk-error-code-router-prep",
+      "slug": "dometic-brisk-error-code-router-prep",
+      "title": "Dometic Brisk Error Code Router Prep",
+      "summary": "Use this official Dometic source when a Brisk air-conditioner owner sees an error code before contacting support or choosing a model-specific guide.",
+      "safeChecklist": [
+        "Record the Brisk model, thermostat model, exact displayed code, selected mode, zone if present, and whether the code repeats after a normal shutdown.",
+        "Save photos of the display code, safe visible model label or paperwork, and the official Dometic support title you matched.",
+        "Keep rooftop equipment, thermostat conductors, sealed cooling-system parts, compressor service, and high-voltage components for qualified RV service; shut the unit down if safety is uncertain."
+      ],
+      "sourceIds": [
+        "dometic-brisk-error-code-router-support"
+      ],
+      "searchAliases": [
+        "brisk error code 26fc",
+        "dometic brisk error code router prep",
+        "dometic brisk error code support"
+      ],
+      "searchRequiredTerms": [
+        "brisk+error+code+26fc",
+        "dometic+brisk+error+code+26fc"
       ]
     }
   ],
