@@ -21,8 +21,8 @@ const requiredBrands = [
 ];
 
 const expectedEntryCount = 864;
-const expectedSourceCount = 797;
-const expectedSymptomCount = 630;
+const expectedSourceCount = 818;
+const expectedSymptomCount = 650;
 
 describe("verified corpus", () => {
   it("rejects unsourced or unsafe appliance-code records", () => {
@@ -8961,6 +8961,289 @@ describe("verified corpus", () => {
       "remote thermostat",
       "cooler",
       "winterization",
+    ]) {
+      expect(
+        lookupSymptomGuides(index, query)
+          .slice(0, 5)
+          .map((symptom) => symptom.slug)
+          .filter((slug) => newSlugs.has(slug)),
+        query,
+      ).toEqual([]);
+    }
+    expect(symptomById.get("service-call-prep")?.sourceIds).toEqual(expect.arrayContaining(newSourceIds));
+  });
+
+  it("adds the next official-source gap-scan prep batch without code entries", () => {
+    const expectedSources = new Map<string, string>([
+      [
+        "onan-rv-spring-startup-knowledge-hub",
+        "https://shop.cummins.com/SC/knowledge-hub/d-us/rv-spring-startup-getting-your-onan-generator-adventure-ready-MCITW6IGRH7FEFNO3AD3I5ELEA4M",
+      ],
+      [
+        "onan-generator-maintenance-checklist-knowledge-hub",
+        "https://shop.cummins.com/SC/knowledge-hub/d-us/how-to-get-the-best-life-out-of-your-generator-MCFGQV6RPXFNCOHNHSGKGVP2UX3Y",
+      ],
+      [
+        "onan-rv-generator-winterize-tips-knowledge-hub",
+        "https://shop.cummins.com/SC/knowledge-hub/d-us/winterize-your-rv-generator-with-these-tips-MCU6UG2BURBRG3NMPQUK2OSQURTI",
+      ],
+      ["onan-rv-generator-maintenance-kits-0058719", "https://mart.cummins.com/imagelibrary/data/assetfiles/0058719.pdf"],
+      ["thetford-c200-cassette-toilet-support", "https://thetford.com/us/thetford-support/c200-cassette-toilet/"],
+      [
+        "thetford-c402c-cassette-toilet-support",
+        "https://www.thetford.com/us/thetford-support/c402c-cassette-toilet/",
+      ],
+      ["thetford-porta-potti-345-support", "https://www.thetford.com/us/thetford-support/porta-potti-345/"],
+      ["maxxair-maxxfan-deluxe-07000k-product", "https://www.maxxair.com/products/fans/maxxfan-deluxe-00-07000K/"],
+      ["maxxair-maxxfan-deluxe-06200k-product", "https://www.maxxair.com/products/fans/maxxfan-deluxe-00-06200K/"],
+      ["maxxair-maxxfan-plus-04000k-product", "https://www.maxxair.com/products/fans/maxxfan-plus-00-04000K/"],
+      [
+        "suburban-18-griddle-bottle-adapter-product",
+        "https://suburbanrv.com/kitchen-galley/griddles/18-gas-griddle-with-bottle-adapter/",
+      ],
+      ["suburban-18-elite-griddle-product", "https://suburbanrv.com/kitchen-galley/griddles/18-elite-series-griddle/"],
+      [
+        "suburban-sf-q-series-furnace-product",
+        "https://suburbanrv.com/climate-control/furnaces/sf-q-series-furnaces/sf-q-series-furnace/",
+      ],
+      [
+        "suburban-sf-fq-series-furnace-product",
+        "https://suburbanrv.com/climate-control/furnaces/sf-fq-series-furnaces/sf-fq-series-furnace/",
+      ],
+      ["aquahot-current-products-library", "https://library.aquahot.com/products/L91541418896/"],
+      ["aquahot-250-d01-use-care-guide", "https://library.aquahot.com/wp-content/uploads/2022/07/AHE-250-D01-Use-and-Care-Guide.pdf"],
+      ["aquahot-675-d04-use-care-guide", "https://library.aquahot.com/wp-content/uploads/2022/04/AHE-675-D04-Use-and-Care-Guide.pdf"],
+      ["greystone-20-inch-3-burner-cooktop-ffd-manual-ccd0008339", "https://support.lci1.com/documents/ccd-0008339"],
+      [
+        "furrion-2-in-1-range-oven-manual-imfha00013",
+        "https://support.lci1.com/documents/furrion-2-in-1-range-oven-instruction-manual",
+      ],
+      [
+        "furrion-chef-built-in-gas-oven-manual-imfha00099",
+        "https://support.lci1.com/documents/furrion-chef-collection-rv-built-in-gas-oven-instructions-manual-im-fha00099-v2.0",
+      ],
+      [
+        "furrion-rv-gas-oven-manual-imfha00023",
+        "https://support.lci1.com/documents/furrion-rv-gas-oven-instruction-manuals",
+      ],
+    ]);
+    const expectedSymptoms = new Map<string, { sourceIds: string[]; requiredTerms: string[]; query: string }>([
+      [
+        "onan-generator-spring-startup-model-spec-prep",
+        {
+          sourceIds: ["onan-rv-spring-startup-knowledge-hub"],
+          requiredTerms: ["spring+startup", "onan+spring", "mcitw6"],
+          query: "onan spring startup model spec serial gsn prep",
+        },
+      ],
+      [
+        "onan-generator-maintenance-checklist-kit-prep",
+        {
+          sourceIds: ["onan-generator-maintenance-checklist-knowledge-hub", "onan-rv-generator-maintenance-kits-0058719"],
+          requiredTerms: ["maintenance+checklist", "maintenance+kit", "0058719"],
+          query: "onan maintenance checklist kit 0058719 green label prep",
+        },
+      ],
+      [
+        "onan-rv-generator-winterize-storage-tips-prep",
+        {
+          sourceIds: ["onan-rv-generator-winterize-tips-knowledge-hub"],
+          requiredTerms: ["winterize+generator", "onan+winterize", "mcu6ug2"],
+          query: "onan winterize generator storage tips mcu6ug2 prep",
+        },
+      ],
+      [
+        "thetford-c200-cassette-toilet-model-cleaning-prep",
+        {
+          sourceIds: ["thetford-c200-cassette-toilet-support"],
+          requiredTerms: ["c200+cassette", "c200"],
+          query: "thetford c200 cassette toilet model cleaning prep",
+        },
+      ],
+      [
+        "thetford-c402c-cassette-toilet-model-travel-prep",
+        {
+          sourceIds: ["thetford-c402c-cassette-toilet-support"],
+          requiredTerms: ["c402c+cassette", "c402c"],
+          query: "thetford c402c cassette toilet travel flush tank prep",
+        },
+      ],
+      [
+        "thetford-porta-potti-345-flush-storage-prep",
+        {
+          sourceIds: ["thetford-porta-potti-345-support"],
+          requiredTerms: ["porta+potti+345", "345+flush"],
+          query: "thetford porta potti 345 flush storage prep",
+        },
+      ],
+      [
+        "maxxair-maxxfan-deluxe-07000k-remote-model-prep",
+        {
+          sourceIds: ["maxxair-maxxfan-deluxe-07000k-product"],
+          requiredTerms: ["00+07000k", "07000k+model+prep"],
+          query: "maxxair maxxfan deluxe 00 07000k remote model prep",
+        },
+      ],
+      [
+        "maxxair-maxxfan-deluxe-06200k-ceiling-control-prep",
+        {
+          sourceIds: ["maxxair-maxxfan-deluxe-06200k-product"],
+          requiredTerms: ["00+06200k", "06200k"],
+          query: "maxxair maxxfan deluxe 00 06200k ceiling control prep",
+        },
+      ],
+      [
+        "maxxair-maxxfan-plus-04000k-manual-control-prep",
+        {
+          sourceIds: ["maxxair-maxxfan-plus-04000k-product"],
+          requiredTerms: ["00+04000k", "04000k"],
+          query: "maxxair maxxfan plus 00 04000k manual control prep",
+        },
+      ],
+      [
+        "suburban-18-griddle-bottle-adapter-storage-prep",
+        {
+          sourceIds: ["suburban-18-griddle-bottle-adapter-product"],
+          requiredTerms: ["4062a", "18+griddle+bottle"],
+          query: "suburban 4062a 18 griddle bottle adapter storage prep",
+        },
+      ],
+      [
+        "suburban-18-elite-griddle-flare-storage-prep",
+        {
+          sourceIds: ["suburban-18-elite-griddle-product"],
+          requiredTerms: ["3060a", "18+elite+griddle"],
+          query: "suburban 3060a 18 elite griddle flare storage prep",
+        },
+      ],
+      [
+        "suburban-sf-q-furnace-door-return-air-prep",
+        {
+          sourceIds: ["suburban-sf-q-series-furnace-product"],
+          requiredTerms: ["sf+q+series", "2552a"],
+          query: "suburban sf q series 2552a furnace door return air prep",
+        },
+      ],
+      [
+        "suburban-sf-fq-furnace-interior-service-prep",
+        {
+          sourceIds: ["suburban-sf-fq-series-furnace-product"],
+          requiredTerms: ["sf+fq+series", "2551a"],
+          query: "suburban sf fq series 2551a furnace interior service prep",
+        },
+      ],
+      [
+        "aquahot-current-product-manual-library-prep",
+        {
+          sourceIds: ["aquahot-current-products-library"],
+          requiredTerms: ["current+aqua+hot+products", "l91541418896"],
+          query: "aqua hot current products l91541418896 manual library prep",
+        },
+      ],
+      [
+        "aquahot-250-d01-winterization-service-prep",
+        {
+          sourceIds: ["aquahot-250-d01-use-care-guide"],
+          requiredTerms: ["250+d01", "ahe+250+d01"],
+          query: "aqua hot 250 d01 ahe 250 d01 winterization service prep",
+        },
+      ],
+      [
+        "aquahot-675-d04-winterization-service-prep",
+        {
+          sourceIds: ["aquahot-675-d04-use-care-guide"],
+          requiredTerms: ["675+d04", "ahe+675+d04"],
+          query: "aqua hot 675 d04 ahe 675 d04 winterization service prep",
+        },
+      ],
+      [
+        "greystone-20-inch-3-burner-cooktop-ffd-prep",
+        {
+          sourceIds: ["greystone-20-inch-3-burner-cooktop-ffd-manual-ccd0008339"],
+          requiredTerms: ["greystone+20+inch", "ccd0008339"],
+          query: "greystone 20 inch 3 burner cooktop ffd ccd0008339 prep",
+        },
+      ],
+      [
+        "furrion-2-in-1-range-oven-model-service-prep",
+        {
+          sourceIds: ["furrion-2-in-1-range-oven-manual-imfha00013"],
+          requiredTerms: ["im+fha00013", "2+in+1+range+oven"],
+          query: "furrion 2 in 1 range oven im fha00013 model service prep",
+        },
+      ],
+      [
+        "furrion-chef-built-in-gas-oven-model-prep",
+        {
+          sourceIds: ["furrion-chef-built-in-gas-oven-manual-imfha00099"],
+          requiredTerms: ["im+fha00099", "chef+built+in"],
+          query: "furrion chef built in gas oven im fha00099 model prep",
+        },
+      ],
+      [
+        "furrion-rv-gas-oven-imfha00023-service-prep",
+        {
+          sourceIds: ["furrion-rv-gas-oven-manual-imfha00023"],
+          requiredTerms: ["im+fha00023", "rv+gas+oven"],
+          query: "furrion rv gas oven im fha00023 service prep",
+        },
+      ],
+    ]);
+    const newSourceIds = Array.from(expectedSources.keys());
+    const newSlugs = new Set(expectedSymptoms.keys());
+    const sourcesById = new Map(corpus.sources.map((source) => [source.id, source]));
+    const symptomById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
+    const index = buildSymptomSearchIndex(corpus);
+    const summary = summarizeCorpus(corpus);
+    const unsafeOwnerActionPattern =
+      /\bbypass\b|\bjump(er)?\b|\bgas valve\b|burner\s+(repair|work|service|port|assembly)|\borifice\b|\bcontrol board\b|\b120\s*vac\b|\b110\s*v\b|\bline-voltage\b|\brefrigerant\b|\bprobe\b|\bwiring\b|\bsupply line\b|\bopen (the )?(fuel|gas|electrical|rooftop)|remove.*shroud|remove.*cover|remove.*toilet|replace.*valve|measure resistance|fuel nozzle|combustion|coolant pump|manual override|hydraulic work|hydraulic repair|macerator|internal plumbing/i;
+
+    for (const [sourceId, url] of expectedSources) {
+      const source = sourcesById.get(sourceId);
+      expect(source?.official, sourceId).toBe(true);
+      expect(source?.url, sourceId).toBe(url);
+    }
+
+    expect(corpus.sources).toHaveLength(expectedSourceCount);
+    expect(corpus.entries).toHaveLength(expectedEntryCount);
+    expect(corpus.symptoms).toHaveLength(expectedSymptomCount);
+    expect(summary.indexablePages).toBe(expectedEntryCount + expectedSymptomCount + 1);
+    expect(corpus.entries.filter((entry) => entry.sourceIds.some((sourceId) => newSourceIds.includes(sourceId)))).toHaveLength(0);
+
+    for (const [symptomId, expected] of expectedSymptoms) {
+      const symptom = symptomById.get(symptomId);
+      expect(symptom, symptomId).toBeDefined();
+      expect(symptom?.sourceIds, symptomId).toEqual(expected.sourceIds);
+      expect(symptom?.searchRequiredTerms, symptomId).toEqual(expected.requiredTerms);
+      expect([symptom?.summary, ...(symptom?.safeChecklist ?? [])].join(" "), symptomId).not.toMatch(
+        unsafeOwnerActionPattern,
+      );
+      expect(lookupSymptomGuides(index, expected.query)[0]?.slug, expected.query).toBe(symptomId);
+    }
+
+    for (const query of [
+      "warranty",
+      "service prep",
+      "owner manual",
+      "model number",
+      "control center",
+      "microwave",
+      "gas range",
+      "refrigerator",
+      "toilet",
+      "fan",
+      "furnace",
+      "water heater",
+      "generator",
+      "hydronic",
+      "remote",
+      "thermostat",
+      "storage",
+      "recall",
+      "cassette toilet",
+      "griddle",
+      "gas oven",
+      "manual library",
     ]) {
       expect(
         lookupSymptomGuides(index, query)

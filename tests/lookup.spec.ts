@@ -2665,6 +2665,81 @@ test("lookup surfaces the CFX Porta Potti Greystone Furrion microwave and hydron
   expect(pageErrors).toEqual([]);
 });
 
+test("lookup surfaces the next official-source gap-scan prep batch without generic hijacks", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  const pageErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => pageErrors.push(error.message));
+
+  await page.goto("/");
+
+  const lookupResults = page.locator('section[aria-label="Lookup results"]');
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  const cases = [
+    [
+      "onan spring startup model spec serial gsn prep",
+      "/symptoms/onan-generator-spring-startup-model-spec-prep/",
+    ],
+    [
+      "onan maintenance checklist kit 0058719 green label prep",
+      "/symptoms/onan-generator-maintenance-checklist-kit-prep/",
+    ],
+    ["thetford c200 cassette toilet model cleaning prep", "/symptoms/thetford-c200-cassette-toilet-model-cleaning-prep/"],
+    ["thetford porta potti 345 flush storage prep", "/symptoms/thetford-porta-potti-345-flush-storage-prep/"],
+    [
+      "maxxair maxxfan deluxe 00 07000k remote model prep",
+      "/symptoms/maxxair-maxxfan-deluxe-07000k-remote-model-prep/",
+    ],
+    ["suburban 4062a 18 griddle bottle adapter storage prep", "/symptoms/suburban-18-griddle-bottle-adapter-storage-prep/"],
+    ["aqua hot 250 d01 ahe 250 d01 winterization service prep", "/symptoms/aquahot-250-d01-winterization-service-prep/"],
+    [
+      "greystone 20 inch 3 burner cooktop ffd ccd0008339 prep",
+      "/symptoms/greystone-20-inch-3-burner-cooktop-ffd-prep/",
+    ],
+    ["furrion chef built in gas oven im fha00099 model prep", "/symptoms/furrion-chef-built-in-gas-oven-model-prep/"],
+  ] as const;
+
+  for (const [query, href] of cases) {
+    await searchbox.fill(query);
+    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+  }
+
+  for (const query of [
+    "warranty",
+    "service prep",
+    "owner manual",
+    "model number",
+    "gas range",
+    "toilet",
+    "fan",
+    "furnace",
+    "generator",
+    "hydronic",
+    "remote",
+    "thermostat",
+    "storage",
+    "recall",
+  ]) {
+    await searchbox.fill(query);
+    for (const [, href] of cases) {
+      await expect(lookupResults.locator(`a[href="${href}"]`), `${query} -> ${href}`).toHaveCount(0);
+    }
+  }
+
+  await searchbox.fill("onan spring startup model spec serial gsn prep");
+  const startup = lookupResults.locator('a[href="/symptoms/onan-generator-spring-startup-model-spec-prep/"]');
+  await expect(startup).toBeVisible();
+  await startup.click();
+  await expect(page.getByRole("heading", { name: "Onan generator spring-startup model and spec prep" })).toBeVisible();
+  await expect(page.getByText(/Record the generator model, spec, serial/i)).toBeVisible();
+
+  expect(consoleErrors).toEqual([]);
+  expect(pageErrors).toEqual([]);
+});
+
 test("part capture panel persists owner-entered model and part notes locally", async ({ page }) => {
   await page.goto("/");
 
