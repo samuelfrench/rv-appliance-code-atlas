@@ -108,6 +108,7 @@ function ReadyApp({ data }: { data: PreparedCorpus }) {
   const path = window.location.pathname;
   const detailMatch = path.match(/^\/codes\/([^/]+)\/?$/);
   const symptomMatch = path.match(/^\/symptoms\/([^/]+)\/?$/);
+  const brandMatch = path.match(/^\/brands\/([^/]+)\/?$/);
 
   if (detailMatch) {
     const entry = getEntryBySlug(corpus, detailMatch[1]);
@@ -117,6 +118,11 @@ function ReadyApp({ data }: { data: PreparedCorpus }) {
   if (symptomMatch) {
     const symptom = getSymptomBySlug(corpus, symptomMatch[1]);
     return symptom ? <SymptomDetail symptom={symptom} corpus={corpus} /> : <NotFound />;
+  }
+
+  if (brandMatch) {
+    const entries = corpus.entries.filter((entry) => brandSlug(entry.brand) === brandMatch[1]);
+    return entries.length ? <BrandHub brand={entries[0].brand} entries={entries} /> : <NotFound />;
   }
 
   return <Home data={data} />;
@@ -206,7 +212,7 @@ function Home({ data }: { data: PreparedCorpus }) {
           <SectionHeader icon={<BadgeCheck />} eyebrow="Coverage" title="Verified first-batch brands" />
           <div className="brand-grid">
             {Object.entries(brandCoverage).map(([brand, coverage]) => (
-              <a href={`#brand-${brand.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`} className="brand-tile" key={brand}>
+              <a href={`/brands/${brandSlug(brand)}/`} className="brand-tile" key={brand}>
                 <strong>{brand}</strong>
                 <span>{coverage.verifiedEntries} verified entries</span>
                 <small>{coverage.equipmentTypes.join(", ")}</small>
@@ -513,6 +519,53 @@ function SymptomDetail({ symptom, corpus }: { symptom: SymptomGuide; corpus: Cor
         <MonetizationBand corpus={corpus} />
       </main>
       <Footer />
+    </>
+  );
+}
+
+function brandSlug(brand: string) {
+  return brand.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+}
+
+function BrandHub({ brand, entries }: { brand: string; entries: CorpusEntry[] }) {
+  const byType = new Map<string, CorpusEntry[]>();
+  for (const entry of entries) {
+    const list = byType.get(entry.equipmentType) ?? [];
+    list.push(entry);
+    byType.set(entry.equipmentType, list);
+  }
+  return (
+    <>
+      <Header />
+      <main className="detail-main">
+        <article className="detail-article">
+          <h1>{brand} RV appliance fault codes</h1>
+          <p className="detail-meaning">
+            Verified {brand} fault codes and owner-safe guidance from official manufacturer sources.
+          </p>
+          {[...byType.entries()]
+            .sort(([a], [b]) => a.localeCompare(b))
+            .map(([type, typeEntries]) => (
+              <section key={type}>
+                <h2>
+                  {brand} {type} codes
+                </h2>
+                <ul>
+                  {typeEntries.map((entry) => (
+                    <li key={entry.slug}>
+                      <a href={slugPathForEntry(entry)}>
+                        {entry.brand} {entry.code}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            ))}
+          <a className="print-button" href="/">
+            Search all verified codes
+          </a>
+        </article>
+      </main>
     </>
   );
 }
