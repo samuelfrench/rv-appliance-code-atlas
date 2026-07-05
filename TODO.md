@@ -309,6 +309,19 @@
 - [x] Triage official Dometic Harrier/Ibis/Brisk/CFX2, Thetford/Norcold product/support routers, Coleman thermostat routers, MaxxAir MaxxShade/SkyMaxx, and Greystone fireplace control-router candidates; add only owner-safe control/prep guides and no code entries.
 - [ ] Continue official-source gap scans across currently supported brands for non-duplicate owner-safe service-prep, model-label, control-behavior, storage, recall, warranty, or service-locator guides; add no code entries unless a current manufacturer-hosted display or fault table is verified.
 
+## Growth & Monetization — next steps (added 2026-07-04)
+Basis: live GSC data 2026-06-25→07-01 pulled 2026-07-04: 206 impressions, 3 clicks, avg position 8.1 across 25 pages with impressions, out of 1,938 sitemap URLs. One month post-indexing.
+
+- [ ] Pull GSC index-coverage for the 1,938 sitemap URLs (URL Inspection API sample of ~100 URLs, or GSC UI Pages report) — only ~25 pages earn impressions; quantify indexed vs "Discovered/Crawled – currently not indexed".
+- [ ] Pause new corpus gap-scan batches until indexation of existing pages is verified — breadth is not the current constraint; 1,938 near-identical thin pages risk sitewide quality demotion.
+- [ ] Improve indexation/internal linking: brand and appliance-type hub pages that link every code/symptom page, plus related-code cross-links on each detail page.
+- [ ] Fix homepage impression leak: homepage takes 116 of 206 weekly impressions at position 8.8 with 0 clicks. Verify code-page `<title>`s match query shape ("Dometic E33 fault code RUC refrigerator") so detail pages win those SERPs instead of the homepage.
+- [ ] Enrich the pages already earning impressions (Furrion Arctic LED flash 4, Onan no-start/overcrank, Coleman-Mach 9420 HI, Dometic RM10/RUC/RMD8 faults) with deeper owner-context content — these must outrank Dometic support pages, iRV2/Forest River forum threads, and JustAnswer to hold position.
+- [ ] Evaluate mobile-RV-repair lead capture as the primary monetization path (not display ads): pages catch owners at breakdown moment; RV Fridge Guys, ARP, and JustAnswer monetize this exact traffic. Design a "find a mobile RV tech" CTA for code pages — no insecure public write endpoints; keep disabled until impression thresholds are met.
+- [ ] Line up affiliate options for later: Amazon Associates (Norcold/Dometic boards, ARP control), JustAnswer affiliate — placeholder-only until monetization-readiness thresholds pass.
+- [ ] Re-run `GSC_QUOTA_PROJECT=coffee-explorer-480514 node scripts/gsc-weekly-report.mjs --fetch` + `npm run traffic:monetization` around 2026-08-01.
+- [ ] Decision checkpoint ~2026-09-01 (3 months post-indexing): if weekly impressions are not at least ~1,000 (5x monthly growth trend), stop investing in content volume and reassess the project.
+
 ## Launch Automation
 - [x] Add weekly traffic report artifact once GSC is configured.
 - [x] Add IndexNow key after domain/live URL is chosen.
