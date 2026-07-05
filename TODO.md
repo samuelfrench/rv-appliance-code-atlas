@@ -101,6 +101,15 @@
 - [x] Submit canonical-domain URLs to IndexNow after the permanent-domain deploy is live.
 - [x] Add RV Appliance Fault Codes to Sam's portfolio after permanent-domain launch verification is complete.
 
+## Current State — 2026-07-04 (session update)
+- Deployed static pre-rendering: every `/codes/`, `/symptoms/`, and new `/brands/<brand>/` hub page now ships real crawlable HTML (meaning, owner-safe checks, service-only actions, safety boundary, official source links, related-code/symptom cross-links) baked into `#root` at build time, instead of an empty SPA shell requiring JS + async corpus fetch. Deploy run `28724395865` succeeded; live-verified `https://rvappliancefaultcodes.com/brands/dometic/` and a live code page both return real `<h1>` content over HTTP `200`.
+- Added 7 brand hub pages (`/brands/coleman-mach/`, `/brands/dometic/`, `/brands/furrion/`, `/brands/lippert/`, `/brands/norcold/`, `/brands/onan/`, `/brands/suburban-atwood/`), both as static routes and as an SPA route in `src/main.tsx` (`BrandHub` component), linked from homepage brand tiles.
+- Code-page titles changed to `"<brand> <code> fault code — <equipmentType>"` to better match search query shape (was previously plain brand+code).
+- Added `scripts/gsc-index-coverage.mjs`: samples up to 100 sitemap URLs via the GSC URL Inspection API (`indexUrl:inspect`) and writes `reports/gsc-index-coverage.json` with per-URL `coverageState`/`verdict`. Run: `GSC_QUOTA_PROJECT=coffee-explorer-480514 node scripts/gsc-index-coverage.mjs`. **A 100-URL scan was started this session (background PID, ~6s/URL ≈ 10 min total) but had not finished writing `reports/gsc-index-coverage.json` by session end — rerun the command above and read that file for the indexed-vs-not-indexed split before deciding whether to resume corpus gap-scan batches.**
+- Added `docs/monetization-plan.md`: mobile-RV-repair-tech lead-capture CTA design (private-handler form, no public write endpoint) as the primary monetization bet, plus an affiliate lineup (Amazon Associates, JustAnswer, etrailer/PPL) — both stay disabled/placeholder until `npm run traffic:monetization` shows a slot past its impression threshold.
+- Verification this session: full unit `193/193`, full Playwright runtime `132/132`, `npm run validate:corpus` clean, `git diff --check` clean, live HTTP 200 + real content on sampled routes.
+- Per repo TODO's own Growth & Monetization decision rule: corpus gap-scan batches are on hold until the index-coverage read above is done — do not resume the old "Continue official-source gap scans..." item until that decision is made.
+
 ## Current State — 2026-06-04
 - Live URL: `https://rvappliancefaultcodes.com/`
 - Permanent domain: Route53 registration `rvappliancefaultcodes.com` succeeded at `2026-06-02T23:06:27Z`; auto-renew and transfer lock are on. Route53 `.com` billing is `$15/year` registration plus `$15/year` renewal.
@@ -312,8 +321,8 @@
 ## Growth & Monetization — next steps (added 2026-07-04)
 Basis: live GSC data 2026-06-25→07-01 pulled 2026-07-04: 206 impressions, 3 clicks, avg position 8.1 across 25 pages with impressions, out of 1,938 sitemap URLs. One month post-indexing.
 
-- [x] Pull GSC index-coverage sample via URL Inspection API: `GSC_QUOTA_PROJECT=coffee-explorer-480514 node scripts/gsc-index-coverage.mjs` writes `reports/gsc-index-coverage.json` (2026-07-04 run: see report for indexed vs not-indexed split).
-- [x] Pause new corpus gap-scan batches until indexation of existing pages is verified — breadth is not the current constraint (gap-scan item below moved to on-hold).
+- [ ] Pull GSC index-coverage sample via URL Inspection API: tooling built (`scripts/gsc-index-coverage.mjs`, run `GSC_QUOTA_PROJECT=coffee-explorer-480514 node scripts/gsc-index-coverage.mjs`), a 100-URL scan was started 2026-07-04 but did not finish writing `reports/gsc-index-coverage.json` before session end (API is rate-limited to ~6s/URL) — rerun and read the report before making the pause/resume call below.
+- [x] Pause new corpus gap-scan batches until indexation of existing pages is verified — breadth is not the current constraint (gap-scan item above moved to on-hold as a policy call; re-confirm once the coverage report above actually lands).
 - [x] Improve indexation/internal linking: added 7 `/brands/<brand>/` hub pages (static + SPA route), pre-rendered real HTML content into every code/symptom page (`generate-static.mjs` now injects article HTML into `#root` instead of shipping an empty SPA shell), related-code and symptom cross-links on every code page, related-code links on symptom pages, homepage brand tiles now link to hubs.
 - [x] Fix homepage impression leak: code-page titles now `"<brand> <code> fault code — <equipmentType>"` and detail pages carry real crawlable content so they can win code-query SERPs.
 - [x] Enrich pages earning impressions: every code page now serves meaning, owner-safe checks, service-only boundaries, safety boundary, official source links, and cross-links as static HTML (previously an empty shell requiring JS + async corpus fetch to render anything).
