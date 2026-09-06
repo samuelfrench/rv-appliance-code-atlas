@@ -1,53 +1,65 @@
 # TODO
 
-## STATUS 2026-09-06 — Decision checkpoint REACHED and FAILED; July diagnosis was WRONG
+## Mothball assessment — 2026-09-06
 
-**Verdict: the ~2026-09-01 checkpoint criterion (>=1,000 weekly impressions) was missed by 18x. Actual last full week (2026-08-28 -> 09-03): 55 impressions, 0 clicks** (34x short against the 29-impression week of 08-31). Per the decision rule set 2026-07-04, stop investing in content volume. Kill-or-pivot decision is now owed (see "Decision owed" below).
+**Recommendation: mothball active investment in RV Appliance Fault Codes. Sam asked for advice; no shutdown, domain change, content removal, or operational mothballing has been authorized or performed.** Preserve the existing site and corpus at low carrying cost; stop allocating new content batches or release-optimization work if Sam accepts this recommendation. A recall/warranty pivot needs separate demand evidence before investment.
+
+- [x] Refresh the decision evidence. Direct GSC API reads at `2026-09-06T19:21:15Z`, `type=web`, `dataState=final`, `aggregationType=byProperty`: **1 click / 207 impressions** in `2026-08-08..2026-09-04`, versus **5 / 810** in `2026-07-11..2026-08-07`; **22 / 2,059** in `2026-06-07..2026-09-04`; **0 / 51** in the latest complete week `2026-08-29..2026-09-04`. Today's finalized portfolio artifact (`../traffic-report/data/private/latest.json`, generated `2026-09-06T10:31:43.738873+00:00`) separately records **0 U.S. Organic Search sessions** in the same 28-day window. Its 95 all-channel sessions are a different cohort, not zero overall usage.
+- [x] Recount the existing inspection evidence without repeating the 38-minute scan. `reports/gsc-index-coverage.json` contains **13 indexed / 38 crawled-not-indexed / 49 unknown**, exactly **100** URL results, generated `2026-09-06T19:05:52.442Z`. July's different sample contains **34 / 3 / 63**. These are sample observations, not a census or a confirmed number of URLs removed.
+- [x] Verify carrying infrastructure. Live homepage returned HTTP **200**; Fly **v152**, app SHA `5b0bd37f734725c33cafa77db530753e84be0d02`, has one **256 MB shared CPU** machine with auto-stop/start and zero minimum running machines. Exact-SHA Actions run **34053922342** succeeded. Route53 registrar reports expiry **2027-06-02**, auto-renew on; current AWS `.com` renewal quote is **$16/year**. No account-wide invoice was reconciled. No new recurring service was added.
+- [x] Record rejected next moves. More corpus volume is unsupported after **1,937 detail pages** produced **1 Google click in the last 28 days**. The prior recall/warranty pivot rests on only **22 named-query impressions** in the earlier 2,062-impression window; those visible rows cannot establish a new market opportunity or characterize the hidden queries. Do not treat missing query detail as zero fault-code demand.
+- [ ] Decision only: Sam can choose to park active work, commission a separately justified narrow intervention, or retire hosting. Done when that explicit choice is recorded and any authorized operational changes are verified. Do not schedule more coverage scans or begin a pivot merely because another calendar date arrives.
+
+Reproduce traffic with a read-only POST to `https://www.googleapis.com/webmasters/v3/sites/https%3A%2F%2Frvappliancefaultcodes.com%2F/searchAnalytics/query` using `{ "startDate": "2026-08-08", "endDate": "2026-09-04", "dataState": "final", "aggregationType": "byProperty", "type": "web" }`; retain normal local ADC authentication without printing tokens. Recount inspection results with `jq '.results | group_by(.coverageState) | map({state:.[0].coverageState,count:length})' reports/gsc-index-coverage.json`. Check corpus totals with `jq '{codes:(.entries|length),symptoms:(.symptoms|length)}' src/data/corpus.json`.
+
+## Earlier 2026-09-06 checkpoint analysis — interpretation corrected
+
+**The approximately September 1 checkpoint of >=1,000 weekly impressions was missed.** The latest finalized property total is **51 impressions / 0 clicks** for `2026-08-29..2026-09-04`. For the older `2026-08-28..2026-09-03` window, the direct property total is **46**, while the page-row report sums to **55**. These aggregation methods differ; do not label the page sum as the property total. See [Google's aggregation explanation](https://support.google.com/webmasters/answer/7576553).
 
 ### Live numbers (pulled 2026-09-06, GSC API, verified — not from memory)
 - Window 2026-06-01 -> 2026-09-03: **2,062 impressions, 22 clicks total.**
 - Weekly impressions: peaked **379** (week of 2026-07-06), then **cliff on 2026-07-25**: 41 impressions on 07-24 -> **5 on 07-25**, sustained ever since. Now 29-55/week.
-- **Distinct pages earning any impressions: 101 (wk 07-13) -> 10 (wk 07-27) -> 15 (wk 08-28).** ~90% loss of serving pages while average position HELD (5.5-8.7). That signature = pages leaving the index, not ranking demotion.
+- **Distinct pages earning any impressions: 101 (wk 07-13) -> 10 (wk 07-27) -> 15 (wk 08-28).** Visibility declined sharply. This metric alone cannot distinguish indexing loss from changes in queries, demand, or rankings; the inspection results below provide separate evidence.
 - **1 click in the 41 days since 2026-07-25** (single click 2026-08-13). Last multi-click day was 2026-07-16.
 - Homepage soaks 40 of 55 impressions at 0% CTR — unchanged failure mode from 2026-07-04.
 
 ### 100-URL index-coverage rescan — COMPLETED 2026-09-06, quantifies the rejection
 
-| coverageState | Jul-04 | Sep-06 | z | p | est. pages of 1,945 |
-|---|---|---|---|---|---|
-| Submitted and indexed | 34% | **13%** | -3.50 | 4.6e-04 | ~252 (was ~661) |
-| Crawled - currently not indexed | 3% | **38%** | +6.13 | 8.8e-10 | ~739 (was ~58) |
-| URL is unknown to Google | 63% | 49% | -1.99 | 4.6e-02 | ~953 (was ~1,225) |
+| coverageState | Jul-04 sample, n=100 | Sep-06 sample, n=100 |
+|---|---|---|
+| Submitted and indexed | 34 | **13** |
+| Crawled - currently not indexed | 3 | **38** |
+| URL is unknown to Google | 63 | 49 |
 
-**Indexed share fell by ~62% and the crawled-then-rejected share grew ~12.7x.** Both shifts are far outside sampling noise. Extrapolated to the corpus: roughly **400 pages were dropped from the index** and roughly **680 more were crawled and refused** between July 4 and September 6.
+**The newer sample shows materially worse index coverage.** The earlier p-values and estimates of 400 removed / 680 newly rejected pages are withdrawn: these were different deterministic samples without a validated random-sampling design or a paired URL transition analysis. They do not establish exact corpus-wide changes.
 
-Sampling caveat, so nobody over-reads this: the two runs did **not** draw the same 100 URLs (only 8 overlap). `sampleEvenly()` is deterministic over `dist/indexnow-report.json`, but `dist/` was rebuilt during the 2026-07-04 session after that scan started, which reordered the list. So these are two independent even-samples of the same 1,945-URL population, not a paired before/after. That is still a valid comparison of population proportions — it just means the per-URL transition matrix is not computable from these two files. If a future rescan wants paired transitions, snapshot `dist/indexnow-report.json` alongside the report.
+Sampling caveat: the two runs did **not** draw the same 100 URLs (only 8 overlap). `sampleEvenly()` is deterministic over `dist/indexnow-report.json`, but `dist/` was rebuilt during the July session and reordered the list. Compare the observed samples descriptively; do not assume representative random samples or extrapolate exact losses. If a future rescan is justified, snapshot its URL manifest and reuse it for paired transitions.
 
-### Root cause — REFUTES the 2026-07-04 conclusion
-The 2026-07-04 TODO/memory concluded: *"this is a discovery/crawl-budget problem, not a thin-content quality demotion."* **That is now falsified.** Spot-check 2026-09-06 via URL Inspection API on 5 pages that were earning impressions in mid-July:
+### Diagnosis — discovery alone no longer explains the observations
+The July conclusion that this was solely a discovery/crawl-budget problem was too confident. Content usefulness is a plausible concern, but `Crawled - currently not indexed` does not specify Google's reason or prove a penalty. Earlier September 6 spot-checks via URL Inspection API on 5 pages that earned impressions in mid-July recorded:
 - 4 of 5 are now `Crawled - currently not indexed`, with `pageFetchState=SUCCESSFUL`, `robotsTxtState=ALLOWED`, correct canonical. Google fetched them fine, evaluated them, and declined to index.
-- Last-crawl dates on those pages (2026-06-27, 07-12, 07-19, 07-22) cluster immediately before the 07-25 cliff — Google crawled through July, judged, and dropped them.
+- Last-crawl dates on those pages were 2026-06-27, 07-12, 07-19, and 07-22. They do not establish the date or reason a page ceased being indexed.
 - Only `/codes/coleman-mach-9420-hi/` still `Submitted and indexed`. Homepage still indexed (last crawl 2026-08-25).
-- **The July "63% unknown to Google" number was not a discovery win waiting to happen — it was pages Google had not yet judged. As it judged them, they went to "crawled, not indexed", not to "indexed".**
+- **July's 63 unknown sample URLs did not guarantee later indexing.** The two different samples cannot establish the individual transitions asserted in the earlier diagnosis.
 
-### Why Google is rejecting the pages (measured 2026-09-06 from `src/data/corpus.json`)
+### Content concerns from the earlier September 6 audit (possible contributors)
 - 864 code pages: **median 86 unique prose words/page** (p10 69, p90 116).
 - 1,073 symptom pages: **median 108 unique prose words/page**.
 - `safetyBoundary`: only **78 distinct values across 864 entries (9% unique)** — one value repeats 153x.
 - `serviceOnlyActions`: **311 distinct values across 864 entries (35% unique)** — one repeats 80x.
 - `plainMeaning` is 99% unique but is a one-sentence paraphrase of the manufacturer's own support line. Example: `/codes/dometic-rm10-display-fault-08-level-refrigerator-reset/` renders 216 visible words, of which the unique content is 2 sentences restating Dometic's own page; the rest is a model-number list plus boilerplate.
-- Net: 1,937 detail URLs (864 code + 1,073 symptom; +homepage +7 brand hubs = the 1,945 in the sitemap) at ~90-110 unique words each, restating primary sources that Google already ranks above us. That is the textbook scaled/thin-content profile.
+- Net: 1,937 detail URLs (864 code + 1,073 symptom; +homepage +7 brand hubs = 1,945 sitemap URLs) offer short source summaries. The usefulness and differentiation of that format deserve scrutiny; word count alone does not establish an indexing cause.
 
 ### Demand reality — the bigger problem
-Full-window query pull (2026-06-01 -> 09-03, rowLimit 100): **only 14 distinct queries surfaced above Google's anonymization threshold, totalling 22 of 2,062 impressions (~1%).** So ~99% of impressions came from queries too rare for Google to name.
+Earlier full-window query pull (2026-06-01 -> 09-03, rowLimit 100): **14 named query rows totalled 22 of 2,062 impressions (~1%).** The remaining impressions are not characterized by this visible query table. Privacy filtering and reporting limitations prevent inferring the hidden queries or total market demand.
 - The named queries are **NOT fault-code queries**: `dometic refrigerator recall` (3), `dometic rv refrigerator recall` (3), `dometic ac warranty` (2), `dometic fridge recall` (2), `dometic rv ac warranty` (2), `porta potti 245` (2), `onan generator warranty` (1), `dometic recall` (1).
 - Exactly **one** fault-code query surfaced: `furrion e1 code`, 1 impression, position 26.
 - One "query" row is scraper noise (a string full of `-site:` operators).
-- **Read: the site does not capture fault-code demand at all. The only organic demand it brushed against is recall/warranty, which it ranks 25-46 for with pages that are not even about recalls.**
+- **Read: the site captures very little measurable search traffic.** These named rows do not establish that the site captures no fault-code demand, that recall/warranty is its only demand, or that a recall/warranty pivot would work.
 
 ### Ruled OUT as causes (checked 2026-09-06)
 - Not a site outage / technical break: live HTTP `200`, ~40ms warm, canonical + `robots index,follow` correct, prerendered `<h1>` present, TLS valid `Aug 2 -> Oct 31 2026` (so no cert expiry at the 07-25 cliff).
-- Not a bad deploy: **no code/content commit between `a6fa61c` (2026-07-04) and the cliff**, no Fly release since `v150` 2026-07-05. (The only later commits are docs-only and landed 2026-09-06, long after: `6232e03`, `d367221`.)
+- No code/content commit was identified between `a6fa61c` (July 4) and the July 25 decline. Current Fly is **v152**, app SHA `5b0bd37`, after September 6 documentation commits triggered releases; the old statement that v150 remains current is superseded.
 - Not a confirmed Google update: no Google update landed 2026-07-25. June 2026 spam update = late June; August 2026 spam update = Aug 18-21 (both outside the cliff). The Aug 2026 spam update did target programmatic/scaled content, but our drop predates it by 3.5 weeks.
 - Cold start is a minor smell, not the cause: `min_machines_running = 0` + `auto_stop_machines = "stop"` gives a ~1.6s cold first byte. Worth fixing if the site continues, but it did not cause a single-day 88% cliff.
 
@@ -55,10 +67,10 @@ Full-window query pull (2026-06-01 -> 09-03, rowLimit 100): **only 14 distinct q
 - **GSC has never re-downloaded the sitemap since 2026-06-02** — it still reports `submitted: 985` against 1,945 live sitemap URLs. Resubmit if the site continues.
 
 ### Decision owed (Sam)
-The measured facts: 22 clicks in 3 months, 1 click in the last 41 days, pages being actively rejected as thin, and near-zero nameable query demand for fault codes. Options:
-- **A. Kill / park.** Cost to keep alive is small (Route53 `$15/yr` + Fly shared-cpu-1x auto-stop), so parking the domain is cheap. Stop all content work.
-- **B. Pivot format, same niche.** Stop paraphrasing manufacturer pages (unwinnable — they outrank us by definition). Build what the manufacturer will NOT publish: real repair-cost ranges, fix-or-replace math, part numbers + sourcing, actual failure patterns from forums/recalls, photos. Far fewer, far deeper pages. Requires deleting or noindexing most of the 1,937 thin URLs.
-- **C. Pivot to the demand that actually showed up: RV recalls + warranty.** This is the only cluster that surfaced organically, and it did so while ranking 25-46 with pages not even targeting it. NHTSA recall data is public and badly presented for RV appliances. Higher intent, and it is a data product rather than a paraphrase product.
+The current measured facts and recommendation are at the top. Options remain decisions for Sam:
+- **A. Park active investment (recommended).** Preserve the corpus/domain and existing cheap hosting. Domain renewal is currently **$16/year**, next expiry June 2, 2027; Fly uses a 256 MB shared CPU machine with auto-stop. No shutdown has occurred.
+- **B. Investigate a narrowly differentiated format only with new evidence.** Original repair-cost data, model-specific comparisons, or a distribution partner could justify a separate proposal. No mass deletion/noindexing or rebuild is supported by this assessment alone.
+- **C. Recall/warranty pivot (not recommended on current evidence).** A few named impressions are insufficient. Require independent evidence of demand and an advantage before starting research/build spend; preserve official-source and owner-safe boundaries.
 - Whatever is chosen, **do not resume corpus gap-scan batches** — breadth is definitively not the constraint.
 
 ### Reproduce these numbers
