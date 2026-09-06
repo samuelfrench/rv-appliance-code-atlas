@@ -1,5 +1,59 @@
 # TODO
 
+## STATUS 2026-09-06 — Decision checkpoint REACHED and FAILED; July diagnosis was WRONG
+
+**Verdict: the ~2026-09-01 checkpoint criterion (>=1,000 weekly impressions) was missed by 20-35x. Actual last full week (2026-08-28 -> 09-03): 55 impressions, 0 clicks.** Per the decision rule set 2026-07-04, stop investing in content volume. Kill-or-pivot decision is now owed (see "Decision owed" below).
+
+### Live numbers (pulled 2026-09-06, GSC API, verified — not from memory)
+- Window 2026-06-01 -> 2026-09-03: **2,062 impressions, 22 clicks total.**
+- Weekly impressions: peaked **379** (week of 2026-07-06), then **cliff on 2026-07-25**: 41 impressions on 07-24 -> **5 on 07-25**, sustained ever since. Now 29-55/week.
+- **Distinct pages earning any impressions: 101 (wk 07-13) -> 10 (wk 07-27) -> 15 (wk 08-28).** ~90% loss of serving pages while average position HELD (5.5-8.7). That signature = pages leaving the index, not ranking demotion.
+- **1 click in the 41 days since 2026-07-25** (single click 2026-08-13). Last multi-click day was 2026-07-16.
+- Homepage soaks 40 of 55 impressions at 0% CTR — unchanged failure mode from 2026-07-04.
+
+### Root cause — REFUTES the 2026-07-04 conclusion
+The 2026-07-04 TODO/memory concluded: *"this is a discovery/crawl-budget problem, not a thin-content quality demotion."* **That is now falsified.** Spot-check 2026-09-06 via URL Inspection API on 5 pages that were earning impressions in mid-July:
+- 4 of 5 are now `Crawled - currently not indexed`, with `pageFetchState=SUCCESSFUL`, `robotsTxtState=ALLOWED`, correct canonical. Google fetched them fine, evaluated them, and declined to index.
+- Last-crawl dates on those pages (2026-06-27, 07-12, 07-19, 07-22) cluster immediately before the 07-25 cliff — Google crawled through July, judged, and dropped them.
+- Only `/codes/coleman-mach-9420-hi/` still `Submitted and indexed`. Homepage still indexed (last crawl 2026-08-25).
+- **The July "63% unknown to Google" number was not a discovery win waiting to happen — it was pages Google had not yet judged. As it judged them, they went to "crawled, not indexed", not to "indexed".**
+
+### Why Google is rejecting the pages (measured 2026-09-06 from `src/data/corpus.json`)
+- 864 code pages: **median 86 unique prose words/page** (p10 69, p90 116).
+- 1,073 symptom pages: **median 108 unique prose words/page**.
+- `safetyBoundary`: only **78 distinct values across 864 entries (9% unique)** — one value repeats 153x.
+- `serviceOnlyActions`: **311 distinct values across 864 entries (35% unique)** — one repeats 80x.
+- `plainMeaning` is 99% unique but is a one-sentence paraphrase of the manufacturer's own support line. Example: `/codes/dometic-rm10-display-fault-08-level-refrigerator-reset/` renders 216 visible words, of which the unique content is 2 sentences restating Dometic's own page; the rest is a model-number list plus boilerplate.
+- Net: ~1,937 URLs of ~90-110 unique words each, restating primary sources that Google already ranks above us. That is the textbook scaled/thin-content profile.
+
+### Demand reality — the bigger problem
+Full-window query pull (2026-06-01 -> 09-03, rowLimit 100): **only 14 distinct queries surfaced above Google's anonymization threshold, totalling 22 of 2,062 impressions (~1%).** So ~99% of impressions came from queries too rare for Google to name.
+- The named queries are **NOT fault-code queries**: `dometic refrigerator recall` (3), `dometic rv refrigerator recall` (3), `dometic ac warranty` (2), `dometic fridge recall` (2), `dometic rv ac warranty` (2), `porta potti 245` (2), `onan generator warranty` (1), `dometic recall` (1).
+- Exactly **one** fault-code query surfaced: `furrion e1 code`, 1 impression, position 26.
+- One "query" row is scraper noise (a string full of `-site:` operators).
+- **Read: the site does not capture fault-code demand at all. The only organic demand it brushed against is recall/warranty, which it ranks 25-46 for with pages that are not even about recalls.**
+
+### Ruled OUT as causes (checked 2026-09-06)
+- Not a site outage / technical break: live HTTP `200`, ~40ms warm, canonical + `robots index,follow` correct, prerendered `<h1>` present, TLS valid `Aug 2 -> Oct 31 2026` (so no cert expiry at the 07-25 cliff).
+- Not a bad deploy: **no commits since `a6fa61c` 2026-07-04**, no Fly release since `v150` 2026-07-05. Repo idle 2 months.
+- Not a confirmed Google update: no Google update landed 2026-07-25. June 2026 spam update = late June; August 2026 spam update = Aug 18-21 (both outside the cliff). The Aug 2026 spam update did target programmatic/scaled content, but our drop predates it by 3.5 weeks.
+- Cold start is a minor smell, not the cause: `min_machines_running = 0` + `auto_stop_machines = "stop"` gives a ~1.6s cold first byte. Worth fixing if the site continues, but it did not cause a single-day 88% cliff.
+
+### Also found (unrelated, still real)
+- **GSC has never re-downloaded the sitemap since 2026-06-02** — it still reports `submitted: 985` against 1,945 live sitemap URLs. Resubmit if the site continues.
+
+### Decision owed (Sam)
+The measured facts: 22 clicks in 3 months, 1 click in the last 41 days, pages being actively rejected as thin, and near-zero nameable query demand for fault codes. Options:
+- **A. Kill / park.** Cost to keep alive is small (Route53 `$15/yr` + Fly shared-cpu-1x auto-stop), so parking the domain is cheap. Stop all content work.
+- **B. Pivot format, same niche.** Stop paraphrasing manufacturer pages (unwinnable — they outrank us by definition). Build what the manufacturer will NOT publish: real repair-cost ranges, fix-or-replace math, part numbers + sourcing, actual failure patterns from forums/recalls, photos. Far fewer, far deeper pages. Requires deleting or noindexing most of the 1,937 thin URLs.
+- **C. Pivot to the demand that actually showed up: RV recalls + warranty.** This is the only cluster that surfaced organically, and it did so while ranking 25-46 with pages not even targeting it. NHTSA recall data is public and badly presented for RV appliances. Higher intent, and it is a data product rather than a paraphrase product.
+- Whatever is chosen, **do not resume corpus gap-scan batches** — breadth is definitively not the constraint.
+
+### Reproduce these numbers
+- Weekly traffic: `GSC_QUOTA_PROJECT=coffee-explorer-480514 node scripts/gsc-weekly-report.mjs --fetch`
+- Index coverage: `GSC_QUOTA_PROJECT=coffee-explorer-480514 GSC_COVERAGE_SAMPLE=100 node scripts/gsc-index-coverage.mjs` (~23s/URL in practice, NOT the ~6s the older note claims; a 100-URL scan takes ~38 min). July baseline preserved at `reports/gsc-index-coverage-2026-07-04-baseline.json`.
+- gcloud ADC does NOT accept the `webmasters.readonly` scope on this box; use `--scopes=https://www.googleapis.com/auth/webmasters` (the script already falls back to this).
+
 ## Release pipeline follow-up — 2026-09-06
 
 - [ ] Reuse the tested production build in releases (2026-09-06; origin/main@a6fa61cd83a7)
@@ -354,7 +408,7 @@
 ## Growth & Monetization — next steps (added 2026-07-04)
 Basis: live GSC data 2026-06-25→07-01 pulled 2026-07-04: 206 impressions, 3 clicks, avg position 8.1 across 25 pages with impressions, out of 1,938 sitemap URLs. One month post-indexing.
 
-- [x] Pull GSC index-coverage sample via URL Inspection API (2026-07-04, 100 URLs of 1,945 sampled, see `reports/gsc-index-coverage.json`): `34% Submitted and indexed`, `63% URL is unknown to Google` (never crawled/discovered), `3% Crawled - currently not indexed`. **Conclusion: this is a discovery/crawl-budget problem, not a thin-content quality demotion** — most unindexed pages haven't been seen by Google at all yet, so the internal-linking fix (brand hubs, cross-links) below is the right lever, not a content-quality rewrite. Re-run `GSC_QUOTA_PROJECT=coffee-explorer-480514 node scripts/gsc-index-coverage.mjs` again in ~2-3 weeks to see if the "unknown" share is dropping.
+- [x] Pull GSC index-coverage sample via URL Inspection API (2026-07-04, 100 URLs of 1,945 sampled, see `reports/gsc-index-coverage.json`): `34% Submitted and indexed`, `63% URL is unknown to Google` (never crawled/discovered), `3% Crawled - currently not indexed`. **Conclusion (2026-07-04, SINCE REFUTED — see `STATUS 2026-09-06` at top of file): this is a discovery/crawl-budget problem, not a thin-content quality demotion** — most unindexed pages haven't been seen by Google at all yet, so the internal-linking fix (brand hubs, cross-links) below is the right lever, not a content-quality rewrite. Re-run `GSC_QUOTA_PROJECT=coffee-explorer-480514 node scripts/gsc-index-coverage.mjs` again in ~2-3 weeks to see if the "unknown" share is dropping.
 - [x] Resubmitted all 1,945 sitemap URLs (including new `/brands/` hubs) to IndexNow 2026-07-05 via `npm run traffic:indexnow:submit` (HTTP 200) to accelerate discovery of the 63% Google hasn't crawled yet.
 - [x] Pause new corpus gap-scan batches until indexation improves — confirmed correct call by the coverage data above (breadth isn't the constraint; discovery is). Revisit once a follow-up coverage scan shows the "unknown to Google" share dropping meaningfully.
 - [x] Improve indexation/internal linking: added 7 `/brands/<brand>/` hub pages (static + SPA route), pre-rendered real HTML content into every code/symptom page (`generate-static.mjs` now injects article HTML into `#root` instead of shipping an empty SPA shell), related-code and symptom cross-links on every code page, related-code links on symptom pages, homepage brand tiles now link to hubs.
@@ -362,9 +416,9 @@ Basis: live GSC data 2026-06-25→07-01 pulled 2026-07-04: 206 impressions, 3 cl
 - [x] Enrich pages earning impressions: every code page now serves meaning, owner-safe checks, service-only boundaries, safety boundary, official source links, and cross-links as static HTML (previously an empty shell requiring JS + async corpus fetch to render anything).
 - [x] Mobile-RV-repair lead capture designed (primary monetization path): CTA spec, private-handler form design, and gating in `docs/monetization-plan.md`. Remains disabled until `code-detail-bottom` slot passes monetization-readiness thresholds.
 - [x] Affiliate lineup documented in `docs/monetization-plan.md` (Amazon Associates, JustAnswer, etrailer/PPL) — placeholder-only until thresholds pass.
-- [ ] Re-run `GSC_QUOTA_PROJECT=coffee-explorer-480514 node scripts/gsc-weekly-report.mjs --fetch` + `npm run traffic:monetization` around 2026-08-01.
-- [ ] Re-run `GSC_QUOTA_PROJECT=coffee-explorer-480514 node scripts/gsc-index-coverage.mjs` around 2026-07-20 to check whether the internal-linking fix + IndexNow resubmit moved URLs out of "unknown to Google" and into "indexed".
-- [ ] Decision checkpoint ~2026-09-01 (3 months post-indexing): if weekly impressions are not at least ~1,000 (5x monthly growth trend), stop investing in content volume and reassess the project.
+- [x] Re-ran `scripts/gsc-weekly-report.mjs --fetch` on 2026-09-06 (was skipped on 2026-08-01; repo was idle). Result: 55 impressions / 0 clicks for 2026-08-28->09-03. Monetization stays disabled — nowhere near any slot threshold.
+- [x] Re-ran index coverage 2026-09-06 (was skipped on 2026-07-20). Direct URL-Inspection spot check of 5 previously-ranking pages: **4 of 5 are now `Crawled - currently not indexed` with `pageFetchState=SUCCESSFUL`** — Google crawled them and refused to index. The internal-linking fix did not fail to get pages discovered; it got them discovered and then rejected. Full 100-URL rescan results recorded in the `STATUS 2026-09-06` block.
+- [x] Decision checkpoint ~2026-09-01 — **REACHED 2026-09-06 and FAILED.** Last full week 2026-08-28->09-03 = **55 impressions, 0 clicks** vs the ~1,000 threshold (20-35x short). Content-volume investment is stopped. See the `STATUS 2026-09-06` block at the top of this file for the full read and the kill-or-pivot options.
 
 ## Launch Automation
 - [x] Add weekly traffic report artifact once GSC is configured.
