@@ -2,7 +2,7 @@
 
 ## STATUS 2026-09-06 — Decision checkpoint REACHED and FAILED; July diagnosis was WRONG
 
-**Verdict: the ~2026-09-01 checkpoint criterion (>=1,000 weekly impressions) was missed by 20-35x. Actual last full week (2026-08-28 -> 09-03): 55 impressions, 0 clicks.** Per the decision rule set 2026-07-04, stop investing in content volume. Kill-or-pivot decision is now owed (see "Decision owed" below).
+**Verdict: the ~2026-09-01 checkpoint criterion (>=1,000 weekly impressions) was missed by 18x. Actual last full week (2026-08-28 -> 09-03): 55 impressions, 0 clicks** (34x short against the 29-impression week of 08-31). Per the decision rule set 2026-07-04, stop investing in content volume. Kill-or-pivot decision is now owed (see "Decision owed" below).
 
 ### Live numbers (pulled 2026-09-06, GSC API, verified — not from memory)
 - Window 2026-06-01 -> 2026-09-03: **2,062 impressions, 22 clicks total.**
@@ -10,6 +10,18 @@
 - **Distinct pages earning any impressions: 101 (wk 07-13) -> 10 (wk 07-27) -> 15 (wk 08-28).** ~90% loss of serving pages while average position HELD (5.5-8.7). That signature = pages leaving the index, not ranking demotion.
 - **1 click in the 41 days since 2026-07-25** (single click 2026-08-13). Last multi-click day was 2026-07-16.
 - Homepage soaks 40 of 55 impressions at 0% CTR — unchanged failure mode from 2026-07-04.
+
+### 100-URL index-coverage rescan — COMPLETED 2026-09-06, quantifies the rejection
+
+| coverageState | Jul-04 | Sep-06 | z | p | est. pages of 1,945 |
+|---|---|---|---|---|---|
+| Submitted and indexed | 34% | **13%** | -3.50 | 4.6e-04 | ~252 (was ~661) |
+| Crawled - currently not indexed | 3% | **38%** | +6.13 | 8.8e-10 | ~739 (was ~58) |
+| URL is unknown to Google | 63% | 49% | -1.99 | 4.6e-02 | ~953 (was ~1,225) |
+
+**Indexed share fell by ~62% and the crawled-then-rejected share grew ~12.7x.** Both shifts are far outside sampling noise. Extrapolated to the corpus: roughly **400 pages were dropped from the index** and roughly **680 more were crawled and refused** between July 4 and September 6.
+
+Sampling caveat, so nobody over-reads this: the two runs did **not** draw the same 100 URLs (only 8 overlap). `sampleEvenly()` is deterministic over `dist/indexnow-report.json`, but `dist/` was rebuilt during the 2026-07-04 session after that scan started, which reordered the list. So these are two independent even-samples of the same 1,945-URL population, not a paired before/after. That is still a valid comparison of population proportions — it just means the per-URL transition matrix is not computable from these two files. If a future rescan wants paired transitions, snapshot `dist/indexnow-report.json` alongside the report.
 
 ### Root cause — REFUTES the 2026-07-04 conclusion
 The 2026-07-04 TODO/memory concluded: *"this is a discovery/crawl-budget problem, not a thin-content quality demotion."* **That is now falsified.** Spot-check 2026-09-06 via URL Inspection API on 5 pages that were earning impressions in mid-July:
@@ -24,7 +36,7 @@ The 2026-07-04 TODO/memory concluded: *"this is a discovery/crawl-budget problem
 - `safetyBoundary`: only **78 distinct values across 864 entries (9% unique)** — one value repeats 153x.
 - `serviceOnlyActions`: **311 distinct values across 864 entries (35% unique)** — one repeats 80x.
 - `plainMeaning` is 99% unique but is a one-sentence paraphrase of the manufacturer's own support line. Example: `/codes/dometic-rm10-display-fault-08-level-refrigerator-reset/` renders 216 visible words, of which the unique content is 2 sentences restating Dometic's own page; the rest is a model-number list plus boilerplate.
-- Net: ~1,937 URLs of ~90-110 unique words each, restating primary sources that Google already ranks above us. That is the textbook scaled/thin-content profile.
+- Net: 1,937 detail URLs (864 code + 1,073 symptom; +homepage +7 brand hubs = the 1,945 in the sitemap) at ~90-110 unique words each, restating primary sources that Google already ranks above us. That is the textbook scaled/thin-content profile.
 
 ### Demand reality — the bigger problem
 Full-window query pull (2026-06-01 -> 09-03, rowLimit 100): **only 14 distinct queries surfaced above Google's anonymization threshold, totalling 22 of 2,062 impressions (~1%).** So ~99% of impressions came from queries too rare for Google to name.
@@ -35,7 +47,7 @@ Full-window query pull (2026-06-01 -> 09-03, rowLimit 100): **only 14 distinct q
 
 ### Ruled OUT as causes (checked 2026-09-06)
 - Not a site outage / technical break: live HTTP `200`, ~40ms warm, canonical + `robots index,follow` correct, prerendered `<h1>` present, TLS valid `Aug 2 -> Oct 31 2026` (so no cert expiry at the 07-25 cliff).
-- Not a bad deploy: **no commits since `a6fa61c` 2026-07-04**, no Fly release since `v150` 2026-07-05. Repo idle 2 months.
+- Not a bad deploy: **no code/content commit between `a6fa61c` (2026-07-04) and the cliff**, no Fly release since `v150` 2026-07-05. (The only later commits are docs-only and landed 2026-09-06, long after: `6232e03`, `d367221`.)
 - Not a confirmed Google update: no Google update landed 2026-07-25. June 2026 spam update = late June; August 2026 spam update = Aug 18-21 (both outside the cliff). The Aug 2026 spam update did target programmatic/scaled content, but our drop predates it by 3.5 weeks.
 - Cold start is a minor smell, not the cause: `min_machines_running = 0` + `auto_stop_machines = "stop"` gives a ~1.6s cold first byte. Worth fixing if the site continues, but it did not cause a single-day 88% cliff.
 
@@ -418,7 +430,7 @@ Basis: live GSC data 2026-06-25→07-01 pulled 2026-07-04: 206 impressions, 3 cl
 - [x] Affiliate lineup documented in `docs/monetization-plan.md` (Amazon Associates, JustAnswer, etrailer/PPL) — placeholder-only until thresholds pass.
 - [x] Re-ran `scripts/gsc-weekly-report.mjs --fetch` on 2026-09-06 (was skipped on 2026-08-01; repo was idle). Result: 55 impressions / 0 clicks for 2026-08-28->09-03. Monetization stays disabled — nowhere near any slot threshold.
 - [x] Re-ran index coverage 2026-09-06 (was skipped on 2026-07-20). Direct URL-Inspection spot check of 5 previously-ranking pages: **4 of 5 are now `Crawled - currently not indexed` with `pageFetchState=SUCCESSFUL`** — Google crawled them and refused to index. The internal-linking fix did not fail to get pages discovered; it got them discovered and then rejected. Full 100-URL rescan results recorded in the `STATUS 2026-09-06` block.
-- [x] Decision checkpoint ~2026-09-01 — **REACHED 2026-09-06 and FAILED.** Last full week 2026-08-28->09-03 = **55 impressions, 0 clicks** vs the ~1,000 threshold (20-35x short). Content-volume investment is stopped. See the `STATUS 2026-09-06` block at the top of this file for the full read and the kill-or-pivot options.
+- [x] Decision checkpoint ~2026-09-01 — **REACHED 2026-09-06 and FAILED.** Last full week 2026-08-28->09-03 = **55 impressions, 0 clicks** vs the ~1,000 threshold (**18x short**). Content-volume investment is stopped. See the `STATUS 2026-09-06` block at the top of this file for the full read and the kill-or-pivot options.
 
 ## Launch Automation
 - [x] Add weekly traffic report artifact once GSC is configured.
