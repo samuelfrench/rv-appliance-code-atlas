@@ -1,5 +1,9 @@
 # TODO
 
+## [x] 2026-09-14 — hero generator switched to Juggernaut X v10
+
+`scripts/generate-hero-image-local.py` now prefers `Juggernaut-X-v10_RunDiffusion.safetensors` (falls back to SDXL base if missing). Existing hero was not regenerated.
+
 ## Mothball assessment — 2026-09-06
 
 **Recommendation: mothball active investment in RV Appliance Fault Codes. Sam asked for advice; no shutdown, domain change, content removal, or operational mothballing has been authorized or performed.** Preserve the existing site and corpus at low carrying cost; stop allocating new content batches or release-optimization work if Sam accepts this recommendation. A recall/warranty pivot needs separate demand evidence before investment.

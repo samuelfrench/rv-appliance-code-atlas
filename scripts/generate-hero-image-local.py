@@ -10,7 +10,7 @@ from diffusers import StableDiffusionXLPipeline
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "public" / "images" / "rv-appliance-code-atlas-hero.jpg"
 MODELS_ROOT = ROOT.parent / "ComfyUI" / "models"
-JUGGERNAUT = MODELS_ROOT / "checkpoints" / "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors"
+JUGGERNAUT = MODELS_ROOT / "checkpoints" / "Juggernaut-X-v10_RunDiffusion.safetensors"
 SDXL_BASE = MODELS_ROOT / "checkpoints" / "sd_xl_base_1.0.safetensors"
 
 PROMPT = (
