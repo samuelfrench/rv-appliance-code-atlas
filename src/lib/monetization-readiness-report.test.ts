@@ -204,7 +204,7 @@ describe("monetization readiness report", () => {
       source: "reports/gsc-weekly-traffic.json",
     });
     expect(report.nextAutomatedBatchGoal).toBe(
-      "Continue official-source gap scans across currently supported brands for non-duplicate owner-safe service-prep, model-label, control-behavior, storage, recall, warranty, or service-locator guides; add no code entries unless a current manufacturer-hosted display or fault table is verified.",
+      "Do not resume breadth batches. Improve depth on existing model tables only when a manufacturer source adds real meaning (for example, Dometic RUA support pages give reset/service steps but not what each fault number means).",
     );
     expect(readFileSync("README.md", "utf8")).toContain("npm run traffic:monetization");
     expect(readFileSync("TODO.md", "utf8")).toContain(

@@ -1,0 +1,1589 @@
+{
+  "families": [
+    {
+      "slug": "coleman-mach-thermostats",
+      "brand": "Coleman-Mach",
+      "name": "Coleman-Mach RV thermostats",
+      "equipmentType": "Thermostat",
+      "guideKeywords": [
+        [
+          "coleman",
+          "thermostat"
+        ],
+        [
+          "coleman",
+          "9420"
+        ],
+        [
+          "coleman",
+          "heat",
+          "pump",
+          "lockout"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Coleman-Mach 9420-330 multi-zone wall thermostat (status LED)",
+          "equipmentType": "Thermostat",
+          "modelFamilies": [
+            "Coleman-Mach 9420-330 multi-zone wall thermostat"
+          ]
+        },
+        {
+          "name": "Coleman-Mach 9420-381 / 9420-382 digital thermostats",
+          "equipmentType": "Thermostat",
+          "modelFamilies": [
+            "9420-381",
+            "9420-382"
+          ]
+        },
+        {
+          "name": "Coleman-Mach 9330-33 multiple-zone thermostat",
+          "equipmentType": "Thermostat",
+          "modelFamilies": [
+            "9330-33 multiple-zone thermostat"
+          ]
+        },
+        {
+          "name": "Coleman-Mach 6535-335 heat pump wall thermostat",
+          "equipmentType": "Thermostat",
+          "modelFamilies": [
+            "Coleman-Mach 6535-335"
+          ]
+        },
+        {
+          "name": "Coleman-Mach 6536-335 heat pump wall thermostat",
+          "equipmentType": "Thermostat",
+          "modelFamilies": [
+            "Coleman-Mach 6536-335"
+          ]
+        },
+        {
+          "name": "Coleman-Mach 9630-351 / 9630-352 / 9630-353 heat pump thermostats",
+          "equipmentType": "Thermostat",
+          "modelFamilies": [
+            "Coleman-Mach 9630-352",
+            "Coleman-Mach 9630-351",
+            "Coleman-Mach 9630-353"
+          ]
+        },
+        {
+          "name": "Coleman-Mach RvComfort / True-Air heat pump thermostats",
+          "equipmentType": "Thermostat",
+          "modelFamilies": [
+            "RvComfort.HP",
+            "RvComfort.PHP",
+            "Coleman True-Air",
+            "RvComfort.ZC"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "dometic-df-afm-furnaces",
+      "brand": "Dometic",
+      "name": "Dometic DF and Hydro Flame AFM furnaces",
+      "equipmentType": "Furnace",
+      "guideKeywords": [
+        [
+          "dometic",
+          "df"
+        ],
+        [
+          "afm"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Dometic DFSA / DFSD / DFMD / DFLD / DFLA furnaces",
+          "equipmentType": "Furnace",
+          "modelFamilies": [
+            "DFSA/DFSD/DFMD/DFLD/DFLA furnace series"
+          ]
+        },
+        {
+          "name": "Dometic DF series furnace",
+          "equipmentType": "Furnace",
+          "modelFamilies": [
+            "DF series furnace"
+          ]
+        },
+        {
+          "name": "Dometic Hydro Flame AFM series furnaces",
+          "equipmentType": "Furnace",
+          "modelFamilies": [
+            "Hydro Flame AFM Series Furnaces AFMD16/AFMD20/AFMD25/AFMD30/AFMD35"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "dometic-americana-dm-refrigerators",
+      "brand": "Dometic",
+      "name": "Dometic Americana, DM/DMA and RM2xxx refrigerators",
+      "equipmentType": "Refrigerator",
+      "guideKeywords": [
+        [
+          "americana"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Dometic Americana II DM/DMA refrigerators",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "DM2672",
+            "DM2682",
+            "DM2683",
+            "DM2872",
+            "DM2882",
+            "DMA4061",
+            "DMA4064",
+            "DMA4067",
+            "DMA4068",
+            "DMA4081",
+            "DMA4084",
+            "DMA4087",
+            "Americana II"
+          ]
+        },
+        {
+          "name": "Dometic Americana II DM2672 / DM2872 / DMA4061 / DMA4081",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "DM2672",
+            "DM2872",
+            "DMA4061",
+            "DMA4081",
+            "Americana II"
+          ]
+        },
+        {
+          "name": "Dometic Americana II DM2682 / DM2683 / DM2882 / DMA4064-DMA4087",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "DM2682",
+            "DM2683",
+            "DM2882",
+            "DMA4064",
+            "DMA4067",
+            "DMA4068",
+            "DMA4084",
+            "DMA4087",
+            "Americana II"
+          ]
+        },
+        {
+          "name": "Dometic Americana RM2351-RM2554 / DM2652-DM2862 / NDM1062",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "RM2351",
+            "RM2354",
+            "RM2451",
+            "RM2454",
+            "RM2551",
+            "RM2554",
+            "DM2652",
+            "DM2662",
+            "DM2663",
+            "DM2852",
+            "DM2862",
+            "NDM1062"
+          ]
+        },
+        {
+          "name": "Dometic Americana RM2351 / RM2451 / RM2551 / DM2652 / DM2852",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "RM2351",
+            "RM2451",
+            "RM2551",
+            "DM2652",
+            "DM2852"
+          ]
+        },
+        {
+          "name": "Dometic Americana RM2354 / RM2454 / RM2554 / DM2662 / DM2663 / DM2862 / NDM1062",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "RM2354",
+            "RM2454",
+            "RM2554",
+            "DM2662",
+            "DM2663",
+            "DM2862",
+            "NDM1062"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "dometic-rm10-refrigerators",
+      "brand": "Dometic",
+      "name": "Dometic RM10 / RMS10.5 refrigerators",
+      "equipmentType": "Refrigerator",
+      "guideKeywords": [
+        [
+          "rm10"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Dometic RM10.5 / RMS10.5 (operating manual and RM10 fault support pages)",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "RM10.5T",
+            "RM10.5S",
+            "RM10.5G",
+            "RM10.5P",
+            "RMS10.5T",
+            "RMS10.5XT",
+            "RMS10.5S",
+            "RMS10.5G",
+            "RMS10.5P",
+            "RMS10.5XS",
+            "RMS10.5XG",
+            "RMS10.5XP"
+          ]
+        },
+        {
+          "name": "Dometic RM10 display faults (RM10.5, RMS10.5, RMD10, RML10.4 support pages)",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "RM10.5T",
+            "RM10.5S",
+            "RM10.5G",
+            "RM10.5P",
+            "RMS10.5T",
+            "RMS10.5XT",
+            "RMS10.5S",
+            "RMS10.5G",
+            "RMS10.5P",
+            "RMS10.5XS",
+            "RMS10.5XG",
+            "RMS10.5XP",
+            "RMD10T",
+            "RMD10XT",
+            "RMD10.5",
+            "RMD10.5X",
+            "RMD10.5S",
+            "RMD10.5XS",
+            "RMD10.5T",
+            "RMD10.5XT",
+            "10 Series RMD10",
+            "RML10.4",
+            "RML10.4S",
+            "RML10.4T"
+          ]
+        },
+        {
+          "name": "Dometic RM10 (tank stop mode)",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "RM10",
+            "RM10.5T",
+            "RM10.5S",
+            "RM10.5G",
+            "RM10.5P",
+            "RMS10.5T",
+            "RMS10.5XT",
+            "RMS10.5S",
+            "RMS10.5G",
+            "RMS10.5P"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "dometic-rmd10-rml10-refrigerators",
+      "brand": "Dometic",
+      "name": "Dometic RMD10, RMD10.5 and RML10.4 refrigerators",
+      "equipmentType": "Refrigerator",
+      "guideKeywords": [
+        [
+          "rmd10"
+        ],
+        [
+          "rml10"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Dometic RMD10T / RMD10XT",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "RMD10T",
+            "RMD10XT",
+            "RMD10.5T",
+            "RMD10.5XT",
+            "10 Series RMD10"
+          ]
+        },
+        {
+          "name": "Dometic RMD10.5",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "RMD10.5",
+            "RMD10.5X",
+            "RMD10.5S",
+            "RMD10.5XS",
+            "RMD10.5T",
+            "RMD10.5XT"
+          ]
+        },
+        {
+          "name": "Dometic RML10.4",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "RML10.4",
+            "RML10.4S",
+            "RML10.4T"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "dometic-rm1350-refrigerators",
+      "brand": "Dometic",
+      "name": "Dometic RM1350 refrigerators",
+      "equipmentType": "Refrigerator",
+      "guideKeywords": [
+        [
+          "rm1350"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Dometic RM1350 / RM1350SL",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "RM1350",
+            "RM1350SL",
+            "RM1350M",
+            "RM1350SLM",
+            "RM1350IM",
+            "RM1350MIM",
+            "RM1350WIM",
+            "RM1350WID"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "dometic-rm3762-rm3962-refrigerators",
+      "brand": "Dometic",
+      "name": "Dometic RM3762 / RM3962 refrigerators",
+      "equipmentType": "Refrigerator",
+      "guideKeywords": [
+        [
+          "rm3762"
+        ],
+        [
+          "rm3962"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Dometic RM3762 / RM3962",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "RM3762",
+            "RM3762SL",
+            "RM3962",
+            "RM3962SL",
+            "RM3962SF"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "dometic-rm8-refrigerators",
+      "brand": "Dometic",
+      "name": "Dometic RM8 / RMS8 / RML8 refrigerators",
+      "equipmentType": "Refrigerator",
+      "guideKeywords": [
+        [
+          "rm8"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Dometic RM8xxx / RMS8xxx / RML8xxx / RMSL8xxx",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "RM8xxx",
+            "RMS8xxx",
+            "RML8xxx",
+            "RMSL8xxx",
+            "RM8501",
+            "RM8505",
+            "RMS8501",
+            "RMS8505",
+            "RML8555",
+            "RMSL8505"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "dometic-rmd8-refrigerators",
+      "brand": "Dometic",
+      "name": "Dometic RMD8 refrigerators",
+      "equipmentType": "Refrigerator",
+      "guideKeywords": [
+        [
+          "rmd8"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Dometic RMD8xx1 / RMD8xx5",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "RMD8501",
+            "RMD8505",
+            "RMD8551",
+            "RMD8555",
+            "RMD8xx1",
+            "RMD8xx5"
+          ]
+        },
+        {
+          "name": "Dometic RMD8xx1 (internal battery models)",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "RMD8501",
+            "RMD8551",
+            "RMD8xx1"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "dometic-rua-refrigerators",
+      "brand": "Dometic",
+      "name": "Dometic RUA refrigerators",
+      "equipmentType": "Refrigerator",
+      "guideKeywords": [
+        [
+          "rua"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Dometic RUA",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "RUA refrigerator"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "dometic-ruc-refrigerators",
+      "brand": "Dometic",
+      "name": "Dometic RUC refrigerators",
+      "equipmentType": "Refrigerator",
+      "guideKeywords": [
+        [
+          "ruc"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Dometic RUC",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "RUC refrigerator"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "dometic-freshjet-air-conditioners",
+      "brand": "Dometic",
+      "name": "Dometic FreshJet Series 4 / Series 7 air conditioners",
+      "equipmentType": "Rooftop air conditioner",
+      "guideKeywords": [
+        [
+          "freshjet"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Dometic FreshJet Series 4 / Series 7 (FJX)",
+          "equipmentType": "Rooftop air conditioner",
+          "modelFamilies": [
+            "FreshJet Series 4",
+            "FreshJet Series 7",
+            "FJX4333EEH",
+            "FJX7333IHP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "dometic-thermostats",
+      "brand": "Dometic",
+      "name": "Dometic RV thermostats (CCC2, Single Zone LCD, Bluetooth CT)",
+      "equipmentType": "Thermostat",
+      "guideKeywords": [
+        [
+          "ccc2"
+        ],
+        [
+          "single",
+          "zone"
+        ],
+        [
+          "bluetooth",
+          "ct"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Dometic Comfort Control Center 2 (CCC2)",
+          "equipmentType": "Thermostat",
+          "modelFamilies": [
+            "Comfort Control Center 2",
+            "CCC2",
+            "3314080"
+          ]
+        },
+        {
+          "name": "Dometic Single Zone LCD thermostat",
+          "equipmentType": "Thermostat",
+          "modelFamilies": [
+            "Single Zone LCD thermostat",
+            "3313192",
+            "3313193",
+            "3313194"
+          ]
+        },
+        {
+          "name": "Dometic Bluetooth Capacitive Touch (CT) thermostat",
+          "equipmentType": "Thermostat",
+          "modelFamilies": [
+            "Bluetooth CT thermostat",
+            "Capacitive Touch thermostat",
+            "3316420.XXX"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "dometic-wh-water-heaters",
+      "brand": "Dometic",
+      "name": "Dometic WH gas water heaters",
+      "equipmentType": "Water heater",
+      "guideKeywords": [
+        [
+          "dometic",
+          "atwood",
+          "water",
+          "heater"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Dometic WH-6GA / WH-6GEA / WH-9GEA / WH-10GEA / WH-16GEA",
+          "equipmentType": "Water heater",
+          "modelFamilies": [
+            "WH-6GA",
+            "WH-6GEA",
+            "WH-9GEA",
+            "WH-10GEA",
+            "WH-16GEA"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "furrion-refrigerators",
+      "brand": "Furrion",
+      "name": "Furrion RV refrigerators",
+      "equipmentType": "Refrigerator",
+      "guideKeywords": [
+        [
+          "furrion",
+          "refrigerator"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Furrion Arctic 10.6 cu. ft. 12V (FCR11DCGTA)",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "FCR11DCGTA-BG-LHH",
+            "FCR11DCGTA-BG-RHH",
+            "FCR11DCGTA-SG-LHH",
+            "FCR11DCGTA-SG-RHH"
+          ]
+        },
+        {
+          "name": "Furrion Arctic 10.7 cu. ft. French door (FCR10DCGFA)",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "FCR10DCGFA-SG",
+            "FCR10DCGFA-BG"
+          ]
+        },
+        {
+          "name": "Furrion 15 cu. ft. built-in (FCR16ACGFA)",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "FCR16ACGFA-BG"
+          ]
+        },
+        {
+          "name": "Furrion Arctic 8 / 10 cu. ft. (diagnostic LED)",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "Arctic 8 cu. ft. refrigerator",
+            "Arctic 10 cu. ft. refrigerator"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "furrion-air-conditioners-thermostats",
+      "brand": "Furrion",
+      "name": "Furrion rooftop air conditioners and thermostats",
+      "equipmentType": "Rooftop air conditioner",
+      "guideKeywords": [
+        [
+          "furrion",
+          "chill"
+        ],
+        [
+          "furrion",
+          "rooftop"
+        ],
+        [
+          "furrion",
+          "multizone",
+          "thermostat"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Furrion rooftop air conditioner (CCD-0005592)",
+          "equipmentType": "Rooftop air conditioner",
+          "modelFamilies": [
+            "Furrion rooftop air conditioner with wall thermostat/control box"
+          ]
+        },
+        {
+          "name": "Furrion heat pump single-zone wall thermostat (FACW12ESPA / FACC12ESPA)",
+          "equipmentType": "Thermostat",
+          "modelFamilies": [
+            "FACW12ESPA-BL",
+            "FACC12ESPA-BL control box"
+          ]
+        },
+        {
+          "name": "Furrion Chill Cube ducted single-zone thermostat (FACW13VSDSA / FACC13VSD)",
+          "equipmentType": "Thermostat",
+          "modelFamilies": [
+            "FACW13VSDSA-BL",
+            "FACC13VSD"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "furrion-tankless-water-heaters",
+      "brand": "Furrion",
+      "name": "Furrion tankless water heaters",
+      "equipmentType": "Water heater",
+      "guideKeywords": [
+        [
+          "furrion",
+          "water",
+          "heater"
+        ],
+        [
+          "furrion",
+          "tankless"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Furrion F2GWH tankless water heater",
+          "equipmentType": "Water heater",
+          "modelFamilies": [
+            "F2GWH",
+            "Lippert PN 2022107551"
+          ]
+        },
+        {
+          "name": "Furrion 2.4 GPM tankless water heater (FWH09A)",
+          "equipmentType": "Water heater",
+          "modelFamilies": [
+            "FWH09A-AM",
+            "FWH09AFA",
+            "FWH09AFA-AM",
+            "FWH09AFA-AB"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "furrion-electric-fireplaces",
+      "brand": "Furrion",
+      "name": "Furrion electric fireplaces",
+      "equipmentType": "Electric fireplace",
+      "guideKeywords": [
+        [
+          "furrion",
+          "fireplace"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Furrion built-in, flat and curved glass electric fireplaces",
+          "equipmentType": "Electric fireplace",
+          "modelFamilies": [
+            "Furrion built-in electric fireplace",
+            "Furrion flat glass electric fireplace",
+            "Furrion curved glass electric fireplace"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "lippert-ground-control-leveling",
+      "brand": "Lippert",
+      "name": "Lippert Ground Control leveling systems",
+      "equipmentType": "Leveling system",
+      "guideKeywords": [
+        [
+          "ground",
+          "control"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Ground Control LCD 4-point / 6-point",
+          "equipmentType": "Leveling system",
+          "modelFamilies": [
+            "Ground Control LCD 4-point",
+            "Ground Control LCD 6-point"
+          ]
+        },
+        {
+          "name": "Ground Control 5th wheel OneControl (4-point / 6-point)",
+          "equipmentType": "Leveling system",
+          "modelFamilies": [
+            "Ground Control 5th Wheel 4 Point OneControl",
+            "Ground Control 5th Wheel 6 Point OneControl"
+          ]
+        },
+        {
+          "name": "Ground Control TT OneControl (travel trailer)",
+          "equipmentType": "Leveling system",
+          "modelFamilies": [
+            "Ground Control TT OneControl",
+            "3K/3K TT leveling",
+            "3K/5K TT leveling",
+            "5K/5K TT leveling"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "lippert-in-wall-slide-out",
+      "brand": "Lippert",
+      "name": "Lippert In-Wall slide-out",
+      "equipmentType": "Slide-out",
+      "guideKeywords": [
+        [
+          "in",
+          "wall",
+          "slide"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Lippert In-Wall slide-out controller",
+          "equipmentType": "Slide-out",
+          "modelFamilies": [
+            "In-Wall Slide-out"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "girard-tankless-water-heaters",
+      "brand": "Lippert",
+      "name": "Lippert Girard tankless water heaters",
+      "equipmentType": "Water heater",
+      "guideKeywords": [
+        [
+          "girard"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Girard GSWH-2",
+          "equipmentType": "Water heater",
+          "modelFamilies": [
+            "Girard GSWH-2"
+          ]
+        },
+        {
+          "name": "Girard GSWH-1",
+          "equipmentType": "Water heater",
+          "modelFamilies": [
+            "Girard GSWH-1"
+          ]
+        },
+        {
+          "name": "Girard GSWH-1M",
+          "equipmentType": "Water heater",
+          "modelFamilies": [
+            "Girard GSWH-1M"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "norcold-1200-refrigerators",
+      "brand": "Norcold",
+      "name": "Norcold 1200 series refrigerators",
+      "equipmentType": "Refrigerator",
+      "guideKeywords": [
+        [
+          "norcold",
+          "1200"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Norcold 1200 series",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "1200 series"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "norcold-2118-polarmax-refrigerators",
+      "brand": "Norcold",
+      "name": "Norcold 2118 PolarMax refrigerators",
+      "equipmentType": "Refrigerator",
+      "guideKeywords": [
+        [
+          "2118"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Norcold 2118 / 2118 PolarMax",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "2118 PolarMax",
+            "2118"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "norcold-n109x-refrigerators",
+      "brand": "Norcold",
+      "name": "Norcold N109X / N1095 refrigerators",
+      "equipmentType": "Refrigerator",
+      "guideKeywords": [
+        [
+          "n109x"
+        ],
+        [
+          "n1095"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Norcold N109X / N109XIM / N1095",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "N109X",
+            "N109XXX",
+            "N109XIM",
+            "N109XIMXX",
+            "N1095 series"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "norcold-n10lx-refrigerators",
+      "brand": "Norcold",
+      "name": "Norcold N10LX / NA10LX refrigerators",
+      "equipmentType": "Refrigerator",
+      "guideKeywords": [
+        [
+          "n10lx"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Norcold N10LX / NA10LX",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "N10LX",
+            "NA10LX",
+            "N10LXIM",
+            "NA10LXIM"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "norcold-n15-n20-refrigerators",
+      "brand": "Norcold",
+      "name": "Norcold Polar Elite N15DCX / N20DCX refrigerators",
+      "equipmentType": "Refrigerator",
+      "guideKeywords": [
+        [
+          "n15"
+        ],
+        [
+          "n20"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Norcold N15DCX / N20DCX",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "N15DCX",
+            "N20DCX",
+            "Polar Elite N15/N20"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "norcold-n2000-refrigerators",
+      "brand": "Norcold",
+      "name": "Norcold N2000 series refrigerators",
+      "equipmentType": "Refrigerator",
+      "guideKeywords": [
+        [
+          "n2000"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Norcold N2000 series (N2090, N2152, N2160, N2175)",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "N2000 series",
+            "N2090",
+            "N2152",
+            "N2160",
+            "N2175"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "norcold-n3000-refrigerators",
+      "brand": "Norcold",
+      "name": "Norcold N3000 series refrigerators",
+      "equipmentType": "Refrigerator",
+      "guideKeywords": [
+        [
+          "n3000"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Norcold N3000 series (Thetford troubleshooting codes)",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "N3000 series",
+            "N3080",
+            "N3090",
+            "N3100",
+            "N3104",
+            "N3108",
+            "N3112",
+            "N3115",
+            "N3145",
+            "N3150",
+            "N3175"
+          ]
+        },
+        {
+          "name": "Norcold N3000 North America (N3104, N3141, N3150)",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "N3000 North America",
+            "N3104",
+            "N3141",
+            "N3150"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "norcold-n4000-refrigerators",
+      "brand": "Norcold",
+      "name": "Norcold N4000 touchscreen refrigerators",
+      "equipmentType": "Refrigerator",
+      "guideKeywords": [
+        [
+          "n4000"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Norcold N4104 / N4141 / N4150",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "N4000 touchscreen",
+            "N4104",
+            "N4141",
+            "N4150",
+            "N4104Axx",
+            "N4141Axx",
+            "N4150Axx"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "norcold-n41-n51-n510-refrigerators",
+      "brand": "Norcold",
+      "name": "Norcold N41X, N51X and N510X refrigerators",
+      "equipmentType": "Refrigerator",
+      "guideKeywords": [
+        [
+          "n41"
+        ],
+        [
+          "n51"
+        ],
+        [
+          "n510"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Norcold N41X / N51X",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "N41X",
+            "N41X.3",
+            "N51X",
+            "N51X.3"
+          ]
+        },
+        {
+          "name": "Norcold N510X / N510 / N512",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "N510X",
+            "N510X.3",
+            "N510",
+            "N512"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "norcold-n61-n81-refrigerators",
+      "brand": "Norcold",
+      "name": "Norcold N61X / N81X refrigerators",
+      "equipmentType": "Refrigerator",
+      "guideKeywords": [
+        [
+          "n61"
+        ],
+        [
+          "n81"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Norcold N61X / N81X",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "N61X",
+            "N81X"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "norcold-n62-n64-n82-n84-refrigerators",
+      "brand": "Norcold",
+      "name": "Norcold N62, N64, N82 and N84 refrigerators",
+      "equipmentType": "Refrigerator",
+      "guideKeywords": [
+        [
+          "n62"
+        ],
+        [
+          "n64"
+        ],
+        [
+          "n82"
+        ],
+        [
+          "n84"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Norcold N62X / N82X",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "N62X",
+            "N62XXX",
+            "N82X",
+            "N82XXX"
+          ]
+        },
+        {
+          "name": "Norcold N64X / N84X",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "N64X",
+            "N64XXX",
+            "N64XIM",
+            "N64XIMXX",
+            "N84X",
+            "N84XXX",
+            "N84XIM",
+            "N84XIMXX"
+          ]
+        },
+        {
+          "name": "Norcold N62 / N64 / N82 / N84 (all)",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "N62X",
+            "N62XXX",
+            "N82X",
+            "N82XXX",
+            "N64X",
+            "N64XXX",
+            "N64XIM",
+            "N64XIMXX",
+            "N84X",
+            "N84XXX",
+            "N84XIM",
+            "N84XIMXX"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "norcold-polar-n7-n8-refrigerators",
+      "brand": "Norcold",
+      "name": "Norcold Polar N7 / N8 refrigerators",
+      "equipmentType": "Refrigerator",
+      "guideKeywords": [
+        [
+          "norcold",
+          "polar"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Norcold Polar N7LX / N8LX",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "Polar N7LX",
+            "Polar N8LX"
+          ]
+        },
+        {
+          "name": "Norcold Polar N7 / N8 (LX display)",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "N7LX",
+            "N8LX",
+            "Polar N7/N8"
+          ]
+        },
+        {
+          "name": "Norcold Polar N7V / N8V / N7X / N8X",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "Polar N7V",
+            "Polar N8V",
+            "Polar N7X",
+            "Polar N8X"
+          ]
+        },
+        {
+          "name": "Norcold Polar N7V / N8V",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "Polar N7V",
+            "Polar N8V"
+          ]
+        },
+        {
+          "name": "Norcold Polar N7X / N8X",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "Polar N7X",
+            "Polar N8X"
+          ]
+        },
+        {
+          "name": "Norcold Polar N7 / N8 (all versions)",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "Polar N7V",
+            "Polar N8V",
+            "Polar N7X",
+            "Polar N8X",
+            "Polar N7LX",
+            "Polar N8LX"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "norcold-n8dcx-n10dcx-refrigerators",
+      "brand": "Norcold",
+      "name": "Norcold N8DCX / N10DCX refrigerators",
+      "equipmentType": "Refrigerator",
+      "guideKeywords": [
+        [
+          "n8dcx"
+        ],
+        [
+          "n10dcx"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Norcold N8DCX / N10DCX",
+          "equipmentType": "Refrigerator",
+          "modelFamilies": [
+            "N8DCX",
+            "N10DCX"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "onan-qg-hgj-generators",
+      "brand": "Onan",
+      "name": "Cummins Onan QG gasoline generators (HGJAA, HGJAB, HGJBB)",
+      "equipmentType": "Generator",
+      "guideKeywords": [
+        [
+          "hgjaa"
+        ],
+        [
+          "hgjab"
+        ],
+        [
+          "hgjbb"
+        ],
+        [
+          "qg",
+          "5500"
+        ],
+        [
+          "qg",
+          "7000"
+        ],
+        [
+          "onan",
+          "generator"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "HGJAA / HGJAB / HGJAC and HGJBB operator manuals",
+          "equipmentType": "Generator",
+          "modelFamilies": [
+            "HGJBB Spec A-B",
+            "HGJAA Spec J-K",
+            "HGJAB Spec J-L",
+            "QG RV generator",
+            "HGJAA Spec A-E",
+            "HGJAB Spec A-E",
+            "HGJAC Spec A-D"
+          ]
+        },
+        {
+          "name": "HGJAA / HGJAB / HGJAC (QG 5500/7000 EFI) operator manuals",
+          "equipmentType": "Generator",
+          "modelFamilies": [
+            "HGJAA Spec J-K",
+            "HGJAB Spec J-L",
+            "QG 5500/7000 EFI",
+            "HGJAA Spec A-E",
+            "HGJAB Spec A-E",
+            "HGJAC Spec A-D"
+          ]
+        },
+        {
+          "name": "HGJAA / HGJAB / HGJAC Spec A-E",
+          "equipmentType": "Generator",
+          "modelFamilies": [
+            "HGJAA Spec A-E",
+            "HGJAB Spec A-E",
+            "HGJAC Spec A-D"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "onan-qg-2800i-generators",
+      "brand": "Onan",
+      "name": "Cummins Onan QG 2800i / 2500i LP inverter generators",
+      "equipmentType": "Generator",
+      "guideKeywords": [
+        [
+          "2800i"
+        ],
+        [
+          "onan",
+          "generator"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "QG 2800i / 2500i LP (HGLAA Spec A-B)",
+          "equipmentType": "Generator",
+          "modelFamilies": [
+            "QG 2800i/2500i LP HGLAA Spec A",
+            "QG 2800i/2500i LP HGLAA Spec B"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "onan-qg-2800-kv-generators",
+      "brand": "Onan",
+      "name": "Cummins Onan QG 2800 KV generators",
+      "equipmentType": "Generator",
+      "guideKeywords": [
+        [
+          "qg",
+          "2800",
+          "kv"
+        ],
+        [
+          "onan",
+          "generator"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "QG 2800 / 2800 EVAP KV and QG 2500 LP KV",
+          "equipmentType": "Generator",
+          "modelFamilies": [
+            "QG 2800/2800 EVAP KV Spec E-M",
+            "QG 2500 LP KV legacy models"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "onan-qg-4000-generators",
+      "brand": "Onan",
+      "name": "Cummins Onan QG 4000 / 3600 LP generators",
+      "equipmentType": "Generator",
+      "guideKeywords": [
+        [
+          "qg",
+          "4000"
+        ],
+        [
+          "onan",
+          "generator"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "QG 4000 / 3600 LP KY (Spec J-R)",
+          "equipmentType": "Generator",
+          "modelFamilies": [
+            "QG 4000/3600 LP KY Spec J-N",
+            "QG 4000/3600 LP KY Spec P-R"
+          ]
+        },
+        {
+          "name": "QG 4000 / 3600 LP KYD (Spec A-C)",
+          "equipmentType": "Generator",
+          "modelFamilies": [
+            "QG 4000/3600 LP KYD Spec A-C"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "onan-qg-7000i-generators",
+      "brand": "Onan",
+      "name": "Cummins Onan QG 7000i dual-fuel inverter generators",
+      "equipmentType": "Generator",
+      "guideKeywords": [
+        [
+          "7000i"
+        ],
+        [
+          "onan",
+          "generator"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "QG 7000i DF (HGLCA Spec A)",
+          "equipmentType": "Generator",
+          "modelFamilies": [
+            "QG 7000i DF HGLCA Spec A"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "onan-quiet-diesel-generators",
+      "brand": "Onan",
+      "name": "Cummins Onan Quiet Diesel 5000-12500 generators",
+      "equipmentType": "Generator",
+      "guideKeywords": [
+        [
+          "quiet",
+          "diesel"
+        ],
+        [
+          "onan",
+          "generator"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Quiet Diesel 5000 (HDKBA)",
+          "equipmentType": "Generator",
+          "modelFamilies": [
+            "Quiet Diesel 5000 HDKBA"
+          ]
+        },
+        {
+          "name": "Quiet Diesel 6000 / 7500 / 8000 (HDKAH, HDKAJ, HDKAK)",
+          "equipmentType": "Generator",
+          "modelFamilies": [
+            "Quiet Diesel 6000 HDKAH",
+            "Quiet Diesel 7500 HDKAJ",
+            "Quiet Diesel 8000 HDKAK"
+          ]
+        },
+        {
+          "name": "Quiet Diesel 10000 / 12500 (HDKCA, HDKCB)",
+          "equipmentType": "Generator",
+          "modelFamilies": [
+            "Quiet Diesel 10000 HDKCA",
+            "Quiet Diesel 12500 HDKCB"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "onan-quiet-diesel-3200-generators",
+      "brand": "Onan",
+      "name": "Cummins Onan Quiet Diesel 3200 generators",
+      "equipmentType": "Generator",
+      "guideKeywords": [
+        [
+          "quiet",
+          "diesel",
+          "3200"
+        ],
+        [
+          "onan",
+          "generator"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Quiet Diesel 3200 (HDZAA Spec A-F)",
+          "equipmentType": "Generator",
+          "modelFamilies": [
+            "Quiet Diesel 3200 HDZAA Spec A-E",
+            "Quiet Diesel 3200 HDZAA Spec F"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "suburban-induction-cooktops",
+      "brand": "Suburban/Atwood",
+      "name": "Suburban induction cooktops",
+      "equipmentType": "Induction cooktop",
+      "guideKeywords": [
+        [
+          "suburban",
+          "induction"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Suburban single and double element induction cooktops",
+          "equipmentType": "Induction cooktop",
+          "modelFamilies": [
+            "Suburban single element induction cooktop",
+            "Suburban double element induction cooktop"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "suburban-furnaces",
+      "brand": "Suburban/Atwood",
+      "name": "Suburban gas furnaces",
+      "equipmentType": "Furnace",
+      "guideKeywords": [
+        [
+          "suburban",
+          "furnace"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Suburban gas furnace",
+          "equipmentType": "Furnace",
+          "modelFamilies": [
+            "Suburban gas furnace"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "suburban-tank-water-heaters",
+      "brand": "Suburban/Atwood",
+      "name": "Suburban tank water heaters",
+      "equipmentType": "Water heater",
+      "guideKeywords": [
+        [
+          "suburban",
+          "tank",
+          "water",
+          "heater"
+        ]
+      ],
+      "lines": [
+        {
+          "name": "Suburban D / DE / DEL water heaters",
+          "equipmentType": "Water heater",
+          "modelFamilies": [
+            "Suburban D",
+            "Suburban DE",
+            "Suburban DEL"
+          ]
+        }
+      ]
+    }
+  ]
+}

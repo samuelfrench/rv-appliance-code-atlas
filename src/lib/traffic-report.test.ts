@@ -3,7 +3,7 @@ import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 
 const nextAutomatedBatchGoal =
-  "Continue official-source gap scans across currently supported brands for non-duplicate owner-safe service-prep, model-label, control-behavior, storage, recall, warranty, or service-locator guides; add no code entries unless a current manufacturer-hosted display or fault table is verified.";
+  "Do not resume breadth batches. Improve depth on existing model tables only when a manufacturer source adds real meaning (for example, Dometic RUA support pages give reset/service steps but not what each fault number means).";
 
 describe("traffic readiness report", () => {
   it("keeps the next automated batch goal aligned with the current corpus backlog", () => {

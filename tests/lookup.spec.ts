@@ -9,12 +9,13 @@ test("mobile lookup finds a sourced Norcold fault code and opens its detail page
   await page.goto("/");
   await expect(page.getByRole("heading", { name: "RV Appliance Code Atlas" })).toBeVisible();
   await page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" }).fill("norcold n7 no fl");
-  const polarNoFl = page.locator('a[href="/codes/norcold-polar-no-fl/"]');
+  const polarNoFl = page.locator('a[href="/codes/norcold-1200-no-fl/#norcold-polar-no-fl"]');
   await expect(polarNoFl).toBeVisible();
   await polarNoFl.click();
-  await expect(page.getByRole("heading", { name: /Norcold no FL/ })).toBeVisible();
-  await expect(page.getByRole("heading", { name: "Official source" })).toBeVisible();
-  await expect(page.getByText("Do not hand-light")).toBeVisible();
+  await expect(page.getByRole("heading", { level: 1, name: /Norcold refrigerator code no FL/ })).toBeVisible();
+  await expect(page.locator("tr#norcold-polar-no-fl")).toContainText("Norcold Polar N7 / N8");
+  await expect(page.getByRole("heading", { name: "Official sources" })).toBeVisible();
+  await expect(page.getByText("Do not hand-light").first()).toBeVisible();
 
   expect(consoleErrors).toEqual([]);
 });
@@ -49,7 +50,53 @@ test("symptom guide and checklist surfaces service-call prep without checkout", 
   await expect(page.getByRole("heading", { name: "Pre-service checklist for RV appliance calls" })).toBeVisible();
   await expect(page.getByText("Brand, model, serial number.")).toBeVisible();
   await expect(page.getByText("Checkout enabled")).toHaveCount(0);
-  await expect(page.getByText("Ad slots disabled until traffic data supports them.")).toBeVisible();
+  await expect(page.getByText(/Ad slots disabled|Monetization stays disabled/)).toHaveCount(0);
+  // Record-and-call prep pages stay reachable but out of the search index.
+  await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", "noindex,follow");
+});
+
+test("model code table lists every code and links to merged code pages", async ({ page }) => {
+  await page.goto("/models/onan-quiet-diesel-generators/");
+
+  await expect(page.getByRole("heading", { level: 1, name: "Cummins Onan Quiet Diesel 5000-12500 generator fault codes" })).toBeVisible();
+  await expect(page.getByText("Quiet Diesel 7500 HDKAJ", { exact: false }).first()).toBeVisible();
+  const table = page.locator("table.code-table");
+  await expect(table.locator("tbody tr").first().locator("th")).toHaveText("1");
+  await table.getByRole("link", { name: "36", exact: true }).click();
+
+  await expect(page).toHaveURL(/\/codes\/onan-code-36-engine-stopped\/$/);
+  await expect(page.getByRole("heading", { level: 1, name: "Onan generator code 36" })).toBeVisible();
+  await expect(page.getByText(/Most Onan documentation lists 36 as “Engine Stopped”/)).toBeVisible();
+  await expect(page.locator("tr#onan-qg-2800i-code-36")).toContainText("Mechanical Fault");
+  expect(await page.locator('script[type="module"]').count()).toBe(0);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+});
+
+test("merged duplicate code URLs forward to the model row on the combined page", async ({ page }) => {
+  await page.goto("/codes/norcold-polar-no-fl/");
+
+  await expect(page).toHaveURL(/\/codes\/norcold-1200-no-fl\/#norcold-polar-no-fl$/);
+  await expect(page.getByRole("heading", { level: 1, name: /Norcold refrigerator code no FL/ })).toBeVisible();
+});
+
+test("homepage search accepts a shared query and surfaces model tables", async ({ page }) => {
+  await page.goto("/?q=rm10");
+
+  const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
+  await expect(searchbox).toHaveValue("rm10");
+  const results = page.locator('section[aria-label="Lookup results"]');
+  await expect(results.locator('a[href="/models/dometic-rm10-refrigerators/"]')).toBeVisible();
+
+  await page.getByRole("link", { name: "Dometic RUA refrigerators" }).click();
+  await expect(page.getByRole("heading", { level: 1, name: "Dometic RUA refrigerator fault codes" })).toBeVisible();
+});
+
+test("unknown code URLs show the not-verified page with search", async ({ page }) => {
+  await page.goto("/codes/not-a-real-code/");
+
+  await expect(page.getByRole("heading", { level: 1, name: "Code not verified yet" })).toBeVisible();
+  await expect(page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" })).toBeVisible();
+  await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", "noindex,follow");
 });
 
 test("lookup surfaces RM10 symptom-only support pages", async ({ page }) => {
@@ -545,10 +592,10 @@ test("lookup surfaces Dometic Single Zone LCD thermostat codes and symptom pages
   const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
 
   await searchbox.fill("dometic single zone e1 communication module board");
-  await expect(lookupResults.locator('a[href="/codes/dometic-single-zone-lcd-e1/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/codes/dometic-ccc2-e1/#dometic-single-zone-lcd-e1"]')).toBeVisible();
 
   await searchbox.fill("dometic 3313193 e5 freeze sensor");
-  await expect(lookupResults.locator('a[href="/codes/dometic-single-zone-lcd-e5/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/codes/dometic-ccc2-e5/#dometic-single-zone-lcd-e5"]')).toBeVisible();
 
   await searchbox.fill("single zone lcd compressor time delay 2 minutes");
   await expect(lookupResults.locator('a[href="/symptoms/dometic-single-zone-compressor-time-delay/"]')).toBeVisible();
@@ -574,10 +621,10 @@ test("lookup surfaces Dometic Bluetooth CT thermostat codes and symptom pages", 
   const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
 
   await searchbox.fill("dometic bluetooth ct 3316420 e1 communication");
-  await expect(lookupResults.locator('a[href="/codes/dometic-bluetooth-ct-e1/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/codes/dometic-ccc2-e1/#dometic-bluetooth-ct-e1"]')).toBeVisible();
 
   await searchbox.fill("dometic bluetooth thermostat e5 freeze sensor");
-  await expect(lookupResults.locator('a[href="/codes/dometic-bluetooth-ct-e5/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/codes/dometic-ccc2-e5/#dometic-bluetooth-ct-e5"]')).toBeVisible();
 
   await searchbox.fill("dometic bluetooth ct app pairing 2 digit pin off mode");
   await expect(lookupResults.locator('a[href="/symptoms/dometic-bluetooth-ct-pairing-mobile-device/"]')).toBeVisible();
@@ -1686,7 +1733,7 @@ test("lookup surfaces N4000 touchscreen codes and next support-router pages", as
   const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
   const cases = [
     ["norcold n4104 error code 3 gas", "/codes/norcold-n4000-error-3-gas-source-unavailable/"],
-    ["norcold n4141 error code 10 120v", "/codes/norcold-n4000-error-10-ac-source-unavailable/"],
+    ["norcold n4141 error code 10 120v", "/codes/norcold-n3000-error-10-ac-mains-out-of-range/#norcold-n4000-error-10-ac-source-unavailable"],
     ["norcold n4150 error code 18 all symbols", "/codes/norcold-n4000-error-18-startup-all-symbols-lit/"],
     ["coleman airspace heat element 37203 38203", "/symptoms/coleman-airspace-heat-element-service-prep/"],
     ["coleman mach signature series mach 3 mach 8 mach 10 mach 15", "/symptoms/coleman-signature-series-model-family-prep/"],
@@ -1718,12 +1765,12 @@ test("lookup surfaces N4000 touchscreen codes and next support-router pages", as
   }
 
   await searchbox.fill("norcold n4141 error code 10 120v");
-  const n4000Code10 = lookupResults.locator('a[href="/codes/norcold-n4000-error-10-ac-source-unavailable/"]');
+  const n4000Code10 = lookupResults.locator('a[href="/codes/norcold-n3000-error-10-ac-mains-out-of-range/#norcold-n4000-error-10-ac-source-unavailable"]');
   await expect(n4000Code10).toBeVisible();
   await n4000Code10.click();
-  await expect(page.getByRole("heading", { name: "Norcold 10" })).toBeVisible();
-  await expect(page.getByText(/The refrigerator does not work on 120V/i)).toBeVisible();
-  await expect(page.getByText(/Do not hand-light/i)).toBeVisible();
+  await expect(page.getByRole("heading", { level: 1, name: /Norcold refrigerator code 10/ })).toBeVisible();
+  await expect(page.locator("tr#norcold-n4000-error-10-ac-source-unavailable")).toContainText(/The refrigerator does not work on 120V/i);
+  await expect(page.getByText(/Do not hand-light/i).first()).toBeVisible();
 
   await page.goto("/");
   await page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" }).fill("aqua magic v hand flush one handle parts");

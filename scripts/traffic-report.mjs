@@ -27,7 +27,7 @@ const monetizationReadinessArtifact = {
   source: weeklyTrafficArtifact.path,
 };
 const nextSourceBackedBatchGoal =
-  "Continue official-source gap scans across currently supported brands for non-duplicate owner-safe service-prep, model-label, control-behavior, storage, recall, warranty, or service-locator guides; add no code entries unless a current manufacturer-hosted display or fault table is verified.";
+  "Do not resume breadth batches. Improve depth on existing model tables only when a manufacturer source adds real meaning (for example, Dometic RUA support pages give reset/service steps but not what each fault number means).";
 const indexNow = indexNowConfig
   ? {
       keyLocation: indexNowConfig.keyLocation,

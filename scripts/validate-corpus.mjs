@@ -1,11 +1,13 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { validateFamilies } from "./lib/site-model.mjs";
 
 const root = path.dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const corpusPath = path.join(root, "src/data/corpus.json");
 const reportPath = path.join(root, "reports/source-audit.json");
 const corpus = JSON.parse(fs.readFileSync(corpusPath, "utf8"));
+const familiesData = JSON.parse(fs.readFileSync(path.join(root, "src/data/families.json"), "utf8"));
 const auditMode = process.argv.includes("--audit");
 
 const unsafeOwnerTerms = [
@@ -64,6 +66,9 @@ const requiredBrands = ["Dometic", "Norcold", "Suburban/Atwood", "Coleman-Mach",
 for (const brand of requiredBrands) {
   if (!corpus.entries.some((entry) => entry.brand === brand)) failures.push(`Missing required brand ${brand}.`);
 }
+
+// Every code must sit in a model line so it gets a model table, merged code page, and redirects.
+failures.push(...validateFamilies(corpus, familiesData));
 
 if (dangerousOwnerActions.length) {
   failures.push(`Unsafe owner actions found: ${dangerousOwnerActions.length}.`);
