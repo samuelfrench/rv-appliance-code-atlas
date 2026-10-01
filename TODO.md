@@ -1,5 +1,35 @@
 # TODO
 
+## Handoff — 2026-10-01 (cloud session, ready to exit)
+
+**State now:** `main` = `7356e2c` (content refresh) plus this docs-only handoff commit. GitHub Actions "Deploy to Fly" run `36820682300` for `7356e2c` concluded **success** (validate:corpus, unit tests, build, `flyctl deploy`). The live domain was **not** spot-checked; this cloud session's egress proxy blocks `rvappliancefaultcodes.com`. Working tree clean; nothing unpushed.
+
+**What the site is now:** 683 indexable URLs = home + 7 brand hubs + `/guides/` + 40 `/models/<family>/` code tables + 429 merged `/codes/` pages + 205 guides. 435 old per-model `/codes/` URLs are noindex instant redirects to `canonical#entry-id`; 868 thin prep guides are `noindex,follow` and out of the sitemap. Corpus content (864 entries / 1,073 guides / 1,245 sources) is unchanged.
+
+**Open decisions for Sam:**
+- [ ] Monetization placeholders: nothing has ever been sold (no checkout, paywall, or paid tier). Sam asked to "give away whatever was being sold"; the answer was that everything is already free. Pending confirmation: remove the disabled ad/affiliate placeholders (`corpus.monetization`, `scripts/monetization-readiness-report.mjs`, readiness tests) and retire the unbuilt lead-selling plan in `docs/monetization-plan.md`, optionally adding a "free, no ads or paid tiers" note. Do not remove without that explicit yes.
+- [ ] Approve or edit the proposed `AGENTS.md` additions below.
+
+**Next actions (need Sam's machine, credentials, or open network):** live spot-check, GSC sitemap resubmit, IndexNow submit, 4/8-week measurement, Norcold Polar amber/green source re-check (all itemized in the 2026-10-01 section below).
+
+**Context the next session needs:**
+- Code entry points: `scripts/lib/site-model.mjs` (families, code groups, canonical slugs, redirects, thin-guide rule), `scripts/lib/render.mjs` (all static page HTML), `scripts/generate-static.mjs` (writes `dist/`, sitemap, `site-index.json`), `src/main.tsx` (homepage search, part capture, not-found only), `src/lib/siteIndex.ts` (model-table search).
+- `src/data/families.json`: 44 families → 88 model lines matched by exact `modelFamilies`; `guideKeywords` link guides to model tables by slug words.
+- Local browser verification in a cloud session: `npm ci && npm run build`, strip `<script async src="https://www.googletagmanager.com/gtag/js?id=G-9824RBXHHR"></script>` from `dist/**/*.html` (GA is blocked and causes console-error failures), then run Playwright with a config that spreads `playwright.config.ts` and sets `use.launchOptions.executablePath = "/opt/pw-browsers/chromium"` and `webServer.command = "npm run serve:dist -- 5178"`. Installed Playwright 1.60 expects `chromium_headless_shell-1223`, which is not in the image; do not run `playwright install`.
+- Memory files listed in `AGENTS.md` (`/home/sam/.codex/memories/MEMORY.md`, `global-preferences.md`, `/home/sam/TODO.md`) do not exist in cloud sessions and were not updated. Proposed memory note for Sam to copy locally: "2026-10-01: RV atlas refreshed into model code tables + merged cross-model code pages; 683 indexable URLs; thin prep guides noindexed; breadth batches stay on hold; measure GSC at ~4 and ~8 weeks before any new investment."
+
+### Proposed `AGENTS.md` additions (for Sam to approve; not yet applied)
+
+- [ ] Add under "Project rules":
+  - Every corpus entry must belong to a model line in `src/data/families.json` (exact `modelFamilies` match); `npm run validate:corpus` fails otherwise. Add a line (and a family if needed) when adding codes for a new model.
+  - Detail pages are static HTML rendered by `scripts/lib/render.mjs`. Do not mount React or load `corpus.json` on code/model/brand/guide pages; the app is only for homepage search, part capture, and the not-found page.
+  - Never delete or rename a `/codes/<slug>/` URL. Merged duplicates stay as noindex redirects to `canonical#entry-id`; the canonical is the shortest existing slug in the brand + appliance type + code group, so avoid slug edits that change it.
+  - Display helpers (`shortMeaning`, `compactMeaning`, near-duplicate merging) only reformat sourced text. Never write new meanings, causes, or actions into templates; new facts go into `corpus.json` with an official source.
+  - Record-and-call "prep" guides are noindex by rule (`isThinSymptom`) and are not a growth lever. Breadth batches stay on hold; improve depth only when a manufacturer source adds real meaning.
+  - Bump `CONTENT_UPDATED` in `scripts/generate-static.mjs` when page content or structure changes (sitemap `lastmod`).
+  - Keep internal business status (monetization readiness, traffic thresholds, source counts) out of public pages.
+- [ ] Add a "Cloud sessions" note: manufacturer sites, the live domain, and googletagmanager are blocked by the egress proxy, so new entries cannot be source-verified and live checks must happen elsewhere; use the local browser-verification recipe in this handoff; the `/home/sam/...` memory files are absent, so `TODO.md` is the handoff record.
+
 ## 2026-10-01 — content refresh for usefulness (Sam asked: "Refresh the site content to make it genuinely useful")
 
 Scope: restructure and rewrite presentation of the already-verified corpus. No corpus entries, meanings, actions, or sources were added or edited (manufacturer sites are not reachable from the cloud session, so nothing new could be source-verified).
@@ -10,7 +40,8 @@ Scope: restructure and rewrite presentation of the already-verified corpus. No c
 - [x] Static detail pages: code/model/brand/guide pages ship as HTML + CSS only (~15 KB) instead of mounting React and downloading the ~3 MB corpus. Homepage rebuilt around browse-by-appliance, a how-to-use-codes-safely section, and the search box (`?q=` supported, model tables appear in results). Removed public internal text (monetization-readiness band, 1,245-source dump, 1,073-guide dump).
 - [x] Sitemap/IndexNow report now list only indexable URLs: `683` (was `1,945`). Breadcrumb JSON-LD added.
 - [x] Verified locally: `npm run validate:corpus` (0 failures), `npm run test:unit` (207 passed), `npm run build`, Playwright desktop + mobile (140 passed, using `/opt/pw-browsers/chromium` with the GA tag stripped because the sandbox blocks googletagmanager).
-- [ ] After the Fly deploy, check live: `/`, `/models/onan-quiet-diesel-generators/`, `/codes/onan-code-36-engine-stopped/`, redirect `/codes/norcold-polar-no-fl/` → `/codes/norcold-1200-no-fl/#norcold-polar-no-fl`, and an unknown `/codes/x/` (the cloud session could not reach the live domain).
+- [x] Committed and pushed `7356e2c`; GitHub Actions "Deploy to Fly" run `36820682300` succeeded (2026-10-01 05:37-05:39 UTC).
+- [ ] Check live (not done; the cloud session could not reach the domain): `/`, `/models/onan-quiet-diesel-generators/`, `/codes/onan-code-36-engine-stopped/`, redirect `/codes/norcold-polar-no-fl/` → `/codes/norcold-1200-no-fl/#norcold-polar-no-fl`, `/site-index.json`, `/sitemap.xml` (683 URLs), and an unknown `/codes/x/` (should show "Code not verified yet").
 - [ ] Resubmit the sitemap in Search Console (GSC still holds the June 985-URL fetch) and run `npm run traffic:indexnow:submit` from a machine with credentials/network.
 - [ ] Measure effect without new spend: snapshot `dist/indexnow-report.json` URLs at the deploy SHA, then compare GSC impressions/clicks and a paired URL-inspection sample at ~4 and ~8 weeks. Do not restart breadth batches on a calendar date alone.
 - [ ] Source re-check: Norcold Polar `amber flashes off` and `green flashes off` carry identical meanings in the corpus; confirm against the Norcold Polar N7/N8 owner manual.
