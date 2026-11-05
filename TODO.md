@@ -7,7 +7,7 @@
 
 ## Deploy trigger
 
-- [x] 2026-11-04: `.github/workflows/deploy.yml` push trigger now has `paths-ignore` (`**/*.md`, `docs/**`, `TODO*`), so docs-only pushes no longer run the Fly deploy. When a commit adds another non-shipping path, extend that list in the same commit.
+- [x] 2026-11-04: `.github/workflows/deploy.yml` push trigger now has `paths-ignore` (`**/*.md`, `docs/**`, `TODO*`), so docs-only pushes no longer run the Fly deploy. When a commit adds another non-shipping path, extend that list in the same commit. Filter commit `61a0ee3` ran deploy `41957218147`: success; `https://rvappliancefaultcodes.com` returned HTTP 200 afterwards. Docs-only commits after `61a0ee3` must show no deploy run; if one appears, the filter is broken.
 
 ## Handoff — 2026-10-01 (cloud session, ready to exit)
 
