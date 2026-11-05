@@ -5,6 +5,10 @@
 
 - [ ] Emit GA4 events named `JS Error` and `Unhandled Rejection` with event category `Error` on `rvappliancefaultcodes.com` (property `rv-appliance-fault-codes`, GA4 property `540096507`). Register an event-scoped custom dimension `event_category` if the Data API rejects `customEvent:event_category`. The 2026-10-26 21:08 CT traffic-report collect stored this property's 7-day `clientErrors` series as `error` (GA4 report failed (InvalidArgument); other reports remain available.). That is not a measured zero. Coffee Explorer is the working reference from that same collect: status `available`, 14 rows, host `mycoffeeexplorer.com`. Done when a later collect shows `errorDaily.status` `available` for this property. A complete empty series counts as a measured zero. `InvalidArgument` stays a gap. Do not copy Coffee route recovery, 404s, or per-day error labels. No application code was changed when this note was added. <!-- client-error-events-20261026 -->
 
+## Deploy trigger
+
+- [x] 2026-11-04: `.github/workflows/deploy.yml` push trigger now has `paths-ignore` (`**/*.md`, `docs/**`, `TODO*`), so docs-only pushes no longer run the Fly deploy. When a commit adds another non-shipping path, extend that list in the same commit.
+
 ## Handoff — 2026-10-01 (cloud session, ready to exit)
 
 **State now:** `main` = `7356e2c` (content refresh) plus this docs-only handoff commit. GitHub Actions "Deploy to Fly" run `36820682300` for `7356e2c` concluded **success** (validate:corpus, unit tests, build, `flyctl deploy`). The live domain was **not** spot-checked; this cloud session's egress proxy blocks `rvappliancefaultcodes.com`. Working tree clean; nothing unpushed.

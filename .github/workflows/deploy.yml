@@ -3,6 +3,10 @@ name: Deploy to Fly
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - '**/*.md'
+      - 'docs/**'
+      - 'TODO*'
   workflow_dispatch:
 
 concurrency:
