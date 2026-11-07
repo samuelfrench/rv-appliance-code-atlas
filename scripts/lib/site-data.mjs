@@ -15,12 +15,10 @@ export function loadSiteData(root) {
         return [notes.topic, notes];
       }),
   );
-  const datesFile = path.join(root, "src/data/content-dates.json");
   return {
     corpus: read("src/data/corpus.json"),
     familiesData: read("src/data/families.json"),
     hubsData: read("src/data/guide-hubs.json"),
     topicNotes,
-    contentDates: fs.existsSync(datesFile) ? JSON.parse(fs.readFileSync(datesFile, "utf8")).pages ?? {} : {},
   };
 }

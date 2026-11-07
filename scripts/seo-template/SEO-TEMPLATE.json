@@ -1,0 +1,30 @@
+{
+  "package": "explorer-pipeline/seo",
+  "repo": "samuelfrench/explorer-pipeline",
+  "sha": "4f501cb5dd1eeb2d0d1a1e7f6c3457cdd10ff070",
+  "dirty": false,
+  "committedAt": "2026-11-07T12:04:07-06:00",
+  "vendoredAt": "2026-11-07T18:56:06.491Z",
+  "dest": "scripts/seo-template",
+  "files": {
+    "README.md": "beb54718a0d44b79f4e248b9bac6b65771d443fad024cc6cb01a77b94bec9789",
+    "adapter.example.mjs": "33d99ce55d5bdeafe6c4c4e5e44d6853fec48f738195df8beb096c74bf40d77c",
+    "cli.mjs": "a46060b774fe1bf8df03cf5d628ffca46034b1d30990d3605fb3cca39c3de0b8",
+    "java/SeoContentDates.java": "28b2a0d99987f175ced28e92e86c7d8ac4be2b15faeb2d4e2300ddb2edc95711",
+    "lib/adapter.mjs": "71747be3d3eb8da39407c075c0f41711b3c9cba6f2fc34c54cdd8baf44ec9460",
+    "lib/content.mjs": "bc9aa11fdccd686a7639438bab330ea108ba96bf7348fb17a47a7ba848c6b6b4",
+    "lib/fetch-ledger.mjs": "2f3a71f2f7ebff1488312331ff73da43f133c85aaf954caceeea2bd2f507271f",
+    "lib/guard.mjs": "26a0d1bad17b1941f54e195ca3cd3431e3bb7be78a8e8e5f6978205c24795dd6",
+    "lib/html.mjs": "ce679ff02a519cd37fda93ce0ca70eb801125e3b0662ec4aa020d608d63898f7",
+    "lib/latest.mjs": "48d20c0c67f87c3df1d4c54b2d654cc62d411559e7b9a898e1c8c3b27e05074c",
+    "lib/ledger.mjs": "c9993eb72a02346afdf6c4afb2f2ae14e4dce3b750283d20bc4e65ba97f76ecb",
+    "lib/paths.mjs": "8ec6c2128e54609f9fe3b8b4097d9c6bfa5949789d0ce113489da9f13645bae4",
+    "lib/provenance.mjs": "790c65101cee2368117d66850d55b3f3598a4cceb5d3d17009a6ccf3fc1059db",
+    "lib/scan.mjs": "eb362f1b93ea905564ff1452ed437b18521ad9204b7806fe69a9540e665beff5",
+    "lib/seed.mjs": "c6953c46c6b30ee73d8d80fb7b329cc93757d22644d06cb7b6821f8391d87b8c",
+    "lib/sitemap.mjs": "ffcaf92762c11b09e4bb38f95843fcfb317a16220dd22d82d4a5ee9c8eb177be",
+    "render/LatestPages.tsx": "b295dfba5042f42c8cf864d3c588d74f0236c4ad55d5392967d7f3d8712b925a",
+    "render/latest-html.mjs": "86c399758ccdb589d0763905e7a1bcbf95d707c25b0f115594523af86a94a7ad",
+    "render/select-latest.ts": "30bc54cd928771bcb8cb8a8ea1c69b573f8a103617d6e98c5df35c1dab173ff3"
+  }
+}

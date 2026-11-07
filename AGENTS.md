@@ -14,3 +14,4 @@ Project rules:
 - Commit and push every code/TODO/memory update.
 - Deploy through GitHub Actions to Fly when possible; deployment is expected to happen on push.
 - Always run corpus validation and runtime verification before claiming web work is complete.
+- Sitemap `lastmod`, `/seo/content-dates.json` and the "Latest" blocks come from the shared SEO template vendored in `scripts/seo-template/` (never edit it; site rules live in `scripts/seo-adapter.mjs`). Never hand-maintain dates. Lists computed from other pages carry `data-seo-ignore`.

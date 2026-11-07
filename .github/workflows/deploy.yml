@@ -27,7 +27,10 @@ jobs:
           cache: npm
       - run: npm ci --no-audit --no-fund
       - run: npm run validate:corpus
+      - run: npm run seo:self-check
       - run: npm run test:unit
+      # build = tsc + vite + generate-static (latest links from the live /seo/content-dates.json, fallback
+      # seo/content-dates.seed.json) + seo:finalize (ledger, sitemap lastmod, guard). The Fly Docker build repeats it.
       - run: npm run build
       - uses: superfly/flyctl-actions/setup-flyctl@master
       - run: flyctl deploy --remote-only

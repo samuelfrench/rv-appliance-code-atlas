@@ -575,6 +575,27 @@ footer {
   color: #665c4f;
 }
 
+/* "New on RV Atlas" / "Latest <brand> pages" blocks, rendered by the shared SEO template (scripts/seo-template). */
+.seo-latest h2 {
+  margin-bottom: 12px;
+}
+
+.seo-latest ul {
+  columns: 2 280px;
+  column-gap: 24px;
+  margin-bottom: 0;
+  padding-left: 18px;
+}
+
+.seo-latest li {
+  break-inside: avoid;
+}
+
+.seo-latest a {
+  font-weight: 800;
+  color: var(--steel);
+}
+
 .code-chips {
   display: flex;
   flex-wrap: wrap;

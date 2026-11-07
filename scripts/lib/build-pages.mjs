@@ -1,8 +1,10 @@
 // Pure site build: every page, redirect, sitemap entry and search index from the data files.
 // scripts/generate-static.mjs writes the result to dist/; tests check it without touching disk.
-import crypto from "node:crypto";
-import { buildSiteModel, familySearchIndex } from "./site-model.mjs";
-import { brandPage, codePage, esc, guidesIndexPage, homeBody, symptomPage, topicPage } from "./render.mjs";
+import adapter, { GUIDES_SECTION } from "../seo-adapter.mjs";
+import { forPage, forSection, forSite } from "../seo-template/lib/latest.mjs";
+import { renderLatestHtml } from "../seo-template/render/latest-html.mjs";
+import { brandSlug, buildSiteModel, familySearchIndex } from "./site-model.mjs";
+import { brandPage, codePage, esc, guidesIndexPage, homeBody, LATEST_MARKER, symptomPage, topicPage } from "./render.mjs";
 
 export const NOT_FOUND_ROUTE = "/404.html";
 
@@ -25,13 +27,9 @@ export function renderDocument(shell, baseUrl, { route, title, description, robo
     .replace(/<div id="root"><\/div>/, `<div id="root" data-static="true">${body}</div>`);
 }
 
-// Hash of the page's primary content (the article), so nav or footer edits do not move lastmod.
-export function contentHash(html) {
-  const article = html.match(/<article class="detail-article">([\s\S]*?)<\/article>/)?.[1] ?? html.match(/<main[^>]*>([\s\S]*?)<\/main>/)?.[1] ?? html;
-  return crypto.createHash("sha256").update(article).digest("hex").slice(0, 16);
-}
-
-export function buildSite({ corpus, familiesData, hubsData, topicNotes, appHtml, contentDates = {}, buildDate }) {
+// Sitemap <lastmod> is not set here: the SEO template's `finalize` step (npm run build) writes it from the
+// content-hash ledger published at /seo/content-dates.json. Pages carry LATEST_MARKER until applyLatest() fills it.
+export function buildSite({ corpus, familiesData, hubsData, topicNotes, appHtml }) {
   const baseUrl = corpus.site.baseUrl;
   const model = buildSiteModel(corpus, familiesData, { hubs: hubsData, notes: topicNotes });
   const staticShell = appHtml.replace(/<script type="module"[^>]*><\/script>\s*/g, "");
@@ -39,13 +37,15 @@ export function buildSite({ corpus, familiesData, hubsData, topicNotes, appHtml,
 
   const add = (pageData, shell = staticShell) => {
     const html = renderDocument(shell, baseUrl, pageData);
-    pages.push({ route: pageData.route, title: pageData.title, robots: pageData.robots, indexable: pageData.robots.startsWith("index"), html });
+    const label = pageData.crumbs?.at(-1)?.label ?? pageData.title;
+    pages.push({ route: pageData.route, title: pageData.title, label, robots: pageData.robots, indexable: pageData.robots.startsWith("index"), html });
   };
 
   // Home keeps the app bundle; React mounts the search box into #search-app.
   pages.push({
     route: "/",
     title: corpus.site.name,
+    label: corpus.site.name,
     robots: "index,follow",
     indexable: true,
     html: renderDocument(appHtml, baseUrl, {
@@ -75,18 +75,10 @@ export function buildSite({ corpus, familiesData, hubsData, topicNotes, appHtml,
   const live = new Set(pages.map((item) => item.route));
   const redirects = model.redirects.filter((redirect) => !live.has(redirect.from));
 
-  const nextDates = {};
-  const sitemap = [];
-  for (const item of pages.filter((entry) => entry.indexable)) {
-    const hash = contentHash(item.html);
-    const known = contentDates[item.route];
-    const lastmod = known?.hash === hash ? known.lastmod : buildDate;
-    nextDates[item.route] = { hash, lastmod };
-    sitemap.push({ loc: `${baseUrl}${item.route}`, title: item.title, lastmod });
-  }
+  const sitemap = pages.filter((entry) => entry.indexable).map((item) => ({ loc: `${baseUrl}${item.route}`, route: item.route, title: item.title, label: item.label }));
 
   const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemap
-    .map((url) => `  <url><loc>${esc(url.loc)}</loc><lastmod>${url.lastmod}</lastmod></url>`)
+    .map((url) => `  <url><loc>${esc(url.loc)}</loc></url>`)
     .join("\n")}\n</urlset>\n`;
   const feedXml = `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>${esc(corpus.site.name)}</title><link>${baseUrl}/</link><description>Verified RV appliance code updates</description>${sitemap
     .slice(1)
@@ -116,5 +108,30 @@ export function buildSite({ corpus, familiesData, hubsData, topicNotes, appHtml,
     indexablePages: sitemap.length,
   };
 
-  return { model, pages, notFound, redirects, sitemap, sitemapXml, feedXml, nginxMap, siteIndex, stats, contentDates: nextDates };
+  return { model, pages, notFound, redirects, sitemap, sitemapXml, feedXml, nginxMap, siteIndex, stats };
+}
+
+/** Route list for the SEO template's latest-links planning: every sitemap page with its short link text. */
+export function latestRoutes(site) {
+  return site.sitemap.map((url) => ({ href: url.route, title: url.label }));
+}
+
+/**
+ * Fill each page's LATEST_MARKER with its latest-links block (wrapped in data-seo-ignore by the template renderer):
+ * home = site-wide newest 8; a brand hub or /guides/ = its section's newest 8; any other indexable page = the 5
+ * newest pages of its section. Noindex pages get no block. Returns the pages with the html replaced.
+ */
+export function applyLatest(site, latest) {
+  const labels = new Map(site.model.brands.map((brand) => [brandSlug(brand), site.model.families.find((family) => family.brand === brand)?.brandLabel ?? brand]));
+  const hubSection = new Map([...labels.keys(), GUIDES_SECTION].map((section) => [adapter.hubPath(section), section]));
+  const heading = (section) => (section === GUIDES_SECTION ? "Latest troubleshooting guides" : `Latest ${labels.get(section) ?? section} pages`);
+  const blockFor = (page) => {
+    if (!page.indexable) return "";
+    if (page.route === "/") return renderLatestHtml(forSite(latest), { heading: "New on RV Atlas", className: "seo-latest latest-band" });
+    const hub = hubSection.get(page.route);
+    if (hub) return renderLatestHtml(forSection(latest, hub), { heading: heading(hub) });
+    const section = adapter.section(page.route);
+    return section ? renderLatestHtml(forPage(latest, page.route, { section }), { heading: heading(section) }) : "";
+  };
+  return site.pages.map((page) => ({ ...page, html: page.html.replace(LATEST_MARKER, blockFor(page)) }));
 }

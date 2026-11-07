@@ -3985,3 +3985,35 @@ test("lookup surfaces the official remaining scout batch without generic hijacks
   expect(consoleErrors).toEqual([]);
   expect(pageErrors).toEqual([]);
 });
+
+test("latest-links blocks are visible on home, a brand hub and a model page", async ({ page }) => {
+  const consoleErrors: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+
+  await page.goto("/");
+  const home = page.locator('section.seo-latest[data-seo-ignore]');
+  await expect(home.getByRole("heading", { name: "New on RV Atlas" })).toBeVisible();
+  await expect(home.locator("a")).toHaveCount(8);
+
+  await page.goto("/brands/dometic/");
+  const hub = page.locator('section.seo-latest[data-seo-ignore]');
+  await expect(hub.getByRole("heading", { name: "Latest Dometic pages" })).toBeVisible();
+  await expect(hub.locator("a")).toHaveCount(8);
+
+  await page.goto("/models/dometic-rm10-refrigerators/");
+  const siblings = page.locator('section.seo-latest[data-seo-ignore]');
+  await expect(siblings.getByRole("heading", { name: "Latest Dometic pages" })).toBeVisible();
+  await expect(siblings.locator("a")).toHaveCount(5);
+  await expect(siblings.locator('a[href="/models/dometic-rm10-refrigerators/"]')).toHaveCount(0);
+  const first = siblings.locator("a").first();
+  const target = await first.getAttribute("href");
+  await first.click();
+  await expect(page).toHaveURL(new RegExp(`${target}$`));
+  await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+
+  const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+  expect(overflow).toBeLessThanOrEqual(0);
+  expect(consoleErrors).toEqual([]);
+});

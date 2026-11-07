@@ -5,3 +5,5 @@ playwright-report
 .git
 .DS_Store
 reports
+.seo-cache
+build

@@ -108,6 +108,13 @@ function list(items) {
   return `<ul>${items.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>`;
 }
 
+// Placeholder for the "New ..." latest-links block; build-pages.mjs fills it per page (or removes it).
+export const LATEST_MARKER = "<!--seo-latest-->";
+
+// Lists computed from OTHER pages (related pages, cross-links, site-wide counts) carry data-seo-ignore: the SEO
+// template leaves them out of the content hash, so a new page does not move every sibling's sitemap lastmod.
+const IGNORE = " data-seo-ignore";
+
 function linkList(links, className = "link-list") {
   return `<ul class="${className}">${links
     .map((link) => `<li><a href="${esc(link.href)}">${esc(link.label)}</a>${link.note ? ` <small>${esc(link.note)}</small>` : ""}</li>`)
@@ -155,9 +162,9 @@ function sourcesHtml(model, sourceIds, heading = "Official sources", cap = 24) {
     .join("")}</div>${more > 0 ? `<p class="muted">Plus ${plural(more, "more official source")}.</p>` : ""}</section>`;
 }
 
-function guidesHtml(guides, heading = "Troubleshooting guides") {
+function guidesHtml(guides, heading = "Troubleshooting guides", attrs = "") {
   if (!guides.length) return "";
-  return `<section><h2>${esc(heading)}</h2>${linkList(guides.map((guide) => ({ href: guide.target ?? guide.path, label: guide.title })))}</section>`;
+  return `<section${attrs}><h2>${esc(heading)}</h2>${linkList(guides.map((guide) => ({ href: guide.target ?? guide.path, label: guide.title })))}</section>`;
 }
 
 // Live URL for a code: its own page when it is a shared fault, otherwise its section on the model page.
@@ -227,7 +234,7 @@ function sourcesLineHtml(model, citer, notes) {
 }
 
 function page(model, { route, title, description, robots = "index,follow", crumbs, inner }) {
-  const body = `${siteHeaderHtml()}<main class="detail-main">${crumbs ? breadcrumbsHtml(crumbs) : ""}<article class="detail-article">${inner}</article>${searchFormHtml()}</main>${siteFooterHtml()}`;
+  const body = `${siteHeaderHtml()}<main class="detail-main">${crumbs ? breadcrumbsHtml(crumbs) : ""}<article class="detail-article">${inner}${LATEST_MARKER}</article>${searchFormHtml()}</main>${siteFooterHtml()}`;
   return { route, title, description, robots, body, crumbs };
 }
 
@@ -327,7 +334,7 @@ export function codePage(model, group) {
     : "";
   const related = relatedCodes(model, group, 3);
   const relatedHtml = related.length
-    ? `<section><h2>Related codes</h2>${linkList(related.map((other) => ({ href: groupHref(model, other), label: codeHeading(other) })))}</section>`
+    ? `<section${IGNORE}><h2>Related codes</h2>${linkList(related.map((other) => ({ href: groupHref(model, other), label: codeHeading(other) })))}</section>`
     : "";
   const sourceCount = group.sourceIds.filter((id) => model.sourcesById.has(id)).length;
 
@@ -624,9 +631,9 @@ export function topicPage(model, topic) {
   const tail = [
     safetyCalloutHtml(boundaries),
     also,
-    guidesHtml(otherGuides.slice(0, 8), "Related troubleshooting guides"),
+    guidesHtml(otherGuides.slice(0, 8), "Related troubleshooting guides", IGNORE),
     related.length
-      ? `<section><h2>Related ${esc(topic.brandLabel)} pages</h2>${linkList(related.map((other) => ({ href: other.path, label: topicHeading(other) })))}</section>`
+      ? `<section${IGNORE}><h2>Related ${esc(topic.brandLabel)} pages</h2>${linkList(related.map((other) => ({ href: other.path, label: topicHeading(other) })))}</section>`
       : "",
     numberedSourcesHtml(model, citer, "Sources"),
   ].join("");
@@ -761,7 +768,7 @@ export function symptomPage(model, symptom) {
     safetyCalloutHtml([model.site.safetyBoundary]),
     `<section><h2>Owner-safe checklist</h2>${list(symptom.safeChecklist)}<button type="button" class="print-button" onclick="window.print()">Print checklist</button></section>`,
     families.length
-      ? `<section><h2>Code tables for these appliances</h2>${linkList(
+      ? `<section${IGNORE}><h2>Code tables for these appliances</h2>${linkList(
           families.map((family) => ({
             href: family.path,
             label: family.name,
@@ -770,7 +777,7 @@ export function symptomPage(model, symptom) {
         )}</section>`
       : "",
     entries.length
-      ? `<section><h2>Related fault codes</h2>${linkList(
+      ? `<section${IGNORE}><h2>Related fault codes</h2>${linkList(
           entries.slice(0, 24).map((group) => ({ href: groupHref(model, group), label: codeHeading(group) })),
         )}${entries.length > 24 ? `<p class="muted">Plus ${plural(entries.length - 24, "more code")}; browse by model from the <a href="/#appliances">appliance list</a>.</p>` : ""}</section>`
       : "",
@@ -847,7 +854,7 @@ export function homeBody(model) {
     .join("");
 
   return `${siteHeaderHtml()}<main>
-<section class="hero"><div class="hero-copy"><p class="eyebrow">Free · manufacturer sources only</p><h1>${SITE_NAME}</h1><p class="hero-text">Find out what an RV appliance fault code means on your exact model, what you can safely check yourself, and when to stop and call a technician. Every answer links to the manufacturer's own manual or support page.</p><div class="hero-stats" aria-label="Coverage"><div><strong>${model.codeGroups.length}</strong><span>codes explained</span></div><div><strong>${familyCount}</strong><span>model code tables</span></div><div><strong>${guideCount}</strong><span>problems without a code</span></div></div></div>
+<section class="hero"><div class="hero-copy"><p class="eyebrow">Free · manufacturer sources only</p><h1>${SITE_NAME}</h1><p class="hero-text">Find out what an RV appliance fault code means on your exact model, what you can safely check yourself, and when to stop and call a technician. Every answer links to the manufacturer's own manual or support page.</p><div class="hero-stats" aria-label="Coverage"${IGNORE}><div><strong>${model.codeGroups.length}</strong><span>codes explained</span></div><div><strong>${familyCount}</strong><span>model code tables</span></div><div><strong>${guideCount}</strong><span>problems without a code</span></div></div></div>
 <div class="hero-stack"><figure class="hero-image"><img src="/images/rv-appliance-code-atlas-hero.jpg" alt="RV service workbench with diagnostic tools" width="1344" height="768" /></figure></div></section>
 <div id="search"><div id="search-app"><form class="hero-panel" action="/" method="get" role="search"><label class="search-label" for="lookup">Search by brand, model, code, or symptom</label><div class="searchbox"><input id="lookup" name="q" type="search" placeholder="Try: Norcold no FL, Onan 36, Furrion E3" /></div></form></div></div>
 <section id="appliances" class="browse-band" aria-label="Browse by appliance"><div class="section-header"><div><p class="eyebrow">Browse</p><h2>Code tables by appliance and model</h2></div></div><div class="category-grid">${categories}</div></section>
@@ -857,6 +864,7 @@ export function homeBody(model) {
     model.brands.map((brand) => ({ href: `/brands/${brandSlug(brand)}/`, label: `${model.families.find((family) => family.brand === brand)?.brandLabel ?? brand} fault codes` })),
     "brand-links",
   )}<p><a href="/guides/">Browse troubleshooting by brand and appliance</a> for ${guideCount} problems that do not show a code.</p></section>
+${LATEST_MARKER}
 </main>${siteFooterHtml()}`;
 }
 

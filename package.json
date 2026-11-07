@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "build": "tsc -b && vite build && node scripts/generate-static.mjs",
+    "build": "tsc -b && vite build && node scripts/generate-static.mjs && npm run seo:finalize",
     "preview": "vite preview --host 0.0.0.0",
     "test:unit": "vitest run",
     "test:browser": "playwright test",
@@ -27,8 +27,10 @@
     "traffic:indexnow:submit": "npm run build && node scripts/indexnow-submit.mjs --submit",
     "serve:dist": "node scripts/serve-static.mjs",
     "verify:runtime": "npm run build && npm run test:browser",
-    "content-dates": "node scripts/update-content-dates.mjs",
-    "validate:notes": "node scripts/seo/check-topic-notes.mjs"
+    "validate:notes": "node scripts/seo/check-topic-notes.mjs",
+    "seo:finalize": "node scripts/seo-template/cli.mjs finalize --adapter scripts/seo-adapter.mjs --dist dist --prior .seo-cache/prior.json --sitemap dist/sitemap.xml --lastmod --ledger-scope sitemap --latest .seo-cache/latest.json --guard warn --report .seo-cache/report.json",
+    "seo:self-check": "node scripts/seo-template/cli.mjs self-check",
+    "seo:verify-live": "node scripts/seo-template/cli.mjs verify-live --adapter scripts/seo-adapter.mjs && node scripts/seo-template/cli.mjs sitemap check --sitemap https://rvappliancefaultcodes.com/sitemap.xml"
   },
   "dependencies": {
     "@vitejs/plugin-react": "6.0.2",

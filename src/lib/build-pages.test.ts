@@ -1,9 +1,12 @@
 import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 
-import { buildSite } from "../../scripts/lib/build-pages.mjs";
+import { applyLatest, buildSite, latestRoutes } from "../../scripts/lib/build-pages.mjs";
 import { loadSiteData } from "../../scripts/lib/site-data.mjs";
 import { checkTopicNotes } from "../../scripts/seo/check-topic-notes.mjs";
+import adapter from "../../scripts/seo-adapter.mjs";
+import { planLatest } from "../../scripts/seo-template/lib/latest.mjs";
+import { validateLedger } from "../../scripts/seo-template/lib/ledger.mjs";
 
 type Page = { route: string; html: string; indexable: boolean; robots: string; title: string };
 type Redirect = { from: string; to: string };
@@ -11,7 +14,7 @@ type Redirect = { from: string; to: string };
 const data = loadSiteData(process.cwd());
 const appHtml = readFileSync("index.html", "utf8");
 const BUILD_DATE = "2099-01-01";
-const site = buildSite({ ...data, appHtml, buildDate: BUILD_DATE });
+const site = buildSite({ ...data, appHtml });
 const base: string = data.corpus.site.baseUrl;
 const pages: Page[] = site.pages;
 const live = new Map(pages.map((page) => [page.route, page]));
@@ -89,15 +92,20 @@ describe("consolidated site: sitemap and pages", () => {
     expect(site.sitemap.length).toBe(pages.filter((page) => page.indexable).length);
   });
 
-  it("dates each sitemap URL from the content ledger, not the build date", () => {
-    for (const entry of site.sitemap) expect(entry.lastmod, `${entry.loc}: run npm run content-dates`).not.toBe(BUILD_DATE);
+  it("leaves sitemap lastmod to the SEO template's finalize step", () => {
+    // npm run build -> seo:finalize writes <lastmod> from the content-hash ledger (dist/seo/content-dates.json).
+    expect(site.sitemapXml).not.toContain("<lastmod>");
   });
 
-  it("keeps the content-dates ledger in sync with page content", () => {
-    const stale = Object.entries(site.contentDates as Record<string, { hash: string }>)
-      .filter(([route, value]) => data.contentDates[route]?.hash !== value.hash)
-      .map(([route]) => route);
-    expect(stale, "run npm run content-dates and commit src/data/content-dates.json").toEqual([]);
+  it("commits a valid fallback seed ledger with real dates", () => {
+    const seed = JSON.parse(readFileSync("seo/content-dates.seed.json", "utf8"));
+    expect(validateLedger(seed)).toBeNull();
+    const entries = Object.values(seed.urls as Record<string, { lastmod: string | null; firstSeen: string | null }>);
+    expect(entries.length).toBeGreaterThan(0);
+    for (const entry of entries) {
+      expect(entry.lastmod).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+      expect(entry.firstSeen).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+    }
   });
 
   it("leaves no orphan: every indexable page except home has an internal link from another page", () => {
@@ -176,5 +184,80 @@ describe("sourced topic notes", () => {
     expect(html).toContain('id="source-1"');
     expect(html).toContain(notes.sections.reset[0].text.replaceAll("&", "&amp;").slice(0, 40));
     expect(html).toContain("Manual details reviewed 2026-11-07");
+  });
+});
+
+describe("latest links (shared SEO template)", () => {
+  type Ledger = { meta: Record<string, unknown>; urls: Record<string, unknown> };
+  const seed: Ledger = JSON.parse(readFileSync("seo/content-dates.seed.json", "utf8"));
+  const NEW_PAGE = "/models/dometic-rm10-refrigerators/";
+  // A live prior that has never seen NEW_PAGE: the build plans it as published today (BUILD_DATE).
+  const urls = { ...seed.urls };
+  delete urls[NEW_PAGE.replace(/\/$/, "")];
+  const prior = { ...seed, meta: { ...seed.meta, fetch: { source: "live" } }, urls };
+
+  async function render() {
+    const { latest, planned } = await planLatest({ ledger: prior, routes: latestRoutes(site), buildDate: BUILD_DATE, adapter });
+    const html = new Map((applyLatest(site, latest) as Page[]).map((page) => [page.route, page.html]));
+    return { latest, planned, html };
+  }
+
+  function latestBlock(html: string | undefined) {
+    return html?.match(/<section class="seo-latest[^"]*" data-seo-ignore=""[^>]*>([\s\S]*?)<\/section>/)?.[1] ?? null;
+  }
+
+  it("plans a page the live ledger has not seen as the newest page", async () => {
+    const { latest, planned } = await render();
+    expect(Object.keys(planned)).toEqual([NEW_PAGE.replace(/\/$/, "")]);
+    expect(latest.site[0].href).toBe(NEW_PAGE);
+    expect(latest.sections.dometic[0].href).toBe(NEW_PAGE);
+  });
+
+  it("links the new page from home, its brand hub and its siblings in the prerendered HTML", async () => {
+    const { html } = await render();
+    const home = latestBlock(html.get("/"));
+    expect(home).toContain("<h2>New on RV Atlas</h2>");
+    expect(home).toContain(`href="${NEW_PAGE}"`);
+    expect((home?.match(/<a /g) ?? []).length).toBe(8);
+
+    const hub = latestBlock(html.get("/brands/dometic/"));
+    expect(hub).toContain("<h2>Latest Dometic pages</h2>");
+    expect(hub).toContain(`href="${NEW_PAGE}"`);
+
+    for (const sibling of ["/models/dometic-rm8-refrigerators/", "/guides/dometic-water-heaters/"]) {
+      const block = latestBlock(html.get(sibling));
+      expect(block, sibling).toContain(`href="${NEW_PAGE}"`);
+      expect((block?.match(/<a /g) ?? []).length, sibling).toBe(5);
+    }
+    const self = latestBlock(html.get(NEW_PAGE));
+    expect(self).not.toContain(`href="${NEW_PAGE}"`);
+    // Another brand's page lists its own brand, not the new Dometic page.
+    expect(latestBlock(html.get("/models/norcold-n4000-refrigerators/"))).not.toContain(`href="${NEW_PAGE}"`);
+  });
+
+  it("gives /guides/ and the cross-brand guides the guides section", async () => {
+    const { html, latest } = await render();
+    const guides = latestBlock(html.get("/guides/"));
+    expect(guides).toContain("<h2>Latest troubleshooting guides</h2>");
+    for (const item of latest.sections.guides) expect(guides).toContain(`href="${item.href}"`);
+    const symptom = latestBlock(html.get("/symptoms/rv-refrigerator-not-cooling/"));
+    expect(symptom).toContain("<h2>Latest troubleshooting guides</h2>");
+    expect(symptom).not.toContain('href="/symptoms/rv-refrigerator-not-cooling/"');
+  });
+
+  it("puts a block on every indexable page that has a sibling, and none on noindex pages", async () => {
+    const { html } = await render();
+    const sectionSize = new Map<string, number>();
+    for (const page of pages.filter((item) => item.indexable)) {
+      const section = adapter.section(page.route);
+      if (section) sectionSize.set(section, (sectionSize.get(section) ?? 0) + 1);
+    }
+    for (const page of pages) {
+      const out = html.get(page.route)!;
+      expect(out, page.route).not.toContain("<!--seo-latest-->");
+      const section = adapter.section(page.route);
+      const expected = page.indexable && (!section || (sectionSize.get(section) ?? 0) > 1);
+      expect(Boolean(latestBlock(out)), page.route).toBe(expected);
+    }
   });
 });
