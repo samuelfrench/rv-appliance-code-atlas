@@ -1,0 +1,175 @@
+{
+  "topic": "coleman-mach-rooftop-air-conditioners",
+  "researchedAt": "2026-11-07",
+  "summary": {
+    "text": "Coleman-Mach 48000-series rooftop air conditioners run on 115 VAC, 60 Hz, 1-phase power and are controlled from the ceiling assembly selector switch and rotary thermostat, or from a wall thermostat. R410A units protect the compressor with a High Pressure Switch lockout circuit.",
+    "source": "coleman-48000-ac-owner-1976-523",
+    "locator": "pp. 2, 6"
+  },
+  "sections": {
+    "models": [
+      {
+        "text": "Operation and maintenance instructions 1971AA982 cover 8000 series rooftop air conditioners and their ceiling plenums, designed for 115 VAC, 60 Hz, 1 phase power.",
+        "source": "coleman-rooftop-operation-maintenance-1971-982",
+        "locator": "pp. 1-2"
+      },
+      {
+        "text": "Model and serial numbers are on the I.D. label at the air conditioner basepan return air opening at the bottom of the roof unit, and on the rating plate.",
+        "source": "coleman-48000-ac-owner-1976-523",
+        "locator": "p. 6 'Warranty Service'"
+      },
+      {
+        "text": "The 46515 series is a two-ton packaged heat pump mounted below the floor, with two compressors on separate refrigeration circuits; its model and serial are on the unit rating plate.",
+        "source": "coleman-46515-heat-pump-owner",
+        "locator": "pp. 3-4"
+      },
+      {
+        "text": "9000 series units are designed for 240 volt electrical power.",
+        "source": "coleman-9000-ac-owner-1976-368",
+        "locator": "p. 5"
+      },
+      {
+        "text": "473XX*XXX5 series units are 230/240 VAC, 1-phase, 50 Hz international 47000-series units; model and serial are on the unit data label.",
+        "source": "coleman-473xx-international-owner-1976-678",
+        "locator": "pp. 1-2"
+      },
+      {
+        "text": "Coleman-Mach cannot identify an AC from the RV VIN; it needs the model or serial number of the AC unit. Filters are set by the ceiling assembly, not the AC model.",
+        "source": "coleman-mach-faqs",
+        "locator": "'Product/Part Number' and 'Maintenance' questions"
+      },
+      {
+        "text": "Everest VS-18: ceiling assembly 2111-0044; wall thermostat 2111-0043 (heat/cool, controls an external furnace) or 2111-0045 (cool only).",
+        "source": "coleman-mach-faqs",
+        "locator": "'VS-18' section"
+      }
+    ],
+    "display": [
+      {
+        "text": "47000 remote-controlled units: the ceiling assembly has a two-color LED, red for heating and blue for cooling, beside the infrared receiver.",
+        "source": "coleman-47000-remote-controller-owner-1976a662",
+        "locator": "p. 7"
+      },
+      {
+        "text": "VS-18: press and hold the Turbo button 5 seconds to show the last main or sub error code recorded; the display shows 00 if there is none.",
+        "source": "coleman-mach-faqs",
+        "locator": "'How do I view stored fault codes on a VS-18 thermostat?'"
+      },
+      {
+        "text": "VS-18 codes fall into E1-E9 (sensors, voltage, temperature, communication), H1/H2 (thermostat-drive signal), EA and dE/d2-dC (compressor drive faults).",
+        "source": "coleman-mach-faqs",
+        "locator": "'What causes communication or thermostat errors on the VS-18?'"
+      }
+    ],
+    "reset": [
+      {
+        "text": "R410A units: after the High Pressure Switch trips, the compressor stays locked out until the 115 VAC supply power is turned off and back on to reset the circuit.",
+        "source": "coleman-48000-ac-owner-1976-523",
+        "locator": "p. 2"
+      },
+      {
+        "text": "46515 packaged heat pump: the high pressure switch is a manual-reset push button in the unit electrical box; access is limited to qualified technicians, with 115 volt power off.",
+        "source": "coleman-46515-heat-pump-owner",
+        "locator": "p. 3"
+      },
+      {
+        "text": "473XX electric heat: if dirty filters or restricted louvers stop the heat, turn power off at the mode selector switch, wait ten minutes and restore power; then correct the low airflow.",
+        "source": "coleman-473xx-international-owner-1976-678",
+        "locator": "p. 5"
+      },
+      {
+        "text": "VS-18 fan stuck at low speed means the thermostat is in Sleep Mode (ECO held 5 seconds); press and hold ECO 5 seconds until the Sleep indicator goes out.",
+        "source": "coleman-mach-faqs",
+        "locator": "'Why does my VS-18 appear to have only one fan speed?'"
+      },
+      {
+        "text": "If the remote is lost or malfunctions, the unit can be run from the two manual override buttons (heating and cooling) on the ceiling assembly.",
+        "source": "coleman-47000-remote-controller-owner-1976a662",
+        "locator": "pp. 3, 7"
+      }
+    ],
+    "checks": [
+      {
+        "text": "Domestic units need 115 VAC/60 Hz and may run safely between 105 and 125 volts; operating outside that range can seriously damage components.",
+        "source": "coleman-mach-faqs",
+        "locator": "'What is the proper operating voltage?'"
+      },
+      {
+        "text": "Each air conditioner must be protected by a 20 amp time delay fuse or breaker; minimum wire size is #12 AWG for runs up to 25 feet.",
+        "source": "coleman-48000-ac-owner-1976-523",
+        "locator": "p. 5"
+      },
+      {
+        "text": "Filters: release the two 1/4-turn fasteners and lower the ceiling grille, or remove four return grille screws on flush-mount assemblies; clean at least every two weeks of use.",
+        "source": "coleman-48000-ac-owner-1976-523",
+        "locator": "pp. 4-5"
+      },
+      {
+        "text": "Clean the outside (condenser) coil at least once a year: blow out debris, straighten bent fins, optionally rinse with water but never a pressure washer, with all power disconnected.",
+        "source": "coleman-mach-faqs",
+        "locator": "'What type of maintenance does my RV air conditioner require?'"
+      },
+      {
+        "text": "Periodically check that roof mounting bolts are tight, the four shroud screws and washers are snug, and the shroud has no cracks or impact damage.",
+        "source": "coleman-48000-ac-owner-1976-523",
+        "locator": "p. 5 'Mechanical Integrity'"
+      }
+    ],
+    "parts": [
+      {
+        "text": "The High Pressure Switch Safety Circuit trips on abnormal conditions such as fan motor failure, a dirty condenser coil or dirty filters.",
+        "source": "coleman-48000-ac-owner-1976-523",
+        "locator": "p. 2"
+      },
+      {
+        "text": "Mach 8 freeze protection: the thermistor cuts out at 26 F (plus or minus 3) and resets at 40 F; the freeze switch on the condenser coil opens at 18 F coil temperature.",
+        "source": "coleman-mach8-heat-pump-service-1976-665",
+        "locator": "pp. 5-6"
+      },
+      {
+        "text": "Mach 8 parts named: sealed hermetic compressor (not field serviceable), reversing valve solenoid, by-flow restrictor, overload switch, run and start capacitors, PTCR, heater limit switch; persons not qualified shall not service.",
+        "source": "coleman-mach8-heat-pump-service-1976-665",
+        "locator": "pp. 4-5"
+      },
+      {
+        "text": "The motors are sealed and need no lubrication. The system is closed and sealed and should never need refrigerant recharging.",
+        "source": "coleman-mach-faqs",
+        "locator": "'Maintenance Questions'"
+      }
+    ],
+    "callTech": [
+      {
+        "text": "Anytime the air conditioner is not operating properly, a qualified technician should examine the power supply; all electrical work and inspection is for qualified service personnel only.",
+        "source": "coleman-48000-ac-owner-1976-523",
+        "locator": "pp. 2, 5"
+      },
+      {
+        "text": "If breakers keep tripping, have an electrician check starting and running amperage; power normal but no fan or compressor points to the connector plug behind the ceiling control box.",
+        "source": "coleman-48000-ac-owner-1976-523",
+        "locator": "p. 5 'Service Person'"
+      },
+      {
+        "text": "Repeated High Pressure Switch lockouts mean the unit must be serviced by a qualified technician.",
+        "source": "coleman-48000-ac-owner-1976-523",
+        "locator": "p. 2"
+      },
+      {
+        "text": "Suspected low refrigerant charge: have the unit evaluated by a qualified service technician.",
+        "source": "coleman-mach-faqs",
+        "locator": "'Do I need to check or add refrigerant?'"
+      },
+      {
+        "text": "Do not break into the sealed refrigeration system unless properly trained in sealed system repairs.",
+        "source": "coleman-mach8-heat-pump-service-1976-665",
+        "locator": "p. 6"
+      },
+      {
+        "text": "VS-18: high voltage shock hazard; do not access the drive PCB on the rooftop unit.",
+        "source": "coleman-mach-faqs",
+        "locator": "'Does the VS-18 use a traditional freeze sensor?'"
+      }
+    ]
+  },
+  "extraSources": [],
+  "unreachable": []
+}

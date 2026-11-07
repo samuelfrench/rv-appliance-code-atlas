@@ -123,11 +123,19 @@ export function validateFamilies(corpus, familiesData) {
   return failures;
 }
 
-export function buildSiteModel(corpus, familiesData) {
+// Options:
+//   hubs:  src/data/guide-hubs.json — troubleshooting hubs for guides (and small code sets) that
+//          have no model code table of their own.
+//   notes: { [topicSlug]: topic notes } from src/data/topic-notes/*.json — sourced family-level depth.
+export function buildSiteModel(corpus, familiesData, options = {}) {
   const failures = validateFamilies(corpus, familiesData);
   if (failures.length) throw new Error(failures.join("\n"));
 
+  const notesByTopic = options.notes ?? {};
   const sourcesById = new Map(corpus.sources.map((source) => [source.id, source]));
+  for (const notes of Object.values(notesByTopic)) {
+    for (const source of notes.extraSources ?? []) if (!sourcesById.has(source.id)) sourcesById.set(source.id, source);
+  }
   const symptomsById = new Map(corpus.symptoms.map((symptom) => [symptom.id, symptom]));
 
   const families = familiesData.families.map((family) => ({
@@ -182,20 +190,6 @@ export function buildSiteModel(corpus, familiesData) {
   const groupByEntryId = new Map();
   for (const group of codeGroups) for (const entry of group.entries) groupByEntryId.set(entry.id, group);
 
-  const redirects = [];
-  for (const group of codeGroups) {
-    for (const entry of group.entries) {
-      if (entry.slug !== group.slug) redirects.push({ from: `/codes/${entry.slug}/`, to: `${group.path}#${entry.id}` });
-    }
-  }
-
-  const entryPaths = Object.fromEntries(
-    corpus.entries.map((entry) => {
-      const group = groupByEntryId.get(entry.id);
-      return [entry.slug, entry.slug === group.slug ? group.path : `${group.path}#${entry.id}`];
-    }),
-  );
-
   const symptoms = corpus.symptoms.map((symptom) => ({
     ...symptom,
     path: `/symptoms/${symptom.slug}/`,
@@ -243,8 +237,127 @@ export function buildSiteModel(corpus, familiesData) {
       .filter((item) => item.entries.length);
   }
 
+  // ---------- consolidation (2026-11-07) ----------
+  // One strong page per model family (or troubleshooting hub). A code keeps its own page only when it
+  // is one real-world fault shared by several model families (a consensus or majority meaning);
+  // single-family codes and number collisions become sections of the model page.
+  const hubs = (options.hubs?.hubs ?? []).map((hub) => ({
+    ...hub,
+    kind: "hub",
+    brandLabel: brandLabel(hub.brand),
+    path: `/guides/${hub.slug}/`,
+    memberFamilies: [],
+    codeGroups: [],
+    guides: [],
+    notes: notesByTopic[hub.slug] ?? null,
+  }));
+  const hubByFamily = new Map();
+  for (const hub of hubs) {
+    for (const slug of hub.families ?? []) {
+      const family = families.find((item) => item.slug === slug);
+      if (!family) throw new Error(`Hub ${hub.slug} lists unknown family ${slug}.`);
+      if (family.hasPage) throw new Error(`Hub ${hub.slug} lists family ${slug}, which has its own model page.`);
+      hub.memberFamilies.push(family);
+      hubByFamily.set(slug, hub);
+    }
+    hub.codeGroups = uniq(hub.memberFamilies.flatMap((family) => family.codeGroups));
+    hub.sourceIds = uniq(hub.memberFamilies.flatMap((family) => family.sourceIds));
+  }
+  for (const family of families) {
+    family.kind = "family";
+    family.topic = family.hasPage ? family : hubByFamily.get(family.slug) ?? null;
+    family.notes = notesByTopic[family.slug] ?? null;
+    family.ownGuides = [];
+  }
+  for (const slug of Object.keys(notesByTopic)) {
+    if (!families.some((family) => family.slug === slug && family.hasPage) && !hubs.some((hub) => hub.slug === slug)) {
+      throw new Error(`Topic notes ${slug} match no model page or hub.`);
+    }
+  }
+
+  // A code shared by several model families (consensus or majority meaning) is one real-world fault:
+  // it gets one section on its home page (a sharedCodes hub for the brand + appliance, else the model
+  // page of its canonical entry) and the other model tables link there. A number that means different
+  // things on different models (no majority) gets a section on each model page instead.
   for (const group of codeGroups) {
-    group.guides = relatedGuides(group.entries, 8);
+    group.shared = group.families.length > 1 && Boolean(group.meanings.consensus || group.meanings.majority);
+    group.standalone = group.families.some((family) => !family.topic);
+    group.home = null;
+    if (!group.standalone && group.shared) {
+      const sharedHub = hubs.find((hub) => hub.sharedCodes && hub.brand === group.brand && hub.equipmentType === group.equipmentType);
+      const canonicalEntry = group.entries.find((entry) => entry.slug === group.slug);
+      group.home = sharedHub ?? familyByEntryId.get(canonicalEntry.id).topic;
+      if (sharedHub) sharedHub.codeGroups.push(group);
+    }
+    group.topics = uniq([group.home, ...group.families.map((family) => family.topic)]);
+  }
+
+  // Section anchors on topic pages: code-<normalized code>, made unique per page.
+  const anchors = new Map();
+  for (const topic of [...families.filter((family) => family.hasPage), ...hubs]) {
+    const used = new Set();
+    for (const group of topic.codeGroups) {
+      let anchor = `code-${slugify(group.code) || normalizeCode(group.code)}`;
+      if (used.has(anchor)) anchor = `${anchor}-${slugify(group.equipmentType)}`;
+      let n = 2;
+      while (used.has(anchor)) anchor = `${anchor}-${n++}`;
+      used.add(anchor);
+      anchors.set(`${topic.path}|${group.key}`, anchor);
+    }
+  }
+  const anchorFor = (topic, group) => anchors.get(`${topic.path}|${group.key}`);
+
+  function entryTarget(entry) {
+    const group = groupByEntryId.get(entry.id);
+    if (group.standalone) return entry.slug === group.slug ? group.path : `${group.path}#${entry.id}`;
+    const topic = group.home ?? familyByEntryId.get(entry.id).topic;
+    return `${topic.path}#${anchorFor(topic, group)}`;
+  }
+  const entryPaths = Object.fromEntries(corpus.entries.map((entry) => [entry.slug, entryTarget(entry)]));
+
+  // Guides: a guide that names exactly one model family becomes a section of that model page; otherwise
+  // the first matching hub; otherwise the first named family. The rest stay standalone guides.
+  const pagedFamilies = families.filter((family) => family.hasPage);
+  for (const symptom of symptoms) {
+    const named = pagedFamilies.filter((family) => guideNamesModel(symptom, family));
+    const hub = hubs.find((item) => new RegExp(item.pattern).test(symptom.slug));
+    // Last resort: every source the guide cites belongs to exactly one model table.
+    const covering = symptom.sourceIds.length
+      ? pagedFamilies.filter((family) => symptom.sourceIds.every((id) => family.sourceIds.includes(id)))
+      : [];
+    const topic = named.length === 1 ? named[0] : hub ?? named[0] ?? (covering.length === 1 ? covering[0] : null);
+    symptom.topic = topic;
+    if (symptom.indexable) {
+      if (topic) {
+        symptom.anchor = `guide-${symptom.slug}`;
+        symptom.target = `${topic.path}#${symptom.anchor}`;
+        (topic.kind === "hub" ? topic.guides : topic.ownGuides).push(symptom);
+      } else {
+        symptom.target = symptom.path;
+      }
+    } else {
+      // Record-and-call prep pages stay as noindex pages: homepage search still lists them, and a
+      // redirect would send that search card to a page without its checklist.
+      symptom.target = symptom.path;
+    }
+  }
+  for (const topic of [...pagedFamilies, ...hubs]) {
+    topic.notes = notesByTopic[topic.slug] ?? null;
+  }
+
+  const redirects = [];
+  for (const entry of corpus.entries) {
+    const from = `/codes/${entry.slug}/`;
+    const to = entryPaths[entry.slug];
+    if (to !== from) redirects.push({ from, to });
+  }
+  for (const symptom of symptoms) {
+    if (symptom.target !== symptom.path) redirects.push({ from: symptom.path, to: symptom.target });
+  }
+  const symptomPaths = Object.fromEntries(symptoms.map((symptom) => [symptom.slug, symptom.target]));
+
+  for (const group of codeGroups) {
+    group.guides = relatedGuides(group.entries, 8).filter((guide) => guide.target === guide.path || guide.topic);
   }
 
   const brands = uniq(corpus.entries.map((entry) => entry.brand)).sort();
@@ -260,9 +373,12 @@ export function buildSiteModel(corpus, familiesData) {
     groupByEntryId,
     redirects,
     entryPaths,
+    symptomPaths,
     symptoms,
     symptomModelById,
     brands,
+    hubs,
+    anchorFor,
   };
 }
 

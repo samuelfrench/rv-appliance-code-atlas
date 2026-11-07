@@ -1,0 +1,109 @@
+{
+  "_comment": "Troubleshooting hubs: one page per brand + appliance for guides that do not belong to a single model code table. A guide joins the first hub whose pattern matches its slug, unless it names exactly one model family (then it joins that model page). Matched guides become sections of the hub and their old URLs 301 to the section. A hub with sharedCodes=true is also the home of codes that mean the same fault on several model families of its brand and appliance type.",
+  "hubs": [
+    {
+      "slug": "onan-generators",
+      "brand": "Onan",
+      "name": "Cummins Onan RV generator fault codes and troubleshooting",
+      "equipmentType": "Generator",
+      "pattern": "^onan-",
+      "sharedCodes": true
+    },
+    {
+      "slug": "coleman-mach-rooftop-air-conditioners",
+      "brand": "Coleman-Mach",
+      "name": "Coleman-Mach rooftop air conditioner and heat pump troubleshooting",
+      "equipmentType": "Rooftop air conditioner",
+      "pattern": "^coleman-mach-(rooftop|heat-pump|4[789]000|[89]000|6[0-9]{3}|ac-)"
+    },
+    {
+      "slug": "dometic-water-heaters",
+      "brand": "Dometic",
+      "name": "Dometic and Atwood RV water heater troubleshooting",
+      "equipmentType": "Water heater",
+      "pattern": "^dometic-(atwood-water-heater|water-heater|od5001|xt-water-heater)",
+      "families": [
+        "dometic-wh-water-heaters"
+      ]
+    },
+    {
+      "slug": "dometic-brisk-air-conditioners",
+      "brand": "Dometic",
+      "name": "Dometic Brisk rooftop air conditioner troubleshooting",
+      "equipmentType": "Rooftop air conditioner",
+      "pattern": "^dometic-brisk"
+    },
+    {
+      "slug": "suburban-water-heaters",
+      "brand": "Suburban/Atwood",
+      "name": "Suburban RV water heater troubleshooting",
+      "equipmentType": "Water heater",
+      "pattern": "^suburban-(tankless|iw60|tank-water|water-heater|st42)",
+      "families": [
+        "suburban-tank-water-heaters"
+      ]
+    },
+    {
+      "slug": "suburban-furnaces",
+      "brand": "Suburban/Atwood",
+      "name": "Suburban RV furnace and wall heater troubleshooting",
+      "equipmentType": "Furnace",
+      "pattern": "^suburban-(furnace|sf-vh|nt-|electric-wall-heater)",
+      "families": [
+        "suburban-furnaces"
+      ]
+    },
+    {
+      "slug": "suburban-ranges-and-cooktops",
+      "brand": "Suburban/Atwood",
+      "name": "Suburban RV range, cooktop and griddle troubleshooting",
+      "equipmentType": "Range",
+      "pattern": "^suburban-(range|griddle|cooktop)"
+    },
+    {
+      "slug": "norcold-absorption-refrigerators",
+      "brand": "Norcold",
+      "name": "Norcold absorption refrigerator troubleshooting",
+      "equipmentType": "Refrigerator",
+      "pattern": "^norcold-(absorption|legacy|high-temperature)"
+    },
+    {
+      "slug": "norcold-dc-compressor-refrigerators",
+      "brand": "Norcold",
+      "name": "Norcold DC compressor refrigerator troubleshooting",
+      "equipmentType": "Refrigerator",
+      "pattern": "^norcold-(dc-compressor|de-ev|nv1090)"
+    },
+    {
+      "slug": "thetford-toilets",
+      "brand": "Thetford",
+      "name": "Thetford RV toilet and holding tank troubleshooting",
+      "equipmentType": "Toilet",
+      "pattern": "^thetford-(rv-toilet|holding-tank|cassette|toilet|porta-potti|aqua-magic|waste)"
+    },
+    {
+      "slug": "furrion-furnaces",
+      "brand": "Furrion",
+      "name": "Furrion RV furnace troubleshooting",
+      "equipmentType": "Furnace",
+      "pattern": "^furrion-furnace"
+    },
+    {
+      "slug": "furrion-ranges-and-microwaves",
+      "brand": "Furrion",
+      "name": "Furrion RV range, oven and microwave troubleshooting",
+      "equipmentType": "Range",
+      "pattern": "^furrion-(range|microwave|otr-microwave|oven)"
+    },
+    {
+      "slug": "furrion-electric-fireplaces",
+      "brand": "Furrion",
+      "name": "Furrion electric fireplace troubleshooting",
+      "equipmentType": "Electric fireplace",
+      "pattern": "^furrion-electric-fireplace",
+      "families": [
+        "furrion-electric-fireplaces"
+      ]
+    }
+  ]
+}

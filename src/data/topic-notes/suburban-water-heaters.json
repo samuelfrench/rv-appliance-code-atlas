@@ -1,0 +1,230 @@
+{
+  "topic": "suburban-water-heaters",
+  "researchedAt": "2026-11-07",
+  "summary": {
+    "text": "Suburban tank water heaters (Model D, DE and DEL controls) light by spark from a switch plate inside the RV. A red RESET light on that plate shows during each 15-second purge and stays lit after three failed ignition attempts to signal lockout.",
+    "source": "suburban-tank-water-heater",
+    "locator": "pp. 4-5 'Operating Instructions'"
+  },
+  "sections": {
+    "models": [
+      {
+        "text": "Guide 206244 (03-22-2023) covers Suburban tank water heaters, Advantage porcelain-lined steel tank and Direct-Fit replacement models, with controls for Models D and DE and for Model DEL.",
+        "source": "suburban-tank-water-heater",
+        "locator": "pp. 1, 4 'Product Features'"
+      },
+      {
+        "text": "Guide 206245 (03-01-2023) covers tankless models IW60 and IW60RL (Nautilus RL); the IW60RL adds a recirculation feature that keeps hot water at the faucets.",
+        "source": "suburban-tankless-water-heater",
+        "locator": "p. 1 (cover) and p. 3 'General Information'"
+      },
+      {
+        "text": "Manual 206212-1 (04-16-2024) covers the ST-42 and ST-60 on-demand direct-vent water heaters with direct spark ignition.",
+        "source": "suburban-st42-st60-water-heater",
+        "locator": "p. 1 (cover)"
+      },
+      {
+        "text": "ST-42 maximum heat input is 42,000 BTU/hr and ST-60 is 60,000 BTU/hr, both 8,000 minimum; 12 VDC, under 10 A; 10.5-14 in. w.c. inlet gas pressure; 0.7 GPM minimum flow; 131 F maximum outlet.",
+        "source": "suburban-st42-st60-water-heater",
+        "locator": "p. 7 'Product Specifications'"
+      },
+      {
+        "text": "Suburban tank models come in 4, 6, 10, 12 and 16 gallon sizes, gas or gas-electric, plus a motor aid heat exchanger that uses engine heat on motorhomes.",
+        "source": "suburban-rv-faqs",
+        "locator": "'Water Heater Questions'"
+      },
+      {
+        "text": "The IW60 is 60,000 BTU/h, heats with LP gas and uses 12 VDC for its components; it has no 120 VAC electric element and no anode rod.",
+        "source": "suburban-rv-faqs",
+        "locator": "'Suburban IW60 Tankless Water Heater'"
+      }
+    ],
+    "display": [
+      {
+        "text": "Tank models: the RESET light is on during the 15-second purge and goes off during the spark cycle. If it stays lit after the purge and three ignition attempts, the system is in lockout.",
+        "source": "suburban-tank-water-heater",
+        "locator": "p. 5 'To Turn ON Gas Operation' step 4"
+      },
+      {
+        "text": "IW60 On-Demand Control Center: a recirculation icon shows when recirculation is on; the temperature flashes while being set; the display returns to SET temperature when demand ends and reads OFF when the heater is off.",
+        "source": "suburban-tankless-water-heater",
+        "locator": "p. 4 'Water Heater On-Demand Control Center'"
+      },
+      {
+        "text": "Without the Control Center, IW60 maximum temperature is set by DIP switches D3 and D4 on the module board: 108, 120, 125 or 130 F. Factory setting is 120 F.",
+        "source": "suburban-tankless-water-heater",
+        "locator": "p. 4 'Temperature Adjustment'"
+      },
+      {
+        "text": "ST-42/60 User Control Panel icons show water flow, blower running, flame (burners on) and the outlet temperature set point; range 95-131 F.",
+        "source": "suburban-st42-st60-water-heater",
+        "locator": "p. 7 Figure 7"
+      },
+      {
+        "text": "ST-42/60 sequence: a hot faucet starts it, the fan is proven, the chamber purged, then ignition about 7 seconds after the faucet opens. The blower runs about 20 seconds after the faucet closes.",
+        "source": "suburban-st42-st60-water-heater",
+        "locator": "p. 4 'Sequence of Operation'"
+      }
+    ],
+    "reset": [
+      {
+        "text": "Tank lockout reset: put the GAS rocker switch (or plain rocker switch) OFF, wait five seconds, then return it to ON. First start-up may need several ignition cycles to purge air from the gas lines.",
+        "source": "suburban-tank-water-heater",
+        "locator": "p. 5 step 5"
+      },
+      {
+        "text": "IW60 reset after lock-out: with the On-Demand Control Center, turn the faucet off, then back on; with an ON/OFF switch plate, turn the switch OFF, then back ON.",
+        "source": "suburban-tankless-water-heater",
+        "locator": "p. 3 'Reset After Lock-Out'"
+      },
+      {
+        "text": "ST-42/60 lockout: re-cycle by turning the faucet OFF or pressing OFF on the User Control Panel, then back ON. The unit locks out after running more than 20 minutes to prevent wasted propane.",
+        "source": "suburban-st42-st60-water-heater",
+        "locator": "p. 3 'Operating Instructions' steps 8-9"
+      },
+      {
+        "text": "The IW60RL has an energy mode circuit that shuts down operation after three hours of continuous operation.",
+        "source": "suburban-tankless-water-heater",
+        "locator": "p. 3 'General Information'"
+      },
+      {
+        "text": "ST-42/60 are factory set at 113 F. A child lock limits the set point to 122 F; hold the up arrow for five seconds to remove it and allow up to 131 F.",
+        "source": "suburban-st42-st60-water-heater",
+        "locator": "pp. 3-4 'Operating Instructions'"
+      }
+    ],
+    "checks": [
+      {
+        "text": "Never run a tank heater dry. Operating without water on the gas side can melt the copolymer insulation jacket and trip the ECO/thermostat; on the 120 VAC electric side it damages the element.",
+        "source": "suburban-rv-faqs",
+        "locator": "'What if I operate the water heater without water in the tank?'"
+      },
+      {
+        "text": "Flow minimums: the ST-42/60 needs a hot faucet open to at least 0.7 GPM; open it fully until hot water arrives, then reduce flow and mix cold water.",
+        "source": "suburban-st42-st60-water-heater",
+        "locator": "p. 3 step 7"
+      },
+      {
+        "text": "The IW60 needs a minimum of 0.5 gallons per minute to operate, and only heats when a hot water faucet is open.",
+        "source": "suburban-tankless-water-heater",
+        "locator": "p. 6 'Operating Faucets and Showers'"
+      },
+      {
+        "text": "Air in the gas line after changing propane tanks is the main reason the ST burner will not light; lighting a burner on the RV cooktop purges it.",
+        "source": "suburban-st42-st60-water-heater",
+        "locator": "p. 4 'Sequence of Operation' note"
+      },
+      {
+        "text": "ST-42/60 will not operate below 10 VDC or above 17 VDC supply voltage. Before operating, check the vent for ice or snow and that an open RV door cannot block it.",
+        "source": "suburban-st42-st60-water-heater",
+        "locator": "p. 3 'Safety Features' and 'Operating Safety Information'"
+      },
+      {
+        "text": "Check the screen in the tank heater door to see that no foreign material has built up and blocked the flow of combustion and ventilating air.",
+        "source": "suburban-tank-water-heater",
+        "locator": "p. 8 'Maintenance & Cleaning'"
+      },
+      {
+        "text": "P&T valve weeping is often thermal expansion. Restore the air pocket: heater off, cold supply off, open a faucet, hold the P&T handle open until flow stops, release it, close the faucet, restore supply.",
+        "source": "suburban-rv-faqs",
+        "locator": "'Why does water drip from my water heater's P&T relief valve?'"
+      },
+      {
+        "text": "IW60RL freeze protection cycles the burner when water falls below 40 F and continues until it rises above 50 F; gas and electrical power must both be on. For winter storage the system must still be drained.",
+        "source": "suburban-tankless-water-heater",
+        "locator": "p. 8 'Freeze Protection'"
+      },
+      {
+        "text": "ST-42/60 freeze protection cycles the burner for 5 seconds when water falls below 41 F (5 C), only while gas is on and available and electrical power is on.",
+        "source": "suburban-st42-st60-water-heater",
+        "locator": "p. 5 'Freeze Protection'"
+      },
+      {
+        "text": "ST-42/60 draining: power off, gas off, pump off, open hot and cold faucets. Compressed air no greater than 40 PSI through installed bypass valves is the preferred purge method.",
+        "source": "suburban-st42-st60-water-heater",
+        "locator": "p. 5 'Draining and Storage Instructions'"
+      },
+      {
+        "text": "Turn power off to the ST water heater ignition system during any refueling and while the vehicle is in motion or being towed.",
+        "source": "suburban-st42-st60-water-heater",
+        "locator": "p. 2 'Important Safety Information'"
+      }
+    ],
+    "parts": [
+      {
+        "text": "Tank models use a magnesium or aluminum anode; replace it yearly or when consumption exceeds 75%. It unscrews with a 1-1/16 socket and needs potable-water thread sealant. Running without it voids the tank warranty.",
+        "source": "suburban-tank-water-heater",
+        "locator": "p. 9 'Anode Protection'"
+      },
+      {
+        "text": "Do not replace the anode with an add-on electric heating element. Suburban says such elements can lack safety controls and risk out-of-control heating and a wet-side explosion; any alteration voids the warranty.",
+        "source": "suburban-rv-faqs",
+        "locator": "'I noticed an add-on electric element...'"
+      },
+      {
+        "text": "ST-42/60 has an internal fuse that opens on a short circuit over 10 A and must be replaced; the control area shows the ECO switch, fuse, reset and ON/OFF switch. All repairs go to a dealer or qualified technician.",
+        "source": "suburban-st42-st60-water-heater",
+        "locator": "pp. 3, 4, 6 Figure 5"
+      },
+      {
+        "text": "IW60 drain valve is a red knob at the rear of the unit behind the service panel; the IW60RL also has a black drain handle. Suburban recommends yearly descaling (kit 521163).",
+        "source": "suburban-tankless-water-heater",
+        "locator": "pp. 8-9"
+      },
+      {
+        "text": "The IW60 temperature and pressure relief valve opens if water reaches 210 F or pressure reaches 145 PSI. Do not plug it or place a valve between it and the unit.",
+        "source": "suburban-tankless-water-heater",
+        "locator": "p. 9 'Pressure Relief Valve'"
+      }
+    ],
+    "callTech": [
+      {
+        "text": "If you smell gas: evacuate everyone, shut off gas at the container, do not touch electrical switches, phones or radios, do not start the engine or generator, and contact the gas supplier or a qualified technician.",
+        "source": "suburban-tank-water-heater",
+        "locator": "p. 3 'What To Do If You Smell Gas'"
+      },
+      {
+        "text": "If no gas supplier or technician can be reached, call the fire department. Do not turn the gas supply back on until the leak is repaired.",
+        "source": "suburban-tank-water-heater",
+        "locator": "p. 3 'What To Do If You Smell Gas'"
+      },
+      {
+        "text": "Soot anywhere on the water heater means incomplete combustion: shut the unit down immediately and contact your dealer or a qualified service person before using it again.",
+        "source": "suburban-tank-water-heater",
+        "locator": "p. 8 'Maintenance & Cleaning'"
+      },
+      {
+        "text": "If the burner fails to light after resetting, call a Suburban authorized service center or a local RV service agency. All repairs and maintenance should be done by a dealer or qualified technician.",
+        "source": "suburban-tank-water-heater",
+        "locator": "pp. 3, 5"
+      },
+      {
+        "text": "ST-42/60: no burner cleaning or adjustment is permitted and the gas valve must not be repaired. If burner operation seems faulty, shut the appliance off and contact a qualified service center.",
+        "source": "suburban-st42-st60-water-heater",
+        "locator": "pp. 3-4 'Maintenance'"
+      },
+      {
+        "text": "Do not use the water heater if any part has been under water; call a qualified technician to inspect it and replace submerged control and gas control parts. If it overheats, shut the manual gas valve first.",
+        "source": "suburban-st42-st60-water-heater",
+        "locator": "p. 2 'Safety Warning'"
+      },
+      {
+        "text": "If the IW60 drips into its drain line in cold weather and keeps dripping after the supply water rises above 38 F, call your local service center.",
+        "source": "suburban-tankless-water-heater",
+        "locator": "p. 8 'Freeze Protection'"
+      },
+      {
+        "text": "If P&T valve weeping persists after restoring the tank air pocket, Suburban says you may have your dealer install an expansion or accumulator tank in the cold water line between the tank and check valve.",
+        "source": "suburban-rv-faqs",
+        "locator": "'Why does water drip from my water heater's P&T relief valve?'"
+      },
+      {
+        "text": "If the relief valve discharges periodically, this may be thermal expansion in a closed water system; contact the water supplier or a local plumbing inspector to correct it.",
+        "source": "suburban-tankless-water-heater",
+        "locator": "p. 9 'Pressure Relief Valve'"
+      }
+    ]
+  },
+  "extraSources": [],
+  "unreachable": []
+}

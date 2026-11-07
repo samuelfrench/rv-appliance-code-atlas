@@ -195,7 +195,7 @@ function Results({ data, query }: { data: PreparedCorpus; query: string }) {
         {results.map((result) => {
           if (result.kind === "family") return <FamilyCard key={`family-${result.family.slug}`} family={result.family} />;
           if (result.kind === "entry") return <EntryCard key={`entry-${result.entry.id}`} entry={result.entry} siteIndex={siteIndex} />;
-          return <SymptomResultCard key={`symptom-${result.symptom.id}`} symptom={result.symptom} />;
+          return <SymptomResultCard key={`symptom-${result.symptom.id}`} symptom={result.symptom} siteIndex={siteIndex} />;
         })}
       </div>
       {query.trim() && !results.length ? (
@@ -281,9 +281,11 @@ function EntryCard({ entry, siteIndex }: { entry: CorpusEntry; siteIndex: SiteIn
   );
 }
 
-function SymptomResultCard({ symptom }: { symptom: SymptomGuide }) {
+function SymptomResultCard({ symptom, siteIndex }: { symptom: SymptomGuide; siteIndex: SiteIndex }) {
+  // Most guides now live as sections of a model page or troubleshooting hub.
+  const href = siteIndex.symptomPaths[symptom.slug] ?? slugPathForSymptom(symptom);
   return (
-    <a className="entry-card symptom-result-card" href={slugPathForSymptom(symptom)} aria-label={`Symptom guide ${symptom.title}`}>
+    <a className="entry-card symptom-result-card" href={href} aria-label={`Symptom guide ${symptom.title}`}>
       <div className="entry-top">
         <span>Symptom guide</span>
         <strong>Guide</strong>

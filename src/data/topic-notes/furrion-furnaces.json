@@ -1,0 +1,217 @@
+{
+  "topic": "furrion-furnaces",
+  "researchedAt": "2026-11-07",
+  "summary": {
+    "text": "Furrion FFG20, FFG30 and FFG35 RV furnaces are 12V DC propane furnaces with automatic ignition and a wall thermostat. They have no owner-readable fault display: a fault puts the furnace into lockout, and the lockout error code can only be retrieved by a qualified RV service provider using a Furrion Furnace diagnostic PCB.",
+    "source": "furrion-furnace-troubleshooting",
+    "locator": "p. 1, p. 4, p. 11"
+  },
+  "sections": {
+    "models": [
+      {
+        "text": "The troubleshooting manual covers FFG20FA, FFG20RA, FFG30FA, FFG30RA, FFG35FA and FFG35RA, plus the second-generation FFG20FA2, FFG20RA2, FFG30FA2, FFG30RA2, FFG35FA2 and FFG35RA2.",
+        "source": "furrion-furnace-troubleshooting",
+        "locator": "p. 1"
+      },
+      {
+        "text": "Lippert part numbers: FFG20FA 2023033712, FFG20RA 2023033713, FFG30FA 2022121947, FFG30RA 2022121949, FFG35FA 2022121948, FFG35RA 2022121950; the A2 versions are 2024047736 to 2024047741.",
+        "source": "furrion-furnaces-im-v1",
+        "locator": "p. 1"
+      },
+      {
+        "text": "FA models use the Front Gas Tube Kit and RA models use the Rear Gas Tube, i.e. front versus rear gas connection.",
+        "source": "furrion-furnace-troubleshooting",
+        "locator": "p. 10"
+      },
+      {
+        "text": "BTU/hr input and 12V DC power input are printed on the appliance rating tag; the approved gas type is on the furnace rating plate.",
+        "source": "furrion-furnace-troubleshooting",
+        "locator": "p. 4, p. 12"
+      },
+      {
+        "text": "Owner instruction manuals: CCD-0006025 for the FA/RA furnaces and CCD-0009365 (V2) for FFG20FA2/RA2, FFG30FA2/RA2 and FFG35FA2/RA2.",
+        "source": "furrion-furnace-troubleshooting",
+        "locator": "p. 2"
+      }
+    ],
+    "display": [
+      {
+        "text": "There is no fault display for owners. In lockout the furnace produces an error code that only a qualified RV service provider can retrieve with a Furrion Furnace diagnostic PCB.",
+        "source": "furrion-furnace-troubleshooting",
+        "locator": "p. 11"
+      },
+      {
+        "text": "The furnace has an automatic ignition device and no pilot. After the thermostat calls for heat, allow thirty (30) seconds for the main burner to light; if it does not, the furnace may be in lockout.",
+        "source": "furrion-furnaces-im-v2",
+        "locator": "PDF p. 18 (printed p. 17)"
+      },
+      {
+        "text": "During initial firing, burn-off of leftover paint and oils from manufacturing may cause 'smoking' for 5-10 minutes.",
+        "source": "furrion-furnaces-im-v2",
+        "locator": "PDF p. 18 (printed p. 17)"
+      }
+    ],
+    "reset": [
+      {
+        "text": "Lockout causes listed: air in the propane line after long non-use, empty or low propane (a cold tank may not keep flow), blocked exhaust or intake, blocked supply/return vents or crushed ductwork, and a sticky sail switch.",
+        "source": "furrion-furnace-lockout-reset-qr224",
+        "locator": "p. 1"
+      },
+      {
+        "text": "Thermostat Reset: wait until the blower stops; thermostat OFF and wait 60 seconds; ON in heat above room temperature; within 10 seconds OFF; within 10 seconds ON again. The furnace then attempts ignition.",
+        "source": "furrion-furnace-lockout-reset-qr224",
+        "locator": "p. 1"
+      },
+      {
+        "text": "Thermostats have different built-in switching delays; listening for a click at the thermostat or controller helps with the reset timing.",
+        "source": "furrion-furnace-lockout-reset-qr224",
+        "locator": "p. 1"
+      },
+      {
+        "text": "Power Reset: wait until the blower stops, then remove power from the furnace for approximately 5 minutes, for example by removing and reinstalling the fuse.",
+        "source": "furrion-furnace-lockout-reset-qr224",
+        "locator": "p. 1"
+      },
+      {
+        "text": "If air is in the propane line, repeat the reset up to 3 times, waiting 5 minutes between attempts.",
+        "source": "furrion-furnace-lockout-reset-qr224",
+        "locator": "p. 1"
+      }
+    ],
+    "checks": [
+      {
+        "text": "For 'Furnace will not light – Blower does not turn on' the table starts with: reset power to the furnace, confirm gas valves are ON and tanks not empty, and check the main fuse panel for a blown fuse.",
+        "source": "furrion-furnace-troubleshooting",
+        "locator": "p. 11"
+      },
+      {
+        "text": "Next in the same table: check RV system voltage because low 12V DC power stops the furnace, then clear a possible lockout using the lockout steps.",
+        "source": "furrion-furnace-troubleshooting",
+        "locator": "p. 11"
+      },
+      {
+        "text": "Then check that the intake and vents are not blocked or obstructed.",
+        "source": "furrion-furnace-troubleshooting",
+        "locator": "p. 11"
+      },
+      {
+        "text": "Air in the LP line: purge it by turning on other gas appliances, such as a cooktop, that are further downstream from the LP tanks.",
+        "source": "furrion-furnace-troubleshooting",
+        "locator": "p. 11"
+      },
+      {
+        "text": "Last, confirm the thermostat is set to Heat and to a high enough temperature.",
+        "source": "furrion-furnace-troubleshooting",
+        "locator": "p. 11"
+      },
+      {
+        "text": "If the furnace shuts off before reaching the set temperature, make sure all vents are open and uncovered and the air intake is not blocked.",
+        "source": "furrion-furnace-troubleshooting",
+        "locator": "p. 11"
+      },
+      {
+        "text": "Turn the manual valve or outside LP tank valve fully ON by hand; never operate with the valve partially closed and never use tools on the gas control valve.",
+        "source": "furrion-furnaces-im-v2",
+        "locator": "PDF p. 18 (printed p. 17)"
+      },
+      {
+        "text": "Do not restrict ducting or block outlet registers and return-air grilles, and do not install screens over the air intake or exhaust vents.",
+        "source": "furrion-furnaces-im-v2",
+        "locator": "PDF p. 3 (printed p. 2)"
+      },
+      {
+        "text": "Inspect the vent monthly during the heating season for soot, and keep the furnace, control compartment and air passageways clean of lint from carpet, bedding and pet hair.",
+        "source": "furrion-furnace-troubleshooting",
+        "locator": "p. 4"
+      }
+    ],
+    "parts": [
+      {
+        "text": "Sail switch (Lippert 2023010310): a sticky sail switch is a listed lockout cause; replacement is service work, as the manual says never attempt to repair the furnace yourself.",
+        "source": "furrion-furnace-troubleshooting",
+        "locator": "p. 7, p. 9, p. 4"
+      },
+      {
+        "text": "Control board (Active Low Input), part 2023010309 or 2023060551, listed for all models; service technician part.",
+        "source": "furrion-furnace-troubleshooting",
+        "locator": "p. 9"
+      },
+      {
+        "text": "Igniter electrode 2023010317, furnace burner 2023010318, gas solenoid valve 2023010319 and HI limit switch 2023010322 are the ignition and safety parts in the parts list; use only Furrion approved replacements installed by a qualified technician.",
+        "source": "furrion-furnace-troubleshooting",
+        "locator": "p. 4, p. 10"
+      },
+      {
+        "text": "'Diagnose PCB Units' (2023010324) is the Furrion furnace diagnostic PCB that service providers use to read lockout error codes.",
+        "source": "furrion-furnace-troubleshooting",
+        "locator": "p. 10, p. 11"
+      },
+      {
+        "text": "Furnace-installed breaker switch: if it is tripped or OFF, the manual says contact a trained RV service provider.",
+        "source": "furrion-furnace-troubleshooting",
+        "locator": "p. 11"
+      }
+    ],
+    "callTech": [
+      {
+        "text": "If you smell gas: evacuate everyone, shut off gas at the container, do not touch electrical switches, phones or radios, do not start the engine or generator, and call the gas supplier, a qualified technician or the fire department.",
+        "source": "furrion-furnace-troubleshooting",
+        "locator": "p. 3"
+      },
+      {
+        "text": "If the furnace still does not ignite after 3 reset attempts, contact a qualified RV service provider; do not keep cycling the thermostat to light it.",
+        "source": "furrion-furnace-lockout-reset-qr224",
+        "locator": "p. 1"
+      },
+      {
+        "text": "Immediately shut down the furnace and call a service agency if it cycles erratically or delays on ignition.",
+        "source": "furrion-furnace-troubleshooting",
+        "locator": "p. 4"
+      },
+      {
+        "text": "If the gas supply fails to shut off or overheating occurs, shut off the gas valve to the furnace before shutting off the electrical supply.",
+        "source": "furrion-furnace-troubleshooting",
+        "locator": "p. 4"
+      },
+      {
+        "text": "Soot on the vent: immediately shut the furnace down and contact a qualified service agency.",
+        "source": "furrion-furnace-troubleshooting",
+        "locator": "p. 4"
+      },
+      {
+        "text": "A yellow or lazy burner flame instead of a hard blue flame means shut the furnace down; the burner may need cleaning or replacement by a qualified person.",
+        "source": "furrion-furnace-troubleshooting",
+        "locator": "p. 5, p. 6"
+      },
+      {
+        "text": "Do not use the furnace if any part has been under water; a qualified service agency must inspect it and replace wet gas controls and electrical parts.",
+        "source": "furrion-furnaces-im-v2",
+        "locator": "PDF p. 3 (printed p. 2)"
+      },
+      {
+        "text": "Have a qualified person inspect the furnace yearly before use, including gas leak and pressure-drop tests, burner and orifice inspection, venting and wiring.",
+        "source": "furrion-furnace-troubleshooting",
+        "locator": "p. 5, p. 8"
+      }
+    ]
+  },
+  "extraSources": [
+    {
+      "id": "furrion-furnaces-im-v1",
+      "brand": "Furrion",
+      "title": "Furrion 20K/30K/35K BTU RV Gas Furnace Instruction Manual CCD-0006025",
+      "url": "https://lci-support-doc.s3.amazonaws.com/furrion_comfort/heating/ccd-0006025.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    },
+    {
+      "id": "furrion-furnaces-im-v2",
+      "brand": "Furrion",
+      "title": "Furrion 20K/30K/35K BTU RV Gas Furnace V2 Instruction Manual CCD-0009365",
+      "url": "https://lci-support-doc.s3.amazonaws.com/furrion_comfort/heating/ccd-0009365.pdf",
+      "type": "manufacturer-manual",
+      "official": true
+    }
+  ],
+  "unreachable": []
+}

@@ -1,0 +1,302 @@
+[
+ {
+  "url": "https://rvappliancefaultcodes.com/",
+  "stratum": "home:None"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/guides/",
+  "stratum": "guides:None"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/brands/coleman-mach/",
+  "stratum": "brand:coleman-mach"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/brands/dometic/",
+  "stratum": "brand:dometic"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/brands/furrion/",
+  "stratum": "brand:furrion"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/models/coleman-mach-thermostats/",
+  "stratum": "model:Coleman-Mach"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/models/dometic-freshjet-air-conditioners/",
+  "stratum": "model:Dometic"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/models/furrion-air-conditioners-thermostats/",
+  "stratum": "model:Furrion"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/models/lippert-in-wall-slide-out/",
+  "stratum": "model:Lippert"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/models/norcold-2118-polarmax-refrigerators/",
+  "stratum": "model:Norcold"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/models/onan-qg-4000-generators/",
+  "stratum": "model:Onan"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/models/suburban-induction-cooktops/",
+  "stratum": "model:Suburban/Atwood"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/models/dometic-df-afm-furnaces/",
+  "stratum": "model:Dometic"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/models/furrion-refrigerators/",
+  "stratum": "model:Furrion"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/models/lippert-ground-control-leveling/",
+  "stratum": "model:Lippert"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/coleman-mach-9420-330-status-led-alternating-green-orange/",
+  "stratum": "code:Coleman-Mach"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/dometic-rua-24-refrigerator/",
+  "stratum": "code:Dometic"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/furrion-10-6-refrigerator-e5/",
+  "stratum": "code:Furrion"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/lippert-ground-control-tt-onecontrol-error-error-error/",
+  "stratum": "code:Lippert"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/norcold-polar-red-flash-1/",
+  "stratum": "code:Norcold"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/onan-code-56-map-sender/",
+  "stratum": "code:Onan"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/suburban-induction-cooktop-e3-surface-too-hot/",
+  "stratum": "code:Suburban/Atwood"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/coleman-mach-9420-lo/",
+  "stratum": "code:Coleman-Mach"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/dometic-df-furnace-steady-on-no-flashing/",
+  "stratum": "code:Dometic"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/furrion-electric-fireplace-ee-thermostat-sensor/",
+  "stratum": "code:Furrion"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/lippert-ground-control-hall-effect-short/",
+  "stratum": "code:Lippert"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/norcold-1200-temperature-number-flashes/",
+  "stratum": "code:Norcold"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/onan-qd-5000-0981-0166-code-24-temperature-sender/",
+  "stratum": "code:Onan"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/suburban-water-heater-reset-light/",
+  "stratum": "code:Suburban/Atwood"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/coleman-mach-6536-335-diff-backup-heat-lockout/",
+  "stratum": "code:Coleman-Mach"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/dometic-ruc-e34-refrigerator/",
+  "stratum": "code:Dometic"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/furrion-arctic-refrigerator-diagnostic-led-flash-6/",
+  "stratum": "code:Furrion"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/lippert-ground-control-internal-sensor/",
+  "stratum": "code:Lippert"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/norcold-n62-n82-d-door-open/",
+  "stratum": "code:Norcold"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/onan-code-3-service-check/",
+  "stratum": "code:Onan"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/suburban-induction-cooktop-e0-cookware-not-compatible/",
+  "stratum": "code:Suburban/Atwood"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/coleman-mach-9420-330-status-led-alternating-red-orange/",
+  "stratum": "code:Coleman-Mach"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/dometic-rua-11-refrigerator/",
+  "stratum": "code:Dometic"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/furrion-rooftop-ac-e3/",
+  "stratum": "code:Furrion"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/girard-gswh1-led-2-flashes-flame-detection-error/",
+  "stratum": "code:Lippert"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/norcold-polar-snowflake-flashes/",
+  "stratum": "code:Norcold"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/symptoms/coleman-mach-rooftop-ac-low-voltage-extension-cord/",
+  "stratum": "symptom:coleman"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/symptoms/dometic-rm10-gas-operation-despite-mains-supply/",
+  "stratum": "symptom:dometic"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/symptoms/furrion-enhanced-multizone-thermostat-e3-mode-loss-app-pairing/",
+  "stratum": "symptom:furrion"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/symptoms/girard-gswh2-winterization-freeze-leak-risk/",
+  "stratum": "symptom:girard"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/symptoms/lippert-in-wall-slide-red-green-led-low-voltage-service/",
+  "stratum": "symptom:lippert"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/symptoms/norcold-absorption-refrigerator-display-faults/",
+  "stratum": "symptom:norcold"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/symptoms/onan-generator-altitude-derating-fewer-appliances/",
+  "stratum": "symptom:onan"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/symptoms/rv-rooftop-air-conditioner-water-leak/",
+  "stratum": "symptom:rv"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/symptoms/suburban-furnace-blowing-cold-air-lockout-limit-switch/",
+  "stratum": "symptom:suburban"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/symptoms/thetford-cassette-toilet-odor-seal-maintenance/",
+  "stratum": "symptom:thetford"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/symptoms/coleman-mach-49000-ac-high-pressure-lockout/",
+  "stratum": "symptom:coleman"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/symptoms/dometic-atwood-water-heater-lockout-light/",
+  "stratum": "symptom:dometic"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/symptoms/furrion-furnace-short-cycles-before-set-temperature/",
+  "stratum": "symptom:furrion"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/symptoms/girard-gswh1-gswh1m-low-flow-temperature-limiting/",
+  "stratum": "symptom:girard"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/symptoms/lippert-ground-control-auto-level-excess-angle-out-of-stroke/",
+  "stratum": "symptom:lippert"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/symptoms/norcold-high-temperature-sensor-stopped-operating-service-only/",
+  "stratum": "symptom:norcold"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/symptoms/onan-generator-fuel-oil-maintenance-before-start/",
+  "stratum": "symptom:onan"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/symptoms/rv-appliance-airflow-venting-fault/",
+  "stratum": "symptom:rv"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/symptoms/suburban-range-cooktop-gas-odor/",
+  "stratum": "symptom:suburban"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/symptoms/dometic-ccc2-hourglass-compressor-delay/",
+  "stratum": "demand:top-16mo-impressions"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/furrion-arctic-refrigerator-diagnostic-led-flash-4/",
+  "stratum": "demand:top-16mo-impressions"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/dometic-rm10-display-fault-52-ground-contact-gas-valve-reset/",
+  "stratum": "demand:top-16mo-impressions"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/symptoms/furrion-refrigerator-temperature-mode-or-lock-mode/",
+  "stratum": "demand:top-16mo-impressions"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/symptoms/onan-generator-exhaust-co-shutdown-service/",
+  "stratum": "demand:top-16mo-impressions"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/dometic-rm10-display-fault-08-level-refrigerator-reset/",
+  "stratum": "demand:top-16mo-impressions"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/symptoms/onan-generator-no-start-cranking-delay-overcrank/",
+  "stratum": "demand:top-16mo-impressions"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/dometic-rm10-display-fault-07-level-refrigerator-reset/",
+  "stratum": "demand:top-16mo-impressions"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/coleman-mach-9420-hi/",
+  "stratum": "demand:top-16mo-impressions"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/symptoms/dometic-ac-heat-pump-warranty-paperwork-prep/",
+  "stratum": "demand:top-16mo-impressions"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/codes/dometic-ruc-display-fault-e18-reset-service/",
+  "stratum": "demand:top-16mo-impressions"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/symptoms/dometic-cfx5-warning-33-compressor-start-fail/",
+  "stratum": "demand:top-16mo-impressions"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/symptoms/dometic-bluetooth-ct-pairing-mobile-device/",
+  "stratum": "demand:top-16mo-impressions"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/symptoms/dometic-refrigerator-recall-model-serial-service-prep/",
+  "stratum": "demand:top-16mo-impressions"
+ },
+ {
+  "url": "https://rvappliancefaultcodes.com/symptoms/dometic-legacy-refrigerator-display-faults/",
+  "stratum": "demand:top-16mo-impressions"
+ }
+]

@@ -1,0 +1,175 @@
+{
+  "topic": "dometic-freshjet-air-conditioners",
+  "researchedAt": "2026-11-07",
+  "summary": {
+    "text": "Dometic FreshJet Series 4 (fixed-speed) and Series 7 (inverter) are 220-240 V roof air conditioners for caravans and RVs, run from a control panel or remote control. Faults show on the display as P or E codes listed in the troubleshooting table.",
+    "source": "dometic-freshjet-fjx-operating",
+    "locator": "pp. 5-6, 21-22"
+  },
+  "sections": {
+    "models": [
+      {
+        "text": "The manual covers four models: FJX4333EEH (FreshJet 4-Series, fixed-speed) and FJX7333IHP, FJX7337IHP and FJX7457IHP (FreshJet 7-Series, inverter).",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "p. 6 '7.1 List of models'"
+      },
+      {
+        "text": "Rated cooling capacity: 2200 W (FJX4333EEH), 2537 W (FJX7333IHP), 2910 W (FJX7337IHP), 3400 W (FJX7457IHP); heating 1000, 2285, 2692 and 2903 W.",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "p. 24 'Technical data'"
+      },
+      {
+        "text": "Supply: 220-240 V / 50 Hz (FJX4333EEH) or 220-240 V / 50-60 Hz (7-Series); required fuse 10 A; rated cooling current under 6 A to under 7.8 A depending on model.",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "p. 24 'Technical data'"
+      },
+      {
+        "text": "Operating ambient range is -2 C to 52 C; the unit is designed to be installed within plus or minus 10 degrees of horizontal, on roofs 25-60 mm thick (400 x 400 mm cutout).",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "pp. 5, 24"
+      }
+    ],
+    "display": [
+      {
+        "text": "The control panel display shows the set temperature and, while the fan is being adjusted, the fan level; separate symbols indicate air purifier active, degrees Celsius and timer set.",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "p. 7 '7.2 Control panel'"
+      },
+      {
+        "text": "Fan speed Low, Med, High, Turbo or Auto shows briefly on the air distribution box display as 1, 2, 3, 4 or AA when changed.",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "p. 7 '7.2 Control panel'"
+      },
+      {
+        "text": "Faults are reported as \"The display shows:\" a code: P codes (P0-P7, P9) for protection events and E codes (E0-EL) for sensor, drive and communication faults, each with a suggested remedy in the table.",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "pp. 21-22 '12 Troubleshooting'"
+      },
+      {
+        "text": "The remote control display shows time, target temperature, actual room temperature, mode, fan speed, active-function symbols and battery status; the unit confirms each received command with a beep.",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "pp. 8, 11"
+      }
+    ],
+    "reset": [
+      {
+        "text": "The power button only toggles between on and standby; the roof air conditioner can be switched off only by cutting the power supply.",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "p. 11 '9.3.2'"
+      },
+      {
+        "text": "When switched back on, the unit resumes operation with the previously set values.",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "p. 11 '9.3.2'"
+      },
+      {
+        "text": "To cancel a preset timer, press the timer button once; the timer symbols disappear and preset values are discarded.",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "p. 13 'Cancelling the timer'"
+      }
+    ],
+    "checks": [
+      {
+        "text": "Before first use, check that supply voltage and frequency match the technical data, and that air intake openings, air nozzles and all ventilation grilles are free.",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "p. 10 '8 Before initial use'"
+      },
+      {
+        "text": "Unit does not switch on: first check the power supply is connected; a voltage below 200 V means campsite power is not sufficient.",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "p. 21 '12 Troubleshooting'"
+      },
+      {
+        "text": "If the power-supply fuse is too low, the campsite supply is overloaded: check site power, unwind the cable drum if used, reduce active electrical consumers in the vehicle, and check the campsite electrical protection.",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "p. 21 '12 Troubleshooting'"
+      },
+      {
+        "text": "Regularly remove leaves and dirt from the air intake and ventilation grilles without damaging them; never use a high-pressure cleaner, petrol, diesel or solvents.",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "p. 16 '10 Cleaning'"
+      },
+      {
+        "text": "Regularly check that the condensation water drainage channels at the sides of the unit are clear so condensate can escape.",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "p. 18 '11 Maintenance'"
+      },
+      {
+        "text": "Regularly clean the air distribution box filters: pull them out with a flat screwdriver in the handle, wash in detergent solution, let dry, slide back in.",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "p. 19 '11 Maintenance'"
+      },
+      {
+        "text": "Once per year, check the seals between the roof air conditioner and the vehicle roof for cracks and other damage.",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "p. 20 '11 Maintenance'"
+      }
+    ],
+    "parts": [
+      {
+        "text": "Troubleshooting names temperature sensors, evaporator fan, condenser fan, voltage converter and roof seals as possible causes; for each the remedy is to contact an authorized service agent or Dometic.",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "pp. 20-21 '12 Troubleshooting'"
+      },
+      {
+        "text": "The icing sensor trips when the outer temperature is too low or all air nozzles are closed, making the unit constantly switch itself off.",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "p. 21 '12 Troubleshooting'"
+      },
+      {
+        "text": "Code-table components: IPM module, compressor drive, discharge tube, evaporator and condenser coil sensors, room and outdoor sensors, current sensor, outdoor EEPROM, LIN-BUS/CI-BUS link; all routed to an authorized service agent or Dometic.",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "pp. 21-22"
+      },
+      {
+        "text": "The heat exchanger is to be serviced once per year by a specialist company.",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "p. 20 '11 Maintenance'"
+      },
+      {
+        "text": "A damaged supply cord must be replaced by the manufacturer, its service agent or similarly qualified personnel.",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "p. 4 '3 Safety instructions'"
+      }
+    ],
+    "callTech": [
+      {
+        "text": "Repair may only be carried out by qualified personnel familiar with the risks and regulations; for repair service contact the service center in your country (dometic.com/dealer). Always disconnect power when working on the appliance.",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "p. 4 '3 Safety instructions'"
+      },
+      {
+        "text": "Anyone working on or breaking into the refrigerant circuit must hold a current valid refrigerant-handling certificate; faults in the refrigerant circuit must be checked and repaired by the manufacturer or its service agent.",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "pp. 4-5"
+      },
+      {
+        "text": "The unit uses flammable R32 refrigerant, which may have no odor; never use ignition sources such as a halide torch to search for leaks.",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "pp. 4, 24"
+      },
+      {
+        "text": "Maintenance beyond the tasks described may only be done by qualified personnel familiar with refrigerant and air conditioning systems.",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "p. 17 '11 Maintenance'"
+      },
+      {
+        "text": "In a fire, do not undo the upper cover of the appliance and do not use water; use approved extinguishing agents.",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "p. 4 '3 Safety instructions'"
+      },
+      {
+        "text": "For P0, P2, P4-P7, P9 and most E codes the table's only remedy is to contact an authorized service agent or Dometic; for P1, P3 and E9 first check campsite voltage with site management.",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "pp. 21-22"
+      },
+      {
+        "text": "Warranty is 3 years; send a receipt copy and fault description. Self-repair or nonprofessional repair can have safety consequences and might void the warranty.",
+        "source": "dometic-freshjet-fjx-operating",
+        "locator": "p. 22 '14 Warranty'"
+      }
+    ]
+  },
+  "extraSources": [],
+  "unreachable": []
+}

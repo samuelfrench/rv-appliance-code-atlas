@@ -1,0 +1,215 @@
+{
+ "topic": "dometic-rm10-refrigerators",
+ "researchedAt": "2026-11-07",
+ "summary": {
+  "text": "Dometic RM10.5 and RMS10.5 10-series refrigerators are absorber refrigerators that run on 12 V DC, AC mains or liquefied gas. Every fault shows as a warning symbol, a fault ID and a beep: a code on the TFT display or flashing LEDs on LED-panel models.",
+  "source": "dometic-rm10-rms10-operating",
+  "locator": "pp. 1, 15, 25"
+ },
+ "sections": {
+  "models": [
+   {
+    "text": "The operating manual covers RM10.5, RM10.5S, RM10.5G, RM10.5T, RM10.5P, RMS10.5S, RMS10.5G, RMS10.5T, RMS10.5P, RMS10.5XS, RMS10.5XG, RMS10.5XT and RMS10.5XP.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "p. 1"
+   },
+   {
+    "text": "RM10.5T, RMS10.5T and RMS10.5XT use a TFT display with a control knob; the S, G and P variants use an LED display with ON/OFF, energy-selection and temperature-selection buttons.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "pp. 15-16"
+   },
+   {
+    "text": "The data plate gives the gas pressure the refrigerator may be operated at; Dometic says to use universal LPG only, not natural gas (see data plate).",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "p. 14"
+   },
+   {
+    "text": "Technical data: 230 V / 50 Hz and 12 V connection, 135 W at 230 V and 130 W at 12 V, gas consumption below 18.3 g/h, climate class SN.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "p. 29"
+   },
+   {
+    "text": "Dometic's RM10 door support page shows the winter-position part separately for RM/RMS, RMD/RMDT and RML variants, because door handling differs by model.",
+    "source": "dometic-rm10-door-ice-compartment-will-not-close-support",
+    "locator": "support page 'I can not close the refrigerator door/ice compartment door'"
+   }
+  ],
+  "display": [
+   {
+    "text": "All faults are indicated by a warning symbol, a fault ID and a beep. The beep lasts 2 min and repeats every 30 min until the error is rectified.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "p. 25"
+   },
+   {
+    "text": "If several faults occur, the display shows the last fault; the underlying faults are displayed after the last fault has been confirmed.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "p. 25"
+   },
+   {
+    "text": "TFT models (RM10.5T, RMS10.5T, RMS10.5XT) show a fault code with a warning symbol in the middle of the TFT display.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "p. 25"
+   },
+   {
+    "text": "LED models (S, G and P variants): the LED warning symbol lights continuously and the other LEDs flash according to the fault.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "p. 25"
+   },
+   {
+    "text": "The manual splits faults into WARNING type (W01, W05, W06, W10, W11, tank stop) and ERROR type (E03, E07-E09, E12-E14, E50-E53).",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "pp. 25-28"
+   },
+   {
+    "text": "Tank stop mode: TFT models show a petrol-pump symbol; on LED models the gas LED flashes. Gas operation is blocked for 15 min after the vehicle ignition is switched off.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "pp. 19, 26"
+   },
+   {
+    "text": "Door open more than 2 min: TFT models show W10 plus a beep; LED models signal it with a beep.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "p. 26"
+   },
+   {
+    "text": "In stand-alone gas mode the display turns off 2 s after the last activity and switches on briefly every 15 s; it stays on while an error message is present.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "p. 19"
+   }
+  ],
+  "reset": [
+   {
+    "text": "WARNING type faults reset automatically once the fault has been rectified.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "p. 25"
+   },
+   {
+    "text": "ERROR type faults must be reset manually: TFT models, press the control knob for 2 s; LED models, press the ON/OFF button for 2 s. A beep sounds and the error is reset.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "p. 26"
+   },
+   {
+    "text": "Tank stop mode ends on its own: after 15 min the refrigerator switches back to automatic mode, or select a different operating mode.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "pp. 19, 26"
+   }
+  ],
+  "checks": [
+   {
+    "text": "Park the vehicle level, especially when starting up and filling the refrigerator before setting off.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "p. 17"
+   },
+   {
+    "text": "AC operation not working: replace a defective fuse in the AC power supply and make sure the vehicle is connected to AC power.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "p. 24"
+   },
+   {
+    "text": "DC operation not working: replace a blown vehicle fuse (see the vehicle manual), test and charge the vehicle battery, and switch on the ignition.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "p. 24"
+   },
+   {
+    "text": "Gas operation not working: replace an empty gas cylinder and open a closed gas valve.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "p. 24"
+   },
+   {
+    "text": "Air in the gas line: switch the refrigerator off and on again, three or four times if necessary; if available, switch on the stove and repeat with the refrigerator.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "p. 24"
+   },
+   {
+    "text": "Running on gas in automatic mode while on shore power means mains voltage is too low; no action needed, it switches back to AC when voltage is sufficient.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "p. 24"
+   },
+   {
+    "text": "Not cooling enough: check the ventilation grille is not obstructed, the door closes properly and the seal fits and is undamaged; defrost an iced evaporator; set a lower temperature.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "p. 24"
+   },
+   {
+    "text": "If ambient temperature is high, remove the ventilation grille for a while; remove excess or warm food; recheck the temperature after four or five hours of operation.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "p. 25"
+   },
+   {
+    "text": "Use DC operation only with the engine running and supplying sufficient voltage or with a battery monitor; a vehicle battery management system may switch the refrigerator off.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "pp. 13, 23"
+   },
+   {
+    "text": "At altitudes above 1000 m, ignition problems may occur; switch to a different energy source.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "p. 14"
+   },
+   {
+    "text": "Keep the exterior ventilation grilles and roof vent free of dust and dirt, check and clean the condensate drain, and clean the condenser with a damp cloth.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "p. 22"
+   }
+  ],
+  "parts": [
+   {
+    "text": "AC heating element and DC heating element: if defective, contact an authorized service agent.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "p. 24"
+   },
+   {
+    "text": "Fuse in the DC cable (the fuse on the relay): contact an authorized service agent; only the vehicle fuse is listed as owner-replaceable.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "p. 24"
+   },
+   {
+    "text": "If the compartment temperature sensor is defective the refrigerator runs at maximum power all the time; it can only be repaired by an authorised repair centre.",
+    "source": "dometic-rm10-display-fault-01-support",
+    "locator": "support page 'Display showing fault: 01'"
+   },
+   {
+    "text": "Gas burner: dirt shows as poor ignition or deflagrations; Dometic recommends cleaning at least once a year, half-yearly or quarterly on LPG.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "p. 22"
+   },
+   {
+    "text": "Absorber unit is under high pressure and must never be opened; the refrigerant circuit is maintenance-free.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "pp. 12, 23"
+   },
+   {
+    "text": "Optional R10-BP battery packs take 12 AA batteries in compartments left and right under the operating element and run stand-alone gas mode for 2 to 3 days.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "pp. 14, 17, 19"
+   }
+  ],
+  "callTech": [
+   {
+    "text": "Gas odor: close the gas supply valve and cylinder valve, open all windows and leave, operate no electrical switches, extinguish open flames, and have a specialist check the gas system.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "p. 14"
+   },
+   {
+    "text": "Ammonia smell: switch off the appliance, open all windows and doors, and immediately visit your dealer or a Dometic service provider.",
+    "source": "dometic-rm10-smell-ammonia-support",
+    "locator": "support page 'I smell ammonia'"
+   },
+   {
+    "text": "W01, W11 and E03 list only one remedy: contact an authorized service agent.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "pp. 25-27"
+   },
+   {
+    "text": "E07, E08, E09, E12, E13, E51, E52 and E53: reset the error, and contact an authorized service agent if it occurs again.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "pp. 27-28"
+   },
+   {
+    "text": "Work on gas and electrical installations may only be performed by qualified technicians; have the gas system and flues inspected before first use and every two years.",
+    "source": "dometic-rm10-rms10-operating",
+    "locator": "p. 23"
+   }
+  ]
+ },
+ "extraSources": [],
+ "unreachable": []
+}

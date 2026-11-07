@@ -1,0 +1,205 @@
+{
+  "topic": "lippert-ground-control-leveling",
+  "researchedAt": "2026-11-07",
+  "summary": {
+    "text": "Lippert Ground Control is an electric auto-leveling system for 5th wheels (4-point and 6-point) using one main control board and a separate waterproof remote level sensor. Faults show as a red/green LED state on the exterior Auto Leveling Control Touch Pad and as text messages on the OneControl Touch Panel or app.",
+    "source": "lippert-ground-control-onecontrol-5th",
+    "locator": "p. 3, p. 18-19"
+  },
+  "sections": {
+    "models": [
+      {
+        "text": "QR-059 identification: an electric 5th wheel system with all-square jack legs is Ground Control 2.0; round rear legs mean Ground Control 3.0, with either an LCD touchpad or a OneControl touch panel. Pre-2018 LCD touchpads are black.",
+        "source": "lippert-qr059-electronic-leveling-identification",
+        "locator": "p. 2"
+      },
+      {
+        "text": "An electric travel trailer system is Ground Control Travel Trailer leveling, with an LCD touchpad or OneControl touch panel; a hydraulic one is Travel Trailer Level-Up instead.",
+        "source": "lippert-qr059-electronic-leveling-identification",
+        "locator": "p. 3"
+      },
+      {
+        "text": "Ground Control LCD 4-point and 6-point controllers: 803280 (4-point, no Bluetooth), 2021018954 (4-point, Bluetooth), 803279 (6-point, no Bluetooth) and 2021018951 (6-point, Bluetooth).",
+        "source": "lippert-ground-control",
+        "locator": "p. 20"
+      },
+      {
+        "text": "TT controllers by jack set: SE Green 433633 (four 3K C-jacks), Red 695502 (two 2K + two 3K), Purple 695501 (two 2K + two 5K), HD Blue 433632 (two 3K + two 5K), Gold 767693 (four 5K).",
+        "source": "lippert-ground-control-tt-onecontrol",
+        "locator": "p. 3"
+      },
+      {
+        "text": "The 5th wheel Auto Leveling Control Touch Pad exists in Rev. A and Rev. B versions, which differ in LED states and in which faults the pad can clear.",
+        "source": "lippert-ground-control-onecontrol-5th",
+        "locator": "p. 18-20"
+      }
+    ],
+    "display": [
+      {
+        "text": "LCD touchpad: at power-on the screen reads 'READY Jacks: Up'; after a good cycle it reads 'AUTO LEVEL SUCCESS', then 'READY Jacks: Down' with the green LED lit at the center of the jack buttons.",
+        "source": "lippert-ground-control",
+        "locator": "p. 6-7"
+      },
+      {
+        "text": "LCD touchpad: red indicator lights show which sides of the 5th wheel are low; an orange LED beside RETRACT means retract mode is active.",
+        "source": "lippert-ground-control",
+        "locator": "p. 5-6"
+      },
+      {
+        "text": "Exterior touch pad LED: off means the pad is locked, solid green active, blinking green jacks moving. Press UP and DOWN together to wake it; it times out after about seven minutes without use.",
+        "source": "lippert-ground-control-onecontrol-5th",
+        "locator": "p. 5, p. 18"
+      },
+      {
+        "text": "Rev. B touch pad only: 'slowly blinking faded red' (red and green blinking together) means a special jack error; read the specific jack code on the OneControl Touch Panel or app.",
+        "source": "lippert-ground-control-onecontrol-5th",
+        "locator": "p. 18"
+      },
+      {
+        "text": "On the OneControl Touch Panel or app, 'BAD CALIBRATION' means the trailer zero point was not set correctly, and the fix listed is to reset zero point.",
+        "source": "lippert-ground-control-onecontrol-5th",
+        "locator": "p. 19"
+      },
+      {
+        "text": "If the rear jacks will not move individually but work during auto level, Twist Prevention Protection has locked out that operation to protect the 5th wheel frame.",
+        "source": "lippert-ground-control",
+        "locator": "p. 5"
+      }
+    ],
+    "reset": [
+      {
+        "text": "LCD touchpad: repair or correct the issue, then press ENTER; if the error is still present, the message displays again.",
+        "source": "lippert-ground-control",
+        "locator": "p. 12"
+      },
+      {
+        "text": "'Feature Disabled' caused by not cycling touchpad power between leveling operations: turn the touchpad off and back on to reset the system.",
+        "source": "lippert-ground-control",
+        "locator": "p. 12"
+      },
+      {
+        "text": "Special jack errors clear only after the jacks are homed: each jack must be able to retract at least 6 inches, then a full retract runs until the jacks reach the hard current limit.",
+        "source": "lippert-ground-control",
+        "locator": "p. 8, p. 13"
+      },
+      {
+        "text": "OneControl Rev. B: after correcting the issue, press ENTER to AUTO RETRACT; the jacks retract to the hard current limit and the special jack error clears.",
+        "source": "lippert-ground-control-onecontrol-5th",
+        "locator": "p. 20"
+      },
+      {
+        "text": "Rev. B touch pad: press 'Retract All' to clear most standard faults; press and hold it until jacks retract to clear jack faults. HALL POWER SHORT, BAD CALIBRATION and EXTERNAL SENSOR must be cleared from the Touch Panel or app.",
+        "source": "lippert-ground-control-onecontrol-5th",
+        "locator": "p. 20"
+      },
+      {
+        "text": "Rev. A: faults clear only from the OneControl Touch Panel or app, except an auto sequence aborted from the touch pad, which clears by pressing any touch pad button.",
+        "source": "lippert-ground-control-onecontrol-5th",
+        "locator": "p. 19"
+      },
+      {
+        "text": "'EXCESSIVE ANGLE' during manual operation: stop and return the jacks to a more level state; the code self-clears without pressing OK.",
+        "source": "lippert-ground-control-onecontrol-5th",
+        "locator": "p. 19"
+      },
+      {
+        "text": "TT systems: the Power Tongue Jack does not need homing and cannot be run from the Touch Panel or app while clearing special jack errors; use its RET/EXT switch.",
+        "source": "lippert-ground-control-tt-onecontrol",
+        "locator": "p. 23"
+      },
+      {
+        "text": "Zero point is set by the RV manufacturer and verified by the dealer. On OneControl, tap the CONNECTED icon 6 times quickly, choose OPTIONS, then 'SET UP: Zero Mode' and ENTER to set it.",
+        "source": "lippert-ground-control-onecontrol-5th",
+        "locator": "p. 22"
+      }
+    ],
+    "checks": [
+      {
+        "text": "Before leveling: park on reasonably level, solid ground; clear jack landing spots of debris and depressions; use load distribution pads on very soft ground; keep people and pets clear.",
+        "source": "lippert-ground-control",
+        "locator": "p. 4"
+      },
+      {
+        "text": "Batteries must be fully charged and test at 12V DC under load before operating.",
+        "source": "lippert-ground-control",
+        "locator": "p. 4"
+      },
+      {
+        "text": "Once auto level starts, nobody should move inside the 5th wheel until it finishes; for hitch recognition to work, start auto level with the front above level.",
+        "source": "lippert-ground-control",
+        "locator": "p. 7"
+      },
+      {
+        "text": "If auto level does not run as described, use manual mode and confirm each button moves only its own jacks, for example FRONT moves only the front jacks.",
+        "source": "lippert-ground-control",
+        "locator": "p. 7-8"
+      },
+      {
+        "text": "'Auto level fail' means level was not reached in the allotted time; check for low battery voltage, excessive slope, or a leg moving slower than normal.",
+        "source": "lippert-ground-control",
+        "locator": "p. 23"
+      },
+      {
+        "text": "Excess Angle and Excessive Angle list a controller that is not properly secured; it mounts to the compartment ceiling, centered in the 5th wheel, with the label arrow facing the front.",
+        "source": "lippert-ground-control",
+        "locator": "p. 12, p. 20"
+      },
+      {
+        "text": "Maintenance: keep the battery at full capacity, check battery, controller and jack connections for corrosion, and spray extended jack rods with silicone every three months, or every four to six weeks near salt.",
+        "source": "lippert-ground-control",
+        "locator": "p. 23"
+      },
+      {
+        "text": "TT: the Power Tongue Jack ON/OFF switch controls only its light, which drains the trailer battery if left on.",
+        "source": "lippert-ground-control-tt-onecontrol",
+        "locator": "p. 5"
+      }
+    ],
+    "parts": [
+      {
+        "text": "Named components with service-manual replacement procedures: landing gear, hall effect jacks, rear sensor, controller, touchpad and jack motors; jacks must be homed after landing gear or hall effect jack replacement.",
+        "source": "lippert-ground-control",
+        "locator": "p. 2, p. 14-15"
+      },
+      {
+        "text": "The rear level sensor sits on the cross member behind the rear axle, centered curbside-to-roadside, reached through the underbelly; proper orientation is imperative for correct operation.",
+        "source": "lippert-ground-control",
+        "locator": "p. 16-18"
+      },
+      {
+        "text": "Special jack errors list harness checks at the controller and jack and a check of the fuses at the controller.",
+        "source": "lippert-ground-control",
+        "locator": "p. 13"
+      },
+      {
+        "text": "The LCD wiring diagrams show a recommended 50 Amp breaker (OEM supplied) between the battery and the controller.",
+        "source": "lippert-ground-control",
+        "locator": "p. 24-25"
+      }
+    ],
+    "callTech": [
+      {
+        "text": "Never change tires or do other service while the trailer is supported only by the Ground Control jacks; support the frame with jack stands first, and Lippert recommends a trained professional for tire changes.",
+        "source": "lippert-ground-control-onecontrol-5th",
+        "locator": "p. 3"
+      },
+      {
+        "text": "Never lift the trailer so the wheels leave the ground; that creates an unstable and unsafe condition.",
+        "source": "lippert-ground-control-tt-onecontrol",
+        "locator": "p. 4"
+      },
+      {
+        "text": "After any manual override of a landing gear or hall effect jack, the LCD system must be serviced and the jacks homed; never use an impact driver or impact wrench on the override.",
+        "source": "lippert-ground-control",
+        "locator": "p. 9-11"
+      },
+      {
+        "text": "BAD CALIBRATION and INTERNAL SENSOR on the LCD touchpad call for controller replacement, which is service work.",
+        "source": "lippert-ground-control",
+        "locator": "p. 12"
+      }
+    ]
+  },
+  "extraSources": [],
+  "unreachable": []
+}

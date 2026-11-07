@@ -88,19 +88,23 @@ describe("merged code pages", () => {
     expect(code36.meanings.exceptions.map((item: { label: string }) => item.label).sort()).toEqual(["Mechanical Fault", "Other Faults"]);
   });
 
-  it("keeps the shortest existing URL canonical and redirects the rest to their model row", () => {
+  it("folds every code into a section of its home model page and redirects the old URLs there", () => {
     const noFl = group("/codes/norcold-1200-no-fl/");
-    expect(noFl.entries.length).toBeGreaterThan(1);
-    expect(model.redirects).toContainEqual({ from: "/codes/norcold-polar-no-fl/", to: "/codes/norcold-1200-no-fl/#norcold-polar-no-fl" });
-    expect(model.entryPaths["norcold-polar-no-fl"]).toBe("/codes/norcold-1200-no-fl/#norcold-polar-no-fl");
-    expect(model.entryPaths["norcold-1200-no-fl"]).toBe("/codes/norcold-1200-no-fl/");
+    expect(noFl.shared).toBe(true);
+    expect(noFl.home.path).toBe("/models/norcold-1200-refrigerators/");
+    expect(model.entryPaths["norcold-polar-no-fl"]).toBe("/models/norcold-1200-refrigerators/#code-no-fl");
+    expect(model.redirects).toContainEqual({ from: "/codes/norcold-polar-no-fl/", to: "/models/norcold-1200-refrigerators/#code-no-fl" });
+    expect(model.redirects).toContainEqual({ from: "/codes/norcold-1200-no-fl/", to: "/models/norcold-1200-refrigerators/#code-no-fl" });
 
-    const canonical = new Set(model.codeGroups.map((item: { path: string }) => item.path));
-    for (const redirect of model.redirects) {
-      expect(canonical.has(redirect.from)).toBe(false);
-      expect(canonical.has(redirect.to.split("#")[0])).toBe(true);
-    }
-    expect(model.codeGroups.length + model.redirects.length).toBe(corpus.entries.length);
+    // A number that means different things on different refrigerators gets a section on each model page.
+    const rua08 = group("/codes/dometic-rua-08-refrigerator/");
+    expect(rua08.shared).toBe(false);
+    expect(model.entryPaths["dometic-rua-08-refrigerator"]).toBe("/models/dometic-rua-refrigerators/#code-08");
+    expect(model.entryPaths["dometic-rm10-display-fault-08-level-refrigerator-reset"]).toBe("/models/dometic-rm10-refrigerators/#code-08");
+
+    const codeRedirects = model.redirects.filter((item: { from: string }) => item.from.startsWith("/codes/"));
+    const standalone = model.codeGroups.filter((item: { standalone: boolean }) => item.standalone).length;
+    expect(codeRedirects.length + standalone).toBe(corpus.entries.length);
   });
 
   it("renders each model's statement, sources, and anchors on the merged page", () => {

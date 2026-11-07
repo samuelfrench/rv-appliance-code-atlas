@@ -9,13 +9,15 @@ test("mobile lookup finds a sourced Norcold fault code and opens its detail page
   await page.goto("/");
   await expect(page.getByRole("heading", { name: "RV Appliance Code Atlas" })).toBeVisible();
   await page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" }).fill("norcold n7 no fl");
-  const polarNoFl = page.locator('a[href="/codes/norcold-1200-no-fl/#norcold-polar-no-fl"]');
+  const polarNoFl = page.locator('a[href="/models/norcold-1200-refrigerators/#code-no-fl"]').first();
   await expect(polarNoFl).toBeVisible();
   await polarNoFl.click();
-  await expect(page.getByRole("heading", { level: 1, name: /Norcold refrigerator code no FL/ })).toBeVisible();
-  await expect(page.locator("tr#norcold-polar-no-fl")).toContainText("Norcold Polar N7 / N8");
-  await expect(page.getByRole("heading", { name: "Official sources" })).toBeVisible();
-  await expect(page.getByText("Do not hand-light").first()).toBeVisible();
+  await expect(page).toHaveURL(/\/models\/norcold-1200-refrigerators\/#code-no-fl$/);
+  const section = page.locator("section#code-no-fl");
+  await expect(section.getByRole("heading", { level: 3 })).toContainText("no FL");
+  await expect(section).toContainText("Norcold Polar N7 / N8");
+  await expect(page.getByRole("heading", { name: "Sources", exact: true })).toBeVisible();
+  await expect(page.getByText("Do not hand-light").first()).toBeAttached();
 
   expect(consoleErrors).toEqual([]);
 });
@@ -26,22 +28,22 @@ test("exact code searches rank the matching code card before symptom guides", as
   const firstResult = page.locator('section[aria-label="Lookup results"] a').first();
 
   await searchbox.fill("norcold no co");
-  await expect(firstResult).toHaveAttribute("href", "/codes/norcold-1200-no-co/");
+  await expect(firstResult).toHaveAttribute("href", "/models/norcold-1200-refrigerators/#code-no-co");
 
   await searchbox.fill("suburban furnace lock out");
-  await expect(firstResult).toHaveAttribute("href", "/codes/suburban-furnace-lock-out/");
+  await expect(firstResult).toHaveAttribute("href", "/guides/suburban-furnaces/#code-lock-out");
 
   await searchbox.fill("suburban furnace lockout");
-  await expect(firstResult).toHaveAttribute("href", "/codes/suburban-furnace-lock-out/");
+  await expect(firstResult).toHaveAttribute("href", "/guides/suburban-furnaces/#code-lock-out");
 
   await searchbox.fill("suburban water heater reset light");
-  await expect(firstResult).toHaveAttribute("href", "/codes/suburban-water-heater-reset-light/");
+  await expect(firstResult).toHaveAttribute("href", "/guides/suburban-water-heaters/#code-reset-light");
 
   await searchbox.fill("furrion 10.6 e3 compressor");
-  await expect(firstResult).toHaveAttribute("href", "/codes/furrion-10-6-refrigerator-e3/");
+  await expect(firstResult).toHaveAttribute("href", "/models/furrion-refrigerators/#code-e3");
 
   await searchbox.fill("furrion 15 fd");
-  await expect(firstResult).toHaveAttribute("href", "/codes/furrion-15-refrigerator-fd/");
+  await expect(firstResult).toHaveAttribute("href", "/models/furrion-refrigerators/#code-fd");
 });
 
 test("symptom guide and checklist surfaces service-call prep without checkout", async ({ page }) => {
@@ -55,7 +57,7 @@ test("symptom guide and checklist surfaces service-call prep without checkout", 
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", "noindex,follow");
 });
 
-test("model code table lists every code and links to merged code pages", async ({ page }) => {
+test("model code table links shared codes to their one home section", async ({ page }) => {
   await page.goto("/models/onan-quiet-diesel-generators/");
 
   await expect(page.getByRole("heading", { level: 1, name: "Cummins Onan Quiet Diesel 5000-12500 generator fault codes" })).toBeVisible();
@@ -64,19 +66,23 @@ test("model code table lists every code and links to merged code pages", async (
   await expect(table.locator("tbody tr").first().locator("th")).toHaveText("1");
   await table.getByRole("link", { name: "36", exact: true }).click();
 
-  await expect(page).toHaveURL(/\/codes\/onan-code-36-engine-stopped\/$/);
-  await expect(page.getByRole("heading", { level: 1, name: "Onan generator code 36" })).toBeVisible();
-  await expect(page.getByText(/Most Onan documentation lists 36 as “Engine Stopped”/)).toBeVisible();
-  await expect(page.locator("tr#onan-qg-2800i-code-36")).toContainText("Mechanical Fault");
+  await expect(page).toHaveURL(/\/guides\/onan-generators\/#code-36$/);
+  await expect(page.getByRole("heading", { level: 1, name: "Cummins Onan RV generator fault codes and troubleshooting" })).toBeVisible();
+  const section = page.locator("section#code-36");
+  await expect(section.getByRole("heading", { level: 3 })).toHaveText("Code 36: Engine Stopped");
+  await expect(section).toContainText("Mechanical Fault");
   expect(await page.locator('script[type="module"]').count()).toBe(0);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
 });
 
-test("merged duplicate code URLs forward to the model row on the combined page", async ({ page }) => {
+test("merged code URLs redirect to the code's section on its model page", async ({ page }) => {
+  const response = await page.request.get("/codes/norcold-polar-no-fl/", { maxRedirects: 0 });
+  expect(response.status()).toBe(301);
   await page.goto("/codes/norcold-polar-no-fl/");
 
-  await expect(page).toHaveURL(/\/codes\/norcold-1200-no-fl\/#norcold-polar-no-fl$/);
-  await expect(page.getByRole("heading", { level: 1, name: /Norcold refrigerator code no FL/ })).toBeVisible();
+  await expect(page).toHaveURL(/\/models\/norcold-1200-refrigerators\/#code-no-fl$/);
+  await expect(page.locator("section#code-no-fl")).toBeVisible();
+  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute("href", "https://rvappliancefaultcodes.com/models/norcold-1200-refrigerators/");
 });
 
 test("homepage search accepts a shared query and surfaces model tables", async ({ page }) => {
@@ -92,7 +98,8 @@ test("homepage search accepts a shared query and surfaces model tables", async (
 });
 
 test("unknown code URLs show the not-verified page with search", async ({ page }) => {
-  await page.goto("/codes/not-a-real-code/");
+  const response = await page.goto("/codes/not-a-real-code/");
+  expect(response?.status()).toBe(404);
 
   await expect(page.getByRole("heading", { level: 1, name: "Code not verified yet" })).toBeVisible();
   await expect(page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" })).toBeVisible();
@@ -104,7 +111,7 @@ test("lookup surfaces RM10 symptom-only support pages", async ({ page }) => {
 
   await page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" }).fill("rm10 gas smell");
   const lookupResults = page.locator('section[aria-label="Lookup results"]');
-  const gasSmell = lookupResults.locator('a[href="/symptoms/dometic-rm10-gas-smell/"]');
+  const gasSmell = lookupResults.locator('a[href="/models/dometic-rm10-refrigerators/#guide-dometic-rm10-gas-smell"]');
   await expect(gasSmell).toBeVisible();
   await gasSmell.click();
 
@@ -119,13 +126,13 @@ test("lookup surfaces Dometic 10-series symptom aliases", async ({ page }) => {
   const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
 
   await searchbox.fill("rmd10 gas smell");
-  await expect(lookupResults.locator('a[href="/symptoms/dometic-rm10-gas-smell/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/dometic-rm10-refrigerators/#guide-dometic-rm10-gas-smell"]')).toBeVisible();
 
   await searchbox.fill("rml10 defrost ice");
   await expect(lookupResults.locator('a[href="/symptoms/dometic-rm10-defrost-evaporator-ice-buildup/"]')).toBeVisible();
 
   await searchbox.fill("rms10 internal batteries");
-  await expect(lookupResults.locator('a[href="/symptoms/dometic-rm10-internal-battery-packs/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/dometic-rm10-refrigerators/#guide-dometic-rm10-internal-battery-packs"]')).toBeVisible();
 });
 
 test("lookup surfaces Dometic RUA/RUC symptom support pages", async ({ page }) => {
@@ -136,24 +143,24 @@ test("lookup surfaces Dometic RUA/RUC symptom support pages", async ({ page }) =
 
   await searchbox.fill("rua not cooling lower temperature");
   await expect(
-    lookupResults.locator('a[href="/symptoms/dometic-rua-ruc-not-cooling-temperature-and-ventilation/"]'),
+    lookupResults.locator('a[href="/models/dometic-rua-refrigerators/#guide-dometic-rua-ruc-not-cooling-temperature-and-ventilation"]'),
   ).toBeVisible();
 
   await searchbox.fill("rua 12v battery management");
   await expect(
-    lookupResults.locator('a[href="/symptoms/dometic-rua-ruc-first-use-ventilation-battery-management/"]'),
+    lookupResults.locator('a[href="/models/dometic-rua-refrigerators/#guide-dometic-rua-ruc-first-use-ventilation-battery-management"]'),
   ).toBeVisible();
 
   await searchbox.fill("ruc no display");
-  await expect(lookupResults.locator('a[href="/symptoms/dometic-ruc-display-or-power-not-on/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/dometic-ruc-refrigerators/#guide-dometic-ruc-display-or-power-not-on"]')).toBeVisible();
 
   await searchbox.fill("ruc compressor high ambient");
   await expect(
-    lookupResults.locator('a[href="/symptoms/dometic-ruc-compressor-voltage-or-high-ambient/"]'),
+    lookupResults.locator('a[href="/models/dometic-ruc-refrigerators/#guide-dometic-ruc-compressor-voltage-or-high-ambient"]'),
   ).toBeVisible();
 
   await searchbox.fill("ruc too cold warmest setting");
-  await expect(lookupResults.locator('a[href="/symptoms/dometic-ruc-too-cold-temperature-setting/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/dometic-ruc-refrigerators/#guide-dometic-ruc-too-cold-temperature-setting"]')).toBeVisible();
 });
 
 test("lookup surfaces Norcold and Thetford symptom support pages", async ({ page }) => {
@@ -164,21 +171,21 @@ test("lookup surfaces Norcold and Thetford symptom support pages", async ({ page
 
   await searchbox.fill("norcold not cooling vents level");
   await expect(
-    lookupResults.locator('a[href="/symptoms/norcold-absorption-refrigerator-not-cooling-level-ventilation/"]'),
+    lookupResults.locator('a[href="/guides/norcold-absorption-refrigerators/#guide-norcold-absorption-refrigerator-not-cooling-level-ventilation"]'),
   ).toBeVisible();
 
   await searchbox.fill("norcold hts solid red do not bypass");
   await expect(
-    lookupResults.locator('a[href="/symptoms/norcold-high-temperature-sensor-stopped-operating-service-only/"]'),
+    lookupResults.locator('a[href="/guides/norcold-absorption-refrigerators/#guide-norcold-high-temperature-sensor-stopped-operating-service-only"]'),
   ).toBeVisible();
 
   await searchbox.fill("norcold dc compressor not cooling low battery voltage");
   await expect(
-    lookupResults.locator('a[href="/symptoms/norcold-dc-compressor-refrigerator-cooling-voltage/"]'),
+    lookupResults.locator('a[href="/guides/norcold-dc-compressor-refrigerators/#guide-norcold-dc-compressor-refrigerator-cooling-voltage"]'),
   ).toBeVisible();
 
   await searchbox.fill("norcold n2090 drip tray condensation water");
-  await expect(lookupResults.locator('a[href="/symptoms/norcold-n2000-condensation-drip-tray/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/norcold-n2000-refrigerators/#guide-norcold-n2000-condensation-drip-tray"]')).toBeVisible();
 });
 
 test("lookup surfaces Thetford RV toilet symptom support pages", async ({ page }) => {
@@ -194,16 +201,16 @@ test("lookup surfaces Thetford RV toilet symptom support pages", async ({ page }
 
   await searchbox.fill("aqua magic weak flush no water pedal");
   await expect(
-    lookupResults.locator('a[href="/symptoms/thetford-rv-toilet-no-flush-or-poor-flush-water-supply/"]'),
+    lookupResults.locator('a[href="/guides/thetford-toilets/#guide-thetford-rv-toilet-no-flush-or-poor-flush-water-supply"]'),
   ).toBeVisible();
 
   await searchbox.fill("thetford toilet leak behind base water valve");
   await expect(
-    lookupResults.locator('a[href="/symptoms/thetford-rv-toilet-leak-behind-or-around-base/"]'),
+    lookupResults.locator('a[href="/guides/thetford-toilets/#guide-thetford-rv-toilet-leak-behind-or-around-base"]'),
   ).toBeVisible();
 
   await searchbox.fill("thetford rv toilet winterize freeze damage leak");
-  const winterizing = lookupResults.locator('a[href="/symptoms/thetford-rv-toilet-winterizing-freeze-damage/"]');
+  const winterizing = lookupResults.locator('a[href="/guides/thetford-toilets/#guide-thetford-rv-toilet-winterizing-freeze-damage"]');
   await expect(winterizing).toBeVisible();
 
   await winterizing.click();
@@ -222,18 +229,18 @@ test("lookup surfaces Furrion refrigerator symptom support pages", async ({ page
 
   await searchbox.fill("furrion compressor turns on and off low battery heat");
   await expect(
-    lookupResults.locator('a[href="/symptoms/furrion-12v-refrigerator-compressor-cycling-low-battery-heat/"]'),
+    lookupResults.locator('a[href="/models/furrion-refrigerators/#guide-furrion-12v-refrigerator-compressor-cycling-low-battery-heat"]'),
   ).toBeVisible();
 
   await searchbox.fill("furrion refrigerator door won't close seal");
-  await expect(lookupResults.locator('a[href="/symptoms/furrion-refrigerator-door-seal-not-closing/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/furrion-refrigerators/#guide-furrion-refrigerator-door-seal-not-closing"]')).toBeVisible();
 
   await searchbox.fill("furrion moisture ice inside outside refrigerator");
-  await expect(lookupResults.locator('a[href="/symptoms/furrion-refrigerator-moisture-ice-or-defrost/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/furrion-refrigerators/#guide-furrion-refrigerator-moisture-ice-or-defrost"]')).toBeVisible();
 
   await searchbox.fill("furrion compressor board fan refrigerant service only");
   await expect(
-    lookupResults.locator('a[href="/symptoms/furrion-refrigerator-service-only-compressor-sensor-wiring/"]'),
+    lookupResults.locator('a[href="/models/furrion-refrigerators/#guide-furrion-refrigerator-service-only-compressor-sensor-wiring"]'),
   ).toBeVisible();
 });
 
@@ -245,21 +252,21 @@ test("lookup surfaces Furrion furnace symptom support pages", async ({ page }) =
 
   await searchbox.fill("furrion furnace will not light blower does not turn on low 12v");
   await expect(
-    lookupResults.locator('a[href="/symptoms/furrion-furnace-will-not-light-blower-no-start/"]'),
+    lookupResults.locator('a[href="/guides/furrion-furnaces/#guide-furrion-furnace-will-not-light-blower-no-start"]'),
   ).toBeVisible();
 
   await searchbox.fill("furrion furnace shuts off before desired temperature vents covered");
   await expect(
-    lookupResults.locator('a[href="/symptoms/furrion-furnace-short-cycles-before-set-temperature/"]'),
+    lookupResults.locator('a[href="/guides/furrion-furnaces/#guide-furrion-furnace-short-cycles-before-set-temperature"]'),
   ).toBeVisible();
 
   await searchbox.fill("furrion furnace soot yellow flame exhaust service");
-  const sootService = lookupResults.locator('a[href="/symptoms/furrion-furnace-soot-yellow-flame-exhaust-service/"]');
+  const sootService = lookupResults.locator('a[href="/guides/furrion-furnaces/#guide-furrion-furnace-soot-yellow-flame-exhaust-service"]');
   await expect(sootService).toBeVisible();
   await sootService.click();
 
   await expect(page.getByRole("heading", { name: "Furrion furnace soot, yellow flame, or blocked exhaust" })).toBeVisible();
-  await expect(page.getByText(/shut the furnace down/i)).toBeVisible();
+  await expect(page.getByText(/shut the furnace down/i).first()).toBeVisible();
 });
 
 test("lookup surfaces Furrion fireplace and range support pages", async ({ page }) => {
@@ -276,19 +283,19 @@ test("lookup surfaces Furrion fireplace and range support pages", async ({ page 
   const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
 
   await searchbox.fill("furrion fireplace ee thermostat sensor");
-  await expect(lookupResults.locator('a[href="/codes/furrion-electric-fireplace-ee-thermostat-sensor/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/guides/furrion-electric-fireplaces/#code-ee"]')).toBeVisible();
 
   await searchbox.fill("furrion fireplace 88 overheat protection");
-  await expect(lookupResults.locator('a[href="/codes/furrion-electric-fireplace-88-overheat-protection/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/guides/furrion-electric-fireplaces/#code-88"]')).toBeVisible();
 
   await searchbox.fill("furrion fireplace red led blinking blower motor proximity");
-  await expect(lookupResults.locator('a[href="/symptoms/furrion-electric-fireplace-red-led-proximity-cutoff/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/guides/furrion-electric-fireplaces/#guide-furrion-electric-fireplace-red-led-proximity-cutoff"]')).toBeVisible();
 
   await searchbox.fill("furrion range surface burners do not light ffd hold knob");
-  await expect(lookupResults.locator('a[href="/symptoms/furrion-range-cooktop-burners-do-not-light-ffd/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/guides/furrion-ranges-and-microwaves/#guide-furrion-range-cooktop-burners-do-not-light-ffd"]')).toBeVisible();
 
   await searchbox.fill("furrion range smell gas carbon monoxide space heater");
-  const gasBoundary = lookupResults.locator('a[href="/symptoms/furrion-range-gas-odor-carbon-monoxide-boundary/"]');
+  const gasBoundary = lookupResults.locator('a[href="/guides/furrion-ranges-and-microwaves/#guide-furrion-range-gas-odor-carbon-monoxide-boundary"]');
   await expect(gasBoundary).toBeVisible();
   await gasBoundary.click();
 
@@ -306,19 +313,19 @@ test("lookup surfaces Lippert leveling and slide symptom support pages", async (
 
   await searchbox.fill("lippert ground control low voltage battery under load");
   await expect(
-    lookupResults.locator('a[href="/symptoms/lippert-ground-control-low-voltage-battery-leveling/"]'),
+    lookupResults.locator('a[href="/models/lippert-ground-control-leveling/#guide-lippert-ground-control-low-voltage-battery-leveling"]'),
   ).toBeVisible();
 
   await searchbox.fill("lippert ground control auto level fail out of stroke relocate trailer");
   await expect(
-    lookupResults.locator('a[href="/symptoms/lippert-ground-control-auto-level-excess-angle-out-of-stroke/"]'),
+    lookupResults.locator('a[href="/models/lippert-ground-control-leveling/#guide-lippert-ground-control-auto-level-excess-angle-out-of-stroke"]'),
   ).toBeVisible();
 
   await searchbox.fill("lippert in wall slide obstruction synchronize motors hold switch");
   await expect(lookupResults.locator('a[href="/symptoms/lippert-in-wall-slide-obstruction-or-motor-sync/"]')).toBeVisible();
 
   await searchbox.fill("lippert in wall slide red led green led low battery motor 1");
-  const slideLed = lookupResults.locator('a[href="/symptoms/lippert-in-wall-slide-red-green-led-low-voltage-service/"]');
+  const slideLed = lookupResults.locator('a[href="/models/lippert-in-wall-slide-out/#guide-lippert-in-wall-slide-red-green-led-low-voltage-service"]');
   await expect(slideLed).toBeVisible();
   await slideLed.click();
 
@@ -334,41 +341,41 @@ test("lookup surfaces Suburban furnace and water-heater symptom support pages", 
 
   await searchbox.fill("suburban furnace blowing cold air limit switch");
   await expect(
-    lookupResults.locator('a[href="/symptoms/suburban-furnace-blowing-cold-air-lockout-limit-switch/"]'),
+    lookupResults.locator('a[href="/guides/suburban-furnaces/#guide-suburban-furnace-blowing-cold-air-lockout-limit-switch"]'),
   ).toBeVisible();
 
   await searchbox.fill("suburban furnace close register overheating soot vent");
   await expect(
-    lookupResults.locator('a[href="/symptoms/suburban-furnace-airflow-overheat-soot-register-return-air/"]'),
+    lookupResults.locator('a[href="/guides/suburban-furnaces/#guide-suburban-furnace-airflow-overheat-soot-register-return-air"]'),
   ).toBeVisible();
 
   await searchbox.fill("suburban furnace low gas low voltage service technician");
   await expect(
-    lookupResults.locator('a[href="/symptoms/suburban-furnace-low-voltage-low-gas-service-only/"]'),
+    lookupResults.locator('a[href="/guides/suburban-furnaces/#guide-suburban-furnace-low-voltage-low-gas-service-only"]'),
   ).toBeVisible();
 
   await searchbox.fill("suburban tank water heater reset light lockout");
-  await expect(lookupResults.locator('a[href="/symptoms/suburban-tank-water-heater-reset-light-lockout/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/guides/suburban-water-heaters/#guide-suburban-tank-water-heater-reset-light-lockout"]')).toBeVisible();
 
   await searchbox.fill("suburban water heater pt relief dripping air pocket");
   await expect(
-    lookupResults.locator('a[href="/symptoms/suburban-tank-water-heater-pt-relief-drip-air-pocket/"]'),
+    lookupResults.locator('a[href="/guides/suburban-water-heaters/#guide-suburban-tank-water-heater-pt-relief-drip-air-pocket"]'),
   ).toBeVisible();
 
   await searchbox.fill("suburban water heater rotten egg odor anode");
-  await expect(lookupResults.locator('a[href="/symptoms/suburban-tank-water-heater-odor-anode/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/guides/suburban-water-heaters/#guide-suburban-tank-water-heater-odor-anode"]')).toBeVisible();
 
   await searchbox.fill("suburban tank water heater drain winterize freezing");
   await expect(
-    lookupResults.locator('a[href="/symptoms/suburban-tank-water-heater-winterizing-drain-freeze/"]'),
+    lookupResults.locator('a[href="/guides/suburban-water-heaters/#guide-suburban-tank-water-heater-winterizing-drain-freeze"]'),
   ).toBeVisible();
 
   await searchbox.fill("suburban water heater soot gas smell service");
-  await expect(lookupResults.locator('a[href="/symptoms/suburban-water-heater-soot-gas-smell-service-only/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/guides/suburban-water-heaters/#guide-suburban-water-heater-soot-gas-smell-service-only"]')).toBeVisible();
 
   await searchbox.fill("suburban tankless low voltage freeze protection 10v 17v");
   await expect(
-    lookupResults.locator('a[href="/symptoms/suburban-tankless-freeze-voltage-protection/"]'),
+    lookupResults.locator('a[href="/guides/suburban-water-heaters/#guide-suburban-tankless-freeze-voltage-protection"]'),
   ).toBeVisible();
 });
 
@@ -380,11 +387,11 @@ test("lookup surfaces Suburban model-specific ducting and ST42 cold-inlet suppor
 
   await searchbox.fill("suburban sf-vh duct port 5 limit temperature");
   await expect(
-    lookupResults.locator('a[href="/symptoms/suburban-sf-vh-furnace-duct-port-limit-cycling/"]'),
+    lookupResults.locator('a[href="/guides/suburban-furnaces/#guide-suburban-sf-vh-furnace-duct-port-limit-cycling"]'),
   ).toBeVisible();
 
   await searchbox.fill("suburban sf-vh return air 18 register");
-  await expect(lookupResults.locator('a[href="/symptoms/suburban-sf-vh-return-air-register-layout/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/guides/suburban-furnaces/#guide-suburban-sf-vh-return-air-register-layout"]')).toBeVisible();
 
   await searchbox.fill("suburban thermostat too high satisfied prematurely");
   await expect(
@@ -393,7 +400,7 @@ test("lookup surfaces Suburban model-specific ducting and ST42 cold-inlet suppor
 
   await searchbox.fill("suburban st42 cold inlet below 70 winter not hot enough");
   await expect(
-    lookupResults.locator('a[href="/symptoms/suburban-st42-cold-inlet-winter-underperformance/"]'),
+    lookupResults.locator('a[href="/guides/suburban-water-heaters/#guide-suburban-st42-cold-inlet-winter-underperformance"]'),
   ).toBeVisible();
 });
 
@@ -405,28 +412,28 @@ test("lookup surfaces Coleman-Mach rooftop AC and heat-pump symptom support page
 
   await searchbox.fill("coleman mach ac not cooling 16 22 degree temperature split");
   await expect(
-    lookupResults.locator('a[href="/symptoms/coleman-mach-rooftop-ac-not-cooling-temperature-delta/"]'),
+    lookupResults.locator('a[href="/guides/coleman-mach-rooftop-air-conditioners/#guide-coleman-mach-rooftop-ac-not-cooling-temperature-delta"]'),
   ).toBeVisible();
 
   await searchbox.fill("coleman mach ac freeze up high fan dirty filter");
-  await expect(lookupResults.locator('a[href="/symptoms/coleman-mach-rooftop-ac-freeze-up-low-airflow/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/guides/coleman-mach-rooftop-air-conditioners/#guide-coleman-mach-rooftop-ac-freeze-up-low-airflow"]')).toBeVisible();
 
   await searchbox.fill("coleman mach low voltage extension cord cheater plug");
-  await expect(lookupResults.locator('a[href="/symptoms/coleman-mach-rooftop-ac-low-voltage-extension-cord/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/guides/coleman-mach-rooftop-air-conditioners/#guide-coleman-mach-rooftop-ac-low-voltage-extension-cord"]')).toBeVisible();
 
   await searchbox.fill("coleman mach fan runs no compressor freeze switch");
   await expect(
-    lookupResults.locator('a[href="/symptoms/coleman-mach-rooftop-ac-fan-runs-no-compressor-service/"]'),
+    lookupResults.locator('a[href="/guides/coleman-mach-rooftop-air-conditioners/#guide-coleman-mach-rooftop-ac-fan-runs-no-compressor-service"]'),
   ).toBeVisible();
 
   await searchbox.fill("coleman mach water leak inside condensate drain hose");
-  await expect(lookupResults.locator('a[href="/symptoms/coleman-mach-rooftop-ac-condensate-water-inside/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/guides/coleman-mach-rooftop-air-conditioners/#guide-coleman-mach-rooftop-ac-condensate-water-inside"]')).toBeVisible();
 
   await searchbox.fill("coleman mach thermostat fan only no cooling");
-  await expect(lookupResults.locator('a[href="/symptoms/coleman-mach-thermostat-fan-only-no-cooling/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/coleman-mach-thermostats/#guide-coleman-mach-thermostat-fan-only-no-cooling"]')).toBeVisible();
 
   await searchbox.fill("coleman mach heat pump below 45 blower running");
-  await expect(lookupResults.locator('a[href="/symptoms/coleman-mach-heat-pump-below-45-blower-running/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/guides/coleman-mach-rooftop-air-conditioners/#guide-coleman-mach-heat-pump-below-45-blower-running"]')).toBeVisible();
 });
 
 test("lookup surfaces Coleman-Mach Wi-Fi thermostat and 48000 support pages", async ({ page }) => {
@@ -437,22 +444,22 @@ test("lookup surfaces Coleman-Mach Wi-Fi thermostat and 48000 support pages", as
 
   await searchbox.fill("coleman mach wifi thermostat 2.4ghz smart life tuya app not connecting");
   await expect(
-    lookupResults.locator('a[href="/symptoms/coleman-mach-wifi-thermostat-2-4ghz-app-connection/"]'),
+    lookupResults.locator('a[href="/models/coleman-mach-thermostats/#guide-coleman-mach-wifi-thermostat-2-4ghz-app-connection"]'),
   ).toBeVisible();
 
   await searchbox.fill("coleman mach wifi thermostat compatibility 12vdc analog bluetooth upgrade");
   await expect(
-    lookupResults.locator('a[href="/symptoms/coleman-mach-wifi-thermostat-compatibility-upgrade-check/"]'),
+    lookupResults.locator('a[href="/models/coleman-mach-thermostats/#guide-coleman-mach-wifi-thermostat-compatibility-upgrade-check"]'),
   ).toBeVisible();
 
   await searchbox.fill("coleman mach wifi thermostat eco comfort scheduling modes fan speed");
   await expect(
-    lookupResults.locator('a[href="/symptoms/coleman-mach-wifi-thermostat-eco-comfort-schedule-mode/"]'),
+    lookupResults.locator('a[href="/models/coleman-mach-thermostats/#guide-coleman-mach-wifi-thermostat-eco-comfort-schedule-mode"]'),
   ).toBeVisible();
 
   await searchbox.fill("coleman mach 48000 heat pump high pressure switch lockout dirty filters");
   await expect(
-    lookupResults.locator('a[href="/symptoms/coleman-mach-48000-heat-pump-high-pressure-lockout/"]'),
+    lookupResults.locator('a[href="/models/coleman-mach-thermostats/#guide-coleman-mach-48000-heat-pump-high-pressure-lockout"]'),
   ).toBeVisible();
 });
 
@@ -464,17 +471,17 @@ test("lookup surfaces Coleman-Mach 48000 AC owner-manual and 2025 catalog suppor
 
   await searchbox.fill("coleman mach 48000 ac cool night below 75 evaporator coil iced up high fan");
   await expect(
-    lookupResults.locator('a[href="/symptoms/coleman-mach-48000-ac-cool-night-evaporator-ice-up/"]'),
+    lookupResults.locator('a[href="/guides/coleman-mach-rooftop-air-conditioners/#guide-coleman-mach-48000-ac-cool-night-evaporator-ice-up"]'),
   ).toBeVisible();
 
   await searchbox.fill("coleman mach 48000 air conditioner short cycle breaker trips wait 2 minutes");
   await expect(
-    lookupResults.locator('a[href="/symptoms/coleman-mach-48000-ac-short-cycle-breaker-trip/"]'),
+    lookupResults.locator('a[href="/guides/coleman-mach-rooftop-air-conditioners/#guide-coleman-mach-48000-ac-short-cycle-breaker-trip"]'),
   ).toBeVisible();
 
   await searchbox.fill("coleman mach 48000 elect-a-heat not enough heat chill chaser not furnace");
   await expect(
-    lookupResults.locator('a[href="/symptoms/coleman-mach-48000-elect-a-heat-not-furnace/"]'),
+    lookupResults.locator('a[href="/guides/coleman-mach-rooftop-air-conditioners/#guide-coleman-mach-48000-elect-a-heat-not-furnace"]'),
   ).toBeVisible();
 
   await searchbox.fill("coleman mach 2025 amcat catalog shroud filter soft start part lookup");
@@ -498,12 +505,12 @@ test("lookup surfaces Coleman-Mach 48000 international and 47000 model-family su
 
   await searchbox.fill("coleman mach 47000 ac 115 vac 60 hz 15 to 20 degree filter qualified technician");
   await expect(
-    lookupResults.locator('a[href="/symptoms/coleman-mach-47000-ac-owner-cooling-and-power-check/"]'),
+    lookupResults.locator('a[href="/guides/coleman-mach-rooftop-air-conditioners/#guide-coleman-mach-47000-ac-owner-cooling-and-power-check"]'),
   ).toBeVisible();
 
   await searchbox.fill("coleman mach 47000 heat pump near freezing high fan auxiliary heat not furnace");
   const heatPumpGuide = lookupResults.locator(
-    'a[href="/symptoms/coleman-mach-47000-heat-pump-freezing-aux-heat-limit/"]',
+    'a[href="/guides/coleman-mach-rooftop-air-conditioners/#guide-coleman-mach-47000-heat-pump-freezing-aux-heat-limit"]',
   );
   await expect(heatPumpGuide).toBeVisible();
 
@@ -519,22 +526,22 @@ test("lookup surfaces Coleman-Mach 49000, 9000, and 8000 model-family support pa
 
   await searchbox.fill("coleman mach 49000 ac high pressure switch lockout dirty filters qualified technician");
   await expect(
-    lookupResults.locator('a[href="/symptoms/coleman-mach-49000-ac-high-pressure-lockout/"]'),
+    lookupResults.locator('a[href="/guides/coleman-mach-rooftop-air-conditioners/#guide-coleman-mach-49000-ac-high-pressure-lockout"]'),
   ).toBeVisible();
 
   await searchbox.fill("coleman mach 49000 heat pump freeze switch near freezing 25 to 40 10 to 20");
   await expect(
-    lookupResults.locator('a[href="/symptoms/coleman-mach-49000-heat-pump-freeze-switch-low-heat/"]'),
+    lookupResults.locator('a[href="/guides/coleman-mach-rooftop-air-conditioners/#guide-coleman-mach-49000-heat-pump-freeze-switch-low-heat"]'),
   ).toBeVisible();
 
   await searchbox.fill("coleman mach 9000 240 vac 50 hz 15 to 20 filters accredited service");
   await expect(
-    lookupResults.locator('a[href="/symptoms/coleman-mach-9000-ac-240v-cooling-filter-check/"]'),
+    lookupResults.locator('a[href="/guides/coleman-mach-rooftop-air-conditioners/#guide-coleman-mach-9000-ac-240v-cooling-filter-check"]'),
   ).toBeVisible();
 
   await searchbox.fill("coleman mach 8000 chillgrille directflow louvers washable filter once a month");
   const chillgrilleGuide = lookupResults.locator(
-    'a[href="/symptoms/coleman-mach-8000-chillgrille-airflow-filter-louvers/"]',
+    'a[href="/guides/coleman-mach-rooftop-air-conditioners/#guide-coleman-mach-8000-chillgrille-airflow-filter-louvers"]',
   );
   await expect(chillgrilleGuide).toBeVisible();
 
@@ -550,7 +557,7 @@ test("lookup surfaces Coleman-Mach 47000 remote-controller support page", async 
 
   await searchbox.fill("coleman mach 47000 remote controller follow me f c ceiling led button filter");
   const remoteGuide = lookupResults.locator(
-    'a[href="/symptoms/coleman-mach-47000-remote-controller-mode-led-check/"]',
+    'a[href="/guides/coleman-mach-rooftop-air-conditioners/#guide-coleman-mach-47000-remote-controller-mode-led-check"]',
   );
   await expect(remoteGuide).toBeVisible();
 
@@ -565,19 +572,19 @@ test("lookup surfaces Dometic CCC2 thermostat symptom support pages", async ({ p
   const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
 
   await searchbox.fill("dometic ccc2 fan only no cooling cool mode zone setpoint");
-  await expect(lookupResults.locator('a[href="/symptoms/dometic-ccc2-fan-only-no-cooling-mode-zone/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/dometic-thermostats/#guide-dometic-ccc2-fan-only-no-cooling-mode-zone"]')).toBeVisible();
 
   await searchbox.fill("ccc2 hourglass compressor delay 2 minutes no start");
-  await expect(lookupResults.locator('a[href="/symptoms/dometic-ccc2-hourglass-compressor-delay/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/dometic-thermostats/#guide-dometic-ccc2-hourglass-compressor-delay"]')).toBeVisible();
 
   await searchbox.fill("ccc2 hp defrost auxiliary heat below 30 degrees");
-  await expect(lookupResults.locator('a[href="/symptoms/dometic-ccc2-heat-pump-defrost-auxiliary-heat/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/dometic-thermostats/#guide-dometic-ccc2-heat-pump-defrost-auxiliary-heat"]')).toBeVisible();
 
   await searchbox.fill("ccc2 filter icon inside temp f c reset fan runtime");
-  await expect(lookupResults.locator('a[href="/symptoms/dometic-ccc2-filter-icon-clean-reset/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/dometic-thermostats/#guide-dometic-ccc2-filter-icon-clean-reset"]')).toBeVisible();
 
   await searchbox.fill("dometic ccc2 hot weather high fan cooling shade windows");
-  const hotWeather = lookupResults.locator('a[href="/symptoms/dometic-ccc2-hot-weather-cooling-performance/"]');
+  const hotWeather = lookupResults.locator('a[href="/models/dometic-thermostats/#guide-dometic-ccc2-hot-weather-cooling-performance"]');
   await expect(hotWeather).toBeVisible();
 
   await hotWeather.click();
@@ -592,26 +599,26 @@ test("lookup surfaces Dometic Single Zone LCD thermostat codes and symptom pages
   const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
 
   await searchbox.fill("dometic single zone e1 communication module board");
-  await expect(lookupResults.locator('a[href="/codes/dometic-ccc2-e1/#dometic-single-zone-lcd-e1"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/dometic-thermostats/#code-e1"]').first()).toBeVisible();
 
   await searchbox.fill("dometic 3313193 e5 freeze sensor");
-  await expect(lookupResults.locator('a[href="/codes/dometic-ccc2-e5/#dometic-single-zone-lcd-e5"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/dometic-thermostats/#code-e5"]').first()).toBeVisible();
 
   await searchbox.fill("single zone lcd compressor time delay 2 minutes");
-  await expect(lookupResults.locator('a[href="/symptoms/dometic-single-zone-compressor-time-delay/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/dometic-thermostats/#guide-dometic-single-zone-compressor-time-delay"]')).toBeVisible();
 
   await searchbox.fill("dometic single zone heat pump defrost cold air registers 25 minutes");
-  await expect(lookupResults.locator('a[href="/symptoms/dometic-single-zone-heat-pump-defrost-cold-air/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/dometic-thermostats/#guide-dometic-single-zone-heat-pump-defrost-cold-air"]')).toBeVisible();
 
   await searchbox.fill("dometic single zone filter every 2 weeks hot weather cooling");
   const filterMaintenance = lookupResults.locator(
-    'a[href="/symptoms/dometic-single-zone-hot-weather-filter-maintenance/"]',
+    'a[href="/models/dometic-thermostats/#guide-dometic-single-zone-hot-weather-filter-maintenance"]',
   );
   await expect(filterMaintenance).toBeVisible();
 
   await filterMaintenance.click();
   await expect(page.getByRole("heading", { name: "Dometic Single Zone LCD hot-weather filter maintenance" })).toBeVisible();
-  await expect(page.getByText(/minimum of every 2 weeks/i)).toBeVisible();
+  await expect(page.locator("#guide-dometic-single-zone-hot-weather-filter-maintenance").getByText(/minimum of every 2 weeks/i)).toBeVisible();
 });
 
 test("lookup surfaces Dometic Bluetooth CT thermostat codes and symptom pages", async ({ page }) => {
@@ -621,20 +628,20 @@ test("lookup surfaces Dometic Bluetooth CT thermostat codes and symptom pages", 
   const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
 
   await searchbox.fill("dometic bluetooth ct 3316420 e1 communication");
-  await expect(lookupResults.locator('a[href="/codes/dometic-ccc2-e1/#dometic-bluetooth-ct-e1"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/dometic-thermostats/#code-e1"]').first()).toBeVisible();
 
   await searchbox.fill("dometic bluetooth thermostat e5 freeze sensor");
-  await expect(lookupResults.locator('a[href="/codes/dometic-ccc2-e5/#dometic-bluetooth-ct-e5"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/dometic-thermostats/#code-e5"]').first()).toBeVisible();
 
   await searchbox.fill("dometic bluetooth ct app pairing 2 digit pin off mode");
-  await expect(lookupResults.locator('a[href="/symptoms/dometic-bluetooth-ct-pairing-mobile-device/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/dometic-thermostats/#guide-dometic-bluetooth-ct-pairing-mobile-device"]')).toBeVisible();
 
   await searchbox.fill("bluetooth ct heat pump defrost cold air 25 minutes");
-  await expect(lookupResults.locator('a[href="/symptoms/dometic-bluetooth-ct-heat-pump-defrost-cold-air/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/dometic-thermostats/#guide-dometic-bluetooth-ct-heat-pump-defrost-cold-air"]')).toBeVisible();
 
   await searchbox.fill("bluetooth ct filter every 2 weeks hot weather heat gain");
   const filterMaintenance = lookupResults.locator(
-    'a[href="/symptoms/dometic-bluetooth-ct-hot-weather-filter-maintenance/"]',
+    'a[href="/models/dometic-thermostats/#guide-dometic-bluetooth-ct-hot-weather-filter-maintenance"]',
   );
   await expect(filterMaintenance).toBeVisible();
 
@@ -650,26 +657,26 @@ test("lookup surfaces Dometic FreshJet FJX codes and symptom pages", async ({ pa
   const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
 
   await searchbox.fill("dometic freshjet fjx p1 under voltage campsite");
-  await expect(lookupResults.locator('a[href="/codes/dometic-freshjet-fjx-p1-under-voltage-protection/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/dometic-freshjet-air-conditioners/#code-p1"]')).toBeVisible();
 
   await searchbox.fill("freshjet fjx e9 compressor ipm module");
-  await expect(lookupResults.locator('a[href="/codes/dometic-freshjet-fjx-e9-compressor-drive-ipm-module-fault/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/dometic-freshjet-air-conditioners/#code-e9"]')).toBeVisible();
 
   await searchbox.fill("freshjet low air output leaves ventilation grilles");
-  await expect(lookupResults.locator('a[href="/symptoms/dometic-freshjet-fjx-low-air-output-filter-vents/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/dometic-freshjet-air-conditioners/#guide-dometic-freshjet-fjx-low-air-output-filter-vents"]')).toBeVisible();
 
   await searchbox.fill("freshjet water enters vehicle drainage openings");
-  await expect(lookupResults.locator('a[href="/symptoms/dometic-freshjet-fjx-water-enters-vehicle-drainage/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/dometic-freshjet-air-conditioners/#guide-dometic-freshjet-fjx-water-enters-vehicle-drainage"]')).toBeVisible();
 
   await searchbox.fill("freshjet under voltage campsite management sufficient power");
   const voltageSymptom = lookupResults.locator(
-    'a[href="/symptoms/dometic-freshjet-fjx-voltage-protection-campsite-power/"]',
+    'a[href="/models/dometic-freshjet-air-conditioners/#guide-dometic-freshjet-fjx-voltage-protection-campsite-power"]',
   );
   await expect(voltageSymptom).toBeVisible();
 
   await voltageSymptom.click();
   await expect(page.getByRole("heading", { name: "Dometic FreshJet FJX voltage protection and campsite power" })).toBeVisible();
-  await expect(page.getByRole("listitem").filter({ hasText: /Ask campsite management/i })).toBeVisible();
+  await expect(page.getByRole("listitem").filter({ hasText: /Ask campsite management/i }).first()).toBeVisible();
 });
 
 test("lookup surfaces post-Coleman Dometic and Furrion support pages", async ({ page }) => {
@@ -686,37 +693,37 @@ test("lookup surfaces post-Coleman Dometic and Furrion support pages", async ({ 
   const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
 
   await searchbox.fill("dometic americana refrigerator not cooling temperature test");
-  await expect(lookupResults.locator('a[href="/symptoms/dometic-americana-not-cooling-temperature-test/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/dometic-americana-dm-refrigerators/#guide-dometic-americana-not-cooling-temperature-test"]')).toBeVisible();
 
   await searchbox.fill("dometic americana defrost ice sharp tool");
-  await expect(lookupResults.locator('a[href="/symptoms/dometic-americana-defrost-ice-buildup/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/dometic-americana-dm-refrigerators/#guide-dometic-americana-defrost-ice-buildup"]')).toBeVisible();
 
   await searchbox.fill("brisk ac frost cooling coil filter fan only");
-  await expect(lookupResults.locator('a[href="/symptoms/dometic-brisk-ac-frost-on-cooling-coil/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/guides/dometic-brisk-air-conditioners/#guide-dometic-brisk-ac-frost-on-cooling-coil"]')).toBeVisible();
 
   await searchbox.fill("freshjet not cooling cooling mode");
-  await expect(lookupResults.locator('a[href="/symptoms/dometic-freshjet-ac-not-cooling-mode-selection/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/dometic-freshjet-air-conditioners/#guide-dometic-freshjet-ac-not-cooling-mode-selection"]')).toBeVisible();
 
   await searchbox.fill("furrion chill cube filter led clean reset");
   await expect(
-    lookupResults.locator('a[href="/symptoms/furrion-chill-cube-filter-led-remote-mode-max-cool/"]'),
+    lookupResults.locator('a[href="/models/furrion-air-conditioners-thermostats/#guide-furrion-chill-cube-filter-led-remote-mode-max-cool"]'),
   ).toBeVisible();
 
   await searchbox.fill("furrion chill 2 low profile water enters vehicle drain");
-  await expect(lookupResults.locator('a[href="/symptoms/furrion-chill-2-filter-icing-water-leak/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/furrion-air-conditioners-thermostats/#guide-furrion-chill-2-filter-icing-water-leak"]')).toBeVisible();
 
   await searchbox.fill("furrion enhanced multizone e3 mode function lost app pairing");
   await expect(
-    lookupResults.locator('a[href="/symptoms/furrion-enhanced-multizone-thermostat-e3-mode-loss-app-pairing/"]'),
+    lookupResults.locator('a[href="/models/furrion-air-conditioners-thermostats/#guide-furrion-enhanced-multizone-thermostat-e3-mode-loss-app-pairing"]'),
   ).toBeVisible();
 
   await searchbox.fill("furrion furnace lockout reset blower stops 60 seconds");
   await expect(
-    lookupResults.locator('a[href="/symptoms/furrion-furnace-lockout-reset-after-air-in-propane-line/"]'),
+    lookupResults.locator('a[href="/guides/furrion-furnaces/#guide-furrion-furnace-lockout-reset-after-air-in-propane-line"]'),
   ).toBeVisible();
 
   await searchbox.fill("dometic americana defrost ice sharp tool");
-  const americanaDefrost = lookupResults.locator('a[href="/symptoms/dometic-americana-defrost-ice-buildup/"]');
+  const americanaDefrost = lookupResults.locator('a[href="/models/dometic-americana-dm-refrigerators/#guide-dometic-americana-defrost-ice-buildup"]');
   await expect(americanaDefrost).toBeVisible();
   await americanaDefrost.click();
   await expect(page.getByRole("heading", { name: "Dometic Americana defrost ice buildup" })).toBeVisible();
@@ -724,7 +731,7 @@ test("lookup surfaces post-Coleman Dometic and Furrion support pages", async ({ 
 
   await page.goto("/");
   await searchbox.fill("furrion furnace lockout reset blower stops 60 seconds");
-  const lockoutReset = lookupResults.locator('a[href="/symptoms/furrion-furnace-lockout-reset-after-air-in-propane-line/"]');
+  const lockoutReset = lookupResults.locator('a[href="/guides/furrion-furnaces/#guide-furrion-furnace-lockout-reset-after-air-in-propane-line"]');
   await expect(lockoutReset).toBeVisible();
   await lockoutReset.click();
   await expect(page.getByRole("heading", { name: "Furrion furnace lockout reset after air in propane line" })).toBeVisible();
@@ -752,7 +759,7 @@ test("lookup surfaces post-Coleman Norcold and Furrion service-prep support page
   await expect(dc740).toBeVisible();
 
   await searchbox.fill("norcold nv1090 night mode defrost storage vents");
-  await expect(lookupResults.locator('a[href="/symptoms/norcold-nv1090-cooling-night-mode-defrost-storage/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/guides/norcold-dc-compressor-refrigerators/#guide-norcold-nv1090-cooling-night-mode-defrost-storage"]')).toBeVisible();
 
   await searchbox.fill("thetford t2095 door seal night mode storage defrost");
   await expect(
@@ -811,7 +818,7 @@ test("lookup surfaces Furrion/Lippert service-prep gaps", async ({ page }) => {
 
   await searchbox.fill("furrion convection microwave no heat sparks turntable qualified service");
   const microwaveBoundary = lookupResults.locator(
-    'a[href="/symptoms/furrion-microwave-no-heat-sparks-turntable-service-boundary/"]',
+    'a[href="/guides/furrion-ranges-and-microwaves/#guide-furrion-microwave-no-heat-sparks-turntable-service-boundary"]',
   );
   await expect(microwaveBoundary).toBeVisible();
 
@@ -846,7 +853,7 @@ test("lookup surfaces Furrion/Lippert service-prep gaps", async ({ page }) => {
   await expect(
     page.getByRole("heading", { name: "Furrion microwave no heat, sparks, or turntable service boundary" }),
   ).toBeVisible();
-  await expect(page.getByText(/qualified service|qualified technician/i)).toBeVisible();
+  await expect(page.getByText(/qualified service|qualified technician/i).first()).toBeVisible();
   await expect(page.getByText(/Do not use the microwave if/i)).toBeVisible();
 
   await page.goto("/");
@@ -867,23 +874,23 @@ test("lookup surfaces Dometic DF furnace operating-manual symptom pages", async 
   const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
 
   await searchbox.fill("dometic df furnace blower turns on will not light thermostat heat lp air");
-  await expect(lookupResults.locator('a[href="/symptoms/dometic-df-furnace-blower-runs-will-not-light/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/dometic-df-afm-furnaces/#guide-dometic-df-furnace-blower-runs-will-not-light"]')).toBeVisible();
 
   await searchbox.fill("dometic df furnace shuts off before desired temperature vents blocked");
   await expect(
-    lookupResults.locator('a[href="/symptoms/dometic-df-furnace-shuts-off-before-temperature-vents/"]'),
+    lookupResults.locator('a[href="/models/dometic-df-afm-furnaces/#guide-dometic-df-furnace-shuts-off-before-temperature-vents"]'),
   ).toBeVisible();
 
   await searchbox.fill("dometic df furnace soot exhaust vent carbon monoxide snow obstruction");
   await expect(
-    lookupResults.locator('a[href="/symptoms/dometic-df-furnace-soot-exhaust-vent-carbon-monoxide/"]'),
+    lookupResults.locator('a[href="/models/dometic-df-afm-furnaces/#guide-dometic-df-furnace-soot-exhaust-vent-carbon-monoxide"]'),
   ).toBeVisible();
 
   await searchbox.fill("dometic df furnace initial smoke first firing 5 10 minutes gas odor");
-  await expect(lookupResults.locator('a[href="/symptoms/dometic-df-furnace-initial-smoke-or-gas-odor/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/models/dometic-df-afm-furnaces/#guide-dometic-df-furnace-initial-smoke-or-gas-odor"]')).toBeVisible();
 
   await searchbox.fill("dometic df furnace monthly annual maintenance qualified rv service technician");
-  const maintenance = lookupResults.locator('a[href="/symptoms/dometic-df-furnace-maintenance-service-boundary/"]');
+  const maintenance = lookupResults.locator('a[href="/models/dometic-df-afm-furnaces/#guide-dometic-df-furnace-maintenance-service-boundary"]');
   await expect(maintenance).toBeVisible();
 
   await maintenance.click();
@@ -905,27 +912,27 @@ test("lookup surfaces Suburban cooking and wall-heater symptom pages", async ({ 
   const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
 
   await searchbox.fill("suburban range cooktop gas odor propane bottle");
-  await expect(lookupResults.locator('a[href="/symptoms/suburban-range-cooktop-gas-odor/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/guides/suburban-ranges-and-cooktops/#guide-suburban-range-cooktop-gas-odor"]')).toBeVisible();
 
   await searchbox.fill("suburban cooktop burner extinguishes wait five minutes relight");
-  await expect(lookupResults.locator('a[href="/symptoms/suburban-range-cooktop-burner-lighting-blowout/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/guides/suburban-ranges-and-cooktops/#guide-suburban-range-cooktop-burner-lighting-blowout"]')).toBeVisible();
 
   await searchbox.fill("suburban cooktop yellow flame burners not igniting properly gas valve difficult to turn");
-  await expect(lookupResults.locator('a[href="/symptoms/suburban-range-cooktop-abnormal-flame-service/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/guides/suburban-ranges-and-cooktops/#guide-suburban-range-cooktop-abnormal-flame-service"]')).toBeVisible();
 
   await searchbox.fill("suburban range oven pilot cover oven vent carbon monoxide foil");
   await expect(
-    lookupResults.locator('a[href="/symptoms/suburban-range-oven-pilot-vent-carbon-monoxide/"]'),
+    lookupResults.locator('a[href="/guides/suburban-ranges-and-cooktops/#guide-suburban-range-oven-pilot-vent-carbon-monoxide"]'),
   ).toBeVisible();
 
   await searchbox.fill("suburban griddle ignition 5 seconds wait 5 minutes grease fire storage");
-  await expect(lookupResults.locator('a[href="/symptoms/suburban-griddle-ignition-grease-storage/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/guides/suburban-ranges-and-cooktops/#guide-suburban-griddle-ignition-grease-storage"]')).toBeVisible();
 
   await searchbox.fill("suburban griddle flame check venturi insects valve not smooth rv service");
-  await expect(lookupResults.locator('a[href="/symptoms/suburban-griddle-flame-venturi-service/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/guides/suburban-ranges-and-cooktops/#guide-suburban-griddle-flame-venturi-service"]')).toBeVisible();
 
   await searchbox.fill("suburban electric wall heater thermostat switch light high limit blocked air inlet outlet");
-  const wallHeater = lookupResults.locator('a[href="/symptoms/suburban-electric-wall-heater-thermostat-high-limit-shutdown/"]');
+  const wallHeater = lookupResults.locator('a[href="/guides/suburban-furnaces/#guide-suburban-electric-wall-heater-thermostat-high-limit-shutdown"]');
   await expect(wallHeater).toBeVisible();
 
   await wallHeater.click();
@@ -943,19 +950,19 @@ test("lookup surfaces Cummins Onan generator symptom support pages", async ({ pa
   const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
 
   await searchbox.fill("onan no start wait 2 minutes overcrank");
-  await expect(lookupResults.locator('a[href="/symptoms/onan-generator-no-start-cranking-delay-overcrank/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/guides/onan-generators/#guide-onan-generator-no-start-cranking-delay-overcrank"]')).toBeVisible();
 
   await searchbox.fill("onan no output breaker too many appliances");
-  await expect(lookupResults.locator('a[href="/symptoms/onan-generator-no-output-breaker-load-management/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/guides/onan-generators/#guide-onan-generator-no-output-breaker-load-management"]')).toBeVisible();
 
   await searchbox.fill("onan high altitude 3.5 percent fewer appliances");
-  await expect(lookupResults.locator('a[href="/symptoms/onan-generator-altitude-derating-fewer-appliances/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/guides/onan-generators/#guide-onan-generator-altitude-derating-fewer-appliances"]')).toBeVisible();
 
   await searchbox.fill("onan oil fuel air cleaner dusty 150 hours");
-  await expect(lookupResults.locator('a[href="/symptoms/onan-generator-fuel-oil-maintenance-before-start/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/guides/onan-generators/#guide-onan-generator-fuel-oil-maintenance-before-start"]')).toBeVisible();
 
   await searchbox.fill("onan carbon monoxide exhaust leak co detector");
-  await expect(lookupResults.locator('a[href="/symptoms/onan-generator-exhaust-co-shutdown-service/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/guides/onan-generators/#guide-onan-generator-exhaust-co-shutdown-service"]')).toBeVisible();
 });
 
 test("lookup surfaces Cummins Onan spec-sheet and winterization service-prep pages", async ({ page }) => {
@@ -1254,21 +1261,21 @@ test("lookup surfaces Cummins Energy Command AGS status and app support pages", 
   const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
 
   await searchbox.fill("ec30 safety off and on auto gen disabled after moving rv");
-  await expect(lookupResults.locator('a[href="/symptoms/onan-energy-command-safety-off-on-auto-disabled/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/guides/onan-generators/#guide-onan-energy-command-safety-off-on-auto-disabled"]')).toBeVisible();
 
   await searchbox.fill("energy command auto run low bat auto stop full bat");
-  await expect(lookupResults.locator('a[href="/symptoms/onan-energy-command-auto-run-low-battery/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/guides/onan-generators/#guide-onan-energy-command-auto-run-low-battery"]')).toBeVisible();
 
   await searchbox.fill("ec ags plus generator does not start in auto mode accelerometer fault");
-  await expect(lookupResults.locator('a[href="/symptoms/onan-ec-ags-plus-auto-mode-does-not-start/"]')).toBeVisible();
+  await expect(lookupResults.locator('a[href="/guides/onan-generators/#guide-onan-ec-ags-plus-auto-mode-does-not-start"]')).toBeVisible();
 
   await searchbox.fill("ec-ags+ generator does not run ac temperature sensor bluetooth quiet time");
-  const acGuide = lookupResults.locator('a[href="/symptoms/onan-ec-ags-plus-generator-does-not-run-ac/"]');
+  const acGuide = lookupResults.locator('a[href="/guides/onan-generators/#guide-onan-ec-ags-plus-generator-does-not-run-ac"]');
   await expect(acGuide).toBeVisible();
 
   await acGuide.click();
   await expect(page.getByRole("heading", { name: "Onan EC-AGS+ generator does not run A/C" })).toBeVisible();
-  await expect(page.getByText(/Do not enable AGS indoors or in a confined space/i)).toBeVisible();
+  await expect(page.getByText(/Do not enable AGS indoors or in a confined space/i).first()).toBeVisible();
 
   expect(consoleErrors).toEqual([]);
   expect(pageErrors).toEqual([]);
@@ -1306,7 +1313,7 @@ test("lookup surfaces official owner-safe RM8, FreshJet, warranty, claims, and r
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
   }
 
   async function openGuide(query: string, href: string) {
@@ -1379,7 +1386,7 @@ test("lookup surfaces the official Dometic Coleman Furrion Aqua-Hot Thetford and
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
   }
 
   async function openGuide(query: string, href: string) {
@@ -1436,7 +1443,7 @@ test("lookup surfaces the fresh official gap-scan service-prep pages", async ({ 
     ["furrion washer dryer combo leaking not draining", "/symptoms/furrion-washer-dryer-combo-leak-drain-service-prep/"],
     ["which lippert slide out system in-wall slimrack through frame", "/symptoms/lippert-slideout-system-identification-router/"],
     ["norcold n305 n306 recall warranty service prep", "/symptoms/norcold-n305-n306-recall-service-prep/"],
-    ["which thetford toilet additive blue green aqua rinse grey water", "/symptoms/thetford-toilet-care-additive-selection/"],
+    ["which thetford toilet additive blue green aqua rinse grey water", "/guides/thetford-toilets/#guide-thetford-toilet-care-additive-selection"],
     [
       "thetford cassette toilet c220 c260 c400 model tank capacity",
       "/symptoms/thetford-cassette-toilet-c220-c260-c400-model-prep/",
@@ -1445,7 +1452,7 @@ test("lookup surfaces the fresh official gap-scan service-prep pages", async ({ 
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
   }
 
   await searchbox.fill("maxxair maxxfan deluxe 07000k remote thermostat");
@@ -1527,7 +1534,7 @@ test("lookup surfaces the cross-brand support-depth service-prep pages", async (
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
   }
 
   await searchbox.fill("water heater no hot water");
@@ -1607,7 +1614,7 @@ test("lookup surfaces the manufacturer support-extension service-prep pages", as
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
   }
 
   await searchbox.fill("freshjet not cooling");
@@ -1686,7 +1693,7 @@ test("lookup surfaces support-gap extension pages without generic hijacks", asyn
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
   }
 
   await searchbox.fill("power converter");
@@ -1732,9 +1739,9 @@ test("lookup surfaces N4000 touchscreen codes and next support-router pages", as
   const lookupResults = page.locator('section[aria-label="Lookup results"]');
   const searchbox = page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" });
   const cases = [
-    ["norcold n4104 error code 3 gas", "/codes/norcold-n4000-error-3-gas-source-unavailable/"],
-    ["norcold n4141 error code 10 120v", "/codes/norcold-n3000-error-10-ac-mains-out-of-range/#norcold-n4000-error-10-ac-source-unavailable"],
-    ["norcold n4150 error code 18 all symbols", "/codes/norcold-n4000-error-18-startup-all-symbols-lit/"],
+    ["norcold n4104 error code 3 gas", "/models/norcold-n4000-refrigerators/#code-3"],
+    ["norcold n4141 error code 10 120v", "/models/norcold-n4000-refrigerators/#code-10"],
+    ["norcold n4150 error code 18 all symbols", "/models/norcold-n4000-refrigerators/#code-18"],
     ["coleman airspace heat element 37203 38203", "/symptoms/coleman-airspace-heat-element-service-prep/"],
     ["coleman mach signature series mach 3 mach 8 mach 10 mach 15", "/symptoms/coleman-signature-series-model-family-prep/"],
     ["maxxair products fans covers maxxshades", "/symptoms/maxxair-products-family-routing-prep/"],
@@ -1750,7 +1757,7 @@ test("lookup surfaces N4000 touchscreen codes and next support-router pages", as
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
   }
 
   for (const [query, href] of [
@@ -1765,12 +1772,14 @@ test("lookup surfaces N4000 touchscreen codes and next support-router pages", as
   }
 
   await searchbox.fill("norcold n4141 error code 10 120v");
-  const n4000Code10 = lookupResults.locator('a[href="/codes/norcold-n3000-error-10-ac-mains-out-of-range/#norcold-n4000-error-10-ac-source-unavailable"]');
+  const n4000Code10 = lookupResults.locator('a[href="/models/norcold-n4000-refrigerators/#code-10"]');
   await expect(n4000Code10).toBeVisible();
   await n4000Code10.click();
-  await expect(page.getByRole("heading", { level: 1, name: /Norcold refrigerator code 10/ })).toBeVisible();
-  await expect(page.locator("tr#norcold-n4000-error-10-ac-source-unavailable")).toContainText(/The refrigerator does not work on 120V/i);
-  await expect(page.getByText(/Do not hand-light/i).first()).toBeVisible();
+  await expect(page).toHaveURL(/\/models\/norcold-n4000-refrigerators\/#code-10$/);
+  const code10 = page.locator("section#code-10");
+  await expect(code10.getByRole("heading", { level: 3 })).toContainText("Code 10");
+  await expect(code10).toContainText(/The refrigerator does not work on 120V/i);
+  await expect(page.getByText(/Do not hand-light/i).first()).toBeAttached();
 
   await page.goto("/");
   await page.getByRole("searchbox", { name: "Search by brand, model, code, or symptom" }).fill("aqua magic v hand flush one handle parts");
@@ -1811,7 +1820,7 @@ test("lookup surfaces Dometic warranty, Suburban Advantage, and Norcold support-
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
   }
 
   for (const [query, href] of [
@@ -1888,7 +1897,7 @@ test("lookup surfaces Coleman, MaxxAir, Dometic Ibis, and current warranty state
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
   }
 
   for (const [query, href] of [
@@ -1957,7 +1966,7 @@ test("lookup surfaces Harrier, toilet, MaxxAir, Furrion/Girard, Suburban, and On
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
   }
 
   for (const [query, href] of [
@@ -2049,7 +2058,7 @@ test("lookup surfaces the next official support-router batch without generic hij
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
   }
 
   for (const [query, href] of [
@@ -2162,8 +2171,8 @@ test("lookup surfaces ACC3100 and brand-router prep batch without generic hijack
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
-    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
+    await expect(lookupResults.locator('a.symptom-result-card').first(), query).toHaveAttribute("href", href);
   }
 
   for (const [query, href] of [
@@ -2280,8 +2289,8 @@ test("lookup surfaces control, model-label, storage, warranty, and parts-prep ba
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
-    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
+    await expect(lookupResults.locator('a.symptom-result-card').first(), query).toHaveAttribute("href", href);
   }
 
   for (const [query, href] of [
@@ -2407,8 +2416,8 @@ test("lookup surfaces display, model, vent, thermostat, and hydronic prep batch 
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
-    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
+    await expect(lookupResults.locator('a.symptom-result-card').first(), query).toHaveAttribute("href", href);
   }
 
   for (const [query, href] of [
@@ -2534,8 +2543,8 @@ test("lookup surfaces toilet, control, locator, warranty, and service prep batch
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
-    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
+    await expect(lookupResults.locator('a.symptom-result-card').first(), query).toHaveAttribute("href", href);
   }
 
   for (const [query, href] of [
@@ -2630,8 +2639,8 @@ test("lookup surfaces the next model, control, warranty, and service-prep batch"
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
-    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
+    await expect(lookupResults.locator('a.symptom-result-card').first(), query).toHaveAttribute("href", href);
   }
 
   await searchbox.fill("dometic ccc2 auto change over mode thermostat heat cool");
@@ -2697,8 +2706,8 @@ test("lookup surfaces the CFX Porta Potti Greystone Furrion microwave and hydron
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
-    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
+    await expect(lookupResults.locator('a.symptom-result-card').first(), query).toHaveAttribute("href", href);
   }
 
   await searchbox.fill("dometic cfx3 35 9600024617 app prep");
@@ -2756,8 +2765,8 @@ test("lookup surfaces the Thetford MaxxAir Suburban Aqua-Hot Furrion Onan gap-sc
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
-    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
+    await expect(lookupResults.locator('a.symptom-result-card').first(), query).toHaveAttribute("href", href);
   }
 
   for (const query of [
@@ -2839,8 +2848,8 @@ test("lookup surfaces Dometic Norcold Thetford Coleman Lippert Furrion Suburban 
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
-    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
+    await expect(lookupResults.locator('a.symptom-result-card').first(), query).toHaveAttribute("href", href);
   }
 
   for (const query of [
@@ -2937,8 +2946,8 @@ test("lookup surfaces Dometic Thetford Coleman MaxxAir Suburban Aqua-Hot Furrion
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
-    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
+    await expect(lookupResults.locator('a.symptom-result-card').first(), query).toHaveAttribute("href", href);
   }
 
   for (const query of [
@@ -3027,8 +3036,8 @@ test("lookup surfaces CFX5 Thetford Norcold Coleman Suburban Aqua-Hot Furrion Gr
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
-    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
+    await expect(lookupResults.locator('a.symptom-result-card').first(), query).toHaveAttribute("href", href);
   }
 
   for (const query of [
@@ -3132,8 +3141,8 @@ test("lookup surfaces the next CFX5 Thetford Norcold MaxxAir Coleman Suburban Aq
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
-    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
+    await expect(lookupResults.locator('a.symptom-result-card').first(), query).toHaveAttribute("href", href);
   }
 
   for (const query of [
@@ -3256,8 +3265,8 @@ test("lookup surfaces the next official Dometic cooler HVAC Thetford Norcold Col
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
-    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
+    await expect(lookupResults.locator('a.symptom-result-card').first(), query).toHaveAttribute("href", href);
   }
 
   for (const query of [
@@ -3347,8 +3356,8 @@ test("lookup surfaces the next official source gap batch without generic hijacks
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
-    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
+    await expect(lookupResults.locator('a.symptom-result-card').first(), query).toHaveAttribute("href", href);
   }
 
   for (const query of [
@@ -3421,8 +3430,8 @@ test("lookup surfaces the official source continuation batch without generic hij
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
-    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
+    await expect(lookupResults.locator('a.symptom-result-card').first(), query).toHaveAttribute("href", href);
   }
 
   for (const query of [
@@ -3485,8 +3494,8 @@ test("lookup surfaces the official source control-router batch without generic h
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
-    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
+    await expect(lookupResults.locator('a.symptom-result-card').first(), query).toHaveAttribute("href", href);
   }
 
   for (const query of [
@@ -3588,8 +3597,8 @@ test("lookup surfaces the official source scout batch without generic hijacks", 
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
-    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
+    await expect(lookupResults.locator('a.symptom-result-card').first(), query).toHaveAttribute("href", href);
   }
 
   for (const query of [
@@ -3737,8 +3746,8 @@ test("lookup surfaces the Dometic app and HVAC support batch without generic hij
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
-    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
+    await expect(lookupResults.locator('a.symptom-result-card').first(), query).toHaveAttribute("href", href);
   }
 
   for (const query of [
@@ -3833,8 +3842,8 @@ test("lookup surfaces the official Thetford care and scout follow-up batch witho
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
-    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
+    await expect(lookupResults.locator('a.symptom-result-card').first(), query).toHaveAttribute("href", href);
   }
 
   for (const query of [
@@ -3937,8 +3946,8 @@ test("lookup surfaces the official remaining scout batch without generic hijacks
 
   for (const [query, href] of cases) {
     await searchbox.fill(query);
-    await expect(lookupResults.locator(`a[href="${href}"]`), query).toBeVisible();
-    await expect(lookupResults.locator('a[href^="/symptoms/"]').first(), query).toHaveAttribute("href", href);
+    await expect(lookupResults.locator(`a[href="${href}"]`).first(), query).toBeVisible();
+    await expect(lookupResults.locator('a.symptom-result-card').first(), query).toHaveAttribute("href", href);
   }
 
   for (const query of [

@@ -1,0 +1,229 @@
+{
+ "topic": "dometic-rua-refrigerators",
+ "researchedAt": "2026-11-07",
+ "summary": {
+  "text": "Dometic RUA5208X, RUA6408X and RUA8408X are absorption refrigerators that run on AC, 12 V DC or universal LPG, operated with a control knob and display. Faults appear on an error screen where the middle section turns red and shows a numbered code, with a beep for faults that stop cooling.",
+  "source": "dometic-rua-refrigerators-operating-manual",
+  "locator": "pp. 1, 8, 14, 43"
+ },
+ "sections": {
+  "models": [
+   {
+    "text": "The operating manual covers the RUA5208X, RUA6408X and RUA8408X absorption refrigerators.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 1"
+   },
+   {
+    "text": "Total capacity: RUA5208X 146 l (13 l frozen), RUA6408X 180 l (46 l frozen), RUA8408X 216 l (46 l frozen); connection 230 to 240 V AC 50/60 Hz and 12 V DC; refrigerant R717.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 46"
+   },
+   {
+    "text": "RUA6408X and RUA8408X have a separate freezer compartment door, which the RUA5208X component list lacks, and only they show a freezer frame-heater symbol on the display.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "pp. 9-10, 12"
+   },
+   {
+    "text": "Operate only at the gas pressure shown on the data plate, and use universal LPG only, not natural gas (see data plate).",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "pp. 6-7"
+   }
+  ],
+  "display": [
+   {
+    "text": "A fault switches the display to the error screen: the middle section is highlighted in red and shows the error code, and the display does not go to standby.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "pp. 14, 43"
+   },
+   {
+    "text": "Faults that stop the entire cooling function also beep; the beep lasts 2 minutes and repeats every 30 minutes until the fault is cleared.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 43"
+   },
+   {
+    "text": "If several faults occur, the display shows the last fault; after it has been cleared, the subsequent faults are displayed.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 43"
+   },
+   {
+    "text": "Codes 05, 06, 10 and 50-53 come with a flashing icon; 10 and 07-09 also beep.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "pp. 43-44"
+   },
+   {
+    "text": "On gas the refrigerator makes 3 ignition attempts 2 minutes apart, each stopped after 30 seconds without flame; if all 3 fail, an error code is displayed.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 18"
+   },
+   {
+    "text": "A tank stop symbol shows when the vehicle ignition is switched off; gas operation is disabled for 15 minutes.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 13"
+   },
+   {
+    "text": "The D+ symbol means the switching signal D+ is detected; automatic operation mode is only available when D+ is detected.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "pp. 13, 18"
+   },
+   {
+    "text": "Battery save mode switches off outer fans, front frame heater and defrost, runs on gas only, and deactivates power-source selection.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 13"
+   },
+   {
+    "text": "After 3 minutes without use the display goes to standby; a snowflake in the upper left corner shows the refrigerator is still on.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 14"
+   }
+  ],
+  "reset": [
+   {
+    "text": "WARNING type faults (01, 05, 06, 10, 11, 14, 15, 17, 22, 24 and tank stop) reset automatically once the fault has been rectified.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 43"
+   },
+   {
+    "text": "ERROR type faults (03, 07-09, 12, 13, 16, 18, 50-53) must be reset manually: press and hold the control knob between 2 and 4 seconds.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "pp. 11, 44"
+   },
+   {
+    "text": "Dometic support: press the encoder button for 3 seconds until you hear a beep; holding it too long turns the refrigerator off without resetting the error.",
+    "source": "dometic-rua-display-fault-01-support",
+    "locator": "support page 'Display shows fault: 01'"
+   },
+   {
+    "text": "For 15 and 17 (low current at the frame or defrost heater), switch the refrigerator off and on again.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 43"
+   },
+   {
+    "text": "Tank stop mode: wait 15 minutes or switch to another type of supply.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 43"
+   }
+  ],
+  "checks": [
+   {
+    "text": "Park the vehicle level, especially when starting up and filling the refrigerator before setting off.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 14"
+   },
+   {
+    "text": "AC operation not working: replace a defective fuse in the AC power supply and connect the vehicle to AC power.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 41"
+   },
+   {
+    "text": "DC operation not working: replace the vehicle fuse in the DC socket (see vehicle manual), charge the vehicle battery, and switch on the ignition.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 41"
+   },
+   {
+    "text": "Gas operation not working: replace an empty gas cylinder, open the gas valve, and for air in the supply line switch the refrigerator off and on, several times if necessary.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 41"
+   },
+   {
+    "text": "Running on gas in automatic mode while on AC means the voltage is too low; it changes back to AC automatically when the voltage is sufficient.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 41"
+   },
+   {
+    "text": "Not cooling enough: check the ventilation grille, door closing and seals; defrost an iced evaporator; set a higher cooling capacity; remove food overload; check again after 4-5 hours.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 42"
+   },
+   {
+    "text": "Code 22 (DC below 10 V) switches to gas automatically: charge the vehicle battery. Code 24: ensure sufficient grounding of the display element.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 43"
+   },
+   {
+    "text": "Select DC only with the engine running and supplying sufficient voltage or with a battery monitor, and only after the set cooling temperature has been reached.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "pp. 5, 19"
+   },
+   {
+    "text": "At altitudes above 1000 m, ignition problems may occur; switch to a different energy source.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 7"
+   },
+   {
+    "text": "Keep the exterior ventilation grilles and the refrigerator roof vent free of dust and dirt, and check and clean the condensate drain regularly.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 38"
+   }
+  ],
+  "parts": [
+   {
+    "text": "The fault table names the thermostat sensor, internal fan, frame heater, defrost heater, display-element grounding, power module, dynamic valve signal, gas valve and ignition electrode.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "pp. 43-44"
+   },
+   {
+    "text": "Fallback modes: with a thermostat sensor error (01) cooling cycles 45 minutes on and 15 off; with a defective internal fan (14) it uses a fixed setting, cut-in +1 °C, cut-out -13 °C.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 43"
+   },
+   {
+    "text": "AC heating element, DC heating element and the fuse in the DC cable: if defective, contact an authorized service agent.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 41"
+   },
+   {
+    "text": "An automatic safety device cuts off the gas supply to the burner about 30 seconds after the flame goes out.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 18"
+   },
+   {
+    "text": "The refrigerator compartment has a cyclic defrost system; long use in high humidity or high ambient temperature can still frost the evaporator fins and require manual defrosting.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 40"
+   },
+   {
+    "text": "Inspect the gas burner periodically so contamination or vermin do not impede burner performance.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 38"
+   }
+  ],
+  "callTech": [
+   {
+    "text": "Gas odor: close the gas supply tap and cylinder valve, open all windows and leave, operate no electrical switch, extinguish open flames, and have the gas system checked by a specialist.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 7"
+   },
+   {
+    "text": "Contact an authorized service agent for codes 01, 03 and 14, and whenever 07-09, 12, 13, 15-18, 24 or 51-53 occur again after a reset.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "pp. 43-44"
+   },
+   {
+    "text": "Work on gas and electrical installations may only be performed by qualified technicians; disconnect AC and DC power and turn off the gas before servicing.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 40"
+   },
+   {
+    "text": "Have the gas system and connected flues inspected regularly by a qualified specialist, and keep a record of any maintenance performed.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 40"
+   },
+   {
+    "text": "Never open or damage the refrigerant circuit.",
+    "source": "dometic-rua-refrigerators-operating-manual",
+    "locator": "p. 5"
+   }
+  ]
+ },
+ "extraSources": [
+  {
+   "id": "dometic-rua-refrigerators-operating-manual",
+   "brand": "Dometic",
+   "title": "Dometic RUA5208X, RUA6408X, RUA8408X Absorption Refrigerator Operating Manual (EN)",
+   "url": "https://media.dometic.com/externalassets/rua8408x_9600003697_111452.pdf",
+   "type": "manufacturer-manual",
+   "official": true
+  }
+ ],
+ "unreachable": []
+}

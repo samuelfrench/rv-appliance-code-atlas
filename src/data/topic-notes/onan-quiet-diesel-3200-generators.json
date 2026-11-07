@@ -1,0 +1,201 @@
+{
+  "topic": "onan-quiet-diesel-3200-generators",
+  "researchedAt": "2026-11-07",
+  "summary": {
+    "text": "The Onan Quiet Diesel 3200 (HDZAA) is a 3200 W single-cylinder, air-cooled diesel set with an integrated AC output inverter. It starts only from a remote operator panel whose screen shows status, battery voltage, hours run and text warning and shutdown messages.",
+    "source": "onan-qd-3200-0983-0103",
+    "locator": "pp. 2-2, 2-3, 2-5, 5-1 (PDF pp. 14, 15, 17, 33)"
+  },
+  "sections": {
+    "models": [
+      {
+        "text": "Operator Manual 0983-0103 (Issue 15, 12-2018) covers the HDZAA generator set, Spec A through E.",
+        "source": "onan-qd-3200-0983-0103",
+        "locator": "cover (PDF p. 1)"
+      },
+      {
+        "text": "Operator Manual A066T111 (Issue 1, 3-2021) covers the HDZAA generator set, Spec F.",
+        "source": "onan-qd-3200-a066t111",
+        "locator": "cover (PDF p. 1)"
+      },
+      {
+        "text": "Have the model and serial numbers from the generator set nameplate ready when contacting Cummins. The last character of the model number is the specification letter, which is important for getting the right parts.",
+        "source": "onan-qd-3200-0983-0103",
+        "locator": "p. 1-1 'Nameplate' (PDF p. 9)"
+      },
+      {
+        "text": "Spec A-E: permanent magnet generator at 3600 RPM, 120 V, 60 Hz, 26.7 amps; 347 cc single-cylinder direct-injection air-cooled diesel; oil capacity 1.16 quarts (1.1 liter).",
+        "source": "onan-qd-3200-0983-0103",
+        "locator": "p. 5-1 'Specifications' (PDF p. 33)"
+      },
+      {
+        "text": "Spec F: permanent magnet generator at 3100 RPM, 120 V, 60 Hz, 26.7 amps; same 347 cc single-cylinder engine; oil capacity 1.2 quart (1.1 liter). B20 and higher biodiesel blends are not suitable.",
+        "source": "onan-qd-3200-a066t111",
+        "locator": "pp. 2-1 and 5-1 (PDF pp. 9, 31)"
+      }
+    ],
+    "display": [
+      {
+        "text": "The operator panel has Display ON / Gen OFF and START buttons, a display screen and a Low Oil light. Display ON wakes the set and starts the fuel pump, which primes five minutes if the set does not start.",
+        "source": "onan-qd-3200-0983-0103",
+        "locator": "p. 2-3 'Remote Operator Panel' (PDF p. 15)"
+      },
+      {
+        "text": "The Low Oil indicator light means engine oil pressure is low or oil temperature is too high; the generator shuts down if this light turns on.",
+        "source": "onan-qd-3200-0983-0103",
+        "locator": "p. 2-3 'Remote Operator Panel' (PDF p. 15)"
+      },
+      {
+        "text": "Messages are grouped as status, maintenance, warning and fault messages. Warning and fault messages, once cleared, cannot be retrieved, so note the message before clearing it.",
+        "source": "onan-qd-3200-0983-0103",
+        "locator": "p. 4-1 'Status Messages' (PDF p. 29)"
+      },
+      {
+        "text": "The set makes up to three start attempts, cranking 5 seconds each and pausing 2 seconds before the next crank; GEN WAIT appears during the rest periods and GEN ON once it starts.",
+        "source": "onan-qd-3200-0983-0103",
+        "locator": "pp. 2-4 and 4-2 (PDF pp. 16, 30)"
+      },
+      {
+        "text": "Spec F service screens: press Gen OFF, hold START and Display ON until RV QD 3200 shows, press START 3 times, then start the set; START steps through battery voltage, AC voltage, hours, software version, load amps and kW.",
+        "source": "onan-qd-3200-a066t111",
+        "locator": "p. 4-6 'Service Screens' (PDF p. 30)"
+      }
+    ],
+    "reset": [
+      {
+        "text": "To clear faults, turn the display off and on.",
+        "source": "onan-qd-3200-0983-0103",
+        "locator": "p. 4-1 'Status Messages' (PDF p. 29)"
+      },
+      {
+        "text": "If the generator set does not start after three attempts, press the GEN OFF button to reset the control, then see Troubleshooting if it still does not start.",
+        "source": "onan-qd-3200-0983-0103",
+        "locator": "p. 2-4 'Starting' step 3 (PDF p. 16)"
+      },
+      {
+        "text": "OIL CHANGE/CHECK OIL LEVEL clears only while the set is running: hold the START button until the message clears, otherwise it reappears after 1 hour.",
+        "source": "onan-qd-3200-0983-0103",
+        "locator": "p. 4-1 'Maintenance Messages' (PDF p. 29)"
+      },
+      {
+        "text": "SHORT CIRCUIT: disconnect all appliances, press STOP to stop the engine, restart the generator set, then reconnect appliances one by one to find the shorted one and have it repaired or replaced.",
+        "source": "onan-qd-3200-0983-0103",
+        "locator": "p. 4-1 'Warning Messages' (PDF p. 29)"
+      },
+      {
+        "text": "The generator set has no power output circuit breaker. If an RV distribution-panel breaker trips, turn off as many loads as possible, push the breaker OFF then ON, and reconnect appliances one by one.",
+        "source": "onan-qd-3200-0983-0103",
+        "locator": "p. 2-6 'Resetting Circuit Breakers' (PDF p. 18)"
+      }
+    ],
+    "checks": [
+      {
+        "text": "Before each start: confirm CO detectors work, check for fuel, oil and exhaust leaks, make sure curbs or sloping ground are not blocking the air inlet or outlet, and turn off air conditioners and large appliances.",
+        "source": "onan-qd-3200-0983-0103",
+        "locator": "p. 2-4 'Pre-Start Checks' (PDF p. 16)"
+      },
+      {
+        "text": "If GEN START shows but the engine does not crank, check the stop switch inside the generator set and push it on. It must stay in its '1' position; it is not a start switch.",
+        "source": "onan-qd-3200-0983-0103",
+        "locator": "pp. 2-2 and 4-1 (PDF pp. 14, 29)"
+      },
+      {
+        "text": "If the set ran out of fuel, press Display ON, wait for GEN OFF, and wait at least one minute before pressing START so the fuel pump can prime.",
+        "source": "onan-qd-3200-0983-0103",
+        "locator": "p. 2-4 'Starting' (PDF p. 16)"
+      },
+      {
+        "text": "Engine cranks but does not start, in order: clear Gen Wait by cycling the panel off and on, check fuel level, put the stop switch in '1', and replace fuel not of the specified grade for the temperature.",
+        "source": "onan-qd-3200-0983-0103",
+        "locator": "p. 4-2 'Engine Cranks But Does Not Start' (PDF p. 30)"
+      },
+      {
+        "text": "LOW BATTERY means battery voltage is below 9 VDC: check battery connections and recharge or replace the battery. The generator set does not recharge its own battery.",
+        "source": "onan-qd-3200-0983-0103",
+        "locator": "pp. 3-2 and 4-1 (PDF pp. 22, 29)"
+      },
+      {
+        "text": "OIL TEMP-PRESS: check the oil level and refill as necessary; for high oil temperature also check the air intake for clogging or blockage. Check oil on level ground with the set shut down, between the MIN/MAX marks.",
+        "source": "onan-qd-3200-0983-0103",
+        "locator": "pp. 3-3 and 4-1 (PDF pp. 23, 29)"
+      },
+      {
+        "text": "Spec F OVER TEMPERATURE (inverter over 70 C): reduce loads and verify the inverter heat sink is clean with no air flow restriction or hot air recirculation.",
+        "source": "onan-qd-3200-a066t111",
+        "locator": "p. 4-3 'Over Temperature (Inverter)' (PDF p. 27)"
+      },
+      {
+        "text": "OVERLOAD: measure current draw; if greater than 32 amps (Spec A-E), reduce appliances, wait a few minutes for the set to cool, press STOP and restart.",
+        "source": "onan-qd-3200-0983-0103",
+        "locator": "p. 4-2 'Overload' (PDF p. 30)"
+      },
+      {
+        "text": "The Spec F manual gives the OVERLOAD current-draw limit as 26.7 amps before reducing appliances, letting the set cool and restarting.",
+        "source": "onan-qd-3200-a066t111",
+        "locator": "p. 4-3 'Overload' (PDF p. 27)"
+      },
+      {
+        "text": "Maximum power: 3200 W at or below 500 ft, 2980 W at 2500 ft, 2640 W at 5500 ft, then minus 112 W per 1000 ft. Large motors and A/C starting can cause an overload below rating.",
+        "source": "onan-qd-3200-0983-0103",
+        "locator": "p. 2-5 'Loading the Generator Set' (PDF p. 17)"
+      }
+    ],
+    "parts": [
+      {
+        "text": "The oil pressure and oil temperature switches are wired in parallel and drive OIL TEMP-PRESS. Spec F lists the pressure switch closing at 2.5-3.6 psi and the temperature switch closing at 135 C (275 F).",
+        "source": "onan-qd-3200-a066t111",
+        "locator": "pp. 4-1 and 4-2 (PDF pp. 25, 26)"
+      },
+      {
+        "text": "The inverter inside the set talks to the vehicle operator panel, powered by PMA auxiliary windings AC3 and AC4. Cummins cautions that the stator check must precede any inverter replacement or the inverter is damaged.",
+        "source": "onan-qd-3200-0983-0103",
+        "locator": "pp. 4-1 and 4-2 'Generator Alert' (PDF pp. 29, 30)"
+      },
+      {
+        "text": "Owners do general inspection, oil, battery, air filter, fuel filter and oil strainer maintenance; valve lash adjustment and fuel injector pressure checks must be done by authorized Cummins service representatives.",
+        "source": "onan-qd-3200-0983-0103",
+        "locator": "p. 3-1 Table 3-1 (PDF p. 21)"
+      }
+    ],
+    "callTech": [
+      {
+        "text": "LOW ENGINE POWER (engine speed below 2300 rpm), GENERATOR ALERT and a dead operator panel: the manual's repair step is to contact an authorized Cummins dealer.",
+        "source": "onan-qd-3200-0983-0103",
+        "locator": "pp. 4-1 and 4-2 (PDF pp. 29, 30)"
+      },
+      {
+        "text": "ENGINE WON'T STOP: turn the engine stop lever clockwise to shut off fuel to the engine, then contact an authorized Cummins dealer.",
+        "source": "onan-qd-3200-0983-0103",
+        "locator": "p. 4-3 'Engine Won't Stop' (PDF p. 31)"
+      },
+      {
+        "text": "If a vehicle circuit breaker trips again right away, either the electrical distribution system has a short or the breaker is faulty; call a qualified electrician.",
+        "source": "onan-qd-3200-0983-0103",
+        "locator": "p. 2-6 'Resetting Circuit Breakers' (PDF p. 18)"
+      },
+      {
+        "text": "Dizziness, headache, nausea, weakness or vomiting can mean CO poisoning: get into fresh air immediately, seek medical attention if symptoms persist, and do not run the set until it is inspected and repaired.",
+        "source": "onan-qd-3200-0983-0103",
+        "locator": "p. 2-4 (PDF p. 16)"
+      },
+      {
+        "text": "If there is a fuel, oil or exhaust leak, stop the generator set immediately and have it repaired. Do not operate it if exhaust gases could enter or be drawn into the vehicle.",
+        "source": "onan-qd-3200-0983-0103",
+        "locator": "pp. 2-4 and 3-2 (PDF pp. 16, 22)"
+      },
+      {
+        "text": "Turn off automatic generator start (AGS) during maintenance or service, storage, while awaiting service, or when parked in a garage or confined area; unexpected starting can cause CO, shock and moving-parts injuries.",
+        "source": "onan-qd-3200-0983-0103",
+        "locator": "p. iii 'Safety Precautions' (PDF p. 5)"
+      }
+    ]
+  },
+  "extraSources": [],
+  "unreachable": [
+    {
+      "source": "onan-rv-manual-index",
+      "url": "https://www.cummins.com/en-na/generators/rv-generators/rv-generator-manuals",
+      "error": "HTTP 403 (Cloudflare challenge page)"
+    }
+  ]
+}

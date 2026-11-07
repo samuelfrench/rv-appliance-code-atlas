@@ -1,0 +1,175 @@
+{
+  "topic": "furrion-air-conditioners-thermostats",
+  "researchedAt": "2026-11-07",
+  "summary": {
+    "text": "Furrion Chill rooftop air conditioners (Lippert) run on 115 V, 60 Hz and are controlled by a Furrion wall thermostat such as the Single Zone Premium FACW12PA-BL. The thermostat LCD shows the room temperature or, when the system detects a fault, an error code (E1-E5 or lo) and the system shuts down.",
+    "source": "furrion-rooftop-ac",
+    "locator": "PDF pp. 19, 23, 26, 34"
+  },
+  "sections": {
+    "models": [
+      {
+        "text": "Chill rooftop manual CCD-0005592 covers FACR13SA, FACR14SA and FACR15SA (-PS or -BL), ADBs FACT12LA and FACT12SA, and wall thermostats FACW12SA-BL, FACW12PA-BL and FACW12ZA-BL sold separately.",
+        "source": "furrion-rooftop-ac",
+        "locator": "PDF pp. 1-2"
+      },
+      {
+        "text": "Chill Cube Ducted Variable Speed models: FACR15HEDA, FACR18VSDA, FACR18HEDA and FACR15VSDA (-PS white or -BL black hood), with ADB FACT18VSDA-PS or FACT18VSDA2-PS; R32 refrigerant.",
+        "source": "furrion-chill-cube-ducted-ac-user-manual",
+        "locator": "pp. 1, 22"
+      },
+      {
+        "text": "Chill 2/8K/Low Profile with electronic control: FACR13HESA2, FACR15HESA2, FACR08HESA2, FACR13LPSA2, FACR15LPSA2; ADB FACT12CA2-PS; single-zone control box FACC10ESSA2-BL; R32.",
+        "source": "furrion-chill-2-low-profile-electronic-control-manual",
+        "locator": "PDF pp. 1, 14"
+      },
+      {
+        "text": "Heat Pump Single Zone Wall Thermostat FACW12ESPA-BL (Lippert PN 2023136653) operates a heat-pump rooftop unit and must be connected with control box FACC12ESPA-BL.",
+        "source": "furrion-thermostat",
+        "locator": "pp. 1-2"
+      },
+      {
+        "text": "Chill Cube (Ducted) Single Zone Wall Thermostat FACW13VSDSA-BL (Lippert PN 2024031600) is compatible with FACC13VSD.",
+        "source": "furrion-chill-cube-thermostat",
+        "locator": "p. 1"
+      }
+    ],
+    "display": [
+      {
+        "text": "FACW12PA-BL LCD shows the operation mode, fan speed, and the room temperature or an error code in the same position.",
+        "source": "furrion-rooftop-ac",
+        "locator": "PDF pp. 26-27"
+      },
+      {
+        "text": "FACW12ESPA-BL heat mode shows F (furnace, if available) or HP (heat pump); F may not appear without a gas furnace, and both cannot run at the same time.",
+        "source": "furrion-thermostat",
+        "locator": "p. 2"
+      },
+      {
+        "text": "FACW13VSDSA-BL: heat sources enabled by the rear DIP switches appear as F (gas furnace), P (heat pump) or S (heat strip); only one heating device runs at a time.",
+        "source": "furrion-chill-cube-thermostat",
+        "locator": "p. 13"
+      },
+      {
+        "text": "Chill Cube unit panel has GEAR, mode, fan speed, sleep and filter indicator LEDs; the filter LED lights after 250 hours of operation.",
+        "source": "furrion-chill-cube-ducted-ac-user-manual",
+        "locator": "p. 15"
+      },
+      {
+        "text": "Chill Cube in Load Shed mode: the compressor is on standby and the ADB display flashes LS momentarily and on any input.",
+        "source": "furrion-chill-cube-ducted-ac-user-manual",
+        "locator": "p. 19"
+      }
+    ],
+    "reset": [
+      {
+        "text": "FACW12PA-BL: press and hold the power button 3 seconds to turn the thermostat on or off.",
+        "source": "furrion-rooftop-ac",
+        "locator": "PDF p. 30"
+      },
+      {
+        "text": "After a power interruption, the system restarts automatically with the last status and set-points once power is restored.",
+        "source": "furrion-rooftop-ac",
+        "locator": "PDF p. 34 'Power Interruption'"
+      },
+      {
+        "text": "Enhanced multi-zone thermostat E3: the system shuts down and needs a main power reset; after cycling power, press the power button and reselect the mode.",
+        "source": "furrion-enhanced-multizone-thermostat-e3-qr187",
+        "locator": "p. 1"
+      },
+      {
+        "text": "Chill Cube filter LED: turn the unit off, clean and reinstall the filter, then press and hold SLEEP for 2 seconds to turn the LED off.",
+        "source": "furrion-chill-cube-ducted-ac-user-manual",
+        "locator": "p. 18"
+      }
+    ],
+    "checks": [
+      {
+        "text": "Unit does not switch on: check that supply voltage is connected, then check the power-supply fuse or circuit protector.",
+        "source": "furrion-rooftop-ac",
+        "locator": "PDF p. 18 'Troubleshooting'"
+      },
+      {
+        "text": "Not cooling enough: set the unit to cooling, select a lower temperature, and clear leaves and dirt from the ventilation grilles.",
+        "source": "furrion-rooftop-ac",
+        "locator": "PDF p. 18 'Troubleshooting'"
+      },
+      {
+        "text": "Abnormal shutdown: the freeze sensor has tripped because the outside temperature is too low or all air nozzles are closed.",
+        "source": "furrion-rooftop-ac",
+        "locator": "PDF p. 18 'Troubleshooting'"
+      },
+      {
+        "text": "FACW12PA-BL: allow about three minutes; the compressor delay runs after a mode is selected or a power event to equalize pressure.",
+        "source": "furrion-rooftop-ac",
+        "locator": "PDF p. 34 'Compressor Time Delay'"
+      },
+      {
+        "text": "FACW13VSDSA-BL E3: the manual's check is the 120 VAC supply or loose wiring connections with the air conditioner system.",
+        "source": "furrion-chill-cube-thermostat",
+        "locator": "p. 14"
+      },
+      {
+        "text": "Clean the return filter every four weeks or more in use with warm soapy water, dry it completely, and replace it at least every 12 months (Lippert part 2024049532).",
+        "source": "furrion-chill-cube-ducted-ac-user-manual",
+        "locator": "p. 21"
+      },
+      {
+        "text": "Chill Cube operating range: cooling at 64-109 F outdoor and 60-90 F indoor; heating at 41-75 F outdoor; room humidity under 80%.",
+        "source": "furrion-chill-cube-ducted-ac-user-manual",
+        "locator": "p. 5"
+      }
+    ],
+    "parts": [
+      {
+        "text": "FACW12ESPA-BL codes name the control-box and thermostat indoor sensors, evaporator sensor, outdoor coil sensor, outdoor ambient sensor and the thermostat-to-control-box link; lo means the +12 V supply is too low.",
+        "source": "furrion-thermostat",
+        "locator": "p. 2 'LCD Error Code'"
+      },
+      {
+        "text": "During installation the freeze sensor is stuck into the center bottom of the evaporator and held by a clamp inserted between the fins.",
+        "source": "furrion-chill-2-low-profile-electronic-control-manual",
+        "locator": "PDF p. 11"
+      },
+      {
+        "text": "Troubleshooting names the evaporator fan, condenser fan, blower and seals as service parts, with refrigerant leakage as an abnormal-shutdown cause.",
+        "source": "furrion-rooftop-ac",
+        "locator": "PDF p. 18"
+      },
+      {
+        "text": "Zone, furnace, heat pump, electric heat and analog/digital DIP switches sit on the control box PCB; single-zone boxes ship with Furnace on.",
+        "source": "furrion-chill-2-low-profile-electronic-control-manual",
+        "locator": "PDF p. 9"
+      }
+    ],
+    "callTech": [
+      {
+        "text": "Low voltage, refrigerant leakage, a damaged evaporator or condenser fan, a defective blower or damaged seals: contact an authorized service agent or Furrion.",
+        "source": "furrion-rooftop-ac",
+        "locator": "PDF p. 18 'Troubleshooting'"
+      },
+      {
+        "text": "Only qualified personnel or a certified service technician may repair the air conditioner; any refrigerant work, including recharging, needs a certified technician (flammable R32).",
+        "source": "furrion-chill-2-low-profile-electronic-control-manual",
+        "locator": "PDF pp. 7, 13"
+      },
+      {
+        "text": "Never use ignition sources such as a halide torch to search for refrigerant leaks; if a leak is suspected, put out all naked flames.",
+        "source": "furrion-chill-2-low-profile-electronic-control-manual",
+        "locator": "PDF p. 7"
+      },
+      {
+        "text": "Only a qualified electrician should connect the rooftop unit to power; a damaged supply cord must be replaced by the manufacturer, service agent or similarly qualified person.",
+        "source": "furrion-chill-cube-ducted-ac-user-manual",
+        "locator": "p. 4"
+      },
+      {
+        "text": "DANGER: DIP switches are set only with all 115 VAC and 12 VDC removed from the control board; if 12 V is present, power must be cycled for the change to take effect.",
+        "source": "furrion-chill-2-low-profile-electronic-control-manual",
+        "locator": "PDF p. 9"
+      }
+    ]
+  },
+  "extraSources": [],
+  "unreachable": []
+}

@@ -1,0 +1,250 @@
+{
+ "topic": "norcold-polar-n7-n8-refrigerators",
+ "researchedAt": "2026-11-07",
+ "summary": {
+  "text": "The Norcold Polar 7 (N7V, N7X, N7LX) and Polar 8 (N8V, N8X, N8LX) are 7 and 8 cu. ft. AC/LP absorption refrigerators; X and LX models also come in 3-way AC/LP/DC. V models report faults with a colored indicator light, X models with the indicator plus snowflake icons, and LX models with two-part display codes and an audible alarm.",
+  "source": "norcold-polar-owner",
+  "locator": "p. 1, 7-12, 22-24"
+ },
+ "sections": {
+  "models": [
+   {
+    "text": "Polar 7 Series is N7V, N7X or N7LX (7 cu. ft.); Polar 8 Series is N8V, N8X or N8LX (8 cu. ft.). 3-way operation is only available on X or LX models.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 1"
+   },
+   {
+    "text": "Model numbers of 3-way refrigerators include \".3\"; 2-way model numbers do not. Any letters following the model number indicate a refrigerator option.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 1"
+   },
+   {
+    "text": "Total capacity is 6.5 cubic feet for N7 models and 7.6 cubic feet for N8 models.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 4 'Storage Volume'"
+   },
+   {
+    "text": "Ice maker versions are N7LXIM and N8LXIM. The ice maker is factory-installed optional equipment and cannot be added to a refrigerator later.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 13 'Ice Maker'"
+   },
+   {
+    "text": "On gas absorption models the model tag is inside the refrigerator, on the right-hand side of the cabinet above the top shelf.",
+    "source": "norcold-refrigerator-model-tag-faq",
+    "locator": "FAQ answer"
+   },
+   {
+    "text": "The N7/N8 parts list (639735) also lists variant suffixes such as N7X.3, N8X.3, N7XC, N8XCF, N7LX.3, NA7LX.3, N8LX.3 and N8LXIMF.",
+    "source": "norcold-n7-n8-polar-parts-list-639735-06102025",
+    "locator": "p. 7, 9"
+   }
+  ],
+  "display": [
+   {
+    "text": "N7V/N8V: the indicator light glows solid green when running on 120 volt AC, solid amber when AC is not available and it is running on propane, and solid red when there is a problem and it is not cooling.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 7"
+   },
+   {
+    "text": "N7V/N8V: if the temperature sensor fails, the refrigerator changes to the backup operating system and the indicator light turns off for one second every twenty seconds.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 7 'Backup operating system'"
+   },
+   {
+    "text": "N7X/N8X: AUTO plus AC PLUG icons mean it is running on 120 volt AC; AUTO plus FLAME icons mean AC is not available and it is running on propane. One snowflake is the warmest setting, five the coldest.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 8"
+   },
+   {
+    "text": "2-way N7X/N8X: if neither 120 volt AC nor propane is available, the indicator light flashes. On 3-way models the AUTO and Battery icons light and it runs on DC.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 9"
+   },
+   {
+    "text": "N7LX/N8LX: the display shows a temperature setting from 1 (warmest) to 9 (coldest); the backlight goes off after ten seconds.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 11"
+   },
+   {
+    "text": "2-way N7LX/N8LX: if neither 120 volt AC nor propane is available, \"no AC\" and then \"no FL\" show in the display and an audible alarm sounds.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 12"
+   },
+   {
+    "text": "LX fault codes appear as two terms flashing alternately (for example \"Lo\" \"dc\") with an audible alarm; \"Sr\" is displayed on its own with an alarm.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 24"
+   },
+   {
+    "text": "V and X red flash codes repeat on a five-second cycle; the code number is the numeral in parentheses. Some spelled-out counts in the tables disagree, e.g. N7V Flash Code \"2\": \"flashes four (2) times\".",
+    "source": "norcold-polar-owner",
+    "locator": "p. 22-23"
+   },
+   {
+    "text": "In Automatic mode the controls choose AC first, LP gas second and DC third (3-way only), and switch back when a higher-priority source becomes available.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 9, 12"
+   }
+  ],
+  "reset": [
+   {
+    "text": "If the burner does not light within the 30-second trial for ignition, LP mode locks out. Reset by turning the refrigerator OFF and back ON, which starts a new 30-second trial.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 7 'Air in the propane gas supply lines'"
+   },
+   {
+    "text": "After first start, storage or an LP tank change, air in the gas line may need the OFF/ON reset repeated several times before a flame is established.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 7"
+   },
+   {
+    "text": "Touch and release the ON/OFF button to turn the refrigerator on; touch and hold it two seconds and release to shut it down.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 7, 10, 12"
+   },
+   {
+    "text": "For solid red, low or high DC voltage and several control faults, the tables say to turn the refrigerator OFF and back ON to reset; if the fault code continues, see a dealer.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 22-24"
+   }
+  ],
+  "checks": [
+   {
+    "text": "Before start-up: make sure air flow through the lower intake vent, the coils and condenser, and out the upper exhaust vent is not blocked or decreased.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 7 'Before ignition or start up'"
+   },
+   {
+    "text": "Before start-up: make sure there are no combustible materials in or around the refrigerator, and that DC voltage to the refrigerator is 12.0VDC.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 7"
+   },
+   {
+    "text": "Solid red light, first checks: refrigerator plugged into a serviceable outlet, vehicle battery charging equipment operational, AC/DC converter operational (if applicable).",
+    "source": "norcold-polar-owner",
+    "locator": "p. 22"
+   },
+   {
+    "text": "Solid red light, gas checks: propane tank valve open, propane at the correct pressure, the refrigerator's manual gas shutoff valve open, and no air in the propane supply line.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 22"
+   },
+   {
+    "text": "LX \"no AC\": check the refrigerator is plugged into a serviceable outlet, the vehicle fuse or circuit breaker is intact, and the vehicle generator is operational (if applicable).",
+    "source": "norcold-polar-owner",
+    "locator": "p. 24"
+   },
+   {
+    "text": "Level: operate within 3 degrees off level side-to-side and 6 degrees front-to-back; make sure the vehicle is level before operating.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 4 'Leveling'"
+   },
+   {
+    "text": "When the backup operating system is running it can over-freeze or thaw food; make sure freezer and fresh food temperatures are satisfactory.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 8"
+   },
+   {
+    "text": "Above 5500 feet, LP operation may give reduced cooling and burner outages; Norcold recommends running on AC at those altitudes.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 13"
+   },
+   {
+    "text": "Without low-temperature equipment, extended exposure of the cooling system to 32 degrees F or lower can disrupt operation; it resumes when the cooling system warms.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 13"
+   },
+   {
+    "text": "Door seal check: close each door on a dollar-bill-sized paper and pull gently; you should feel a slight drag on all four sides.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 16 'Door Sealing'"
+   },
+   {
+    "text": "After extended storage, before start-up, make sure the vents, ventilation air pathway, burner, orifice and flue area are free of obstructions.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 16 'Refrigerator Storage'"
+   }
+  ],
+  "parts": [
+   {
+    "text": "Thermistor (temperature sensor): when it fails the backup operating system keeps cooling; the fault tables list this as not owner serviceable and route it to a dealer or authorized Norcold Service Center.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 7, 22-24"
+   },
+   {
+    "text": "AC heater and DC heater (3-way only) faults are listed as not owner serviceable; see your dealer or authorized Norcold Service Center.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 23"
+   },
+   {
+    "text": "Control boards are extremely sensitive; evidence of tampering or removal from the protective case voids any warranty.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 7"
+   },
+   {
+    "text": "Gas train assembly, burner orifice and spark electrode (3/16 inch gap): cleaning and checks are done by a dealer or Norcold authorized service center.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 17-18"
+   },
+   {
+    "text": "The parts list names a thermistor kit (638391) for all N7V, N8V, N7X, N8X, N7LX and N8LX models, and a main control board kit (639593).",
+    "source": "norcold-n7-n8-polar-parts-list-639735-06102025",
+    "locator": "p. 5, 9"
+   },
+   {
+    "text": "The parts list also names AC heater kit 638374, DC heater kit 638375, DC board kit 639577 for 3-way models, and communication harness 638792.",
+    "source": "norcold-n7-n8-polar-parts-list-639735-06102025",
+    "locator": "p. 7, 9"
+   }
+  ],
+  "callTech": [
+   {
+    "text": "If you smell gas: open windows, do not light the appliance, put out open flames, do not touch switches or use phones, evacuate, shut off fuel at the LP tank, call emergency services.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 1"
+   },
+   {
+    "text": "If repeated OFF/ON attempts still do not establish a flame, stop and consult your local dealer or Authorized Norcold Service Center.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 7"
+   },
+   {
+    "text": "If the refrigerator does not start to cool down after about two hours, contact your dealer or a Norcold authorized service center.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 4 'Food compartment'"
+   },
+   {
+    "text": "Contact a dealer or Norcold authorized service center if the LP flame is yellow, flickering or changing shape, or touches the inside of the flue tube.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 17"
+   },
+   {
+    "text": "The cooling system is under pressure and contains sodium chromate; do not try to repair or recharge it.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 3"
+   },
+   {
+    "text": "All service work must be done by a qualified service technician. Disconnect AC and DC power before maintenance, and do not bypass or change electrical components.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 3"
+   },
+   {
+    "text": "Annual checks for a qualified RV dealer or Norcold service center: gas leaks, propane pressure of 11 inches water column, combustion seal, burner and orifice, AC 108-132 volts, DC 10.5-15.4 volts.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 17"
+   },
+   {
+    "text": "If a door does not seal correctly, have your dealer or an authorized Norcold Service Center correct the seal.",
+    "source": "norcold-polar-owner",
+    "locator": "p. 16"
+   },
+   {
+    "text": "Polar N8X support FAQ: a solid red light on the High Temperature Sensor means the HTS kit has tripped; turn off the refrigerator, unplug it from the 110V outlet, contact a Norcold service center.",
+    "source": "norcold-polar-n8x-hts-service-routing-prep",
+    "locator": "FAQ 'solid red light on the High Temperature Sensor'"
+   }
+  ]
+ },
+ "extraSources": [],
+ "unreachable": []
+}

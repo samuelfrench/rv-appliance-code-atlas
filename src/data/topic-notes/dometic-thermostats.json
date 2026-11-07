@@ -1,0 +1,175 @@
+{
+  "topic": "dometic-thermostats",
+  "researchedAt": "2026-11-07",
+  "summary": {
+    "text": "The Dometic Comfort Control Center 2 (CCC 2) is a programmable LCD wall thermostat that runs up to four independent zones of air conditioner, heat pump, heat strip and furnace. When it detects a fault it shows an error code in place of the set-point and blinks the zone number.",
+    "source": "dometic-ccc2-operating",
+    "locator": "pp. 3, 18"
+  },
+  "sections": {
+    "models": [
+      {
+        "text": "CCC 2 programmable thermostat: model 3314080.000 (black) and 3314080.015 (white); operating instructions form 3314149.018, Revision B.",
+        "source": "dometic-ccc2-operating",
+        "locator": "p. 1"
+      },
+      {
+        "text": "Single Zone LCD thermostat models: 3313192.XXX Cool/Furnace, 3313193.XXX Cool/Furnace/Heat Pump, 3313194.XXX Cool/Furnace/Heat Strip.",
+        "source": "dometic-single-zone-lcd-thermostat-operating",
+        "locator": "p. 1"
+      },
+      {
+        "text": "Bluetooth Capacitive Touch (CT) thermostat model 3316420.XXX, built as Cool/Furnace, Cool/Furnace/Heat Strip or Cool/Furnace/Heat Pump versions; form 3316468.000.",
+        "source": "dometic-bluetooth-ct-thermostat-operating",
+        "locator": "p. 1"
+      },
+      {
+        "text": "For service, give the air conditioner/heat pump model and serial number from the identification label on the unit base pan; remove the return air cover to expose the rating plate.",
+        "source": "dometic-single-zone-lcd-thermostat-operating",
+        "locator": "p. 14 'Service'"
+      },
+      {
+        "text": "Also give the Electronic Control Kit part and serial number (label on the side of the control box) and, if equipped, the Air Distribution Box model and serial from the ceiling template rating plate.",
+        "source": "dometic-bluetooth-ct-thermostat-operating",
+        "locator": "p. 26 'Service-Unit Does Not Operate'"
+      }
+    ],
+    "display": [
+      {
+        "text": "CCC 2: the error code appears in the LCD for the zone where the fault occurred, displayed in place of the temperature set-point; during normal operation a blinking zone number means a fault has occurred.",
+        "source": "dometic-ccc2-operating",
+        "locator": "p. 18 'LCD Error Code'"
+      },
+      {
+        "text": "CCC 2: if one power module board loses communication, the LCD shows E1 with the zone number that lost communication; any further zones that lose communication blink as well.",
+        "source": "dometic-ccc2-operating",
+        "locator": "p. 18 'LCD Error Code'"
+      },
+      {
+        "text": "CCC 2 LCD icons: operation mode, zone, temperature set-point or error code, time of day, program, fan speed, compressor delay (hourglass) and clean-or-replace-filter.",
+        "source": "dometic-ccc2-operating",
+        "locator": "p. 5 'Quick Reference To LCD Icons'"
+      },
+      {
+        "text": "CCC 2: when the backlight is off the thermostat is idle; press any button to wake it before it will accept a new setting. Only the time of day shows when it is OFF.",
+        "source": "dometic-ccc2-operating",
+        "locator": "pp. 4, 6"
+      },
+      {
+        "text": "Single Zone LCD: the LCD shows set-point, fan speed (Au, Lo, Hi) and F/C, while green LEDs show the mode (Off, Fan, Cool, Furnace, Heat Pump or Heat Strip).",
+        "source": "dometic-single-zone-lcd-thermostat-operating",
+        "locator": "p. 3"
+      },
+      {
+        "text": "CT thermostat Bluetooth icon: blinking slowly at 2-second intervals means ready to pair; steadily lit means already connected to an app; not visible means the radio slept after 5 days of inactivity (press any button).",
+        "source": "dometic-bluetooth-ct-thermostat-operating",
+        "locator": "p. 7"
+      }
+    ],
+    "reset": [
+      {
+        "text": "CCC 2 system reset: put the thermostat in OFF, press MODE and ZONE together; the LCD shows \"IniT\" and all available zones; release both buttons, then press ON/OFF to exit set-up.",
+        "source": "dometic-ccc2-operating",
+        "locator": "p. 19 'System Reset Procedure'"
+      },
+      {
+        "text": "CCC 2: a system reset is required after a memory loss or any DIP switch change, and every system reset restores the factory default settings.",
+        "source": "dometic-ccc2-operating",
+        "locator": "p. 4"
+      },
+      {
+        "text": "Single Zone LCD initialization: with the thermostat Off, press and hold + and also the On/Off Mode button for three seconds; the LCD shows dashes. Press On/Off Mode again to turn the system off.",
+        "source": "dometic-single-zone-lcd-thermostat-operating",
+        "locator": "p. 3 'System Initialization'"
+      },
+      {
+        "text": "CT initialization: with the thermostat Off, press and hold Up and the Mode button together for three seconds; the LCD shows \"- -\". Then set the furnace differential.",
+        "source": "dometic-bluetooth-ct-thermostat-operating",
+        "locator": "p. 4 'System Initialization'"
+      },
+      {
+        "text": "On the Bluetooth CT, system initialization also resets the Bluetooth system and removes all paired mobile devices, which must then be paired again.",
+        "source": "dometic-bluetooth-ct-thermostat-operating",
+        "locator": "p. 21"
+      },
+      {
+        "text": "After a power interruption to the air conditioner or control, the system restarts with the previous set-points once power is restored.",
+        "source": "dometic-single-zone-lcd-thermostat-operating",
+        "locator": "p. 12 'Power Interruption'"
+      }
+    ],
+    "checks": [
+      {
+        "text": "1. If the RV runs on a generator, make sure the generator is running and producing power.",
+        "source": "dometic-single-zone-lcd-thermostat-operating",
+        "locator": "p. 14 'Service'"
+      },
+      {
+        "text": "2. On a land line, make sure the cord is sized properly for the air conditioner load and is plugged into the power supply.",
+        "source": "dometic-single-zone-lcd-thermostat-operating",
+        "locator": "p. 14 'Service'"
+      },
+      {
+        "text": "3. Check the 120 Vac fuse or circuit breaker: the fuse is not burnt, or the breaker is ON and not tripped.",
+        "source": "dometic-ccc2-operating",
+        "locator": "p. 20 'Service'"
+      },
+      {
+        "text": "4. Check the 12 Vdc fuse or circuit breaker the same way.",
+        "source": "dometic-ccc2-operating",
+        "locator": "p. 20 'Service'"
+      },
+      {
+        "text": "Ice on the cooling coil shows as very cold output at very low air speed; inspect and clean the filter, make sure vents are open, and run FAN ONLY until the coil is clear.",
+        "source": "dometic-bluetooth-ct-thermostat-operating",
+        "locator": "p. 24 'Frost Formation'"
+      }
+    ],
+    "parts": [
+      {
+        "text": "The error codes name the indoor temperature sensor, outdoor temperature sensor (select models), freeze sensor and the system power module boards; the unit must be serviced by qualified service personnel only.",
+        "source": "dometic-ccc2-operating",
+        "locator": "pp. 18, 20"
+      },
+      {
+        "text": "The installer sets DIP switches on the power module (electronic control) board to match zones, unit type and options; changing them requires a system reset before the thermostat recognizes them.",
+        "source": "dometic-ccc2-operating",
+        "locator": "pp. 3, 19"
+      },
+      {
+        "text": "The Electronic Control Kit is mounted in the return air cavity and is exposed by removing the return air cover.",
+        "source": "dometic-ccc2-operating",
+        "locator": "p. 20"
+      },
+      {
+        "text": "The CCC 2 can use an optional remote indoor temperature sensor; with two units staged on one zone, only one indoor sensor is used, in the primary power module board.",
+        "source": "dometic-ccc2-operating",
+        "locator": "pp. 7, 16"
+      },
+      {
+        "text": "The blower motor is factory lubricated and requires no service.",
+        "source": "dometic-bluetooth-ct-thermostat-operating",
+        "locator": "p. 26 'Fan Motor'"
+      }
+    ],
+    "callTech": [
+      {
+        "text": "If the unit still fails after the generator, shore-line and 120 Vac/12 Vdc fuse or breaker checks, call your local service center; the unit must be serviced by qualified service personnel only.",
+        "source": "dometic-ccc2-operating",
+        "locator": "p. 20 'Service'"
+      },
+      {
+        "text": "If the unit still does not operate, visit www.eDometic.com to locate a service center; the product MUST be serviced by a qualified service technician.",
+        "source": "dometic-bluetooth-ct-thermostat-operating",
+        "locator": "p. 26"
+      },
+      {
+        "text": "If frost on the cooling coil persists after the filter, vent and fan-only steps, contact your local service center.",
+        "source": "dometic-bluetooth-ct-thermostat-operating",
+        "locator": "p. 24 'Frost Formation'"
+      }
+    ]
+  },
+  "extraSources": [],
+  "unreachable": []
+}

@@ -1,0 +1,230 @@
+{
+ "topic": "dometic-water-heaters",
+ "researchedAt": "2026-11-07",
+ "summary": {
+  "text": "Dometic WH-series RV tank water heaters (WH-6GA, WH-6GEA, WH-9GEA, WH-10GEA, WH-16GEA) heat with LP gas through direct spark ignition and, on GEA models, a 110 VAC element. Faults show as a lockout: if the gas fails to light after three attempts the red lockout lamp illuminates, and an E.C.O. trip also locks the heater out until reset.",
+  "source": "dometic-water-heater-wh-2022-manual",
+  "locator": "pp. 1, 5, 15"
+ },
+ "sections": {
+  "models": [
+   {
+    "text": "The 2022 manual covers WH-6GA (6 gal gas), WH-6GEA (6 gal gas/electric), WH-9GEA (9 gal effective), WH-10GEA (10 gal gas/electric) and WH-16GEA (16 gal effective).",
+    "source": "dometic-water-heater-wh-2022-manual",
+    "locator": "pp. 1, 5"
+   },
+   {
+    "text": "Model code WH-6GEA: WH = water heater, number = gallons, G = gas (propane), E = electric AC element, A = revision; the instructions apply regardless of revision number.",
+    "source": "dometic-water-heater-wh-2022-manual",
+    "locator": "p. 5"
+   },
+   {
+    "text": "9GEA and 16GEA are effective sizes: the tanks hold 6 and 10 gallons, and a mixing valve delivers 9 or 16 gallons of 130°F (54°C) moderated water.",
+    "source": "dometic-water-heater-wh-2022-manual",
+    "locator": "p. 5"
+   },
+   {
+    "text": "XT models G9EXT, GE9EXT, GEH9EXT, G16EXT, GE16EXT and GEH16EXT: G = gas, E = electric, H = engine heat exchanger, EXT = Electronic Exothermal (XT) technology.",
+    "source": "dometic-xt-water-heater-manual",
+    "locator": "p. 1"
+   },
+   {
+    "text": "Gas pressure must be 10 to 13 in. W.C.; the 12 V supply must be 10 to 14 VDC.",
+    "source": "dometic-water-heater-wh",
+    "locator": "p. 5"
+   },
+   {
+    "text": "Dometic and Atwood brand water heater tanks are high-strength aluminum and do not use anode rods.",
+    "source": "dometic-water-heater-combo-anode-rod-warning-support",
+    "locator": "support page 'Using After-Market Anode Rods'"
+   },
+   {
+    "text": "The OD-5001 on-demand heater stays dormant until a tap is opened and it senses water flow of at least 1.0 GPM.",
+    "source": "dometic-od5001-operating-support",
+    "locator": "support page 'How to operate your water heater', step 4"
+   }
+  ],
+  "display": [
+   {
+    "text": "Gas mode: when switched ON the heater makes three attempts to light; if there is no ignition it locks out and the red lockout lamp illuminates.",
+    "source": "dometic-water-heater-wh-2022-manual",
+    "locator": "p. 15"
+   },
+   {
+    "text": "The wall switch light stays on during ignition and goes out once the control detects flame; if ignition fails the red lockout lamp stays illuminated.",
+    "source": "dometic-water-heater-gas-function-support",
+    "locator": "support page 'Gas Function'"
+   },
+   {
+    "text": "Gas and electric together: a gas lockout does not light the lamp while electric is running; slow recovery is the sign. Switch electric OFF and the lamp lights if gas is locked out.",
+    "source": "dometic-water-heater-wh-2022-manual",
+    "locator": "p. 15"
+   },
+   {
+    "text": "If the water gets too hot the heater goes into a lockout condition with the indicator light on.",
+    "source": "dometic-xt-water-heater-manual",
+    "locator": "p. 4"
+   },
+   {
+    "text": "Burner obstruction signs: a change in burner sound, or the flame changing from hard blue to soft and lazy or very yellow; nests cause poor combustion and delayed ignition.",
+    "source": "dometic-water-heater-wh",
+    "locator": "p. 16"
+   },
+   {
+    "text": "A P/T relief valve dripping while the heater runs does not mean it is defective; heated water expands and slowly absorbs the tank's internal air gap.",
+    "source": "dometic-water-heater-wh",
+    "locator": "p. 20"
+   }
+  ],
+  "reset": [
+   {
+    "text": "Gas lockout: determine and correct the cause, then reset the gas control by turning the switch OFF, then ON.",
+    "source": "dometic-water-heater-wh-2022-manual",
+    "locator": "p. 15"
+   },
+   {
+    "text": "If the control switch light stays on longer than 15 seconds, place the switch OFF, wait 5 minutes, and repeat.",
+    "source": "dometic-water-heater-wh-2022-manual",
+    "locator": "p. 15"
+   },
+   {
+    "text": "Electric E.C.O. lockout: check the thermostat has good contact with the tank, then turn the electric switch OFF, then ON.",
+    "source": "dometic-water-heater-wh-2022-manual",
+    "locator": "p. 15"
+   },
+   {
+    "text": "Overheat lockout: find and correct the cause, let the water cool, place the control switch OFF for 30 seconds, then ON.",
+    "source": "dometic-water-heater-wh",
+    "locator": "p. 15"
+   },
+   {
+    "text": "Dometic support notes the water can take up to 30 minutes to cool before the overheat reset.",
+    "source": "dometic-water-heater-overheat-reset-support",
+    "locator": "support page 'How to clear a water heater over-heating failure'"
+   },
+   {
+    "text": "OD-5001: if the heater fails to light or the optional lockout lamp lights, turn the power switch OFF, then ON; first use may need several water on/off cycles to purge air from LP lines.",
+    "source": "dometic-od5001-operating-support",
+    "locator": "support page 'How to operate your water heater', step 5"
+   }
+  ],
+  "checks": [
+   {
+    "text": "Never operate the heater without water in the tank.",
+    "source": "dometic-water-heater-wh-2022-manual",
+    "locator": "p. 15"
+   },
+   {
+    "text": "If unused for more than two weeks, open the kitchen hot faucet for several minutes before using electrical appliances on the hot water system; hydrogen gas may have formed.",
+    "source": "dometic-water-heater-wh-2022-manual",
+    "locator": "p. 15"
+   },
+   {
+    "text": "Keep the vent and combustion air grill clear, and periodically check the main burner flame.",
+    "source": "dometic-water-heater-wh",
+    "locator": "p. 15"
+   },
+   {
+    "text": "Inspect for and remove dust and insect nests from the burner compartment and flue assembly.",
+    "source": "dometic-water-heater-wh",
+    "locator": "p. 16"
+   },
+   {
+    "text": "Electrical checks: low voltage below 10 VDC on the thermostat line; if the board fuse is good and the unit is dead, excessively high voltage over 14 volts.",
+    "source": "dometic-water-heater-wh",
+    "locator": "p. 16"
+   },
+   {
+    "text": "Drain the heater at least once a year and before winter storage or freezing; about two quarts stay in the tank and will not cause freeze damage.",
+    "source": "dometic-water-heater-wh",
+    "locator": "pp. 15, 18"
+   },
+   {
+    "text": "Flush the tank every 60 days for full-time RVers (30 in the Southwest) and at least twice a year part-time (every 90 days in the Southwest).",
+    "source": "dometic-xt-water-heater-manual",
+    "locator": "p. 3"
+   },
+   {
+    "text": "Turn gas off at the LP tank while the vehicle is moving and shut off gas appliances when refueling.",
+    "source": "dometic-water-heater-wh-2022-manual",
+    "locator": "p. 14"
+   }
+  ],
+  "parts": [
+   {
+    "text": "Named components: access door, tank, flue assembly, hot outlet, cold inlet, gas valve, electrode, E.C.O./thermostat, thermal cut-off, P/T relief valve, DSI control board and electric junction box/element.",
+    "source": "dometic-water-heater-wh",
+    "locator": "p. 4"
+   },
+   {
+    "text": "DSI control board carries a 2 amp mini ATO fuse against wiring shorts; if it blows the heater will not operate. Never install a fuse larger than 3 amps.",
+    "source": "dometic-water-heater-wh",
+    "locator": "p. 16"
+   },
+   {
+    "text": "Thermal cut-off in the power supply line melts if flame or heat reaches it, for example from a flue obstruction; the obstruction must be removed and the cut-off replaced.",
+    "source": "dometic-water-heater-wh",
+    "locator": "p. 16"
+   },
+   {
+    "text": "Ignition electrode: porcelain must not be cracked and the electrode-to-ground gap is 0.125 in. (1/8 in.).",
+    "source": "dometic-water-heater-wh",
+    "locator": "p. 17"
+   },
+   {
+    "text": "EXT/XT mixing valve moderates outlet water to about 130°F (54°C); it is not serviceable and must be replaced only by a certified technician.",
+    "source": "dometic-water-heater-wh",
+    "locator": "p. 19"
+   },
+   {
+    "text": "P/T relief valve is not serviceable; a replacement must be a combination P/T valve certified to ANSI Z21.22 with set pressure not over 150 psi.",
+    "source": "dometic-xt-water-heater-manual",
+    "locator": "p. 3"
+   },
+   {
+    "text": "Do not use anode rods, bug screens or aftermarket heating elements; aftermarket elements can lack critical safety controls and lead to tank explosion, and any alteration voids the warranty.",
+    "source": "dometic-water-heater-wh",
+    "locator": "p. 20"
+   }
+  ],
+  "callTech": [
+   {
+    "text": "If you smell gas: evacuate everyone, shut off gas at the container, touch no electrical switch, phone or radio, do not start the engine or generator, and call a gas supplier, qualified technician or fire department.",
+    "source": "dometic-water-heater-wh",
+    "locator": "p. 1"
+   },
+   {
+    "text": "Do not turn the gas supply back on until the leak is repaired; installation and service must be done by a qualified installer, service agency or gas supplier.",
+    "source": "dometic-water-heater-wh",
+    "locator": "p. 1"
+   },
+   {
+    "text": "Overheating, or gas that fails to shut off: turn the operating switch OFF and remove the red wire from the E.C.O. left terminal, or turn the gas off at the LP tank.",
+    "source": "dometic-water-heater-wh-2022-manual",
+    "locator": "p. 14"
+   },
+   {
+    "text": "If the lockout persists after the reset, read the maintenance instructions and contact a Dometic Service Center.",
+    "source": "dometic-water-heater-wh",
+    "locator": "p. 15"
+   },
+   {
+    "text": "EXT models with low hot-water flow or water not as hot: the mixing valve may be faulty from corrosion or debris; call a technician for repair.",
+    "source": "dometic-water-heater-wh",
+    "locator": "p. 19"
+   },
+   {
+    "text": "Have the gas pressure tested periodically; it should be 11 in. water column with three appliances running.",
+    "source": "dometic-water-heater-wh",
+    "locator": "p. 15"
+   },
+   {
+    "text": "Insect nests in the burner or flue that cannot be easily removed: contact a qualified service center.",
+    "source": "dometic-water-heater-wh",
+    "locator": "p. 16"
+   }
+  ]
+ },
+ "extraSources": [],
+ "unreachable": []
+}

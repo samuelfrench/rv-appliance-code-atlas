@@ -1,0 +1,211 @@
+{
+  "topic": "onan-qg-hgj-generators",
+  "researchedAt": "2026-11-07",
+  "summary": {
+    "text": "Cummins Onan HGJAA and HGJAB QG gasoline and LP generator sets (5500 to 7000 W) report shutdowns by blinking a numeric fault code on the status indicator LED built into the start/stop control switch, on the generator and on any remote panel.",
+    "source": "onan-hgjaa-a035d009",
+    "locator": "pp. 15-16, 23-24, 51 (PDF pp. 21-22, 29-30, 57)"
+  },
+  "sections": {
+    "models": [
+      {
+        "text": "Operator Manual A031C171 (Issue 8, 12-2018) covers HGJBB Spec A-B: 2800 W 120 V 60 Hz gasoline and 2500 W 120 V 60 Hz LPG models, plus 50 Hz and 100 V variants.",
+        "source": "onan-hgjbb-a031c171",
+        "locator": "cover and pp. 15-16 (PDF pp. 1, 21-22)"
+      },
+      {
+        "text": "Operator Manual A035D009 (Issue 12, 12-2018) covers HGJAA Spec J-K and HGJAB Spec J-L.",
+        "source": "onan-hgjaa-a035d009",
+        "locator": "cover (PDF p. 1)"
+      },
+      {
+        "text": "Operator Manual 983-0101 (Issue 6, 10-2014) covers HGJAA Spec A-E, HGJAB Spec A-E and HGJAC Spec A-D.",
+        "source": "onan-hgjaa-hgjab-0983-0101",
+        "locator": "cover (PDF p. 1)"
+      },
+      {
+        "text": "In A035D009, gasoline HGJAA sets use sequential multiport fuel injection with a digital governor; gasoline HGJAB sets use a carburetor with a mechanical governor. Ratings are 7000 or 5500 W gasoline and 6500 or 5500 W LPG.",
+        "source": "onan-hgjaa-a035d009",
+        "locator": "pp. 15-16 Tables 2-3 (PDF pp. 21-22)"
+      },
+      {
+        "text": "Model and serial numbers are on the nameplate. Every character of the model number is significant; the last character is the specification letter, needed to get the correct parts.",
+        "source": "onan-hgjaa-a035d009",
+        "locator": "p. 10 'Model Identification' (PDF p. 16)"
+      }
+    ],
+    "display": [
+      {
+        "text": "The status indicator LED in the control switch blinks rapidly during cranking, stays on continuously once the set is running, and blinks a numeric code if the set shuts down abnormally.",
+        "source": "onan-hgjaa-a035d009",
+        "locator": "p. 23 'Generator Set Control Panel' (PDF p. 29)"
+      },
+      {
+        "text": "A remote panel inside the vehicle may be a control switch with status indicator, one with an hour meter, or one with a DC voltmeter. Its indicator also blinks during preheat; the hour meter cannot be reset.",
+        "source": "onan-hgjaa-a035d009",
+        "locator": "pp. 23-24 'Remote Control Panel' (PDF pp. 29-30)"
+      },
+      {
+        "text": "Codes 2, 3 and 4 flash as single groups. Code 3 means a second-level code is stored: press STOP/PRIME once and a two-digit code flashes, tens digit first, a brief pause, then the units digit.",
+        "source": "onan-hgjaa-a035d009",
+        "locator": "p. 51 'Fault Codes' (PDF p. 57)"
+      },
+      {
+        "text": "Example: code 36 flashes blink-blink-blink, pause, six blinks, long pause, repeat. Press STOP/PRIME again to stop the flashing. Codes 33 and 34 are not assigned, so do not read codes 3 and 4 as second-level codes.",
+        "source": "onan-hgjaa-a035d009",
+        "locator": "p. 51 'Fault Codes' (PDF p. 57)"
+      },
+      {
+        "text": "The code stops flashing after 5 minutes (15 minutes on HGJAA); press STOP/PRIME 3 times within 5 seconds to resume. The last fault logged keeps flashing even after its cause is corrected.",
+        "source": "onan-hgjaa-a035d009",
+        "locator": "p. 52 (PDF p. 58)"
+      },
+      {
+        "text": "Flashing at high frequency means Engine Run Only (ERO) mode: after an alternator-failure shutdown, a restart within one minute runs the engine with AC output disabled.",
+        "source": "onan-hgjaa-a035d009",
+        "locator": "pp. 26 and 52 (PDF pp. 32, 58)"
+      }
+    ],
+    "reset": [
+      {
+        "text": "If the set does not start, cranking stops after about 30 seconds and the indicator blinks an over crank fault. Wait 5 seconds for the control to reset before trying again.",
+        "source": "onan-hgjaa-a035d009",
+        "locator": "p. 26 'Starting the Generator Set' (PDF p. 32)"
+      },
+      {
+        "text": "After every fifth start attempt, let the starter motor cool for 30 seconds; the starter can be damaged by overheating.",
+        "source": "onan-hgjaa-a035d009",
+        "locator": "p. 26 'Starting the Generator Set' (PDF p. 32)"
+      },
+      {
+        "text": "The generator keeps running if its own line circuit breaker trips. Turn off as many loads as possible, reset the breaker (push it OFF, then ON if needed), then reconnect loads one by one.",
+        "source": "onan-hgjbb-a031c171",
+        "locator": "p. 29 'Resetting Line Circuit Breakers' (PDF p. 35)"
+      },
+      {
+        "text": "No power with the set running and the status light on: turn on or reset the line circuit breaker on the generator set, then the breaker on the vehicle's main distribution panel.",
+        "source": "onan-hgjaa-a035d009",
+        "locator": "p. 58 'No Power' (PDF p. 64)"
+      },
+      {
+        "text": "Code 57 (over prime) clears by removing any object holding either the generator or remote control switch in the STOP/PRIME position.",
+        "source": "onan-hgjaa-a035d009",
+        "locator": "p. 57 'Code 57' (PDF p. 63)"
+      }
+    ],
+    "checks": [
+      {
+        "text": "Pre-start, before the first start of the day and every 8 hours: confirm CO detectors work, check for fuel and exhaust leaks and exhaust damage, do any maintenance due, and turn off the air conditioner and large appliances.",
+        "source": "onan-hgjaa-a035d009",
+        "locator": "p. 25 'Pre-start Checks' (PDF p. 31)"
+      },
+      {
+        "text": "After replacing the fuel filter or running out of fuel, prime the system: hold the control switch at STOP/PRIME for 30 seconds. The status indicator stays on while the pump runs.",
+        "source": "onan-hgjaa-a035d009",
+        "locator": "p. 25 'Priming the Fuel System' (PDF p. 31)"
+      },
+      {
+        "text": "With a shared fuel tank, the generator's dip tube usually runs it out of fuel before the vehicle engine. Marking the generator's empty point on the fuel gauge helps avoid running it dry.",
+        "source": "onan-hgjaa-a035d009",
+        "locator": "p. 51 'Overview' (PDF p. 57)"
+      },
+      {
+        "text": "Over crank checks in order: fuel level, prime 30 seconds, LPG level, spark plug leads and plugs, air filter, oil viscosity, fuel fittings, fuel filter. On cold days keep the LPG container at least half full.",
+        "source": "onan-hgjaa-a035d009",
+        "locator": "pp. 52-53 'Code 4' (PDF pp. 58-59)"
+      },
+      {
+        "text": "For under-voltage, under-frequency or field-overload codes, reduce connected appliances, especially air conditioners and battery chargers. A/C startup can draw 3-4 times its 1400-2400 W running load; chargers up to 3000 W.",
+        "source": "onan-hgjaa-a035d009",
+        "locator": "pp. 27, 53, 56 (PDF pp. 33, 59, 62)"
+      },
+      {
+        "text": "Battery-related codes: clean and tighten the positive and negative cables at the battery and generator, recharge or replace the battery, and use oil of proper viscosity, since thick oil slows cranking.",
+        "source": "onan-hgjaa-a035d009",
+        "locator": "p. 54 'Code 32' (PDF p. 60)"
+      },
+      {
+        "text": "High battery voltage (over 19 V): make sure the 12 V batteries serving the generator are wired in parallel (12 V), not in series (24 V), and select a lower battery charge rate.",
+        "source": "onan-hgjaa-a035d009",
+        "locator": "p. 54 'Code 29' (PDF p. 60)"
+      },
+      {
+        "text": "Starter engages then disengages (cranking voltage below 6 V): run the vehicle engine while starting so its alternator holds voltage up. Status indicator dead: try the other control switch, generator or remote.",
+        "source": "onan-hgjaa-a035d009",
+        "locator": "p. 58 'Symptom Based' (PDF p. 64)"
+      },
+      {
+        "text": "Power derates about 3.5% per 1000 ft of elevation and about 1% per 10 F above 77 F. HGJBB maximum at 5500 ft is 2060 W (LPG 2500 W rating) or 2310 W (2800 W rating).",
+        "source": "onan-hgjbb-a031c171",
+        "locator": "p. 28 'Power Versus Altitude' (PDF p. 34)"
+      }
+    ],
+    "parts": [
+      {
+        "text": "Consumables listed for HGJAA/HGJAB J-K/J-L: oil filter 0122-0836, air cleaner element 0140-3116, EFI fuel filter 0147-0860, gasoline fuel filter 0149-2341-01, LPG inline filter 0149-2648, two spark plugs 0167-1638.",
+        "source": "onan-hgjaa-a035d009",
+        "locator": "p. 34 Table 9 (PDF p. 40)"
+      },
+      {
+        "text": "Valve lash adjustment must be done by a qualified mechanic (authorized Cummins Service Representative). The fuel filter is replaced every 500 hours or once every 3 years.",
+        "source": "onan-hgjaa-a035d009",
+        "locator": "pp. 33-34 Table 8 notes (PDF pp. 39-40)"
+      },
+      {
+        "text": "Field overload code 38: have air conditioners and other appliances checked; a locked air conditioner compressor rotor can cause very low power factor.",
+        "source": "onan-hgjaa-hgjab-0983-0101",
+        "locator": "p. 31 Table 5 (PDF p. 35)"
+      },
+      {
+        "text": "HGJBB 2800 W 120 V gasoline: 23.3 A output with a 25 A line breaker; 2500 W LPG: 20.8 A with a 21 A breaker.",
+        "source": "onan-hgjbb-a031c171",
+        "locator": "pp. 15-16 Tables 2-3 (PDF pp. 21-22)"
+      }
+    ],
+    "callTech": [
+      {
+        "text": "Codes 12, 14, 19, 27, 31, 35, 37, 41, 42, 43, 45, 47, 48, 51, 52, 54, 56, 58, 81 and 82 all list one action: contact a local dealer or distributor.",
+        "source": "onan-hgjaa-a035d009",
+        "locator": "pp. 53-57 (PDF pp. 59-63)"
+      },
+      {
+        "text": "Code 23 (cutoff switch still open during start, not a running fault): see an authorized Onan dealer.",
+        "source": "onan-hgjaa-hgjab-0983-0101",
+        "locator": "p. 30 Table 5 (PDF p. 34)"
+      },
+      {
+        "text": "No AC power with the set running and the status light flashing rapidly means Engine Run Only mode due to a faulty generator: contact a local dealer or distributor.",
+        "source": "onan-hgjaa-a035d009",
+        "locator": "p. 59 (PDF p. 65)"
+      },
+      {
+        "text": "If the status indicator flashes and goes out again while cranking without the engine starting, an internal short tripped an automatic-reset protective device: call a local dealer or distributor.",
+        "source": "onan-hgjbb-a031c171",
+        "locator": "p. 55 'Status Indicator Goes Out While Cranking' (PDF p. 61)"
+      },
+      {
+        "text": "If a circuit breaker trips again right away, the appliance or load has a short or the breaker is faulty: call a qualified electrician.",
+        "source": "onan-hgjbb-a031c171",
+        "locator": "p. 29 'Resetting Line Circuit Breakers' (PDF p. 35)"
+      },
+      {
+        "text": "Do not start the generator set until any fuel or exhaust leak is repaired. If anyone has CO symptoms, get to fresh air, seek medical attention if they persist, and do not run the set until inspected and repaired.",
+        "source": "onan-hgjaa-a035d009",
+        "locator": "pp. 25-26 (PDF pp. 31-32)"
+      },
+      {
+        "text": "If a problem is not resolved after the suggested corrective actions, contact a local dealer or distributor. Only trained, experienced service personnel should perform generator service.",
+        "source": "onan-hgjaa-hgjab-0983-0101",
+        "locator": "pp. 27-28 (PDF pp. 31-32)"
+      }
+    ]
+  },
+  "extraSources": [],
+  "unreachable": [
+    {
+      "source": "onan-rv-manual-index",
+      "url": "https://www.cummins.com/en-na/generators/rv-generators/rv-generator-manuals",
+      "error": "HTTP 403 (Cloudflare challenge page)"
+    }
+  ]
+}

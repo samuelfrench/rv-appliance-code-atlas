@@ -1,0 +1,257 @@
+{
+ "topic": "norcold-n4000-refrigerators",
+ "researchedAt": "2026-11-07",
+ "summary": {
+  "text": "The Norcold N4104, N4141 and N4150 are 3-way (AC, DC, propane) absorption refrigerators with an LCD touchscreen control panel. In case of a problem an error code lights up in the error-code field of the control panel, and the manual's troubleshooting table tells the owner which codes to act on and which to take to a dealer.",
+  "source": "norcold-n4000-touchscreen-owner-install",
+  "locator": "p. 4, 6, 15"
+ },
+ "sections": {
+  "models": [
+   {
+    "text": "This manual covers N4000 models with touchscreen: N4104 (3.7 cu. ft.), N4141 (5.0 cu. ft.) and N4150 (5.3 cu. ft.).",
+    "source": "norcold-n4000-touchscreen-owner-install",
+    "locator": "p. 1, 4"
+   },
+   {
+    "text": "N4104 is a discontinued 3.7 cu. ft. 3-way AC/DC/LP gas refrigerator with an accessible control panel and built-in diagnostics.",
+    "source": "norcold-n4104-support",
+    "locator": "product summary"
+   },
+   {
+    "text": "N4141 is a 5 cu. ft. 3-way AC/DC/LP refrigerator, 16.5 inches wide, with manual or automatic source selection and automatic re-ignition if the gas flame goes out.",
+    "source": "norcold-n4141-support",
+    "locator": "product summary"
+   },
+   {
+    "text": "N4150 is a 5.3 cu. ft. 3-way AC/DC/LP gas refrigerator with automatic power source selection between electric and gas.",
+    "source": "norcold-n4150-support",
+    "locator": "product summary"
+   },
+   {
+    "text": "Thetford's N4000 service page lists N4080, N4090, N4097, N4100, N4104, N4108, N4112, N4141, N4142, N4145, N4150, N4170 and N4175; first market introduction 2019.",
+    "source": "thetford-n4000-series-support-router",
+    "locator": "page header"
+   },
+   {
+    "text": "The data plate with model information is inside the refrigerator, behind the vegetable drawer or on the side wall.",
+    "source": "thetford-n4000-series-support-router",
+    "locator": "FAQ 'Where can I find what kind of model my refrigerator is?'"
+   },
+   {
+    "text": "With the 2-way option wired in, the 12V DC supply is deactivated and only gas and AC are available.",
+    "source": "norcold-n4000-touchscreen-owner-install",
+    "locator": "p. 27 'Connect the Electrical Components- 2-way Option'"
+   }
+  ],
+  "display": [
+   {
+    "text": "Control panel parts: on/off switch, touchscreen, mode symbols, cooling level indicators, anti-condensation symbol (N4150 only) and an error code field.",
+    "source": "norcold-n4000-touchscreen-owner-install",
+    "locator": "p. 6"
+   },
+   {
+    "text": "Hold the on/off switch 1 second to turn on and its light turns green; after 10 seconds the settings dim and, per the manual, a blue light shows it is still running. Push on/off again to see settings.",
+    "source": "norcold-n4000-touchscreen-owner-install",
+    "locator": "p. 6"
+   },
+   {
+    "text": "If the 'auto' function is selected but no energy source is available, a light in the on/off switch blinks red.",
+    "source": "norcold-n4000-touchscreen-owner-install",
+    "locator": "p. 7, 30"
+   },
+   {
+    "text": "In AUTO, DC is selected if the engine is running; with the engine off, AC is selected if 120 volts AC is available, otherwise gas.",
+    "source": "norcold-n4000-touchscreen-owner-install",
+    "locator": "p. 30"
+   },
+   {
+    "text": "European N4000 troubleshooting: on LED+ models enter service mode by pushing 3 buttons simultaneously until a binary code is visible; on LCD models the error code appears in the display.",
+    "source": "norcold-n4000-eu-troubleshooting",
+    "locator": "p. 2-3"
+   },
+   {
+    "text": "European N4000 troubleshooting: without the 12 VDC low-current supply no error code is given; with 12 VDC present the blue power light is on.",
+    "source": "norcold-n4000-eu-troubleshooting",
+    "locator": "p. 2-3"
+   },
+   {
+    "text": "On LCD models the power LED flashes red and the display flashes; a wrench symbol is shown on the right, followed by the error code.",
+    "source": "thetford-n4000-series-support-router",
+    "locator": "FAQ 'The Power-LED of my fridge is flashing?'"
+   },
+   {
+    "text": "If an 'A' appears in the display but cannot be selected, it is a preparation for an optional automatic refrigerator.",
+    "source": "thetford-n4000-series-support-router",
+    "locator": "FAQ 'I see an A in my display'"
+   }
+  ],
+  "reset": [
+   {
+    "text": "Turn off by holding the on/off switch 2 seconds until all lights go out; turn on by holding it 1 second.",
+    "source": "norcold-n4000-touchscreen-owner-install",
+    "locator": "p. 7, 29"
+   },
+   {
+    "text": "Gas lockout from air in the line (code 3): turn off (hold 2 seconds), turn back on (hold 1 second) to start another 30-second trial; two or three tries may be needed.",
+    "source": "norcold-n4000-touchscreen-owner-install",
+    "locator": "p. 29-30"
+   },
+   {
+    "text": "European N4000 troubleshooting: once a flame has been detected during a cycle and is then lost, the refrigerator tries to re-ignite 3 times.",
+    "source": "norcold-n4000-eu-troubleshooting",
+    "locator": "p. 6"
+   },
+   {
+    "text": "A short press may not register; hold the on/off button for at least 2 seconds.",
+    "source": "thetford-n4000-series-support-router",
+    "locator": "FAQ 'Why doesn't my refrigerator work when I push the on/off button?'"
+   }
+  ],
+  "checks": [
+   {
+    "text": "Refrigerator does not start: check it was turned on per the instructions, the vehicle is level, and an energy source is available.",
+    "source": "norcold-n4000-touchscreen-owner-install",
+    "locator": "p. 15 'Frequently Asked Questions'"
+   },
+   {
+    "text": "Not cooling enough: check vents are not covered or blocked outside, it is level, the highest cooling level is selected, the door closes, fins are not heavily iced, and the fan wire at the rear is connected.",
+    "source": "norcold-n4000-touchscreen-owner-install",
+    "locator": "p. 15 'Frequently Asked Questions'"
+   },
+   {
+    "text": "Always use gas or AC to start up and cool; 12V DC operation is only effective while the engine is running and depends on vehicle wiring thickness and length.",
+    "source": "norcold-n4000-touchscreen-owner-install",
+    "locator": "p. 7"
+   },
+   {
+    "text": "The heating element's high-current 12 V supply is only switched on with a D+ engine-run signal, so the refrigerator does not discharge the battery when the engine is off.",
+    "source": "norcold-n4000-touchscreen-owner-install",
+    "locator": "p. 27"
+   },
+   {
+    "text": "Cooling level 3 is advised for ambient 60-75 degrees F; higher outside temperatures need a higher level.",
+    "source": "norcold-n4000-touchscreen-owner-install",
+    "locator": "p. 7"
+   },
+   {
+    "text": "Operate within 3 degrees off level side-to-side and 6 degrees front-to-back; let it cool eight hours before loading food.",
+    "source": "norcold-n4000-touchscreen-owner-install",
+    "locator": "p. 5-6"
+   },
+   {
+    "text": "Before purging air from the gas line, make sure all gas valves are open.",
+    "source": "norcold-n4000-touchscreen-owner-install",
+    "locator": "p. 29"
+   },
+   {
+    "text": "For extended storage the rear fan is disconnected at the red-wire connector of the DC power cord; reconnect it before use.",
+    "source": "norcold-n4000-touchscreen-owner-install",
+    "locator": "p. 7, 11"
+   },
+   {
+    "text": "Above 5500 feet, propane operation may give reduced cooling and burner outages; Norcold recommends running on AC.",
+    "source": "norcold-n4000-touchscreen-owner-install",
+    "locator": "p. 8"
+   },
+   {
+    "text": "Solar panels can push the 12 V supply too high; the refrigerator has a built-in safety, so check the warning code and contact a dealer or Thetford Service Centre.",
+    "source": "thetford-n4000-series-support-router",
+    "locator": "FAQ 'solar panels'"
+   }
+  ],
+  "parts": [
+   {
+    "text": "The parts list names, for each of N4104, N4141 and N4150, thermistor 623077, thermistor cable 636874, gas valve 636873 and compressor power module 692249, plus model-specific AC heater, DC heater and spark electrode.",
+    "source": "norcold-n4104-n4141-n4150-parts-640323",
+    "locator": "p. 5, 7, 9, 11, 13, 15"
+   },
+   {
+    "text": "European N4000 flowcharts end in replacing the power board, gas valve, electrode, DC or AC heater, or thermistor; the DC heater circuit uses a 25A fuse.",
+    "source": "norcold-n4000-eu-troubleshooting",
+    "locator": "p. 4-18"
+   },
+   {
+    "text": "Replacement parts are purchased through your local RV dealer or authorized Norcold Service Center.",
+    "source": "norcold-n4000-touchscreen-owner-install",
+    "locator": "p. 15"
+   },
+   {
+    "text": "Service and maintenance work goes to your dealer or a Norcold authorized service center; all service work must be done by a qualified service technician.",
+    "source": "norcold-n4000-touchscreen-owner-install",
+    "locator": "p. 3"
+   },
+   {
+    "text": "The cooling unit cannot be exchanged because of the refrigerator's design.",
+    "source": "thetford-n4000-series-support-router",
+    "locator": "FAQ 'Why can't I replace the cooling unit?'"
+   }
+  ],
+  "callTech": [
+   {
+    "text": "If you smell gas: open windows, do not light the appliance, put out open flames, do not touch switches or use phones, evacuate, shut off fuel at the LP tank, call emergency services.",
+    "source": "norcold-n4000-touchscreen-owner-install",
+    "locator": "p. 1"
+   },
+   {
+    "text": "All lights on the control panel blinking: contact your dealer or a Norcold Service Center.",
+    "source": "norcold-n4000-touchscreen-owner-install",
+    "locator": "p. 15"
+   },
+   {
+    "text": "If the burner does not ignite on propane after three attempts, refer to Troubleshooting and consult a dealer or authorized Norcold Service Center.",
+    "source": "norcold-n4000-touchscreen-owner-install",
+    "locator": "p. 30"
+   },
+   {
+    "text": "If it does not start to cool down after about two hours, contact your dealer or a Norcold authorized service center.",
+    "source": "norcold-n4000-touchscreen-owner-install",
+    "locator": "p. 6"
+   },
+   {
+    "text": "Contact a dealer or Norcold authorized service center if the gas flame is yellow, flickering or changing shape, or touches the inside of the flue tube.",
+    "source": "norcold-n4000-touchscreen-owner-install",
+    "locator": "p. 12"
+   },
+   {
+    "text": "The cooling system is under pressure and contains sodium chromate; do not repair or recharge it, and do not bypass or change electrical components.",
+    "source": "norcold-n4000-touchscreen-owner-install",
+    "locator": "p. 3"
+   },
+   {
+    "text": "Unvented gas-fired appliance: without adequate combustion and ventilation air it may give off excess carbon monoxide.",
+    "source": "norcold-n4000-touchscreen-owner-install",
+    "locator": "p. 1"
+   },
+   {
+    "text": "Thetford strongly advises a qualified, licensed professional for installation, maintenance, repair or any other servicing.",
+    "source": "norcold-n4000-eu-troubleshooting",
+    "locator": "p. 1 'Disclaimer'"
+   },
+   {
+    "text": "Have the chimney and burner cleaned in a specialist workshop every year; soot build-up reduces performance and risks heat build-up.",
+    "source": "thetford-n4000-series-support-router",
+    "locator": "FAQ 'Do the chimney and burner need cleaning?'"
+   }
+  ]
+ },
+ "extraSources": [
+  {
+   "id": "norcold-n4000-eu-troubleshooting",
+   "brand": "Norcold",
+   "title": "Thetford N4000 Series Troubleshooting (European, 230 V)",
+   "url": "https://www.thetford.com/app/uploads/2024/08/TS_absorption-refrigerator_N4000_EN.pdf",
+   "type": "manufacturer-troubleshooting",
+   "official": true
+  },
+  {
+   "id": "norcold-n4104-n4141-n4150-parts-640323",
+   "brand": "Norcold",
+   "title": "Norcold N4104, N4141 and N4150 Parts List 640323",
+   "url": "https://www.thetford.com/app/uploads/2024/10/640323_PL_N4104N4141N4150_082025.pdf",
+   "type": "manufacturer-parts-list",
+   "official": true
+  }
+ ],
+ "unreachable": []
+}

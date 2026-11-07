@@ -1,0 +1,250 @@
+{
+ "topic": "norcold-absorption-refrigerators",
+ "researchedAt": "2026-11-07",
+ "summary": {
+  "text": "Norcold absorption refrigerators cool on 120 volt AC or propane, and 3-way models add 12 volt DC. Their electronic controls choose an energy source in AUTO mode and report faults on the control panel; on models such as the 1200 series these are two-part codes like \"no\" \"FL\" in the center display with an audible alarm.",
+  "source": "norcold-1200-owner",
+  "locator": "p. 8, 15"
+ },
+ "sections": {
+  "models": [
+   {
+    "text": "N41X (4.5 cu. ft.) and N51X (5.5 cu. ft.) come as 2-way or 3-way; 3-way model numbers include \".3\" and 2-way numbers do not.",
+    "source": "norcold-n41-n51-owner",
+    "locator": "p. 1"
+   },
+   {
+    "text": "N400X (4.5 cu. ft.) and N510X (5.5 cu. ft.) are 2-way or 3-way refrigerators; 3-way model numbers include \".3\".",
+    "source": "norcold-n400-n510-owner",
+    "locator": "p. 1"
+   },
+   {
+    "text": "N61X (6 cu. ft.) and N81X (8 cu. ft.) are 2-way refrigerators.",
+    "source": "norcold-n61-n81-owner",
+    "locator": "p. 1"
+   },
+   {
+    "text": "N62X/N82X are 2-way; N64X/N84X are 2-way or 3-way; N64XIM/N84XIM are 2-way with ice maker (6 and 8 cu. ft.).",
+    "source": "norcold-n62-n64-n82-n84-owner",
+    "locator": "p. 1"
+   },
+   {
+    "text": "N109X is a 10 cu. ft. 2-way refrigerator and N109XIM adds an ice maker; the letter \"X\" in a model number stands for a letter or numeral meaning a refrigerator option.",
+    "source": "norcold-n1095-owner",
+    "locator": "p. 1"
+   },
+   {
+    "text": "1200XX models are 12.0 cu. ft., 2-way, 4-door refrigerators; 120X-IMXX models add an ice maker.",
+    "source": "norcold-1200-owner",
+    "locator": "p. 1"
+   },
+   {
+    "text": "On gas absorption models the model tag is inside the refrigerator on the right-hand side of the cabinet above the top shelf.",
+    "source": "norcold-refrigerator-model-tag-faq",
+    "locator": "FAQ answer"
+   },
+   {
+    "text": "1200 series HTS recall 10E-049 covers 1200LR, 1200LRIM, 1201LRIM, 1210 and 1211 produced January 1, 2003 to October 6, 2010 within listed refrigerator and cooling-unit serial ranges.",
+    "source": "norcold-product-compliance-recall-info",
+    "locator": "'1200 Series High Temperature Sensor Recall'"
+   }
+  ],
+  "display": [
+   {
+    "text": "N41X/N51X show single-letter fault codes in the center display (\"F\", \"A\", \"C\", \"n\", \"H\", \"r\", \"S\"); \"No display\" means DC voltage is unavailable or the refrigerator is OFF.",
+    "source": "norcold-n41-n51-owner",
+    "locator": "p. 17"
+   },
+   {
+    "text": "N61X/N81X have no letter display: faults show as the ON light and GAS light flashing about once per second, or the ON light flashing off 1, 3 or 4 times about every 3 seconds.",
+    "source": "norcold-n61-n81-owner",
+    "locator": "p. 17"
+   },
+   {
+    "text": "N109X shows two-part codes in the center display, such as \"no\" \"FL\" or \"dc\" \"LO\", most with an audible alarm; \"dr\" means the door was open more than 2 minutes.",
+    "source": "norcold-n1095-owner",
+    "locator": "p. 23"
+   },
+   {
+    "text": "If an available energy source is not operating correctly, a fault code shows and the controls try a less efficient source; if none is available, an alarm starts and a fault code shows.",
+    "source": "norcold-n1095-owner",
+    "locator": "p. 9"
+   },
+   {
+    "text": "Cooling unit sensing: if the controls sense the cooling unit has stopped cooling, the heat sources are turned off and locked out, an alarm starts and \"no\" \"co\" shows.",
+    "source": "norcold-1200-owner",
+    "locator": "p. 8"
+   },
+   {
+    "text": "Backup operating system: if the temperature sensor fails it keeps cooling; on N41X/N51X the temperature setting flashes for ten seconds when TEMP SET is pushed.",
+    "source": "norcold-n41-n51-owner",
+    "locator": "p. 8"
+   },
+   {
+    "text": "High Temperature Sensor light: slow flashing (1 flash per second) means low DC power; fast flashing (2-3 flashes per second) means a break in the thermistor wire.",
+    "source": "thetford-faq-hts-flashing-red",
+    "locator": "FAQ answer"
+   },
+   {
+    "text": "Door alarm that keeps sounding: the door was open longer than 2 minutes; other causes are a sagging door, a bad door switch or a warped door.",
+    "source": "thetford-faq-door-alarm",
+    "locator": "FAQ answer"
+   }
+  ],
+  "reset": [
+   {
+    "text": "A \"no\" \"co\" lockout can be reset one time: hold ON/OFF two seconds to turn off, then push and release ON/OFF to restart.",
+    "source": "norcold-1200-owner",
+    "locator": "p. 8 'Cooling unit sensing'"
+   },
+   {
+    "text": "The 1200 table splits \"no\" \"co\": 1st time, before reset, owner checks; 2nd time, after reset, not owner serviceable.",
+    "source": "norcold-1200-owner",
+    "locator": "p. 15"
+   },
+   {
+    "text": "N61X/N81X: reset by turning the refrigerator OFF and then back to AUTO or GAS mode.",
+    "source": "norcold-n61-n81-owner",
+    "locator": "p. 17"
+   },
+   {
+    "text": "2118 \"Sr\": turn the refrigerator power OFF and back on to reset; if the code continues, see a dealer or authorized Norcold Service Center.",
+    "source": "norcold-2118-owner",
+    "locator": "p. 20"
+   },
+   {
+    "text": "Some Norcold units need the on/off button held 3-5 seconds to turn on or off.",
+    "source": "thetford-faq-refrigerator-on-off-button",
+    "locator": "FAQ answer"
+   }
+  ],
+  "checks": [
+   {
+    "text": "Burner did not ignite: check the propane tank valve is open, gas is at the correct pressure, the refrigerator's manual shutoff valve is open, and there is no air in the supply line.",
+    "source": "norcold-2118-owner",
+    "locator": "p. 20"
+   },
+   {
+    "text": "AC not available: check the refrigerator is plugged into a serviceable outlet, the vehicle fuse or circuit breaker is intact, and the generator is operational (if applicable).",
+    "source": "norcold-2118-owner",
+    "locator": "p. 20"
+   },
+   {
+    "text": "Low DC voltage: check the vehicle battery charging equipment and the AC/DC converter (if applicable) are operational.",
+    "source": "norcold-2118-owner",
+    "locator": "p. 20"
+   },
+   {
+    "text": "3-way DC operation: run on DC only with the engine running; with the engine running, DC supply leads at the refrigerator should read more than 11.5 VDC.",
+    "source": "norcold-n41-n51-owner",
+    "locator": "p. 8"
+   },
+   {
+    "text": "12V only works with the engine running on the N3100 and N4100, whose DC supply is linked to the engine battery.",
+    "source": "thetford-faq-12v-engine-behavior",
+    "locator": "FAQ answer"
+   },
+   {
+    "text": "Poor AC cooling: the setting may be too low for the outside temperature; Norcold refrigerators need at least 115V on both sides of the fuse to perform as expected on AC.",
+    "source": "thetford-faq-120v-performance",
+    "locator": "FAQ answer"
+   },
+   {
+    "text": "At a destination, make sure the unit is level (no more than 3 degrees side to side or 6 degrees front to back) and that AC is 30 amp service or greater.",
+    "source": "thetford-faq-destination-performance",
+    "locator": "FAQ answer"
+   },
+   {
+    "text": "Backup operating system: check freezer and fresh food temperatures are satisfactory; allow about one hour after each setting change before checking.",
+    "source": "norcold-n61-n81-owner",
+    "locator": "p. 6"
+   },
+   {
+    "text": "Defrost by turning the refrigerator off, opening the doors and laying towels; never use a heat gun, hair dryer or boiling water, which damage the interior.",
+    "source": "thetford-faq-defrost-safety",
+    "locator": "FAQ answer"
+   },
+   {
+    "text": "For odors, place a bowl of water with pure vanilla extract inside; charcoal, wet newspapers or baking soda also help. Never use harsh household cleaners.",
+    "source": "thetford-faq-refrigerator-odor-cleaning",
+    "locator": "FAQ answer"
+   }
+  ],
+  "parts": [
+   {
+    "text": "N61X/N81X have a temperature switch for overheating protection; a Norcold authorized service technician can determine if it has been triggered.",
+    "source": "norcold-n61-n81-owner",
+    "locator": "p. 6 'Temperature switch monitor'"
+   },
+   {
+    "text": "On 2118 models \"oP\" \"LI\" means a temperature limit switch is open; this is not owner serviceable.",
+    "source": "norcold-2118-owner",
+    "locator": "p. 20"
+   },
+   {
+    "text": "The High Temperature Sensor (HTS kit) is a national NHTSA safety recall; parts are shipped to and installed by a trained service technician, not sent to consumers.",
+    "source": "thetford-faq-hts-self-install",
+    "locator": "FAQ answer"
+   },
+   {
+    "text": "Outside the HTS recall serial ranges, Norcold's Temperature Monitor Control (TMC), part 637360, is available at the consumer's cost.",
+    "source": "norcold-product-compliance-recall-info",
+    "locator": "'1200 Series High Temperature Sensor Recall' note"
+   },
+   {
+    "text": "N61X/N81X: if the AC heater fails, the refrigerator operates on propane only and the fault is not owner serviceable.",
+    "source": "norcold-n61-n81-owner",
+    "locator": "p. 17"
+   }
+  ],
+  "callTech": [
+   {
+    "text": "If you smell gas: open windows, do not light the appliance, put out open flames, do not touch switches or use phones, evacuate, shut off fuel at the LP tank, call emergency services.",
+    "source": "norcold-2118-owner",
+    "locator": "p. 1"
+   },
+   {
+    "text": "If \"no\" \"co\" returns before a full cooling cycle completes, it cannot be reset; have the refrigerator serviced by a dealer or Norcold authorized Service Center as soon as possible.",
+    "source": "norcold-1200-owner",
+    "locator": "p. 9"
+   },
+   {
+    "text": "If the burner does not ignite on propane after two or three attempts, stop and consult your local dealer or an authorized Norcold Service Center.",
+    "source": "norcold-n1095-owner",
+    "locator": "p. 9"
+   },
+   {
+    "text": "Solid red High Temperature Sensor light: the HTS kit has tripped; turn off the refrigerator, unplug it from the 110V outlet and contact a Norcold service center.",
+    "source": "thetford-faq-hts-solid-red",
+    "locator": "FAQ answer"
+   },
+   {
+    "text": "Never bypass, alter or modify electrical components, including the HTS system; it can remove safety protection. Have the refrigerator diagnosed by a service center.",
+    "source": "thetford-faq-hts-removal",
+    "locator": "FAQ answer"
+   },
+   {
+    "text": "1200 series recall units with an un-performed recall or a tripped HTS: set controls OFF, unplug through the outside service vent, disconnect shore power, and do not operate until professionally repaired.",
+    "source": "norcold-product-compliance-recall-info",
+    "locator": "'1200 Series High Temperature Sensor Recall'"
+   },
+   {
+    "text": "Norcold LLC filed Chapter 11 in late 2025. Warranty claims for units sold before November 3, 2025 go to Dave Carter & Associates; recall matters go to the Liquidating Trustee's counsel, Brinkman Law Group.",
+    "source": "norcold-product-compliance-recall-info",
+    "locator": "page introduction"
+   },
+   {
+    "text": "Freezer frost or condensation: Thetford does not give consumers technical advice on this; have it diagnosed at a Norcold Authorized Service Center.",
+    "source": "thetford-faq-frost-condensation-service",
+    "locator": "FAQ answer"
+   },
+   {
+    "text": "If AC voltage is confirmed and the unit still does not cool well on AC, take it to a local Norcold dealer for diagnosis.",
+    "source": "thetford-faq-120v-performance",
+    "locator": "FAQ answer"
+   }
+  ]
+ },
+ "extraSources": [],
+ "unreachable": []
+}

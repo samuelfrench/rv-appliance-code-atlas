@@ -15,11 +15,12 @@ export type FamilySummary = {
 export type SiteIndex = {
   families: FamilySummary[];
   entryPaths: Record<string, string>;
+  symptomPaths: Record<string, string>;
 };
 
 type Fetcher = (input: string) => Promise<Response>;
 
-export const emptySiteIndex: SiteIndex = { families: [], entryPaths: {} };
+export const emptySiteIndex: SiteIndex = { families: [], entryPaths: {}, symptomPaths: {} };
 
 // The index only improves links and ranking, so a missing file (e.g. `vite dev`) falls back to empty.
 export async function loadSiteIndex(url: string, fetcher: Fetcher = fetch): Promise<SiteIndex> {
@@ -27,7 +28,7 @@ export async function loadSiteIndex(url: string, fetcher: Fetcher = fetch): Prom
     const response = await fetcher(url);
     if (!response.ok) return emptySiteIndex;
     const data = (await response.json()) as Partial<SiteIndex>;
-    return { families: data.families ?? [], entryPaths: data.entryPaths ?? {} };
+    return { families: data.families ?? [], entryPaths: data.entryPaths ?? {}, symptomPaths: data.symptomPaths ?? {} };
   } catch {
     return emptySiteIndex;
   }

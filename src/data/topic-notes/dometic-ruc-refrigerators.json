@@ -1,0 +1,227 @@
+{
+ "topic": "dometic-ruc-refrigerators",
+ "researchedAt": "2026-11-07",
+ "summary": {
+  "text": "Dometic RUC5208X, RUC6408X and RUC8408X are compressor refrigerators for 12 V or 24 V DC and 100-240 V AC mains, operated with a control knob and display. Faults show as a red banner with a numbered code across the middle of the display, plus a beep when the fault stops cooling.",
+  "source": "dometic-ruc-refrigerators-08x-manual",
+  "locator": "pp. 1, 7, 52"
+ },
+ "sections": {
+  "models": [
+   {
+    "text": "The 2019 Installation and Operating Manual covers the RUC5208X, RUC6408X and RUC8408X compressor refrigerators, for 12 V or 24 V DC and 100-240 V AC mains.",
+    "source": "dometic-ruc-refrigerators-08x-manual",
+    "locator": "pp. 1, 7-8"
+   },
+   {
+    "text": "Dometic's current manual for RUC5204X, RUC6404X and RUC8404X describes 12 V / 24 V DC models with an LED panel, ON/OFF button, MODE button and temperature button.",
+    "source": "dometic-ruc-refrigerators-04x-manual",
+    "locator": "pp. 1, 8, 10-11"
+   },
+   {
+    "text": "Check that the voltage on the type plate matches the power supply, and that operating voltage and battery voltage match before the first start-up.",
+    "source": "dometic-ruc-refrigerators-08x-manual",
+    "locator": "pp. 5, 24"
+   },
+   {
+    "text": "The refrigerator cools to +8 °C to 0 °C and the freezer to -10 °C to -20 °C; the unit withstands a short-term inclination of 30°.",
+    "source": "dometic-ruc-refrigerators-08x-manual",
+    "locator": "p. 8"
+   }
+  ],
+  "display": [
+   {
+    "text": "Faults are indicated by highlighting the middle section of the display with a red banner and a code; faults that stop the complete cooling function also beep.",
+    "source": "dometic-ruc-refrigerators-08x-manual",
+    "locator": "p. 52"
+   },
+   {
+    "text": "With multiple faults the error code rolls; the beep lasts 2 minutes and repeats every 30 minutes until the fault is restored.",
+    "source": "dometic-ruc-refrigerators-08x-manual",
+    "locator": "p. 53"
+   },
+   {
+    "text": "The code table gives each code's type (Warning or Error), whether the icon flashes, whether it beeps, and whether cooling is affected.",
+    "source": "dometic-ruc-refrigerators-08x-manual",
+    "locator": "pp. 53-54"
+   },
+   {
+    "text": "Door open more than 2 minutes: a beep sounds with a flashing warning code and turns off after the door is closed.",
+    "source": "dometic-ruc-refrigerators-08x-manual",
+    "locator": "p. 52"
+   },
+   {
+    "text": "Mute the beep once with a short press of the control knob, or permanently with the mute icon in the settings menu.",
+    "source": "dometic-ruc-refrigerators-08x-manual",
+    "locator": "p. 52"
+   },
+   {
+    "text": "A blue snowflake means the compressor is on, white means off; after 3 minutes idle the screen goes to standby with a snowflake, but stays on while an error is active.",
+    "source": "dometic-ruc-refrigerators-08x-manual",
+    "locator": "pp. 28, 31"
+   },
+   {
+    "text": "RUC5204X/6404X/8404X: faults are shown by the error warning LED together with other LEDs; battery-low and compressor-related faults flash the warning LED 1x to 5x.",
+    "source": "dometic-ruc-refrigerators-04x-manual",
+    "locator": "pp. 48, 50"
+   }
+  ],
+  "reset": [
+   {
+    "text": "Error type faults must be reset manually by pressing and holding the control knob between 2 s and 4 s; Warning type faults reset automatically once the condition passes.",
+    "source": "dometic-ruc-refrigerators-08x-manual",
+    "locator": "p. 53"
+   },
+   {
+    "text": "Dometic support: press the encoder button for 3 seconds until you hear a beep; holding it too long turns the refrigerator off without resetting the error.",
+    "source": "dometic-ruc-display-fault-w01-support",
+    "locator": "support page 'Display shows fault: W01'"
+   },
+   {
+    "text": "Switching on or off takes a press of the control knob for more than 3 seconds; the refrigerator restarts with the last selected settings.",
+    "source": "dometic-ruc-refrigerators-08x-manual",
+    "locator": "pp. 26, 34"
+   },
+   {
+    "text": "RUC5204X/6404X/8404X: press and hold the ON/OFF button for 2 s; a beep confirms the reset. Turning the refrigerator off and on again will not reset the fault.",
+    "source": "dometic-ruc-refrigerators-04x-manual",
+    "locator": "p. 48"
+   }
+  ],
+  "checks": [
+   {
+    "text": "Display dark, terminal voltage 0 V: restore the battery-to-electronics connection; the manual also lists a faulty main switch (if installed) and a blown supply-line or internal fuse.",
+    "source": "dometic-ruc-refrigerators-08x-manual",
+    "locator": "p. 54"
+   },
+   {
+    "text": "Terminal voltage at or below the cut-in voltage: charge the battery.",
+    "source": "dometic-ruc-refrigerators-08x-manual",
+    "locator": "p. 54"
+   },
+   {
+    "text": "No cooling with an error indicator: fix loose cables or corroded contacts, replace a battery with too little capacity, or replace cable that is too thin or too long.",
+    "source": "dometic-ruc-refrigerators-08x-manual",
+    "locator": "p. 54"
+   },
+   {
+    "text": "Battery protection switches the refrigerator off at 10.4 V (12 V) or 22.8 V (24 V) and back on at 11.7 V or 24.2 V.",
+    "source": "dometic-ruc-refrigerators-08x-manual",
+    "locator": "p. 23"
+   },
+   {
+    "text": "Connect as directly as possible to the battery poles, fused on the positive side at 15 A (12 V) or 7.5 A (24 V), with cable cross-section sized to cable length.",
+    "source": "dometic-ruc-refrigerators-08x-manual",
+    "locator": "pp. 23-24"
+   },
+   {
+    "text": "Voltage present but compressor not starting: ambient temperature too high, insufficient ventilation, dirty condenser or defective fan; clean the ventilation and condenser.",
+    "source": "dometic-ruc-refrigerators-08x-manual",
+    "locator": "p. 55"
+   },
+   {
+    "text": "Compressor runs a long time: wait until large loads of unfrozen goods are frozen, defrost an iced evaporator, and adjust or replace a moist door seal.",
+    "source": "dometic-ruc-refrigerators-08x-manual",
+    "locator": "p. 56"
+   },
+   {
+    "text": "Compressor does not run often: battery capacity exhausted; charge the battery.",
+    "source": "dometic-ruc-refrigerators-08x-manual",
+    "locator": "p. 56"
+   },
+   {
+    "text": "Leave at least 10 mm between the contents and the ventilation openings on the vent cover.",
+    "source": "dometic-ruc-refrigerators-08x-manual",
+    "locator": "p. 26"
+   },
+   {
+    "text": "RUC5204X/6404X/8404X battery low (below 10.9 V or 22.7 V, warning LED 1 flash): charge the vehicle battery and switch on the vehicle ignition.",
+    "source": "dometic-ruc-refrigerators-04x-manual",
+    "locator": "p. 50"
+   },
+   {
+    "text": "RUC5204X/6404X/8404X poor cooling: check no grille or roof vent is blocked and door seals fit; if the compressor is below 0 °C, cover the external vents with insulation.",
+    "source": "dometic-ruc-refrigerators-04x-manual",
+    "locator": "pp. 46-47"
+   }
+  ],
+  "parts": [
+   {
+    "text": "The code table names the defrost NTC sensor, refrigerator air NTC sensor, ambient thermostat sensor, inner fan, defrost heater, outer fan, compressor and controller unit.",
+    "source": "dometic-ruc-refrigerators-08x-manual",
+    "locator": "pp. 53-54"
+   },
+   {
+    "text": "Defective compressor (open circuit between its pins), integrated mains adapter, faulty control sensor or an internal-fault shutdown: only an authorised repair centre can repair these.",
+    "source": "dometic-ruc-refrigerators-08x-manual",
+    "locator": "pp. 54-56"
+   },
+   {
+    "text": "Polarity-reversal electronics protect the refrigerator against reversed polarity and short circuits when connected to a battery.",
+    "source": "dometic-ruc-refrigerators-08x-manual",
+    "locator": "p. 23"
+   },
+   {
+    "text": "The refrigerator compartment has automatic cyclic defrost; the freezer needs manual defrosting once frost exceeds 3 mm.",
+    "source": "dometic-ruc-refrigerators-08x-manual",
+    "locator": "p. 39"
+   },
+   {
+    "text": "RUC5204X/6404X/8404X fault LEDs name the Fresh NTC1, Defrost NTC2 and Ambient NTC3 sensors, mainboard-HMI communication, door reed, internal fan, condenser fan and compressor controller.",
+    "source": "dometic-ruc-refrigerators-04x-manual",
+    "locator": "pp. 48-50"
+   }
+  ],
+  "callTech": [
+   {
+    "text": "No cooling with power present and display lit: defective component, which only an authorised repair centre can repair.",
+    "source": "dometic-ruc-refrigerators-08x-manual",
+    "locator": "pp. 54-55"
+   },
+   {
+    "text": "Compressor runs constantly on the warmest setting: control sensor faulty; only an authorised repair centre can repair it.",
+    "source": "dometic-ruc-refrigerators-08x-manual",
+    "locator": "p. 56"
+   },
+   {
+    "text": "If a code persists after the owner check and reset, Dometic support says it can only be repaired by an authorized service provider.",
+    "source": "dometic-ruc-display-fault-e35-support",
+    "locator": "support page 'Display shows fault: E35'"
+   },
+   {
+    "text": "If the refrigerant circuit is damaged: avoid naked flames and sparks and air the room well; never open the refrigerant circuit.",
+    "source": "dometic-ruc-refrigerators-08x-manual",
+    "locator": "pp. 5-6"
+   },
+   {
+    "text": "Repairs only by qualified personnel; a damaged power cable must be replaced by the manufacturer, customer service or a similarly qualified person.",
+    "source": "dometic-ruc-refrigerators-08x-manual",
+    "locator": "p. 5"
+   },
+   {
+    "text": "RUC5204X/6404X/8404X compressor startup, controller overload or overheat and condenser fan overcurrent faults: reset, and contact an authorized service agent if the error occurs again.",
+    "source": "dometic-ruc-refrigerators-04x-manual",
+    "locator": "p. 50"
+   }
+  ]
+ },
+ "extraSources": [
+  {
+   "id": "dometic-ruc-refrigerators-08x-manual",
+   "brand": "Dometic",
+   "title": "Dometic RUC5208X, RUC6408X, RUC8408X Compressor Refrigerator Installation and Operating Manual (APAC, EN)",
+   "url": "https://media.dometic.com/externalassets/09-0904-090417-090417001_9600013556_69899.pdf",
+   "type": "manufacturer-manual",
+   "official": true
+  },
+  {
+   "id": "dometic-ruc-refrigerators-04x-manual",
+   "brand": "Dometic",
+   "title": "Dometic RUC5204X, RUC6404X, RUC8404X Installation and Operating Manual APAC (EN)",
+   "url": "https://media.dometic.com/externalassets/ruc5208x_144422.pdf",
+   "type": "manufacturer-manual",
+   "official": true
+  }
+ ],
+ "unreachable": []
+}

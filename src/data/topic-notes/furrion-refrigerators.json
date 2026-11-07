@@ -1,0 +1,215 @@
+{
+  "topic": "furrion-refrigerators",
+  "researchedAt": "2026-11-07",
+  "summary": {
+    "text": "The Furrion Arctic 10.6 cu. ft. refrigerator is a 12V DC compressor refrigerator run from the RV battery supply. Its control panel reports faults by blinking its five temperature LEDs in code patterns and by flashing the BATTERY icon slow or fast for low or high input voltage.",
+    "source": "furrion-10-6-refrigerator",
+    "locator": "PDF p. 9 (printed p. 8), PDF p. 12 (printed p. 11)"
+  },
+  "sections": {
+    "models": [
+      {
+        "text": "Arctic 10.6 cu. ft. 12V: FCR11DCGTA-BG-LHH (2023136439), -BG-RHH (2023136440), -SG-LHH (2023136437) and -SG-RHH (2023136438); BG is black glass and SG is stainless steel glass.",
+        "source": "furrion-10-6-refrigerator",
+        "locator": "PDF p. 1"
+      },
+      {
+        "text": "Arctic 8 and 10 cu. ft. 12V dial models: FCR08DCGTA and FCR10DCGTA in -BL, -BR, -NL, -NR, -KL and -KR versions; K versions have black glass doors and N versions stainless steel.",
+        "source": "furrion-arctic-refrigerator",
+        "locator": "p. 1, p. 9"
+      },
+      {
+        "text": "Arctic 10.7 cu. ft. bottom-freezer French door 12V: FCR10DCGFA-SG and FCR10DCGFA-BG (Lippert 2023009191, 2023009192).",
+        "source": "furrion-french-door-refrigerator",
+        "locator": "PDF p. 1"
+      },
+      {
+        "text": "15 cu. ft. built-in frost-free French door FCR16ACGFA-BG (2024036242) is rated 115V with an LED display and electronic control, unlike the 12V DC Arctic models.",
+        "source": "furrion-15-refrigerator",
+        "locator": "PDF p. 1, PDF p. 13 (printed p. 12)"
+      },
+      {
+        "text": "Serial label location: 8 and 10 cu. ft. units at the bottom inside of the refrigerator door; 14 cu. ft. on the back upper left corner; 19.6 cu. ft. behind the lower drawer.",
+        "source": "furrion-appliances-production-label-w009",
+        "locator": "p. 2-3"
+      },
+      {
+        "text": "The amount of refrigerant charged in the unit is printed on the rating label.",
+        "source": "furrion-10-6-refrigerator",
+        "locator": "PDF p. 12 (printed p. 11)"
+      }
+    ],
+    "display": [
+      {
+        "text": "10.6 cu. ft.: hold POWER 3 seconds to turn on; the panel shows setting 1-5, 5 is coldest and 3 is normal. Holding MODE 3 seconds starts SUPERFAST cooling and lights all five LEDs, which is not a fault.",
+        "source": "furrion-10-6-refrigerator",
+        "locator": "PDF p. 9 (printed p. 8)"
+      },
+      {
+        "text": "10.6 cu. ft. battery monitor: normal operating voltage is 10.6V–14.6V; outside that range the compressor may turn off and the battery alarm icon lights.",
+        "source": "furrion-10-6-refrigerator",
+        "locator": "PDF p. 9 (printed p. 8)"
+      },
+      {
+        "text": "10.6 cu. ft.: in Power Off the red power indicator lights; the interior light goes out if the door is open more than 1 minute; defrost runs automatically every two to three days.",
+        "source": "furrion-10-6-refrigerator",
+        "locator": "PDF p. 9 (printed p. 8)"
+      },
+      {
+        "text": "10.7 French door: the display normally shows battery voltage ('--' at power-on). Normal is 10.4–14.5V; 'OV ALM' lights at 14.5V or more, 'UV ALM' at 10.4V or less with a 3-second beep.",
+        "source": "furrion-french-door-refrigerator",
+        "locator": "PDF p. 8 (printed p. 7)"
+      },
+      {
+        "text": "10.7 French door: E0, EC and the E1 voltage alarms beep; the other codes show silently. Display alternating voltage and 'HC' means defrost was manually paused for 48 hours.",
+        "source": "furrion-french-door-refrigerator",
+        "locator": "PDF p. 8 (printed p. 7)"
+      },
+      {
+        "text": "Model scope: on FCR10DCGFA French door units E2, E3, E4 and E5 mean fridge sensor, freezer sensor, frosting sensor and compressor start failure, not the FCR11DCGTA meanings for the same codes.",
+        "source": "furrion-french-door-refrigerator",
+        "locator": "PDF p. 8 (printed p. 7)"
+      },
+      {
+        "text": "15 cu. ft.: hold Unlock 3 seconds to unlock the panel (lock light on when locked). 'OF' on the temperature display means the refrigerator is switched off; fridge range is 34–43°F.",
+        "source": "furrion-15-refrigerator",
+        "locator": "PDF p. 8 (printed p. 7), PDF p. 9 (printed p. 8)"
+      },
+      {
+        "text": "Arctic 8/10 dial models have no fault display. Flash codes are read by connecting a 10 mA LED to the inverter PCB 'D' and '+' terminals behind the back cover, a service-manual diagnostic step.",
+        "source": "furrion-arctic-refrigerator",
+        "locator": "p. 17-18"
+      },
+      {
+        "text": "Arctic 8/10 has an automatic shut-off if voltage drops below 9.6V at the terminal connection, to protect the batteries.",
+        "source": "furrion-arctic-refrigerator",
+        "locator": "p. 6"
+      }
+    ],
+    "reset": [
+      {
+        "text": "Lippert requires a hard reset before replacing components or doing any troubleshooting or service on a 12V refrigerator: remove shore power, battery power and solar power.",
+        "source": "furrion-10-6-refrigerator",
+        "locator": "PDF p. 12 (printed p. 11)"
+      },
+      {
+        "text": "QR-182 hard reset: unplug shore power (120V AC), disconnect all battery negative then positive terminals, disconnect solar (check quick disconnects), confirm lights and panel are dead, wait five to 10 minutes, restore power.",
+        "source": "furrion-12v-hard-reset-qr",
+        "locator": "p. 1"
+      },
+      {
+        "text": "A battery disconnect switch is not enough for the hard reset because the refrigerator may be wired directly to the battery.",
+        "source": "furrion-12v-hard-reset-qr",
+        "locator": "p. 1"
+      },
+      {
+        "text": "Arctic 8/10 lockout check: with power applied at least 15 minutes, turn the dial to OFF for 5 minutes and back on; if it still will not run, do the QR-182 hard reset and wait 5-10 minutes before operating.",
+        "source": "furrion-arctic-refrigerator",
+        "locator": "p. 24"
+      },
+      {
+        "text": "Arctic 8/10 thermal fault: make sure ambient is below 90°F (32°C), shut the refrigerator off and disconnect power for at least two hours, then restart.",
+        "source": "furrion-arctic-refrigerator",
+        "locator": "p. 30"
+      },
+      {
+        "text": "Lippert 'not cooling' FAQ: turn the refrigerator off, wait 10-15 minutes and turn it back on, and test operation with a cup of water before a hard reset.",
+        "source": "furrion-refrigerators-15-plus-support",
+        "locator": "FAQ 'Why is my refrigerator not cooling?'"
+      }
+    ],
+    "checks": [
+      {
+        "text": "Fuse location: at the bottom of the refrigerator; newer models behind the front panel, older models at the back.",
+        "source": "furrion-refrigerators-6-14-support",
+        "locator": "FAQ 'Where can i find the fuse on my refrigerator?'"
+      },
+      {
+        "text": "Compressor fault on the 10.6: check whether the battery has fallen below 9V, which triggers compressor under-voltage protection; charge or replace the battery.",
+        "source": "furrion-10-6-refrigerator",
+        "locator": "PDF p. 12 (printed p. 11)"
+      },
+      {
+        "text": "Not cooling on the 10.6: if indicator lights '2' and '3' are on, the Power Off function is active; press the corresponding key to exit it.",
+        "source": "furrion-10-6-refrigerator",
+        "locator": "PDF p. 12 (printed p. 11)"
+      },
+      {
+        "text": "Level the refrigerator with the front leveling feet; if it is not level the door gasket will not seal and the refrigerator may fail to operate.",
+        "source": "furrion-10-6-refrigerator",
+        "locator": "PDF p. 8 (printed p. 7)"
+      },
+      {
+        "text": "Fan airflow paper test (Arctic 8/10): hang paper over the front vent cover; the left side should draw it in and the right side should blow it out.",
+        "source": "furrion-arctic-refrigerator",
+        "locator": "p. 33"
+      },
+      {
+        "text": "Lippert answers 'No' to whether a 12V refrigerator requires ventilation; the manuals still say not to cover or block the refrigerator's own vents or grilles.",
+        "source": "furrion-12v-refrigerator-ventilation-faq",
+        "locator": "FAQ answer"
+      },
+      {
+        "text": "Extended storage: empty and dry the cavity, prop the door open, fit the storage lock, remove the battery, disconnect solar and shore power; skipping this may require a hard reset.",
+        "source": "furrion-refrigerators-6-14-support",
+        "locator": "FAQ 'Do I need to do anything to my refrigerator for extended storage?'"
+      },
+      {
+        "text": "Arctic 8/10 needs manual defrost when ice is thicker than 1/2 inch; storing the refrigerator while it is running can cause thermal overheating and lockout.",
+        "source": "furrion-arctic-refrigerator",
+        "locator": "p. 6, p. 30"
+      }
+    ],
+    "parts": [
+      {
+        "text": "Arctic 8/10 fuse: ATC blade fuse 15A slow blow (2021149632), behind the front vent cover; older units may have a glass cartridge fuse holder.",
+        "source": "furrion-arctic-refrigerator",
+        "locator": "p. 7, p. 19"
+      },
+      {
+        "text": "Arctic 8/10 inverter (R600a compressor control/driver board, 2021149633), spark-free thermostat (2021128850) and cooling fan are the parts the service manual replaces for error codes and lockout.",
+        "source": "furrion-arctic-refrigerator",
+        "locator": "p. 7-9, p. 24-30"
+      },
+      {
+        "text": "The 10.6 supply circuit needs a 20A fuse, ATC type or manual-reset breaker only, never an auto-resetting breaker; any electrical installation work is for a qualified or competent person.",
+        "source": "furrion-10-6-refrigerator",
+        "locator": "PDF p. 6 (printed p. 5)"
+      },
+      {
+        "text": "Service line requirement for Furrion 12V refrigerators: 10.2~14.2V DC on a dedicated single branch.",
+        "source": "furrion-12v-refrigerator-service-line-faq",
+        "locator": "FAQ answer"
+      }
+    ],
+    "callTech": [
+      {
+        "text": "If you find a refrigerant leak, the refrigerator will need to be replaced.",
+        "source": "furrion-refrigerant-leak-boundary-faq",
+        "locator": "FAQ answer"
+      },
+      {
+        "text": "The refrigerator cooling system is under pressure: do not try to repair or recharge a defective cooling system.",
+        "source": "furrion-arctic-refrigerator",
+        "locator": "p. 5"
+      },
+      {
+        "text": "If the troubleshooting table does not solve it, do not disassemble or repair the refrigerator; it should be serviced by an authorized technician with genuine parts.",
+        "source": "furrion-10-6-refrigerator",
+        "locator": "PDF p. 12 (printed p. 11)"
+      },
+      {
+        "text": "If the compressor still does not return to normal 5 minutes after battery checks, contact after-sales personnel for service.",
+        "source": "furrion-10-6-refrigerator",
+        "locator": "PDF p. 12 (printed p. 11)"
+      },
+      {
+        "text": "If voltage at the appliance is outside 12V–15V, Lippert treats it as an external RV power issue: connect shore power, check converter, wiring, switches and batteries, then contact the RV manufacturer.",
+        "source": "furrion-arctic-refrigerator",
+        "locator": "p. 20"
+      }
+    ]
+  },
+  "extraSources": [],
+  "unreachable": []
+}

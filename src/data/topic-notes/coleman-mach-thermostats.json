@@ -1,0 +1,175 @@
+{
+  "topic": "coleman-mach-thermostats",
+  "researchedAt": "2026-11-07",
+  "summary": {
+    "text": "The Coleman-Mach 9330-33* zone thermostat runs up to four air conditioners or heat pumps and up to two heating sources from one wall unit on a 12 VDC control circuit. It reports problems as LCD text such as \"Er\" or a flashing \"Gas\", and a green LED on each zone control box shows control voltage and communication.",
+    "source": "coleman-9330-thermostat",
+    "locator": "pp. 1-2"
+  },
+  "sections": {
+    "models": [
+      {
+        "text": "9420*381 and 9420*382 digital wall thermostats: white LCD on black with a rotary push knob; the 9420-382 is the version supplied with plugs.",
+        "source": "coleman-9420-thermostat",
+        "locator": "pp. 1, 3, 5"
+      },
+      {
+        "text": "9430 series: Cool Only 9430*339*, 9430*340*, 9430*342*; Heat/Cool 9430*335*, 9430*336*, 9430*337*, 9430*338*. A remote sensor may be used with 9430*335*.",
+        "source": "coleman-9430-thermostat",
+        "locator": "p. 1"
+      },
+      {
+        "text": "9630*352* heat pump thermostat, paired by Bluetooth to the RVClimate app; one thermostat holds up to 4 phones and one phone up to 3 thermostats.",
+        "source": "coleman-bluetooth-9630-352-heat-pump",
+        "locator": "p. 1"
+      },
+      {
+        "text": "9630*351* and 9630*353* heat pump thermostats share the same operation, lockout chart and RVClimate pairing as the 9630*352*.",
+        "source": "coleman-bluetooth-9630-351-353-heat-pump",
+        "locator": "pp. 1-2"
+      },
+      {
+        "text": "6535-335* is a 2-stage heat pump wall thermostat for an RV Products 2-stage heat pump, connected by a 9-pin plug through a lifeline; the furnace connects to a 3-pin plug.",
+        "source": "coleman-6535-335-heat-pump-thermostat",
+        "locator": "p. 1"
+      },
+      {
+        "text": "6536-335* is the 2-stage heat pump thermostat with backup heat: when the gas furnace comes on, the heat pump turns off.",
+        "source": "coleman-6536-335-heat-pump-thermostat",
+        "locator": "pp. 1-2"
+      },
+      {
+        "text": "The 9420-330 multi-zone touchscreen thermostat works with the 9430-754 Cool Only, 9430-758 Cool/Heat and 9630-758 Heat Pump NetZone control kits; operating voltage 9-16 VDC.",
+        "source": "coleman-9420-330-multizone-controller",
+        "locator": "p. 1"
+      },
+      {
+        "text": "The 9420-391 needs 12 VDC power (\"C\" wire) and does not work with electric baseboard heat (120-240 V) or millivolt systems.",
+        "source": "coleman-wifi-thermostat-iom-9420-391",
+        "locator": "p. 18 'Compatibility'"
+      },
+      {
+        "text": "To identify a wall thermostat, remove it from the wall (wires can stay connected); the sticker on the back of the mounting plate carries the \"RVP\" number Coleman-Mach needs.",
+        "source": "coleman-mach-faqs",
+        "locator": "'Where do I find the part number of my wall thermostat?'"
+      }
+    ],
+    "display": [
+      {
+        "text": "9330: displays room temperatures from 41 F to 110 F while operating from -40 F to +175 F; colder readings show as 41 and hotter as 110.",
+        "source": "coleman-9330-thermostat",
+        "locator": "p. 1"
+      },
+      {
+        "text": "9330 zone control box: the green LED lights with adequate 12 VDC, first flashes the number of times matching its zone jumper, then stops flashing once thermostat communication is established.",
+        "source": "coleman-9330-thermostat",
+        "locator": "p. 2"
+      },
+      {
+        "text": "9420-381/382: during the 3-minute compressor/elec heat short-cycle delay, the HVAC state segment blinks if there is a call; \"REMOTE\" at the top means a remote sensor is in use.",
+        "source": "coleman-9420-thermostat",
+        "locator": "pp. 1, 7"
+      },
+      {
+        "text": "9420-330: a zone reads \"_ _\" until its zone controller updates the temperature; a status LED on the back of the thermostat shows network diagnostics.",
+        "source": "coleman-9420-330-multizone-controller",
+        "locator": "pp. 1, 3"
+      }
+    ],
+    "reset": [
+      {
+        "text": "9420-381/382 manual reboot: press and hold the knob 12 seconds; at 4 s the units screen appears, then a countdown; when the display turns off, release the knob and it reboots.",
+        "source": "coleman-9420-thermostat",
+        "locator": "p. 8 'Manual Reboot'"
+      },
+      {
+        "text": "9420-381/382: DIP switch changes take effect only after a reboot; cool, heat and cool+heat set points and temperature units are retained through power loss or reboot.",
+        "source": "coleman-9420-thermostat",
+        "locator": "pp. 4, 7"
+      },
+      {
+        "text": "Heat pump thermostat lockout is a hard lockout: no reset bypasses it, and pulling the fuse will not reset it. One strike after lockout ends puts it back into lockout.",
+        "source": "coleman-heat-pump-thermostat-lockout-function",
+        "locator": "p. 2"
+      },
+      {
+        "text": "9420-391: \"Reset settings\" restores factory state and reconnects to the app automatically; \"Reset Network Settings\" clears Wi-Fi only and needs re-pairing. For a crash or no knob response, press the RST reset button to force a restart.",
+        "source": "coleman-wifi-thermostat-iom-9420-391",
+        "locator": "p. 27"
+      }
+    ],
+    "checks": [
+      {
+        "text": "9330, no display: remove the ceiling assembly grille and look through the round opening of the control box for the green LED; if it is not lit, the control box has no power.",
+        "source": "coleman-9330-thermostat",
+        "locator": "p. 2 'Troubleshooting'"
+      },
+      {
+        "text": "9330, Heat or Cool shows but settings will not change: that appliance may not be installed in this coach; check the homeowner packet for each zone's appliances.",
+        "source": "coleman-9330-thermostat",
+        "locator": "p. 2 'Troubleshooting'"
+      },
+      {
+        "text": "9330: the setpoint cannot be adjusted with SYSTEM in OFF, the zone mode Off, or the fan set to run HIGH or LOW continuously.",
+        "source": "coleman-9330-thermostat",
+        "locator": "pp. 1-2"
+      },
+      {
+        "text": "9420-330: heat and cool cannot run at the same time in any zone; set all zones to Off before switching between Heat and Cool.",
+        "source": "coleman-9420-330-multizone-controller",
+        "locator": "p. 3"
+      },
+      {
+        "text": "9420-330: in Elec Heat zones, gas heat assists automatically if electric heat takes more than 20 minutes or the room is more than 2 C / 4 F from set.",
+        "source": "coleman-9420-330-multizone-controller",
+        "locator": "pp. 3-4"
+      }
+    ],
+    "parts": [
+      {
+        "text": "9420-381/382 have a self-resetting PTC fuse that opens on miswiring or a short; if it keeps opening, the fault must be located and corrected. Control circuit: 12 VDC, max 2 A.",
+        "source": "coleman-9420-thermostat",
+        "locator": "p. 1"
+      },
+      {
+        "text": "9430 thermostats have a replaceable 2 amp fuse on the base that opens on miswiring or a short; before replacing it, the cause must be located and corrected. Control circuit max 1 amp.",
+        "source": "coleman-9430-thermostat",
+        "locator": "p. 1"
+      },
+      {
+        "text": "9330: each zone has an upper unit control board in the return air plenum with zone and HP/NON-HP jumpers; zones other than zone 1 always need a remote room sensor.",
+        "source": "coleman-9330-thermostat",
+        "locator": "p. 2"
+      },
+      {
+        "text": "9420-330: zone temperature sensor RVP 8330-310 on each zone control box is required on zones 2-4; zone 1 may use the internal thermistor module.",
+        "source": "coleman-9420-330-multizone-controller",
+        "locator": "pp. 1-2"
+      }
+    ],
+    "callTech": [
+      {
+        "text": "9330: \"Er\" with a disrupted external room-sensor circuit, or two or more units operating identically (boards set to the same zone), call for a service technician.",
+        "source": "coleman-9330-thermostat",
+        "locator": "p. 2 'Troubleshooting'"
+      },
+      {
+        "text": "9330: if the control box green LED is not lit, there is a problem with the 12 V DC control voltage and it must be serviced by a trained technician.",
+        "source": "coleman-9330-thermostat",
+        "locator": "p. 2 'Control Box'"
+      },
+      {
+        "text": "9330 DANGER: control board jumpers are set only with 115 VAC and 12 VDC disconnected; failure to do this could result in injury or death.",
+        "source": "coleman-9330-thermostat",
+        "locator": "p. 2"
+      },
+      {
+        "text": "9420-391: do not change the minimum compressor off time unless you are a trained technical expert, and do not change advanced settings without consulting technical support.",
+        "source": "coleman-wifi-thermostat-iom-9420-391",
+        "locator": "pp. 23, 26"
+      }
+    ]
+  },
+  "extraSources": [],
+  "unreachable": []
+}

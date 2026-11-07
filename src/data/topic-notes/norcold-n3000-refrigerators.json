@@ -1,0 +1,264 @@
+{
+ "topic": "norcold-n3000-refrigerators",
+ "researchedAt": "2026-11-07",
+ "summary": {
+  "text": "The N3000 series are 3-way (AC, DC, propane) compact absorption refrigerators. The North American N3104, N3141 and N3150 use a control panel with LCD touchscreen; when a problem occurs a numbered error code lights in the error-code field of the panel.",
+  "source": "norcold-n3000-na-owner",
+  "locator": "p. 4, 6, 15"
+ },
+ "sections": {
+  "models": [
+   {
+    "text": "Thetford's N3000 service page covers N3080, N3090, N3097, N3100, N3104, N3108, N3112, N3115, N3145, N3150, N3170 and N3175; first market introduction 2012, last production 2019.",
+    "source": "thetford-n3000-support",
+    "locator": "page header"
+   },
+   {
+    "text": "North American N3104 (3.7 cu. ft.), N3141 (5 cu. ft.) and N3150 (5.3 cu. ft.) are 3-way AC/DC/LP refrigerators, listed as discontinued.",
+    "source": "norcold-n3000-series-us-support",
+    "locator": "product summary"
+   },
+   {
+    "text": "The data plate with model information is inside the refrigerator, behind the vegetable drawer or on the side wall.",
+    "source": "thetford-n3000-support",
+    "locator": "FAQ 'Where can I find what kind of model my refrigerator is?'"
+   },
+   {
+    "text": "Repair paths split by production date: before 22-6-2015 (serial number below E173S) versus after (E173S or higher). Code 10 also splits at 08-02-2016 (serial E039T).",
+    "source": "norcold-n3000-troubleshooting",
+    "locator": "p. 4, 14"
+   },
+   {
+    "text": "The troubleshooting flowcharts are written for 230 V units: AC input is checked at 190-260 VAC and one chart covers inadequate performance on a 230 V source.",
+    "source": "norcold-n3000-troubleshooting",
+    "locator": "p. 12, 14, 20"
+   },
+   {
+    "text": "The anti-condensation heater is present on models N3150 and N3141; turn it off only when necessary to conserve vehicle battery charge.",
+    "source": "norcold-n3000-na-owner",
+    "locator": "p. 6"
+   }
+  ],
+  "display": [
+   {
+    "text": "Control panel parts: on/off switch, touchscreen, mode symbols, cooling level indicators, anti-condensation symbol (N3150 only) and an error code field.",
+    "source": "norcold-n3000-na-owner",
+    "locator": "p. 6 'Control Panel With Touchscreen'"
+   },
+   {
+    "text": "Hold the on/off switch 1 second to turn on; its light turns green. After 10 seconds the settings dim and the green light shows it is still running; push on/off again to see active settings.",
+    "source": "norcold-n3000-na-owner",
+    "locator": "p. 6"
+   },
+   {
+    "text": "If the 'auto' function is selected but no energy source is available, a light in the on/off switch blinks red.",
+    "source": "norcold-n3000-na-owner",
+    "locator": "p. 7, 30"
+   },
+   {
+    "text": "In AUTO, DC is selected if the engine is running; with the engine off, AC is selected if 120 volts AC is available, otherwise gas.",
+    "source": "norcold-n3000-na-owner",
+    "locator": "p. 30"
+   },
+   {
+    "text": "LED-display models: to enter service mode, push the 3 buttons simultaneously until a binary code is visible, then read which error it is from the table.",
+    "source": "norcold-n3000-troubleshooting",
+    "locator": "p. 2"
+   },
+   {
+    "text": "While the display is flashing, hold down all three control buttons until it stops flashing; the temperature level bars that light up show the error code.",
+    "source": "thetford-n3000-support",
+    "locator": "FAQ 'My absorption refrigerator gives an error code'"
+   },
+   {
+    "text": "On LCD models the power LED flashes red and the display flashes; a wrench symbol is shown on the right, followed by the error code.",
+    "source": "thetford-n3000-support",
+    "locator": "FAQ 'The Power-LED of my fridge is flashing?'"
+   },
+   {
+    "text": "Without the 12 VDC low-current supply no error code is given. With 12 VDC present the green power LED is on; an empty battery pack can show a red light.",
+    "source": "norcold-n3000-troubleshooting",
+    "locator": "p. 2-3"
+   }
+  ],
+  "reset": [
+   {
+    "text": "Turn off by holding the on/off switch 2 seconds until all lights go out; turn on by holding it 1 second.",
+    "source": "norcold-n3000-na-owner",
+    "locator": "p. 7, 29"
+   },
+   {
+    "text": "Gas lockout (code 3) after air in the line: turn off (hold 2 seconds), turn back on (hold 1 second) to start another 30-second trial; two or three tries may be needed.",
+    "source": "norcold-n3000-na-owner",
+    "locator": "p. 29"
+   },
+   {
+    "text": "The flowcharts for codes 1, 5 and 9 start with turning the refrigerator off and on; if the code clears, the problem is solved.",
+    "source": "norcold-n3000-troubleshooting",
+    "locator": "p. 4, 9, 13"
+   },
+   {
+    "text": "For code 12 the flowchart says to disconnect 12V and wait 5 minutes so the resettable fuse can cool down, then reconnect 12 V.",
+    "source": "norcold-n3000-troubleshooting",
+    "locator": "p. 16"
+   },
+   {
+    "text": "A short press may not register; hold the on/off button for at least 2 seconds.",
+    "source": "thetford-n3000-support",
+    "locator": "FAQ 'Why doesn't my refrigerator work when I push the on/off button?'"
+   }
+  ],
+  "checks": [
+   {
+    "text": "Refrigerator does not start: check it was turned on per the instructions, the vehicle is level, and an energy source is available.",
+    "source": "norcold-n3000-na-owner",
+    "locator": "p. 15 'Frequently Asked Questions'"
+   },
+   {
+    "text": "Not cooling enough: check vents are not covered or blocked outside, it is level, the highest cooling level is selected, the door closes, fins are not heavily iced, and the fan wire at the rear is connected.",
+    "source": "norcold-n3000-na-owner",
+    "locator": "p. 15 'Frequently Asked Questions'"
+   },
+   {
+    "text": "Always use gas or AC to start up and cool; 12V DC operation is only effective while the vehicle engine is running.",
+    "source": "norcold-n3000-na-owner",
+    "locator": "p. 7"
+   },
+   {
+    "text": "If DC mode is selected manually, the refrigerator does not switch to another energy source automatically when the engine is off.",
+    "source": "norcold-n3000-troubleshooting",
+    "locator": "p. 10"
+   },
+   {
+    "text": "Cooling level 3 is advised for ambient 60-75 degrees F; higher outside temperatures need a higher level.",
+    "source": "norcold-n3000-na-owner",
+    "locator": "p. 7"
+   },
+   {
+    "text": "Operate within 3 degrees off level side-to-side and 6 degrees front-to-back; let it cool eight hours before loading food.",
+    "source": "norcold-n3000-na-owner",
+    "locator": "p. 5-6"
+   },
+   {
+    "text": "For extended storage the fan at the rear is disconnected at the red-wire connector of the DC power cord; reconnect it before using the refrigerator again.",
+    "source": "norcold-n3000-na-owner",
+    "locator": "p. 11 'Refrigerator Storage'"
+   },
+   {
+    "text": "Before purging air from the gas line, make sure all of the gas valves are open.",
+    "source": "norcold-n3000-na-owner",
+    "locator": "p. 29"
+   },
+   {
+    "text": "Above 5500 feet, propane operation may give reduced cooling and burner outages; Norcold recommends running on AC.",
+    "source": "norcold-n3000-na-owner",
+    "locator": "p. 8"
+   },
+   {
+    "text": "Thetford does not advise running the refrigerator on gas while driving, because good gas performance cannot be guaranteed.",
+    "source": "thetford-n3000-support",
+    "locator": "FAQ 'Use of gas while driving'"
+   }
+  ],
+  "parts": [
+   {
+    "text": "The wiring pictorial names the power control module, burner control module, solenoid gas valve, spark electrode, thermistor, thermoswitch, AC and DC heaters, display module, fan and 4A, 20A, 1A and 1.1A resettable fuses.",
+    "source": "norcold-n3000-na-owner",
+    "locator": "p. 14"
+   },
+   {
+    "text": "Most flowcharts end with replacing the power board assembly (692247) for serial E173S and later, or LED kit SR 691138 / LCD kit SR 691139 for earlier units.",
+    "source": "norcold-n3000-troubleshooting",
+    "locator": "p. 4-21"
+   },
+   {
+    "text": "Code 1 repair path: gas valve replacement and an error code 1 modification kit (690449 for tab connector, 690799 for Mate-N-Lok connector).",
+    "source": "norcold-n3000-troubleshooting",
+    "locator": "p. 4"
+   },
+   {
+    "text": "The thermistor must be fitted on the 5th fin from the right inside the cooling cabinet; the DC heater circuit uses a 20A fuse.",
+    "source": "norcold-n3000-troubleshooting",
+    "locator": "p. 8, 19"
+   },
+   {
+    "text": "For the N3104 the parts list names thermistor 623077, thermistor cable kit 636874, gas valve kit 636873, spark electrode kit 636872 and service power board V3 kit 691448 (serial E090T and above).",
+    "source": "norcold-n3000-na-parts-635992",
+    "locator": "p. 5, 7"
+   },
+   {
+    "text": "Service and maintenance work goes to your dealer or a Norcold authorized service center; all service work must be done by a qualified service technician.",
+    "source": "norcold-n3000-na-owner",
+    "locator": "p. 3"
+   },
+   {
+    "text": "The cooling unit cannot be exchanged because of the refrigerator's design.",
+    "source": "thetford-n3000-support",
+    "locator": "FAQ 'Why can't I replace the cooling unit?'"
+   }
+  ],
+  "callTech": [
+   {
+    "text": "If you smell gas: open windows, do not light the appliance, do not touch electrical switches, put out open flames, shut off the fuel supply, evacuate and call emergency services.",
+    "source": "norcold-n3000-na-owner",
+    "locator": "p. 1"
+   },
+   {
+    "text": "All lights on the control panel blinking: contact your dealer or a Norcold Service Center.",
+    "source": "norcold-n3000-na-owner",
+    "locator": "p. 15"
+   },
+   {
+    "text": "If the burner does not ignite on propane after three attempts, refer to Troubleshooting and consult a dealer or authorized Norcold Service Center.",
+    "source": "norcold-n3000-na-owner",
+    "locator": "p. 29"
+   },
+   {
+    "text": "If it does not start to cool down after about two hours, contact your dealer or a Norcold authorized service center.",
+    "source": "norcold-n3000-na-owner",
+    "locator": "p. 6"
+   },
+   {
+    "text": "Contact a dealer or Norcold authorized service center if the gas flame is yellow, flickering or changing shape, or touches the inside of the flue tube.",
+    "source": "norcold-n3000-na-owner",
+    "locator": "p. 12"
+   },
+   {
+    "text": "The cooling system is under pressure and contains sodium chromate; do not repair or recharge it, and do not bypass or change electrical components.",
+    "source": "norcold-n3000-na-owner",
+    "locator": "p. 3"
+   },
+   {
+    "text": "Thetford strongly advises a qualified, licensed professional for installation, maintenance, repair or any other servicing of the product.",
+    "source": "norcold-n3000-troubleshooting",
+    "locator": "p. 1 'Disclaimer'"
+   },
+   {
+    "text": "Work on live parts should always be done by a specialist workshop; if one energy type cannot be used because of a fault, select an alternative energy type.",
+    "source": "thetford-n3000-support",
+    "locator": "FAQ error-code notes"
+   },
+   {
+    "text": "Have the chimney and burner cleaned in a specialist workshop every year; soot build-up reduces performance and risks heat build-up.",
+    "source": "thetford-n3000-support",
+    "locator": "FAQ 'Do the chimney and burner need cleaning?'"
+   },
+   {
+    "text": "Solar panels can push the 12 V supply too high; the refrigerator has a built-in safety for this, so check the warning code and contact a dealer or Thetford Service Centre.",
+    "source": "thetford-n3000-support",
+    "locator": "FAQ 'solar panels'"
+   }
+  ]
+ },
+ "extraSources": [
+  {
+   "id": "norcold-n3000-na-parts-635992",
+   "brand": "Norcold",
+   "title": "Norcold N3104, N3150 and N3141 Parts List 635992",
+   "url": "https://www.thetford.com/app/uploads/2024/10/PL_N3104N3150_N3141_635992_20230321.pdf",
+   "type": "manufacturer-parts-list",
+   "official": true
+  }
+ ],
+ "unreachable": []
+}

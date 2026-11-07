@@ -1,0 +1,220 @@
+{
+ "topic": "dometic-rm8-refrigerators",
+ "researchedAt": "2026-11-07",
+ "summary": {
+  "text": "Dometic RM8xxx, RMS8xxx, RML8xxx and RMSL8xxx are absorber refrigerators for caravans and motorhomes that run on mains, 12 V DC or liquid gas. Electronic MES and AES models report faults by flashing LEDs, the failure LED plus a mode or temperature LED, and AES models add an acoustic alarm.",
+  "source": "dometic-rm8-rms8-rml8-operating",
+  "locator": "pp. 1, 13, 26"
+ },
+ "sections": {
+  "models": [
+   {
+    "text": "The operating manual covers RM8xxx, RMS8xxx, RML8xxx and RMSL8xxx absorber refrigerators.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 1"
+   },
+   {
+    "text": "Last digit of the model number: 0 = manual energy selection with battery igniter; 1 = manual energy selection with automatic ignition (MES); 5 = automatic and manual energy selection with automatic ignition (AES).",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 10"
+   },
+   {
+    "text": "Model code RM(S)(L) 8 5 0 1: S = stepped cabinet, L = 'Large'; width digit 4 = 486 mm, 5 = 523 mm; depth digit 0 = standard, 5 = +55 mm, 6 = +65 mm.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 10"
+   },
+   {
+    "text": "The rating plate inside the refrigerator shows model number, product number, serial number, electrical rating and gas pressure; quote model, product and serial number (and MLC code if applicable) to customer service.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "pp. 5, 10"
+   },
+   {
+    "text": "Rated input is 135 W mains / 130 W 12 V for RM 84xx-85xx, 125 W / 120 W for RMS models and 190 W / 170 W for the 1245 mm tall RML and RMSL models.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 11"
+   }
+  ],
+  "display": [
+   {
+    "text": "Refrigerators with electronics (MES, AES) indicate a malfunction by the LED or display flashing; the 'Failure' LED (8) flashes at the same time, and AES models sound an acoustic alarm.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 26"
+   },
+   {
+    "text": "Reading the fault table: a mode LED (2 = 230 V, 3 = gas, 4 = 12 V) flashing with failure LED 8 points to supply or ignition; with temperature display 7 it points to a component fault.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 26"
+   },
+   {
+    "text": "Only MES and AES models have the LED fault display; RM 8xx0 battery-igniter models show the flame on a galvanometer whose pointer moves into the green range once lit.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "pp. 16, 26"
+   },
+   {
+    "text": "On internal-battery power all LEDs except the GAS LED are off; the GAS LED flashes every 15 seconds, and pressing a button also lights the temperature LEDs.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 19"
+   },
+   {
+    "text": "A door open more than 2 minutes triggers a pulsing whistle tone; the fault table lists a 15 s acoustic signal at 2-minute intervals when the interior lighting stays on.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "pp. 18, 20, 26"
+   },
+   {
+    "text": "During the AES refuelling standby, 15 minutes after the engine is turned off, the temperature-level LEDs stay dark while all other indicators remain active.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 18"
+   },
+   {
+    "text": "The display dims after a few seconds without a button press; pressing a button relights it, then press again to activate the function.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 18"
+   }
+  ],
+  "reset": [
+   {
+    "text": "Gas or automatic mode, flame not ignited: check the gas supply (gas bottle, gas valve), then press the GAS FAILURE reset button (LED 8) after clearing the fault.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "pp. 26-27"
+   },
+   {
+    "text": "Dometic support: press the reset button for 5 seconds to reset a flame-not-ignited fault; on RMxxx6 models press it for 2 seconds until you hear a beep.",
+    "source": "dometic-rm8-flame-not-ignited-gas-automatic-support",
+    "locator": "support page 'Fault: Flame not ignited in GAS/Automatic mode'"
+   },
+   {
+    "text": "MES and AES models switch on with a 2 s press of the ON/OFF button (1) and switch off with a press longer than 2 s; they restart on the last selected energy type.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "pp. 15, 17"
+   },
+   {
+    "text": "AES refuelling: gas operation starts only 15 minutes after the engine is turned off; for a longer refuelling stop, switch the refrigerator off or to another energy type.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 18"
+   }
+  ],
+  "checks": [
+   {
+    "text": "Before notifying the service center, check that the operating instructions were followed, the refrigerator stands level, and whether it runs on any available power source.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 26"
+   },
+   {
+    "text": "Not cooling enough: check the ventilation grilles are not covered, set the thermostat to a higher level, check the door closes properly, and let warm food cool before storing it.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 25"
+   },
+   {
+    "text": "After start-up, check whether the cooling compartment works after about 4-5 hours; the freezer should be cold about one hour after switching on.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "pp. 13, 25"
+   },
+   {
+    "text": "No cooling on gas: change an empty gas cylinder, open the upstream shut-off device, and for air in the gas pipe switch off and restart, 3-4 times if necessary.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 25"
+   },
+   {
+    "text": "After first start-up or a cylinder change, purge air by switching on the refrigerator and another gas appliance such as the stove for a short time.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 14"
+   },
+   {
+    "text": "No cooling on 12 V: fit a new on-board fuse, check and charge the on-board battery, and start the engine; use 12 V only while the engine runs.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "pp. 13, 25"
+   },
+   {
+    "text": "No cooling on 240 V: fit a new on-board fuse and connect to mains; AES models switch to gas when mains voltage is insufficient and switch back automatically.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 25"
+   },
+   {
+    "text": "AES selects mains first when more than 195 V is available; priority is solar 12 V, then 240 V, then 12 V, then liquid gas.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 18"
+   },
+   {
+    "text": "Gas ignition faults can occur above about 1000 m (3280 ft) altitude for physical reasons; Dometic states this is no malfunction.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 14"
+   },
+   {
+    "text": "Compare the operating pressure on the rating plate with the pressure-reducing valve on the gas cylinder; use only liquid gas (propane, butane), not natural or town gas.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "pp. 8, 14"
+   }
+  ],
+  "parts": [
+   {
+    "text": "The fault table names the 230 V and 12 V heating elements, the temperature sensor, and the burner, burner nozzles or cooling unit; replacement is arranged through Dometic Customer Service.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 26"
+   },
+   {
+    "text": "Automatic igniter (MES/AES): if the flame does not light, it repeats ignition twice (30 s each) at 2-minute intervals, then indicates a fault.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 17"
+   },
+   {
+    "text": "Manual-ignition models have an automatic flame safety valve that interrupts the gas supply about 30 seconds after the flame goes out.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 14"
+   },
+   {
+    "text": "Optional internal battery compartment (RM 8xx1, RM 8xx5) takes 8 x AA 1.5 V batteries and allows gas-only operation without on-board 12 V.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 19"
+   },
+   {
+    "text": "RM 8xx0 battery igniter uses one 1.5 V AAA/R3 battery, reached by turning the button about 90° clockwise with a screwdriver.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 21"
+   },
+   {
+    "text": "The gas burner must be inspected and cleaned at least once a year; on LPG the interval drops to half-yearly or quarterly.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 13"
+   },
+   {
+    "text": "The cooling unit uses ammonia as coolant and is under high pressure; never open the absorber cooling unit.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "pp. 7-8"
+   }
+  ],
+  "callTech": [
+   {
+    "text": "If you smell gas: open all windows and leave the room, do not operate electrical equipment, prevent naked flames, and contact authorised specialist personnel.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 8"
+   },
+   {
+    "text": "Coolant leak, identifiable from the strong odour: switch off the appliance, air the room thoroughly, and inform authorised customer services.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 8"
+   },
+   {
+    "text": "Work on gas equipment, the exhaust system and electrical facilities must be carried out by authorised personnel only; never check gas parts for leaks with an unshielded flame.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 7"
+   },
+   {
+    "text": "Heating element, temperature sensor, burner or cooling unit faults on the LED table: contact Customer Service and arrange replacement.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 26"
+   },
+   {
+    "text": "Dometic recommends maintenance after an extended shutdown of the vehicle; contact customer services.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 13"
+   },
+   {
+    "text": "Gas operation is not permitted at petrol stations, on ferry boats, or while the caravan or motorhome is transported by a transporter or breakdown vehicle.",
+    "source": "dometic-rm8-rms8-rml8-operating",
+    "locator": "p. 8"
+   }
+  ]
+ },
+ "extraSources": [],
+ "unreachable": []
+}

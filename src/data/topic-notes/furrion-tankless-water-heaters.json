@@ -1,0 +1,241 @@
+{
+  "topic": "furrion-tankless-water-heaters",
+  "researchedAt": "2026-11-07",
+  "summary": {
+    "text": "Furrion 2.4 GPM (144 GPH) tankless gas water heaters heat water on demand using LP gas and 12V DC power. When the appliance malfunctions an error code appears on the wall controller; the owner writes it down, then tries stopping and restarting the water flow or a power-switch reset.",
+    "source": "furrion-water-heater",
+    "locator": "p. 1, p. 13"
+  },
+  "sections": {
+    "models": [
+      {
+        "text": "The FWH09A family: FWH09A (2021135690), FWH09A-AM (2021123985), FWH09AFA (2021132338), FWH09AFA-AM (2021132340) and the flangeless FWH09AFA-AB (2022115112).",
+        "source": "furrion-water-heater",
+        "locator": "p. 1"
+      },
+      {
+        "text": "FWH09A-family specs: 60,000 BTU/hr, propane, inlet pressure 11 to 14 in. WC, 12V DC under 3 A, water operating pressure 7.2-65 PSI, set temperature 95-124°F.",
+        "source": "furrion-water-heater",
+        "locator": "p. 16"
+      },
+      {
+        "text": "The antifreeze function exists only on FWH09AFA and FWH09AFA-AM models.",
+        "source": "furrion-water-heater-user-manual",
+        "locator": "PDF p. 14 (printed p. 13)"
+      },
+      {
+        "text": "F2GWH (Lippert 2022107551) is a separate 42,000 BTU Furrion tankless model with its own User Control Panel and its own error-code list.",
+        "source": "furrion-f2gwh-water-heater",
+        "locator": "PDF p. 1, PDF p. 12 (printed p. 11)"
+      },
+      {
+        "text": "QR-181 tells the two apart: the Furrion 60,000 BTU model has a small tank on the back; the 42,000 BTU models do not.",
+        "source": "furrion-water-heater-freeze-damage",
+        "locator": "p. 2"
+      },
+      {
+        "text": "Units made after July 2023 have a taller Venturi tube in the blower housing; the build date is in the date code of the unit's serial number.",
+        "source": "furrion-tankless-e5-ti514",
+        "locator": "p. 2"
+      }
+    ],
+    "display": [
+      {
+        "text": "At power-on the wall controller shows the hot water temperature setting (factory default 115°F/46°C); if it is not illuminated, press its ON/OFF button.",
+        "source": "furrion-water-heater",
+        "locator": "p. 5"
+      },
+      {
+        "text": "While water runs, the controller shows the temperature exiting the appliance, not at the faucet.",
+        "source": "furrion-water-heater-user-manual",
+        "locator": "PDF p. 14 (printed p. 13)"
+      },
+      {
+        "text": "Built-in shutdowns: below 10V DC or above 17V DC the appliance shuts off; a short over 10 A trips a fuse on the control unit; flame loss or flue fan failure cuts gas to the burner.",
+        "source": "furrion-water-heater-user-manual",
+        "locator": "PDF p. 5 (printed p. 4)"
+      },
+      {
+        "text": "Antifreeze mode (FWH09AFA/-AM) starts automatically when the appliance water falls below 43°F (6°C) and shuts off when warmed; irregular burner cycling in this mode is normal.",
+        "source": "furrion-water-heater-user-manual",
+        "locator": "PDF p. 14 (printed p. 13)"
+      },
+      {
+        "text": "F2GWH panel icons: fan on means blower running, flame on means burner lit and flame detected, shower head on means water flowing.",
+        "source": "furrion-f2gwh-water-heater",
+        "locator": "PDF p. 7 (printed p. 6)"
+      },
+      {
+        "text": "Model scope: F2GWH codes differ from FWH09A codes. On the F2GWH, E2 is flame lost during operation, E5 blower motor failure, E6 outlet water over 140°F for 3 seconds, E7 linear valve failure.",
+        "source": "furrion-f2gwh-water-heater",
+        "locator": "PDF p. 9 (printed p. 8)"
+      }
+    ],
+    "reset": [
+      {
+        "text": "Reset: switch the power switch in front of the water heater OFF, wait 5 seconds, switch it on again, and continue normal use; if the code keeps returning, use the error table.",
+        "source": "furrion-water-heater",
+        "locator": "p. 13"
+      },
+      {
+        "text": "For E3, let cold water flow 10~20 seconds and then restart the appliance; if E3 still displays, contact Furrion.",
+        "source": "furrion-water-heater",
+        "locator": "p. 13"
+      },
+      {
+        "text": "Lippert TI-514: for an E5 code, toggling the on/off switch will not reset the water heater.",
+        "source": "furrion-tankless-e5-ti514",
+        "locator": "p. 1"
+      },
+      {
+        "text": "F2GWH lockout follows two failed ignition trials; the unit must be turned off before it can run again: turn the hot water faucet OFF and back ON.",
+        "source": "furrion-f2gwh-water-heater",
+        "locator": "PDF p. 9 (printed p. 8)"
+      }
+    ],
+    "checks": [
+      {
+        "text": "No hot water, in table order: gas supply on, LP tank not empty, appliance switched on, fresh water supply open, power to the appliance on; only then check the error-code list.",
+        "source": "furrion-water-heater",
+        "locator": "p. 14"
+      },
+      {
+        "text": "E1 owner checks: confirm all gas valves are open and there is adequate fuel in the tanks.",
+        "source": "furrion-water-heater",
+        "locator": "p. 13"
+      },
+      {
+        "text": "E5 owner checks: remove any exhaust obstruction, or move or re-orient the coach so the exhaust is not facing high winds, then restart.",
+        "source": "furrion-water-heater",
+        "locator": "p. 13"
+      },
+      {
+        "text": "E6 owner checks: fewer toilet flushes and cold faucets during use, lower set temperature, shower and outdoor faucet valves not leaking cold into hot, tank full or city water valve fully open.",
+        "source": "furrion-water-heater",
+        "locator": "p. 13"
+      },
+      {
+        "text": "Also for E6: run all faucets until air is purged, clean a plugged inlet filter, and make sure faucets give at least 0.32 gpm.",
+        "source": "furrion-water-heater",
+        "locator": "p. 13"
+      },
+      {
+        "text": "Before use, confirm a steady (not pulsating) water flow and close every valve that can mix cold and hot; detachable outside spigots and shower heads with flow interrupters can bleed water across.",
+        "source": "furrion-water-heater",
+        "locator": "p. 5"
+      },
+      {
+        "text": "Water at the pressure safety valve: keep pump pressure at a maximum of 65 PSI and use a pressure reducer or regulator on supplies above 65 PSI.",
+        "source": "furrion-water-heater",
+        "locator": "p. 15"
+      },
+      {
+        "text": "Before each trip, check that the air inlet louvers and exhaust tube and screen are clear of mud, leaves, insects and nests; aftermarket protective screens are prohibited and void the warranty.",
+        "source": "furrion-water-heater",
+        "locator": "p. 7"
+      },
+      {
+        "text": "Clean the inlet filter periodically: open the door, remove the baffle, unscrew the filter cover counterclockwise and flush the screen.",
+        "source": "furrion-water-heater",
+        "locator": "p. 8"
+      },
+      {
+        "text": "Operate the pressure safety valve once a year with the heater cool and off: turn the red handle 3~5 times counterclockwise; water in the drain hose means it works.",
+        "source": "furrion-water-heater",
+        "locator": "p. 5, p. 9"
+      },
+      {
+        "text": "Winterizing: frost risk starts below 39°F (4°C); blow out at no more than 50 PSI with only the heater drain plug open, or use non-toxic RV antifreeze (about 1 L extra).",
+        "source": "furrion-water-heater",
+        "locator": "p. 6"
+      },
+      {
+        "text": "Low flow: check faucet aerators for debris, campground pressure (40-50 psi is safe), kinked hoses, and the water filter, which should be changed every six months to a year.",
+        "source": "lippert-qr216-low-flow-water-pressure",
+        "locator": "p. 1"
+      }
+    ],
+    "parts": [
+      {
+        "text": "Fuses: 10A/125V slow-blow 5 x 20 mm (2021128843) plus a 10A/32V ATC blade. If the power LED stays off with a blown fuse, replace the standard 125V/10A fuse and contact Furrion for service.",
+        "source": "furrion-water-heater",
+        "locator": "p. 11, p. 15"
+      },
+      {
+        "text": "TI-514 traces E5 to the blower motor and air pressure switch circuit: the control-board connectors, the pressure switch wires and its flex tube, all inside the unit.",
+        "source": "furrion-tankless-e5-ti514",
+        "locator": "p. 1-2"
+      },
+      {
+        "text": "Pressure relief valve (kit 2024118231) is a safety part: never tamper with it; if defective it must be replaced by a certified service technician.",
+        "source": "furrion-water-heater",
+        "locator": "p. 9, p. 12"
+      },
+      {
+        "text": "QR-181 lists a flow sensor pushed up and tilted, or cracked around the set screw, as freeze damage on 42,000 BTU Girard and Furrion models.",
+        "source": "furrion-water-heater-freeze-damage",
+        "locator": "p. 2"
+      }
+    ],
+    "callTech": [
+      {
+        "text": "Do not repair the appliance yourself; repairs must be done by a certified service technician. If problems persist after the table's suggestions, call service or the dealer.",
+        "source": "furrion-water-heater",
+        "locator": "p. 14"
+      },
+      {
+        "text": "Rows the table marks 'System Fault' (for example E0, E2, E4, E7) say contact Furrion.",
+        "source": "furrion-water-heater",
+        "locator": "p. 13"
+      },
+      {
+        "text": "Gas flow too low (inlet pressure 11 in. WC): check the vehicle documentation for gas volume and have a service technician verify the gas installation.",
+        "source": "furrion-water-heater",
+        "locator": "p. 14"
+      },
+      {
+        "text": "If the heater stops often and water is found on the drainage tray because the relief valve discharges periodically, the unit is overheating: contact Furrion.",
+        "source": "furrion-water-heater",
+        "locator": "p. 15"
+      },
+      {
+        "text": "Never use the water heater without a working carbon monoxide detector in the RV; turn it and the fuel supply off when parking in a garage or repair shop.",
+        "source": "furrion-water-heater",
+        "locator": "p. 3"
+      },
+      {
+        "text": "Freeze damage signs: orange-peel texture, bulging or a jagged split in the copper pipes; on the 60,000 BTU model, a tank expanded into a ball. A clear photo of the leak is required for warranty.",
+        "source": "furrion-water-heater-freeze-damage",
+        "locator": "p. 1-2"
+      }
+    ]
+  },
+  "extraSources": [],
+  "unreachable": [
+    {
+      "source": "furrion-tankless-operate-care-video",
+      "url": "https://support.lci1.com/videos/how-to-operate-and-care-for-your-furrion-tankless-water-heater",
+      "error": "no text (video page, no transcript)"
+    },
+    {
+      "source": "furrion-tankless-basic-troubleshooting-video",
+      "url": "https://support.lci1.com/videos/how-to-perform-basic-troubleshooting-on-your-furrion-tankless-water-heater",
+      "error": "no text (video page, no transcript)"
+    },
+    {
+      "source": "furrion-tankless-water-filter-video",
+      "url": "https://support.lci1.com/videos/how-to-clean-and-replace-the-water-filter-on-a-furrion-tankless-water-heater",
+      "error": "no text (video page, no transcript)"
+    },
+    {
+      "source": "furrion-tankless-descale-video",
+      "url": "https://support.lci1.com/videos/how-to-descale-a-furrion-tankless-water-heater",
+      "error": "no text (video page, no transcript)"
+    },
+    {
+      "source": "furrion-tankless-winterization-video",
+      "url": "https://support.lci1.com/videos/winter-use-and-winterization-of-the-tankless-water-heater",
+      "error": "no text (video page, no transcript)"
+    }
+  ]
+}

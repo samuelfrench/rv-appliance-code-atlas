@@ -1,0 +1,241 @@
+{
+  "topic": "girard-tankless-water-heaters",
+  "researchedAt": "2026-11-07",
+  "summary": {
+    "text": "The Girard GSWH-2 is a 42,000 BTU LP-gas, 12V DC demand tankless water heater for RVs. Its microprocessor controller shows each operating phase on the User Control Panel and, when an unsafe condition shuts the unit off, displays an error code for the condition that caused it.",
+    "source": "girard-gswh2-owner-manual",
+    "locator": "p. 3, p. 12-13"
+  },
+  "sections": {
+    "models": [
+      {
+        "text": "GSWH-2: 42,000 BTU/hr, propane, inlet pressure 11 to 14 in. WC, 12V DC under 3 A, water operating pressure 125 PSI max, ECO max temperature 140°F.",
+        "source": "girard-gswh2-owner-manual",
+        "locator": "p. 3"
+      },
+      {
+        "text": "GSWH-2 needs a minimum of .60 gpm for each hot water faucet it supplies, and the controller starts only after sensing at least .90 gal/min of flow.",
+        "source": "girard-gswh2-owner-manual",
+        "locator": "p. 5, p. 12"
+      },
+      {
+        "text": "GSWH-1 has a Dual BTU burner set by a Mode switch: HIGH 34,000 BTU or LOW 27,000 BTU; it needs at least 1.0 gpm per hot water faucet.",
+        "source": "girard-gswh1-owner-manual",
+        "locator": "p. 4, p. 11"
+      },
+      {
+        "text": "GSWH-1M replaces the Mode switch with a Gas Modulation Control dial inside the RV, adjustable from 18,000 to 36,000 BTU; its ECO cut-off is 131°F.",
+        "source": "girard-gswh1m-owner-manual",
+        "locator": "p. 11, p. 18"
+      },
+      {
+        "text": "The Winter Use Device (WUD, part 1GWHAF) is an optional add-on for the GSWH-1 only.",
+        "source": "girard-gswh1-wud-owner-manual",
+        "locator": "p. 1, p. 4"
+      }
+    ],
+    "display": [
+      {
+        "text": "GSWH-2 panel icons: fan on means the blower is operating, flame on means the burner is lit and flame detected, shower head on means water is flowing.",
+        "source": "girard-gswh2-owner-manual",
+        "locator": "p. 13"
+      },
+      {
+        "text": "GSWH-2: at power-on the panel shows the current inlet temperature; press an arrow to see the set temperature. Settings run 95-124°F; factory and recommended setting is 115°F (46°C).",
+        "source": "girard-gswh2-owner-manual",
+        "locator": "p. 15"
+      },
+      {
+        "text": "GSWH-1: a small user panel on the left side inside the water heater door holds the diagnostic LED and the Power ON/OFF switch.",
+        "source": "girard-gswh1-owner-manual",
+        "locator": "p. 12"
+      },
+      {
+        "text": "If a GSWH-1 stops operating normally, check the user-panel LED: steady on or blinking means the control board detected a fault, and the blink pattern repeats at three-second intervals.",
+        "source": "girard-gswh1-owner-manual",
+        "locator": "p. 16"
+      },
+      {
+        "text": "GSWH-1 'limiting': reducing flow too much raises the water past the 122°F limit switch and the burner shuts off; open the faucet more and it relights after a few seconds.",
+        "source": "girard-gswh1-owner-manual",
+        "locator": "p. 12"
+      },
+      {
+        "text": "GSWH-1M 'limiting': above the 131°F ECO setting the burner shuts off and relights near 110°F, so water cycles hot then cooler; turn the GMC dial counterclockwise and/or increase hot water flow.",
+        "source": "girard-gswh1m-owner-manual",
+        "locator": "p. 11"
+      }
+    ],
+    "reset": [
+      {
+        "text": "GSWH-2 lockout comes after two failed ignition trials; the unit must be turned off before it can run again: turn the hot water faucet OFF and back ON.",
+        "source": "girard-gswh2-owner-manual",
+        "locator": "p. 18"
+      },
+      {
+        "text": "For a GSWH-2 E3, the cause must be identified and removed before restarting the unit.",
+        "source": "girard-gswh2-owner-manual",
+        "locator": "p. 19"
+      },
+      {
+        "text": "GSWH-1 lockout recovery: turn off the water flow, or turn off the power for 5 seconds, then open the HOT water faucet.",
+        "source": "girard-gswh1-owner-manual",
+        "locator": "p. 16"
+      },
+      {
+        "text": "GSWH-1 tries two additional ignition sequences before lockout; in lockout the gas valve stays off and the blower turns off after a five-minute delay.",
+        "source": "girard-gswh1-owner-manual",
+        "locator": "p. 16"
+      },
+      {
+        "text": "GSWH-1: if airflow is lost or the hi-limit opens, gas shuts off and the blower keeps running; if the condition lasts more than five minutes, the control locks out with the blower off.",
+        "source": "girard-gswh1-owner-manual",
+        "locator": "p. 16"
+      }
+    ],
+    "checks": [
+      {
+        "text": "Supply the heater from a pressurized source of 45 psi or more (shore connection or RV pump) with a steady, non-pulsating flow; purge air from all hot and cold lines before use.",
+        "source": "girard-gswh2-owner-manual",
+        "locator": "p. 12, p. 22"
+      },
+      {
+        "text": "Cold inlet water below about 45°F: adjust the Water Control Valve on the rear of the heater, or reduce hot-water flow at the faucet.",
+        "source": "girard-gswh2-owner-manual",
+        "locator": "p. 14"
+      },
+      {
+        "text": "GSWH-1 operation: Mode switch HIGH, Power ON, open only the HOT faucet; increase flow to lower temperature, decrease flow to raise it; switch to LOW if still too hot. Do not open the cold faucet.",
+        "source": "girard-tankless-quick-operating-tips",
+        "locator": "p. 1"
+      },
+      {
+        "text": "GSWH-1: a flow restrictor in the hot line may prevent a comfortable temperature; remove the shower-head restrictor and purge air from outside shower and washer lines.",
+        "source": "girard-gswh1-owner-manual",
+        "locator": "p. 11"
+      },
+      {
+        "text": "GSWH-1M dial starting points: middle for normal weather, far right (large flame) for extreme cold, far left (small flame) for extreme hot weather.",
+        "source": "girard-gswh1m-owner-manual",
+        "locator": "p. 12"
+      },
+      {
+        "text": "Monthly user inspection: door-to-sidewall sealing intact, air inlet louvers clear, exhaust tube outlet free of mud wasp or spider nests; aftermarket vent screens are not permitted and void the warranty.",
+        "source": "girard-gswh2-owner-manual",
+        "locator": "p. 22-23"
+      },
+      {
+        "text": "Also check the filter screen at the inlet water line connection for debris, and confirm the relief valve shows no water residue.",
+        "source": "girard-gswh2-owner-manual",
+        "locator": "p. 23"
+      },
+      {
+        "text": "GSWH-2 antifreeze device lights the burner when the heat exchanger falls below 38°F and stops above 58°F; it needs LP gas, 12V DC and the switch ON, and does not protect RV plumbing.",
+        "source": "girard-gswh2-owner-manual",
+        "locator": "p. 16"
+      },
+      {
+        "text": "GSWH-1 WUD: below 38°F it opens a solenoid to create hot water demand for about 45 seconds until about 50°F; it needs the heater ON, 12V power, the water pump ON, fresh water and LP gas.",
+        "source": "girard-gswh1-wud-owner-manual",
+        "locator": "p. 4, p. 10"
+      },
+      {
+        "text": "Winterize at the start of winter by compressed air or non-toxic antifreeze; no bypass kit is needed. Freeze damage is not covered by warranty.",
+        "source": "girard-gswh2-owner-manual",
+        "locator": "p. 16"
+      }
+    ],
+    "parts": [
+      {
+        "text": "GSWH-2 replaceable components include the igniter, ECO T-switch, inlet and outlet temperature probes, air pressure switch, blower motor assembly, proportional gas valve, microprocessor control box and antifreeze inlet thermostat.",
+        "source": "girard-gswh2-owner-manual",
+        "locator": "p. 17"
+      },
+      {
+        "text": "The GSWH-2 has a built-in 10A fuse serviceable from the front of the product.",
+        "source": "girard-gswh2-owner-manual",
+        "locator": "p. 9-10"
+      },
+      {
+        "text": "Most common GSWH-2 ignition-failure causes: no gas in the tank, faulty igniter or igniter connections, wrong igniter-to-burner distance, dirt between igniter and burner, and low gas inlet pressure.",
+        "source": "girard-gswh2-owner-manual",
+        "locator": "p. 18-19"
+      },
+      {
+        "text": "GSWH-1 control parts: flow switch, limit switch/ECO (opens above 122°F), P/T relief valve, dual solenoid regulator, Hi/Lo valve, exhaust blower, sail switch and a circuit board with spark igniter and diagnostics.",
+        "source": "girard-gswh1-owner-manual",
+        "locator": "p. 14"
+      },
+      {
+        "text": "GSWH-1 P/T relief valve is not serviceable; if defective it must be replaced, never plugged or tampered with.",
+        "source": "girard-gswh1-owner-manual",
+        "locator": "p. 13"
+      }
+    ],
+    "callTech": [
+      {
+        "text": "If you smell gas: do not light any appliance or touch switches, phones or radios; do not start the engine or generator; evacuate, shut off gas at the container and call a certified technician, gas supplier or fire department.",
+        "source": "girard-gswh2-owner-manual",
+        "locator": "p. 3"
+      },
+      {
+        "text": "Installation and service must be done by a Girard Products recommended installer, service agency or gas supplier; the product is not for do-it-yourself installation.",
+        "source": "girard-gswh2-owner-manual",
+        "locator": "p. 3-4"
+      },
+      {
+        "text": "Should overheating occur, turn gas OFF at the LP tank and turn the operating switch OFF.",
+        "source": "girard-gswh2-owner-manual",
+        "locator": "p. 12"
+      },
+      {
+        "text": "If the unit overheats (limits) often and the relief valve discharges periodically, contact your service center.",
+        "source": "girard-gswh2-owner-manual",
+        "locator": "p. 23"
+      },
+      {
+        "text": "Freeze damage signs: orange-peel texture, bulging or a jagged split in the copper pipes, or a lifted, cracked flow sensor on 42,000 BTU units. A clear photo of the leak is required for warranty.",
+        "source": "girard-qr181-freeze-damage",
+        "locator": "p. 1-2"
+      }
+    ]
+  },
+  "extraSources": [],
+  "unreachable": [
+    {
+      "source": "girard-tankless-flow-temperature-video",
+      "url": "https://support.lci1.com/videos/how-flow-affects-temperature-on-girard-tankless-water-heater",
+      "error": "no text (video page, no transcript)"
+    },
+    {
+      "source": "girard-tankless-water-not-hot-enough-video",
+      "url": "https://support.lci1.com/videos/water-not-hot-enough-on-a-girard-tankless-water-heater",
+      "error": "no text (video page, no transcript)"
+    },
+    {
+      "source": "girard-tankless-water-too-hot-cold-video",
+      "url": "https://support.lci1.com/videos/water-too-hot-or-too-cold-on-a-girard-tankless-water-heater",
+      "error": "no text (video page, no transcript)"
+    },
+    {
+      "source": "girard-tankless-winterize-video",
+      "url": "https://support.lci1.com/videos/how-to-perform-a-how-to-winterize-your-girard-water-heater",
+      "error": "no text (video page, no transcript)"
+    },
+    {
+      "source": "girard-tankless-freeze-leaks-video",
+      "url": "https://support.lci1.com/videos/inspecting-for-freeze-leaks-on-a-girard-tankless-water-heater",
+      "error": "no text (video page, no transcript)"
+    },
+    {
+      "source": "girard-tankless-intro-operation-video",
+      "url": "https://support.lci1.com/videos/girard-tankless-water-heater-introduction-and-operation",
+      "error": "no text (video page, no transcript)"
+    },
+    {
+      "source": "girard-tankless-no-hot-water-video",
+      "url": "https://support.lci1.com/videos/no-hot-water-on-a-girard-tankless-water-heater",
+      "error": "no text (video page, no transcript)"
+    }
+  ]
+}
