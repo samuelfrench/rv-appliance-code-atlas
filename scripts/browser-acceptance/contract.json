@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "site": "rv-appliance-fault-codes",
+  "flows": [
+    {
+      "id": "guides-onan",
+      "start": {
+        "path": "/guides/",
+        "heading": "RV appliance troubleshooting guides"
+      },
+      "steps": [
+        {
+          "link": {
+            "name": "Cummins Onan RV generator fault codes and troubleshooting"
+          },
+          "path": "/guides/onan-generators/",
+          "heading": "Cummins Onan RV generator fault codes and troubleshooting"
+        }
+      ]
+    },
+    {
+      "id": "dometic-rm8",
+      "start": {
+        "path": "/brands/dometic/",
+        "heading": "Dometic RV appliance fault codes"
+      },
+      "steps": [
+        {
+          "link": {
+            "name": "Dometic RM8 / RMS8 / RML8 refrigerators"
+          },
+          "path": "/models/dometic-rm8-refrigerators/",
+          "heading": "Dometic RM8 / RMS8 / RML8 refrigerator fault codes"
+        }
+      ]
+    }
+  ]
+}

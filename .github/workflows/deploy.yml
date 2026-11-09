@@ -10,6 +10,9 @@ on:
       - 'scripts/seo/**'
       - 'scripts/todo/**'
       - '.github/workflows/todo.yml'
+      - 'scripts/browser-acceptance/**'
+      - '.github/workflows/browser-acceptance.yml'
+      - '.github/workflows/deploy.yml'
   workflow_dispatch:
 
 concurrency:

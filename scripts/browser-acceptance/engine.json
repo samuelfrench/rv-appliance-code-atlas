@@ -1,0 +1,8 @@
+{
+  "repository": "samuelfrench/explorer-pipeline",
+  "revision": "cf0fec8cade15194db8aec0e4403402caff8ae8d",
+  "files": {
+    "browser/content_acceptance.py": "9fb829daf97828c878779325d7cece013936baa34667174721cd866e4c0b2cba",
+    "browser/requirements.txt": "ebeb483138ed507c6d6d57c4006b13a2bafbde6b20abc9829b0fd160059c368d"
+  }
+}

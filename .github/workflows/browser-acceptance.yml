@@ -1,0 +1,42 @@
+name: Content browser acceptance
+on:
+  push:
+    paths:
+      - 'scripts/browser-acceptance/**'
+      - '.github/workflows/browser-acceptance.yml'
+      - '.github/workflows/deploy.yml'
+  pull_request:
+    paths:
+      - 'scripts/browser-acceptance/**'
+      - '.github/workflows/browser-acceptance.yml'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  owning-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      SEO_OFFLINE: '1'
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: npm ci --no-audit --no-fund
+      - run: npm run validate:corpus
+      - run: npm run seo:self-check
+      - run: npm run test:unit
+      - run: npm run build
+      - name: Check owning wrapper and static contract (private engine runs locally)
+        run: PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts/browser-acceptance -p 'test_*.py' -v
+      - run: npx playwright install --with-deps chromium
+      - name: Verify existing site runtime at desktop and mobile sizes
+        run: npm run test:browser
