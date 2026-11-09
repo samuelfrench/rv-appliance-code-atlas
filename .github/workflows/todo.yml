@@ -1,0 +1,36 @@
+name: TODO checks
+
+on:
+  push:
+    paths:
+      - 'AGENTS.md'
+      - 'TODO.md'
+      - 'TODO-archive.md'
+      - 'docs/todo/**'
+      - 'scripts/todo/**'
+      - '.github/workflows/todo.yml'
+      - '.github/workflows/deploy.yml'
+  pull_request:
+    paths:
+      - 'AGENTS.md'
+      - 'TODO.md'
+      - 'TODO-archive.md'
+      - 'docs/todo/**'
+      - 'scripts/todo/**'
+      - '.github/workflows/todo.yml'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  todo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - run: node --test scripts/todo/__tests__/*.test.mjs
+      - run: node scripts/todo/build.mjs --check

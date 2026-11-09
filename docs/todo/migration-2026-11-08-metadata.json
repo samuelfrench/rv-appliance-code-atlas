@@ -1,0 +1,354 @@
+[
+  {
+    "heading": null,
+    "disposition": "archive"
+  },
+  {
+    "heading": "## Deploy trigger",
+    "disposition": "archive"
+  },
+  {
+    "heading": "## [x] 2026-09-14 \u2014 hero generator switched to Juggernaut X v10",
+    "disposition": "archive"
+  },
+  {
+    "heading": "## Mothball assessment \u2014 2026-09-06",
+    "disposition": "archive"
+  },
+  {
+    "heading": "## Earlier 2026-09-06 checkpoint analysis \u2014 interpretation corrected",
+    "disposition": "archive"
+  },
+  {
+    "heading": "## Current Batch",
+    "disposition": "archive"
+  },
+  {
+    "heading": "## Current State \u2014 2026-07-04 (session update)",
+    "disposition": "archive"
+  },
+  {
+    "heading": "## Current State \u2014 2026-06-04",
+    "disposition": "archive"
+  },
+  {
+    "heading": "## Growth & Monetization \u2014 next steps (added 2026-07-04)",
+    "disposition": "archive"
+  },
+  {
+    "heading": "## Launch Automation",
+    "disposition": "archive"
+  },
+  {
+    "heading": "## Shared SEO template: lastmod ledger + latest links \u2014 2026-11-07 (lane rv-seo, fan-out wave 2)",
+    "disposition": "file",
+    "slug": "seo-template-followthrough",
+    "title": "Follow through on the existing SEO template release",
+    "status": "next",
+    "area": "seo",
+    "due": null,
+    "updated": "2026-11-08",
+    "owner": "agent",
+    "brief": "Retain the one content guard violation, optional dated read and fallback-seed upkeep; no new launch or waiting gate",
+    "refs": [
+      "TODO-archive.md"
+    ],
+    "test": null,
+    "summary": [
+      "**What:** Preserve the three unfinished follow-ups from the November 7 SEO-template release.",
+      "**Why:** The retained release reports 74 indexable URLs and one 137-word guard violation. These are dated source receipts, not fresh production verification.",
+      "**Next:** Follow the individual items below within existing authority. Keep the recorded November 21 observation as a historical follow-up, not a freeze or prerequisite for useful corrections. Never edit the vendored SEO engine; change the owning template and re-vendor."
+    ],
+    "archiveRanges": [
+      [
+        1,
+        16
+      ]
+    ]
+  },
+  {
+    "heading": "## Quality consolidation \u2014 2026-11-07 (lane rv-quality; Sam: \"a quality problem, not a discovery problem\")",
+    "disposition": "split"
+  },
+  {
+    "heading": "## Quality consolidation \u2014 2026-11-07 (lane rv-quality; Sam: \"a quality problem, not a discovery problem\")",
+    "disposition": "file",
+    "slug": "quality-consolidation-followthrough",
+    "title": "Follow through on the November 7 quality consolidation",
+    "status": "next",
+    "area": "content",
+    "due": null,
+    "updated": "2026-11-08",
+    "owner": "agent",
+    "brief": "Manual contradictions, the remaining near-duplicate pair and sourced-depth gaps remain; no breadth or indexing resubmissions",
+    "refs": [
+      "TODO-archive.md"
+    ],
+    "test": null,
+    "summary": [
+      "**What:** Retain the unfinished source-quality and model-page follow-ups, plus the recorded observation procedure, from the November 7 consolidation.",
+      "**Why:** The release reduced 683 indexable URLs to 74; the pre-release 75-URL sample had one indexed URL, and the August 8\u2013November 5 window had two clicks / 651 impressions. Those historical measurements do not prove post-release traffic or indexing gains.",
+      "**Next:** Prioritize manufacturer-source contradictions when this lane resumes. Preserve the no-new-code-pages, no-sitemap-resubmission and no-index-request instructions. The dated observation is not a waiting gate for factual fixes. Rejected ideas and the complete release evidence remain in the linked archive."
+    ],
+    "archiveRanges": [
+      [
+        1,
+        21
+      ]
+    ],
+    "lines": [
+      1,
+      31
+    ],
+    "from": "S002"
+  },
+  {
+    "heading": "## Quality consolidation \u2014 2026-11-07 (lane rv-quality; Sam: \"a quality problem, not a discovery problem\")",
+    "disposition": "file",
+    "slug": "generated-todo-migration",
+    "title": "Migrate RV Atlas to generated task files",
+    "status": "now",
+    "area": "process",
+    "due": null,
+    "updated": "2026-11-08",
+    "owner": "agent",
+    "brief": "Losslessly migrate the existing backlog while preserving unresolved issues, traffic evidence and explicit holds",
+    "refs": [
+      "TODO-archive.md"
+    ],
+    "test": null,
+    "summary": [
+      "**What:** Complete the already-listed generated-TODO migration and expose a machine-readable task index for Cron Manager.",
+      "**Why:** The latest backlog is 190,559 bytes / 574 lines / 505 nonempty lines with 21 open checkboxes. TODO availability is only one adoption prerequisite; it does not establish a production lane or authorize any job.",
+      "**Next:** Preserve every original line and checkbox, archive completed history, run focused checks, publish exact TODO CI, and install the source without deploying the application. Preserve the owning checkout\u2019s pre-existing scripts/__pycache__/ directory."
+    ],
+    "lines": [
+      32,
+      33
+    ],
+    "from": "S002"
+  },
+  {
+    "heading": "## Quality consolidation \u2014 2026-11-07 (lane rv-quality; Sam: \"a quality problem, not a discovery problem\")",
+    "disposition": "file",
+    "slug": "quality-consolidation-followthrough",
+    "title": "Follow through on the November 7 quality consolidation",
+    "status": "next",
+    "area": "content",
+    "due": null,
+    "updated": "2026-11-08",
+    "owner": "agent",
+    "brief": "Manual contradictions, the remaining near-duplicate pair and sourced-depth gaps remain; no breadth or indexing resubmissions",
+    "refs": [
+      "TODO-archive.md"
+    ],
+    "test": null,
+    "summary": [
+      "**What:** Retain the unfinished source-quality and model-page follow-ups, plus the recorded observation procedure, from the November 7 consolidation.",
+      "**Why:** The release reduced 683 indexable URLs to 74; the pre-release 75-URL sample had one indexed URL, and the August 8\u2013November 5 window had two clicks / 651 impressions. Those historical measurements do not prove post-release traffic or indexing gains.",
+      "**Next:** Prioritize manufacturer-source contradictions when this lane resumes. Preserve the no-new-code-pages, no-sitemap-resubmission and no-index-request instructions. The dated observation is not a waiting gate for factual fixes. Rejected ideas and the complete release evidence remain in the linked archive."
+    ],
+    "archiveRanges": [
+      [
+        1,
+        6
+      ]
+    ],
+    "lines": [
+      34,
+      39
+    ],
+    "from": "S002"
+  },
+  {
+    "heading": "## GA4 client-error events",
+    "disposition": "file",
+    "slug": "ga4-client-error-events",
+    "title": "Add privacy-minimal GA4 client-error events",
+    "status": "next",
+    "area": "analytics",
+    "due": null,
+    "updated": "2026-11-08",
+    "owner": "agent",
+    "brief": "The retained InvalidArgument result is a measurement gap; instrumentation and later provider proof remain open",
+    "refs": [
+      "TODO-archive.md"
+    ],
+    "test": null,
+    "summary": [
+      "**What:** Preserve the unfinished client-error instrumentation task.",
+      "**Why:** The October 26 collection error was not a measured zero; this migration does not change instrumentation or provider settings.",
+      "**Next:** Implement the named canonical-host-only events without raw error messages, stacks or personal data; validate locally and use existing provider authority for any required custom dimension. Record the later collection result."
+    ]
+  },
+  {
+    "heading": "## Security \u2014 npm advisories (2026-11-05)",
+    "disposition": "file",
+    "slug": "vitest-development-advisory",
+    "title": "Resolve the retained development-only Vitest advisory",
+    "status": "next",
+    "area": "security",
+    "due": null,
+    "updated": "2026-11-08",
+    "owner": "agent",
+    "brief": "November 5 left development-server-only moderate advisories; no dependency change or fresh audit in this migration",
+    "refs": [
+      "TODO-archive.md"
+    ],
+    "test": null,
+    "summary": [
+      "**What:** Preserve the unresolved development-only advisory after the production dependency repair.",
+      "**Why:** The earlier receipt reports a clean production audit but a remaining Vitest-server exposure. This is historical evidence, not a new audit.",
+      "**Next:** Check the installed versions and advisory, make the appropriate scoped development dependency update, and run the command in the original item."
+    ],
+    "archiveRanges": [
+      [
+        1,
+        3
+      ]
+    ]
+  },
+  {
+    "heading": "## Handoff \u2014 2026-10-01 (cloud session, ready to exit)",
+    "disposition": "split"
+  },
+  {
+    "heading": "## Handoff \u2014 2026-10-01 (cloud session, ready to exit)",
+    "disposition": "file",
+    "slug": "disabled-monetization-decision",
+    "title": "Preserve the explicit hold on removing disabled monetization scaffolding",
+    "status": "waiting-sam",
+    "area": "monetization",
+    "due": null,
+    "updated": "2026-11-08",
+    "owner": "sam",
+    "brief": "Nothing is sold; removal remains an explicit owner decision and is not authorized by this migration",
+    "refs": [
+      "TODO-archive.md"
+    ],
+    "test": null,
+    "summary": [
+      "**What:** Preserve the October 1 owner-only decision about disabled placeholders.",
+      "**Why:** The original instruction explicitly says not to remove the scaffolding without approval. The site remains free and this migration changes no monetization behavior.",
+      "**Next:** Keep the disabled state and original decision text. Any later owner decision must identify the exact removal scope; do not treat the old revenue plan as an active initiative."
+    ],
+    "archiveRanges": [
+      [
+        1,
+        7
+      ]
+    ],
+    "lines": [
+      1,
+      8
+    ],
+    "from": "S006"
+  },
+  {
+    "heading": "## Handoff \u2014 2026-10-01 (cloud session, ready to exit)",
+    "disposition": "file",
+    "slug": "legacy-instruction-handoff",
+    "title": "Reconcile the historical instruction proposals with current code",
+    "status": "next",
+    "area": "process",
+    "due": null,
+    "updated": "2026-11-08",
+    "owner": "agent",
+    "brief": "October proposals remain retained; compare against the November 7 architecture before applying any stale rule",
+    "refs": [
+      "TODO-archive.md"
+    ],
+    "test": null,
+    "summary": [
+      "**What:** Retain the three unresolved instruction-proposal checkboxes from the October handoff.",
+      "**Why:** Some proposals describe the old 683-page architecture. The November 7 release now uses 74 indexable pages and 1,057 redirects; current source and current standing instructions take precedence.",
+      "**Next:** Reconcile the historical proposals against current code and AGENTS.md before a scoped documentation update. Routine instructions do not need a new approval round-trip; do not revive old cloud-session commands or obsolete URL rules verbatim."
+    ],
+    "archiveRanges": [
+      [
+        3,
+        10
+      ]
+    ],
+    "lines": [
+      9,
+      30
+    ],
+    "from": "S006"
+  },
+  {
+    "heading": "## 2026-10-01 \u2014 content refresh for usefulness (Sam asked: \"Refresh the site content to make it genuinely useful\")",
+    "disposition": "file",
+    "slug": "legacy-content-refresh-followthrough",
+    "title": "Reconcile the remaining October content-refresh checklist",
+    "status": "next",
+    "area": "process",
+    "due": null,
+    "updated": "2026-11-08",
+    "owner": "agent",
+    "brief": "Historical checks are retained; November 7 evidence supersedes old page counts and indexing instructions",
+    "refs": [
+      "TODO-archive.md"
+    ],
+    "test": null,
+    "summary": [
+      "**What:** Preserve the five original open checklist items without silently claiming that this migration performed them.",
+      "**Why:** The November 7 release records newer live checks and 74 indexable pages, says the controller already resubmitted the sitemap, and answers the Polar amber/green manual question. The old checklist is historical and needs reconciliation, not blind execution.",
+      "**Next:** Compare each item with the November 7 quality-consolidation record. Do not resubmit the sitemap, request indexing, restore breadth batches or impose the old four/eight-week waiting gate. Any remaining source-depth correction still requires an official manufacturer source."
+    ],
+    "archiveRanges": [
+      [
+        1,
+        11
+      ]
+    ]
+  },
+  {
+    "heading": "## Release pipeline follow-up \u2014 2026-09-06",
+    "disposition": "file",
+    "slug": "reuse-tested-production-build",
+    "title": "Reuse the tested production build on a future authorized release",
+    "status": "next",
+    "area": "infra",
+    "due": null,
+    "updated": "2026-11-08",
+    "owner": "agent",
+    "brief": "Retain the existing two-build release follow-up; do not deploy or optimize the release pipeline during TODO adoption",
+    "refs": [
+      "TODO-archive.md"
+    ],
+    "test": null,
+    "summary": [
+      "**What:** Preserve the existing immutable-artifact release-pipeline proposal.",
+      "**Why:** Its historical audit reports two frontend builds. Current pipeline behavior must be rechecked before implementation; another site\u2019s timing is not a forecast for RV Atlas.",
+      "**Next:** Follow the retained scope and validation criteria when this engineering lane is selected. This migration changes only TODO/deploy filtering and does not perform a release."
+    ]
+  },
+  {
+    "heading": "## Corpus Expansion Backlog",
+    "disposition": "file",
+    "slug": "depth-only-content-scope",
+    "title": "Preserve the existing depth-only content scope",
+    "status": "idea",
+    "area": "content",
+    "due": null,
+    "updated": "2026-11-08",
+    "owner": "agent",
+    "brief": "Breadth batches stay on hold; no new content or growth initiative is started by backlog migration",
+    "refs": [
+      "TODO-archive.md"
+    ],
+    "test": null,
+    "summary": [
+      "**What:** Retain the existing no-breadth instruction and completed corpus history.",
+      "**Why:** The archive preserves the negative traffic evidence and withdrawn causal claims. More volume is not justified by this migration.",
+      "**Next:** Keep breadth batches stopped. Any future depth work needs an actual manufacturer source adding meaning to existing model pages and must respect the site\u2019s current safety boundaries."
+    ],
+    "archiveRanges": [
+      [
+        1,
+        69
+      ]
+    ]
+  }
+]

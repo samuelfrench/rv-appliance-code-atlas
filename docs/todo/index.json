@@ -1,0 +1,159 @@
+[
+  {
+    "path": "docs/todo/analytics/ga4-client-error-events.md",
+    "slug": "ga4-client-error-events",
+    "title": "Add privacy-minimal GA4 client-error events",
+    "status": "next",
+    "area": "analytics",
+    "due": null,
+    "updated": "2026-11-08",
+    "owner": "agent",
+    "brief": "The retained InvalidArgument result is a measurement gap; instrumentation and later provider proof remain open",
+    "refs": [
+      "TODO-archive.md"
+    ],
+    "test": null
+  },
+  {
+    "path": "docs/todo/content/depth-only-content-scope.md",
+    "slug": "depth-only-content-scope",
+    "title": "Preserve the existing depth-only content scope",
+    "status": "idea",
+    "area": "content",
+    "due": null,
+    "updated": "2026-11-08",
+    "owner": "agent",
+    "brief": "Breadth batches stay on hold; no new content or growth initiative is started by backlog migration",
+    "refs": [
+      "TODO-archive.md",
+      "TODO-archive.md#todo-migration-2026-11-08-depth-only-content-scope"
+    ],
+    "test": null
+  },
+  {
+    "path": "docs/todo/content/quality-consolidation-followthrough.md",
+    "slug": "quality-consolidation-followthrough",
+    "title": "Follow through on the November 7 quality consolidation",
+    "status": "next",
+    "area": "content",
+    "due": null,
+    "updated": "2026-11-08",
+    "owner": "agent",
+    "brief": "Manual contradictions, the remaining near-duplicate pair and sourced-depth gaps remain; no breadth or indexing resubmissions",
+    "refs": [
+      "TODO-archive.md",
+      "TODO-archive.md#todo-migration-2026-11-08-quality-consolidation-followthrough"
+    ],
+    "test": null
+  },
+  {
+    "path": "docs/todo/infra/reuse-tested-production-build.md",
+    "slug": "reuse-tested-production-build",
+    "title": "Reuse the tested production build on a future authorized release",
+    "status": "next",
+    "area": "infra",
+    "due": null,
+    "updated": "2026-11-08",
+    "owner": "agent",
+    "brief": "Retain the existing two-build release follow-up; do not deploy or optimize the release pipeline during TODO adoption",
+    "refs": [
+      "TODO-archive.md"
+    ],
+    "test": null
+  },
+  {
+    "path": "docs/todo/monetization/disabled-monetization-decision.md",
+    "slug": "disabled-monetization-decision",
+    "title": "Preserve the explicit hold on removing disabled monetization scaffolding",
+    "status": "waiting-sam",
+    "area": "monetization",
+    "due": null,
+    "updated": "2026-11-08",
+    "owner": "sam",
+    "brief": "Nothing is sold; removal remains an explicit owner decision and is not authorized by this migration",
+    "refs": [
+      "TODO-archive.md",
+      "TODO-archive.md#todo-migration-2026-11-08-disabled-monetization-decision"
+    ],
+    "test": null
+  },
+  {
+    "path": "docs/todo/process/generated-todo-migration.md",
+    "slug": "generated-todo-migration",
+    "title": "Migrate RV Atlas to generated task files",
+    "status": "now",
+    "area": "process",
+    "due": null,
+    "updated": "2026-11-08",
+    "owner": "agent",
+    "brief": "Losslessly migrate the existing backlog while preserving unresolved issues, traffic evidence and explicit holds",
+    "refs": [
+      "TODO-archive.md"
+    ],
+    "test": null
+  },
+  {
+    "path": "docs/todo/process/legacy-content-refresh-followthrough.md",
+    "slug": "legacy-content-refresh-followthrough",
+    "title": "Reconcile the remaining October content-refresh checklist",
+    "status": "next",
+    "area": "process",
+    "due": null,
+    "updated": "2026-11-08",
+    "owner": "agent",
+    "brief": "Historical checks are retained; November 7 evidence supersedes old page counts and indexing instructions",
+    "refs": [
+      "TODO-archive.md",
+      "TODO-archive.md#todo-migration-2026-11-08-legacy-content-refresh-followthrough"
+    ],
+    "test": null
+  },
+  {
+    "path": "docs/todo/process/legacy-instruction-handoff.md",
+    "slug": "legacy-instruction-handoff",
+    "title": "Reconcile the historical instruction proposals with current code",
+    "status": "next",
+    "area": "process",
+    "due": null,
+    "updated": "2026-11-08",
+    "owner": "agent",
+    "brief": "October proposals remain retained; compare against the November 7 architecture before applying any stale rule",
+    "refs": [
+      "TODO-archive.md",
+      "TODO-archive.md#todo-migration-2026-11-08-legacy-instruction-handoff"
+    ],
+    "test": null
+  },
+  {
+    "path": "docs/todo/security/vitest-development-advisory.md",
+    "slug": "vitest-development-advisory",
+    "title": "Resolve the retained development-only Vitest advisory",
+    "status": "next",
+    "area": "security",
+    "due": null,
+    "updated": "2026-11-08",
+    "owner": "agent",
+    "brief": "November 5 left development-server-only moderate advisories; no dependency change or fresh audit in this migration",
+    "refs": [
+      "TODO-archive.md",
+      "TODO-archive.md#todo-migration-2026-11-08-vitest-development-advisory"
+    ],
+    "test": null
+  },
+  {
+    "path": "docs/todo/seo/seo-template-followthrough.md",
+    "slug": "seo-template-followthrough",
+    "title": "Follow through on the existing SEO template release",
+    "status": "next",
+    "area": "seo",
+    "due": null,
+    "updated": "2026-11-08",
+    "owner": "agent",
+    "brief": "Retain the one content guard violation, optional dated read and fallback-seed upkeep; no new launch or waiting gate",
+    "refs": [
+      "TODO-archive.md",
+      "TODO-archive.md#todo-migration-2026-11-08-seo-template-followthrough"
+    ],
+    "test": null
+  }
+]

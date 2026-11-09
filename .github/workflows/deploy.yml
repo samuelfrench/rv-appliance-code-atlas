@@ -8,6 +8,8 @@ on:
       - 'docs/**'
       - 'TODO*'
       - 'scripts/seo/**'
+      - 'scripts/todo/**'
+      - '.github/workflows/todo.yml'
   workflow_dispatch:
 
 concurrency:
