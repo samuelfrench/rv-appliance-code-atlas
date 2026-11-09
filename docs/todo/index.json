@@ -47,6 +47,23 @@
     "test": null
   },
   {
+    "path": "docs/todo/done/process/generated-todo-migration.md",
+    "slug": "generated-todo-migration",
+    "title": "Migrate RV Atlas to generated task files",
+    "status": "done",
+    "area": "process",
+    "due": null,
+    "updated": "2026-11-08",
+    "owner": "agent",
+    "brief": "Generated tasks and archive-aware history tests installed; current scope remains checked through the task index",
+    "refs": [
+      "TODO-archive.md",
+      "8889923888a3b7e5ecd5e2f57a903ff53e79b211",
+      "https://github.com/samuelfrench/rv-appliance-code-atlas/actions/runs/42544630658"
+    ],
+    "test": null
+  },
+  {
     "path": "docs/todo/infra/reuse-tested-production-build.md",
     "slug": "reuse-tested-production-build",
     "title": "Reuse the tested production build on a future authorized release",
@@ -74,23 +91,6 @@
     "refs": [
       "TODO-archive.md",
       "TODO-archive.md#todo-migration-2026-11-08-disabled-monetization-decision"
-    ],
-    "test": null
-  },
-  {
-    "path": "docs/todo/process/generated-todo-migration.md",
-    "slug": "generated-todo-migration",
-    "title": "Migrate RV Atlas to generated task files",
-    "status": "now",
-    "area": "process",
-    "due": null,
-    "updated": "2026-11-08",
-    "owner": "agent",
-    "brief": "Generated tasks installed; repairing two migration-caused historical test assertions before final closeout",
-    "refs": [
-      "TODO-archive.md",
-      "8889923888a3b7e5ecd5e2f57a903ff53e79b211",
-      "https://github.com/samuelfrench/rv-appliance-code-atlas/actions/runs/42544630658"
     ],
     "test": null
   },
