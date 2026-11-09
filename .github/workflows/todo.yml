@@ -10,6 +10,8 @@ on:
       - 'scripts/todo/**'
       - '.github/workflows/todo.yml'
       - '.github/workflows/deploy.yml'
+      - 'src/lib/traffic-report.test.ts'
+      - 'src/lib/monetization-readiness-report.test.ts'
   pull_request:
     paths:
       - 'AGENTS.md'
@@ -19,6 +21,8 @@ on:
       - 'scripts/todo/**'
       - '.github/workflows/todo.yml'
       - '.github/workflows/deploy.yml'
+      - 'src/lib/traffic-report.test.ts'
+      - 'src/lib/monetization-readiness-report.test.ts'
   workflow_dispatch:
 
 permissions:
@@ -34,3 +38,5 @@ jobs:
           node-version: '24'
       - run: node --test scripts/todo/__tests__/*.test.mjs
       - run: node scripts/todo/build.mjs --check
+      - run: npm ci --no-audit --no-fund
+      - run: npm run test:unit -- src/lib/traffic-report.test.ts src/lib/monetization-readiness-report.test.ts

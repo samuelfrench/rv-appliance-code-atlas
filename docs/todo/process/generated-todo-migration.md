@@ -1,11 +1,11 @@
 ---
 title: "Migrate RV Atlas to generated task files"
-status: done
+status: now
 area: process
 due: null
 updated: 2026-11-08
 owner: agent
-brief: "Generated tasks installed; original evidence and holds preserved, with no app deployment or scheduler adoption claim"
+brief: "Generated tasks installed; repairing two migration-caused historical test assertions before final closeout"
 refs:
   - "TODO-archive.md"
   - "8889923888a3b7e5ecd5e2f57a903ff53e79b211"
@@ -28,3 +28,5 @@ Original SHA-256: `bf0c6da874526c3541dd8de23f252181d2cebf731b3da08fb28524b15a831
 The one-time deploy-filter installation used `[skip ci]` handoff `f07f385` after the unchanged implementation passed feature-branch TODO CI, because changing the deployment workflow itself otherwise starts an app release. This documentation-only closeout exercises the normal TODO workflow on main with the new paths-ignore rules. No scheduled job was disabled or modified, and the deployment workflow remains enabled for application changes.
 
 Verification passed: 28 TODO/migration tests; zero missing original nonempty lines (505 across 574 lines); 29 byte-exact retained text fragments covering all 18 sections; all 21 original checkbox lines remain in task sources and none were hidden in the archive. The original migration checkbox above is preserved as historical text; this task's `done` status records its completion. Generated-output and task-query checks pass. The deploy-path check confirms TODO paths are ignored while application source and the deploy workflow itself still trigger releases. Application, content, dependency, Docker/Fly and scheduler files are unchanged relative to the current remote baseline `7f65a1f45e64fc55d019decdbc6052d368ec2547`; installing the source also fast-forwarded the owning checkout's five previously missing remote commits.
+
+Follow-through correction (November 8, 19:22 CT): the first migration missed two existing tests that read completed historical statements directly from `TODO.md`: `src/lib/traffic-report.test.ts` and `src/lib/monetization-readiness-report.test.ts`. The focused run reproduced two failures / five tests. Completed facts now read `TODO-archive.md`; the current no-breadth scope still checks the generated index, its current task body and its generated TODO link. Both affected files now pass all five tests. Full corpus validation and 227 unit tests passed; SEO self-check passed. The TODO workflow now runs these existing five tests so future task/archive changes cannot silently break that contract. No assertion was dropped, no production code or dependency changed, and deploy ignores are unchanged. The offline production build also passed with 74 unchanged ledger entries and the existing 137-word guard warning; no live fetch was made. Exact CI and installed closeout are pending.

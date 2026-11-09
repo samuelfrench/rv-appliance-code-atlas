@@ -207,7 +207,7 @@ describe("monetization readiness report", () => {
       "Do not resume breadth batches. Improve depth on existing model tables only when a manufacturer source adds real meaning (for example, Dometic RUA support pages give reset/service steps but not what each fault number means).",
     );
     expect(readFileSync("README.md", "utf8")).toContain("npm run traffic:monetization");
-    expect(readFileSync("TODO.md", "utf8")).toContain(
+    expect(readFileSync("TODO-archive.md", "utf8")).toContain(
       "- [x] Add impression-based monetization readiness report after GSC data exists.",
     );
   });

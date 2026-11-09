@@ -60,15 +60,17 @@ describe("traffic readiness report", () => {
     expect(readFileSync("README.md", "utf8")).toContain(report.monetizationReadinessArtifact.command);
     expect(readFileSync("README.md", "utf8")).toContain(report.indexNow.submitCommand);
     expect(readFileSync("README.md", "utf8")).toContain(report.nextAutomatedBatchGoal);
-    expect(readFileSync("TODO.md", "utf8")).toContain(
+    expect(readFileSync("TODO-archive.md", "utf8")).toContain(
       "- [x] Add weekly traffic report artifact once GSC is configured.",
     );
-    expect(readFileSync("TODO.md", "utf8")).toContain("- [x] Add IndexNow key after domain/live URL is chosen.");
-    expect(readFileSync("TODO.md", "utf8")).toContain(
+    expect(readFileSync("TODO-archive.md", "utf8")).toContain("- [x] Add IndexNow key after domain/live URL is chosen.");
+    expect(readFileSync("TODO-archive.md", "utf8")).toContain(
       "- [x] Add impression-based monetization readiness report after GSC data exists.",
     );
-    expect(readFileSync("TODO.md", "utf8")).toContain(
-      `- Next automated batch goal: ${report.nextAutomatedBatchGoal}`,
-    );
+    const scopePath = "docs/todo/content/depth-only-content-scope.md";
+    const taskIndex = JSON.parse(readFileSync("docs/todo/index.json", "utf8"));
+    expect(taskIndex).toContainEqual(expect.objectContaining({ path: scopePath, status: "idea" }));
+    expect(readFileSync("TODO.md", "utf8")).toContain(`(${scopePath})`);
+    expect(readFileSync(scopePath, "utf8")).toContain(`- [ ] ${report.nextAutomatedBatchGoal}`);
   });
 });
