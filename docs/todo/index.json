@@ -15,22 +15,6 @@
     "test": null
   },
   {
-    "path": "docs/todo/ci/content-browser-acceptance.md",
-    "slug": "content-browser-acceptance",
-    "title": "Adopt pinned shared content-browser acceptance for RV Atlas",
-    "status": "now",
-    "area": "ci",
-    "due": null,
-    "updated": "2026-11-09",
-    "owner": "agent",
-    "brief": "Verify existing indexed-page navigation using the shared engine and separate native source proof.",
-    "refs": [
-      "scripts/browser-acceptance/run.py",
-      ".github/workflows/browser-acceptance.yml"
-    ],
-    "test": null
-  },
-  {
     "path": "docs/todo/content/depth-only-content-scope.md",
     "slug": "depth-only-content-scope",
     "title": "Preserve the existing depth-only content scope",
@@ -59,6 +43,22 @@
     "refs": [
       "TODO-archive.md",
       "TODO-archive.md#todo-migration-2026-11-08-quality-consolidation-followthrough"
+    ],
+    "test": null
+  },
+  {
+    "path": "docs/todo/done/ci/content-browser-acceptance.md",
+    "slug": "content-browser-acceptance",
+    "title": "Adopt pinned shared content-browser acceptance for RV Atlas",
+    "status": "done",
+    "area": "ci",
+    "due": null,
+    "updated": "2026-11-09",
+    "owner": "agent",
+    "brief": "Reviewed pinned consumer passed CI and four live flows with separate unchanged native source/image proof.",
+    "refs": [
+      "scripts/browser-acceptance/run.py",
+      ".github/workflows/browser-acceptance.yml"
     ],
     "test": null
   },
