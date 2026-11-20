@@ -14,6 +14,7 @@ _None._
 
 ## Scheduled (by due date)
 
+- [ ] Follow through on the existing SEO template release — Guard now fails above 1 violation and seed is fresh (2026-11-20); next: D+14 probe on 2026-11-21, then source the 137-word LO/HI page and ratchet to 0 · due 2026-11-21 · _seo_ · [details](docs/todo/seo/seo-template-followthrough.md)
 - [ ] Follow through on the November 7 quality consolidation — RM10 manual contradictions fixed 2026-11-20; D+21 GSC re-read due 2026-11-28; RM8/RUA/RUC/Coleman/Furrion/Lippert/Onan contradictions, N109X merge and sourced notes remain; no breadth or indexing resubmissions · due 2026-11-28 · _content_ · [details](docs/todo/content/quality-consolidation-followthrough.md)
 
 ## Next
@@ -22,7 +23,6 @@ _None._
 - [ ] Reconcile the historical instruction proposals with current code — October proposals remain retained; compare against the November 7 architecture before applying any stale rule · _process_ · [details](docs/todo/process/legacy-instruction-handoff.md)
 - [ ] Reconcile the remaining October content-refresh checklist — Historical checks are retained; November 7 evidence supersedes old page counts and indexing instructions · _process_ · [details](docs/todo/process/legacy-content-refresh-followthrough.md)
 - [ ] Resolve the retained development-only Vitest advisory — November 5 left development-server-only moderate advisories; no dependency change or fresh audit in this migration · _security_ · [details](docs/todo/security/vitest-development-advisory.md)
-- [ ] Follow through on the existing SEO template release — Retain the one content guard violation, optional dated read and fallback-seed upkeep; no new launch or waiting gate · _seo_ · [details](docs/todo/seo/seo-template-followthrough.md)
 
 ## Ideas
 

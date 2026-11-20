@@ -1,19 +1,29 @@
 {
  "version": 1,
- "generatedAt": "2026-11-07T19:00:21.225Z",
- "buildDate": "2026-11-07",
+ "generatedAt": "2026-11-20T21:30:53.585Z",
+ "buildDate": "2026-11-20",
  "meta": {
   "generator": "explorer-pipeline/seo 4f501cb5dd1e",
   "origin": "https://rvappliancefaultcodes.com",
   "hashConfig": "1710e2a78519",
-  "priorSource": "none",
-  "mode": "bootstrap"
+  "priorSource": "live",
+  "mode": "live",
+  "priorFetch": {
+   "source": "live",
+   "url": "https://rvappliancefaultcodes.com/seo/content-dates.json",
+   "fetchedAt": "2026-11-20T21:30:52.215Z"
+  },
+  "fetch": {
+   "source": "live",
+   "url": "https://rvappliancefaultcodes.com/seo/content-dates.json",
+   "fetchedAt": "2026-11-20T23:51:27.714Z"
+  }
  },
  "urls": {
   "/": {
-   "hash": "ae07ef8100d40c3a",
+   "hash": "d2bd9dd439d7600b",
    "firstSeen": "2026-06-02",
-   "lastmod": "2026-11-07",
+   "lastmod": "2026-11-20",
    "title": "RV Appliance Code Atlas"
   },
   "/brands/coleman-mach": {
@@ -23,9 +33,9 @@
    "title": "Coleman-Mach RV appliance fault codes"
   },
   "/brands/dometic": {
-   "hash": "4b447b0f1ca39dad",
+   "hash": "db6cc4cb897850e1",
    "firstSeen": "2026-07-04",
-   "lastmod": "2026-11-07",
+   "lastmod": "2026-11-20",
    "title": "Dometic RV appliance fault codes"
   },
   "/brands/furrion": {
@@ -167,9 +177,9 @@
    "title": "Dometic FreshJet Series 4 / Series 7 air conditioner fault codes"
   },
   "/models/dometic-rm10-refrigerators": {
-   "hash": "c6b904e8a4ff86d3",
+   "hash": "30023bf169ac9451",
    "firstSeen": "2026-10-01",
-   "lastmod": "2026-11-07",
+   "lastmod": "2026-11-20",
    "title": "Dometic RM10 / RMS10.5 refrigerator fault codes"
   },
   "/models/dometic-rm1350-refrigerators": {
@@ -185,15 +195,15 @@
    "title": "Dometic RM3762 / RM3962 refrigerator fault codes"
   },
   "/models/dometic-rm8-refrigerators": {
-   "hash": "b6b931066ef9090e",
+   "hash": "e5471a895876cdea",
    "firstSeen": "2026-10-01",
-   "lastmod": "2026-11-07",
+   "lastmod": "2026-11-20",
    "title": "Dometic RM8 / RMS8 / RML8 refrigerator fault codes"
   },
   "/models/dometic-rmd10-rml10-refrigerators": {
-   "hash": "fb5905d18a9dbb24",
+   "hash": "8d6d82c0a2724212",
    "firstSeen": "2026-10-01",
-   "lastmod": "2026-11-07",
+   "lastmod": "2026-11-20",
    "title": "Dometic RMD10, RMD10.5 and RML10.4 refrigerator fault codes"
   },
   "/models/dometic-rmd8-refrigerators": {
@@ -209,9 +219,9 @@
    "title": "Dometic RUA refrigerator fault codes"
   },
   "/models/dometic-ruc-refrigerators": {
-   "hash": "7e0b97ed05069e03",
+   "hash": "33f5be716c24860e",
    "firstSeen": "2026-10-01",
-   "lastmod": "2026-11-07",
+   "lastmod": "2026-11-20",
    "title": "Dometic RUC refrigerator fault codes"
   },
   "/models/dometic-thermostats": {

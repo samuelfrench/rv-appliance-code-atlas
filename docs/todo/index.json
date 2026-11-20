@@ -181,12 +181,12 @@
     "path": "docs/todo/seo/seo-template-followthrough.md",
     "slug": "seo-template-followthrough",
     "title": "Follow through on the existing SEO template release",
-    "status": "next",
+    "status": "scheduled",
     "area": "seo",
-    "due": null,
-    "updated": "2026-11-08",
+    "due": "2026-11-21",
+    "updated": "2026-11-20",
     "owner": "agent",
-    "brief": "Retain the one content guard violation, optional dated read and fallback-seed upkeep; no new launch or waiting gate",
+    "brief": "Guard now fails above 1 violation and seed is fresh (2026-11-20); next: D+14 probe on 2026-11-21, then source the 137-word LO/HI page and ratchet to 0",
     "refs": [
       "TODO-archive.md",
       "TODO-archive.md#todo-migration-2026-11-08-seo-template-followthrough"
