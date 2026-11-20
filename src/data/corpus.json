@@ -33784,13 +33784,13 @@
         "RMD10.5XT",
         "10 Series RMD10"
       ],
-      "code": "Beep",
+      "code": "Petrol pump symbol",
       "slug": "dometic-rmd10-beep-tank-stop-mode",
-      "plainMeaning": "The RMD10T/RMD10XT operating manual lists Beep for tank stop mode, where gas operation is blocked for 15 minutes.",
+      "plainMeaning": "The Dometic RMD10T/RMD10XT operating manual (p. 28) lists the petrol pump symbol as: tank stop mode, where gas operation is blocked for 15 minutes. The manual's table has no beep-only code; a beep with W10 means the door has been open for more than two minutes.",
       "ownerSafeActions": [
-        "Wait 15 minutes before expecting LP operation to resume.",
-        "Use another front-panel operating mode if available and safe.",
-        "Record when the beep occurs if it repeats outside the documented tank-stop window."
+        "Wait 15 minutes before expecting LP operation to resume, or switch to another operating mode.",
+        "Turn off the refrigerator or select a different operating mode if refuelling takes longer than 15 minutes (manual p. 14 warning).",
+        "Record whether the petrol pump symbol returns after the tank-stop period ends."
       ],
       "serviceOnlyActions": [
         "Tank-stop timing, ignition interlock, and refrigerator electronics diagnosis are service-only."
@@ -36644,7 +36644,7 @@
       ],
       "code": "Display fault 11",
       "slug": "dometic-rm10-display-fault-11-dc-overvoltage-service-check",
-      "plainMeaning": "The Dometic RM10 support page lists display fault 11 and says to reduce the DC supply voltage.",
+      "plainMeaning": "The Dometic RM10 support page lists display fault 11 and says to reduce the DC supply voltage. The RM10.5/RMS10.5 operating manual (p. 26) gives this fault as W11 (DC overvoltage of 16 V or more) and says to contact an authorized service agent.",
       "ownerSafeActions": [
         "Stop using DC operation if overvoltage is suspected from normal RV battery or charger indicators.",
         "Use another normal front-panel energy mode if available and safe.",
@@ -36865,11 +36865,11 @@
       ],
       "code": "Display fault 50",
       "slug": "dometic-rm10-display-fault-50-gas-cylinder-reset",
-      "plainMeaning": "The Dometic RM10 support page lists display fault 50 and says to replace an empty gas cylinder, press the control knob for 2 seconds to reset, and note that altitude above 1800 can contribute.",
+      "plainMeaning": "The Dometic RM10 support page lists display fault 50 and says to replace an empty gas cylinder, then press the control knob for 2 seconds to reset; it adds that the fault can also happen at altitudes \"above 1800\" without giving a unit. The RM10.5/RMS10.5 operating manual (p. 14) says ignition problems may occur above 1000 m (about 3,280 ft) and to switch to a different energy source.",
       "ownerSafeActions": [
         "Confirm from owner-visible indicators whether the LP cylinder is empty, and replace an empty cylinder using normal RV procedures.",
         "Press the control knob for 2 seconds once to reset the error after correcting the supply state.",
-        "Record whether the fault occurs at high altitude or returns after the reset."
+        "Above 1000 m (about 3,280 ft), switch to AC or DC operation instead of repeating gas resets, as the operating manual advises."
       ],
       "serviceOnlyActions": [
         "Repeated ignition lockout, LP hardware, regulator, flue, and refrigerator ignition diagnosis are service-only."
@@ -37077,7 +37077,7 @@
       ],
       "code": "AC power not connected or AC voltage < 190 V",
       "slug": "dometic-rm10-fault-ac-power-not-connected-voltage-less-190",
-      "plainMeaning": "The Dometic RM10 support page lists this fault as AC power not connected or AC voltage below 190 V and asks which operating mode is selected.",
+      "plainMeaning": "The Dometic RM10 support page lists this fault as AC power not connected or AC voltage below 190 V and asks which operating mode is selected. The RM10.5/RMS10.5 operating manual (p. 26, W05) gives the threshold as 190 V or lower (≤ 190 V).",
       "ownerSafeActions": [
         "Record the selected operating mode and whether the RV is on gas, 12 V DC, or 230 V AC.",
         "Use only normal front-panel controls to select a different energy mode if one is available and safe.",
@@ -37164,7 +37164,7 @@
       ],
       "code": "DC overvoltage > 16 V",
       "slug": "dometic-rm10-fault-dc-overvoltage-greater-than-16-v",
-      "plainMeaning": "The Dometic RM10 support page lists DC overvoltage above 16 V and says to reduce the DC supply voltage.",
+      "plainMeaning": "The Dometic RM10 support page lists DC overvoltage above 16 V and says to reduce the DC supply voltage. The RM10.5/RMS10.5 operating manual (p. 26, W11) gives the threshold as 16 V or more (≥ 16 V) and says to contact an authorized service agent rather than adjust the supply.",
       "ownerSafeActions": [
         "Stop using DC operation if normal RV battery or charger indicators show unusually high voltage.",
         "Use another normal front-panel energy mode if available and safe.",
@@ -37864,7 +37864,7 @@
       ],
       "code": "W05",
       "slug": "dometic-rm10-rms10-w05-ac-power-not-connected-or-low",
-      "plainMeaning": "The Dometic RM10.5/RMS10.5 operating manual lists W05 as: AC power is not connected or AC voltage is below the manual threshold.",
+      "plainMeaning": "The Dometic RM10.5/RMS10.5 operating manual lists W05 as: AC power is not connected or AC voltage is below the manual threshold. The manual (p. 26) sets that threshold at 190 V or lower (≤ 190 V) and says to connect AC power or select gas or DC.",
       "ownerSafeActions": [
         "Confirm the coach is connected to an intended power source from owner-visible controls.",
         "Select another front-panel energy mode if available and safe."
@@ -37950,10 +37950,11 @@
       ],
       "code": "W11",
       "slug": "dometic-rm10-rms10-w11-dc-overvoltage",
-      "plainMeaning": "The Dometic RM10.5/RMS10.5 operating manual lists W11 as: DC overvoltage is present.",
+      "plainMeaning": "The Dometic RM10.5/RMS10.5 operating manual lists W11 as: DC overvoltage is present. The manual (p. 26) sets the threshold at 16 V or more (≥ 16 V) and its only solution is to contact an authorized service agent; the RM10 support page for fault 11 says to reduce the DC supply voltage instead.",
       "ownerSafeActions": [
         "Stop using DC mode if the warning persists.",
-        "Record the coach battery or charger state from owner-visible monitors."
+        "Record the coach battery or charger state from owner-visible monitors.",
+        "Contact an authorized Dometic service agent, as the manual directs."
       ],
       "serviceOnlyActions": [
         "Charging-system and refrigerator electronics diagnosis are service-only."
@@ -37993,21 +37994,21 @@
       ],
       "code": "Beep",
       "slug": "dometic-rm10-rms10-beep-tank-stop-mode",
-      "plainMeaning": "The Dometic RM10.5/RMS10.5 operating manual lists Beep as: tank stop mode is active and gas operation is blocked for 15 minutes.",
+      "plainMeaning": "The Dometic RM10.5/RMS10.5 operating manual (p. 26) lists Beep as: the door has been open for more than two minutes. A beep on its own is the door-open alarm on the LED-panel models (RM10.5S/G/P and RMS10.5S/G/P/XS/XG/XP); the RM10.5T/RMS10.5T/RMS10.5XT display shows W10 + beep for the same fault. Tank stop mode is shown by the petrol-pump symbol (TFT models) or a flashing gas LED (LED models), not by a beep (manual pp. 19 and 26).",
       "ownerSafeActions": [
-        "Wait 15 minutes before expecting LP operation to resume.",
-        "Use another front-panel operating mode if available and safe.",
-        "Record when the beep occurs if it repeats outside the documented tank-stop window."
+        "Close the refrigerator door and confirm the beep stops.",
+        "Check for blocked shelves or seals that prevent the door from closing.",
+        "If the display instead shows the tank-stop symbol, wait 15 minutes or switch to another operating mode."
       ],
       "serviceOnlyActions": [
-        "Tank-stop timing, ignition interlock, and refrigerator electronics diagnosis are service-only."
+        "Door switch, hinge, latch, or wiring diagnosis should be handled by service if the beep repeats with the door closed."
       ],
       "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
       "sourceIds": [
         "dometic-rm10-rms10-operating"
       ],
       "symptomIds": [
-        "refrigerator-lp-ignition",
+        "refrigerator-not-cooling",
         "dometic-legacy-absorption-display-faults",
         "service-call-prep"
       ],
@@ -38384,10 +38385,11 @@
       ],
       "code": "E50",
       "slug": "dometic-rm10-rms10-e50-gas-lock-after-three-ignition-attempts",
-      "plainMeaning": "The Dometic RM10.5/RMS10.5 operating manual lists E50 as: gas lock after three ignition attempts; ignition is not possible.",
+      "plainMeaning": "The Dometic RM10.5/RMS10.5 operating manual lists E50 as: gas lock after three ignition attempts; ignition is not possible. The manual (p. 27) says the gas cylinder is empty, to exchange it and reset the error; it also notes (p. 14) that ignition problems may occur above 1000 m (about 3,280 ft), where you should switch to a different energy source.",
       "ownerSafeActions": [
         "Confirm the LP cylinder has fuel from owner-visible indicators and replace an empty cylinder if needed.",
-        "Reset the error once from the control knob after correcting the supply state."
+        "Reset the error once from the control knob after correcting the supply state.",
+        "Above 1000 m (about 3,280 ft), switch to AC or DC operation instead of repeating gas resets."
       ],
       "serviceOnlyActions": [
         "Repeated ignition lockout, LP hardware, and refrigerator ignition diagnosis are service-only."
@@ -38698,21 +38700,21 @@
       ],
       "code": "Beep",
       "slug": "dometic-rmd10-5-beep-tank-stop-mode",
-      "plainMeaning": "The Dometic RMD10.5 operating manual lists Beep as: tank stop mode is active and gas operation is blocked for 15 minutes.",
+      "plainMeaning": "The Dometic RMD10.5 operating manual (p. 33) lists Beep as: the door has been open for more than two minutes. A beep on its own is the door-open alarm on the LED-panel models (RMD10.5, RMD10.5X, RMD10.5S and RMD10.5XS); the RMD10.5T/RMD10.5XT display shows W10 + beep for the same fault. Tank stop mode has its own symbol row in the same table; it is not signalled by this beep.",
       "ownerSafeActions": [
-        "Wait 15 minutes before expecting LP operation to resume.",
-        "Use another front-panel operating mode if available and safe.",
-        "Record when the beep occurs if it repeats outside the documented tank-stop window."
+        "Close the refrigerator door and confirm the beep stops.",
+        "Check for blocked shelves or seals that prevent the door from closing.",
+        "If the display instead shows the tank-stop symbol, wait 15 minutes or switch to another operating mode."
       ],
       "serviceOnlyActions": [
-        "Tank-stop timing, ignition interlock, and refrigerator electronics diagnosis are service-only."
+        "Door switch, hinge, latch, or wiring diagnosis should be handled by service if the beep repeats with the door closed."
       ],
       "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
       "sourceIds": [
         "dometic-rmd10-5-operating"
       ],
       "symptomIds": [
-        "refrigerator-lp-ignition",
+        "refrigerator-not-cooling",
         "dometic-legacy-absorption-display-faults",
         "service-call-prep"
       ],
@@ -39316,21 +39318,21 @@
       ],
       "code": "Beep",
       "slug": "dometic-rml10-4-beep-tank-stop-mode",
-      "plainMeaning": "The Dometic RML10.4 operating manual lists Beep as: tank stop mode is active and gas operation is blocked for 15 minutes.",
+      "plainMeaning": "The Dometic RML10.4 operating manual (p. 35) lists Beep as: the door has been open for more than two minutes. A beep on its own is the door-open alarm on the LED-panel models (RML10.4 and RML10.4S); the RML10.4T display shows W10 + beep for the same fault. Tank stop mode has its own symbol row in the same table; it is not signalled by this beep.",
       "ownerSafeActions": [
-        "Wait 15 minutes before expecting LP operation to resume.",
-        "Use another front-panel operating mode if available and safe.",
-        "Record when the beep occurs if it repeats outside the documented tank-stop window."
+        "Close the refrigerator door and confirm the beep stops.",
+        "Check for blocked shelves or seals that prevent the door from closing.",
+        "If the display instead shows the tank-stop symbol, wait 15 minutes or switch to another operating mode."
       ],
       "serviceOnlyActions": [
-        "Tank-stop timing, ignition interlock, and refrigerator electronics diagnosis are service-only."
+        "Door switch, hinge, latch, or wiring diagnosis should be handled by service if the beep repeats with the door closed."
       ],
       "safetyBoundary": "Do not open gas, electrical, or cooling-system components; use only documented front-panel actions and call qualified RV service for repeated faults.",
       "sourceIds": [
         "dometic-rml10-4-operating"
       ],
       "symptomIds": [
-        "refrigerator-lp-ignition",
+        "refrigerator-not-cooling",
         "dometic-legacy-absorption-display-faults",
         "service-call-prep"
       ],

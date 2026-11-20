@@ -1582,7 +1582,7 @@ describe("verified corpus", () => {
     );
 
     expect(codes).toEqual(
-      new Set(["W01", "W05", "W06", "W10 + beep", "W11", "Beep", "E03", "E07", "E08", "E09", "E12", "E13", "E14", "E50", "E51", "E52", "E53"]),
+      new Set(["W01", "W05", "W06", "W10 + beep", "W11", "Petrol pump symbol", "E03", "E07", "E08", "E09", "E12", "E13", "E14", "E50", "E51", "E52", "E53"]),
     );
   });
 
