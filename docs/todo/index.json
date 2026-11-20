@@ -98,6 +98,22 @@
     "test": null
   },
   {
+    "path": "docs/todo/infra/playwright-ubuntu-2604.md",
+    "slug": "playwright-ubuntu-2604",
+    "title": "Unpin browser acceptance from ubuntu-24.04 by upgrading Playwright",
+    "status": "idea",
+    "area": "infra",
+    "due": null,
+    "updated": "2026-11-20",
+    "owner": "agent",
+    "brief": "Acceptance pinned to ubuntu-24.04 (ef6514c) because Playwright 1.60.0 cannot install Chromium on ubuntu-latest = 26.04",
+    "refs": [
+      ".github/workflows/browser-acceptance.yml",
+      "package.json"
+    ],
+    "test": null
+  },
+  {
     "path": "docs/todo/monetization/disabled-monetization-decision.md",
     "slug": "disabled-monetization-decision",
     "title": "Preserve the explicit hold on removing disabled monetization scaffolding",
