@@ -6,7 +6,7 @@
 
 ## Now
 
-_None._
+- [ ] Reuse the tested production build on a future authorized release — Single-build pipeline committed (image built once, static+nginx checks, deploy by digest); one dispatched release must prove it · _infra_ · [details](docs/todo/infra/reuse-tested-production-build.md)
 
 ## Waiting on Sam
 
@@ -19,7 +19,6 @@ _None._
 ## Next
 
 - [ ] Add privacy-minimal GA4 client-error events — The retained InvalidArgument result is a measurement gap; instrumentation and later provider proof remain open · _analytics_ · [details](docs/todo/analytics/ga4-client-error-events.md)
-- [ ] Reuse the tested production build on a future authorized release — Retain the existing two-build release follow-up; do not deploy or optimize the release pipeline during TODO adoption · _infra_ · [details](docs/todo/infra/reuse-tested-production-build.md)
 - [ ] Reconcile the historical instruction proposals with current code — October proposals remain retained; compare against the November 7 architecture before applying any stale rule · _process_ · [details](docs/todo/process/legacy-instruction-handoff.md)
 - [ ] Reconcile the remaining October content-refresh checklist — Historical checks are retained; November 7 evidence supersedes old page counts and indexing instructions · _process_ · [details](docs/todo/process/legacy-content-refresh-followthrough.md)
 - [ ] Resolve the retained development-only Vitest advisory — November 5 left development-server-only moderate advisories; no dependency change or fresh audit in this migration · _security_ · [details](docs/todo/security/vitest-development-advisory.md)

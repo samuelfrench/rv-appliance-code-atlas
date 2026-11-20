@@ -13,17 +13,24 @@ on:
       - 'scripts/browser-acceptance/**'
       - '.github/workflows/browser-acceptance.yml'
       - '.github/workflows/deploy.yml'
+      - 'scripts/release/**'
   workflow_dispatch:
 
 concurrency:
   group: rv-appliance-code-atlas-deploy
   cancel-in-progress: false
 
+# One frontend build: the Dockerfile build stage runs `npm run build` (tsc + vite + generate-static +
+# seo:finalize). The resulting image is checked here and Fly deploys that exact image by digest.
+# Contract: scripts/release/__tests__/pipeline-contract.test.mjs.
 jobs:
   test-and-deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     permissions:
       contents: read
+    env:
+      FLY_APP: rv-appliance-code-atlas
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
@@ -34,10 +41,65 @@ jobs:
       - run: npm run validate:corpus
       - run: npm run seo:self-check
       - run: npm run test:unit
-      # build = tsc + vite + generate-static (latest links from the live /seo/content-dates.json, fallback
-      # seo/content-dates.seed.json) + seo:finalize (ledger, sitemap lastmod, guard). The Fly Docker build repeats it.
-      - run: npm run build
+      - name: Release pipeline contract and checker tests
+        run: node --test scripts/release/__tests__/*.test.mjs
+      - name: Build the runtime image once
+        id: image
+        run: |
+          set -euo pipefail
+          docker build --pull --label "org.opencontainers.image.revision=$GITHUB_SHA" --tag "rv-atlas:ci-$GITHUB_SHA" .
+          echo "id=$(docker image inspect --format '{{.Id}}' "rv-atlas:ci-$GITHUB_SHA")" >> "$GITHUB_OUTPUT"
+      - name: Check the image's static output
+        env:
+          IMAGE_ID: ${{ steps.image.outputs.id }}
+        run: |
+          set -euo pipefail
+          RELEASE_DIR="$RUNNER_TEMP/rv-release"
+          mkdir -p "$RELEASE_DIR"
+          cid="$(docker create "$IMAGE_ID")"
+          trap 'docker rm "$cid" >/dev/null' EXIT
+          docker cp "$cid:/usr/share/nginx/html" "$RELEASE_DIR/html"
+          docker cp "$cid:/etc/nginx/rv-redirects.map" "$RELEASE_DIR/rv-redirects.map"
+          node scripts/release/check-release.mjs static "$RELEASE_DIR/html" "$RELEASE_DIR/rv-redirects.map"
+      - name: Check the image's nginx runtime
+        env:
+          IMAGE_ID: ${{ steps.image.outputs.id }}
+        run: |
+          set -euo pipefail
+          RELEASE_DIR="$RUNNER_TEMP/rv-release"
+          docker run --detach --name rv-release-check --publish 127.0.0.1:8080:8080 "$IMAGE_ID"
+          trap 'docker logs --tail 20 rv-release-check; docker rm --force rv-release-check >/dev/null' EXIT
+          node scripts/release/check-release.mjs runtime http://127.0.0.1:8080 "$RELEASE_DIR/html" "$RELEASE_DIR/rv-redirects.map"
       - uses: superfly/flyctl-actions/setup-flyctl@master
-      - run: flyctl deploy --remote-only
+      - name: Publish the tested image, deploy its digest, verify machines and live site
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+          IMAGE_ID: ${{ steps.image.outputs.id }}
+        run: |
+          set -euo pipefail
+          RELEASE_DIR="$RUNNER_TEMP/rv-release"
+          machine_images='.[] | "- \(.id) \(.state) config.image=\(.config.image) image_ref.digest=\(.image_ref.digest)"'
+          echo "Machines before deploy (rollback candidate):" | tee -a "$GITHUB_STEP_SUMMARY"
+          flyctl machine list --app "$FLY_APP" --json | jq -r "$machine_images" | tee -a "$GITHUB_STEP_SUMMARY"
+          # flyctl auth docker runs docker login; keep that credential in a throwaway config.
+          export DOCKER_CONFIG="$(mktemp -d "$RUNNER_TEMP/rv-docker-auth.XXXXXX")"
+          trap 'rm -rf "$DOCKER_CONFIG"' EXIT
+          flyctl auth docker
+          tag="registry.fly.io/$FLY_APP:ci-$GITHUB_SHA-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT"
+          docker tag "$IMAGE_ID" "$tag"
+          docker push "$tag" | tee "$RELEASE_DIR/push.log"
+          digest="$(grep -oE 'digest: sha256:[0-9a-f]{64}' "$RELEASE_DIR/push.log" | tail -n 1 | cut -d' ' -f2)"
+          test -n "$digest"
+          image="registry.fly.io/$FLY_APP@$digest"
+          # The registry digest must resolve to the image the checks above ran against.
+          docker pull --quiet "$image"
+          test "$(docker image inspect --format '{{.Id}}' "$image")" = "$IMAGE_ID"
+          test "$(docker image inspect --format '{{index .Config.Labels "org.opencontainers.image.revision"}}' "$image")" = "$GITHUB_SHA"
+          echo "Tested image: \`$image\` (source \`$GITHUB_SHA\`, config \`$IMAGE_ID\`)" | tee -a "$GITHUB_STEP_SUMMARY"
+          flyctl deploy --app "$FLY_APP" --image "$image"
+          machines="$(flyctl machine list --app "$FLY_APP" --json)"
+          echo "Machines after deploy:" | tee -a "$GITHUB_STEP_SUMMARY"
+          echo "$machines" | jq -r "$machine_images" | tee -a "$GITHUB_STEP_SUMMARY"
+          # Every machine must run the tested digest.
+          echo "$machines" | jq -e --arg d "$digest" 'length > 0 and all(.[]; ((.config.image // "") | endswith("@" + $d)) or .image_ref.digest == $d)' >/dev/null
+          node scripts/release/check-release.mjs runtime https://rvappliancefaultcodes.com "$RELEASE_DIR/html" "$RELEASE_DIR/rv-redirects.map"

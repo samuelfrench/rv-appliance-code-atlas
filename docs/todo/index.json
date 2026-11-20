@@ -83,14 +83,17 @@
     "path": "docs/todo/infra/reuse-tested-production-build.md",
     "slug": "reuse-tested-production-build",
     "title": "Reuse the tested production build on a future authorized release",
-    "status": "next",
+    "status": "now",
     "area": "infra",
     "due": null,
-    "updated": "2026-11-08",
+    "updated": "2026-11-20",
     "owner": "agent",
-    "brief": "Retain the existing two-build release follow-up; do not deploy or optimize the release pipeline during TODO adoption",
+    "brief": "Single-build pipeline committed (image built once, static+nginx checks, deploy by digest); one dispatched release must prove it",
     "refs": [
-      "TODO-archive.md"
+      "TODO-archive.md",
+      ".github/workflows/deploy.yml",
+      "scripts/release/check-release.mjs",
+      "scripts/release/__tests__/pipeline-contract.test.mjs"
     ],
     "test": null
   },
