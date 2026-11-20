@@ -95,11 +95,14 @@ jobs:
           docker pull --quiet "$image"
           test "$(docker image inspect --format '{{.Id}}' "$image")" = "$IMAGE_ID"
           test "$(docker image inspect --format '{{index .Config.Labels "org.opencontainers.image.revision"}}' "$image")" = "$GITHUB_SHA"
-          echo "Tested image: \`$image\` (source \`$GITHUB_SHA\`, config \`$IMAGE_ID\`)" | tee -a "$GITHUB_STEP_SUMMARY"
+          # Docker's containerd store pushes an OCI index; Fly records the linux/amd64 manifest inside it.
+          platform="$(docker buildx imagetools inspect --raw "$image" | jq -r --arg d "$digest" 'if .manifests then [.manifests[] | select(.platform.os == "linux" and .platform.architecture == "amd64") | .digest] | first // empty else $d end')"
+          test -n "$platform"
+          echo "Tested image: \`$image\` (linux/amd64 manifest \`$platform\`, source \`$GITHUB_SHA\`, config \`$IMAGE_ID\`)" | tee -a "$GITHUB_STEP_SUMMARY"
           flyctl deploy --app "$FLY_APP" --image "$image"
           machines="$(flyctl machine list --app "$FLY_APP" --json)"
           echo "Machines after deploy:" | tee -a "$GITHUB_STEP_SUMMARY"
           echo "$machines" | jq -r "$machine_images" | tee -a "$GITHUB_STEP_SUMMARY"
           # Every machine must run the tested digest.
-          echo "$machines" | jq -e --arg d "$digest" 'length > 0 and all(.[]; ((.config.image // "") | endswith("@" + $d)) or .image_ref.digest == $d)' >/dev/null
+          echo "$machines" | jq -e --arg d "$digest" --arg p "$platform" 'length > 0 and all(.[]; .image_ref.digest as $m | ($m == $d or $m == $p) and ((.config.image // "") | endswith("@" + $m)))' >/dev/null
           node scripts/release/check-release.mjs runtime https://rvappliancefaultcodes.com "$RELEASE_DIR/html" "$RELEASE_DIR/rv-redirects.map"

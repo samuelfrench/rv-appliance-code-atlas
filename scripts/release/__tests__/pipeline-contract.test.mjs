@@ -32,8 +32,9 @@ test("checks run on the built image before it is published and deployed by diges
     "check-release.mjs runtime http://127.0.0.1:8080",
     "docker push",
     "docker pull --quiet \"$image\"",
+    "docker buildx imagetools inspect --raw \"$image\"",
     "flyctl deploy --app \"$FLY_APP\" --image \"$image\"",
-    "jq -e --arg d \"$digest\"",
+    "jq -e --arg d \"$digest\" --arg p \"$platform\"",
     "check-release.mjs runtime https://rvappliancefaultcodes.com",
   ];
   const positions = order.map((step) => workflow.indexOf(step));
