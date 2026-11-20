@@ -63,6 +63,24 @@
     "test": null
   },
   {
+    "path": "docs/todo/done/infra/reuse-tested-production-build.md",
+    "slug": "reuse-tested-production-build",
+    "title": "Reuse the tested production build on a future authorized release",
+    "status": "done",
+    "area": "infra",
+    "due": null,
+    "updated": "2026-11-20",
+    "owner": "agent",
+    "brief": "Done 2026-11-20: one image build, static+nginx checks, deploy by digest; green run 44820875169 (79 s), machine on tested amd64 manifest, live 142/142 Playwright",
+    "refs": [
+      "TODO-archive.md",
+      ".github/workflows/deploy.yml",
+      "scripts/release/check-release.mjs",
+      "scripts/release/__tests__/pipeline-contract.test.mjs"
+    ],
+    "test": null
+  },
+  {
     "path": "docs/todo/done/process/generated-todo-migration.md",
     "slug": "generated-todo-migration",
     "title": "Migrate RV Atlas to generated task files",
@@ -76,24 +94,6 @@
       "TODO-archive.md",
       "8889923888a3b7e5ecd5e2f57a903ff53e79b211",
       "https://github.com/samuelfrench/rv-appliance-code-atlas/actions/runs/42544630658"
-    ],
-    "test": null
-  },
-  {
-    "path": "docs/todo/infra/reuse-tested-production-build.md",
-    "slug": "reuse-tested-production-build",
-    "title": "Reuse the tested production build on a future authorized release",
-    "status": "now",
-    "area": "infra",
-    "due": null,
-    "updated": "2026-11-20",
-    "owner": "agent",
-    "brief": "Single-build pipeline committed (image built once, static+nginx checks, deploy by digest); one dispatched release must prove it",
-    "refs": [
-      "TODO-archive.md",
-      ".github/workflows/deploy.yml",
-      "scripts/release/check-release.mjs",
-      "scripts/release/__tests__/pipeline-contract.test.mjs"
     ],
     "test": null
   },
