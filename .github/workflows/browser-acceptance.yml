@@ -15,7 +15,7 @@ permissions:
   contents: read
 jobs:
   owning-contract:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04  # Playwright 1.60 cannot install Chromium on ubuntu-latest (26.04), run 44820876574
     timeout-minutes: 15
     env:
       SEO_OFFLINE: '1'
