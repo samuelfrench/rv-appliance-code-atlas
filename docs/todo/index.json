@@ -15,6 +15,21 @@
     "test": null
   },
   {
+    "path": "docs/todo/analytics/sitewide-demotion-watch.md",
+    "slug": "sitewide-demotion-watch",
+    "title": "Sustained Google demotion: RV Appliance Fault Codes",
+    "status": "scheduled",
+    "area": "analytics",
+    "due": "2026-11-26",
+    "updated": "2026-11-25",
+    "owner": "agent",
+    "brief": "Sustained Google demotion (technical): auto-diagnosed 2026-11-25 by cron:index-brake; report /home/sam/.local/state/cron-manager/demotion/rv-appliance-fault-codes/2026-11-25.md",
+    "refs": [
+      "/home/sam/.local/state/cron-manager/demotion/rv-appliance-fault-codes/2026-11-25.md"
+    ],
+    "test": null
+  },
+  {
     "path": "docs/todo/content/depth-only-content-scope.md",
     "slug": "depth-only-content-scope",
     "title": "Preserve the existing depth-only content scope",
