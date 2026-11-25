@@ -92,6 +92,16 @@ describe("consolidated site: sitemap and pages", () => {
     expect(site.sitemap.length).toBe(pages.filter((page) => page.indexable).length);
   });
 
+  it("makes every live /codes and /symptoms page self-canonical", () => {
+    // Merged code/guide URLs are 301s (above), never pages whose canonical points at a /models/ hub.
+    const detail = pages.filter((page) => /^\/(codes|symptoms)\//.test(page.route));
+    expect(detail.length).toBeGreaterThan(0);
+    for (const page of detail) {
+      const canonicals = [...page.html.matchAll(/<link rel="canonical" href="([^"]+)"/g)].map((match) => match[1]);
+      expect(canonicals, page.route).toEqual([`${base}${page.route}`]);
+    }
+  });
+
   it("leaves sitemap lastmod to the SEO template's finalize step", () => {
     // npm run build -> seo:finalize writes <lastmod> from the content-hash ledger (dist/seo/content-dates.json).
     expect(site.sitemapXml).not.toContain("<lastmod>");

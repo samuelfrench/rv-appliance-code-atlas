@@ -1,5 +1,21 @@
 [
   {
+    "path": "docs/todo/analytics/demotion-recheck-2026-12-09.md",
+    "slug": "demotion-recheck-2026-12-09",
+    "title": "RV demotion watch: 14-day recovery and URL Inspection re-check",
+    "status": "scheduled",
+    "area": "analytics",
+    "due": "2026-12-09",
+    "updated": "2026-11-25",
+    "owner": "agent",
+    "brief": "Re-inspect the 5 flagged 301 URLs + 3 destinations against the 2026-11-25 before state; re-read 90-day GSC by route group; read-only, no indexing requests",
+    "refs": [
+      "docs/todo/done/analytics/sitewide-demotion-watch.md",
+      "/home/sam/.local/share/rv-appliance-code-atlas/seo-2026-11-25/inspection-before-2026-11-25.json"
+    ],
+    "test": null
+  },
+  {
     "path": "docs/todo/analytics/ga4-client-error-events.md",
     "slug": "ga4-client-error-events",
     "title": "Add privacy-minimal GA4 client-error events",
@@ -11,21 +27,6 @@
     "brief": "The retained InvalidArgument result is a measurement gap; instrumentation and later provider proof remain open",
     "refs": [
       "TODO-archive.md"
-    ],
-    "test": null
-  },
-  {
-    "path": "docs/todo/analytics/sitewide-demotion-watch.md",
-    "slug": "sitewide-demotion-watch",
-    "title": "Sustained Google demotion: RV Appliance Fault Codes",
-    "status": "scheduled",
-    "area": "analytics",
-    "due": "2026-11-26",
-    "updated": "2026-11-25",
-    "owner": "agent",
-    "brief": "Sustained Google demotion (technical): auto-diagnosed 2026-11-25 by cron:index-brake; report /home/sam/.local/state/cron-manager/demotion/rv-appliance-fault-codes/2026-11-25.md",
-    "refs": [
-      "/home/sam/.local/state/cron-manager/demotion/rv-appliance-fault-codes/2026-11-25.md"
     ],
     "test": null
   },
@@ -58,6 +59,23 @@
     "refs": [
       "TODO-archive.md",
       "TODO-archive.md#todo-migration-2026-11-08-quality-consolidation-followthrough"
+    ],
+    "test": null
+  },
+  {
+    "path": "docs/todo/done/analytics/sitewide-demotion-watch.md",
+    "slug": "sitewide-demotion-watch",
+    "title": "Sustained Google demotion: RV Appliance Fault Codes",
+    "status": "done",
+    "area": "analytics",
+    "due": null,
+    "updated": "2026-11-25",
+    "owner": "agent",
+    "brief": "2026-11-25: the 7 'canonical points elsewhere' URLs are deliberate 2026-11-07 301s to self-canonical /models/ pages (watch false positive, fixed in cron-manager f586680); no canonical change; recovery read in docs/todo/analytics/demotion-recheck-2026-12-09.md",
+    "refs": [
+      "/home/sam/.local/state/cron-manager/demotion/rv-appliance-fault-codes/2026-11-25.md",
+      "21284f9cfb674d55dc1de509509669b1abf0295c",
+      "docs/todo/analytics/demotion-recheck-2026-12-09.md"
     ],
     "test": null
   },

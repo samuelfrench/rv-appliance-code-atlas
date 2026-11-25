@@ -45,8 +45,11 @@ def client():
 
 
 def call(c, url, body):
-    if hasattr(c, "_service"):
-        raise SystemExit("service-account client path not implemented; use ADC")
+    if hasattr(c, "_service"):  # traffic-report ServiceAccountGscClient: read-only scope, URL Inspection only
+        if not url.endswith("/urlInspection/index:inspect"):
+            raise SystemExit(f"service-account path supports URL Inspection only, not {url}")
+        with c._lock:
+            return c._service().urlInspection().index().inspect(body=body).execute()
     return c._request(url, body)
 
 
