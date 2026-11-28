@@ -50,12 +50,12 @@
     "path": "docs/todo/content/quality-consolidation-followthrough.md",
     "slug": "quality-consolidation-followthrough",
     "title": "Follow through on the November 7 quality consolidation",
-    "status": "scheduled",
+    "status": "next",
     "area": "content",
-    "due": "2026-11-28",
-    "updated": "2026-11-20",
+    "due": null,
+    "updated": "2026-11-28",
     "owner": "agent",
-    "brief": "RM10 manual contradictions fixed 2026-11-20; D+21 GSC re-read due 2026-11-28; RM8/RUA/RUC/Coleman/Furrion/Lippert/Onan contradictions, N109X merge and sourced notes remain; no breadth or indexing resubmissions",
+    "brief": "D+21 GSC 2026-11-28: coverage unchanged, 1/75 indexed (home, recrawled 2026-11-26); 10/10 model samples unknown; 0/60 folded URLs seen as redirects; sitemap last downloaded 2026-11-07; next is the RM8 flashing contradiction; no breadth or indexing resubmissions",
     "refs": [
       "TODO-archive.md",
       "TODO-archive.md#todo-migration-2026-11-08-quality-consolidation-followthrough"
@@ -217,7 +217,7 @@
     "status": "next",
     "area": "seo",
     "due": null,
-    "updated": "2026-11-21",
+    "updated": "2026-11-28",
     "owner": "agent",
     "brief": "D+14 probe 2026-11-21: 15/20 unknown to Google, 0 indexed, sitemap not re-read since 11-07; next: source the 137-word LO/HI page and ratchet the guard to 0",
     "refs": [

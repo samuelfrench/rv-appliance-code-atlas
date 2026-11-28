@@ -14,12 +14,12 @@ _None._
 
 ## Scheduled (by due date)
 
-- [ ] Follow through on the November 7 quality consolidation — RM10 manual contradictions fixed 2026-11-20; D+21 GSC re-read due 2026-11-28; RM8/RUA/RUC/Coleman/Furrion/Lippert/Onan contradictions, N109X merge and sourced notes remain; no breadth or indexing resubmissions · due 2026-11-28 · _content_ · [details](docs/todo/content/quality-consolidation-followthrough.md)
 - [ ] RV demotion watch: 14-day recovery and URL Inspection re-check — Re-inspect the 5 flagged 301 URLs + 3 destinations against the 2026-11-25 before state; re-read 90-day GSC by route group; read-only, no indexing requests · due 2026-12-09 · _analytics_ · [details](docs/todo/analytics/demotion-recheck-2026-12-09.md)
 
 ## Next
 
 - [ ] Add privacy-minimal GA4 client-error events — The retained InvalidArgument result is a measurement gap; instrumentation and later provider proof remain open · _analytics_ · [details](docs/todo/analytics/ga4-client-error-events.md)
+- [ ] Follow through on the November 7 quality consolidation — D+21 GSC 2026-11-28: coverage unchanged, 1/75 indexed (home, recrawled 2026-11-26); 10/10 model samples unknown; 0/60 folded URLs seen as redirects; sitemap last downloaded 2026-11-07; next is the RM8 flashing contradiction; no breadth or indexing resubmissions · _content_ · [details](docs/todo/content/quality-consolidation-followthrough.md)
 - [ ] Reconcile the historical instruction proposals with current code — October proposals remain retained; compare against the November 7 architecture before applying any stale rule · _process_ · [details](docs/todo/process/legacy-instruction-handoff.md)
 - [ ] Reconcile the remaining October content-refresh checklist — Historical checks are retained; November 7 evidence supersedes old page counts and indexing instructions · _process_ · [details](docs/todo/process/legacy-content-refresh-followthrough.md)
 - [ ] Resolve the retained development-only Vitest advisory — November 5 left development-server-only moderate advisories; no dependency change or fresh audit in this migration · _security_ · [details](docs/todo/security/vitest-development-advisory.md)
