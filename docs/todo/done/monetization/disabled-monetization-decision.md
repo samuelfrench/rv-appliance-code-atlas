@@ -1,11 +1,11 @@
 ---
 title: "Preserve the explicit hold on removing disabled monetization scaffolding"
-status: waiting-sam
+status: done
 area: monetization
 due: null
-updated: 2026-11-08
-owner: sam
-brief: "Nothing is sold; removal remains an explicit owner decision and is not authorized by this migration"
+updated: 2026-11-28
+owner: agent
+brief: "Closed 2026-11-28: Sam left the disabled monetization scaffolding in place. The standing hold remains: do not remove it without an explicit yes from Sam."
 refs:
   - "TODO-archive.md"
   - "TODO-archive.md#todo-migration-2026-11-08-disabled-monetization-decision"
@@ -22,3 +22,8 @@ test: null
 
 
 <!-- End of verbatim migrated material. -->
+
+## Inbox reply sheet 2026-11-28
+
+- 2026-11-28 — Sam (inbox reply sheet): "leave the disabled monetization scaffolding."
+- Outcome: Decision row closed. Scaffolding stays (corpus.monetization placeholders, scripts/monetization-readiness-report.mjs and its test, docs/monetization-plan.md); nothing is sold on RV Atlas. The hold stays in force: no agent removes it without an explicit owner yes. Revisit if the 500 weekly impression gate in docs/monetization-plan.md is ever met.
